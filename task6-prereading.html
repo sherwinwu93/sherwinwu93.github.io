@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2023-08-17 Thu 14:41 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="lenovo" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orgce8412e">1. task6-prereading</a>
+<ul>
+<li><a href="#org8cd3f27">1.1. 1.</a></li>
+<li><a href="#orgfa89e46">1.2. 2.</a></li>
+<li><a href="#org057756f">1.3. 3</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgce8412e" class="outline-2">
+<h2 id="orgce8412e"><span class="section-number-2">1.</span> task6-prereading</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+家庭作业:精听+精读
+</p>
+<ol class="org-ol">
+<li>[必修] 请根据前几次任务思考[精读/精听]对我们英语学习的帮助是什么?
+如何提升?
+总结前几次任务的关键点，给自己讲解一遍并写下来。</li>
+<li>[必修]尝试思考为了考雅思托福，哪些资料配合[泛读/听]比较合适?
+(请罗列至少3个)，并说明您挑选泛读材料的原则有哪些?
+ 请同时给出获取途径(搜商锻炼+分享)</li>
+<li>[选修]阅读《穷查理宝典》一书中[专业人士需要更多的跨学科技能] p.303一文。
+(参考汉语版本对应着看)思考，汉语与英语学习有什么辅助作用?</li>
+</ol>
+</div>
+<div id="outline-container-org8cd3f27" class="outline-3">
+<h3 id="org8cd3f27"><span class="section-number-3">1.1.</span> 1.</h3>
+<div class="outline-text-3" id="text-1-1">
+<p>
+第一次任务:humans of New York
+</p>
+<ul class="org-ul">
+<li>如何阅读和朗读一切英语文本,以及修改作业
+<ul class="org-ul">
+<li>查字典聚合,edgeGoogle/grammarly/AI</li>
+<li>剑1-2+NCE123</li>
+</ul></li>
+<li>阅读与听力的关系?</li>
+<li>求人前先求己:(附加)</li>
+</ul>
+<p>
+	personal: 工具+NCE123,剑1-2+不会就查,看懂和会读一切英语
+第二次任务:Reading to Learn the Art of Expression
+</p>
+<ul class="org-ul">
+<li>葛公积累习惯用法的方法与改进:
+<ul class="org-ul">
+<li>如何摘抄?</li>
+<li>为什么要习惯用法造句?</li>
+</ul></li>
+<li>写作和口语的底层逻辑:
+<ul class="org-ul">
+<li>写作: 内容+结构+单词~习惯用法~语法</li>
+<li>口语: 内容+结构+单词~习惯用法~语法+语音(包括音标~语调~语速~变音)</li>
+</ul></li>
+<li>追求效率:(附加)
+<ul class="org-ul">
+<li>单位时间做的事情称之为效率</li>
+<li>为什么跟读是效率最高的手段?</li>
+</ul></li>
+</ul>
+<p>
+	personal: 准备expression文件,里面有习惯用法,意义和造的句子
+第三次任务:Let him go
+</p>
+<ul class="org-ul">
+<li>tell the story
+<ul class="org-ul">
+<li>说写(输出)倒逼听读(输入)</li>
+<li>写作(易,写),口语(难,后)</li>
+<li>是工作和生活的重要能力</li>
+</ul></li>
+<li>长难句拆分成多个句子</li>
+<li>28原则:(附加值)鸡毛蒜皮的Let them go,重大事情运用CT</li>
+</ul>
+<p>
+	personal: 养成阅读文章,提取关键词的习惯,前期先写,后期要张嘴说出来.
+第四次任务:Children Engineering Workshops
+</p>
+<ul class="org-ul">
+<li>解决听力的底层逻辑:听懂
+<ul class="org-ul">
+<li>单词拼写: 音标+自然拼读法则+造句+写作</li>
+<li>单词~习惯用法和语法: 精读+泛读+精听+泛听</li>
+<li>复述(同义词): 存疑???</li>
+<li>口音: 记住你是世界公民</li>
+<li>语音: 跟读,上个鸡毛的课</li>
+</ul></li>
+<li>learn how to learn:(附加) 欠着???</li>
+</ul>
+<p>
+	personal: edge50遍
+第五次任务:Stoicism
+</p>
+<ul class="org-ul">
+<li>复利: 最易控制的是时间
+<ul class="org-ul">
+<li>跟读NCE123+剑1-2: 全面提升英语的路已经出现了,剩下来只需要一步一个脚印走下去</li>
+<li>跟读重复的复利</li>
+<li>跟读这篇文章与那篇文章的复利</li>
+</ul></li>
+<li>解决听力的标准: 你主观觉得雅思慢了</li>
+<li>Stoicism:
+To have an unshakable happy life
+and the key to achieve this is control what you can and accept what you can't.</li>
+</ul>
+<p>
+personal: 继续edge50遍,并且N123+剑1,2+习惯用法文件都edge50遍
+</p>
+</div>
+</div>
+<div id="outline-container-orgfa89e46" class="outline-3">
+<h3 id="orgfa89e46"><span class="section-number-3">1.2.</span> 2.</h3>
+<div class="outline-text-3" id="text-1-2">
+<ul class="org-ul">
+<li>有趣或者获取信息</li>
+<li>难度适中</li>
+<li>经典或新鲜,实用</li>
+<li>看过中文版,再看看英语版</li>
+</ul>
+<p>
+泛读/听
+</p>
+<ul class="org-ul">
+<li>Harry Potter</li>
+<li>Forest Gan</li>
+<li>老友记音频</li>
+<li>Critical Thinking</li>
+<li>What Smart Student know</li>
+</ul>
+<p>
+搜索途径,某谷,某lib,知乎,小红书,B站,公众号
+</p>
+</div>
+</div>
+<div id="outline-container-org057756f" class="outline-3">
+<h3 id="org057756f"><span class="section-number-3">1.3.</span> 3</h3>
+<div class="outline-text-3" id="text-1-3">
+<p>
+要熟练掌握自己的基础(N123+剑1,2 edge50), 习惯用法edge50.
+把英语用起来,遇到外国人敢张嘴,敢去阅读那些需要的英文信息.
+注意好,自己要做的事情和要避免的错误.
+避免自己成为锤子人,同时注意学习其他学科基本的大道理,服务于自己的专业.
+养成按GTD去学英语.
+要对抗遗忘,不时地回过头复习.
+</p>
+
+<p>
+汉语和英文都是对于事物的表达,汉语的那些表达技巧,比喻~拟人~俚语,英文中也有类似的表达技巧.
+英语能从汉语学习中收益,那么反过来汉语也能被英语反哺.
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: lenovo</p>
+<p class="date">Created: 2023-08-17 Thu 14:41</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
