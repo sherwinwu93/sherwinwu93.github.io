@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2023-08-23 Wed 22:19 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orgbe1962f">1. <i>p</i></a></li>
+<li><a href="#org1791cf1">2. <i>b</i></a></li>
+<li><a href="#org9adf15f">3. <i>t</i></a></li>
+<li><a href="#org720d999">4. <i>d</i></a></li>
+<li><a href="#org455ca16">5. <i>k</i></a></li>
+<li><a href="#orgcd181ae">6. <i>g</i></a></li>
+<li><a href="#org5ae1193">7. <i>f</i></a></li>
+<li><a href="#orgc456cfe">8. <i>v</i></a></li>
+<li><a href="#org1857656">9. <i>θ</i></a></li>
+<li><a href="#org60e581b">10. <i>ð</i></a></li>
+<li><a href="#org6d0a3a8">11. <i>s</i></a></li>
+<li><a href="#org402c77c">12. <i>z</i></a></li>
+<li><a href="#org3294439">13. <i>ʃ</i></a></li>
+<li><a href="#orgf9bedfc">14. <i>ʒ</i></a></li>
+<li><a href="#org2455e52">15. <i>h</i></a></li>
+<li><a href="#org17dcd60">16. <i>j</i></a></li>
+<li><a href="#orgf07b275">17. <i>What</i></a></li>
+<li><a href="#orga9a1a8a">18. <i>l</i></a></li>
+<li><a href="#org3d77e16">19. <i>ɹ</i></a></li>
+<li><a href="#org3de238f">20. <i>m</i></a></li>
+<li><a href="#org7af4772">21. <i>n</i></a></li>
+<li><a href="#org7b35897">22. <i>ŋ</i></a></li>
+<li><a href="#orgb184196">23. <i>ɪ</i></a></li>
+<li><a href="#orgc2cd333">24. <i>i:</i></a></li>
+<li><a href="#orgde0d78d">25. <i>ɛ</i></a></li>
+<li><a href="#org4b264fd">26. <i>æ</i></a></li>
+<li><a href="#org252c536">27. <i>ʌ</i></a></li>
+<li><a href="#org3b6e2f9">28. <i>ɑ:</i></a></li>
+<li><a href="#org267f042">29. <i>ɔ:</i></a></li>
+<li><a href="#orgbc3f3b3">30. <i>ɒ</i></a></li>
+<li><a href="#org14120b6">31. <i>ʊ</i></a></li>
+<li><a href="#orgcf88af8">32. <i>you:</i></a></li>
+<li><a href="#org8b12f67">33. <i>eɪ</i></a></li>
+<li><a href="#org0df9db2">34. <i>aɪ</i></a></li>
+<li><a href="#orgeecd24c">35. <i>oʊ</i></a></li>
+<li><a href="#orgb31f140">36. <i>ɔɪ</i></a></li>
+<li><a href="#org3b0b02e">37. <i>eə</i></a></li>
+<li><a href="#org158596b">38. <i>ɪə</i></a></li>
+<li><a href="#orgf4a2c30">39. <i>ʊə</i></a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgbe1962f" class="outline-2">
+<h2 id="orgbe1962f"><span class="section-number-2">1.</span> <i>p</i></h2>
+<div class="outline-text-2" id="text-1">
+<p>
+pot, pet, stop
+</p>
+</div>
+</div>
+<div id="outline-container-org1791cf1" class="outline-2">
+<h2 id="org1791cf1"><span class="section-number-2">2.</span> <i>b</i></h2>
+<div class="outline-text-2" id="text-2">
+<p>
+bat, bob, rub
+</p>
+</div>
+</div>
+<div id="outline-container-org9adf15f" class="outline-2">
+<h2 id="org9adf15f"><span class="section-number-2">3.</span> <i>t</i></h2>
+<div class="outline-text-2" id="text-3">
+<p>
+top, hat, mat
+</p>
+</div>
+</div>
+<div id="outline-container-org720d999" class="outline-2">
+<h2 id="org720d999"><span class="section-number-2">4.</span> <i>d</i></h2>
+<div class="outline-text-2" id="text-4">
+<p>
+dog, dad, mud
+</p>
+</div>
+</div>
+<div id="outline-container-org455ca16" class="outline-2">
+<h2 id="org455ca16"><span class="section-number-2">5.</span> <i>k</i></h2>
+<div class="outline-text-2" id="text-5">
+<p>
+cat, cake, kick
+</p>
+</div>
+</div>
+<div id="outline-container-orgcd181ae" class="outline-2">
+<h2 id="orgcd181ae"><span class="section-number-2">6.</span> <i>g</i></h2>
+<div class="outline-text-2" id="text-6">
+<p>
+go, bag, girl
+</p>
+</div>
+</div>
+<div id="outline-container-org5ae1193" class="outline-2">
+<h2 id="org5ae1193"><span class="section-number-2">7.</span> <i>f</i></h2>
+<div class="outline-text-2" id="text-7">
+<p>
+fat, fib, staff
+</p>
+</div>
+</div>
+<div id="outline-container-orgc456cfe" class="outline-2">
+<h2 id="orgc456cfe"><span class="section-number-2">8.</span> <i>v</i></h2>
+<div class="outline-text-2" id="text-8">
+<p>
+van, love, five
+</p>
+</div>
+</div>
+<div id="outline-container-org1857656" class="outline-2">
+<h2 id="org1857656"><span class="section-number-2">9.</span> <i>θ</i></h2>
+<div class="outline-text-2" id="text-9">
+<p>
+thin, myth, bath
+</p>
+</div>
+</div>
+<div id="outline-container-org60e581b" class="outline-2">
+<h2 id="org60e581b"><span class="section-number-2">10.</span> <i>ð</i></h2>
+<div class="outline-text-2" id="text-10">
+<p>
+then, breathe, that
+</p>
+</div>
+</div>
+<div id="outline-container-org6d0a3a8" class="outline-2">
+<h2 id="org6d0a3a8"><span class="section-number-2">11.</span> <i>s</i></h2>
+<div class="outline-text-2" id="text-11">
+<p>
+sit, sun, pass
+</p>
+</div>
+</div>
+<div id="outline-container-org402c77c" class="outline-2">
+<h2 id="org402c77c"><span class="section-number-2">12.</span> <i>z</i></h2>
+<div class="outline-text-2" id="text-12">
+<p>
+zoo, zip, jazz
+</p>
+</div>
+</div>
+<div id="outline-container-org3294439" class="outline-2">
+<h2 id="org3294439"><span class="section-number-2">13.</span> <i>ʃ</i></h2>
+<div class="outline-text-2" id="text-13">
+<p>
+ship, shine, cash
+</p>
+</div>
+</div>
+<div id="outline-container-orgf9bedfc" class="outline-2">
+<h2 id="orgf9bedfc"><span class="section-number-2">14.</span> <i>ʒ</i></h2>
+<div class="outline-text-2" id="text-14">
+<p>
+measure, pleasure, beige
+</p>
+</div>
+</div>
+<div id="outline-container-org2455e52" class="outline-2">
+<h2 id="org2455e52"><span class="section-number-2">15.</span> <i>h</i></h2>
+<div class="outline-text-2" id="text-15">
+<p>
+hat, help, home
+</p>
+</div>
+</div>
+<div id="outline-container-org17dcd60" class="outline-2">
+<h2 id="org17dcd60"><span class="section-number-2">16.</span> <i>j</i></h2>
+<div class="outline-text-2" id="text-16">
+<p>
+yes, yellow, joy
+</p>
+</div>
+</div>
+<div id="outline-container-orgf07b275" class="outline-2">
+<h2 id="orgf07b275"><span class="section-number-2">17.</span> <i>What</i></h2>
+<div class="outline-text-2" id="text-17">
+<p>
+wet, will, way
+</p>
+</div>
+</div>
+<div id="outline-container-orga9a1a8a" class="outline-2">
+<h2 id="orga9a1a8a"><span class="section-number-2">18.</span> <i>l</i></h2>
+<div class="outline-text-2" id="text-18">
+<p>
+lip, lake, roll
+</p>
+</div>
+</div>
+<div id="outline-container-org3d77e16" class="outline-2">
+<h2 id="org3d77e16"><span class="section-number-2">19.</span> <i>ɹ</i></h2>
+<div class="outline-text-2" id="text-19">
+<p>
+red, car, bird
+</p>
+</div>
+</div>
+<div id="outline-container-org3de238f" class="outline-2">
+<h2 id="org3de238f"><span class="section-number-2">20.</span> <i>m</i></h2>
+<div class="outline-text-2" id="text-20">
+<p>
+map, mom, hum
+</p>
+</div>
+</div>
+<div id="outline-container-org7af4772" class="outline-2">
+<h2 id="org7af4772"><span class="section-number-2">21.</span> <i>n</i></h2>
+<div class="outline-text-2" id="text-21">
+<p>
+no, net, sun
+</p>
+</div>
+</div>
+<div id="outline-container-org7b35897" class="outline-2">
+<h2 id="org7b35897"><span class="section-number-2">22.</span> <i>ŋ</i></h2>
+<div class="outline-text-2" id="text-22">
+<p>
+sing, song, long
+</p>
+</div>
+</div>
+<div id="outline-container-orgb184196" class="outline-2">
+<h2 id="orgb184196"><span class="section-number-2">23.</span> <i>ɪ</i></h2>
+<div class="outline-text-2" id="text-23">
+<p>
+hit, bit, sit
+</p>
+</div>
+</div>
+<div id="outline-container-orgc2cd333" class="outline-2">
+<h2 id="orgc2cd333"><span class="section-number-2">24.</span> <i>i:</i></h2>
+<div class="outline-text-2" id="text-24">
+<p>
+see, heat, eat
+</p>
+</div>
+</div>
+<div id="outline-container-orgde0d78d" class="outline-2">
+<h2 id="orgde0d78d"><span class="section-number-2">25.</span> <i>ɛ</i></h2>
+<div class="outline-text-2" id="text-25">
+<p>
+bet, met, get
+</p>
+</div>
+</div>
+<div id="outline-container-org4b264fd" class="outline-2">
+<h2 id="org4b264fd"><span class="section-number-2">26.</span> <i>æ</i></h2>
+<div class="outline-text-2" id="text-26">
+<p>
+cat, hat, back
+</p>
+</div>
+</div>
+<div id="outline-container-org252c536" class="outline-2">
+<h2 id="org252c536"><span class="section-number-2">27.</span> <i>ʌ</i></h2>
+<div class="outline-text-2" id="text-27">
+<p>
+cup, up, luck
+</p>
+</div>
+</div>
+<div id="outline-container-org3b6e2f9" class="outline-2">
+<h2 id="org3b6e2f9"><span class="section-number-2">28.</span> <i>ɑ:</i></h2>
+<div class="outline-text-2" id="text-28">
+<p>
+arm, father, far
+</p>
+</div>
+</div>
+<div id="outline-container-org267f042" class="outline-2">
+<h2 id="org267f042"><span class="section-number-2">29.</span> <i>ɔ:</i></h2>
+<div class="outline-text-2" id="text-29">
+<p>
+call, four, all
+</p>
+</div>
+</div>
+<div id="outline-container-orgbc3f3b3" class="outline-2">
+<h2 id="orgbc3f3b3"><span class="section-number-2">30.</span> <i>ɒ</i></h2>
+<div class="outline-text-2" id="text-30">
+<p>
+hot, lot, rock
+</p>
+</div>
+</div>
+<div id="outline-container-org14120b6" class="outline-2">
+<h2 id="org14120b6"><span class="section-number-2">31.</span> <i>ʊ</i></h2>
+<div class="outline-text-2" id="text-31">
+<p>
+put, book, good
+</p>
+</div>
+</div>
+<div id="outline-container-orgcf88af8" class="outline-2">
+<h2 id="orgcf88af8"><span class="section-number-2">32.</span> <i>you:</i></h2>
+<div class="outline-text-2" id="text-32">
+<p>
+blue, moon, soup
+</p>
+</div>
+</div>
+<div id="outline-container-org8b12f67" class="outline-2">
+<h2 id="org8b12f67"><span class="section-number-2">33.</span> <i>eɪ</i></h2>
+<div class="outline-text-2" id="text-33">
+<p>
+say, eight, day
+</p>
+</div>
+</div>
+<div id="outline-container-org0df9db2" class="outline-2">
+<h2 id="org0df9db2"><span class="section-number-2">34.</span> <i>aɪ</i></h2>
+<div class="outline-text-2" id="text-34">
+<p>
+five, high, eye
+</p>
+</div>
+</div>
+<div id="outline-container-orgeecd24c" class="outline-2">
+<h2 id="orgeecd24c"><span class="section-number-2">35.</span> <i>oʊ</i></h2>
+<div class="outline-text-2" id="text-35">
+<p>
+go, home, boat
+</p>
+</div>
+</div>
+<div id="outline-container-orgb31f140" class="outline-2">
+<h2 id="orgb31f140"><span class="section-number-2">36.</span> <i>ɔɪ</i></h2>
+<div class="outline-text-2" id="text-36">
+<p>
+boy, join, toy
+</p>
+</div>
+</div>
+<div id="outline-container-org3b0b02e" class="outline-2">
+<h2 id="org3b0b02e"><span class="section-number-2">37.</span> <i>eə</i></h2>
+<div class="outline-text-2" id="text-37">
+<p>
+air, there, near
+</p>
+</div>
+</div>
+<div id="outline-container-org158596b" class="outline-2">
+<h2 id="org158596b"><span class="section-number-2">38.</span> <i>ɪə</i></h2>
+<div class="outline-text-2" id="text-38">
+<p>
+near, here, pier
+</p>
+</div>
+</div>
+<div id="outline-container-orgf4a2c30" class="outline-2">
+<h2 id="orgf4a2c30"><span class="section-number-2">39.</span> <i>ʊə</i></h2>
+<div class="outline-text-2" id="text-39">
+<p>
+pure, tourist, cure
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: DESKTOP-13B7HQM</p>
+<p class="date">Created: 2023-08-23 Wed 22:19</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
