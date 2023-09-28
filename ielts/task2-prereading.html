@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2023-09-28 Thu 14:39 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="lenovo" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org815c7fa">1. 习惯用法</a></li>
+<li><a href="#orgdeb1f98">2. Reading to Learn the Art of Expression</a>
+<ul>
+<li><a href="#orge6bdb30">2.1. NOTES</a></li>
+<li><a href="#orgdfe4dcd">2.2. 英语如何提升口语和写作?</a></li>
+<li><a href="#org9dc3f46">2.3. words</a></li>
+<li><a href="#org933a2bf">2.4. grammar</a></li>
+<li><a href="#org9caafc2">2.5. expression</a></li>
+<li><a href="#org0a8b43e">2.6. pattern</a></li>
+<li><a href="#orgbf28e1d">2.7. 疑惑</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org815c7fa" class="outline-2">
+<h2 id="org815c7fa"><span class="section-number-2">1.</span> 习惯用法</h2>
+</div>
+<div id="outline-container-orgdeb1f98" class="outline-2">
+<h2 id="orgdeb1f98"><span class="section-number-2">2.</span> Reading to Learn the Art of Expression</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+When you read a short story, you may read it merely for pleasure.
+When you read a biographical sketch, you may read it merely for information.
+But as you are a learner of English, I think you should often read to learn the art of expression.
+And for this purpose you may read either a short story or a biographical sketch,
+	either an essay or a news item, indeed,
+	anything that is written in good current English.
+</p>
+
+<p>
+Even from a short paragraph you may learn several forms of expression
+	if you are observant enough.
+Try to read the following paragraphs from BBC Modern English
+	and notice the points of usage listed below;
+</p>
+
+<p>
+Over 100 years ago she opened the first British hospital for women.
+There are still very few of these hospitals in England.
+This hospital is in Euston Road in London.
+Its situation means that women from all over England can reach it quite easily.
+</p>
+
+<p>
+Her aim when she opened the hospital
+	was to provide a place where women could go
+		and receive treatment from female doctors and nurses.
+She also wanted the hospital to provide jobs for female doctors at a time
+	when it was very difficult for them to find work.
+Recently the authorities have tried to close the hospital.
+They say that it is old-fashioned and wastes a lot of money.
+However, the Government has decided that the hospital wil1 stay open.
+Many people feel very glad that the valuable service offered by this hospital will continue.
+</p>
+<ol class="org-ol">
+<li>“Over” More than.</li>
+<li>"in Euston Road" "in &#x2026; Road".</li>
+<li>“means that &#x2026;” “Means” takes an object clause introduced by “that”.</li>
+<li>“from all over Englend” “all over England” “from all over England”.</li>
+<li>“receive treatment”. Patients receive treatment.</li>
+<li>“wanted the hospital to provide &#x2026;"
+“We wont them to do it”.</li>
+<li>“at a time when &#x2026;” “at a time when &#x2026;"</li>
+<li>“Recently the authorities bave tried.” The present perfect is here used with “recently”.</li>
+<li>“the Government has” “the Government" can be considered singular.</li>
+<li>“decided that &#x2026;” “Decide(d)” takes an object clause introduced by “that”.</li>
+<li>“stay open”. “Stay” can be a copulative verb.</li>
+</ol>
+<p>
+In this way you wil1 learn the art of expression very quickly;
+perhaps one or two paragraphsa day will teach you hundreds of forms of expression in a month,
+	and these forms of expression will greatly improve your writing.
+And if you can &#x2013; I believe you can &#x2013; commit to memory' one or two paragraphs a day
+	that you have already read in this way, the results will be still greater;
+</p>
+</div>
+<div id="outline-container-orge6bdb30" class="outline-3">
+<h3 id="orge6bdb30"><span class="section-number-3">2.1.</span> NOTES</h3>
+<div class="outline-text-3" id="text-2-1">
+<ol class="org-ol">
+<li>BBC Modern English 英国杂志名。 (BBC = British Broudcasting Corporation)</li>
+<li>commit to memory 把&#x2026;牢记。</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-orgdfe4dcd" class="outline-3">
+<h3 id="orgdfe4dcd"><span class="section-number-3">2.2.</span> 英语如何提升口语和写作?</h3>
+<div class="outline-text-3" id="text-2-2">
+<p>
+英文阅读如何提升口语和写作?
+</p>
+
+<p>
+作为一个英语学习者,在英语阅读的时候,不能单单为了娱乐或者获得信息.
+可以在任意用当代英语的好文章,甚至是段落中,积累对应的词汇和习惯用法.
+养成这个习惯后,每天学个两个段落,一个月就可以积攒不少词汇和习惯用法.
+这些词汇和习惯用法积累多了,口语和写作也就有了素材,自然地口语和写作就会提升.
+英文阅读就像树的主干,口语和写作就像是树叶.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org9dc3f46" class="outline-3">
+<h3 id="org9dc3f46"><span class="section-number-3">2.3.</span> words</h3>
+<div class="outline-text-3" id="text-2-3">
+<ul class="org-ul">
+<li>biographical
+<ol class="org-ol">
+<li>I'm looking forward to his biographical sketch.</li>
+<li>His biographical sketch could be found in the library.</li>
+<li>His biographical sketches have been sold out recently.</li>
+</ol></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org933a2bf" class="outline-3">
+<h3 id="org933a2bf"><span class="section-number-3">2.4.</span> grammar</h3>
+<div class="outline-text-3" id="text-2-4">
+<ul class="org-ul">
+<li>when &#x2026;</li>
+<li>as&#x2026;</li>
+<li>may &#x2026;</li>
+<li>either &#x2026; or</li>
+<li>anything that &#x2026;</li>
+<li>if S. + 现在</li>
+<li>usage listed &#x2026;</li>
+<li>have done</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org9caafc2" class="outline-3">
+<h3 id="org9caafc2"><span class="section-number-3">2.5.</span> expression</h3>
+<div class="outline-text-3" id="text-2-5">
+<ul class="org-ul">
+<li>in &#x2026; Road
+<ol class="org-ol">
+<li>There is an argument in West Lake Road yesterday.</li>
+<li>My wife always goes for a walk in Euston Road.</li>
+<li>There is a lot of excitement in West Lake Road.</li>
+</ol></li>
+<li>receive A from B
+<ol class="org-ol">
+<li>I have not received any message from my wife since we argued yesterday.</li>
+<li>I can't bear that I have not received any message from my old classmate.</li>
+<li>I feel glad that I received a response from teacher Leo.</li>
+</ol></li>
+<li>want sb. to do
+<ol class="org-ol">
+<li>Ross wanted Rachel to do him a favor.</li>
+<li>I'm sorry that Rachel does not want you to share the house with him.</li>
+<li>I want my boss to pay my salary instantly.</li>
+</ol></li>
+<li>waste money
+<ol class="org-ol">
+<li>My wife is always wasting money.</li>
+<li>He complained that his wife had wasted money again in Beijing.</li>
+<li>They said that the hospital is old-fashioned and has wasted a lot of money.</li>
+</ol></li>
+<li>In this way
+<ol class="org-ol">
+<li>In this way, you can prove your writing very quickly.</li>
+<li>I don't want you to be down to ride for me in this way.</li>
+<li>My wife refuses to accept my apologies in this way.</li>
+</ol></li>
+<li>two paragraphs a day
+<ol class="org-ol">
+<li>Two paragraphs a day may help you improve your English in a month.</li>
+<li>Two paragraphs a day is difficult for him to read.</li>
+<li>Tow paragraphs a day is easy for him to write.</li>
+</ol></li>
+<li>hundreds of
+<ol class="org-ol">
+<li>There are hundreds of ants eating the tree root in the desert.</li>
+<li>Hundreds of people go home by this train.</li>
+<li>There are hundreds of choices that you can choose.</li>
+</ol></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org0a8b43e" class="outline-3">
+<h3 id="org0a8b43e"><span class="section-number-3">2.6.</span> pattern</h3>
+<div class="outline-text-3" id="text-2-6">
+<ul class="org-ul">
+<li>I think you should
+<ol class="org-ol">
+<li>I think you should be willing to assist your father.</li>
+<li>I think you should tell him the truth.</li>
+<li>I don't think you should give him the answer directly.</li>
+</ol></li>
+<li>at a time when &#x2026;
+<ol class="org-ol">
+<li>She opened the hospital at a time when women is in low status.</li>
+<li>I provided a watch for my wife at a time when she was crying.</li>
+<li>I went to bed yesterday at a time when someone rang the bell.</li>
+</ol></li>
+<li>S. means that &#x2026;
+<ol class="org-ol">
+<li>The situation means that you needn't finish your job.</li>
+<li>The sign means that he's going to propose to you.</li>
+<li>It means that we have wasted too much money.</li>
+</ol></li>
+<li>S. feels glad that &#x2026;
+<ol class="org-ol">
+<li>Ross felt glad that Rachel still fell in love with him.</li>
+<li>I feel glad that you, my old friend, still remember me.</li>
+<li>I feel glad that my cat often winks at me.</li>
+</ol></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgbf28e1d" class="outline-3">
+<h3 id="orgbf28e1d"><span class="section-number-3">2.7.</span> 疑惑</h3>
+<div class="outline-text-3" id="text-2-7">
+<ol class="org-ol">
+<li>全英字典看不懂怎么办?</li>
+<li>比较高效率的精读步骤顺序?</li>
+<li>除了阅读,口语和写作还差点什么?</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: lenovo</p>
+<p class="date">Created: 2023-09-28 Thu 14:39</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
