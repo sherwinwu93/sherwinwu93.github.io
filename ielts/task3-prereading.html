@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2023-09-28 Thu 14:39 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="lenovo" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orgcdb3acc">1. task3 课前作业 复述</a>
+<ul>
+<li><a href="#org2ae6a08">1.1. material</a></li>
+<li><a href="#org9abe692">1.2. 单词造句指南</a></li>
+<li><a href="#orgc5762d5">1.3. point</a></li>
+<li><a href="#org0a6e15f">1.4. words</a></li>
+<li><a href="#org7da0c7d">1.5. expression</a></li>
+<li><a href="#org67d669a">1.6. sentence</a></li>
+<li><a href="#org02b8d21">1.7. grammar</a></li>
+<li><a href="#orgbbe8c2a">1.8. tell the story</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgcdb3acc" class="outline-2">
+<h2 id="orgcdb3acc"><span class="section-number-2">1.</span> task3 课前作业 复述</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+家庭作业:
+材料: "The Best &#x2026;"
+</p>
+<ol class="org-ol">
+<li>读懂本文(单词+语法+习惯用法)</li>
+<li>摘抄习惯用法+句型</li>
+<li>跟读本文50遍(计数)</li>
+<li>tell the story(可汉语)</li>
+<li>英语长难句,native speaker是否使用in dayly life? 用,我听Chandler讲过</li>
+<li>收集疑惑</li>
+</ol>
+<p>
+疑惑:
+</p>
+<ol class="org-ol">
+<li>如何造出更好的句子? 单词造句指南</li>
+<li>Tell the story,是不是对口语和写作有帮助?</li>
+<li>tell the story 对口语, 写作的帮助的逻辑是什么?</li>
+</ol>
+</div>
+
+<div id="outline-container-org2ae6a08" class="outline-3">
+<h3 id="org2ae6a08"><span class="section-number-3">1.1.</span> material</h3>
+<div class="outline-text-3" id="text-1-1">
+<p>
+Let Him Go, Olivia
+Alejandro Arbide, San Antonio, Texas
+</p>
+
+<p>
+There I was.
+Upside down inside the swimming pool. Drowned.
+My parents were screaming.
+It must have been the summer of ’63.
+It was a gloomy day.
+Every Sunday we went to my grandparents’ house.
+My cousins and I were playing alongside the pool.
+I must have slipped.
+At three years old, I did not know how to swim.
+My mother was giving me CPR.
+More than twenty or twenty-five minutes had gone by.
+The ambulance had arrived.
+Everybody was staring at my mother.
+“Let him go, Olivia. It's over.”
+Even my father had some feelings of resignation.
+Yet, she never gave up.
+I write this story as a tribute to my mother, who, only four years later, passed away.
+And also in recognition of editors
+	who made it possible for my mother to have read in Reader’s Digest the miracle
+		made by another woman utilizing then recently discovered CPR.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org9abe692" class="outline-3">
+<h3 id="org9abe692"><span class="section-number-3">1.2.</span> 单词造句指南</h3>
+<div class="outline-text-3" id="text-1-2">
+<ul class="org-ul">
+<li>网:v.+v.变化 情态动词+时态的转变</li>
+<li>四句型转换</li>
+<li>方式/地点/时间</li>
+<li>结合其他习惯用法</li>
+<li>其他单词+词性组合</li>
+<li>原文摘抄+变</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgc5762d5" class="outline-3">
+<h3 id="orgc5762d5"><span class="section-number-3">1.3.</span> point</h3>
+<div class="outline-text-3" id="text-1-3">
+<ul class="org-ul">
+<li>let sb go</li>
+<li>There I was.倒装</li>
+<li>drowned</li>
+<li>were doing</li>
+<li>must have been</li>
+<li>the summer of '63</li>
+<li>alongside sp.</li>
+<li>how to</li>
+<li>give sb sth</li>
+<li>more than</li>
+<li>had done</li>
+<li>It's over.</li>
+<li>have feelings of resignation</li>
+<li>give up</li>
+<li>write this story as a tribute to sb.</li>
+<li>pass away</li>
+<li>in recognition of sb.</li>
+<li>make it possible for sb to have done</li>
+<li>utilize</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org0a6e15f" class="outline-3">
+<h3 id="org0a6e15f"><span class="section-number-3">1.4.</span> words</h3>
+<div class="outline-text-3" id="text-1-4">
+<ul class="org-ul">
+<li>drowned [draʊn]
+<ol class="org-ol">
+<li>Twelve years ago, my villager drowned while swimming alone.</li>
+<li>My villager has been drowned for over 10 years.</li>
+<li>I'm sorry that my villager drowned at only 12 years old.</li>
+</ol></li>
+<li>utilize [ˈjut(ə)lˌaɪz]
+<ol class="org-ol">
+<li>Utilizing CPR makes it possible to save his child.</li>
+<li>In recognition of my father, who has utilized the tool.</li>
+<li>It's a miracle achieved by the great woman who utilized CPR.</li>
+</ol></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org7da0c7d" class="outline-3">
+<h3 id="org7da0c7d"><span class="section-number-3">1.5.</span> expression</h3>
+<div class="outline-text-3" id="text-1-5">
+<ul class="org-ul">
+<li>the summer of '63
+<ol class="org-ol">
+<li>It is the summer of '63.</li>
+<li>The authorities always instructed the workers to do outdoor work in the summer of '63.</li>
+<li>The authorities instructed the workers to do outdoor work in the summer of '63.</li>
+</ol></li>
+<li>give sb sth
+<ol class="org-ol">
+<li>My best friend has given me a lot of comfort.</li>
+<li>It's necessary for you to give your father a desk.</li>
+<li>She has never given her husband an apple.</li>
+</ol></li>
+<li>It's over.</li>
+<li>give up
+<ol class="org-ol">
+<li>Royal never gives up during the race.</li>
+<li>It's necessary for you to give up immediately.</li>
+<li>You should give it up if you fail to do it the first time.</li>
+</ol></li>
+<li>pass away
+<ol class="org-ol">
+<li>Let him go. He has passed away.</li>
+<li>My grandfather passed away over 10 years ago.</li>
+<li>There are hundreds of people passing away in this flood.</li>
+</ol></li>
+<li>in recognition of sb.
+<ol class="org-ol">
+<li>In recognition of Rachel who opened the first woman's hospital.</li>
+<li>In recognition of Edison who invented the electric lamp.</li>
+<li>In recognition of Deng who has made it possible for us to not be hungry anymore.</li>
+</ol></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org67d669a" class="outline-3">
+<h3 id="org67d669a"><span class="section-number-3">1.6.</span> sentence</h3>
+<div class="outline-text-3" id="text-1-6">
+<ul class="org-ul">
+<li>write this story as a tribute to sb.
+<ol class="org-ol">
+<li>I'm writing this story as a tribute to my classmate who had harmed many girls.</li>
+<li>The editors write stories as a tribute to the great chairman, Mao.</li>
+<li>He attempted to write the story as a tribute to his classmate who had never hurt him.</li>
+</ol></li>
+<li>make it possible for sb to have done
+<ol class="org-ol">
+<li>The internet makes it possible for us to connect promptly.</li>
+<li>The manager makes it possible for me to achieve my goal.</li>
+<li>The manufacturer makes it possible for us to buy noodles in a remote village.</li>
+</ol></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org02b8d21" class="outline-3">
+<h3 id="org02b8d21"><span class="section-number-3">1.7.</span> grammar</h3>
+<div class="outline-text-3" id="text-1-7">
+<ul class="org-ul">
+<li>more than</li>
+<li>There I was.倒装</li>
+<li>were doing</li>
+<li>must have been</li>
+<li>how to</li>
+<li>had done</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgbbe8c2a" class="outline-3">
+<h3 id="orgbbe8c2a"><span class="section-number-3">1.8.</span> tell the story</h3>
+<div class="outline-text-3" id="text-1-8">
+<p>
+The writer drowned upside down in the swimming when he was only at three years old.
+My mother had been giving me CPR.
+Over more than twenty minutes, the ambulance had arrived and everybody was staring at my mother.
+My father said: "Let him go, Olivia. It's over."
+However, my mother never gave up.
+The writer wrote the story a tribute to his mother who passed away only four years later.
+And also in recognition of editors who made his mother to have read a story about CPR.
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: lenovo</p>
+<p class="date">Created: 2023-09-28 Thu 14:39</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

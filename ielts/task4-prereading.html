@@ -1,0 +1,688 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2023-09-28 Thu 14:39 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="lenovo" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org454b227">1. task4: 精听+精读 听力</a>
+<ul>
+<li><a href="#org59129cf">1.1. 疑问</a></li>
+<li><a href="#org785bd43">1.2. 阅读与听力的关系</a></li>
+<li><a href="#orgac5b56f">1.3. 一考</a></li>
+<li><a href="#orgdb1a004">1.4. 二考</a></li>
+<li><a href="#org696d45c">1.5. Article</a></li>
+<li><a href="#orga93bc61">1.6. 单词造句指南</a></li>
+<li><a href="#org835024a">1.7. words</a></li>
+<li><a href="#org713f1eb">1.8. expression</a></li>
+<li><a href="#org1ffbcd6">1.9. grammar</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org454b227" class="outline-2">
+<h2 id="org454b227"><span class="section-number-2">1.</span> task4: 精听+精读 听力</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+所⽤素材：
+剑雅16 第⼀套真题听⼒第⼀题
+</p>
+<ol class="org-ol">
+<li>先听⽂章（⼀定不要先阅读听⼒脚本），答题，记录对错</li>
+<li>认真阅读听⼒脚本，标注所有⽣词（⽂中含义），语法（参考新概念英语及三本语法书），摘抄习惯⽤法（并造句）</li>
+<li>反复跟读edge或听⼒⾳频，⽆需熟读成诵，但请跟读到⾜够顺</li>
+</ol>
+<p>
+畅。拿不准就跟读50遍。
+</p>
+<ol class="org-ol">
+<li>模拟考试，听⽂章，答题，记录对错。</li>
+<li>对⽐1&amp;4 答题情况</li>
+<li>做完前5步，请思考并写下，【阅读与听⼒】的关系。</li>
+</ol>
+</div>
+<div id="outline-container-org59129cf" class="outline-3">
+<h3 id="org59129cf"><span class="section-number-3">1.1.</span> 疑问</h3>
+<div class="outline-text-3" id="text-1-1">
+<ol class="org-ol">
+<li>学的音标是美音,听力是英音的该做什么?</li>
+<li>知道意思的习惯用法要不要抄?</li>
+<li>+ 跟读时会自己去记答案</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org785bd43" class="outline-3">
+<h3 id="org785bd43"><span class="section-number-3">1.2.</span> 阅读与听力的关系</h3>
+<div class="outline-text-3" id="text-1-2">
+<p>
+阅读积攒单词,习惯用法,搞清楚语法.
+听力的时候碰到这些才能更懂.
+阅读是听力的基础,听力又比阅读多了语音.
+</p>
+
+<p>
+今天下午我遇到了群外国人+中国人,让我帮忙拍照.
+一时之间,我脑子里面涌现了海量的英语单词,但是我只说出来了.
+	cheese, you're not inside, see you.
+过后,我整个人虚脱了很久.
+海量单词,我认为这是我跟其他老师新三学的.
+但是他们是停留在我的脑子里面,意义知道的不是很清晰,也造不出来一句句子,我用不出来.
+我也没有去practice口语.
+就像一个自闭儿童,在学校学了再多中文,没有去说话,也是说不出来的.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgac5b56f" class="outline-3">
+<h3 id="orgac5b56f"><span class="section-number-3">1.3.</span> 一考</h3>
+<div class="outline-text-3" id="text-1-3">
+<ol class="org-ol">
+<li>- 
+F</li>
+<li>tower
+T</li>
+<li>car
+T</li>
+<li>animals
+T</li>
+<li>bridge
+T</li>
+<li>F</li>
+<li>delined
+F</li>
+<li>F</li>
+<li>Fradstone
+T</li>
+<li>ideas
+F</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orgdb1a004" class="outline-3">
+<h3 id="orgdb1a004"><span class="section-number-3">1.4.</span> 二考</h3>
+<div class="outline-text-3" id="text-1-4">
+<p>
+all true
+</p>
+<ol class="org-ol">
+<li>egg</li>
+<li>tower</li>
+<li>car</li>
+<li>animals</li>
+<li>bridge</li>
+<li>movie</li>
+<li>decorate</li>
+<li>Wednesdays</li>
+<li>Fradstone</li>
+<li>parking</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org696d45c" class="outline-3">
+<h3 id="org696d45c"><span class="section-number-3">1.5.</span> Article</h3>
+<div class="outline-text-3" id="text-1-5">
+<p>
+1: Hello. Children’s Engineering Workshops.
+</p>
+
+<p>
+2: Oh hello.
+I wanted some information about the workshops in the school holidays.
+</p>
+
+<p>
+1: Sure.
+</p>
+
+<p>
+2: I have two daughters who are interested.
+The younger one’s Lydia, she’s four
+– do you take children as young as that?
+</p>
+
+<p>
+1: Yes, our Tiny Engineers workshop is for four to five-year-olds.
+</p>
+
+<p>
+2: What sorts of activities do they do?
+</p>
+
+<p>
+1: All sorts.
+For example, they work together to design a special cover that goes round an egg,
+	so that when it’s inside they can drop it from a height and it doesn’t break.
+Well, sometimes it does break
+	but that’s part of the fun!
+</p>
+
+<p>
+2: Right. And Lydia loves building things.
+Is there any opportunity for her to do that?
+</p>
+
+<p>
+1: Well, they have a competition to see who can make the highest tower.
+You’d be amazed how high they can go.
+</p>
+
+<p>
+2: Right.
+</p>
+
+<p>
+1: But they’re learning all the time as well as having fun.
+For example, one thing they do is to design and build a car that’s attached to a balloon,
+	and the force of the air in that actually powers the car
+	and makes it move along.
+They go really fast too.
+</p>
+
+<p>
+2: OK, well, all this sounds perfect.
+</p>
+
+<p>
+2: Now Carly, that’s my older daughter,
+		has just had her seventh birthday,
+	s	o presumably she’d be in a different group?
+</p>
+
+<p>
+1: Yes, she’d be in the Junior Engineers.
+That’s for children from six to eight.
+</p>
+
+<p>
+2: And do they do the same sorts of activities?
+</p>
+
+<p>
+1: Some are the same, but a bit more advanced.
+So they work out how to build model vehicles, things like cars and trucks,
+	but also how to construct animals using the same sorts of material and technique,
+	and then they learn how they can program them and make them move.
+</p>
+
+<p>
+2: So they learn a bit of coding?
+</p>
+
+<p>
+1: They do.
+They pick it up really quickly.
+We’re there to help if they need it, but they learn from one another too.
+</p>
+
+<p>
+2: Right. And do they have competitions too?
+</p>
+
+<p>
+1: Yes, with the Junior Engineers,
+	it’s to use recycled materials like card and wood to build a bridge,
+		and the longest one gets a prize.
+</p>
+
+<p>
+2: That sounds fun.
+I wouldn’t mind doing that myself!
+</p>
+
+<p>
+1: Then they have something a bit different,
+	this is from Laokaoya website,
+	which is to think up an idea for a five-minute movie and then film it,
+	using special animation software.
+You’d be amazed what they come up with.
+</p>
+
+<p>
+2: And of course, that’s something they can put on their phone
+	and take home to show all their friends.
+</p>
+
+<p>
+1: Exactly.
+And then they also build a robot in the shape of a human,
+	and they decorate it
+	and program it
+		so that it can move its arms and legs.
+</p>
+
+<p>
+2: Perfect.
+	So, is it the same price as the Tiny Engineers?
+</p>
+
+<p>
+1: It’s just a bit more: £50 for the five weeks
+</p>
+
+<p>
+2: And are the classes on a Monday, too?
+</p>
+
+<p>
+1: They used to be,
+	but we found it didn’t give our staff enough time to clear up after the first workshop,
+	so we moved them to Wednesdays.
+The classes are held in the morning from ten to eleven.
+</p>
+
+<p>
+2: OK. That’s better for me actually.
+And what about the location?
+Where exactly are the workshops held?
+</p>
+
+<p>
+1: They’re in building 10A – there’s a big sign on the door,
+	you can’t miss it,
+	and that’s in Fradstone Industrial Estate.
+</p>
+
+<p>
+2: Sorry?
+</p>
+
+<p>
+1: Fradstone – that’s F-R-A-D-S-T-O-N-E
+</p>
+
+<p>
+2: And that’s in Grasford, isn’t it?
+</p>
+
+<p>
+1: Yes, up past the station.
+</p>
+
+<p>
+2: And will I have any parking problems there?
+</p>
+
+<p>
+1: No, there’s always plenty available.
+So would you like to enrol Lydia and Carly now?
+</p>
+
+<p>
+2: OK
+</p>
+
+<p>
+1: So can I have your full name …
+</p>
+</div>
+</div>
+
+<div id="outline-container-orga93bc61" class="outline-3">
+<h3 id="orga93bc61"><span class="section-number-3">1.6.</span> 单词造句指南</h3>
+<div class="outline-text-3" id="text-1-6">
+<ul class="org-ul">
+<li>网:v.+v.变化 情态动词+时态的转变</li>
+<li>四句型转换</li>
+<li>方式/地点/时间</li>
+<li>结合其他习惯用法</li>
+<li>其他单词+词性组合</li>
+<li>原文摘抄+变</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org835024a" class="outline-3">
+<h3 id="org835024a"><span class="section-number-3">1.7.</span> words</h3>
+<div class="outline-text-3" id="text-1-7">
+<ul class="org-ul">
+<li>workshop: a room or building where tools and machines are used for making or repairing things
+<ol class="org-ol">
+<li>What kinds of activities does the Children Engineering workshop have?</li>
+<li>How long did they clear up after the first workshop?</li>
+<li>What do you think of the activities after the first workshop?</li>
+</ol></li>
+<li>enrol: to officially arrange to join a school, university, or course, or to arrange for someone else to do this
+<ol class="org-ol">
+<li>Harvard refused enrolling Jackie Ma ten times.</li>
+<li>He is ready to enroll his son.</li>
+<li>I enrolled in the course of IELTS 10 days ago.</li>
+</ol></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org713f1eb" class="outline-3">
+<h3 id="org713f1eb"><span class="section-number-3">1.8.</span> expression</h3>
+<div class="outline-text-3" id="text-1-8">
+<ul class="org-ul">
+<li>what sort of &#x2026;?
+<ol class="org-ol">
+<li>What sorts of foods do they provide us?</li>
+<li>What sorts of cats are in the area?</li>
+<li>What sorts of temples are located on Mountain Feilai.</li>
+</ol></li>
+<li>work together to do sth.
+<ol class="org-ol">
+<li>The team worked together to defeat EDG in a Lol race.</li>
+<li>The internet makes it possible for us to work together to achieve our goals.</li>
+<li>The search party worked together to reveal the secret.</li>
+</ol></li>
+<li>part of the fun
+<ol class="org-ol">
+<li>Is that part of the fun?</li>
+<li>Why is that part of the fun?</li>
+<li>What is part of the fun?</li>
+</ol></li>
+<li>love doing
+<ol class="org-ol">
+<li>I love swimming.</li>
+<li>I love swimming in the sea.</li>
+<li>My wife love watching Korean drama on weekends.</li>
+</ol></li>
+<li>all the time
+<ol class="org-ol">
+<li>He is sitting on the chair all the time.</li>
+<li>He was sitting on the chair all the time yesterday.</li>
+<li>He is complaining about Rachel all the time.</li>
+</ol></li>
+<li>be to do
+<ol class="org-ol">
+<li>I'm to go to the temple.</li>
+<li>She's to propose to Chandler tonight.</li>
+<li>I'm enrolling my daughter myself.</li>
+</ol></li>
+<li>be attached to sth
+<ol class="org-ol">
+<li>The car is attached to balloon.</li>
+<li>The woman is staring at a cat that is attached to the tree.</li>
+<li>There is an ugly horse that is attached to the car.</li>
+</ol></li>
+<li>from six to eight
+<ol class="org-ol">
+<li>The children from six to eight often take part in the junior engineers.</li>
+<li>The children from six to eight usually don't know how to swim.</li>
+<li>The children from six to eight are often not safe to walk alongside swimming pool alone.</li>
+</ol></li>
+<li>work out
+<ol class="org-ol">
+<li>They work out how to achieve their goals and they do it.</li>
+<li>Reading the paper makes it possible for Mr. Leo to work out how to teach his students efficiently.</li>
+<li>They have worked out how to spend their holidays.</li>
+</ol></li>
+<li>pick it up
+<ol class="org-ol">
+<li>Will we pick it up quickly?</li>
+<li>What will we pick up quickly?</li>
+<li>How will we pick it up?</li>
+</ol></li>
+<li>mind doing
+<ol class="org-ol">
+<li>He doesn't mind kicking his wife's ass.</li>
+<li>Would you mind opening the door?</li>
+<li>He wouldn't mind giving strangers a lift.</li>
+</ol></li>
+<li>think up
+<ol class="org-ol">
+<li>The activity is to think up an idea for taking care of a cat and then play with it.</li>
+<li>She thinks up an idea for swimming on a Sunday.</li>
+<li>She thinks up an idea for climbing on a Sunday so that her husband can lose his weight.</li>
+</ol></li>
+<li>come up with
+<ol class="org-ol">
+<li>She came up with an idea for enrolling herself.</li>
+<li>She comes up with an idea for travelling herself.</li>
+<li>You must come up with some ideas for repairing the bike.</li>
+</ol></li>
+<li>the shape of a human
+<ol class="org-ol">
+<li>They also build a robot in the shape of a cat.</li>
+<li>They are building a robot in the shape of a cat.</li>
+<li>They have built a robot in the shape of a cat.</li>
+</ol></li>
+<li>clear up
+<ol class="org-ol">
+<li>It went wrong, for the reason that the data wasn't cleared up.</li>
+<li>I don't mind clearing it up.</li>
+<li>Monica must have cleared it up before she cooked.</li>
+</ol></li>
+<li>move sth. to st.
+<ol class="org-ol">
+<li>Mr. Leo moved reading to morning.</li>
+<li>Why did Mr. Leo move reading to afternoon?</li>
+<li>It must have given the staff enough time to clear up
+after the boss moves the workshop to Wednesdays.</li>
+</ol></li>
+<li>up past the sp.
+<ol class="org-ol">
+<li>The hospital is just up past the station.</li>
+<li>My wife wishes that she knew the hospital is just up past the station.</li>
+<li>Why is the workshop located up past the station.</li>
+</ol></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org1ffbcd6" class="outline-3">
+<h3 id="org1ffbcd6"><span class="section-number-3">1.9.</span> grammar</h3>
+<div class="outline-text-3" id="text-1-9">
+<ul class="org-ul">
+<li>in/at/on + 时间</li>
+<li>who&#x2026;定语</li>
+<li>who &#x2026;宾从</li>
+<li>as &#x2026; as</li>
+<li>so that</li>
+<li>as &#x2026; 像</li>
+<li>how to</li>
+<li>would be</li>
+<li>how high they can go</li>
+<li>has done</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: lenovo</p>
+<p class="date">Created: 2023-09-28 Thu 14:39</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
