@@ -1,0 +1,4336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2023-10-02 Mon 09:58 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org38d5753">1. cambridge grammar 2</a>
+<ul>
+<li><a href="#orga9d7062">1.1. 现在时和过去时</a>
+<ul>
+<li><a href="#orgbcabbfe">1.1.1. 1 现在进行时(I am doing)</a></li>
+<li><a href="#org21afa5b">1.1.2. 2 一般现在时(I do)</a></li>
+<li><a href="#org5e1079a">1.1.3. 3 现在进行时(I am doing)与一般现在时(I do)比较(1)</a></li>
+<li><a href="#org2481f7b">1.1.4. 4 现在进行时(I am doing)与一般现在时(I do)比较(2)</a></li>
+<li><a href="#orga45c908">1.1.5. 5 一般过去时(I did)</a></li>
+<li><a href="#orgfd04ef2">1.1.6. 6 过去进行时(I was doing)</a></li>
+</ul>
+</li>
+<li><a href="#org4de9796">1.2. 现在完成时与过去完成时</a>
+<ul>
+<li><a href="#org3e60c62">1.2.1. 7 现在完成时(1)(I have done)</a></li>
+<li><a href="#orgdc6d991">1.2.2. 8 现在完成时(2)(I have done)</a></li>
+<li><a href="#org1901c0a">1.2.3. 9 现在完成进行时(I have been doing)</a></li>
+<li><a href="#orgf852b45">1.2.4. 10 现在完成进行时(I have been doing)与现在完成时(I have done)比较</a></li>
+<li><a href="#org82c80a6">1.2.5. 13 现在完成时(I have done)与一般过去时(I did)比较(1)</a></li>
+<li><a href="#org1d15393">1.2.6. 14 现在完成时(I have done)与一般过去时(I did)比较(2)</a></li>
+<li><a href="#org260a1de">1.2.7. 15 过去完成时(I had done)</a></li>
+<li><a href="#org61e5fb0">1.2.8. 16 过去完成进行时(I had been doing)</a></li>
+<li><a href="#org3f036bf">1.2.9. 18 used to (do)</a></li>
+</ul>
+</li>
+<li><a href="#org299ed5e">1.3. 将来时</a>
+<ul>
+<li><a href="#org4686db4">1.3.1. 19 现在时(I am doing/I do)表示将来</a></li>
+<li><a href="#org9ae7e9d">1.3.2. 20 I'm going to do</a></li>
+<li><a href="#org917cd27">1.3.3. 21 will/shall(1)</a></li>
+<li><a href="#orgda05494">1.3.4. 22 will/shall(2)</a></li>
+<li><a href="#orgc002815">1.3.5. 23 I will与I'm going to比较</a></li>
+<li><a href="#orgea0ca98">1.3.6. 24 will be doing 与will have done</a></li>
+</ul>
+</li>
+<li><a href="#orgb363970">1.4. 情态动词</a>
+<ul>
+<li><a href="#orgd0cdf8a">1.4.1. 26 can,could与(be) able to比较</a></li>
+<li><a href="#org1e797e7">1.4.2. 28 must与can't比较</a></li>
+<li><a href="#org5bfd2c5">1.4.3. 36 would</a></li>
+</ul>
+</li>
+<li><a href="#orgad5ff45">1.5. 条件句与wish</a>
+<ul>
+<li><a href="#org0d1ae78">1.5.1. 38 If I do&#x2026;与If I did&#x2026;比较</a></li>
+<li><a href="#org5e1b07b">1.5.2. 39 If I knew &#x2026; I wish I knew &#x2026;</a></li>
+<li><a href="#org5f77d38">1.5.3. 40 If I had known&#x2026; I wish I had known&#x2026;</a></li>
+</ul>
+</li>
+<li><a href="#org1ee3444">1.6. 被动语态</a>
+<ul>
+<li><a href="#orgc365d22">1.6.1. 42 被动语态(1)(is done/was done)</a></li>
+<li><a href="#orgf8fda18">1.6.2. 43 被动语态(2)(be done/been done/being done)</a></li>
+<li><a href="#org07cb6bd">1.6.3. 44 被动语态(3)</a></li>
+<li><a href="#orgcc3603c">1.6.4. 45 It is said that &#x2026; He is said to &#x2026; He is supposed to ..</a></li>
+</ul>
+</li>
+<li><a href="#orgb6f4436">1.7. 间接引语</a>
+<ul>
+<li><a href="#orgadbccb9">1.7.1. 47 间接引语(1)(He said that &#x2026;)</a></li>
+<li><a href="#org25f9e87">1.7.2. 48 间接引语(2)</a></li>
+</ul>
+</li>
+<li><a href="#org1620c21">1.8. 疑问句与助动词</a></li>
+<li><a href="#orgb7002f1">1.9. 动词的-ing形式与不定式比较</a>
+<ul>
+<li><a href="#orgd0f6dd0">1.9.1. 64 to&#x2026;, for &#x2026; VS so that&#x2026; (表目的)</a></li>
+<li><a href="#org263f792">1.9.2. 67 see somebody do VS see somebody doing</a></li>
+<li><a href="#orgf0ca13a">1.9.3. 68 -ing分句(例如: Feeling tried, I went to bed early.)</a></li>
+</ul>
+</li>
+<li><a href="#org6c99f29">1.10. 冠词与名词</a>
+<ul>
+<li><a href="#orgeb2f403">1.10.1. 72 a/an与the比较</a></li>
+</ul>
+</li>
+<li><a href="#org1c3f21a">1.11. 代词与限定词</a>
+<ul>
+<li><a href="#org2c72f86">1.11.1. 85 some与any比较</a></li>
+</ul>
+</li>
+<li><a href="#org1398e63">1.12. 定语从句</a>
+<ul>
+<li><a href="#org909c832">1.12.1. 92 定语从句(1)&#x2013;由关系代词who/what/which引导的从句</a></li>
+<li><a href="#org4517d20">1.12.2. 93 定语从句(2)&#x2013;who/what/which的省略</a></li>
+<li><a href="#org20aaf75">1.12.3. 94 定语从句(3)&#x2013;whose/whom/where</a></li>
+<li><a href="#org905ce84">1.12.4. 95 定语从句(4)&#x2013;非限定性从句(1)</a></li>
+<li><a href="#org449399f">1.12.5. 96 定语从句(5)&#x2013;非限定性从句(2)</a></li>
+<li><a href="#orgc4b36c6">1.12.6. 97 -ing与-ed分句比较(the woman talking to Tom, the boy injured in the accident)</a></li>
+</ul>
+</li>
+<li><a href="#orgf69c946">1.13. 形容词与副词</a>
+<ul>
+<li><a href="#org6c52e5a">1.13.1. 105 比较级(1)(cheaper, more expensive等)</a></li>
+<li><a href="#orgf13a7ae">1.13.2. 106 比较级(2)(much better/any better/better and better/the sooner the better)</a></li>
+<li><a href="#orgc30ccee">1.13.3. 107 比较级(3)(as&#x2026;as/than)</a></li>
+<li><a href="#org5c3955f">1.13.4. 108 最高级(the longest/the most enjoyable等)</a></li>
+<li><a href="#orga1cda2d">1.13.5. 109 词序(1)&#x2013;动词+宾语; 地点和时间</a></li>
+<li><a href="#org19a265c">1.13.6. 110 词序(2)&#x2013;副词与动词</a></li>
+</ul>
+</li>
+<li><a href="#orgb6dc890">1.14. 虚拟语气与介词</a></li>
+<li><a href="#orga61dde8">1.15. 介词</a>
+<ul>
+<li><a href="#orgc325b06">1.15.1. 121 at/on/in (时间)</a></li>
+<li><a href="#org6765384">1.15.2. 122 on time VS in time at the end VS in the end</a></li>
+</ul>
+</li>
+<li><a href="#orgca6d539">1.16. 短语动词</a></li>
+<li><a href="#org1348724">1.17. 附录1 规则动词与不规则动词</a></li>
+<li><a href="#orgd1916bd">1.18. 附录2 现在时与过去时比较</a></li>
+<li><a href="#org17a661f">1.19. 附录3 将来时</a></li>
+<li><a href="#org10f203d">1.20. 附录4 情态动词(can/could/will/would等)</a></li>
+<li><a href="#orge946271">1.21. 附录5 缩略形式(I'm/you're/didn't等)</a></li>
+<li><a href="#org67d18d0">1.22. 附录6 拼写法</a></li>
+<li><a href="#orgcb56c34">1.23. 附录7 美国英语</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org38d5753" class="outline-2">
+<h2 id="org38d5753"><span class="section-number-2">1.</span> cambridge grammar 2</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+<div id="outline-container-orga9d7062" class="outline-3">
+<h3 id="orga9d7062"><span class="section-number-3">1.1.</span> 现在时和过去时</h3>
+<div class="outline-text-3" id="text-1-1">
+</div>
+<div id="outline-container-orgbcabbfe" class="outline-4">
+<h4 id="orgbcabbfe"><span class="section-number-4">1.1.1.</span> 1 现在进行时(I am doing)</h4>
+<div class="outline-text-4" id="text-1-1-1">
+<p>
+现在进行时:
+</p>
+<ul class="org-ul">
+<li>形式: am/is/are + -ing</li>
+<li>正在做某事; 或者已经开始做某事,但是没有做完</li>
+<li>表示一段时间正在发生的事情,和today/this week/this year(阶段)连用</li>
+<li>表示一段时间正在发生的变化,用get/change/become/increase/rise/fall/grow/improve/begin/start</li>
+</ul>
+</div>
+
+<ol class="org-ol">
+<li><a id="org32f2fb0"></a>ex<br />
+<ol class="org-ol">
+<li><a id="org041e5d5"></a>1.1.<br />
+<div class="outline-text-6" id="text-1-1-1-1-1">
+<p>
+1 f/2 e/3 g/4 a/5 d/6 h/7 b/8 c
+</p>
+</div>
+</li>
+<li><a id="orgd160452"></a>1.2<br />
+<div class="outline-text-6" id="text-1-1-1-1-2">
+<ol class="org-ol">
+<li>What's he doing
+is he studying?
+Is he enjoying it?</li>
+<li>is your new job going
+it is getting
+he is not enjoying
+he is beginning</li>
+</ol>
+</div>
+</li>
+<li><a id="orgaea7a2e"></a>1.3<br />
+<div class="outline-text-6" id="text-1-1-1-1-3">
+<ol class="org-ol">
+<li>I'm trying</li>
+<li>It isn't raining</li>
+<li>I'm not listening</li>
+<li>She is having</li>
+<li>I am not eating</li>
+<li>He is learning</li>
+<li>They aren't speaking</li>
+<li>I am getting</li>
+<li>is not working</li>
+<li>I am looking</li>
+</ol>
+</div>
+</li>
+<li><a id="org27135e0"></a>1.4<br />
+<div class="outline-text-6" id="text-1-1-1-1-4">
+<ol class="org-ol">
+<li>is increasing</li>
+<li>is changing</li>
+<li>is getting</li>
+<li>is rising</li>
+<li>is starting</li>
+</ol>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+<div id="outline-container-org21afa5b" class="outline-4">
+<h4 id="org21afa5b"><span class="section-number-4">1.1.2.</span> 2 一般现在时(I do)</h4>
+<div class="outline-text-4" id="text-1-1-2">
+<p>
+一般现在时:
+</p>
+<ul class="org-ul">
+<li>形式:do/does</li>
+<li>0. 动作是否在说话时发生不重要
+<ol class="org-ol">
+<li>一直发生的事情</li>
+<li>重复发生的事情</li>
+<li>客观事情</li>
+<li>行为靠说话完成的,如 I promise&#x2026;,I suggest, apologise, advise, insist, agree, refuse</li>
+</ol></li>
+</ul>
+</div>
+<ol class="org-ol">
+<li><a id="org0809e67"></a>ex<br />
+<ol class="org-ol">
+<li><a id="orgdc8a995"></a>2.1<br />
+<div class="outline-text-6" id="text-1-1-2-1-1">
+<ol class="org-ol">
+<li>speaks</li>
+<li>drink</li>
+<li>opens</li>
+<li>causes</li>
+<li>live</li>
+<li>take</li>
+<li>connects</li>
+</ol>
+</div>
+</li>
+
+<li><a id="orgb75cc4f"></a>2.2<br />
+<div class="outline-text-6" id="text-1-1-2-1-2">
+<ol class="org-ol">
+<li>doesn't drink</li>
+<li>do the banks close</li>
+<li>don't use</li>
+<li>does Ricardo come</li>
+<li>do you do</li>
+<li>takes, does it take</li>
+<li>does this word mean</li>
+<li>doesn't do</li>
+</ol>
+</div>
+</li>
+
+<li><a id="org868e82f"></a>2.3<br />
+<div class="outline-text-6" id="text-1-1-2-1-3">
+<ol class="org-ol">
+<li>goes</li>
+<li>doesn't grow</li>
+<li>rises</li>
+<li>make</li>
+<li>don't eat</li>
+<li>believes</li>
+<li>translates</li>
+<li>don't tell</li>
+<li>flows</li>
+</ol>
+</div>
+</li>
+
+<li><a id="orgf346120"></a>2.4<br />
+<div class="outline-text-6" id="text-1-1-2-1-4">
+<ol class="org-ol">
+<li>do you play tennis</li>
+<li>Does your sister play tennis too?</li>
+<li>Which newspaper do you read every day?</li>
+<li>What does your brother do?</li>
+<li>How often do you go to the cinema?</li>
+<li>Where do your grandparents live?</li>
+</ol>
+</div>
+</li>
+
+<li><a id="orgdb58730"></a>2.5<br />
+<div class="outline-text-6" id="text-1-1-2-1-5">
+<ol class="org-ol">
+<li>I suggest</li>
+<li>I promise</li>
+<li>I insist</li>
+<li>I apologise</li>
+<li>I recommend</li>
+</ol>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+
+<div id="outline-container-org5e1079a" class="outline-4">
+<h4 id="org5e1079a"><span class="section-number-4">1.1.3.</span> 3 现在进行时(I am doing)与一般现在时(I do)比较(1)</h4>
+<div class="outline-text-4" id="text-1-1-3">
+<p>
+I am doing
+</p>
+<ul class="org-ul">
+<li>正在发生的行为还没有完成</li>
+<li>暂时的情况</li>
+</ul>
+<p>
+I do
+</p>
+<ul class="org-ul">
+<li>一直或重复发生的行为</li>
+<li>长久的情况</li>
+</ul>
+
+<p>
+I always do(总是做某事) VS I'm always doing(总是做某事到不正常的程度)
+</p>
+</div>
+
+<ol class="org-ol">
+<li><a id="org5089a8b"></a>ex<br />
+<ol class="org-ol">
+<li><a id="org31062b0"></a>3.1<br />
+<div class="outline-text-6" id="text-1-1-3-1-1">
+<ol class="org-ol">
+<li>T</li>
+<li>F, is boiling</li>
+<li>F, is trying</li>
+<li>F, are they talking</li>
+<li>T</li>
+<li>F, is getting</li>
+<li>T</li>
+<li>F, am coming</li>
+<li>F, are you getting</li>
+<li>F, always gets</li>
+<li>T</li>
+</ol>
+</div>
+</li>
+
+<li><a id="orgf591a77"></a>3.2<br />
+<div class="outline-text-6" id="text-1-1-3-1-2">
+<ol class="org-ol">
+<li>It isn't raining</li>
+<li>She speaks</li>
+<li>Everybody is waiting</li>
+<li>Are you listening</li>
+<li>Do you listen</li>
+<li>flows</li>
+<li>is flowing</li>
+<li>We usually grow, we are not growing</li>
+<li>it is improving</li>
+<li>She is staying. She always stays</li>
+<li>I am starting</li>
+<li>I am learning. is teaching</li>
+<li>I finish, I am working</li>
+<li>live, do your parents live</li>
+<li>is lookng, she is staying</li>
+<li>does your brother do, he is not working</li>
+<li>I usually enjoy, I am not enjoying</li>
+</ol>
+</div>
+</li>
+
+<li><a id="org3963d4d"></a>3.3<br />
+<div class="outline-text-6" id="text-1-1-3-1-3">
+<ol class="org-ol">
+<li>You're always losing your phone.</li>
+<li>is always breaking down</li>
+<li>am always making the same mistake</li>
+<li>You are always forgetting your glasses.</li>
+</ol>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+
+<div id="outline-container-org2481f7b" class="outline-4">
+<h4 id="org2481f7b"><span class="section-number-4">1.1.4.</span> 4 现在进行时(I am doing)与一般现在时(I do)比较(2)</h4>
+<div class="outline-text-4" id="text-1-1-4">
+<ol class="org-ol">
+<li>虽然进行时表示已经开始尚未完成的动作或行为,但是有些不用于进行时
+like, want, need, prefer,
+know, realise, suppose, mean, understand, believe, remember,
+belong, fit, contain, consist, seem</li>
+<li>think:
+<ul class="org-ul">
+<li>认为:不用进行时, think that &#x2026;</li>
+<li>考虑:可以进行时,thinking about/of</li>
+</ul></li>
+<li>see, hear, smell, taste,只用于一般时</li>
+<li>look feel: 一般和进行都可以</li>
+<li><ul class="org-ul">
+<li>is selfish 一直的行为自私</li>
+<li>is being selfish 此时的行为自私</li>
+<li>只表示人,不用其他</li>
+</ul></li>
+</ol>
+</div>
+
+<ol class="org-ol">
+<li><a id="orgec2339b"></a>ex<br />
+<ol class="org-ol">
+<li><a id="org8fdf498"></a>4.1<br />
+<div class="outline-text-6" id="text-1-1-4-1-1">
+<ol class="org-ol">
+<li>Do you want</li>
+<li>I am using</li>
+<li>I need</li>
+<li>does he want</li>
+<li>is he looking</li>
+<li>believes</li>
+<li>I don't remember</li>
+<li>I am thinking</li>
+<li>I think, you doesn't use</li>
+<li>consists</li>
+</ol>
+</div>
+</li>
+
+<li><a id="org625714c"></a>4.2<br />
+<div class="outline-text-6" id="text-1-1-4-1-2">
+<ol class="org-ol">
+<li>You don't seem very happy today</li>
+<li>What are you doing?
+Be quiet! I am thinking.</li>
+<li>Who does this umbrella belong to?</li>
+<li>The dinner smells good.</li>
+<li>Is anybody sitting there?</li>
+<li>These gloves doesn't fit me.</li>
+</ol>
+</div>
+</li>
+
+<li><a id="org75904c7"></a>4.3<br />
+<div class="outline-text-6" id="text-1-1-4-1-3">
+<ol class="org-ol">
+<li>T</li>
+<li>F, Do you believe in God?</li>
+<li>T</li>
+<li>F, tastes</li>
+<li>F, I think</li>
+</ol>
+</div>
+</li>
+
+<li><a id="org78011a5"></a>4.4<br />
+<div class="outline-text-6" id="text-1-1-4-1-4">
+<ol class="org-ol">
+<li>he's being</li>
+<li>is being</li>
+<li>is</li>
+<li>are you being</li>
+<li>Is he</li>
+</ol>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+
+<div id="outline-container-orga45c908" class="outline-4">
+<h4 id="orga45c908"><span class="section-number-4">1.1.5.</span> 5 一般过去时(I did)</h4>
+<div class="outline-text-4" id="text-1-1-5">
+<p>
+一般过去时:
+</p>
+<ul class="org-ul">
+<li>形式: was/were/did</li>
+<li>动词ed</li>
+<li>did/didn't四句型</li>
+<li>be动词是was/were</li>
+</ul>
+</div>
+
+<ol class="org-ol">
+<li><a id="org25994a6"></a>ex<br />
+<ol class="org-ol">
+<li><a id="org0ad5c68"></a>5.1<br />
+<div class="outline-text-6" id="text-1-1-5-1-1">
+<ol class="org-ol">
+<li>She got up</li>
+<li>had</li>
+<li>walked to work</li>
+<li>took her about half an hour</li>
+<li>She started work</li>
+<li>She didn't have</li>
+<li>She finished work</li>
+<li>She was , she got</li>
+<li>She cooked a meal</li>
+<li>She didn't go</li>
+<li>She went to bed</li>
+<li>She slept</li>
+</ol>
+</div>
+</li>
+
+<li><a id="org35545f1"></a>5.2<br />
+<div class="outline-text-6" id="text-1-1-5-1-2">
+<ol class="org-ol">
+<li>wrote</li>
+<li>taught</li>
+<li>sold</li>
+<li>fell, hurt</li>
+<li>threw, caught</li>
+<li>spent, bought, cost</li>
+</ol>
+</div>
+</li>
+
+<li><a id="org7dc748c"></a>5.3<br />
+<div class="outline-text-6" id="text-1-1-5-1-3">
+<ol class="org-ol">
+<li>did you go?</li>
+<li>did you go</li>
+<li>did it take</li>
+<li>did you stay</li>
+<li>Was the weather</li>
+<li>Did you go to</li>
+</ol>
+</div>
+</li>
+
+<li><a id="org699949a"></a>5.4<br />
+<div class="outline-text-6" id="text-1-1-5-1-4">
+<ol class="org-ol">
+<li>took</li>
+<li>didn't enjoy</li>
+<li>didn't disturb</li>
+<li>left</li>
+<li>didn't sleep</li>
+<li>flew</li>
+<li>didn't cost</li>
+<li>didn't have</li>
+<li>were</li>
+</ol>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+
+<div id="outline-container-orgfd04ef2" class="outline-4">
+<h4 id="orgfd04ef2"><span class="section-number-4">1.1.6.</span> 6 过去进行时(I was doing)</h4>
+<div class="outline-text-4" id="text-1-1-6">
+<ul class="org-ul">
+<li>表过去某个时检点正在进行的动作:在这个时间点,已经开始,且没有完成或结束.</li>
+<li>经常和did搭配:表一动作发生时,一动作正在进行
+when did,was doing.
+while was doing, did</li>
+<li>表动作先后顺序
+When Karen arrived, we were having dinner. 我们已经开始吃晚餐了
+When Karen arrived, we had dinner. 我们开始吃晚餐</li>
+<li>know和want不用进行时</li>
+</ul>
+</div>
+
+<ol class="org-ol">
+<li><a id="org3dd999c"></a>ex<br />
+<ol class="org-ol">
+<li><a id="orgb5e861f"></a>6.1<br />
+<div class="outline-text-6" id="text-1-1-6-1-1">
+<ol class="org-ol">
+<li>I was having dinner.</li>
+<li>I was on a bus on my way home.</li>
+<li>I was working.</li>
+<li>I was sleeping.
+I was in bed asleep.</li>
+<li>I was watching TV.
+I was getting ready to go out.</li>
+<li>I knew how to swim.
+I was watching TV at home.</li>
+</ol>
+</div>
+</li>
+
+<li><a id="orgc65f789"></a>6.2<br />
+<div class="outline-text-6" id="text-1-1-6-1-2">
+<ol class="org-ol">
+<li>were having dinner.</li>
+<li>was surfing the Internet.</li>
+<li>was driving home.</li>
+<li>was doing homework.</li>
+<li>was watching it.</li>
+</ol>
+</div>
+</li>
+
+<li><a id="orgefa0ff0"></a>6.3<br />
+<div class="outline-text-6" id="text-1-1-6-1-3">
+<ol class="org-ol">
+<li>saw, wasn't seeing. was looking.
+didn't see</li>
+<li>met. were going, was going. had, were waiting.</li>
+<li>was cycling, stepped, was going, managed, didn't hit</li>
+</ol>
+</div>
+</li>
+
+<li><a id="orgc88a954"></a>6.4 was doing/did<br />
+<div class="outline-text-6" id="text-1-1-6-1-4">
+<ol class="org-ol">
+<li>was waiting, arrived</li>
+<li>were you doing</li>
+<li>Did you go</li>
+<li>were you driving, happened</li>
+<li>took, wasn't looking</li>
+<li>didn't know</li>
+<li>saw, was trying</li>
+<li>was walking, heard, was following, started</li>
+<li>wanted</li>
+<li>dropped, was doing, didn't break</li>
+</ol>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org4de9796" class="outline-3">
+<h3 id="org4de9796"><span class="section-number-3">1.2.</span> 现在完成时与过去完成时</h3>
+<div class="outline-text-3" id="text-1-2">
+</div>
+<div id="outline-container-org3e60c62" class="outline-4">
+<h4 id="org3e60c62"><span class="section-number-4">1.2.1.</span> 7 现在完成时(1)(I have done)</h4>
+<div class="outline-text-4" id="text-1-2-1">
+<ul class="org-ul">
+<li>have/has+-ed</li>
+<li>提供新消息或最近发生的事情;过去的动作对现在有影响
+I've cut my finger.
+have lost his key: 表示钥匙丢了且没找到</li>
+<li>gone to VS been to
+gone to: is there or on way
+been to: now come back</li>
+<li>与just~already和yet连用
+just: 刚刚
+already: 在预计之前就发生了
+yet: 到目前为止,表期待某事发生,只用疑问和否定句</li>
+<li>和一般过去时经常混用</li>
+</ul>
+</div>
+
+<ol class="org-ol">
+<li><a id="org080d110"></a>ex<br />
+<ol class="org-ol">
+<li><a id="orgf477988"></a>7.1<br />
+<div class="outline-text-6" id="text-1-2-1-1-1">
+<ol class="org-ol">
+<li>has lost his key</li>
+<li>has broken her leg</li>
+<li>has gone up</li>
+<li>has improved.</li>
+<li>has grew a bread</li>
+<li>has arrived</li>
+<li>temperature has fallen.</li>
+</ol>
+</div>
+</li>
+
+<li><a id="orgd056b90"></a>7.2<br />
+<div class="outline-text-6" id="text-1-2-1-1-2">
+<ol class="org-ol">
+<li>gone</li>
+<li>been</li>
+<li>gone</li>
+<li>gone</li>
+<li>been</li>
+</ol>
+</div>
+</li>
+
+<li><a id="org44019e7"></a>7.3<br />
+<div class="outline-text-6" id="text-1-2-1-1-3">
+<ol class="org-ol">
+<li>I've just had lunch</li>
+<li>I've just seen her.</li>
+<li>He has already left.</li>
+<li>I haven't read it yet.</li>
+<li>She has already seen the film</li>
+<li>they have just arrived.</li>
+<li>We haven't told him yet.</li>
+</ol>
+</div>
+</li>
+
+<li><a id="org7a95912"></a>7.4<br />
+<div class="outline-text-6" id="text-1-2-1-1-4">
+<ol class="org-ol">
+<li>I've just had lunch</li>
+<li>he has just gone out.</li>
+<li>I have not finished yet.</li>
+<li>I have already done it</li>
+<li>Have you found a place yet?</li>
+<li>I have not decided yet</li>
+<li>she has already come back.</li>
+</ol>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+
+<div id="outline-container-orgdc6d991" class="outline-4">
+<h4 id="orgdc6d991"><span class="section-number-4">1.2.2.</span> 8 现在完成时(2)(I have done)</h4>
+<div class="outline-text-4" id="text-1-2-2">
+<ul class="org-ul">
+<li>从过去持续到现在的动作
+have travelled</li>
+<li>和以下(一段时间)搭配使用: recently, in the last few days,so far, since breakfast, for a long time</li>
+<li>在这个时间段内,仍然可以用现在完成时, 比如today/this evening/this year</li>
+<li>第几次&#x2026;: It's the first time something has happened</li>
+</ul>
+</div>
+
+<ol class="org-ol">
+<li><a id="orgd7acec3"></a>ex<br />
+<ol class="org-ol">
+<li><a id="orga08a413"></a>8.1<br />
+<div class="outline-text-6" id="text-1-2-2-1-1">
+<ol class="org-ol">
+<li>Have you ever ridden a horse?</li>
+<li>Have you ever been to California?</li>
+<li>Have you ever run a marathon?</li>
+<li>Have you ever spoken to a famous person?</li>
+<li>What's the most beautiful place you have ever visited?</li>
+</ol>
+</div>
+</li>
+
+<li><a id="orgdaf5875"></a>8.2<br />
+<div class="outline-text-6" id="text-1-2-2-1-2">
+<ol class="org-ol">
+<li>I've never met</li>
+<li>haven't had</li>
+<li>haven't eaten</li>
+<li>I haven't played</li>
+<li>I have had</li>
+<li>I haven't read</li>
+<li>I haven't been</li>
+<li>it has happened</li>
+<li>I haven't tried/eaten</li>
+<li>has been</li>
+<li>I haven't seen</li>
+</ol>
+</div>
+</li>
+
+<li><a id="org2a62574"></a>8.3<br />
+<div class="outline-text-6" id="text-1-2-2-1-3">
+<ol class="org-ol">
+<li>I haven't used a computer today.</li>
+<li>I haven't been to the cinema this week</li>
+<li>I have travelled by bus for ages.</li>
+<li>I have read a book for ages.</li>
+<li>I haven't eaten any fruit today.</li>
+<li>I haven't lost anything recently.</li>
+</ol>
+</div>
+</li>
+
+<li><a id="org51a1374"></a>8.4<br />
+<div class="outline-text-6" id="text-1-2-2-1-4">
+<ol class="org-ol">
+<li>Have you driven a car before.
+No, this is the first time I've driven a car.</li>
+<li>have you played tennis before?
+time I have played tennis.</li>
+<li>Have you ridden a horse before?
+No, this is the first time I've ridden a horse.</li>
+<li>Have you arrived Japan before?
+No, this is the first time I've arrived Japan.</li>
+</ol>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+
+<div id="outline-container-org1901c0a" class="outline-4">
+<h4 id="org1901c0a"><span class="section-number-4">1.2.3.</span> 9 现在完成进行时(I have been doing)</h4>
+<div class="outline-text-4" id="text-1-2-3">
+<p>
+have been doing:
+</p>
+<ul class="org-ul">
+<li>从过去持续到现在/刚刚结束的动作,并且可能仍在进行,强调对现在的影响; 也可以是重复发生的动作</li>
+<li>VS am doing, 更强调有一个过程</li>
+</ul>
+</div>
+
+<ol class="org-ol">
+<li><a id="org3b9f6e5"></a>ex<br />
+<ol class="org-ol">
+<li><a id="orgb5e6c26"></a>9.1<br />
+<div class="outline-text-6" id="text-1-2-3-1-1">
+<ol class="org-ol">
+<li>'ve been shopping</li>
+<li>'ve been watching TV</li>
+<li>'ve been playing tennis</li>
+<li>'s been running</li>
+</ol>
+</div>
+</li>
+
+<li><a id="org045c772"></a>9.2<br />
+<div class="outline-text-6" id="text-1-2-3-1-2">
+<ol class="org-ol">
+<li>Have you been swimming.</li>
+<li>How long have you been waiting? F
+Have you been waiting long?</li>
+<li>What have you been doing?</li>
+<li>How long have you been working there?</li>
+<li>How long have you been selling mobile phones?</li>
+</ol>
+</div>
+</li>
+
+<li><a id="orgd4244fd"></a>9.3<br />
+<div class="outline-text-6" id="text-1-2-3-1-3">
+<ol class="org-ol">
+<li>'s been raining</li>
+<li>have been waiting for bus</li>
+<li>have been learning Spanish</li>
+<li>Jessica have been working in supermarket</li>
+<li>Our friends have been spending their holidays in Italy
+They have been going there</li>
+</ol>
+</div>
+</li>
+
+<li><a id="orgb3240aa"></a>9.4<br />
+<div class="outline-text-6" id="text-1-2-3-1-4">
+<ol class="org-ol">
+<li>Maria has been learning</li>
+<li>I have been looking</li>
+<li>have you been looking F
+are you looking</li>
+<li>She has been teaching</li>
+<li>I have been thinking</li>
+<li>he has been working F
+he is working</li>
+<li>She have been working</li>
+</ol>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+
+<div id="outline-container-orgf852b45" class="outline-4">
+<h4 id="orgf852b45"><span class="section-number-4">1.2.4.</span> 10 现在完成进行时(I have been doing)与现在完成时(I have done)比较</h4>
+<div class="outline-text-4" id="text-1-2-4">
+<p>
+I have been doing: 强调动作的持续,不管有没有完成; 持续性: how long, all morning, since
+I have done: 强调动作的结果; 多少和次数: how much, a lot, three times
+</p>
+<ul class="org-ul">
+<li>know/like/believe, 虽然持续,但是不用进行时</li>
+</ul>
+</div>
+
+<ol class="org-ol">
+<li><a id="org675b2c5"></a>ex<br />
+<ol class="org-ol">
+<li><a id="orgfbae0b3"></a>10.1<br />
+<div class="outline-text-6" id="text-1-2-4-1-1">
+<ol class="org-ol">
+<li>He has been reading, He has read</li>
+<li>has been traveling round Europe, She has visited</li>
+<li>He has won, He has been playing</li>
+<li>have been making, They have made</li>
+</ol>
+</div>
+</li>
+
+<li><a id="orgbeb6427"></a>10.2<br />
+<div class="outline-text-6" id="text-1-2-4-1-2">
+<ol class="org-ol">
+<li>How long have you been learning Arabic?</li>
+<li>you been waiting long?</li>
+<li>Have you caught any fish?</li>
+<li>How many people have you invited?</li>
+<li>How long have you been teaching?</li>
+<li>How many books have you written?
+How long have you been writing books?</li>
+<li>How long have you been saving?
+How much money have you saved?</li>
+</ol>
+</div>
+</li>
+
+<li><a id="org4ea6e61"></a>10.3<br />
+<div class="outline-text-6" id="text-1-2-4-1-3">
+<ol class="org-ol">
+<li>Have you been playing</li>
+<li>Somebody has broken</li>
+<li>Have you been working</li>
+<li>Have you ever been working F
+Have you ever worked</li>
+<li>has she gone?</li>
+<li>He has appeared</li>
+<li>I haven't been waiting</li>
+<li>it has stopped</li>
+<li>I have lost, have you seen</li>
+<li>I have been reading, I haven't finished</li>
+<li>I have read</li>
+<li>I have been having F
+I have had</li>
+</ol>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+
+<div id="outline-container-org82c80a6" class="outline-4">
+<h4 id="org82c80a6"><span class="section-number-4">1.2.5.</span> 13 现在完成时(I have done)与一般过去时(I did)比较(1)</h4>
+<div class="outline-text-4" id="text-1-2-5">
+<p>
+现在完成时: 用来讲诉现在的情况; 谈论新近发生的事
+	对话刚开始用完成,一直对话一般用过去
+一般过去时: 只说过去发生的事; 谈论过去发生的事
+</p>
+</div>
+
+<ol class="org-ol">
+<li><a id="org91c9cf7"></a>ex<br />
+<ol class="org-ol">
+<li><a id="org317b798"></a>13.1<br />
+<div class="outline-text-6" id="text-1-2-5-1-1">
+<ol class="org-ol">
+<li>'ve lost</li>
+<li>has gone</li>
+<li>have forgotten FFF</li>
+<li>has gone FFF</li>
+<li>had</li>
+<li>has broken</li>
+</ol>
+</div>
+</li>
+<li><a id="org609a2ed"></a>13.2<br />
+<div class="outline-text-6" id="text-1-2-5-1-2">
+<ol class="org-ol">
+<li>T</li>
+<li>F grew</li>
+<li>T F
+did William Shakespeare write</li>
+<li>T</li>
+<li>T</li>
+<li>F invented</li>
+<li>F were you born</li>
+<li>T</li>
+<li>F was, T
+F was, developed</li>
+</ol>
+</div>
+</li>
+<li><a id="orgdb73c35"></a>13.3<br />
+<div class="outline-text-6" id="text-1-2-5-1-3">
+<ol class="org-ol">
+<li>It stopped</li>
+<li>It has changed</li>
+<li>I have forgotten</li>
+<li>arrested</li>
+<li>it has improved</li>
+<li>I have finished</li>
+<li>I applied</li>
+<li>It was</li>
+<li>there has been</li>
+<li>He has broken, did that happen, He fell</li>
+</ol>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+
+<div id="outline-container-org1d15393" class="outline-4">
+<h4 id="org1d15393"><span class="section-number-4">1.2.6.</span> 14 现在完成时(I have done)与一般过去时(I did)比较(2)</h4>
+<div class="outline-text-4" id="text-1-2-6">
+<p>
+I have done VS I did
+</p>
+<ul class="org-ul">
+<li>有过去时间点用did</li>
+<li>过去持续到现在的时间, 用have done,如today
+过去已经结束的时间, 用did
+has lived for seven years, 仍然在住
+lived for seven years, 没有在住</li>
+</ul>
+</div>
+
+<ol class="org-ol">
+<li><a id="org3c35d9c"></a>ex<br />
+<ol class="org-ol">
+<li><a id="orge321c89"></a>14.1<br />
+<div class="outline-text-6" id="text-1-2-6-1-1">
+<ol class="org-ol">
+<li>T</li>
+<li>F, Did you eat</li>
+<li>T</li>
+<li>F, bought</li>
+<li>F were</li>
+<li>F left</li>
+<li>F Did you FFF
+T</li>
+<li>T</li>
+<li>T</li>
+<li>F was this book</li>
+</ol>
+</div>
+</li>
+
+<li><a id="orga23f660"></a>14.2<br />
+<div class="outline-text-6" id="text-1-2-6-1-2">
+<ol class="org-ol">
+<li>It hasn't rained this week.</li>
+<li>The weather has been cold recently.</li>
+<li>It was cold last week.</li>
+<li>I didn't read a newspaper yesterday.</li>
+<li>I haven't read a newspaper today.</li>
+<li>Emily has earned a lot of money this year.</li>
+<li>She didn't earn so much last year.</li>
+<li>Have you had a holiday recently?</li>
+</ol>
+</div>
+</li>
+<li><a id="org6e2dfef"></a>14.3<br />
+<div class="outline-text-6" id="text-1-2-6-1-3">
+<ol class="org-ol">
+<li>haven't been</li>
+<li>I got, I was, I went</li>
+<li>Have you seen, I saw</li>
+<li>I didn't sleep</li>
+<li>There has been FFF
+were</li>
+<li>worked, gave</li>
+<li>She has lived</li>
+<li>Did you go
+it was, was</li>
+<li>died, I've never met 答案有错误(AI)</li>
+<li>I have never met</li>
+<li>I didn't see FFF
+I haven't seen</li>
+<li>have you lived
+did you live
+have you lived</li>
+</ol>
+</div>
+</li>
+
+<li><a id="org97366f7"></a>14.4<br />
+<div class="outline-text-6" id="text-1-2-6-1-4">
+<ol class="org-ol">
+<li>I haven't eaten any fruit today.</li>
+<li>I haven't play tennis today.</li>
+<li>I didn't eat any fruit yesterday.</li>
+<li>I swam yesterday.</li>
+<li>I read English yesterday evening.</li>
+<li>I haven't waited for bus recently.</li>
+<li>I have worked hard recently.</li>
+</ol>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+
+<div id="outline-container-org260a1de" class="outline-4">
+<h4 id="org260a1de"><span class="section-number-4">1.2.7.</span> 15 过去完成时(I had done)</h4>
+<div class="outline-text-4" id="text-1-2-7">
+<p>
+过去完成时:
+</p>
+<ul class="org-ul">
+<li>现在:O, 过去:A, 过去的过去B, 讨论B时,用过去完成时</li>
+<li>VS 现在完成时: 过去完成时讨论B对A的影响, 现在完成时讨论A对O的影响.
+过去的过去B对过去A造成的影响</li>
+<li>VS 一般过去时: 过去完成时讨论B, 一般过去时讨论A.
+描述过去的过去B的动作</li>
+</ul>
+</div>
+
+<ol class="org-ol">
+<li><a id="orgffca32a"></a>ex<br />
+<ol class="org-ol">
+<li><a id="org6a7ad90"></a>15.1<br />
+<div class="outline-text-6" id="text-1-2-7-1-1">
+<ol class="org-ol">
+<li>She had gone out.</li>
+<li>It had changed a lot.</li>
+<li>She had arranged to do something else.</li>
+<li>The film had already started.</li>
+<li>I hadn't seen him for five years.</li>
+<li>She had just had breakfast.</li>
+</ol>
+</div>
+</li>
+<li><a id="org836652a"></a>15.2<br />
+<div class="outline-text-6" id="text-1-2-7-1-2">
+<ol class="org-ol">
+<li>He'd never flown before.</li>
+<li>I hadn't heard it before.</li>
+<li>He hadn't played it before.</li>
+<li>hadn't been there before.</li>
+</ol>
+</div>
+</li>
+<li><a id="org5941627"></a>15.3<br />
+<div class="outline-text-6" id="text-1-2-7-1-3">
+<ol class="org-ol">
+<li>we called</li>
+<li>there was, Laura had gone</li>
+<li>had just come back from,He looked</li>
+<li>got a phone, He was, He had sent Sally, she had never replied to them.</li>
+</ol>
+</div>
+</li>
+<li><a id="orgd71cca6"></a>15.4<br />
+<div class="outline-text-6" id="text-1-2-7-1-4">
+<ol class="org-ol">
+<li>had gone</li>
+<li>went</li>
+<li>had gone</li>
+<li>broke</li>
+<li>saw, had broken, stopped</li>
+</ol>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+
+<div id="outline-container-org61e5fb0" class="outline-4">
+<h4 id="org61e5fb0"><span class="section-number-4">1.2.8.</span> 16 过去完成进行时(I had been doing)</h4>
+<div class="outline-text-4" id="text-1-2-8">
+<p>
+Leo:
+</p>
+<ul class="org-ul">
+<li>过去:A, 过去的过去B</li>
+<li>B正在进行的动作,对A的影响</li>
+<li>从B的动作持续或重复到A</li>
+</ul>
+<p>
+剑:
+</p>
+<ul class="org-ul">
+<li>过去的过去B正在进行的动作,对过去A的影响</li>
+<li>从过去的过去B持续或重复到过去A的动作,可能在过去A仍然继续,也可能在A停止</li>
+<li>know和like一般不用进行时</li>
+<li>VS have been doing: 倒退一个时态, 重复/持续 或 影响</li>
+<li>VS was doing: 多了影响</li>
+</ul>
+</div>
+
+<ol class="org-ol">
+<li><a id="org3258b39"></a>ex<br />
+<ol class="org-ol">
+<li><a id="org8c8726a"></a>16.1<br />
+<div class="outline-text-6" id="text-1-2-8-1-1">
+<ol class="org-ol">
+<li>I'd been working hard all day.</li>
+<li>They'd been playing football.</li>
+<li>I'd been looking forward to it.</li>
+<li>She'd been dreaming.</li>
+<li>He'd been watching a film.</li>
+</ol>
+</div>
+</li>
+<li><a id="org3e329ea"></a>16.2<br />
+<div class="outline-text-6" id="text-1-2-8-1-2">
+<ol class="org-ol">
+<li>had been playing for hald an hour when it started to rain.</li>
+<li>had been waiting, realised that I was in</li>
+<li>closed, had been working</li>
+<li>had been playing for about ten minutes when a man in the audience suddenly started shouting.</li>
+<li>had been thinking of my wife for ten minutes when a cat greeted me.</li>
+</ol>
+</div>
+</li>
+<li><a id="orge14917b"></a>16.3<br />
+<div class="outline-text-6" id="text-1-2-8-1-3">
+<ol class="org-ol">
+<li>were having</li>
+<li>We'd known</li>
+<li>he was walking</li>
+<li>She had been running</li>
+<li>They were eating.</li>
+<li>They had eatten.</li>
+<li>was looking</li>
+<li>was waiting, had been waiting</li>
+<li>I'd had</li>
+<li>we had been traveling</li>
+</ol>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+
+<div id="outline-container-org3f036bf" class="outline-4">
+<h4 id="org3f036bf"><span class="section-number-4">1.2.9.</span> 18 used to (do)</h4>
+<div class="outline-text-4" id="text-1-2-9">
+<p>
+used to do:
+</p>
+<ul class="org-ul">
+<li>意义:过去重复或过去的习惯,但现在不在了</li>
+<li>肯定句: used to do(不能用use to do)</li>
+<li>否定句: usedn't to do/ didn't use to</li>
+<li>I am used to doing : 习惯于做某事(并且现在还在做)</li>
+</ul>
+</div>
+
+<ol class="org-ol">
+<li><a id="org28d8721"></a>ex<br />
+<ol class="org-ol">
+<li><a id="org7edc213"></a>18.1<br />
+<div class="outline-text-6" id="text-1-2-9-1-1">
+<ol class="org-ol">
+<li>used to travel</li>
+<li>used to have</li>
+<li>used to live</li>
+<li>used to eat</li>
+<li>used to be</li>
+<li>used to take</li>
+<li>used to be</li>
+<li>Did you use to go</li>
+</ol>
+</div>
+</li>
+
+<li><a id="org3fb6252"></a>18.2<br />
+<div class="outline-text-6" id="text-1-2-9-1-2">
+<ol class="org-ol">
+<li>She used to travel a lot, but she doesn't go away much these days.</li>
+<li>She used to get a lot of friends, but she doesn't know many people these days.</li>
+<li>She used to be very lazy, but she works very hard these days.</li>
+<li>She usedn't to  like cheese, but she eats lots of cheese now.</li>
+<li>She used to be a hotel receptionist, but she works in a bookshop now.</li>
+<li>She used to play the piano, but she hasn't played the piano for years.</li>
+<li>She usedn't to read newspaper, but she reads a newspaper every day now.
+She never used to read newspaper, but she reads a newspaper every day now.</li>
+<li>She usedn't to drink tea, but she likes tea now.</li>
+<li>She used to get a dog, but her dog died two years ago.</li>
+<li>She used to go to a lot of parties, but she hasn't been to party for ages.</li>
+</ol>
+</div>
+</li>
+<li><a id="org31756e8"></a>18.3<br />
+<div class="outline-text-6" id="text-1-2-9-1-3">
+<ol class="org-ol">
+<li>I used to live in a small village, but now I live in London.</li>
+<li>I used to play tennis a lot, but I don't play any more.</li>
+<li>I used to be a waiter, but I am an engineer now.</li>
+<li>I used to work hard, but I perfer to relax.</li>
+<li>I used to like tea, but I hasn't drunk for ages.</li>
+<li>I didn't use to read a lot, but I do now.</li>
+<li>I didn't use to swim, but I swim twice a week now.</li>
+<li>I didn't use to go shopping, but I go to the mall every day.</li>
+</ol>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org299ed5e" class="outline-3">
+<h3 id="org299ed5e"><span class="section-number-3">1.3.</span> 将来时</h3>
+<div class="outline-text-3" id="text-1-3">
+</div>
+<div id="outline-container-org4686db4" class="outline-4">
+<h4 id="org4686db4"><span class="section-number-4">1.3.1.</span> 19 现在时(I am doing/I do)表示将来</h4>
+<div class="outline-text-4" id="text-1-3-1">
+<p>
+am doing(更强调个人的安排) 和 do(更强调日程表安排, film starts at 3.30):
+am doing: 还可以表示即将进行的动作.I'm going to bed. I'm coming.
+</p>
+</div>
+<ol class="org-ol">
+<li><a id="org10b5ea4"></a>ex<br />
+<ol class="org-ol">
+<li><a id="org9a95da5"></a>19.1<br />
+<div class="outline-text-6" id="text-1-3-1-1-1">
+<ol class="org-ol">
+<li>Where are you going?</li>
+<li>How long are you going for?</li>
+<li>When are you leaving?</li>
+<li>Are you going alone?</li>
+<li>Are you traveling by car?</li>
+<li>Where are you staying?</li>
+</ol>
+</div>
+</li>
+<li><a id="org4c8e784"></a>19.2<br />
+<div class="outline-text-6" id="text-1-3-1-1-2">
+<ol class="org-ol">
+<li>I'm playing volleyball</li>
+<li>I'm working late.</li>
+<li>I'm going to the theatre.</li>
+<li>I'm meeting Julia.</li>
+</ol>
+</div>
+</li>
+<li><a id="orgec5a63c"></a>19.3<br />
+<div class="outline-text-6" id="text-1-3-1-1-3">
+<ol class="org-ol">
+<li>I'm going out this evening. or I'm not doing anything this evening.</li>
+<li>I'm reading English tomorrow morning.</li>
+<li>I'm studying English tomorrow evening.</li>
+<li>I'm traveling to the West Lake next Sunday.</li>
+<li>I'm climbing the mountain next month.</li>
+</ol>
+</div>
+</li>
+<li><a id="orga5a2720"></a>19.4<br />
+<div class="outline-text-6" id="text-1-3-1-1-4">
+<ol class="org-ol">
+<li>I'm going to the cinema this evening.</li>
+<li>Does the film start at 3.30 or 4.30?</li>
+<li>We're having</li>
+<li>finishes</li>
+<li>I'm not going, I'm staying</li>
+<li>Are you doing</li>
+<li>We're going, It starts</li>
+<li>I'm leaving</li>
+<li>we're meeting</li>
+<li>does this train get</li>
+<li>I'm going, Are you coming</li>
+<li>does it end</li>
+<li>I'm not using</li>
+<li>is coming, she're traveling, arrives</li>
+</ol>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+<div id="outline-container-org9ae7e9d" class="outline-4">
+<h4 id="org9ae7e9d"><span class="section-number-4">1.3.2.</span> 20 I'm going to do</h4>
+<div class="outline-text-4" id="text-1-3-2">
+<p>
+I'm going to do:
+</p>
+<ul class="org-ul">
+<li>已经决定(但可能没做安排); was going to本来打算做,但没做; 已经知道将会怎么样</li>
+</ul>
+</div>
+<ol class="org-ol">
+<li><a id="org083e904"></a>ex<br />
+<ol class="org-ol">
+<li><a id="org56928c3"></a>20.1<br />
+<div class="outline-text-6" id="text-1-3-2-1-1">
+<ol class="org-ol">
+<li>What are you going to do with it?</li>
+<li>What are you going to wear?</li>
+<li>Where are you going to put it?</li>
+<li>Who are you going to invite?</li>
+</ol>
+</div>
+</li>
+<li><a id="org6b12e09"></a>20.2<br />
+<div class="outline-text-6" id="text-1-3-2-1-2">
+<ol class="org-ol">
+<li>I'm going to clean my room.</li>
+<li>I'm going to take it back to the shop.</li>
+<li>I'm not going to accept it.</li>
+<li>I'm going to phone her.</li>
+<li>I'm going to complain.</li>
+</ol>
+</div>
+</li>
+<li><a id="orge20f118"></a>20.3<br />
+<div class="outline-text-6" id="text-1-3-2-1-3">
+<ol class="org-ol">
+<li>It's going to rain.</li>
+<li>is going to be</li>
+<li>is going to sink.</li>
+<li>are going to run out of petrol.</li>
+</ol>
+</div>
+</li>
+<li><a id="org751b0d2"></a>20.4<br />
+<div class="outline-text-6" id="text-1-3-2-1-4">
+<ol class="org-ol">
+<li>were going to travel</li>
+<li>was going to buy</li>
+<li>were going to play</li>
+<li>was going to phone</li>
+<li>was going to give up</li>
+<li>were going to say</li>
+</ol>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+
+<div id="outline-container-org917cd27" class="outline-4">
+<h4 id="org917cd27"><span class="section-number-4">1.3.3.</span> 21 will/shall(1)</h4>
+<div class="outline-text-4" id="text-1-3-3">
+<p>
+'ll/will:
+</p>
+<ul class="org-ul">
+<li>(将)会</li>
+<li>你(将)会不会吗?(shall相同)</li>
+<li>不用于安排的事情(用am doing+未来时间)</li>
+<li>I hope S. + do/S.+will+do</li>
+<li>will有时也用于现在</li>
+</ul>
+</div>
+<ol class="org-ol">
+<li><a id="org30add96"></a>ex<br />
+<ol class="org-ol">
+<li><a id="orgb4ea95f"></a>21.1<br />
+<div class="outline-text-6" id="text-1-3-3-1-1">
+<ol class="org-ol">
+<li>I'll take</li>
+<li>I'll turn</li>
+<li>I'll send</li>
+<li>I'll do</li>
+<li>I'll help
+show</li>
+<li>I'll drink</li>
+<li>I'll leave
+stay</li>
+<li>I'll return</li>
+<li>I'll finish
+try</li>
+</ol>
+</div>
+</li>
+<li><a id="orga36a34a"></a>21.2<br />
+<div class="outline-text-6" id="text-1-3-3-1-2">
+<ol class="org-ol">
+<li>I think I'll close the window.</li>
+<li>I'll go to bed.</li>
+<li>I'll walk.</li>
+<li>I'll eat anything.</li>
+<li>I don't think I'll go swimming.</li>
+</ol>
+</div>
+</li>
+<li><a id="org3d2e0c8"></a>21.3<br />
+<div class="outline-text-6" id="text-1-3-3-1-3">
+<ol class="org-ol">
+<li>I'll phone</li>
+<li>I'm playing</li>
+<li>I'll meet</li>
+<li>I'll lend</li>
+<li>I'm having</li>
+<li>I won't forget.</li>
+<li>will your train leave
+does your train leave</li>
+<li>doesn't tell
+won't tell</li>
+<li>Are you doing</li>
+<li>Will you come</li>
+</ol>
+</div>
+</li>
+<li><a id="org997a1ac"></a>21.4<br />
+<div class="outline-text-6" id="text-1-3-3-1-4">
+<ol class="org-ol">
+<li>What shall we do this evening?</li>
+<li>Shall I buy it</li>
+<li>shall I give Helen for her birthday.</li>
+<li>Where shall we go on holiday?</li>
+<li>Shall we go by car or walk?</li>
+<li>What time shall I come?</li>
+</ol>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+<div id="outline-container-orgda05494" class="outline-4">
+<h4 id="orgda05494"><span class="section-number-4">1.3.4.</span> 22 will/shall(2)</h4>
+<div class="outline-text-4" id="text-1-3-4">
+</div>
+<ol class="org-ol">
+<li><a id="org43e2d77"></a>ex<br />
+<ol class="org-ol">
+<li><a id="orgfe100ce"></a>22.1<br />
+<div class="outline-text-6" id="text-1-3-4-1-1">
+<ol class="org-ol">
+<li>She's working.</li>
+<li>I'm going</li>
+<li>will get</li>
+<li>will come
+is coming</li>
+<li>we're going</li>
+<li>won't hurt</li>
+</ol>
+</div>
+</li>
+<li><a id="orgaa31846"></a>22.2<br />
+<div class="outline-text-6" id="text-1-3-4-1-2">
+<ol class="org-ol">
+<li>won't</li>
+<li>won't</li>
+<li>will</li>
+<li>won't</li>
+<li>will</li>
+<li>won't</li>
+</ol>
+</div>
+</li>
+<li><a id="org7c3f109"></a>22.3<br />
+<div class="outline-text-6" id="text-1-3-4-1-3">
+<ol class="org-ol">
+<li>you'll pass</li>
+<li>It'll look</li>
+<li>you'll like</li>
+<li>you'll get</li>
+<li>people will live</li>
+<li>we'll meet</li>
+<li>she'll come</li>
+<li>it'll be</li>
+</ol>
+</div>
+</li>
+<li><a id="org61b952d"></a>22.4<br />
+<div class="outline-text-6" id="text-1-3-4-1-4">
+<ol class="org-ol">
+<li>Do you think she'll like it</li>
+<li>Do you think it'll rain</li>
+<li>think it'll end</li>
+<li>do you think it'll cost</li>
+<li>Do you think they'll get married</li>
+<li>do you think you'll be back</li>
+<li>do you think it'll happen</li>
+</ol>
+</div>
+</li>
+<li><a id="org564561f"></a>22.5<br />
+<div class="outline-text-6" id="text-1-3-4-1-5">
+<ol class="org-ol">
+<li>I'll be at home.</li>
+<li>I'll be in bed.</li>
+<li>I'll be in the office.</li>
+<li>I'll probably be in the supermarket.</li>
+<li>I don't know where I'll be.</li>
+</ol>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+<div id="outline-container-orgc002815" class="outline-4">
+<h4 id="orgc002815"><span class="section-number-4">1.3.5.</span> 23 I will与I'm going to比较</h4>
+<div class="outline-text-4" id="text-1-3-5">
+<ul class="org-ul">
+<li>will 现在决定</li>
+<li>am going to 已经决定; 已经知道将会怎么样</li>
+</ul>
+</div>
+<ol class="org-ol">
+<li><a id="org890df6c"></a>ex<br />
+<ol class="org-ol">
+<li><a id="orgf463208"></a>23.1<br />
+<div class="outline-text-6" id="text-1-3-5-1-1">
+<ol class="org-ol">
+<li>I'm going to watch</li>
+<li>I'll lend</li>
+<li>I'll get</li>
+<li>I am going to wash</li>
+<li>are you going to paint</li>
+<li>I'm going to buy</li>
+<li>I'll show</li>
+<li>I'll have</li>
+<li>I'll call her</li>
+<li>He's going to have, he's going to do</li>
+</ol>
+</div>
+</li>
+<li><a id="org96ab86a"></a>23.2<br />
+<div class="outline-text-6" id="text-1-3-5-1-2">
+<ol class="org-ol">
+<li>I'll get</li>
+<li>I'm going to take, I'll join</li>
+<li>you'll find</li>
+<li>I'm not going to apply</li>
+<li>We'll be late
+We are going to be late</li>
+<li>it'll fall down
+it's going to fall down</li>
+<li>I'll take, I'll pick, Kate is going to take</li>
+</ol>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+
+<div id="outline-container-orgea0ca98" class="outline-4">
+<h4 id="orgea0ca98"><span class="section-number-4">1.3.6.</span> 24 will be doing 与will have done</h4>
+<div class="outline-text-4" id="text-1-3-6">
+<p>
+will be doing:
+</p>
+<ul class="org-ul">
+<li>将来正在做某事</li>
+<li>将来+ be going to</li>
+</ul>
+<p>
+will have done: 将来+ have done:
+</p>
+<ol class="org-ol">
+<li>将来某时之前完成的动作</li>
+<li>将来某时持续进行的动作</li>
+</ol>
+</div>
+
+<ol class="org-ol">
+<li><a id="orgc048d59"></a>ex<br />
+<ol class="org-ol">
+<li><a id="org337646d"></a>24.1<br />
+<div class="outline-text-6" id="text-1-3-6-1-1">
+<ol class="org-ol">
+<li>c,d</li>
+<li>b,d
+b</li>
+<li>a
+a,c</li>
+<li>b
+b,d</li>
+<li>c,d</li>
+<li>c</li>
+</ol>
+</div>
+</li>
+<li><a id="org7a28e6c"></a>24.2<br />
+<div class="outline-text-6" id="text-1-3-6-1-2">
+<ol class="org-ol">
+<li>We'll be having</li>
+<li>We'll have finished</li>
+<li>We'll be playing</li>
+<li>I'll be working</li>
+<li>the meeting will have ended</li>
+<li>he'll have spent</li>
+<li>you will still be doing</li>
+<li>she'll have travelled</li>
+<li>I'll be staying</li>
+<li>Will you be seeing</li>
+</ol>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orgb363970" class="outline-3">
+<h3 id="orgb363970"><span class="section-number-3">1.4.</span> 情态动词</h3>
+<div class="outline-text-3" id="text-1-4">
+</div>
+<div id="outline-container-orgd0cdf8a" class="outline-4">
+<h4 id="orgd0cdf8a"><span class="section-number-4">1.4.1.</span> 26 can,could与(be) able to比较</h4>
+<div class="outline-text-4" id="text-1-4-1">
+<ul class="org-ul">
+<li>can: 有能力做某事; 某事可能发生
+<ul class="org-ul">
+<li>肯: can do</li>
+<li>否: can't do = cannot do</li>
+<li>could: 过去式</li>
+</ul></li>
+<li>be able to:比could多个成功案例,少了可能发生
+<ul class="org-ul">
+<li>可以代替can,could,但can,could更常用</li>
+<li>需要更多时态时,用be able to,比如: haven't been able to, might be able to, must be able to</li>
+</ul></li>
+<li>could: 比can多了个允许
+<ul class="org-ul">
+<li>can的过去式</li>
+<li>某人有能力做某事;被允许做某事</li>
+</ul></li>
+</ul>
+<hr />
+<ul class="org-ul">
+<li>be able to: 有能力; 被允许; 做成某事的案例
+<ul class="org-ul">
+<li>can: 有能力(be able to的一般时);可能发生</li>
+<li>could: 有能力(be able to的过去式);可能发生;被允许</li>
+<li>was able to:有能力(be able to的过去式); 做成某事的案例</li>
+<li>managed to do: 做成某事的案例</li>
+<li>更多时态</li>
+</ul></li>
+</ul>
+</div>
+
+<ol class="org-ol">
+<li><a id="orga87369a"></a>ex<br />
+<ol class="org-ol">
+<li><a id="org8706436"></a>26.1<br />
+<div class="outline-text-6" id="text-1-4-1-1-1">
+<ol class="org-ol">
+<li>can</li>
+<li>been able to</li>
+<li>can</li>
+<li>be able to</li>
+<li>been able to</li>
+<li>can</li>
+<li>be able to</li>
+</ol>
+</div>
+</li>
+<li><a id="org2238e71"></a>26.2<br />
+<div class="outline-text-6" id="text-1-4-1-1-2">
+<ol class="org-ol">
+<li>I used to be able to sing well.</li>
+<li>I used to be able to play guitar.</li>
+<li>I'd like to be able to swim.</li>
+<li>I've never been able to speak French.</li>
+</ol>
+</div>
+</li>
+<li><a id="org97526fd"></a>26.3<br />
+<div class="outline-text-6" id="text-1-4-1-1-3">
+<ol class="org-ol">
+<li>can't come</li>
+<li>could run</li>
+<li>can wait</li>
+<li>couldn't eat</li>
+<li>can't hear</li>
+<li>couldn't sleep</li>
+</ol>
+</div>
+</li>
+<li><a id="orgde8b686"></a>26.4<br />
+<div class="outline-text-6" id="text-1-4-1-1-4">
+<ol class="org-ol">
+<li>was able to escape.</li>
+<li>was able to finish.</li>
+<li>weren't able to find it.</li>
+<li>was able to get away.</li>
+</ol>
+</div>
+</li>
+<li><a id="org4a58a86"></a>26.5<br />
+<div class="outline-text-6" id="text-1-4-1-1-5">
+<ol class="org-ol">
+<li>could</li>
+<li>couldn't</li>
+<li>managed to</li>
+<li>couldn't</li>
+<li>managed to</li>
+<li>could</li>
+<li>managed to</li>
+<li>could</li>
+<li>managed to</li>
+<li>couldn't</li>
+</ol>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+
+<div id="outline-container-org1e797e7" class="outline-4">
+<h4 id="org1e797e7"><span class="section-number-4">1.4.2.</span> 28 must与can't比较</h4>
+<div class="outline-text-4" id="text-1-4-2">
+<p>
+表推测: 情态动词的否定不能简单加个not完事,而是根据具体含义否定
+</p>
+<ul class="org-ul">
+<li>must: 肯定</li>
+<li>can't: 否定</li>
+<li>must have done: 过去的肯定</li>
+<li>can't/couldn't have done: 过去的否定</li>
+</ul>
+</div>
+
+<ol class="org-ol">
+<li><a id="orgb7ec085"></a>ex<br />
+<ol class="org-ol">
+<li><a id="org2244ab6"></a>28.1<br />
+<div class="outline-text-6" id="text-1-4-2-1-1">
+<ol class="org-ol">
+<li>must</li>
+<li>must</li>
+<li>can't</li>
+<li>must</li>
+<li>must</li>
+<li>can't</li>
+<li>must</li>
+<li>must</li>
+<li>can't</li>
+</ol>
+</div>
+</li>
+<li><a id="org895e107"></a>28.2<br />
+<div class="outline-text-6" id="text-1-4-2-1-2">
+<ol class="org-ol">
+<li>have dropped</li>
+<li>be</li>
+<li>have gone
+go</li>
+<li>have taken</li>
+<li>be</li>
+<li>have been</li>
+<li>look
+be looking</li>
+<li>have been</li>
+<li>have listened to
+have heard</li>
+<li>have been following
+be following</li>
+</ol>
+</div>
+</li>
+<li><a id="org42eab02"></a>28.3<br />
+<div class="outline-text-6" id="text-1-4-2-1-3">
+<ol class="org-ol">
+<li>They must have gone out.</li>
+<li>Sarah can't have got my message.</li>
+<li>It must be very expensive.
+It must have been very expensive.</li>
+<li>They must have gone away.</li>
+<li>I must have left it in the restaurant last night.</li>
+<li>It can't/couldn't have been easy for her.</li>
+<li>He must have been waiting for somebody.</li>
+<li>She can't/couldn't have understood what I said.</li>
+<li>I must have forgotten to lock it.</li>
+<li>My neighbours must have had a party.
+My neighbours must have been having a party.</li>
+<li>The driver can't/couldn't have seen the red light.</li>
+</ol>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+
+<div id="outline-container-org5bfd2c5" class="outline-4">
+<h4 id="org5bfd2c5"><span class="section-number-4">1.4.3.</span> 36 would</h4>
+<div class="outline-text-4" id="text-1-4-3">
+<p>
+would:
+</p>
+<ul class="org-ul">
+<li>意义: 假设情形或动作</li>
+<li>would have done: 对过去的假设</li>
+<li>常常和if连用表虚拟语气</li>
+<li>wouldn't: 不肯做某事</li>
+<li>VS. will:
+<ul class="org-ul">
+<li>常常will表将要(肯定),would表假设(虚拟)</li>
+<li>在间接引语中作为will的过去式</li>
+</ul></li>
+<li>VS. used to:
+<ul class="org-ul">
+<li>相同: 过去重复发生的动作</li>
+<li>不同: 没有现在不再发生的意思</li>
+</ul></li>
+</ul>
+</div>
+<ol class="org-ol">
+<li><a id="orgf2b9ffb"></a>ex<br />
+<ol class="org-ol">
+<li><a id="orge45d5d2"></a>36.1<br />
+<div class="outline-text-6" id="text-1-4-3-1-1">
+<ol class="org-ol">
+<li>I'd love to live by the sea.</li>
+<li>I wouldn't like to be a teacher.</li>
+<li>I'd love to swim in the river.</li>
+<li>I'd be nice to have a house in the city.</li>
+<li>I'd like to go to NewYork.</li>
+</ol>
+</div>
+</li>
+<li><a id="org73abbb0"></a>36.2<br />
+<div class="outline-text-6" id="text-1-4-3-1-2">
+<ol class="org-ol">
+<li>would have done</li>
+<li>would enjoy</li>
+<li>would have enjoyed</li>
+<li>would, do</li>
+<li>would have stopped</li>
+<li>would have been</li>
+<li>would be</li>
+<li>would have passed</li>
+<li>would have</li>
+</ol>
+</div>
+</li>
+<li><a id="org636da72"></a>36.3<br />
+<div class="outline-text-6" id="text-1-4-3-1-3">
+<ol class="org-ol">
+<li>c</li>
+<li>e</li>
+<li>b</li>
+<li>f</li>
+<li>a</li>
+<li>d</li>
+</ol>
+</div>
+</li>
+<li><a id="orgd7e6d1c"></a>36.4<br />
+<div class="outline-text-6" id="text-1-4-3-1-4">
+<ol class="org-ol">
+<li>She promised she wouldn't be late.</li>
+<li>He promised he wouldn't have called me.
+He promised he would call me.</li>
+<li>You promised you wouldn't have told her.
+You promised you wouldn't tell her.</li>
+<li>They promised you would have waitted for us.
+They promised you would wait for us.</li>
+</ol>
+</div>
+</li>
+<li><a id="org83a7bbe"></a>36.5<br />
+<div class="outline-text-6" id="text-1-4-3-1-5">
+<ol class="org-ol">
+<li>wouldn't listen</li>
+<li>wouldn't tell</li>
+<li>wouldn't speak</li>
+<li>wouldn't let</li>
+</ol>
+</div>
+</li>
+<li><a id="orge5523dc"></a>36.6<br />
+<div class="outline-text-6" id="text-1-4-3-1-6">
+<ol class="org-ol">
+<li>would walk</li>
+<li>would shake</li>
+<li>would , help</li>
+<li>would share</li>
+<li>would , forget</li>
+</ol>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orgad5ff45" class="outline-3">
+<h3 id="orgad5ff45"><span class="section-number-3">1.5.</span> 条件句与wish</h3>
+<div class="outline-text-3" id="text-1-5">
+</div>
+<div id="outline-container-org0d1ae78" class="outline-4">
+<h4 id="org0d1ae78"><span class="section-number-4">1.5.1.</span> 38 If I do&#x2026;与If I did&#x2026;比较</h4>
+<div class="outline-text-4" id="text-1-5-1">
+<p>
+If I do: 有可能发生
+If I did: 发现可能不大
+</p>
+<ul class="org-ul">
+<li>would主句一般不用, 假如if+would是个宾从表请求</li>
+<li>would/could/might 一般用在主句</li>
+</ul>
+</div>
+<ol class="org-ol">
+<li><a id="org8c21d71"></a>ex<br />
+<ol class="org-ol">
+<li><a id="org0bfb2c4"></a>38.1<br />
+<div class="outline-text-6" id="text-1-5-1-1-1">
+<ol class="org-ol">
+<li>b</li>
+<li>b</li>
+<li>a</li>
+<li>b</li>
+<li>b</li>
+<li>a</li>
+<li>b</li>
+</ol>
+</div>
+</li>
+<li><a id="orge65e361"></a>38.2<br />
+<div class="outline-text-6" id="text-1-5-1-1-2">
+<ol class="org-ol">
+<li>pointed</li>
+<li>bought</li>
+<li>asked</li>
+<li>would lose</li>
+<li>would be</li>
+<li>were, stopped</li>
+<li>gave, would have</li>
+</ol>
+</div>
+</li>
+<li><a id="org87338f8"></a>38.3<br />
+<div class="outline-text-6" id="text-1-5-1-1-3">
+<ol class="org-ol">
+<li>If we caught the 10.30 train, we'd arrive too early.</li>
+<li>If he did his driving test now, he'd fail.</li>
+<li>If we stayed at a hotel, we would cost too much.</li>
+<li>If Sally left her job, she wouldn't get another one.</li>
+<li>If we invited Ben to the party, we would have to invite his friends too.</li>
+<li>If I told him what had happened, he wouldn't believe me.</li>
+</ol>
+</div>
+</li>
+<li><a id="orgb5d78dc"></a>38.4<br />
+<div class="outline-text-6" id="text-1-5-1-1-4">
+<ol class="org-ol">
+<li>If I won a lot of money, I'd buy a house.</li>
+<li>if I didn't have lunch.</li>
+<li>you would enjoy driving.</li>
+<li>you got married.</li>
+<li>I used your computer.</li>
+</ol>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+
+<div id="outline-container-org5e1b07b" class="outline-4">
+<h4 id="org5e1b07b"><span class="section-number-4">1.5.2.</span> 39 If I knew &#x2026; I wish I knew &#x2026;</h4>
+<div class="outline-text-4" id="text-1-5-2">
+<p>
+对于现在情况的虚拟:
+</p>
+<ol class="org-ol">
+<li>if型虚拟: if + 过去式
+对现在情况的假设(与现在情况不同)</li>
+<li>wish型虚拟: I wish I + 过去式
+对现在情况的假设(与现在情况不同),且表示遗憾</li>
+<li>两种虚拟 I was时可以用I were代替</li>
+<li>从句中比较少使用would</li>
+<li>could时有两种含义: 1. would be able to 将能够, 2. was/were able to 能够
+两者的区别在于:将能够,但是想不想是个问题. 能够,只指能.
+She could get a better job if could speak English.
+I wish I could help you.</li>
+</ol>
+</div>
+<ol class="org-ol">
+<li><a id="org1a41c6e"></a>exercises<br />
+<ol class="org-ol">
+<li><a id="org1f96ee4"></a>39.1<br />
+<div class="outline-text-6" id="text-1-5-2-1-1">
+<ol class="org-ol">
+<li>If <b>I knew</b> his number, I would phone him.</li>
+<li><span class="underline">I wouldn't buy</span> that coat if I were you.</li>
+<li><span class="underline">I would help</span> you if I could, but I'm afraid I can't.</li>
+<li>We don't need a car at present, but we would need a car if <span class="underline">we lived</span> in the country.</li>
+<li>If we had the choice, <span class="underline">we would live</span> in the country.</li>
+<li>This soup isn't very good. <span class="underline">It would taste</span> better if it wasn't so salty.</li>
+<li>I wouldn't mind living in England if the weather <span class="underline">were</span> be better.</li>
+<li>If I were you, <span class="underline">I wouldn't wait</span>. <span class="underline">I would go</span> now.</li>
+<li>You're always tired. If <span class="underline">you didn't go</span> to bed so late every night, you wouldn't be tired all the time.</li>
+<li>I think there are too many cars. If <span class="underline">there were not</span> so many cars, <span class="underline">there wouldn't be</span> so much pollution.</li>
+</ol>
+</div>
+</li>
+<li><a id="org688a51b"></a>39.2 if造句<br />
+<div class="outline-text-6" id="text-1-5-2-1-2">
+<ol class="org-ol">
+<li>If you didn't live so far away, we'd see you more often.</li>
+<li>I would buy it if it were not so expensive.</li>
+<li>We would go out more often if we could afford it.</li>
+<li>If didn't have to work late I would meet you tomorrow.</li>
+<li>We could have lunch outside if it were not raining.</li>
+<li>If I wanted his advice, I would ask for it.</li>
+</ol>
+</div>
+</li>
+<li><a id="orgdf8b945"></a>39.3 I wish&#x2026; 造句<br />
+<div class="outline-text-6" id="text-1-5-2-1-3">
+<ol class="org-ol">
+<li>I wish I knew more people.</li>
+<li>I wish I had a computer.</li>
+<li>I wish Helen was here.</li>
+<li>I wish it weren't cold.</li>
+<li>I wish I didn't live in a big city.</li>
+<li>I wish I could go to the party.</li>
+<li>I wish I didn't have to get up early tomorrow.</li>
+<li>I wish I knew something about cars.</li>
+<li>I wish I were feeling better.</li>
+</ol>
+</div>
+</li>
+<li><a id="orgb21dbff"></a>39.4 I wish&#x2026;造句<br />
+<div class="outline-text-6" id="text-1-5-2-1-4">
+<ol class="org-ol">
+<li>I wish I were in New York now.</li>
+<li>I wish I had more friends.</li>
+<li>I wish I could cook.</li>
+<li>I wish I were stronger.</li>
+</ol>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+<div id="outline-container-org5f77d38" class="outline-4">
+<h4 id="org5f77d38"><span class="section-number-4">1.5.3.</span> 40 If I had known&#x2026; I wish I had known&#x2026;</h4>
+<div class="outline-text-4" id="text-1-5-3">
+<ul class="org-ul">
+<li>从句:If I had known 和 I wish I had known 表过去的虚拟</li>
+<li>主句: would have done VS would be 第一个表过去会怎么样,第二个表现在会怎么样</li>
+<li>would VS could VS might: 已经去了 VS 能去 VS 可能去了</li>
+</ul>
+</div>
+<ol class="org-ol">
+<li><a id="orgceacff3"></a>ex<br />
+<ol class="org-ol">
+<li><a id="org1cb0b85"></a>40.1<br />
+<div class="outline-text-6" id="text-1-5-3-1-1">
+<ol class="org-ol">
+<li>I'd seen, I would have said</li>
+<li>he had missed, he would have missed</li>
+<li>I would have forgotten, you hadn't reminded</li>
+<li>I had had, I would have sent</li>
+<li>we would have enjoyed, had been</li>
+<li>It would have been, I had walked</li>
+<li>I were</li>
+<li>I had been</li>
+</ol>
+</div>
+</li>
+<li><a id="org27edfd1"></a>40.2<br />
+<div class="outline-text-6" id="text-1-5-3-1-2">
+<ol class="org-ol">
+<li>If I'd been hungry, I would have eaten something.</li>
+<li>hadn't been icy, wouldn't have happened.</li>
+<li>had known, I would have waken him up.</li>
+<li>I hadn't lost my phone, I couldn't have called you.</li>
+<li>If Karen hadn't been wearing a seat belt, she could have been injured in the crash.</li>
+<li>If you had have breakfast, you wouldn't have been hungry now.</li>
+<li>If I had had enough money, I would have got a tax.</li>
+</ol>
+</div>
+</li>
+<li><a id="org8b01056"></a>40.3<br />
+<div class="outline-text-6" id="text-1-5-3-1-3">
+<ol class="org-ol">
+<li>I wish I hadn't eaten so much.</li>
+<li>I had applied for the job.</li>
+<li>I wish I had learnt to play a musical instrument.</li>
+<li>I wish I hadn't painted the gate red.</li>
+<li>I wish I had brought my camera.</li>
+<li>I wish they had told me.</li>
+</ol>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org1ee3444" class="outline-3">
+<h3 id="org1ee3444"><span class="section-number-3">1.6.</span> 被动语态</h3>
+<div class="outline-text-3" id="text-1-6">
+</div>
+<div id="outline-container-orgc365d22" class="outline-4">
+<h4 id="orgc365d22"><span class="section-number-4">1.6.1.</span> 42 被动语态(1)(is done/was done)</h4>
+<div class="outline-text-4" id="text-1-6-1">
+<ul class="org-ul">
+<li>形式: is done(一般现在)/was done(一般过去)</li>
+<li>被动语态用于说明动作的承受者</li>
+<li>不知道或者没必要知道动作的执行者, 可以用by+[动作执行者]</li>
+</ul>
+</div>
+
+<ol class="org-ol">
+<li><a id="org1b12cf8"></a>ex<br />
+<ol class="org-ol">
+<li><a id="org10d2ab7"></a>42.1<br />
+<div class="outline-text-6" id="text-1-6-1-1-1">
+<ol class="org-ol">
+<li>are caused</li>
+<li>is made</li>
+<li>was damaged</li>
+<li>were invited</li>
+<li>are shown</li>
+<li>are held</li>
+<li>wasn written, was translated</li>
+<li>were overtook</li>
+<li>is surrounded</li>
+</ol>
+</div>
+</li>
+<li><a id="orgb3f9bce"></a>42.2<br />
+<div class="outline-text-6" id="text-1-6-1-1-2">
+<ol class="org-ol">
+<li>How is glass made?</li>
+<li>When was television invented?</li>
+<li>How are mountains formed?</li>
+<li>When were antibiotics discovered?</li>
+<li>What is silver used for?</li>
+</ol>
+</div>
+</li>
+<li><a id="orga8e435a"></a>42.3<br />
+<div class="outline-text-6" id="text-1-6-1-1-3">
+<ol class="org-ol">
+<li>are employed</li>
+<li>Did somebody clean</li>
+<li>covers</li>
+<li>is covered</li>
+<li>are locked</li>
+<li>was sent, arrived</li>
+<li>sank, was rescued</li>
+<li>died, were brought up</li>
+<li>grew up</li>
+<li>was stolen</li>
+<li>disappeared</li>
+<li>did Sue resign</li>
+<li>was Ben fired</li>
+<li>is owned</li>
+<li>called, was injured,wasn't needed</li>
+<li>were these pictures taken, Did you take</li>
+<li>am not bothered</li>
+</ol>
+</div>
+</li>
+<li><a id="org0de87b4"></a>42.4<br />
+<div class="outline-text-6" id="text-1-6-1-1-4">
+<ol class="org-ol">
+<li>The room is cleaned every day.</li>
+<li>All flights were canceled because of fog.</li>
+<li>This road isn't used much.</li>
+<li>I was accused of stealing money.</li>
+<li>How are languages learnt?</li>
+<li>We were warned not to go out alone.</li>
+</ol>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+<div id="outline-container-orgf8fda18" class="outline-4">
+<h4 id="orgf8fda18"><span class="section-number-4">1.6.2.</span> 43 被动语态(2)(be done/been done/being done)</h4>
+<div class="outline-text-4" id="text-1-6-2">
+<ul class="org-ul">
+<li>[model verb]/to + do
+[model verb]/to + be done</li>
+<li>[model verb]/to + have done
+[model verb]/to + have been done</li>
+<li>have/has + done
+have/has been + done</li>
+<li>had + done
+had been + done</li>
+<li>am/is/are + doing
+am/is/are + being + done
+was/were + doing
+was/were + being + done</li>
+</ul>
+</div>
+<ol class="org-ol">
+<li><a id="orgc208a94"></a>ex<br />
+<ol class="org-ol">
+<li><a id="org251027f"></a>43.1<br />
+<div class="outline-text-6" id="text-1-6-2-1-1">
+<ol class="org-ol">
+<li>it can be washed</li>
+<li>it can't broken</li>
+<li>it can be eaten</li>
+<li>it can't be used</li>
+<li>it can't be seen</li>
+<li>it can be moved</li>
+</ol>
+</div>
+</li>
+<li><a id="org344b36e"></a>43.2<br />
+<div class="outline-text-6" id="text-1-6-2-1-2">
+<ol class="org-ol">
+<li>be done</li>
+<li>have been sent</li>
+<li>be made</li>
+<li>be spent</li>
+<li>have been repaired</li>
+<li>be carried</li>
+<li>be woken up</li>
+<li>have been arrested</li>
+<li>have been caused</li>
+</ol>
+</div>
+</li>
+<li><a id="orge89194b"></a>43.3<br />
+<div class="outline-text-6" id="text-1-6-2-1-3">
+<ol class="org-ol">
+<li>Tom room has been cleaned.</li>
+<li>The computer is being used right now.</li>
+<li>our conversation was being recorded</li>
+<li>the game had been canceled.</li>
+<li>A new ring road is being built round the city.</li>
+<li>A new hospital has been built near the airport.</li>
+</ol>
+</div>
+</li>
+<li><a id="orgf4a157e"></a>43.4<br />
+<div class="outline-text-6" id="text-1-6-2-1-4">
+<ol class="org-ol">
+<li>I think we're being followed.</li>
+<li>Have you painted the walls?</li>
+<li>It has been stolen.</li>
+<li>has taken it.</li>
+<li>He has been promoted.</li>
+<li>is being redecorated.</li>
+<li>works, has been repaired.
+is working again</li>
+<li>The furniture had been moved.</li>
+<li>hasn't been seen since then.</li>
+<li>I haven't seen Jane for ages.</li>
+<li>Have you ever been mugged?</li>
+</ol>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+<div id="outline-container-org07cb6bd" class="outline-4">
+<h4 id="org07cb6bd"><span class="section-number-4">1.6.3.</span> 44 被动语态(3)</h4>
+<div class="outline-text-4" id="text-1-6-3">
+<ul class="org-ul">
+<li>双宾语:
+<ul class="org-ul">
+<li>give sth. to sb.
+<ul class="org-ul">
+<li>sb. is given sth.</li>
+<li>sth. is given to sb.</li>
+</ul></li>
+<li>ask/offer/pay show/teach/tell sb. sth.
+sb. is asked/offered/paid/shown/taught/taught/told sth. 以人开头</li>
+</ul></li>
+<li>I don't like sb. doing sth. -&gt; I don't like being done sth.
+without anybody seeing us -&gt; without being seen.(独立主格)</li>
+<li>I was born &#x2026;
+are born every day?</li>
+<li>get:
+<ul class="org-ul">
+<li>有时可以代替be,但只能用于变化,而且是口语</li>
+<li>get married/divorced/lost/dressed/changed, 这些都是adj.并不是被动</li>
+</ul></li>
+</ul>
+</div>
+<ol class="org-ol">
+<li><a id="org2f5adc8"></a>ex<br />
+<ol class="org-ol">
+<li><a id="orga449603"></a>44.1<br />
+<div class="outline-text-6" id="text-1-6-3-1-1">
+<ol class="org-ol">
+<li>I wasn't give the information I needed.</li>
+<li>was asked some difficult questions at the interview.</li>
+<li>was given a present when she retired.</li>
+<li>told about the meeting.</li>
+<li>be paid for your work?</li>
+<li>should have been offered the job.</li>
+<li>been shown what to do?</li>
+</ol>
+</div>
+</li>
+<li><a id="org43ecb9f"></a>44.2<br />
+<div class="outline-text-6" id="text-1-6-3-1-2">
+<ol class="org-ol">
+<li>being kept</li>
+<li>being invited.</li>
+<li>being given</li>
+<li>being knocked down</li>
+<li>being treated</li>
+<li>being sticked</li>
+</ol>
+</div>
+</li>
+<li><a id="orgfabac3e"></a>44.3<br />
+<div class="outline-text-6" id="text-1-6-3-1-3">
+<ol class="org-ol">
+<li>Walt Disney was born in 1901.</li>
+<li>Ludwig van Beethoven was born in 1770.</li>
+<li>Galileo was born in 1564.</li>
+<li>Mahatma Gandhi was born in 1869.</li>
+<li>Michael Jackson was born in 1958.</li>
+<li>Martin Luther King was born in 1929.</li>
+<li>I was born in 1993.</li>
+</ol>
+</div>
+</li>
+<li><a id="org58a2029"></a>44.4<br />
+<div class="outline-text-6" id="text-1-6-3-1-4">
+<ol class="org-ol">
+<li>got hurt.</li>
+<li>got stung</li>
+<li>get used</li>
+<li>got stolen</li>
+<li>get paid</li>
+<li>got stopped</li>
+<li>get damaged</li>
+<li>get asked</li>
+</ol>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+<div id="outline-container-orgcc3603c" class="outline-4">
+<h4 id="orgcc3603c"><span class="section-number-4">1.6.4.</span> 45 It is said that &#x2026; He is said to &#x2026; He is supposed to ..</h4>
+<div class="outline-text-4" id="text-1-6-4">
+<ul class="org-ul">
+<li>It is said that S. = S. is said to 据说
+一般变原型,过去/完成变完成,被动继续被动
+do -&gt; to do
+was/were -&gt; to have been</li>
+<li>alleged believed considered expected known reported thought understood</li>
+<li>(be) supposed to: 据说; 期望发生但通常没有; not supposed to表不准</li>
+</ul>
+</div>
+<ol class="org-ol">
+<li><a id="org58ce9eb"></a>ex<br />
+<ol class="org-ol">
+<li><a id="org32396f5"></a>45.1<br />
+<div class="outline-text-6" id="text-1-6-4-1-1">
+<ol class="org-ol">
+<li>is expected to end soon.</li>
+<li>expected to be good tomorrow.</li>
+<li>is believed to get in through a window in the roof.
+are believed to have got in through a window in the roof.</li>
+<li>is reported to be homeless after the floods.
+are reported to be homeless after the floods.</li>
+<li>is thought to escape by climbing over a wall.
+is thought to have escaped by climbing over a wall.</li>
+<li>is alleged to be driving at 110 miles an hour.
+is alleged to have been driving at 110 miles an hour.</li>
+<li>is reported to have been badly damaged by the fire.</li>
+<li><ul class="org-ul">
+<li>is said to be losing a lot of money.</li>
+<li>is believed to lose a lot of money last year.
+is believed to have lost a lot of money last year.</li>
+<li>is expected to make a loss this year.</li>
+</ul></li>
+</ol>
+</div>
+</li>
+<li><a id="orgfdb0850"></a>45.2<br />
+<div class="outline-text-6" id="text-1-6-4-1-2">
+<ol class="org-ol">
+<li>Alan is supposed to speak ten languages.</li>
+<li>He is supposed to know a lot of famous people.</li>
+<li>He is supposed to be very rich.</li>
+<li>He is supposed to have twelve children.</li>
+<li>He is supposed to be an actor when he was younger.
+He is supposed to have been an actor when he was younger.</li>
+</ol>
+</div>
+</li>
+<li><a id="org9c919cf"></a>45.3<br />
+<div class="outline-text-6" id="text-1-6-4-1-3">
+<ol class="org-ol">
+<li>is supposed to be a secret.</li>
+<li>are supposed to be my friend.</li>
+<li>am supposed to be on a diet.</li>
+<li>is supposed to be a joke.</li>
+<li>is supposed to be a flower.</li>
+<li>are supposed to be working.</li>
+</ol>
+</div>
+</li>
+<li><a id="orgd184fa2"></a>45.4<br />
+<div class="outline-text-6" id="text-1-6-4-1-4">
+<ol class="org-ol">
+<li>'re not supposed to park</li>
+<li>are supposed to start</li>
+<li>was supposed to phone</li>
+<li>aren't supposed to block</li>
+<li>was supposed to depart</li>
+</ol>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orgb6f4436" class="outline-3">
+<h3 id="orgb6f4436"><span class="section-number-3">1.7.</span> 间接引语</h3>
+<div class="outline-text-3" id="text-1-7">
+</div>
+<div id="outline-container-orgadbccb9" class="outline-4">
+<h4 id="orgadbccb9"><span class="section-number-4">1.7.1.</span> 47 间接引语(1)(He said that &#x2026;)</h4>
+<div class="outline-text-4" id="text-1-7-1">
+<p>
+直接引语变间接引语: 一般情况倒退一个时态
+	一般时-&gt;过去时
+	过去时-&gt;过去时/过去完成时
+</p>
+</div>
+
+<ol class="org-ol">
+<li><a id="org09359b4"></a>ex<br />
+<ol class="org-ol">
+<li><a id="orgac6b27f"></a>47.1<br />
+<div class="outline-text-6" id="text-1-7-1-1-1">
+<ol class="org-ol">
+<li>Steve said that he was living in London.</li>
+<li>He said that his father wasn't very well.</li>
+<li>He said that Rachel and Mark were getting married next month.</li>
+<li>He said that his sister had had a baby.</li>
+<li>He said that he didn't know what Joe was doing.</li>
+<li>He said that he had seen Helen at a party in June and she had seemed fine.</li>
+<li>He said he hadn't seen Amy recently.</li>
+<li>He said he was not enjoying his job very much.</li>
+<li>He said I could come and stay at his place if I was ever in London.</li>
+<li>He said his car had been stolen a few days ago.</li>
+<li>He said he wanted to go on holiday, but he couldn't afford it.</li>
+<li>He said he would tell Chris he had seen me.</li>
+</ol>
+</div>
+</li>
+<li><a id="org5738043"></a>47.2<br />
+<div class="outline-text-6" id="text-1-7-1-1-2">
+<ol class="org-ol">
+<li>it was only five minutes' walk.</li>
+<li>wasn't coming to the party.</li>
+<li>they didn't like</li>
+<li>he didn't know</li>
+<li>she would be</li>
+<li>you was going to stay at</li>
+<li>he didn't speak</li>
+<li>he had seen you</li>
+</ol>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+
+<div id="outline-container-org25f9e87" class="outline-4">
+<h4 id="org25f9e87"><span class="section-number-4">1.7.2.</span> 48 间接引语(2)</h4>
+<div class="outline-text-4" id="text-1-7-2">
+<p>
+直接引语变间接引语:
+</p>
+<ul class="org-ul">
+<li>事实仍然成立时,可以时态不变或倒退一个时态</li>
+<li>情况与事实不符时,必须要用过去时</li>
+</ul>
+</div>
+
+<ol class="org-ol">
+<li><a id="org06e0d50"></a>ex<br />
+<ol class="org-ol">
+<li><a id="org7dab129"></a>48.1<br />
+<div class="outline-text-6" id="text-1-7-2-1-1">
+<ol class="org-ol">
+<li>But you said he was lazy.</li>
+<li>But you said you didn't like fish.</li>
+<li>But you said you couldn't drive.</li>
+<li>But you said Jane had a very-paid job.</li>
+<li>But you said you didn't have any brothers or sister.</li>
+<li>But you said you'd never been to the United States.</li>
+<li>But you said you were working tomorrow evening.</li>
+<li>But you said Jane was a friend of yours.</li>
+</ol>
+</div>
+</li>
+<li><a id="org23af9cf"></a>48.2<br />
+<div class="outline-text-6" id="text-1-7-2-1-2">
+<ol class="org-ol">
+<li>said</li>
+<li>Tell</li>
+<li>Say</li>
+<li>said</li>
+<li>told</li>
+<li>said</li>
+<li>tell, said</li>
+<li>tell, say</li>
+<li>told</li>
+<li>said</li>
+</ol>
+</div>
+</li>
+<li><a id="orgd61fa08"></a>48.3<br />
+<div class="outline-text-6" id="text-1-7-2-1-3">
+<ol class="org-ol">
+<li>I told him to hurry up.</li>
+<li>so I asked her to slow down.</li>
+<li>I told her not to worry.</li>
+<li>I asked Tom to give me a hand.</li>
+<li>he asked me to open my bag.</li>
+<li>asked him to get me a paper.</li>
+<li>I told him to mind his own business.</li>
+<li>asked her to marry him.</li>
+<li>I told her not to wait for me.</li>
+</ol>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org1620c21" class="outline-3">
+<h3 id="org1620c21"><span class="section-number-3">1.8.</span> 疑问句与助动词</h3>
+</div>
+
+<div id="outline-container-orgb7002f1" class="outline-3">
+<h3 id="orgb7002f1"><span class="section-number-3">1.9.</span> 动词的-ing形式与不定式比较</h3>
+<div class="outline-text-3" id="text-1-9">
+</div>
+<div id="outline-container-orgd0f6dd0" class="outline-4">
+<h4 id="orgd0f6dd0"><span class="section-number-4">1.9.1.</span> 64 to&#x2026;, for &#x2026; VS so that&#x2026; (表目的)</h4>
+<div class="outline-text-4" id="text-1-9-1">
+<ul class="org-ul">
+<li>to do表目的:某人为什么要做某事;某物为什么存在</li>
+<li>for sth./v-ing VS to do</li>
+<li>so that:表目的
+<ul class="org-ul">
+<li>目的表否定 (won't/wouldn't)</li>
+<li>肯定 can/could/should</li>
+<li>that可以省略</li>
+</ul></li>
+</ul>
+</div>
+<ol class="org-ol">
+<li><a id="org130e26a"></a>ex<br />
+<ol class="org-ol">
+<li><a id="org16ecdc8"></a>64.1<br />
+<div class="outline-text-6" id="text-1-9-1-1-1">
+<ol class="org-ol">
+<li>I shouted to warm people of the danger.</li>
+<li>I opened the box to see what was in it.</li>
+<li>I'm saving money to go to Canada.</li>
+<li>I need a knife to chop these onions.</li>
+<li>I'm wearing two sweaters to keep warm.</li>
+<li>I phoned the police to report the accident.</li>
+</ol>
+</div>
+</li>
+
+<li><a id="org3d45b65"></a>64.2<br />
+<div class="outline-text-6" id="text-1-9-1-1-2">
+<ol class="org-ol">
+<li>to protect</li>
+<li>to read</li>
+<li>to walk</li>
+<li>to drink</li>
+<li>to put</li>
+<li>to solve</li>
+<li>to travel</li>
+<li>to talk</li>
+<li>to wear</li>
+<li>to celebrate</li>
+<li>to help</li>
+</ol>
+</div>
+</li>
+<li><a id="orgff354cb"></a>64.3<br />
+<div class="outline-text-6" id="text-1-9-1-1-3">
+<ol class="org-ol">
+<li>for</li>
+<li>for</li>
+<li>to</li>
+<li>to</li>
+<li>for</li>
+<li>to</li>
+<li>for</li>
+<li>for, to</li>
+</ol>
+</div>
+</li>
+<li><a id="org89f3a53"></a>64.4<br />
+<div class="outline-text-6" id="text-1-9-1-1-4">
+<ol class="org-ol">
+<li>so that I wouldn't be late.</li>
+<li>so that I wouldn't be could.</li>
+<li>so that he could contact me (= would be able to)</li>
+<li>so that nobody can hear our conversation
+would</li>
+<li>so that we could start the meeting on time.
+can</li>
+<li>so that we wouldn't forget anything.</li>
+<li>so that the car behind me could overtake.</li>
+</ol>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+
+<div id="outline-container-org263f792" class="outline-4">
+<h4 id="org263f792"><span class="section-number-4">1.9.2.</span> 67 see somebody do VS see somebody doing</h4>
+<div class="outline-text-4" id="text-1-9-2">
+<ul class="org-ul">
+<li>saw sb. do = sb. did sth + saw this 看到全过程
+was seen to do sth.</li>
+<li>saw sb. doing = sb. was doing sth. + saw this 只看到正在做某事</li>
+<li>hear,feel,notice,listen to,smell</li>
+</ul>
+</div>
+<ol class="org-ol">
+<li><a id="org486c526"></a>ex<br />
+<ol class="org-ol">
+<li><a id="org9f87005"></a>67.1<br />
+<div class="outline-text-6" id="text-1-9-2-1-1">
+<ol class="org-ol">
+<li>anybody go out</li>
+<li>arrive</li>
+<li>take it</li>
+<li>it ring</li>
+<li>him play</li>
+<li>you lock it</li>
+<li>her fall</li>
+</ol>
+</div>
+</li>
+<li><a id="orgd74b467"></a>67.2<br />
+<div class="outline-text-6" id="text-1-9-2-1-2">
+<ol class="org-ol">
+<li>We saw Kate waiting for a bus.</li>
+<li>playing tennis.</li>
+<li>Clare eating</li>
+<li>Bill playing guitar.</li>
+<li>smell the dinner burning.</li>
+<li>We saw Linda running.</li>
+</ol>
+</div>
+</li>
+<li><a id="org014d61c"></a>67.3<br />
+<div class="outline-text-6" id="text-1-9-2-1-3">
+<ol class="org-ol">
+<li>singing</li>
+<li>come</li>
+<li>tell</li>
+<li>crying</li>
+<li>riding</li>
+<li>say</li>
+<li>run, climb</li>
+<li>explode</li>
+<li>crawling</li>
+<li>slam</li>
+<li>sleeping</li>
+</ol>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+
+<div id="outline-container-orgf0ca13a" class="outline-4">
+<h4 id="orgf0ca13a"><span class="section-number-4">1.9.3.</span> 68 -ing分句(例如: Feeling tried, I went to bed early.)</h4>
+<div class="outline-text-4" id="text-1-9-3">
+<p>
+-ing分句:
+</p>
+<ul class="org-ul">
+<li>形式:
+Joe hurt his knee playing football.
+Feeling tried, I went to bed early.</li>
+<li>同一主语,一个动作正在进行,可以用ing分句或while/when ing</li>
+<li>一动作发生在一动作之前(太短暂不用),在前的动作用having done 或 after ing</li>
+<li>一动作因为另一动作而发生,原因的动作用ing;更强调发生在前时,用having done.</li>
+</ul>
+</div>
+<ol class="org-ol">
+<li><a id="orgae11c79"></a>ex<br />
+<ol class="org-ol">
+<li><a id="orgb161021"></a>68.1<br />
+<div class="outline-text-6" id="text-1-9-3-1-1">
+<ol class="org-ol">
+<li>Kate was in the kitchen making coffee.</li>
+<li>Amy was sitting in an armchair reading a book.</li>
+<li>Sue opened the door carefully trying not to make a noise.</li>
+<li>Sarah went out saying she would be back in an hour.</li>
+<li>Lise was in London for two years working in a bookshop.</li>
+<li>Anna walked around the town looking at the sights and taking pictures.</li>
+</ol>
+</div>
+</li>
+
+<li><a id="orgded87db"></a>68.2<br />
+<div class="outline-text-6" id="text-1-9-3-1-2">
+<ol class="org-ol">
+<li>Joe hurt his knee playing football.</li>
+<li>I fell asleep watching TV.</li>
+<li>A friend of mine slipped and fell getting off a bus.</li>
+<li>I got very wet walking home in the rain.</li>
+<li>Laura had an accident driving to work yesterday.</li>
+<li>Two people were overcome by smoke trying to put out the fire.</li>
+</ol>
+</div>
+</li>
+
+<li><a id="orge6971aa"></a>68.3<br />
+<div class="outline-text-6" id="text-1-9-3-1-3">
+<ol class="org-ol">
+<li>Having finished her work, she went home.</li>
+<li>Having bought tickets, we went into the theatre.</li>
+<li>Having had lunch, they continued their journey.</li>
+<li>Having done the shopping, I went for a cup of coffee.</li>
+</ol>
+</div>
+</li>
+
+<li><a id="org7fa752a"></a>68.4 -ing, Not-ing or Having<br />
+<div class="outline-text-6" id="text-1-9-3-1-4">
+<ol class="org-ol">
+<li>Feeling tired, I went to bed early.</li>
+<li>Thinking they might be hungry,</li>
+<li>Being a vergetarian,</li>
+<li>Not knowing his email address</li>
+<li>Having travelled a lot</li>
+<li>Not being able to speak the local language</li>
+<li>Having spent nearly all our money.</li>
+</ol>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+</div>
+
+
+<div id="outline-container-org6c99f29" class="outline-3">
+<h3 id="org6c99f29"><span class="section-number-3">1.10.</span> 冠词与名词</h3>
+<div class="outline-text-3" id="text-1-10">
+</div>
+<div id="outline-container-orgeb2f403" class="outline-4">
+<h4 id="orgeb2f403"><span class="section-number-4">1.10.1.</span> 72 a/an与the比较</h4>
+<div class="outline-text-4" id="text-1-10-1">
+<p>
+a an: 泛指, once a week
+the: 特指
+</p>
+</div>
+<ol class="org-ol">
+<li><a id="orgb7667b2"></a>ex<br />
+<ol class="org-ol">
+<li><a id="orgc58636f"></a>72.1<br />
+<div class="outline-text-6" id="text-1-10-1-1-1">
+<ol class="org-ol">
+<li>a, a/ The, the</li>
+<li>an/ A, a/The, the, the</li>
+<li>a,a/the, the, the</li>
+<li>an,a/a, the/ a</li>
+</ol>
+</div>
+</li>
+<li><a id="org4f4e5c5"></a>72.2<br />
+<div class="outline-text-6" id="text-1-10-1-1-2">
+<ol class="org-ol">
+<li>a, the, the</li>
+<li>a, a, the</li>
+<li>a, the, the</li>
+<li>an, The, the, the</li>
+<li>the, a, a</li>
+</ol>
+</div>
+</li>
+<li><a id="org03440bf"></a>72.3<br />
+<div class="outline-text-6" id="text-1-10-1-1-3">
+<ol class="org-ol">
+<li>Would you like an apple?</li>
+<li>How often do you go to the dentist?</li>
+<li>the door</li>
+<li>a mistake</li>
+<li>the bus station</li>
+<li>a problem</li>
+<li>the post office</li>
+<li>the floor</li>
+<li>the book</li>
+<li>a job, a bank</li>
+<li>a small apartment, the city</li>
+<li>a supermarket, the end, the street</li>
+</ol>
+</div>
+</li>
+<li><a id="org518a528"></a>72.4<br />
+<div class="outline-text-6" id="text-1-10-1-1-4">
+<ol class="org-ol">
+<li>Three or four times a year.
+Three or four times a year.</li>
+<li>Once a year.
+Once or twice a year</li>
+<li>Three times a year.
+Once or twice a year.</li>
+<li>Once a week
+50 kilometres an hour</li>
+<li>Eight hours a day.
+About eight hours a night.</li>
+<li>Once a evening.
+Two or three times a week.</li>
+<li>Once a month.
+About two hours a day.</li>
+<li>Once a year.
+About $20 a day.</li>
+</ol>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org1c3f21a" class="outline-3">
+<h3 id="org1c3f21a"><span class="section-number-3">1.11.</span> 代词与限定词</h3>
+<div class="outline-text-3" id="text-1-11">
+</div>
+<div id="outline-container-org2c72f86" class="outline-4">
+<h4 id="org2c72f86"><span class="section-number-4">1.11.1.</span> 85 some与any比较</h4>
+<div class="outline-text-4" id="text-1-11-1">
+<ul class="org-ul">
+<li>some:
+<ul class="org-ul">
+<li>肯定</li>
+<li>疑问中表知道</li>
+</ul></li>
+<li>any:
+<ul class="org-ul">
+<li>否定或否定含义</li>
+<li>疑问中表不知道</li>
+<li>if从句或有if含义用any</li>
+<li>"无论哪个" "任何"</li>
+</ul></li>
+<li>somebody/someone/anybody/anyone是单数,但是用they=he or she, them = her or him.</li>
+</ul>
+<p>
+判断体系:
+</p>
+<ol class="org-ol">
+<li>陈述句? 肯定some, 否定any
+有任何的意思? any</li>
+<li>if从句? any</li>
+<li>疑问句? 确认some, 不确认any</li>
+</ol>
+</div>
+
+<ol class="org-ol">
+<li><a id="org7cf104d"></a>ex<br />
+<ol class="org-ol">
+<li><a id="orgc9ecd00"></a>85.1<br />
+<div class="outline-text-6" id="text-1-11-1-1-1">
+<ol class="org-ol">
+<li>any</li>
+<li>some</li>
+<li>any</li>
+<li>any,some</li>
+<li>some</li>
+<li>some, any</li>
+<li>any</li>
+<li>any</li>
+<li>some</li>
+<li>any</li>
+<li>some</li>
+</ol>
+</div>
+</li>
+
+<li><a id="org2ab6447"></a>85.2<br />
+<div class="outline-text-6" id="text-1-11-1-1-2">
+<ol class="org-ol">
+<li>anything</li>
+<li>somebody</li>
+<li>anybody</li>
+<li>anything</li>
+<li>something</li>
+<li>somebody, anybody</li>
+<li>something, anything</li>
+<li>Anybody</li>
+<li>anything</li>
+<li>somewhere
+anywhere</li>
+<li>somewhere</li>
+<li>anywhere</li>
+<li>anyone</li>
+<li>something</li>
+<li>anyone</li>
+<li>anything</li>
+<li>something</li>
+<li>anybody anything</li>
+</ol>
+</div>
+</li>
+
+<li><a id="orgf54e10c"></a>85.3<br />
+<div class="outline-text-6" id="text-1-11-1-1-3">
+<ol class="org-ol">
+<li>Any bus</li>
+<li>Any day.</li>
+<li>Anything.</li>
+<li>anywhere</li>
+<li>Any job</li>
+<li>Any time</li>
+<li>Anybody</li>
+<li>Any newspaper.</li>
+</ol>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org1398e63" class="outline-3">
+<h3 id="org1398e63"><span class="section-number-3">1.12.</span> 定语从句</h3>
+<div class="outline-text-3" id="text-1-12">
+</div>
+<div id="outline-container-org909c832" class="outline-4">
+<h4 id="org909c832"><span class="section-number-4">1.12.1.</span> 92 定语从句(1)&#x2013;由关系代词who/what/which引导的从句</h4>
+<div class="outline-text-4" id="text-1-12-1">
+<ul class="org-ul">
+<li>定语从句起限定作用,表明具体是什么人/事物</li>
+<li>指代人时:who/that 取代了he/she/they
+the woman - she lives next door - is a doctor
+the woman who lives next door is a doctor</li>
+<li>指代事物,用that/which</li>
+<li>what = the thing(s) that,注意what和that的区别</li>
+</ul>
+</div>
+
+<ol class="org-ol">
+<li><a id="orgbcf5f13"></a>ex<br />
+<ol class="org-ol">
+<li><a id="org154a340"></a>92.1<br />
+<div class="outline-text-6" id="text-1-12-1-1-1">
+<ol class="org-ol">
+<li>An architect is someone who designs buildings.</li>
+<li>A burglar is someone who breaks into a house to steal things.</li>
+<li>A customer is someone who buys something from a shop.</li>
+<li>A shoplifter is someone who steals from a shop.</li>
+<li>A coward is someone who is not brave.</li>
+<li>An atheist is someone who doesn't believe in God.</li>
+<li>A pessimist is someone who expects the worst to happen.</li>
+<li>A tenant is someone who pays rent to live in a house or apartment.</li>
+</ol>
+</div>
+</li>
+<li><a id="org14f2910"></a>92.2<br />
+<div class="outline-text-6" id="text-1-12-1-1-2">
+<ol class="org-ol">
+<li>The girl who was injured in the accident is now in hospital.</li>
+<li>The waitress who served me was impolite and impatient.</li>
+<li>The build which was destoryed in the fire has now been rebuilt.</li>
+<li>The people who were arrested have now been released.</li>
+<li>The bus which goes to the airport runs every half hour.</li>
+</ol>
+</div>
+</li>
+<li><a id="orgbf75859"></a>92.3<br />
+<div class="outline-text-6" id="text-1-12-1-1-3">
+<ol class="org-ol">
+<li>that makes furniture.</li>
+<li>who runs away from home.</li>
+<li>which were hanging on the wall.</li>
+<li>which cannot be explained.</li>
+<li>who stole my wallet.</li>
+<li>which gives you the meanings of words.</li>
+<li>who invented the telephone.</li>
+<li>which can support life.</li>
+</ol>
+</div>
+</li>
+<li><a id="orga4766d6"></a>92.4<br />
+<div class="outline-text-6" id="text-1-12-1-1-4">
+<ol class="org-ol">
+<li>stories that have</li>
+<li>T</li>
+<li>F shop which sells</li>
+<li>F driver who caused</li>
+<li>T</li>
+<li>F a world that is</li>
+<li>T</li>
+<li>F horse which won</li>
+</ol>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+
+<div id="outline-container-org4517d20" class="outline-4">
+<h4 id="org4517d20"><span class="section-number-4">1.12.2.</span> 93 定语从句(2)&#x2013;who/what/which的省略</h4>
+<div class="outline-text-4" id="text-1-12-2">
+<ul class="org-ul">
+<li>who/what/which当从句的主语不可以省略</li>
+<li>who/what/which当从句的宾语可以省略
+当从句的宾语时,从句不能有宾语</li>
+<li>in/to/for在从句的动词后</li>
+<li>what等于the thing that:补充主句成分的</li>
+</ul>
+</div>
+
+<ol class="org-ol">
+<li><a id="org9dda4e2"></a>ex<br />
+<ol class="org-ol">
+<li><a id="org3825a5b"></a>93.1<br />
+<div class="outline-text-6" id="text-1-12-2-1-1">
+<ol class="org-ol">
+<li>The woman who lives next door.</li>
+<li>T</li>
+<li>T</li>
+<li>F people who work</li>
+<li>T</li>
+<li>T</li>
+<li>F the money which was</li>
+<li>T</li>
+<li>F that</li>
+</ol>
+</div>
+</li>
+<li><a id="orgb0a60a3"></a>93.2<br />
+<div class="outline-text-6" id="text-1-12-2-1-2">
+<ol class="org-ol">
+<li>the keys you lost?</li>
+<li>you are wearing.</li>
+<li>you are going to see.</li>
+<li>I wanted to visit</li>
+<li>I invited</li>
+<li>you had to do</li>
+<li>I rented</li>
+</ol>
+</div>
+</li>
+<li><a id="org2784141"></a>93.3<br />
+<div class="outline-text-6" id="text-1-12-2-1-3">
+<ol class="org-ol">
+<li>the books you were looking for?</li>
+<li>the wedding we were invented to.</li>
+<li>the hotel you told me about.</li>
+<li>the job I applied for.</li>
+<li>the concept you went to?</li>
+<li>somebody you can rely on.</li>
+<li>the man you were with</li>
+</ol>
+</div>
+</li>
+<li><a id="orgde0f761"></a>93.4<br />
+<div class="outline-text-6" id="text-1-12-2-1-4">
+<ol class="org-ol">
+<li>-</li>
+<li>what</li>
+<li>-</li>
+<li>what</li>
+<li>that</li>
+<li>what</li>
+<li>-</li>
+<li>what</li>
+<li>-</li>
+</ol>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+
+<div id="outline-container-org20aaf75" class="outline-4">
+<h4 id="org20aaf75"><span class="section-number-4">1.12.3.</span> 94 定语从句(3)&#x2013;whose/whom/where</h4>
+<div class="outline-text-4" id="text-1-12-3">
+<ul class="org-ul">
+<li>whose代替his/her/their,定人
+whose对比who=his/her/their对比he/she/they</li>
+<li>whom,在从句中当宾语,而且可以把从句的介词放其前面</li>
+<li>where指代从句的地点=从句的there
+注意先行词是地点,而是地点状语,且介词不要了!!!. a place(先行词) where</li>
+<li>the day/ the year/ the time + (that) something happens</li>
+<li>the reason + (that/why) something happens</li>
+</ul>
+</div>
+
+<ol class="org-ol">
+<li><a id="org5085224"></a>ex<br />
+<ol class="org-ol">
+<li><a id="org54f97b5"></a>94.1<br />
+<div class="outline-text-6" id="text-1-12-3-1-1">
+<ol class="org-ol">
+<li>whose mother writes detective stories.</li>
+<li>whose wife is an English teacher.</li>
+<li>who owns a restaurant.</li>
+<li>whose ambition is to climb Qomolangma.</li>
+<li>who has just got married.</li>
+<li>whose parents used to work in a circus.</li>
+</ol>
+</div>
+</li>
+<li><a id="orgc9b0f45"></a>94.2<br />
+<div class="outline-text-6" id="text-1-12-3-1-2">
+<ol class="org-ol">
+<li>the small town where I grew up.</li>
+<li>where I can get some water?</li>
+<li>factory where I work</li>
+<li>the hotel where Sue is staying?</li>
+<li>park where I play football</li>
+</ol>
+</div>
+</li>
+<li><a id="orgb83ebcf"></a>94.3<br />
+<div class="outline-text-6" id="text-1-12-3-1-3">
+<ol class="org-ol">
+<li>whose</li>
+<li>where</li>
+<li>who</li>
+<li>whose</li>
+<li>whom</li>
+<li>where</li>
+<li>whose</li>
+<li>whom</li>
+</ol>
+</div>
+</li>
+<li><a id="orge269677"></a>94.4<br />
+<div class="outline-text-6" id="text-1-12-3-1-4">
+<ol class="org-ol">
+<li>I'm going away.</li>
+<li>why I quited</li>
+<li>I played football.</li>
+<li>we fell in love with each other</li>
+<li>why they sell it</li>
+<li>2008 was the year Beijing held the Olympic Games.</li>
+</ol>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+
+<div id="outline-container-org905ce84" class="outline-4">
+<h4 id="org905ce84"><span class="section-number-4">1.12.4.</span> 95 定语从句(4)&#x2013;非限定性从句(1)</h4>
+<div class="outline-text-4" id="text-1-12-4">
+<ul class="org-ul">
+<li>限定性: 限定(可能有多个人/物的时候,限定到一个)
+<ul class="org-ul">
+<li>从句用来限定是何人何物</li>
+<li>可以用that,作宾语时可省略</li>
+</ul></li>
+<li>非限定性: 只有一个人/物时
+<ul class="org-ul">
+<li>从句只补充说明</li>
+<li>不可以用that,做宾语也不能省略</li>
+</ul></li>
+</ul>
+</div>
+
+<ol class="org-ol">
+<li><a id="org980b5b1"></a>ex<br />
+<ol class="org-ol">
+<li><a id="org02d25b6"></a>95.1<br />
+<div class="outline-text-6" id="text-1-12-4-1-1">
+<ol class="org-ol">
+<li>Catherine, who lives next door, is very friendly.</li>
+<li>We stayed at the Park Hotel, which a friend of ours recommended.</li>
+<li>, which is not far from London.</li>
+<li>the doctor, who told me I needed to change my diet.</li>
+<li>Steven, whom I have known for a very long time, is one of my cloest friends.</li>
+<li>Lisa, whose job involves a lot of traveling, is away from home a lot.</li>
+<li>The new stadium, which can hold 90,000 people, will be finished next month.</li>
+<li>Alaska, where my brother lives, is the largest state in the USA.</li>
+<li>Our teacher, whose name I have forgotten, was very kind.</li>
+</ol>
+</div>
+</li>
+<li><a id="org461dc30"></a>95.2<br />
+<div class="outline-text-6" id="text-1-12-4-1-2">
+<ol class="org-ol">
+<li>The woman who lives next door to me is a doctor.</li>
+<li>My brother Ben, who lives in Hong Kong, is an architect.</li>
+<li>,which began ten days ago, is now over.</li>
+<li>the book I was looking for this morning.</li>
+<li>My car, which I have had for 15 years, has never broken down.</li>
+<li>people who applied for the job had the necessary qualifications.</li>
+<li>a picture of her son, who's a police officer.</li>
+</ol>
+</div>
+</li>
+<li><a id="orgebb9e06"></a>95.3<br />
+<div class="outline-text-6" id="text-1-12-4-1-3">
+<ol class="org-ol">
+<li>Anna told me about her new job, which she's enjoying very much.</li>
+<li>My office, which is on the second floor, is very small.</li>
+<li>T</li>
+<li>Mark's father, who used to be in the army, now works for a TV company.</li>
+<li>T</li>
+<li>The sun, which is one of millons of stars in the universe, provides us with heat and light.</li>
+</ol>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+
+<div id="outline-container-org449399f" class="outline-4">
+<h4 id="org449399f"><span class="section-number-4">1.12.5.</span> 96 定语从句(5)&#x2013;非限定性从句(2)</h4>
+<div class="outline-text-4" id="text-1-12-5">
+<ul class="org-ul">
+<li>介词+whom/which(指代分句的宾语) = who/which + 从句中间部分 + 介词
+to/with + whom, about/without + which</li>
+<li>all of/most of等 + whom/which(不能用that); the cause of which/the name of which
+Helen has three brothers, all of whom are married.
+<ul class="org-ul">
+<li>none of/neither of/any of/either of</li>
+<li>some of/many of/much of/(a) few of</li>
+<li>both of/ half of /each of/one of/two of</li>
+</ul></li>
+<li>which指代整个句子,而不能用what
+Sarah couldn't meet us, which was a shame. (不能what was a shame).</li>
+</ul>
+</div>
+
+<ol class="org-ol">
+<li><a id="org6eb5da9"></a>ex<br />
+<ol class="org-ol">
+<li><a id="org70e0aac"></a>96.1<br />
+<div class="outline-text-6" id="text-1-12-5-1-1">
+<ol class="org-ol">
+<li>to which I'd never been before.</li>
+<li>of which he's very pround.</li>
+<li>with whom we went on holiday.</li>
+<li>, to which only members of the family were invited,</li>
+</ol>
+</div>
+</li>
+<li><a id="orgcc415d5"></a>96.2<br />
+<div class="outline-text-6" id="text-1-12-5-1-2">
+<ol class="org-ol">
+<li>all of whom are married.</li>
+<li>most of which was useless.</li>
+<li>none of whom was suitable</li>
+<li>one of which she hardly ever uses.</li>
+<li>half of which he gave to his parents.</li>
+<li>both of whom are lawyers.</li>
+<li>neither of which she replied to.</li>
+<li>only a few of whom I knew.</li>
+<li>sides of which were lined with trees.</li>
+<li>the aim of which is to save money.</li>
+</ol>
+</div>
+</li>
+<li><a id="org20a741c"></a>96.3<br />
+<div class="outline-text-6" id="text-1-12-5-1-3">
+<ol class="org-ol">
+<li>,which was a shame.</li>
+<li>doesn't have a phone, which makes it difficult to contact her.</li>
+<li>Alex has passed his exams, which is good news.</li>
+<li>Our flight was delayed, which meant we had to wait three hours at the airport.</li>
+<li>Kate offered to let me stay at her house, which was very kind of her.</li>
+<li>The street I live in is very noisy at night, which makes it difficult to sleep sometimes.</li>
+<li>Our car has broken down, which means we can't go away tomorrow.</li>
+</ol>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+
+<div id="outline-container-orgc4b36c6" class="outline-4">
+<h4 id="orgc4b36c6"><span class="section-number-4">1.12.6.</span> 97 -ing与-ed分句比较(the woman talking to Tom, the boy injured in the accident)</h4>
+<div class="outline-text-4" id="text-1-12-6">
+<p>
+分句是句子的一部分,有-ing分局和-ed分句&#x2026;
+</p>
+<ul class="org-ul">
+<li>-ing分局表主动
+<ul class="org-ul">
+<li>表示某人/物正在进行的行为 ing分句 -&gt; be doing整句</li>
+<li>一般性的事实 ing分局 -&gt; do整句</li>
+</ul></li>
+<li>-ed分句表被动
+<ul class="org-ul">
+<li>ed分句-&gt;was done 整句</li>
+<li>ed分句-&gt;had been done 整句</li>
+</ul></li>
+<li>there be 常常用两者</li>
+</ul>
+</div>
+
+<ol class="org-ol">
+<li><a id="org726e79e"></a>ex<br />
+<ol class="org-ol">
+<li><a id="org321f281"></a>97.1<br />
+<div class="outline-text-6" id="text-1-12-6-1-1">
+<ol class="org-ol">
+<li>a bell ringing</li>
+<li>man sitting next to me on the plane.</li>
+<li>taxi taking us to the airport</li>
+<li>path leading to the river.</li>
+<li>factory employing 500 people</li>
+<li>a brochure containing the information I needed.</li>
+</ol>
+</div>
+</li>
+
+<li><a id="org02bfc3e"></a>97.2<br />
+<div class="outline-text-6" id="text-1-12-6-1-2">
+<ol class="org-ol">
+<li>injured in the accident</li>
+<li>damaged in the storm</li>
+<li>suggestions made at the meeting</li>
+<li>paintings stolen from the museum</li>
+<li>the man arrested by the police.</li>
+</ol>
+</div>
+</li>
+
+<li><a id="orgce3d6f6"></a>97.3<br />
+<div class="outline-text-6" id="text-1-12-6-1-3">
+<ol class="org-ol">
+<li>ringing</li>
+<li>invited</li>
+<li>living</li>
+<li>offering</li>
+<li>called</li>
+<li>blown</li>
+<li>sitting, reading</li>
+<li>working, studying</li>
+</ol>
+</div>
+</li>
+
+<li><a id="org56d6749"></a>97.4<br />
+<div class="outline-text-6" id="text-1-12-6-1-4">
+<ol class="org-ol">
+<li>There's nobody living in it.</li>
+<li>The was nobody injured.</li>
+<li>There was somebody coming.</li>
+<li>There were a lot of people traveling.</li>
+<li>There was nobody else staying there.</li>
+<li>There was nothing written on it.</li>
+<li>There's a course beginning next Monday.</li>
+</ol>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orgf69c946" class="outline-3">
+<h3 id="orgf69c946"><span class="section-number-3">1.13.</span> 形容词与副词</h3>
+<div class="outline-text-3" id="text-1-13">
+</div>
+<div id="outline-container-org6c52e5a" class="outline-4">
+<h4 id="org6c52e5a"><span class="section-number-4">1.13.1.</span> 105 比较级(1)(cheaper, more expensive等)</h4>
+<div class="outline-text-4" id="text-1-13-1">
+<p>
+形容词或副词的比较级:
+</p>
+<ul class="org-ul">
+<li>表示更, 可以和than连用</li>
+<li>形式
+<ul class="org-ul">
+<li>单音节 -er结尾
+-y结尾 -ier结尾</li>
+<li>双音节或多音节 more ~
+-ly结尾的副词 more ~</li>
+<li>不规则
+有-er和more ~都可以的</li>
+</ul></li>
+</ul>
+</div>
+<ol class="org-ol">
+<li><a id="org5021605"></a>ex<br />
+<ol class="org-ol">
+<li><a id="org319db4f"></a>105.1<br />
+<div class="outline-text-6" id="text-1-13-1-1-1">
+<ol class="org-ol">
+<li>quieter?</li>
+<li>stronger</li>
+<li>smaller</li>
+<li>more expensive</li>
+<li>warmmer</li>
+<li>more interesting</li>
+<li>closer</li>
+<li>more difficult</li>
+<li>better</li>
+<li>worse</li>
+<li>longer</li>
+<li>quieter</li>
+<li>more often</li>
+<li>farther</li>
+<li>more cheerful</li>
+</ol>
+</div>
+</li>
+<li><a id="org585c232"></a>105.2<br />
+<div class="outline-text-6" id="text-1-13-1-1-2">
+<ol class="org-ol">
+<li>earlier than</li>
+<li>more reliable</li>
+<li>more serious than</li>
+<li>thinner</li>
+<li>bigger</li>
+<li>more interested</li>
+<li>more important than</li>
+<li>simpler</li>
+<li>more crowded than</li>
+<li>more peaceful than</li>
+<li>more easily</li>
+<li>higher than</li>
+</ol>
+</div>
+</li>
+<li><a id="org36cac3d"></a>105.3<br />
+<div class="outline-text-6" id="text-1-13-1-1-3">
+<ol class="org-ol">
+<li>colder today than</li>
+<li>more by train than
+longer by train than</li>
+<li>more than
+further than</li>
+<li>more badly than
+di worse than</li>
+<li>arrived earlier than</li>
+<li>run more often than</li>
+<li>were more busy than
+were busier than</li>
+</ol>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+
+<div id="outline-container-orgf13a7ae" class="outline-4">
+<h4 id="orgf13a7ae"><span class="section-number-4">1.13.2.</span> 106 比较级(2)(much better/any better/better and better/the sooner the better)</h4>
+<div class="outline-text-4" id="text-1-13-2">
+<ol class="org-ol">
+<li>比较级前可以用:
+<ul class="org-ul">
+<li>much/a lot/far(= a lot)</li>
+<li>a bit/a little/slightly(=a little)</li>
+</ul></li>
+<li>any/no + 比较级: any用于否定/疑问</li>
+<li>better and better/more and more: 表持续的变化</li>
+<li>the &#x2026; the &#x2026;: 越&#x2026;就越&#x2026;</li>
+<li>older vs elder: elder不能用于表语</li>
+</ol>
+</div>
+
+<ol class="org-ol">
+<li><a id="org9a1ab1f"></a>ex<br />
+<ol class="org-ol">
+<li><a id="orgd998bc0"></a>106.1<br />
+<div class="outline-text-6" id="text-1-13-2-1-1">
+<ol class="org-ol">
+<li>much more serious than</li>
+<li>much bigger</li>
+<li>much more interesting than</li>
+<li>a bit cooler</li>
+<li>far more complicated than</li>
+<li>a bit more slowly</li>
+<li>a lot easier</li>
+<li>slightly older.</li>
+</ol>
+</div>
+</li>
+<li><a id="org46bb3db"></a>106.2<br />
+<div class="outline-text-6" id="text-1-13-2-1-2">
+<ol class="org-ol">
+<li>any longer</li>
+<li>any earlier</li>
+<li>no more expensive than
+no higher than</li>
+<li>any more
+any farther</li>
+<li>no worse than</li>
+</ol>
+</div>
+</li>
+<li><a id="orge2e24c2"></a>106.3<br />
+<div class="outline-text-6" id="text-1-13-2-1-3">
+<ol class="org-ol">
+<li>more and more difficult</li>
+<li>bigger and bigger</li>
+<li>more and more
+heavier and heavier</li>
+<li>more and more nervous</li>
+<li>worse and worse</li>
+<li>more and more expensive</li>
+<li>better and better</li>
+<li>more and more talkative.</li>
+</ol>
+</div>
+</li>
+<li><a id="org50a9ca1"></a>106.4<br />
+<div class="outline-text-6" id="text-1-13-2-1-4">
+<ol class="org-ol">
+<li>the better I feel</li>
+<li>the more I liked him.</li>
+<li>the more profit you make.</li>
+<li>the harder you concentrate.
+the harder it is to concentrate</li>
+<li>the more impatient she became.</li>
+</ol>
+</div>
+</li>
+<li><a id="org122b7a0"></a>106.5<br />
+<div class="outline-text-6" id="text-1-13-2-1-5">
+<ol class="org-ol">
+<li>less</li>
+<li>more</li>
+<li>longer</li>
+<li>any</li>
+<li>the</li>
+<li>older</li>
+<li>elder</li>
+<li>slightly</li>
+<li>no</li>
+<li>less, better</li>
+</ol>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+
+<div id="outline-container-orgc30ccee" class="outline-4">
+<h4 id="orgc30ccee"><span class="section-number-4">1.13.3.</span> 107 比较级(3)(as&#x2026;as/than)</h4>
+<div class="outline-text-4" id="text-1-13-3">
+<ul class="org-ul">
+<li>比较对象
+<ul class="org-ul">
+<li>其他名词性的主语</li>
+<li>整句话
+<ul class="org-ul">
+<li>S. + be + adv.: 可以只用adv.(时间时)</li>
+<li>S. + adv. +be.: 可以只用adj.</li>
+<li>S. + do:可以转成宾格</li>
+<li>I used to do: 直接用I used to.</li>
+</ul></li>
+</ul></li>
+<li>as &#x2026; as:
+<ul class="org-ul">
+<li>句型都可以</li>
+<li>twice as &#x2026; as</li>
+</ul></li>
+<li>so &#x2026; as
+<ul class="org-ul">
+<li>只可以否定</li>
+</ul></li>
+<li>the same as</li>
+<li>than me/ than I am. 而不用than I</li>
+</ul>
+</div>
+
+<ol class="org-ol">
+<li><a id="orga116e11"></a>ex<br />
+<ol class="org-ol">
+<li><a id="orgc521b20"></a>107.1<br />
+<div class="outline-text-6" id="text-1-13-3-1-1">
+<ol class="org-ol">
+<li>as tall as you.</li>
+<li>as high as yours.</li>
+<li>know as much about cars as I do.
+/me</li>
+<li>as busy as (we were) yesterday.</li>
+<li>feel as bad as earlier.
+feel as bad as I did earlier.</li>
+<li>lived here for as long as we have.
+/ us</li>
+<li>as nervous before the interview as usual.
+/I usually am.</li>
+</ol>
+</div>
+</li>
+<li><a id="org3c40bb8"></a>107.2<br />
+<div class="outline-text-6" id="text-1-13-3-1-2">
+<ol class="org-ol">
+<li>as old as he looks.</li>
+<li>You spent more money than me.</li>
+<li>as far as I thought.</li>
+<li>less than I expected.</li>
+<li>go out as much as I used to.</li>
+<li>have longer hair than now.
+have long hair.</li>
+<li>know them as well as I do.
+/as me</li>
+<li>as many people in this meeting as at the last one.</li>
+</ol>
+</div>
+</li>
+<li><a id="org0e70138"></a>107.3<br />
+<div class="outline-text-6" id="text-1-13-3-1-3">
+<ol class="org-ol">
+<li>as fast as</li>
+<li>as well as</li>
+<li>as long as</li>
+<li>as soon as</li>
+<li>as often as</li>
+<li>as quietly as</li>
+<li>just as comfortable as</li>
+<li>just as hard as</li>
+<li>just as bad as</li>
+</ol>
+</div>
+</li>
+<li><a id="org8271696"></a>107.4<br />
+<div class="outline-text-6" id="text-1-13-3-1-4">
+<ol class="org-ol">
+<li>is the same age as</li>
+<li>is the same color as</li>
+<li>at the same time as</li>
+<li>is the same day as</li>
+</ol>
+</div>
+</li>
+<li><a id="org9038f13"></a>107.5<br />
+<div class="outline-text-6" id="text-1-13-3-1-5">
+<ol class="org-ol">
+<li>than me</li>
+<li>than him.</li>
+<li>as me.</li>
+<li>than us.</li>
+<li>than her.</li>
+<li>as them.</li>
+</ol>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+<div id="outline-container-org5c3955f" class="outline-4">
+<h4 id="org5c3955f"><span class="section-number-4">1.13.4.</span> 108 最高级(the longest/the most enjoyable等)</h4>
+<div class="outline-text-4" id="text-1-13-4">
+<ul class="org-ul">
+<li>三种形式
+<ol class="org-ol">
+<li>~est: 单音节或少数双音节adj./adv.,
+<ul class="org-ul">
+<li>long longest</li>
+<li>hot hottest</li>
+<li>easy easiest</li>
+<li>hard hardest</li>
+</ul></li>
+<li>most + ~: 多数双音节或多音节adj./adv.
+<ul class="org-ul">
+<li>most famous</li>
+<li>most boring</li>
+<li>most difficult</li>
+<li>most expensive</li>
+</ul></li>
+<li>不规则
+<ul class="org-ul">
+<li>good best</li>
+<li>bad worst</li>
+<li>far furthest</li>
+</ul></li>
+</ol></li>
+<li>the ~</li>
+<li>oldest(更正式) VS eldest(用于比较家人)</li>
+<li>后面接地点(城市/建筑)用介词in,组织和人群也用in,一般时间通常用of</li>
+<li>后面接动词的现在完成时</li>
+</ul>
+</div>
+<ol class="org-ol">
+<li><a id="orged48299"></a>ex<br />
+<ol class="org-ol">
+<li><a id="orga7ac8b6"></a>108.1<br />
+<div class="outline-text-6" id="text-1-13-4-1-1">
+<ol class="org-ol">
+<li>the best room in</li>
+<li>the cheapest restaurant in</li>
+<li>the happiest day of</li>
+<li>the most intelligent student in</li>
+<li>the most valuable painting in</li>
+<li>the busiest time of</li>
+<li>one of the best rooms in</li>
+<li>one of the richest men in</li>
+<li>one of the biggest castles in</li>
+<li>one the best players in</li>
+<li>one of the worst experiences of</li>
+<li>one of the most famous universities in</li>
+</ol>
+</div>
+</li>
+
+<li><a id="org9d1a7f8"></a>108.2<br />
+<div class="outline-text-6" id="text-1-13-4-1-2">
+<ol class="org-ol">
+<li>the cheapest</li>
+<li>cheaper</li>
+<li>larger than it.</li>
+<li>the smallest</li>
+<li>better</li>
+<li>the worst</li>
+<li>the most popular</li>
+<li>the highest, higher</li>
+<li>the tallest building</li>
+<li>more comfortable</li>
+<li>the quickest</li>
+<li>quicker</li>
+<li>the most expensive</li>
+<li>The eldest</li>
+</ol>
+</div>
+</li>
+<li><a id="orgf9c04ea"></a>108.3<br />
+<div class="outline-text-6" id="text-1-13-4-1-3">
+<ol class="org-ol">
+<li>the most boring movie I've ever seen.</li>
+<li>the funniest joke I've ever heard.</li>
+<li>is the best coffee I've ever tasted.</li>
+<li>is the most generous person I've ever met.</li>
+<li>That is the farthest I have ever run.</li>
+<li>It is the worst mistake I've ever made.</li>
+<li>is the most famous person you've ever met?</li>
+</ol>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+<div id="outline-container-orga1cda2d" class="outline-4">
+<h4 id="orga1cda2d"><span class="section-number-4">1.13.5.</span> 109 词序(1)&#x2013;动词+宾语; 地点和时间</h4>
+<div class="outline-text-4" id="text-1-13-5">
+<ul class="org-ul">
+<li>动词和宾语紧挨着,中间没有其他词语</li>
+<li>地点一般在动词和宾语后面,在时间前面</li>
+<li>时间有时候在句首,有时候在动词前面</li>
+</ul>
+</div>
+<ol class="org-ol">
+<li><a id="org70f5c80"></a>ex<br />
+<ol class="org-ol">
+<li><a id="org4a97f37"></a>109.1<br />
+<div class="outline-text-6" id="text-1-13-5-1-1">
+<ol class="org-ol">
+<li>T</li>
+<li>Ben walks to work every morning.</li>
+<li>Joe doesn't like football very much.</li>
+<li>T</li>
+<li>I ate my breakfast quickly and went out.</li>
+<li>Are you going to invite a lot of people to the party?</li>
+<li>T</li>
+<li>Did you go to bed late last night?</li>
+<li>T</li>
+<li>I met a friend of mine on my way home.</li>
+</ol>
+</div>
+</li>
+
+<li><a id="org9438d4b"></a>109.2<br />
+<div class="outline-text-6" id="text-1-13-5-1-2">
+<ol class="org-ol">
+<li>Everybody enjoyed the party very much.</li>
+<li>We won the game easily.</li>
+<li>I closed the door quietly.</li>
+<li>Tanya speaks German quite well.</li>
+<li>Sam watches TV all the time.</li>
+<li>Please don't ask that question again.</li>
+<li>Does Kevin play football every weekend?</li>
+<li>I borrowed some money from a friend of mine.</li>
+</ol>
+</div>
+</li>
+
+<li><a id="orge6551bf"></a>109.3<br />
+<div class="outline-text-6" id="text-1-13-5-1-3">
+<ol class="org-ol">
+<li>They have lived in the same house for a long time.</li>
+<li>I go to the supermarket every Friday.</li>
+<li>Why did you come home so late?</li>
+<li>Sarah takes her children to school every day.</li>
+<li>I haven't been to the cinema recently.</li>
+<li>Please write your name at the top of the page.</li>
+<li>I remembered her name after a few minutes.</li>
+<li>We walk around the town all morning.</li>
+<li>I didn't see you at the party on Saturday night.</li>
+<li>We found some interesting books in the library.</li>
+<li>Laura left her umbrella in a restaurant last night.</li>
+<li>They are building a new hotel opposite the park.</li>
+</ol>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+
+<div id="outline-container-org19a265c" class="outline-4">
+<h4 id="org19a265c"><span class="section-number-4">1.13.6.</span> 110 词序(2)&#x2013;副词与动词</h4>
+<div class="outline-text-4" id="text-1-13-6">
+<ul class="org-ul">
+<li>动词前,be/助/情态动词后; is/will/did省略句前; probably won't;</li>
+</ul>
+</div>
+
+<ol class="org-ol">
+<li><a id="org099a6ca"></a>ex<br />
+<ol class="org-ol">
+<li><a id="org2ca9e24"></a>110.1<br />
+<div class="outline-text-6" id="text-1-13-6-1-1">
+<ol class="org-ol">
+<li>Helen always drive to work.</li>
+<li>T</li>
+<li>I usually have a shower in the morning.</li>
+<li>T</li>
+<li>Steve hardly ever gets angry.</li>
+<li>I did some shopping and I also went to the bank.</li>
+<li>Jane always has to hurry in the morning.</li>
+<li>I have never worked in a factory.</li>
+<li>I am always busy.</li>
+</ol>
+</div>
+</li>
+<li><a id="orgdb2f410"></a>110.2<br />
+<div class="outline-text-6" id="text-1-13-6-1-2">
+<ol class="org-ol">
+<li>Clare doesn't often eat meat.</li>
+<li>Katherine is always very generous.</li>
+<li>I don't usually have to work on Saturdays.</li>
+<li>Do you always watch TV in the evening?</li>
+<li>Martin is learning Spanish and he is also learning Japanese.</li>
+<li>We were all on holiday in Spain.
+We were all staying at the same hotel.
+We all enjoyed ourselves.</li>
+<li>The new hotel is probably very expensive.
+It probably costs a lot to stay there.</li>
+<li>I can probably help you.
+I probably can't help you.</li>
+</ol>
+</div>
+</li>
+<li><a id="orgecb032f"></a>110.3<br />
+<div class="outline-text-6" id="text-1-13-6-1-3">
+<ol class="org-ol">
+<li>I can never remember her name.</li>
+<li>I usually take</li>
+<li>I am usually</li>
+<li>were both born</li>
+<li>She can also sing</li>
+<li>usually sleeps</li>
+<li>I have never spoken</li>
+<li>You always have to wait</li>
+<li>I can only read</li>
+<li>we were all, we all fell</li>
+<li>I am always
+I always am</li>
+<li>I will probably be leaving</li>
+<li>I probably won't be</li>
+<li>She is hardly ever</li>
+<li>We are still living</li>
+<li>We would have never met each other.
+We would never have met each other.</li>
+<li>always says, she never does.</li>
+</ol>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orgb6dc890" class="outline-3">
+<h3 id="orgb6dc890"><span class="section-number-3">1.14.</span> 虚拟语气与介词</h3>
+</div>
+
+<div id="outline-container-orga61dde8" class="outline-3">
+<h3 id="orga61dde8"><span class="section-number-3">1.15.</span> 介词</h3>
+<div class="outline-text-3" id="text-1-15">
+</div>
+<div id="outline-container-orgc325b06" class="outline-4">
+<h4 id="orgc325b06"><span class="section-number-4">1.15.1.</span> 121 at/on/in (时间)</h4>
+<div class="outline-text-4" id="text-1-15-1">
+<ul class="org-ul">
+<li>at 一天之内的具体时间点
+<ul class="org-ul">
+<li>at night</li>
+<li>~ the weekends (美语中不用)</li>
+<li>~ Christmas</li>
+<li>~ the moment/ present</li>
+<li>~ the same time</li>
+</ul></li>
+<li>on 星期几和日期,weekends/weekdays也适用</li>
+<li>in 表示较长的一段时间,但是the morning, afternoon,同样适用
+<ul class="org-ul">
+<li>in the morning(s) vs on Friday morning</li>
+<li>in the afternoon(s) vs on Friday afternoon</li>
+<li>in the evening(s) vs on Friday evening</li>
+</ul></li>
+<li>last/next/this/every 不用 at/on/in
+口语中星期几不用on</li>
+<li>in a few minutes/ six months 表将来某时</li>
+</ul>
+</div>
+<ol class="org-ol">
+<li><a id="org1124a51"></a>ex<br />
+<ol class="org-ol">
+<li><a id="orgf736ca3"></a>121.1<br />
+<div class="outline-text-6" id="text-1-15-1-1-1">
+<ol class="org-ol">
+<li>in</li>
+<li>on</li>
+<li>in</li>
+<li>On</li>
+<li>on</li>
+<li>in</li>
+<li>in</li>
+<li>at</li>
+<li>on</li>
+<li>at</li>
+<li>in</li>
+<li>at</li>
+<li>on</li>
+<li>on
+in</li>
+<li>On, at</li>
+<li>at, in</li>
+<li>on, in</li>
+<li>on, in</li>
+</ol>
+</div>
+</li>
+<li><a id="orge31307b"></a>121.2<br />
+<div class="outline-text-6" id="text-1-15-1-1-2">
+<ol class="org-ol">
+<li>in 1492</li>
+<li>at night</li>
+<li>in the evening</li>
+<li>on 21 July 1969</li>
+<li>at the same time</li>
+<li>in the 1920s</li>
+<li>in about 20 minutes</li>
+<li>at the moment</li>
+<li>in the Middle Ages</li>
+<li>in 11 seconds.</li>
+<li>on Saturdays.</li>
+</ol>
+</div>
+</li>
+<li><a id="orgac3ac67"></a>121.3<br />
+<div class="outline-text-6" id="text-1-15-1-1-3">
+<ol class="org-ol">
+<li>both</li>
+<li>b</li>
+<li>a</li>
+<li>both</li>
+<li>b</li>
+<li>neither
+b</li>
+<li>both</li>
+<li>a</li>
+<li>b</li>
+<li>a</li>
+</ol>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+<div id="outline-container-org6765384" class="outline-4">
+<h4 id="org6765384"><span class="section-number-4">1.15.2.</span> 122 on time VS in time at the end VS in the end</h4>
+<div class="outline-text-4" id="text-1-15-2">
+<ul class="org-ul">
+<li>on time VS in time
+on time: 准时, 反义词late
+in time: 及时, 反义词too late</li>
+
+<li>at the end VS in the end
+at the end: 在&#x2026; 结束时, 反义词 at the beginning
+in the end: 最终的结构或情况, 反义词at first</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgca6d539" class="outline-3">
+<h3 id="orgca6d539"><span class="section-number-3">1.16.</span> 短语动词</h3>
+</div>
+
+<div id="outline-container-org1348724" class="outline-3">
+<h3 id="org1348724"><span class="section-number-3">1.17.</span> 附录1 规则动词与不规则动词</h3>
+</div>
+
+<div id="outline-container-orgd1916bd" class="outline-3">
+<h3 id="orgd1916bd"><span class="section-number-3">1.18.</span> 附录2 现在时与过去时比较</h3>
+</div>
+
+<div id="outline-container-org17a661f" class="outline-3">
+<h3 id="org17a661f"><span class="section-number-3">1.19.</span> 附录3 将来时</h3>
+</div>
+
+<div id="outline-container-org10f203d" class="outline-3">
+<h3 id="org10f203d"><span class="section-number-3">1.20.</span> 附录4 情态动词(can/could/will/would等)</h3>
+</div>
+
+<div id="outline-container-orge946271" class="outline-3">
+<h3 id="orge946271"><span class="section-number-3">1.21.</span> 附录5 缩略形式(I'm/you're/didn't等)</h3>
+</div>
+
+<div id="outline-container-org67d18d0" class="outline-3">
+<h3 id="org67d18d0"><span class="section-number-3">1.22.</span> 附录6 拼写法</h3>
+</div>
+
+<div id="outline-container-orgcb56c34" class="outline-3">
+<h3 id="orgcb56c34"><span class="section-number-3">1.23.</span> 附录7 美国英语</h3>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: DESKTOP-13B7HQM</p>
+<p class="date">Created: 2023-10-02 Mon 09:58</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
