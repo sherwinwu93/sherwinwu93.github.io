@@ -1,0 +1,4075 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2023-10-02 Mon 10:00 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org935011e">1. homework</a>
+<ul>
+<li><a href="#org0e39e02">1.1. 单词造句</a></li>
+<li><a href="#orgda6be17">1.2. 反复听电影片段</a></li>
+<li><a href="#orge2fcabe">1.3. Pattern Drill 写+读</a></li>
+<li><a href="#org1cb098f">1.4. 给自己讲解</a></li>
+<li><a href="#orgcef926e">1.5. 红皮书</a></li>
+<li><a href="#org317c37d">1.6. 习惯用法造句</a></li>
+<li><a href="#org6e09077">1.7. 跟读至背诵</a></li>
+<li><a href="#org4beb61e">1.8. Ask me if 写+读</a></li>
+<li><a href="#org502a865">1.9. 摘要写作</a></li>
+<li><a href="#org2a57b65">1.10. tell the story 口语</a></li>
+<li><a href="#org07a2f5e">1.11. Topics for discussion</a></li>
+</ul>
+</li>
+<li><a href="#org272eaaf">2. 单词造句指南</a></li>
+<li><a href="#orgb53d8e2">3. NCE2</a>
+<ul>
+<li><a href="#org10eb0b7">3.1. L01 A private conversation</a></li>
+<li><a href="#org62385ef">3.2. L02 Breakfast or lunch?</a></li>
+<li><a href="#orge1deef5">3.3. L03 Please send me a card</a></li>
+<li><a href="#org501e10f">3.4. L04 An exciting trip</a></li>
+<li><a href="#org194985a">3.5. L05 No wrong numbers</a></li>
+<li><a href="#orgf928d49">3.6. L06 Percy Buttons</a></li>
+<li><a href="#org39b610f">3.7. L07 Too late</a></li>
+<li><a href="#orgf2d0c7f">3.8. L08 The best and the worst</a></li>
+<li><a href="#org7d1bece">3.9. L09 A cold welcome</a></li>
+<li><a href="#org0b68754">3.10. L10 Not for jazz</a></li>
+<li><a href="#org0fb5d4b">3.11. L11 One good turn deserves another</a></li>
+<li><a href="#org83fd83a">3.12. L12 Goodbye and good luck</a></li>
+<li><a href="#org41958d6">3.13. L13 The Greenwood Boys</a></li>
+<li><a href="#org102fae2">3.14. L14 Do you speak English?</a></li>
+<li><a href="#org926cfab">3.15. L15 Good news</a></li>
+<li><a href="#org07cb506">3.16. L16 A polite request</a></li>
+<li><a href="#org2ef6842">3.17. L17 Always young</a></li>
+<li><a href="#orgf44412b">3.18. L18 He often does this</a></li>
+<li><a href="#org41b4ac6">3.19. L19 Sold out</a></li>
+<li><a href="#org9553a1a">3.20. L20 One man in a boat</a></li>
+<li><a href="#org5b04c8b">3.21. L21 Mad of not?</a></li>
+<li><a href="#org0c54520">3.22. L22 A glass envelope</a></li>
+<li><a href="#org674b355">3.23. L23 A new house</a></li>
+<li><a href="#org99e4186">3.24. L24 It could be worse</a></li>
+<li><a href="#org57fd663">3.25. L25 Do the English speak English?</a></li>
+<li><a href="#org870ff56">3.26. L26 The best art critics</a></li>
+<li><a href="#org3196af2">3.27. L27 A wet night</a></li>
+<li><a href="#org1de8e5d">3.28. L28 No parking</a></li>
+<li><a href="#org876fcbd">3.29. L29 Taxi!</a></li>
+<li><a href="#org64b998e">3.30. L30 Football or polo?</a></li>
+<li><a href="#org3506481">3.31. L31 Success story</a></li>
+<li><a href="#orgb17d62d">3.32. L32 Shopping made easy</a></li>
+<li><a href="#orgc80bc6e">3.33. L33 Out of the darkness</a></li>
+<li><a href="#orga109aee">3.34. L34 Quick work</a></li>
+<li><a href="#orga9c357a">3.35. L35 Stop thief!</a></li>
+<li><a href="#org3228950">3.36. L36 Across the Channel</a></li>
+<li><a href="#org61d4d94">3.37. L37 The Olympic Games</a></li>
+<li><a href="#org19bcb5f">3.38. L38 Everything except the weather</a></li>
+<li><a href="#org74a3968">3.39. L39 Am I all right?</a></li>
+<li><a href="#orgd7475d7">3.40. L40 Food and talk</a></li>
+<li><a href="#org25f4915">3.41. L41 Do you call that a hat?</a></li>
+<li><a href="#org766694c">3.42. L42 Not very musical</a></li>
+<li><a href="#orgfd188e1">3.43. L43 Over the South Pole</a></li>
+<li><a href="#org80ccf15">3.44. L44 Through the forest</a></li>
+<li><a href="#orgbb9b302">3.45. L45 A clear conscience</a></li>
+<li><a href="#orge546331">3.46. L46 Expensive and uncomfortable</a></li>
+<li><a href="#orgc27197d">3.47. L47 A thirsty ghost</a></li>
+<li><a href="#org5fd524e">3.48. L48 Did you want to tell me something?</a></li>
+<li><a href="#orgf131826">3.49. L49 The end of a dream</a>
+<ul>
+<li><a href="#org1163812">3.49.1. L01</a></li>
+<li><a href="#org95bdea7">3.49.2. L25</a></li>
+</ul>
+</li>
+<li><a href="#org726b25d">3.50. L50 Taken for a ride</a></li>
+<li><a href="#org17894a3">3.51. L51 Reward for a virtue</a></li>
+<li><a href="#org8ed02fe">3.52. L52 A pretty carpet</a></li>
+<li><a href="#org27cbce4">3.53. L53 Hot snake</a></li>
+<li><a href="#org29879de">3.54. L54 Sticky fingers</a></li>
+<li><a href="#orge730ea8">3.55. L55 Not a gold mine</a></li>
+<li><a href="#org3e844cd">3.56. L56 Faster than sound!</a></li>
+<li><a href="#orgf0a3397">3.57. L57 Can I help you, madam?</a></li>
+<li><a href="#org4a6f7d1">3.58. L58 A blessing in disguise?</a></li>
+<li><a href="#org1b9d369">3.59. L59 In or out?</a></li>
+<li><a href="#org38b310c">3.60. L60 The future</a></li>
+<li><a href="#org377c612">3.61. L61 Trouble with the Hubble</a></li>
+<li><a href="#orgcd431d3">3.62. L62 After the fire</a></li>
+<li><a href="#orge5258d0">3.63. L63 She was not amused</a></li>
+<li><a href="#org947ab34">3.64. L64 The Channel Tunnel</a></li>
+<li><a href="#org8eb3cc2">3.65. L65 Jumbo versus the police</a></li>
+<li><a href="#orgad0f2bb">3.66. L66 Sweet as honey!</a></li>
+<li><a href="#org40a0223">3.67. L67 Volcanoes</a></li>
+<li><a href="#org80235da">3.68. L68 Persistent</a></li>
+<li><a href="#org06b6145">3.69. L69 But not murder</a></li>
+<li><a href="#org34c0433">3.70. L70 Red for danger</a></li>
+<li><a href="#org0703483">3.71. L71 A famous clock</a></li>
+<li><a href="#org053f3d4">3.72. L72 A car called Bluebird</a></li>
+<li><a href="#orge23dd87">3.73. L73 The record holder</a></li>
+<li><a href="#org5b783e6">3.74. L74 Out of the limelight</a></li>
+<li><a href="#orge6e9f6c">3.75. L75 SOS</a></li>
+<li><a href="#org5749cd2">3.76. L76 April Fool's Day</a></li>
+<li><a href="#org20e33b2">3.77. L77 A successful operation</a></li>
+<li><a href="#org3666732">3.78. L78 The last one</a></li>
+<li><a href="#org525f1d3">3.79. L79 By air</a></li>
+<li><a href="#org7899f1b">3.80. L80 The Crystal Palace</a></li>
+<li><a href="#orgdb0eb1e">3.81. L81 escape</a></li>
+<li><a href="#org4d57350">3.82. L82 Monster or fish?</a></li>
+<li><a href="#org1b2fdaa">3.83. L83 After the elections</a></li>
+<li><a href="#org4930fd0">3.84. L84 On strike</a></li>
+<li><a href="#orgd497559">3.85. L85 Never too old to learn</a></li>
+<li><a href="#orga5affb8">3.86. 86 Out of control</a></li>
+</ul>
+</li>
+<li><a href="#org6653df6">4. L87 a perfect alibi</a></li>
+<li><a href="#org6e8613b">5. NCE2 Summary</a>
+<ul>
+<li><a href="#orgef19047">5.1. <span class="done DONE">DONE</span> L01-25-49-73 造句子!!!</a></li>
+<li><a href="#orgd860d82">5.2. <span class="done DONE">DONE</span> L02-26-50-74 现在时(一般VS进行)</a></li>
+<li><a href="#orgf7f62d7">5.3. <span class="done DONE">DONE</span> L03-27-51-75 一般过去时</a></li>
+<li><a href="#orge5e38f7">5.4. <span class="done DONE">DONE</span> L04-28-52-76 现在完成+现在完成进行时+定从(whose) !!!</a></li>
+<li><a href="#org871f5fe">5.5. <span class="done DONE">DONE</span> L05-29-53-77 现在完成VS一般过去+done定语+现在完成进行时 !!!</a></li>
+<li><a href="#org72fa3c4">5.6. <span class="done DONE">DONE</span> L06-30-54-78 冠词+-ing定语</a></li>
+<li><a href="#org946aa4a">5.7. <span class="done DONE">DONE</span> L07-31-55-79 过去(过去进行+used to VS would) + 定从(whose+where)</a></li>
+<li><a href="#orgb912f3a">5.8. <span class="done DONE">DONE</span> L08-32-56-80 比较(比较级&amp;最高级+as&#x2026;as)</a></li>
+<li><a href="#orge3862b0">5.9. <span class="done DONE">DONE</span> L09-33-57-81 prep(in&amp;on&amp;at+(in) the way) ?</a></li>
+<li><a href="#org8ee7618">5.10. <span class="done DONE">DONE</span> L10-34-58-82 被动+强调句 ?</a></li>
+<li><a href="#orgc36fbfc">5.11. <span class="done DONE">DONE</span> L11-35-59-83 see do/doing + so that</a></li>
+<li><a href="#org1acf888">5.12. <span class="done DONE">DONE</span> L12-36-60-84 一般将来(包括计划) ?</a></li>
+<li><a href="#org37defbd">5.13. <span class="done DONE">DONE</span> L13-37-61-85 将来(进行+完成+完成进行)?</a></li>
+<li><a href="#org2542cac">5.14. <span class="done DONE">DONE</span> L14-38-62-86 过去(完成+完成进行) ?</a></li>
+<li><a href="#org6a293cc">5.15. <span class="done DONE">DONE</span> L15-39-63-87 间接引语+宾从+方状(in the way or manner that) ?</a></li>
+<li><a href="#orgf15e8f5">5.16. <span class="done DONE">DONE</span> L16-40-64-88 if(条件句+虚拟语气+过去虚拟)</a></li>
+<li><a href="#org4ce8f5a">5.17. <span class="todo WAITING">WAITING</span> L17-41-65-89 情态动词</a></li>
+<li><a href="#org4b54036">5.18. <span class="todo WAITING">WAITING</span> L18-42-66-90 万能动词have + have sth. done ?</a></li>
+<li><a href="#org10458c2">5.19. <span class="todo WAITING">WAITING</span> L19-43-67-91 情态动词的might + be able to + managed to do</a></li>
+<li><a href="#org0bd9e6d">5.20. <span class="todo WAITING">WAITING</span> L20-44-68-92 动名词 ?</a></li>
+<li><a href="#org1037e4a">5.21. <span class="todo WAITING">WAITING</span> L21-45-69-93 被动(情态动词) ?</a></li>
+<li><a href="#org5c3606a">5.22. <span class="todo WAITING">WAITING</span> L22-46-70-94 动词后的介词+同位语 ?</a></li>
+<li><a href="#orgd704923">5.23. L23-47-71-95</a></li>
+<li><a href="#orga682527">5.24. L24-48-72-96</a></li>
+</ul>
+</li>
+<li><a href="#orgbd16da5">6. NCE3</a></li>
+<li><a href="#org2bc865c">7. other(If they are too many, then split them)</a>
+<ul>
+<li><a href="#org0e484bf">7.1. Let him Go, Olivia</a></li>
+<li><a href="#org0c606ab">7.2. Children’s Engineering Workshops.</a></li>
+<li><a href="#org2b11efc">7.3. stoicism</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org935011e" class="outline-2">
+<h2 id="org935011e"><span class="section-number-2">1.</span> homework</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+<div id="outline-container-org0e39e02" class="outline-3">
+<h3 id="org0e39e02"><span class="section-number-3">1.1.</span> 单词造句</h3>
+</div>
+<div id="outline-container-orgda6be17" class="outline-3">
+<h3 id="orgda6be17"><span class="section-number-3">1.2.</span> 反复听电影片段</h3>
+</div>
+<div id="outline-container-orge2fcabe" class="outline-3">
+<h3 id="orge2fcabe"><span class="section-number-3">1.3.</span> Pattern Drill 写+读</h3>
+</div>
+<div id="outline-container-org1cb098f" class="outline-3">
+<h3 id="org1cb098f"><span class="section-number-3">1.4.</span> 给自己讲解</h3>
+</div>
+<div id="outline-container-orgcef926e" class="outline-3">
+<h3 id="orgcef926e"><span class="section-number-3">1.5.</span> 红皮书</h3>
+</div>
+<div id="outline-container-org317c37d" class="outline-3">
+<h3 id="org317c37d"><span class="section-number-3">1.6.</span> 习惯用法造句</h3>
+</div>
+<div id="outline-container-org6e09077" class="outline-3">
+<h3 id="org6e09077"><span class="section-number-3">1.7.</span> 跟读至背诵</h3>
+</div>
+<div id="outline-container-org4beb61e" class="outline-3">
+<h3 id="org4beb61e"><span class="section-number-3">1.8.</span> Ask me if 写+读</h3>
+</div>
+<div id="outline-container-org502a865" class="outline-3">
+<h3 id="org502a865"><span class="section-number-3">1.9.</span> 摘要写作</h3>
+</div>
+<div id="outline-container-org2a57b65" class="outline-3">
+<h3 id="org2a57b65"><span class="section-number-3">1.10.</span> tell the story 口语</h3>
+</div>
+<div id="outline-container-org07a2f5e" class="outline-3">
+<h3 id="org07a2f5e"><span class="section-number-3">1.11.</span> Topics for discussion</h3>
+</div>
+</div>
+<div id="outline-container-org272eaaf" class="outline-2">
+<h2 id="org272eaaf"><span class="section-number-2">2.</span> 单词造句指南</h2>
+<div class="outline-text-2" id="text-2">
+<ul class="org-ul">
+<li>v+v.变化</li>
+<li>四句型转换</li>
+<li>方式/地点/时间</li>
+<li>其他习惯用法</li>
+<li>其他单词+词性</li>
+<li>原文+变</li>
+<li>6123456</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgb53d8e2" class="outline-2">
+<h2 id="orgb53d8e2"><span class="section-number-2">3.</span> NCE2</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-org10eb0b7" class="outline-3">
+<h3 id="org10eb0b7"><span class="section-number-3">3.1.</span> L01 A private conversation</h3>
+<div class="outline-text-3" id="text-3-1">
+<p>
+private [ˈpraɪvət] adj.
+conversation [ˌkɒnvəˈseɪʃ(ə)n] n.
+theatre [ˈθɪətə(r)] n.
+seat [siːt] n.
+play [pleɪ] n.
+loudly [ˈlaʊdli] n.
+angry [ˈæŋɡri] adj.
+angrily [ˈæŋɡrəli] adv.
+attention [əˈtenʃ(ə)n] n.
+bear [beə(r)] v.
+business [ˈbɪznəs] n.
+rudely [ˈruːdli] adv.
+</p>
+
+<p>
+have a conversation
+take a seat
+Is the seat taken?
+How can you bear that?
+Don't be rude
+</p>
+
+<hr />
+<ol class="org-ol">
+<li>如何造一个英语句子 6123456</li>
+<li>如何造一个好的英文句子</li>
+<li>英语语序</li>
+</ol>
+
+<p>
+go to the theatre
+have a good seat
+get angry
+turn round
+pay attention
+in the end
+couldn't bear it
+It's none of your business
+</p>
+</div>
+</div>
+
+<div id="outline-container-org62385ef" class="outline-3">
+<h3 id="org62385ef"><span class="section-number-3">3.2.</span> L02 Breakfast or lunch?</h3>
+<div class="outline-text-3" id="text-3-2">
+<p>
+until [ʌnˈtɪl] prep.
+outside [ˌaʊtˈsaɪd] adv.
+ring [rɪŋ] v.
+aunt [ɑːnt] n.
+repeat [rɪˈpiːt] v.
+</p>
+
+<p>
+repeat after me
+</p>
+
+<hr />
+<p>
+am/is/are + doing VS do/does
+感叹句
+频率adv.位置
+</p>
+
+<p>
+get up early/late
+just then
+have breakfast
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge1deef5" class="outline-3">
+<h3 id="orge1deef5"><span class="section-number-3">3.3.</span> L03 Please send me a card</h3>
+<div class="outline-text-3" id="text-3-3">
+<p>
+send [send] v.
+postcard [ˈpəʊstkɑːd] n.
+spoil [spɔɪl] v.
+museum [mjuˈziːəm] n.
+public [ˈpʌblɪk] adj.
+friendly [ˈfrendli] adj.
+waiter [ˈweɪtə(r)] n.
+lend [lend] v.
+decision [dɪˈsɪʒ(ə)n] n.
+whole [həʊl] adj.
+single [ˈsɪŋɡ(ə)l] adj.
+</p>
+
+<p>
+buy sb. sth. = buy sth. for sb.
+send sb. sth. = send sth. to sb.
+lend sb. sth. = lend sth. to sb.
+borrow sth. from sb. / borrow sth.
+make a decision
+</p>
+
+<hr />
+<p>
+was
+were
+did
+</p>
+
+<p>
+teach sb. sth.
+lend sb. sth.
+think about sth./sb.
+on the last day
+make a decision
+send sth. to sb.
+spend st. sw.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org501e10f" class="outline-3">
+<h3 id="org501e10f"><span class="section-number-3">3.4.</span> L04 An exciting trip</h3>
+<div class="outline-text-3" id="text-3-4">
+<p>
+exciting [ɪkˈsaɪtɪŋ] adj.
+receive [rɪˈsiːv] v.
+firm [fɜːm] n.
+different [ˈdɪfrənt] adj.
+centre [ˈsentə(r)] n.
+abroad [əˈbrɔːd] adv.
+</p>
+
+<p>
+have a great trip
+receive sth. from sb.
+work for
+A be different from B
+in the centre of sw.
+go abroad
+live abroad
+study abroad
+</p>
+
+<hr />
+<p>
+have done
+</p>
+
+<p>
+receive sth. from sb.
+work for sb.
+a great number of
+have gone to sw.
+fly to sw.
+find n. adj.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org194985a" class="outline-3">
+<h3 id="org194985a"><span class="section-number-3">3.5.</span> L05 No wrong numbers</h3>
+<div class="outline-text-3" id="text-3-5">
+<p>
+pigeon [ˈpɪdʒɪn] n.
+message [ˈmesɪdʒ] n.
+cover [ˈkʌvə(r)] v.
+distance [ˈdɪstəns] n.
+request [rɪˈkwest] n.
+spare [speə(r)] part [pɑːt] n.
+service [ˈsɜːvɪs] n.
+</p>
+
+<p>
+leave sb. a message
+customer service
+cover the distance in st.
+</p>
+
+<hr />
+<p>
+have done VS did
+</p>
+
+<p>
+A is 5 miles from B
+get sth. for sb.
+cover the distance in st.
+a great many
+send a request for sth.
+up to now
+in this way
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgf928d49" class="outline-3">
+<h3 id="orgf928d49"><span class="section-number-3">3.6.</span> L06 Percy Buttons</h3>
+<div class="outline-text-3" id="text-3-6">
+<p>
+beggar [ˈbeɡə(r)] n.
+food [fuːd] n.
+pocket [ˈpɒkɪt] n.
+call [kɔːl] v.
+</p>
+
+<p>
+pocket money
+call at = visit
+</p>
+
+<hr />
+<p>
+a/an/the
+some/any
+</p>
+
+<p>
+move to sw.
+knock at the door
+ask sb. for sth.
+stand on sb's head
+call at
+in return for this
+once a st.
+ask for sth.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org39b610f" class="outline-3">
+<h3 id="org39b610f"><span class="section-number-3">3.7.</span> L07 Too late</h3>
+<div class="outline-text-3" id="text-3-7">
+<p>
+detective [dɪˈtektɪv] n.
+airport [ˈeəpɔːt] n.
+expect [ɪkˈspekt] v.
+valuable [ˈvæljuəbl] adj.
+parcel [ˈpɑːs(ə)l] n.
+diamond [ˈdaɪmənd] n.
+steal [stiːl] stole [stəʊl] stolen [ˈstəʊlən] v.
+main [meɪn] adj.
+airfield [ˈeəfiːld] n.
+guard [ɡɑːd] n.
+precious [ˈpreʃəs] adj.
+stone [stəʊn] n.
+sand [sænd] n.
+</p>
+
+<p>
+keep guard
+</p>
+
+<hr />
+<p>
+was/were + doing
+when &amp; while &amp; just as
+</p>
+
+
+<p>
+all morning
+	The plane was late and detectives were waiting at the airport all morning.
+a parcel of sth.
+a few hours earlier
+keep guard
+to sb's surprise
+try to do sth.
+A be full of B
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgf2d0c7f" class="outline-3">
+<h3 id="orgf2d0c7f"><span class="section-number-3">3.8.</span> L08 The best and the worst</h3>
+<div class="outline-text-3" id="text-3-8">
+<p>
+competition [ˌkɒmpəˈtɪʃ(ə)n] n.
+neat [niːt] adj. 整齐的,整洁的
+path [pɑːθ] n.
+wooden [ˈwʊdn] adj.
+pool [puːl] n.
+</p>
+
+<p>
+enter the competition
+make a path
+That's neat
+</p>
+
+<hr />
+<p>
+adj. 比较级&amp;最高级变化规则
+</p>
+<ol class="org-ol">
+<li>主语 + be + the + adj.est + n. + I've ever met/seen</li>
+<li>主语 + be + the + adj.est + n. + 范围</li>
+<li>主语 + be + adj.er + than + 比较对象 (I formal / me informal)</li>
+</ol>
+
+<p>
+enter for
+make a path
+build a bridge
+win a prize
+</p>
+</div>
+</div>
+
+<div id="outline-container-org7d1bece" class="outline-3">
+<h3 id="org7d1bece"><span class="section-number-3">3.9.</span> L09 A cold welcome</h3>
+<div class="outline-text-3" id="text-3-9">
+<p>
+welcome [ˈwelkəm] n.
+crowd [kraʊd] n.
+gather [ˈɡæðə(r)] v.
+hand [hænd] n.
+shout [ʃaʊt] v.
+refuse [rɪˈfjuːz] v.
+laugh [lɑːf] v.
+</p>
+
+<p>
+a cold welcome
+a warm welcome
+gather round
+shout at sb.
+refuse to do sth.
+laugh at sb.
+</p>
+
+<hr />
+<p>
+on + 具体某一天
+in + 年/季/月
+at + 时间点
+</p>
+
+<p>
+the last day of the year
+a large crowd of
+in twenty minutes' time
+refuse to do sth.
+at that moment
+begin to do sth.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org0b68754" class="outline-3">
+<h3 id="org0b68754"><span class="section-number-3">3.10.</span> L10 Not for jazz</h3>
+<div class="outline-text-3" id="text-3-10">
+<p>
+jazz [dʒæz] n.
+musical [ˈmjuːzɪk(ə)l] adj.
+instrument [ˈɪnstrəmənt] n.
+clavichord [ˈklævɪkɔːd] n.
+recently [ˈriːs(ə)ntli] adv.
+damage [ˈdæmɪdʒ] v.
+key [kiː] n.
+string [strɪŋ] n.
+shock [ʃɒk] v.
+allow [əˈlaʊ] v.
+touch [tʌtʃ] v.
+</p>
+
+<p>
+be allowed to do sth.
+allow sb. to do sth.
+</p>
+
+<hr />
+<p>
+am/is/are+done
+was/were+done
+am/is/are+being+done
+have/has+been+done
+</p>
+
+<p>
+be made in sw.
+belong to sb.
+play jazz
+be allowed to do sth.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org0fb5d4b" class="outline-3">
+<h3 id="org0fb5d4b"><span class="section-number-3">3.11.</span> L11 One good turn deserves another</h3>
+<div class="outline-text-3" id="text-3-11">
+<p>
+turn [tɜːn] n.
+deserve [dɪˈzɜːv] v.
+lawyer [ˈlɔɪə(r)] n.
+bank [bæŋk] n.
+salary [ˈsæləri] n.
+immediately [ɪˈmiːdiətli] adv.
+</p>
+
+<p>
+one good turn deserves another.
+get a good salary
+It's your turn
+</p>
+
+<p>
+get a good salary
+borrow sth. from sb.
+pay it back
+pay for sth.
+ask sb. to do sth.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org83fd83a" class="outline-3">
+<h3 id="org83fd83a"><span class="section-number-3">3.12.</span> L12 Goodbye and good luck</h3>
+<div class="outline-text-3" id="text-3-12">
+<p>
+luck [lʌk] n.
+captain [ˈkæptɪn] n.
+sail [seɪl] v.
+harbour [ˈhɑːbə(r)] n.
+proud [praʊd] adj.
+important [ɪmˈpɔːt(ə)nt] adj.
+</p>
+
+<p>
+lucky dog
+be proud of
+I got a very important question to ask you
+</p>
+
+<hr />
+<p>
+will do
+shall do
+</p>
+
+<p>
+sail from sw.
+set out
+have plenty of time
+will be away
+A be proud of B
+say goodbye to sb.
+take part in
+</p>
+</div>
+</div>
+
+<div id="outline-container-org41958d6" class="outline-3">
+<h3 id="org41958d6"><span class="section-number-3">3.13.</span> L13 The Greenwood Boys</h3>
+<div class="outline-text-3" id="text-3-13">
+<p>
+group [ɡruːp] n.
+pop [pɒp] singer [ˈsɪŋə(r)] n.
+club [klʌb] n.
+performance [pəˈfɔːməns] n.
+occasion [əˈkeɪʒ(ə)n] n.
+</p>
+
+<p>
+a group of
+pop music/song/star
+give a performance
+on this occasion
+</p>
+
+<hr />
+<p>
+will be doing
+</p>
+
+<p>
+a group of
+at present
+all parts of the country
+as usual
+have a difficult time
+give five performance
+keep order
+on these occasions
+</p>
+</div>
+</div>
+
+<div id="outline-container-org102fae2" class="outline-3">
+<h3 id="org102fae2"><span class="section-number-3">3.14.</span> L14 Do you speak English?</h3>
+<div class="outline-text-3" id="text-3-14">
+<p>
+amusing [əˈmjuːzɪŋ] adj.
+experience [ɪkˈspɪəriəns] n.
+wave [weɪv] v.
+lift [lɪft] n.
+reply [rɪˈplaɪ] v.
+language [ˈlæŋɡwɪdʒ] n.
+journey [ˈdʒɜːni] n.
+</p>
+
+<p>
+have an amusing experience
+wave to sb.
+take a lift/ ask for a lift
+A give B a lift
+reply to the email/letter
+go on a journey
+</p>
+
+<hr />
+<p>
+had + done
+</p>
+
+<p>
+drive on to sw.
+on the way
+ask sb. for a lift
+apart from
+in French
+</p>
+</div>
+</div>
+
+<div id="outline-container-org926cfab" class="outline-3">
+<h3 id="org926cfab"><span class="section-number-3">3.15.</span> L15 Good news</h3>
+<div class="outline-text-3" id="text-3-15">
+<p>
+secretary [ˈsekrət(ə)ri] n.
+nervous [ˈnɜːvəs] adj.
+afford [əˈfɔːd] v.
+weak [wiːk] adj.
+interrupt [ˌɪntəˈrʌpt] v.
+</p>
+
+<p>
+be nervous about sth. / doing sth.
+afford sth.
+Sorry to interrupt, but&#x2026;
+</p>
+
+<hr />
+<p>
+宾语从句
+直接引语变间接引语
+</p>
+
+<p>
+look up
+afford to pay
+my turn had come
+in a weak voice
+</p>
+</div>
+</div>
+
+<div id="outline-container-org07cb506" class="outline-3">
+<h3 id="org07cb506"><span class="section-number-3">3.16.</span> L16 A polite request</h3>
+<div class="outline-text-3" id="text-3-16">
+<p>
+park [pɑːk] v.
+traffic [ˈtræfɪk] n.
+ticket [ˈtɪkɪt] n.
+note [nəʊt] n.
+area [ˈeəriə] n.
+sign [saɪn] n.
+reminder [rɪˈmaɪndə(r)] n.
+fail [feɪl] v.
+obey [əˈbeɪ] v.
+</p>
+
+<p>
+make notes/ a note
+leave a note
+remind sb. of sth./sb.
+fail to do sth.
+</p>
+
+<hr />
+<p>
+if从句
+</p>
+
+<p>
+park sb's car
+pay attention to
+</p>
+</div>
+</div>
+
+<div id="outline-container-org2ef6842" class="outline-3">
+<h3 id="org2ef6842"><span class="section-number-3">3.17.</span> L17 Always young</h3>
+<div class="outline-text-3" id="text-3-17">
+<p>
+appear [əˈpɪə(r)] n.
+stage [steɪdʒ] n.
+bright [braɪt] adj. + color [ˈkʌlə(r)] + n.
+stocking [ˈstɒkɪŋ] n.
+sock [sɒk] n.
+grown-up [ˌɡrəʊn ˈʌp] adj. n.
+</p>
+
+<hr />
+<p>
+must
+have to
+can
+</p>
+
+<p>
+at least
+in spite of this
+take part in
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgf44412b" class="outline-3">
+<h3 id="orgf44412b"><span class="section-number-3">3.18.</span> L18 He often does this</h3>
+<div class="outline-text-3" id="text-3-18">
+<p>
+pub [pʌb] n.
+landlord [ˈlændlɔːd] n.
+bill [bɪl] n.
+</p>
+
+<p>
+pay the bill
+</p>
+
+<hr />
+<p>
+have 万能动词
+</p>
+
+<p>
+look for
+have a meal
+pay the bill
+in a few minutes
+</p>
+</div>
+</div>
+
+<div id="outline-container-org41b4ac6" class="outline-3">
+<h3 id="org41b4ac6"><span class="section-number-3">3.19.</span> L19 Sold out</h3>
+<div class="outline-text-3" id="text-3-19">
+<p>
+hurry [ˈhʌri] v
+ticket [ˈtɪkɪt] office [ˈɒfɪs]
+pity [ˈpɪti] n.
+exclaim [ɪkˈskleɪm] v.
+return [rɪˈtɜːn] v n
+sadly [ˈsædli] adv.
+</p>
+
+<p>
+hurry to sw.
+in a hurry
+What a pity
+It's a pity that&#x2026;
+Don't yell at me.
+</p>
+
+<hr />
+<p>
+现在
+may/might (not) do
+may/might (not) be adj./n.
+may/might (not) be doing
+</p>
+
+<p>
+过去
+may/might (not) have done
+may/might (not) have been adj./n.
+may/might (not) have been doing.
+</p>
+
+<p>
+sold out
+at once (=immediately, soon)
+might/may as well
+</p>
+</div>
+</div>
+
+<div id="outline-container-org9553a1a" class="outline-3">
+<h3 id="org9553a1a"><span class="section-number-3">3.20.</span> L20 One man in a boat</h3>
+<div class="outline-text-3" id="text-3-20">
+<p>
+catch [kætʃ] caught caught v
+fisherman [ˈfɪʃəmən] n
+boot [buːt] n
+rubbish [ˈrʌbɪʃ] n
+waste [weɪst] n v
+realize [ˈriːəlaɪz] v
+</p>
+
+<p>
+catch your eye
+catch a bus
+watch your tongue
+That's rubbish
+You're wasting time.
+sb. realized that&#x2026;
+</p>
+
+<hr />
+<p>
+动名词
+</p>
+
+<p>
+instead of doing sth.
+spend st. sw.
+give up doing sth.
+be interesting in doing sth.
+be keen on doing sth.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org5b04c8b" class="outline-3">
+<h3 id="org5b04c8b"><span class="section-number-3">3.21.</span> L21 Mad of not?</h3>
+<div class="outline-text-3" id="text-3-21">
+<p>
+mad [mæd] adj
+reason [ˈriːz(ə)n] n
+sum [sʌm] n
+determined [dɪˈtɜːmɪnd] adj
+</p>
+
+<p>
+be mad at sb.
+for some reason
+a large sum of money
+be determined to do sth.
+</p>
+
+<hr />
+<p>
+will/would be done
+can/could be done
+must be done
+have to be done
+must have been done
+</p>
+
+<p>
+drive sb. mad
+for some reason
+come into use
+</p>
+</div>
+</div>
+
+<div id="outline-container-org0c54520" class="outline-3">
+<h3 id="org0c54520"><span class="section-number-3">3.22.</span> L22 A glass envelope</h3>
+<div class="outline-text-3" id="text-3-22">
+<p>
+dream [driːm] v.
+age [eɪdʒ] n.
+channel [ˈtʃæn(ə)l] n.
+throw [θrəʊ] threw [θruː] thrown [θrəʊn] v.
+regularly [ˈreɡjələli] adv.
+</p>
+
+<p>
+dream of doing sth.
+at my age
+throw away
+</p>
+
+<hr />
+<p>
+v. + of/from/in/on
+</p>
+
+<p>
+think of sth.
+write to sb.
+decide to do sth.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org674b355" class="outline-3">
+<h3 id="org674b355"><span class="section-number-3">3.23.</span> L23 A new house</h3>
+<div class="outline-text-3" id="text-3-23">
+<p>
+complete [kəmˈpliːt] v
+modern [ˈmɒd(ə)n] adj
+strange [streɪndʒ] adj
+district [ˈdɪstrɪkt] n
+</p>
+
+<p>
+You complete me.
+have a letter from sb.
+get a surprise
+</p>
+</div>
+</div>
+
+<div id="outline-container-org99e4186" class="outline-3">
+<h3 id="org99e4186"><span class="section-number-3">3.24.</span> L24 It could be worse</h3>
+<div class="outline-text-3" id="text-3-24">
+<p>
+manager [ˈmænɪdʒə(r)] n
+upset [ˌʌpˈset] adj 
+complain [kəmˈpleɪn] v wicked [ˈwɪkɪd] adj
+contain [kənˈteɪn] v
+honesty [ˈɒnəsti] n honest [ˈɒnɪst] adj
+</p>
+
+<p>
+get/be upset about sth.
+complain about sth.
+start to do sth.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org57fd663" class="outline-3">
+<h3 id="org57fd663"><span class="section-number-3">3.25.</span> L25 Do the English speak English?</h3>
+<div class="outline-text-3" id="text-3-25">
+<p>
+railway [ˈreɪlweɪ] n
+porter [ˈpɔːtə(r)] n several [ˈsevrəl]
+foreigner [ˈfɒrənə(r)] n
+wonder [ˈwʌndə(r)] v
+</p>
+
+<p>
+not know the way to sw.
+</p>
+
+<hr />
+<ol class="org-ol">
+<li>and,but,or,so</li>
+<li>both&#x2026; and, either&#x2026;or,neither&#x2026;nor</li>
+<li>not only&#x2026; but also (as well)</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org870ff56" class="outline-3">
+<h3 id="org870ff56"><span class="section-number-3">3.26.</span> L26 The best art critics</h3>
+<div class="outline-text-3" id="text-3-26">
+<p>
+art [ɑːt] n.
+critic [ˈkrɪtɪk] n.
+paint [peɪnt] v.
+pretend [prɪˈtend] v.
+pattern [ˈpæt(ə)n] n.
+curtain [ˈkɜːt(ə)n] n.
+material [məˈtɪəriəl] n.
+appreciate [əˈpriːʃieɪt] v.
+notice [ˈnəʊtɪs] v.
+whether [ˈweðə(r)] conj.(连词)
+hang [hæŋ] hung hung v.
+critically [ˈkrɪtɪkli] adv.
+upside [ˈʌpsaɪd] down 
+</p>
+
+<p>
+sb. pretend that &#x2026;
+I really appreciate that.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org3196af2" class="outline-3">
+<h3 id="org3196af2"><span class="section-number-3">3.27.</span> L27 A wet night</h3>
+<div class="outline-text-3" id="text-3-27">
+<p>
+tent n.
+field n.
+smell smelt v.
+wonderful adj.
+campfire n.
+creep v.
+sleeping bag
+comfortable adj.
+soundly adv.
+leap v.
+heavily adv.
+stream n.
+form v.
+wind wound wound v.
+right adv.
+</p>
+
+<p>
+put up the tent
+tell a story/stories
+put out the fire
+begin doing sth.
+wake up
+</p>
+</div>
+</div>
+
+<div id="outline-container-org1de8e5d" class="outline-3">
+<h3 id="org1de8e5d"><span class="section-number-3">3.28.</span> L28 No parking</h3>
+<div class="outline-text-3" id="text-3-28">
+<p>
+rare adj.
+ancient adj.
+myth n.
+trouble n.
+effect n.
+Medusa n.
+Gorgon n.
+</p>
+
+<p>
+have trouble with sth.
+	He has had trouble with cars and their owners.
+have no effect
+have trouble doing sth.
+</p>
+
+<hr />
+<p>
+定语从句 NCE1 L121 &amp; L123
+whose引导的特殊疑问句
+复习 have+done
+</p>
+</div>
+</div>
+
+<div id="outline-container-org876fcbd" class="outline-3">
+<h3 id="org876fcbd"><span class="section-number-3">3.29.</span> L29 Taxi!</h3>
+<div class="outline-text-3" id="text-3-29">
+<p>
+taxi n.
+Pilatus Porter
+land v.
+lonely adj.
+Welsh adj.
+roof n.
+block n.
+flat n.
+desert v.
+</p>
+
+<p>
+take a taxi
+</p>
+
+<hr />
+<p>
+done做定语
+复习have done VS did
+</p>
+</div>
+</div>
+
+<div id="outline-container-org64b998e" class="outline-3">
+<h3 id="org64b998e"><span class="section-number-3">3.30.</span> L30 Football or polo?</h3>
+<div class="outline-text-3" id="text-3-30">
+<p>
+polo n.
+Wayle n.
+cut cut cut v.
+row v.
+kick v.
+towards prep.
+nearly adv.
+sight n.
+</p>
+
+<p>
+kick his ass
+</p>
+
+<hr />
+<p>
+doing现在分词做定语
+</p>
+
+<p>
+call out to sb.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org3506481" class="outline-3">
+<h3 id="org3506481"><span class="section-number-3">3.31.</span> L31 Success story</h3>
+<div class="outline-text-3" id="text-3-31">
+<p>
+retire v.
+company n.
+bicycle n.
+save v.
+workshop n.
+helper n.
+employ v.
+grandson n.
+</p>
+
+<p>
+save sb's life
+</p>
+
+<hr />
+<p>
+used to do sth.
+</p>
+
+<p>
+It is/was sb's job to do sth.
+in sb's twenties
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb17d62d" class="outline-3">
+<h3 id="orgb17d62d"><span class="section-number-3">3.32.</span> L32 Shopping made easy</h3>
+<div class="outline-text-3" id="text-3-32">
+<p>
+once adv.
+temptation n.
+article n.
+wrap v.
+simply adv.
+arrest v.
+</p>
+
+<p>
+once upon a time
+resist the temptation
+wrap up sth.
+</p>
+
+<hr />
+<p>
+as &#x2026; as
+</p>
+
+<p>
+It is easy for sb. to do sth.
+hand sth. to sb.
+wrap sth. up
+as quickly as possible
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc80bc6e" class="outline-3">
+<h3 id="orgc80bc6e"><span class="section-number-3">3.33.</span> L33 Out of the darkness</h3>
+<div class="outline-text-3" id="text-3-33">
+<p>
+darkness n.
+explain v.
+coast n.
+storm n.
+towards prep.
+rock n.
+shore n.
+light n.
+ahead adv.
+cliff n.
+struggle v.
+hospital n.
+</p>
+
+<p>
+struggle up
+explain sth. to sb.
+go ahead
+</p>
+
+<p>
+On doing sth, &#x2026;
+</p>
+</div>
+</div>
+
+<div id="outline-container-orga109aee" class="outline-3">
+<h3 id="orga109aee"><span class="section-number-3">3.34.</span> L34 Quick work</h3>
+<div class="outline-text-3" id="text-3-34">
+<p>
+station n.
+most adv.
+</p>
+
+<p>
+call at = visit 不那么正式
+except sth. to be found
+</p>
+</div>
+</div>
+
+<div id="outline-container-orga9c357a" class="outline-3">
+<h3 id="orga9c357a"><span class="section-number-3">3.35.</span> L35 Stop thief!</h3>
+<div class="outline-text-3" id="text-3-35">
+<p>
+while n.
+regret v.
+far adv.
+rush v.
+act v.
+straight adv.
+fright n.
+battered adj.
+shortly adv.
+afterwards adv.
+</p>
+
+<p>
+a short while ago
+regret sth./doing sth.
+rush out of/towards
+go straight ahead
+give me a fright
+get a fright
+Shortly afterwards
+</p>
+
+<hr />
+<p>
+see sb. do sth
+see sb. doing sth.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org3228950" class="outline-3">
+<h3 id="org3228950"><span class="section-number-3">3.36.</span> L36 Across the Channel</h3>
+<div class="outline-text-3" id="text-3-36">
+<p>
+record n.
+strong adj.
+swimmer n.
+succeed v.
+train v.
+anxiously adv.
+intend v.
+solid adj.
+</p>
+
+<p>
+set up a new world record
+break the record
+as strong as a horse
+strong like a horse
+succeed in doing sth.
+train sb. to do sth.
+intend to do sth.
+</p>
+
+<hr />
+<p>
+表述将来:
+be going to do
+will
+intend to do
+</p>
+
+<p>
+hope to do sth.
+be sure to do sth.
+take some rests/a rest
+</p>
+</div>
+</div>
+
+<div id="outline-container-org61d4d94" class="outline-3">
+<h3 id="org61d4d94"><span class="section-number-3">3.37.</span> L37 The Olympic Games</h3>
+<div class="outline-text-3" id="text-3-37">
+<p>
+Olympic adj.
+hold v.
+governmen n.
+immense adj.
+stadium n.
+standard n.
+capital n.
+fantastic adj.
+design v.
+</p>
+
+<p>
+hold a meeting
+</p>
+
+<hr />
+<p>
+will have done
+have done VS had done VS will have done
+</p>
+
+<p>
+look forward to doing sth.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org19bcb5f" class="outline-3">
+<h3 id="org19bcb5f"><span class="section-number-3">3.38.</span> L38 Everything except the weather</h3>
+<div class="outline-text-3" id="text-3-38">
+<p>
+except prep.
+Mediterranean n.
+complain v.
+continuallly adv.
+bitterly adv.
+sunshine n.
+</p>
+
+<p>
+complain about sth.
+bitterly cold
+</p>
+
+<hr />
+<p>
+一前就后
+had hardly done &#x2026; when &#x2026;
+had no sooner done &#x2026; than &#x2026;
+</p>
+
+<p>
+dream of doing sth.
+plan to do
+settle down
+</p>
+</div>
+</div>
+
+<div id="outline-container-org74a3968" class="outline-3">
+<h3 id="org74a3968"><span class="section-number-3">3.39.</span> L39 Am I all right?</h3>
+<div class="outline-text-3" id="text-3-39">
+<p>
+operation n.
+successful adj.
+following adj.
+patient n.
+alone adj.
+exchange n.
+inquire v.
+certain adj.
+caller n.
+relative n.
+</p>
+
+<p>
+have an operation
+leave me alone
+inquire about sth./sb.
+</p>
+
+<hr />
+<p>
+宾语从句
+NCE1 L99 L101 L133 L135 L139
+</p>
+
+<p>
+refuse to do sth.
+ask for sth.
+be allowed to do sth.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgd7475d7" class="outline-3">
+<h3 id="orgd7475d7"><span class="section-number-3">3.40.</span> L40 Food and talk</h3>
+<div class="outline-text-3" id="text-3-40">
+<p>
+hostess n.
+unsmiling adj.
+tight adj.
+fix v.
+globe n.
+despair n.
+</p>
+
+<p>
+in despair
+</p>
+
+<hr />
+<p>
+虚拟语气(现在)
+</p>
+
+<p>
+take my seat
+be busy doing sth.
+Will you be doing sth?
+</p>
+</div>
+</div>
+
+<div id="outline-container-org25f4915" class="outline-3">
+<h3 id="org25f4915"><span class="section-number-3">3.41.</span> L41 Do you call that a hat?</h3>
+<div class="outline-text-3" id="text-3-41">
+<p>
+rude adj.
+mirror n.
+hole n.
+remark v.
+remind v.
+lighthouse n.
+</p>
+
+<p>
+remind sb. of sth./sb.
+</p>
+
+<hr />
+<p>
+need
+needn't have done
+</p>
+
+<p>
+regret doing sth.
+find sth. adj.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org766694c" class="outline-3">
+<h3 id="org766694c"><span class="section-number-3">3.42.</span> L42 Not very musical</h3>
+<div class="outline-text-3" id="text-3-42">
+<p>
+musical adj.
+market n.
+snake charmer
+pipe n.
+tune n.
+glimpse n.
+snake n.
+movement n.
+continue v.
+dance v.
+obviously adv.
+difference n.
+Indian adj.
+</p>
+
+<p>
+watch a musical
+play a tune
+have a glimpse of sth./sb.
+continue to do sth.
+tell the difference from A and B / A be different from B
+</p>
+
+<hr />
+<p>
+have 万能动词
+</p>
+
+<p>
+have a long walk
+at the other side of sw.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgfd188e1" class="outline-3">
+<h3 id="orgfd188e1"><span class="section-number-3">3.43.</span> L43 Over the South Pole</h3>
+<div class="outline-text-3" id="text-3-43">
+<p>
+pole n.
+flight n.
+explorer n.
+lie lay lain v.
+serious adj.
+point n.
+seem v.
+crash v.
+sackn.
+clear v.
+aircraft n.
+endless adj.
+plain n.
+</p>
+
+<p>
+catch a flight
+run into serious trouble
+one point
+It seems that &#x2026;
+</p>
+
+<hr />
+<p>
+be able to do sth.
+时态
+could VS was able to do sth.
+</p>
+
+<p>
+order sb. to do sth.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org80ccf15" class="outline-3">
+<h3 id="org80ccf15"><span class="section-number-3">3.44.</span> L44 Through the forest</h3>
+<div class="outline-text-3" id="text-3-44">
+<p>
+forest n.
+risk n.
+picnic n.
+edge n.
+strap n.
+possession n.
+breath n.
+contents n.(常用复数,内有的物品)
+mend v.
+</p>
+
+<p>
+take a risk
+have a picnic
+at the edge of a forest
+in sb's possession
+out of breath
+</p>
+
+<p>
+rush up to sb.
+catch up with sb.
+go through
+need doing sth.
+run straight at sb.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgbb9b302" class="outline-3">
+<h3 id="orgbb9b302"><span class="section-number-3">3.45.</span> L45 A clear conscience</h3>
+<div class="outline-text-3" id="text-3-45">
+<p>
+clear adj.
+conscience n.
+wallet n.
+savings n.
+villager n.
+percent 
+</p>
+
+<p>
+I have a clear conscience
+Are you 100 percent sure about this?
+</p>
+
+<hr />
+<p>
+be done
+</p>
+
+<p>
+sb. learn that + 宾语从句
+return sth. to sb.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge546331" class="outline-3">
+<h3 id="orge546331"><span class="section-number-3">3.46.</span> L46 Expensive and uncomfortable</h3>
+<div class="outline-text-3" id="text-3-46">
+<p>
+unload v.
+wooden adj.
+extremely adv.
+occur v.
+astonish v.
+pile n.
+woolen n.
+goods n.
+discover v.
+admit v.
+confine v.
+normal adj.
+</p>
+
+<p>
+It occurred to sb. that &#x2026;
+It occurred to sb. to do sth.
+be astonished at sth.
+admit doing sth.
+sb. admit that&#x2026;
+</p>
+
+<hr />
+<p>
+同位语从句
+区分定语从句与同位语从句
+</p>
+
+<p>
+What = the thing that/the person that
+sb. account for the fact that + 句子
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc27197d" class="outline-3">
+<h3 id="orgc27197d"><span class="section-number-3">3.47.</span> L47 A thirsty ghost</h3>
+<div class="outline-text-3" id="text-3-47">
+<p>
+thirsty adj.
+ghost n.
+haunt v.
+block v.
+furniture n.
+whisky n.
+suggest v.
+shake shook shaken v.
+accept v.
+</p>
+
+<p>
+shake sb's head
+</p>
+
+<p>
+be up for sale
+hear sb./sth. doing sth.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org5fd524e" class="outline-3">
+<h3 id="org5fd524e"><span class="section-number-3">3.48.</span> L48 Did you want to tell me something?</h3>
+<div class="outline-text-3" id="text-3-48">
+<p>
+pull v.
+cotton wool
+collect v.
+collection n.
+nod v.
+meanwhile adv.
+</p>
+
+<p>
+private collection
+</p>
+
+<p>
+It is impossible for sb. to do
+&#x2026; rest for a while
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgf131826" class="outline-3">
+<h3 id="orgf131826"><span class="section-number-3">3.49.</span> L49 The end of a dream</h3>
+<div class="outline-text-3" id="text-3-49">
+<p>
+tired [ˈtaɪəd] adj.
+real [ˈriːəl; rɪəl] adj.
+owner [ˈəʊnə(r)] n. own v.
+spring [sprɪŋ] n.
+mattress [ˈmætrəs] n.
+gust [ɡʌst] n.
+sweep [swiːp] swept [swept] swept v. 扫,刮
+courtyard [ˈkɔːtjɑːd] n.
+smash [smæʃ] v.
+miraculously [mɪˈrækjələsli] adv.
+unhurt [ʌnˈhɜːt] adj.
+glance [ɡlɑːns] v.
+promptly [ˈprɒmptli] adv.
+</p>
+
+<p>
+get/be tired of sth./doing sth.
+A gust of wind swept &#x2026;
+in the courtyard
+smash sth. to pieces
+glance at sth.
+</p>
+
+<p>
+---------------&#x2013;&#x2014;!!!
+</p>
+<ol class="org-ol">
+<li>分词作状语</li>
+</ol>
+
+<p>
+save up for year to do sth.
+for the first time in sb's life
+go to sleep
+</p>
+</div>
+
+<div id="outline-container-org1163812" class="outline-4">
+<h4 id="org1163812"><span class="section-number-4">3.49.1.</span> L01</h4>
+<div class="outline-text-4" id="text-3-49-1">
+<p>
+6123456
+</p>
+</div>
+</div>
+
+<div id="outline-container-org95bdea7" class="outline-4">
+<h4 id="org95bdea7"><span class="section-number-4">3.49.2.</span> L25</h4>
+<div class="outline-text-4" id="text-3-49-2">
+<ol class="org-ol">
+<li>6123456 + 6123546</li>
+<li>conj.
+<ol class="org-ol">
+<li>and,but,because,so,as,for</li>
+<li>both&#x2026;and&#x2026;,either&#x2026;or&#x2026;,neither&#x2026;nor&#x2026;</li>
+<li>not only &#x2026;, but also&#x2026;/but&#x2026; as well</li>
+</ol></li>
+</ol>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org726b25d" class="outline-3">
+<h3 id="org726b25d"><span class="section-number-3">3.50.</span> L50 Taken for a ride</h3>
+<div class="outline-text-3" id="text-3-50">
+<p>
+reward n.
+virtue n.
+diet n.
+forbid forbade forbidden v.
+hurriedly adv.
+embarrass [ɪmˈbærəs] v.
+guiltily adv.
+strict adj.
+occasionally adv.
+</p>
+
+<hr />
+<p>
+do/does
+am/is/are+doing
+</p>
+</div>
+</div>
+
+<div id="outline-container-org17894a3" class="outline-3">
+<h3 id="org17894a3"><span class="section-number-3">3.51.</span> L51 Reward for a virtue</h3>
+<div class="outline-text-3" id="text-3-51">
+<p>
+reward [rɪˈwɔːd] n. v. 奖赏
+virtue [ˈvɜːtʃuː] n. 美德
+diet [ˈdaɪət] n. 节食
+forbid [fəˈbɪd] forbade forbidden v. 禁止
+hurriedly [ˈhʌrɪdli] adv. 匆忙的
+embarrass [ɪmˈbærəs] v. 使尴尬
+guiltily [ˈɡɪltɪli] adv. 内疚地
+strict [strɪkt] adj. 严格的
+occasionally [əˈkeɪʒnəli] adv. 偶尔地
+</p>
+
+<p>
+expect/receive/give + reward
+go on a diet = be on a diet
+forbid sb. to do sth.
+a be strict with b
+</p>
+<hr />
+<p>
+L3 &amp; L27
+was/were/did
+</p>
+
+<p>
+First of all,&#x2026;
+write out a long list of &#x2026;
+pay sb. a visit
+was not surprised to see that&#x2026;
+It was obvious that&#x2026;
+ring the bell
+</p>
+</div>
+</div>
+<div id="outline-container-org8ed02fe" class="outline-3">
+<h3 id="org8ed02fe"><span class="section-number-3">3.52.</span> L52 A pretty carpet</h3>
+<div class="outline-text-3" id="text-3-52">
+<p>
+temporarily [ˈtemprərəli] adv.
+inch [ɪntʃ] n.
+space [speɪs] n.
+actually [ˈæktʃuəli] adv.
+</p>
+
+<p>
+every inch of sth.
+That's actually a good idea
+</p>
+
+<hr />
+<p>
+have been doing
+</p>
+
+<p>
+get sth. in order
+To make matters worse&#x2026;
+A short while ago&#x2026;
+gaze at sth.
+in sb's spare time&#x2026;
+help sb. to do sth.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org27cbce4" class="outline-3">
+<h3 id="org27cbce4"><span class="section-number-3">3.53.</span> L53 Hot snake</h3>
+<div class="outline-text-3" id="text-3-53">
+<p>
+hot [hɒt] adj.
+fireman [ˈfaɪəmən] n.
+cause [kɔːz] v.
+examine [ɪɡˈzæmɪn] v.
+accidentally [ˌæksɪˈdentəli] adv.
+remains [rɪˈmeɪnz] n.
+wire [ˈwaɪə(r)] n.
+volt [vəʊlt] n.
+power line [ˈpaʊə laɪn]
+solve [sɒlv] v.
+mystery [ˈmɪst(ə)ri] n.
+snatch [snætʃ] v.
+spark [spɑːk] n.
+</p>
+
+<p>
+electrical wire / electric wire
+discover + cause
+the remains of a snake
+solve + problem/mystery
+solve/remain + mystery
+</p>
+
+<hr />
+<p>
+did
+have done
+have been doing
+</p>
+
+<p>
+find out
+throw away
+</p>
+</div>
+</div>
+
+<div id="outline-container-org29879de" class="outline-3">
+<h3 id="org29879de"><span class="section-number-3">3.54.</span> L54 Sticky fingers</h3>
+<div class="outline-text-3" id="text-3-54">
+<p>
+sticky [ˈstɪki] adj.
+finger [ˈfɪŋɡə(r)] n.
+pie [paɪ] n.
+mix [mɪks] v.
+pastry [ˈpeɪstri] n.
+annoying [əˈnɔɪɪŋ] adj.
+receiver [rɪˈsiːvə(r)] n.
+dismay [dɪsˈmeɪ] v.
+recognize [ˈrekəɡnaɪz] v.
+persuade [pəˈsweɪd] v.
+mess [mes] n.
+doorknob [ˈdɔːnɒb] n.
+sign [saɪn] v.
+register [ˈredʒɪstə(r)] v.
+</p>
+
+<p>
+stick to the plan
+put my finger on it
+point the finger at
+be dismayed to do sth.
+recognize the voice (of sb.)
+persuade sb. (not) to do sth.
+What a mess!
+such a mess
+Sign here
+sign for sth.
+a registered letter
+</p>
+
+<p>
+send sb. to sp.
+decide to do sth.
+be busy doing sth.
+be covered with sth.
+take sb. st. to do sth.
+hang up
+What a mess!
+sign for sth.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge730ea8" class="outline-3">
+<h3 id="orge730ea8"><span class="section-number-3">3.55.</span> L55 Not a gold mine</h3>
+<div class="outline-text-3" id="text-3-55">
+<p>
+gold [ɡəʊld] n.
+mine [maɪn] n.
+treasure [ˈtreʒə(r)] n.
+revealer [rɪˈvi:lə] n.
+invent [ɪnˈvent] v.
+detect [dɪˈtekt] v.
+bury [ˈberi] v.
+cave [keɪv] n.
+seashore [ˈsiːʃɔː(r)] n.
+pirate [ˈpaɪrət] n.
+arm [ɑːm] v.
+soil [sɔɪl] n.
+entrance [ˈentrəns] n.
+finally [ˈfaɪnəli] adv.
+worthless [ˈwɜːθləs] adj.
+thoroughly [ˈθʌrəli] adv.
+trunk [trʌŋk] n.
+confident [ˈkɒnfɪdənt] adj.
+value [ˈvæljuː] n.
+</p>
+
+<p>
+own + a gold mine
+a treasure map
+in a cave
+near/to the seashore
+pirate stories
+arm sb./sth. with sth. =
+sb. be armed with sth.
+in dry soil
+find / miss + entrance
+You're worthless.
+I'm not worthless.
+car trunk
+sb. be confident that &#x2026; + 句子
+something of value
+</p>
+
+<hr />
+<p>
+would do VS used to do
+where &amp; whose 引导的定语从句
+</p>
+
+<p>
+dreams come true&#x2026;
+be used to do sth.
+fairly soon &#x2026;
+I'm fairly certain that +句子
+I'm fairly confident that + 句子
+</p>
+</div>
+</div>
+
+<div id="outline-container-org3e844cd" class="outline-3">
+<h3 id="org3e844cd"><span class="section-number-3">3.56.</span> L56 Faster than sound!</h3>
+<div class="outline-text-3" id="text-3-56">
+<p>
+sound [saʊnd] n.
+excitement [ɪkˈsaɪtmənt] n.
+handsome [ˈhænsəm] adj.
+Rolls-Royce [ˌrəʊlz ˈrɔɪs]
+Benz [benz] n.
+wheel [wiːl] n.
+explosion [ɪkˈspləʊʒ(ə)n] n.
+course [kɔːs] n.
+rival [ˈraɪv(ə)l] n.
+speed [spiːd] v.
+downhill [ˌdaʊnˈhɪl; ˈdaʊnhɪl] adv. adj.
+</p>
+
+<p>
+make a sound
+hear a sound
+on the course
+speed it/things/this up
+go downhill
+</p>
+
+<hr />
+<p>
+adj.er
+adj.est
+more + adj.
+the most + adj.
+</p>
+
+<p>
+a great deal of &#x2026; 不可数
+a great many + 可数
+break down
+a be different form b.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgf0a3397" class="outline-3">
+<h3 id="orgf0a3397"><span class="section-number-3">3.57.</span> L57 Can I help you, madam?</h3>
+<div class="outline-text-3" id="text-3-57">
+<p>
+madam [ˈmædəm] n
+jeans [dʒiːnz] n.
+hesitate [ˈhezɪteɪt] v.
+serve [sɜːv] v.
+scornfully [ˈskɔːnfəli] adv.
+punish [ˈpʌnɪʃ] v.
+fur [fɜː(r)] n.
+eager [ˈiːɡə(r)] adj.
+</p>
+
+<p>
+hesitate to do sth.
+be eager to do sth.
+ask/laugh/look at/ said + scornfully
+look down on sb.
+</p>
+
+<hr />
+<p>
+(in) the way &#x2026;
+</p>
+
+<p>
+ask to do sth.
+be dressed in &#x2026;
+seek out
+make sb. do sth.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org4a6f7d1" class="outline-3">
+<h3 id="org4a6f7d1"><span class="section-number-3">3.58.</span> L58 A blessing in disguise?</h3>
+<div class="outline-text-3" id="text-3-58">
+<p>
+blessing [ˈblesɪŋ] n.
+disguise [dɪsˈɡaɪz] n.
+tiny [ˈtaɪni] adj.
+possess [pəˈzes] v.
+cursed [kɜːst; ˈkɜːsɪd] adj.
+increase [ɪnˈkriːs] v.
+plant [plɑːnt] v.
+church [tʃɜːtʃ] n.
+evil [ˈiːv(ə)l] adj.
+reputation [ˌrepjuˈteɪʃ(ə)n] n.
+claim [kleɪm] v.
+victim [ˈvɪktɪm] n.
+vicar [ˈvɪkə(r)] n.
+source [sɔːs] n.
+income [ˈɪnkʌm] n.
+trunk [trʌŋk] n.
+</p>
+
+<p>
+It is a blessing that &#x2026;
+what a blessing
+God bless you
+It's a blessing
+a blessing in disguise
+In one's possession
+Go to church
+Go to the church
+have a good/bad reputation
+Have a reputation for&#x2026;
+baggage claim
+source of income/information
+</p>
+
+<hr />
+<p>
+be said to do&#x2026;
+It is said that&#x2026;
+强调句
+被动: 复习L34 &amp; L10
+</p>
+
+<p>
+a number of
+sb. point out that&#x2026;
+</p>
+</div>
+</div>
+
+<div id="outline-container-org1b9d369" class="outline-3">
+<h3 id="org1b9d369"><span class="section-number-3">3.59.</span> L59 In or out?</h3>
+<div class="outline-text-3" id="text-3-59">
+<p>
+bark v. 狗叫
+press v.
+paw n. 脚
+latch n. 门闩
+expert n.
+develop v.
+habit n.
+remove v.
+</p>
+
+<p>
+become/be an expert at doing sth./sth.
+have a habit of doing sth.
+remove sth. from &#x2026;
+</p>
+
+<hr />
+<p>
+so that 目的状语从句
+</p>
+
+<p>
+complained of &#x2026;
+spend st. doing sth.
+train sb. to do sth.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org38b310c" class="outline-3">
+<h3 id="org38b310c"><span class="section-number-3">3.60.</span> L60 The future</h3>
+<div class="outline-text-3" id="text-3-60">
+<p>
+future n.
+fair n. 集市
+fortune-teller n.
+crystal n.
+relation n.
+impatiently adv. 不耐烦的
+</p>
+
+<p>
+in the future
+at a village fair
+crystal clear
+a relation of yours
+</p>
+
+<hr />
+<p>
+A先B后
+the moment A &#x2026; B&#x2026;
+the moment 主将从现
+</p>
+</div>
+</div>
+
+<div id="outline-container-org377c612" class="outline-3">
+<h3 id="org377c612"><span class="section-number-3">3.61.</span> L61 Trouble with the Hubble</h3>
+<div class="outline-text-3" id="text-3-61">
+<p>
+Hubble n.
+telescope n. 望远镜
+launch v.
+space n.
+NASA n.
+billion n.
+faulty adj.
+astronaut n.
+shuttle
+Endeavour n.
+robot-arm
+grab v.
+atmosphere n.
+distant adj.
+galaxy n.
+universe n.
+eagle eye
+</p>
+
+<p>
+grab a beer/coffee
+</p>
+
+<hr />
+<p>
+will be doing
+will have done
+will have been doing
+</p>
+
+<p>
+right from the start
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgcd431d3" class="outline-3">
+<h3 id="orgcd431d3"><span class="section-number-3">3.62.</span> L62 After the fire</h3>
+<div class="outline-text-3" id="text-3-62">
+<p>
+control n.
+smoke n.
+desolate adj.
+threaten v.
+surrounding adj.
+destruction n.
+flood n.
+authority n.
+grass-seed n.
+spray v.
+quantity n.
+root n.
+century n.
+patch n.
+blacken v.
+</p>
+
+<p>
+get it under control
+be under control
+threaten sb. with sth.
+threaten to do sth.
+have the authority to do sth.
+a large/small quantity of sth.
+take root
+for centuries
+a part of sth.
+</p>
+
+<hr />
+<p>
+have been doing
+</p>
+
+<p>
+A short time before
+for miles around
+in place of&#x2026;
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge5258d0" class="outline-3">
+<h3 id="orge5258d0"><span class="section-number-3">3.63.</span> L63 She was not amused</h3>
+<div class="outline-text-3" id="text-3-63">
+<p>
+circle n.
+admire v.
+close adj.
+wedding n.
+reception n.
+sort n.
+</p>
+
+<p>
+a large circle of friends
+admire sb. for sth./doing sth.
+close friend
+at the reception
+what sort of/what kind of&#x2026;
+all sorts of/ all kinds of&#x2026;
+</p>
+
+<hr />
+<p>
+as: in the way or manner that
+</p>
+
+<p>
+sense of humour/humor
+make a speech
+a large number of &#x2026;
+on the way home
+</p>
+</div>
+</div>
+
+<div id="outline-container-org947ab34" class="outline-3">
+<h3 id="org947ab34"><span class="section-number-3">3.64.</span> L64 The Channel Tunnel</h3>
+<div class="outline-text-3" id="text-3-64">
+<p>
+tunnel n.
+port n.
+ventilate v.
+chimney n.
+sea level
+double adj.
+ventilation n.
+fear v.
+invasion n.
+officially
+connect v.
+European adj.
+continent n.
+</p>
+
+<p>
+in the tunnel
+above/below sea level
+double check
+Sb. fear that + 句子
+</p>
+
+<hr />
+<p>
+If 主 had done &#x2026;, 主 would/could &#x2026; have done. L64与过去事实相反
+If you could have made(=If you had been able to make)
+suggest that &#x2026; (should) do &#x2026;
+</p>
+
+<p>
+it is possible to do sth&#x2026;
+a serve as b
+solve the problem of a &#x2026;
+put forward a plan &#x2026;
+</p>
+</div>
+</div>
+
+<div id="outline-container-org8eb3cc2" class="outline-3">
+<h3 id="org8eb3cc2"><span class="section-number-3">3.65.</span> L65 Jumbo versus the police</h3>
+<div class="outline-text-3" id="text-3-65">
+<p>
+versus prep.
+Christmas n.
+circus n.
+present n.
+accompany v.
+approach v.
+ought modal verb.
+weigh v.
+fortunate adj.
+</p>
+
+<p>
+How much do you weigh?
+It is fortunate that + 句子&#x2026;
+</p>
+
+<hr />
+<p>
+should do
+should have done
+ought to do
+ought to have done
+</p>
+
+<p>
+be dressed up as&#x2026;
+set off
+hold up the traffic/line
+let sb. off
+agreed to do sth.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgad0f2bb" class="outline-3">
+<h3 id="orgad0f2bb"><span class="section-number-3">3.66.</span> L66 Sweet as honey!</h3>
+<div class="outline-text-3" id="text-3-66">
+<p>
+Lancaster n.
+bomber n.
+remote adj.
+Pacific n.
+damage v.
+wreck n.
+rediscover v.
+aerial adj.
+survey n.
+rescue v.
+package v.
+enthusiast n.
+restore v.
+imagine v.
+packing case
+colony n.
+bee n.
+hive n.
+preserve v.
+beeswax n.
+</p>
+
+<p>
+remote control
+do a survey
+Can you imagine that?
+It's hard to imagine.
+A colony of bees
+</p>
+
+<hr />
+<p>
+have something done
+</p>
+
+<p>
+over the years
+in reasonable condition
+be worth doing&#x2026;
+turn a into b.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org40a0223" class="outline-3">
+<h3 id="org40a0223"><span class="section-number-3">3.67.</span> L67 Volcanoes</h3>
+<div class="outline-text-3" id="text-3-67">
+<p>
+volcano n.
+active adj.
+Kivu n. Congo n. Kituro n.
+erupt v.
+violently adv. violent adj.
+manage v.
+brilliant adj.
+liquid adj.
+escape v.n.
+alive adj.
+</p>
+
+<p>
+What a brilliant idea!
+That's brilliant!
+</p>
+<hr />
+<p>
+managed to do VS was able to do 成功做成了某事(事例) VS ~ + 过去由能力做成某事
+</p>
+
+<p>
+name sth. a.
+set up his camp/tent
+sb. noticed that + sentence
+</p>
+</div>
+</div>
+
+<div id="outline-container-org80235da" class="outline-3">
+<h3 id="org80235da"><span class="section-number-3">3.68.</span> L68 Persistent</h3>
+<div class="outline-text-3" id="text-3-68">
+<p>
+persistent adj.
+avoid v. 
+insist v. 
+cross v. across prep.
+</p>
+
+<p>
+avoid doing sth.
+insist on doing sth.
+It is no use pretending that + sentence
+prevent sb. from doing sth.
+Fancy meeting you here.
+</p>
+<hr />
+<p>
+no matter how
+</p>
+
+<p>
+enjoy doing sth.
+no matter how/what/where
+follow sb. around
+I was wondering.. + sentence
+would you mind my doing&#x2026;
+finish doing sth.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org06b6145" class="outline-3">
+<h3 id="org06b6145"><span class="section-number-3">3.69.</span> L69 But not murder</h3>
+<div class="outline-text-3" id="text-3-69">
+<p>
+murder <i>ˈmɜːdə</i> n.
+instruct <i>ɪnˈstrʌkt</i> v. 
+acquire <i>əˈkwaɪr</i> v.
+confidence <i>ˈkɑːn-</i> n. confident adj.
+examiner <i>ɪɡˈzæmənə</i> n.
+suppose v. 
+tap v. 
+react v.
+brake n. pedal n.
+mournful adj.
+</p>
+
+<p>
+be instructed to do sth.
+Let's suppose that&#x2026;
+tap on the window
+</p>
+<hr />
+<p>
+having been done
+</p>
+
+<p>
+continue doing/ to do
+be pleased with
+</p>
+</div>
+</div>
+
+<div id="outline-container-org34c0433" class="outline-3">
+<h3 id="org34c0433"><span class="section-number-3">3.70.</span> L70 Red for danger</h3>
+<div class="outline-text-3" id="text-3-70">
+<p>
+bullfight n. ring n.
+drunk n.
+wander v.
+unaware adj.
+bull n. matador n.
+remark n.v. make that stupid remark
+apparently adv.
+sensitive adj.
+criticism n.
+charge v.
+clumsily adv.
+bow v.
+safety n.
+sympathetically adv.
+</p>
+
+<p>
+be unaware of …
+be aware of …
+make that stupid remark
+be sensitive about sth. accept criticism
+charge at sb. = attack
+for your safety
+</p>
+<hr />
+
+<p>
+be busy with sth.
+at the time
+catch sight of a.
+grow quiet&#x2026;
+get close to a.
+step aside
+break into cheers
+feel sorry for sb.
+look on &#x2026;
+out of the way …
+turn sb’s attention to a.
+once more
+</p>
+</div>
+</div>
+
+<div id="outline-container-org0703483" class="outline-3">
+<h3 id="org0703483"><span class="section-number-3">3.71.</span> L71 A famous clock</h3>
+<div class="outline-text-3" id="text-3-71">
+<p>
+parliament n.
+erect v.
+accurate adj.
+official n.adj.
+Greenwich n.
+observatory n.
+check v.n.
+microphone n.
+tower n.
+</p>
+
+<p>
+make it official
+double check
+</p>
+<hr />
+
+<p>
+all over the world
+burn down
+take its name from
+be responsible for
+be connected to
+go wrong
+</p>
+</div>
+</div>
+
+<div id="outline-container-org053f3d4" class="outline-3">
+<h3 id="org053f3d4"><span class="section-number-3">3.72.</span> L72 A car called Bluebird</h3>
+<div class="outline-text-3" id="text-3-72">
+<p>
+racing n.
+per prep.
+Utah n.
+horsepower n.
+burst v.
+average adj.
+footstep n.
+</p>
+
+<p>
+burst into tears
+follow in sb't footsteps
+</p>
+<hr />
+<p>
+have difficulty in doing sth.
+be disappointed to learn that
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge23dd87" class="outline-3">
+<h3 id="orge23dd87"><span class="section-number-3">3.73.</span> L73 The record holder</h3>
+<div class="outline-text-3" id="text-3-73">
+<p>
+record-holder n.
+truant n.
+unimaginative adj.
+shame n.
+hitchhike v.
+meantime n.
+lorry n.
+border n.
+evade v.
+</p>
+
+<p>
+play truant from school
+be put to shame = put sb. to shame
+shame on you
+hitchhike to sw.
+in the meantime
+</p>
+<hr />
+<p>
+over and over again
+</p>
+</div>
+</div>
+
+<div id="outline-container-org5b783e6" class="outline-3">
+<h3 id="org5b783e6"><span class="section-number-3">3.74.</span> L74 Out of the limelight</h3>
+<div class="outline-text-3" id="text-3-74">
+<p>
+limelight n.
+precaution n.
+fan n.
+shady adj.
+sheriff n.
+notice n.v.
+sneer n.v.
+</p>
+
+<p>
+stay out of the limelight
+take precaution
+sb. is a big/huge fan of a.
+on such short notice
+with a sneer/ sneer at sb.
+</p>
+<hr />
+<p>
+a party of
+why don't we
+carry sth. to sw.
+make oneself comfortable
+don't be too hard on us 
+get out of here
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge6e9f6c" class="outline-3">
+<h3 id="orge6e9f6c"><span class="section-number-3">3.75.</span> L75 SOS</h3>
+<div class="outline-text-3" id="text-3-75">
+<p>
+thick adj.
+signal n.
+stamp v.
+helicopter n.
+scene n.
+survivor n.
+</p>
+
+<p>
+send a signal
+stamp out the fire
+arrive on the scene
+</p>
+<hr />
+<p>
+fly off course
+cover sb./sth/ with a.
+get adj.
+It was not long before&#x2026;
+</p>
+</div>
+</div>
+
+<div id="outline-container-org5749cd2" class="outline-3">
+<h3 id="org5749cd2"><span class="section-number-3">3.76.</span> L76 April Fool's Day</h3>
+<div class="outline-text-3" id="text-3-76">
+<p>
+fool n.
+bulletin n.
+announcer n.
+macaroni n.
+leading adj. + cause(s)
+grower n.
+splendid adj. + idea/example/view/garden
+stalk n.
+gather v. thresh v.
+process v.
+Signor n.
+present adj.
+champion n.
+studio n.
+</p>
+
+<p>
+on the bulletin board
+leading cause of
+What a splendid/brilliant idea!
+</p>
+<hr />
+<p>
+at the end of &#x2026;
+</p>
+</div>
+</div>
+
+<div id="outline-container-org20e33b2" class="outline-3">
+<h3 id="org20e33b2"><span class="section-number-3">3.77.</span> L77 A successful operation</h3>
+<div class="outline-text-3" id="text-3-77">
+<p>
+mummy [ˈmʌmi] n.木乃伊
+Egyptian [ɪ'dʒɪpʃ(ə)n] adj.埃及的
+temple [ˈtemp(ə)l] n.庙
+mark [mɑrk] n.斑点
+plate [pleɪt] n.底片
+disease [dɪˈziz] n.疾病
+last [læst] v.持续
+prove [pruv] v.显示出
+resin [ˈrezɪn] n.树脂
+skin [skɪn] n.皮,皮肤
+section [ˈsekʃ(ə)n] n.切片
+figure [ˈfɪɡjər] n.(人的)体形; 人像
+normally [ˈnɔrm(ə)li] adv.通常地
+survive [sərˈvaɪv] v.幸免于
+</p>
+
+<p>
+have a rare disease
+a section of &#x2026;
+prove to be adj.
+</p>
+<hr />
+<p>
+which非限 VS as非限
+</p>
+<hr />
+<p>
+have an operation
+died of &#x2026;
+fall to pieces
+cut it open
+</p>
+</div>
+</div>
+
+<div id="outline-container-org3666732" class="outline-3">
+<h3 id="org3666732"><span class="section-number-3">3.78.</span> L78 The last one</h3>
+<div class="outline-text-3" id="text-3-78">
+<p>
+entitle [ɪnˈtaɪt(ə)l] v.以&#x2026;为名
+calm [kɑm] v.使镇静
+nerve [nɜrv] n.神经
+concentration [ˌkɑnsənˈtreɪʃ(ə)n] n.集中
+suffer [ˈsʌfər] v.受苦
+symptom [ˈsɪmptəm] n.症状
+temper [ˈtempər] n.脾气
+appetite [ˈæpəˌtaɪt] n.胃口
+produce [prəˈdus] v.拿出
+urge [ɜrdʒ] v.怂恿
+satisfaction [ˌsætɪsˈfækʃ(ə)n] n.满足
+delighted [dɪˈlaɪtəd] adj.欣喜的
+</p>
+
+<p>
+entitle sb. to do sth.
+calm down
+keep calm
+calm my nerve
+have/get the nerve to do sth.
+lose sb's nerve
+lose/break/have sb's concentration
+suffer from
+have a good/bad temper
+lose sb's temper
+have/get a good/great appetite
+lose sb's appetite
+urge sb. to do sth.
+give him satisfaction
+sb. be delighted that + &#x2026;
+</p>
+<hr />
+<p>
+light a cigarette
+sb. be sure that + &#x2026;
+keep on doing sth.
+offer sb. sth.
+make no effort to do sth.
+a packet of&#x2026;
+return to normal&#x2026;
+</p>
+</div>
+</div>
+
+<div id="outline-container-org525f1d3" class="outline-3">
+<h3 id="org525f1d3"><span class="section-number-3">3.79.</span> L79 By air</h3>
+<div class="outline-text-3" id="text-3-79">
+<p>
+parent n.
+flight attendant 
+frightened adj.
+curious adj.
+bomb n. plant v.
+</p>
+
+<p>
+feel frightened
+sb. be curious to find out + &#x2026;
+plant a bomb
+</p>
+<hr />
+<p>
+Only部分倒装
+</p>
+<ol class="org-ol">
+<li>Only(+其他部分)句首,并且不是修饰主语
+Only police can come in. 不能倒装</li>
+<li>主句一般疑问句的语序</li>
+</ol>
+<hr />
+<p>
+a great deal
+take charge of
+be used to doing
+take off
+gain height
+touch down
+on board
+</p>
+</div>
+</div>
+
+<div id="outline-container-org7899f1b" class="outline-3">
+<h3 id="org7899f1b"><span class="section-number-3">3.80.</span> L80 The Crystal Palace</h3>
+<div class="outline-text-3" id="text-3-80">
+<p>
+palace n.
+extraordinary adj.
+exhibition n.
+iron n.
+various adj.
+machinery n.
+display n.
+steam n.
+profit n.
+college n.
+</p>
+
+<p>
+on show/on display
+make a profit
+go to college
+</p>
+<hr />
+<p>
+be made of
+of all time
+in all
+</p>
+</div>
+</div>
+<div id="outline-container-orgdb0eb1e" class="outline-3">
+<h3 id="orgdb0eb1e"><span class="section-number-3">3.81.</span> L81 escape</h3>
+<div class="outline-text-3" id="text-3-81">
+<p>
+prisoner n.
+bush n.
+rapidly adv.
+uniform n.
+rifle n.
+shoulder n.
+march v.
+boldly adv.
+blaze v.
+salute v.
+elderly adj.n.
+grey adj.
+sharp adj. blow n.
+</p>
+
+<p>
+grow/change/move&#x2026; + rapidly
+with a sharp blow
+</p>
+<hr />
+<p>
+change into &#x2026;
+up and down &#x2026;
+sb. discovered that
+stand to attention
+knock him to the ground
+</p>
+</div>
+</div>
+<div id="outline-container-org4d57350" class="outline-3">
+<h3 id="org4d57350"><span class="section-number-3">3.82.</span> L82 Monster or fish?</h3>
+<div class="outline-text-3" id="text-3-82">
+<p>
+monster n.
+sailor n.
+sight v.
+creature n.
+peculiar adj.
+shining adj.
+oarfish n.
+</p>
+
+<p>
+shining example
+</p>
+<hr />
+<p>
+claim to have done sth.
+laugh at &#x2026;
+it is (well) known that &#x2026;
+at times
+out at sea
+in any way
+it was found to be &#x2026;
+a depth of &#x2026;
+</p>
+</div>
+</div>
+<div id="outline-container-org1b2fdaa" class="outline-3">
+<h3 id="org1b2fdaa"><span class="section-number-3">3.83.</span> L83 After the elections</h3>
+<div class="outline-text-3" id="text-3-83">
+<p>
+election n.
+former adj.
+defeat v.
+fanatical adj.
+opponent n.
+radical adj.
+progressive adj.
+ex- prefix
+suspicious adj.
+</p>
+
+<p>
+win the election
+be fanatical about sth./doing sth.
+</p>
+<hr />
+<p>
+on duty
+on the following day
+love to do sth.
+</p>
+</div>
+</div>
+<div id="outline-container-org4930fd0" class="outline-3">
+<h3 id="org4930fd0"><span class="section-number-3">3.84.</span> L84 On strike</h3>
+<div class="outline-text-3" id="text-3-84">
+<p>
+strike n.
+busman n. bus driver
+state v.
+agreement n.
+relieve v.
+pressure n.
+extend  n.
+volunteer v.n.
+gratitude n.
+press n.
+object v. objection n.
+</p>
+
+<p>
+go on strike
+sb. have stated that + &#x2026;
+agreement is reached about sth.
+reach an agreement
+sb. be relieved to hear that + &#x2026;
+relieve pressure
+under a lot of pressure
+to some extend
+volunteer to do sth.
+expressed sb.'s gratitude to sb.
+sb. have objected that + &#x2026;
+object to sth./sb.
+</p>
+<hr />
+<p>
+主将从现: 主从都表将来时,从句用现在时即可
+	the moment/util/when/as soon as/while/before
+will/be going to do
+</p>
+<hr />
+<p>
+be due to do sth.
+pass/take the test
+</p>
+</div>
+</div>
+<div id="outline-container-orgd497559" class="outline-3">
+<h3 id="orgd497559"><span class="section-number-3">3.85.</span> L85 Never too old to learn</h3>
+<div class="outline-text-3" id="text-3-85">
+<p>
+inform v.
+headmaster n.
+contribute v.
+gift n.
+album n.
+patience n.
+encouragement n.
+farewell n.
+honour honor n.
+coincidence n.
+total n.
+devote v.
+gardening n.
+hobby n.
+</p>
+
+<p>
+sb. inform sb. that + &#x2026;
+make a contribution
+contribute to sth.
+lose sb's patience
+have a lot of patience
+give sb. encouragement
+in one's honor
+It is a curios coincidence that + &#x2026;
+a total of &#x2026;
+devote oneself to sth./doing sth.
+</p>
+<hr />
+<p>
+make the occassion
+remember sb. for sth.
+</p>
+</div>
+</div>
+<div id="outline-container-orga5affb8" class="outline-3">
+<h3 id="orga5affb8"><span class="section-number-3">3.86.</span> 86 Out of control</h3>
+<div class="outline-text-3" id="text-3-86">
+<p>
+swing swung v.
+speedboat n.
+desperately adv.
+companion n.
+water ski
+buoy n.
+dismay n.
+tremendous adj.
+petrol n.
+drift v.
+gently adv.
+</p>
+
+<p>
+sb. noticed with dismay that + &#x2026;
+at tremendous speed
+</p>
+<hr />
+<p>
+come away
+move in a circle
+used up 
+before long
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org6653df6" class="outline-2">
+<h2 id="org6653df6"><span class="section-number-2">4.</span> L87 a perfect alibi</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+alibi n.
+commit v.
+inspector n.
+employer n.
+confirm v.
+suggest v.
+truth n.
+</p>
+
+<p>
+have a alibi
+commit a murder
+sb. confirm that + &#x2026;
+Are you suggesting + &#x2026;
+tell the truth
+</p>
+<hr />
+<p>
+on time
+</p>
+</div>
+</div>
+
+<div id="outline-container-org6e8613b" class="outline-2">
+<h2 id="org6e8613b"><span class="section-number-2">5.</span> NCE2 Summary</h2>
+<div class="outline-text-2" id="text-5">
+</div>
+<div id="outline-container-orgef19047" class="outline-3">
+<h3 id="orgef19047"><span class="section-number-3">5.1.</span> <span class="done DONE">DONE</span> L01-25-49-73 造句子!!!</h3>
+<div class="outline-text-3" id="text-5-1">
+<hr />
+<p>
+C2-109,110
+</p>
+<ol class="org-ol">
+<li>如何造一个英语句子 6123456</li>
+<li>如何造一个好的英文句子</li>
+<li>英语语序</li>
+</ol>
+
+<hr />
+<p>
+C1-97
+</p>
+<ol class="org-ol">
+<li>and,but,or,so,because</li>
+<li>both&#x2026; and, either&#x2026;or,neither&#x2026;nor ?</li>
+<li>not only&#x2026; but also (as well) ?</li>
+</ol>
+
+<p>
+---------------&#x2013;&#x2014;!!!
+C2-68
+分词作状语 没找到部分被动
+</p>
+<ol class="org-ol">
+<li>(not) doing
+主动进行/主动一般
+(being) (not) + adj.</li>
+<li>done
+被动完成/被动一般</li>
+<li>having done
+主动完成(发生在主句之前)
+having been + adj. (主句之前的状态)</li>
+<li>having been done 在N2-69课
+主动完成被动(发生在主句之前)</li>
+</ol>
+
+<hr />
+<p>
+612345+6123456(6123456)
+</p>
+</div>
+</div>
+<div id="outline-container-orgd860d82" class="outline-3">
+<h3 id="orgd860d82"><span class="section-number-3">5.2.</span> <span class="done DONE">DONE</span> L02-26-50-74 现在时(一般VS进行)</h3>
+<div class="outline-text-3" id="text-5-2">
+<hr />
+<p>
+C2-1,2,3,4
+am/is/are + doing VS do/does
+感叹句 ?
+频率adv.位置 ?
+</p>
+
+<hr />
+
+<hr />
+<p>
+C2-1,2,3,4
+do/does
+am/is/are+doing
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgf7f62d7" class="outline-3">
+<h3 id="orgf7f62d7"><span class="section-number-3">5.3.</span> <span class="done DONE">DONE</span> L03-27-51-75 一般过去时</h3>
+<div class="outline-text-3" id="text-5-3">
+<hr />
+<p>
+C2-5
+was/were/did
+</p>
+
+<hr />
+
+<hr />
+<p>
+C2-5
+L3 &amp; L27
+was/were/did
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge5e38f7" class="outline-3">
+<h3 id="orge5e38f7"><span class="section-number-3">5.4.</span> <span class="done DONE">DONE</span> L04-28-52-76 现在完成+现在完成进行时+定从(whose) !!!</h3>
+<div class="outline-text-3" id="text-5-4">
+<hr />
+<p>
+C2-7,8
+have done
+</p>
+
+<hr />
+<p>
+C2-92,93,94,95,96
+定语从句 NCE1 L121 &amp; L123
+whose引导的特殊疑问句
+复习 have+done
+</p>
+
+<hr />
+<p>
+C2-9,10
+have been doing
+</p>
+</div>
+</div>
+
+<div id="outline-container-org871f5fe" class="outline-3">
+<h3 id="org871f5fe"><span class="section-number-3">5.5.</span> <span class="done DONE">DONE</span> L05-29-53-77 现在完成VS一般过去+done定语+现在完成进行时 !!!</h3>
+<div class="outline-text-3" id="text-5-5">
+<hr />
+<p>
+C2-13,14
+have done VS did
+</p>
+
+<hr />
+<p>
+C2-97
+done做定语
+复习have done VS did
+</p>
+
+<hr />
+<p>
+C2-9,10
+did
+have done
+have been doing !!!
+</p>
+</div>
+</div>
+
+<div id="outline-container-org72fa3c4" class="outline-3">
+<h3 id="org72fa3c4"><span class="section-number-3">5.6.</span> <span class="done DONE">DONE</span> L06-30-54-78 冠词+-ing定语</h3>
+<div class="outline-text-3" id="text-5-6">
+<hr />
+<p>
+C2-72
+a/an VS the
+C2-85
+some VS any
+</p>
+
+<hr />
+<p>
+C2-97
+doing现在分词做定语
+</p>
+
+<hr />
+</div>
+</div>
+
+<div id="outline-container-org946aa4a" class="outline-3">
+<h3 id="org946aa4a"><span class="section-number-3">5.7.</span> <span class="done DONE">DONE</span> L07-31-55-79 过去(过去进行+used to VS would) + 定从(whose+where)</h3>
+<div class="outline-text-3" id="text-5-7">
+<hr />
+<p>
+C2-6
+was/were + doing
+when &amp; while &amp; just as
+</p>
+
+<hr />
+<p>
+C2-18
+used to do sth.
+</p>
+
+<hr />
+<p>
+C2-36
+would do VS used to do
+where &amp; whose 引导的定语从句
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb912f3a" class="outline-3">
+<h3 id="orgb912f3a"><span class="section-number-3">5.8.</span> <span class="done DONE">DONE</span> L08-32-56-80 比较(比较级&amp;最高级+as&#x2026;as)</h3>
+<div class="outline-text-3" id="text-5-8">
+<hr />
+<p>
+C2-108
+adj. 比较级&amp;最高级变化规则
+</p>
+<ol class="org-ol">
+<li>主语 + be + the + adj.est + n. + I've ever met/seen</li>
+<li>主语 + be + the + adj.est + n. + 范围</li>
+<li>主语 + be + adj.er + than + 比较对象 (I formal / me informal)</li>
+</ol>
+
+<hr />
+<p>
+C2-107
+as &#x2026; as VS so &#x2026; as
+</p>
+
+<hr />
+<p>
+C2-105,106
+adj.er
+adj.est
+more + adj.
+the most + adj.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge3862b0" class="outline-3">
+<h3 id="orge3862b0"><span class="section-number-3">5.9.</span> <span class="done DONE">DONE</span> L09-33-57-81 prep(in&amp;on&amp;at+(in) the way) ?</h3>
+<div class="outline-text-3" id="text-5-9">
+<hr />
+<p>
+C2-121,C122
+at/on/in(时间)
+</p>
+<ul class="org-ul">
+<li>on + 具体某一天</li>
+<li>in + 年/季/月</li>
+<li>at + 时间点</li>
+</ul>
+
+<hr />
+
+<hr />
+<p>
+(in) the way (+定从)&#x2026; 状从 ?
+The assistant who served her did not like the way she was dressed.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org8ee7618" class="outline-3">
+<h3 id="org8ee7618"><span class="section-number-3">5.10.</span> <span class="done DONE">DONE</span> L10-34-58-82 被动+强调句 ?</h3>
+<div class="outline-text-3" id="text-5-10">
+<hr />
+<p>
+C2-42
+am/is/are+done
+was/were+done
+C2-43,44
+am/is/are+being+done
+have/has+been+done
+</p>
+
+<hr />
+<p>
+C2-43
+had been + done
+</p>
+
+<hr />
+<p>
+C2-45
+be said to do&#x2026;
+It is said that&#x2026;
+</p>
+
+<p>
+强调句 ?
+被动: 复习L34 &amp; L10
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc36fbfc" class="outline-3">
+<h3 id="orgc36fbfc"><span class="section-number-3">5.11.</span> <span class="done DONE">DONE</span> L11-35-59-83 see do/doing + so that</h3>
+<div class="outline-text-3" id="text-5-11">
+<hr />
+
+<hr />
+<p>
+C2-67
+see sb. do sth VS see sb. doing sth.
+</p>
+
+<hr />
+<p>
+C2-64
+so that 目的状语从句
+</p>
+</div>
+</div>
+
+<div id="outline-container-org1acf888" class="outline-3">
+<h3 id="org1acf888"><span class="section-number-3">5.12.</span> <span class="done DONE">DONE</span> L12-36-60-84 一般将来(包括计划) ?</h3>
+<div class="outline-text-3" id="text-5-12">
+<hr />
+<p>
+C2-21,22
+will do
+shall do
+</p>
+
+<hr />
+<p>
+C2-19,20,23
+表述将来:
+be going to do
+will
+intend to do
+</p>
+
+<p>
+---------------&#x2013;&#x2014;?
+A先B后
+the moment A &#x2026; B&#x2026;
+the moment 主将从现
+</p>
+<hr />
+<p>
+主将从现: 主从都表将来时,从句用现在时即可
+	the moment/util/when/as soon as/while/before
+will/be going to do
+</p>
+</div>
+</div>
+
+<div id="outline-container-org37defbd" class="outline-3">
+<h3 id="org37defbd"><span class="section-number-3">5.13.</span> <span class="done DONE">DONE</span> L13-37-61-85 将来(进行+完成+完成进行)?</h3>
+<div class="outline-text-3" id="text-5-13">
+<hr />
+<p>
+C2-24
+will be doing
+</p>
+
+<hr />
+<p>
+C2-24
+will have done
+have done VS had done VS will have done
+</p>
+
+<hr />
+<p>
+will be doing
+will have done
+will have been doing ?
+</p>
+</div>
+</div>
+
+<div id="outline-container-org2542cac" class="outline-3">
+<h3 id="org2542cac"><span class="section-number-3">5.14.</span> <span class="done DONE">DONE</span> L14-38-62-86 过去(完成+完成进行) ?</h3>
+<div class="outline-text-3" id="text-5-14">
+<hr />
+<p>
+C2-15
+had + done
+</p>
+
+<p>
+---------------&#x2013;&#x2014; ?
+一前就后
+had hardly done &#x2026; when &#x2026;
+had no sooner done &#x2026; than &#x2026;
+</p>
+
+<hr />
+<p>
+C2-16
+had been doing
+</p>
+</div>
+</div>
+
+<div id="outline-container-org6a293cc" class="outline-3">
+<h3 id="org6a293cc"><span class="section-number-3">5.15.</span> <span class="done DONE">DONE</span> L15-39-63-87 间接引语+宾从+方状(in the way or manner that) ?</h3>
+<div class="outline-text-3" id="text-5-15">
+<hr />
+<p>
+C2-47,48
+宾语从句
+直接引语变间接引语
+</p>
+
+<p>
+---------------&#x2013;&#x2014; ?
+宾语从句
+NCE1 L99 L101 L133 L135 L139
+</p>
+
+<hr />
+<p>
+as: in the way or manner that 按照&#x2026;方式
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgf15e8f5" class="outline-3">
+<h3 id="orgf15e8f5"><span class="section-number-3">5.16.</span> <span class="done DONE">DONE</span> L16-40-64-88 if(条件句+虚拟语气+过去虚拟)</h3>
+<div class="outline-text-3" id="text-5-16">
+<hr />
+<p>
+C2-38
+if从句
+</p>
+
+<hr />
+<p>
+C2-38
+虚拟语气(现在)
+</p>
+
+<hr />
+<p>
+C2-40
+If 主 had done &#x2026;, 主 would/could &#x2026; have done. L64与过去事实相反
+If you could have made(=If you had been able to make)
+suggest that &#x2026; (should) do &#x2026;
+</p>
+</div>
+</div>
+
+<div id="outline-container-org4ce8f5a" class="outline-3">
+<h3 id="org4ce8f5a"><span class="section-number-3">5.17.</span> <span class="todo WAITING">WAITING</span> L17-41-65-89 情态动词</h3>
+<div class="outline-text-3" id="text-5-17">
+<hr />
+<p>
+C2-26,28,31,37
+must
+have to
+can
+</p>
+
+<hr />
+<p>
+C2-32
+need
+needn't have done
+</p>
+
+<hr />
+<p>
+C2-27,33,34
+should do
+should have done
+ought to do
+ought to have done
+</p>
+</div>
+</div>
+
+<div id="outline-container-org4b54036" class="outline-3">
+<h3 id="org4b54036"><span class="section-number-3">5.18.</span> <span class="todo WAITING">WAITING</span> L18-42-66-90 万能动词have + have sth. done ?</h3>
+<div class="outline-text-3" id="text-5-18">
+<hr />
+<p>
+C1-58, C2-17
+have 万能动词
+</p>
+
+<hr />
+<p>
+C1-58, C2-17
+have 万能动词
+</p>
+
+<p>
+---------------&#x2013;&#x2014;?
+have something done
+</p>
+</div>
+</div>
+
+<div id="outline-container-org10458c2" class="outline-3">
+<h3 id="org10458c2"><span class="section-number-3">5.19.</span> <span class="todo WAITING">WAITING</span> L19-43-67-91 情态动词的might + be able to + managed to do</h3>
+<div class="outline-text-3" id="text-5-19">
+<hr />
+<p>
+C2-29,30
+现在
+may/might (not)do
+may/might (not)be adj./n.
+may/might (not)be doing
+</p>
+
+<p>
+过去
+may/might (not)have done
+may/might (not)have been adj./n.
+may/might (not)have been doing.
+</p>
+
+<hr />
+<p>
+C2-26
+be able to do sh.
+时态
+could VS was able to do sth.
+</p>
+<hr />
+<p>
+C2-26
+managed to do sh. VS was able to do sth.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org0bd9e6d" class="outline-3">
+<h3 id="org0bd9e6d"><span class="section-number-3">5.20.</span> <span class="todo WAITING">WAITING</span> L20-44-68-92 动名词 ?</h3>
+<div class="outline-text-3" id="text-5-20">
+<hr />
+<p>
+C2-53
+动名词
+</p>
+<hr />
+
+<hr />
+<p>
+No matter how/what/where/whose ?
+</p>
+</div>
+</div>
+
+<div id="outline-container-org1037e4a" class="outline-3">
+<h3 id="org1037e4a"><span class="section-number-3">5.21.</span> <span class="todo WAITING">WAITING</span> L21-45-69-93 被动(情态动词) ?</h3>
+<div class="outline-text-3" id="text-5-21">
+<hr />
+<p>
+will/would be done
+can/could be done
+must be done
+have to be done
+must have been one
+</p>
+
+<hr />
+<p>
+be done
+</p>
+<hr />
+<p>
+having been done
+</p>
+</div>
+</div>
+
+<div id="outline-container-org5c3606a" class="outline-3">
+<h3 id="org5c3606a"><span class="section-number-3">5.22.</span> <span class="todo WAITING">WAITING</span> L22-46-70-94 动词后的介词+同位语 ?</h3>
+<div class="outline-text-3" id="text-5-22">
+<hr />
+<p>
+C2-135,136
+v. + of/from/in/on
+</p>
+
+<p>
+---------------&#x2013;&#x2014; ?
+同位语从句
+区分定语从句与同位语从句
+</p>
+<hr />
+</div>
+</div>
+
+<div id="outline-container-orgd704923" class="outline-3">
+<h3 id="orgd704923"><span class="section-number-3">5.23.</span> L23-47-71-95</h3>
+<div class="outline-text-3" id="text-5-23">
+<hr />
+
+<hr />
+</div>
+</div>
+
+<div id="outline-container-orga682527" class="outline-3">
+<h3 id="orga682527"><span class="section-number-3">5.24.</span> L24-48-72-96</h3>
+<div class="outline-text-3" id="text-5-24">
+<hr />
+
+<hr />
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgbd16da5" class="outline-2">
+<h2 id="orgbd16da5"><span class="section-number-2">6.</span> NCE3</h2>
+</div>
+
+<div id="outline-container-org2bc865c" class="outline-2">
+<h2 id="org2bc865c"><span class="section-number-2">7.</span> other(If they are too many, then split them)</h2>
+<div class="outline-text-2" id="text-7">
+</div>
+<div id="outline-container-org0e484bf" class="outline-3">
+<h3 id="org0e484bf"><span class="section-number-3">7.1.</span> Let him Go, Olivia</h3>
+<div class="outline-text-3" id="text-7-1">
+<p>
+It's over.
+pass away
+in recognition of sb.
+write this story as a tribute to sb.
+make it possible for sb to have done
+</p>
+</div>
+</div>
+
+<div id="outline-container-org0c606ab" class="outline-3">
+<h3 id="org0c606ab"><span class="section-number-3">7.2.</span> Children’s Engineering Workshops.</h3>
+<div class="outline-text-3" id="text-7-2">
+<p>
+work together to do sth.
+love doing
+all the time
+be to do
+be attached to sth
+from A to B:
+work out
+pick it up
+mind doing
+think up
+come up with
+the shape of sth.
+clear up
+move sth. to st.
+up past the sp.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org2b11efc" class="outline-3">
+<h3 id="org2b11efc"><span class="section-number-3">7.3.</span> stoicism</h3>
+<div class="outline-text-3" id="text-7-3">
+<p>
+achieve sb's triumphs
+the likes of [sth.]: is used to refer to people or things of a similar type or category
+have access to sth.: possess the ability or permission to use, enter, or obtain something.
+come to sb.: emphasizes the process of understanding or realization
+in turn: used to explain how a series of actions or circumstances are interconnected
+with regard to sth.: be used synonymously with phrases like "concerning," "in relation to," or "regarding."
+put on &#x2026;: mean to organize, present, or perform a show, event, or production.
+prime minister: the most important minister and leader of the government in some countries which have a parliament
+the course of &#x2026;: is used to describe the progression or development of something over a period of time.
+at the root of sth.: refers to the fundamental or foundational essence of a concept, idea, problem, or situation
+resonate with: if something such as an event or a message resonates, it seems important or good to people, or continues to do this
+refer to sth as sth.: regard sth. as sth.
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: DESKTOP-13B7HQM</p>
+<p class="date">Created: 2023-10-02 Mon 10:00</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
