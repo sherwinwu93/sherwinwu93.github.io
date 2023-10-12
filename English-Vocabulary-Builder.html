@@ -1,0 +1,679 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2023-10-12 Thu 11:50 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="lenovo" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org3221968">English Vocabulary Builder</a></li>
+<li><a href="#orga21fd5f">01 Countries and nationalities</a></li>
+<li><a href="#org1f04ec2">02 Numbers</a>
+<ul>
+<li><a href="#orge747024">2.1 numbers</a></li>
+<li><a href="#org64f8f17">2.3 large numbers</a></li>
+<li><a href="#org98e3518">2.4 fractions, decimals, and percentages</a></li>
+</ul>
+</li>
+<li><a href="#org75ca76a">03 Time expressions</a>
+<ul>
+<li><a href="#org6257c45">3.1 the calendar</a></li>
+<li><a href="#orge88a489">3.2 seasons and frequency</a></li>
+</ul>
+</li>
+<li><a href="#orgfec1783">04 Daily routines</a>
+<ul>
+<li><a href="#org371c0de">4.1 daily routines</a></li>
+</ul>
+</li>
+<li><a href="#orgeb1c91b">05 Describing things: facts</a>
+<ul>
+<li><a href="#orgd59231f">5.1 colors/colours</a></li>
+<li><a href="#org16baace">5.2 material</a></li>
+<li><a href="#orgc419b06">5.3 adjectives</a></li>
+</ul>
+</li>
+<li><a href="#orgf4ac8b7">09 Around the house</a>
+<ul>
+<li><a href="#org06a345a">9.1 homes,rooms,and furniture</a></li>
+</ul>
+</li>
+<li><a href="#orge7666a2">37 Office equipment</a>
+<ul>
+<li><a href="#orgbd68eaf">37.1 in the office</a></li>
+<li><a href="#org15f8ab3">37.2 equipment</a></li>
+<li><a href="#org02ffc75">37.3 stationery</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org3221968" class="outline-2">
+<h2 id="org3221968">English Vocabulary Builder</h2>
+<div class="outline-text-2" id="text-org3221968">
+<ul class="org-ul">
+<li>(s) represent US.<br /></li>
+<li>(k) represent UK.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orga21fd5f" class="outline-2">
+<h2 id="orga21fd5f">01 Countries and nationalities</h2>
+</div>
+<div id="outline-container-org1f04ec2" class="outline-2">
+<h2 id="org1f04ec2">02 Numbers</h2>
+<div class="outline-text-2" id="text-org1f04ec2">
+</div>
+<div id="outline-container-orge747024" class="outline-3">
+<h3 id="orge747024">2.1 numbers</h3>
+</div>
+
+<div id="outline-container-org64f8f17" class="outline-3">
+<h3 id="org64f8f17">2.3 large numbers</h3>
+<div class="outline-text-3" id="text-org64f8f17">
+<p>
+100 a/one hundred<br />
+200 two hundred<br />
+250 tow hundred and fifty<br />
+1,000 a/one thousand<br />
+1,200 one thousand two hundred<br />
+1,000,000 a/one million<br />
+3,846 three thousand,eight hundred and forty-six<br />
+82,043 eighty-two thousand and forty-three<br />
+234,407 two hundred and thirty-our thousand, four hundred and seven<br />
+3,089,342 three million, eighty-nine thousand, three hundred and forty-two<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org98e3518" class="outline-3">
+<h3 id="org98e3518">2.4 fractions, decimals, and percentages</h3>
+<div class="outline-text-3" id="text-org98e3518">
+<p>
+1/8 an eighth<br />
+1/4 a quarter<br />
+1/3 a third<br />
+1/2 a half<br />
+3/5 three fifths<br />
+0.5 nought point five [nɔt]<br />
+1.7 one point seven<br />
+3.97 three point nine seven<br />
+1% one percent<br />
+99% ninety-nine percent<br />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org75ca76a" class="outline-2">
+<h2 id="org75ca76a">03 Time expressions</h2>
+<div class="outline-text-2" id="text-org75ca76a">
+</div>
+<div id="outline-container-org6257c45" class="outline-3">
+<h3 id="org6257c45">3.1 the calendar</h3>
+<div class="outline-text-3" id="text-org6257c45">
+<p>
+day<br />
+week<br />
+two weeks<br />
+fortnight<br />
+month<br />
+weekend<br />
+year<br />
+decade<br />
+century<br />
+millennium<br />
+</p>
+<hr />
+<p>
+Monday<br />
+Tuesday<br />
+Wednesday<br />
+Thursday<br />
+Friday<br />
+Saturday<br />
+Sunday<br />
+</p>
+<hr />
+<p>
+January<br />
+February<br />
+March<br />
+April<br />
+May<br />
+June<br />
+July<br />
+August<br />
+September<br />
+October<br />
+November<br />
+December<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge88a489" class="outline-3">
+<h3 id="orge88a489">3.2 seasons and frequency</h3>
+<div class="outline-text-3" id="text-orge88a489">
+<p>
+day [deɪ]<br />
+night [naɪt]<br />
+morning [ˈmɔrnɪŋ]<br />
+afternoon [ˌæftərˈnun]<br />
+evening [ˈivnɪŋ]<br />
+</p>
+<hr />
+<p>
+spring [sprɪŋ]<br />
+summer [ˈsʌmər]<br />
+fall/autumn [fɔl] [ˈɔtəm]<br />
+winter [ˈwɪntər]<br />
+</p>
+<hr />
+<p>
+minute [ˈmɪnɪt]<br />
+hour [aʊr]<br />
+</p>
+<hr />
+<p>
+once a week<br />
+twice a week<br />
+three times a week<br />
+every day<br />
+every other day<br />
+hourly [ˈaʊrli]<br />
+daily [ˈdeɪli]<br />
+weekly [ˈwikli]<br />
+monthly [ˈmʌnθli]<br />
+</p>
+<hr />
+<p>
+always [ˈɔlˌweɪz]<br />
+usually [ˈjuʒuəli]<br />
+often [ˈɔf(ə)n]<br />
+sometimes [ˈsʌmtaɪmz]<br />
+never [ˈnevər]<br />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgfec1783" class="outline-2">
+<h2 id="orgfec1783">04 Daily routines</h2>
+<div class="outline-text-2" id="text-orgfec1783">
+</div>
+<div id="outline-container-org371c0de" class="outline-3">
+<h3 id="org371c0de">4.1 daily routines</h3>
+<div class="outline-text-3" id="text-org371c0de">
+<p>
+alarm goes off<br />
+to wake up<br />
+to get up<br />
+to take/have a shower<br />
+to take/have a bath<br />
+to put one mark-up<br />
+to shave<br />
+to wash your hair<br />
+to dry you hair<br />
+to iron a shirt<br />
+to get dressed<br />
+to brush your teeth<br />
+to wash your face<br />
+to brush your hair<br />
+to make the bed<br />
+to have/eat break<br />
+to do the housework<br />
+to leave the house<br />
+to go to work<br />
+to go to school<br />
+to catch the train<br />
+to catch the bus<br />
+to drive<br />
+to arrive late<br />
+to start work<br />
+to have a break<br />
+to have/eat lunch<br />
+to finish work<br />
+to leave work<br />
+to work overtime<br />
+to go home<br />
+to buy groceries<br />
+to cook dinner<br />
+to have/eat dinner<br />
+to clear the table<br />
+to listen to the radio<br />
+to watch TV<br />
+to check your email<br />
+to have/drink tea or coffee<br />
+to do/wash the dishes<br />
+to walk the dog<br />
+to read a newspaper<br />
+to go out with friends<br />
+to go to a cafe<br />
+to call a friend/your family<br />
+to do homework<br />
+to put the children to bed<br />
+to take out the trash/rubbish<br />
+to feed the dog/cat<br />
+to go to bed<br />
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orgeb1c91b" class="outline-2">
+<h2 id="orgeb1c91b">05 Describing things: facts</h2>
+<div class="outline-text-2" id="text-orgeb1c91b">
+</div>
+<div id="outline-container-orgd59231f" class="outline-3">
+<h3 id="orgd59231f">5.1 colors/colours</h3>
+<div class="outline-text-3" id="text-orgd59231f">
+<p>
+red [red] 红色<br />
+yellow [ˈjeloʊ] 黄色<br />
+green [ɡrin] 绿色<br />
+dark green 深绿色<br />
+pale green [peɪl] 浅绿色<br />
+blue [blu] 蓝色<br />
+purple [ˈpɜrp(ə)l] 紫色<br />
+pink [pɪŋk] 粉红色<br />
+white [hwaɪt] 白色<br />
+gray grey [ɡreɪ] 灰色<br />
+black [blæk] 黑色<br />
+brown [braʊn] 棕色<br />
+orange [ˈɔrəndʒ] 橘黄色<br />
+cream [krim] 奶黄色<br />
+navy blue [ˈneɪvi] 藏蓝<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org16baace" class="outline-3">
+<h3 id="org16baace">5.2 material</h3>
+<div class="outline-text-3" id="text-org16baace">
+<p>
+plastic [ˈplæstɪk] 塑料<br />
+wood [wʊd] 木头<br />
+paper [ˈpeɪpər] 纸<br />
+wool [wʊl] 毛线<br />
+leather [ˈleðər] 皮<br />
+metal [ˈmet(ə)l] 金属<br />
+glass [ɡlæs] 玻璃<br />
+fabric [ˈfæbrɪk] 布料<br />
+denim [ˈdenɪm] 牛仔裤<br />
+silk [sɪlk] 丝巾<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc419b06" class="outline-3">
+<h3 id="orgc419b06">5.3 adjectives</h3>
+<div class="outline-text-3" id="text-orgc419b06">
+<p>
+big [bɪɡ] 大的<br />
+small little [ˈlɪt(ə)l][smɔl] 小的<br />
+wide [waɪd] 宽的<br />
+narrow [ˈneroʊ] 窄的<br />
+deep [dip] 深的<br />
+high [haɪ] 高的<br />
+low [loʊ] 矮的<br />
+heavy [ˈhevi] 重的<br />
+light [laɪt] 轻的<br />
+shallow [ˈʃæloʊ] 浅的<br />
+clean [klin] 干净的<br />
+dirty [ˈdɜrti] 脏的<br />
+hot [hɑt] 热的<br />
+cold [koʊld] 冷的<br />
+long [lɔŋ] 长的<br />
+loud [laʊd] 大声的<br />
+quiet [ˈkwaɪət] 安静的<br />
+thin [θɪn] 薄的<br />
+thick [θɪk] 厚的<br />
+short [ʃɔrt] 短的<br />
+sharp [ʃɑrp] 锋利的<br />
+tight [taɪt] 紧的<br />
+loose [lus] 松的<br />
+near [nɪr] 近的<br />
+far [fɑr] 远的<br />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgf4ac8b7" class="outline-2">
+<h2 id="orgf4ac8b7">09 Around the house</h2>
+<div class="outline-text-2" id="text-orgf4ac8b7">
+</div>
+<div id="outline-container-org06a345a" class="outline-3">
+<h3 id="org06a345a">9.1 homes,rooms,and furniture</h3>
+<div class="outline-text-3" id="text-org06a345a">
+<p>
+apartment block [əˈpɑrtmənt blɑk] 公寓楼<br />
+block of flats [flæt] 公寓楼<br />
+balcony [ˈbælkəni] 阳台<br />
+attic [ˈætɪk] 顶楼<br />
+upstairs [ˈʌpˌsterz] 楼上<br />
+stairs [ster] 楼梯<br />
+basement [ˈbeɪsmənt] 地下室<br />
+yard [jɑrd] 院子,花园<br />
+garden [ˈɡɑrd(ə)n] 院子,花园<br />
+house [haʊz] 房子<br />
+door [dɔr] 门<br />
+roof [ruf] 屋顶<br />
+lawn [lɔn] 草坪<br />
+window [ˈwɪndoʊ] 窗户<br />
+living  room [ˈlɪvɪŋ rum] 客厅<br />
+armchair [ˈɑrmˌtʃer] 扶椅<br />
+couch [kaʊtʃ] 沙发<br />
+sofa [ˈsoʊfə] 沙发<br />
+televison/TV  电视<br />
+bedroom [ˈbedˌrum] 卧室<br />
+wardrobe [ˈwɔrdˌroʊb] 衣柜<br />
+lamp [læmp] 台灯<br />
+bed [bed] 床<br />
+dresser [ˈdresər] 宿妆柜<br />
+chest of drawers [tʃest] [ˈdrɔːə(r)] 宿妆柜<br />
+bedside table  床头柜<br />
+cushion [ˈkʊʃ(ə)n] 靠垫;坐垫<br />
+rug [rʌɡ] 毛毯<br />
+light [laɪt]  灯<br />
+dining room  餐厅<br />
+table [ˈteɪb(ə)l] 桌子<br />
+chair [tʃer] 椅子<br />
+study [ˈstʌdi] 学习<br />
+bookcase [ˈbʊkˌkeɪs] 书架<br />
+desk [desk] 书桌<br />
+bathroom [ˈbæθˌrum] 浴室<br />
+shower [ˈʃaʊər] 淋浴间<br />
+towel [ˈtaʊəl] 毛巾<br />
+toilet [ˈtɔɪlət] 马桶<br />
+bathtub [ˈbæθˌtʌb] 浴缸<br />
+bath [bæθ] 浴缸<br />
+freezer [ˈfrizər] 冷冻柜<br />
+refrigerator/fridge [rɪˈfrɪdʒəˌreɪtər] [frɪdʒ] 冰箱<br />
+kitchen [ˈkɪtʃ(ə)n] 厨房<br />
+stove [stoʊv] 火炉<br />
+cooker [ˈkʊkər] 火炉<br />
+sink [sɪŋk] 洗涤槽<br />
+dishwasher [ˈdɪʃˌwɑʃər] 洗碗机<br />
+cabinet [ˈkæbɪnət] 碗橱<br />
+cupboard [ˈkʌbə(r)d] 碗橱<br />
+trash can [træʃ] 垃圾桶<br />
+bin [bɪn] 垃圾桶<br />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orge7666a2" class="outline-2">
+<h2 id="orge7666a2">37 Office equipment</h2>
+<div class="outline-text-2" id="text-orge7666a2">
+</div>
+<div id="outline-container-orgbd68eaf" class="outline-3">
+<h3 id="orgbd68eaf">37.1 in the office</h3>
+<div class="outline-text-3" id="text-orgbd68eaf">
+<p>
+bulletin [ˈbʊlətɪn] board 公告栏<br />
+notice board 公告栏<br />
+desk [desk] 书桌<br />
+lamp [læmp] 台灯<br />
+trays [treɪ] 文件托盘<br />
+chair [tʃer] 椅子<br />
+filing ['faɪlɪŋ] cabinet [ˈkæbɪnət] 文件柜<br />
+drawer [ˈdrɔːə(r)] 抽屉<br />
+trash [træʃ] can [kən] 垃圾箱<br />
+bin [bɪn] 垃圾箱<br />
+water [ˈwɔtər] cooler [ˈkuːlə(r)] 饮水机<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org15f8ab3" class="outline-3">
+<h3 id="org15f8ab3">37.2 equipment</h3>
+<div class="outline-text-3" id="text-org15f8ab3">
+<p>
+photocopier [ˈfoʊtoʊˌkɑpiər] 复印机<br />
+telephone [ˈteləˌfoʊn]/phone [foʊn] 电话<br />
+printer [ˈprɪntər] 打印机<br />
+projector [prəˈdʒektər] 投影仪<br />
+shredder [ˈʃredər] 碎纸机<br />
+scanner [ˈskænər] 扫描仪<br />
+computer [kəmˈpjutər] 电脑<br />
+laptop [ˈlæpˌtɑp] 笔记本<br />
+cell phone [sel] 移动电话<br />
+mobile phone 移动电话<br />
+headset [ˈhedˌset] 头戴式耳机<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org02ffc75" class="outline-3">
+<h3 id="org02ffc75">37.3 stationery</h3>
+<div class="outline-text-3" id="text-org02ffc75">
+<p>
+letter [ˈletər] 信<br />
+envelope [ˈɑnvəˌloʊp] 信封<br />
+calendar [ˈkæləndər] 日历<br />
+planner [ˈplænər] 记事簿<br />
+diary [ˈdaɪəri] 记事簿<br />
+clipboard [ˈklɪpˌbɔrd] 写字夹板<br />
+files folders [faɪl] [ˈfoʊldə(r)] 文件/文件夹<br />
+hole punch [hoʊl] [pʌntʃ] 打孔机<br />
+stapler [ˈsteɪplər] 订书机<br />
+staples [ˈsteɪp(ə)l] U型钉<br />
+pencil sharpener [ˈpens(ə)l] [ˈʃɑrp(ə)nər] 卷笔刀<br />
+pencil [ˈpens(ə)l] 铅笔<br />
+pen [pen] 钢笔<br />
+highlighter [ˈhaɪˌlaɪtər] 高光笔<br />
+adhesive tape [ədˈhisɪv] [teɪp]:胶带<br />
+notepad [ˈnəʊtˌpæd] 记事本<br />
+paper clips [ˈpeɪpər] [klɪp] 别针<br />
+eraser [iˈreɪsə(r)] 橡皮擦<br />
+rubber [ˈrʌbər] 橡皮擦<br />
+ruler [ˈruːlər] 尺子<br />
+paper [ˈpeɪpər] 纸<br />
+correction fluid [kəˈrekʃ(ə)n][ˈfluɪd] 涂改液<br />
+sticky notes [ˈstɪki][noʊt] 便签贴<br />
+rubber bands [ˈrʌbər][bænd] 橡皮筋<br />
+binder clip [ˈbaɪndər][klɪp] 装订夹<br />
+thumbtack [ˈθʌmˌtæk] 图钉<br />
+drawing pin [ˈdrɔɪŋ][pɪn] 图钉<br />
+scissors [ˈsɪzərz] 剪刀<br />
+</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
