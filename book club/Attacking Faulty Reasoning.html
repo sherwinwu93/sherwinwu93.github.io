@@ -1,0 +1,603 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-01-25 Thu 15:21 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="lenovo" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-org3d5a64d" class="outline-2">
+<h2 id="org3d5a64d">Attacking Faulty Reasoning</h2>
+<div class="outline-text-2" id="text-org3d5a64d">
+</div>
+<div id="outline-container-org6cab7f8" class="outline-3">
+<h3 id="org6cab7f8">introduction</h3>
+<div class="outline-text-3" id="text-org6cab7f8">
+</div>
+<div id="outline-container-orgc64f372" class="outline-4">
+<h4 id="orgc64f372">studying a little logic</h4>
+<div class="outline-text-4" id="text-orgc64f372">
+<p>
+Critical thinking: a process, the goal of which is to make reasonable decisions<br />
+	about what to believe and what to do.<br />
+Learn not only the methods of recognizing bad arguments but also how to build good.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org4436e8f" class="outline-4">
+<h4 id="org4436e8f">organization of the text</h4>
+<div class="outline-text-4" id="text-org4436e8f">
+<p>
+4 chapters, which describe the nature of a good argument<br />
+5 major chapters describing specific fallacies<br />
+final chapter, which describes writting a logical essay.<br />
+</p>
+
+<p>
+It's difficult to know when to end discussion of an issue<br />
+	and make a decision about what to do or believe.<br />
+<b>Five criteria of a good argument</b> will solve it.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgafe2672" class="outline-4">
+<h4 id="orgafe2672">reasons for using good arguments</h4>
+</div>
+
+<div id="outline-container-orgf33c334" class="outline-4">
+<h4 id="orgf33c334">goals of the text</h4>
+</div>
+</div>
+
+<div id="outline-container-org0e6cde1" class="outline-3">
+<h3 id="org0e6cde1">Chapter 1 A Code of Intellectual Conduct</h3>
+<div class="outline-text-3" id="text-org0e6cde1">
+<p>
+This chapter should help you to:<br />
+	discuss with others rationally, find your own fallibility, avoid linguistic confusion.<br />
+</p>
+
+<p>
+Understand "code of conduct", which represents two standards of behavior:<br />
+	a procedural and an ethical standard.<br />
+</p>
+</div>
+
+<div id="outline-container-orgcb9beb9" class="outline-4">
+<h4 id="orgcb9beb9">An Effective Procedural Standard</h4>
+<div class="outline-text-4" id="text-orgcb9beb9">
+<p>
+A proceduarl standard describes the ground rules that,<br />
+	when followed, often lead us to more successful resolution of issues,<br />
+	which is productive in settling disputes, confirming judgements, and revising beliefs.<br />
+</p>
+
+<p>
+In the discussion of the "Code of Intellectual Conduct",<br />
+	the evolved consensus position is rarely one of the two original positions;<br />
+	it's usally a "third" and better one.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org4b9b02c" class="outline-4">
+<h4 id="org4b9b02c">An Important Ethical Standard</h4>
+<div class="outline-text-4" id="text-org4b9b02c">
+<p>
+The ethical standard makes us argue fairly.<br />
+If we don't, it prevents the issue from being decided or at least further explored.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org952a7da" class="outline-4">
+<h4 id="org952a7da">A Code of Intellectual Conduct for Effective Discussion</h4>
+<div class="outline-text-4" id="text-org952a7da">
+<p>
+In the "discussion", you should make the following principles a part of your intellectual style.<br />
+</p>
+</div>
+
+<ul class="org-ul">
+<li><a id="org72e3b05"></a>1. The Fallibility Principle<br />
+<div class="outline-text-5" id="text-org72e3b05">
+<p>
+Be willing to accept the fact that he or she is fallible,<br />
+	his or her initial view may not be the most defensible position on the question.<br />
+</p>
+</div>
+</li>
+
+<li><a id="org51d84ed"></a>2. The Truth-Seeking Principle<br />
+<div class="outline-text-5" id="text-org51d84ed">
+<p>
+Each participant should search for the truth or the most defensible position<br />
+	so that everyone should examine alternative positions seriously and allow other to do so.<br />
+</p>
+</div>
+</li>
+
+<li><a id="orgeb0455c"></a>3. The Clarity Principle<br />
+<div class="outline-text-5" id="text-orgeb0455c">
+<p>
+Avoid linguistic confusion and separate from other positions and issues.<br />
+</p>
+</div>
+</li>
+
+<li><a id="orgc03fd5a"></a>4. The Burden-of-Proof Principle<br />
+<div class="outline-text-5" id="text-orgc03fd5a">
+<p>
+Not anyone but the proponent should provide an argument for his position when someone asks.<br />
+</p>
+</div>
+</li>
+
+<li><a id="org958fb9f"></a>5. The Principle of Charity<br />
+<div class="outline-text-5" id="text-org958fb9f">
+<p>
+If an opponent's argument is reformulated, it should be expressed consitently.<br />
+And the paritcipant should be given the opportunity to amend it.<br />
+</p>
+</div>
+</li>
+
+<li><a id="org341814a"></a>6. The Structural Principle<br />
+<div class="outline-text-5" id="text-org341814a">
+<p>
+An argument made by anticipants<br />
+	needs to meet the fundamental structural requirements of a well-formed argument.<br />
+</p>
+</div>
+</li>
+
+<li><a id="orgf47c583"></a>7. The Relevance Principle<br />
+<div class="outline-text-5" id="text-orgf47c583">
+<p>
+The reasons you prvoides should be relevant to the conclusion.<br />
+</p>
+</div>
+</li>
+
+<li><a id="org62abf2b"></a>8. The Acceptability Principle<br />
+<div class="outline-text-5" id="text-org62abf2b">
+<p>
+Reasons should be accepted by a mature, rational person<br />
+	and meet standard criteria of acceptability.<br />
+</p>
+</div>
+</li>
+
+<li><a id="org0a87f31"></a>9. The Sufficiency Principle<br />
+<div class="outline-text-5" id="text-org0a87f31">
+<p>
+Reasons should be suffcient in number and weight to support the conclusion.<br />
+</p>
+</div>
+</li>
+
+<li><a id="org64097ba"></a>10. The Rebuttal Principle<br />
+<div class="outline-text-5" id="text-org64097ba">
+<p>
+One who provide an argument should rebut all serious criticism of the argument.<br />
+</p>
+</div>
+</li>
+
+<li><a id="org63d8d00"></a>11. The Suspension-of-Judgement Principle<br />
+<div class="outline-text-5" id="text-org63d8d00">
+<p>
+If there is no position defended by a good argument or two or more positions by equal strength,<br />
+	suspend judgment about the issue.<br />
+</p>
+</div>
+</li>
+
+<li><a id="orgc8ea93d"></a>12. The Resolution Principle<br />
+<div class="outline-text-5" id="text-orgc8ea93d">
+<p>
+When an argument is a structurally sound one<br />
+	that uses relevant and acceptable reasons<br />
+		that together provide sufficient grounds to justify the conclusion<br />
+		and that also includes an effective rebuttal to all serious criticisms.<br />
+</p>
+</div>
+</li>
+</ul>
+</div>
+
+<div id="outline-container-org04393c8" class="outline-4">
+<h4 id="org04393c8">The Fallibility Principle</h4>
+<div class="outline-text-4" id="text-org04393c8">
+<p>
+One's own initial view may not be very defensible so that he or she is fallible.<br />
+</p>
+
+<p>
+Accepting your own fallibility mans that you are willing to change your mind.<br />
+</p>
+
+<p>
+It's a neccessary condition of intellectual progress,<br />
+	making progresses among scientists, philosophers, and most other academics,<br />
+	however making so little progress in religion and politics.<br />
+</p>
+
+<p>
+If there is any doubt about the principle,<br />
+	choose an issue about which people hold conflicting opinions.<br />
+</p>
+
+<p>
+We think a position which we spent time developing and refining is defensible,<br />
+	so others think.<br />
+</p>
+
+<p>
+It not only calms the emotional waters surrounding the issues,<br />
+	but also it has the potential for opening our ears to different and better arguments.<br />
+</p>
+
+<p>
+Try to be the first to confess your own fallibility,<br />
+	your opponents' behavior will tell you that whether he is willing to have further conversation.<br />
+</p>
+
+<p>
+Even a critical thinker only have changed his mind about an important issue once in the past year.<br />
+It's more likely a person would turn out to be wrong on more issues than right.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org06339c8" class="outline-4">
+<h4 id="org06339c8">The Truth-Seeking Principle</h4>
+<div class="outline-text-4" id="text-org06339c8">
+<ul class="org-ul">
+<li></li>
+</ul>
+
+<p>
+We come to true knowledge only by frist recognizing our own ignorance or lack of knowledge,<br />
+	so we must condsider criticism of our own views in discussion.<br />
+</p>
+
+<p>
+The truth is not likely to be in our custody,<br />
+	but is the most defensible position supported by the strongest or best available argument.<br />
+</p>
+
+<p>
+To find out truth, we need not only to assume that we may not have the truth now<br />
+	but to listen to arguments for alternative positions and encourage criticism of our arguments.<br />
+</p>
+
+<p>
+After having done the hard work of investigation,<br />
+	we should not give the impression that we have an open mind about the issue<br />
+		and carry on a pseudo-discussion.<br />
+We could explain that to our opponent<br />
+	or join the debate when we think we might have missed something.<br />
+</p>
+
+<p>
+Because of hope of winning, we sometimes cheat to do it.<br />
+The truth comes at a price<br />
+	&#x2013; a willingness to look at all available options and the arguments in support of them.<br />
+</p>
+
+<p>
+Not try to win by ignoring or denying the counterevidence against your positions.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org6c9f8ce" class="outline-4">
+<h4 id="org6c9f8ce">The Clarity Principle</h4>
+<div class="outline-text-4" id="text-org6c9f8ce">
+<ul class="org-ul">
+<li></li>
+</ul>
+
+<p>
+Even if we think what we say is perfectly clear to ourselves,<br />
+	it may be confusing, vague, ambiguous, or contradictory to others.<br />
+</p>
+
+<p>
+We must usually deal with one feature at a time<br />
+	so that each party must pay attention<br />
+		to keep other interesting issues, related issues from clouding the discussion.<br />
+</p>
+
+<p>
+We must not falter the potential resolution of an issue because of verbal confusion.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org1973c1b" class="outline-4">
+<h4 id="org1973c1b">Assignments</h4>
+<div class="outline-text-4" id="text-org1973c1b">
+<ol class="org-ol">
+<li><p>
+Discuss some of the obstacles of adopting the "Code of Conduct for Effective Discussion"<br />
+ as a means of resolving conflicts in our practical lives.<br />
+For example, why do you think good arguments so rarely seem to change minds?<br />
+</p>
+
+<p>
+We have deep emotions on our original minds<br />
+ so that we don't want to change them, even if we listened to a better argument.<br />
+Sometimes if we change our minds, others will think that we are weak or often make mistakes,<br />
+ which leads to the decline in status in society.<br />
+</p></li>
+
+<li><p>
+Do you agree that failure to follow the Code of Intellectual Conduct in discussion<br />
+ may be immoral?<br />
+Why or why not?<br />
+</p>
+
+<p>
+Yes, I do.<br />
+If others in discussion follow the code but you don't,<br />
+ they will make little progresses because of your failure.<br />
+They will receive less than they should be, may get frustrated.<br />
+</p></li>
+
+<li><p>
+Why is it inappropriate to continue in a serious discussion<br />
+if you are not open to the possibility of changing your mind?<br />
+</p>
+
+<p>
+If you're not open to the possibility of changing your mind,<br />
+ there might be the emotional waters surrounding the issues<br />
+ and you won't open your ears to different and better arguments.<br />
+</p></li>
+
+<li><p>
+Are you a critical thinker?<br />
+If so, describe an occasion wherein you changed your position<br />
+ by force of argument on an important issue in the past twelve months.<br />
+</p>
+
+<p>
+I am probably a critical thinker in some aspect.<br />
+I used to insist that the tasks which my boss order should be done only in my way.<br />
+I changed my mind when I began to listen to other opinions,<br />
+ in which I learnt my own view is not the best way to solve problems.<br />
+It really makes me a better programmer and makes me get along with my colleagues better.<br />
+</p></li>
+</ol>
+
+
+<ol class="org-ol">
+<li><p>
+The next time you are in a heated and unresolved discussion on an important issue,<br />
+ stop and confess that your position may be wrong.<br />
+If the other participants do not follow suit,<br />
+ ask them whether they are also open to the possibility of being wrong.<br />
+</p>
+
+<p>
+Ok, I will try it the next time when I discuss the tasks with my colleagues.<br />
+</p></li>
+
+<li><p>
+It has been claimed that an argument for a position is not a good one<br />
+ until the arguer has effectively rebutted anticipated serious criticisms<br />
+   that might be brought against it.<br />
+Since following this advice would call attention to flaws in your own argument,<br />
+ do you think this would tend to weaken it or the position it supports?<br />
+Why or Why not?<br />
+</p>
+
+<p>
+No, I don't.<br />
+Whether my argument or his is the most defensible is not a big deal to me.<br />
+Before being a winner, I'm a truth-seeker.<br />
+Therefore, it's more important to seek truth than to win.<br />
+Thanks to following this advice, it will help me to seek more defensible opinion better.<br />
+</p></li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

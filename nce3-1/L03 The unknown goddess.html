@@ -1,0 +1,664 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-01-18 Thu 10:54 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="lenovo" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-orgc62e09b" class="outline-2">
+<h2 id="orgc62e09b">Lesson 03 An unknown goddess</h2>
+<div class="outline-text-2" id="text-orgc62e09b">
+<p class="verse">
+How did the archaeologists know that the statue was a goddess?<br />
+<br />
+Some time ago, <b>an interesting discovery was made</b> by archaeologists on the Aegean island of Kea.<br />
+An American team explored a temple<br />
+&#xa0;which stands in an ancient city <b>on the promontory</b> of Ayia Irini.<br />
+The city at one time must have been prosperous,<br />
+&#xa0;for it enjoyed a high level of civilization.<br />
+Houses &#x2013; often three storeys high &#x2013; were built of stone.<br />
+They had large rooms with beautifully decorated walls.<br />
+The city <b>was even equipped with</b> a <b>drainage system</b>,<br />
+&#xa0;for a great many clay pipes were found beneath the narrow streets.<br />
+<br />
+The temple which the archaeologists explored <b>was used as a place of worship</b><br />
+&#xa0;from the fifteenth century B.C. until Roman times.<br />
+In the most sacred room of the temple, clay fragments of fifteen statues were found.<br />
+Each of these represented a goddess and had, at one time, been painted.<br />
+The body of one statue was found among remains dating from the fifteen century B.C.<br />
+Its missing head <b>happened to be</b> among remains of the fifth century B.C.<br />
+This head must have been found in Classical times and carefully preserved.<br />
+It was very old and precious even then.<br />
+When the archaeologists reconstructed the fragments,<br />
+&#xa0;they <b>were amazed to find that</b> the goddess <b>turned out be</b> a very modern-looking woman.<br />
+She stood three feet high and her hands rested on her hips.<br />
+She was wearing a full-length skirt which swept the ground.<br />
+<b>Despite her great age</b>, she was very graceful indeed,<br />
+&#xa0;but, so far, the archaeologists have been unable to discover her identity.<br />
+</p>
+</div>
+
+<div id="outline-container-orgc3ac7e7" class="outline-3">
+<h3 id="orgc3ac7e7">vocabulary</h3>
+<div class="outline-text-3" id="text-orgc3ac7e7">
+<p>
+explored: examined<br />
+ancient: very old<br />
+prosperous: wealthy<br />
+storeys: floors<br />
+beneath: under<br />
+fragments: pieces<br />
+remains: surviving pieces<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org3377bcd" class="outline-3">
+<h3 id="org3377bcd">words</h3>
+<div class="outline-text-3" id="text-org3377bcd">
+<p>
+goddness  n. 女神<br />
+archaeologist [ˌɑːkiˈɒlədʒɪst] n. 考古学家<br />
+Aegean [i:'dʒi:ən] adj. 爱琴海的<br />
+explore [ɪkˈsplɔː(r)] v. 考察<br />
+promontory [ˈprɒməntri] n. 海角<br />
+prosperous [ˈprɒspərəs] adj. 繁荣<br />
+civilization [ˌsɪvəlaɪˈzeɪʃ(ə)n] n. 文明<br />
+storey [ˈstɔːri] n. 楼层<br />
+drainage [ˈdreɪnɪdʒ] n. 排水<br />
+worship [ˈwɜːʃɪp] n. 崇拜<br />
+sacred [ˈseɪkrɪd] adj. 宗教的<br />
+fragment [ˈfræɡmənt] n. 碎片<br />
+remains [rɪˈmeɪnz] n. 碎片<br />
+classical [ˈklæsɪk(ə)l] adj. 古文明的<br />
+reconstruct [ˌriːkənˈstrʌkt] v. 修复<br />
+rest [rest] v. 倚放<br />
+hip [hɪp] n. 屁股<br />
+full-length adj. 拖地长的<br />
+graceful [ˈɡreɪsf(ə)l] adj. 优雅的<br />
+identity [aɪˈdentəti] n. 身份<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgfd3fa39" class="outline-3">
+<h3 id="orgfd3fa39"><span class="done DONE">DONE</span> 单词造句</h3>
+<div class="outline-text-3" id="text-orgfd3fa39">
+<p>
+un&#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>unhappy<br /></li>
+<li>unusual<br /></li>
+<li>unlikely<br /></li>
+<li>uncertain<br /></li>
+<li>uncover<br /></li>
+<li>unpleasant<br /></li>
+<li>unsettled<br /></li>
+<li>unfinished<br /></li>
+<li>unclear<br /></li>
+</ul>
+<p>
+re&#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>revisit<br /></li>
+<li>replay<br /></li>
+<li>recreate<br /></li>
+<li>reattempt<br /></li>
+<li>reconnect<br /></li>
+<li>reintroduce<br /></li>
+<li>reread<br /></li>
+<li>replenish<br /></li>
+<li>reform<br /></li>
+<li>rebuild<br /></li>
+</ul>
+<p>
+goddess n. god<br />
+</p>
+<ol class="org-ol">
+<li>I never dreamed of dancing with my goddess.<br /></li>
+<li>I look forward to meeting a goddess.<br /></li>
+<li>Is Athena the Greek goddess of wisdom and war?<br /></li>
+<li>The goddess was charming at her first party.<br /></li>
+<li>All young woman in our town dream of being a Hollywood goddess.<br /></li>
+</ol>
+<p>
+archaeologist n. archaeology n.<br />
+</p>
+<ol class="org-ol">
+<li>I'm glad that the archaeologist is not talking about the Greek goddess any more.<br /></li>
+<li>These archaeologists get used to flying off course.<br /></li>
+<li>These archaeologists were equipped with the new guns.<br /></li>
+<li>These archaeologists were asked to wear helmets before they went into the cave.<br /></li>
+<li>I recognized him as an archaeologist who makes an interesting discovery recently.<br /></li>
+</ol>
+<p>
+Aegean adj.<br />
+explore v. explorer n. exploration n.<br />
+</p>
+<ol class="org-ol">
+<li>This archaeologist often risks his life to explore these caves.<br /></li>
+<li>The archaeologist is always exploring the valcanoes for one cause or another.<br /></li>
+<li>These explorers claimed to have seen a puma on the promontory.<br /></li>
+<li>These explorers were trapped in a gold mine.<br /></li>
+<li>These explorers convinced that there were a lot of pirates.<br /></li>
+</ol>
+<p>
+promontory n. on a/the promontory<br />
+</p>
+<ol class="org-ol">
+<li>It is disturbing to think that your wife always wants to visit the promontory.<br /></li>
+<li>The puma left a trail of dead on the promontory.<br /></li>
+<li>I spotted him making a proposal to his girl friend on the promontory.<br /></li>
+<li>These archaeology is talking about the history of the palace on the promontory.<br /></li>
+<li>A comedy show will be held on the promontory next night.<br /></li>
+</ol>
+<p>
+prosperous adj.<br />
+</p>
+<ol class="org-ol">
+<li>Don't live in a fantasy world. It's not a prosperous city.<br /></li>
+<li>I am reluctant to move to a prosperous city.<br /></li>
+<li>The city is popular with young men these days, it gets prosperous.<br /></li>
+<li>The country can't be prosperous.<br /></li>
+<li>What a prosperous city!<br /></li>
+</ol>
+<p>
+civilization n.<br />
+</p>
+<ol class="org-ol">
+<li>How did it enjoy a high level of civilization?<br /></li>
+<li>As it is, Chinese civilization is not the oldest in the world.<br /></li>
+<li>Chinese civilization turns out to be the oldest in the world.<br /></li>
+<li>Instead of modern civilizations, the team is insteret in ancient civilizations.<br /></li>
+<li>China used to enjoy a high level of civilization? Are you being sarcastic?<br /></li>
+</ol>
+<p>
+storey n. story<br />
+</p>
+<ol class="org-ol">
+<li>We moved to a house which has four stories.<br /></li>
+<li>I used to live on the top story.<br /></li>
+<li>He claimed to live on the top story on Wall Street.<br /></li>
+<li>It is said that living on the top story will have a good luck.<br /></li>
+<li>The man on the top story is spying on him for two days.<br /></li>
+</ol>
+<p>
+drainage n. drainage system<br />
+</p>
+<ol class="org-ol">
+<li>The worker claimed to have repaired the drainage system.<br /></li>
+<li>The cat has been trapped in the drainage system for two days.<br /></li>
+<li>The floods cause these little animals to repair drainage system.<br /></li>
+<li>On the surface, he is an expert at repairing drainage system.<br /></li>
+<li>Well, she succeed in removing the pipe from drainage system.<br /></li>
+</ol>
+<p>
+worship n.v. a is/was used as a place of worship<br />
+</p>
+<ol class="org-ol">
+<li>This room used to be used as a place of worship.<br /></li>
+<li>On the surface, he worships God.<br /></li>
+<li>My mother often spends two hours worshiping the god once a week.<br /></li>
+<li>I hate to workship any god or goddess since I was very young.<br /></li>
+<li>The archaeologist pointed out that this palace was used as a place of worship.<br /></li>
+</ol>
+<p>
+sacred adj. sacred room/temple/place<br />
+</p>
+<ol class="org-ol">
+<li>For one reason or another, the sacred temple has been burnt down many years ago.<br /></li>
+<li>The vicar often has a rest in the sacred room.<br /></li>
+<li>The sacred room was used as a place of worship.<br /></li>
+<li>Why is the cow a sacred man in India?<br /></li>
+<li>The most sacred room is full of candles.<br /></li>
+</ol>
+<p>
+fragment n.<br />
+</p>
+<ol class="org-ol">
+<li>The vicar has managed to get enough money to have the fragments reconstructed.<br /></li>
+<li>The archaeologists found fragments of statues in the courtyard.<br /></li>
+<li>The archaeologist found some fragments of tones underwater.<br /></li>
+<li>The archaelogist is equal to reconstruct the fragments of the goddess.<br /></li>
+<li>I caught sight of fragments of body in his room.<br /></li>
+</ol>
+<p>
+remains n.<br />
+</p>
+<ol class="org-ol">
+<li>We'll have to visit the remains of the temple.<br /></li>
+<li>The archaeologist happened to find the remains of an ancient city.<br /></li>
+<li>These archaeologists convinced that this was the remains of an ancient civilization.<br /></li>
+<li>It occured to me that this must be the remains of an ancient city.<br /></li>
+<li>This may be the remains of the place of worship.<br /></li>
+</ol>
+<p>
+classical adj.<br />
+</p>
+<ol class="org-ol">
+<li>Why don't we listen to some classical music?<br /></li>
+<li>I find my daughter studying classical art.<br /></li>
+<li>I felt obliged to learn some classical music.<br /></li>
+<li>She said she prefers to study classical art than modern.<br /></li>
+<li>This classical music sounds good.<br /></li>
+</ol>
+<p>
+reconstruct v. re&#x2026;<br />
+</p>
+<ol class="org-ol">
+<li>The archaeologist failed to reconstruct the fragments of Roman vase.<br /></li>
+<li>The authorities rufused to reconstruct these broken building.<br /></li>
+<li>Despite the fact that the city was destoryed during the war, it has been reconstructed soon.<br /></li>
+<li>The archaeologist gets used to reconstructing fragments of a statu.<br /></li>
+<li>The archaeologist returned China the fragments of vase.<br /></li>
+</ol>
+<p>
+rest n.v. hip n. have a rest<br />
+</p>
+<ol class="org-ol">
+<li>My wife is always resting her head on my shoulder on the bed.<br /></li>
+<li>I always rests my hands on my wife's hip when I am fast sleep.<br /></li>
+<li>At the edge of a forest, I spotted a man a resting his hands on another's hips.<br /></li>
+<li>Although he had a rest, he is still out of breath.<br /></li>
+<li>You put your hands on your hips, didn't you?<br /></li>
+</ol>
+<p>
+full-length adj.<br />
+</p>
+<ol class="org-ol">
+<li>She has trouble in wearing a full-length dress at the party.<br /></li>
+<li>She watched a musical wearing a full-length dress.<br /></li>
+<li>She is busy wearing a full-length dress.<br /></li>
+<li>Will you be wearing a full-length dress?<br /></li>
+<li>Why don't you wear a full-length dress?<br /></li>
+</ol>
+<p>
+graceful adj.<br />
+</p>
+<ol class="org-ol">
+<li>The woman who is dancing with my wife is graceful.<br /></li>
+<li>To be honest, she is not as graceful as a swan.<br /></li>
+<li>She was so graceful last night that everyone wanted to dance with her.<br /></li>
+<li>She was so graceful last night that I regreted not taking part in the party.<br /></li>
+<li>She was so graceful last night that she became a Hollywoord goddess.<br /></li>
+</ol>
+<p>
+identity n. identity card<br />
+</p>
+<ol class="org-ol">
+<li>I regreted losing my identity card.<br /></li>
+<li>Show me your identity or get out of here.<br /></li>
+<li>He was disappointed to learn that the police hasn't discovered her identity.<br /></li>
+<li>I proved that this was my identity card indeed.<br /></li>
+<li>Will you be carrying my identity card?<br /></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org092733f" class="outline-3">
+<h3 id="org092733f"><span class="done DONE">DONE</span> 反复听电影片段直到懂关键句</h3>
+<div class="outline-text-3" id="text-org092733f">
+</div>
+</div>
+<div id="outline-container-orge9c659d" class="outline-3">
+<h3 id="orge9c659d">复习二册语法(笔记或视频) &amp; 红皮书</h3>
+</div>
+<div id="outline-container-orgd34731f" class="outline-3">
+<h3 id="orgd34731f"><span class="done DONE">DONE</span> 习惯用法造句</h3>
+<div class="outline-text-3" id="text-orgd34731f">
+<p>
+sb. make a (adj.) discovery of sth.<br />
+</p>
+<ol class="org-ol">
+<li>Sometimes, they can even make a discovery in their courtyard.<br /></li>
+<li>I was wondering whether you have made a new discovery.<br /></li>
+<li>I get accustomed to listening to them, they always make new discoveries.<br /></li>
+<li>The archaeologist has made a new interesting discovery of the remains.<br /></li>
+<li>They are trying to make a new discovery in the prosperous town.<br /></li>
+</ol>
+<p>
+a. be equipped with b.  equip sb. with sth.<br />
+</p>
+<ol class="org-ol">
+<li>Equipped with a torch, she went on exploring the caves.<br /></li>
+<li>Equipped with a helmet, she continued riding the bicycle.<br /></li>
+<li>The bicycle should have been equipped with a bell.<br /></li>
+<li>After equipping me with a torch, she let me go upstairs to repair the roof.<br /></li>
+<li>If they weren't equipped with these machine, they would lose their heart.<br /></li>
+</ol>
+<p>
+be used as<br />
+</p>
+<ol class="org-ol">
+<li>I will buy you a car used as a taxi.<br /></li>
+<li>The car was expected to be used as a taxi.<br /></li>
+<li>If you used the car as a taxi, you wouldn't make a spectacle of yourself.<br /></li>
+<li>It is well known that even people were used as guinea pigs during the war.<br /></li>
+<li>The room used to be used as a place of worship.<br /></li>
+</ol>
+<p>
+date from &#x2026; date back to &#x2026;<br />
+</p>
+<ol class="org-ol">
+<li>They are trying to make a discovery of the remains dating from fifth century B.C.<br /></li>
+<li>This vase can date back to Roman times.<br /></li>
+<li>This vase must date from modern times. She said with a sneer.<br /></li>
+<li>This vase might date from fifteenth century B.C.<br /></li>
+<li>The experts now confirmed that the vase dates back to twenty century B.C.<br /></li>
+</ol>
+<p>
+happen to do<br />
+</p>
+<ol class="org-ol">
+<li>She happened to be equal to this task.<br /></li>
+<li>I happened to pass the exam for one reason or another.<br /></li>
+<li>She happened to wake up with a start at that time.<br /></li>
+<li>I happened to meet our local grocer in the station last night.<br /></li>
+<li>She happened to spot a puma at large.<br /></li>
+</ol>
+<p>
+be amazed to find that + &#x2026;<br />
+</p>
+<ol class="org-ol">
+<li>I am amazed to find that these people are extraordinarily similar.<br /></li>
+<li>I am amazed to find that the policeman arrive on the scene at first time.<br /></li>
+<li>I am amazed to find that my child is doing chores.<br /></li>
+<li>I am amazed to find that these songs are still popular with these young men.<br /></li>
+<li>I am amazed to find that they are competing against each other to do homework.<br /></li>
+</ol>
+<p>
+turn out to be &#x2026;<br />
+</p>
+<ol class="org-ol">
+<li>This turns out to be a pyramid.<br /></li>
+<li>The play turns out to be boring.<br /></li>
+<li>The fish turned out to be an oarfish.<br /></li>
+<li>This animal which was spotted by a woman picking blackberries turned out to be a puma.<br /></li>
+<li>This fur clinging to bushes turns out to be puma fur.<br /></li>
+</ol>
+<p>
+despite/despite the fact that &#x2026;<br />
+</p>
+<ol class="org-ol">
+<li>Despite the fact that your sister laugh at me.<br /></li>
+<li>Despite the fact that you got into such a mess.<br /></li>
+<li>Despite the fact that she is living in a fantasy world.<br /></li>
+<li>Despite the fact that someone fired a shot through the window.<br /></li>
+<li>Despite the fact that she set the house on fire.<br /></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org41d8bf2" class="outline-3">
+<h3 id="org41d8bf2">跟读 50遍</h3>
+</div>
+<div id="outline-container-org1d59a2c" class="outline-3">
+<h3 id="org1d59a2c"><span class="done DONE">DONE</span> Comprehension 反复练习</h3>
+<div class="outline-text-3" id="text-org1d59a2c">
+</div>
+</div>
+<div id="outline-container-orgdbc75de" class="outline-3">
+<h3 id="orgdbc75de">Ask me if 写+读</h3>
+<div class="outline-text-3" id="text-orgdbc75de">
+<ol class="org-ol">
+<li>An interesting archaeological discovery was made in the Aegean. Where<br />
+Where was an interesting archaological discovery made?<br /></li>
+<li>An American team explored a temple. What<br />
+What did an American team explore?<br /></li>
+<li>The temple stands in an ancient city. Where<br />
+Where did the temple stand?<br /></li>
+<li>The city was equipped with a drainage system. What<br />
+What was the city equipped with?<br /></li>
+<li>The temple was used as a place of worship. How<br />
+How was the temple used?<br /></li>
+<li>The goddesses had been painted. What colour<br />
+What colour had the goddesses been painted?<br /></li>
+<li>The head of one of the statues must have been found in Classical times. When<br />
+When must the head of one of the statues been found?<br /></li>
+<li>It had been carefully preserved. How<br />
+How had it been preserved?<br /></li>
+<li>The archaeologists reconstructed the fragments. How<br />
+How did the archaeologists reconstruct the fragments?<br /></li>
+<li>They were amazed. Why<br />
+Why were they amazed?<br /></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-orgc20002c" class="outline-3">
+<h3 id="orgc20002c"><span class="done DONE">DONE</span> 摘要写作 写 &amp; 对答案</h3>
+<div class="outline-text-3" id="text-orgc20002c">
+<p>
+Archaeologists found clay fragments in an ancient temple.<br />
+These represented the fifteen statues of goddesses which had once been painted.<br />
+The body of one statue was found among remains dating from the fifteenth century BC<br />
+	while its head was found among remains dating back to the fifth century BC.<br />
+When the fragments were reconstructed, they turned out to a goddess which stood three feet high.<br />
+Her hands rested on her hips and she was wearing a full-length skirt.<br />
+Her identity is unknown.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org08628ba" class="outline-3">
+<h3 id="org08628ba"><span class="done DONE">DONE</span> tell the story 口语复述</h3>
+<div class="outline-text-3" id="text-org08628ba">
+</div>
+</div>
+<div id="outline-container-orga6d40e3" class="outline-3">
+<h3 id="orga6d40e3">composition 阅读 或 写作</h3>
+<div class="outline-text-3" id="text-orga6d40e3">
+<p>
+After walking round the ancient city, the archaeologists discovered an ancient temple.<br />
+This temple had obviously been a place of worship because it contained a sacred room.<br />
+On entering the sacred room, the archaeologists found the clay fragments of fifteen statues,<br />
+	each of which was a goddess which had once been painted.<br />
+After this, workmen began digging and soon discovered the head of a statue among remains<br />
+	dating from the fifth century B.C.<br />
+They also found the body of this statue among remains from the fifteenth century B.C.<br />
+The archaeologists carefully put the fragments together.<br />
+They were astonished to find that the figure was a goddess.<br />
+The goddess was a modern-looking woman.<br />
+She had her hands on her hips and she was wearing a full-length skirt.<br />
+Although the archaeologists tried very hard to identify her,<br />
+	they were unable to find out her name.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org916fe91" class="outline-3">
+<h3 id="org916fe91">Topics for discussion</h3>
+</div>
+</div>
+</div>
+</body>
+</html>
