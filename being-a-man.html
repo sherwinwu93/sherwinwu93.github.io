@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-03-13 Wed 10:11 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="lenovo" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<p>
+评价的标准:<br />
+	第一:不在别人的嘴上,而在自己的内心里.<br />
+	第二:在于客观事物(Critical Thinking)<br />
+	客观事物比自己内心更重要,但是事物的发展是由自己内心到客观事物的<br />
+如何活得轻松:<br />
+</p>
+<ol class="org-ol">
+<li>有一个非常清晰的界限,什么事情我对应做到什么程度就够了<br /></li>
+<li>在做到这个程度以后,把外界的声音屏蔽掉<br /></li>
+<li>做完1和2之后,看日子是越过越好,还是越过越差.越过越好说明自己做的对了,越过越差了说明自己做错了.<br /></li>
+</ol>
+<p>
+遇到事情奔着解决事情去,而不是我不爽我就要和别人干架.<br />
+</p>
+
+<div id="outline-container-orgeab3f7f" class="outline-2">
+<h2 id="orgeab3f7f">如何活得轻松？</h2>
+<div class="outline-text-2" id="text-orgeab3f7f">
+<p>
+你要是在这个世界上想活得轻松一点，有些东西是要修炼出来的。<br />
+<b>第一是你要有一个非常清晰的界限，什么事情，你做到什么程度就行了。</b><br />
+<b>第二是你做到这个程度之后，外界的声音你能屏蔽掉。</b><br />
+至于你自己定义的这个界限合理不合理，没有这两点重要，这已经是后来的事情了。<br />
+合理不合理那是别人的评价问题，你自己觉得合理就行了。<br />
+</p>
+
+<p>
+上面这两点你修炼不出来，不只是家庭成员借钱这件事，你会发现生活到处充满了矛盾，会过得非常不开心。<br />
+你用不着狂躁什么，你希望别人按照你的方式来行事本质上就是你恐惧啊，你恐惧把自己表现出来，你恐惧别人对你有不好的评价。<br />
+你如坐针毡，歇斯底里，不都是因为你的情绪容易失控嘛。<br />
+</p>
+
+<p>
+就拿这件事来说，你有20万，你的大姑子第一次说可能要跟你借钱。<br />
+你当时就不舒服，没当面说。<br />
+这个就非常奇怪呀，对不对？<br />
+一件事情摆到你面前，你该怎么处理就怎么处理，不舒服有什么用，当你第一次听到这个想法的时候，你的内心已经暴躁不安了。<br />
+</p>
+
+<p>
+其实是一个人他的性格是什么样的，他的生活就会是什么样。<br />
+有一种人他是解决问题优先，另一种人是别人不爽了我就要跟别人干架。<br />
+前者一定比后者过得好这是毋庸置疑的。<br />
+</p>
+
+<p>
+她可能要借钱，你脑子当时就应该盘算好，这个钱借不借，借多少，怎么借，你要她怎么还心里想好了 盘算好了，等到事情真的出来了，你就把你的想法抛出来就行。<br />
+你有老公的话你就事先跟你老公通个气，这个事情我打算这么干。<br />
+因为他是你老公，他不是你的员工，你也需要给他一点尊重，所以你需要跟他解释一下你为什么这么干，道理在哪里。<br />
+他要是能跟你说出个123456，你就沟通一下，但是他如果是说什么他姐姐不容易什么乱七八糟的，试图用情感把你脑子搞晕，<br />
+你就判断一下你老公的收入能不能为他的想法买单，如果他一年能赚几百万的，听你老公的话让你老公喜欢你好处更大，你就听他的。<br />
+</p>
+
+<p>
+如果他收入不行，耳根子还软，脑子还迷糊，你就知道你老公是什么人，不搭理他就行了。<br />
+你就说天王老子来了这个事情也得这么办。<br />
+然后你该吃吃该喝喝该干嘛就干嘛去。<br />
+有什么好吵架的呢，别人想跟你吵，也吵不起来啊。<br />
+你看整个过程，我们没什么情绪的，就是该怎么处理你就怎么处理，别人想跟我们吵，我也不接招。<br />
+</p>
+
+<p>
+因为吵架亏本啊，我本来可以开开心心过一天，我脑子坏了我跟你吵架，溜溜球了。<br />
+我们都是解决问题是第一的。<br />
+有事就解决，没必要讲很多话，更没必要跟很多人解释什么，你只需要服务你的利益合作伙伴就行了。<br />
+</p>
+
+<p>
+坦白说，如果你抓着这个钱，是为了这个家的利益最大化，你的脑子能意识到这一点，你跟你老公的关系一般不会崩。<br />
+如果你这样了，还会崩，那这男人也不值得你持有。<br />
+你只要不亏本，你可以选择放弃，如果选择放弃亏本太大，那没办法了，这个事情就解决不了了，你尽量调整心态去接受吧，你选错了人，这个代价你要付的，这样起码你情绪上好过一点。<br />
+等到时间线拉长了再来看我们日子过得怎么样，越过越好了说明你那个界限没问题，越过越差了说明你脑子的认知有问题，你再学习再调整就行了。<br />
+所以你看我们过得多轻松啊，对吧。<br />
+</p>
+
+<p>
+时间长了，身边的人都知道你是这个性格了，奇妙的事情就发生了，没人会再来烦你了。<br />
+吾道一以贯之，别人都知道你的道了。<br />
+</p>
+
+<p>
+说的深奥一点，我常常讲周围的世界是一个人内心的映射，其实你自己的心是什么样，你周遭的世界就呈现一个什么状态。<br />
+有的时候别人认为我很自私的，那么他们就知道我在这个事情上一贯是自私的，他们慢慢地也就接受这个东西，不会来烦我了，对吧。<br />
+是因为吾道恒一，我的内心是稳定的，不动的，然后我的世界慢慢就会稳定下来，消停下来。<br />
+这个东西是要一点悟性去体会的，能体会出来，能做到，日子就能过得好。<br />
+</p>
+
+<p>
+体会不到的话麻烦不断，生活啊，工作啊之类的，会充满了各种各样的麻烦和矛盾，根源在这里！<br />
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>
