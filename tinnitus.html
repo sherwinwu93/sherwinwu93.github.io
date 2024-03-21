@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-03-21 Thu 11:15 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="lenovo" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-org06eb5a6" class="outline-2">
+<h2 id="org06eb5a6">耳鸣最佳的自愈方法——学会让你的中枢神经系统放松</h2>
+<div class="outline-text-2" id="text-org06eb5a6">
+<p>
+我想再次强调一点，如果你正在经历耳鸣，并且已经去医院排除了各种器质病变引起的耳鸣，那么多半你的耳鸣是因为你的中枢神经系统过度紧张导致的。<br />
+</p>
+
+<p>
+导致中枢神经系统过度紧张的原因有很多，比如：<br />
+</p>
+<ul class="org-ul">
+<li>长期熬夜，生活不规律<br /></li>
+<li>长期处于压力当中（有可能却不自知）<br /></li>
+<li>长期处于焦虑当中（有可能却不自知）<br /></li>
+<li>长期处于抑郁当中（有可能却不自知）<br /></li>
+<li>长期处于易怒，或者情绪容易爆发的状态<br /></li>
+<li>其它意外刺激<br /></li>
+</ul>
+
+<p>
+整天对耳鸣的成因去刨根问底，是没有意义的，这只会加重你的中枢神经系统（central nervous system）的兴奋程度，一旦提及耳鸣，你的中枢神经系统就会进入一种 <b>战斗或者逃跑模式(Fight or Flight)</b> ，变得高度兴奋，肾上腺素加速分泌，集中了所有注意力，而这也解释了为什么你越紧张，越恐慌，越去听，就会觉得耳鸣声音越大。<br />
+</p>
+
+<p>
+<b>人的中枢神经系统对危险的事物建立联系很快</b> ，比如你听到或者看到一个可怕的东西时，会很快开始紧张流汗做出反映。 <b>但是，要脱离联系却很慢，需要时间。这就是为什么一朝被蛇咬，十年怕井绳。</b> 这就意味着你要通过不断的训练，来断开自己中枢神经对“井绳—威胁”建立的联系，不然就只能一直这么害怕下去。而耳鸣也一样。如果不训练，就只能去习惯。问题是，我不觉得有任何一个耳鸣的人，有勇气立刻让自己从今天开始放弃抵抗，去学会适应，因为毕竟耳鸣很讨厌。<br />
+</p>
+
+<p>
+所以，想办法让你的中枢神经系统放松下来，才是治愈耳鸣的最好办法。 <b>注意，这里的放松，不是说放任不管，也不是死马当活马医，是你必须经过一些训练，才能达到效果。</b> 不然就只能变成别人所说的“慢慢去习惯耳鸣”，而这也是很多人耳鸣多年不愈的原因。<br />
+</p>
+
+<p>
+常见的训练方法有：<br />
+</p>
+<ol class="org-ol">
+<li>冥想，学会腹式呼吸<br /></li>
+<li>太极或者瑜伽<br /></li>
+<li>任何可以让你自己放松的身体按摩<br /></li>
+<li>做任何事都慢慢来，不要急性子，改改自己的脾气<br /></li>
+</ol>
+
+<p>
+以冥想为例，网上有很多的冥想教程，在此就不展开赘述了。如果你的耳鸣比较严重，可以在冥想的时候放一点大自然的音乐，有很多 App ，比如小睡眠之类的，都有类似的功能。音量以盖住你耳鸣声音的一半为宜，既可以听到耳鸣，又可以听到音乐。然后在冥想的过程中，听着自己的耳鸣，结合着音乐，慢慢让自己冷静下来，让你的中枢神经系统对这个声音不再那么活跃、那么兴奋。<br />
+</p>
+
+<p>
+当然，如果你的耳鸣不那么严重，就比如我本人，只要有一点点音乐声基本就听不到了，那么可以尝试不要放背景音乐来掩盖，就在冥想的过程中让自己直接听到。虽然这听起来很残酷，尤其是刚开始的时候可能会很难，但你要训练的就是让你的中枢神经系统对它不再畏惧，从而才能放松警戒。<br />
+</p>
+
+<p>
+我知道这些说起来容易，做起来难。但你必须知道，这些都需要时间，可能是几个礼拜，也有可能是几个月，甚至几年……随着你坚持的时间越长，你的中枢神经系统越冷静，慢慢地你就会发现耳鸣的声音越来越小，直至最终消失。换句话说，你越忽视它，越放它走，那么总有一天它也会放你走。<br />
+</p>
+
+<p>
+有人会说，“我也想放它走啊，但是耳鸣毕竟是一种声音，在你耳边嗡嗡嗡的总会听到啊。”这个时候就要提到我在之前一篇文章里讲到的“森田疗法”与“正念”的思想了。<br />
+</p>
+
+
+<p>
+正确的做法是： <b>不要刻意去听自己的耳鸣，也不要因为一天中的某一时刻听到自己的耳鸣而吓一跳，</b> 因为但凡有这两种情况，都代表着你内心还在乎它， <b>这会加重你的中枢神经对它的恐惧程度，进而再次进入战斗或者逃跑模式（Fight or Flight），这是不利于恢复的。</b> 我理解很多人会有那种体验，每天做着该做的事，突然耳鸣的声音袭来，然后整个人都陷入一种恐慌，竖起耳朵去听是不是，一听真的是自己耳鸣，然后就会感到失望与无助，仿佛今天一天又被耳鸣打倒了一般，接着掉进恐慌的陷阱，好久才能爬上来……千万不要这样，你要做到的是，每天不逃避耳鸣的声音，正视它，在听到它的时候，不对它作出任何回应，为所当为，不去做任何的评价，该干嘛干嘛。就像正在站台等车的你，耳鸣就是呼呼驶来的火车，你是要选择跳上火车跟它一起，陷入无止尽的恐慌当中；还是微微笑看着它停，再看着它走，决定权都在自己手上。<br />
+</p>
+
+<p>
+必须再一次强调：<br />
+</p>
+
+<ol class="org-ol">
+<li><b>这篇文章的目的不是要你从开始马上学会“习惯耳鸣”，而是应该在了解过耳鸣的原因与应对方案之后，先开始慢慢习惯，再配合一定的训练（比如冥想）来放松中枢神经，最后慢慢达到恢复的目的。</b><br /></li>
+<li><b>耳鸣的治疗不像感冒发烧或者其它疾病，它不是吃了药马上就可以好的。</b><br /></li>
+<li><b>不要有什么期待，仿佛你今天怎么做了之后，明天耳鸣就可以立刻好。不可能的，耳鸣的治愈永远是一个循序渐进的过程。</b><br /></li>
+<li><b>刚开始可能会很难，但当你越来越不在乎这个声音，你的中枢神经越来越对此事不再兴奋，往往这个时候，恢复就开始了。</b><br /></li>
+<li><b>还是那句话，不要乱在网上搜。除了吓到自己，没有好处。</b><br /></li>
+<li><b>全程必须保证积极可恢复的心态，因为消极的心态会加剧你中枢神经系统对耳鸣的恐慌程度。你相信自己会好，你才会好；你相信自己好不了，那好得了才怪了。</b><br /></li>
+<li><b>耳鸣是可以完全恢复的，完全恢复的定义是：在安静的地方也听不到任何声音！不用去纠结这是物理上的恢复还是心理上的恢复。</b><br /></li>
+</ol>
+
+<p>
+希望大家加油！<br />
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>
