@@ -1,0 +1,940 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-05-21 Tue 13:55 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="lenovo" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org8bf768e">1. Lesson 21 Daniel Mendoza</a></li>
+<li><a href="#org5101731">2. Lesson 22 By heart</a></li>
+<li><a href="#orge2b9de2">3. Lesson 23 One man's meat is another man's poison</a></li>
+<li><a href="#org1e0d03f">4. Lesson 24 A skeleton in the cupboard</a></li>
+<li><a href="#org3af6f23">5. Lesson 25 The Cutty Sark</a></li>
+<li><a href="#orge20213a">6. Lesson 26 Wanted: a large biscuit tin</a></li>
+<li><a href="#org455b83a">7. Lesson 27 Nothing to sell and nothing to buy</a></li>
+<li><a href="#org308b7aa">8. Lesson 28 Five pounds too dear</a></li>
+<li><a href="#org53cc034">9. Lesson 29 Funny or not?</a></li>
+<li><a href="#org40a1db9">10. Lesson 30 The death of a ghost</a></li>
+<li><a href="#org3a0abc3">11. Lesson 31 A lovable eccentric</a></li>
+<li><a href="#org8927cbe">12. Lesson 32 A lost ship</a></li>
+<li><a href="#orgbec0e23">13. Lesson 33 A day to remember</a></li>
+<li><a href="#orgf8d794b">14. Lesson 34 A happy discovery</a></li>
+<li><a href="#orgfac5747">15. Lesson 35 Justice was done</a></li>
+<li><a href="#org25d605d">16. Lesson 36 A chance in a million</a></li>
+<li><a href="#org2e3e6b2">17. Lesson 37 The Westhaven Express</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org8bf768e" class="outline-2">
+<h2 id="org8bf768e"><span class="section-number-2">1.</span> Lesson 21 Daniel Mendoza</h2>
+<div class="outline-text-2" id="text-1">
+<p class="verse">
+How many unsuccessful attempts did Mendoza make before becoming Champion of all England?<br />
+<br />
+Boxing matches were very popular in England two hundred years ago.<br />
+In those days, boxers fought <b>with bare fists</b> for prize money.<br />
+<b>Because of this</b>, they were known as 'prizefighters'.<br />
+However, boxing was very crued, for there were no rules<br />
+&#xa0;and a prizefighter could be seriously injured or even killed during a match.<br />
+<br />
+One of the most colourful figures in boxing history was Daniel Mendoza, who <b>was born in</b> 1764.<br />
+The use of gloves was not introduced until 1860,<br />
+&#xa0;when the Marquis of Queensberry <b>drew up</b> the first <b>set of</b> rules.<br />
+Though he was technically a prizefighter,<br />
+&#xa0;&#xa0;Mendoza did much to <b>change crude prizefighting into a sport</b>,<br />
+&#xa0;for he <b>brought science to the game</b>.<br />
+<b>In his day</b>, Mendoza enjoyed tremendous popularity.<br />
+He was adored by rich and poor alike.<br />
+<br />
+Mendoza <b>rose to fame</b> swiftly after a boxing match when he was only fourteen years old.<br />
+This attracted the attention of Richard Humphries,<br />
+&#xa0;who was then the most eminent boxer in England.<br />
+He offered to train Mendoza and his young pupil <b>was quick to learn</b>.<br />
+<b>In fact</b>, Mendoza soon became so successful that Humphries <b>turned against him</b>.<br />
+The two men <b>quarrelled bitterly</b><br />
+&#xa0;and <b>it was clear that</b> the <b>argument could only be settled</b> by a fight.<br />
+A match was held at Stilton, where both men fought for an hour.<br />
+The public <b>bet a great deal of money on Mendoza</b>, but he was defeated.<br />
+Mendoza met Humphries in the ring on a later occasion and he lost for a second time.<br />
+<b>It was not until</b> his third match in 1790<br />
+&#xa0;that he finally beat Humphries and became Champion of England.<br />
+Meanwhile, he founded a highly successful Academy and even Lord Byron became one of his pupils.<br />
+He earned enormous sums of money and was paid <b>as much as</b> 100 dollars for a single appearance.<br />
+Despite this, he was so extravagant that he <b>was always in debt</b>.<br />
+After he was defated by a boxer called Gentleman Jackson, he was quickly forgotten.<br />
+He was sent to prison for failing to pay his debts and died <b>in poverty</b> in 1836.<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org5101731" class="outline-2">
+<h2 id="org5101731"><span class="section-number-2">2.</span> Lesson 22 By heart</h2>
+<div class="outline-text-2" id="text-2">
+<p class="verse">
+Which actor read the letter in the end, the aristocrat or the jailer?<br />
+<br />
+Some plays are so successful that they run <b>for years on end</b>.<br />
+<b>In many ways</b>, this is unfortunate for the poor actors<br />
+&#xa0;who <b>are required to go</b> on repeating the same lines night after night.<br />
+One would <b>expect them to know their parts by heart</b> and never <b>have cause to</b> falter.<br />
+Yet this is not always the case.<br />
+<br />
+A famous actor in a highly successful play <b>was once cast in the role of</b> an aristocrat<br />
+&#xa0;who had been imprisoned in the Bastille for twenty years.<br />
+In the last act, a jailer would always come on to the stage with a letter<br />
+&#xa0;which he would hand to the prisoner.<br />
+Even though the noble was expected to read the letter at each performance,<br />
+&#xa0;he always <b>insisted that it should be written out in full</b>.<br />
+<br />
+One night, the jailer decided to <b>play a joke on</b> his colleague to find out<br />
+&#xa0;if, after so many performances, he had managed to learn the contents of the letter by heart.<br />
+<b>The curtain went up</b> on the final act of the play<br />
+&#xa0;and revealed the aristocrat sitting alone behind bars in his dark cell.<br />
+Just then, the jailer appeared with the precious letter in his hands.<br />
+He entered the cell and <b>presented the letter to</b> the aristocrat.<br />
+But the copy he gave him had not been written out in full as usual.<br />
+It was simply <b>a blank sheet of paper</b>.<br />
+The jailer <b>looked on</b> eagerly, <b>anxious to see</b> if his fellow actor had <b>at last</b> learnt his lines.<br />
+The noble <b>stared at</b> the blank sheet of paper for a few seconds.<br />
+Then, squinting his eyes, he said: 'The light is dim. Read the letter to me.'<br />
+And he promptly handed the sheet of paper to the jailer.<br />
+Finding that he could not remember a word of the letter either,<br />
+&#xa0;the jailer replied: 'The light is indeed dim, sire. I must get my glasses.'<br />
+With this, he hurried off the stage.<br />
+<b>Much to the aristocrat's amusement</b>,<br />
+&#xa0;the jailer returned a few moments later<br />
+&#xa0;&#xa0;with a pair of glasses and the usual copy of the letter<br />
+&#xa0;&#xa0;&#xa0;which he <b>proceeded to read to the prisoner</b>.<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orge2b9de2" class="outline-2">
+<h2 id="orge2b9de2"><span class="section-number-2">3.</span> Lesson 23 One man's meat is another man's poison</h2>
+<div class="outline-text-2" id="text-3">
+<p class="verse">
+What was it about snails that made the writer collect them for his friend on that day in particular?<br />
+<br />
+People become quite illogical when they try to decide what can be eaten and what cannot be eaten.<br />
+If you lived in the Mediterranean, <b>for instance</b>, you would consider octopus a great delicacy.<br />
+You would not be able to understand why some people find it repulsive.<br />
+On the other hand, your <b>stomach would turn</b> <b>at the idea of</b> frying potatoes in <b>animal fat</b><br />
+&#xa0;&#x2013; the normally accepted practice in many northern countries.<br />
+<b>The sad truth is that</b> most of us have <b>been brought up to eat</b> certain foods<br />
+&#xa0;and we <b>stick to them</b> all our lives.<br />
+<br />
+No creature has <b>received more praise and abuse than</b> the common garden snail.<br />
+Cooked in wine, snails are a great luxury in various parts of the world.<br />
+There are countless people<br />
+&#xa0;who, ever since their early years, have learned to <b>associate snails with food</b>.<br />
+My friend, Robert, lives in a country where snails are despised.<br />
+As his flat is in a large town, he has no garden of his own.<br />
+For years he has been asking me to collect snails from my garden and take them to him.<br />
+The idea never <b>appealed to me</b> very much, but one day, <b>after a heavy shower</b>,<br />
+&#xa0;I happened to be walking in my garden<br />
+&#xa0;&#xa0;when I <b>noticed</b> a huge number of snails <b>taking a stroll</b> on some of my prize plants.<br />
+Acting on a sudden impulse,<br />
+&#xa0;I collected several dozen, put them in a paper bag, and took them to Robert.<br />
+Robert <b>was delighted to see</b> me and equally pleased with my little gift.<br />
+I left the bag in the hall<br />
+&#xa0;and Robert and I went into the living room where we talked for a couple of hours.<br />
+I had forgotten all about the snails when Robert suddenly said that I must <b>stay to dinner</b>.<br />
+Snails would, of course, be the main dish.<br />
+I did not fancy the idea and I reluctantly followed Robert out of the room.<br />
+<b>To our dismay</b>, we saw that there were snails everywhere:<br />
+&#xa0;they had escaped from the paper bag and had <b>taken complete possession of</b> the hall!<br />
+I have never been able to look at a snail since then.<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org1e0d03f" class="outline-2">
+<h2 id="org1e0d03f"><span class="section-number-2">4.</span> Lesson 24 A skeleton in the cupboard</h2>
+<div class="outline-text-2" id="text-4">
+<p class="verse">
+Who was Sebastian?<br />
+<br />
+We often read in novels<br />
+&#xa0;how a seemingly respectable person or family has some terrible secret<br />
+&#xa0;&#xa0;which has <b>been concealed from</b> strangers for years.<br />
+The English language possesses a vivid saying to describe this sort of situation.<br />
+The terrible secret is called 'a skeleton in the cupboard'.<br />
+At some dramatic moment in the story, the terrible secret becomes known and a reputation is ruined.<br />
+The reader's <b>hair stands on end</b><br />
+&#xa0;when he reads in the final pages of the novel<br />
+&#xa0;&#xa0;that the heroine, a dear old lady who had always been so kind to everybody,<br />
+&#xa0;&#xa0;&#xa0;had, <b>in her youth</b>, poisoned every one of her five husbands.<br />
+<br />
+<b>It is all very well</b> for such things to occur in fiction.<br />
+<b>To varying degrees</b>, we all have secrets<br />
+&#xa0;&#xa0;which we do not want even our closest friends to learn,<br />
+&#xa0;but few of us have skeletons in the cupboard.<br />
+The only person I know who has a skeleton in the cupboard is George Carlton,<br />
+&#xa0;and he is very pround of the fact.<br />
+George studied medicine in his youth.<br />
+Instead of becoming a doctor, however, he became a successful writer of detective stories.<br />
+I once spent an uncomfortable weekend which I shall never forget at his house.<br />
+George <b>showed me to</b> the guestroom which, he said, was rarely used.<br />
+He told me to unpack my things and then come down to dinner.<br />
+After I had stacked my shirts and underclothes <b>in two empty drawers</b>,<br />
+&#xa0;I decided to hang one of the two suits I had <b>brought with me</b> in the cupboard.<br />
+I opened the cupboard door and then stood in front of it petrified.<br />
+A skeleton was dangling before my eyes.<br />
+The sudden movement of the door made it sway slightly<br />
+&#xa0;and <b>it gave me the impression that</b> it <b>was about to leap out at</b> me.<br />
+Dropping my suit, I dashed downstairs to tell George.<br />
+This was worse than 'a terrible secret'; this was a real skeleton!<br />
+But George was unsympathetic,<br />
+&#xa0;'Oh, that,'	he said with a smile as if he were talking about an old friend.<br />
+'That's Sebastian. You forget that I was a <b>medical student once upon a time</b>.'<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org3af6f23" class="outline-2">
+<h2 id="org3af6f23"><span class="section-number-2">5.</span> Lesson 25 The Cutty Sark</h2>
+<div class="outline-text-2" id="text-5">
+<p class="verse">
+What piece of bad luck prevented the Cutty Sark from winning the race?<br />
+<br />
+One of the most famous sailing ships of the 19th century,<br />
+&#xa0;the Cutty Sark, can be seen at Greenwich.<br />
+She stands on dry land and is visited by thousands of people each year.<br />
+She serves as an impressive reminder of the great ships of the past.<br />
+Before they <b>were replaced by</b> steamships,<br />
+&#xa0;sailing vessels like the Cutty Sark were used to carry tea from China and wool from Australia.<br />
+The Cutty Sark was one of the fastest sailing ships that has ever been built.<br />
+The only other ship to match her was the Thermopylae.<br />
+Both these ships set out from Shanghai on June 18th, 1872 on an exciting race to England.<br />
+This race, which went on for exactly four months, was the last of its kind.<br />
+It marked the end of the great tradition of ships with sails and <b>the beginning of a new era</b>.<br />
+<br />
+The first of the two ships to reach Java after the race had begun was the Thermopylae,<br />
+&#xa0;but on the Indian Ocean, the Cutty Sark <b>took the lead</b>.<br />
+It seemed certain that she would be the first ship home,<br />
+&#xa0;but during the race she had a lot of bad luck.<br />
+In August, she <b>was struck by</b> a very heavy storm during which her rudder was torn away.<br />
+The Cutty Sark rolled <b>from side to side</b> and it <b>became impossible to</b> steer her.<br />
+A temporary rudder was made on board from spare planks and it <b>was fitted with great difficulty</b>.<br />
+This greatly reduced the speed of the ship,<br />
+&#xa0;for <b>there was a danger that</b> if she travelled too quickly,<br />
+&#xa0;this rudder would be torn away as well.<br />
+Because of this the Cutty Sark <b>lost her lead</b>.<br />
+After crossing the Equator,<br />
+&#xa0;the captain called in at a port to have a new rudder fitted,<br />
+&#xa0;but by now the Thermopylae was over five hundred miles ahead.<br />
+Though the new rudder was fitted at tremendous speed, it was impossible for the Cutty Sark to win.<br />
+She arrived in England a week after the Thermopylae.<br />
+Even this was remarkable, considering that she had had so many delays.<br />
+<b>There is no doubt that</b> if she had not lost her rudder she would have won the race easily.<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orge20213a" class="outline-2">
+<h2 id="orge20213a"><span class="section-number-2">6.</span> Lesson 26 Wanted: a large biscuit tin</h2>
+<div class="outline-text-2" id="text-6">
+<p class="verse">
+Who won the prize for the biggest biscuit?<br />
+<br />
+No one can <b>avoid being influenced by</b> advertisements.<br />
+Much as we may <b>pride ourselves on</b> our <b>good taste</b>,<br />
+&#xa0;&#xa0;we <b>are no longer free to</b> choose the things we want,<br />
+&#xa0;for advertising <b>exerts a subtle influence on</b> us.<br />
+<b>In their efforts to</b> persuade us to buy this or that product,<br />
+&#xa0;advertisers have made a close study of human nature and have classified all our little weaknesses.<br />
+<br />
+Advertisers discovered years ago that all of us love to <b>get something for nothing</b>.<br />
+An advertisement which begins with the <b>magic word</b> free can rarely go wrong.<br />
+These days, advertisers not only offer free samples,<br />
+&#xa0;but free cars, free houses, and free trips round the world as well.<br />
+They devise hundreds of competitions which will <b>enable us to</b> win huge sums of money.<br />
+Radio and television have <b>made it possible for advertisers<br />
+&#xa0;to capture the attention</b> of millions of people in this way.<br />
+<br />
+During a radio programme,<br />
+&#xa0;a company of biscuit manufacturers once asked listeners to bake biscuits<br />
+&#xa0;&#xa0;and send them to their factory.<br />
+They offered to pay 10 dollars a pound for the biggest biscuit baked by a listener.<br />
+The response to this competition was tremendous.<br />
+Before long, biscuits of all shapes and sizes began arriving at the factory.<br />
+One lady brought in a biscuit on a wheelbarrow.<br />
+It weighed nearly 500 pounds.<br />
+A little later, a man <b>came along</b> with a biscuit which occupied <b>the whole boot of his car</b>.<br />
+All the biscuits that were sent were carefully weighed.<br />
+The largest was 713 pounds.<br />
+It seemed certain that this would win the prize.<br />
+But just before the competition closed,<br />
+&#xa0;a lorry arrived at the factory with a truly colossal biscuit which weighed 2,400 pounds.<br />
+It had been baked by a college student<br />
+&#xa0;who had used over 1,000 pounds of flour,<br />
+&#xa0;&#xa0;800 pounds of sugar, 200 pounds of fat, and 400 pounds of various other ingredients.<br />
+It was so heavy that a crane had to be used to remove it from the lorry.<br />
+The manufacturers had to pay more money than they had anticipated,<br />
+&#xa0;for they <b>bought the biscuit from the student</b> for 24,000 dollars.<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org455b83a" class="outline-2">
+<h2 id="org455b83a"><span class="section-number-2">7.</span> Lesson 27 Nothing to sell and nothing to buy</h2>
+<div class="outline-text-2" id="text-7">
+<p class="verse">
+What is the most important thing for a tramp?<br />
+<br />
+It has been said that everyone <b>lives by selling</b> something.<br />
+<b>In the light of</b> this statement, teachers live by selling knowledge,<br />
+&#xa0;philosophers by selling wisdom and priests by selling <b>spiritual comfort</b>.<br />
+Though it may be possible to measure that value of material goods <b>in terms of money</b>,<br />
+&#xa0;<b>it is extremely difficult to</b> estimate the true value of the services which people perform for us.<br />
+There are times when we would willingly give everything we possess to save our lives,<br />
+&#xa0;yet we might <b>grudge paying</b> a surgeon a high fee for offering us precisely this service.<br />
+The conditions of society are such<br />
+&#xa0;that skills have to be paid for in the same way that goods are paid for at a shop.<br />
+Everyone has something to sell.<br />
+<br />
+Tramps <b>seem to be the only exception to this general rule</b>.<br />
+Beggars almost sell themselves as human beings to arouse the pity of passers-by.<br />
+But real tramps are not beggars.<br />
+They have nothing to sell and require nothing from others.<br />
+<b>In seeking independence</b>, they do not sacrifice their human dignity.<br />
+A tramp may ask you for money, but he will never ask you to fell sorry for him.<br />
+He has deliberately <b>chosen to lead</b> the life he leads and is fully aware of the consequences.<br />
+He may never be sure where the next meal is coming from,<br />
+&#xa0;but he <b>is free from</b> the thousands of anxieties which afflict other people.<br />
+His few material possessions make it possible for him to move from place to place <b>with ease</b>.<br />
+By having to sleep <b>in the open</b>,<br />
+&#xa0;he gets far closer to the world of nature than most of us ever do.<br />
+He may hunt, beg, or steal occasionally to keep himself alive;<br />
+&#xa0;he may even, in times of real need, do a little work;<br />
+&#xa0;but he will never sacrifice his freedom.<br />
+We often speak of tramps <b>with contempt</b> and put them in the same class as beggars,<br />
+&#xa0;but how many of us can honestly say that<br />
+&#xa0;&#xa0;we have not <b>felt a little envious of</b> their simple way of life and their freedom from care?<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org308b7aa" class="outline-2">
+<h2 id="org308b7aa"><span class="section-number-2">8.</span> Lesson 28 Five pounds too dear</h2>
+<div class="outline-text-2" id="text-8">
+<p class="verse">
+Why was even five pounds 'too dear'?<br />
+<br />
+Small boats loaded with wares <b>sped to the great liner</b> as she was entering the harbour.<br />
+Before she had anchored,<br />
+&#xa0;the men from the boats had climbed on board<br />
+&#xa0;and the decks were soon covered with colourful rugs from Persia,<br />
+&#xa0;&#xa0;silks from India, copper coffee pots, and beautiful handmade silverware.<br />
+It was difficult not to be tempted.<br />
+Many of the tourists on board had begun <b>bargaining with the tradesmen</b>,<br />
+&#xa0;but I decided not to buy anything until I had disembarked.<br />
+<br />
+I had no sooner got off the ship than I <b>was assailed by a man</b><br />
+&#xa0;who wanted to sell me a diamond ring.<br />
+I <b>had no intention of</b> buying one,<br />
+&#xa0;but I <b>could not conceal the fact that</b> I <b>was impressed by</b> the size of the diamonds.<br />
+Some of them were as big as marbles.<br />
+The man <b>went to great lengths to prove that</b> the diamonds were real.<br />
+As we were walking past a shop,<br />
+&#xa0;he held a diamond firmly against the window and made a deep impression in the glass.<br />
+It took me over half an hour to <b>get rid of him</b>.<br />
+<br />
+The next man to approach me was selling expensive pens and watches.<br />
+I examined one of the pens closely.<br />
+It certainly looked genuine.<br />
+<b>At the base of the gold cap</b>, the words 'made in the USA' had been neatly inscribed.<br />
+The man said that the pen was worth 50 dollars,<br />
+&#xa0;but <b>as a special favour</b>, he would <b>let me have it</b> for 30 dollars.<br />
+I shook my head and held up five fingers <b>indicating that</b> I was willing to pay 5 dollars.<br />
+Gesticulating wildly, the man acted as if he found my offer outrageous,<br />
+&#xa0;but he eventually <b>reduced the price to 10 dollars</b>.<br />
+Shrugging my shoulders,<br />
+&#xa0;I began to walk away when, a moment later, he ran after me and <b>thrust the pen into</b> my hands.<br />
+Though he kept <b>throwing up his arms</b> in despair, he readily accepted the 5 dollars I gave him.<br />
+I felt especially pleased with my wonderful bargain &#x2013; until I <b>got back to the ship</b>.<br />
+No matter how hard I tried,<br />
+&#xa0;it was impossible to <b>fill this beautiful pen with ink</b><br />
+&#xa0;and <b>to this day</b> it has never written a single word!<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org53cc034" class="outline-2">
+<h2 id="org53cc034"><span class="section-number-2">9.</span> Lesson 29 Funny or not?</h2>
+<div class="outline-text-2" id="text-9">
+<p class="verse">
+What is the basis of 'sick' humour?<br />
+<br />
+Whether we find a joke funny or not largely depends on where we have been brought up.<br />
+The sense of humour <b>is mysteriously bound up with</b> national characteristics.<br />
+A Frenchman, for instance, might <b>find it hard to laugh</b> at a Russian joke.<br />
+In the same way, a Russian might fail to see anything amusing in a joke<br />
+&#xa0;which would make an Englishman <b>laugh to tears</b>.<br />
+<br />
+Most funny stories are based on comic situations.<br />
+In spite of national differences, certain funny situations <b>have a universal appeal</b>.<br />
+No matter where you live, you would find it difficult not to laugh at,<br />
+&#xa0;say, Charlie Chaplin's early films.<br />
+However, a new type of humour, which <b>stems largely from</b> the US, has recently <b>come into fashion</b>.<br />
+It is called 'sick humour'.<br />
+Comedians <b>base their jokes on</b> tragic situations like violent death or serious accidents.<br />
+Many people find this sort of joke distasteful.<br />
+The following example of 'sick humour' will enable you to <b>judge for yourself</b>.<br />
+<br />
+A man who had broken his right leg was taken to hospital a few weeks before Christmas.<br />
+From the moment he arrived there,<br />
+&#xa0;he kept on <b>pestering his doctor to tell</b> him when he would be able to go home.<br />
+He <b>dreaded having</b> to spend Christmas in hospital.<br />
+Though the doctor <b>did his best</b>, the patient's recovery was slow.<br />
+On Christmas Day, the man still had his right leg in plaster.<br />
+He spent a miserable day in bed thinking of all the fun he was missing.<br />
+The following day, however, the doctor consoled him by telling him<br />
+&#xa0;that his chances of being able to leave hospital in time for New Year celebrations were good.<br />
+The man <b>took heart</b> and, sure enough, on New Year's Eve he was able to hobble along to a party.<br />
+To <b>compensate for</b> his unpleasant experiences in hospital,<br />
+&#xa0;the man drank a little more than <b>was good for him</b>.<br />
+<b>In the process</b>, he enjoyed himself thoroughly<br />
+&#xa0;and kept telling everybody how much he hated hospitals.<br />
+He was still mumbling something about hospitals at the end of the party<br />
+&#xa0;when he slipped on a piece of ice and broke his left leg.<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org40a1db9" class="outline-2">
+<h2 id="org40a1db9"><span class="section-number-2">10.</span> Lesson 30 The death of a ghost</h2>
+<div class="outline-text-2" id="text-10">
+<p class="verse">
+Why did the two brothers keep the secret?<br />
+<br />
+<b>For years</b>, villagers believed that Endly Farm was haunted.<br />
+The farm was owned by two brothers, Joe and Bob Cox.<br />
+They employed a few farmhands, but no one was willing to work there long.<br />
+<b>Every time</b> a worker gave up his job, he told the same story.<br />
+Farm labourers said that they always <b>woke up to find that</b> work had been done overnight.<br />
+Hay had been cut and cowsheds had been cleaned.<br />
+A farm worker, who <b>stayed up</b> all night,<br />
+&#xa0;claimed to have seen a figure cutting corn <b>in the moonlight</b>.<br />
+In time, <b>it became an accepted fact that</b><br />
+&#xa0;the Cox brothers employed a conscientious ghost that did most of their work for them.<br />
+<br />
+No one <b>suspected that</b> there might be someone else on the farm who had never been seen.<br />
+This was indeed the case.<br />
+A short time ago, villagers were astonished to learn that the ghost of Endley had died.<br />
+Everyone went to the funeral, for the 'ghost' was <b>none other than</b> Eric Cox,<br />
+&#xa0;a third brother who <b>was supposed to</b> have died as a young man.<br />
+After the funeral, Joe and Bob revealed a secret which they had kept for over fifty years.<br />
+<br />
+Eric had been the <b>eldest</b> son of the family, very much older than his two brothers.<br />
+He had been obliged to join the army during the Second World War.<br />
+As he hated army life, he decided to desert his regiment.<br />
+When he learnt that he would be sent abroad,<br />
+&#xa0;he returned to the farm and his father hid him until the end of the war.<br />
+Fearing the authorities, Eric <b>remained in hiding</b> after the war as well.<br />
+His father told everybody that Eric had <b>been killed in action</b>.<br />
+The only other people who knew the secret were Joe and Bob.<br />
+They did not even tell their wives.<br />
+When their father died, they <b>thought it their duty to keep Eric in hiding</b>.<br />
+All these years, Eric had lived as a recluse.<br />
+He used to sleep during the day and work at night,<br />
+&#xa0;quite unaware of the fact that he had become the ghost of Endley.<br />
+When he died, however, his brothers <b>found it impossible to</b> keep the secret any longer.<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org3a0abc3" class="outline-2">
+<h2 id="org3a0abc3"><span class="section-number-2">11.</span> Lesson 31 A lovable eccentric</h2>
+<div class="outline-text-2" id="text-11">
+<p class="verse">
+Why did the shop assistant refuse to serve Dickie?<br />
+<br />
+True eccentrics never deliberately set out to <b>draw attention to themselves</b>.<br />
+They <b>disregard social conventions</b><br />
+&#xa0;without <b>being conscious that</b> they are doing anything extraordinary.<br />
+This invariably <b>wins them</b> the love and respect of others,<br />
+&#xa0;for they <b>add colour to</b> the dull <b>routine of everyday life</b>.<br />
+<br />
+<b>Up to the time of his death</b>, Richard Colson was one of the most notable figures in our town.<br />
+He was a shrewd and wealthy businessman,<br />
+&#xa0;but most people in the town hardly knew anything about this side of his life.<br />
+He was known to us all as Dickie and his eccentricity had become legendary long before he died.<br />
+<br />
+Dickie disliked snobs intensely.<br />
+Though he owned a large car, he hardly ever used it, perferring always to <b>go on foot</b>.<br />
+Even when it was raining heavily, he refused to carry an umbrella.<br />
+One day, he walked into an expensive shop after having <b>been caught in</b> a particularly heavy shower.<br />
+He wanted to buy a 300 dollars watch for his wife,<br />
+&#xa0;but he was in such a bedraggled condition that an assistant refused to serve him.<br />
+Dickie left the shop without a word and returned carrying a large cloth bag.<br />
+As it was extremely heavy, he <b>dumped it on the counter</b>.<br />
+The assistant asked him to leave,<br />
+&#xa0;but Dickie paid no attention to him and <b>requested to</b> see the manager.<br />
+Recognizing who the customer was,<br />
+&#xa0;the manager was most apologetic and reprimanded the assistant severely.<br />
+When Dickie was given the watch, he <b>presented the asssistant with</b> the cloth bag.<br />
+It contained 300 dollars in cents.<br />
+He insisted on the assistant's counting the money before he left &#x2013; 30000 cents in all!<br />
+On another occasion,<br />
+&#xa0;he <b>invited a number of important critics to see</b> his private collection of modern paintings.<br />
+This exhibition received a great deal of attention in the press,<br />
+&#xa0;for though the pictures were supposed to be the work of famous artists,<br />
+&#xa0;they had in fact been painted by Dickie.<br />
+It took him four years to stage this <b>elaborate joke</b><br />
+&#xa0;simply to prove that critics do not always know what they are talking about.<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org8927cbe" class="outline-2">
+<h2 id="org8927cbe"><span class="section-number-2">12.</span> Lesson 32 A lost ship</h2>
+<div class="outline-text-2" id="text-12">
+<p class="verse">
+Did the crew of the Elkor find what they were looking for? Why?<br />
+<br />
+The <b>salvage operation</b> had been a complete failure.<br />
+The small ship, Elkor, which had been searching the Barents Sea for weeks,<br />
+&#xa0;was on its way home.<br />
+A radio message from the mainland had been received by the ship's captain<br />
+&#xa0;instructing him to give up the search.<br />
+The captain knew that another attempt would be made later,<br />
+&#xa0;for the sunken ship he was trying to find had been carrying <b>a precious cargo of</b> gold bullion.<br />
+<br />
+Despite the message, the captain of the Elkor decided to try once more.<br />
+The sea bed was scoured with powerful nets<br />
+&#xa0;and there was tremendous excitement on board when a chest was raised from the bottom.<br />
+Though the crew <b>were at first under the impression that</b> the lost ship had been found,<br />
+&#xa0;the contents of the chest proved them wrong.<br />
+What they had in fact found was a ship which had been sunk many years before.<br />
+<br />
+The chest contained the personal belongings of a seaman, Alan Fielding.<br />
+There were books, clothing and photographs,<br />
+&#xa0;<b>together with</b> letters which the seaman had once received from his wife.<br />
+The captain of the Elkor ordered his men to salvage as much as possible from the wreck.<br />
+Nothing of value was found,<br />
+&#xa0;but the numerous items which were brought to the surface proved to be of great interest.<br />
+From a heavy gun that was raised,<br />
+&#xa0;the captain realized that the ship must have been a cruiser.<br />
+In another chest, which contained the belongings of a ship's officer,<br />
+&#xa0;there was an unfinished letter which had been written on March 14th, 1943.<br />
+The captain leant from the letter that the name of the lost ship was the Karen.<br />
+The most valuable find of all was the ship's log book,<br />
+&#xa0;parts of which it was still possible to read.<br />
+From this the captain was able to <b>piece together</b> all the information that had <b>come to light</b>.<br />
+The Karen had been sailing <b>in a convoy</b> to Russia when she was torpedoed by an enemy submarine.<br />
+This was later confirmed by <b>a naval official</b> at the Ministry of Defence<br />
+&#xa0;after the Elkor had returned home.<br />
+All the items that were found were sent to the War Museum.<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgbec0e23" class="outline-2">
+<h2 id="orgbec0e23"><span class="section-number-2">13.</span> Lesson 33 A day to remember</h2>
+<div class="outline-text-2" id="text-13">
+<p class="verse">
+What incident began the series of traffic accidents?<br />
+<br />
+We have all experienced days when everything goes wrong.<br />
+A day may begin well enough, but suddenly everything seems to <b>get out of control</b>.<br />
+<b>What invariably happens is</b><br />
+&#xa0;that a great number of things choose to go wrong at precisely the same moment.<br />
+It is as if a single unimportant event <b>set up a chain of reactions</b>.<br />
+Let us suppose that you are preparing a meal and <b>keeping an eye on</b> the baby at the same time.<br />
+The telephone rings and this marks <b>the prelude to an unforseen series of</b> catastrophes.<br />
+While you <b>are on the phone</b>, the baby pulls the tablecloth off the table,<br />
+&#xa0;smashing half your best crockery and cutting himself in the process.<br />
+You <b>hang up</b> hurriedly and <b>attend to</b> baby, crockery, et cetera.<br />
+Meanwhile, the meal gets burnt.<br />
+As if this were not enough to <b>reduce you to tears</b>,<br />
+&#xa0;your husband arrives, unexpectedly bringing three guests to dinner.<br />
+<br />
+Things can go wrong <b>on a big scale</b>,<br />
+&#xa0;as a number of people recently discovered in Parramatta, <b>a suburb of Sydney</b>.<br />
+During the <b>rush hour</b> one evening two cars collided and both drivers began to argue.<br />
+The woman immediately behind the two cars happened to be a learner.<br />
+She suddenly <b>got into a panic</b> and stopped her car.<br />
+This made the driver following her brake hard.<br />
+His wife was sitting beside him holding a large cake.<br />
+As she was thrown forward, the cake went right through the windscreen and landed on the road.<br />
+Seeing a cake flying through the air,<br />
+&#xa0;a lorry driver who was <b>drawing up alongside</b> the car,<br />
+&#xa0;&#xa0;<b>pulled up all of a sudden</b>.<br />
+The lorry was loaded with empty beer bottles<br />
+&#xa0;and hundreds of them <b>slid off</b> the back of the vehicle and on to the road.<br />
+This led to yet another angry argument.<br />
+Meanwhile, the traffic <b>piled up</b> behind.<br />
+It took the police nearly an hour to <b>get the traffic on the move</b> again.<br />
+In the meantime, the lorry driver had to <b>sweep up</b> hundreds of broken bottles.<br />
+Only two <b>stray dogs benefited from</b> all this confusion,<br />
+&#xa0;for they greedily devoured what was left of the cake.<br />
+It was just one of those days!<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgf8d794b" class="outline-2">
+<h2 id="orgf8d794b"><span class="section-number-2">14.</span> Lesson 34 A happy discovery</h2>
+<div class="outline-text-2" id="text-14">
+<p class="verse">
+What was the 'happy discovery'?<br />
+<br />
+<b>Antique shops exert a peculiar fascination on</b> a great many people.<br />
+The more expensive kind of antique shop<br />
+&#xa0;&#xa0;where rare objects are beautiful displayed in glass cases to keep them free from dust<br />
+&#xa0;is usually a <b>forbiding place</b>.<br />
+But no one has to <b>muster up courage to enter</b> a less pretentious antique shop.<br />
+<b>There is always hope</b><br />
+&#xa0;that <b>in its labyrinth of</b> musty, dark, disordered rooms<br />
+&#xa0;&#xa0;a real rarity will be found amongst the piles of assorted junk that <b>litter the floors</b>.<br />
+<br />
+No one discovers a rarity <b>by chance</b>.<br />
+A truly dedicated bargain hunter must have patience,<br />
+&#xa0;and <b>above all</b>, the ability to recognize the worth of something when he sees it.<br />
+To do this, he must be at least as knowledgeable as the dealer.<br />
+Like a scientist <b>bent on making</b> a discovery,<br />
+&#xa0;he must <b>cherish the hope that</b> one day he will be amply rewarded.<br />
+<br />
+My old friend, Frank Halliday, is just such a person.<br />
+He has often <b>described to me how</b> he <b>picked up</b> a masterpiece of a mere 50 dollars.<br />
+One Saturday morning, Frank visited an antique shop in my neighbourhood.<br />
+As he had never been there before, he found a great deal to interest him.<br />
+The morning passed rapidly<br />
+&#xa0;and Frank was about to leave when he noticed a large packing case lying on the floor.<br />
+The dealer told him that it had just come in,<br />
+&#xa0;but that he <b>could not be bothered to open</b> it.<br />
+Frank <b>begged him to do</b> so and the dealer reluctantly <b>prised it open</b>.<br />
+The contents were disappointing.<br />
+Apart from an interesting-looking carved dagger, the box was full of crockery, much of it broken.<br />
+Frank gently lifted the crockery out of the box<br />
+&#xa0;and suddenly noticed a miniature painting <b>at the bottom of</b> the packing case.<br />
+As its composition and line reminded him of an Italian painting he knew well, he decided to buy it.<br />
+Glancing at it briefly, the dealer told him that it was worth 50 dollars.<br />
+Frank could hardly conceal his excitement,<br />
+&#xa0;for he knew that he had made a real discovery.<br />
+The tiny painting proved to be an unknown masterpiece by Corrggio<br />
+&#xa0;and was worth hundreds of thousands of dollars.<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgfac5747" class="outline-2">
+<h2 id="orgfac5747"><span class="section-number-2">15.</span> Lesson 35 Justice was done</h2>
+<div class="outline-text-2" id="text-15">
+<p class="verse">
+The word 'justice' is given two different meanings in the text.<br />
+What is the distinction between them?<br />
+<br />
+The word justice is usually associated with <b>courts of law</b>.<br />
+We might say<br />
+&#xa0;that <b>justice has been done</b> when a man's <b>innocence or guilt has been proved beyond doubt</b>.<br />
+Justice is part of the complex machinery of the law.<br />
+Those who seek it <b>undertake an arduous journey</b> and can never be sure that they will find it.<br />
+Judges, <b>however</b> wise or eminent, are human and can <b>make mistakes</b>.<br />
+<br />
+<b>There are rare instances when</b> justice almost <b>ceases to be</b> an <b>abstract concept</b>.<br />
+Reward or punishment are <b>meted out</b> quite <b>independent of human interference</b>.<br />
+At such times, justice acts like a living force.<br />
+When we use a phrase like 'it serves him right',<br />
+&#xa0;we are, <b>in part</b>, admitting<br />
+&#xa0;&#xa0;that a certain set of circumstances has enabled justice to act <b>of its own accord</b>.<br />
+<br />
+When a thief was caught <b>on the premises of</b> a large jewelery store one morning,<br />
+&#xa0;the shop assistants must have found it impossible to resist the temptation<br />
+&#xa0;&#xa0;to say 'it serves him right.'<br />
+The shop was an old converted house with many large, disused fireplaces and tall, narrow chimneys.<br />
+Towards midday, a girl heard a muffled cry coming from behind one of the walls.<br />
+As the cry was repeated several times,<br />
+&#xa0;she <b>ran to tell</b> the manager who promptly <b>rang up</b> the fire brigade.<br />
+The cry had certainly come from one of the chimneys,<br />
+&#xa0;but as there were so many of them, the fire fighters could not be certain which one it was.<br />
+They located the right chimney by <b>tapping at</b> the walls and <b>listening for</b> the man's cries.<br />
+After chipping through a wall which was eighteen inches thick,<br />
+&#xa0;they found that a man had been trapped in the chimney.<br />
+As it was extremely narrow, the man <b>was unable to</b> move,<br />
+&#xa0;but the fire fighters were eventually able to free him by cutting a huge hole in the wall.<br />
+The sorry-looking, blackened figure that emerged,<br />
+&#xa0;admitted at once that he had tried to <b>break into</b> the shop during the night<br />
+&#xa0;&#xa0;but had got stuck in the chimney.<br />
+He had been there for nearly ten hours.<br />
+Justice had been done even before the man <b>was handed over to</b> the police.<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org25d605d" class="outline-2">
+<h2 id="org25d605d"><span class="section-number-2">16.</span> Lesson 36 A chance in a million</h2>
+<div class="outline-text-2" id="text-16">
+<p class="verse">
+What was the chance in a million?<br />
+<br />
+We are less credulous than we used to be.<br />
+In the nineteenth century, a novelist would <b>bring his history to a conclusion</b><br />
+&#xa0;by presenting his readers with a series of coincidences &#x2013; most of them <b>wildly improbable</b>.<br />
+Readers happily <b>accepted the fact that</b> an obscure maidservant was really the hero's mother.<br />
+A long-lost brother, who <b>was presumed dead</b>, was really alive all the time<br />
+&#xa0;and wickedly <b>plotting to bring about the hero's downfall</b>.<br />
+<b>And so on</b>.<br />
+Modern readers would find such naive solutions totally unacceptable.<br />
+Yet, in real life, circumstances do sometimes <b>conspire to</b> bring about coincidences<br />
+&#xa0;which <b>anyone but</b> a nineteenth century novelist would find incredible.<br />
+<br />
+When I was a boy,<br />
+&#xa0;my grandfather told me<br />
+&#xa0;&#xa0;how a German taxi driver, Franz Bussman, found a brother<br />
+&#xa0;&#xa0;&#xa0;who <b>was thought to</b> have been killed twenty years before.<br />
+While on a walking tour with his wife, he <b>stopped to</b> talk to a workman.<br />
+After they had gone on,<br />
+&#xa0;Mrs. Bussman <b>commented on the workman's close resemblance to her husband</b><br />
+&#xa0;&#xa0;and even <b>suggested that</b> he might be his brother.<br />
+Franz <b>poured scorn on</b> the idea,<br />
+&#xa0;pointing out that his brother had been killed in action during the war.<br />
+Though Mrs. Bussman <b>was fully acquainted with</b> this story,<br />
+&#xa0;she thought that <b>there was a chance in a million that</b> she might be right.<br />
+A few days later, she sent a boy to the workman to ask him<br />
+&#xa0;if his name was Hans Bussman.<br />
+<b>Needless to say</b>, the man's name was Hans Bussman and he really was Franz's long-lost brother.<br />
+When the brothers <b>were reunited</b>, Hans explained how it was that he was still alive.<br />
+After having been wounded <b>towards the end of the war</b>,<br />
+&#xa0;he had been sent to hospital and <b>was separated from</b> his unit.<br />
+The hospital had been bombed and Hans had <b>made his way back into</b> Western Germany on foot.<br />
+Meanwhile, his unit was lost and all records of him had been destroyed.<br />
+Hans <b>returned to</b> his family home,<br />
+&#xa0;but the house had been bombed<br />
+&#xa0;&#xa0;and no one in the neighbourhood knew what had <b>become of</b> the inhabitants.<br />
+<b>Assuming that</b> his family had been killed during an air raid,<br />
+&#xa0;Hans settled down in a village fifty miles away where he had remained ever since.<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org2e3e6b2" class="outline-2">
+<h2 id="org2e3e6b2"><span class="section-number-2">17.</span> Lesson 37 The Westhaven Express</h2>
+<div class="outline-text-2" id="text-17">
+<p class="verse">
+What was the mistake the author made?<br />
+<br />
+We have learnt to expect that trains will be punctual.<br />
+After years of conditioning,<br />
+&#xa0;most of us have <b>developed an unshakable faith in</b> railway timetables.<br />
+Ships may be delayed by storms; flights may be cancelled because of bad weather;<br />
+&#xa0;but trains must be on time.<br />
+Only an exceptionally heavy snowfall might temporarily dislocate railway services.<br />
+<b>It is all too easy to blame</b> the railway authorities when something does go wrong.<br />
+The truth is that when mistakes occur, they are more likely to be ours than theirs.<br />
+<br />
+After <b>consulting my railway timetable</b>,<br />
+&#xa0;I <b>noted with satisfaction that</b> there was an express train to Westhaven.<br />
+It <b>went direct</b> from my local station and the journey lasted a mere hour and seventeen minutes.<br />
+When I boarded the train, I <b>could not help noticing</b> that a great many local people got on as well.<br />
+At the time, this did not <b>strike me as odd</b>.<br />
+I <b>reflected that</b> there must be a great many people besides myself<br />
+&#xa0;who <b>wished to take advantage of</b> this excellent service.<br />
+Neither was I surprised when the train stopped at Widley,<br />
+&#xa0;a tiny station a few miles along the line.<br />
+Even a mighty express train can <b>be held up</b> by signals.<br />
+But when the train dawdled at station after station, I began to wonder.<br />
+<b>It suddenly dawned on me</b><br />
+&#xa0;that this express was not <b>roaring down</b> the line at ninety miles an hour,<br />
+&#xa0;&#xa0;but barely chugging along at thirty.<br />
+One hour and seventeen minutes passed and we had not even covered half the distance.<br />
+I asked a passenger if this was the Westhaven Express,<br />
+&#xa0;but he had not even <b>heard of</b> it.<br />
+I determined to <b>lodge a complaint</b> as soon as we arrived.<br />
+Two hours later, I was talking angrily to the station master at Westhaven.<br />
+When he denied the train's existence, I borrowed his <b>copy of</b> the timetable.<br />
+There was <b>a note of triumph</b> in my voice when I told him that it was there <b>in black and white</b>.<br />
+Glancing at it briefly, he told me to look again.<br />
+A tiny asterisk <b>conducted me to</b> a footnote <b>at the bottom of</b> the page.<br />
+It said: 'This service has been suspended.'<br />
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: lenovo</p>
+<p class="date">Created: 2024-05-21 Tue 13:55</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
