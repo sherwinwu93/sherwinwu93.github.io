@@ -1,0 +1,2576 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-05-21 Tue 14:01 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="lenovo" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org7d169a2">Lesson 1 A private conversation</a></li>
+<li><a href="#org7401bad">Lesson 2 Breakfast or lunch?</a></li>
+<li><a href="#orgbdb0837">Lesson 3 Please send me a card.</a></li>
+<li><a href="#orge42e8f7">Lesson 4 An exciting trip</a></li>
+<li><a href="#org8f03f72">Lesson 5 No wrong numbers</a></li>
+<li><a href="#org11ca206">Lesson 6 Percy Buttons</a></li>
+<li><a href="#org8b23b17">Lesson 7 Too late</a></li>
+<li><a href="#orge5f0bdf">Lesson 8 The best and the worst</a></li>
+<li><a href="#org28ae982">Lesson 9 A cold welcome</a></li>
+<li><a href="#org016ca3e">Lesson 10 Not for jazz</a></li>
+<li><a href="#orgc86aa8c">Lesson 11 One good turn deserve another</a></li>
+<li><a href="#org24ae779">Lesson 12 Goodbye and good luck</a></li>
+<li><a href="#orgf92395d">Lesson 13 The Greenwood Boys</a></li>
+<li><a href="#orgdda72de">Lesson 14 Do you speak English?</a></li>
+<li><a href="#orgd35a73f">Lesson 15 Good news</a></li>
+<li><a href="#org6b63b73">Lesson 16 A polite request</a></li>
+<li><a href="#orgdde0739">Lesson 17 Always young</a></li>
+<li><a href="#org868f47f">Lesson 18 He often does this!</a></li>
+<li><a href="#org0d9c4e8">Lesson 19 Sold out</a></li>
+<li><a href="#org2b51b5e">Lesson 20 One man in a boat</a></li>
+<li><a href="#org91a12a0">Lesson 21 Mad or not</a></li>
+<li><a href="#org436e75e">Lesson 22 A glass envelope</a></li>
+<li><a href="#orgbc58f29">Lesson 23 A new house</a></li>
+<li><a href="#org2207039">Lesson 24 It could be worse</a></li>
+<li><a href="#orgafd0279">Lesson 25 Do the English speak English?</a></li>
+<li><a href="#orgcb7ae8a">Lesson 26 The best art critics</a></li>
+<li><a href="#org35ef71a">Lesson 27 A wet night</a></li>
+<li><a href="#org32c7784">Lesson 28 No Parking</a></li>
+<li><a href="#orgcd7c0d4">Lesson 29 Taxi!</a></li>
+<li><a href="#org853edde">Lesson 30 Football or polo?</a></li>
+<li><a href="#org41510a5">Lesson 31 Success story</a></li>
+<li><a href="#orgd40eae5">Lesson 32 Shopping made easy</a></li>
+<li><a href="#orgbcfa894">Lesson 33 Out of the darkness</a></li>
+<li><a href="#orgc0a1687">Lesson 34 Quick work</a></li>
+<li><a href="#org9d796f2">Lesson 35 Stop thief!</a></li>
+<li><a href="#org6de0d5a">Lesson 36 Across the Channel</a></li>
+<li><a href="#org2e4a9e8">Lesson 37 The Olympic Games</a></li>
+<li><a href="#org64947c8">Lesson 38 Everything except the weather</a></li>
+<li><a href="#org8296ff5">Lesson 39 Am I all right?</a></li>
+<li><a href="#org82f5f8d">Lesson 40 Food and talk</a></li>
+<li><a href="#orge0664c4">Lesson 41 Do you call that a hat?</a></li>
+<li><a href="#orgfe315a6">Lesson 42 Not very musical</a></li>
+<li><a href="#orgff5b33d">Lesson 43 Over the South Pole</a></li>
+<li><a href="#org60543fd">Lesson 44 Through the forest</a></li>
+<li><a href="#orga31d840">Lesson 45 A clear conscience</a></li>
+<li><a href="#orgb9c53cc">Lesson 46 Expensive and uncomfortable</a></li>
+<li><a href="#org00b432c">Lesson 47 A thirsty ghost</a></li>
+<li><a href="#org3a6e60c">Lesson 48 Did you want to tell me something</a></li>
+<li><a href="#org5dcb559">Lesson 49 The end of a dream</a></li>
+<li><a href="#org24db534">Lesson 50 Taken for a ride</a></li>
+<li><a href="#org462bc21">Lesson 51 Reward for virtue</a></li>
+<li><a href="#org34170d5">Lesson 52 A pretty carpet</a></li>
+<li><a href="#orged3e49a">Lesson 53 Hot snake</a></li>
+<li><a href="#org669e52a">Lesson 54 Sticky fingers</a></li>
+<li><a href="#org7118ff5">Lesson 55 Not a gold mine</a></li>
+<li><a href="#orgb7c963e">Lesson 56 Faster than sound!</a></li>
+<li><a href="#org5cf01bb">Lesson 57 Can I help you, madam?</a></li>
+<li><a href="#org8239a91">Lesson 58 A blessing in disguise?</a></li>
+<li><a href="#orgecf468e">Lesson 59 In or out?</a></li>
+<li><a href="#org533fd8f">Lesson 60 The future</a></li>
+<li><a href="#org4d82b75">Lesson 61 Trouble with the Hubble</a></li>
+<li><a href="#org67ca2ac">Lesson 62 After the fire</a></li>
+<li><a href="#orgf2710db">Lesson 63 She was not amused</a></li>
+<li><a href="#orgf7a03e2">Lesson 64 The Channel Tunnel</a></li>
+<li><a href="#org9235526">Lesson 65 Jumbo versus the police</a></li>
+<li><a href="#org5ce149b">Lesson 66 Sweet as honey!</a></li>
+<li><a href="#orgcc9a41c">Lesson 67 Volcanoes</a></li>
+<li><a href="#org5d67c15">Lesson 68 Persistent</a></li>
+<li><a href="#org10fb6b9">Lesson 69 But not murder!</a></li>
+<li><a href="#org313fa74">Lesson 70 Red for danger</a></li>
+<li><a href="#org7d3544f">Lesson 71 A famous clock</a></li>
+<li><a href="#orgb2d504e">Lesson 72 A car called Bluebird</a></li>
+<li><a href="#org57e9761">Lesson 73 The record-holder</a></li>
+<li><a href="#orgbe62238">Lesson 74 Out of the limelight</a></li>
+<li><a href="#org5e0a6c1">Lesson 75 SOS</a></li>
+<li><a href="#orge6b423c">Lesson 76 April Fool's Day</a></li>
+<li><a href="#orgabd2d43">Lesson 77 A successful operation</a></li>
+<li><a href="#orged639de">Lesson 78 The last one?</a></li>
+<li><a href="#org4bbafca">Lesson 79 By air</a></li>
+<li><a href="#org4f370fe">Lesson 80 The Crystal Palace</a></li>
+<li><a href="#org27bf0cd">Lesson 81 Escape</a></li>
+<li><a href="#orge9043a0">Lesson 82 Monster or fish?</a></li>
+<li><a href="#orga50cb92">Lesson 83 After the elections</a></li>
+<li><a href="#org474a585">Lesson 84 On strike</a></li>
+<li><a href="#org27d5b9d">Lesson 85 Never too old to learn</a></li>
+<li><a href="#org5542915">Lesson 86 Out of control</a></li>
+<li><a href="#org9964703">Lesson 87 A perfect alibi</a></li>
+<li><a href="#orgcac50f9">Lesson 88 Trapped in a mine</a></li>
+<li><a href="#org72f6029">Lesson 89 A slip of the tongue</a></li>
+<li><a href="#org1a2fe49">Lesson 90 What's for supper?</a></li>
+<li><a href="#orge069112">Lesson 91 Three men in a basket</a></li>
+<li><a href="#org1ea0cb4">Lesson 92 Asking for trouble</a></li>
+<li><a href="#org1e1c47d">Lesion 93 A noble gift</a></li>
+<li><a href="#org454a82a">Lesson 94 Future champions</a></li>
+<li><a href="#org839cf77">Lesson 95 A fantasy</a></li>
+<li><a href="#orge34438c">Lesson 96 The dead return</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org7d169a2" class="outline-2">
+<h2 id="org7d169a2">Lesson 1 A private conversation</h2>
+<div class="outline-text-2" id="text-org7d169a2">
+<p class="verse">
+Why did the writer complain to the people behind him?<br />
+<br />
+Last week I <b>went to the theatre</b>.<br />
+I <b>had a very good seat</b>.<br />
+The play was very interesting.<br />
+<br />
+I did not enjoy it.<br />
+A young man and a young woman were sitting behind me.<br />
+They were talking loudly.<br />
+<br />
+I <b>got very angry</b>.<br />
+I could not hear the actors.<br />
+I turned round.<br />
+I looked at the man and the woman angrily.<br />
+They did not pay any attention.<br />
+<br />
+<b>In the end</b>, I could not bear it.<br />
+I turned round again.<br />
+'I can't hear a word!' I said angrily.<br />
+'<b>It's none of your business</b>,' the young man said rudely. 'This is a private conversation.'<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org7401bad" class="outline-2">
+<h2 id="org7401bad">Lesson 2 Breakfast or lunch?</h2>
+<div class="outline-text-2" id="text-org7401bad">
+<p class="verse">
+Why was the writer's aunt surprised?<br />
+<br />
+It was Sunday.<br />
+I never <b>get up early</b> on Sundays.<br />
+I sometimes stay in bed until lunchtime.<br />
+<br />
+Last Sunday I got up very late.<br />
+I looked out of the window.<br />
+It was dark outside.<br />
+'What a day!' I thought. 'It's raining again.'<br />
+<br />
+<b>Just then</b>, the telephone rang.<br />
+It was my aunt Lucy.<br />
+'I've just arrived by train,' she said.<br />
+'I'm coming to see you.'<br />
+'But I'm still <b>having breakfast</b>,' I said.<br />
+'What are you doing?' she asked.<br />
+'I'm having breakfast,' I repeated.<br />
+'Dear me,' she said. 'Do you always get up so late? It's one o'clock!'<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgbdb0837" class="outline-2">
+<h2 id="orgbdb0837">Lesson 3 Please send me a card.</h2>
+<div class="outline-text-2" id="text-orgbdb0837">
+<p class="verse">
+How many cards did the writer send?<br />
+<br />
+Postcards always spoil my holidays.<br />
+Last summer, I went to Italy.<br />
+I visited museums and sat in public gardens.<br />
+A friendly waiter <b>taught me a few words of Italian</b>.<br />
+Then he <b>lent me a book</b>.<br />
+I read a few lines, but I did not understand a word.<br />
+Every day I <b>thought about</b> postcards.<br />
+My holidays passed quickly, but I did not send cards to my friends.<br />
+<b>On the last day</b> I made a big decision.<br />
+I got up early and bought thirty-seven cards.<br />
+I <b>spent the whole day in my room</b>, but I did not write a single card!<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge42e8f7" class="outline-2">
+<h2 id="orge42e8f7">Lesson 4 An exciting trip</h2>
+<div class="outline-text-2" id="text-orge42e8f7">
+<p class="verse">
+Why is Tim finding this trip exciting?<br />
+<br />
+I have just received a letter from my brother, Tim.<br />
+He is in Australia.<br />
+He has been there for six months.<br />
+Tim is an engineer.<br />
+He is working for a big firm and he has already visited <b>a great number of</b> different places in Australia.<br />
+He has just bought an Australian car and <b>has gone to Alice Springs</b>, a small town in the centre of Australia.<br />
+He will soon visit Darwin.<br />
+From there, he will <b>fly to Perth</b>.<br />
+My brother has never been abroad before, so he is <b>finding this trip very exciting</b>.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org8f03f72" class="outline-2">
+<h2 id="org8f03f72">Lesson 5 No wrong numbers</h2>
+<div class="outline-text-2" id="text-org8f03f72">
+<p class="verse">
+What does 'No wrong numbers' mean?<br />
+<br />
+Mr. James Scott has a garage in Silbury<br />
+&#xa0;and now he has just bought another garage in Pinhurst.<br />
+Pinhurst <b>is only five miles from</b> Silbury,<br />
+&#xa0;but Mr. Scott cannot <b>get a telephone for his new garage</b>,<br />
+&#xa0;so he has just bought twelve pigeons.<br />
+Yesterday, a pigeon carried the first message from Pinhurst to Silbury.<br />
+The bird <b>covered the distance in three minutes</b>.<br />
+<b>Up to now</b>, Mr. Scott has sent <b>a great many</b> requests for spare parts<br />
+&#xa0;and other urgent messages from one garage to the other.<br />
+<b>In this way</b>, he has begun his own private telephone service.<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org11ca206" class="outline-2">
+<h2 id="org11ca206">Lesson 6 Percy Buttons</h2>
+<div class="outline-text-2" id="text-org11ca206">
+<p class="verse">
+Who is Percy Buttons?<br />
+<br />
+I have just <b>moved to a house</b> in Bridge Street.<br />
+Yesterday a beggar <b>knocked at my door</b>.<br />
+He <b>asked me for a meal and a glass of beer</b>.<br />
+<b>In return for</b> this, the beggar <b>stood on his head</b> and sang songs.<br />
+I gave him a meal.<br />
+He ate the food and drank the beer.<br />
+Then he put a piece of cheese in his pocket and went away.<br />
+Later a neighbor told me about him.<br />
+Everybody knows him.<br />
+His name is Percy Buttons.<br />
+He <b>calls at</b> every house in the street <b>once a month</b><br />
+&#xa0;and always <b>asks for a meal and a glass of beer</b>.<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org8b23b17" class="outline-2">
+<h2 id="org8b23b17">Lesson 7 Too late</h2>
+<div class="outline-text-2" id="text-org8b23b17">
+<p class="verse">
+Did the detectives save the diamonds?<br />
+<br />
+The plane was late and detectives were waiting at the airport <b>all morning</b>.<br />
+They were expecting <b>a valuable parcel of diamond</b> from South Africa.<br />
+<b>A few hours earlier</b>, someone had told the police that thieves would <b>try to steal</b> the diamonds.<br />
+When the plane arrived, some of the detectives were waiting inside the main building<br />
+&#xa0;while others were waiting on the airfield.<br />
+Two men took the parcel off the plane and carried it into the Customs House.<br />
+While two detectives were <b>keeping guard</b> at the door,<br />
+&#xa0;two others opened the parcel.<br />
+<b>To their surprise</b>, <b>the precious parcel was full of stones and sand</b>!<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orge5f0bdf" class="outline-2">
+<h2 id="orge5f0bdf">Lesson 8 The best and the worst</h2>
+<div class="outline-text-2" id="text-orge5f0bdf">
+<p class="verse">
+Why is Joe's garden the most beautiful one in the town?<br />
+<br />
+Joe Sanders has the most beautiful garden in our town.<br />
+Nearly everybody <b>enters for</b> 'The Nicest Garden Competition' each year,<br />
+&#xa0;but Joe wins every time.<br />
+Bill Frith's garden is larger than Joe's.<br />
+Bill works harder than Joe and grows more flowers and vegetables,<br />
+&#xa0;but Joe's garden is more interesting.<br />
+He has <b>made neat paths</b> and has built a wooden bridge over a pool.<br />
+I like gardens too, but I do not like hard work.<br />
+Every year I <b>enter for</b> the garden competition too,<br />
+&#xa0;and I always <b>win a little prize</b> for the worst garden in the town!<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org28ae982" class="outline-2">
+<h2 id="org28ae982">Lesson 9 A cold welcome</h2>
+<div class="outline-text-2" id="text-org28ae982">
+<p class="verse">
+What does 'a cold welcome' refer to?<br />
+<br />
+On Wednesday evening, we went to the Town Hall.<br />
+It was <b>the last day of the year</b><br />
+&#xa0;and <b>a large crowd of</b> people had gathered under the Town Hall clock.<br />
+It would strike twelve <b>in twenty minutes' time</b>.<br />
+Fifteen minutes passed and then, at five to twelve, the clock stopped.<br />
+The big minute hand did not move.<br />
+We waited and waited, but nothing happened.<br />
+Suddenly someone shouted, 'It's two minutes past twelve! The clock has stopped!'<br />
+I looked at my watch.<br />
+It was true.<br />
+The big clock <b>refused to welcome</b> the New Year.<br />
+<b>At that moment</b> everybody <b>began to laugh</b> and sing.<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org016ca3e" class="outline-2">
+<h2 id="org016ca3e">Lesson 10 Not for jazz</h2>
+<div class="outline-text-2" id="text-org016ca3e">
+<p class="verse">
+What happened to the clavichord?<br />
+<br />
+We have an old musical instrument.<br />
+It is called a clavichord.<br />
+It <b>was made in</b> Germany in 1681.<br />
+Our clavichord is kept in the living-room.<br />
+It has <b>belonged to</b> our family for a long time.<br />
+The instrument was bought by my grandfather many years ago.<br />
+Recently it was damaged by a visitor.<br />
+She tried to <b>play jazz</b> on it!<br />
+She struck the keys too hard and two of the strings were broken.<br />
+My father was shocked.<br />
+Now we <b>are not allowed to touch</b> it.<br />
+It is being repaired by a friend of my father's.<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgc86aa8c" class="outline-2">
+<h2 id="orgc86aa8c">Lesson 11 One good turn deserve another</h2>
+<div class="outline-text-2" id="text-orgc86aa8c">
+<p class="verse">
+Who paid for Tony's dinner?<br />
+<br />
+I was having breakfast in a restaurant, when Tony Steele came in.<br />
+Tony worked in a lawyers' office years ago,<br />
+&#xa0;but he is now working at a bank.<br />
+He <b>gets a good salary</b>,<br />
+&#xa0;but he always <b>borrows money from his friends</b>, and never <b>pays it back</b>.<br />
+He saw me and came and sat at the same table.<br />
+He has never borrowed money from me.<br />
+While he was eating, I <b>asked him to lend</b> twenty pounds.<br />
+To my surprise, he gave the money immediately.<br />
+"I have never borrowed money from you."<br />
+&#xa0;he said: "so now you can <b>pay for my dinner</b>."<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org24ae779" class="outline-2">
+<h2 id="org24ae779">Lesson 12 Goodbye and good luck</h2>
+<div class="outline-text-2" id="text-org24ae779">
+<p class="verse">
+Where is Captain Alison going and how?<br />
+<br />
+Our neighbour, Captain Charles Alison,will <b>sail from Portsmouth</b> tomorrow.<br />
+We'll meet him at the harbour early in the morning.<br />
+He will be in his small boat, Topsail.<br />
+Topsail is a famous little boat.<br />
+It has sailed across the Atlantic many times.<br />
+Captain Alison will <b>set out</b> at eight o'clock, so we'll <b>have plenty of time</b>.<br />
+We'll see his boat and then we'll <b>say goodbye to him</b>.<br />
+He <b>will be away</b> for two months.<br />
+We <b>are very proud of</b> him.<br />
+He will <b>take part in</b> an important race across the Atlantic.<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgf92395d" class="outline-2">
+<h2 id="orgf92395d">Lesson 13 The Greenwood Boys</h2>
+<div class="outline-text-2" id="text-orgf92395d">
+<p class="verse">
+Why will the police have a difficult time?<br />
+<br />
+The Greenwood Boys are <b>a group of</b> pop singer.<br />
+<b>At present</b>, they are visiting <b>all parts of the country</b>.<br />
+They will be arriving here tomorrow.<br />
+They will be coming by train<br />
+&#xa0;and most of the young people in the town will be meeting them at the station.<br />
+Tomorrow evening they will be singing at the Workers' Club.<br />
+The Greenwood Boys will be staying for five days.<br />
+During this time, they will <b>give five performances</b>.<br />
+<b>As usual</b>, the police will <b>have a difficult time</b>.<br />
+They will be trying to <b>keep order</b>.<br />
+It is always the same <b>on these occasions</b>.<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgdda72de" class="outline-2">
+<h2 id="orgdda72de">Lesson 14 Do you speak English?</h2>
+<div class="outline-text-2" id="text-orgdda72de">
+<p class="verse">
+Did the young man speak English?<br />
+<br />
+I <b>had an amusing experience</b> last year.<br />
+After I had left a small village in the south of France, I <b>drove on</b> the next town.<br />
+<b>On the way</b>, a young man <b>waved to me</b>.<br />
+I stopped and he <b>asked me for a lift</b>.<br />
+As soon as he had got into the car,<br />
+&#xa0;I said good morning to him <b>in French</b> and he replied in the same language.<br />
+<b>Apart from</b> a few words, I do not know any French at all.<br />
+Neither of us spoke during the journey.<br />
+I had nearly reached the town,<br />
+&#xa0;when the young man suddenly said, very slowly,<br />
+&#xa0;&#xa0;'Do you speak English?'<br />
+As I soon learnt, he was English himself!<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgd35a73f" class="outline-2">
+<h2 id="orgd35a73f">Lesson 15 Good news</h2>
+<div class="outline-text-2" id="text-orgd35a73f">
+<p class="verse">
+What was the good news?<br />
+<br />
+The secretary told me that Mr. Harmsworth would see me.<br />
+I felt very nervous when I went into his office.<br />
+He did not look up from his desk when I entered.<br />
+After I had sat down, he said that business was very bad.<br />
+He told me that the firm could not <b>afford to pay</b> such large salaries.<br />
+Twenty people had already left.<br />
+I knew that <b>my turn had come</b>.<br />
+'Mr. Harmsworth,' I said <b>in a weak voice</b>.<br />
+'Don't interrupt', he said.<br />
+Then he smiled and told me I would receive an extra thousand pounds a year!<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org6b63b73" class="outline-2">
+<h2 id="org6b63b73">Lesson 16 A polite request</h2>
+<div class="outline-text-2" id="text-org6b63b73">
+<p class="verse">
+What was the polite request?<br />
+<br />
+If you <b>park your car</b> in the wrong place, a traffic policeman will soon find it.<br />
+You will be very lucky if he lets you go without a ticket.<br />
+However, this does not always happen.<br />
+Traffic police are sometimes very polite.<br />
+During a holiday in Sweden, I found this note on my car:<br />
+&#xa0;'Sir, we welcome you to our city.<br />
+This is a "No Parking" area.<br />
+You will enjoy your stay here if you <b>pay atention to</b> our street signs.<br />
+This note is only a reminder.'<br />
+If you receive a request like this, you cannot <b>fail to obey</b> it!<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgdde0739" class="outline-2">
+<h2 id="orgdde0739">Lesson 17 Always young</h2>
+<div class="outline-text-2" id="text-orgdde0739">
+<p class="verse">
+Why doesn't Aunt Jennifer tell anyone how old she is?<br />
+<br />
+My aunt Jennifer is an actress.<br />
+She must be <b>at least</b> thirty-five years old.<br />
+<b>In spite of this</b>, she often appears on the stage as a young girl.<br />
+Jennifer will have to <b>take part in</b> a new play soon.<br />
+This time, she will be a girl of seventeen.<br />
+In the play, she must appear in a bright red dress and long black stockings.<br />
+Last year in another play, she had to wear short socks and a bright, orange-coloured dress.<br />
+If anyone ever asks her how old she is, she always answers,<br />
+&#xa0;'Darling, it must be terrible to be grown up!'<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org868f47f" class="outline-2">
+<h2 id="org868f47f">Lesson 18 He often does this!</h2>
+<div class="outline-text-2" id="text-org868f47f">
+<p class="verse">
+What had happened to the writer's bag?<br />
+<br />
+After I had had lunch at a village pub, I looked for my bag.<br />
+I had left it on a chair beside the door and now it wasn't there!<br />
+As I was <b>looking for</b> it, the landlord came in.<br />
+'Did you <b>have a good meal</b>?' he asked.<br />
+'Yes, thank you,' I answered,<br />
+&#xa0;'but I can't <b>pay the bill</b>.<br />
+I haven't got my bag.'<br />
+The landlord smiled and immmediately went out.<br />
+<b>In a few minutes</b> he returned with my bag and gave it back to me.<br />
+'I'm very sorry,' he said.<br />
+'My dog had taken it into the garden.<br />
+He often does this!'<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org0d9c4e8" class="outline-2">
+<h2 id="org0d9c4e8">Lesson 19 Sold out</h2>
+<div class="outline-text-2" id="text-org0d9c4e8">
+<p class="verse">
+When will the writer see the play?<br />
+<br />
+'The play may begin at any moment,' I said.<br />
+'It may have begun already,' Susan answered.<br />
+I <b>hurried to the ticket office</b>.<br />
+'May I have two tickets please?' I asked.<br />
+'I'm sorry, we've <b>sold out</b>,' the girl said.<br />
+'<b>What a pity</b>!' Susan exclaimed.<br />
+Just then, a man hurried to the ticket office.<br />
+'Can I return these two tickets?' he asked.<br />
+'Certainly,' the girl said.<br />
+I went back to the ticket office <b>at once</b>.<br />
+'Could I have those two tickets please?' I asked.<br />
+'Certainly,' the girl said, 'but they're for next Wednesday's performance.<br />
+Do you still want them?'<br />
+'I <b>might as well</b> have them,' I said sadly.<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org2b51b5e" class="outline-2">
+<h2 id="org2b51b5e">Lesson 20 One man in a boat</h2>
+<div class="outline-text-2" id="text-org2b51b5e">
+<p class="verse">
+Why is fishing the writer's favourite sport?<br />
+<br />
+Fishing is my favourite sport.<br />
+I often fish for hours without catching anything.<br />
+But this does not worry me.<br />
+Some fishermen are unlucky.<br />
+<b>Instead of catching fish</b>, they catch old boots and rubbish.<br />
+I am even less lucky.<br />
+I never catch anything &#x2013; not even old boots.<br />
+After having <b>spent whole mornings on the river</b>,<br />
+&#xa0;I always go home with an empty bag.<br />
+'You must <b>give up fishing</b>!' my friends say.<br />
+'It's a waste of time.<br />
+'But they don't realize one important thing.<br />
+<b>I'm not really interested</b> in fishing.<br />
+I am only interested in sitting in a boat and doing nothing at all.<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org91a12a0" class="outline-2">
+<h2 id="org91a12a0">Lesson 21 Mad or not</h2>
+<div class="outline-text-2" id="text-org91a12a0">
+<p class="verse">
+Why do people think the writer is mad?<br />
+<br />
+Aeroplanes are slowly <b>driving me mad</b>.<br />
+I live near an airport<br />
+&#xa0;and passing planes can be heard night and day.<br />
+The airport was built years ago,<br />
+&#xa0;but <b>for some reason</b> it could not be used then.<br />
+Last year, however, it <b>came into use</b>.<br />
+Over a hundred people must have been driven away from their homes by the noise.<br />
+I am one of the few people left.<br />
+Sometimes I think this house will be knocked down by a passing plane.<br />
+I have been offered <b>a large sum of money</b> to go away,<br />
+&#xa0;but I <b>am determined to stay</b> here.<br />
+Everybody says I must be mad<br />
+&#xa0;and they are probably right.<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org436e75e" class="outline-2">
+<h2 id="org436e75e">Lesson 22 A glass envelope</h2>
+<div class="outline-text-2" id="text-org436e75e">
+<p class="verse">
+How did Jane receive a letter from a stranger?<br />
+<br />
+My daughter, Jane, never <b>dreamed of receiving</b> a letter from a girl <b>of her own age</b> in Holland.<br />
+Last year, we were travelling across the Channel<br />
+&#xa0;and Jane put a piece of paper with her name and address on it into a bottle.<br />
+She threw the bottle into the sea.<br />
+She never <b>thought of</b> it again,<br />
+&#xa0;but ten months later, she received a letter from a girl in Holland.<br />
+Both girls <b>write to each other</b> regularly now.<br />
+However, they have <b>decided to use</b> the post office.<br />
+Letters will cost a little more,<br />
+&#xa0;but they will certainly travel faster.<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgbc58f29" class="outline-2">
+<h2 id="orgbc58f29">Lesson 23 A new house</h2>
+<div class="outline-text-2" id="text-orgbc58f29">
+<p class="verse">
+Why is the new house special?<br />
+<br />
+I <b>had a letter from my sister</b> yesterday.<br />
+She lives in Nigeria.<br />
+In her letter, she said that she would come to England next year.<br />
+If she comes, she will <b>get a surprise</b>.<br />
+We are now living in a beautiful new house in the country.<br />
+Work on it had begun before my sister left.<br />
+The house was completed five months ago.<br />
+In my letter, I told her that she could stay with us.<br />
+The house has many large rooms<br />
+&#xa0;and there is a lovely garden.<br />
+It is a very modern house,<br />
+&#xa0;so it looks strange to some people.<br />
+It must be the only modern house in the district.<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org2207039" class="outline-2">
+<h2 id="org2207039">Lesson 24 It could be worse</h2>
+<div class="outline-text-2" id="text-org2207039">
+<p class="verse">
+Had the writer's money been stolen?<br />
+<br />
+I entered the hotel manager's office and sat down.<br />
+I had just lost $50 and I felt very upset.<br />
+'I left the money in my room,' I said, 'and it's not there now.'<br />
+The manager was sympathetic,<br />
+&#xa0;but he could do nothing.<br />
+'Everyone's losing money these days,' he said.<br />
+He <b>started to</b> <b>complain about this wicked world</b><br />
+&#xa0;but was interrupted by a knock at the door.<br />
+A girl came in and put an envelope on his desk.<br />
+It contained $50.<br />
+'I found this outside this gentleman's room,' she said.<br />
+'Well,' I said to the manager, 'there is still some honesty in this world!'<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgafd0279" class="outline-2">
+<h2 id="orgafd0279">Lesson 25 Do the English speak English?</h2>
+<div class="outline-text-2" id="text-orgafd0279">
+<p class="verse">
+Why does the writer not understand the porter?<br />
+<br />
+I arrived in London at last.<br />
+The railway station was big, black and dark.<br />
+I did <b>not know the way to my hotel</b>,<br />
+&#xa0;so I asked a porter.<br />
+I not only spoke English very carefully, but very clearly as well.<br />
+The porter, however, could not understand me.<br />
+I repeated my question several times<br />
+&#xa0;and at last he understood.<br />
+He answered me,<br />
+&#xa0;but he spoke neither slowly nor clearly.<br />
+'I am a foreigner,' I said.<br />
+Then he spoke slowly,<br />
+&#xa0;but I could not understand him.<br />
+My teacher never spoke English like that!<br />
+The porter and I looked at each other and smiled.<br />
+Then he said somethings and I understood it.<br />
+'You'll soon learn English!' he said.<br />
+I wonder, in England, each person speaks a different language.<br />
+The English understand each other,<br />
+&#xa0;but I don't understand them!<br />
+Do they speak English?<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgcb7ae8a" class="outline-2">
+<h2 id="orgcb7ae8a">Lesson 26 The best art critics</h2>
+<div class="outline-text-2" id="text-orgcb7ae8a">
+<p class="verse">
+Who is the student's best critic?<br />
+<br />
+I am an art student<br />
+&#xa0;and I paint a lot of pictures.<br />
+<b>Many people pretend that</b> they understand modern art.<br />
+They always tell you what a picture is 'about'.<br />
+Of course, many pictures are not 'about' anything.<br />
+They are just pretty patterns.<br />
+We like them in the same way<br />
+&#xa0;that we like pretty curtain material.<br />
+I think that young children often appreciate modern pictures better than anyone else.<br />
+They notice more.<br />
+My sister is only seven,<br />
+&#xa0;but she always tells me whether my pictures are good or not.<br />
+She came into my room yesterday.<br />
+'What are you doing?' she asked.<br />
+'I'm hanging this picture on the wall,' I answered.<br />
+'It's a new one. Do you like it?'<br />
+She looked at it critically for a moment.<br />
+'It's all right,' she said, 'but isn't it upside down?'<br />
+I looked at it again.<br />
+She was right! It was!<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org35ef71a" class="outline-2">
+<h2 id="org35ef71a">Lesson 27 A wet night</h2>
+<div class="outline-text-2" id="text-org35ef71a">
+<p class="verse">
+What happened to the boys in the night?<br />
+<br />
+Late in the afternoon, the boys <b>put up their tent</b> in the middle of a field.<br />
+As soon as this was done,<br />
+&#xa0;they cooked a meal over an open fire.<br />
+They were all hungry<br />
+&#xa0;and the food smelled good.<br />
+After a wonderful meal, they <b>told stories</b> and sang songs by the campfire.<br />
+But some time later it began to rain.<br />
+The boys felt tired<br />
+&#xa0;so they <b>put out the fire</b> and crept into their tent.<br />
+Their sleeping bags were warm and comfortable,<br />
+&#xa0;so they all slept soundly.<br />
+In the middle of the night, two boys <b>woke up</b> and began shouting.<br />
+The tent was full of water!<br />
+They all leapt out of their sleeping bags and hurried outside.<br />
+It was raining heavily<br />
+&#xa0;and they found that a stream had formed in the field.<br />
+The stream wound its way across the field<br />
+&#xa0;and then flowed right under their tent.<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org32c7784" class="outline-2">
+<h2 id="org32c7784">Lesson 28 No Parking</h2>
+<div class="outline-text-2" id="text-org32c7784">
+<p class="verse">
+What is Jasper White's problem?<br />
+<br />
+Jasper White is one of those rare people<br />
+&#xa0;who believes in ancient myths.<br />
+He has just bought a new house in the city,<br />
+&#xa0;but ever since he moved in,<br />
+&#xa0;he has <b>had trouble with cars</b> and their owners.<br />
+When he returns home at night,<br />
+&#xa0;he always finds that someone has parked a car outside his gate.<br />
+Because of this, he has not been able to get his own car into his garage even once.<br />
+Jasper has put up 'No Parking' signs outside his gate,<br />
+&#xa0;but these have not <b>had any effect</b>.<br />
+Now he has put an ugly stone head over the gate.<br />
+It is one of the ugliest faces I have ever seen.<br />
+I asked him what it was<br />
+&#xa0;and he told me that it was Medusa, the Gorgon.<br />
+Jasper hopes that she will turn cars and their owners to stone.<br />
+But none of them has been turned to stone yet!<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgcd7c0d4" class="outline-2">
+<h2 id="orgcd7c0d4">Lesson 29 Taxi!</h2>
+<div class="outline-text-2" id="text-orgcd7c0d4">
+<p class="verse">
+Does Captain Fawcett think any trip is too dangerous?<br />
+<br />
+Captain Ben Fawcett has bought an unusual taxi and has begun a new service.<br />
+The taxi is a small Swiss aeroplane called a 'Pilatus Porter'.<br />
+This wonderful plane can carry seven passengers.<br />
+The most surprising thing about it, however, is that it can land anywhere;<br />
+&#xa0;on snow, water, or even on a ploughed field.<br />
+Captain Fawcett's first passengers was a doctor<br />
+&#xa0;who flew from Birmingham to a lonely village in the Welsh mountains.<br />
+Since then, Captain Fawcett has flown passengers to many unusual places.<br />
+Once he landed on the roof of a block of flats and on another occasion,<br />
+&#xa0;he landed in a deserted car park.<br />
+Captain Fawcett has just refused a strange request from a businessman.<br />
+The man wanted to fly to Rockall, a lonely island in the Atlantic Ocean,<br />
+&#xa0;but Captain Fawcett did not take him<br />
+&#xa0;&#xa0;because the trip was too dangerous.<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org853edde" class="outline-2">
+<h2 id="org853edde">Lesson 30 Football or polo?</h2>
+<div class="outline-text-2" id="text-org853edde">
+<p class="verse">
+What happened to the man in the boat?<br />
+<br />
+The Wayle is a small river that cuts across the park near my home.<br />
+I like sitting by the Wayle on fine afternoons.<br />
+It was warm last Sunday, so I went and sat on the river bank as usual.<br />
+Some children were playing games on the bank and there were some people rowing on the river.<br />
+Suddenly, one of the children kicked a ball very hard and it went towards a passing boat.<br />
+Some people on the bank <b>called out to the man</b> in the boat, but he did not hear them.<br />
+The ball struck him so hard that he nearly fell into the water.<br />
+I turned to look at the children, but there weren't any in sight: they had all run away!<br />
+The man laughed when he realized what had happened.<br />
+He called out to the children and threw the ball back to the bank.<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org41510a5" class="outline-2">
+<h2 id="org41510a5">Lesson 31 Success story</h2>
+<div class="outline-text-2" id="text-org41510a5">
+<p class="verse">
+What was Frank's first job?<br />
+<br />
+Yesterday afternoon Frank Hawkins was telling me about his experience as a young man.<br />
+Before he retired,<br />
+&#xa0;Frank was the head of a very large business company,<br />
+&#xa0;&#xa0;but as a boy he used to work in a small shop.<br />
+<b>It was his job to repair bicycles</b><br />
+&#xa0;and at that time he used to work fourteen hours a day.<br />
+He saved money for years<br />
+&#xa0;and in 1958 he bought a small workshop of his own.<br />
+<b>In his twenties</b> Frank used to make spare parts for aeroplanes.<br />
+At that time he had two helpers.<br />
+In a few years the small workshop had become a large factory<br />
+&#xa0;&#xa0;which employed seven hundred and twenty-eight people.<br />
+Frank smiled when he remembered his hard early years and the long road to success.<br />
+He was still smiling<br />
+&#xa0;when the door opened and his wife came in.<br />
+She wanted him to repair their grandson's bicycle.<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgd40eae5" class="outline-2">
+<h2 id="orgd40eae5">Lesson 32 Shopping made easy</h2>
+<div class="outline-text-2" id="text-orgd40eae5">
+<p class="verse">
+Who was the thief?<br />
+<br />
+People are not so honest as they once were.<br />
+The temptation to steal is greater than ever before &#x2013; especially in large shops.<br />
+A detective recently watched a well-dressed woman<br />
+&#xa0;who always went into a large store on Monday mornings.<br />
+One Monday, there were fewer people in the shop than usual when the woman came in,<br />
+&#xa0;&#xa0;so <b>it was easier for the detective to watch her</b>.<br />
+The woman first bought a few small articles.<br />
+After a little time, she chose one of the most expensive dresses in the shop<br />
+&#xa0;&#xa0;and <b>handed it to an assistant</b> who <b>wrapped it up</b> for her as quickly as possible.<br />
+<br />
+Then the woman simply took the parcel and walked out of the shop without paying.<br />
+When she was arrested,<br />
+&#xa0;the detective found out that the shop assistant was her daughter.<br />
+The girl gave her mother a free dress once a week.<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgbcfa894" class="outline-2">
+<h2 id="orgbcfa894">Lesson 33 Out of the darkness</h2>
+<div class="outline-text-2" id="text-orgbcfa894">
+<p class="verse">
+Why was the girl in the hospital?<br />
+<br />
+Nearly a week passed before the girl was able to explain what had happened to her.<br />
+One afternoon she set out from the coast in a small boat and was caught in a storm.<br />
+Towards evening, the boat struck a rock and the girl jumped into the sea.<br />
+Then she swam to the shore after spending the whole night in the water.<br />
+Early next morning, she saw a light ahead.<br />
+She knew she was near the shore because the light <b>was high up</b> on the cliffs.<br />
+<b>On arriving</b> at the shore, the girl <b>struggled up</b> the cliff towards the light she had seen.<br />
+That was all she remembered.<br />
+When she woke up a day later, she found herself in hospital.<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgc0a1687" class="outline-2">
+<h2 id="orgc0a1687">Lesson 34 Quick work</h2>
+<div class="outline-text-2" id="text-orgc0a1687">
+<p class="verse">
+How long had the police taken to find his bicycle?<br />
+<br />
+Dan Robinson has been worried all week.<br />
+Last Tuesday he received a letter from the local police.<br />
+In the letter he was asked to <b>call at</b> the station.<br />
+Dan wondered why he was wanted by the police,<br />
+&#xa0;but he went to the station yesterday and now he is not worried anymore.<br />
+At the station, he was told by a smiling policeman that his bicycle has been found.<br />
+Five days ago, the policeman told him,<br />
+&#xa0;the bicycle was picked up in a small village four hundred miles away.<br />
+It is now being sent to his home by train.<br />
+Dan was most surprised when he heard the news.<br />
+He was amused too, because he never <b>expected the bicycle to be found</b>.<br />
+It was stolen twenty years ago when Dan was a boy of fifteen!<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org9d796f2" class="outline-2">
+<h2 id="org9d796f2">Lesson 35 Stop thief!</h2>
+<div class="outline-text-2" id="text-org9d796f2">
+<p class="verse">
+How did Roy stop the thieves?<br />
+<br />
+Roy Trenton used to drive a taxi.<br />
+<b>A short while ago</b>, however, he became a bus driver and he has not <b>regretted it</b>.<br />
+He is finding his new work far more exciting.<br />
+When he was driving along Catford Street recently,<br />
+&#xa0;he saw two thieves <b>rush out of</b> a shop and run towards a waiting car.<br />
+One of them was carrying a bag full of money.<br />
+Roy acted quickly and drove the bus straight at the thieves.<br />
+The one with money <b>got such a fright</b> that he dropped the bag.<br />
+As the thieves were trying to get away in their car, Roy drove his bus into the back of it.<br />
+While the battered car was moving away, Roy stopped his bus and telephoned the police.<br />
+The thieves' car was badly damaged and easy to recognized.<br />
+<b>Shortly afterwards</b>, the police stopped the car and both men were arrested.<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org6de0d5a" class="outline-2">
+<h2 id="org6de0d5a">Lesson 36 Across the Channel</h2>
+<div class="outline-text-2" id="text-org6de0d5a">
+<p class="verse">
+What is Debbie going to try to do?<br />
+<br />
+Debbie Hart is going to swim across the English Channel tomorrow.<br />
+She is going to set out from the French coast at five o'clock in the morning.<br />
+Debbie is only eleven years old and she <b>hopes to set up a new world record</b>.<br />
+She is a strong swimmer and many people feel that she <b>is sure to succeed</b>.<br />
+Debbie's father will set out with her in a small boat.<br />
+Mr. Hart has trained his daughter for years.<br />
+Tomorrow he will be watching her anxiously as she swims the long distance to England.<br />
+Debbie <b>intends to take short rests</b> every two hours.<br />
+She will have something to drink but she will not eat any solid food.<br />
+Most of Debbie's school friends will be waiting for her on the English coast.<br />
+Among them will be Debbie's mother, who swam the Channel herself when she was a girl.<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org2e4a9e8" class="outline-2">
+<h2 id="org2e4a9e8">Lesson 37 The Olympic Games</h2>
+<div class="outline-text-2" id="text-org2e4a9e8">
+<p class="verse">
+When was the last time this country hosted the Olympic Games?<br />
+<br />
+<b>The Olympic Games will be held</b> in our country in four years' time.<br />
+As a great many people will be visiting the country,<br />
+&#xa0;the government will be building new hotels, an immense stadium,<br />
+&#xa0;&#xa0;and a new Olympic-standard swimming pool.<br />
+They will also be building new roads and a special railway line.<br />
+The Games will be held just outside the captial and the whole area will be called 'Olympic City'.<br />
+Workers will have completed the new roads by the end of this year.<br />
+By the end of next year, they will have finished work on the new stadium.<br />
+The fantastic modern buildings have been designed by Kurt Gunter.<br />
+Everybody will be watching anxiously as the new buildings go on.<br />
+We are all very excited and are <b>looking forward to the Olympic Games</b><br />
+&#xa0;because they have never held before in the country.<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org64947c8" class="outline-2">
+<h2 id="org64947c8">Lesson 38 Everything except the weather</h2>
+<div class="outline-text-2" id="text-org64947c8">
+<p class="verse">
+Why did Harrison sell his house so quickly?<br />
+<br />
+My old friend, Harrison,<br />
+&#xa0;had lived in the Mediterranean for many years before he returned to England.<br />
+He had often <b>dreamed of retiring</b> in England and had <b>planned to settle down</b> in the country.<br />
+He had no sooner returned than he bought a house and went to live there.<br />
+Almost immediately he began to <b>complain about the weather</b>,<br />
+&#xa0;for even though it was still summer, it rained continually and it was often <b>bitterly cold</b>.<br />
+After so many years of sunshine, Harrison got a shock.<br />
+He acted as if he had never lived in England before.<br />
+In the end, it was more than he could bear.<br />
+He had hardly had time to settle down when he sold the house and left the country.<br />
+The dream he had had for so many years ended there.<br />
+Harrison had thought of everything except the weather.<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org8296ff5" class="outline-2">
+<h2 id="org8296ff5">Lesson 39 Am I all right?</h2>
+<div class="outline-text-2" id="text-org8296ff5">
+<p class="verse">
+Why did Mr. Gilbert telephone Dr. Millington?<br />
+<br />
+While John Gilbert was in hospital,<br />
+&#xa0;he asked his doctor to tell him whether his operation had been successful,<br />
+&#xa0;but the doctor <b>refused to do so</b>.<br />
+The following day, the patient <b>asked for a bedside telephone</b>.<br />
+When he was alone, he telephoned the hospital exchange and asked for Doctor Millington.<br />
+When the doctor answered the phone,<br />
+&#xa0;Mr. Gilbert said he was <b>inquiring about a certain patient</b>, a Mr. John Gilbert.<br />
+He asked if Mr. Gilbert's operation had been successful and the doctor told him that it had been.<br />
+He then asked when Mr. Gilbert would <b>be allowed to go</b> home<br />
+&#xa0;and the doctor told him that he would have to stay in hospital for another two weeks.<br />
+Then Dr. Millington asked the caller if he was a relative of the patient.<br />
+'No,' the patient answered.<br />
+'I am Mr. John Gilbert.'<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org82f5f8d" class="outline-2">
+<h2 id="org82f5f8d">Lesson 40 Food and talk</h2>
+<div class="outline-text-2" id="text-org82f5f8d">
+<p class="verse">
+Was Mrs. Rumbold a good companion at dinner?<br />
+<br />
+Last week at a dinner party, the hostess asked me to sit next to Mrs. Rumbold.<br />
+Mrs. Rumbold was a large, unsmiling lady in a tight black dress.<br />
+She did not even look up when I <b>took my seat</b> beside her.<br />
+Her eyes were fixed on her plate and in a short time, she <b>was busy eating</b>.<br />
+I tried to make conversation.<br />
+'A new play is coming to "The Globe" soon,' I said. "<b>Will you be seeing</b> it?"<br />
+'No,' she answered.<br />
+'Will you be spending your holidays abroad this year?' I asked.<br />
+'No,' she answered.<br />
+'Will you be staying in England?' I asked.<br />
+'No,' she answered.<br />
+<b>In despair</b>, I asked her whether she was enjoying her dinner.<br />
+'Young man,' she answered, 'if you ate more and talked less, we would both enjoy our dinner!'<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orge0664c4" class="outline-2">
+<h2 id="orge0664c4">Lesson 41 Do you call that a hat?</h2>
+<div class="outline-text-2" id="text-orge0664c4">
+<p class="verse">
+What kind of shopping does the writer enjoy, do you think?<br />
+<br />
+'Do you call that a hat?' I said to my wife.<br />
+'You needn't be so rude about it,' my wife answered as she looked at herself in the mirror.<br />
+I sat down on one of those modern chairs with holes in it and waited.<br />
+We had been in the hat shop for half an hour and my wife was still in front of the mirror.<br />
+'We mustn't buy things we don't need,' I remarked suddenly.<br />
+I <b>regretted saying</b> it almost at once.<br />
+'You needn't have said that,' my wife answered.<br />
+'I needn't <b>remind you of that terrible tie</b> you bought yesterday.'<br />
+'I <b>find it beautiful</b>,' I said. 'A man can never have too many ties.'<br />
+'And a woman can't have too many hats,' she answered.<br />
+Ten minutes later we walked out of the shop together.<br />
+My wife was wearing a hat that looked like a lighthouse.<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgfe315a6" class="outline-2">
+<h2 id="orgfe315a6">Lesson 42 Not very musical</h2>
+<div class="outline-text-2" id="text-orgfe315a6">
+<p class="verse">
+What happened when the snake charmer began to play jazz?<br />
+<br />
+As we had <b>had a long walk</b> through one of the markets of Old Delhi,<br />
+&#xa0;we stopped at a square to have a rest.<br />
+After a time, we noticed a snake charmer with two large baskets <b>at the other side of</b> the square,<br />
+&#xa0;so we went to have a look at him.<br />
+As soon as he saw us,<br />
+&#xa0;he picked up a long pipe which was covered with coins and opened one of the baskets.<br />
+When he began to <b>play a tune</b>,<br />
+&#xa0;we <b>had our first glimpse of the snake</b>.<br />
+It rose out of the basket and began to follow the movements of the pipe.<br />
+We were very much surprised when the snake charmer suddenly began to play jazz and modern pop songs.<br />
+The snake, however, <b>continued to 'dance'</b> slowly.<br />
+It obviously could not <b>tell the difference between Indian music and jazz</b>!<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgff5b33d" class="outline-2">
+<h2 id="orgff5b33d">Lesson 43 Over the South Pole</h2>
+<div class="outline-text-2" id="text-orgff5b33d">
+<p class="verse">
+How was the plane able to clear the mountains?<br />
+<br />
+In 1929, three years after his flight over the North Pole,<br />
+&#xa0;the American explorer, R.E. Byrd, successfully flew over the South Pole for the first time.<br />
+Though, at first,<br />
+&#xa0;Byrd and his men were able to take a great many photographs of the mountains that lay below,<br />
+&#xa0;they soon <b>ran into serious trouble</b>.<br />
+<b>At one point</b>, <b>it seemed certain that</b> their plane would crash.<br />
+It could only get over the mountains if it rose to 10,000 feet.<br />
+Byrd at once <b>ordered his men to throw</b> out two heavy food sacks.<br />
+The plane was then able to rise and it cleared the mountains by 400 feet.<br />
+Byrd now knew that he would be able to reach the South Pole which was 300 miles away,<br />
+&#xa0;for there were no more mountains in sight.<br />
+The aircraft was able to fly over the endless white plains without difficulty.<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org60543fd" class="outline-2">
+<h2 id="org60543fd">Lesson 44 Through the forest</h2>
+<div class="outline-text-2" id="text-org60543fd">
+<p class="verse">
+How did Mrs. Sterling get her bag back?<br />
+<br />
+Mrs. Anne Sterling did not think of the risk she was taking<br />
+&#xa0;when she ran through a forest after two men.<br />
+They had <b>rushed up to her</b><br />
+&#xa0;while she was <b>having a picnic</b> <b>at the edge of a forest</b> with her children<br />
+&#xa0;&#xa0;and tried to steal her handbag.<br />
+In the struggle, the strap broke and, with the bag <b>in their possession</b>,<br />
+&#xa0;both men started running through the trees.<br />
+Mrs. Sterling got so angry that she ran after them.<br />
+She was soon <b>out of breath</b>, but she continued to run.<br />
+When she <b>caught up with them</b>,<br />
+&#xa0;she saw that they had sat down and were going through the contents of the bag,<br />
+&#xa0;so she <b>ran straight at them</b>.<br />
+The men got such a fright that they dropped the bag and ran away.<br />
+"The strap needs mending," said Mrs. Sterling later, 'but they did not steal anything."<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orga31d840" class="outline-2">
+<h2 id="orga31d840">Lesson 45 A clear conscience</h2>
+<div class="outline-text-2" id="text-orga31d840">
+<p class="verse">
+How did Sam get his money back?<br />
+<br />
+<b>The whole village soon learnt that</b> a large sum of money had been lost.<br />
+Sam Benton, the local butcher, had lost his wallet while taking his savings to the post office.<br />
+Sam was sure that the wallet must have been found by one of the villagers,<br />
+&#xa0;but it was not <b>returned to him</b>.<br />
+Three months passed, and then one morning, Sam found his wallet outside his front door.<br />
+It had been wrapped up in newspaper<br />
+&#xa0;and it contained half the money he had lost,<br />
+&#xa0;&#xa0;together with a note which said: 'A thief, yes, but only 50 percent a thief!'<br />
+Two months later, some more money was sent to Sam with another note:<br />
+&#xa0;'Only 25 percent a thief now!'<br />
+In time, all Sam's money was paid back in this way.<br />
+The last note said: 'I am 100 percent honest now!'<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgb9c53cc" class="outline-2">
+<h2 id="orgb9c53cc">Lesson 46 Expensive and uncomfortable</h2>
+<div class="outline-text-2" id="text-orgb9c53cc">
+<p class="verse">
+What did the man in this story do?<br />
+<br />
+When a plane from London arrived at Sydney airport,<br />
+&#xa0;workers began to unload a number of wooden boxes which contained clothing.<br />
+<b>No one could account for the fact that</b> one of the boxes was extremely heavy.<br />
+<b>It suddenly occurred to one of the workers to open</b> up the box.<br />
+He <b>was astonished at what</b> he found.<br />
+A man was lying in the box on top of a pile of woollen goods.<br />
+He was so surprised at being discovered that he did not even try to run away.<br />
+After he was arrested,<br />
+&#xa0;the man <b>admitted hiding</b> in the box before the plane left London.<br />
+He had had a long and uncomfortable trip,<br />
+&#xa0;for he had been confined to the wooden box for over eighteen hours.<br />
+The man was ordered to pay 3500 dollars for the cost of the trip.<br />
+The normal price of a ticket is 2000 dollars!<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org00b432c" class="outline-2">
+<h2 id="org00b432c">Lesson 47 A thirsty ghost</h2>
+<div class="outline-text-2" id="text-org00b432c">
+<p class="verse">
+What evidence is there of a ghost?<br />
+<br />
+A public house which was recently bought by Mr. Ian Thompson <b>is up for sale</b>.<br />
+Mr. Thompson is going to sell it because it is haunted.<br />
+He told me that he could not go to sleep one night<br />
+&#xa0;because he <b>heard a strange noise coming</b> from the bar.<br />
+The next morning, he found that<br />
+&#xa0;the doors had been blocked by chairs and the furniture had been moved.<br />
+Though Mr. Thompson had turned the lights off before he went to bed,<br />
+&#xa0;they were on in the morning.<br />
+He also said that he had found five empty whisky bottles<br />
+&#xa0;which the ghost must have drunk the night before.<br />
+When I suggested that some villagers must have come in for a free drink,<br />
+&#xa0;Mr. Thompson shook his head.<br />
+The villagers have told him that they will not accept the pub even if he gives it away.<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org3a6e60c" class="outline-2">
+<h2 id="org3a6e60c">Lesson 48 Did you want to tell me something</h2>
+<div class="outline-text-2" id="text-org3a6e60c">
+<p class="verse">
+Why did the writer become very worried?<br />
+<br />
+Dentists always ask questions when <b>it is impossible for you to answer</b>.<br />
+My dentist had just pulled out one of my teeth and had told me to <b>rest for a while</b>.<br />
+I tried to say something, but my mouth was full of cotton wool.<br />
+He knew I collected match boxes and asked me whether my collection was growing.<br />
+He then asked me how my brother was and whether I liked my new job in London.<br />
+In answer to these questions I either nodded or made strange noises.<br />
+Meanwhile, my tongue was busy searching out the hole where the tooth had been.<br />
+I suddenly felt very worried, but could not say anything.<br />
+When the dentist at last removed the cotton wool from my mouth,<br />
+&#xa0;I was able to tell him that he had pulled out the wrong tooth.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org5dcb559" class="outline-2">
+<h2 id="org5dcb559">Lesson 49 The end of a dream</h2>
+<div class="outline-text-2" id="text-org5dcb559">
+<p class="verse">
+How did the dream end?<br />
+<br />
+<b>Tired of sleeping</b> on the floor,<br />
+&#xa0;a young man in Teheran <b>saved up for years to buy</b> a real bed.<br />
+<b>For the first time in his life</b>,<br />
+&#xa0;he became the proud owner of a bed which had springs and a mattress.<br />
+Because the weather was very hot,<br />
+&#xa0;he carried the bed on to the roof of his house.<br />
+He slept very well for the first two nights,<br />
+&#xa0;but on the third night, a storm blew up.<br />
+<b>A gust of wind swept</b> the bed off the roof and sent it crashing <b>into the courtyard</b> below.<br />
+The young man did not wake up until the bed had struck the ground.<br />
+Although the bed <b>was smashed to pieces</b>, the man was miraculously unhurt.<br />
+When he woke up, he was still on the mattress.<br />
+<b>Glancing at</b> the bits of wood and metal that lay around him,<br />
+&#xa0;the man sadly picked up the mattress and carried it into his house.<br />
+After he had put it on the floor, he promptly <b>went to sleep</b> again.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org24db534" class="outline-2">
+<h2 id="org24db534">Lesson 50 Taken for a ride</h2>
+<div class="outline-text-2" id="text-org24db534">
+<p class="verse">
+Why did the writer not get off the bus at Woodford Green?<br />
+<br />
+I love travelling in the country, but I don't like losing my way.<br />
+I went on an excursion recently, but my trip took me longer than I expected.<br />
+'I'm going to Woodford Green,' I said to the conductor as I got on the bus,<br />
+&#xa0;'but I don't know where it is.'<br />
+'I'll tell you where to get off,' answered the conductor.<br />
+I sat in the front of the bus to get a good view of the countryside.<br />
+After some time, the bus stopped.<br />
+Looking round, I realized with a shock that I was the only passenger left on the bus.<br />
+'You'll have to get off here,' the conductor said. 'This is as far as we go.'<br />
+'Is this Woodford Green?' I asked.<br />
+'Oh dear,' said the conductor suddenly. 'I forgot to put you off.'<br />
+'It doesn't matter,' I said. 'I'll get off here.'<br />
+'We're going back now,' said the conductor.<br />
+'Well, in that case, I <b>prefer to stay</b> on the bus,' I answered.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org462bc21" class="outline-2">
+<h2 id="org462bc21">Lesson 51 Reward for virtue</h2>
+<div class="outline-text-2" id="text-org462bc21">
+<p class="verse">
+Why did Hugh's diet not work?<br />
+<br />
+My friend, Hugh, has always been fat,<br />
+&#xa0;but things got so bad recently that he decided to <b>go on a diet</b>.<br />
+He began his diet a week ago.<br />
+<b>First of all</b>, he <b>wrote out a long list of</b> all the foods which were forbidden.<br />
+The list included most of the things Hugh loves:<br />
+&#xa0;butter, potatoes, rice, beer, milk, chocolate; and sweets.<br />
+Yesterday I <b>paid him a visit</b>.<br />
+I <b>rang the bell</b> and <b>was not surprised to see that</b> Hugh was still as fat as ever.<br />
+He led me into his room and hurriedly hid a large parcel under his desk.<br />
+<b>It was obvious that</b> he was very embarrassed.<br />
+When I asked him what he was doing,<br />
+&#xa0;he smiled guiltily and then put the parcel on the desk.<br />
+He explained that his diet was so strict that he had to reward himself occasionally.<br />
+Then he showed me the contents of the parcel.<br />
+It contained five large bars of chocolate and three bags of sweets!<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org34170d5" class="outline-2">
+<h2 id="org34170d5">Lesson 52 A pretty carpet</h2>
+<div class="outline-text-2" id="text-org34170d5">
+<p class="verse">
+What is the writer's carpet made of?<br />
+<br />
+We have just moved into a new house and I have been working hard all morning.<br />
+I have been trying to <b>get my new room in order</b>.<br />
+This has not been easy because I own over a thousand books.<br />
+<b>To make matters worse</b>, the room is rather small,<br />
+&#xa0;so I have temporarily put my books on the floor.<br />
+At the moment, they cover <b>every inch of floor space</b><br />
+&#xa0;and I actually have to walk on them to get in or out of the room.<br />
+<b>A short while ago</b>, my sister <b>helped me to carry</b> one of my old bookcases up the stairs.<br />
+She went into my room and got a big surprise when she saw all those books on the floor.<br />
+'This is the prettiest carpet I have ever seen,' she said.<br />
+She <b>gazed at it</b> for some time then added, 'You don't need bookcases at all.'<br />
+'You can sit here <b>in your spare time</b> and read the carpet!'<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orged3e49a" class="outline-2">
+<h2 id="orged3e49a">Lesson 53 Hot snake</h2>
+<div class="outline-text-2" id="text-orged3e49a">
+<p class="verse">
+What caused the fire?<br />
+<br />
+At last firemen have put out a big forest fire in California.<br />
+Since then, they have been trying to <b>find out</b> how the fire began.<br />
+Forest fires are often caused by broken glass<br />
+&#xa0;or by cigarette ends which people carelessly <b>throw away</b>.<br />
+Yesterday the fireman examined the ground carefully, but were not able to find any broken glass.<br />
+They were also quite sure that a cigarette end did not start the fire.<br />
+This morning, however, a fireman accidentally <b>discovered the cause</b>.<br />
+He noticed <b>the remains of a snake</b><br />
+&#xa0;which was wound round the <b>electric wires</b> of a 16,000-volt power line.<br />
+In this way, he was able to <b>solve the mystery</b>.<br />
+The explanation was simple but very unusual.<br />
+A bird had snatched up the snake from the ground and then dropped it on to the wires.<br />
+The snake then wound itself round the wires.<br />
+When it did so, it sent sparks down to the ground and these immediately started a fire.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org669e52a" class="outline-2">
+<h2 id="org669e52a">Lesson 54 Sticky fingers</h2>
+<div class="outline-text-2" id="text-org669e52a">
+<p class="verse">
+What two interruptions did the writer have?<br />
+<br />
+After breakfast, I <b>sent the children to school</b> and then I went to the shops.<br />
+It was still early when I returned home.<br />
+The children were at school, my husband was at work and the house was quiet.<br />
+So I <b>decided to make</b> some meat pies.<br />
+In a short time I <b>was busy mixing</b> butter and flour<br />
+&#xa0;and my hands <b>were soon covered with sticky pastry</b>.<br />
+At exactly that moment, the telephone rang.<br />
+Nothing could have been more annoying.<br />
+I picked up the receiver between two sticky fingers<br />
+&#xa0;and was dismayed when I <b>recognized the voice of Helen Bates</b>.<br />
+It <b>took me ten minutes to</b> <b>persuade her to ring</b> back later.<br />
+At last I <b>hung up</b> the receiver.<br />
+<b>What a mess</b>!<br />
+There was pastry on my fingers, on the telephone, and on the doorknobs.<br />
+I had no sooner got back to the kitchen than the doorbell rang loud enough to wake the dead.<br />
+This time it was the postman and he wanted me to <b>sign for a registered letter</b>!<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org7118ff5" class="outline-2">
+<h2 id="org7118ff5">Lesson 55 Not a gold mine</h2>
+<div class="outline-text-2" id="text-org7118ff5">
+<p class="verse">
+What did the team find?<br />
+<br />
+Dreams of finding lost treasure almost <b>came true</b> recently.<br />
+A new machine called 'The Revealer' has been invented<br />
+&#xa0;and it has <b>been used to detect</b> gold which has been buried in the ground.<br />
+The machine was used <b>in a cave</b> <b>near the seashore</b><br />
+&#xa0;where &#x2013; it is said - pirates used to hide gold.<br />
+The pirates would often bury gold in the cave and then fail to collect it.<br />
+<b>Armed with the new machine</b>, a search party went into the cave hoping to find buried treasure.<br />
+The leader of the party was examining the soil near the entrance to the cave<br />
+&#xa0;when the machine showed that there was gold under the ground.<br />
+Very excited, the party dug a hole two feet deep.<br />
+They finally found a small gold coin which was almost worthless.<br />
+The party then searched the whole cave thoroughly<br />
+&#xa0;but did not find anything except an empty tin trunk.<br />
+In spite of this,<br />
+&#xa0;many people <b>are confident that</b> 'The Revealer' may reveal <b>something of value</b> <b>fairly soon</b>.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb7c963e" class="outline-2">
+<h2 id="orgb7c963e">Lesson 56 Faster than sound!</h2>
+<div class="outline-text-2" id="text-orgb7c963e">
+<p class="verse">
+How fast did the winning car go?<br />
+<br />
+Once a year, a race is held for old cars.<br />
+A lot of cars entered for this race last year<br />
+&#xa0;and there was a great deal of excitement just before it began.<br />
+One of the most handsome cars was a Rolls-Royce Silver Ghost.<br />
+The most unusual car was a Benz which had only three wheels.<br />
+Built in 1885, it was the oldest car taking part.<br />
+After a great many loud explosions, the race began.<br />
+Many of the cars <b>broke down</b> <b>on the course</b><br />
+&#xa0;and some drivers spent more time under their cars than in them!<br />
+A few cars, however, completed the race.<br />
+The winning car reached a speed of forty miles an hour - much faster than any of its rivals.<br />
+It sped downhill at the end of the race and its driver had a lot of trouble trying to stop it.<br />
+The race gave everyone <b>a great deal of</b> pleasure.<br />
+It <b>was very different from</b> modern car races but no less exciting.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org5cf01bb" class="outline-2">
+<h2 id="org5cf01bb">Lesson 57 Can I help you, madam?</h2>
+<div class="outline-text-2" id="text-org5cf01bb">
+<p class="verse">
+Did the woman get what she wanted?<br />
+<br />
+A woman in jeans stood at the window of an expensive shop.<br />
+Though she hesitated for a moment,<br />
+&#xa0;she finally went in and <b>asked to see</b> a dress that was in the window.<br />
+The assistant who served her did not like the way she was dressed.<br />
+Glancing at her scornfully, he told her that the dress was sold.<br />
+The woman walked out of the shop angrily and decided to punish the assistant next day.<br />
+She returned to the shop the following morning <b>dressed in</b> a fur coat,<br />
+&#xa0;with a handbag in one hand and a long umbrella in the other.<br />
+After <b>seeking out</b> the rude assistant, she asked for the same dress.<br />
+Not realizing who she was, the assistant <b>was eager to serve</b> her this time.<br />
+With great difficulty, he climbed into the shop window to get the dress.<br />
+As soon as she saw it, the woman said she did not like it.<br />
+She enjoyed herself making the assistant bring almost everything in the window<br />
+&#xa0;before finally buying the dress she had first asked for.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org8239a91" class="outline-2">
+<h2 id="org8239a91">Lesson 58 A blessing in disguise?</h2>
+<div class="outline-text-2" id="text-org8239a91">
+<p class="verse">
+Why does the vicar refuse to cut down the tree?<br />
+<br />
+The tiny village of Frinley is said to possess a 'cursed tree'.<br />
+Because the tree was mentioned in a newspaper, the number of visitors to Frinley has now increased.<br />
+The tree was planted near the church fifty years ago,<br />
+&#xa0;but it is only in recent years that it has gained an evil reputation.<br />
+It is said that if anyone touches the tree, he will have bad luck;<br />
+&#xa0;if he picks a leaf, he will die.<br />
+Many villagers believe that the tree has already claimed <b>a number of</b> victims.<br />
+The vicar has been asked to have the tree cut down, but so far he has refused.<br />
+He has <b>pointed out that</b> the tree is a useful <b>source of income</b>,<br />
+&#xa0;as tourists have been coming from all parts of the country to see it.<br />
+In spite of all that has been said,<br />
+&#xa0;the tourists have been picking leaves and cutting their names on the tree-trunk.<br />
+So far, not one of them has been struck down by sudden death.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgecf468e" class="outline-2">
+<h2 id="orgecf468e">Lesson 59 In or out?</h2>
+<div class="outline-text-2" id="text-orgecf468e">
+<p class="verse">
+Why did Rex run away?<br />
+<br />
+Our dog, Rex, used to sit outside our front gate and bark.<br />
+Every time he wanted to come into the garden he would bark until someone opened the gate.<br />
+As the neighbours <b>complained of</b> the noise,<br />
+&#xa0;my husband <b>spent weeks training him to press</b> his paw on the latch to let himself in.<br />
+Rex soon became an expert at opening the gate.<br />
+However, when I was going out shopping last week,<br />
+&#xa0;I noticed him in the garden near the gate.<br />
+This time he was barking so that someone would let him out!<br />
+Since then, he has developed another bad habit.<br />
+As soon as he opens the gate from the outside,<br />
+&#xa0;he comes into the garden and waits until the gate shuts.<br />
+Then he sits and barks until someone lets him out.<br />
+After this he immediately lets himself in and begins barking again.<br />
+Yesterday my husband removed the gate and Rex got so annoyed we have not seen him since.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org533fd8f" class="outline-2">
+<h2 id="org533fd8f">Lesson 60 The future</h2>
+<div class="outline-text-2" id="text-org533fd8f">
+<p class="verse">
+Does what Madam Bellinsky said come true?<br />
+<br />
+At a village fair, I decided to visit a fortune-teller called Madam Bellinsky.<br />
+I went into her tent and she told me to sit down.<br />
+After I had given her some money, she looked into a crystal ball and said:<br />
+'<b>A relation of yours</b> is coming to see you.<br />
+She will be arriving this evening and intends to stay for a few days.<br />
+The moment you leave this tent, you will get a big surprise.<br />
+A woman you know well will rush towards you.<br />
+She will speak to you	and then she will lead you away from this place.<br />
+That is all.'<br />
+<br />
+As soon as I went outside,<br />
+&#xa0;I forgot all about Madam Bellinsky because my wife hurried towards me.<br />
+'Where have you been hiding?' she asked impatiently.<br />
+'Your sister will be here in less than an hour and we must be at the station to meet her.<br />
+We are late already.'<br />
+As she walked away,	I followed her out of the fair.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org4d82b75" class="outline-2">
+<h2 id="org4d82b75">Lesson 61 Trouble with the Hubble</h2>
+<div class="outline-text-2" id="text-org4d82b75">
+<p class="verse">
+What is the special importance of a telescope in space?<br />
+<br />
+The Hubble telescope was launched into space by NASA on April 20, 1990<br />
+&#xa0;at a cost of over a billion dollars.<br />
+<b>Right from the start</b> there was trouble with the Hubble.<br />
+The pictures it sent us were very disappointing<br />
+&#xa0;because its main mirror was faulty.<br />
+NASA is now going to put the telescope right,<br />
+&#xa0;so it will soon be sending up four astronauts to repair it.<br />
+The shuttle Endeavour will be taking the astronauts to the Hubble.<br />
+A robot-arm from the Endeavour will grab the telescope<br />
+&#xa0;and hold it while the astronauts make the necessary repairs.<br />
+Of course, the Hubble is above the earth's atmosphere,<br />
+&#xa0;so it will soon be sending us the clearest pictures of the stars<br />
+&#xa0;&#xa0;and distant galaxies that we have ever seen.<br />
+The Hubble will tell us a great deal about the age and size of the universe.<br />
+By the time you read this,<br />
+&#xa0;the Hubble's eagle eye will have sent us thousands and thousands of wonderful pictures.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org67ca2ac" class="outline-2">
+<h2 id="org67ca2ac">Lesson 62 After the fire</h2>
+<div class="outline-text-2" id="text-org67ca2ac">
+<p class="verse">
+What was the danger to the villagers after the fire?<br />
+<br />
+Firemen had been fighting the forest fire for nearly three weeks<br />
+&#xa0;before they could <b>get it under control</b>.<br />
+<b>A short time before</b>, great trees had covered the countryside <b>for miles around</b>.<br />
+Now, smoke still rose up from the warm ground over the desolate hills.<br />
+Winter was coming on and the hills threatened the surrounding villages with destruction,<br />
+&#xa0;for heavy rain would not only wash away the soil<br />
+&#xa0;&#xa0;but would cause serious floods as well.<br />
+When the fire had at last been put out,<br />
+&#xa0;the forest authorities ordered several tons of a special type of grass-seed<br />
+&#xa0;&#xa0;which would grow quickly.<br />
+The seed was sprayed over the ground in huge quantities by aeroplanes.<br />
+The planes had been planting seed for nearly a month when it began to rain.<br />
+By then, however, in many places the grass had already <b>taken root</b>.<br />
+<b>In place of</b> the great trees which had been growing there <b>for centuries</b>,<br />
+&#xa0;patches of green had begun to appear in the blackened soil.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgf2710db" class="outline-2">
+<h2 id="orgf2710db">Lesson 63 She was not amused</h2>
+<div class="outline-text-2" id="text-orgf2710db">
+<p class="verse">
+Why did Jenny want to leave the wedding reception?<br />
+<br />
+Jeremy Hampden has <b>a large circle of friends</b> and is very popular at parties.<br />
+Everybody <b>admires him for</b> his great <b>sense of humour</b><br />
+&#xa0;- everybody, that is, except his six-year-old daughter, Jenny.<br />
+Recently, one of Jeremy's <b>closest friends</b> asked him to <b>make a speech</b> <b>at a wedding reception</b>.<br />
+This is <b>the sort of</b> thing that Jeremy loves.<br />
+He prepared the speech carefully and went to the wedding with Jenny.<br />
+He had included <b>a large number of</b> funny stories in the speech and, of course, it was great success.<br />
+As soon as he had finished, Jenny told him she wanted to go home.<br />
+Jeremy was a little disappointed by this but he did as his daughter asked.<br />
+<b>On the way home</b>, he asked Jenny if she had enjoyed the speech.<br />
+To his surprise, she said she hadn't.<br />
+Jeremy asked her why this was so<br />
+&#xa0;and	she told him that she did not like to see so many people laughing at him.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgf7a03e2" class="outline-2">
+<h2 id="orgf7a03e2">Lesson 64 The Channel Tunnel</h2>
+<div class="outline-text-2" id="text-orgf7a03e2">
+<p class="verse">
+Why was the first tunnel not completed?<br />
+<br />
+In 1858, a French engineer, Aime Thome de Gamond,<br />
+&#xa0;arrived in England with a plan for a twenty-one-mile tunnel under the English Channel.<br />
+He said that it would <b>be possible to build</b> a platform in the centre of the Channel.<br />
+This platform would <b>serve as</b> a port and a railway station.<br />
+The Tunnel would be well-ventilated if tall chimneys were built <b>above sea level</b>.<br />
+In 1860, <b>a better plan was put forward</b> by an Englishman, William Low.<br />
+He suggested that a double railway-tunnel should be built.<br />
+This would <b>solve the problem of ventilation</b>,<br />
+&#xa0;for if a train entered this tunnel, it would draw in fresh air behind it.<br />
+Forty-two years later a tunnel was actually begun.<br />
+If, at the time, the British had not feared invasion, it would have been completed.<br />
+The world had to wait almost another 100 years for the Channel Tunnel.<br />
+It was officially opened on March 7, 1994,<br />
+&#xa0;finally connecting Britain to the European continent.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org9235526" class="outline-2">
+<h2 id="org9235526">Lesson 65 Jumbo versus the police</h2>
+<div class="outline-text-2" id="text-org9235526">
+<p class="verse">
+Why did the police have to push Jumbo off the main street?<br />
+<br />
+Last Christmas, the circus owner, Jimmy Gates,<br />
+&#xa0;decided to take some presents to a children's hospital.<br />
+<b>Dressed up as</b> Father Christmas and accompanied by a 'guard of honour' of six pretty girls,<br />
+&#xa0;he <b>set off</b> down the main street of the city riding a baby elephant called Jumbo.<br />
+He should have known that the police would never allow this sort of thing.<br />
+A policeman approached Jimmy and told him he ought to have gone along a side street<br />
+&#xa0;as Jumbo was <b>holding up the traffic</b>.<br />
+Though Jimmy <b>agreed to go</b> at once, Jumbo refused to move.<br />
+Fifteen policemen had to push very hard to get him off the main street.<br />
+The police had a difficult time, but they were most amused.<br />
+'Jumbo must weigh a few tons,' said a policeman afterwards,<br />
+&#xa0;'so <b>it was fortunate that</b> we didn't have to carry him.<br />
+Of course, we should arrest him,<br />
+&#xa0;but as he has a good record, we shall <b>let him off</b> this time.'<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org5ce149b" class="outline-2">
+<h2 id="org5ce149b">Lesson 66 Sweet as honey!</h2>
+<div class="outline-text-2" id="text-org5ce149b">
+<p class="verse">
+What was 'sweet as honey' and why?<br />
+<br />
+In 1963 a Lancaster bomber crashed on Wallis Island,<br />
+&#xa0;a remote place in the South Pacific, a long way west of Samoa.<br />
+The plane wasn't too badly damaged,<br />
+&#xa0;but <b>over the years</b>,	the crash was forgotten and the wreck remained undisturbed.<br />
+Then in 1989, twenty-six years after the crash,<br />
+&#xa0;the plane was accidentally rediscovered in an aerial survey of the island.<br />
+By this time, a Lancaster bomber <b>in reasonable condition</b> was rare and <b>worth rescuing</b>.<br />
+The French authorities had the plane packaged and moved in parts back to France.<br />
+Now a group of enthusiast are going to have the plane restored.<br />
+It has four Rolls-Royce Merlin engines,<br />
+&#xa0;but the group will need to have only three of them rebuilt.<br />
+Imagine their surprise and delight<br />
+&#xa0;when they broke open the packing cases and found that the fourth engine was sweet as honey<br />
+&#xa0;&#xa0;- still in perfect condition.<br />
+<b>A colony of bees</b> had <b>turned the engine into a hive</b> and it was totally preserved in beeswax!<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgcc9a41c" class="outline-2">
+<h2 id="orgcc9a41c">Lesson 67 Volcanoes</h2>
+<div class="outline-text-2" id="text-orgcc9a41c">
+<p class="verse">
+Why does Tazieff risk his life like this?<br />
+<br />
+Haroun Tazieff, the Polish scientist,<br />
+&#xa0;has spent his lifetime studying active volcanoes and deep caves in all parts of the world.<br />
+In 1948, he went to Lake Kivu in the Congo to observe a new volcano which he later <b>named Kituro</b>.<br />
+Tazieff was able to <b>set up his camp</b> very close to the volcano while it was erupting violently.<br />
+Though he managed to take a number of brilliant photographs,<br />
+&#xa0;he could not stay near the volcano for very long.<br />
+<b>He noticed that</b> a river of liquid rock was coming towards him.<br />
+It threatened to surround him completely,<br />
+&#xa0;but Tazieff managed to escape just in time.<br />
+He waited until the volcano became quiet and he was able to return two days later.<br />
+This time, he managed to climb into the mouth of Kituro<br />
+&#xa0;so that he could take photographs and measure temperatures.<br />
+Tazieff has often risked his life in this way.<br />
+He has been able to tell us more about active volcanoes than any man alive.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org5d67c15" class="outline-2">
+<h2 id="org5d67c15">Lesson 68 Persistent</h2>
+<div class="outline-text-2" id="text-org5d67c15">
+<p class="verse">
+Why did Elizabeth tell Nigel that she was going to the dentist?<br />
+<br />
+I crossed the street to <b>avoid meeting</b> him, but he saw me and came running towards me.<br />
+<b>It was no use pretending that</b> I had not seen him, so I waved to him.<br />
+I never <b>enjoy meeting</b> Nigel Dykes.<br />
+He never has anything to do.<br />
+<b>No matter how</b> busy you are,	he always <b>insists on coming</b> with you.<br />
+I had to think of a way of <b>preventing him from following me around</b> all morning.<br />
+<br />
+'Hello, Nigel,' I said.<br />
+'<b>Fancy meeting you here</b>!'<br />
+<br />
+'Hi, Elizabeth,' Nigel answered.<br />
+'<b>I was just wondering</b> how to spend the morning &#x2013; until I saw you.'<br />
+'You're not busy doing anything, are you?'<br />
+<br />
+No, not at all, I answered.<br />
+'I'm going to&#x2026;'<br />
+<br />
+'<b>Would you mind my coming</b> with you?' he asked, before I had <b>finished speaking</b>.<br />
+<br />
+'Not at all,' I lied, 'but I'm going to the dentist.'<br />
+<br />
+'Then I'll come with you,' he answered.<br />
+'There's always plenty to read in the waiting room!'<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org10fb6b9" class="outline-2">
+<h2 id="org10fb6b9">Lesson 69 But not murder!</h2>
+<div class="outline-text-2" id="text-org10fb6b9">
+<p class="verse">
+Do you think that the writer passed his driving test? Why?<br />
+<br />
+I was being tested for a driving licence for the third time.<br />
+I had been asked to drive in heavy traffic and had done so successfully.<br />
+After having <b>been instructed to drive</b> out of town, I began to acquire confidence.<br />
+Sure that I had passed, I was almost beginning to enjoy my test.<br />
+The examiner must have <b>been pleased with</b> my performance,<br />
+&#xa0;for he smiled and said, 'Just one more thing, Mr. Eames.<br />
+<b>Let us suppose that</b> a child suddenly crosses the road in front of you.<br />
+As soon as I <b>tap on the window</b>, you must stop within five feet.'<br />
+I <b>continued driving</b> and after some time, the examiner tapped loudly.<br />
+Though the sound could be heard clearly, it took me a long time to react.<br />
+I suddenly pressed the brake pedal hard and we were both thrown forward.<br />
+The examiner looked at me sadly.<br />
+'Mr. Eames,' he said, in a mournful voice, 'you have just killed that child!'<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org313fa74" class="outline-2">
+<h2 id="org313fa74">Lesson 70 Red for danger</h2>
+<div class="outline-text-2" id="text-org313fa74">
+<p class="verse">
+How was the drunk removed from the ring?<br />
+<br />
+During a bullfight, a drunk suddenly wandered into the middle of the ring.<br />
+The crowd began to shout, but the drunk <b>was unaware of</b> the danger.<br />
+The bull <b>was busy with the matador</b> <b>at the time</b>,<br />
+&#xa0;but it suddenly <b>caught sight of</b> the drunk who was shouting rude remarks and waving a red cap.<br />
+Apparently <b>sensitive to</b> criticism,<br />
+&#xa0;the bull forgot all about the matador and <b>charged at</b> the drunk.<br />
+The crowd suddenly <b>grew quiet</b>.<br />
+The drunk, however, seemed quite sure of himself.<br />
+When the bull <b>got close to him</b>, he clumsily <b>stepped aside</b> to let it pass.<br />
+The crowd <b>broke into cheers</b> and the drunk bowed.<br />
+By this time, however,<br />
+&#xa0;three men had come into the ring and they quickly dragged the drunk to safety.<br />
+Even the bull seemed to <b>feel sorry for him</b>,<br />
+&#xa0;for it <b>looked on</b> sympathetically<br />
+&#xa0;&#xa0;until the drunk was <b>out of the way</b> before <b>once more</b> <b>turning its attention to the matador</b>.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org7d3544f" class="outline-2">
+<h2 id="org7d3544f">Lesson 71 A famous clock</h2>
+<div class="outline-text-2" id="text-org7d3544f">
+<p class="verse">
+Has Big Ben ever gone wrong?<br />
+<br />
+When you visit London,<br />
+&#xa0;one of the first things you will see is Big Ben, the famous clock<br />
+&#xa0;&#xa0;which can be heard <b>all over the world</b> on the BBC.<br />
+If the Houses of Parliament had not been <b>burned down</b> in 1834,<br />
+&#xa0;the great clock would never have been erected.<br />
+Big Ben <b>takes its name</b> from sir Benjamin Hall<br />
+&#xa0;who <b>was responsible for</b> the making of the clock<br />
+&#xa0;&#xa0;when the new Houses of Parliament were being built.<br />
+It is not only of immense size, but is extremely accurate as well.<br />
+Officials from Greenwich Observatory have the clock checked twice a day.<br />
+On the BBC you can hear the clock<br />
+&#xa0;when it is actually striking because microphones <b>are connected to</b> the clock tower.<br />
+Big Ben has rarely <b>gone wrong</b>.<br />
+Once, however, it failed to give the correct time.<br />
+A painter who had been working on the tower<br />
+&#xa0;hung a pot of paint on one of the hands and slowed it down!<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb2d504e" class="outline-2">
+<h2 id="orgb2d504e">Lesson 72 A car called Bluebird</h2>
+<div class="outline-text-2" id="text-orgb2d504e">
+<p class="verse">
+What mistake was made?<br />
+<br />
+The great racing driver, Sir Malcolm Campbell, was the first man to drive at over 300 miles per hour.<br />
+He set up a new world record in September 1935 at Bonneville Salt Flats, Utah.<br />
+Bluebird, the car he was driving, had been specially built for him.<br />
+It was over 30 feet in length and had a 2,500-horsepower engine.<br />
+Although Campbell reached a speed of over 304 miles per hour,<br />
+&#xa0;he <b>had great difficulty in controlling</b> the car because a tyre burst during the first run.<br />
+After his attempt,<br />
+&#xa0;Campbell <b>was disappointed to learn that</b> his average speed had been 299 miles per hour.<br />
+However, a few days later, he was told that a mistake had been made.<br />
+His average speed had been 301 miles per hour.<br />
+Since that time, racing drivers have reached speeds over 600 miles an hour.<br />
+<b>Following in his father's footsteps</b> many years later,<br />
+&#xa0;Sir Malcolm's son, Donald, also set up a world record.<br />
+Like his father, he was driving a car called Bluebird.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org57e9761" class="outline-2">
+<h2 id="org57e9761">Lesson 73 The record-holder</h2>
+<div class="outline-text-2" id="text-org57e9761">
+<p class="verse">
+Did the boy go where he wanted to?<br />
+<br />
+Children who <b>play truant from school</b> are unimaginative.<br />
+A quiet day's fishing, or eight hours in a cinema seeing the same film <b>over and over again</b>,<br />
+&#xa0;is usually as far as they get.<br />
+They have all <b>been put to shame</b> by a boy who, while playing truant, travelled 1,600 miles.<br />
+He <b>hitchhiked to Dover</b> and, towards evening, went into a boat to find somewhere to sleep.<br />
+When he woke up next morning,<br />
+&#xa0;he discovered that the boat had, <b>in the meantime</b>, travelled to Calais.<br />
+No one noticed the boy as he crept off.<br />
+From there, he hitchhiked to Paris in a lorry.<br />
+The driver gave him a few biscuits and a cup of coffee and left him just outside the city.<br />
+The next car the boy stopped did not take him into the centre of Paris as he hoped it would,<br />
+&#xa0;but to Perpignan on the French-Spanish border.<br />
+There he was picked up by a policeman and sent back to England by the local authorities.<br />
+He has surely set up a record for the thousands of children who dream of evading school.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgbe62238" class="outline-2">
+<h2 id="orgbe62238">Lesson 74 Out of the limelight</h2>
+<div class="outline-text-2" id="text-orgbe62238">
+<p class="verse">
+Why was their disguise ‘too perfect’?<br />
+<br />
+An ancient bus stopped by a dry river bed and <b>a party of</b> famous actors and actresses got off.<br />
+Dressed in dark glasses and old clothes,<br />
+&#xa0;they had <b>taken special precautions</b> so that no one should recognize them.<br />
+But as they soon discovered, disguises can sometimes be too perfect.<br />
+'This is a wonderful place for a picnic,' said Gloria Gleam.<br />
+'It couldn't be better, Gloria,' Brinksley Meers agreed.<br />
+'No newspaper men, no film fans!<br />
+<b>Why don't we</b> come more often?'<br />
+Meanwhile, two other actors, Rockwall Slinger and Merlin Greeves,<br />
+&#xa0;had <b>carried two large food baskets to</b> a shady spot under some trees.<br />
+When they had all <b>made themselves comfortable</b>, a stranger appeared.<br />
+He looked very angry.<br />
+'Now you get out of here, all of you!' he shouted.<br />
+'I'm sheriff here.<br />
+Do you see that notice? It says "No Camping" &#x2013; in case you can't read!'<br />
+'Look, sheriff,' said Rockwall, '<b>don't be too hard on us</b>.<br />
+I'm Rockwall Slinger and this is Merlin Greeves.'<br />
+'Oh, is it?' said the sheriff with a sneer.<br />
+'Well, I'm Brinksley Meers, and my other name is Gloria Gleam.<br />
+Now you <b>get out of here</b> fast!'<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org5e0a6c1" class="outline-2">
+<h2 id="org5e0a6c1">Lesson 75 SOS</h2>
+<div class="outline-text-2" id="text-org5e0a6c1">
+<p class="verse">
+How did the woman get help?<br />
+<br />
+When a light passenger plane <b>flew off course</b> some time ago,<br />
+&#xa0;it crashed in the mountains and its pilot was killed.<br />
+The only passengers, a young woman and her two baby daughters, were unhurt.<br />
+It was the middle of winter.<br />
+Snow lay thick on the ground.<br />
+The woman knew that the nearest village was miles away.<br />
+When it grew dark,<br />
+&#xa0;she turned a suitcase into a bed and put the children inside it,<br />
+&#xa0;<b>covering them with</b> all the clothes she could find.<br />
+During the night, it got terribly cold.<br />
+The woman kept as near as she could to the children and even tried to get into the case herself,<br />
+&#xa0;but it was too small.<br />
+Early next morning, she heard planes passing overhead and wondered how she could <b>send a signal</b>.<br />
+Then she had an idea.<br />
+She <b>stamped out</b> the letters 'SOS' in the snow.<br />
+Fortunately, a pilot saw the signal and sent a message by radio to the nearest town.<br />
+<b>It was not long before</b><br />
+&#xa0;a helicopter <b>arrived on the scene</b> to rescue the survivors of the plane crash.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge6b423c" class="outline-2">
+<h2 id="orge6b423c">Lesson 76 April Fool's Day</h2>
+<div class="outline-text-2" id="text-orge6b423c">
+<p class="verse">
+What was the joke?<br />
+<br />
+'To end our special news bulletin,' said the voice of the television announcer,<br />
+&#xa0;'we're going over to the macaroni fields of Calabria.<br />
+Macaroni has been grown in this area for over six hundred years.<br />
+Two of the leading growers, Giuseppe Moldova and Riccardo Brabante, tell me<br />
+&#xa0;that they have been expecting a splendid crop this year<br />
+&#xa0;&#xa0;and harvesting has begun earlier than usual.<br />
+Here you can see two workers who,<br />
+&#xa0;between them, have just finished cutting three cartloads of golden brown macaroni stalks.<br />
+The whole village has been working day and night<br />
+&#xa0;gathering and threshing this year's crop before the September rains.<br />
+On the right, you can see Mrs. Brabante herself.<br />
+She has been helping her husband for thirty years now.<br />
+Mrs .Brabante is talking to the manager of the local factory where the crop is processed.<br />
+This last scene shows you what will happen <b>at the end of the harvest</b>:<br />
+&#xa0;the famous Calabrian macaroni-eating competition!<br />
+Signor Fratelli, the present champion, has won it every year since 1991.<br />
+And that ends our special bulletin for today, Thursday, April 1st.<br />
+We're now going back to the studio.'<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgabd2d43" class="outline-2">
+<h2 id="orgabd2d43">Lesson 77 A successful operation</h2>
+<div class="outline-text-2" id="text-orgabd2d43">
+<p class="verse">
+Did the doctors find out how the woman died?<br />
+<br />
+The mummy of an Egyptian woman who died in 800 B.C. has just had an operation.<br />
+The mummy is that of Shepenmut who was once a singer in the Temple of Thebes.<br />
+As there were strange marks on the X-ray plates taken of the mummy,<br />
+&#xa0;doctors have been trying to find out whether the woman died of a rare disease.<br />
+The only way to do this was to operate.<br />
+The operation, which lasted for over four hours,<br />
+&#xa0;&#xa0;proved to be very difficult because of the hard resin which covered the skin.<br />
+The doctors removed a section of the mummy and sent it to a laboratory.<br />
+They also found something which the X-ray plates did not show:<br />
+&#xa0;a small wax figure of the god Duamutef.<br />
+This god which has the head of a cow was normally placed inside a mummy.<br />
+The doctors have not yet decided how the woman died.<br />
+They feared that the mummy would fall to pieces when they cut it open,<br />
+&#xa0;but fortunately this has not happened.<br />
+The mummy successfully survived the operation.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orged639de" class="outline-2">
+<h2 id="orged639de">Lesson 78 The last one?</h2>
+<div class="outline-text-2" id="text-orged639de">
+<p class="verse">
+For how long did the writer give up smoking?<br />
+<br />
+After reading an article entitled 'Cigarette Smoking and Your Health'<br />
+&#xa0;I lit a cigarette to <b>calm my nerves</b>.<br />
+I smoked with concentration and pleasure as I <b>was sure that</b> this would be my last cigarette.<br />
+For a whole week I did not smoke at all and during this time, my wife suffered terribly.<br />
+I had all the usual symptoms of someone giving up smoking: a bad temper and an enormous appetite.<br />
+My friends <b>kept on offering me cigarettes and cigars</b>.<br />
+They <b>made no effort to hide</b> their amusement<br />
+&#xa0;whenever I produced <b>a packet of</b> sweets from my pocket.<br />
+After seven days of this I went to a party.<br />
+Everybody around me was smoking and I felt extremely uncomfortable.<br />
+When my old friend Brian <b>urged me to accept</b> a cigarette, it was more than I could bear.<br />
+I took one guiltily, lit it and smoked with satisfaction.<br />
+My wife <b>was delighted that</b> things had <b>returned to normal</b> once more.<br />
+Anyway, as Brian pointed out, it is the easiest thing in the world to give up smoking.<br />
+He himself has done it lots of times!<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org4bbafca" class="outline-2">
+<h2 id="org4bbafca">Lesson 79 By air</h2>
+<div class="outline-text-2" id="text-org4bbafca">
+<p class="verse">
+Why did the plane turn back?<br />
+<br />
+I used to travel by air <b>a great deal</b> when I was a boy.<br />
+My parents used to live in South America and I used to fly there from Europe in the holidays.<br />
+A flight attendant would <b>take charge of</b> me and I never had an unpleasant experience.<br />
+I <b>am used to travelling</b> by air and only on one occasion have I ever <b>felt frightened</b>.<br />
+After <b>taking off</b>, we were flying low over the city and slowly <b>gaining height</b>,<br />
+&#xa0;when the plane suddenly turned round and flew back to the airport.<br />
+While we were waiting to land,<br />
+&#xa0;a flight attendant told us to keep calm and to get off the plane quietly<br />
+&#xa0;&#xa0;as soon as it had <b>touched down</b>.<br />
+Everybody <b>on board</b> was worried<br />
+&#xa0;and we <b>were curious to find out</b> what had happened.<br />
+Later we learnt that there was a very important person on board.<br />
+The police had been told that <b>a bomb had been planted</b> on the plane.<br />
+After we had landed, the plane was searched thoroughly.<br />
+Fortunately, nothing was found and five hours later we were able to take off again.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org4f370fe" class="outline-2">
+<h2 id="org4f370fe">Lesson 80 The Crystal Palace</h2>
+<div class="outline-text-2" id="text-org4f370fe">
+<p class="verse">
+How many people visited the Great Exhibition of 1851?<br />
+<br />
+Perhaps the most extraordinary building of the nineteenth century was the Crystal Palace,<br />
+&#xa0;which was built in Hyde Park for the Great Exhibition of 1851.<br />
+The Crystal Palace was different from all other buildings in the world,<br />
+&#xa0;for it <b>was made of</b> iron and glass.<br />
+It was one of the biggest buildings <b>of all time</b><br />
+&#xa0;and a lot of people from many countries came to see it.<br />
+A great many goods were sent to the exhibition from various parts of the world.<br />
+There was also a great deal of machinery <b>on display</b>.<br />
+The most wonderful piece of machinery on show was Nasmyth's steam hammer.<br />
+Though in those days, traveling was not as easy as it is today,<br />
+&#xa0;steam boats carried thousands of visitors across the Channel from Europe.<br />
+On arriving in England, they were taken to the Crystal Palace by train.<br />
+There were six million visitors <b>in all</b>,<br />
+&#xa0;and the profits from the exhibition were used to build museums and colleges.<br />
+Later, the Crystal Palace was moved to South London.<br />
+It remained one of the most famous buildings in the world until it was burnt down in 1936.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org27bf0cd" class="outline-2">
+<h2 id="org27bf0cd">Lesson 81 Escape</h2>
+<div class="outline-text-2" id="text-org27bf0cd">
+<p class="verse">
+Why did the prisoner attack the driver?<br />
+<br />
+When he had killed the guard, the prisoner of war quickly dragged him into the bushes.<br />
+Working rapidly in the darkness, he soon <b>changed into</b> the dead man's clothes.<br />
+Now, dressed in a blue uniform and with a rifle over his shoulder,<br />
+&#xa0;the prisoner marched boldly <b>up and down</b> in front of the camp.<br />
+He could hear shouting in the camp itself.<br />
+Lights were blazing and men were running here and there:<br />
+&#xa0;they had just <b>discovered that</b> a prisoner had escaped.<br />
+At that moment, a large black car with four officers inside it, stopped at the camp gates.<br />
+The officers got out and the prisoner <b>stood to attention</b> and saluted as they passed.<br />
+When they had gone, the driver of the car came towards him.<br />
+The man obviously wanted to talk.<br />
+He was rather elderly with grey hair and clear blue eyes.<br />
+The prisoner felt sorry for him, but there was nothing else he could do.<br />
+As the man came near,<br />
+&#xa0;the prisoner <b>knocked him to the ground</b> <b>with a sharp blow</b>.<br />
+Then, jumping into the car, he drove off as quickly as he could.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge9043a0" class="outline-2">
+<h2 id="orge9043a0">Lesson 82 Monster or fish?</h2>
+<div class="outline-text-2" id="text-orge9043a0">
+<p class="verse">
+What was the monster called?<br />
+<br />
+Fishermen and sailors sometimes <b>claim to have seen</b> monsters in the sea.<br />
+Though people have often <b>laughed at</b> stories told by seamen,<br />
+&#xa0;<b>it is now known that</b><br />
+&#xa0;&#xa0;many of these 'monsters' which have <b>at times</b> been sighted are simply strange fish.<br />
+Occasionally, unusual creatures are washed to the shore,<br />
+&#xa0;but they are rarely caught <b>out at sea</b>.<br />
+Some time ago, however, a peculiar fish was caught near Madagascar.<br />
+A small fishing boat was carried miles out to sea by the powerful fish as it pulled on the line.<br />
+Realizing that this was no ordinary fish,<br />
+&#xa0;the fisherman made every effort not to damage it <b>in any way</b>.<br />
+When it was eventually brought to shore,<br />
+&#xa0;<b>it was found to be</b> over thirteen feet long.<br />
+It had a head like a horse,<br />
+&#xa0;big blue eyes, shining silver skin, and a bright red tail.<br />
+The fish, which has since been sent to a museum<br />
+&#xa0;&#xa0;where it is being examined by a scientist,<br />
+&#xa0;is called an oarfish.<br />
+Such creatures have rarely been seen alive by man as they live at <b>a depth of</b> six hundred feet.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orga50cb92" class="outline-2">
+<h2 id="orga50cb92">Lesson 83 After the elections</h2>
+<div class="outline-text-2" id="text-orga50cb92">
+<p class="verse">
+Why did Patrick keep on asking the same question?<br />
+<br />
+The former Prime Minister, Mr. Wentworth Lane, was defeated in the recent elections.<br />
+He is now retiring from political life and has gone abroad.<br />
+My friend, Patrick, has always been a fanatical opponent of Mr. Lane's Radical Progressive Party.<br />
+After the elections, Patrick went to the former Prime Minister's house.<br />
+When he asked if Mr. Lane lived there,<br />
+&#xa0;the policeman <b>on duty</b> told him that since his defeat, the ex-Prime Minister had gone abroad.<br />
+<b>On the following day</b>, Patrick went to the house again.<br />
+The same policeman was just walking slowly past the entrance,<br />
+&#xa0;when Patrick asked the same question.<br />
+Though a little suspicious this time, the policeman gave him the same answer.<br />
+The day after, Patrick went to the house once more and asked exactly the same question.<br />
+This time, the policeman lost his temper.<br />
+'I told you yesterday and the day before yesterday,' he shouted,<br />
+'Mr. Lane was defeated in the elections.<br />
+He has retired from political life and gone to live abroad!'<br />
+'I know,' answered Patrick, 'I <b>love to hear</b> you say it!'<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org474a585" class="outline-2">
+<h2 id="org474a585">Lesson 84 On strike</h2>
+<div class="outline-text-2" id="text-org474a585">
+<p class="verse">
+Who will be driving the buses next week?<br />
+<br />
+Busmen have decided to <b>go on strike</b> next week.<br />
+The strike <b>is due to</b> begin on Tuesday.<br />
+No one knows how long it will last.<br />
+<b>The busmen have stated</b><br />
+&#xa0;that the strike will continue<br />
+&#xa0;&#xa0;until general <b>agreement is reached about</b> pay and working conditions.<br />
+Most people believe that the strike will last for at least a week.<br />
+Many owners of private cars are going to offer 'free rides' to people on their way to work.<br />
+This will <b>relieve pressure</b> on the trains <b>to some extent</b>.<br />
+Meanwhile, a number of university students have <b>volunteered to drive</b> buses while the strike lasts.<br />
+All the students are expert drivers,<br />
+&#xa0;but before they drive any of the buses, they will have to <b>pass a special test</b>.<br />
+The students are going to <b>take the test</b> in two days' time.<br />
+Even so, people are going to find it difficult to get to work.<br />
+But so far, the public has <b>expressed its gratitude to</b> the students in letters to the Press.<br />
+<b>Only one or two people have objected</b> that the students will drive too fast!<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org27d5b9d" class="outline-2">
+<h2 id="org27d5b9d">Lesson 85 Never too old to learn</h2>
+<div class="outline-text-2" id="text-org27d5b9d">
+<p class="verse">
+How long has Mr. Page been teaching?<br />
+<br />
+I have just received a letter from my old school,<br />
+&#xa0;<b>informing me</b> that my former headmaster, Mr. Stuart Page, will be retiring next week.<br />
+Pupils of the school, old and new, will be sending him a present to <b>mark the occasion</b>.<br />
+All those who have <b>contributed towards</b> the gift<br />
+&#xa0;will sign their names in a large album which will be sent to the headmaster's home.<br />
+We shall all <b>remember Mr. Page for</b> his patience and understanding<br />
+&#xa0;and for the kindly encouragement he gave us when we went so unwillingly to school.<br />
+A great many former pupils will be attending a farewell dinner <b>in his honour</b> next Thursday.<br />
+<b>It is a curious coincidence that</b> the day before his retirement,<br />
+&#xa0;Mr. Page will have been teaching for <b>a total of</b> forty years.<br />
+After he has retired, he will <b>devote himself to gardening</b>.<br />
+For him, this will be an entirely new hobby.<br />
+But this does not matter,<br />
+&#xa0;for, as he has often remarked, one is never too old to learn.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org5542915" class="outline-2">
+<h2 id="org5542915">Lesson 86 Out of control</h2>
+<div class="outline-text-2" id="text-org5542915">
+<p class="verse">
+What was the danger?<br />
+<br />
+As the man tried to swing the speedboat round, the steering wheel <b>came away</b> in his hands.<br />
+He waved desperately to his companion, who had been water skiing for the last fifteen minutes.<br />
+Both men had hardly had time to realize what was happening<br />
+&#xa0;when they were thrown violently into the sea.<br />
+The speedboat had struck a buoy,<br />
+&#xa0;but it continued to move very quickly across the water.<br />
+Both men had just begun to swim towards the shore,<br />
+&#xa0;when <b>they noticed with dismay</b> that the speedboat was moving <b>in a circle</b>.<br />
+It now came straight towards them <b>at tremendous speed</b>.<br />
+In less than a minute, it roared past them only a few feet away.<br />
+After it had passed,<br />
+&#xa0;they swam on as quickly as they could because they knew that the boat would soon return.<br />
+They had just had enough time to swim out of danger<br />
+&#xa0;when the boat again completed a circle.<br />
+On this occasion, however, it had slowed down considerably.<br />
+The petrol had nearly all <b>been used up</b>.<br />
+<b>Before long</b>, the noise dropped completely and the boat began to drift gently across the water.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org9964703" class="outline-2">
+<h2 id="org9964703">Lesson 87 A perfect alibi</h2>
+<div class="outline-text-2" id="text-org9964703">
+<p class="verse">
+What was wrong with the man's story?<br />
+<br />
+'At the time the murder was committed,<br />
+&#xa0;I was travelling on the 8 o'clock train to London,' said the man.<br />
+'Do you always catch such an early train?' asked the inspector.<br />
+'Of course I do,' answered the man.<br />
+'I must be at work at 10 o'clock.<br />
+My employer will confirm that I was there on time.'<br />
+'Would a later train get you to work on time?' asked the inspector.<br />
+'I suppose it would, but I never catch a later train.'<br />
+'At what time did you arrive at the station?'<br />
+'At ten to eight.<br />
+I bought a paper and waited for the train.'<br />
+'And you didn't notice anything unusual?'<br />
+'Of course not.'<br />
+'I suggest,' said the inspector, 'that you are not telling the truth.<br />
+I suggest that you did not catch the 8 o'clock train,<br />
+&#xa0;but that you caught the 8.25 which would still get you to work on time.<br />
+You see, on the morning of the murder, the 8 o'clock train did not run at all.<br />
+It broke down at Ferngreen station and was taken off the line.'<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgcac50f9" class="outline-2">
+<h2 id="orgcac50f9">Lesson 88 Trapped in a mine</h2>
+<div class="outline-text-2" id="text-orgcac50f9">
+<p class="verse">
+Why is the rescue taking so long?<br />
+<br />
+Six men have been trapped in a mine for seventeen hours.<br />
+If they are not brought to the surface soon they may <b>lose their lives</b>.<br />
+However, rescue operations are proving difficult.<br />
+If explosives are used, vibrations will <b>cause the roof of the mine to collapse</b>.<br />
+Rescue workers are therefore drilling a hole on the north side of the mine.<br />
+They intend to bring the men up <b>in a special capsule</b>.<br />
+If there had not been <b>a hard layer of</b> rock beneath the soil,<br />
+&#xa0;they would have completed the job in a few hours.<br />
+<b>As it is</b>, they have been drilling for sixteen hours and they still have a long way to go.<br />
+Meanwhile, a microphone, which was lowered into the mine two hours ago,<br />
+&#xa0;has <b>enabled the men to keep in touch with</b> their closest relatives.<br />
+Though they are <b>running out of</b> food and drink,<br />
+&#xa0;the men are cheerful and confident that they will get out soon.<br />
+They have been told that rescue operations are progressing smoothly.<br />
+If they knew how difficult it was to drill through the hard rock, they would <b>lose heart</b>.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org72f6029" class="outline-2">
+<h2 id="org72f6029">Lesson 89 A slip of the tongue</h2>
+<div class="outline-text-2" id="text-org72f6029">
+<p class="verse">
+Who made the only funny joke that evening and why?<br />
+<br />
+People will <b>do anything to see</b> a free show -&#x2014; even if it is a bad one.<br />
+When <b>the news got round</b><br />
+&#xa0;that <b>a comedy show</b> would be presented at our local cinema by the P. and U. Bird Seed Company,<br />
+&#xa0;we all rushed to see it.<br />
+We had to queue for hours to get in and there must have been several hundred people present<br />
+&#xa0;just before the show began.<br />
+Unfortunately, the show was one of the dullest we have ever seen.<br />
+Those who failed to get in need not have <b>felt disappointed</b>,<br />
+&#xa0;as many of the artistes who should have appeared did not come.<br />
+The only funny things we heard that evening<br />
+&#xa0;came from the advertiser <b>at the beginning of the programme</b>.<br />
+He was obviously very nervous and for some minutes stood awkwardly before the microphone.<br />
+As soon as he opened his mouth, everyone <b>burst out laughing</b>.<br />
+We all know what the poor man should have said,<br />
+&#xa0;but what he actually said was: 'This is the Poo and Ee Seed Bird Company.<br />
+Good ladies, evening and gentlemen!’<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org1a2fe49" class="outline-2">
+<h2 id="org1a2fe49">Lesson 90 What's for supper?</h2>
+<div class="outline-text-2" id="text-org1a2fe49">
+<p class="verse">
+What kind of fish are they?<br />
+<br />
+Fish and chips has always been a favourite dish in Britain,<br />
+&#xa0;but as the oceans have been overfished, fish has become more and more expensive.<br />
+So it comes as a surprise to learn that giant fish are terrifying the divers on North Sea oil rigs.<br />
+Oil rigs have to be repaired frequently<br />
+&#xa0;and divers, who often have to work in darkness a hundred feet under water,<br />
+&#xa0;&#xa0;have <b>been frightened out of their wits</b> by giant fish bumping into them as they work.<br />
+Now they have had special cages made to <b>protect them from</b> these monsters.<br />
+The fish are not sharks or killer whales,<br />
+&#xa0;but favourite eating varieties like cod and skate<br />
+&#xa0;&#xa0;which grow to unnatural sizes, sometimes as much as twelve feet <b>in length</b>.<br />
+Three factors have caused these fish to grow so large:<br />
+&#xa0;the warm water round the hot oil pipes under the sea;<br />
+&#xa0;the plentiful supply of food thrown overboard by the crews on the rigs;<br />
+&#xa0;<b>the total absence of</b> fishing boats around the oil rigs.<br />
+<b>As a result</b>, the fish just eat and eat and grow and grow in the lovely warm water.<br />
+Who eats who?<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge069112" class="outline-2">
+<h2 id="orge069112">Lesson 91 Three men in a basket</h2>
+<div class="outline-text-2" id="text-orge069112">
+<p class="verse">
+Where was the station's Commanding Officer?<br />
+<br />
+A pilot noticed a balloon which <b>seemed to be making for</b> a Royal Air Force Station nearby.<br />
+He informed the station at once, but no one there was able to explain the mystery.<br />
+The officer in the control tower was very angry when he heard the news,<br />
+&#xa0;because balloons can be a great danger to aircraft.<br />
+He said that someone might be <b>spying on</b> the station<br />
+&#xa0;and the pilot was ordered to <b>keep track of</b> the strange object.<br />
+The pilot managed to circle the balloon for some time.<br />
+He could <b>make out</b> three men in a basket under it and one of them was holding a pair of binoculars.<br />
+When the balloon was over the station, the pilot saw one of the men taking photographs.<br />
+<b>Soon afterwards</b>, the balloon began to descend and it landed near an airfield.<br />
+The police <b>were called in</b>, but they could not arrest anyone,<br />
+&#xa0;for the basket contained two Members of Parliament and the Commanding Officer of the station!<br />
+As the Commanding Officer explained later,<br />
+&#xa0;one half of the station did not know what the other half was doing!<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org1ea0cb4" class="outline-2">
+<h2 id="org1ea0cb4">Lesson 92 Asking for trouble</h2>
+<div class="outline-text-2" id="text-org1ea0cb4">
+<p class="verse">
+Why did the policeman ask the writer to come to the police station?<br />
+<br />
+It must have been about two in the morning when I returned home.<br />
+I tried to wake up my wife by ringing the doorbell,<br />
+&#xa0;but she was <b>fast asleep</b>,<br />
+&#xa0;so I got a ladder from the shed in the garden,<br />
+&#xa0;&#xa0;put it against the wall, and began climbing towards the bedroom window.<br />
+I was almost there when a sarcastic voice below said,<br />
+&#xa0;'I don't think the windows need cleaning at this time of the night.'<br />
+I looked down and nearly fell off the ladder when I saw a policeman.<br />
+I immediately regretted answering in the way I did,<br />
+&#xa0;but I said, 'I enjoy cleaning windows at night.'<br />
+'So do I,' answered the policeman in the same tone.<br />
+'Excuse my interrupting you.<br />
+I <b>hate to interrupt</b> a man when he's busy working,<br />
+&#xa0;but would you mind coming with me to the station?'<br />
+'Well, I'd prefer to stay here,' I said.<br />
+'You see. I've forgotten my key.'<br />
+'Your what?' he called.<br />
+'My key,' I shouted.<br />
+Fortunately, the shouting woke up my wife who opened the window<br />
+&#xa0;just as the policeman had started to climb towards me.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org1e1c47d" class="outline-2">
+<h2 id="org1e1c47d">Lesion 93 A noble gift</h2>
+<div class="outline-text-2" id="text-org1e1c47d">
+<p class="verse">
+Where was the Statue of Liberty made?<br />
+<br />
+One of the most famous monuments in the world, the Statue of Liberty,<br />
+&#xa0;was presented to the United States of America in the nineteenth century by the people of France.<br />
+The great statue, which was designed by the sculptor Auguste Bartholdi, took ten years to complete.<br />
+The actual figure was made of copper<br />
+&#xa0;supported by a metal framework which had been especially constructed by Eiffel.<br />
+Before it could be transported to the United States,<br />
+&#xa0;a site had to be found for it and a pedestal had to be built.<br />
+The site chosen was an island <b>at the entrance of</b> New York Harbour.<br />
+By 1884, a statue which was 151 feet tall had been erected in Paris.<br />
+The following year, it was <b>taken to pieces</b> and sent to America.<br />
+By the end of October 1886, the statue had been put together again<br />
+&#xa0;and it was officially presented to the American people by Bartholdi.<br />
+Ever since then, the great monument has been a symbol of liberty for the millions of people<br />
+&#xa0;who have passed through New York Harbour to make their homes in America.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org454a82a" class="outline-2">
+<h2 id="org454a82a">Lesson 94 Future champions</h2>
+<div class="outline-text-2" id="text-org454a82a">
+<p class="verse">
+What kind of race do the children compete in?<br />
+<br />
+<b>Experiments have proved</b><br />
+&#xa0;that children can <b>be instructed in swimming</b> at a very early age.<br />
+At a special swimming pool in Los Angeles,<br />
+&#xa0;children become expert at <b>holding their breath</b> under water even before they can walk.<br />
+Babies of two months old do not appear to <b>be reluctant to enter</b> the water.<br />
+It is not long before<br />
+&#xa0;they <b>are so accustomed to swimming</b> that they can pick up weights from the floor of the pool.<br />
+A game that <b>is very popular with</b> these young swimmers is the underwater tricycle race.<br />
+Tricycles <b>are lined up</b> on the floor of the pool seven feet under water.<br />
+The children <b>compete against</b> each other to reach the other end of the pool.<br />
+Many pedal their tricycles, but most of them prefer to push or drag them.<br />
+Some children can cover the whole length of the pool without coming up for breath even once.<br />
+Whether they will ever become future Olympic champions, only time will tell.<br />
+Meanwhile, they should encourage those among us<br />
+&#xa0;who cannot swim five yards before they are gasping for air.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org839cf77" class="outline-2">
+<h2 id="org839cf77">Lesson 95 A fantasy</h2>
+<div class="outline-text-2" id="text-org839cf77">
+<p class="verse">
+Why was the Ambassador particularly lucky?<br />
+<br />
+When the Ambassador of Escalopia returned home for lunch, his wife got a shock.<br />
+He looked pale and his clothes were in a frightful state.<br />
+'What has happened?' she asked.<br />
+'How did your clothes <b>get into such a mess</b>?'<br />
+'A fire extinguisher, my dear,' answered the Ambassador drily.<br />
+'University students <b>set the Embassy on fire</b> this morning.'<br />
+'<b>Good heavens!</b>' exclaimed his wife.<br />
+'And where were you at the time?'<br />
+'I was in my office as usual,' answered the Ambassador.<br />
+'The fire broke out in the basement.<br />
+I went down immediately, of course, and that fool, Horst, aimed a fire extinguisher at me.<br />
+He thought I was on fire.<br />
+I must definitely get that fellow posted.'<br />
+The Ambassador's wife <b>went on asking</b> questions,<br />
+&#xa0;when she suddenly noticed a big hole in her husband's hat.<br />
+'And how can you explain that?' she asked.<br />
+'Oh, that,' said the Ambassador.<br />
+'Someone <b>fired a shot</b> through my office window.<br />
+Accurate, don't you think?<br />
+Fortunately, I wasn't wearing it at the time.<br />
+If I had been,<br />
+&#xa0;I would not have been able to get home for lunch.'<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge34438c" class="outline-2">
+<h2 id="orge34438c">Lesson 96 The dead return</h2>
+<div class="outline-text-2" id="text-orge34438c">
+<p class="verse">
+What happens to the lanterns at the end of festival?<br />
+<br />
+A Festival for the Dead is held once a year in Japan.<br />
+This festival is a cheerful occasion,<br />
+&#xa0;for on this day, the dead are said to <b>return to their homes</b> and they are welcomed by the living.<br />
+As they <b>are expected to be</b> hungry after their long journey,<br />
+&#xa0;<b>food is laid out</b> for them.<br />
+Specially-made lanterns are hung outside each house to help the dead to find their way.<br />
+All night long, people dance and sing.<br />
+In the early morning,<br />
+&#xa0;the food that had been laid out for the dead is thrown into a river or into the sea<br />
+&#xa0;as <b>it is considered unlucky for anyone living</b> to eat it.<br />
+In towns that are near the sea,<br />
+&#xa0;the tiny lanterns which had been hung in the streets the night before,<br />
+&#xa0;&#xa0;<b>are placed into</b> the water when the festival is over.<br />
+Thousands of lanterns slowly drift out to sea<br />
+&#xa0;guiding the dead on their return journey to the other world.<br />
+This is a moving spectacle,<br />
+&#xa0;for crowds of people stand on the shore<br />
+&#xa0;&#xa0;watching the lanterns drifting away until they can be seen no more.<br />
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>
