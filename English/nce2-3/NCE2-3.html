@@ -1,0 +1,830 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-05-21 Tue 13:45 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="lenovo" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org466223c">1. Lesson 49 The end of a dream</a></li>
+<li><a href="#org7731d74">2. Lesson 50 Taken for a ride</a></li>
+<li><a href="#orgc2e87ff">3. Lesson 51 Reward for virtue</a></li>
+<li><a href="#orgb8114a9">4. Lesson 52 A pretty carpet</a></li>
+<li><a href="#org063cd8a">5. Lesson 53 Hot snake</a></li>
+<li><a href="#orge28919b">6. Lesson 54 Sticky fingers</a></li>
+<li><a href="#orgce2d1df">7. Lesson 55 Not a gold mine</a></li>
+<li><a href="#org3f2da54">8. Lesson 56 Faster than sound!</a></li>
+<li><a href="#org974deed">9. Lesson 57 Can I help you, madam?</a></li>
+<li><a href="#orgc287248">10. Lesson 58 A blessing in disguise?</a></li>
+<li><a href="#orgae1e79c">11. Lesson 59 In or out?</a></li>
+<li><a href="#org075fb9e">12. Lesson 60 The future</a></li>
+<li><a href="#org4ac7647">13. Lesson 61 Trouble with the Hubble</a></li>
+<li><a href="#orgb7aecf3">14. Lesson 62 After the fire</a></li>
+<li><a href="#org7a22943">15. Lesson 63 She was not amused</a></li>
+<li><a href="#org546914d">16. Lesson 64 The Channel Tunnel</a></li>
+<li><a href="#orgffc5584">17. Lesson 65 Jumbo versus the police</a></li>
+<li><a href="#orgd2cb8e1">18. Lesson 66 Sweet as honey!</a></li>
+<li><a href="#orgc1326c7">19. Lesson 67 Volcanoes</a></li>
+<li><a href="#org8b1b1d1">20. Lesson 68 Persistent</a></li>
+<li><a href="#org07c47a8">21. Lesson 69 But not murder!</a></li>
+<li><a href="#orgc354182">22. Lesson 70 Red for danger</a></li>
+<li><a href="#orgc056e91">23. Lesson 71 A famous clock</a></li>
+<li><a href="#org1de3d9c">24. Lesson 72 A car called Bluebird</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org466223c" class="outline-2">
+<h2 id="org466223c"><span class="section-number-2">1.</span> Lesson 49 The end of a dream</h2>
+<div class="outline-text-2" id="text-1">
+<p class="verse">
+How did the dream end?<br />
+<br />
+<b>Tired of sleeping</b> on the floor,<br />
+&#xa0;a young man in Teheran <b>saved up for years to buy</b> a real bed.<br />
+<b>For the first time in his life</b>,<br />
+&#xa0;he became the proud owner of a bed which had springs and a mattress.<br />
+Because the weather was very hot,<br />
+&#xa0;he carried the bed on to the roof of his house.<br />
+He slept very well for the first two nights,<br />
+&#xa0;but on the third night, a storm blew up.<br />
+<b>A gust of wind swept</b> the bed off the roof and sent it crashing <b>into the courtyard</b> below.<br />
+The young man did not wake up until the bed had struck the ground.<br />
+Although the bed <b>was smashed to pieces</b>, the man was miraculously unhurt.<br />
+When he woke up, he was still on the mattress.<br />
+<b>Glancing at</b> the bits of wood and metal that lay around him,<br />
+&#xa0;the man sadly picked up the mattress and carried it into his house.<br />
+After he had put it on the floor, he promptly <b>went to sleep</b> again.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org7731d74" class="outline-2">
+<h2 id="org7731d74"><span class="section-number-2">2.</span> Lesson 50 Taken for a ride</h2>
+<div class="outline-text-2" id="text-2">
+<p class="verse">
+Why did the writer not get off the bus at Woodford Green?<br />
+<br />
+I love travelling in the country, but I don't like losing my way.<br />
+I went on an excursion recently, but my trip took me longer than I expected.<br />
+'I'm going to Woodford Green,' I said to the conductor as I got on the bus,<br />
+&#xa0;'but I don't know where it is.'<br />
+'I'll tell you where to get off,' answered the conductor.<br />
+I sat in the front of the bus to get a good view of the countryside.<br />
+After some time, the bus stopped.<br />
+Looking round, I realized with a shock that I was the only passenger left on the bus.<br />
+'You'll have to get off here,' the conductor said. 'This is as far as we go.'<br />
+'Is this Woodford Green?' I asked.<br />
+'Oh dear,' said the conductor suddenly. 'I forgot to put you off.'<br />
+'It doesn't matter,' I said. 'I'll get off here.'<br />
+'We're going back now,' said the conductor.<br />
+'Well, in that case, I <b>prefer to stay</b> on the bus,' I answered.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc2e87ff" class="outline-2">
+<h2 id="orgc2e87ff"><span class="section-number-2">3.</span> Lesson 51 Reward for virtue</h2>
+<div class="outline-text-2" id="text-3">
+<p class="verse">
+Why did Hugh's diet not work?<br />
+<br />
+My friend, Hugh, has always been fat,<br />
+&#xa0;but things got so bad recently that he decided to <b>go on a diet</b>.<br />
+He began his diet a week ago.<br />
+<b>First of all</b>, he <b>wrote out a long list of</b> all the foods which were forbidden.<br />
+The list included most of the things Hugh loves:<br />
+&#xa0;butter, potatoes, rice, beer, milk, chocolate; and sweets.<br />
+Yesterday I <b>paid him a visit</b>.<br />
+I <b>rang the bell</b> and <b>was not surprised to see that</b> Hugh was still as fat as ever.<br />
+He led me into his room and hurriedly hid a large parcel under his desk.<br />
+<b>It was obvious that</b> he was very embarrassed.<br />
+When I asked him what he was doing,<br />
+&#xa0;he smiled guiltily and then put the parcel on the desk.<br />
+He explained that his diet was so strict that he had to reward himself occasionally.<br />
+Then he showed me the contents of the parcel.<br />
+It contained five large bars of chocolate and three bags of sweets!<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb8114a9" class="outline-2">
+<h2 id="orgb8114a9"><span class="section-number-2">4.</span> Lesson 52 A pretty carpet</h2>
+<div class="outline-text-2" id="text-4">
+<p class="verse">
+What is the writer's carpet made of?<br />
+<br />
+We have just moved into a new house and I have been working hard all morning.<br />
+I have been trying to <b>get my new room in order</b>.<br />
+This has not been easy because I own over a thousand books.<br />
+<b>To make matters worse</b>, the room is rather small,<br />
+&#xa0;so I have temporarily put my books on the floor.<br />
+At the moment, they cover <b>every inch of floor space</b><br />
+&#xa0;and I actually have to walk on them to get in or out of the room.<br />
+<b>A short while ago</b>, my sister <b>helped me to carry</b> one of my old bookcases up the stairs.<br />
+She went into my room and got a big surprise when she saw all those books on the floor.<br />
+'This is the prettiest carpet I have ever seen,' she said.<br />
+She <b>gazed at it</b> for some time then added, 'You don't need bookcases at all.'<br />
+'You can sit here <b>in your spare time</b> and read the carpet!'<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org063cd8a" class="outline-2">
+<h2 id="org063cd8a"><span class="section-number-2">5.</span> Lesson 53 Hot snake</h2>
+<div class="outline-text-2" id="text-5">
+<p class="verse">
+What caused the fire?<br />
+<br />
+At last firemen have put out a big forest fire in California.<br />
+Since then, they have been trying to <b>find out</b> how the fire began.<br />
+Forest fires are often caused by broken glass<br />
+&#xa0;or by cigarette ends which people carelessly <b>throw away</b>.<br />
+Yesterday the fireman examined the ground carefully, but were not able to find any broken glass.<br />
+They were also quite sure that a cigarette end did not start the fire.<br />
+This morning, however, a fireman accidentally <b>discovered the cause</b>.<br />
+He noticed <b>the remains of a snake</b><br />
+&#xa0;which was wound round the <b>electric wires</b> of a 16,000-volt power line.<br />
+In this way, he was able to <b>solve the mystery</b>.<br />
+The explanation was simple but very unusual.<br />
+A bird had snatched up the snake from the ground and then dropped it on to the wires.<br />
+The snake then wound itself round the wires.<br />
+When it did so, it sent sparks down to the ground and these immediately started a fire.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge28919b" class="outline-2">
+<h2 id="orge28919b"><span class="section-number-2">6.</span> Lesson 54 Sticky fingers</h2>
+<div class="outline-text-2" id="text-6">
+<p class="verse">
+What two interruptions did the writer have?<br />
+<br />
+After breakfast, I <b>sent the children to school</b> and then I went to the shops.<br />
+It was still early when I returned home.<br />
+The children were at school, my husband was at work and the house was quiet.<br />
+So I <b>decided to make</b> some meat pies.<br />
+In a short time I <b>was busy mixing</b> butter and flour<br />
+&#xa0;and my hands <b>were soon covered with sticky pastry</b>.<br />
+At exactly that moment, the telephone rang.<br />
+Nothing could have been more annoying.<br />
+I picked up the receiver between two sticky fingers<br />
+&#xa0;and was dismayed when I <b>recognized the voice of Helen Bates</b>.<br />
+It <b>took me ten minutes to</b> <b>persuade her to ring</b> back later.<br />
+At last I <b>hung up</b> the receiver.<br />
+<b>What a mess</b>!<br />
+There was pastry on my fingers, on the telephone, and on the doorknobs.<br />
+I had no sooner got back to the kitchen than the doorbell rang loud enough to wake the dead.<br />
+This time it was the postman and he wanted me to <b>sign for a registered letter</b>!<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgce2d1df" class="outline-2">
+<h2 id="orgce2d1df"><span class="section-number-2">7.</span> Lesson 55 Not a gold mine</h2>
+<div class="outline-text-2" id="text-7">
+<p class="verse">
+What did the team find?<br />
+<br />
+Dreams of finding lost treasure almost <b>came true</b> recently.<br />
+A new machine called 'The Revealer' has been invented<br />
+&#xa0;and it has <b>been used to detect</b> gold which has been buried in the ground.<br />
+The machine was used <b>in a cave</b> <b>near the seashore</b><br />
+&#xa0;where &#x2013; it is said - pirates used to hide gold.<br />
+The pirates would often bury gold in the cave and then fail to collect it.<br />
+<b>Armed with the new machine</b>, a search party went into the cave hoping to find buried treasure.<br />
+The leader of the party was examining the soil near the entrance to the cave<br />
+&#xa0;when the machine showed that there was gold under the ground.<br />
+Very excited, the party dug a hole two feet deep.<br />
+They finally found a small gold coin which was almost worthless.<br />
+The party then searched the whole cave thoroughly<br />
+&#xa0;but did not find anything except an empty tin trunk.<br />
+In spite of this,<br />
+&#xa0;many people <b>are confident that</b> 'The Revealer' may reveal <b>something of value</b> <b>fairly soon</b>.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org3f2da54" class="outline-2">
+<h2 id="org3f2da54"><span class="section-number-2">8.</span> Lesson 56 Faster than sound!</h2>
+<div class="outline-text-2" id="text-8">
+<p class="verse">
+How fast did the winning car go?<br />
+<br />
+Once a year, a race is held for old cars.<br />
+A lot of cars entered for this race last year<br />
+&#xa0;and there was a great deal of excitement just before it began.<br />
+One of the most handsome cars was a Rolls-Royce Silver Ghost.<br />
+The most unusual car was a Benz which had only three wheels.<br />
+Built in 1885, it was the oldest car taking part.<br />
+After a great many loud explosions, the race began.<br />
+Many of the cars <b>broke down</b> <b>on the course</b><br />
+&#xa0;and some drivers spent more time under their cars than in them!<br />
+A few cars, however, completed the race.<br />
+The winning car reached a speed of forty miles an hour - much faster than any of its rivals.<br />
+It sped downhill at the end of the race and its driver had a lot of trouble trying to stop it.<br />
+The race gave everyone <b>a great deal of</b> pleasure.<br />
+It <b>was very different from</b> modern car races but no less exciting.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org974deed" class="outline-2">
+<h2 id="org974deed"><span class="section-number-2">9.</span> Lesson 57 Can I help you, madam?</h2>
+<div class="outline-text-2" id="text-9">
+<p class="verse">
+Did the woman get what she wanted?<br />
+<br />
+A woman in jeans stood at the window of an expensive shop.<br />
+Though she hesitated for a moment,<br />
+&#xa0;she finally went in and <b>asked to see</b> a dress that was in the window.<br />
+The assistant who served her did not like the way she was dressed.<br />
+Glancing at her scornfully, he told her that the dress was sold.<br />
+The woman walked out of the shop angrily and decided to punish the assistant next day.<br />
+She returned to the shop the following morning <b>dressed in</b> a fur coat,<br />
+&#xa0;with a handbag in one hand and a long umbrella in the other.<br />
+After <b>seeking out</b> the rude assistant, she asked for the same dress.<br />
+Not realizing who she was, the assistant <b>was eager to serve</b> her this time.<br />
+With great difficulty, he climbed into the shop window to get the dress.<br />
+As soon as she saw it, the woman said she did not like it.<br />
+She enjoyed herself making the assistant bring almost everything in the window<br />
+&#xa0;before finally buying the dress she had first asked for.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc287248" class="outline-2">
+<h2 id="orgc287248"><span class="section-number-2">10.</span> Lesson 58 A blessing in disguise?</h2>
+<div class="outline-text-2" id="text-10">
+<p class="verse">
+Why does the vicar refuse to cut down the tree?<br />
+<br />
+The tiny village of Frinley is said to possess a 'cursed tree'.<br />
+Because the tree was mentioned in a newspaper, the number of visitors to Frinley has now increased.<br />
+The tree was planted near the church fifty years ago,<br />
+&#xa0;but it is only in recent years that it has gained an evil reputation.<br />
+It is said that if anyone touches the tree, he will have bad luck;<br />
+&#xa0;if he picks a leaf, he will die.<br />
+Many villagers believe that the tree has already claimed <b>a number of</b> victims.<br />
+The vicar has been asked to have the tree cut down, but so far he has refused.<br />
+He has <b>pointed out that</b> the tree is a useful <b>source of income</b>,<br />
+&#xa0;as tourists have been coming from all parts of the country to see it.<br />
+In spite of all that has been said,<br />
+&#xa0;the tourists have been picking leaves and cutting their names on the tree-trunk.<br />
+So far, not one of them has been struck down by sudden death.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgae1e79c" class="outline-2">
+<h2 id="orgae1e79c"><span class="section-number-2">11.</span> Lesson 59 In or out?</h2>
+<div class="outline-text-2" id="text-11">
+<p class="verse">
+Why did Rex run away?<br />
+<br />
+Our dog, Rex, used to sit outside our front gate and bark.<br />
+Every time he wanted to come into the garden he would bark until someone opened the gate.<br />
+As the neighbours <b>complained of</b> the noise,<br />
+&#xa0;my husband <b>spent weeks training him to press</b> his paw on the latch to let himself in.<br />
+Rex soon became an expert at opening the gate.<br />
+However, when I was going out shopping last week,<br />
+&#xa0;I noticed him in the garden near the gate.<br />
+This time he was barking so that someone would let him out!<br />
+Since then, he has developed another bad habit.<br />
+As soon as he opens the gate from the outside,<br />
+&#xa0;he comes into the garden and waits until the gate shuts.<br />
+Then he sits and barks until someone lets him out.<br />
+After this he immediately lets himself in and begins barking again.<br />
+Yesterday my husband removed the gate and Rex got so annoyed we have not seen him since.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org075fb9e" class="outline-2">
+<h2 id="org075fb9e"><span class="section-number-2">12.</span> Lesson 60 The future</h2>
+<div class="outline-text-2" id="text-12">
+<p class="verse">
+Does what Madam Bellinsky said come true?<br />
+<br />
+At a village fair, I decided to visit a fortune-teller called Madam Bellinsky.<br />
+I went into her tent and she told me to sit down.<br />
+After I had given her some money, she looked into a crystal ball and said:<br />
+'<b>A relation of yours</b> is coming to see you.<br />
+She will be arriving this evening and intends to stay for a few days.<br />
+The moment you leave this tent, you will get a big surprise.<br />
+A woman you know well will rush towards you.<br />
+She will speak to you	and then she will lead you away from this place.<br />
+That is all.'<br />
+<br />
+As soon as I went outside,<br />
+&#xa0;I forgot all about Madam Bellinsky because my wife hurried towards me.<br />
+'Where have you been hiding?' she asked impatiently.<br />
+'Your sister will be here in less than an hour and we must be at the station to meet her.<br />
+We are late already.'<br />
+As she walked away,	I followed her out of the fair.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org4ac7647" class="outline-2">
+<h2 id="org4ac7647"><span class="section-number-2">13.</span> Lesson 61 Trouble with the Hubble</h2>
+<div class="outline-text-2" id="text-13">
+<p class="verse">
+What is the special importance of a telescope in space?<br />
+<br />
+The Hubble telescope was launched into space by NASA on April 20, 1990<br />
+&#xa0;at a cost of over a billion dollars.<br />
+<b>Right from the start</b> there was trouble with the Hubble.<br />
+The pictures it sent us were very disappointing<br />
+&#xa0;because its main mirror was faulty.<br />
+NASA is now going to put the telescope right,<br />
+&#xa0;so it will soon be sending up four astronauts to repair it.<br />
+The shuttle Endeavour will be taking the astronauts to the Hubble.<br />
+A robot-arm from the Endeavour will grab the telescope<br />
+&#xa0;and hold it while the astronauts make the necessary repairs.<br />
+Of course, the Hubble is above the earth's atmosphere,<br />
+&#xa0;so it will soon be sending us the clearest pictures of the stars<br />
+&#xa0;&#xa0;and distant galaxies that we have ever seen.<br />
+The Hubble will tell us a great deal about the age and size of the universe.<br />
+By the time you read this,<br />
+&#xa0;the Hubble's eagle eye will have sent us thousands and thousands of wonderful pictures.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb7aecf3" class="outline-2">
+<h2 id="orgb7aecf3"><span class="section-number-2">14.</span> Lesson 62 After the fire</h2>
+<div class="outline-text-2" id="text-14">
+<p class="verse">
+What was the danger to the villagers after the fire?<br />
+<br />
+Firemen had been fighting the forest fire for nearly three weeks<br />
+&#xa0;before they could <b>get it under control</b>.<br />
+<b>A short time before</b>, great trees had covered the countryside <b>for miles around</b>.<br />
+Now, smoke still rose up from the warm ground over the desolate hills.<br />
+Winter was coming on and the hills threatened the surrounding villages with destruction,<br />
+&#xa0;for heavy rain would not only wash away the soil<br />
+&#xa0;&#xa0;but would cause serious floods as well.<br />
+When the fire had at last been put out,<br />
+&#xa0;the forest authorities ordered several tons of a special type of grass-seed<br />
+&#xa0;&#xa0;which would grow quickly.<br />
+The seed was sprayed over the ground in huge quantities by aeroplanes.<br />
+The planes had been planting seed for nearly a month when it began to rain.<br />
+By then, however, in many places the grass had already <b>taken root</b>.<br />
+<b>In place of</b> the great trees which had been growing there <b>for centuries</b>,<br />
+&#xa0;patches of green had begun to appear in the blackened soil.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org7a22943" class="outline-2">
+<h2 id="org7a22943"><span class="section-number-2">15.</span> Lesson 63 She was not amused</h2>
+<div class="outline-text-2" id="text-15">
+<p class="verse">
+Why did Jenny want to leave the wedding reception?<br />
+<br />
+Jeremy Hampden has <b>a large circle of friends</b> and is very popular at parties.<br />
+Everybody <b>admires him for</b> his great <b>sense of humour</b><br />
+&#xa0;- everybody, that is, except his six-year-old daughter, Jenny.<br />
+Recently, one of Jeremy's <b>closest friends</b> asked him to <b>make a speech</b> <b>at a wedding reception</b>.<br />
+This is <b>the sort of</b> thing that Jeremy loves.<br />
+He prepared the speech carefully and went to the wedding with Jenny.<br />
+He had included <b>a large number of</b> funny stories in the speech and, of course, it was great success.<br />
+As soon as he had finished, Jenny told him she wanted to go home.<br />
+Jeremy was a little disappointed by this but he did as his daughter asked.<br />
+<b>On the way home</b>, he asked Jenny if she had enjoyed the speech.<br />
+To his surprise, she said she hadn't.<br />
+Jeremy asked her why this was so<br />
+&#xa0;and	she told him that she did not like to see so many people laughing at him.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org546914d" class="outline-2">
+<h2 id="org546914d"><span class="section-number-2">16.</span> Lesson 64 The Channel Tunnel</h2>
+<div class="outline-text-2" id="text-16">
+<p class="verse">
+Why was the first tunnel not completed?<br />
+<br />
+In 1858, a French engineer, Aime Thome de Gamond,<br />
+&#xa0;arrived in England with a plan for a twenty-one-mile tunnel under the English Channel.<br />
+He said that it would <b>be possible to build</b> a platform in the centre of the Channel.<br />
+This platform would <b>serve as</b> a port and a railway station.<br />
+The Tunnel would be well-ventilated if tall chimneys were built <b>above sea level</b>.<br />
+In 1860, <b>a better plan was put forward</b> by an Englishman, William Low.<br />
+He suggested that a double railway-tunnel should be built.<br />
+This would <b>solve the problem of ventilation</b>,<br />
+&#xa0;for if a train entered this tunnel, it would draw in fresh air behind it.<br />
+Forty-two years later a tunnel was actually begun.<br />
+If, at the time, the British had not feared invasion, it would have been completed.<br />
+The world had to wait almost another 100 years for the Channel Tunnel.<br />
+It was officially opened on March 7, 1994,<br />
+&#xa0;finally connecting Britain to the European continent.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgffc5584" class="outline-2">
+<h2 id="orgffc5584"><span class="section-number-2">17.</span> Lesson 65 Jumbo versus the police</h2>
+<div class="outline-text-2" id="text-17">
+<p class="verse">
+Why did the police have to push Jumbo off the main street?<br />
+<br />
+Last Christmas, the circus owner, Jimmy Gates,<br />
+&#xa0;decided to take some presents to a children's hospital.<br />
+<b>Dressed up as</b> Father Christmas and accompanied by a 'guard of honour' of six pretty girls,<br />
+&#xa0;he <b>set off</b> down the main street of the city riding a baby elephant called Jumbo.<br />
+He should have known that the police would never allow this sort of thing.<br />
+A policeman approached Jimmy and told him he ought to have gone along a side street<br />
+&#xa0;as Jumbo was <b>holding up the traffic</b>.<br />
+Though Jimmy <b>agreed to go</b> at once, Jumbo refused to move.<br />
+Fifteen policemen had to push very hard to get him off the main street.<br />
+The police had a difficult time, but they were most amused.<br />
+'Jumbo must weigh a few tons,' said a policeman afterwards,<br />
+&#xa0;'so <b>it was fortunate that</b> we didn't have to carry him.<br />
+Of course, we should arrest him,<br />
+&#xa0;but as he has a good record, we shall <b>let him off</b> this time.'<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgd2cb8e1" class="outline-2">
+<h2 id="orgd2cb8e1"><span class="section-number-2">18.</span> Lesson 66 Sweet as honey!</h2>
+<div class="outline-text-2" id="text-18">
+<p class="verse">
+What was 'sweet as honey' and why?<br />
+<br />
+In 1963 a Lancaster bomber crashed on Wallis Island,<br />
+&#xa0;a remote place in the South Pacific, a long way west of Samoa.<br />
+The plane wasn't too badly damaged,<br />
+&#xa0;but <b>over the years</b>,	the crash was forgotten and the wreck remained undisturbed.<br />
+Then in 1989, twenty-six years after the crash,<br />
+&#xa0;the plane was accidentally rediscovered in an aerial survey of the island.<br />
+By this time, a Lancaster bomber <b>in reasonable condition</b> was rare and <b>worth rescuing</b>.<br />
+The French authorities had the plane packaged and moved in parts back to France.<br />
+Now a group of enthusiast are going to have the plane restored.<br />
+It has four Rolls-Royce Merlin engines,<br />
+&#xa0;but the group will need to have only three of them rebuilt.<br />
+Imagine their surprise and delight<br />
+&#xa0;when they broke open the packing cases and found that the fourth engine was sweet as honey<br />
+&#xa0;&#xa0;- still in perfect condition.<br />
+<b>A colony of bees</b> had <b>turned the engine into a hive</b> and it was totally preserved in beeswax!<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc1326c7" class="outline-2">
+<h2 id="orgc1326c7"><span class="section-number-2">19.</span> Lesson 67 Volcanoes</h2>
+<div class="outline-text-2" id="text-19">
+<p class="verse">
+Why does Tazieff risk his life like this?<br />
+<br />
+Haroun Tazieff, the Polish scientist,<br />
+&#xa0;has spent his lifetime studying active volcanoes and deep caves in all parts of the world.<br />
+In 1948, he went to Lake Kivu in the Congo to observe a new volcano which he later <b>named Kituro</b>.<br />
+Tazieff was able to <b>set up his camp</b> very close to the volcano while it was erupting violently.<br />
+Though he managed to take a number of brilliant photographs,<br />
+&#xa0;he could not stay near the volcano for very long.<br />
+<b>He noticed that</b> a river of liquid rock was coming towards him.<br />
+It threatened to surround him completely,<br />
+&#xa0;but Tazieff managed to escape just in time.<br />
+He waited until the volcano became quiet and he was able to return two days later.<br />
+This time, he managed to climb into the mouth of Kituro<br />
+&#xa0;so that he could take photographs and measure temperatures.<br />
+Tazieff has often risked his life in this way.<br />
+He has been able to tell us more about active volcanoes than any man alive.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org8b1b1d1" class="outline-2">
+<h2 id="org8b1b1d1"><span class="section-number-2">20.</span> Lesson 68 Persistent</h2>
+<div class="outline-text-2" id="text-20">
+<p class="verse">
+Why did Elizabeth tell Nigel that she was going to the dentist?<br />
+<br />
+I crossed the street to <b>avoid meeting</b> him, but he saw me and came running towards me.<br />
+<b>It was no use pretending that</b> I had not seen him, so I waved to him.<br />
+I never <b>enjoy meeting</b> Nigel Dykes.<br />
+He never has anything to do.<br />
+<b>No matter how</b> busy you are,	he always <b>insists on coming</b> with you.<br />
+I had to think of a way of <b>preventing him from following me around</b> all morning.<br />
+<br />
+'Hello, Nigel,' I said.<br />
+'<b>Fancy meeting you here</b>!'<br />
+<br />
+'Hi, Elizabeth,' Nigel answered.<br />
+'<b>I was just wondering</b> how to spend the morning &#x2013; until I saw you.'<br />
+'You're not busy doing anything, are you?'<br />
+<br />
+No, not at all, I answered.<br />
+'I'm going to&#x2026;'<br />
+<br />
+'<b>Would you mind my coming</b> with you?' he asked, before I had <b>finished speaking</b>.<br />
+<br />
+'Not at all,' I lied, 'but I'm going to the dentist.'<br />
+<br />
+'Then I'll come with you,' he answered.<br />
+'There's always plenty to read in the waiting room!'<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org07c47a8" class="outline-2">
+<h2 id="org07c47a8"><span class="section-number-2">21.</span> Lesson 69 But not murder!</h2>
+<div class="outline-text-2" id="text-21">
+<p class="verse">
+Do you think that the writer passed his driving test? Why?<br />
+<br />
+I was being tested for a driving licence for the third time.<br />
+I had been asked to drive in heavy traffic and had done so successfully.<br />
+After having <b>been instructed to drive</b> out of town, I began to acquire confidence.<br />
+Sure that I had passed, I was almost beginning to enjoy my test.<br />
+The examiner must have <b>been pleased with</b> my performance,<br />
+&#xa0;for he smiled and said, 'Just one more thing, Mr. Eames.<br />
+<b>Let us suppose that</b> a child suddenly crosses the road in front of you.<br />
+As soon as I <b>tap on the window</b>, you must stop within five feet.'<br />
+I <b>continued driving</b> and after some time, the examiner tapped loudly.<br />
+Though the sound could be heard clearly, it took me a long time to react.<br />
+I suddenly pressed the brake pedal hard and we were both thrown forward.<br />
+The examiner looked at me sadly.<br />
+'Mr. Eames,' he said, in a mournful voice, 'you have just killed that child!'<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc354182" class="outline-2">
+<h2 id="orgc354182"><span class="section-number-2">22.</span> Lesson 70 Red for danger</h2>
+<div class="outline-text-2" id="text-22">
+<p class="verse">
+How was the drunk removed from the ring?<br />
+<br />
+During a bullfight, a drunk suddenly wandered into the middle of the ring.<br />
+The crowd began to shout, but the drunk <b>was unaware of</b> the danger.<br />
+The bull <b>was busy with the matador</b> <b>at the time</b>,<br />
+&#xa0;but it suddenly <b>caught sight of</b> the drunk who was shouting rude remarks and waving a red cap.<br />
+Apparently <b>sensitive to</b> criticism,<br />
+&#xa0;the bull forgot all about the matador and <b>charged at</b> the drunk.<br />
+The crowd suddenly <b>grew quiet</b>.<br />
+The drunk, however, seemed quite sure of himself.<br />
+When the bull <b>got close to him</b>, he clumsily <b>stepped aside</b> to let it pass.<br />
+The crowd <b>broke into cheers</b> and the drunk bowed.<br />
+By this time, however,<br />
+&#xa0;three men had come into the ring and they quickly dragged the drunk to safety.<br />
+Even the bull seemed to <b>feel sorry for him</b>,<br />
+&#xa0;for it <b>looked on</b> sympathetically<br />
+&#xa0;&#xa0;until the drunk was <b>out of the way</b> before <b>once more</b> <b>turning its attention to the matador</b>.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc056e91" class="outline-2">
+<h2 id="orgc056e91"><span class="section-number-2">23.</span> Lesson 71 A famous clock</h2>
+<div class="outline-text-2" id="text-23">
+<p class="verse">
+Has Big Ben ever gone wrong?<br />
+<br />
+When you visit London,<br />
+&#xa0;one of the first things you will see is Big Ben, the famous clock<br />
+&#xa0;&#xa0;which can be heard <b>all over the world</b> on the BBC.<br />
+If the Houses of Parliament had not been <b>burned down</b> in 1834,<br />
+&#xa0;the great clock would never have been erected.<br />
+Big Ben <b>takes its name</b> from sir Benjamin Hall<br />
+&#xa0;who <b>was responsible for</b> the making of the clock<br />
+&#xa0;&#xa0;when the new Houses of Parliament were being built.<br />
+It is not only of immense size, but is extremely accurate as well.<br />
+Officials from Greenwich Observatory have the clock checked twice a day.<br />
+On the BBC you can hear the clock<br />
+&#xa0;when it is actually striking because microphones <b>are connected to</b> the clock tower.<br />
+Big Ben has rarely <b>gone wrong</b>.<br />
+Once, however, it failed to give the correct time.<br />
+A painter who had been working on the tower<br />
+&#xa0;hung a pot of paint on one of the hands and slowed it down!<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org1de3d9c" class="outline-2">
+<h2 id="org1de3d9c"><span class="section-number-2">24.</span> Lesson 72 A car called Bluebird</h2>
+<div class="outline-text-2" id="text-24">
+<p class="verse">
+What mistake was made?<br />
+<br />
+The great racing driver, Sir Malcolm Campbell, was the first man to drive at over 300 miles per hour.<br />
+He set up a new world record in September 1935 at Bonneville Salt Flats, Utah.<br />
+Bluebird, the car he was driving, had been specially built for him.<br />
+It was over 30 feet in length and had a 2,500-horsepower engine.<br />
+Although Campbell reached a speed of over 304 miles per hour,<br />
+&#xa0;he <b>had great difficulty in controlling</b> the car because a tyre burst during the first run.<br />
+After his attempt,<br />
+&#xa0;Campbell <b>was disappointed to learn that</b> his average speed had been 299 miles per hour.<br />
+However, a few days later, he was told that a mistake had been made.<br />
+His average speed had been 301 miles per hour.<br />
+Since that time, racing drivers have reached speeds over 600 miles an hour.<br />
+<b>Following in his father's footsteps</b> many years later,<br />
+&#xa0;Sir Malcolm's son, Donald, also set up a world record.<br />
+Like his father, he was driving a car called Bluebird.<br />
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: lenovo</p>
+<p class="date">Created: 2024-05-21 Tue 13:45</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

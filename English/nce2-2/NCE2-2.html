@@ -1,0 +1,740 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-05-21 Tue 13:45 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="lenovo" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-org871f09f" class="outline-2">
+<h2 id="org871f09f">Lesson 25 Do the English speak English?</h2>
+<div class="outline-text-2" id="text-org871f09f">
+<p class="verse">
+Why does the writer not understand the porter?<br />
+<br />
+I arrived in London at last.<br />
+The railway station was big, black and dark.<br />
+I did <b>not know the way to my hotel</b>,<br />
+&#xa0;so I asked a porter.<br />
+I not only spoke English very carefully, but very clearly as well.<br />
+The porter, however, could not understand me.<br />
+I repeated my question several times<br />
+&#xa0;and at last he understood.<br />
+He answered me,<br />
+&#xa0;but he spoke neither slowly nor clearly.<br />
+'I am a foreigner,' I said.<br />
+Then he spoke slowly,<br />
+&#xa0;but I could not understand him.<br />
+My teacher never spoke English like that!<br />
+The porter and I looked at each other and smiled.<br />
+Then he said somethings and I understood it.<br />
+'You'll soon learn English!' he said.<br />
+I wonder, in England, each person speaks a different language.<br />
+The English understand each other,<br />
+&#xa0;but I don't understand them!<br />
+Do they speak English?<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org119befb" class="outline-2">
+<h2 id="org119befb">Lesson 26 The best art critics</h2>
+<div class="outline-text-2" id="text-org119befb">
+<p class="verse">
+Who is the student's best critic?<br />
+<br />
+I am an art student<br />
+&#xa0;and I paint a lot of pictures.<br />
+<b>Many people pretend that</b> they understand modern art.<br />
+They always tell you what a picture is 'about'.<br />
+Of course, many pictures are not 'about' anything.<br />
+They are just pretty patterns.<br />
+We like them in the same way<br />
+&#xa0;that we like pretty curtain material.<br />
+I think that young children often appreciate modern pictures better than anyone else.<br />
+They notice more.<br />
+My sister is only seven,<br />
+&#xa0;but she always tells me whether my pictures are good or not.<br />
+She came into my room yesterday.<br />
+'What are you doing?' she asked.<br />
+'I'm hanging this picture on the wall,' I answered.<br />
+'It's a new one. Do you like it?'<br />
+She looked at it critically for a moment.<br />
+'It's all right,' she said, 'but isn't it upside down?'<br />
+I looked at it again.<br />
+She was right! It was!<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc59f96a" class="outline-2">
+<h2 id="orgc59f96a">Lesson 27 A wet night</h2>
+<div class="outline-text-2" id="text-orgc59f96a">
+<p class="verse">
+What happened to the boys in the night?<br />
+<br />
+Late in the afternoon, the boys <b>put up their tent</b> in the middle of a field.<br />
+As soon as this was done,<br />
+&#xa0;they cooked a meal over an open fire.<br />
+They were all hungry<br />
+&#xa0;and the food smelled good.<br />
+After a wonderful meal, they <b>told stories</b> and sang songs by the campfire.<br />
+But some time later it began to rain.<br />
+The boys felt tired<br />
+&#xa0;so they <b>put out the fire</b> and crept into their tent.<br />
+Their sleeping bags were warm and comfortable,<br />
+&#xa0;so they all slept soundly.<br />
+In the middle of the night, two boys <b>woke up</b> and began shouting.<br />
+The tent was full of water!<br />
+They all leapt out of their sleeping bags and hurried outside.<br />
+It was raining heavily<br />
+&#xa0;and they found that a stream had formed in the field.<br />
+The stream wound its way across the field<br />
+&#xa0;and then flowed right under their tent.<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgd68160e" class="outline-2">
+<h2 id="orgd68160e">Lesson 28 No Parking</h2>
+<div class="outline-text-2" id="text-orgd68160e">
+<p class="verse">
+What is Jasper White's problem?<br />
+<br />
+Jasper White is one of those rare people<br />
+&#xa0;who believes in ancient myths.<br />
+He has just bought a new house in the city,<br />
+&#xa0;but ever since he moved in,<br />
+&#xa0;he has <b>had trouble with cars</b> and their owners.<br />
+When he returns home at night,<br />
+&#xa0;he always finds that someone has parked a car outside his gate.<br />
+Because of this, he has not been able to get his own car into his garage even once.<br />
+Jasper has put up 'No Parking' signs outside his gate,<br />
+&#xa0;but these have not <b>had any effect</b>.<br />
+Now he has put an ugly stone head over the gate.<br />
+It is one of the ugliest faces I have ever seen.<br />
+I asked him what it was<br />
+&#xa0;and he told me that it was Medusa, the Gorgon.<br />
+Jasper hopes that she will turn cars and their owners to stone.<br />
+But none of them has been turned to stone yet!<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgfe45faa" class="outline-2">
+<h2 id="orgfe45faa">Lesson 29 Taxi!</h2>
+<div class="outline-text-2" id="text-orgfe45faa">
+<p class="verse">
+Does Captain Fawcett think any trip is too dangerous?<br />
+<br />
+Captain Ben Fawcett has bought an unusual taxi and has begun a new service.<br />
+The taxi is a small Swiss aeroplane called a 'Pilatus Porter'.<br />
+This wonderful plane can carry seven passengers.<br />
+The most surprising thing about it, however, is that it can land anywhere;<br />
+&#xa0;on snow, water, or even on a ploughed field.<br />
+Captain Fawcett's first passengers was a doctor<br />
+&#xa0;who flew from Birmingham to a lonely village in the Welsh mountains.<br />
+Since then, Captain Fawcett has flown passengers to many unusual places.<br />
+Once he landed on the roof of a block of flats and on another occasion,<br />
+&#xa0;he landed in a deserted car park.<br />
+Captain Fawcett has just refused a strange request from a businessman.<br />
+The man wanted to fly to Rockall, a lonely island in the Atlantic Ocean,<br />
+&#xa0;but Captain Fawcett did not take him<br />
+&#xa0;&#xa0;because the trip was too dangerous.<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgf8fc7b3" class="outline-2">
+<h2 id="orgf8fc7b3">Lesson 30 Football or polo?</h2>
+<div class="outline-text-2" id="text-orgf8fc7b3">
+<p class="verse">
+What happened to the man in the boat?<br />
+<br />
+The Wayle is a small river that cuts across the park near my home.<br />
+I like sitting by the Wayle on fine afternoons.<br />
+It was warm last Sunday, so I went and sat on the river bank as usual.<br />
+Some children were playing games on the bank and there were some people rowing on the river.<br />
+Suddenly, one of the children kicked a ball very hard and it went towards a passing boat.<br />
+Some people on the bank <b>called out to the man</b> in the boat, but he did not hear them.<br />
+The ball struck him so hard that he nearly fell into the water.<br />
+I turned to look at the children, but there weren't any in sight: they had all run away!<br />
+The man laughed when he realized what had happened.<br />
+He called out to the children and threw the ball back to the bank.<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org8241389" class="outline-2">
+<h2 id="org8241389">Lesson 31 Success story</h2>
+<div class="outline-text-2" id="text-org8241389">
+<p class="verse">
+What was Frank's first job?<br />
+<br />
+Yesterday afternoon Frank Hawkins was telling me about his experience as a young man.<br />
+Before he retired,<br />
+&#xa0;Frank was the head of a very large business company,<br />
+&#xa0;&#xa0;but as a boy he used to work in a small shop.<br />
+<b>It was his job to repair bicycles</b><br />
+&#xa0;and at that time he used to work fourteen hours a day.<br />
+He saved money for years<br />
+&#xa0;and in 1958 he bought a small workshop of his own.<br />
+<b>In his twenties</b> Frank used to make spare parts for aeroplanes.<br />
+At that time he had two helpers.<br />
+In a few years the small workshop had become a large factory<br />
+&#xa0;&#xa0;which employed seven hundred and twenty-eight people.<br />
+Frank smiled when he remembered his hard early years and the long road to success.<br />
+He was still smiling<br />
+&#xa0;when the door opened and his wife came in.<br />
+She wanted him to repair their grandson's bicycle.<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org11804c2" class="outline-2">
+<h2 id="org11804c2">Lesson 32 Shopping made easy</h2>
+<div class="outline-text-2" id="text-org11804c2">
+<p class="verse">
+Who was the thief?<br />
+<br />
+People are not so honest as they once were.<br />
+The temptation to steal is greater than ever before &#x2013; especially in large shops.<br />
+A detective recently watched a well-dressed woman<br />
+&#xa0;who always went into a large store on Monday mornings.<br />
+One Monday, there were fewer people in the shop than usual when the woman came in,<br />
+&#xa0;&#xa0;so <b>it was easier for the detective to watch her</b>.<br />
+The woman first bought a few small articles.<br />
+After a little time, she chose one of the most expensive dresses in the shop<br />
+&#xa0;&#xa0;and <b>handed it to an assistant</b> who <b>wrapped it up</b> for her as quickly as possible.<br />
+<br />
+Then the woman simply took the parcel and walked out of the shop without paying.<br />
+When she was arrested,<br />
+&#xa0;the detective found out that the shop assistant was her daughter.<br />
+The girl gave her mother a free dress once a week.<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org8ec4859" class="outline-2">
+<h2 id="org8ec4859">Lesson 33 Out of the darkness</h2>
+<div class="outline-text-2" id="text-org8ec4859">
+<p class="verse">
+Why was the girl in the hospital?<br />
+<br />
+Nearly a week passed before the girl was able to explain what had happened to her.<br />
+One afternoon she set out from the coast in a small boat and was caught in a storm.<br />
+Towards evening, the boat struck a rock and the girl jumped into the sea.<br />
+Then she swam to the shore after spending the whole night in the water.<br />
+Early next morning, she saw a light ahead.<br />
+She knew she was near the shore because the light <b>was high up</b> on the cliffs.<br />
+<b>On arriving</b> at the shore, the girl <b>struggled up</b> the cliff towards the light she had seen.<br />
+That was all she remembered.<br />
+When she woke up a day later, she found herself in hospital.<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org1305329" class="outline-2">
+<h2 id="org1305329">Lesson 34 Quick work</h2>
+<div class="outline-text-2" id="text-org1305329">
+<p class="verse">
+How long had the police taken to find his bicycle?<br />
+<br />
+Dan Robinson has been worried all week.<br />
+Last Tuesday he received a letter from the local police.<br />
+In the letter he was asked to <b>call at</b> the station.<br />
+Dan wondered why he was wanted by the police,<br />
+&#xa0;but he went to the station yesterday and now he is not worried anymore.<br />
+At the station, he was told by a smiling policeman that his bicycle has been found.<br />
+Five days ago, the policeman told him,<br />
+&#xa0;the bicycle was picked up in a small village four hundred miles away.<br />
+It is now being sent to his home by train.<br />
+Dan was most surprised when he heard the news.<br />
+He was amused too, because he never <b>expected the bicycle to be found</b>.<br />
+It was stolen twenty years ago when Dan was a boy of fifteen!<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org7cc9c34" class="outline-2">
+<h2 id="org7cc9c34">Lesson 35 Stop thief!</h2>
+<div class="outline-text-2" id="text-org7cc9c34">
+<p class="verse">
+How did Roy stop the thieves?<br />
+<br />
+Roy Trenton used to drive a taxi.<br />
+<b>A short while ago</b>, however, he became a bus driver and he has not <b>regretted it</b>.<br />
+He is finding his new work far more exciting.<br />
+When he was driving along Catford Street recently,<br />
+&#xa0;he saw two thieves <b>rush out of</b> a shop and run towards a waiting car.<br />
+One of them was carrying a bag full of money.<br />
+Roy acted quickly and drove the bus straight at the thieves.<br />
+The one with money <b>got such a fright</b> that he dropped the bag.<br />
+As the thieves were trying to get away in their car, Roy drove his bus into the back of it.<br />
+While the battered car was moving away, Roy stopped his bus and telephoned the police.<br />
+The thieves' car was badly damaged and easy to recognized.<br />
+<b>Shortly afterwards</b>, the police stopped the car and both men were arrested.<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orge3ed9df" class="outline-2">
+<h2 id="orge3ed9df">Lesson 36 Across the Channel</h2>
+<div class="outline-text-2" id="text-orge3ed9df">
+<p class="verse">
+What is Debbie going to try to do?<br />
+<br />
+Debbie Hart is going to swim across the English Channel tomorrow.<br />
+She is going to set out from the French coast at five o'clock in the morning.<br />
+Debbie is only eleven years old and she <b>hopes to set up a new world record</b>.<br />
+She is a strong swimmer and many people feel that she <b>is sure to succeed</b>.<br />
+Debbie's father will set out with her in a small boat.<br />
+Mr. Hart has trained his daughter for years.<br />
+Tomorrow he will be watching her anxiously as she swims the long distance to England.<br />
+Debbie <b>intends to take short rests</b> every two hours.<br />
+She will have something to drink but she will not eat any solid food.<br />
+Most of Debbie's school friends will be waiting for her on the English coast.<br />
+Among them will be Debbie's mother, who swam the Channel herself when she was a girl.<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org7335043" class="outline-2">
+<h2 id="org7335043">Lesson 37 The Olympic Games</h2>
+<div class="outline-text-2" id="text-org7335043">
+<p class="verse">
+When was the last time this country hosted the Olympic Games?<br />
+<br />
+<b>The Olympic Games will be held</b> in our country in four years' time.<br />
+As a great many people will be visiting the country,<br />
+&#xa0;the government will be building new hotels, an immense stadium,<br />
+&#xa0;&#xa0;and a new Olympic-standard swimming pool.<br />
+They will also be building new roads and a special railway line.<br />
+The Games will be held just outside the captial and the whole area will be called 'Olympic City'.<br />
+Workers will have completed the new roads by the end of this year.<br />
+By the end of next year, they will have finished work on the new stadium.<br />
+The fantastic modern buildings have been designed by Kurt Gunter.<br />
+Everybody will be watching anxiously as the new buildings go on.<br />
+We are all very excited and are <b>looking forward to the Olympic Games</b><br />
+&#xa0;because they have never held before in the country.<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgecf4806" class="outline-2">
+<h2 id="orgecf4806">Lesson 38 Everything except the weather</h2>
+<div class="outline-text-2" id="text-orgecf4806">
+<p class="verse">
+Why did Harrison sell his house so quickly?<br />
+<br />
+My old friend, Harrison,<br />
+&#xa0;had lived in the Mediterranean for many years before he returned to England.<br />
+He had often <b>dreamed of retiring</b> in England and had <b>planned to settle down</b> in the country.<br />
+He had no sooner returned than he bought a house and went to live there.<br />
+Almost immediately he began to <b>complain about the weather</b>,<br />
+&#xa0;for even though it was still summer, it rained continually and it was often <b>bitterly cold</b>.<br />
+After so many years of sunshine, Harrison got a shock.<br />
+He acted as if he had never lived in England before.<br />
+In the end, it was more than he could bear.<br />
+He had hardly had time to settle down when he sold the house and left the country.<br />
+The dream he had had for so many years ended there.<br />
+Harrison had thought of everything except the weather.<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org6170be2" class="outline-2">
+<h2 id="org6170be2">Lesson 39 Am I all right?</h2>
+<div class="outline-text-2" id="text-org6170be2">
+<p class="verse">
+Why did Mr. Gilbert telephone Dr. Millington?<br />
+<br />
+While John Gilbert was in hospital,<br />
+&#xa0;he asked his doctor to tell him whether his operation had been successful,<br />
+&#xa0;but the doctor <b>refused to do so</b>.<br />
+The following day, the patient <b>asked for a bedside telephone</b>.<br />
+When he was alone, he telephoned the hospital exchange and asked for Doctor Millington.<br />
+When the doctor answered the phone,<br />
+&#xa0;Mr. Gilbert said he was <b>inquiring about a certain patient</b>, a Mr. John Gilbert.<br />
+He asked if Mr. Gilbert's operation had been successful and the doctor told him that it had been.<br />
+He then asked when Mr. Gilbert would <b>be allowed to go</b> home<br />
+&#xa0;and the doctor told him that he would have to stay in hospital for another two weeks.<br />
+Then Dr. Millington asked the caller if he was a relative of the patient.<br />
+'No,' the patient answered.<br />
+'I am Mr. John Gilbert.'<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgc70d2d7" class="outline-2">
+<h2 id="orgc70d2d7">Lesson 40 Food and talk</h2>
+<div class="outline-text-2" id="text-orgc70d2d7">
+<p class="verse">
+Was Mrs. Rumbold a good companion at dinner?<br />
+<br />
+Last week at a dinner party, the hostess asked me to sit next to Mrs. Rumbold.<br />
+Mrs. Rumbold was a large, unsmiling lady in a tight black dress.<br />
+She did not even look up when I <b>took my seat</b> beside her.<br />
+Her eyes were fixed on her plate and in a short time, she <b>was busy eating</b>.<br />
+I tried to make conversation.<br />
+'A new play is coming to "The Globe" soon,' I said. "<b>Will you be seeing</b> it?"<br />
+'No,' she answered.<br />
+'Will you be spending your holidays abroad this year?' I asked.<br />
+'No,' she answered.<br />
+'Will you be staying in England?' I asked.<br />
+'No,' she answered.<br />
+<b>In despair</b>, I asked her whether she was enjoying her dinner.<br />
+'Young man,' she answered, 'if you ate more and talked less, we would both enjoy our dinner!'<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org68e1a71" class="outline-2">
+<h2 id="org68e1a71">Lesson 41 Do you call that a hat?</h2>
+<div class="outline-text-2" id="text-org68e1a71">
+<p class="verse">
+What kind of shopping does the writer enjoy, do you think?<br />
+<br />
+'Do you call that a hat?' I said to my wife.<br />
+'You needn't be so rude about it,' my wife answered as she looked at herself in the mirror.<br />
+I sat down on one of those modern chairs with holes in it and waited.<br />
+We had been in the hat shop for half an hour and my wife was still in front of the mirror.<br />
+'We mustn't buy things we don't need,' I remarked suddenly.<br />
+I <b>regretted saying</b> it almost at once.<br />
+'You needn't have said that,' my wife answered.<br />
+'I needn't <b>remind you of that terrible tie</b> you bought yesterday.'<br />
+'I <b>find it beautiful</b>,' I said. 'A man can never have too many ties.'<br />
+'And a woman can't have too many hats,' she answered.<br />
+Ten minutes later we walked out of the shop together.<br />
+My wife was wearing a hat that looked like a lighthouse.<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org2fdfae3" class="outline-2">
+<h2 id="org2fdfae3">Lesson 42 Not very musical</h2>
+<div class="outline-text-2" id="text-org2fdfae3">
+<p class="verse">
+What happened when the snake charmer began to play jazz?<br />
+<br />
+As we had <b>had a long walk</b> through one of the markets of Old Delhi,<br />
+&#xa0;we stopped at a square to have a rest.<br />
+After a time, we noticed a snake charmer with two large baskets <b>at the other side of</b> the square,<br />
+&#xa0;so we went to have a look at him.<br />
+As soon as he saw us,<br />
+&#xa0;he picked up a long pipe which was covered with coins and opened one of the baskets.<br />
+When he began to <b>play a tune</b>,<br />
+&#xa0;we <b>had our first glimpse of the snake</b>.<br />
+It rose out of the basket and began to follow the movements of the pipe.<br />
+We were very much surprised when the snake charmer suddenly began to play jazz and modern pop songs.<br />
+The snake, however, <b>continued to 'dance'</b> slowly.<br />
+It obviously could not <b>tell the difference between Indian music and jazz</b>!<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgef6961d" class="outline-2">
+<h2 id="orgef6961d">Lesson 43 Over the South Pole</h2>
+<div class="outline-text-2" id="text-orgef6961d">
+<p class="verse">
+How was the plane able to clear the mountains?<br />
+<br />
+In 1929, three years after his flight over the North Pole,<br />
+&#xa0;the American explorer, R.E. Byrd, successfully flew over the South Pole for the first time.<br />
+Though, at first,<br />
+&#xa0;Byrd and his men were able to take a great many photographs of the mountains that lay below,<br />
+&#xa0;they soon <b>ran into serious trouble</b>.<br />
+<b>At one point</b>, <b>it seemed certain that</b> their plane would crash.<br />
+It could only get over the mountains if it rose to 10,000 feet.<br />
+Byrd at once <b>ordered his men to throw</b> out two heavy food sacks.<br />
+The plane was then able to rise and it cleared the mountains by 400 feet.<br />
+Byrd now knew that he would be able to reach the South Pole which was 300 miles away,<br />
+&#xa0;for there were no more mountains in sight.<br />
+The aircraft was able to fly over the endless white plains without difficulty.<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org669c632" class="outline-2">
+<h2 id="org669c632">Lesson 44 Through the forest</h2>
+<div class="outline-text-2" id="text-org669c632">
+<p class="verse">
+How did Mrs. Sterling get her bag back?<br />
+<br />
+Mrs. Anne Sterling did not think of the risk she was taking<br />
+&#xa0;when she ran through a forest after two men.<br />
+They had <b>rushed up to her</b><br />
+&#xa0;while she was <b>having a picnic</b> <b>at the edge of a forest</b> with her children<br />
+&#xa0;&#xa0;and tried to steal her handbag.<br />
+In the struggle, the strap broke and, with the bag <b>in their possession</b>,<br />
+&#xa0;both men started running through the trees.<br />
+Mrs. Sterling got so angry that she ran after them.<br />
+She was soon <b>out of breath</b>, but she continued to run.<br />
+When she <b>caught up with them</b>,<br />
+&#xa0;she saw that they had sat down and were going through the contents of the bag,<br />
+&#xa0;so she <b>ran straight at them</b>.<br />
+The men got such a fright that they dropped the bag and ran away.<br />
+"The strap needs mending," said Mrs. Sterling later, 'but they did not steal anything."<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgbfe6809" class="outline-2">
+<h2 id="orgbfe6809">Lesson 45 A clear conscience</h2>
+<div class="outline-text-2" id="text-orgbfe6809">
+<p class="verse">
+How did Sam get his money back?<br />
+<br />
+<b>The whole village soon learnt that</b> a large sum of money had been lost.<br />
+Sam Benton, the local butcher, had lost his wallet while taking his savings to the post office.<br />
+Sam was sure that the wallet must have been found by one of the villagers,<br />
+&#xa0;but it was not <b>returned to him</b>.<br />
+Three months passed, and then one morning, Sam found his wallet outside his front door.<br />
+It had been wrapped up in newspaper<br />
+&#xa0;and it contained half the money he had lost,<br />
+&#xa0;&#xa0;together with a note which said: 'A thief, yes, but only 50 percent a thief!'<br />
+Two months later, some more money was sent to Sam with another note:<br />
+&#xa0;'Only 25 percent a thief now!'<br />
+In time, all Sam's money was paid back in this way.<br />
+The last note said: 'I am 100 percent honest now!'<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org800ffb3" class="outline-2">
+<h2 id="org800ffb3">Lesson 46 Expensive and uncomfortable</h2>
+<div class="outline-text-2" id="text-org800ffb3">
+<p class="verse">
+What did the man in this story do?<br />
+<br />
+When a plane from London arrived at Sydney airport,<br />
+&#xa0;workers began to unload a number of wooden boxes which contained clothing.<br />
+<b>No one could account for the fact that</b> one of the boxes was extremely heavy.<br />
+<b>It suddenly occurred to one of the workers to open</b> up the box.<br />
+He <b>was astonished at what</b> he found.<br />
+A man was lying in the box on top of a pile of woollen goods.<br />
+He was so surprised at being discovered that he did not even try to run away.<br />
+After he was arrested,<br />
+&#xa0;the man <b>admitted hiding</b> in the box before the plane left London.<br />
+He had had a long and uncomfortable trip,<br />
+&#xa0;for he had been confined to the wooden box for over eighteen hours.<br />
+The man was ordered to pay 3500 dollars for the cost of the trip.<br />
+The normal price of a ticket is 2000 dollars!<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgf22fe55" class="outline-2">
+<h2 id="orgf22fe55">Lesson 47 A thirsty ghost</h2>
+<div class="outline-text-2" id="text-orgf22fe55">
+<p class="verse">
+What evidence is there of a ghost?<br />
+<br />
+A public house which was recently bought by Mr. Ian Thompson <b>is up for sale</b>.<br />
+Mr. Thompson is going to sell it because it is haunted.<br />
+He told me that he could not go to sleep one night<br />
+&#xa0;because he <b>heard a strange noise coming</b> from the bar.<br />
+The next morning, he found that<br />
+&#xa0;the doors had been blocked by chairs and the furniture had been moved.<br />
+Though Mr. Thompson had turned the lights off before he went to bed,<br />
+&#xa0;they were on in the morning.<br />
+He also said that he had found five empty whisky bottles<br />
+&#xa0;which the ghost must have drunk the night before.<br />
+When I suggested that some villagers must have come in for a free drink,<br />
+&#xa0;Mr. Thompson shook his head.<br />
+The villagers have told him that they will not accept the pub even if he gives it away.<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgb0a60b1" class="outline-2">
+<h2 id="orgb0a60b1">Lesson 48 Did you want to tell me something</h2>
+<div class="outline-text-2" id="text-orgb0a60b1">
+<p class="verse">
+Why did the writer become very worried?<br />
+<br />
+Dentists always ask questions when <b>it is impossible for you to answer</b>.<br />
+My dentist had just pulled out one of my teeth and had told me to <b>rest for a while</b>.<br />
+I tried to say something, but my mouth was full of cotton wool.<br />
+He knew I collected match boxes and asked me whether my collection was growing.<br />
+He then asked me how my brother was and whether I liked my new job in London.<br />
+In answer to these questions I either nodded or made strange noises.<br />
+Meanwhile, my tongue was busy searching out the hole where the tooth had been.<br />
+I suddenly felt very worried, but could not say anything.<br />
+When the dentist at last removed the cotton wool from my mouth,<br />
+&#xa0;I was able to tell him that he had pulled out the wrong tooth.<br />
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>
