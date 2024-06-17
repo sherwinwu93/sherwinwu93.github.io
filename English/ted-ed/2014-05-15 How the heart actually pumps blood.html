@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-06-14 Fri 22:36 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-orgc76b9b9" class="outline-2">
+<h2 id="orgc76b9b9">2014-05-15 How the heart actually pumps blood</h2>
+<div class="outline-text-2" id="text-orgc76b9b9">
+<p class="verse">
+For most of history, humans had no idea what purpose the heart served.<br />
+In fact, the organ so confused Leonardo da Vinci, that he gave up studying it.<br />
+Although everyone could feel their own heart beating,<br />
+&#xa0;it wasn't always clear what each thump was achieving.<br />
+<br />
+Now we know that the heart pumps blood.<br />
+But that fact wasn't always obvious,<br />
+&#xa0;because if a heart was exposed or taken out, the body would perish quickly.<br />
+It's also impossible to see through the blood vessels,<br />
+&#xa0;and even if that were possible,<br />
+&#xa0;&#xa0;the blood itself is opaque, making it difficult to see the heart valves working.<br />
+Even in the 21st century, only a few people in surgery teams have actually seen a working heart.<br />
+Internet searches for heart function, point to crude models, diagrams or animations<br />
+&#xa0;that don't really show how it works.<br />
+It's as if there has been a centuries old conspiracy amongst teachers and students<br />
+&#xa0;to accept that heart function cannot be demonstrated.<br />
+Meaning that the next best thing is simply to cut it open and label the parts.<br />
+That way students might not fully grasp the way it works, but can superficially understand it,<br />
+&#xa0;learning such concepts as the heart is a four-chambered organ,<br />
+&#xa0;&#xa0;or potentially misleading statements like, mammals have a dual-circulation:<br />
+&#xa0;&#xa0;&#xa0;one with blood going to the lungs and back, and another to the body and back.<br />
+<br />
+In reality, mammals have a figure-eight circulation.<br />
+Blood goes from one heart pump to the lungs,<br />
+&#xa0;back to the second heart pump, which sends it to the body, and then back to the first pump.<br />
+That's an important difference because it marks two completely different morphologies.<br />
+This confusion makes many students wary of the heart in biology lessons,<br />
+&#xa0;thinking it signals an intimidating subject full of complicated names and diagrams.<br />
+Only those who end up studying medicine completely understand how it all actually works.<br />
+That's when its functions become apparent<br />
+&#xa0;as medics get to observe the motion of the heart's valves.<br />
+<br />
+So, let's imagine you're a medic for a day.<br />
+What you'll need to get started is a whole fresh heart, like one from a sheep or pig.<br />
+Immerse this heart in water and you'll see that it doesn't pump when squeezed by hand.<br />
+That's because water doesn't enter the heart clearly enough for the pumping mechanism to work.<br />
+We can solve this problem in an extraordinarily simple way.<br />
+Simply identify the two atria and cut them off, trimming them down to the tops of the ventricles.<br />
+This makes the heart look less complicated because the atria have several incoming veins attached.<br />
+So without them there,<br />
+&#xa0;the only vessels remaining are the two major heart arteries:<br />
+&#xa0;&#xa0;the aorta and pulmonary artery, which rise like white columns from between the ventricles.<br />
+It looks &#x2013; and really is &#x2013; very simple.<br />
+If you run water into the right ventricle from a tap (the left also works, but less spectacularly),<br />
+&#xa0;you'll see that the ventricular valve tries to close against the incoming stream.<br />
+And then ventricle inflates with water.<br />
+Squeeze the ventricle and a stream of water squirts out of the pulmonary artery.<br />
+The ventricular valves,<br />
+&#xa0;&#xa0;called the tricuspid in the right ventricle and the mitral in the left,<br />
+&#xa0;can be seen through the clear water opening and closing like parachutes<br />
+&#xa0;&#xa0;as the ventricle is rhythmically squeezed.<br />
+This flow of water mimics the flow of blood in life.<br />
+The valves are completely efficient.<br />
+You'll notice they don't leak at all when the ventricles are squeezed.<br />
+Over time, they also close against each other with very little wear and tear,<br />
+&#xa0;which explains how this mechanism continues to work seamlessly for more than 2 billion beats<br />
+&#xa0;&#xa0;a heart gives in its lifetime.<br />
+<br />
+Now, anyone studying the heart can hold one in their hands,<br />
+&#xa0;make it pump for real and watch the action unfold.<br />
+So place your hand above your own and feel its rhymic beat.<br />
+Understanding how this dependable inner pump works gives new resonance to the feeling you get<br />
+&#xa0;when you run a race, drink too much caffeine or catch the eye of the one you love.<br />
+</p>
+</div>
+<div id="outline-container-org7cf189f" class="outline-3">
+<h3 id="org7cf189f">expression</h3>
+<div class="outline-text-3" id="text-org7cf189f">
+<p>
+serve: to give someone food or drink, especially as part of a meal or in a restaurant, bar etc供应<br />
+thump: if your heart thumps, it beats very strongly and quickly because you are frightened or excited砰然地响<br />
+pump: to make liquid or gas move in a particular direction, using a pump<br />
+perish: formal or literary to die, especially in a terrible or sudden way<br />
+opaque: opaque glass or liquid is difficult to see through and often thick不透明的<br />
+crude: not exact or without any detail, but generally correct and useful ⇨ approximate<br />
+demonstrate: to show or describe how to do something or how something works<br />
+label: to use a word or phrase to describe someone or something, but often unfairly or incorrectly<br />
+grasp: to completely understand a fact or an idea, especially a complicated one<br />
+four-chambered: 四腔的<br />
+potentially: something that is potentially dangerous, useful etc is not dangerous etc now, but may become so in the future潜在地<br />
+mammal: a type of animal that drinks milk from its mother’s body when it is young. Humans, dogs, and whales are mammals.<br />
+dual-circulation: 双循环<br />
+morphology: the structure of an object or system or the way it was formed<br />
+signal: to make a sound or an action in order to give information or tell someone to do something<br />
+intimidating: making you feel worried and not confident<br />
+complicated: difficult to understand or deal with, because many parts or details are involved SYN complex<br />
+medic: 实习医生<br />
+motion: the process of moving or the way that someone or something moves<br />
+immerse: to put someone or something deep into a liquid so that they are completely covered<br />
+squeeze: to press something firmly together with your fingers or hand<br />
+mechanism: part of a machine or a set of parts that does a particular job<br />
+atria: 心房<br />
+vein: 静脉<br />
+remaining: the remaining people or things are those that are left when the others have gone, been used, or been dealt with<br />
+artery: one of the tubes that carries blood from your heart to the rest of your body ⇨ vein动脉<br />
+aorta: the largest ↑artery that takes blood away from your heart大动脉<br />
+superficial/superficially: not studying or looking at something carefully and only seeing the most noticeable things浅薄的<br />
+pulmonary: 肺部的<br />
+column: a tall solid upright stone post used to support a building or as a decoration<br />
+tap: a piece of equipment for controlling the flow of water, gas etc from a pipe or container水龙头<br />
+spectacular/spectacularly: very impressive<br />
+tricuspid: (心脏的)三尖瓣<br />
+mitral: (心脏的)二尖瓣<br />
+parachute: a piece of equipment fastened to the back of people who jump out of planes, which makes them fall slowly and safely to the ground<br />
+leak: if a container, pipe, roof etc leaks, or if it leaks gas, liquid etc, there is a small hole or crack in it that lets gas or liquid flow through泄漏<br />
+seamlessly: 无缝合的<br />
+unfold: if you unfold something that was folded, or if it unfolds, it opens out<br />
+rhythmical: having a strong rhythm<br />
+dependable: able to be trusted to do what you need or expect可靠的<br />
+caffeine: 咖啡因<br />
+blood vessels: 血管<br />
+heart valves: 心脏瓣膜<br />
+ventricle / ventricular:<br />
+</p>
+<hr />
+<p>
+For most of history: 在历史大部分时间里<br />
+have no idea + &#x2026;: 不知道&#x2026;<br />
+feel sb's heart beating: 感受某人的心跳<br />
+in surgery teams: 在外科医生团队<br />
+point to sth.: 指向指出某物<br />
+It's as if + &#x2026;: 似乎<br />
+Meaning that + &#x2026;: 意味着&#x2026;<br />
+the next best thing is to do sth.: 下一个最好的办法是做某事<br />
+cut it open: 切开<br />
+in reality: 实际上<br />
+goes from sp.A to sp.B, back to sp.C: 从A出发到B,再回到C<br />
+make sb. wary of sth.: 使得某人提防某事<br />
+end up doing sth.: 最终做某事<br />
+That's when + &#x2026;A + as + &#x2026;B: 这是当B发生时A发生的时候.<br />
+What you (will) need to get started is sth.: 你需要开始的事是某事<br />
+do A. enough for sb. to do B.: 做A足够让某人去做某事<br />
+trim sth. down (to sp.): 删减某物到&#x2026;<br />
+rise from sth.: 起源于&#x2026;<br />
+run water into sp.: 把水流进&#x2026;<br />
+close against sth.: 对某物关闭<br />
+inflate with sth.: 用某物膨胀<br />
+squirt out of sth.: 从某物喷出<br />
+with very little wear and tear: 非常少的磨损<br />
+give new resonance to sth.: 使&#x2026;产生新的共鸣<br />
+run a race: 参与田径比赛<br />
+catch the eye of sb.: 引起某人的注目<br />
+</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
