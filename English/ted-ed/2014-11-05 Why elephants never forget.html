@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-07-02 Tue 07:31 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-org7762fd2" class="outline-2">
+<h2 id="org7762fd2">2014-11-05 Why elephants never forget?</h2>
+<div class="outline-text-2" id="text-org7762fd2">
+<p>
+It's a common saying that elephants never forget,<br />
+	but these magnificent animals are more than giant walking hard drives.<br />
+The more we learn about elephants,<br />
+	the more it appears<br />
+		that their impressive memory is only one aspect of an incredible intelligence<br />
+			that makes them some of the most social, creative, and benevolent creatures on Earth.<br />
+</p>
+
+<p>
+Unlike many proverbs, the one about elephant memory is scientifically accurate.<br />
+Elephants know every member in their herd,<br />
+	able to recognize as many as 30 companions by sight or smell.<br />
+This is a great help when migrating or encountering other potentially hostile elephants.<br />
+They also remember and distinguish particular cues that signal danger<br />
+	and can recall important locations long after their last visit.<br />
+But it's the memories unrelated to survival that are the most fascinating.<br />
+Elephants remember not only their herd companions<br />
+	but other creatures who have made a strong impression on them.<br />
+In one case, two circus elephants that had briefly performed together rejoiced<br />
+	when crossing paths 23 years later.<br />
+This recognition isn't limited to others of their species.<br />
+Elephants have also recognized humans they've bonded with after decades apart.<br />
+All of this shows that elephant memory goes beyond responses to stimuli.<br />
+</p>
+
+<p>
+Looking inside their heads, we can see why.<br />
+The elephant boasts the largest brain of any land mammal,<br />
+	as well as an impressive encephalization quotient.<br />
+This is the size of the brain relative to what we'd expect for an animal's body size,<br />
+	and the elephant's EQ is nearly as high as a chimpanzee's.<br />
+And despite the distant relation,<br />
+	convergent evolution has made it remarkably similar to the human brain,<br />
+		with as many neurons and synapses and a highly developed hippocampus and cerebral cortex.<br />
+It is the hippocampus, strongly associated with emotion,<br />
+	that aids recollection by encoding important experiences into long-term memories.<br />
+The ability to distinguish this importance<br />
+	makes elephant memory a complex and adaptable faculty beyond rote memorization.<br />
+It's what allows elephants who survived a drought in their youth<br />
+		to recognize its warning signs in adulthood,<br />
+	which is why clans with older matriarchs have higher survival rates.<br />
+Unfortunately,<br />
+	it's also what makes elephants one of the few non-human animals<br />
+		to suffer from post-traumatic stress disorder.<br />
+The cerebral cortex, on the other hand, enables problem solving,<br />
+	which elephants display in many creative ways.<br />
+They also tackle problems cooperatively,<br />
+	sometimes even outwitting the researchers and manipulating their partners.<br />
+And they've grasped basic arithmetic,<br />
+	keeping track of the relative amounts of fruit in two baskets after multiple changes.<br />
+The rare combination of memory and problem solving<br />
+		can explain some of elephants' most clever behaviors,<br />
+	but it doesn't explain some of the things we're just beginning to learn about their mental lives.<br />
+</p>
+
+<p>
+Elephants communicate using everything from body signals and vocalizations,<br />
+	to infrasound rumbles that can be heard kilometers away.<br />
+And their understanding of syntax suggests that they have their own language and grammar.<br />
+This sense of language may even go beyond simple communication.<br />
+Elephants create art by carefully choosing and combining different colors and elements.<br />
+They can also recognize twelve distinct tones of music and recreate melodies.<br />
+And yes, there is an elephant band.<br />
+But perhaps the most amazing thing about elephants<br />
+	is a capacity even more important than cleverness:<br />
+		their sense of empathy, altruism, and justice.<br />
+Elephants are the only non-human animals to mourn their dead,<br />
+	performing burial rituals and returning to visit graves.<br />
+They have shown concern for other species, as well.<br />
+One working elephant refused to set a log down into a hole where a dog was sleeping,<br />
+	while elephants encountering injured humans have sometimes stood guard<br />
+		and gently comforted them with their trunk.<br />
+</p>
+
+<p>
+On the other hand,<br />
+	elephant attacks on human villages have usually occurred<br />
+		right after massive poachings or cullings,<br />
+	suggesting deliberate revenge.<br />
+When we consider all this evidence,<br />
+	along with the fact that elephants are one of the few species<br />
+		who can recognize themselves in a mirror,<br />
+	it's hard to escape the conclusion that they are conscious, intelligent, and emotional beings.<br />
+</p>
+
+<p>
+Unfortunately, humanity's treatment of elephants does not reflect this,<br />
+	as they continue to suffer from habitat destruction in Asia,<br />
+		ivory poaching in Africa, and mistreatment in captivity worldwide.<br />
+Given what we now know about elephants<br />
+		and what they continue to teach us about animal intelligence,<br />
+	it is more important than ever to ensure<br />
+		that what the English poet John Donne described as 'nature's great masterpiece'<br />
+			does not vanish from the world's canvas.<br />
+</p>
+</div>
+
+<div id="outline-container-orgc97eed2" class="outline-3">
+<h3 id="orgc97eed2">expression</h3>
+<div class="outline-text-3" id="text-orgc97eed2">
+<p>
+walking hard drive: 移动硬盘<br />
+magnificent: very good or beautiful, and very impressive宏伟的<br />
+benevolent: kind and generous慈善的<br />
+proverb: a short well-known statement that gives advice or expresses something that is generally true.谚语<br />
+accurate: correct and true in every detail<br />
+encounter: to experience something, especially problems or opposition<br />
+hostile: angry and deliberately unfriendly towards someone, and ready to argue with them<br />
+recall: to remember a particular fact, event, or situation from the past回想<br />
+herd: 兽群<br />
+companion: someone you spend a lot of time with, especially a friend<br />
+drought: 干旱<br />
+circus: a group of people and animals who travel to different places performing skilful tricks as entertainment<br />
+rejoice: literary to feel or show that you are very happy<br />
+boast: if a place, object, or organization boasts something, it has something that is very good以有&#x2026;而自豪<br />
+encephalization quotient: Brain-To-Body脑化指数<br />
+mammal: a type of animal that drinks milk from its mother’s body when it is young. Humans, dogs, and whales are mammals<br />
+converge/convergent: to come from different directions and meet at the spoint to become one thing会聚<br />
+synapse: the place where nerve cells meet, especially in the brain突触<br />
+developed: a developed sense, system etc, is better, larger, or more advanced than others发达<br />
+hippocampus: 海马体<br />
+cerebral: medical relating to or affecting your brain大脑的<br />
+recollection: something from the past that you remember<br />
+faculty: a natural ability, such as the ability to see, hear, or think clearly本能<br />
+rote: formal when you learn something by repeating it many times, without thinking about it carefully or without understanding it死记硬背, 机械的做法, 生搬硬套<br />
+clan: a large group of families who often share the namies:<br />
+matriarch: a woman, especially an older woman, who controls a family or a social group<br />
+cooperative/cooperatively: willing to cooperate SYN helpful OPP uncooperative<br />
+outwit: to gain an advantage over someone using tricks or clever plans<br />
+manipulate: to make someone think and behave exactly as you want them to, by skilfully deceiving or influencing them<br />
+grasp: to take and hold something firmly SYN grip<br />
+post-traumatic stress disorder: 创伤后压力紊乱<br />
+arithmetic: the science of numbers involving adding, multiplying etc<br />
+vocalize/vocalization: to make a sound or sounds with your voice<br />
+infrasound: 次声<br />
+rumble: a series of long low sounds隆隆声<br />
+syntax: the way words are arranged to form sentences or phrases, or the rules of grammar which control this句法<br />
+tone: the way your voice sounds, which shows how you are feeling or what you mean语调<br />
+recreate: to make something from the past exist again in a new form or be experienced again SYN recapture再创造<br />
+melody: a song or tune<br />
+altruism: when you care about or help other people, even though this brings no advantage to yourself利他<br />
+mourn: to feel very sad because something no longer exists or is no longer as good as it used to be哀悼<br />
+burial ritual: 葬礼仪式<br />
+log: a thick piece of wood from a tree原木<br />
+trunk: the very long nose of an ↑elephant<br />
+massive: very large, solid, and heavy<br />
+poach: to do something that is someone else’s responsibility, especially when they do not want you to do it偷猎<br />
+cull: to kill animals so that there are not too many of them, or so that a disease does not spread猎杀<br />
+revenge: something you do in order to punish someone who has harmed or offended you复仇<br />
+ivory: the hard smooth yellowish-white substance from the ↑tusks (=long teeth) of an ↑elephant象牙<br />
+</p>
+<hr />
+<p>
+It's a common saying that + &#x2026;: 常言道&#x2026;<br />
+it appears that + &#x2026;: 看起来似乎<br />
+as many as num. sth.: 多达num.个<br />
+make a strong impression on sb.: 给某人造成深刻的印象<br />
+In one case: 在某种情况下<br />
+cross paths (with sb.): (与某人)相遇<br />
+sth. isn't limited to sb.: 某物/能力不限于某人<br />
+after days/months/years/decades apart: 几十年分别之后<br />
+go beyond sth.: 超过某物<br />
+encode A. into B.: 把某物A编入某物B<br />
+in adulthood: 在成年期<br />
+tackle problems: 解决问题<br />
+keep track of sth.: 跟踪某事<br />
+shown concern for sth./sb.: 爱护某人/物<br />
+stand guard: 站岗守卫<br />
+comfort sb. with sth.: 用某物安慰某人<br />
+it's hard to escape the conclusion that + &#x2026;: 很难不得出结论&#x2026;<br />
+in captivity: 在关押<br />
+Given what + &#x2026;: 鉴于&#x2026;<br />
+It is more important than ever to do sth.: 做某事比以往任何时候更重要<br />
+vanish from sp.: 从&#x2026;消失<br />
+</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
