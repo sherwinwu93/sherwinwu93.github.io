@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-07-08 Mon 16:12 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="lenovo" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-org7c46933" class="outline-2">
+<h2 id="org7c46933">2015-01-30 Why are some people left-handed?</h2>
+<div class="outline-text-2" id="text-org7c46933">
+<p class="verse">
+If you know an older left-handed person,<br />
+&#xa0;chances are they had to learn to write or eat with their right hand.<br />
+And in many parts of the world,<br />
+&#xa0;it's still common practice to force children to use their "proper" hand.<br />
+Even the word for right also means correct or good,<br />
+&#xa0;not just in English, but many other languages, too.<br />
+<br />
+But if being left-handed is so wrong,<br />
+&#xa0;then why does it happen in the first place?<br />
+Today, about 1/10 of the world's population are left-handed.<br />
+Archeological evidence shows that it's been that way for as long as 500,000 years,<br />
+&#xa0;with about 10% of human remains showing the associated differences in arm length and bone density,<br />
+&#xa0;and some ancient tools and artifacts showing evidence of left-hand use.<br />
+<br />
+And despite what many may think, handedness is not a choice.<br />
+It can be predicted even before birth based on the fetus' position in the womb.<br />
+So, if handedness is inborn, does that mean it's genetic?<br />
+Well, yes and no.<br />
+Identical twins, who have the same genes, can have different dominant hands.<br />
+In fact, this happens as often as it does with any other sibling pair.<br />
+But the chances of being right or left-handed<br />
+&#xa0;are determined by the handedness of your parents in surprisingly consistent ratios.<br />
+If your father was left-handed but your mother was right-handed,<br />
+&#xa0;&#xa0;you have a 17% chance of being born left-handed,<br />
+&#xa0;while two righties will have a left-handed child only 10% of the time.<br />
+Handedness seems to be determined by a roll of the dice, but the odds are set by your genes.<br />
+All of this implies there's a reason<br />
+&#xa0;that evolution has produced this small proportion of lefties,<br />
+&#xa0;&#xa0;and maintained it over the course of millennia.<br />
+<br />
+And while there have been several theories<br />
+&#xa0;&#xa0;attempting to explain why handedness exists in the first place,<br />
+&#xa0;&#xa0;&#xa0;or why most people are right-handed,<br />
+&#xa0;a recent mathematical model suggests that the actual ratio reflects a balance<br />
+&#xa0;&#xa0;between competitive and cooperative pressures on human evolution.<br />
+The benefits of being left-handed are clearest in activities involving an opponent,<br />
+&#xa0;like combat or competitive sports.<br />
+For example, about 50% of top hitters in baseball have been left-handed.<br />
+Why?<br />
+Think of it as a surprise advantage.<br />
+Because lefties are a minority to begin with,<br />
+&#xa0;both right-handed and left-handed competitors<br />
+&#xa0;&#xa0;will spend most of their time encountering and practicing against righties.<br />
+So when the two face each other,<br />
+&#xa0;&#xa0;the left-hander will be better prepared against this right-handed opponent,<br />
+&#xa0;while the righty will be thrown off.<br />
+<br />
+This fighting hypothesis,<br />
+&#xa0;&#xa0;where an imbalance in the population<br />
+&#xa0;&#xa0;&#xa0;results in an advantage for left-handed fighters or athletes,<br />
+&#xa0;is an example of negative frequency-dependent selection.<br />
+But according to the principles of evolution,<br />
+&#xa0;groups that have a relative advantage tend to grow until that advantage disappears.<br />
+If people were only fighting and competing throughout human evolution,<br />
+&#xa0;natural selection would lead to more lefties being the ones<br />
+&#xa0;&#xa0;that made it until there were so many of them, that it was no longer a rare asset.<br />
+So in a purely competitive world, 50% of the population would be left-handed.<br />
+<br />
+But human evolution has been shaped by cooperation, as well as competition.<br />
+And cooperative pressure pushes handedness distribution in the opposite direction.<br />
+In golf, where performance doesn't depend on the opponent,<br />
+&#xa0;only 4% of top players are left-handed,<br />
+&#xa0;an example of the wider phenomenon of tool sharing.<br />
+Just as young potential golfers can more easily find a set of right-handed clubs,<br />
+&#xa0;many of the important instruments that have shaped society<br />
+&#xa0;&#xa0;were designed for the right-handed majority.<br />
+Because lefties are worse at using these tools, and suffer from higher accident rates,<br />
+&#xa0;they would be less successful in a purely cooperative world,<br />
+&#xa0;&#xa0;eventually disappearing from the population.<br />
+<br />
+So by correctly predicting the distribution of left-handed people in the general population,<br />
+&#xa0;as well as matching data from various sports,<br />
+&#xa0;the model indicates<br />
+&#xa0;&#xa0;that the persistence of lefties as a small but stable minority reflects an equilibrium<br />
+&#xa0;&#xa0;&#xa0;that comes from competitive and cooperative effects playing out simultaneously over time.<br />
+And the most intriguing thing is what the numbers can tell us about various populations.<br />
+From the skewed distribution of pawedness in cooperative animals,<br />
+&#xa0;&#xa0;to the slightly larger percentage of lefties in competitive hunter-gatherer societies,<br />
+&#xa0;we may even find<br />
+&#xa0;&#xa0;that the answers to some puzzles of early human evolution are already in our hands.<br />
+</p>
+</div>
+<div id="outline-container-org8a2ec04" class="outline-3">
+<h3 id="org8a2ec04">expression</h3>
+<div class="outline-text-3" id="text-org8a2ec04">
+<p>
+left-handed: a left-handed person uses their left hand for writing, throwing etc OPP right-handed<br />
+proper: right, suitable, or correct<br />
+1/10: one-tenth<br />
+artifact: 历史文物<br />
+fetus: 胎儿<br />
+inborn: an inborn quality or ability is one you have had naturally since birth<br />
+genetic: relating to ↑genes or ↑genetics遗传的, 起源的<br />
+identical: exactly the same, or very similar<br />
+gene: 基因<br />
+dominant: more powerful, important, or noticeable than other people or things支配的<br />
+consistent: 一致的<br />
+ratio: a relationship between two amounts, represented by a pair of numbers showing how much bigger one amount is than the other ⇨ proportion比率<br />
+odds: the odds how likely it is that something will or will not happen<br />
+millennium/millennia:a period of 1,000 years<br />
+theory: 理论,假设hypothesis<br />
+competitive: determined or trying very hard to be more successful than other people or businesses ⇨ compete, competitor竞争的<br />
+competitor: 竞争者<br />
+combat: fighting, especially during a war<br />
+hitter: [棒球]击球员<br />
+hypothesis: an idea that is suggested as an explanation for something, but that has not yet been proved to be true SYN theory<br />
+athletes: someone who competes in sports competitions, especially running, jumping, and throwing运动员<br />
+frequency-dependent: 频率相关的<br />
+asset: the things that a company owns, that can be sold to pay debts资产<br />
+distribution: 分布状态<br />
+majority: 多数<br />
+equilibrium: a balance between different people, groups, or forces that compete with each other, so that none is stronger than the others and a situation is not likely to change suddenly<br />
+intriguing: something that is intriguing is very interesting because it is strange, mysterious, or unexpected SYN fascinating<br />
+skewed: an opinion, piece of information, result etc that is skewed is incorrect, especially because it has been affected by a particular thing or because you do not know all the facts<br />
+pawedness: 爪侧性,对左爪或右爪的偏好<br />
+hunter-gatherer: 狩猎采集者<br />
+puzzle: 难题<br />
+</p>
+<hr />
+<p>
+chances are + &#x2026;: 很可能&#x2026;<br />
+in many parts of the world: 在世界各地<br />
+the word for A: A这个单词<br />
+in the first place: 首先 For one thing<br />
+remain doing: 继续做某事<br />
+show evidence of sth./doing sth.: 显示做某事的证据<br />
+in the womb: 在子宫里<br />
+have a 17% chance of doing/being sth.: 有17%的机会做某事<br />
+be born adj.: 与生剧来&#x2026;<br />
+by a roll of the dice: 靠投塞子<br />
+It implies that + &#x2026;: 这意味着&#x2026;<br />
+over the course of millennia: 经过数千年的时间<br />
+The benefits of doing sth.: 做某事的好处<br />
+a minority to do sth.: 做某事的少数人<br />
+be thrown off: 被抛弃<br />
+lead to sb. doing sth.: 导致某人做某事<br />
+in the opposite direction: 朝相反方向<br />
+disappear from: 从&#x2026;消失<br />
+play out: 发展,演变<br />
+simultaneously over time: 同时随着时间的推移<br />
+in sb's hands: 在某人手中<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org53f9bd2" class="outline-3">
+<h3 id="org53f9bd2">sentences</h3>
+<div class="outline-text-3" id="text-org53f9bd2">
+<p>
+chances are + &#x2026;: 很可能&#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>Chances are he will behave as a police gentleman at the fancy dress party.<br /></li>
+<li>Chances are life can be formed in outer space.<br /></li>
+<li>Chances are that they have drawn on the answers to the puzzle.<br /></li>
+</ul>
+<p>
+in many parts of the world: 在世界各地<br />
+</p>
+<ul class="org-ul">
+<li>Repaying the thing of equal value immediately<br />
+is read as ending the relationship in many parts of the world.<br /></li>
+<li>In many parts of the world, china is the basic building block of tableware.<br /></li>
+<li>In many parts of the world, tourists often receive a cold welcome.<br /></li>
+</ul>
+<p>
+the word for A: A这个单词<br />
+</p>
+<ul class="org-ul">
+<li>These days, the word for entrepreneur in the world wide web of China is born guilty.<br /></li>
+<li>The word for entrepreneurs in China means a group of vampires<br />
+that are feasting on people's wealth.<br /></li>
+<li>The word for poor in China means right.<br /></li>
+</ul>
+<p>
+in the first place: 首先 For one thing<br />
+</p>
+<ul class="org-ul">
+<li>My father taught me a lesson that I should perpetuate my existence in the first place.<br /></li>
+<li>You have mobilized your immune system in the first place.<br /></li>
+<li>When you are in the face of gangster bangs on the street at midnight,<br />
+call the police in the first place.<br /></li>
+</ul>
+<p>
+remain doing: 继续做某事<br />
+</p>
+<ul class="org-ul">
+<li>I can't bear that he remains working for his boss after a bitter quarrel.<br /></li>
+<li>After her departure, I remain working for this company.<br /></li>
+<li>After my wife was fired, I may remain working for this company.<br /></li>
+</ul>
+<p>
+show evidence of sth./doing sth.: 显示做某事的证据<br />
+</p>
+<ul class="org-ul">
+<li>These scars have shown evidence of his father's mistreatment.<br /></li>
+<li>Showing evidence of his murder, he is forbidden to enter this country again.<br /></li>
+<li>With this procedure, he shows evidence of the chance of the lives in outer space.<br /></li>
+</ul>
+<p>
+in the womb: 在子宫里<br />
+</p>
+<ul class="org-ul">
+<li>My mother always complains that I had been running in the womb.<br /></li>
+<li>I noticed with dismay that my child is not in the womb, which means that my wife may abort.<br /></li>
+<li>The fetus in the womb is aborted because of her husband's mistreatment in captivity.<br /></li>
+</ul>
+<p>
+have a 17% chance of doing/being sth.: 有17%的机会做某事<br />
+</p>
+<ul class="org-ul">
+<li>The player said that his team had a 50% chance of being the champion in this game.<br /></li>
+<li>You have no chance of getting a good salary working for this company.<br /></li>
+<li>I have a 99% chance of accumulating social wealth by giving away livestock.<br /></li>
+</ul>
+<p>
+be born adj.: 与生剧来&#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>I seem to be born benevolent.<br /></li>
+<li>These dogs that are born friendly are used as watchdogs.<br /></li>
+<li>These dogs that are born strong are used as the power of transport in the snow.<br /></li>
+</ul>
+<p>
+by a roll of the dice: 靠投塞子<br />
+</p>
+<ul class="org-ul">
+<li>He is likely to tackle problems of the program by a roll of the dice.<br /></li>
+<li>Believe it or not, I predict his death in this adventure by a roll of the dice.<br /></li>
+<li>I had hit the right option by a roll of the dice.<br /></li>
+</ul>
+<p>
+It implies that + &#x2026;: 这意味着&#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>It implies that she fails to break the world record.<br /></li>
+<li>It implies that I have the ability to speak English fluently.<br /></li>
+<li>It implies that these cats from other continents fill an ecological niche in the city.<br /></li>
+</ul>
+<p>
+over the course of millennia: 经过数千年的时间<br />
+</p>
+<ul class="org-ul">
+<li>The archaeologist developed a model for the city over the course of a year.<br /></li>
+<li>The body of the chief in the tribe became a famous fossil over the course of millennia.<br /></li>
+<li>The fossil decayed away by wind and rain over the course of millennia.<br /></li>
+</ul>
+<p>
+The benefits of doing sth.: 做某事的好处<br />
+</p>
+<ul class="org-ul">
+<li>The benefit of completing this course is the chance of working for Apple.<br /></li>
+<li>The benefit of exercising every day is to lead a happy life with your family.<br /></li>
+<li>The benefit of studying English is the ability to work for foreign enterprises.<br /></li>
+</ul>
+<p>
+a minority to do sth.: 做某事的少数人<br />
+</p>
+<ul class="org-ul">
+<li>The people in this village are a minority to contribute to the gift.<br /></li>
+<li>The group of paleontologists is a minority to dig up fossils in creek banks.<br /></li>
+<li>You're a minority to hold that poss while taking the photograph.<br /></li>
+</ul>
+<p>
+be thrown off: 被抛弃<br />
+</p>
+<ul class="org-ul">
+<li>The teams that came from have been throwing off early again in the competition.<br /></li>
+<li>No one will be thrown off in this process.<br /></li>
+<li>The prizefighter must have been thrown off at the beginning of the competition.<br /></li>
+</ul>
+<p>
+lead to sb. doing sth.: 导致某人做某事<br />
+</p>
+<ul class="org-ul">
+<li>You shouldn't have crossed the road with the light red, which may lead to your children doing so.<br /></li>
+<li>My father's advice led to me rubbing my scar with alcohol.<br /></li>
+<li>This leads to her making a special type of mixture.<br /></li>
+</ul>
+<p>
+in the opposite direction: 朝相反方向<br />
+</p>
+<ul class="org-ul">
+<li>He must have driven to the village in the opposite direction.<br /></li>
+<li>The mall that is ten miles in the opposite direction is in the exhibition.<br /></li>
+<li>This fool has stood to attention in the opposite direction.<br /></li>
+</ul>
+<p>
+disappear from: 从&#x2026;消失<br />
+</p>
+<ul class="org-ul">
+<li>When the police arrived on the scene, the killer had already disappeared from the airport.<br /></li>
+<li>The parcel full of diamonds disappeared from the museum which was being spied on.<br /></li>
+<li>Dressed in overalls, he disappeared from the tent which they put up.<br /></li>
+</ul>
+<p>
+play out: 进行<br />
+</p>
+<ul class="org-ul">
+<li>The hardworking and lazy effects are playing out at the same time.<br /></li>
+<li>The rescue of the fire brigade and the connection of their families<br />
+might as well be playing out together.<br /></li>
+<li>The experiment had been playing out over the course of a week.<br /></li>
+</ul>
+<p>
+simultaneously over time: 同时随着时间的推移<br />
+</p>
+<ul class="org-ul">
+<li>They succeeded in sailing across the Atlantic Ocean simultaneously over time.<br /></li>
+<li>They developed a model for an atom simultaneously over time.<br /></li>
+<li>They have fallen into each other simultaneously over time.<br /></li>
+</ul>
+<p>
+in sb's hands: 在某人手中<br />
+</p>
+<ul class="org-ul">
+<li>It reminded me of the book titled Harry Potter in his hands.<br /></li>
+<li>I must lead a happy life in my hands.<br /></li>
+<li>I always ask myself to be in charge of the code in my hands.<br /></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
