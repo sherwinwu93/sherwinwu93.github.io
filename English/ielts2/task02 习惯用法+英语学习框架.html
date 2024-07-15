@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-07-14 Sun 10:37 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-org21dac1a" class="outline-2">
+<h2 id="org21dac1a">task2 习惯用法+英语学习框架</h2>
+<div class="outline-text-2" id="text-org21dac1a">
+</div>
+<div id="outline-container-org364d604" class="outline-3">
+<h3 id="org364d604">Task2 课前作业要求：</h3>
+<div class="outline-text-3" id="text-org364d604">
+<ol class="org-ol">
+<li>反复阅读下⽂，利⽤task1 中学会的技能尽全⼒处理阅读⽂本。⾃⾏查阅单词，语法，习惯⽤法。<br /></li>
+<li>尝试⽤汉语写出英⽂阅读与⼝语&amp;写作的关系，或英⽂阅读将如何提升英⽂⼝语&amp;写作。（字数不限，请认真审题并⾔简意赅）<br /></li>
+<li>学着⾃⼰摘抄（参考NCE2）阅读⽂本中出现的习惯⽤法，单词，句型，并造句*3，并⼤声朗读（edge） 出来（可⽤edge做跟读⾃⼰写的例句+可⽤grammarly 检查⾃⼰写的句⼦对错）<br /></li>
+</ol>
+<p>
+写出您在完成这个作业过程中产⽣的疑惑，然后带着这个疑惑去听课。<br />
+问题⼀: 如何observant enough?<br />
+问题⼆: 如何判断习惯用法摘抄的是否有用?<br />
+问题三:?<br />
+</p>
+</div>
+
+
+<div id="outline-container-org7aef3a0" class="outline-4">
+<h4 id="org7aef3a0">英文阅读如何提升英语口语&amp;写作</h4>
+<div class="outline-text-4" id="text-org7aef3a0">
+<p>
+阅读通过摘抄单词+习惯用法,再用于写作和口语,输入量够了才有输出.<br />
+但是要observant enough<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org99b5427" class="outline-4">
+<h4 id="org99b5427">总结</h4>
+<div class="outline-text-4" id="text-org99b5427">
+<p>
+跟读造句 和 文章的1-2段<br />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgee01901" class="outline-3">
+<h3 id="orgee01901">article</h3>
+<div class="outline-text-3" id="text-orgee01901">
+<p class="verse">
+Reading to Learn the Art of Expression<br />
+<br />
+When you read a short story, you may read it merely for pleasure.<br />
+When you read a biographical sketch, you may read it merely for information.<br />
+But as you are a learner of English, I think you should often read to learn the art of expression.<br />
+And for this purpose you may read either a short story or biographical sketch,<br />
+&#xa0;either an essay or a news item, indeed, anything that is written in good current English.<br />
+<br />
+Even from a short paragraph you may learn several forms of expression if you are observant enough.<br />
+Try to read the following paragraphs from BBC Modern English<br />
+&#xa0;and notice the points of usage listed below.<br />
+<br />
+Over 100 years ago she opened the first British hospital for women.<br />
+There are still very few of these hospitals in England.<br />
+This hospital is in Euston Road in London.<br />
+Its situation means that women from all over England can reach it quite easily.<br />
+<br />
+Her aim when she opened the hospital was to provide a place<br />
+&#xa0;where women could go and receive treatment from female doctors and nurses.<br />
+She also wanted the hospital to provide jobs for female doctors at a time<br />
+&#xa0;when it was very difficult for them to find work.<br />
+Recently the authorities have tried to close the hospital.<br />
+They say that it is old-fashioned and wastes a lot of money.<br />
+However, the Government has decided that the hospital will stay open.<br />
+Many people feel very glad that the valuable service offered by this hospital will continue.<br />
+<br />
+1. 'Over' More than.<br />
+2. 'in Euston Road' 'in &#x2026; Road'.<br />
+3. 'means that &#x2026;' 'means' takes an object clause introduced by 'that'.<br />
+4. 'from all over England' 'all over England' 'from all over England'.<br />
+5. 'receive treatment'. Patients receive treatment.<br />
+6. 'wanted the hospital to provide &#x2026;' 'We want them to do it'<br />
+7. 'at a time when &#x2026;' 'at a time when &#x2026;'<br />
+8. 'Recently the authorities have tried.' The present perfect is here used with recently<br />
+9. 'the Government has' 'the Government' can be considered singular.<br />
+10. 'decided that &#x2026;' 'Decided' takes an object clause introduced by 'that'.<br />
+11. 'stay open'. 'stay' can be a copulative verb.<br />
+<br />
+In this way you will learn the art of expression very quickly;<br />
+&#xa0;perhaps one or two paragraphs a day will teach you hundreds of forms of expression in a month,<br />
+&#xa0;and these forms of expression will greatly improve your writing.<br />
+And if you can - I believe you can - commit to memory one or two paragraphs a day<br />
+&#xa0;that you have alreay read in this way, the results will be still greater.<br />
+</p>
+</div>
+
+<div id="outline-container-org07e0623" class="outline-4">
+<h4 id="org07e0623">word and expression</h4>
+<div class="outline-text-4" id="text-org07e0623">
+<p>
+observant<br />
+</p>
+<ul class="org-ul">
+<li>She is too observant to be spied on.<br /></li>
+<li>The bodyguard was so observant that he caught a lot of thieves.<br /></li>
+<li>If the bodyguard was observant enough, he would find out what it was like.<br /></li>
+</ul>
+
+
+<p>
+biographical sketch<br />
+</p>
+<ul class="org-ul">
+<li>She is reading a biographical sketch which is written by Elon Musk.<br /></li>
+<li>She couldn't afford to buy a biographical sketch when she was very young.<br /></li>
+<li>On these occasions these biographical sketches will be sold out very quickly.<br /></li>
+</ul>
+<p>
+forms of &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>There are several forms of expressions which are written by my students.<br /></li>
+<li>She promised to provide me with hundreds of forms of expression.<br /></li>
+<li>She claimed that studying these forms of expression would greatly improve my writing.<br /></li>
+</ul>
+<p>
+from all over England<br />
+</p>
+<ul class="org-ul">
+<li>People from all over England are nervous about this panda which is found in China.<br /></li>
+<li>Sorry to interrupt, but people from all over England have gathered round in front of our square.<br /></li>
+<li>People from all over England always receive a warm welcome<br />
+at a time when it is difficult to find a job.<br /></li>
+</ul>
+<p>
+sb's aim is to do &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>My wife's aim is to make a path around our house.<br /></li>
+<li>His aim is to teach his dog to press his paw on the button.<br /></li>
+<li>The beggar's aim is to stand on his head merely.<br /></li>
+</ul>
+<p>
+receive treatment (from sb.)<br />
+</p>
+<ul class="org-ul">
+<li>He complained that his child didn't receive treatment from the doctor in the hospital.<br /></li>
+<li>I wish that the poor men would receive treatment as well as the rich men.<br /></li>
+<li>As he didn't receive treatment from his son, he went to the bar to grab a beer.<br /></li>
+</ul>
+<p>
+at a time when &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>My cat was waiting for me behind the door at a time when I was busy working and got home late.<br /></li>
+<li>Our vicar was always raising money at a time when the clock had been broken.<br /></li>
+<li>She was waking up with a start at a time when the clock struck thirteen at one o'clock.<br /></li>
+</ul>
+<p>
+&#x2026; clause<br />
+</p>
+<ul class="org-ul">
+<li>To my surprise, 'of' takes an object clause introduced by 'what'.<br /></li>
+<li>Mr. Leo has taught me an attribute clause.<br /></li>
+<li>Believe it or not, you inappropriately recognized an object clause as an attribute clause.<br /></li>
+</ul>
+<p>
+stay adj.<br />
+</p>
+<ul class="org-ul">
+<li>I wished that the hospital had stayed open.<br /></li>
+<li>I wish that the hospital stayed open.<br /></li>
+<li>If the hospital stayed open, you would receive treatment from female doctors.<br /></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
