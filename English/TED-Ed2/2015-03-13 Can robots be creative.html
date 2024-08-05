@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-08-05 Mon 20:38 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org8973906">1. 2015-03-13 Can robots be creative</a>
+<ul>
+<li><a href="#org492a940">1.1. expression</a></li>
+<li><a href="#org5398769">1.2. sentence</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org8973906" class="outline-2">
+<h2 id="org8973906"><span class="section-number-2">1.</span> 2015-03-13 Can robots be creative</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+How does this music make you feel?
+Do you find it beautiful?
+Is it creative?
+Now, would you change your answers if you learned the composer was this robot?
+Believe it or not,
+	people have been grappling with the question of artificial creativity,
+			alongside the question of artifcial intelligence,
+		for over 170 years.
+</p>
+
+<p>
+In 1843,
+	Lady Ada Lovelace, an English mathematician considered the world's first computer programmer,
+		wrote that a machine could not have human-like intelligence
+			as long as it only did what humans intentionally programmed it to do.
+According to Lovelace,
+	a machine must be able to create original ideas if it is to be considered intelligent.
+The Lovelace Test, formalized in 2001, proposes a way of scrutinizing this idea.
+A machine can pass this test
+	if it can produce an outcome that its designers cannot explain based on their original code.
+The Lovelace Test is, by design, more of a thought experiment than an objective scientific test.
+</p>
+
+<p>
+But it's a place to start.
+At first glance,
+	the idea of a machine creating high quality, original music in this way might seem impossible.
+We could come up with an extremely complex algorithm using random number generators,
+	chaotic functions, and fuzzy logic to generate a sequence of musical notes in a way
+		that would be impossible to track.
+But although this would yield countless original melodies never heard before,
+	only a tiny fraction of them would be worth listening to.
+With the computer having no way to distinguish
+	between those which we would consider beautiful and those which we won't.
+</p>
+
+<p>
+But what if we took a step back
+	and tried to model a natural process that allows creativity to form?
+We happen to know of at least one such process
+	that has lead to original, valuable, and even beautiful outcomes: the process of evolution.
+And evolutionary algorithms, or genetic algorithms that mimic biological evolution,
+	are one promising approach to making machines generate original and valuable artistic outcomes.
+So how can evolution make a machine musically creative?
+</p>
+
+<p>
+Well, instead of organisms,
+	we can start with an initial population of musical phrases, and a basic algorithm
+		that mimics reproduction and random mutations
+			by switching some parts, combining others, and replacing random notes.
+Now that we have a new generation of phrases,
+	we can apply selection using an operation called a fitness function.
+Just as biological fitness is determined by external environmental pressures,
+	our fitness function can be determined by an external melody chosen by human musicians,
+			or music fans,
+		to represent the ultimate beautiful melody.
+The algorithm can then compare between our musical phrases and that beautiful melody,
+	and select only the phrases that are most similar to it.
+Once the least similar sequences are weeded out,
+	the algorithm can reapply mutation and recombination to what's left,
+		select the most similar, or fitted ones, again from the new generation,
+		and repeat for many generations.
+The process that got us there has so much randomness and complexity built in
+	that the result might pass the Lovelace Test.
+More importantly, thanks to the presence of human aesthetic in the process,
+	we'll theoretically generate melodies we would consider beautiful.
+</p>
+
+<p>
+But does this satisfy our intuition for what is truly creative?
+Is it enough to make something original and beautiful,
+	or does creativity require intention and awareness of what is being created?
+Perhaps the creativity in this case is really coming from the programmers,
+	even if they don't understand the process.
+What is human creativity, anyways?
+Is it something
+	more than a system of interconnected neurons developed by biological algorithmic processes
+		and the random experiences that shape our lives?
+Order and chaos, machine and human.
+These are the dynamos at the heart of machine creativity initiatives
+	that are currently making music, sculptures, paintings, poetry and more.
+The jury may still be out
+	as to whether it's fair to call these acts of creation creative.
+But if a piece of art can make you weep, or blow your mind, or send shivers down your spine,
+	does it really matter who or what created it?
+</p>
+</div>
+<div id="outline-container-org492a940" class="outline-3">
+<h3 id="org492a940"><span class="section-number-3">1.1.</span> expression</h3>
+<div class="outline-text-3" id="text-1-1">
+<p>
+composer: someone who writes music ⇨ composition作曲家
+artificial: not real or not made of natural things but made to be like something that is real or natural SYN false OPP natural人造的,人工的
+creativity: the ability to use your imagination to produce new ideas, make things etc创造力, 创造
+intelligence: the ability to learn, understand, and think about things智能
+mathematician: someone who studies or teaches mathematics, or is a specialist in mathematics数学家
+programmer: someone whose job is to write computer programs程序师
+formalize: to make a plan, decision, or idea official, especially by deciding and clearly describing all the details使正式
+scrutinize: to examine someone or something very carefully细察
+algorithm: technical a set of instructions that are followed in a fixed order and used for solving a mathematical problem, making a computer program etc运算法则
+generator: something that produces something else发生器
+fuzzy: unclear or confused OPP clear模糊的
+yield: to produce a result, answer, or piece of information生产
+countless: too many to be counted无数的, 数不尽的
+outcome: the final result of a meeting, discussion, war etc – used especially when no one knows what it will be until it actually happens SYN result结果
+artistic: relating to art or culture艺术的
+mutation: a change in the ↑genetic structure of an animal or plant that makes it different from others of the skind(生物物种的)突变
+fitness: the degree to which someone or something is suitable or good enough for a particular situation or purpose适应,适当
+ultimate: someone’s ultimate aim is their main and most important aim, that they hope to achieve in the future SYN final最后的, 最终的, 根本的
+complexity: the state of being complicated复杂性, 复杂的事物
+aesthetic: connected with beauty and the study of beauty美学
+theoretically: 理论上
+intuition: the ability to understand or know something because of a feeling rather than by considering the facts SYN instinct直觉
+anyways: =anyway 不管怎样
+dynamo: a machine that changes some other form of power directly into electricity发电机
+initiative: the ability to make decisions and take action without waiting for someone to tell you what to do主动
+weep: or literary to cry, especially because you feel very sad哭泣
+</p>
+<hr />
+<p>
+grapple with the question of sth.: 努力解决某事的问题
+program sth. to do sth.: 编程让某事做某事
+propose a way of doing sth.: 提出做某事的方法
+a sequence of sth.: 一连串的某事
+a tiny fraction of sth.: 某物的极小一部分
+approach to doing sth.: 做某事的方法
+an initial population of sth.: 某物的初始种群
+a new generation of sth.: 新一代的某物
+be weeded out: 被淘汰
+the presence of sth.: 某物的存在
+The jury may still be out: 目前还没有定论
+blow your mind: 震撼你的思维
+send shivers down your spine: 让你背脊发凉
+</p>
+</div>
+</div>
+<div id="outline-container-org5398769" class="outline-3">
+<h3 id="org5398769"><span class="section-number-3">1.2.</span> sentence</h3>
+<div class="outline-text-3" id="text-1-2">
+<p>
+grapple with the question of sth.: 努力解决某事的问题
+</p>
+<ul class="org-ul">
+<li>The teacher who is grappling with the question of artificial intelligence is my father.</li>
+<li>She must have been grappling with the question her boss caused last week.</li>
+<li>Agreeing with the model, he was trying to grapple with the question of molecules.</li>
+</ul>
+<p>
+program sth. to do sth.: 编程让某事做某事
+</p>
+<ul class="org-ul">
+<li>There's a certain probability of programming the truck to cook in the school.</li>
+<li>I am 100% sure that I can program it to complete our tasks.</li>
+<li>The chance of programming it to clean our house decreases exponentially.</li>
+</ul>
+<p>
+propose a way of doing sth.: 提出做某事的方法
+</p>
+<ul class="org-ul">
+<li>He developed a model for the bridge and proposed a way of burning it down.</li>
+<li>Interacting with my boss,
+I proposed a way of refactoring the project which has already been rotten.</li>
+<li>The Prime Minister proposing a way of negotiating with our enemies
+in which we surrender the island to them.</li>
+</ul>
+<p>
+a sequence of sth.: 一连串的某事
+</p>
+<ul class="org-ul">
+<li>Believe it or not, when I drove on to the company, a sequence of accidents happened.</li>
+<li>A sequence of abductions by terrorists makes this country more chaotic.</li>
+<li>A sequence of information on this natural disaster provided by anonymous persons
+confused us a great deal.</li>
+</ul>
+<p>
+a tiny fraction of sth.: 某物的极小一部分
+</p>
+<ul class="org-ul">
+<li>A tiny fraction of water may be enough to form life on this planet.</li>
+<li>This village used to be inhabited by a tiny fraction of elephants.</li>
+<li>A tiny fraction of shit must spoil the chicken soup.</li>
+</ul>
+<p>
+an approach to doing sth.: 做某事的方法
+</p>
+<ul class="org-ul">
+<li>That's an approach to forming life in an extreme environment.</li>
+<li>The approach to training your dog to trigger the light may be fatal for him.</li>
+<li>The approach to getting along with the difficult companion
+is just to be the right distance from him.</li>
+</ul>
+<p>
+an initial population of sth.: 某物的初始种群
+</p>
+<ul class="org-ul">
+<li>An initial population of tadpoles will be full of the pool in the future.</li>
+<li>No one could account for the fact
+that an initial population of tadpoles survived a drought in the end.</li>
+<li>An initial population of tadpoles may increase exponentially in this pool.</li>
+</ul>
+<p>
+a new generation of sth.: 新一代的某物
+</p>
+<ul class="org-ul">
+<li>So to speak, you are a new generation of Americans.</li>
+<li>Anyways, a new generation of Americans is higher than their parents.</li>
+<li>A new generation of mold began to appear in the back of your fridge.</li>
+</ul>
+<p>
+be weeded out: 被淘汰
+</p>
+<ul class="org-ul">
+<li>Weeded out, he was rewarded with fifty pence worth of television.</li>
+<li>Bursting out tears, he was told that he hadn't been weed out of the competition.</li>
+<li>I appreciate your honesty, but you are weeded out because of your mistakes at work.</li>
+</ul>
+<p>
+the presence of sth.: 某物的存在
+</p>
+<ul class="org-ul">
+<li>He proved that there should be the presence of God.</li>
+<li>The presence of my wife's support gave me the nudge to resign from office.</li>
+<li>The presence of my pocket money encouraged me to buy a new piano for my wife.</li>
+</ul>
+<p>
+The jury may still be out as to whether + &#x2026;: 目前还没有定论
+</p>
+<ul class="org-ul">
+<li>The jury may still be out as to whether our experiment agrees with our model for an atom.</li>
+<li>The jury may still be out as to whether he committed a murder.</li>
+<li>The jury may still be out as to whether I passed the test.</li>
+</ul>
+<p>
+blow your mind: 震撼你的思维
+</p>
+<ul class="org-ul">
+<li>Filling up the parcel with diamonds, the rich man blew my mind.</li>
+<li>A note the police left reminding me of my father blew my mind.</li>
+<li>Mosquito grappling with getting out of the bottle blew my mind.</li>
+</ul>
+<p>
+send shivers down your spine: 让你背脊发凉
+</p>
+<ul class="org-ul">
+<li>The story, which describes a woman poisoning her five husbands in her youth,
+really sent shivers down my spine.</li>
+<li>I have no intention of sending shivers down your spine, so I won't tell you the terrible story.</li>
+<li>I am tempted to cheat on my wife in the bar, which sends shivers down my spine.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: DESKTOP-13B7HQM</p>
+<p class="date">Created: 2024-08-05 Mon 20:38</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
