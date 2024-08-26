@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-08-26 Mon 20:11 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orgb24be00">1. 10 The Crusades of the Thirteenth Century</a>
+<ul>
+<li><a href="#orge95e01f">1.1. expression</a></li>
+<li><a href="#orgef387af">1.2. sentence</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgb24be00" class="outline-2">
+<h2 id="orgb24be00"><span class="section-number-2">1.</span> 10 The Crusades of the Thirteenth Century</h2>
+<div class="outline-text-2" id="text-1">
+<p class="verse">
+After the death of Saladin in 1193, Pope Innocent III initiated the Fourth Crusade.<br />
+On its way to the east,<br />
+&#xa0;the crusading army became involved in a dispute over the succession to the Byzantine throne.<br />
+The Venetian leaders of the Fourth Crusade<br />
+&#xa0;saw an opportunity to neutralize their greatest commercial competitor, the Byzantine Empire.<br />
+Diverted to Constantinople,<br />
+&#xa0;the crusaders sacked that great capital city in 1204<br />
+&#xa0;&#xa0;and declared the new Latin Empire of Constantinople.<br />
+Not until 1261 did a Byzantine army recapture Constantinople.<br />
+The Byzantine Empire had been saved, but it was no longer a great Mediterranean power.<br />
+The restored empire now consisted only of the city of Constantinople<br />
+&#xa0;and its surrounding territory along with some lands in Asia Minor.<br />
+Though reduced in size, the empire limped along for another 190 years<br />
+&#xa0;until its weakened condition finally enabled the Ottoman Turks to conquer it in 1453.<br />
+<br />
+Despite the failures, the crusading ideal was not yet completely lost.<br />
+In Germany in 1212, a youth known as Nicholas of Cologne announced<br />
+&#xa0;that God had inspired him to lead a Children’s Crusade to the Holy Land.<br />
+Thousands of young people joined Nicholas<br />
+&#xa0;and made their way down the Rhine and across the Alps to Italy,<br />
+&#xa0;where the pope told them to go home.<br />
+Most tried to do so.<br />
+At about the same time,<br />
+&#xa0;a group of about twenty thousand French children,<br />
+&#xa0;&#xa0;&#xa0;also inspired by the desire to free the Holy Land from the Muslims,<br />
+&#xa0;&#xa0;made their way to Marseilles,<br />
+&#xa0;&#xa0;&#xa0;where two shipowners agreed to transport them to the Holy Land.<br />
+Seven ships packed with hymn-singing youths soon left the port.<br />
+Two of the ships sank in a storm near Sardinia;<br />
+&#xa0;the other five sailed to North Africa, where the children were sold into slavery.<br />
+Four more Crusades of adult warriors over the next half-century were no more successful.<br />
+Finally, Europe’s Christians grudgingly accepted<br />
+&#xa0;that they were not to be the guardians of the the Holy Land.<br />
+</p>
+</div>
+<div id="outline-container-orge95e01f" class="outline-3">
+<h3 id="orge95e01f"><span class="section-number-3">1.1.</span> expression</h3>
+<div class="outline-text-3" id="text-1-1">
+<p>
+initiate: v. formal to arrange for something important to start, such as an official process or a new plan开始, 发动
+succession: n. the act of taking over an official job or position, or the right to be the next to take it ⇨ accession继承, 继任
+throne: n. a special chair used by a king or queen at important ceremonies王座
+neutralize: v. to destroy something that is dangerous to you during a war摧毁
+sack: v. if soldiers sack a place, they go through it destroying or stealing things and attacking people洗劫
+recapture: v. to take control of a place again by fighting for it SYN retake夺回
+territory: n. land that is owned or controlled by a particular country, ruler, or military force领土
+conquer: v. to get control of a country by fighting征服
+ideal: n.adj. 理想
+warrior: n. a soldier or fighter who is brave and experienced – used about people in the past勇士
+guardian: n. someone who guards or protects something护卫者, 监护人
+</p>
+<hr />
+<p>
+On sb's way to sp.: 某人去某地的路上
+a dispute over sth.: 对某事的争端
+see an opportunity to do sth.: 看到做某事的机会
+be diverted to sp.: 被转移到某地
+limp along: 艰难前行
+sb. announced that + &#x2026;: 某人宣布&#x2026;
+inspire sb. to do sth.: 激励某人去做某事
+lead sb. to sp.: 带领某人去某地
+free A from B: 从B释放A
+</p>
+</div>
+</div>
+<div id="outline-container-orgef387af" class="outline-3">
+<h3 id="orgef387af"><span class="section-number-3">1.2.</span> sentence</h3>
+<div class="outline-text-3" id="text-1-2">
+<p>
+initiate: v. formal to arrange for something important to start, such as an official process or a new plan开始, 发动
+</p>
+<ul class="org-ul">
+<li>The vassals were eager to initiate the conspiracy which was used to lead to the king's fall down.</li>
+<li>The progress will be initiated if you press the red button.</li>
+<li>They planned out the wedding to the last detail and will be initiating it next Sunday.</li>
+</ul>
+<p>
+succession: n. the act of taking over an official job or position, or the right to be the next to take it ⇨ accession继承, 继任
+</p>
+<ul class="org-ul">
+<li>The knight went out of his way to prevent him from a dispute over the succession to the lord.</li>
+<li>He pointed out
+that the succession to the guardian of the city would lead to a series of disasters.</li>
+<li>It is said that the succession to the throne still remains a mystery.</li>
+</ul>
+<p>
+throne: n. a special chair used by a king or queen at important ceremonies王座
+</p>
+<ul class="org-ul">
+<li>Even though he was on the throne, George still had his head cut because of a set of failures.</li>
+<li>Beyond doubt, no prince doesn't want the throne.</li>
+<li>He by no means has the access to the throne of the emperor.</li>
+</ul>
+<p>
+neutralize: v. to destroy something that is dangerous to you during a war摧毁
+</p>
+<ul class="org-ul">
+<li>He was determined to neutralize these Asiatic nomads.</li>
+<li>It is a coincidence
+that the loss of the queen became the reason for neutralizing the great emperor.</li>
+<li>These states in Greece conspired to neutralize the great emperor.</li>
+</ul>
+<p>
+sack: v. if soldiers sack a place, they go through it destroying or stealing things and attacking people洗劫
+</p>
+<ul class="org-ul">
+<li>The crusading army intended to sack a third of the territory of the great emperor.</li>
+<li>They have sacked several cities on their conquests in Asia.</li>
+<li>After having been sacking this city for three days, they initiated a fireworks display.</li>
+</ul>
+<p>
+recapture: v. to take control of a place again by fighting for it SYN retake夺回
+</p>
+<ul class="org-ul">
+<li>The general has the impulse to recapture the capital city of Rome.</li>
+<li>These soldiers were left recapturing the district which was sacked ten days ago.</li>
+<li>The success of action last week motivated him to recapture the capital city.</li>
+</ul>
+<p>
+territory: n. land that is owned or controlled by a particular country, ruler, or military force领土
+</p>
+<ul class="org-ul">
+<li>You're not allowed to stand on my territory.</li>
+<li>The increase of the territory, coupled with the rise in status,
+the capital country became the center of trade in the world.</li>
+<li>It all began back when a group of explorers appeared on the territory of the lord.</li>
+</ul>
+<p>
+conquer: v. to get control of a country by fighting
+</p>
+<ul class="org-ul">
+<li>I must have conquered her last night.</li>
+<li>I can't have conquered such a great emperor over a period of three months.</li>
+<li>The emperor is busy conquering some small countries in Greece.</li>
+</ul>
+<p>
+ideal: n.adj. 理想,理想的
+</p>
+<ul class="org-ul">
+<li>The ideal silk business has not been completed yet.</li>
+<li>The ideal marriage partner has not emerged in his life.</li>
+<li>He musters up the courage to lead an ideal life for the rest of his life.</li>
+</ul>
+<p>
+warrior: n. a soldier or fighter who is brave and experienced – used about people in the past勇士
+</p>
+<ul class="org-ul">
+<li>It is a warrior's job to fight his lord against these nomads.</li>
+<li>The warrior grudged keeping guard in front of the entrance of the palace.</li>
+<li>The warrior turns out to be killed in action.</li>
+</ul>
+<p>
+guardian: n. someone who guards or protects something护卫者, 监护人
+</p>
+<ul class="org-ul">
+<li>My ex-wife informed me that she has been the guardian of our daughter right from the start.</li>
+<li>I have the impulse to be the guardian of the cute girl.</li>
+<li>They quarreled bitterly over who was the guardian of their son.</li>
+</ul>
+<hr />
+<p>
+On sb's way to sp.: 某人去某地的路上
+</p>
+<ul class="org-ul">
+<li>On my way to school, I ran into a beggar who asked me for a lift.</li>
+<li>On her way home, she realized that her husband had cheated on her.</li>
+<li>On its way to the kitchen, the cat smashed everything into pieces.</li>
+</ul>
+<p>
+a dispute over sth.: 对某事的争端
+</p>
+<ul class="org-ul">
+<li>There are always disputes over the taxi fares, for they are not clear.</li>
+<li>I don't want a dispute between you and me, for I used to bargain with other.</li>
+<li>The tickets have been sold out, which led to a dispute between the manager and the clerk.</li>
+</ul>
+<p>
+see an opportunity to do sth.: 看到做某事的机会
+</p>
+<ul class="org-ul">
+<li>I have seen an opportunity to predict the future.</li>
+<li>I haven't seen any opportunity to fulfill my dream.</li>
+<li>My wife have seen an opportunity to kiss me on New Year's Eve.</li>
+</ul>
+<p>
+be diverted to sp.: 被转移到某地
+</p>
+<ul class="org-ul">
+<li>Diverted to Beijing, these workers will be given five performances.</li>
+<li>Diverted to America, he worked for a big firm.</li>
+<li>Diverted to America, he shared his house with a stray dog.</li>
+</ul>
+<p>
+limp along: 艰难前行
+</p>
+<ul class="org-ul">
+<li>Although the gangster threatened to put her out of business, her furniture business is still limping along.</li>
+<li>Not making an ideal profit last year, our company is still limping along.</li>
+<li>Limping along for years, he eventually followed in his father's footsteps.</li>
+</ul>
+<p>
+sb. announced that + &#x2026;: 某人宣布&#x2026;
+</p>
+<ul class="org-ul">
+<li>I announced that I am fluent in English.</li>
+<li>I announced that our wedding would be held next month.</li>
+<li>I announced that my son applied to Harvard University.</li>
+</ul>
+<p>
+inspire sb. to do sth.: 激励某人去做某事
+</p>
+<ul class="org-ul">
+<li>The desire to lead a happy life inspired him to take adventure in his furniture business.</li>
+<li>The rise in salary inspired me to work to my bone.</li>
+<li>The reward for virtue inspired people to behave better in a daily routine.</li>
+</ul>
+<p>
+lead sb. to sp.: 带领某人去某地
+</p>
+<ul class="org-ul">
+<li>In a daily routine, I led passengers to the airfield.</li>
+<li>Leading passengers to a strange place, the police asked them for all of their money.</li>
+<li>Sweetie, lead your uncle to our apartment to grab a cup of beer.</li>
+</ul>
+<p>
+free A from B: 从B释放A
+</p>
+<ul class="org-ul">
+<li>He found it relatively easy to free himself from the prison.</li>
+<li>He has dug up the wall for twenty years and freed himself from the prison.</li>
+<li>You have committed a sin when you freed a criminal from here.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: DESKTOP-13B7HQM</p>
+<p class="date">Created: 2024-08-26 Mon 20:11</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
