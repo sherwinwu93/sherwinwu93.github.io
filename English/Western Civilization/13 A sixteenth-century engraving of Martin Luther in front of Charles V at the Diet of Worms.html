@@ -1,0 +1,858 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-09-11 Wed 15:18 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org0bb8a89">1. 13 A sixteenth-century engraving of Martin Luther in front of Charles V at the Diet of Worms</a>
+<ul>
+<li><a href="#orge711996">1.1. expression</a></li>
+<li><a href="#org851d42f">1.2. sentence</a></li>
+<li><a href="#orgc4f4128">1.3. sentence2</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org0bb8a89" class="outline-2">
+<h2 id="org0bb8a89"><span class="section-number-2">1.</span> 13 A sixteenth-century engraving of Martin Luther in front of Charles V at the Diet of Worms</h2>
+<div class="outline-text-2" id="text-1">
+<p class="verse">
+On April 18, 1521,<br />
+&#xa0;a lowly monk stood before the emperor and princes of the Holy Roman Empire in the city of Worms.<br />
+He had been called before this august gathering to answer charges of heresy,<br />
+&#xa0;charges that could threaten his very life.<br />
+The monk was confronted with a pile of his books<br />
+&#xa0;and asked if he wished to defend them all or reject a part.<br />
+Courageously, Martin Luther defended them all<br />
+&#xa0;and asked to be shown where any part was in error on the basis of Scripture and plain reason.<br />
+The emperor was outraged by Luther's response and made his own position clear the next day:<br />
+'Not only I, but you of this noble German nation, would be forever disgraced<br />
+&#xa0;if by our negligence not only heresy but the very suspicion of heresy were to survive.<br />
+After having heard yesterday the obstinate defense of Luther,<br />
+&#xa0;I regret that I have so long delayed in proceeding against him and his false teaching.<br />
+I will have no more to do with him.'<br />
+Luther's appearance at Worms<br />
+&#xa0;set the stage for a serious challenge to the authority of the Catholic church.<br />
+This was by no means the first crisis in the church's fifteen-hundred-year history,<br />
+&#xa0;but its consequences were more far-reaching than anyone at Worms in 1521 could have imagined.<br />
+<br />
+Throughout the Middle Ages,<br />
+&#xa0;the medieval Christian church continued to assert its primacy of position.<br />
+It had overcome defiance of its temporal authority by emperors and kings<br />
+&#xa0;while challenges to its doctrines had been crushed by the Inquisition<br />
+&#xa0;&#xa0;and combated by new religious orders<br />
+&#xa0;&#xa0;&#xa0;that carried its message of salvation to all the towns and villages of medieval Europe.<br />
+The growth of the papacy had paralleled the growth of the church,<br />
+&#xa0;but by the end of the Middle Ages,<br />
+&#xa0;challenges to papal authority from the rising power of monarchical states<br />
+&#xa0;&#xa0;had resulted in a loss of papal temporal authority.<br />
+An even greater threat to papal authority and church unity arose in the sixteenth century<br />
+&#xa0;when the unity of Christendom was shattered by the Reformation.<br />
+<br />
+The movement begun by Martin Luther when he made his dramatic stand quickly spread across Europe,<br />
+&#xa0;a clear indication of dissatisfaction with Catholic practices.<br />
+Within a short time, new religious practices, doctrines, and organizations,<br />
+&#xa0;&#xa0;including Zwinglianism, Calvinism, Anabaptism, and Anglicanism,<br />
+&#xa0;were attracting adherents all over Europe.<br />
+Seemingly helpless to stop the new Protestant churches,<br />
+&#xa0;the Roman Catholic Church underwent a reformation<br />
+&#xa0;&#xa0;and managed to revive its fortunes by the mid-sixteenth century.<br />
+Nevertheless,<br />
+&#xa0;the doctrinal divisions between Protestants and Catholics<br />
+&#xa0;&#xa0;became instrumental in triggering a series of religious wars<br />
+&#xa0;&#xa0;&#xa0;that dominated the history of western Europe in the second half of the sixteenth century.<br />
+</p>
+</div>
+<div id="outline-container-orge711996" class="outline-3">
+<h3 id="orge711996"><span class="section-number-3">1.1.</span> expression</h3>
+<div class="outline-text-3" id="text-1-1">
+<p>
+lowly: adj. low in rank, importance, or social class – sometimes used humorously SYN humble地位低的, 卑贱的
+emperor: n. the man who is the ruler of an ↑empire皇帝, 君主
+heresy: n. a belief that disagrees with the official principles of a particular religion异端, 异教
+defend: v. to do something in order to protect someone or something from being attacked防护, 辩护
+disgrace: v. to do something so bad that you make other people feel ashamed丢脸
+obstinate: determined not to change your ideas, behaviour, opinions etc, even when other people think you are being unreasonable SYN stubborn倔强的, 顽固的
+far-reaching: adj. having a great influence or effect影响深远的
+assert: v. assert your rights/independence/superiority etc to state very strongly your right to something主张,声称
+primacy: n. formal if someone or something has primacy, they are the best or most important person or thing首位
+defy defiance: v.n. behaviour that shows you refuse to do what someone tells you to do, especially because you do not respect them ⇨ defy挑战,违抗
+temporal: adj. related to practical instead of religious affairs世俗的
+doctrine: n. a set of beliefs that form an important part of a religion or system of ideas教条
+Inquisition: the Inquisition a Roman Catholic organization in the past whose aim was to find and punish people who had unacceptable religious beliefs
+combat: v. to try to stop something bad from happening or getting worse – used especially in news reports防止,抑制
+salvation: n. something that prevents or saves someone or something from danger, loss, or failure拯救, 救助
+papacy: n. the papacy the position and authority of the Pope罗马教皇职位, 教皇的在位期间
+parallel: v. if one thing parallels another, they happen at the stime or are similar, and seem to be related相应, 平行
+arise: v. if a problem or difficult situation arises, it begins to happen出现, 发生
+shatter: v. to break suddenly into very small pieces, or to make something break in this way粉碎
+adherent: n. someone who supports a particular belief, plan, political party etc信徒
+undergo: v. if you undergo a change, an unpleasant experience etc, it happens to you or is done to you经历, 遭受
+division: n. the act of separating something into two or more different parts, or the way these parts are separated or shared分裂
+trigger: v. to make something happen very quickly, especially a series of events引发
+</p>
+<hr />
+<p>
+threaten sb's very life: 威胁某人的生命
+be confronted with sth.: 面临某事
+ask to be done sth.: 要求被做某事
+in error: 错误地
+on the basis of sth.: 在某事物的基础上
+made sb's own position clear: 表明某人的立场
+by sb's negligence: 由于某人的疏忽
+proceed against sb.: 起诉某人
+set the stage for sth.: 为某事准备舞台
+revive its fortunes: 恢复某事物的繁荣
+</p>
+</div>
+</div>
+<div id="outline-container-org851d42f" class="outline-3">
+<h3 id="org851d42f"><span class="section-number-3">1.2.</span> sentence</h3>
+<div class="outline-text-3" id="text-1-2">
+<p>
+lowly: adj. low in rank, importance, or social class – sometimes used humorously SYN humble地位低的, 卑贱的
+</p>
+<ul class="org-ul">
+<li>It can give rise to a series of curious situation, as it did in the cause of a lowly monk at the monastery.</li>
+<li>No one could account for the fact that a lowly monk sat down in front of the emporper and princes.</li>
+<li>The prince went out of his way to keep in touch with the daughter of a lowly peasant.</li>
+</ul>
+<p>
+emperor: n. the man who is the ruler of an ↑empire皇帝, 君主
+</p>
+<ul class="org-ul">
+<li>Because of the failure of the leading war, the emperor may have lost heart.</li>
+<li>The emperor lost heart, which resulted in a series of disaters in this empire.</li>
+<li>The emperor was accused of sacking the city in the west of his empire.</li>
+</ul>
+<p>
+heresy: n. a belief that disagrees with the official principles of a particular religion异端, 异教
+</p>
+<ul class="org-ul">
+<li>The Catholic church enacted the Equisition in the face of heresy.</li>
+<li>The church was being challenged by the heresy which attracted the masses in Europe.</li>
+<li>There was a notice about the heresy on the bulletin board.</li>
+</ul>
+<p>
+defend: v. to do something in order to protect someone or something from being attacked防护, 辩护
+</p>
+<ul class="org-ul">
+<li>Condemned on the thief, he failed to defend himself.</li>
+<li>It is appropriate to defend yourself against these boys who often play truant from school.</li>
+<li>Failing to defend himself against the spies, he was arrested in a hotel.</li>
+</ul>
+<p>
+disgrace: v. to do something so bad that you make other people feel ashamed丢脸
+</p>
+<ul class="org-ul">
+<li>If you risked you life because of this, you would disgrace yourself in the school.</li>
+<li>The leading cause of disgrace s to mark such stupid remarks in public.</li>
+<li>A shit drifting on the swimming pool near him disgrace him a great deal.</li>
+</ul>
+<p>
+obstinate: adj. determined not to change your ideas, behaviour, opinions etc, even when other people think you are being unreasonable SYN stubborn倔强的, 顽固的
+</p>
+<ul class="org-ul">
+<li>He was so obstinate that even though we gave him electrical shocks, he didn't change his mind.</li>
+<li>He was so obstinate that he moved south down the river in search of the first civilization.</li>
+<li>At the end of the harvest, an obstinate boy tried to fire a shot.</li>
+</ul>
+<p>
+far-reaching: adj. having a great influence or effect影响深远的
+</p>
+<ul class="org-ul">
+<li>The thief proved far-reaching, which put him out of business.</li>
+<li>His education in his youth was far-reaching, which enabled him to become a splendid peasant.</li>
+<li>The movement of sacrificing money for land was far-reaching.</li>
+</ul>
+<p>
+assert: v. assert your rights/independence/superiority etc to state very strongly your right to something主张,声称
+</p>
+<ul class="org-ul">
+<li>The Catholic church grudged asserting the primacy of the monarchical position.</li>
+<li>As it is, the church asserted its supremacy over the secular authorities after having assumed political power.</li>
+<li>He asserted that someone in our village must have found his money.</li>
+</ul>
+<p>
+primacy: n. formal if someone or something has primacy, they are the best or most important person or thing首位
+</p>
+<ul class="org-ul">
+<li>The church raised fundamental issues about the primacy of individuals.</li>
+<li>The primacy of what you should do is to keep in touch with your closest relatives.</li>
+<li>The primacy of what we need to do is to find the way to our hotel.</li>
+</ul>
+<p>
+defy defiance: v.n. behaviour that shows you refuse to do what someone tells you to do, especially because you do not respect them ⇨ defy挑战,违抗
+</p>
+<ul class="org-ul">
+<li>The exalted claim of papal power resulted in the defiance of the monarchs.</li>
+<li>The defiance of the peasants failed to take control of the city.</li>
+<li>The victory of his election gave rise to a serious defiance of his enemies.</li>
+</ul>
+<p>
+temporal: adj. related to practical instead of religious affairs世俗的
+</p>
+<ul class="org-ul">
+<li>A fraction of clergies is interested in temporal power.</li>
+<li>It is appropriate for the pope to pursue temporal power.</li>
+<li>Imagine his dismay when he found a friar turned out to be a temporal businessman.</li>
+</ul>
+<p>
+doctrine: n. a set of beliefs that form an important part of a religion or system of ideas教条
+</p>
+<ul class="org-ul">
+<li>I'd rather regard the book as a series of doctrines than the manual of llife.</li>
+<li>The fraction of monks dedicated their life to a set of doctrines.</li>
+<li>The pope drew up a set of doctrines which was used to punish laymen.</li>
+</ul>
+<p>
+Inquisition: the Inquisition a Roman Catholic organization in the past whose aim was to find and punish people who had unacceptable religious beliefs
+</p>
+<ul class="org-ul">
+<li></li>
+
+<li></li>
+
+<li></li>
+</ul>
+<p>
+combat: v. to try to stop something bad from happening or getting worse – used especially in news reports防止,抑制
+</p>
+<ul class="org-ul">
+<li>The emergence of the cities in the high Middle Ages may have combated the decline of the monarchs.</li>
+<li>The nomads pushed their way westward through the plain, which combated the spread of the Black Death.</li>
+<li>The doctor confirms that the drug combats bad smells.</li>
+</ul>
+<p>
+salvation: n. something that prevents or saves someone or something from danger, loss, or failure拯救, 救助
+</p>
+<ul class="org-ul">
+<li>His salvation inspired people the world over to raise money.</li>
+<li>The market in China turns out to the salvation of the clothing company.</li>
+<li>This style of clothes becomes popular with young men and women in China, which turns out to be the salvation of the industry.</li>
+</ul>
+<p>
+papacy: n. the papacy the position and authority of the Pope罗马教皇职位, 教皇的在位期间
+</p>
+<ul class="org-ul">
+<li>He was by no means the succession of the papacy.</li>
+<li>In his papacy, people enacted a special ritual to bury dead.</li>
+<li>In his papacy, people were encouraged to bear more children.</li>
+</ul>
+<p>
+parallel: v. if one thing parallels another, they happen at the stime or are similar, and seem to be related相应, 平行
+</p>
+<ul class="org-ul">
+<li>My arrivals always parrallel your departures.</li>
+<li>His collapse of marriage parallelled the progress of his career.</li>
+<li>His winning lottery parallelled the job loss.</li>
+</ul>
+<p>
+arise: v. if a problem or difficult situation arises, it begins to happen出现, 发生
+</p>
+<ul class="org-ul">
+<li>The monarchical power was believed to arise from the cities.</li>
+<li>He lost his life, which arose from his carelessness.</li>
+<li>The death of five mine workers arose from a mine accident.</li>
+</ul>
+<p>
+shatter: v. to break suddenly into very small pieces, or to make something break in this way粉碎
+</p>
+<ul class="org-ul">
+<li>The shattered rock proved there was a truck.</li>
+<li>I must shatter those food so that the kitten can be fed.</li>
+<li>Shattered in the machine, he lost his life.</li>
+</ul>
+<p>
+adherent: n. someone who supports a particular belief, plan, political party etc信徒
+</p>
+<ul class="org-ul">
+<li>A so-called adherent is always asking me for a meal once a day.</li>
+<li>The adherent ran out of his water and food in the desert and began to lose his heart.</li>
+<li>As it is, the adherent got enough money to have the monastery repaired.</li>
+</ul>
+<p>
+undergo: v. if you undergo a change, an unpleasant experience etc, it happens to you or is done to you经历, 遭受
+</p>
+<ul class="org-ul">
+<li>A fraction of lawyers underwent being kept in prison for a week.</li>
+<li>Even though the church underwent serious divisions, there were still many adherents.</li>
+<li>You mother is undergoing an operation which spends a lot of money.</li>
+</ul>
+<p>
+division: n. the act of separating something into two or more different parts, or the way these parts are separated or shared分裂
+</p>
+<ul class="org-ul">
+<li>I and my wife is tring to figure out the divisions of labor between us.</li>
+<li>The divisions of labor between men and women contribute to our great society.</li>
+<li>The divisions of labor between those people arose from a new technology.</li>
+</ul>
+<p>
+trigger: v. to make something happen very quickly, especially a series of events引发
+</p>
+<ul class="org-ul">
+<li>The steering wheel came away, which triggered two men's death.</li>
+<li>The curiosity of a stray dog triggered a car accident.</li>
+<li>The breakdown of trust in government triggered social upheaval.</li>
+</ul>
+<hr />
+<p>
+threaten sb's very life: 威胁某人的生命
+</p>
+<ul class="org-ul">
+<li>A group of hungry stray dogs threatened our very life.</li>
+<li>The plain crushed in the forest and the cold threatened his very life.</li>
+<li>He kept in touch with a spy who was threatening his life.</li>
+</ul>
+<p>
+be confronted with sth.: 面临某事
+</p>
+<ul class="org-ul">
+<li>I wish that I be not confronted with my ex-girlfriend at the reception.</li>
+<li>It is appropriate to be confronted with these difficulties.</li>
+<li>In spite of being confronted with job loss, he asserted that he went on a vocation in Sanya.</li>
+</ul>
+<p>
+ask to be done sth.: 要求被做某事
+</p>
+<ul class="org-ul">
+<li>I asked to be shown the evidence that proved me guilty.</li>
+<li>He asked to be shown the food which the assistant accussed him of stealing.</li>
+<li>He asked to be shown the money she had made.</li>
+</ul>
+<p>
+in error: 错误地
+</p>
+<ul class="org-ul">
+<li>He noticed with dismay that his answers were totally in error in the test.</li>
+<li>He noticed the boat moving in error.</li>
+<li>Sir, you have sat in error in your father's seat.</li>
+</ul>
+<p>
+on the basis of sth.: 在某事物的基础上
+</p>
+<ul class="org-ul">
+<li>He always publish articles on the basis of the facts and statistics.</li>
+<li>We should get a suitable salary on the basis of our work.</li>
+<li>You should have made remarks on the basis of the fact in public.</li>
+</ul>
+<p>
+make sb's own position clear: 表明某人的立场
+</p>
+<ul class="org-ul">
+<li>It is appropriate to make your own positin clear.</li>
+<li>Fearing of the responsibilities she needs to take, she never makes her own position clear in public.</li>
+<li>The general at last made his own position clear and defended the succession of the throne against his enemies.</li>
+</ul>
+<p>
+by sb's negligence: 由于某人的疏忽
+</p>
+<ul class="org-ul">
+<li>My wife blamed me for the death of our kitten by my negligence.</li>
+<li>People would laugh at us at the reception if you didn't wear a suitable by your negligence.</li>
+<li>My superior blamed me for the bugs I made by my negligence.</li>
+</ul>
+<p>
+proceed against sb.: 起诉某人
+</p>
+<ul class="org-ul">
+<li>As soon as my lawyer arrives on the scene, I will proceed against you.</li>
+<li>He lost heart and proceeded against his neighbor who took possession of his land.</li>
+<li>He blamed the broken vase on his neighbor and was going to proceeded against him.</li>
+</ul>
+<p>
+set the stage for sth.: 为某事准备舞台
+</p>
+<ul class="org-ul">
+<li>The accomplishments of the general set the stage for the great vampire.</li>
+<li>The flea-infested rats set the stage for the Black Death which erupted in Europe.</li>
+<li>The communications of these countries set the stage for the fusion of a great empire.</li>
+</ul>
+<p>
+revive its fortunes: 恢复某事物的繁荣
+</p>
+<ul class="org-ul">
+<li>Following in his father's footsteps, he succeeded in reviving his family's fortunes.</li>
+<li>He devoted himself to revive his family's fortunes.</li>
+<li>The marriage between him and the long-daughter of an upper class revived his family's fortunes.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgc4f4128" class="outline-3">
+<h3 id="orgc4f4128"><span class="section-number-3">1.3.</span> sentence2</h3>
+<div class="outline-text-3" id="text-1-3">
+<p>
+lowly: adj. low in rank, importance, or social class – sometimes used humorously SYN humble地位低的, 卑贱的
+</p>
+<ul class="org-ul">
+<li>It can give rise to a series of curious situations, as it did in the case of a lowly monk at the monastery.</li>
+<li>No one could account for the fact that a lowly monk sat down in front of the emperor and princes.</li>
+<li>The prince went out of his way to keep in touch with the daughter of a lowly peasant.</li>
+</ul>
+<p>
+emperor: n. the man who is the ruler of an ↑empire皇帝, 君主
+</p>
+<ul class="org-ul">
+<li>Because of the failure of the leading war, the emperor may have lost his heart.</li>
+<li>The emperor lost his heart, which resulted in a series of disasters in this empire.</li>
+<li>The emperor was accused of sacking the city in the west of his empire.</li>
+</ul>
+<p>
+heresy: n. a belief that disagrees with the official principles of a particular religion异端, 异教
+</p>
+<ul class="org-ul">
+<li>The Catholic church enacted the Inquisition in the face of heresy.</li>
+<li>The church was being challenged by heresy which attracted the masses in Europe.</li>
+<li>There was a notice about the heresy on the bulletin board.</li>
+</ul>
+<p>
+defend: v. to do something in order to protect someone or something from being attacked防护, 辩护
+</p>
+<ul class="org-ul">
+<li>Condemned on the thief, he failed to defend himself.</li>
+<li>It is appropriate to defend yourself against these boys who often play truant from school.</li>
+<li>Failing to defend himself against the spies, he was arrested in a hotel.</li>
+</ul>
+<p>
+disgrace: v. to do something so bad that you make other people feel ashamed丢脸
+</p>
+<ul class="org-ul">
+<li>If you risked your life because of this, you would disgrace yourself in the school.</li>
+<li>The leading cause of disgrace to mark such stupid remarks in public.</li>
+<li>A shit drifting on the swimming pool near him disgraced him a great deal.</li>
+</ul>
+<p>
+obstinate: adj. determined not to change your ideas, behaviour, opinions etc, even when other people think you are being unreasonable SYN stubborn倔强的, 顽固的
+</p>
+<ul class="org-ul">
+<li>He was so obstinate that even though we gave him electrical shocks, he didn't change his mind.</li>
+<li>He was so obstinate that he moved south down the river in search of the first civilization.</li>
+<li>At the end of the harvest, an obstinate boy tried to fire a shot.</li>
+</ul>
+<p>
+far-reaching: adj. having a great influence or effect影响深远的
+</p>
+<ul class="org-ul">
+<li>The thief proved far-reaching, which put him out of business.</li>
+<li>His education in his youth was far-reaching, which enabled him to become a splendid peasant.</li>
+<li>The movement of sacrificing money for land was far-reaching.</li>
+</ul>
+<p>
+assert: v. assert your rights/independence/superiority etc to state very strongly your right to something主张,声称
+</p>
+<ul class="org-ul">
+<li>The Catholic church grudged asserting the primacy of the monarchical position.</li>
+<li>As it is, the church asserted its supremacy over the secular authorities after having assumed political power.</li>
+<li>He asserted that someone in our village must have found his money.</li>
+</ul>
+<p>
+primacy: n. formal if someone or something has primacy, they are the best or most important person or thing首位
+</p>
+<ul class="org-ul">
+<li>The church raised fundamental issues about the primacy of individuals.</li>
+<li>The primacy of what you should do is to keep in touch with your closest relatives.</li>
+<li>The primacy of work is to find the way to our hotel.</li>
+</ul>
+<p>
+defy defiance: v.n. behaviour that shows you refuse to do what someone tells you to do, especially because you do not respect them ⇨ defy挑战,违抗
+</p>
+<ul class="org-ul">
+<li>The exalted claim of papal power resulted in the defiance of the monarchs.</li>
+<li>The defiance of the peasants failed to take control of the city.</li>
+<li>The victory of his election gave rise to a serious defiance of his enemies.</li>
+</ul>
+<p>
+temporal: adj. related to practical instead of religious affairs世俗的
+</p>
+<ul class="org-ul">
+<li>A fraction of clergies are interested in temporal power.</li>
+<li>It is appropriate for the pope to pursue temporal power.</li>
+<li>Imagine his dismay when he found a friar turned out to be a temporal businessman.</li>
+</ul>
+<p>
+doctrine: n. a set of beliefs that form an important part of a religion or system of ideas教条
+</p>
+<ul class="org-ul">
+<li>I'd rather regard the book as a series of doctrines than the manual of life.</li>
+<li>The fraction of monks dedicated their lives to a set of doctrines.</li>
+<li>The pope drew up a set of doctrines which was used to punish laymen.</li>
+</ul>
+<p>
+Inquisition: the Inquisition a Roman Catholic organization in the past whose aim was to find and punish people who had unacceptable religious beliefs
+</p>
+<ul class="org-ul">
+<li></li>
+
+<li></li>
+
+<li></li>
+</ul>
+<p>
+combat: v. to try to stop something bad from happening or getting worse – used especially in news reports防止,抑制
+</p>
+<ul class="org-ul">
+<li>The emergence of the cities in the high Middle Ages may have combated the decline of the monarchs.</li>
+<li>The nomads pushed their way westward through the plain, which combated the spread of the Black Death.</li>
+<li>The doctor confirms that the drug combats bad smells.</li>
+</ul>
+<p>
+salvation: n. something that prevents or saves someone or something from danger, loss, or failure拯救, 救助
+</p>
+<ul class="org-ul">
+<li>His salvation inspired people the world over to raise money.</li>
+<li>The market in China turns out to be the salvation of the clothing company.</li>
+<li>This style of clothes became popular with young men and women in China, which turned out to be the salvation of the industry.</li>
+</ul>
+<p>
+papacy: n. the papacy the position and authority of the Pope罗马教皇职位, 教皇的在位期间
+</p>
+<ul class="org-ul">
+<li>He was by no means the succession of the papacy.</li>
+<li>In his papacy, people enacted a special ritual to bury the dead.</li>
+<li>In his papacy, people were encouraged to bear more children.</li>
+</ul>
+<p>
+parallel: v. if one thing parallels another, they happen at the same time or are similar, and seem to be related相应, 平行
+</p>
+<ul class="org-ul">
+<li>My arrivals always parallel your departures.</li>
+<li>His collapse of marriage parallelled the progress of his career.</li>
+<li>His winning lottery parallelled the job loss.</li>
+</ul>
+<p>
+arise: v. if a problem or difficult situation arises, it begins to happen出现, 发生
+</p>
+<ul class="org-ul">
+<li>The monarchical power was believed to arise from the cities.</li>
+<li>He lost his life, which arose from his carelessness.</li>
+<li>The death of five workers arose from a mine accident.</li>
+</ul>
+<p>
+shatter: v. to break suddenly into very small pieces, or to make something break in this way粉碎
+</p>
+<ul class="org-ul">
+<li>The shattered rock proved there was a truck.</li>
+<li>I must shatter the food so that the kitten can be fed.</li>
+<li>Shattered in the machine, he lost his life.</li>
+</ul>
+<p>
+adherent: n. someone who supports a particular belief, plan, political party etc信徒
+</p>
+<ul class="org-ul">
+<li>A so-called adherent is always asking me for a meal once a day.</li>
+<li>The adherent ran out of water and food in the desert and began to lose his heart.</li>
+<li>As it is, the adherent got enough money to have the monastery repaired.</li>
+</ul>
+<p>
+undergo: v. if you undergo a change, an unpleasant experience etc, it happens to you or is done to you经历, 遭受
+</p>
+<ul class="org-ul">
+<li>A fraction of lawyers underwent being kept in prison for a week.</li>
+<li>Even though the church underwent serious divisions, there were still many adherents.</li>
+<li>Your mother is undergoing an operation which will cost a lot of money.</li>
+</ul>
+<p>
+division: n. the act of separating something into two or more different parts, or the way these parts are separated or shared分裂
+</p>
+<ul class="org-ul">
+<li>I and my wife are trying to figure out the divisions of labor between us.</li>
+<li>The divisions of labor between men and women contribute to our great society.</li>
+<li>The divisions of labor between those people arose from a new technology.</li>
+</ul>
+<p>
+trigger: v. to make something happen very quickly, especially a series of events引发
+</p>
+<ul class="org-ul">
+<li>The steering wheel came away, which triggered two men's death.</li>
+<li>The curiosity of a stray dog triggered a car accident.</li>
+<li>The breakdown of trust in government triggered social upheaval.</li>
+</ul>
+<hr />
+<p>
+threaten sb's very life: 威胁某人的生命
+</p>
+<ul class="org-ul">
+<li>A group of hungry stray dogs threatened our very life.</li>
+<li>The plain was crushed in the forest and the cold threatened his very life.</li>
+<li>He kept in touch with a spy who was threatening his life.</li>
+</ul>
+<p>
+be confronted with sth.: 面临某事
+</p>
+<ul class="org-ul">
+<li>I wish that I was not confronted with my ex-girlfriend at the reception.</li>
+<li>It is appropriate to be confronted with these difficulties.</li>
+<li>In spite of being confronted with job loss, he asserted that he went on a vacation in Sanya.</li>
+</ul>
+<p>
+ask to be done sth.: 要求被做某事
+</p>
+<ul class="org-ul">
+<li>I asked to be shown the evidence that proved me guilty.</li>
+<li>He asked to be shown the food which the assistant accused him of stealing.</li>
+<li>He asked to be shown the money she had made.</li>
+</ul>
+<p>
+in error: 错误地
+</p>
+<ul class="org-ul">
+<li>He noticed with dismay that his answers were totally in error in the test.</li>
+<li>He noticed the boat moving in error.</li>
+<li>Sir, you have sat in error in your father's seat.</li>
+</ul>
+<p>
+on the basis of sth.: 在某事物的基础上
+</p>
+<ul class="org-ul">
+<li>He always publishes articles on the basis of facts and statistics.</li>
+<li>We should get a suitable salary on the basis of our work.</li>
+<li>You should have made remarks on the basis of the fact in public.</li>
+</ul>
+<p>
+make sb's own position clear: 表明某人的立场
+</p>
+<ul class="org-ul">
+<li>It is appropriate to make your own position clear.</li>
+<li>Fearing of the responsibilities she needs to take, she never makes her own position clear in public.</li>
+<li>The general at last made his own position clear and defended the succession of the throne against his enemies.</li>
+</ul>
+<p>
+by sb's negligence: 由于某人的疏忽
+</p>
+<ul class="org-ul">
+<li>My wife blamed me for the death of our kitten by my negligence.</li>
+<li>People would laugh at us at the reception if we didn't wear a suitable by your negligence.</li>
+<li>My superior blamed me for the bugs I made by my negligence.</li>
+</ul>
+<p>
+proceed against sb.: 起诉某人
+</p>
+<ul class="org-ul">
+<li>As soon as my lawyer arrives on the scene, I will proceed against you.</li>
+<li>He lost heart and proceeded against his neighbor who took possession of his land.</li>
+<li>He blamed the broken vase on his neighbor and was going to proceed against him.</li>
+</ul>
+<p>
+set the stage for sth.: 为某事准备舞台
+</p>
+<ul class="org-ul">
+<li>The accomplishments of the general set the stage for the great vampire.</li>
+<li>The flea-infested rats set the stage for the Black Death which erupted in Europe.</li>
+<li>The communications of these countries set the stage for the fusion of a great empire.</li>
+</ul>
+<p>
+revive its fortunes: 恢复某事物的繁荣
+</p>
+<ul class="org-ul">
+<li>Following in his father's footsteps, he succeeded in reviving his family's fortunes.</li>
+<li>He devoted himself to reviving his family's fortunes.</li>
+<li>The marriage between him and the long-lost daughter of an upper class revived his family's fortunes.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: DESKTOP-13B7HQM</p>
+<p class="date">Created: 2024-09-11 Wed 15:18</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
