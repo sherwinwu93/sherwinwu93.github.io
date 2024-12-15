@@ -1,0 +1,627 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-12-04 Wed 17:12 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-org8e3e6eb" class="outline-2">
+<h2 id="org8e3e6eb">3-2 3.13 Signifying Acts</h2>
+<div class="outline-text-2" id="text-org8e3e6eb">
+<p class="verse">
+It sounds like in order to build more trust and to build better relationships,<br />
+&#xa0;understanding the other person is really vital.<br />
+And so I'm wondering how to build that understanding and those skills at understanding other people.<br />
+Well, like in North America I think the emphasis is on listening.<br />
+So you listen carefully to the other person, what the other person is saying.<br />
+This is a very verbal culture and we privilege the spoken word.<br />
+But I have to say that careful listening is important<br />
+&#xa0;and this is why we have like identify these different content areas<br />
+&#xa0;&#xa0;like facts, attitude, emotions and needs.<br />
+But I also want to emphasize that we do not only gain understanding through listening.<br />
+If we pay attention, we observe to what other people are doing, right?<br />
+People sometimes can express their feelings and very significant emotional state<br />
+&#xa0;through other channels than talking.<br />
+<br />
+One of the concepts that I really want to introduce is the concept that I call 'Signifying Acts',<br />
+&#xa0;which simply refers to acts or actions that we take that signify something.<br />
+Give you an example,<br />
+&#xa0;in some cultures it is not appropriate for parents to apologize to their children<br />
+&#xa0;&#xa0;if they've done something wrong.<br />
+So say for example,<br />
+&#xa0;you have like a four year old walking down the hall<br />
+&#xa0;&#xa0;and inadvertently take off the power line to her dad's computer.<br />
+And the dad yelled at her and then immediately, he felt bad,<br />
+&#xa0;like I shouldn't be doing this to my four year old.<br />
+But then like maybe in his culture, apologizing might not be the best thing to do.<br />
+This person might then go up to his daughter and say hey,<br />
+&#xa0;are you interested in taking a walk in the park, getting some ice cream, right?<br />
+That is sort of an indirect way of saying, I'm sorry.<br />
+I shouldn't have yelled at you, right.<br />
+That is considered a signifying act.<br />
+<br />
+And one of the stories that I really like sharing and I actually had it in a book, right,<br />
+&#xa0;is that we have this story from West China, like rural, mountainous area.<br />
+We had this girl who was betrothed to be married to a wealthier person because her family was broke.<br />
+She absolutely didn't want to get married to this guy,<br />
+&#xa0;and her plan actually, was to commit suicide on her wedding night.<br />
+Before the wedding, she actually fell in love with another person.<br />
+So she was caught in very difficult position and then she had this filial obligation to her father.<br />
+So before she got married what she did was she walked down this mountainous area,<br />
+&#xa0;it was like about ten kilometres walk, in this mountainous terrain, to go to the Yellow River,<br />
+&#xa0;&#xa0;and get a bucket of water to take it home, to wash her father's feet.<br />
+So that is nothing was spoken, not a single word.<br />
+But it's a very intense, profound expression of emotion, right?<br />
+So this is what I mean by 'Signifying Acts'.<br />
+<br />
+So being able to accurately decipher the code,<br />
+&#xa0;'Signifying Acts' is a skill that we all need to learn.<br />
+And then, what I tried to point out earlier with this various examples is<br />
+&#xa0;that this 'Signifying Acts' carry different meanings across different cultural contexts.<br />
+So what works in North America may not apply well in South America or in Africa or in Asia.<br />
+So a certain cultural understanding is also important for us<br />
+&#xa0;to be able to understand or receive these messages correctly.<br />
+</p>
+</div>
+<div id="outline-container-orga7ade66" class="outline-3">
+<h3 id="orga7ade66">expression</h3>
+<div class="outline-text-3" id="text-orga7ade66">
+<p>
+trust [trʌst]: v.n. PEOPLE to believe that someone is honest or will not do anything bad or wrong OPP distrust, mistrust信任<br />
+vital [ˈvaɪt(ə)l]: adj. extremely important and necessary for something to succeed or exist SYN crucial至关重要的<br />
+verbal [ˈvɜrb(ə)l]: adj. spoken rather than written<br />
+privilege [ˈprɪvəlɪdʒ]: v. to treat some people or things better than others优先于<br />
+inadvertently [ˌɪnədˈvɜrt(ə)ntli]: adv. without realizing what you are doing SYN accidentally OPP deliberately不注意地<br />
+rural [ˈrʊrəl]: adj. happening in or relating to the countryside, not the city OPP urban乡下的, 田园的<br />
+mountainous [ˈmaʊnt(ə)nəs]: adj. a mountainous area has a lot of mountains多山的<br />
+broke [broʊk]: adj. having no money没钱的<br />
+filial [ˈfɪliəl]: adj. relating to the relationship of a son or daughter to their parents ⇨ parental子女的, 孝顺的<br />
+terrain [təˈreɪn]: n. a particular type of land地形<br />
+apply [əˈplaɪ]: v. to use something such as a method, idea, or law in a particular situation, activity, or process应用<br />
+</p>
+<hr />
+<p>
+observe to sb./sth.: 注意到某人某事<br />
+through other channels than doing sth.: 通过其他渠道而不是做某事<br />
+take off the power line to sth.: 拔掉通往某物的电源线<br />
+be betrothed to sb.: 跟某人丁武<br />
+get/be married to sb. / marry sb.: 嫁给某人<br />
+commit suicide: 自杀<br />
+a bucket of sth.: 一桶某物<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org76aea4a" class="outline-3">
+<h3 id="org76aea4a">sentence</h3>
+<div class="outline-text-3" id="text-org76aea4a">
+<p>
+trust [trʌst]: v.n. PEOPLE to believe that someone is honest or will not do anything bad or wrong OPP distrust, mistrust信任<br />
+</p>
+<ul class="org-ul">
+<li>If you go out of your way to help your friend, trust will be built.<br /></li>
+<li>In his pursuit of trust, he keeps his oaths and often does his friends favors.<br /></li>
+<li>As the team has accomplished some achievement, teammates began to trust their captain spontaneously.<br /></li>
+</ul>
+<p>
+vital [ˈvaɪt(ə)l]: adj. extremely important and necessary for something to succeed or exist SYN crucial至关重要的<br />
+</p>
+<ul class="org-ul">
+<li>Washing your hands is vital for the patient who is having an operation.<br /></li>
+<li>Keeping fed your cat twice a day is vital for her to lose her weight.<br /></li>
+<li>It's vital for him to exchange five dollars for a bucket of rice.<br /></li>
+</ul>
+<p>
+verbal [ˈvɜrb(ə)l]: adj. spoken rather than written口头的<br />
+</p>
+<ul class="org-ul">
+<li>You're naive enough to believe in verbal words from the mouth of a shrewd merchant.<br /></li>
+<li>Paying attention to listening is vital for us to understand others in a verbal culture.<br /></li>
+<li>The verbal words show us his respect of our chairman.<br /></li>
+</ul>
+<p>
+privilege [ˈprɪvəlɪdʒ]: v. to treat some people or things better than others优先<br />
+</p>
+<ul class="org-ul">
+<li>This country privileges women and children, for there're cars in the subway reserved for them.<br /></li>
+<li>The stuff in the subway conducted me to the note, it says, 'This car privileges women and children'.<br /></li>
+<li>The representive advocates that our society should privilege women in public.<br /></li>
+</ul>
+<p>
+inadvertently [ˌɪnədˈvɜrt(ə)ntli]: adv. without realizing what you are doing SYN accidentally OPP deliberately不注意地<br />
+</p>
+<ul class="org-ul">
+<li>I noticed to my horror that my cat inadvertently set the kitchen on fire.<br /></li>
+<li>My wife inadvertently interrupted my process of programming referring to her family.<br /></li>
+<li>The lovely eccentric always adds color to our dull routine inadvertantly.<br /></li>
+</ul>
+<p>
+rural [ˈrʊrəl]: adj. happening in or relating to the countryside, not the city OPP urban乡下的, 田园的<br />
+</p>
+<ul class="org-ul">
+<li>People in the city are always forming an unrealistic picture of life in the rural village.<br /></li>
+<li>It holds fairs three times a week in the rural village.<br /></li>
+<li>People in the rural village soon learnt that Mary had lost a little lamb.<br /></li>
+</ul>
+<p>
+mountainous [ˈmaʊnt(ə)nəs]: adj. a mountainous area has a lot of mountains多山的<br />
+</p>
+<ul class="org-ul">
+<li>Whether the grasses take root is vital for people in the mountainous area, especially meeting floods.<br /></li>
+<li>People in the mountainous area now can take advantage of prosperous expresses in China.<br /></li>
+<li>People in the mountainous area benifit from the internet shopping on it.<br /></li>
+</ul>
+<p>
+broke [broʊk]: adj. having no money没钱的<br />
+</p>
+<ul class="org-ul">
+<li>You insist on your vacation at seaside resort when our family is broke.<br /></li>
+<li>A broke visitor asked me to do him a favor and I refused without hesitation.<br /></li>
+<li>The woman must be married to a gay because her house ceases to produce gold and is getting broke.<br /></li>
+</ul>
+<p>
+filial [ˈfɪliəl]: adj. relating to the relationship of a son or daughter to their parents ⇨ parental子女的, 孝顺的<br />
+</p>
+<ul class="org-ul">
+<li>You are my son and have filial obligation to me.<br /></li>
+<li>Having filial obligation to his father, he had to give up the job of kingsguard and become the lord of his house.<br /></li>
+<li>The prince was so filial that he ordered his men to kill those people who had abused his mother.<br /></li>
+</ul>
+<p>
+terrain [təˈreɪn]: n. a particular type of land地形<br />
+</p>
+<ul class="org-ul">
+<li>Our wives will benefit from rockey terrain in the battlefield.<br /></li>
+<li>There is an army of robberies in the mountainous terrain.<br /></li>
+<li>Without amply sustenance, our soldiers couldn't survive crossing the moutainous terrain.<br /></li>
+</ul>
+<p>
+apply [əˈplaɪ]: v. to use something such as a method, idea, or law in a particular situation, activity, or process应用<br />
+</p>
+<ul class="org-ul">
+<li>Machine will be applied in the field so that we will not cultivate grain with bare hands.<br /></li>
+<li>Applying machine in this way is not good for its life span.<br /></li>
+<li>Applying machine invented to detect gold, the explorers soon found the treasure in the cave.<br /></li>
+</ul>
+<hr />
+<p>
+observe to sb./sth.: 注意到某人某事<br />
+</p>
+<ul class="org-ul">
+<li>If you had observed to what the coach did, you would have passed the driver exam.<br /></li>
+<li>Have you observed to my new haircut, darling?<br /></li>
+<li>The cat observed to a bird which was kept in the cage.<br /></li>
+</ul>
+<p>
+through other channels than doing sth.: 通过其他渠道而不是做某事<br />
+</p>
+<ul class="org-ul">
+<li>You'd better get ships through other channels than marrying an old noble.<br /></li>
+<li>The shrewd businessman arranged a settlement through other channels than comprising with workers.<br /></li>
+<li>I will move on to the next village through other channels than taking a bus.<br /></li>
+</ul>
+<p>
+take off the power line to sth.: 拔掉通往某物的电源线<br />
+</p>
+<ul class="org-ul">
+<li>I just took off the power line to your computer by mistake, it's not a big deal.<br /></li>
+<li>It must be my cat who took off the power line to the electric cooker.<br /></li>
+<li>You shall take off the power line to the electric cooker in three hours.<br /></li>
+</ul>
+<p>
+be betrothed to sb.: 跟某人定亲<br />
+</p>
+<ul class="org-ul">
+<li>I am not free to marry your daughter, I have been betrothed to the house of Winterfell.<br /></li>
+<li>The girl planned to commit suicide after she heard that she was betrothed to a richer family.<br /></li>
+<li>I have been betrothed to prince and I would be the queen in the realm.<br /></li>
+</ul>
+<p>
+get/be married to sb. / marry sb.: 嫁给某人<br />
+</p>
+<ul class="org-ul">
+<li>She can't bear to be married to a crippled lord.<br /></li>
+<li>I shall not be married to the old king, because I refused his proposal.<br /></li>
+<li>If you got married to the butcher, you would suffer from poor in this way.<br /></li>
+</ul>
+<p>
+commit suicide: 自杀<br />
+</p>
+<ul class="org-ul">
+<li>If the police arrived on the scene, they would try to figure out why the girl committed suicide.<br /></li>
+<li>As we said, aware that he will be killed the pig jumped in the well and commit suicide.<br /></li>
+<li>It dawned on him that he could pretend to commit suicide to get rid of the abduction.<br /></li>
+</ul>
+<p>
+a bucket of sth.: 一桶某物<br />
+</p>
+<ul class="org-ul">
+<li>In spite of bad weather, our father still has caught a bucket of fish.<br /></li>
+<li>A boy is carrying a bucket of wall from the well.<br /></li>
+<li>My aunt instructed me to carry a bucket of wall to the village fair.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org5538842" class="outline-3">
+<h3 id="org5538842">sentence2</h3>
+<div class="outline-text-3" id="text-org5538842">
+<p>
+trust [trʌst]: v.n. PEOPLE to believe that someone is honest or will not do anything bad or wrong OPP distrust, mistrust信任<br />
+</p>
+<ul class="org-ul">
+<li>If you go out of your way to help your friend, trust will be built.<br /></li>
+<li>In his pursuit of trust, he keeps his oaths and often does his friends favors.<br /></li>
+<li>As the team has accomplished some achievements, teammates began to trust their captain spontaneously.<br /></li>
+</ul>
+<p>
+vital [ˈvaɪt(ə)l]: adj. extremely important and necessary for something to succeed or exist SYN crucial至关重要的<br />
+</p>
+<ul class="org-ul">
+<li>Washing your hands is vital for the patient who is having an operation.<br /></li>
+<li>Having your cat eat twice a day is vital for her to lose weight.<br /></li>
+<li>It's vital for him to exchange five dollars for a bucket of rice.<br /></li>
+</ul>
+<p>
+verbal [ˈvɜrb(ə)l]: adj. spoken rather than written口头的<br />
+</p>
+<ul class="org-ul">
+<li>You're naive enough to believe in verbal words from the mouth of a shrewd merchant.<br /></li>
+<li>Paying attention to listening is vital for us to understand others in a verbal culture.<br /></li>
+<li>The verbal words show us his respect for our chairman.<br /></li>
+</ul>
+<p>
+privilege [ˈprɪvəlɪdʒ]: v. to treat some people or things better than others优先<br />
+</p>
+<ul class="org-ul">
+<li>This country privileges women and children, for there are cars in the subway reserved for them.<br /></li>
+<li>The staff in the subway referred me to the note, which said, 'This car privileges women and children'.<br /></li>
+<li>The representative advocates that our society should privilege women in public.<br /></li>
+</ul>
+<p>
+inadvertently [ˌɪnədˈvɜrt(ə)ntli]: adv. without realizing what you are doing SYN accidentally OPP deliberately不注意地<br />
+</p>
+<ul class="org-ul">
+<li>I noticed to my horror that my cat inadvertently set the kitchen on fire.<br /></li>
+<li>My wife inadvertently interrupted my programming process by referring to her family.<br /></li>
+<li>The lovely eccentric always adds color to our dull routine inadvertently.<br /></li>
+</ul>
+<p>
+rural [ˈrʊrəl]: adj. happening in or relating to the countryside, not the city OPP urban乡下的, 田园的<br />
+</p>
+<ul class="org-ul">
+<li>People in the city always form an unrealistic picture of life in the rural village.<br /></li>
+<li>It holds fairs three times a week in the rural village.<br /></li>
+<li>People in the rural village soon learned that Mary had lost a little lamb.<br /></li>
+</ul>
+<p>
+mountainous [ˈmaʊnt(ə)nəs]: adj. a mountainous area has a lot of mountains多山的<br />
+</p>
+<ul class="org-ul">
+<li>Whether the grasses take root is vital for people in the mountainous area, especially when encountering floods.<br /></li>
+<li>People in the mountainous area now can take advantage of prosperous expresses in China.<br /></li>
+<li>People in the mountainous area benefit from the internet shopping on it.<br /></li>
+</ul>
+<p>
+broke [broʊk]: adj. having no money没钱的<br />
+</p>
+<ul class="org-ul">
+<li>You insist on your vacation at a seaside resort when our family is broke.<br /></li>
+<li>A broke visitor asked me to do him a favor and I refused without hesitation.<br /></li>
+<li>The woman must be married to a gay because her house ceases to produce gold and is getting broke.<br /></li>
+</ul>
+<p>
+filial [ˈfɪliəl]: adj. relating to the relationship of a son or daughter to their parents ⇨ parental子女的, 孝顺的<br />
+</p>
+<ul class="org-ul">
+<li>You are my son and have a filial obligation to me.<br /></li>
+<li>Having a filial obligation to his father, he had to give up the job of kingsguard and become the lord of his house.<br /></li>
+<li>The prince was so filial that he ordered his men to kill those people who had abused his mother.<br /></li>
+</ul>
+<p>
+terrain [təˈreɪn]: n. a particular type of land地形<br />
+</p>
+<ul class="org-ul">
+<li>Our wives will benefit from rocky terrain on the battlefield.<br /></li>
+<li>There is an army of robberies in the mountainous terrain.<br /></li>
+<li>Without ample sustenance, our soldiers couldn't survive crossing the mountainous terrain.<br /></li>
+</ul>
+<p>
+apply [əˈplaɪ]: v. to use something such as a method, idea, or law in a particular situation, activity, or process应用<br />
+</p>
+<ul class="org-ul">
+<li>Machine will be applied in the field so that we will not cultivate grain with bare hands.<br /></li>
+<li>Applying a machine in this way is not good for its life span.<br /></li>
+<li>Applying the machine invented to detect gold, the explorers soon found the treasure in the cave.<br /></li>
+</ul>
+<hr />
+<p>
+observe to sb./sth.: 注意到某人某事<br />
+</p>
+<ul class="org-ul">
+<li>If you had observed to what the coach did, you would have passed the driver's exam.<br /></li>
+<li>Have you observed to my new haircut, darling?<br /></li>
+<li>The cat observed to a bird that was kept in the cage.<br /></li>
+</ul>
+<p>
+through other channels than doing sth.: 通过其他渠道而不是做某事<br />
+</p>
+<ul class="org-ul">
+<li>You'd better get ships through other channels than marrying an old noble.<br /></li>
+<li>The shrewd businessman arranged a settlement through other channels than comprising workers.<br /></li>
+<li>I will move on to the next village through other channels than taking a bus.<br /></li>
+</ul>
+<p>
+take off the power line to sth.: 拔掉通往某物的电源线<br />
+</p>
+<ul class="org-ul">
+<li>I just took off the power line to your computer by mistake, it's not a big deal.<br /></li>
+<li>It must be my cat who took off the power line to the electric cooker.<br /></li>
+<li>You shall take off the power line to the electric cooker in three hours.<br /></li>
+</ul>
+<p>
+be betrothed to sb.: 跟某人定亲<br />
+</p>
+<ul class="org-ul">
+<li>I am not free to marry your daughter, I have been betrothed to the house of Winterfell.<br /></li>
+<li>The girl planned to commit suicide after she heard that she was betrothed to a richer family.<br /></li>
+<li>I have been betrothed to the prince and I would be the queen in the realm.<br /></li>
+</ul>
+<p>
+get/be married to sb. / marry sb.: 嫁给某人<br />
+</p>
+<ul class="org-ul">
+<li>She can't bear to be married to a crippled lord.<br /></li>
+<li>I shall not be married to the old king, because I refused his proposal.<br /></li>
+<li>If you got married to the butcher, you would suffer from poor in this way.<br /></li>
+</ul>
+<p>
+commit suicide: 自杀<br />
+</p>
+<ul class="org-ul">
+<li>If the police arrived on the scene, they would try to figure out why the girl committed suicide.<br /></li>
+<li>As we said, aware that he would be killed the pig jumped into the well and committed suicide.<br /></li>
+<li>It dawned on him that he could pretend to commit suicide to get rid of the abduction.<br /></li>
+</ul>
+<p>
+a bucket of sth.: 一桶某物<br />
+</p>
+<ul class="org-ul">
+<li>In spite of bad weather, our father still has caught a bucket of fish.<br /></li>
+<li>A boy is carrying a bucket of water from the well.<br /></li>
+<li>My aunt instructed me to carry a bucket of water to the village fair.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org7f31d1b" class="outline-3">
+<h3 id="org7f31d1b">summary</h3>
+<div class="outline-text-3" id="text-org7f31d1b">
+<p>
+Listening carefully to what the other person is saying is very important,<br />
+	so we have identified four different content areas: facts, attitude, emotions and needs.<br />
+But we do not only gain understanding through listening,<br />
+	because people can express their feelings and emotions through other channels than talking.<br />
+One of the ways is 'Signifying Acts' which refers to action people take to signify something.<br />
+For example, a father has just yelled at her five year old daughter<br />
+	because she inadvertently took off the power line to his computer.<br />
+Insteading of apologizing to her directly,<br />
+	he asked her whether she wanted to go to park and eat ice cream.<br />
+It meaned that he was sorry that he shouldn't have yelled at her.<br />
+'Signifying Acts' is a skill that we all need to learn to understand other people better.<br />
+Besides, it manifests very differently in different cultures.<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org43ff6f7" class="outline-3">
+<h3 id="org43ff6f7">summary2</h3>
+<div class="outline-text-3" id="text-org43ff6f7">
+<p>
+Listening carefully to what the other person is saying is very important,<br />
+	so we have identified four content areas: facts, attitude, emotions, and needs.<br />
+But we do not only gain understanding through listening,<br />
+	as people can express their feelings and emotions through other channels than talking.<br />
+One of the ways is 'Signifying Acts' which refers to actions people take to signify something.<br />
+For example, a father has just yelled at her five-year-old daughter<br />
+	because she inadvertently took off the power line to his computer.<br />
+Instead of apologizing to her directly,<br />
+	he asked her whether she wanted to go to the park and eat ice cream.<br />
+It meant that he was sorry that he shouldn't have yelled at her.<br />
+'Signifying Acts' is a skill that we all need to learn to understand other people better.<br />
+Besides, it manifests as different forms in different cultures.<br />
+</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

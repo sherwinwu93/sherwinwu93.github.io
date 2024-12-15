@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-11-27 Wed 16:15 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-org9e474eb" class="outline-2">
+<h2 id="org9e474eb">3-2 3.5 Reception - Ideas 2 - Position</h2>
+<div class="outline-text-2" id="text-org9e474eb">
+<p class="verse">
+It sounds like the importance is not just what the fact is telling us, or the fact itself.<br />
+But it's, why was that fact selected?<br />
+And what is the person's position on that particular fact?<br />
+<br />
+Yeah, exactly.<br />
+So, especially when people are thinking of developing a more significant relationship,<br />
+&#xa0;it is actually important to understand that.<br />
+Because some people, say for example,<br />
+&#xa0;they start building relationship and then all of a sudden relates to the person involved.<br />
+It comes on suddenly,<br />
+&#xa0;that, I've never thought that this person actually values his or her family so much.<br />
+To the extent that I added on piece to his or her life<br />
+&#xa0;because to him or her the family is weigh more important than me or than this relationship.<br />
+<br />
+And when people find themselves in this situation and then when they think back,<br />
+&#xa0;actually maybe in the eight months they were dating,<br />
+&#xa0;&#xa0;this message has been communicated to this person maybe 800 times, right?<br />
+Yeah.<br />
+But you just missed it, right?<br />
+So the person may be saying that like I have to do this because his family, right?<br />
+Or, I am not going to care what is going to happen, Thanksgiving? I'm back to Calgary.<br />
+So this is selective presentation, or framing of facts,<br />
+&#xa0;and they do not listen between the lines and are missing out on the most important piece.<br />
+If someone is telling you that this Thanksgiving I have to go to New York or Calgary, or wherever.<br />
+It is not just a fact or that I am doing it.<br />
+It is also telling you this is important.<br />
+This is what is important in my life.<br />
+</p>
+</div>
+<div id="outline-container-orgca1cd09" class="outline-3">
+<h3 id="orgca1cd09">expression</h3>
+<div class="outline-text-3" id="text-orgca1cd09">
+<p>
+frame [freɪm]: v. formal to carefully plan the way you are going to ask a question, make a statement etc表达<br />
+</p>
+<hr />
+<p>
+relate to sb.: 与某人建立联系/产生共鸣<br />
+add on piece to sb's life: 为某人生活增添色彩<br />
+think back: 回想<br />
+between the lines: 字里行间<br />
+miss out on sth.: 错过某事物<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org35c5ddc" class="outline-3">
+<h3 id="org35c5ddc">sentence</h3>
+<div class="outline-text-3" id="text-org35c5ddc">
+<p>
+frame [freɪm]: v. formal to carefully plan the way you are going to ask a question, make a statement etc表达<br />
+</p>
+<ul class="org-ul">
+<li>In my youth, I was wondering how to frame a question to a teacher who gets angry.<br /></li>
+<li>After quarreling bitterly, you are supposed to frame the fact with great care.<br /></li>
+<li>My official has already framed the question about the scandal of corruption.<br /></li>
+</ul>
+<hr />
+<p>
+relate to sb.: 与某人建立联系/产生共鸣<br />
+</p>
+<ul class="org-ul">
+<li>When the lawyer tried to relate to his girlfriend, he found out that he was a little umfamiliar with her history.<br /></li>
+<li>The prince has related to the lady of Winterfell overnight and got divorced with the princess.<br /></li>
+<li>When you succeeded in relating to your wolf, he will follow no other than your instructions.<br /></li>
+</ul>
+<p>
+add on piece to sb's life: 为某人生活增添色彩<br />
+</p>
+<ul class="org-ul">
+<li>To add on piece to her life, she is determined to go on vacations at different seaside resorts.<br /></li>
+<li>Adding on piece to her life, she survived the operation after a servere car accident.<br /></li>
+<li>This indeed added on piece to his life, for he spent a month on the desert island with bare hands.<br /></li>
+</ul>
+<p>
+think back: 回想<br />
+</p>
+<ul class="org-ul">
+<li>You must think back what happened to you when you lost your keys ring.<br /></li>
+<li>Don't be too hard on yourself, don't think back the man who hurt you.<br /></li>
+<li>When he thought back, he found out that the old lady who is always so kind to everyone turns out to be the criminal.<br /></li>
+</ul>
+<p>
+between the lines: 字里行间<br />
+</p>
+<ul class="org-ul">
+<li>The king kept flattering his uncle between the lines because his uncle used to threaten him.<br /></li>
+<li>There must be some secrets between the lines of them.<br /></li>
+<li>Between the lines of our abbot, we can infer that Jon Snow is not a bastard, but the true heir to the Iron Throne.<br /></li>
+</ul>
+<p>
+miss out on sth.: 错过某事物<br />
+</p>
+<ul class="org-ul">
+<li>We will compensate you for your missing out on the birthday party.<br /></li>
+<li>Missing out on the opportunity to work for Apple, the student broke up with his girl and left the city.<br /></li>
+<li>Missing out on the opportunity to meet the Queen, the knight commited a murder in public and was standing trial.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgad9ffbc" class="outline-3">
+<h3 id="orgad9ffbc">sentence2</h3>
+<div class="outline-text-3" id="text-orgad9ffbc">
+<p>
+frame [freɪm]: v. formal to carefully plan the way you are going to ask a question, make a statement etc表达<br />
+</p>
+<ul class="org-ul">
+<li>In my youth, I wondered how to frame a question to a teacher who gets angry.<br /></li>
+<li>After quarreling bitterly, you are supposed to frame the fact with great care.<br /></li>
+<li>My official has already framed the question about the corruption scandal.<br /></li>
+</ul>
+<hr />
+<p>
+relate to sb.: 与某人建立联系/产生共鸣<br />
+</p>
+<ul class="org-ul">
+<li>When the lawyer tried to relate to his girlfriend, he realized to his horror that he was a little unfamiliar with her history.<br /></li>
+<li>The prince has related to the lady of Winterfell overnight and got divorced from the princess.<br /></li>
+<li>When you succeed in relating to your wolf, he will follow no other than your instructions.<br /></li>
+</ul>
+<p>
+add on piece to sb's life: 为某人生活增添色彩<br />
+</p>
+<ul class="org-ul">
+<li>To add on piece to her life, she is determined to go on vacations at different seaside resorts.<br /></li>
+<li>Adding on piece to her life, she survived the operation after a severe car accident.<br /></li>
+<li>This indeed added on piece to his life, for he spent a month on the desert island with bare hands.<br /></li>
+</ul>
+<p>
+think back: 回想<br />
+</p>
+<ul class="org-ul">
+<li>You must think back to what happened to you when you lost your key ring.<br /></li>
+<li>Don't be too hard on yourself, don't think back to the man who hurt you.<br /></li>
+<li>When he thinks back, he finds out that the old lady who is always so kind to everyone turns out to be a criminal.<br /></li>
+</ul>
+<p>
+between the lines: 字里行间<br />
+</p>
+<ul class="org-ul">
+<li>The king kept flattering his uncle between the lines because his uncle used to threaten him.<br /></li>
+<li>There must be some secrets between the lines of them.<br /></li>
+<li>Between the lines of our abbot, we can infer that Jon Snow is not a bastard, but the true heir to the Iron Throne.<br /></li>
+</ul>
+<p>
+miss out on sth.: 错过某事物<br />
+</p>
+<ul class="org-ul">
+<li>We will compensate you for your missing out on the birthday party.<br /></li>
+<li>Missing out on the opportunity to work for Apple, the student broke up with his girl and left the city.<br /></li>
+<li>Missing out on the opportunity to meet the Queen, the knight committed a murder in public and was standing trial.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org7358b44" class="outline-3">
+<h3 id="org7358b44">summary</h3>
+<div class="outline-text-3" id="text-org7358b44">
+<p>
+Not only the importance is what the fact is tell us or itself,<br />
+	but also why was it selected and the person's position on the fact.<br />
+It is especially important when people are developing a significant relationship.<br />
+For example, it suddenly occur to someone<br />
+	that his partner values her family so much<br />
+		and he is weigh less important than her family.<br />
+However, when he thinks back he realizes that the message has been communicated to him many times.<br />
+He just missed it.<br />
+Like when his partner states that she is going to somewhere or do something because of her family.<br />
+It is not just a fact, it is also telling him her family is important in her life.<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org577757c" class="outline-3">
+<h3 id="org577757c">summary2</h3>
+<div class="outline-text-3" id="text-org577757c">
+<p>
+Not only of importance is what the fact is telling us or itself,<br />
+	but also why is it selected and the person's position on the fact.<br />
+It is critical when people are developing a significant relationship.<br />
+For example, it suddenly occurs to someone<br />
+	that his partner values her family so much<br />
+		and he weighs less important than her family.<br />
+However, when he thinks back he realizes that the message has been communicated to him many times.<br />
+He just missed it.<br />
+Like when his partner states that she is going somewhere or doing something because of her family.<br />
+It is not just a fact, but it is also telling him her family is important in her life.<br />
+</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

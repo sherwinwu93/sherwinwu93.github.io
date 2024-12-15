@@ -1,0 +1,672 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-12-09 Mon 14:41 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-org5382603" class="outline-2">
+<h2 id="org5382603">3-3 3.16 Expression - Facts</h2>
+<div class="outline-text-2" id="text-org5382603">
+<p class="verse">
+In this section we will be talking about expression.<br />
+Expression, just like reception, is a very important component of communication.<br />
+I'm wondering if you want to start<br />
+&#xa0;by talking about facts and how can we present facts in the best possible manner?<br />
+<br />
+Well, I'm almost feeling very nervous now as I have to answer this question.<br />
+Because the entire business of academia and maybe education<br />
+&#xa0;is about how we present certain facts effectively.<br />
+And I'm not sure when I'm answering your question.<br />
+I'm not sure.<br />
+Are we doing this right, even, ourselves?<br />
+What I can say is that there is obviously a whole scholarship on how can we present facts better.<br />
+At the university, we have specialists<br />
+&#xa0;who are helping our graduate students and undergrad students write better<br />
+&#xa0;&#xa0;so that they present facts and ideas better.<br />
+And in some disciplines in the sciences<br />
+&#xa0;they have really organized structures for people to present things.<br />
+What you did in the experiment, what happened?<br />
+What are the results?<br />
+How do you analyze the data?<br />
+So we have actually very well-established protocols for presenting facts.<br />
+And in some disciplines like management schools or in law,<br />
+&#xa0;people are trained to present facts in a certain way<br />
+&#xa0;&#xa0;in order to achieve whatever objective they have.<br />
+If you were presenting facts in a court, in an adversarial situation,<br />
+&#xa0;versus you're presenting facts to your client as a lawyer, well, you do it differently.<br />
+So we're probably not going to get into details in those.<br />
+<br />
+What we may want to be focusing on is when we're in an interpersonal situation,<br />
+&#xa0;when we're trying to develop a relationship, how we are going to present facts.<br />
+And what facts should we be presenting?<br />
+I think the important thing here of course is to look at the purpose of our engagement.<br />
+Are we trying to build friendship here?<br />
+Or are we trying to start a romantic relationship here?<br />
+Or are we trying to sell something [LAUGH]?<br />
+Or am I trying to resolve conflict?<br />
+The kind of facts that you are trying to present<br />
+&#xa0;is always contingent upon the purpose of the engagement.<br />
+<br />
+So what do you plan to accomplish?<br />
+And then effective communication is based on a good understanding of your partner<br />
+&#xa0;or the person that you're interacting with.<br />
+What are this person's N3C?<br />
+If you know the person's needs, circumstances, characteristics and capacity,<br />
+&#xa0;then it will be like selecting presentation of facts according.<br />
+And I think that's the general principle.<br />
+Say for example, if I know that you really have pent-up emotions that you need to be letting out.<br />
+Presenting facts that would further provoke you [LAUGH].<br />
+[LAUGH] Obviously would not help, right?<br />
+So I would be presenting facts that would make it easier for you<br />
+&#xa0;to have an alternate construction of reality and reframe your situation.<br />
+And give you maybe the perfect excuse to share some of your feelings.<br />
+<br />
+Let me give you an example.<br />
+If I'm talking to someone about being bullied at work.<br />
+And you have a lot of pent-up feelings.<br />
+I have a range of options to select, to tell you facts about.<br />
+I can tell you that you know what, 60% of women working in Canada have experienced that.<br />
+That is one set of facts, right?<br />
+And if I tell you that well, people who utilize services within the system to address it,<br />
+&#xa0;like harassment offices or HR departments, or talking to a union representative who can help you.<br />
+That is another kind of fact that I can present to you.<br />
+If I find that you're very interested in talking about the personality of the bullier,<br />
+&#xa0;then I can say, well,<br />
+&#xa0;&#xa0;people who bully are usually people<br />
+&#xa0;&#xa0;&#xa0;with poor self-image and inadequate social skills themselves.<br />
+And those people who generally do not even have good mental health.<br />
+And I understand that by sharing this with you it is not how accurate the facts are that matters.<br />
+It is to give you an opportunity to express your emotions in the way<br />
+&#xa0;that you feel comfortable with.<br />
+All right?<br />
+<br />
+So that is, I think, the key idea now, when we're talking about what facts are we communicating.<br />
+And then we do not obviously rule out<br />
+&#xa0;that in some situations all you need would be simple, straightforward facts.<br />
+Like, I'm going to Japan, [LAUGH] I'm going to Kyoto,<br />
+&#xa0;do you know hotels that are clean, convenient, and affordable?<br />
+Then I can be responding to it in a more matter of fact manner.<br />
+Expression of facts depends on the purpose of engagement,<br />
+&#xa0;whether you are trying to build a friendship or establishing a romantic relationship.<br />
+You should also have a good understanding of your partner's N3C,<br />
+&#xa0;&#xa0;their needs, circumstances, characteristics, and capacity,<br />
+&#xa0;in order to communicate effectively.<br />
+If you've forgotten what N3C stands for, please check out module one, lecture 1.6.<br />
+</p>
+</div>
+<div id="outline-container-org466cee5" class="outline-3">
+<h3 id="org466cee5">expression</h3>
+<div class="outline-text-3" id="text-org466cee5">
+<p>
+component [kəmˈpoʊnənt]: n. one of several parts that together make up a whole machine, system etc SYN constituent组成部分<br />
+academia [ˌækəˈdimiə]: n. the activities and work done at universities and colleges, or the teachers and students involved in it学术界<br />
+scholarship [ˈskɑlərˌʃɪp]: n. the knowledge, work, or methods involved in serious studying学问<br />
+specialist [ˈspeʃ(ə)lɪst]: n. someone who knows a lot about a particular subject, or is very skilled at it SYN expert专家<br />
+discipline [ˈdɪsəplɪn]: n. an area of knowledge or teaching, especially one such as history, chemistry, mathematics etc that is studied at a university学科<br />
+structure [ˈstrʌktʃər]: n. the way in which the parts of something are connected with each other and form a whole, or the thing that these parts make up ⇨ structural结构<br />
+analyze [ˈæn(ə)lˌaɪz] analyse: v. to examine or think about something carefully, in order to understand it分析<br />
+protocol [ˈproʊtəˌkɔl]: n. a system of rules about the correct way to behave on an official occasion协议<br />
+adversarial [ˌædvɜrˈseriəl]: adj. an adversarial system, especially in politics and the law, is one in which two sides oppose and attack each other对抗(性)的<br />
+resolve [rɪˈzɑlv]: v. to find a satisfactory way of dealing with a problem or difficulty SYN solve ⇨ settle解决<br />
+pent-up [ˌpen-up]: adj. pent-up feelings or energy have not been expressed or used for a long time被压抑的<br />
+provoke [prəˈvoʊk]: v. to cause a reaction or feeling, especially a sudden one ⇨ provocation煽动<br />
+bully [ˈbʊli] bullier: v.n. someone who uses their strength or power to frighten or hurt someone who is weaker霸凌<br />
+harassment [həˈræsmənt]: n. when someone behaves in an unpleasant or threatening way towards you骚扰<br />
+personality [ˌpɜrsəˈnæləti]: n. someone’s character, especially the way they behave towards other people个性<br />
+</p>
+<hr />
+<p>
+graduate students: 研究生<br />
+undergrad students: 本科生<br />
+be contingent upon sth.: 取决于某事物<br />
+a range of sth.: 一系列某事物<br />
+rule out that + &#x2026;: 排除掉+&#x2026;<br />
+stand for sth./sb.: 代表某人/某事<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org8472bdd" class="outline-3">
+<h3 id="org8472bdd">sentence</h3>
+<div class="outline-text-3" id="text-org8472bdd">
+<p>
+component [kəmˈpoʊnənt]: n. one of several parts that together make up a whole machine, system etc SYN constituent组成部分<br />
+</p>
+<ul class="org-ul">
+<li>Exercise is one of key component of being expert at English.<br /></li>
+<li>These robots are one of key component of the factory.<br /></li>
+<li>Missing key component of the machine, we can't use it to detect gold in the cave.<br /></li>
+</ul>
+<p>
+academia [ˌækəˈdimiə]: n. the activities and work done at universities and colleges, or the teachers and students involved in it学术界<br />
+</p>
+<ul class="org-ul">
+<li>She has been trained to counsel a king in academia for many years.<br /></li>
+<li>There is a piece of breaking news in academia.<br /></li>
+<li>The scandal in academia was revealed after a journalist had published an article about it in the press.<br /></li>
+</ul>
+<p>
+scholarship [ˈskɑlərˌʃɪp]: n. the knowledge, work, or methods involved in serious studying学问<br />
+</p>
+<ul class="org-ul">
+<li>Few of us in seat couldn't publish a piece of scholarship for the rest of your life.<br /></li>
+<li>His lifetime of scholarship may end because of being accused of sex harassment.<br /></li>
+<li>The murder he committed in public brought an end to his lifetime of scholarship.<br /></li>
+</ul>
+<p>
+specialist [ˈspeʃ(ə)lɪst]: n. someone who knows a lot about a particular subject, or is very skilled at it SYN expert专家<br />
+</p>
+<ul class="org-ul">
+<li>The student is alwaysing raising issues about the subject which only specialists are able to answer.<br /></li>
+<li>It's not common that an eminent specialist will come to a hospital in the district.<br /></li>
+<li>As the virus spread all over the city and threatened the whole country, the specialist felt obliged to invest the cause of the epidemic.<br /></li>
+</ul>
+<p>
+discipline [ˈdɪsəplɪn]: n. an area of knowledge or teaching, especially one such as history, chemistry, mathematics etc that is studied at a university学科<br />
+</p>
+<ul class="org-ul">
+<li>Beyond doubt, the study of an academic discipline has changed his life.<br /></li>
+<li>Consequently, the study of an academic discipline has rarely been utilized in industry.<br /></li>
+<li>The study of this academic discipline gave way to its utilization in industry.<br /></li>
+</ul>
+<p>
+structure [ˈstrʌktʃər]: n. the way in which the parts of something are connected with each other and form a whole, or the thing that these parts make up ⇨ structural结构<br />
+</p>
+<ul class="org-ul">
+<li>As long as the new programmer is acquinted with the structure of the project, I will leave our company.<br /></li>
+<li>Not acquinted with the structure of the project, the programmer often ran into trouble while coding.<br /></li>
+<li>If you were familiar with the structure of the machine, you would make such stupid remarks.<br /></li>
+</ul>
+<p>
+analyze [ˈæn(ə)lˌaɪz] analyse: v. to examine or think about something carefully, in order to understand it分析<br />
+</p>
+<ul class="org-ul">
+<li>There is a wonderful tool to analyze the statistics, but we lacks its licence and may take legel risks.<br /></li>
+<li>His method to analyze the statistics of sales became popular with people in the company, so he was promoted by his superior.<br /></li>
+<li>Failing to analyze the statistics, our CEO decided to gamble.<br /></li>
+</ul>
+<p>
+protocol [ˈproʊtəˌkɔl]: n. a system of rules about the correct way to behave on an official occasion协议<br />
+</p>
+<ul class="org-ul">
+<li>The protocol is made up of two objects and a set of rules.<br /></li>
+<li>The internet protocol is designed to transfer files between two computers.<br /></li>
+<li>Disobeying the protocol, you can't be connected to your partner.<br /></li>
+</ul>
+<p>
+adversarial [ˌædvɜrˈseriəl]: adj. an adversarial system, especially in politics and the law, is one in which two sides oppose and attack each other对抗(性)的<br />
+</p>
+<ul class="org-ul">
+<li>Winners take all in an adversarial game.<br /></li>
+<li>In the adversarial game, he behaved very bravely and was admired by poor and rich alike.<br /></li>
+<li>In the adversarial game, he behaved as a coward and was abused by his fans.<br /></li>
+</ul>
+<p>
+resolve [rɪˈzɑlv]: v. to find a satisfactory way of dealing with a problem or difficulty SYN solve ⇨ settle解决<br />
+</p>
+<ul class="org-ul">
+<li>Because of lack of social interaction skills, he was reluctant to resolve conflicts between his inferiors.<br /></li>
+<li>I appreciate that you help resolve the conflict between me and my colleague.<br /></li>
+<li>The specialist has been trained to resolve conflict in reltionships for many years.<br /></li>
+</ul>
+<p>
+pent-up [ˌpen-up]: adj. pent-up feelings or energy have not been expressed or used for a long time被压抑的<br />
+</p>
+<ul class="org-ul">
+<li>Follow your heart and let your pent-up emotions out.<br /></li>
+<li>He is not capable to express his pent-up emotions to his wife.<br /></li>
+<li>Because the prince was killed in action, the king's pent-up emotions led him to start a war with the neighbor.<br /></li>
+</ul>
+<p>
+provoke [prəˈvoʊk]: v. to cause a reaction or feeling, especially a sudden one ⇨ provocation激起<br />
+</p>
+<ul class="org-ul">
+<li>Tax increase without the approval of the paliament provoked wide-spread criticism and rebellions.<br /></li>
+<li>The behangings of three innocent persons provoked that people held grudge against the king.<br /></li>
+<li>A piece of cake flowing across the street provoked a series of catastrophes.<br /></li>
+</ul>
+<p>
+bully [ˈbʊli] bullier: v.n. someone who uses their strength or power to frighten or hurt someone who is weaker霸凌<br />
+</p>
+<ul class="org-ul">
+<li>He claimed that he hadn't bullied any his teammate when he was in the team.<br /></li>
+<li>The bullier was accused of robbing his teammate's gift.<br /></li>
+<li>The headmaster rounded up bullier to stand trial in front of all staffs of the high school.<br /></li>
+</ul>
+<p>
+harassment [həˈræsmənt]: n. when someone behaves in an unpleasant or threatening way towards you骚扰<br />
+</p>
+<ul class="org-ul">
+<li>The sexual harrassment brought about the downfall of the headmaster who had devoted himself to education for nearly twenty years.<br /></li>
+<li>Justice has not been done, when sexual harrassment still prevailed in office.<br /></li>
+<li>The old gentleman, who was always so kind to everybody, was accused of sexual harassment in his youth.<br /></li>
+</ul>
+<p>
+personality [ˌpɜrsəˈnæləti]: n. someone’s character, especially the way they behave towards other people个性,性格<br />
+</p>
+<ul class="org-ul">
+<li>It is important for us to be able to figure out the personality of the person who you are trying to build relationship with.<br /></li>
+<li>His warlike personality by no means makes him a great knight.<br /></li>
+<li>His vulnerable personality caused him to lose his lead in his class.<br /></li>
+</ul>
+<hr />
+<p>
+graduate students: 研究生<br />
+</p>
+<ul class="org-ul">
+<li>The so-called teacher turned out to be a graduate student.<br /></li>
+<li>Our academy could not afford so many graduate students.<br /></li>
+<li>The graduate student lost his temper when he learnt that he still had a difficult time finding an appropriate job.<br /></li>
+</ul>
+<p>
+undergrad students: 本科生<br />
+</p>
+<ul class="org-ul">
+<li>Obviously, our boss takes the undergrad student seriously.<br /></li>
+<li>Nowadays, more and more undergrad students take interest in playing truant from school.<br /></li>
+<li>There are increasing undergrad students who get obsessed with video games after surviving grim high schools.<br /></li>
+</ul>
+<p>
+be contingent upon sth.: 取决于某事物<br />
+</p>
+<ul class="org-ul">
+<li>Whether you step out of the cell is contingent upon the emotions of the king.<br /></li>
+<li>Whether the watchdogs are kept in closure is contingent upon the number of visitors at the monastery.<br /></li>
+<li>Whether I give you pocket money is contingent upon the money I made this year.<br /></li>
+</ul>
+<p>
+a range of sth.: 一系列某事物<br />
+</p>
+<ul class="org-ul">
+<li>A range of TV series made me familiar with English voices.<br /></li>
+<li>A range of catastrophes made the great boxer live in poverty for the rest of his life.<br /></li>
+<li>The king set up a range of laws prohibiting digging up graves.<br /></li>
+</ul>
+<p>
+rule out that + &#x2026;: 排除掉+&#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>The visitor ruled out that he was a robot.<br /></li>
+<li>My wife ruled out that our son had been kidnapped.<br /></li>
+<li>The butcher ruled out that his family had been bombed in an air raid.<br /></li>
+</ul>
+<p>
+stand for sth./sb.: 代表某人/某事<br />
+</p>
+<ul class="org-ul">
+<li>Standing for our people, I have to do what benefit them.<br /></li>
+<li>Standing for staffs in the high school, the headmaster raised up money to have the classrooms repaired.<br /></li>
+<li>Standing for people in the community, I arranged the settlement with the company.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgf4f042e" class="outline-3">
+<h3 id="orgf4f042e">sentence2</h3>
+<div class="outline-text-3" id="text-orgf4f042e">
+<p>
+component [kəmˈpoʊnənt]: n. one of several parts that together make up a whole machine, system etc SYN constituent组成部分<br />
+</p>
+<ul class="org-ul">
+<li>Exercise is one of the key components of being an expert in English.<br /></li>
+<li>These robots are one of the key components of the factory.<br /></li>
+<li>The machine misses a key component, we can't use it to detect gold in the cave.<br /></li>
+</ul>
+<p>
+academia [ˌækəˈdimiə]: n. the activities and work done at universities and colleges, or the teachers and students involved in it学术界<br />
+</p>
+<ul class="org-ul">
+<li>She has been trained to counsel a king in academia for many years.<br /></li>
+<li>There is some breaking news about robots in academia.<br /></li>
+<li>The scandal in academia was revealed after a journalist had published an article about it in the press.<br /></li>
+</ul>
+<p>
+scholarship [ˈskɑlərˌʃɪp]: n. the knowledge, work, or methods involved in serious studying学问<br />
+</p>
+<ul class="org-ul">
+<li>Few of us in seats couldn't publish a piece of scholarship for the rest of our lives.<br /></li>
+<li>His lifetime of scholarship may end because of being accused of sexual harassment.<br /></li>
+<li>The murder he committed in public brought an end to his lifetime of scholarship.<br /></li>
+</ul>
+<p>
+specialist [ˈspeʃ(ə)lɪst]: n. someone who knows a lot about a particular subject, or is very skilled at it SYN expert专家<br />
+</p>
+<ul class="org-ul">
+<li>The student is always raising issues about the subject which only specialists are able to answer.<br /></li>
+<li>It's not common that an eminent specialist will come to a hospital in the district.<br /></li>
+<li>As the virus spread all over the city and threatened the whole country, the specialist felt obliged to discern the cause of the epidemic.<br /></li>
+</ul>
+<p>
+discipline [ˈdɪsəplɪn]: n. an area of knowledge or teaching, especially one such as history, chemistry, mathematics etc that is studied at a university学科<br />
+</p>
+<ul class="org-ul">
+<li>Beyond doubt, the study of an academic discipline has changed his life.<br /></li>
+<li>Consequently, the study of an academic discipline has rarely been utilized in industry.<br /></li>
+<li>The study of this academic discipline gave way to its utilization in industry.<br /></li>
+</ul>
+<p>
+structure [ˈstrʌktʃər]: n. the way in which the parts of something are connected with each other and form a whole, or the thing that these parts make up ⇨ structural结构<br />
+</p>
+<ul class="org-ul">
+<li>As long as the new programmer is acquainted with the structure of the project, I will leave our company.<br /></li>
+<li>Not acquainted with the structure of the project, the programmer often ran into trouble while coding.<br /></li>
+<li>If you were familiar with the structure of the machine, you would make such stupid remarks.<br /></li>
+</ul>
+<p>
+analyze [ˈæn(ə)lˌaɪz] analyse: v. to examine or think about something carefully, in order to understand it分析<br />
+</p>
+<ul class="org-ul">
+<li>There is a wonderful tool to analyze the statistics, but we lack its licenses and may take legal risks.<br /></li>
+<li>His method of analyzing the statistics of sales became popular with people in the company, so he was promoted by his superior.<br /></li>
+<li>Failing to analyze the statistics, our CEO decided to gamble.<br /></li>
+</ul>
+<p>
+protocol [ˈproʊtəˌkɔl]: n. a system of rules about the correct way to behave on an official occasion协议<br />
+</p>
+<ul class="org-ul">
+<li>The protocol is made up of two objects and a set of rules.<br /></li>
+<li>The internet protocol is designed to transfer files between two computers.<br /></li>
+<li>If you disobey the protocol, you can't connect to your partner.<br /></li>
+</ul>
+<p>
+adversarial [ˌædvɜrˈseriəl]: adj. an adversarial system, especially in politics and the law, is one in which two sides oppose and attack each other对抗(性)的<br />
+</p>
+<ul class="org-ul">
+<li>Winners take all in an adversarial game.<br /></li>
+<li>In the adversarial game, he behaved very bravely and was admired by poor and rich alike.<br /></li>
+<li>In the adversarial game, he behaved as a coward and was abused by his fans.<br /></li>
+</ul>
+<p>
+resolve [rɪˈzɑlv]: v. to find a satisfactory way of dealing with a problem or difficulty SYN solve ⇨ settle解决<br />
+</p>
+<ul class="org-ul">
+<li>Because of the lack of social interaction skills, he was reluctant to resolve conflicts between his inferiors.<br /></li>
+<li>I appreciate that you helped resolve the conflict between me and my colleague.<br /></li>
+<li>The specialist has been trained to resolve conflict in relationships for many years.<br /></li>
+</ul>
+<p>
+pent-up [ˌpen-up]: adj. pent-up feelings or energy have not been expressed or used for a long time被压抑的<br />
+</p>
+<ul class="org-ul">
+<li>Follow your heart and let your pent-up emotions out.<br /></li>
+<li>He is not capable of expressing his pent-up emotions to his wife.<br /></li>
+<li>Because the prince was killed in action, the king's pent-up emotions led him to start a war with the neighbor.<br /></li>
+</ul>
+<p>
+provoke [prəˈvoʊk]: v. to cause a reaction or feeling, especially a sudden one ⇨ provocation激起<br />
+</p>
+<ul class="org-ul">
+<li>Tax increases without the approval of the parliament provoked widespread criticism and rebellions.<br /></li>
+<li>The hangings of three innocent persons provoked people to hold a grudge against the king.<br /></li>
+<li>A piece of cake flowing across the street provoked a series of catastrophes.<br /></li>
+</ul>
+<p>
+bully [ˈbʊli] bullier: v.n. someone who uses their strength or power to frighten or hurt someone who is weaker霸凌<br />
+</p>
+<ul class="org-ul">
+<li>He claimed that he hadn't bullied any of his teammates.<br /></li>
+<li>The bullier was accused of robbing his teammate's gift.<br /></li>
+<li>The headmaster rounded up bulliers to stand trial in front of all staff of the high school.<br /></li>
+</ul>
+<p>
+harassment [həˈræsmənt]: n. when someone behaves in an unpleasant or threatening way towards you骚扰<br />
+</p>
+<ul class="org-ul">
+<li>The sexual harassment brought about the downfall of the headmaster who had devoted himself to education for nearly twenty years.<br /></li>
+<li>Justice has not been done when sexual harassment still prevails in office.<br /></li>
+<li>The old gentleman, who was always so kind to everybody, was accused of sexual harassment in his youth.<br /></li>
+</ul>
+<p>
+personality [ˌpɜrsəˈnæləti]: n. someone’s character, especially the way they behave towards other people个性,性格<br />
+</p>
+<ul class="org-ul">
+<li>It is important for us to be able to figure out the personality of the person who you are trying to build a relationship with.<br /></li>
+<li>His warlike personality by no means makes him a great knight.<br /></li>
+<li>His vulnerable personality caused him to lose his lead in his class.<br /></li>
+</ul>
+<hr />
+<p>
+graduate students: 研究生<br />
+</p>
+<ul class="org-ul">
+<li>The so-called teacher turned out to be a graduate student.<br /></li>
+<li>Our academy could not afford so many graduate students.<br /></li>
+<li>The graduate student lost his temper when he learned that he still had a difficult time finding an appropriate job.<br /></li>
+</ul>
+<p>
+undergrad students: 本科生<br />
+</p>
+<ul class="org-ul">
+<li>Obviously, our boss takes the undergrad student seriously.<br /></li>
+<li>Nowadays, more and more undergrad students take interest in playing truant from school.<br /></li>
+<li>There is an increasing number of undergrad students who get obsessed with video games after surviving grim high schools.<br /></li>
+</ul>
+<p>
+be contingent upon sth.: 取决于某事物<br />
+</p>
+<ul class="org-ul">
+<li>Whether you step out of the cell is contingent upon the emotions of the king.<br /></li>
+<li>Whether the watchdogs are kept in closure is contingent upon the number of visitors at the monastery.<br /></li>
+<li>Whether I give you pocket money is contingent upon the money I made this year.<br /></li>
+</ul>
+<p>
+a range of sth.: 一系列某事物<br />
+</p>
+<ul class="org-ul">
+<li>A range of TV series made me familiar with English voices.<br /></li>
+<li>A range of catastrophes made the great boxer live in poverty for the rest of his life.<br /></li>
+<li>The king set up a range of laws prohibiting digging up graves.<br /></li>
+</ul>
+<p>
+rule out that + &#x2026;: 排除掉+&#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>The visitor ruled out that he was a robot.<br /></li>
+<li>My wife ruled out that our son had been kidnapped.<br /></li>
+<li>The butcher ruled out that his family had been bombed in an air raid.<br /></li>
+</ul>
+<p>
+stand for sth./sb.: 代表某人/某事<br />
+</p>
+<ul class="org-ul">
+<li>Standing for our people, I have to do what benefits them.<br /></li>
+<li>Standing for the staff in the high school, the headmaster raised money to have the classrooms repaired.<br /></li>
+<li>Standing for people in the community, I arranged the settlement with the company.<br /></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

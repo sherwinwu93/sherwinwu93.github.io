@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-11-27 Wed 16:15 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-orgddadc61" class="outline-2">
+<h2 id="orgddadc61">1-4 1.10 Differences &amp; Biodiversity</h2>
+<div class="outline-text-2" id="text-orgddadc61">
+<p class="verse">
+Well, in the SSLD system, we pay a lot of attention to individual differences.<br />
+And differences can be a challenge in relationships.<br />
+Because, like when people are negotiating relationships,<br />
+&#xa0;when someone thinks differently, acts differently,<br />
+&#xa0;&#xa0;&#xa0;believes in different things, like looks at things differently,<br />
+&#xa0;&#xa0;it can sometimes create a problem or a challenge.<br />
+So how can people understand the value of difference<br />
+&#xa0;is an important first step in understanding relationships.<br />
+So a key concept that we are now taking in from the life sciences and the social sciences<br />
+&#xa0;is this concept of biodiversity.<br />
+The SSLD system embraces what we call a diversity positive attitude,<br />
+&#xa0;meaning that like we like diversity, we enjoy diversity.<br />
+We think that diversity is a good thing.<br />
+<br />
+So why do we think so?<br />
+Well, first of all, biodiversity is actually a condition for human evolution.<br />
+I do not want to give you a whole lecture on biology here.<br />
+But like if you're interested,<br />
+&#xa0;you can easily have access to<br />
+&#xa0;&#xa0;like all sorts of interesting discussions and documentation on this concept of biodiversity.<br />
+So for natural selection to happen, we need to have biodiversity,<br />
+&#xa0;so we have the like various variations of like manifestations of genes and phenomena,<br />
+&#xa0;&#xa0;so that natural selection can take place.<br />
+So that is like one of the most important points.<br />
+The second point that I want to make is that relationship always involves differences, right?<br />
+So otherwise, like you will be only developing a relationship of a clone of yourself, right?<br />
+Anyone else that you're developing a relationship with, will have something that is different.<br />
+So being able to deal with the difference is actually the key to the success of any relationship.<br />
+And managing diversity, in our opinion, is part and parcel of human growth and evolution,<br />
+&#xa0;whether we're talking about like individual personal growth or like collective social development.<br />
+The ability to manage diversity is always essential.<br />
+What we want you to remember is<br />
+&#xa0;that being able to deal with differences is actually the key to the success of any relationship,<br />
+&#xa0;&#xa0;and that managing diversity is part of human growth and evolution.<br />
+That is<br />
+&#xa0;why understanding the importance of biodiversity would help you embrace the differences of others.<br />
+</p>
+</div>
+<div id="outline-container-org1fcb3f1" class="outline-3">
+<h3 id="org1fcb3f1">expression</h3>
+<div class="outline-text-3" id="text-org1fcb3f1">
+<p>
+diversity [daɪˈvɜrsəti]: n. the fact of including many different types of people or things差异, 多样性<br />
+individual [ˌɪndɪˈvɪdʒuəl]: adj. considered separately from other people or things in the sgroup个体的<br />
+lecture [ˈlektʃər]: n. a long talk on a particular subject that someone gives to a group of people, especially to students in a university ⇨ speech演讲, 讲稿<br />
+biology [baɪˈɑlədʒi]: n. the scientific study of living things生物学, 生物(总称)<br />
+documentation [ˌdɑkjumənˈteɪʃ(ə)n]: n. official documents, reports etc that are used to prove that something is true or correct文档<br />
+variation [ˌveriˈeɪʃ(ə)n]: n. a difference between similar things, or a change from the usual amount or form of something变种<br />
+gene [dʒin]: n. a part of a cell in a living thing that controls what it looks like, how it grows, and how it develops. People get their genes from their parents. ⇨ genetic[遗传]基因<br />
+phenomenon [fəˈnɑməˌnɑn] phenomena: n. something that happens or exists in society, science, or nature, especially something that is studied because it is difficult to understand现象<br />
+essential [ɪˈsenʃ(ə)l]: adj. extremely important and necessary基本的,极其重要的<br />
+</p>
+<hr />
+<p>
+the first step in doing sth.: 做某事的第一步<br />
+take in from sth.: 从某事物中吸收<br />
+have access to sth.: possess the ability or permission to use, enter, or obtain something.能够获得某物<br />
+Otherwise, + &#x2026;: 否则,+ &#x2026;<br />
+develop a relationship with sb.: 和某人发展关系<br />
+part and parcel of sth.: 某物不可或缺的一部分<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org94e9c93" class="outline-3">
+<h3 id="org94e9c93">sentence</h3>
+<div class="outline-text-3" id="text-org94e9c93">
+<p>
+diversity [daɪˈvɜrsəti]: n. the fact of including many different types of people or things差异, 多样性<br />
+</p>
+<ul class="org-ul">
+<li>When you go to university, the first step in getting familiar with others is to embrace diversity.<br /></li>
+<li>Embracing diversity is the key to make a profit in the war.<br /></li>
+<li>The diversity of ethnics in the country was the main factor of the war.<br /></li>
+</ul>
+<p>
+individual [ˌɪndɪˈvɪdʒuəl]: adj. considered separately from other people or things in the some group个体的<br />
+</p>
+<ul class="org-ul">
+<li>In the same envioronment, the accomplishments of you and your brother depend on individual differences.<br /></li>
+<li>He realized to his horror that the man he was developing a relationship with was a man who only took care of his individual profit.<br /></li>
+<li>Obviously, individual intelligence don't bring an end to collective intelligence.<br /></li>
+</ul>
+<p>
+lecture [ˈlektʃər]: n. a long talk on a particular subject that someone gives to a group of people, especially to students in a university ⇨ speech演讲, 讲稿<br />
+</p>
+<ul class="org-ul">
+<li>Such is human nature, that we are more often willing to sacrifice a holiday for a useful lecture.<br /></li>
+<li>It's a famous boxer who will hold a lecture in our school.<br /></li>
+<li>Because of a heavy storm, the teacher delayed in holding the lecture.<br /></li>
+</ul>
+<p>
+biology [baɪˈɑlədʒi]: n. the scientific study of living things生物学, 生物(总称)<br />
+</p>
+<ul class="org-ul">
+<li>He is an expert at biology, but on the other hand, he is bad at mathematics.<br /></li>
+<li>The girl you are keeping in touch with has a habit of performing biology experiment on Saturday.<br /></li>
+<li>The girl who cheated on a biology exam shall be punished five dollars.<br /></li>
+</ul>
+<p>
+documentation [ˌdɑkjumənˈteɪʃ(ə)n]: n. official documents, reports etc that are used to prove that something is true or correct文档<br />
+</p>
+<ul class="org-ul">
+<li>When I quitted my job, my colleague was eager to ask me for the documentation of the project.<br /></li>
+<li>Beyond doubts, these ancient documentation will continue into the next century.<br /></li>
+<li>Your friend, Sam, is referencing documentations which prove that you are not a bastard, but the only heir to the Iron Throne.<br /></li>
+</ul>
+<p>
+variation [ˌveriˈeɪʃ(ə)n]: n. a difference between similar things, or a change from the usual amount or form of something变种<br />
+</p>
+<ul class="org-ul">
+<li>This kind of business was another variation of pyramid scheme.<br /></li>
+<li>Asking for protection money is another variation of criminal in the Modern Times.<br /></li>
+<li>Your action is no doubts another variation of tax evasion.<br /></li>
+</ul>
+<p>
+gene [dʒin]: n. a part of a cell in a living thing that controls what it looks like, how it grows, and how it develops. People get their genes from their parents. ⇨ genetic[遗传]基因<br />
+</p>
+<ul class="org-ul">
+<li>A group of scientists succeeded in cultivating a new spiece by gene technology.<br /></li>
+<li>Gene technology was widely used in new fields.<br /></li>
+<li>The variation of the gene led to the infertility of your wife.<br /></li>
+</ul>
+<p>
+phenomenon [fəˈnɑməˌnɑn] phenomena: n. something that happens or exists in society, science, or nature, especially something that is studied because it is difficult to understand现象<br />
+</p>
+<ul class="org-ul">
+<li>This can lead to some curious phenomena, as it did in the case of Alf who worked for a big company abroad.<br /></li>
+<li>No one could account for the phenomenon that more and more families chose to be dink.<br /></li>
+<li>No one could account for the phenomenon that the sun rose from the west.<br /></li>
+</ul>
+<p>
+essential [ɪˈsenʃ(ə)l]: adj. extremely important and necessary基本的,极其重要的<br />
+</p>
+<ul class="org-ul">
+<li>It's essential for me to have a good relationship with my family.<br /></li>
+<li>It's essential for us to defeat them in the battlefield.<br /></li>
+<li>It's essential for us to overrun the city which serves as the center of transportation.<br /></li>
+</ul>
+<hr />
+<p>
+the first step in doing sth.: 做某事的第一步<br />
+</p>
+<ul class="org-ul">
+<li>Figuring out why we need to do it is the first essential step in doing it.<br /></li>
+<li>The first step in passing the test is to have a good night.<br /></li>
+<li>The first step in seizing power is to sack the capital of the empire.<br /></li>
+</ul>
+<p>
+take in from sth.: 从某事物中吸收<br />
+</p>
+<ul class="org-ul">
+<li>The lesson we took in from the war is that peace was precious and vulnerable.<br /></li>
+<li>The lesson we took in from the tragedy is there is no ship which is unsinkable.<br /></li>
+<li>The lesson we took in from the usurper is that a king can never trust anyone.<br /></li>
+</ul>
+<p>
+have access to sth.: possess the ability or permission to use, enter, or obtain something.能够获得某物<br />
+</p>
+<ul class="org-ul">
+<li>Having access to all sorts of English courses, he made progress in programming.<br /></li>
+<li>During the floods, our people still had access to abundant food and shelters.<br /></li>
+<li>Having access to snack, my cat seems to be very happy.<br /></li>
+</ul>
+<p>
+Otherwise, + &#x2026;: 否则,+ &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>Otherwise, you will be punished five dollars for your rudeness in public.<br /></li>
+<li>Otherwise, the workers trapped in mines will lose their hearts.<br /></li>
+<li>Otherwise, the vicious king will never capture the hearts of people in the land.<br /></li>
+</ul>
+<p>
+develop a relationship with sb.: 和某人发展关系<br />
+</p>
+<ul class="org-ul">
+<li>When I developed a relationship with a girl, her boyfriend appeared to be unhappy.<br /></li>
+<li>Developing a relationship with a foreigner, you may be punished beheading for treason.<br /></li>
+<li>Developing a relationship with a whore, the lord lost all of his men and property.<br /></li>
+</ul>
+<p>
+part and parcel of sth.: 某物不可或缺的一部分<br />
+</p>
+<ul class="org-ul">
+<li>Making love with a man is part and parcel of being preganant.<br /></li>
+<li>The spokesman for China claimed that Taiwan is part and parcel of China.<br /></li>
+<li>Family is part and parcel of the life of a chemistry teacher who used to cook drugs.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org49e33a7" class="outline-3">
+<h3 id="org49e33a7">sentence2</h3>
+<div class="outline-text-3" id="text-org49e33a7">
+<p>
+diversity [daɪˈvɜrsəti]: n. the fact of including many different types of people or things差异, 多样性<br />
+</p>
+<ul class="org-ul">
+<li>When you go to university, the first step in getting familiar with others is to embrace diversity.<br /></li>
+<li>Embracing diversity is the key to making a profit in the war.<br /></li>
+<li>The diversity of ethnics in the country was the main factor of the war.<br /></li>
+</ul>
+<p>
+individual [ˌɪndɪˈvɪdʒuəl]: adj. considered separately from other people or things in the some group个体的<br />
+</p>
+<ul class="org-ul">
+<li>In the same environment, the accomplishments of you and your brother depend on individual differences.<br /></li>
+<li>He realized to his horror that the man he was developing a relationship with was a man who only took care of his individual profit.<br /></li>
+<li>Obviously, individual intelligence doesn't bring an end to collective intelligence.<br /></li>
+</ul>
+<p>
+lecture [ˈlektʃər]: n. a long talk on a particular subject that someone gives to a group of people, especially to students in a university ⇨ speech演讲, 讲稿<br />
+</p>
+<ul class="org-ul">
+<li>Such is human nature, that we are more often willing to sacrifice a holiday for a useful lecture.<br /></li>
+<li>It's a famous boxer who will give a lecture in our school.<br /></li>
+<li>Because of a heavy storm, the teacher delayed in giving the lecture.<br /></li>
+</ul>
+<p>
+biology [baɪˈɑlədʒi]: n. the scientific study of living things生物学, 生物(总称)<br />
+</p>
+<ul class="org-ul">
+<li>He is an expert at biology, but on the other hand, he is bad at mathematics.<br /></li>
+<li>The girl you are keeping in touch with has a habit of performing biology experiments on Saturday.<br /></li>
+<li>The girl who cheated on a biology exam shall be fined five dollars.<br /></li>
+</ul>
+<p>
+documentation [ˌdɑkjumənˈteɪʃ(ə)n]: n. official documents, reports etc that are used to prove that something is true or correct文档<br />
+</p>
+<ul class="org-ul">
+<li>When I quit my job, my colleague was eager to ask me for the documentation of the project.<br /></li>
+<li>Beyond doubt, these ancient documentations will continue into the next century.<br /></li>
+<li>Your friend, Sam, is referencing documentation that proves that you are not a bastard, but the only heir to the Iron Throne.<br /></li>
+</ul>
+<p>
+variation [ˌveriˈeɪʃ(ə)n]: n. a difference between similar things, or a change from the usual amount or form of something变种<br />
+</p>
+<ul class="org-ul">
+<li>This kind of business was another variation of a pyramid scheme.<br /></li>
+<li>Asking for protection money is another variation of criminals in the Modern Times.<br /></li>
+<li>Your action is no doubt another variation of tax evasion.<br /></li>
+</ul>
+<p>
+gene [dʒin]: n. a part of a cell in a living thing that controls what it looks like, how it grows, and how it develops. People get their genes from their parents. ⇨ genetic[遗传]基因<br />
+</p>
+<ul class="org-ul">
+<li>A group of scientists succeeded in cultivating a new species by gene technology.<br /></li>
+<li>Gene technology was widely used in new fields.<br /></li>
+<li>The variation of the gene led to the infertility of your wife.<br /></li>
+</ul>
+<p>
+phenomenon [fəˈnɑməˌnɑn] phenomena: n. something that happens or exists in society, science, or nature, especially something that is studied because it is difficult to understand现象<br />
+</p>
+<ul class="org-ul">
+<li>This can lead to some curious phenomena, as it did in the case of Alf who worked for a big company abroad.<br /></li>
+<li>No one could account for the phenomenon that more and more families chose to dink.<br /></li>
+<li>No one could account for the phenomenon that the sun rose from the west.<br /></li>
+</ul>
+<p>
+essential [ɪˈsenʃ(ə)l]: adj. extremely important and necessary基本的,极其重要的<br />
+</p>
+<ul class="org-ul">
+<li>It's essential for me to have a good relationship with my family.<br /></li>
+<li>It's essential for us to defeat them on the battlefield.<br /></li>
+<li>It's essential for us to overrun the city which serves as the center of transportation.<br /></li>
+</ul>
+<hr />
+<p>
+the first step in doing sth.: 做某事的第一步<br />
+</p>
+<ul class="org-ul">
+<li>Figuring out why we need to do it is the first essential step in doing it.<br /></li>
+<li>The first step in passing the test is to have a good night.<br /></li>
+<li>The first step in seizing power is to sack the capital of the empire.<br /></li>
+</ul>
+<p>
+take in from sth.: 从某事物中吸收<br />
+</p>
+<ul class="org-ul">
+<li>The lesson we took in from the war is that peace is precious and vulnerable.<br /></li>
+<li>The lesson we took in from the tragedy is there is no ship which is unsinkable.<br /></li>
+<li>The lesson we took in from the usurper is that a king can never trust anyone.<br /></li>
+</ul>
+<p>
+have access to sth.: possess the ability or permission to use, enter, or obtain something.能够获得某物<br />
+</p>
+<ul class="org-ul">
+<li>Having access to all sorts of English courses, he made progress in programming.<br /></li>
+<li>During the floods, our people still had access to abundant food and shelter.<br /></li>
+<li>Having access to snacks, my cat seems to be very happy.<br /></li>
+</ul>
+<p>
+Otherwise, + &#x2026;: 否则,+ &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>Otherwise, you will be fined five dollars for your rudeness in public.<br /></li>
+<li>Otherwise, the workers trapped in mines will lose their hearts.<br /></li>
+<li>Otherwise, the vicious king will never capture the hearts of people in the land.<br /></li>
+</ul>
+<p>
+develop a relationship with sb.: 和某人发展关系<br />
+</p>
+<ul class="org-ul">
+<li>When I developed a relationship with a girl, her boyfriend appeared to be unhappy.<br /></li>
+<li>Developing a relationship with a foreigner, you may be punished by beheading for treason.<br /></li>
+<li>Developing a relationship with a whore, the lord lost all of his men and property.<br /></li>
+</ul>
+<p>
+part and parcel of sth.: 某物不可或缺的一部分<br />
+</p>
+<ul class="org-ul">
+<li>Making love with a man is part and parcel of being pregnant.<br /></li>
+<li>The spokesman for China claimed that Taiwan is part and parcel of China.<br /></li>
+<li>Family is part and parcel of the life of a chemistry teacher who used to cook drugs.<br /></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

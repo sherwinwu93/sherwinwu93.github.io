@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-11-27 Wed 16:15 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-org35feb3a" class="outline-2">
+<h2 id="org35feb3a">1-1 1.3 Relationships, self and happiness</h2>
+<div class="outline-text-2" id="text-org35feb3a">
+<p class="verse">
+Well, relationships are also important because they do not only meet our needs,<br />
+&#xa0;but they also help us define who we are.<br />
+In a way, it's actually quite fair to say<br />
+&#xa0;that like we become who we are as a result of the relationships that we have.<br />
+As children we got exposed to like people who took care of us like our parents<br />
+&#xa0;and they might tell us like that we are smart or we are ugly or we are pretty<br />
+&#xa0;&#xa0;or like we are stupid, that we are selfish or like we have wonderful, nice characters.<br />
+So all this feedback that we got like from relationships<br />
+&#xa0;will fit into this sense of self that we now carry.<br />
+So it is really important to look at like<br />
+&#xa0;how relationships are impacting on who we think we are, what we think we are.<br />
+<br />
+Well, relationships are the key to our happiness, quality of life and our sense of well-being.<br />
+There is actually like significant research evidence pointing in the direction<br />
+&#xa0;that like the quality of your relationship<br />
+&#xa0;&#xa0;actually has a direct impact on your overall quality of life.<br />
+And, whatever we are thinking of, like in our quest for happiness,<br />
+&#xa0;it has to be negotiated through building relationships with other people.<br />
+So, that's why it is so important for us<br />
+&#xa0;to be paying more attention to understanding how relationships work in our lives.<br />
+</p>
+</div>
+<div id="outline-container-org658172c" class="outline-3">
+<h3 id="org658172c">expression</h3>
+<div class="outline-text-3" id="text-org658172c">
+<p>
+character [ˈkerəktər]: n. the particular combination of qualities that makes someone a particular type of person ⇨ characteristic性格<br />
+feedback [ˈfidˌbæk]: n. advice, criticism etc about how successful or useful something is反馈<br />
+quality [ˈkwɑləti]: n. something that is typical of one thing and makes it different from other things, for example size, colour etc质量<br />
+negotiate [nəˈɡoʊʃiˌeɪt]: v. to discuss something in order to reach an agreement, especially in business or politics商议, 谈判<br />
+</p>
+<hr />
+<p>
+meet sb's needs: 满足某人的需要<br />
+In a way + &#x2026;: 在某种程度上<br />
+It's quite fair to say that + &#x2026;: 很公平地说<br />
+as a result of sth.: 由于某物<br />
+get exposed to sth.: 接触于某物;暴露于某物<br />
+fit into sth.: 融入到某事物<br />
+impact on sth./sb.: 影响到某物/某人<br />
+point in the direction of sth.: 指出某物的方向<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org2ba14fd" class="outline-3">
+<h3 id="org2ba14fd">sentence</h3>
+<div class="outline-text-3" id="text-org2ba14fd">
+<p>
+character [ˈkerəktər]: n. the particular combination of qualities that makes someone a particular type of person ⇨ characteristic性格<br />
+</p>
+<ul class="org-ul">
+<li>The coach assessed that the famous player is blessed with a great character.<br /></li>
+<li>The player blessed with a great character felt guilty for the loss of the tournament.<br /></li>
+<li>More and more audiences began to blame the player on his coward character.<br /></li>
+</ul>
+<p>
+feedback [ˈfidˌbæk]: n. advice, criticism etc about how successful or useful something is反馈<br />
+</p>
+<ul class="org-ul">
+<li>In the interview, the player was complaining about the lack of feedback in the game.<br /></li>
+<li>The more optimistic feedback you give, the more progresses your children will make.<br /></li>
+<li>If you leave the feedback of the product, we will present you with a tiny gift.<br /></li>
+</ul>
+<p>
+quality [ˈkwɑləti]: n. something that is typical of one thing and makes it different from other things, for example size, colour etc质量<br />
+</p>
+<ul class="org-ul">
+<li>The low quality of the spicy sauce led to the drop of its sales this year.<br /></li>
+<li>The spicy sauce must have changed its ingredients, for its flavor changes a lot and the quality drops.<br /></li>
+<li>The quality of wedding gave the girl a sense of satisfication.<br /></li>
+</ul>
+<p>
+negotiate [nəˈɡoʊʃiˌeɪt]: v. to discuss something in order to reach an agreement, especially in business or politics商议, 谈判<br />
+</p>
+<ul class="org-ul">
+<li>Short of negotiation skills, I am reluctant to bargain with butcher in the village fair.<br /></li>
+<li>I am going to enter a course pointing in the direction of negotiation.<br /></li>
+<li>As the workers are going on a strike, all we need to do is to negotiate with them as soon as possible.<br /></li>
+</ul>
+<hr />
+<p>
+meet sb's needs: 满足某人的需要<br />
+</p>
+<ul class="org-ul">
+<li>Meeting his needs, he locked the door of warehouse.<br /></li>
+<li>My precious, I can't figure out how to meet your needs when you are mad at me.<br /></li>
+<li>You have to offer your cat some entertainments to meet her needs.<br /></li>
+</ul>
+<p>
+In a way + &#x2026;: 在某种程度上<br />
+</p>
+<ul class="org-ul">
+<li>In a way I didn't go to university.<br /></li>
+<li>In a way the suspencious bridge fulfilled his dream because of its faint enormousess.<br /></li>
+<li>In a way Ned Stark is still alive, for his children followed in his footsteps and accomplished his dreams.<br /></li>
+</ul>
+<p>
+It's quite fair to say that + &#x2026;: 很公平地说<br />
+</p>
+<ul class="org-ul">
+<li>It's quite fair to say that I shouldn't take responsibility for the mine disater.<br /></li>
+<li>It's quite fair to say that I have tried my best to offer you a good education.<br /></li>
+<li>It's quite fair to say that there are abundant evidence to prove his crime.<br /></li>
+</ul>
+<p>
+as a result of sth.: 由于某物<br />
+</p>
+<ul class="org-ul">
+<li>As a result of being boring, the girl manupulated her robot to clean up the house.<br /></li>
+<li>As a result of turning against her parents, she left for New York.<br /></li>
+<li>As a result of quarreling bitterly with his tutor, he asked for a fight in the ring.<br /></li>
+</ul>
+<p>
+get exposed to sth.: 接触于某物;暴露于某物<br />
+</p>
+<ul class="org-ul">
+<li>Geting exposed to the vicious king, the knight decided to break his oath.<br /></li>
+<li>Geting exposed to my vicious king, I became inconfident and lack of high self-esteem.<br /></li>
+<li>Geting exposed to the crazy criminal, the girl who played truant from school was raped in the park.<br /></li>
+</ul>
+<p>
+fit into sth.: 融入到某事物<br />
+</p>
+<ul class="org-ul">
+<li>It's quite fair to say that your child has fit into the ambiance of the kindergarten.<br /></li>
+<li>Fitting into the company, I succeeded in negotiating about my pay and working condition..<br /></li>
+<li>In a way I have never fit into the company full of drunks and liars.<br /></li>
+</ul>
+<p>
+impact on sth./sb.: 影响到某物/某人<br />
+</p>
+<ul class="org-ul">
+<li>With the ambiance impacting on us, everyone around the table in the meeting became silent.<br /></li>
+<li>If your kept impacting on your stupid boy, he would have killed all of us in the flame of his ambition.<br /></li>
+<li>With the witch impacting on our lord, he began to execute innocents.<br /></li>
+</ul>
+<p>
+point in the direction of sth.: 指出某物的方向<br />
+</p>
+<ul class="org-ul">
+<li>The research may point in the direction of how to build a high quality relationship.<br /></li>
+<li>The research aims to point in the direction of how to negotiate with difficult superiors.<br /></li>
+<li>The scientists made a remakable discovery pointing in the direction of the evolution of this kind of bird.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org5006f6e" class="outline-3">
+<h3 id="org5006f6e">sentence2</h3>
+<div class="outline-text-3" id="text-org5006f6e">
+<p>
+character [ˈkerəktər]: n. the particular combination of qualities that makes someone a particular type of person ⇨ characteristic性格<br />
+</p>
+<ul class="org-ul">
+<li>The coach assessed that the famous player is blessed with a great character.<br /></li>
+<li>The player blessed with a great character felt guilty for the loss of the tournament.<br /></li>
+<li>More and more audiences began to blame the player for his cowardly character.<br /></li>
+</ul>
+<p>
+feedback [ˈfidˌbæk]: n. advice, criticism etc about how successful or useful something is反馈<br />
+</p>
+<ul class="org-ul">
+<li>In the interview, the player complained about the lack of feedback in the game.<br /></li>
+<li>The more optimistic feedback you give, the more progress your children will make.<br /></li>
+<li>If you leave feedback on the product, we will present you with a tiny gift.<br /></li>
+</ul>
+<p>
+quality [ˈkwɑləti]: n. something that is typical of one thing and makes it different from other things, for example size, colour etc质量<br />
+</p>
+<ul class="org-ul">
+<li>The low quality of the spicy sauce led to a drop in its sales this year.<br /></li>
+<li>The spicy sauce must have changed its ingredients, for its flavor changes a lot and the quality drops.<br /></li>
+<li>The quality of the wedding gave the girl a sense of satisfaction.<br /></li>
+</ul>
+<p>
+negotiate [nəˈɡoʊʃiˌeɪt]: v. to discuss something in order to reach an agreement, especially in business or politics商议, 谈判<br />
+</p>
+<ul class="org-ul">
+<li>Short of negotiation skills, I am reluctant to bargain with butchers at the village fair.<br /></li>
+<li>I am going to enter a course pointing in the direction of negotiation.<br /></li>
+<li>As the workers are going on strike, all we need to do is to negotiate with them as soon as possible.<br /></li>
+</ul>
+<hr />
+<p>
+meet sb's needs: 满足某人的需要<br />
+</p>
+<ul class="org-ul">
+<li>Meeting his needs, he locked the door of the warehouse.<br /></li>
+<li>My precious, I can't figure out how to meet your needs when you are mad at me.<br /></li>
+<li>You have to offer your cat some entertainment to meet her needs.<br /></li>
+</ul>
+<p>
+In a way, + &#x2026;: 在某种程度上<br />
+</p>
+<ul class="org-ul">
+<li>In a way, I didn't go to university.<br /></li>
+<li>In a way, the suspension bridge fulfilled his dream because of its faint enormous.<br /></li>
+<li>In a way, Ned Stark is still alive, for his children followed in his footsteps and accomplished his dreams.<br /></li>
+</ul>
+<p>
+It's quite fair to say that + &#x2026;: 很公平地说<br />
+</p>
+<ul class="org-ul">
+<li>It's quite fair to say that I shouldn't take responsibility for the mine disaster.<br /></li>
+<li>It's quite fair to say that I have tried my best to offer you a good education.<br /></li>
+<li>It's quite fair to say that there is abundant evidence to prove his crime.<br /></li>
+</ul>
+<p>
+as a result of sth.: 由于某物<br />
+</p>
+<ul class="org-ul">
+<li>As a result of being bored, the girl manipulated her robot to clean up the house.<br /></li>
+<li>As a result of turning against her parents, she left for New York.<br /></li>
+<li>As a result of quarreling bitterly with his tutor, he asked for a fight in the ring.<br /></li>
+</ul>
+<p>
+get exposed to sth.: 接触于某物;暴露于某物<br />
+</p>
+<ul class="org-ul">
+<li>Getting exposed to the vicious king, the knight decided to break his oath.<br /></li>
+<li>Getting exposed to my vicious king, I became unconfident and lacked high self-esteem.<br /></li>
+<li>Getting exposed to the crazy criminal, the girl who played truant from school was raped in the park.<br /></li>
+</ul>
+<p>
+fit into sth.: 融入到某事物<br />
+</p>
+<ul class="org-ul">
+<li>It's quite fair to say that your child has fit into the ambiance of the kindergarten.<br /></li>
+<li>Fitting into the company, I succeeded in negotiating my pay and working conditions.<br /></li>
+<li>In a way, I have never fit into a company full of drunks and liars.<br /></li>
+</ul>
+<p>
+impact on sth./sb.: 影响到某物/某人<br />
+</p>
+<ul class="org-ul">
+<li>With the ambiance impacting on us, everyone around the table in the meeting became silent.<br /></li>
+<li>If you kept impacting on your stupid boy, he would have killed all of us in the flame of his ambition.<br /></li>
+<li>With the witch impacting on our lord, he began to execute innocents.<br /></li>
+</ul>
+<p>
+point in the direction of sth.: 指出某物的方向<br />
+</p>
+<ul class="org-ul">
+<li>The research may point in the direction of how to build a high-quality relationship.<br /></li>
+<li>The research aims to point in the direction of how to negotiate with difficult superiors.<br /></li>
+<li>The scientists made a remarkable discovery pointing in the direction of the evolution of this kind of bird.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org52d3b5d" class="outline-3">
+<h3 id="org52d3b5d">summary</h3>
+<div class="outline-text-3" id="text-org52d3b5d">
+<p>
+Relationships not only meet our needs,<br />
+	but also help us identify ourselves in a way<br />
+		that we become someone as a result of relationships we have.<br />
+Children, for example,<br />
+	got exposed to people who told them that they are ugly, or smart, and so on.<br />
+This feedback from relationships will fit into their sense of self.<br />
+Relationships are also the key to our happiness.<br />
+There is research evidence<br />
+	proving that our equality of relationships has a direct impact on our overall quality of life.<br />
+Happiness has to be negotiated through building relationships with other people.<br />
+Therefore,<br />
+	it's crucial for us to pay more attention to understanding how relationships work in our lives.<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org1e437b3" class="outline-3">
+<h3 id="org1e437b3">summary2</h3>
+<div class="outline-text-3" id="text-org1e437b3">
+<p>
+Relationships not only meet our needs<br />
+	but also help us identify ourselves in a way<br />
+		that we become someone as a result of our relationships.<br />
+Children, for example,<br />
+	got exposed to people who told them that they were ugly, or smart, and so on.<br />
+This feedback from relationships will fit into their sense of self.<br />
+Relationships are also the key to our happiness.<br />
+There is research evidence<br />
+	proving that our equality of relationships has a direct impact on our overall quality of life.<br />
+Happiness has to be negotiated through building relationships with other people.<br />
+Therefore, we must pay more attention to understanding how relationships work in our lives.<br />
+</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
