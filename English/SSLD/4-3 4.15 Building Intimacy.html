@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-01-08 Wed 15:25 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-org35a6a2d" class="outline-2">
+<h2 id="org35a6a2d">4-3 4.15 Building Intimacy</h2>
+<div class="outline-text-2" id="text-org35a6a2d">
+<p class="verse">
+Okay, so far what we know with intimacy<br />
+&#xa0;&#xa0;is everyone's idea of intimacy and standards for what they're looking for is subjective.<br />
+And some people might not want intimacy at all, and that's okay, too.<br />
+But for people who are looking to maybe foster and grow intimacy in the relationship,<br />
+&#xa0;do we have some helpful tips for them?<br />
+Well, I think the simple answer is yes, but I have to say this first.<br />
+We already said it.<br />
+We do not think that everyone has to be aiming at the same level of intimacy,<br />
+&#xa0;and they should probably choose the level of intimacy that they're comfortable with.<br />
+<br />
+But if you really want to do it right,<br />
+&#xa0;then you have to understand that the idea of intimacy itself can have its own problems.<br />
+The idea of intimacy originally refers to the inmost, innermost, the deepest.<br />
+So we are sort of like reaching into the deepest corners of our being, or the ground of being,<br />
+&#xa0;and then when two individuals are becoming very intimate,<br />
+&#xa0;&#xa0;like the distance between them, or the boundary even between them will disappear,<br />
+&#xa0;&#xa0;and they sort of like merge, right?<br />
+And is it desirable?<br />
+<br />
+It depends on how you look at it.<br />
+Like some people think that it is too enmeshed,<br />
+&#xa0;then people lose their individuality, which is not necessarily a good thing.<br />
+So there is like some kind of balance that we need to achieve.<br />
+A psychologist who wrote a very well-known book back in the 50s, Erich Fromm, had this to say.<br />
+He said, in love, the paradox occurs that the two beings become one and yet remain two.<br />
+So he's sort of like pointing out<br />
+&#xa0;there should be a balance between like merging together and becoming one person,<br />
+&#xa0;&#xa0;and then maintaining your own individuality, your own being, or your own personality.<br />
+So I think that is a key starting point.<br />
+<br />
+So as we want to do that, right, one of the things that I always encourage<br />
+&#xa0;is for people to have a safe space created between them<br />
+&#xa0;&#xa0;so that they will feel free to negotiate what kind of distance we want to maintain.<br />
+And I can ask a participant in this relationship<br />
+&#xa0;openly, directly, honestly communicate to you, what am I comfortable with and what do I want.<br />
+And when we have that safe space created,<br />
+&#xa0;right, then it increases the chance of<br />
+&#xa0;&#xa0;us negotiating the optimum distance or intimacy that we have.<br />
+<br />
+But that's a condition for that to happen, right?<br />
+And that condition itself can be considered a measure of intimacy itself,<br />
+&#xa0;that is condition of trust.<br />
+So I need to feel safe, I need to be able to trust you.<br />
+And for people to achieve trust,<br />
+&#xa0;it also involves some level of understanding, sharing, communication.<br />
+And it is actually quite interesting<br />
+&#xa0;when I'm talking like this, it may come over as convoluted, but that actually is a cycle.<br />
+So if you have more trust, you build a space,<br />
+&#xa0;and a space will allow you negotiate your intimacy more easily,<br />
+&#xa0;but how do you start having trust in the first place, right?<br />
+It will involve the participants to move in and share something.<br />
+<br />
+And one of the findings that we have paid attention to in social psychology<br />
+&#xa0;is how trust can be connected to self-disclosure.<br />
+If you would let the other person know more about you,<br />
+&#xa0;you are more likely to get the other person to trust you.<br />
+But then, like, as you can easily see,<br />
+&#xa0;the very process of doing it itself increases intimacy, right?<br />
+So in a way, when I say that you have to create a condition of trust,<br />
+&#xa0;I'm already suggesting that you become a little bit more intimate, right.<br />
+Before you even move on to negotiate, like what is intimate.<br />
+</p>
+</div>
+<div id="outline-container-orgb0f3606" class="outline-3">
+<h3 id="orgb0f3606">expression</h3>
+<div class="outline-text-3" id="text-orgb0f3606">
+<p>
+inmost [ˈɪnˌmoʊst]: adj. your inmost feelings, desires etc are your most personal and secret ones心底的<br />
+innermost [ˈɪnə(r)ˌməʊst]: adj. your innermost feelings, desires etc are your most personal and secret ones内心的<br />
+merge [mɜrdʒ]: v. if two things merge, or if one thing merges into another, you cannot clearly see them, hear them etc as separate things合并<br />
+desirable [dɪˈzaɪrəb(ə)l]: adj. formal something that is desirable is worth having or doing值得拥有的<br />
+enmeshed [ɪnˈmeʃt] (in/with): v. adj. very involved in an unpleasant or complicated situation使陷入的<br />
+paradox [ˈperəˌdɑks]: n. a situation that seems strange because it involves two ideas or qualities that are very different悖论<br />
+optimum [ˈɑptɪməm]: adj. adj. the best or most suitable for a particular purpose or in a particular situation最适宜的<br />
+convoluted [ˈkɑnvəˌlutəd]: adj. complicated and difficult to understand费解的<br />
+disclosure [dɪsˈkloʊʒər]: n. a secret that someone tells people, or the act of telling this secret公开,披露<br />
+</p>
+<hr />
+<p>
+so far: 目前为止<br />
+know with sth.: 熟悉某事<br />
+look to do sth.: 期待做某事<br />
+aim at sth.: 旨在于某事<br />
+come over as adj.: 显得是&#x2026;<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org95096aa" class="outline-3">
+<h3 id="org95096aa">ch.</h3>
+<div class="outline-text-3" id="text-org95096aa">
+<p>
+4-3 4.15 建立亲密关系<br />
+</p>
+
+<p>
+好，迄今为止，我们对亲密关系的理解是，每个人对亲密的定义和他们在关系中追求的标准都是主观的。有些人可能根本不想要亲密关系，这也没问题。但对于那些想要在关系中培养和发展亲密的人，我们有没有一些有帮助的建议呢？<br />
+</p>
+
+<p>
+嗯，我想简单的答案是有的，但我得先说清楚。我们之前已经说过了，我们不认为每个人都必须追求相同层次的亲密关系，他们应该选择一个让自己感到舒适的亲密层次。<br />
+</p>
+
+<p>
+但如果你真的想做到最好，那么你必须理解亲密本身的概念可能会带来一些问题。亲密的概念最初指的是最内心、最深处的部分。所以我们就像是要触及到自己存在的最深处或最根本的地方，当两个人变得非常亲密时，他们之间的距离，甚至是界限，会消失，他们就像是融合在一起了，对吧？这种融合是值得追求的吗？<br />
+</p>
+
+<p>
+这取决于你怎么看。有些人认为这太过于纠缠，最终导致人们失去自己的个性，这未必是好事。因此，我们需要在其中找到一种平衡。20世纪50年代写了本非常著名书籍的心理学家埃里希·弗洛姆曾这样说过，他说，在爱情中，出现了一个悖论，那就是两个人成为一体，但又依然保持着各自的独立性。所以，他指出，应该在融合成为一个整体与保持自我个性、自我存在或自我性格之间找到平衡。我认为这是一个关键的起点。<br />
+</p>
+
+<p>
+所以，如果我们想做到这一点，我总是鼓励大家在彼此之间创造一个安全空间，这样他们就能自由地商量我们希望保持多远的距离。我可以直接、诚实地向这段关系中的另一方表达，我感到舒适的是什么，我想要的是什么。当我们创造了这样的安全空间时，就会增加我们协商出最适合的距离或亲密度的机会。<br />
+</p>
+
+<p>
+但这是发生这一切的前提，对吧？而这个前提本身可以看作是亲密的一个衡量标准，那就是信任的条件。所以，我需要感到安全，我需要能够信任你。而要建立信任，涉及到某种程度的理解、分享和沟通。实际上，这非常有趣，当我这样说的时候，可能听起来有些复杂，但这实际上是一个循环。如果你有更多的信任，你就能建立一个空间，而这个空间能让你更容易地协商你们的亲密度。但你如何开始建立信任呢？这会要求参与者走得更近，去分享一些东西。<br />
+</p>
+
+<p>
+在社会心理学中，我们关注到的一个发现是，信任如何与自我揭露相关联。如果你让对方更多地了解你，你更有可能让对方信任你。但正如你很容易看见的那样，进行这一过程本身就会增加亲密关系。所以从某种意义上讲，当我说你必须创造信任的条件时，我已经在暗示你变得更加亲密了，在你甚至开始商量“亲密”是什么之前。<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgb09c599" class="outline-3">
+<h3 id="orgb09c599">sentence</h3>
+<div class="outline-text-3" id="text-orgb09c599">
+<p>
+inmost [ˈɪnˌmoʊst]: adj. your inmost feelings, desires etc are your most personal and secret ones心底的<br />
+</p>
+<ul class="org-ul">
+<li>He never has the idea of talking about his inmost secret.<br /></li>
+<li>The other way around, he devoted himself to you because of his inmost love for you.<br /></li>
+<li>You need to adressed your need, disclosing your inmost love for her.<br /></li>
+</ul>
+<p>
+innermost [ˈɪnə(r)ˌməʊst]: adj. your innermost feelings, desires etc are your most personal and secret ones内心的<br />
+</p>
+<ul class="org-ul">
+<li>Other than that, his innermost secret makes him scared of the authorities.<br /></li>
+<li>The boy who gets edcuated in town is not likely to disclose his innermost love for the girl.<br /></li>
+<li>The express of our innermost love for our child varied in different context.<br /></li>
+</ul>
+<p>
+merge [mɜrdʒ]: v. if two things merge, or if one thing merges into another, you cannot clearly see them, hear them etc as separate things合并<br />
+</p>
+<ul class="org-ul">
+<li>People in the town take the two hospitals for granted to be merged.<br /></li>
+<li>The headmaster aimed at merging his school with another.<br /></li>
+<li>There is a tiny chance that your company merges with your wife's.<br /></li>
+</ul>
+<p>
+desirable [dɪˈzaɪrəb(ə)l]: adj. formal something that is desirable is worth having or doing值得拥有的<br />
+</p>
+<ul class="org-ul">
+<li>The robot that has been broken into small parts is still desirable.<br /></li>
+<li>The seriousness that he expressed when he was occupied with his homework is desirable.<br /></li>
+<li>After a few rounds, the boxer realized that the desirable victory was often not easy.<br /></li>
+</ul>
+<p>
+enmeshed [ɪnˈmeʃt] (in/with): v. adj. very involved in an unpleasant or complicated situation使陷入的<br />
+</p>
+<ul class="org-ul">
+<li>The lady enmeshed in a marriage is often abused by her drunk husband.<br /></li>
+<li>The police enmeshed in a serious car accident was asked to pay a large amount of damage compensation.<br /></li>
+<li>There is a huge chance that they are being enmeshed in a trap.<br /></li>
+</ul>
+<p>
+paradox [ˈperəˌdɑks]: n. a situation that seems strange because it involves two ideas or qualities that are very different悖论<br />
+</p>
+<ul class="org-ul">
+<li>The boy stayed attuned to the paradox that his parents couldn't explain to him in his childhood.<br /></li>
+<li>The professor brought the paradox in to explain intimacy.<br /></li>
+<li>The theory takes in a famous paradox.<br /></li>
+</ul>
+<p>
+optimum [ˈɑptɪməm]: adj. adj. the best or most suitable for a particular purpose or in a particular situation最适宜的<br />
+</p>
+<ul class="org-ul">
+<li>Don't get close to me, let's keep the optimum distance.<br /></li>
+<li>There is no optimum answer about whether we should provide him with shelter.<br /></li>
+<li>Tired of walkers' chase, the leader thought that the prison must have been the optimum shelter for them.<br /></li>
+</ul>
+<p>
+convoluted [ˈkɑnvəˌlutəd]: adj. complicated and difficult to understand费解的<br />
+</p>
+<ul class="org-ul">
+<li>The question is so convoluted that even our best student hasn't answered it properly.<br /></li>
+<li>He tried to ask the teacher about a convoluted question, which was taked as questioning.<br /></li>
+<li>He deciced to solve the convoluted after he finished other questions.<br /></li>
+</ul>
+<p>
+disclosure [dɪsˈkloʊʒər]: n. a secret that someone tells people, or the act of telling this secret公开,披露<br />
+</p>
+<ul class="org-ul">
+<li>The journalist related to the disclose of royal scandals was murdered in his apartment.<br /></li>
+<li>Beyond doubt, the journalist aimed at the disclosure of water pollution.<br /></li>
+<li>The disclosure of the corruption led to his downfall.<br /></li>
+</ul>
+<hr />
+<p>
+so far: 目前为止<br />
+</p>
+<ul class="org-ul">
+<li>So far, we have received any money from our parents.<br /></li>
+<li>So far, talking loudly in public is mistake in the educational setting.<br /></li>
+<li>So far, the method have been used in the educational setting.<br /></li>
+</ul>
+<p>
+know with sth.: 熟悉某事<br />
+</p>
+<ul class="org-ul">
+<li>Knowing with the trouble he ran into, we must be on the same page.<br /></li>
+<li>We need a soldier who knows with the matter in forest.<br /></li>
+<li>The boy who claimed to know with chess was defeated quickly.<br /></li>
+</ul>
+<p>
+look to do sth.: 期待做某事<br />
+</p>
+<ul class="org-ul">
+<li>He is looking to foster intimacy with the girl who is betrothed to him.<br /></li>
+<li>My cat is obviously looking to feast on snacks.<br /></li>
+<li>These kids are looking to receive pocket money on New Year's Eve.<br /></li>
+</ul>
+<p>
+aim at sth.: 旨在于某事<br />
+</p>
+<ul class="org-ul">
+<li>He makes an assumption that the headmaster used to aim at merge the two schools.<br /></li>
+<li>He aims at working for Apple.<br /></li>
+<li>The undergrad student who aimed at working for Apple committed suicide after his failure.<br /></li>
+</ul>
+<p>
+come over as adj.: 显得是&#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>The answer comes over as difficult.<br /></li>
+<li>The vessel that had 16 watertight compartment came over as unsinkable.<br /></li>
+<li>The cat comes over as brave.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org8153530" class="outline-3">
+<h3 id="org8153530">sentence2</h3>
+<div class="outline-text-3" id="text-org8153530">
+<p>
+inmost [ˈɪnˌmoʊst]: adj. your inmost feelings, desires etc are your most personal and secret ones心底的<br />
+</p>
+<ul class="org-ul">
+<li>He never has the idea of talking about his inmost secret.<br /></li>
+<li>The other way around, he devoted himself to you because of his inmost love for you.<br /></li>
+<li>You need to address your need, disclosing your inmost love for her.<br /></li>
+</ul>
+<p>
+innermost [ˈɪnə(r)ˌməʊst]: adj. your innermost feelings, desires etc are your most personal and secret ones内心的<br />
+</p>
+<ul class="org-ul">
+<li>Other than that, his innermost secret makes him scared of the authorities.<br /></li>
+<li>The boy who gets educated in town is not likely to disclose his innermost love for the girl.<br /></li>
+<li>The expression of our innermost love for our child varied in different contexts.<br /></li>
+</ul>
+<p>
+merge [mɜrdʒ]: v. if two things merge, or if one thing merges into another, you cannot clearly see them, hear them etc as separate things合并<br />
+</p>
+<ul class="org-ul">
+<li>People in the town take the two hospitals for granted to be merged.<br /></li>
+<li>The headmaster aimed at merging his school with another.<br /></li>
+<li>There is a tiny chance that your company merges with your wife's.<br /></li>
+</ul>
+<p>
+desirable [dɪˈzaɪrəb(ə)l]: adj. formal something that is desirable is worth having or doing值得拥有的<br />
+</p>
+<ul class="org-ul">
+<li>The robot that has been broken into small parts is still desirable.<br /></li>
+<li>The seriousness that he expressed when he was occupied with his homework is desirable.<br /></li>
+<li>After a few rounds, the boxer realized that the desirable victory was often not easy.<br /></li>
+</ul>
+<p>
+enmeshed [ɪnˈmeʃt] (in/with): v. adj. very involved in an unpleasant or complicated situation使陷入的<br />
+</p>
+<ul class="org-ul">
+<li>The lady enmeshed in a marriage is often abused by her drunk husband.<br /></li>
+<li>The policeman enmeshed in a serious car accident was asked to pay a large amount of damage compensation.<br /></li>
+<li>There is a huge chance that they are being enmeshed in a trap.<br /></li>
+</ul>
+<p>
+paradox [ˈperəˌdɑks]: n. a situation that seems strange because it involves two ideas or qualities that are very different悖论<br />
+</p>
+<ul class="org-ul">
+<li>The boy stayed attuned to the paradox that his parents couldn't explain to him in his childhood.<br /></li>
+<li>The professor brought the paradox in to explain intimacy.<br /></li>
+<li>The theory takes in a famous paradox.<br /></li>
+</ul>
+<p>
+optimum [ˈɑptɪməm]: adj. adj. the best or most suitable for a particular purpose or in a particular situation最适宜的<br />
+</p>
+<ul class="org-ul">
+<li>Don't get close to me, let's keep the optimum distance.<br /></li>
+<li>There is no optimum answer about whether we should provide him with shelter.<br /></li>
+<li>Tired of walkers' chase, the leader thought that the prison must have been the optimum shelter for them.<br /></li>
+</ul>
+<p>
+convoluted [ˈkɑnvəˌlutəd]: adj. complicated and difficult to understand费解的<br />
+</p>
+<ul class="org-ul">
+<li>The question is so convoluted that even our best student hasn't answered it properly.<br /></li>
+<li>He tried to ask the teacher about a convoluted question, which was taken as questioning.<br /></li>
+<li>He decided to solve the convoluted question after he finished the others.<br /></li>
+</ul>
+<p>
+disclosure [dɪsˈkloʊʒər]: n. a secret that someone tells people, or the act of telling this secret公开,披露<br />
+</p>
+<ul class="org-ul">
+<li>The journalist related to the disclosure of royal scandals was murdered in his apartment.<br /></li>
+<li>Beyond doubt, the journalist aimed at the disclosure of water pollution.<br /></li>
+<li>The disclosure of the corruption led to his downfall.<br /></li>
+</ul>
+<hr />
+<p>
+so far: 目前为止<br />
+</p>
+<ul class="org-ul">
+<li>So far, we haven't received any money from our parents.<br /></li>
+<li>So far, talking loudly in public is mistaken in the educational setting.<br /></li>
+<li>So far, the method has been used in the educational setting.<br /></li>
+</ul>
+<p>
+know with sth.: 熟悉某事<br />
+</p>
+<ul class="org-ul">
+<li>Knowing with the trouble he ran into, we must be on the same page.<br /></li>
+<li>We need a soldier who knows with the maze.<br /></li>
+<li>The boy who claimed to know with his opponent was defeated quickly.<br /></li>
+</ul>
+<p>
+look to do sth.: 期待做某事<br />
+</p>
+<ul class="org-ul">
+<li>He is looking to foster intimacy with the girl who is betrothed to him.<br /></li>
+<li>My cat is obviously looking to feast on snacks.<br /></li>
+<li>These kids are looking to receive pocket money on New Year's Eve.<br /></li>
+</ul>
+<p>
+aim at sth.: 旨在于某事<br />
+</p>
+<ul class="org-ul">
+<li>He makes an assumption that the headmaster used to aim at merging the two schools.<br /></li>
+<li>He aims at a post for Apple.<br /></li>
+<li>The undergrad student who aimed at a post for Apple committed suicide after his failure.<br /></li>
+</ul>
+<p>
+come over as adj.: 显得是&#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>The answer comes over as difficult.<br /></li>
+<li>The vessel that had 16 watertight compartments came over as unsinkable.<br /></li>
+<li>The cat comes over as brave.<br /></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
