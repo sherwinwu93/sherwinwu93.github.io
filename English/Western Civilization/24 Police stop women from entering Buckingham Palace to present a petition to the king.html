@@ -1,0 +1,841 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-01-09 Thu 23:35 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-org7ee4a46" class="outline-2">
+<h2 id="org7ee4a46">24 Police stop women from entering Buckingham Palace to present a petition to the king</h2>
+<div class="outline-text-2" id="text-org7ee4a46">
+<p class="verse">
+Many Europeans after 1894 continued to believe they lived in an era of material and human progress.<br />
+For some, however, progress entailed much struggle.<br />
+Emmeline Pankhurst, who became the leader of the women's suffrage movement in Britain,<br />
+&#xa0;said that her determination to fight for women's rights stemmed from a childhood memory:<br />
+&#xa0;My father bent over me, shielding the candle flame with his big hand,<br />
+&#xa0;&#xa0;and I heard him say, somewhat sadly, 'What a pity she wasn't born a lad.'<br />
+Eventually, Emmeline Pankhurst and her daughters marched and fought for women's right to vote.<br />
+The struggle was often violent:<br />
+&#xa0;'They came in bruised, hatless, faces scratched, eyes swollen, noses bleeding,'<br />
+&#xa0;one of the Pankhurst daughters recalled.<br />
+Arrested and jailed in 1908, Pankhurst informed her judges,<br />
+&#xa0;'If you had the power to send us to prison,<br />
+&#xa0;&#xa0;&#xa0;not for six months, but for six years, or for our lives,<br />
+&#xa0;&#xa0;the Government must not think they could stop this agitation.<br />
+It would go on!'<br />
+It did go on, and women in Britain did eventually receive the right to vote;<br />
+&#xa0;to some, this was yet another confirmation of Europe's progress.<br />
+<br />
+But the period after 1894 was not just a time of progress;<br />
+&#xa0;it was also a time of great tension<br />
+&#xa0;&#xa0;as imperialist adventures, international rivalries,<br />
+&#xa0;&#xa0;&#xa0;and cultural uncertainties disturbed the apparent calm.<br />
+After 1880, Europeans engaged in a great race for colonies around the world.<br />
+This competition for lands abroad greatly intensified existing antagonisms among European states.<br />
+<br />
+Ultimately, Europeans proved incapable of finding constructive ways<br />
+&#xa0;to cope with their international rivalries.<br />
+The development of two large alliance systems&#x2014;the Triple Alliance and the Triple Entente&#x2014;<br />
+&#xa0;&#xa0;may have helped preserve peace for a time,<br />
+&#xa0;but eventually the alliances made it easier for the European nations<br />
+&#xa0;&#xa0;to be drawn into the catastrophic carnage of World War I.<br />
+<br />
+The cultural life of Europe in the decades before 1914 reflects similar dynamic tensions.<br />
+The advent of mass education produced better-informed citizens<br />
+&#xa0;but also made it easier for governments<br />
+&#xa0;&#xa0;to stir up the masses by nationalistic appeals through the new mass journalism.<br />
+At the same time, despite the appearance of progress,<br />
+&#xa0;European philosophers, writers, and artists were advancing cultural expressions<br />
+&#xa0;&#xa0;that questioned traditional ideas and values and undermined public confidence.<br />
+Leading up to 1914,<br />
+&#xa0;many intellectuals had a sense of unease about the direction in which society was heading<br />
+&#xa0;&#xa0;and a feeling of imminent catastrophe.<br />
+They proved remarkably prophetic.<br />
+</p>
+</div>
+<div id="outline-container-org9ccba55" class="outline-3">
+<h3 id="org9ccba55">expression</h3>
+<div class="outline-text-3" id="text-org9ccba55">
+<p>
+petition [pəˈtɪʃ(ə)n]: n. a written request signed by a lot of people, asking someone in authority to do something or change something请愿<br />
+entail [ɪnˈteɪl]: v. to involve something as a necessary part or result使必需, 使蒙受<br />
+suffrage [ˈsʌfrɪdʒ]: n. the right to vote in national elections<br />
+shield [ʃild]: v. to protect someone or something from being harmed or damaged保护, 防护<br />
+lad [læd]: n. old-fashioned informal a boy or young man ⇨ lass少年<br />
+bruise [bruz]: v. if part of your body bruises, or if you bruise part of your body, it gets hit or hurt and a bruise appears瘀伤<br />
+hatless ['hætlɪs]: adj. 不戴帽子的<br />
+scratch [skrætʃ]: v. to rub your skin with your nails because it feels uncomfortable ⇨ itch搔, 抓<br />
+swollen [ˈswoʊlən]: adj. a part of your body that is swollen is bigger than usual, especially because you are ill or injured肿胀的<br />
+bleeding [ˈblidɪŋ]: adj. an offensive way of emphasizing something when you are angry流血的<br />
+recall [ˈriˌkɔl]: v. to remember a particular fact, event, or situation from the past回想<br />
+agitation [ˌædʒɪˈteɪʃ(ə)n]: n. public argument or action for social or political change请求变革<br />
+imperial [ɪmˈpɪriəl] imperialist: n.n. relating to an ↑empire or to the person who rules it皇帝的<br />
+uncertainty [ʌnˈsɜrt(ə)nti]: n. when you feel doubt about what will happen不确定<br />
+intensify [ɪnˈtensɪˌfaɪ]: v. to increase in degree or strength, or to make something do this加强<br />
+antagonism [ænˈtæɡəˌnɪzəm]: n. hatred between people or groups of people SYN hostility对抗<br />
+alliance [əˈlaɪəns]: n. an arrangement in which two or more countries, groups etc agree to work together to try to change or achieve something联盟, 联合<br />
+triple [ˈtrɪp(ə)l]: adj. having three parts or involving three groups, people, events etc ⇨ double三倍的<br />
+carnage [ˈkɑrnɪdʒ]: n. when a lot of people are killed and injured, especially in a war残杀, 大屠杀<br />
+advance [ədˈvæns]: v. if scientific or technical knowledge advances, or if something advances it, it develops and improves推进<br />
+imminent [ˈɪmɪnənt]: adj. an event that is imminent, especially an unpleasant one, will happen very soon即将来临的, 逼近的<br />
+prophetic [prəˈfetɪk]: adj. correctly saying what will happen in the future预言的<br />
+</p>
+<hr />
+<p>
+bent over sb.: 俯身于某人<br />
+receive the right to do sth.: 获取权利去做某事<br />
+prove incapable of doing sth.: 证明不足以做某事<br />
+for a time: 暂时地<br />
+be drawn into sth.: 被卷入到某事<br />
+The advent of sth.: 某事物的出现<br />
+stir up sb.: 煽动某人<br />
+Leading up to 1914: 直到1914<br />
+unease about sth.: 对某事的不安<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgd99df24" class="outline-3">
+<h3 id="orgd99df24">sentence</h3>
+<div class="outline-text-3" id="text-orgd99df24">
+<p>
+petition [pəˈtɪʃ(ə)n]: n. a written request signed by a lot of people, asking someone in authority to do something or change something请愿<br />
+</p>
+<ul class="org-ul">
+<li>The woman outside the palace wanted to present a petition to you, majesty.<br /></li>
+<li>Despite of the petition of thousands of peasants, the king still levied taxes without parliament.<br /></li>
+<li>He insisted the woman was guilty of the petition.<br /></li>
+</ul>
+<p>
+entail [ɪnˈteɪl]: v. to involve something as a necessary part or result使必需, 使蒙受<br />
+</p>
+<ul class="org-ul">
+<li>Because my parents got divorce and my mother left me in my childhood, I entailed many struggles when I askes for the rights to do something.<br /></li>
+<li>Entailing many struggles, he insisted that his son should go to school in town.<br /></li>
+<li>Entailing many struggles, he brought his team to win the world champion.<br /></li>
+</ul>
+<p>
+suffrage [ˈsʌfrɪdʒ]: n. the right to vote in national elections<br />
+</p>
+<ul class="org-ul">
+<li>Out of the disgust of a woman who asked for suffrage: we have received unfair treatments in domestic affairs.<br /></li>
+<li>The mob who asked for suffrage was streaming towards the royal armory.<br /></li>
+<li>Because of the lack of evidence, I gave up the suffrage in the court.<br /></li>
+</ul>
+<p>
+shield [ʃild]: v. to protect someone or something from being harmed or damaged保护, 防护<br />
+</p>
+<ul class="org-ul">
+<li>The special iron board was used to shield you from arrows when you fought for your family.<br /></li>
+<li>Shielding candle flame from my cat, my left hand got injuried.<br /></li>
+<li>Shielding gangsters from his daughter, he was put out of business.<br /></li>
+</ul>
+<p>
+lad [læd]: n. old-fashioned informal a boy or young man ⇨ lass少年<br />
+</p>
+<ul class="org-ul">
+<li>The lad had an opportunity to meet our majesty.<br /></li>
+<li>The lad, on the other hand, is guilty of sneaking into the palace.<br /></li>
+<li>It seems that our majesty is quite tolerant of the lad who defends against the Asiatic nomads.<br /></li>
+</ul>
+<p>
+bruise [bruz]: v. if part of your body bruises, or if you bruise part of your body, it gets hit or hurt and a bruise appears瘀伤<br />
+</p>
+<ul class="org-ul">
+<li>If you bruise in an action, you must eat the pill, even thought it has some side effect.<br /></li>
+<li>When she found her child bruise, she got very angry.<br /></li>
+<li>If your body bruises, you must try our drug which works a great deal.<br /></li>
+</ul>
+<p>
+hatless ['hætlɪs]: adj. 不戴帽子的<br />
+</p>
+<ul class="org-ul">
+<li>The lad noticed a hatless girl drinking a special kind of drug.<br /></li>
+<li>I'd rather be hatless than wear a hat like a lighthouse.<br /></li>
+<li>The clerk doesn't like the way she dressed, especially hatless.<br /></li>
+</ul>
+<p>
+scratch [skrætʃ]: v. to rub your skin with your nails because it feels uncomfortable ⇨ itch搔, 抓<br />
+</p>
+<ul class="org-ul">
+<li>Your dog pounced on me and then scratched my hands.<br /></li>
+<li>I was made by gangsters to scratch her face, I confessed to my god father.<br /></li>
+<li>Envious of her friend's perfect face, she insidiously poisoned her friend through her friend's daily drink.<br /></li>
+</ul>
+<p>
+swollen [ˈswoʊlən]: adj. a part of your body that is swollen is bigger than usual, especially because you are ill or injured肿胀的<br />
+</p>
+<ul class="org-ul">
+<li>Our cat's paw is swollen, she must have scratched the beehive in the ceiling.<br /></li>
+<li>Hiting the surface of the desk dramatically, his hands must have been swollen.<br /></li>
+<li>Your son's face is swollen because your so-called friend tried to beat him to death.<br /></li>
+</ul>
+<p>
+bleeding [ˈblidɪŋ]: adj. an offensive way of emphasizing something when you are angry流血的<br />
+</p>
+<ul class="org-ul">
+<li>He tried to keep his bleeding hand from his daughter's face.<br /></li>
+<li>On arriving on the scene, the police found a broken bleeding arm.<br /></li>
+<li>He lost no time in coping with his bleeding legs.<br /></li>
+</ul>
+<p>
+recall [ˈriˌkɔl]: v. to remember a particular fact, event, or situation from the past回想<br />
+</p>
+<ul class="org-ul">
+<li>It's unpleasant to recall something bad in my childhood.<br /></li>
+<li>When she tried to recall the answers, she heard strange notes of music.<br /></li>
+<li>You must recall the phone number which she provided you yesterday.<br /></li>
+</ul>
+<p>
+agitation [ˌædʒɪˈteɪʃ(ə)n]: n. public argument or action for social or political change请求变革<br />
+</p>
+<ul class="org-ul">
+<li>Fearing of the agitation, the authorities purchases a special kind of seeds which would take root quickly.<br /></li>
+<li>Fearing of the agitation, the authorities lost no time in keeping the leaders in prison.<br /></li>
+<li>The agitation manifested itself in more frequent strikes in the coal mine.<br /></li>
+</ul>
+<p>
+imperial [ɪmˈpɪriəl] imperialist: n.n. relating to an ↑empire or to the person who rules it皇帝的<br />
+</p>
+<ul class="org-ul">
+<li>The authoritarian government often condemns other countries as imperialists.<br /></li>
+<li>The determination of imperialist to destory our republic government never dies.<br /></li>
+<li>The imperial government formed vast armies by conscription.<br /></li>
+</ul>
+<p>
+uncertainty [ʌnˈsɜrt(ə)nti]: n. when you feel doubt about what will happen不确定<br />
+</p>
+<ul class="org-ul">
+<li>If you don't plan the coronation to the last detail, it will still have uncertainties.<br /></li>
+<li>Because of the uncertainties of mob, the king ordered his men to kill them as quickly as possible.<br /></li>
+<li>Because of the uncertainties of the succession to the throne, the ministers haven't decided to support whom.<br /></li>
+</ul>
+<p>
+intensify [ɪnˈtensɪˌfaɪ]: v. to increase in degree or strength, or to make something do this加强<br />
+</p>
+<ul class="org-ul">
+<li>When I was left doing homework, my loneliness intensified.<br /></li>
+<li>Because of her intensified lonliness, she had a habit of cheating on her husband.<br /></li>
+<li>The communication between me and my aunt intensify, which gave me a sense of happiness.<br /></li>
+</ul>
+<p>
+antagonism [ænˈtæɡəˌnɪzəm]: n. hatred between people or groups of people SYN hostility对抗<br />
+</p>
+<ul class="org-ul">
+<li>The antagonism between Muslims and Christians continued into the twentith century.<br /></li>
+<li>The antagonism between him and his old brother led to a bitterly fight.<br /></li>
+<li>The antagonism between the two villages caused a series of tragics.<br /></li>
+</ul>
+<p>
+alliance [əˈlaɪəns]: n. an arrangement in which two or more countries, groups etc agree to work together to try to change or achieve something联盟, 联合<br />
+</p>
+<ul class="org-ul">
+<li>As long as our member was attacked, we would provide weapon for it, the spokesman of the alliance declaimed.<br /></li>
+<li>The spokesman of the alliance was assassinated in the course of his house.<br /></li>
+<li>The countries of the alliance will be exempt from import duty.<br /></li>
+</ul>
+<p>
+triple [ˈtrɪp(ə)l]: adj. having three parts or involving three groups, people, events etc ⇨ double三倍的<br />
+</p>
+<ul class="org-ul">
+<li>If you delayed in relieving the kid, you would obtain triple ransom.<br /></li>
+<li>Exasperated by the relation's calling the police, the kidnapper asked for triple ransom.<br /></li>
+<li>Exasperated by the increased import duty of China, the president asked for triple import duty.<br /></li>
+</ul>
+<p>
+carnage [ˈkɑrnɪdʒ]: n. when a lot of people are killed and injured, especially in a war残杀, 大屠杀<br />
+</p>
+<ul class="org-ul">
+<li>The man who survived carnage is receiving a treatment in the seaside resort.<br /></li>
+<li>Fearing of carnage, the king decided to arrange a peace settlement as soon as possible.<br /></li>
+<li>According to the coverage, there must be at least ten thousand people killed in the carnage.<br /></li>
+</ul>
+<p>
+advance [ədˈvæns]: v. if scientific or technical knowledge advances, or if something advances it, it develops and improves推进<br />
+</p>
+<ul class="org-ul">
+<li>Some scientists are advancing the search for the cat-like animal.<br /></li>
+<li>Our reformations must be advanced in our army which spent two-third of our taxes every year.<br /></li>
+<li>Advancing reformations in armies, he was hated by some landed-aristocratics.<br /></li>
+</ul>
+<p>
+imminent [ˈɪmɪnənt]: adj. an event that is imminent, especially an unpleasant one, will happen very soon即将来临的, 逼近的<br />
+</p>
+<ul class="org-ul">
+<li>I determined to face the imminent challenges from new philosophes.<br /></li>
+<li>The imminent catastrophe gave our government a shock.<br /></li>
+<li>The student pestered his teacher about the imminent gift.<br /></li>
+</ul>
+<p>
+prophetic [prəˈfetɪk]: adj. correctly saying what will happen in the future预言的<br />
+</p>
+<ul class="org-ul">
+<li>The prophetic words was not taken seriously, which led to a series of troubles.<br /></li>
+<li>The prophetic warning was regarded as a joke, in one sense.<br /></li>
+<li>I figured out that our majesty admired your for your prophetic warning.<br /></li>
+</ul>
+<hr />
+<p>
+bend over sb.: 俯身于某人<br />
+</p>
+<ul class="org-ul">
+<li>Bending over me, my father touched my head and asked me to study hard.<br /></li>
+<li>Bending over my classmate, Mr. Leo threatened that if he didn't complete his task, he would get fired.<br /></li>
+<li>Bending over my cat, I heard a strange noise from his stomach.<br /></li>
+</ul>
+<p>
+receive the right to do sth.: 获取权利去做某事<br />
+</p>
+<ul class="org-ul">
+<li>I never receive the right to arrange my room.<br /></li>
+<li>She must receive the right to study abroad.<br /></li>
+<li>She can't receive the right to study abroad.<br /></li>
+</ul>
+<p>
+prove incapable of doing sth.: 证明不足以做某事<br />
+</p>
+<ul class="org-ul">
+<li>I proved incapable of hurting cats that were affectionate towards me.<br /></li>
+<li>She prove incapable of swimming across the Channel by her own.<br /></li>
+<li>The cat prove incapable of scratching the meat who was hung from the ceiling.<br /></li>
+</ul>
+<p>
+for a time: 暂时地<br />
+</p>
+<ul class="org-ul">
+<li>I was just unemployed for a time.<br /></li>
+<li>I want to borrow you some money for a time.<br /></li>
+<li>The kind of perfume was exempted from import duty for a time.<br /></li>
+</ul>
+<p>
+be drawn into sth.: 被卷入到某事<br />
+</p>
+<ul class="org-ul">
+<li>If you hadn't asked for a lift, you wouldn't have been drawn into the murder.<br /></li>
+<li>The blind was by no mean drawn into a murder which happened outside the city twelve miles away.<br /></li>
+<li>Drawn into a bitterly quarrel, she played truant from school.<br /></li>
+</ul>
+<p>
+The advent of sth.: 某事物的出现<br />
+</p>
+<ul class="org-ul">
+<li>The advent of mass leisure led to a series of complaints from the upper class.<br /></li>
+<li>The advent of the revolution ended the regime of the monarch.<br /></li>
+<li>The advent of his ex-girlfriend led to an embarrassed atomsphere in the dinner room.<br /></li>
+</ul>
+<p>
+stir up sb.: 煽动某人<br />
+</p>
+<ul class="org-ul">
+<li>The authrotarian government never ceases to stir up masses through the distort coverages.<br /></li>
+<li>Stirring up masses, the authorities succeeded in starting a war.<br /></li>
+<li>Being stirred up, the masses beated the officials to death.<br /></li>
+</ul>
+<p>
+Leading up to 1914: 直到1914<br />
+</p>
+<ul class="org-ul">
+<li>Leading up to 2024, there still haven't been a champion team totally consisting of Chinese.<br /></li>
+<li>Leading up to 2024, I haven't achieve my end which I made in my childhood.<br /></li>
+<li>Leading up to 2024, she hasn't passed the test.<br /></li>
+</ul>
+<p>
+unease about sth.: 对某事的不安<br />
+</p>
+<ul class="org-ul">
+<li>I have a sense of unease about unemployment.<br /></li>
+<li>Having a sense of unease about unemployment, he beared unfair treatment in the company.<br /></li>
+<li>Having a sense of unease about unemployment, she canceled the brief excursion to amusement park.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgdb05f7f" class="outline-3">
+<h3 id="orgdb05f7f">sentence2</h3>
+<div class="outline-text-3" id="text-orgdb05f7f">
+<p>
+petition [pəˈtɪʃ(ə)n]: n. a written request signed by a lot of people, asking someone in authority to do something or change something请愿<br />
+</p>
+<ul class="org-ul">
+<li>The woman outside the palace wanted to present a petition to you, majesty.<br /></li>
+<li>Despite the petition of thousands of peasants, the king still levied taxes without parliament.<br /></li>
+<li>He insisted the woman was guilty of the petition.<br /></li>
+</ul>
+<p>
+entail [ɪnˈteɪl]: v. to involve something as a necessary part or result使必需, 使蒙受<br />
+</p>
+<ul class="org-ul">
+<li>Because my parents got divorced and my mother left me in my childhood, I entailed many struggles when I asked for the right to do something.<br /></li>
+<li>Entailing many struggles, he insisted that his son should go to school in town.<br /></li>
+<li>Entailing many struggles, he brought his team to win the world championship.<br /></li>
+</ul>
+<p>
+suffrage [ˈsʌfrɪdʒ]: n. the right to vote in national elections<br />
+</p>
+<ul class="org-ul">
+<li>Out of the disgust of a woman who asked for suffrage: we have received unfair treatment in domestic affairs.<br /></li>
+<li>The mob who asked for suffrage was streaming towards the royal armory.<br /></li>
+<li>Because of the lack of evidence, I gave up the suffrage in the court.<br /></li>
+</ul>
+<p>
+shield [ʃild]: v. to protect someone or something from being harmed or damaged保护, 防护<br />
+</p>
+<ul class="org-ul">
+<li>The special iron board was used to shield you from arrows when you fought for your family.<br /></li>
+<li>Shielding candle flame from my cat, my left hand got injured.<br /></li>
+<li>Shielding gangsters from his daughter, he was put out of business.<br /></li>
+</ul>
+<p>
+lad [læd]: n. old-fashioned informal a boy or young man ⇨ lass少年<br />
+</p>
+<ul class="org-ul">
+<li>The lad had an opportunity to meet our majesty.<br /></li>
+<li>The lad, on the other hand, is guilty of sneaking into the palace.<br /></li>
+<li>It seems that our majesty is quite tolerant of the lad who defends against the Asiatic nomads.<br /></li>
+</ul>
+<p>
+bruise [bruz]: v. if part of your body bruises, or if you bruise part of your body, it gets hit or hurt and a bruise appears瘀伤<br />
+</p>
+<ul class="org-ul">
+<li>If you bruise in an action, you must eat the pill, even though it has some side effects.<br /></li>
+<li>When she found her child bruised, she got very angry.<br /></li>
+<li>If your body bruises, you must try our drug which works a great deal.<br /></li>
+</ul>
+<p>
+hatless ['hætlɪs]: adj. 不戴帽子的<br />
+</p>
+<ul class="org-ul">
+<li>The lad noticed a hatless girl drinking a special kind of drug.<br /></li>
+<li>I'd rather be hatless than wear a hat like a lighthouse.<br /></li>
+<li>The clerk didn't like the way she dressed, especially when she was hatless.<br /></li>
+</ul>
+<p>
+scratch [skrætʃ]: v. to rub your skin with your nails because it feels uncomfortable ⇨ itch搔, 抓<br />
+</p>
+<ul class="org-ul">
+<li>Your dog pounced on me and then scratched my hands.<br /></li>
+<li>I was made by gangsters to scratch her face, I confessed to my godfather.<br /></li>
+<li>Envious of her friend's perfect face, she insidiously poisoned her friend through her friend's daily drink.<br /></li>
+</ul>
+<p>
+swollen [ˈswoʊlən]: adj. a part of your body that is swollen is bigger than usual, especially because you are ill or injured肿胀的<br />
+</p>
+<ul class="org-ul">
+<li>Our cat's paw is swollen, she must have scratched the beehive in the ceiling.<br /></li>
+<li>Hitting the surface of the desk dramatically, his hands must have been swollen.<br /></li>
+<li>Your son's face is swollen because your so-called friend tried to beat him to death.<br /></li>
+</ul>
+<p>
+bleeding [ˈblidɪŋ]: adj. an offensive way of emphasizing something when you are angry流血的<br />
+</p>
+<ul class="org-ul">
+<li>He tried to keep his bleeding hand from his daughter's face.<br /></li>
+<li>On arriving on the scene, the police found a broken bleeding arm.<br /></li>
+<li>He lost no time in coping with his bleeding legs.<br /></li>
+</ul>
+<p>
+recall [ˈriˌkɔl]: v. to remember a particular fact, event, or situation from the past回想<br />
+</p>
+<ul class="org-ul">
+<li>It's unpleasant to recall something bad in my childhood.<br /></li>
+<li>When she tried to recall the answers, she heard strange notes of music.<br /></li>
+<li>You must recall the phone number which she provided you yesterday.<br /></li>
+</ul>
+<p>
+agitation [ˌædʒɪˈteɪʃ(ə)n]: n. public argument or action for social or political change请求变革<br />
+</p>
+<ul class="org-ul">
+<li>Fearing the agitation, the authorities purchased a special kind of seeds which would take root quickly.<br /></li>
+<li>Fearing the agitation, the authorities lost no time in keeping the leaders in prison.<br /></li>
+<li>The agitation manifested itself in more frequent strikes in the coal mine.<br /></li>
+</ul>
+<p>
+imperial [ɪmˈpɪriəl] imperialist: n.n. relating to an ↑empire or to the person who rules it皇帝的<br />
+</p>
+<ul class="org-ul">
+<li>The authoritarian government often condemns other countries as imperialists.<br /></li>
+<li>The determination of imperialists to destroy our republic government never dies.<br /></li>
+<li>The imperial government formed vast armies by conscription.<br /></li>
+</ul>
+<p>
+uncertainty [ʌnˈsɜrt(ə)nti]: n. when you feel doubt about what will happen不确定<br />
+</p>
+<ul class="org-ul">
+<li>If you don't plan the coronation to the last detail, it will still have uncertainties.<br /></li>
+<li>Because of the uncertainties of the mob, the king ordered his men to kill them as quickly as possible.<br /></li>
+<li>Because of the uncertainties of the succession to the throne, the ministers haven't decided to support whom.<br /></li>
+</ul>
+<p>
+intensify [ɪnˈtensɪˌfaɪ]: v. to increase in degree or strength, or to make something do this加强<br />
+</p>
+<ul class="org-ul">
+<li>When I was left doing homework, my loneliness intensified.<br /></li>
+<li>Because of her intensified loneliness, she had a habit of cheating on her husband.<br /></li>
+<li>The communication between me and my aunt intensified these days, which gave me a sense of happiness.<br /></li>
+</ul>
+<p>
+antagonism [ænˈtæɡəˌnɪzəm]: n. hatred between people or groups of people SYN hostility对抗<br />
+</p>
+<ul class="org-ul">
+<li>The antagonism between Muslims and Christians continued into the twentieth century.<br /></li>
+<li>The antagonism between him and his old brother led to a bitter fight.<br /></li>
+<li>The antagonism between the two villages caused a series of fights.<br /></li>
+</ul>
+<p>
+alliance [əˈlaɪəns]: n. an arrangement in which two or more countries, groups etc agree to work together to try to change or achieve something联盟, 联合<br />
+</p>
+<ul class="org-ul">
+<li>As long as our member was attacked, we would provide the weapon for it, the spokesman of the alliance declaimed.<br /></li>
+<li>The spokesman of the alliance was assassinated in the course of his house.<br /></li>
+<li>The countries of the alliance will be exempt from import duty.<br /></li>
+</ul>
+<p>
+triple [ˈtrɪp(ə)l]: adj. having three parts or involving three groups, people, events etc ⇨ double三倍的<br />
+</p>
+<ul class="org-ul">
+<li>If you delay in relieving the kid, you will obtain triple ransom.<br /></li>
+<li>Exasperated by the relation's calling the police, the kidnapper asked for triple ransom.<br /></li>
+<li>Exasperated by the increased import duty of China, the president asked for triple import duty.<br /></li>
+</ul>
+<p>
+carnage [ˈkɑrnɪdʒ]: n. when a lot of people are killed and injured, especially in a war残杀, 大屠杀<br />
+</p>
+<ul class="org-ul">
+<li>The man who survived carnage is receiving treatment in the seaside resort.<br /></li>
+<li>Fearing carnage, the king decided to arrange a peace settlement as soon as possible.<br /></li>
+<li>According to the coverage, there must be at least ten thousand people killed in the carnage.<br /></li>
+</ul>
+<p>
+advance [ədˈvæns]: v. if scientific or technical knowledge advances, or if something advances it, it develops and improves推进<br />
+</p>
+<ul class="org-ul">
+<li>Some scientists are advancing the search for a cat-like animal.<br /></li>
+<li>Our reformations must be advanced in our army which spends two-thirds of our taxes every year.<br /></li>
+<li>Advancing reformations in armies, he was hated by some landed aristocratics.<br /></li>
+</ul>
+<p>
+imminent [ˈɪmɪnənt]: adj. an event that is imminent, especially an unpleasant one, will happen very soon即将来临的, 逼近的<br />
+</p>
+<ul class="org-ul">
+<li>I am determined to face the imminent challenges of new philosophes.<br /></li>
+<li>The imminent catastrophe gave our government a shock.<br /></li>
+<li>The student pestered his teacher about the imminent gift.<br /></li>
+</ul>
+<p>
+prophetic [prəˈfetɪk]: adj. correctly saying what will happen in the future预言的<br />
+</p>
+<ul class="org-ul">
+<li>The prophetic words were not taken seriously, which led to a series of troubles.<br /></li>
+<li>The prophetic warning was regarded as a joke, in one sense.<br /></li>
+<li>I figured out that our majesty admired you for your prophetic warning.<br /></li>
+</ul>
+<hr />
+<p>
+bend over sb.: 俯身于某人<br />
+</p>
+<ul class="org-ul">
+<li>Bending over me, my father touched my head and asked me to study hard.<br /></li>
+<li>Bending over my classmate, Mr. Leo threatened that if he didn't complete his task, he would get fired.<br /></li>
+<li>Bending over my cat, I heard a strange noise from his stomach.<br /></li>
+</ul>
+<p>
+receive the right to do sth.: 获取权利去做某事<br />
+</p>
+<ul class="org-ul">
+<li>I never receive the right to arrange my room.<br /></li>
+<li>She must receive the right to study abroad.<br /></li>
+<li>She can't receive the right to study abroad.<br /></li>
+</ul>
+<p>
+prove incapable of doing sth.: 证明不足以做某事<br />
+</p>
+<ul class="org-ul">
+<li>I proved incapable of hurting cats that were affectionate towards me.<br /></li>
+<li>She proved incapable of swimming across the Channel on her own.<br /></li>
+<li>The cat proved incapable of scratching the meat that was hung from the ceiling.<br /></li>
+</ul>
+<p>
+for a time: 暂时地<br />
+</p>
+<ul class="org-ul">
+<li>I was just unemployed for a time.<br /></li>
+<li>I want to borrow you some money for a time.<br /></li>
+<li>The kind of perfume was exempted from import duty for a time.<br /></li>
+</ul>
+<p>
+be drawn into sth.: 被卷入到某事<br />
+</p>
+<ul class="org-ul">
+<li>If you hadn't asked for a lift, you wouldn't have been drawn into the murder.<br /></li>
+<li>The blind was by no means drawn into a murder that happened outside the city twelve miles away.<br /></li>
+<li>Drawn into a bitter quarrel, she played truant from school.<br /></li>
+</ul>
+<p>
+The advent of sth.: 某事物的出现<br />
+</p>
+<ul class="org-ul">
+<li>The advent of mass leisure led to a series of complaints from the upper class.<br /></li>
+<li>The advent of the revolution ended the regime of the monarch.<br /></li>
+<li>The advent of his ex-girlfriend led to an embarrassing atmosphere in the dinner room.<br /></li>
+</ul>
+<p>
+stir up sb.: 煽动某人<br />
+</p>
+<ul class="org-ul">
+<li>The authoritarian government never ceases to stir up masses through the distorted coverages.<br /></li>
+<li>Stirring up masses, the authorities succeeded in starting a war.<br /></li>
+<li>Being stirred up, the masses beat the officials to death.<br /></li>
+</ul>
+<p>
+Leading up to 1914: 直到1914<br />
+</p>
+<ul class="org-ul">
+<li>Leading up to 2024, there still hasn't been a champion team totally consisting of Chinese.<br /></li>
+<li>Leading up to 2024, I haven't achieved the end that I made in my childhood.<br /></li>
+<li>Leading up to 2024, she hasn't passed the test.<br /></li>
+</ul>
+<p>
+unease about sth.: 对某事的不安<br />
+</p>
+<ul class="org-ul">
+<li>I have a sense of unease about unemployment.<br /></li>
+<li>Having a sense of unease about unemployment, he bore unfair treatment in the company.<br /></li>
+<li>Having a sense of unease about unemployment, she canceled the brief excursion to the amusement park.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orge31cfec" class="outline-3">
+<h3 id="orge31cfec">summary</h3>
+<div class="outline-text-3" id="text-orge31cfec">
+<p>
+Many Europeans after 1894 believed they lived in an era of material and human progress.<br />
+Women, on the other hand, still need to fight for the rights to vote.<br />
+Pankhurst, the leader of the women's suffrage movement who was arrested and jailed,<br />
+	informed her judges that even though they sent her to prison, the agitation could not be stopped.<br />
+Eventually, women in Britain received the right to vote.<br />
+After 1860, Europeans engaged in a great race for colonies around the world,<br />
+	which intensified existing antagonisms among European states.<br />
+Two large alliance system&#x2013;the Triple Alliance and the Triple Entente&#x2013;<br />
+	may have preserved peace for a time,<br />
+	but they made it easier for the European nations to be drawn into the World War I.<br />
+Mass education also made governments easier to stir up the masses by nationalistic appeals.<br />
+Many intellectuals had a sense of unease about the direction of the society<br />
+	and a feeling of imminent catastrophe.<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org0c64c14" class="outline-3">
+<h3 id="org0c64c14">summary2</h3>
+<div class="outline-text-3" id="text-org0c64c14">
+<p>
+Many Europeans after 1894 believed they lived in an era of material and human progress.<br />
+Women, on the other hand, still need to fight for the right to vote.<br />
+Pankhurst, the leader of the women's suffrage movement who was arrested and jailed,<br />
+	informed her judges that even though they sent her to prison, the agitation could not be stopped.<br />
+Eventually, women in Britain received the right to vote.<br />
+After 1860, Europeans engaged in a great race for colonies around the world,<br />
+	which intensified existing antagonisms among European states.<br />
+Two large alliance systems&#x2013;the Triple Alliance and the Triple Entente&#x2013;<br />
+	may have preserved peace for a time,<br />
+	but they made it easier for the European nations to be drawn into World War I.<br />
+Mass education also made it easier to stir up the masses with nationalistic appeals.<br />
+Many intellectuals had a sense of unease about the direction of society<br />
+	and a feeling of imminent catastrophe.<br />
+</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

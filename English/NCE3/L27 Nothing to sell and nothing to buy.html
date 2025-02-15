@@ -1,0 +1,700 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-09-28 Sat 22:17 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-org537638f" class="outline-2">
+<h2 id="org537638f">Lesson 27 Nothing to sell and nothing to buy</h2>
+<div class="outline-text-2" id="text-org537638f">
+<p class="verse">
+What is the most important thing for a tramp?<br />
+<br />
+It has been said that everyone <b>lives by selling</b> something.<br />
+<b>In the light of</b> this statement, teachers live by selling knowledge,<br />
+&#xa0;philosophers by selling wisdom and priests by selling <b>spiritual comfort</b>.<br />
+Though it may be possible to measure that value of material goods <b>in terms of money</b>,<br />
+&#xa0;<b>it is extremely difficult to</b> estimate the true value of the services which people perform for us.<br />
+There are times when we would willingly give everything we possess to save our lives,<br />
+&#xa0;yet we might <b>grudge paying</b> a surgeon a high fee for offering us precisely this service.<br />
+The conditions of society are such<br />
+&#xa0;that skills have to be paid for in the same way that goods are paid for at a shop.<br />
+Everyone has something to sell.<br />
+<br />
+Tramps <b>seem to be the only exception to this general rule</b>.<br />
+Beggars almost sell themselves as human beings to arouse the pity of passers-by.<br />
+But real tramps are not beggars.<br />
+They have nothing to sell and require nothing from others.<br />
+<b>In seeking independence</b>, they do not sacrifice their human dignity.<br />
+A tramp may ask you for money, but he will never ask you to fell sorry for him.<br />
+He has deliberately <b>chosen to lead</b> the life he leads and is fully aware of the consequences.<br />
+He may never be sure where the next meal is coming from,<br />
+&#xa0;but he <b>is free from</b> the thousands of anxieties which afflict other people.<br />
+His few material possessions make it possible for him to move from place to place <b>with ease</b>.<br />
+By having to sleep <b>in the open</b>,<br />
+&#xa0;he gets far closer to the world of nature than most of us ever do.<br />
+He may hunt, beg, or steal occasionally to keep himself alive;<br />
+&#xa0;he may even, in times of real need, do a little work;<br />
+&#xa0;but he will never sacrifice his freedom.<br />
+We often speak of tramps <b>with contempt</b> and put them in the same class as beggars,<br />
+&#xa0;but how many of us can honestly say that<br />
+&#xa0;&#xa0;we have not <b>felt a little envious of</b> their simple way of life and their freedom from care?<br />
+</p>
+</div>
+<div id="outline-container-orgcc78efe" class="outline-3">
+<h3 id="orgcc78efe">expression</h3>
+<div class="outline-text-3" id="text-orgcc78efe">
+<p>
+philosopher: [fɪˈlɑsəfər] n.哲学家<br />
+wisdom: [ˈwɪzdəm] n.智慧<br />
+priest: [prist] n. vicar 神父<br />
+spiritual: [ˈspɪrɪtʃuəl] adj.精神上的<br />
+grudge: [ɡrʌdʒ] v.n. a feeling of dislike for someone because you cannot forget that they harmed you in the past不愿给<br />
+surgeon: [ˈsɜrdʒən] n. a doctor who does operations in a hospital外科大夫<br />
+passer-by: ['pɑːsə] n. passers-by过路人<br />
+dignity: [ˈdɪɡnəti] n.尊严<br />
+deliberately: [dɪˈlɪb(ə)rətli] adv.故意地<br />
+consequence: [ˈkɑnsəkwəns] n.后果,结果<br />
+afflict: [əˈflɪkt] v.折磨<br />
+ease: [iz] n. easy to do it容易<br />
+nature: [ˈneɪtʃər] n.大自然<br />
+contempt: [kənˈtempt] n.轻蔑<br />
+envious: [ˈenviəs] adj. wanting something that someone else has嫉妒的<br />
+</p>
+
+<p>
+question/doubt the wisdom of (doing) sth.: 质疑做某事是否明智<br />
+give sb. spiritual comfort: 给某人精神上的安慰<br />
+grudge doing sth.: 不愿意做某事<br />
+have/hold a grudge against sb.: 对某人怀恨在心<br />
+die/treat/do sth. with dignity: 有尊严地xx<br />
+have consequences: 产生后果<br />
+be afflicted with/by sth.: 被某事折磨<br />
+with great/considerable ease: 很容易地<br />
+love of nature: 热爱大自然<br />
+speak of/treat sb./sth. with contempt: 轻蔑对待/谈起某人<br />
+be/feel/get/become envious of sb.: 嫉妒某人<br />
+</p>
+<hr />
+<p>
+live by doing sth.: 以做某事为生<br />
+in the light of sth./in light of: 鉴于某事<br />
+in terms of sth.: 从某物来说<br />
+It is difficult to do sth.: 做某事困难<br />
+seem to be/do sth.: 似乎是/做某事<br />
+be the exception to the rule: 规则的例外情况<br />
+in doing sth.: 结果是<br />
+choose to do sth.: 选择做某事<br />
+be free from sth.: 摆脱某事<br />
+in the open (air): 露天<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge0ee033" class="outline-3">
+<h3 id="orge0ee033">words</h3>
+<div class="outline-text-3" id="text-orge0ee033">
+<p>
+philosopher [fəˈlɑːsəfər] n. 哲学家<br />
+wisdom [ˈwɪzdəm] n. 智慧<br />
+priest [priːst] n. 牧师<br />
+spiritual [ˈspɪrɪtʃuəl] adj. 精神上的<br />
+grudge [ɡrʌdʒ] v. 不愿给,舍不得给<br />
+surgeon [ˈsɜːrdʒən] n. 外科大夫<br />
+passer-by [ˌpæsər ˈbaɪ] n. 过路人<br />
+dignity [ˈdɪɡnəti] n. 尊严<br />
+deliberately [dɪˈlɪbərətli] adv. 故意地<br />
+consequence [ˈkɑːnsɪkwens] n. 后果<br />
+afflict [əˈflɪkt] v. 使苦恼,折磨<br />
+ease [iːz] n. 容易;舒适<br />
+nature [ˈneɪtʃər] n. 大自然<br />
+contempt [kənˈtempt] n. 蔑视<br />
+envious [ˈenviəs] adj. 羡慕的;嫉妒的<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgf419e27" class="outline-3">
+<h3 id="orgf419e27">vocabulary</h3>
+<div class="outline-text-3" id="text-orgf419e27">
+<p>
+value: worth<br />
+estimate: assess<br />
+perform: do<br />
+possess: have, own<br />
+grudge: be unwilling to do sth.<br />
+precisely: exactly<br />
+skills: abilities<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org117232a" class="outline-3">
+<h3 id="org117232a"><span class="done DONE">DONE</span> 单词造句</h3>
+<div class="outline-text-3" id="text-org117232a">
+<p>
+philosopher n.<br />
+</p>
+<ul class="org-ul">
+<li>I could not avoid being influenced by the philosopher.<br /></li>
+<li>In his effort to sell wisdom, everyone soon get used to the philosopher.<br /></li>
+<li>The philosopher never want to get something for nothing.<br /></li>
+<li>My teacher enabled me to be a philosopher.<br /></li>
+<li>The philosopher came along with a little lamb.<br /></li>
+</ul>
+<p>
+wisdom n.  question/doubt the wisdom of (doing) sth.<br />
+</p>
+<ul class="org-ul">
+<li>People in the town began to question the wisdom of his prediction.<br /></li>
+<li>I don't question the wisdom of our boss any longer.<br /></li>
+<li>I question the wisdom of buying house from the real estate in China.<br /></li>
+<li>Do you question the wisdom of my buying the weapon from America?<br /></li>
+<li>It is anticipated that people will doubt the wisdom of the leader's decision at the beginning.<br /></li>
+</ul>
+<p>
+priest n.<br />
+</p>
+<ul class="org-ul">
+<li>The priest is always rasing money for one cause or another.<br /></li>
+<li>The priest who was naked captured the attention of people at the monostery.<br /></li>
+<li>The priest devised a plan to have the clock repaired.<br /></li>
+<li>The priest provided us with free samples of a special type of perfume.<br /></li>
+<li>If the priest say the magic word, police will arrive on the scene.<br /></li>
+</ul>
+<p>
+spiritual adj.  give sb. spiritual comfort<br />
+</p>
+<ul class="org-ul">
+<li>I pride myself on giving my wife spiritual comfort.<br /></li>
+<li>I have been influenced by my aunt, for she gave me spiritual comfort in my youth.<br /></li>
+<li>After given spiritual comfort, I felt I had a subtle mind.<br /></li>
+<li>You should have given your lover spiritual comfort.<br /></li>
+<li>There is no doubt that you should give your lover spiritual comfort when she is upset.<br /></li>
+</ul>
+<p>
+grudge v.n.  grudge doing sth.  have/hold a grudge against sb.<br />
+</p>
+<ul class="org-ul">
+<li>I grudge giving my nephew pocket money on non-holidays.<br /></li>
+<li>She grudges classifing tramps as beggars.<br /></li>
+<li>She deviese a way to be free from import duty, for she grudges paying the taxes.<br /></li>
+<li>There is a danger that she grudges paying the bill.<br /></li>
+<li>My daughter grudges showing her uncle to the guest room.<br /></li>
+<li>I had ever held a grudge against my aunt who brought me up.<br /></li>
+</ul>
+<p>
+surgeon n.<br />
+</p>
+<ul class="org-ul">
+<li>The death of the surgeon marked the beginning of an era.<br /></li>
+<li>The button was fitted with the gate by the surgeon.<br /></li>
+<li>The surgeon delaid in having an operation because of traffic jam.<br /></li>
+<li>The surgeon had always taken the lead in his class in his youth.<br /></li>
+<li>The surgeon has been struck by a heavy car accident and is still unconscious.<br /></li>
+</ul>
+<p>
+passer-by n. passers-by<br />
+</p>
+<ul class="org-ul">
+<li>There is a danger that a passer-by may spot us stealing the shop.<br /></li>
+<li>There was a time when passers-by were very friendly.<br /></li>
+<li>It gave me the impression that the passer-by was leaping out at me.<br /></li>
+<li>These passers-by were showed to the camp.<br /></li>
+<li>It made passers-by hair stood on end that they quarreled bitterly.<br /></li>
+</ul>
+<p>
+dignity n.  die/treat/do sth. with dignity<br />
+</p>
+<ul class="org-ul">
+<li>It became impossible to treat us with dignity in other country.<br /></li>
+<li>She was struck by a heavy storm during the competition and died with dignity.<br /></li>
+<li>It is all very well that a soldier died with dignity.<br /></li>
+<li>I am petrified of not being treated with dignity.<br /></li>
+<li>To varying degrees, we all want to be treated with dignity.<br /></li>
+</ul>
+<p>
+deliberately adv.<br />
+</p>
+<ul class="org-ul">
+<li>The medical student ruined my day deliberately.<br /></li>
+<li>Why do you get into such a mess deliberately?<br /></li>
+<li>Why do you take away my keys in the drawer deliberately?<br /></li>
+<li>He concealed the sweets from me deliberately.<br /></li>
+<li>He asked her to stay for dinner deliberately.<br /></li>
+</ul>
+<p>
+consequence n.  have consequences<br />
+</p>
+<ul class="org-ul">
+<li>She knocked him to the ground without considering consequence.<br /></li>
+<li>She concealed everything that happened yesterday from the police without considering consequence.<br /></li>
+<li>Don't hide his underwears. It has consequences.<br /></li>
+<li>My stomach will turn at the idea of consequences.<br /></li>
+<li>The sad truth is that your action has consequences.<br /></li>
+</ul>
+<p>
+afflict v.  be afflicted with/by sth.<br />
+</p>
+<ul class="org-ul">
+<li>I has been afflicted with this or that anxiety all the time.<br /></li>
+<li>The heroine has been afflicted with a skeleton in the cupboard day and night.<br /></li>
+<li>To my surprise, she was still afflicted with this rare disease.<br /></li>
+<li>If you sticked to your plan, you would not be afflicted with fear.<br /></li>
+<li>I am afflicted with fear at the idea of studying abroad.<br /></li>
+</ul>
+<p>
+ease n.  with great/considerable ease<br />
+</p>
+<ul class="org-ul">
+<li>I noticed him reading science fiction with ease.<br /></li>
+<li>The enemy will take possession of our city with considerable ease.<br /></li>
+<li>She wrote dozens of postcard with easa in her room.<br /></li>
+<li>After having an operation, she took a stroll with ease.<br /></li>
+<li>People in China associated octopus with food with great ease.<br /></li>
+</ul>
+<p>
+nature n.  love of nature<br />
+</p>
+<ul class="org-ul">
+<li>My parents often read novels on nature, as I have a great love of nature.<br /></li>
+<li>She is eager to be close to the nature on weekends.<br /></li>
+<li>The paper was written out in full and explained her love of nature.<br /></li>
+<li>She was cast in the role of a woman who has a great love of nature.<br /></li>
+<li>She would play the role of a prizefighter who has a great love of nature.<br /></li>
+</ul>
+<p>
+contempt n.  speak of/treat sb./sth. with contempt<br />
+</p>
+<ul class="org-ul">
+<li>She has cause to speak of these English teacher with contempt.<br /></li>
+<li>You needn't have spoken of them with contempt in public.<br /></li>
+<li>You should treat your rival with contempt.<br /></li>
+<li>She is always treating her friends with contempt, for she has a better salary than them.<br /></li>
+<li>I insisted that I should not be treated with contempt.<br /></li>
+</ul>
+<p>
+envious adj.  be/feel/get/become envious of sb.<br />
+</p>
+<ul class="org-ul">
+<li>I never get envious of other students who get a better salary than me.<br /></li>
+<li>Colleagues were envious of her breaking the world record.<br /></li>
+<li>I have cause to feel envious of him.<br /></li>
+<li>I bet that you get envious of your sisiter.<br /></li>
+<li>My wife became envious of my success, then we quarrel bitterly.<br /></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orga8ed3e2" class="outline-3">
+<h3 id="orga8ed3e2"><span class="done DONE">DONE</span> 反复听电影片段直到懂关键句</h3>
+<div class="outline-text-3" id="text-orga8ed3e2">
+</div>
+</div>
+<div id="outline-container-org606b3c6" class="outline-3">
+<h3 id="org606b3c6">复习二册语法(笔记或视频) &amp; 红皮书</h3>
+</div>
+<div id="outline-container-org732b79d" class="outline-3">
+<h3 id="org732b79d"><span class="done DONE">DONE</span> 习惯用法造句</h3>
+<div class="outline-text-3" id="text-org732b79d">
+<p>
+live by doing sth.<br />
+</p>
+<ul class="org-ul">
+<li>She lives by fighting for prize money.<br /></li>
+<li>She want to live by performance.<br /></li>
+<li>I never dream of living by singing.<br /></li>
+<li>She managed to live by programming.<br /></li>
+<li>These gangster live by asking for protection money.<br /></li>
+</ul>
+<p>
+in the light of sth./in light of<br />
+</p>
+<ul class="org-ul">
+<li>In the light of problems we're having, we have no choice but to put them out of business.<br /></li>
+<li>In light of argument of them, they had to fight against each other.<br /></li>
+<li>In light of everything that recently happened, both countries have to be at war with each other.<br /></li>
+<li>In light of the statement, I am not the exception to the rule.<br /></li>
+<li>In light of the statement, the agreement has reached.<br /></li>
+</ul>
+<p>
+in terms of<br />
+</p>
+<ul class="org-ul">
+<li>I prefer to think of things in terms of friendship.<br /></li>
+<li>She has a habit of thinking of everything in terms of friendship.<br /></li>
+<li>It is clear that we must turn against each other in terms of money.<br /></li>
+<li>A set of rules were drawn up in terms of fighters' health.<br /></li>
+<li>You should have thought of it in terms of money.<br /></li>
+</ul>
+<p>
+It is difficult to do sth.<br />
+</p>
+<ul class="org-ul">
+<li>It is difficult to take a shower after an operation.<br /></li>
+<li>It is difficult to believe in god.<br /></li>
+<li>It is difficult to stick to our plan all the time.<br /></li>
+<li>It is difficult to read story to my brother.<br /></li>
+<li>It is difficult to stare at the torchlight all the time.<br /></li>
+</ul>
+<p>
+seem to be/do sth.<br />
+</p>
+<ul class="org-ul">
+<li>She seemed to play a joke on him.<br /></li>
+<li>She seemed to present follower to him.<br /></li>
+<li>In the dim light, she seemed to get angry.<br /></li>
+<li>They seem to fight against each other with bare fists.<br /></li>
+<li>They seemed to have settled the argument.<br /></li>
+</ul>
+<p>
+be the exception to the rule<br />
+</p>
+<ul class="org-ul">
+<li>Because she had a rare disease, she was the exception to the rule.<br /></li>
+<li>He wasn't the exception to the rule and died in poverty.<br /></li>
+<li>She was disappointed bitterly that she was the exception to the rule.<br /></li>
+<li>Techinically speaking, you are not the exception to the rule.<br /></li>
+<li>On the same day, I was the exception to the rule.<br /></li>
+</ul>
+<p>
+in doing sth.<br />
+</p>
+<ul class="org-ul">
+<li>In attempting to finish my work, I has learnt a lot.<br /></li>
+<li>In keeping my word, she rewarded me with a large bar of chocolate.<br /></li>
+<li>In offering her pocket money, I changed my mind.<br /></li>
+<li>In going to the police, I was stuck by a car accident.<br /></li>
+<li>In remaining anonymous, she studied abroad.<br /></li>
+</ul>
+<p>
+choose to do sth.<br />
+</p>
+<ul class="org-ul">
+<li>I chose to give you electric shocks.<br /></li>
+<li>She chooses to fish on weekends.<br /></li>
+<li>I chose to study Java rather than JS while studying in Zhengzhou.<br /></li>
+<li>I have an opportunity to become a surgeon, I chose to be a programmer.<br /></li>
+<li>I have the impulse to hit him, I chose to get away from him.<br /></li>
+</ul>
+<p>
+be free from sth.<br />
+</p>
+<ul class="org-ul">
+<li>Everything you bought is not free from taxes.<br /></li>
+<li>Because of operation, she is totally free from pain.<br /></li>
+<li>The mobile phone must be free from the computer while you are live.<br /></li>
+<li>You should be free from fear.<br /></li>
+<li>When the report came to London, people were free from fear of invasion.<br /></li>
+</ul>
+<p>
+in the open (air)<br />
+</p>
+<ul class="org-ul">
+<li>They will give five performance in the open.<br /></li>
+<li>Working in the open has given him a lot of satisfaction.<br /></li>
+<li>I have the impulse to play out in the open.<br /></li>
+<li>In working in the open, I have a good appetite.<br /></li>
+<li>She may have a good appitite in the open.<br /></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org1f8606e" class="outline-3">
+<h3 id="org1f8606e">跟读 50遍</h3>
+</div>
+<div id="outline-container-org40f2991" class="outline-3">
+<h3 id="org40f2991"><span class="done DONE">DONE</span> Comprehension 反复练习</h3>
+<div class="outline-text-3" id="text-org40f2991">
+</div>
+</div>
+<div id="outline-container-orgd8d2549" class="outline-3">
+<h3 id="orgd8d2549"><span class="done DONE">DONE</span> Ask me if 写+读</h3>
+<div class="outline-text-3" id="text-orgd8d2549">
+<ol class="org-ol">
+<li>Teachers live by selling knowledge. How<br />
+How do teachers live?<br /></li>
+<li>It is difficult to estimate the value of services that people perform. How difficult<br />
+How difficult is it to estimate the value of services that people perform?<br /></li>
+<li>We would give up everything to save our lives. Why<br />
+Why would we give up everything?<br /></li>
+<li>Everyone's got something to sell. What<br />
+What has everyone got to sell?<br /></li>
+<li>Beggars sell themselves as human beings. Why<br />
+Why do beggars sell themselves as human beings.<br /></li>
+<li>A tramp will ask you for money. Who<br />
+Who will ask you for money?<br /></li>
+<li>A tramp has deliberately chosen the life he leads. What<br />
+What has a tramp deliberately chosen?<br /></li>
+<li>He is free from thousands of anxieties. Which anxieties<br />
+Which anxieties is he free from?<br /></li>
+<li>He gets closer to nature than most of us do. How<br />
+How does he get closer to nature than most of us do?<br /></li>
+<li>A tramp will do a little work. When<br />
+When will a tramp do a little work.<br /></li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org0e65d55" class="outline-3">
+<h3 id="org0e65d55"><span class="done DONE">DONE</span> 摘要写作 写 &amp; 对答案</h3>
+<div class="outline-text-3" id="text-org0e65d55">
+<p>
+A tramp may ask you for money, but he will never ask you to feel sorry for him.<br />
+He may not be sure where the next meal is,<br />
+	but he is free from anxieties which afflict other people.<br />
+Because he has few material possessions, it is easy for him to move from place to place.<br />
+He has to sleep in the open.<br />
+To keep himself alive, he may hunt, beg, steal occassionaly and do a little work.<br />
+</p>
+
+<p>
+Unlike beggars, real tramps have nothing to sell and require nothing from others.<br />
+Although they seek independence, they will not sacrifice their human dignity.<br />
+They choose their own way of life and are aware of the consequences.<br />
+They may not know where the next meal is coming from,<br />
+	but they do not have the worries that others have.<br />
+They can travel easily because they have few possessions<br />
+	and when they sleep in the open, they are close to nature.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc86d01d" class="outline-3">
+<h3 id="orgc86d01d"><span class="done DONE">DONE</span> tell the story 口语复述</h3>
+<div class="outline-text-3" id="text-orgc86d01d">
+</div>
+</div>
+<div id="outline-container-org2aa9e9a" class="outline-3">
+<h3 id="org2aa9e9a"><span class="done DONE">DONE</span> composition 阅读 或 写作</h3>
+<div class="outline-text-3" id="text-org2aa9e9a">
+<p>
+The majority of adults in society contribute to society by working.<br />
+They work, earn money and pay taxes for the things we all need<br />
+	&#x2013; hospitals, schools, public transport, the fire brigade, law and order and so on.<br />
+We don't expect children or very old people to work and pay taxes.<br />
+But everyone else should.<br />
+So why should people like tramps and beggars be different?<br />
+Tramps say all they want is their freedom.<br />
+Well, they may be free, but their freedom is paid for by everyone else in society.<br />
+There are many unemployed people who simply cannot get a job<br />
+	&#x2013; but they would work if they could.<br />
+And many beggars are people who have turned to begging because they cannot find a job.<br />
+</p>
+
+<p>
+Tramps are not like them.<br />
+Tramps lead a very selfish way of life<br />
+	and it is a way of life that shows an unwillingness to assume responsibility for others.<br />
+The rest of us have a home, children, work, and so on.<br />
+But not tramps!<br />
+Tramps are lazy parasites on society,<br />
+	and if we all had their mentality, society would not exist for them or anyone else.<br />
+Although we might in someways be envious of tramps,<br />
+	and although we might envy their freedom,<br />
+	how many of us could be as selfish as them?<br />
+How many of us could say 'damn the rest of society!'? I couldn't.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org3553c01" class="outline-3">
+<h3 id="org3553c01">Topics for discussion</h3>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,761 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-09-28 Sat 22:17 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-org6442fb0" class="outline-2">
+<h2 id="org6442fb0">Lesson 35 Justice was done</h2>
+<div class="outline-text-2" id="text-org6442fb0">
+<p class="verse">
+The word 'justice' is given two different meanings in the text.<br />
+What is the distinction between them?<br />
+<br />
+The word justice is usually associated with <b>courts of law</b>.<br />
+We might say<br />
+&#xa0;that <b>justice has been done</b> when a man's <b>innocence or guilt has been proved beyond doubt</b>.<br />
+Justice is part of the complex machinery of the law.<br />
+Those who seek it <b>undertake an arduous journey</b> and can never be sure that they will find it.<br />
+Judges, <b>however</b> wise or eminent, are human and can <b>make mistakes</b>.<br />
+<br />
+<b>There are rare instances when</b> justice almost <b>ceases to be</b> an <b>abstract concept</b>.<br />
+Reward or punishment are <b>meted out</b> quite <b>independent of human interference</b>.<br />
+At such times, justice acts like a living force.<br />
+When we use a phrase like 'it serves him right',<br />
+&#xa0;we are, <b>in part</b>, admitting<br />
+&#xa0;&#xa0;that a certain set of circumstances has enabled justice to act <b>of its own accord</b>.<br />
+<br />
+When a thief was caught <b>on the premises of</b> a large jewelery store one morning,<br />
+&#xa0;the shop assistants must have found it impossible to resist the temptation<br />
+&#xa0;&#xa0;to say 'it serves him right.'<br />
+The shop was an old converted house with many large, disused fireplaces and tall, narrow chimneys.<br />
+Towards midday, a girl heard a muffled cry coming from behind one of the walls.<br />
+As the cry was repeated several times,<br />
+&#xa0;she <b>ran to tell</b> the manager who promptly <b>rang up</b> the fire brigade.<br />
+The cry had certainly come from one of the chimneys,<br />
+&#xa0;but as there were so many of them, the fire fighters could not be certain which one it was.<br />
+They located the right chimney by <b>tapping at</b> the walls and <b>listening for</b> the man's cries.<br />
+After chipping through a wall which was eighteen inches thick,<br />
+&#xa0;they found that a man had been trapped in the chimney.<br />
+As it was extremely narrow, the man <b>was unable to</b> move,<br />
+&#xa0;but the fire fighters were eventually able to free him by cutting a huge hole in the wall.<br />
+The sorry-looking, blackened figure that emerged,<br />
+&#xa0;admitted at once that he had tried to <b>break into</b> the shop during the night<br />
+&#xa0;&#xa0;but had got stuck in the chimney.<br />
+He had been there for nearly ten hours.<br />
+Justice had been done even before the man <b>was handed over to</b> the police.<br />
+</p>
+</div>
+<div id="outline-container-org1f547ae" class="outline-3">
+<h3 id="org1f547ae">expression</h3>
+<div class="outline-text-3" id="text-org1f547ae">
+<p>
+justice: [ˈdʒʌstɪs] n.正义,公正;司法<br />
+court: [kɔrt] n.法院<br />
+law: n.法律<br />
+innocence: [ˈɪnəs(ə)ns] n.无辜<br />
+undertake: [ˌʌndərˈteɪk] v.承担;着手做<br />
+arduous: [ˈɑrdjuəs] adj.艰苦的<br />
+abstract: [æbˈstrækt] adj.抽象的<br />
+concept: n.概念,观念<br />
+mete: [mit] out 给予,处置<br />
+interference: [ˌɪntərˈfɪrəns] n.干涉<br />
+accord: [əˈkɔrd] n.一致<br />
+premises: [ˈpremɪsəz] n.房屋<br />
+convert: [ˈkɑnˌvɜrt] v.转变<br />
+disused: [dɪsˈjuzd] adj.废弃的<br />
+fireplace: [ˈfaɪrˌpleɪs] n.壁炉<br />
+muffle: [ˈmʌf(ə)l] v.捂住<br />
+chip: [tʃɪp] v.砍<br />
+blacken: [ˈblækən] v.使变黑<br />
+emerge: [ɪˈmɜrdʒ] v.(从某处)出现<br />
+</p>
+
+<p>
+justice has been done/served: 正义得到伸张<br />
+court of law; courts of law: 法庭<br />
+prove sb's innocence: 证明某人的无辜<br />
+undertake a task/a project/research/a study/a journey: 承担重任<br />
+arduous task of doing sth./arduous journey: 做某事的重任<br />
+go through/embark on/begin arduous journey: 开始艰辛的旅程<br />
+understand + abstract concept: 理解抽象概念<br />
+interference in sth.: 对某事的干涉<br />
+Sorry for the interference, + &#x2026;: 很抱歉打扰了, &#x2026;<br />
+I hope you don't mind the interference, but + &#x2026;: 我希望你不介意打扰,但是+&#x2026;<br />
+of sb's/sth's own accord: you do it because you want to, without being asked or forced处于某人的自愿<br />
+on the premises of a.: 在A的前提下<br />
+convert a. to/into b.: 把A变成B<br />
+emerge from sp.: 从某处出现<br />
+</p>
+<hr />
+<p>
+however = no matter how 让步状语<br />
+get + done 被动<br />
+</p>
+<hr />
+<p>
+beyond doubt: 毫无疑问<br />
+make mistakes: 犯错<br />
+There are rare instances when + &#x2026;: 有极少例子当&#x2026;<br />
+cease to do: 不再去做<br />
+be independent of: 独立于<br />
+in part: 部分地<br />
+run to tell sb.: 跑去告诉某人<br />
+ring up: call sb. by phone打电话<br />
+tap at sth.: 敲击某物<br />
+listen for &#x2026;: 为&#x2026;而听<br />
+be unable to do sth.: 不能做某事<br />
+break into sp.: 破门而入<br />
+be handed over to sb.: 被移交给<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb755263" class="outline-3">
+<h3 id="orgb755263">words</h3>
+<div class="outline-text-3" id="text-orgb755263">
+<p>
+justice [ˈdʒʌstɪs] n.正义,公正;司法<br />
+court [kɔːrt] n.法院<br />
+law [lɔː] n.法律<br />
+innocence [ˈɪnəsns] n.无辜<br />
+undertake [ˌʌndərˈteɪk] v.承担;着手做<br />
+arduous [ˈɑːrdʒuəs] adj.艰苦的<br />
+abstract [ˈæbstrækt] adj.抽象的<br />
+concept [ˈkɑːnsept] n.概念,观念<br />
+mete [miːt] out 给予,处置<br />
+interference [ˌɪntərˈfɪrəns] n.干涉<br />
+accord [əˈkɔːrd] n.一致<br />
+premises [ˈpremɪsɪz] n.房屋<br />
+convert [kənˈvɜːrt] v.转变,改变<br />
+disused [ˌdɪsˈjuːzd] adj.不再用的,废弃的<br />
+fireplace [ˈfaɪərpleɪs] n.璧炉<br />
+muffle [ˈmʌf(ə)l] v.捂住,厌抑<br />
+chip [tʃɪp] v.砍<br />
+blacken [ˈblækən] v.使变黑<br />
+emerge [ɪˈmɜːrdʒ] v.(从某处)出现<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org72a53e5" class="outline-3">
+<h3 id="org72a53e5"><span class="done DONE">DONE</span> 单词造句</h3>
+<div class="outline-text-3" id="text-org72a53e5">
+<p>
+justice n.  justice has been done/served<br />
+</p>
+<ul class="org-ul">
+<li>I was bent on describing to my wife what happened in the court and how justice has been done.<br /></li>
+<li>He cherished the hope that justice would be done after the ganster was arrested.<br /></li>
+<li>The lawyer said that justice has been done and can't be bothered to help him anymore.<br /></li>
+<li>There is always hope that justice has been served by the authorities in China.<br /></li>
+<li>There was a time when justice was done in the society.<br /></li>
+</ul>
+<p>
+court n. law n.  court of law; courts of law<br />
+</p>
+<ul class="org-ul">
+<li>In the court of law, he managed to piece together all the information that had come to light.<br /></li>
+<li>In the court of law, the blacksmith carved a hero from the large stone.<br /></li>
+<li>In the court of law, the judge made a mistake by chance.<br /></li>
+<li>Above all, we are in the court of law and smoking is not allowed here.<br /></li>
+<li>She was bent on revealing the fact in the courts of law.<br /></li>
+</ul>
+<p>
+innocence n.  prove sb's innocence<br />
+</p>
+<ul class="org-ul">
+<li>In the court of law, the lawyer managed to prove her innocence.<br /></li>
+<li>The teacher prised the box open and proved his students' innocence.<br /></li>
+<li>My room was littered with empty beer glasses and this proved my innocence.<br /></li>
+<li>She claimed that as she had a perfect alibi, she proved her innocence.<br /></li>
+<li>I'm glad that an unopned junk mail proved my innocence.<br /></li>
+</ul>
+<p>
+undertake v.  undertake a task/a project/research/a study/a journey<br />
+</p>
+<ul class="org-ul">
+<li>She undertook the task of cleaning up in the labyrinth of room.<br /></li>
+<li>The boy undertakes the task of cleaning up the room which was littered with flowers.<br /></li>
+<li>I mustered up the courage to undertake a journey to be fluent in English.<br /></li>
+<li>She undertookk a project which was expected to make a profit.<br /></li>
+<li>I undertook a journey to prove that she is innocent.<br /></li>
+</ul>
+<p>
+arduous adj.<br />
+	arduous task of doing sth./arduous journey<br />
+	go through/embark on/begin arduous journey<br />
+</p>
+<ul class="org-ul">
+<li>The moment the order was given, he embarked on the arduous journey to break into the house.<br /></li>
+<li>The fire brigade arrived on the scene and begun arduous journey to rescue people.<br /></li>
+<li>Undertaking the project is an arduous task that has an influence on me for the rest of my life.<br /></li>
+<li>Feeding the cat is not an arduous task that took you several hours.<br /></li>
+<li>She was going through the arduous journey to bring up her three children by her own.<br /></li>
+</ul>
+<p>
+abstract adj. concept n.  understand + abstract concept<br />
+</p>
+<ul class="org-ul">
+<li>I broke my attention so that I couldn't understand the abstract concept.<br /></li>
+<li>There was a time when I couldn't understand the abstract concept like love and happiness.<br /></li>
+<li>I made tremendous mistakes on these abstract concepts.<br /></li>
+<li>If you understood the abstract concept, you would have solved the problem.<br /></li>
+<li>It became accepted fact that he was bent on understanding these abstract concept in mathematic.<br /></li>
+</ul>
+<p>
+mete out<br />
+</p>
+<ul class="org-ul">
+<li>Mr. Leo meted out extra assignments to those students who played truent from school.<br /></li>
+<li>The students who cheated on the test must be meted out punishments.<br /></li>
+<li>The punishment was not meted out, for the guy has a perfect alibi.<br /></li>
+<li>Mr. Leo can't be bothered to mete out these students who talked on the phone in the class.<br /></li>
+<li>The poor girl cherished the hope that he would be meted out in the end.<br /></li>
+</ul>
+<p>
+interference n.  interference in sth.<br />
+	Sorry for the interference, + &#x2026;<br />
+	I hop you don't mind the interference, but + &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>Sorry for the interference, may I use your phone for a moment?<br /></li>
+<li>Sorry for the interference, I think you have lost your key.<br /></li>
+<li>Sorry for the interference, our company begins to make a profit.<br /></li>
+<li>I hope you don't mind the interference, but you have made some mistakes.<br /></li>
+<li>I hope you don't mind the interference, but your wife is having an operation.<br /></li>
+</ul>
+<p>
+accord n.  of sb's/sth's own accord<br />
+</p>
+<ul class="org-ul">
+<li>My child described to me of his own accord what happened in his school.<br /></li>
+<li>I picked up of my own accord in the station.<br /></li>
+<li>I decided to go to the antique shop of my own accord.<br /></li>
+<li>You must study hard of your own accord.<br /></li>
+<li>These passers-by got the traffic on the move again of their own accord.<br /></li>
+</ul>
+<p>
+premises n.  on the premises of a.<br />
+</p>
+<ul class="org-ul">
+<li>Whether you believed or not, the monster never dies on the premises.<br /></li>
+<li>Sure enough, smoking was not allowed to on the premises of a large jewelry.<br /></li>
+<li>She happened to make a real discovery on the premises of a large jewelry.<br /></li>
+<li>There is some confusion about the premises of our company.<br /></li>
+<li>Oddly enough, the lottery driver was drawing up alongside our boss on the premises.<br /></li>
+</ul>
+<p>
+convert v.  convert a. to/into b.<br />
+</p>
+<ul class="org-ul">
+<li>She decribed to me how the old factory converted to a mall.<br /></li>
+<li>There is a store which was coverted into a bus station in the suburbs.<br /></li>
+<li>The authorities ordered the farmer to covert the field into forest.<br /></li>
+<li>It is a catastrophe for me that you and father converted my room into wash room.<br /></li>
+<li>It's outrageous that he converted a polluted factory into a house.<br /></li>
+</ul>
+<p>
+disused adj.<br />
+</p>
+<ul class="org-ul">
+<li>There are a disused rail station in my hometown.<br /></li>
+<li>We used to take a long walk alongside the disused rail way.<br /></li>
+<li>We should drive alongside the disused rail way until we arrived our hotel.<br /></li>
+<li>The disused chimney proved to be dangerous, for some stray dogs live there.<br /></li>
+<li>The cat used to live in the disused fireplace.<br /></li>
+</ul>
+<p>
+fireplace n.<br />
+</p>
+<ul class="org-ul">
+<li>She ran into fireplace while playing football.<br /></li>
+<li>This was a prelude to an accident which they set the fireplace on fire.<br /></li>
+<li>There are countless disused fireplaces in the suburbs.<br /></li>
+<li>The cat who was born in the fireplace was raised by me.<br /></li>
+<li>I was under the impression that the fireplace was useful.<br /></li>
+</ul>
+<p>
+muffle v.<br />
+</p>
+<ul class="org-ul">
+<li>She is always complaining about the muffled voices from the next room.<br /></li>
+<li>If you muffle your voice, how could I hear it?<br /></li>
+<li>All of a sudden, I heard a muffled cry coming from the attic.<br /></li>
+<li>She tried to muffle the clock by throwing it in the bushes.<br /></li>
+<li>If you muffled your voices in public, we would have benefited from this.<br /></li>
+</ul>
+<p>
+chip v.<br />
+</p>
+<ul class="org-ul">
+<li>After chipping through the wall, I was astonished to find that there were countless gold coins.<br /></li>
+<li>After chipping through the wall, it astounded me that my daugter kept her pocket money in there.<br /></li>
+<li>After chipping through the wall, it comes as a suprise to learn that there are some cameras.<br /></li>
+<li>After chipping through the wall, we realized to our horror that it was made of sands and bones.<br /></li>
+<li>After chipping through the wall, we found a man attempting to break into our house.<br /></li>
+</ul>
+<p>
+blacken v.<br />
+</p>
+<ul class="org-ul">
+<li>Oddly enough, the smoke didn't blacken his face.<br /></li>
+<li>With his face blackened, the fire fighter received a warm welcome.<br /></li>
+<li>As the fire fighter rescued five people in difficulty, his face was blackened.<br /></li>
+<li>Now that we have one thing in common: our faces have been blacken.<br /></li>
+<li>She tried to recoginze a blacken figure after the fire.<br /></li>
+</ul>
+<p>
+emerge v.  emerge from<br />
+</p>
+<ul class="org-ul">
+<li>The shy boy emerged from the room and learnt to study English.<br /></li>
+<li>It seems that our cat emerged from at the bottom of the bed.<br /></li>
+<li>As a gun emerged from the gangster's shirt, the crowd begun to be quiet.<br /></li>
+<li>There is no shortage of rabbits emerging from bushes in America.<br /></li>
+<li>The woman claimed to have seen a puma emerge from the bush, no one takes it seriously.<br /></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgc49daea" class="outline-3">
+<h3 id="orgc49daea"><span class="done DONE">DONE</span> 反复听电影片段直到懂关键句</h3>
+<div class="outline-text-3" id="text-orgc49daea">
+</div>
+</div>
+<div id="outline-container-org316b6cb" class="outline-3">
+<h3 id="org316b6cb">复习二册语法(笔记或视频) &amp; 红皮书</h3>
+</div>
+<div id="outline-container-org32ef56f" class="outline-3">
+<h3 id="org32ef56f"><span class="done DONE">DONE</span> 习惯用法造句</h3>
+<div class="outline-text-3" id="text-org32ef56f">
+<p>
+beyond doubt<br />
+</p>
+<ul class="org-ul">
+<li>The America managed to gained its independence from England beyond doubt.<br /></li>
+<li>The pop singer who gave five performances in our town has an impact on us beyond doubt.<br /></li>
+<li>I love to lead a peaceful life beyond doubt.<br /></li>
+<li>The film was based on a truly bargain hunter beyond doubt.<br /></li>
+<li>The microphone has been conncted to the tower beyond doubt.<br /></li>
+</ul>
+<p>
+make mistakes<br />
+</p>
+<ul class="org-ul">
+<li>Oddly enough, the man who made tremendous mistakes receive a warm welcome at the monastery.<br /></li>
+<li>I managed to make fewer mistakes and pass the test.<br /></li>
+<li>She made so many mistakes that she failed the test.<br /></li>
+<li>I had made a mistake that I provide her with a song which reminded her of her dead father.<br /></li>
+<li>My teacher informed me that I made no mistake on this test.<br /></li>
+</ul>
+<p>
+There are rare instances when + &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>There are rare instances when people are willing to give up smoking.<br /></li>
+<li>There are rare instances when your mother makes scrambled eggs for dinner.<br /></li>
+<li>There are rare instances when your father drives at a fantatis speed on highway.<br /></li>
+<li>There are rare instances when she fails tests.<br /></li>
+<li>There are rare instances when she writes an article on hotel.<br /></li>
+</ul>
+<p>
+cease to do<br />
+</p>
+<ul class="org-ul">
+<li>My wife asked me to cease to stay overnight.<br /></li>
+<li>I am gonna cease to stay overnight on Christmas day.<br /></li>
+<li>I never cease to provide my wife with anniversity gifts.<br /></li>
+<li>She ceased to take care fo her baby and began to cry.<br /></li>
+<li>The detective ceased to keep guard in front of the door.<br /></li>
+</ul>
+<p>
+be independent of<br />
+</p>
+<ul class="org-ul">
+<li>I didn't go to university, for the simple reason that I am independent of other opinions.<br /></li>
+<li>Independent of his parents, his company managed to make a profit.<br /></li>
+<li>Such is human nature, that parents are more likely to make their children independent of them.<br /></li>
+<li>Independent of other opinions, I decided to live abroad.<br /></li>
+<li>I lead a meaningful life which is independent of my parents.<br /></li>
+</ul>
+<p>
+in part<br />
+</p>
+<ul class="org-ul">
+<li>My cousin was willing to work in Shanghai,<br />
+in part, because she thought she could wander around the street in the city.<br /></li>
+<li>I went to extremes to publish a book about you, in part, because of my dead cat.<br /></li>
+<li>I got impatient last night, in part, because you ate my sandwich.<br /></li>
+<li>I was too embarrassed to say anything in the contest, in part, because of bad microphone.<br /></li>
+<li>I was willing to go to the party, in part, because of your absence.<br /></li>
+</ul>
+<p>
+run to tell sb.<br />
+</p>
+<ul class="org-ul">
+<li>My dog ran to tell me something that happened in the kitchen.<br /></li>
+<li>My daughter ran to tell me that my wife was dressed in an old-fashion skirt.<br /></li>
+<li>I ran to tell my boss who was reading story to his son.<br /></li>
+<li>She ran to tell her partner who turned out to be a monster.<br /></li>
+<li>I ran to tell Jack who was equipped with a specail type of machine.<br /></li>
+</ul>
+<p>
+ring up<br />
+</p>
+<ul class="org-ul">
+<li>I had to ring up my boss, for I found a ring dating back to ancient times.<br /></li>
+<li>The manager rang up the police, for someone asked him for protection money.<br /></li>
+<li>I was amazed to find that my dog has rung up me.<br /></li>
+<li>It astounded me that she didn't ring up me while she was in difficult.<br /></li>
+<li>I was astonished to find that the man who rang up the police turned out to be a dog.<br /></li>
+</ul>
+<p>
+tap at sth.<br />
+</p>
+<ul class="org-ul">
+<li>A bargain hunter may tap at the surface and listen for the voice if it is necessary.<br /></li>
+<li>The teacher tapped at the boy's head, for he dyed her hair red.<br /></li>
+<li>She tapped at the wall and threatened to put me out of business.<br /></li>
+<li>She tapped at the window and tried to recognize the material of the window.<br /></li>
+<li>I wished I had tapped at the wall to give your an alarm.<br /></li>
+</ul>
+<p>
+listen for &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>Whenever I arrive at the hotel, I would listen for the voice of the stream.<br /></li>
+<li>Every one is listening for audios, but few of us will pass the test.<br /></li>
+<li>I realized to my horror that he is listening for the voice coming from the next room.<br /></li>
+<li>If you listened for, you would realize that an alarm was given.<br /></li>
+<li>If you listened for the course, you would not regard it as some magic words.<br /></li>
+</ul>
+<p>
+be unable to do sth.<br />
+</p>
+<ul class="org-ul">
+<li>I am unable to go to work in time today.<br /></li>
+<li>I am unable to make a study of philosophy any longer.<br /></li>
+<li>I am unable to stand on my head, in part, because of my injury.<br /></li>
+<li>I am unable to gain my independence, for I get a bad salary.<br /></li>
+<li>She is unable to marry you, for you couldn't afford to pay it.<br /></li>
+</ul>
+<p>
+break into sp.<br />
+</p>
+<ul class="org-ul">
+<li>The gangster went to extremes to break into the room.<br /></li>
+<li>The man who broke into the house last night was arrested and was judged in courts of law.<br /></li>
+<li>These gangsters are likely to break into the jail.<br /></li>
+<li>Imagine his dismay when he found his house was broken into.<br /></li>
+<li>There was a time when police often broke into the houses of innocent people.<br /></li>
+</ul>
+<p>
+be handed over to<br />
+</p>
+<ul class="org-ul">
+<li>The man who was handed over to the jail turned out to be our ambassador.<br /></li>
+<li>She was handed over to the police, as she tried to break into a premisies of the jewelry store.<br /></li>
+<li>You'd better hold our breath, or you will be handed over to the jail.<br /></li>
+<li>I spoted him being handed over to the police.<br /></li>
+<li>This convinced me that my wife was handed over to the jail because of her criminals.<br /></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org7023eb9" class="outline-3">
+<h3 id="org7023eb9">跟读 50遍</h3>
+</div>
+<div id="outline-container-org9603b31" class="outline-3">
+<h3 id="org9603b31"><span class="done DONE">DONE</span> Comprehension 反复练习</h3>
+<div class="outline-text-3" id="text-org9603b31">
+</div>
+</div>
+<div id="outline-container-org7100648" class="outline-3">
+<h3 id="org7100648"><span class="done DONE">DONE</span> Ask me if 写+读</h3>
+<div class="outline-text-3" id="text-org7100648">
+<ol class="org-ol">
+<li>The word justice is usually associated with courts of law. What<br />
+What is the word justice usually associated with?<br /></li>
+<li>Judges can make mistakes. Who<br />
+Who can make mistakes?<br /></li>
+<li>Justice sometimes acts like a living force. When<br />
+When does justice act like a living force?<br /></li>
+<li>The thief was caught on the premises of a large jewellery store. Where<br />
+Where was the thief caught?<br /></li>
+<li>A girl heard a muffled cry coming from a chimney. What<br />
+What did a girl hear coming from a chimney?<br /></li>
+<li>The manager rang up the fire brigade. Why<br />
+Why did the manager ring up the fire brigade?<br /></li>
+<li>They located the right chimney by tapping the walls. How<br />
+How did they locate the right chimney?<br /></li>
+<li>The fire fighters freed the thief by cutting a hole in the wall. How<br />
+How did the fire fighters free the thief?<br /></li>
+<li>The man had tried to break into the shop during the night. When<br />
+When had the man tried to break into the shop?<br /></li>
+<li>The man had been stuck in the chimney for ten hours. How long<br />
+How long had the man been stuck in the chimney?<br /></li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org3ee3415" class="outline-3">
+<h3 id="org3ee3415"><span class="done DONE">DONE</span> 摘要写作 写 &amp; 对答案</h3>
+<div class="outline-text-3" id="text-org3ee3415">
+<p>
+Towards midday, a girl in the jewellery heard a muffled cry<br />
+	coming from behind one of the walls several times.<br />
+She told the manager who promptly rang up the fire brigade.<br />
+As there were so many of chimneys, the fire fighters located the right one by tapping at the walls.<br />
+After chipping through a wall, they found a man had been trapped in the chimney.<br />
+The fire fighters managed to free him by cutting a huge hole in the wall.<br />
+</p>
+
+<p>
+A girl in the jewellery store heard muffled cries coming from behind a wall.<br />
+When she heard the cry again, she went and told the manager who rang the fire brigade.<br />
+When they arrived, the fire fighters found the right chimney by tapping the wall and listening.<br />
+They chipped through a thick wall and found the man<br />
+	who could not move because the chimney was so narrow.<br />
+They finally freed him by cutting a large hole in the wall.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgbb503e6" class="outline-3">
+<h3 id="orgbb503e6"><span class="done DONE">DONE</span> tell the story 口语复述</h3>
+<div class="outline-text-3" id="text-orgbb503e6">
+</div>
+</div>
+<div id="outline-container-org411a856" class="outline-3">
+<h3 id="org411a856"><span class="done DONE">DONE</span> composition 阅读 或 写作</h3>
+<div class="outline-text-3" id="text-org411a856">
+<p>
+There is a large jewellery store in the town that I have often wanted to rob.<br />
+A few weeks ago I started planning the theft and kept a close watch on the shop.<br />
+I noticed when people went in and out, when they started and finished work, and so on.<br />
+And I noticed the chimneys, too.<br />
+One night I climbed onto the roof of the store and looked for a way in.<br />
+One of the chimneys seemed wide enough for me to get in, so I started climbing down.<br />
+Very soon, however, I got stuck and had to climb out again.<br />
+I didn't give up.<br />
+I looked around, found another chimney that looked quite wide at the top and climbed down that one.<br />
+Again I got stuck.<br />
+</p>
+
+<p>
+This time, however, I was really stuck.<br />
+I could climb neither up nor down.<br />
+At first I struggled to try to free myself, but I couldn't get out.<br />
+Then I started to get scared and started sweating.<br />
+I tried to calm myself by quietly counting and thinking of pleasant things.<br />
+But nothing worked and finally l started shouting for help.<br />
+Nothing happened, everything was dark and silent, and I got more and more frightened.<br />
+I think I went to sleep because I suddenly realized that light was shining down the chimney.<br />
+I shouted and shouted.<br />
+Eventually I heard tapping and was finally freed by fire fighters<br />
+	who had smashed a hole in the chimney.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc082ec8" class="outline-3">
+<h3 id="orgc082ec8">Topics for discussion</h3>
+</div>
+</div>
+</div>
+</body>
+</html>

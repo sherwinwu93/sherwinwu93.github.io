@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-01-09 Thu 23:34 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-orgbe89a44" class="outline-2">
+<h2 id="orgbe89a44">Street scene in a thirteenth-century English town</h2>
+<div class="outline-text-2" id="text-orgbe89a44">
+<p class="verse">
+The new European civilization that had emerged in the ninth and tenth centuries<br />
+&#xa0;&#xa0;began to come into its own in the eleventh and twelfth centuries<br />
+&#xa0;as Europeans established new patterns that reached their zenith in the thirteenth century.<br />
+The High Middle Ages (1000&#x2013;1300) was a period of recovery and growth for Western civilization,<br />
+&#xa0;characterized by a greater sense of security and a burst of energy and enthusiasm.<br />
+New agricultural practices that increased the food supply<br />
+&#xa0;helped spur a commercial and urban revival that,<br />
+&#xa0;&#xa0;&#xa0;accompanied by a rising population,<br />
+&#xa0;&#xa0;gave a new dynamism to a formerly static society.<br />
+<br />
+Townspeople themselves were often great enthusiasts for their new way of life.<br />
+In the twelfth century,<br />
+&#xa0;William Fitz-Stephen spoke of London as one of the noble cities of the world:<br />
+&#xa0;'It is happy in the healthiness of its air, in the Christian religion,<br />
+&#xa0;&#xa0;in the strength of its defences,<br />
+&#xa0;&#xa0;&#xa0;the nature of its site, the honor of its citizens, the modesty of its women;<br />
+&#xa0;&#xa0;pleasant in sports; fruitful of noble men.'<br />
+To Fitz-Stephen, London offered myriad opportunities and pleasures.<br />
+Fairs and markets were held regularly,<br />
+&#xa0;and 'practically anything that man may need<br />
+&#xa0;&#xa0;is brought daily not only into special places but even into the open squares.'<br />
+Any man, according to Fitz-Stephen,<br />
+&#xa0;'if he is healthy and not a good-for-nothing,<br />
+&#xa0;&#xa0;may earn his living expenses and esteem according to his station.'<br />
+Then, too, there are the happy inhabitants of the city:<br />
+&#xa0;Where else has one 'ever met such a wonderful show of people<br />
+&#xa0;&#xa0;this side or the other side of the sea'?<br />
+Sporting events and leisure activities are available in every season of the year:<br />
+&#xa0;'In Easter holidays they fight battles on water.'<br />
+In summer, 'the youths are exercised in leaping, dancing, shooting, wrestling, casting the stone;<br />
+&#xa0;the maidens dance as long as they can well see.'<br />
+In winter, 'when the great fen, or moor,<br />
+&#xa0;&#xa0;&#xa0;which waters the walls of the city on the north side,<br />
+&#xa0;&#xa0;is frozen,<br />
+&#xa0;many young men play upon the ice;<br />
+&#xa0;some, striding as wide as they may, do slide swiftly.'<br />
+To Fitz-Stephen, 'every convenience for human pleasure is known to be at hand' in London.<br />
+One would hardly know from his cheerful description<br />
+&#xa0;that medieval cities faced overcrowded conditions,<br />
+&#xa0;&#xa0;terrible smells from rotting garbage and raw sewage,<br />
+&#xa0;&#xa0;and the constant challenge of epidemics and fires.<br />
+<br />
+By the twelfth and thirteenth centuries,<br />
+&#xa0;both the urban centers and the urban population of Europe were experiencing a dramatic expansion.<br />
+New forms of cultural and intellectual expression also arose in this new urban world.<br />
+Although European society in the High Middle Ages remained overwhelmingly agricultural,<br />
+&#xa0;the growth of trade and cities<br />
+&#xa0;&#xa0;&#xa0;along with the development of a money economy and new commercial practices and institutions<br />
+&#xa0;&#xa0;constituted a veritable commercial revolution that affected most of Europe.<br />
+</p>
+</div>
+<div id="outline-container-org3739875" class="outline-3">
+<h3 id="org3739875">expression</h3>
+<div class="outline-text-3" id="text-org3739875">
+<p>
+spur [spɜr]: v. to encourage someone or make them want to do something鞭策, 刺激<br />
+defence [dɪˈfens]: n. all the systems, people, materials etc that a country uses to protect itself from attack防卫<br />
+modesty [ˈmɑdəsti]: n. a modest way of behaving or talking谦逊, 虚心<br />
+myriad [ˈmɪriəd]: adj. very many无数的<br />
+practically [ˈpræktɪkli]: adv. especially spoken almost几乎, 简直<br />
+good-for-nothing: adj. a good-for-nothing person is lazy and useless无用的, 无益的<br />
+esteem [ɪˈstim]: n. a feeling of respect for someone, or a good opinion of someone尊敬, 尊重<br />
+leisure [ˈleʒər]: n. time when you are not working or studying and can relax and do things you enjoy空闲<br />
+wrestle [ˈres(ə)l]: v. to fight someone by holding them and pulling or pushing them摔跤<br />
+maiden [ˈmeɪd(ə)n]: n. literary a young girl, or a woman who is not married SYN damsel少女, 处女<br />
+fen [fen]: n. an area of low flat wet land, especially in eastern England沼泽<br />
+moor [mʊr]: n. especially British English a wild open area of high land, covered with rough grass or low bushes and ↑heather, that is not farmed because the soil is not good enough沼地<br />
+stride [straɪd]: v. to walk quickly with long steps ⇨ march大步走<br />
+sewage [ˈsuɪdʒ]: n. the mixture of waste from the human body and used water, that is carried away from houses by pipes under the ground下水道, 污水<br />
+veritable [ˈverɪtəb(ə)l]: adj. a word used to emphasize a description of someone or something SYN real真正的<br />
+</p>
+<hr />
+<p>
+come into sb's own: 充分展示自身价值<br />
+reach sb's zenith: 达到某人的顶峰<br />
+be characterized by sth.: 以某物为特征<br />
+a burst of sth.: 某物的突然爆发<br />
+give a new dynamism to sth.: 赋予某事物新的活力<br />
+be fruitful of sth.: 某物硕果累累<br />
+living expenses: 生活费<br />
+according to sb's station: 根据其地位<br />
+fight battles: 奋斗<br />
+be exercised in sth./doing sth.: 在某事中被锻炼<br />
+cast the stone: 扔石头<br />
+sth./sb. is known to do sth.: 某事物/某人做某事是已知的<br />
+be at hand: 即将发生/在手里<br />
+raw sewage: 未经处理的废水<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgf8c69bd" class="outline-3">
+<h3 id="orgf8c69bd">sentence</h3>
+<div class="outline-text-3" id="text-orgf8c69bd">
+<p>
+spur: v.to encourage someone or make them want to do something鞭策, 刺激<br />
+</p>
+<ul class="org-ul">
+<li>My father spurred me to swim on my own when I was a kid.<br /></li>
+<li>Mr. Leo is known to spur his students to read widely in English.<br /></li>
+<li>My mother spurred me to save my pocket money in order to buy a bicycle.<br /></li>
+</ul>
+<p>
+defence: n.all the systems, people, materials etc that a country uses to protect itself from attack防卫<br />
+</p>
+<ul class="org-ul">
+<li>The strength of defences is not enough to fight against these Asiatic armies.<br /></li>
+<li>The defence of our capital city is vital for our realm.<br /></li>
+<li>I prefer to play in defence rather than attack others.<br /></li>
+</ul>
+<p>
+modesty: n.a modest way of behaving or talking谦逊, 虚心<br />
+</p>
+<ul class="org-ul">
+<li>I really appreciated that you gave me a meal with your modesty.<br /></li>
+<li>She always asks for inquiries with her modesty.<br /></li>
+<li>The city is out of control, so no one will admire your modesty.<br /></li>
+</ul>
+<p>
+myriad: adj.very many无数的<br />
+</p>
+<ul class="org-ul">
+<li>This ravaged city was dotted with myriad damaged bridges.<br /></li>
+<li>This line turns out to be composed of myriad heads of people.<br /></li>
+<li>The stone hit the surface of this building, which caused myriad fragments.<br /></li>
+</ul>
+<p>
+practically: adv.especially spoken almost几乎, 简直<br />
+</p>
+<ul class="org-ul">
+<li>My aunt practically provides the supply of my pocket money.<br /></li>
+<li>This so-called cursed tree is practically the source of income of this town.<br /></li>
+<li>This special life practically perpetuates its existence in the extreme environment.<br /></li>
+</ul>
+<p>
+good-for-nothing: adj.a good-for-nothing person is lazy and useless无用的, 无益的<br />
+</p>
+<ul class="org-ul">
+<li>A man in China who lost his job in middle age is practically regarded as good-for-nothing.<br /></li>
+<li>I suggested that he is good-for-nothing for he missed it over and over again.<br /></li>
+<li>Losing the game, Miss Lee accused her teammate of being good-for-nothing.<br /></li>
+</ul>
+<p>
+esteem: n.a feeling of respect for someone, or a good opinion of someone尊敬, 尊重<br />
+</p>
+<ul class="org-ul">
+<li>Why doesn't she receive your esteem?<br /></li>
+<li>Yes, she apologized to me in high esteem last night.<br /></li>
+<li>The former headmaster used to be held in high esteem by his fellows.<br /></li>
+</ul>
+<p>
+leisure: n.time when you are not working or studying and can relax and do things you enjoy空闲<br />
+</p>
+<ul class="org-ul">
+<li>In my leisure time, I have been studying English for over two years.<br /></li>
+<li>My wife advised me to do housework in my leisure time.<br /></li>
+<li>I am exercised in running in my leisure.<br /></li>
+</ul>
+<p>
+wrestle: v.to fight someone by holding them and pulling or pushing them摔跤<br />
+</p>
+<ul class="org-ul">
+<li>She denied wrestling with boys in her leisure time.<br /></li>
+<li>She denied that she hadn't wrestled with boys.<br /></li>
+<li>She rolled up her sleeves and wrestled with the rude guy.<br /></li>
+</ul>
+<p>
+maiden: n.literary a young girl, or a woman who is not married SYN damsel少女, 处女<br />
+</p>
+<ul class="org-ul">
+<li>The maiden the warrior married to turned out to be the long-lost daughter of the king.<br /></li>
+<li>The maiden hopes for a knight who will rescue her from the dragon.<br /></li>
+<li>Fingers crossed, the maiden will have the privilege of meeting a prince.<br /></li>
+</ul>
+<p>
+fen: n.an area of low flat wet land, especially in eastern England沼泽<br />
+</p>
+<ul class="org-ul">
+<li>The airport by no means parks on the fen.<br /></li>
+<li>The taxi driver refused a request from a businessman, for driving in the fen is too dangerous.<br /></li>
+<li>She was astounded to find that the fen used to be a city.<br /></li>
+</ul>
+<p>
+moor: especially British English a wild open area of high land, covered with rough grass or low bushes and ↑heather, that is not farmed because the soil is not good enough沼地<br />
+</p>
+<ul class="org-ul">
+<li>He won a prize for crossing the moor on his own.<br /></li>
+<li>It is said that there are treasures left by pirates in the midst of the moor.<br /></li>
+<li>A group of explorers examined the soil near the entrance of the moor with great care.<br /></li>
+</ul>
+<p>
+stride: to walk quickly with long steps ⇨ march大步走<br />
+</p>
+<ul class="org-ul">
+<li>His father trained the disabled dog to stride on the plain.<br /></li>
+<li>She must be exercised in striding in the summer workshop.<br /></li>
+<li>Sweetie, I saw our baby striding just then.<br /></li>
+</ul>
+<p>
+sewage: n.the mixture of waste from the human body and used water, that is carried away from houses by pipes under the ground下水道, 污水<br />
+</p>
+<ul class="org-ul">
+<li>How they dealt with sewage still remains a mystery.<br /></li>
+<li>I don't expect sewage to be seen by our citizens.<br /></li>
+<li>She is an expert at dealing with sewage.<br /></li>
+</ul>
+<p>
+veritable: adj. a word used to emphasize a description of someone or something SYN real真正的<br />
+</p>
+<ul class="org-ul">
+<li>In the pirate story, he turns out to be a veritable good man.<br /></li>
+<li>A veritable gentleman won't let his girl cry.<br /></li>
+<li>A veritable gentleman will be held in his esteem, even if he is defeated in a battle.<br /></li>
+</ul>
+<hr />
+<p>
+come into sb's own: 充分展示自身价值<br />
+</p>
+<ul class="org-ul">
+<li>Fulfilling his dream, he has come into his own.<br /></li>
+<li>Breaking the world record,<br />
+QuanHongchan, an 11-year-old girl, comes into her own at the Olympic games.<br /></li>
+<li>Planning out the wedding to the last detail, she came into her own.<br /></li>
+</ul>
+<p>
+reach sb's zenith: 达到某人的顶峰<br />
+</p>
+<ul class="org-ul">
+<li>Setting up a robot factory, the entrepreneur reached his zenith.<br /></li>
+<li>The city may have reached its zenith when it became the center of trade in the world.<br /></li>
+<li>The play reaches its zenith when the heroine is killed in action.<br /></li>
+</ul>
+<p>
+be characterized by sth.: 以某物为特征<br />
+</p>
+<ul class="org-ul">
+<li>The city is characterized by the West Lake, regarded as the most beautiful scenery in China.<br /></li>
+<li>The legion is characterized by a myriad of warriors who fight for our country.<br /></li>
+<li>The street was characterized by myriad signs which are created by artists.<br /></li>
+</ul>
+<p>
+a burst of sth.: 某物的突然爆发<br />
+</p>
+<ul class="org-ul">
+<li>They expressed their gratitude to the former City Comptroller in a burst of applause.<br /></li>
+<li>The agreement must be reached about building the bridge in a burst of applause.<br /></li>
+<li>After a burst of applause, she began to steal the diamonds in the exhibition.<br /></li>
+</ul>
+<p>
+give a new dynamism to sth.: 赋予某事物新的活力<br />
+</p>
+<ul class="org-ul">
+<li>The article published yesterday gave a new dynamism to the career of an archaeologist.<br /></li>
+<li>The new discoveries of fossils will give a new dynamism to the tasks of those paleontologists.<br /></li>
+<li>The invents of a new machine used to examine gold<br />
+gives a new dynamism to the search for the lost treasure.<br /></li>
+</ul>
+<p>
+be fruitful of sth.: 某物硕果累累<br />
+</p>
+<ul class="org-ul">
+<li>The school is fruitful of inventions.<br /></li>
+<li>The city is fruitful of sophisticated knights.<br /></li>
+<li>The athlete is fruitful of gold medals at this Olympic Games.<br /></li>
+</ul>
+<p>
+living expenses: 生活费<br />
+</p>
+<ul class="org-ul">
+<li>After I quit my job, my manager offered me a part-time job to raise my living expenses.<br /></li>
+<li>My father was unwilling to afford my living expenses when I was in the university.<br /></li>
+<li>I am looking forward to my living expenses on the last day of the month.<br /></li>
+</ul>
+<p>
+according to sb's station: 根据其地位<br />
+</p>
+<ul class="org-ul">
+<li>She thought she deserved a better position according to her station.<br /></li>
+<li>She took her seat in the meeting according to her station.<br /></li>
+<li>She will not be in obscurity in the town according to her station.<br /></li>
+</ul>
+<p>
+fight battles: 奋斗,作战<br />
+</p>
+<ul class="org-ul">
+<li>You are lucky enough not to fight battles during the war.<br /></li>
+<li>The knights were supposed to fight battles when the enemies pushed their way eastward.<br /></li>
+<li>Quarrelling bitterly, two men fought battles in front of the museum,<br />
+during which the crowd gathered round and the traffic was held up.<br /></li>
+</ul>
+<p>
+be exercised in sth./doing sth.: 在某事中被锻炼<br />
+</p>
+<ul class="org-ul">
+<li>He must have been exercised in abduction by these gangsters and got rid of them.<br /></li>
+<li>He must be exercised in crises of his family.<br /></li>
+<li>It must be terrible to be exercised in a terrible accident.<br /></li>
+</ul>
+<p>
+cast the stone: 扔石头<br />
+</p>
+<ul class="org-ul">
+<li>The scientist casts the stone with great care so that he can scrutinize its track.<br /></li>
+<li>He is due to cast the stone on the plain at midnight.<br /></li>
+<li>He had a hard time casting the stone after he got injured in a car accident.<br /></li>
+</ul>
+<p>
+sth./sb. is known to do sth.: 某事物/某人做某事是已知的<br />
+</p>
+<ul class="org-ul">
+<li>Miss Lee is known to be an expert at playing tunes.<br /></li>
+<li>I am known to tackle these math problems in our class.<br /></li>
+<li>He is known to resist the temptation of the lord of the rings.<br /></li>
+</ul>
+<p>
+be at hand: 即将发生/在手里<br />
+</p>
+<ul class="org-ul">
+<li>Mr. Lei believes that happiness is at hand.<br /></li>
+<li>The spokesman claimed that as long as our warriors fought battles during the war,<br />
+the future of our state was at hand.<br /></li>
+<li>There is a great deal of pleasure at hand if you try your best.<br /></li>
+</ul>
+<p>
+raw sewage: 未经处理的废水<br />
+</p>
+<ul class="org-ul">
+<li>Even though the raw sewage has not been treated well,<br />
+there is still enough supply of healthy water.<br /></li>
+<li>It is more important than ever to treat the raw sewage in our drain system.<br /></li>
+<li>We will treat the raw sewage through this process.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgfd0833c" class="outline-3">
+<h3 id="orgfd0833c">summary</h3>
+<div class="outline-text-3" id="text-orgfd0833c">
+<p>
+The High Middle Age (1000-1300) was a period of recovery and growth for Western civilization,<br />
+	characterized by a commercial and urban revival accompanied by a rising population<br />
+		which was spurred by the surplus of the food supply.<br />
+Townspeople were often great enthusiasts for their new way of life.<br />
+According to Fit-Stephen's descriptions, London offered myriad opportunities and pleasure,<br />
+	sporting events and leisure activities available in every season of the year.<br />
+	fairs and markets which were held regularly,<br />
+	and life expenses and esteem which were afforded as long as you were not a good-for-nothing.<br />
+However, medieval cities also faced overcrowded conditions,<br />
+	terrible smells, and the challenges of epidemics and fires.<br />
+Although European society remained overwhelmingly agricultural,<br />
+	the development of trade and cities<br />
+		accompanied the growth of a money economy and new commercial practices and institutions<br />
+	composed a veritable revolution that affected most of Europe.<br />
+</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

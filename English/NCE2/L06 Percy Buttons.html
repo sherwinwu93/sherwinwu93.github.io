@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-08-06 Tue 22:27 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-orgf91fa71" class="outline-2">
+<h2 id="orgf91fa71">Lesson 6 Percy Buttons</h2>
+<div class="outline-text-2" id="text-orgf91fa71">
+<p class="verse">
+Who is Percy Buttons?<br />
+<br />
+I have just <b>moved to a house</b> in Bridge Street.<br />
+Yesterday a beggar <b>knocked at my door</b>.<br />
+He <b>asked me for a meal and a glass of beer</b>.<br />
+<b>In return for</b> this, the beggar <b>stood on his head</b> and sang songs.<br />
+I gave him a meal.<br />
+He ate the food and drank the beer.<br />
+Then he put a piece of cheese in his pocket and went away.<br />
+Later a neighbor told me about him.<br />
+Everybody knows him.<br />
+His name is Percy Buttons.<br />
+He <b>calls at</b> every house in the street <b>once a month</b><br />
+&#xa0;and always <b>asks for a meal and a glass of beer</b>.<br />
+</p>
+</div>
+<div id="outline-container-org516fe2d" class="outline-3">
+<h3 id="org516fe2d">expression</h3>
+<div class="outline-text-3" id="text-org516fe2d">
+<p>
+beggar [ˈbeɡə(r)] n.乞丐<br />
+food [fuːd] n.食物<br />
+pocket [ˈpɒkɪt] n.衣服口袋<br />
+call [kɔːl] v.拜访,光顾<br />
+</p>
+
+<p>
+pocket money 零花钱<br />
+call at = visit 拜访<br />
+</p>
+
+<hr />
+<p>
+a/an VS the: 泛指 VS 特指<br />
+some VS any:<br />
+</p>
+<ol class="org-ol">
+<li>陈述句? 肯定some, 否定any<br />
+有任何的意思? any<br /></li>
+<li>if从句? any<br /></li>
+<li>疑问句? 确认some, 不确认any<br /></li>
+</ol>
+
+<p>
+move to sw. 搬到某地<br />
+knock at the door 敲门<br />
+ask sb. for sth. 请求某人做某事<br />
+stand on sb's head 倒立<br />
+call at 拜访<br />
+in return for this: 作为对此的回报<br />
+once/twice a st.: 多久一/两次<br />
+ask for sth.: 请求某物<br />
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org7977c23" class="outline-3">
+<h3 id="org7977c23">单词造句</h3>
+<div class="outline-text-3" id="text-org7977c23">
+<p>
+beggar<br />
+</p>
+<ul class="org-ul">
+<li>A dirty beggar asked me for some money yesterday.<br /></li>
+<li>Did the dirty beggar ask you for some money yesterday?<br /></li>
+<li>When did the beggar ask yo for some money?<br /></li>
+<li>Why did the beggar ask you for some money?<br /></li>
+<li>Where did the beggar ask you for some money?<br /></li>
+</ul>
+<p>
+food<br />
+</p>
+<ul class="org-ul">
+<li>I have eaten some foods in the morning.<br /></li>
+<li>Have you ever eaten any foods in the morning?<br /></li>
+<li>Why haven't you eaten any foods in the morning?<br /></li>
+<li>When have you eaten some foods?<br /></li>
+<li>Where have you eaten some foods?<br /></li>
+</ul>
+<p>
+pocket<br />
+</p>
+<ul class="org-ul">
+<li>I put a meat in my pocket.<br /></li>
+<li>Did you put the meat in your pocket?<br /></li>
+<li>Why did you put the meat in your pocket?<br /></li>
+<li>When did you put the meat in your pocket?<br /></li>
+<li>What happened to your pocket money?<br /></li>
+</ul>
+<p>
+call<br />
+</p>
+<ul class="org-ul">
+<li>I called at my girlfriend once a week.<br /></li>
+<li>Do you call at your girlfriend once a week?<br /></li>
+<li>How often do you call at your girlfriend?<br /></li>
+<li>Where do you call at your girlfriend?<br /></li>
+<li>Why do you call at your girlfriend once a week?<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org4e30ce2" class="outline-3">
+<h3 id="org4e30ce2">反复听电影片段</h3>
+</div>
+<div id="outline-container-org3d8191d" class="outline-3">
+<h3 id="org3d8191d">Pattern Drill 写+读</h3>
+<div class="outline-text-3" id="text-org3d8191d">
+<ul class="org-ul">
+<li>s1: I need some ink<br />
+s2: There's a bottle of ink in the desk.<br />
+<ul class="org-ul">
+<li>a bottle of milk - in the fridge<br />
+I need some milk.<br />
+There's a bottle of milk in the fridge.<br /></li>
+<li>a pot of glue - in the cupboard<br />
+I need some glue.<br />
+There's a pot of glue in the cupboard.<br /></li>
+<li>a bag of flour - on the table<br />
+I need some flour.<br />
+There's a bag of flour on the table.<br /></li>
+<li>a can of oil - in the garage<br />
+I need some oil.<br />
+There's a can of oil in the garage.<br /></li>
+</ul></li>
+<li>2T: tea<br />
+s1: You drink a lot of tea, I must say!<br />
+s2: I couldn't live without tea. It's my favourite drink.<br />
+<ul class="org-ul">
+<li>milk<br />
+You drink too much milk, I must say.<br />
+I couldn't live without milk, it's my favourite drink.<br /></li>
+<li>water<br />
+You drink too much water, I must say.<br />
+I couldn't live without water, it's my favourite drink.<br /></li>
+<li>coffee<br />
+You drink too much coffee, I must say.<br />
+I couldn't live without coffee, it's my favourite drink.<br /></li>
+<li>Coca-Cola<br />
+You drink too much Coca-Cola, I must say.<br />
+I couldn't live without Coca-Cola, it's my favourite drink.<br /></li>
+</ul></li>
+<li>3t: car - nice radio<br />
+s1: I like that car. It has a nice radio.<br />
+s2: I like the radio, but not the car!<br />
+<ul class="org-ul">
+<li>house - big garden<br />
+I like that house. It has a big garden.<br />
+I like the garden, but not the house.<br /></li>
+<li>village - old church<br />
+I like that village. It has an old church.<br />
+I like the church, but not the village.<br /></li>
+<li>room - fine view<br />
+I like that room. It has a fine view.<br />
+I like the view, but not the room.<br /></li>
+<li>hotel - good restaurant<br />
+I like that hotel. It has a good restaurant.<br />
+I like that restaurant, but not the hotel.<br /></li>
+</ul></li>
+<li>4t: a cup - over there<br />
+s1: Give me a cup, will you?<br />
+s2: The cup over there?<br />
+s1: It doesn't matter - just give me a cup?<br />
+<ul class="org-ul">
+<li>a vase/plate - near the window<br />
+Give me a plate, will you?<br />
+The plate near the window?<br />
+It doesn't matter - just give me a plate.<br /></li>
+<li>a tin of meat - on the shelf<br />
+Give me a tin of meat, will you?<br />
+The tin of meat on the shelf?<br />
+It doesn't matter - just give me a tin of meat.<br /></li>
+<li>an umbrella - in the bedroom<br />
+Give me an umbrella, will you?<br />
+The umbrella in the bedroom.<br />
+It doesn't matter - just give me an umbrella.<br /></li>
+<li>a comb - in the bathroom<br />
+Give me a comb, will you?<br />
+The comb in the bathroom.<br />
+It doesn't matter - just give me a comb.<br /></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org1bbe6b9" class="outline-3">
+<h3 id="org1bbe6b9">给自己讲解</h3>
+</div>
+<div id="outline-container-org9b2f932" class="outline-3">
+<h3 id="org9b2f932">红皮书</h3>
+</div>
+<div id="outline-container-org4a4eafc" class="outline-3">
+<h3 id="org4a4eafc">习惯用法造句</h3>
+<div class="outline-text-3" id="text-org4a4eafc">
+<p>
+move to sw.<br />
+</p>
+<ul class="org-ul">
+<li>I have moved to a house in SanTang 3 months ago.<br /></li>
+<li>Have you moved to the house in Santang?<br /></li>
+<li>When have you moved to the house in Santang?<br /></li>
+<li>Where have you moved?<br /></li>
+<li>Why did you move to a house in Santang?<br /></li>
+</ul>
+<p>
+knock at the door<br />
+</p>
+<ul class="org-ul">
+<li>The cat knocked at the door.<br /></li>
+<li>Did the cat knock at the door?<br /></li>
+<li>Why did the cat knock at the door?<br /></li>
+<li>What knocked at the door?<br /></li>
+<li>When did the cat knock at the door?<br /></li>
+</ul>
+<p>
+ask sb. for sth.<br />
+</p>
+<ul class="org-ul">
+<li>Don't give him money, he has asked me for it.<br /></li>
+<li>Has he asked you for some money?<br /></li>
+<li>Why has he asked you for some money?<br /></li>
+<li>What has he asked you for?<br /></li>
+<li>Where has he asked you for some money?<br /></li>
+</ul>
+<p>
+stand on sb's head<br />
+</p>
+<ul class="org-ul">
+<li>Miumiu is standing on her hand and playing it.<br /></li>
+<li>Is Miumiu standing on her head?<br /></li>
+<li>Why is Miumiu standing on her head?<br /></li>
+<li>Where is Miumiu standing on her head?<br /></li>
+<li>How does Miumiu stand on her head?<br /></li>
+</ul>
+<p>
+call at<br />
+</p>
+<ul class="org-ul">
+<li></li>
+
+<li></li>
+
+<li></li>
+
+<li></li>
+
+<li></li>
+</ul>
+<p>
+in return for this<br />
+</p>
+<ul class="org-ul">
+<li>In return for this, I knocked at the door.<br /></li>
+<li>What did you do in return for this?<br /></li>
+<li>Did you knock at the door in return for this?<br /></li>
+<li>Why did you knock at the door in return for this?<br /></li>
+<li>When did you knock at the door in return for this?<br /></li>
+</ul>
+<p>
+once a st.<br />
+</p>
+<ul class="org-ul">
+<li>I wash the clothes once a week.<br /></li>
+<li>Do you wash the clothes once a week?<br /></li>
+<li>Why do you wash the clothes once a week?<br /></li>
+<li>How often do you wash the clothes?<br /></li>
+<li>Who washes the clothes once a week?<br /></li>
+</ul>
+<p>
+ask for sth.<br />
+</p>
+<ul class="org-ul">
+<li></li>
+
+<li></li>
+
+<li></li>
+
+<li></li>
+
+<li></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgbb52986" class="outline-3">
+<h3 id="orgbb52986">跟读至背诵</h3>
+</div>
+<div id="outline-container-orgefd6c05" class="outline-3">
+<h3 id="orgefd6c05">Ask me if 写+读</h3>
+</div>
+<div id="outline-container-orgcb3ad28" class="outline-3">
+<h3 id="orgcb3ad28">摘要写作</h3>
+<div class="outline-text-3" id="text-orgcb3ad28">
+<p>
+I have just moved to an house in Bridge Street.<br />
+Yesterday a beggar knocked at my door, it asked me for a meat and a glass of beer.<br />
+In return for this, he stood on his head and sung songs.<br />
+He drank the beer and ate the food.<br />
+Later a neighbor told me about him.<br />
+He is Percy Button.<br />
+He calls at every house once a month<br />
+	and always asks for a meat and a glass of beer.<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org1825a7d" class="outline-3">
+<h3 id="org1825a7d">tell the story 口语</h3>
+</div>
+<div id="outline-container-orgc527a0d" class="outline-3">
+<h3 id="orgc527a0d">Topics for discussion</h3>
+<div class="outline-text-3" id="text-orgc527a0d">
+<ol class="org-ol">
+<li>Do you think this story is true? Why/Why not?<br /></li>
+<li>How did people pay for things long ago, before we had money?<br /></li>
+<li>Imagine you are very hungry, but have no money for a meal. What would you do?<br /></li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

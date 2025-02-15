@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-01-09 Thu 15:56 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-orgdef3e7d" class="outline-2">
+<h2 id="orgdef3e7d">4-3 4.16 The Role of Physical Intimacy</h2>
+<div class="outline-text-2" id="text-orgdef3e7d">
+<p class="verse">
+It's interesting kind of how you say it, become a little more intimate.<br />
+So that actually sort of moves my mind to the idea of more like physical intimacy.<br />
+So how does physical intimacy play into all of it?<br />
+Like, you know, do you have tips around that as well?<br />
+Well, you know, like physical intimacy is probably another topic<br />
+&#xa0;that we may have to set up another discussion around.<br />
+But for our purpose here, I think it's important to deal with this.<br />
+<br />
+There are obviously huge cultural differences. Right.<br />
+And then even within the same context that we are in.<br />
+Like in North America, like one of the big cosmopolitan centres in North America,<br />
+&#xa0;you have people coming from so many different places.<br />
+When it comes to physical intimacy.<br />
+&#xa0;you have almost like puritanical, conservative positions taken by people.<br />
+And you have people very open-minded, very liberated.<br />
+And even in the city you can find probably hundreds of different opinions, position people take.<br />
+<br />
+I just want to point this out,<br />
+&#xa0;the relation between physical intimacy and emotional and psychological intimacy<br />
+&#xa0;&#xa0;is a very fluid one and it is like also very contingent, meaning that it is not fixed.<br />
+It is not that likely to be physically more intimate,<br />
+&#xa0;then we will be simultaneously emotionally intimate.<br />
+Some people can actually get very intimate physically without ever getting intimate emotionally.<br />
+And some people can be very intimate emotionally without even touching each other's fingers.<br />
+Right, so we have to understand<br />
+&#xa0;that like there are two sort of like relatively independent concepts at least in theory.<br />
+<br />
+But of course in real life, we understand that like if you get close to another person,<br />
+&#xa0;it can trigger your emotional feelings.<br />
+And some people may actually feel more intimate with another person<br />
+&#xa0;after being physically intimate with that person.<br />
+So that happens too.<br />
+And for some people, emotional intimacy is actually a condition for physical intimacy,<br />
+&#xa0;I don't like go to bed with someone unless I feel emotionally close with that person.<br />
+And speaking from my personal experience, I have to add this.<br />
+Depending on who your partner is,<br />
+&#xa0;some people actually would have to get physically intimate first<br />
+&#xa0;&#xa0;before they can develop enough trust and a level of comfort<br />
+&#xa0;&#xa0;&#xa0;to be talking about certain things.<br />
+So, and I would say that it is probably true to say<br />
+&#xa0;that like some people would talk to people in order to get to sleep with them.<br />
+But it is also true that some people will have to sleep with someone first<br />
+&#xa0;before they can really talk to them, right.<br />
+And I would say both can happen.<br />
+</p>
+</div>
+<div id="outline-container-org1593456" class="outline-3">
+<h3 id="org1593456">expression</h3>
+<div class="outline-text-3" id="text-org1593456">
+<p>
+cosmopolitan [ˌkɑzməˈpɑlɪt(ə)n]: adj. a cosmopolitan place has people from many different parts of the world – use this to show approval世界性的,全球(各地)的<br />
+puritanical [ˌpjʊrɪˈtænɪk(ə)l]: adj. very strict about moral matters, especially sex – used in order to show disapproval清教徒的<br />
+fluid [ˈfluɪd]: adj. a situation that is fluid is likely to change易变的<br />
+simultaneous[ˌsaɪm(ə)lˈteɪniəs] simultaneously: adj.adv. things that are simultaneous happen at exactly the same time同时的<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgd33c028" class="outline-3">
+<h3 id="orgd33c028">ch.</h3>
+<div class="outline-text-3" id="text-orgd33c028">
+<p>
+4-3 4.16 身体亲密的角色<br />
+</p>
+
+<p>
+很有趣，你提到变得更加亲密。<br />
+这让我想到更多关于身体亲密的概念。那么身体亲密在其中扮演什么角色呢？<br />
+比如说，你对此有没有一些建议呢？<br />
+嗯，你知道吗，身体亲密可能是另一个需要我们专门展开讨论的话题。<br />
+但就我们这里的目的而言，我认为讨论这一点还是很重要的。<br />
+</p>
+
+<p>
+显然，不同文化之间存在巨大的差异，对吧。<br />
+即使是在我们所处的同一个文化背景中也是如此。<br />
+比如在北美，在北美的一些大都市中心，<br />
+你会看到来自不同地方的人，涉及身体亲密时，<br />
+有些人采取了几乎清教徒式的保守立场，<br />
+而另一些人则非常开放，非常自由化。<br />
+即使在同一个城市里，你也能找到可能上百种不同的意见和立场。<br />
+</p>
+
+<p>
+我想指出的一点是，身体亲密与情感和心理亲密之间的关系是非常流动的，<br />
+而且是非常依赖具体情况的，这意味着它并不是固定的。<br />
+并不是说身体上变得更加亲密，我们就会同时变得情感上更亲密。<br />
+有些人实际上可以在身体上非常亲密，却从未在情感上亲密。<br />
+也有些人可以在情感上非常亲密，却连手指都没有碰过对方，对吧。<br />
+所以我们需要理解，至少在理论上，这两个概念是相对独立的。<br />
+</p>
+
+<p>
+但当然，在现实生活中，我们明白如果你接近另一个人，<br />
+这可能会引发你的情感反应。<br />
+有些人在与他人身体上亲密后，<br />
+可能会感到更加情感上的亲密，这种情况也会发生。<br />
+而对另一些人来说，情感上的亲密实际上是身体亲密的前提，<br />
+他们会说，"我不会和某人上床，除非我对那个人有情感上的亲近感。"<br />
+</p>
+
+<p>
+从我的个人经验来说，我必须补充一点，<br />
+这取决于你的伴侣是谁。<br />
+有些人实际上必须先在身体上亲密，<br />
+然后才能发展出足够的信任和舒适感，<br />
+去谈论某些事情。<br />
+</p>
+
+<p>
+所以，我会说，这种情况可能是真的：<br />
+有些人会为了上床而与他人交谈。<br />
+但同样也是真的，有些人必须先与某人发生性关系，<br />
+然后才能真正与那人交谈，对吧。<br />
+而且我会说，这两种情况都可能发生。<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org69dedcd" class="outline-3">
+<h3 id="org69dedcd">sentence</h3>
+<div class="outline-text-3" id="text-org69dedcd">
+<p>
+cosmopolitan [ˌkɑzməˈpɑlɪt(ə)n]: adj. a cosmopolitan place has people from many different parts of the world – use this to show approval世界性的,全球(各地)的<br />
+</p>
+<ul class="org-ul">
+<li>The school is cosmopolitan full of undergrad students who are from all parts of the world.<br /></li>
+<li>Shanghai is regarded as a cosmopolitan city in my opinion.<br /></li>
+<li>The reforming government is determined to foster a cosmopolitan city.<br /></li>
+</ul>
+<p>
+puritanical [ˌpjʊrɪˈtænɪk(ə)l]: adj. very strict about moral matters, especially sex – used in order to show disapproval清教徒的<br />
+</p>
+<ul class="org-ul">
+<li>Your top-down approach is so puritanical that your daughter can't follow it first.<br /></li>
+<li>She makes an assumption that she lives in a city full of puritanical laws.<br /></li>
+<li>The girl who used to study abroad refused to take a course on puritanical traditions.<br /></li>
+</ul>
+<p>
+fluid [ˈfluɪd]: adj. a situation that is fluid is likely to change易变的<br />
+</p>
+<ul class="org-ul">
+<li>It doesn't make sense for you to be fluid about merging two schools.<br /></li>
+<li>My wife is really fluid in her ovulation cycle.<br /></li>
+<li>You should have taken the fluid chance to study abroad.<br /></li>
+</ul>
+<p>
+simultaneous[ˌsaɪm(ə)lˈteɪniəs] simultaneously: adj.adv. things that are simultaneous happen at exactly the same time同时的<br />
+</p>
+<ul class="org-ul">
+<li>As many as 20 guests have simultaneous access to our website.<br /></li>
+<li>Water, corpses, and gas simultaneously feed into the river which lies in front of our house.<br /></li>
+<li>It appeared that two murders had happened simultaneously.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org8852373" class="outline-3">
+<h3 id="org8852373">sentence2</h3>
+<div class="outline-text-3" id="text-org8852373">
+<p>
+cosmopolitan [ˌkɑzməˈpɑlɪt(ə)n]: adj. a cosmopolitan place has people from many different parts of the world – use this to show approval世界性的,全球(各地)的<br />
+</p>
+<ul class="org-ul">
+<li>The school is cosmopolitan full of undergrad students who are from all parts of the world.<br /></li>
+<li>Shanghai is regarded as a cosmopolitan city in my opinion.<br /></li>
+<li>The reforming government is determined to foster a cosmopolitan city.<br /></li>
+</ul>
+<p>
+puritanical [ˌpjʊrɪˈtænɪk(ə)l]: adj. very strict about moral matters, especially sex – used in order to show disapproval清教徒的<br />
+</p>
+<ul class="org-ul">
+<li>Your top-down approach is so puritanical that your daughter can't follow it first.<br /></li>
+<li>She makes an assumption that she lives in a city full of puritanical laws.<br /></li>
+<li>The girl who used to study abroad refused to take a course on puritanical traditions.<br /></li>
+</ul>
+<p>
+fluid [ˈfluɪd]: adj. a situation that is fluid is likely to change易变的<br />
+</p>
+<ul class="org-ul">
+<li>It doesn't make sense for you to be fluid about merging two schools.<br /></li>
+<li>My wife is really fluid in her ovulation cycle.<br /></li>
+<li>You should have taken the fluid chance to study abroad.<br /></li>
+</ul>
+<p>
+simultaneous[ˌsaɪm(ə)lˈteɪniəs] simultaneously: adj.adv. things that are simultaneous happen at exactly the same time同时的<br />
+</p>
+<ul class="org-ul">
+<li>As many as 20 guests have simultaneous access to our website.<br /></li>
+<li>Water, corpses, and gas simultaneously feed into the river in front of our house.<br /></li>
+<li>It appeared that two murders had happened simultaneously.<br /></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

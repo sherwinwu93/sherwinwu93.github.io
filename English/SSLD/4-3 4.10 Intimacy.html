@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-01-03 Fri 09:46 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-orgb4b8cd2" class="outline-2">
+<h2 id="orgb4b8cd2">4-3 4.10 Intimacy</h2>
+<div class="outline-text-2" id="text-orgb4b8cd2">
+<p class="verse">
+We've talked a couple of times or it's sort of come up as this notion of what's ideal in SSLD<br />
+&#xa0;but really if there's anything we've learned so far,<br />
+&#xa0;&#xa0;everyone has their own definition of what's ideal, right?<br />
+So, and for me for example<br />
+&#xa0;I think a lot about the notion of intimacy and challenges in relationships.<br />
+So some people might just kind of want, like easy-going relationship<br />
+&#xa0;in terms of, you know, what they get up to, maybe watching TV, Netflix and chill.<br />
+Whereas I don't know,<br />
+&#xa0;I personally kind of like the challenge of maybe we don't see eye to eye politically.<br />
+And having that ability to really talk it out and debate.<br />
+And even sometimes maybe get a little mad.<br />
+But for me I sort of need that.<br />
+So, I mean people have different standards in what is ideal for them, right?<br />
+<br />
+That's very true.<br />
+You know, that is exactly why we always emphasis individual differences<br />
+&#xa0;instead of saying that everyone has to get to this level of intimacy.<br />
+Everyone has to attain this level of intensity<br />
+&#xa0;and everyone needs<br />
+&#xa0;&#xa0;to experience this phenomenal self-understanding and growth and development in a relationship.<br />
+So I think those are sort of like ideals<br />
+&#xa0;that different people, authors, scholars have tried to portray.<br />
+<br />
+But you're right, in a real life situation, people actually have different preferences.<br />
+Some people do not want to have intimacy.<br />
+Some people dread intimacy.<br />
+Or at least the kind of intimacy that we're talking about.<br />
+So it is important, therefore, to start with every individual's N3Cs as we have always said, right?<br />
+And if someone wants a pretty instrumental almost relationship<br />
+&#xa0;like I just want to have someone to share the house, share the expenses,<br />
+&#xa0;&#xa0;&#xa0;and like provide some basic support to each other in life,<br />
+&#xa0;&#xa0;then we don't talk about detailed stuff at all.<br />
+I don't even have to know about your childhood experience and your family of origin, you know?<br />
+We're fine.<br />
+I don't see why this is a problem.<br />
+If both partners are satisfied with that arrangement.<br />
+So and I think it's perfectly okay for them to be building a relationship like that.<br />
+And if it works out and they are both happy, then I think it is fantastic.<br />
+<br />
+So what we are trying to say here with regard to, you know,<br />
+&#xa0;intimacy, obviously represents a certain set of values that maybe I have.<br />
+[LAUGH] Thinking that people can move on and develop a certain kind of intimacy and deep sharing,<br />
+&#xa0;and understanding each other, doing creative fun things, and all of those.<br />
+And I think it is good that you have asked that question.<br />
+So that we can make it clear to people not everyone has to have this kind of relationship.<br />
+Okay.<br />
+Like you just basically go into a relationship and get what you want out of it.<br />
+Make the best of it, according to your own definition, right, your own standard.<br />
+I think yeah, that's a very important point.<br />
+</p>
+</div>
+<div id="outline-container-orga0d5d64" class="outline-3">
+<h3 id="orga0d5d64">expression</h3>
+<div class="outline-text-3" id="text-orga0d5d64">
+<p>
+notion [ˈnoʊʃ(ə)n]: n. an idea, belief, or opinion观念<br />
+definition [ˌdefəˈnɪʃ(ə)n]: n. a phrase or sentence that says exactly what a word, phrase, or idea means ⇨ define定义<br />
+chill [tʃɪl]: v.n. a feeling of being cold, caused by being ill着凉<br />
+intensity [ɪnˈtensɪti]: n. the quality of being felt very strongly or having a strong effect强度<br />
+phenomenal [fəˈnɑmɪn(ə)l]: adj. very great or impressive显著的<br />
+expense [ɪkˈspens]: n. the amount of money that you spend on something<br />
+arrangement [əˈreɪndʒmənt]: n. plans and preparations that you must make so that something can happen安排<br />
+</p>
+<hr />
+<p>
+be come up as sth.: 被认为是某物<br />
+get up to sth./doing sth.: 着手做某事<br />
+see eye to eye: 是意见一致<br />
+be satisfied with sth.: 对某物满意<br />
+work out: 成功,顺利进行<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgcefeebe" class="outline-3">
+<h3 id="orgcefeebe">sentence</h3>
+<div class="outline-text-3" id="text-orgcefeebe">
+<p>
+notion [ˈnoʊʃ(ə)n]: n. an idea, belief, or opinion观念<br />
+</p>
+<ul class="org-ul">
+<li>The notion of what's intimacy is part and parcel of the course about relationship.<br /></li>
+<li>The notion of what's well-being varys on the individual level.<br /></li>
+<li>Follow your heart, figure out the notion of what's your purpose.<br /></li>
+</ul>
+<p>
+definition [ˌdefəˈnɪʃ(ə)n]: n. a phrase or sentence that says exactly what a word, phrase, or idea means ⇨ define定义<br />
+</p>
+<ul class="org-ul">
+<li>The definition of heart may be mistaken in China on a broader level.<br /></li>
+<li>Say, for example, some students can't remember the definition of a complicated concept without using it in real life.<br /></li>
+<li>These students are up for studying the definition of a newly discovered material.<br /></li>
+</ul>
+<p>
+chill [tʃɪl]: v.n. a feeling of being cold, caused by being ill着凉<br />
+</p>
+<ul class="org-ul">
+<li>After going in the fancy dress party, both my sister and I caught a chill.<br /></li>
+<li>She took care of the baby who caught a chill.<br /></li>
+<li>The prince couldn't take a plunge because of a serious chill.<br /></li>
+</ul>
+<p>
+intensity [ɪnˈtensɪti]: n. the quality of being felt very strongly or having a strong effect强度<br />
+</p>
+<ul class="org-ul">
+<li>There is a very real possibility that the intensity of the storm is beyond what the station can resist.<br /></li>
+<li>The station is capable to measure the intensity of the wind after bringing in the new machine.<br /></li>
+<li>Very often, measuring the intensity of the wind is a good way of predicting the harvest.<br /></li>
+</ul>
+<p>
+phenomenal [fəˈnɑmɪn(ə)l]: adj. very great or impressive显著的<br />
+</p>
+<ul class="org-ul">
+<li>I have to confess that I am envious of your phenomenal success.<br /></li>
+<li>The phenomenal success of his expertise inspired awe in his colleagues.<br /></li>
+<li>His phenomenal success is a big share of bringing science to the box.<br /></li>
+</ul>
+<p>
+expense [ɪkˈspens]: n. the amount of money that you spend on something<br />
+</p>
+<ul class="org-ul">
+<li>To develop a good relationship with your classmates, start off with sharing rent expense.<br /></li>
+<li>The cute girl leapt onto the idea that her boyfriend could move to her apartment and share rent expense.<br /></li>
+<li>He takes a positive attitude on finding a roommate to share rent expense.<br /></li>
+</ul>
+<p>
+arrangement [əˈreɪndʒmənt]: n. plans and preparations that you must make so that something can happen安排<br />
+</p>
+<ul class="org-ul">
+<li>His lords were not satisfied with the arrangement that the king married a man in public ceremony.<br /></li>
+<li>The teacher who has devoted himself to the school has to be focus on the arrangment about his retirement.<br /></li>
+<li>If I had knew the arrangment, I wouldn't have asked you for a lift.<br /></li>
+</ul>
+<hr />
+<p>
+be come up as sth.: 被认为是某物<br />
+</p>
+<ul class="org-ul">
+<li>He was come up as a shrewd businessman in his hometown.<br /></li>
+<li>The woman who was come up as a traitor turned out to be a spy.<br /></li>
+<li>The prisoner who was come up as a spy would be beheaded in the square.<br /></li>
+</ul>
+<p>
+get up to sth./doing sth.: 着手做某事<br />
+</p>
+<ul class="org-ul">
+<li>He gets up to learning ice-skating.<br /></li>
+<li>Get up to cooking, or face your father's anger when he comes back.<br /></li>
+<li>Get up to clear it out, or our room will be full of the smell of urine.<br /></li>
+</ul>
+<p>
+see eye to eye: 是意见一致<br />
+</p>
+<ul class="org-ul">
+<li>She is going to marry a man who sees eye to eye politically.<br /></li>
+<li>If we saw eye to eye politically, we would conquer the land.<br /></li>
+<li>If the nomads and we saw eye to eye politically, we wouldn't fight against them with gunpowder.<br /></li>
+</ul>
+<p>
+be satisfied with sth.: 对某物满意<br />
+</p>
+<ul class="org-ul">
+<li>My aunt is very satisfied with the wife which my cousin married.<br /></li>
+<li>The medic in the surgery team is very satisfied with the operation he had yesterday.<br /></li>
+<li>Satisfied with his son's new girlfriend, he presented her with a big red pocket.<br /></li>
+</ul>
+<p>
+work out: 成功,顺利进行<br />
+</p>
+<ul class="org-ul">
+<li>If it works out and our company makes a profit, we will get promoted.<br /></li>
+<li>He planed it to the last detail to ensure it works out.<br /></li>
+<li>Whether it works out or not depends on how much effort and time you put in.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org5871a6e" class="outline-3">
+<h3 id="org5871a6e">sentence2</h3>
+<div class="outline-text-3" id="text-org5871a6e">
+<p>
+notion [ˈnoʊʃ(ə)n]: n. an idea, belief, or opinion观念<br />
+</p>
+<ul class="org-ul">
+<li>The notion of what's intimacy is part and parcel of the course about relationships.<br /></li>
+<li>The notion of what's well-being varies on the individual level.<br /></li>
+<li>Follow your heart, and figure out the notion of the Enlightenment.<br /></li>
+</ul>
+<p>
+definition [ˌdefəˈnɪʃ(ə)n]: n. a phrase or sentence that says exactly what a word, phrase, or idea means ⇨ define定义<br />
+</p>
+<ul class="org-ul">
+<li>The definition of heart may be mistaken in China on a broader level.<br /></li>
+<li>Say, for example, some students can't remember the definition of a complicated concept without using it in real life.<br /></li>
+<li>These students are up for studying the definition of a newly discovered material.<br /></li>
+</ul>
+<p>
+chill [tʃɪl]: v.n. a feeling of being cold, caused by being ill着凉<br />
+</p>
+<ul class="org-ul">
+<li>After going to the fancy dress party, both my sister and I caught a chill.<br /></li>
+<li>She took care of the baby who caught a chill.<br /></li>
+<li>The prince couldn't take a plunge because of a serious chill.<br /></li>
+</ul>
+<p>
+intensity [ɪnˈtensɪti]: n. the quality of being felt very strongly or having a strong effect强度<br />
+</p>
+<ul class="org-ul">
+<li>There is a very real possibility that the intensity of the storm is beyond what the station can resist.<br /></li>
+<li>The station is capable of measuring the intensity of the wind after bringing in the new machine.<br /></li>
+<li>Very often, measuring the intensity of the wind is a good way of predicting the harvest.<br /></li>
+</ul>
+<p>
+phenomenal [fəˈnɑmɪn(ə)l]: adj. very great or impressive显著的<br />
+</p>
+<ul class="org-ul">
+<li>I have to confess that I am envious of your phenomenal success.<br /></li>
+<li>The phenomenal success of his expertise inspired awe in his colleagues.<br /></li>
+<li>His phenomenal success is a big share of bringing science to the box.<br /></li>
+</ul>
+<p>
+expense [ɪkˈspens]: n. the amount of money that you spend on something<br />
+</p>
+<ul class="org-ul">
+<li>To develop a good relationship with your classmates, start off with sharing rent expenses.<br /></li>
+<li>The cute girl leaped onto the idea that her boyfriend could move to her apartment and share rent expenses.<br /></li>
+<li>He takes a positive attitude on finding a roommate to share rent expenses.<br /></li>
+</ul>
+<p>
+arrangement [əˈreɪndʒmənt]: n. plans and preparations that you must make so that something can happen安排<br />
+</p>
+<ul class="org-ul">
+<li>His lords were not satisfied with the arrangement that the king married a man in a public ceremony.<br /></li>
+<li>The teacher who has devoted himself to the school has to be focused on the arrangement of his retirement.<br /></li>
+<li>If I had known the arrangement, I wouldn't have asked you for a lift.<br /></li>
+</ul>
+<hr />
+<p>
+come up as sth.: 被认为是某物<br />
+</p>
+<ul class="org-ul">
+<li>He has come up as a shrewd businessman in his hometown.<br /></li>
+<li>The woman who came up as a traitor turned out to be a spy.<br /></li>
+<li>The prisoner who was come up as a spy would be beheaded in the square.<br /></li>
+</ul>
+<p>
+get up to sth./doing sth.: 着手做某事<br />
+</p>
+<ul class="org-ul">
+<li>He gets up to exercising ice skating.<br /></li>
+<li>Get up to cooking, or face your father's anger after he goes home.<br /></li>
+<li>Get up to clear it out, otherwise our room will be full of the smell of urine.<br /></li>
+</ul>
+<p>
+see eye to eye: 是意见一致<br />
+</p>
+<ul class="org-ul">
+<li>She decided to marry the noble who sees eye to eye politically.<br /></li>
+<li>If we saw eye to eye politically, we would conquer the land.<br /></li>
+<li>If the nomads and we saw eye to eye politically, we wouldn't fight against them with gunpowder.<br /></li>
+</ul>
+<p>
+be satisfied with sth.: 对某物满意<br />
+</p>
+<ul class="org-ul">
+<li>My aunt is extremely satisfied with the wife who my cousin married.<br /></li>
+<li>The medic in the surgery team is very satisfied with the operation he had yesterday.<br /></li>
+<li>Satisfied with his son's new girlfriend, he presented her with a big red pocket.<br /></li>
+</ul>
+<p>
+work out: 成功,顺利进行<br />
+</p>
+<ul class="org-ul">
+<li>If it works out and our company makes a profit, we will get promoted.<br /></li>
+<li>He planned it to the last detail to ensure it worked out.<br /></li>
+<li>Whether it works out depends on how much effort and time you put in.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org0193296" class="outline-3">
+<h3 id="org0193296">summary</h3>
+<div class="outline-text-3" id="text-org0193296">
+<p>
+Everyone has their own definition of intimacy and what's ideal.<br />
+So we emphasis individual differences<br />
+	instead of saying that everyone has to attain this level of intensity<br />
+		that they have to experience self-understanding, growth, and development in a relationship.<br />
+It is ideals portraied by many people that represent a certain set of values.<br />
+Because people actually have different preferences about intimacy,<br />
+	like some don't want to have intimacy, even dread it.<br />
+If both partners are satisfied with the arrangement,<br />
+	it is not a problem that they don't have intimacy.<br />
+So you can basically go into a relationship and get what you need out of it<br />
+	according to your own definition.<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgcddf03a" class="outline-3">
+<h3 id="orgcddf03a">summary2</h3>
+<div class="outline-text-3" id="text-orgcddf03a">
+<p>
+Everyone has a different definition of intimacy and what's ideal.<br />
+So we emphasize individual differences<br />
+	instead of saying that everyone has to attain this level of intensity<br />
+		that they experience self-understanding, growth, and development in a relationship.<br />
+It is ideals portrayed by many people that represent a certain set of values.<br />
+Because people have different preferences about intimacy,<br />
+	some don't want to have intimacy, or even dread it.<br />
+If both partners are satisfied with the arrangement,<br />
+	it is not a problem that they don't have intimacy in the relationship.<br />
+So you can go into a relationship and get what you need out of it according to your definition.<br />
+</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

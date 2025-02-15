@@ -1,0 +1,729 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-06-19 Wed 16:50 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="lenovo" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orga674dd4">Unrepresentative Data</a></li>
+<li><a href="#orgd3467ac">Arguing From Ignorance</a></li>
+</ul>
+</li>
+<li><a href="#org8c4d071">Special Pleading</a>
+<ul>
+<li><a href="#org5e03616">ATTACKING THE FALLACY</a></li>
+</ul>
+</li>
+<li><a href="#org5e0ac5a">Causal Oversimplification</a>
+<ul>
+<li><a href="#org05f46e5">ATTACKING THE FALLACY</a></li>
+</ul>
+</li>
+<li><a href="#orge5bd1b5">Post Hoc Fallacy</a></li>
+<li><a href="#org09b31d7">Confusion of Cause and Effect</a></li>
+<li><a href="#org7303e93">Neglect of a Common Cause</a></div>
+</div>
+
+<div id="outline-container-orga674dd4" class="outline-3">
+<h3 id="orga674dd4">Unrepresentative Data</h3>
+<div class="outline-text-3" id="text-orga674dd4">
+<p>
+Definition Drawing a conclusion based on data from an unrepresentative or biased sample.<br />
+</p>
+
+<p>
+Unrepresentative data are data that are not proportionately drawn from all relevant subclasses. For example, if one wished to generalize about the opinion of the American people on a particular issue, it would be necessary to consider data proportionately drawn from subclasses based on race, age, educational status, sex, geographical area, and perhaps even religion and political affiliation. In most cases, data from other subclasses, such as body weight and hair color, would not be relevant.<br />
+</p>
+
+<p>
+It is also important to avoid using data that may be biased. This can occur in at least three ways. First, the data collected may be tainted by virtue of the bias of the gatherer. Opinion data gathered by a political party or by an advocacy group should be immediately suspect. Second, data purporting to support claims about any matter are biased if collected from only one or a few subgroups of the target population, especially if data are collected from groups that might have strong positive or negative opinions about the matter at issue. For example, if one were interested in assessing campus opinions about college athletics, one should not survey just members of intercollegiate athletic teams. Neither should one survey just nonathletes. If you were interested in the quality of a recent film release, you should not form a judgment exclusively on the basis of evaluations collected from readers of a single magazine, since its subscribers are a subgroup with special interests and tastes. Third, you should not give much credence to the call-in or email polls frequently taken by networks, newspapers, and magazines these days. If you want to know what “the American people” think about a particular issue, go find a reputable poll that is based on the careful surveying of representative groups.<br />
+</p>
+
+<p>
+Another kind of unrepresentative data might be data of differing quality. If one compared statistics gathered with modern techniques of statistical reporting and analysis with statistics gathered under very different methodological and technical conditions, almost any conclusion would be highly questionable. For example, if one were to compare statistics on the number of violent crimes committed in the United States in 2007 with statistics about similar phenomena in 1947, the comparative conclusion would be quite suspect.<br />
+</p>
+
+<p>
+EXAMPLE “It has been concluded from a recent study involving more than one hundred thousand people in the state of Florida that 43 percent of the American people now spend at least two hours a day in some form of recreational activity.” A reconstruction of this argument in standard form clearly reveals the statistical flaw:<br />
+</p>
+
+<p>
+Since 43 percent of Florida residents spend at least two hours a day in some form of recreational activity, (premise)<br />
+[and the people of Florida are representative of all other Americans,] (implicit premise)<br />
+Therefore, 43 percent of all Americans spend at least two hours a day in some form of recreational activity. (conclusion)<br />
+</p>
+
+<p>
+To draw such a conclusion about the leisure-time activities of all American people would not be warranted. The state of Florida is populated by a disproportionate number of retired and leisure-oriented people, so data based on a Florida population alone would be unrepresentative.<br />
+</p>
+
+<p>
+EXAMPLE “We had a mock election on campus today, and the Democratic candidate won. So I’m pretty confident that she will win the election in November, especially because more than two thousand students voted. That seems to be a big enough sample. Don’t you agree?”<br />
+</p>
+
+<p>
+A college population hardly qualifies as a representative sample of voters, even if the size of the sample is actually larger than the number usually polled by sophisticated polling organizations. If a sample is not drawn from relevant representative subclasses, its size is of no consequence.<br />
+</p>
+
+<p>
+EXAMPLE “A recent study of how Americans spend their vacations revealed that 52 percent of the people spend five or more days a year at ocean beaches.” This study was based on a sample of fifty thousand Virginians, drawn from every relevant subgroup of the population, but it is hardly representative. Most areas of Virginia are close to popular beaches within the state as well as in Maryland and North and South Carolina. For that reason, a disproportionate number of the residents of Virginia, when compared with people from many other states, vacation at the beach.<br />
+</p>
+
+<p>
+ATTACKING THE FALLACY<br />
+Suggestions for responding to arguers who use unrepresentative data are similar to those for dealing with arguers who use too small a sample. If you encounter a case in which someone has used suspect data, you might expose the flawed statistical assumption by making it part of a similar argument with an absurd conclusion. For example:<br />
+</p>
+
+<p>
+Since most of the one thousand people in attendance at the county dog show own dogs, (premise)<br />
+[and what is true of the people at the dog show is true of the entire population,] (implicit premise)<br />
+Therefore, most people own dogs.(conclusion)<br />
+If the arguer sees nothing wrong with the second premise, no attack against unrepresentative data may turn out to be very successful, but you might try one other strategy. Threaten the arguer with the possibility of your gathering another set of data of the same size from people living in local nursing homes as support for a claim that most people do not own dogs. If samples of equal size can support two contradictory conclusions, it should be clear that something must be wrong with the representative quality of the data.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgd3467ac" class="outline-3">
+<h3 id="orgd3467ac">Arguing From Ignorance</h3>
+<div class="outline-text-3" id="text-orgd3467ac">
+<p>
+Definition Arguing for the truth (or falsity) of a claim because there is no<br />
+evidence or proof to the contrary or because of the inability or refusal of an<br />
+opponent to present convincing evidence to the contrary.<br />
+</p>
+
+<p>
+Arguing from ignorance is a tactic many people use to defend some of their favorite<br />
+beliefs. In the case of a positive belief, they simply point out that since a claim has<br />
+not been disproved, it must be true. Or in the case of a negative claim, they argue<br />
+that since the claim has not been proved, it is false. Those who argue in this way<br />
+base their argument not on knowledge but on ignorance, a lack of knowledge.<br />
+The principle of sufficiency, however, makes it clear that the absence of evidence<br />
+against a claim does not constitute sufficient evidence for it and the lack of evidence<br />
+for a claim does not constitute sufficient evidence against it.<br />
+</p>
+
+<p>
+Arguing from ignorance also violates the principle that the burden of proof for<br />
+any claim generally rests on the person who sets forth the claim. For example, if an<br />
+arguer claimed that “ghosts exist, unless you can prove that they don’t,” he or she<br />
+is attempting to shift the burden of proof to another person, usually to someone<br />
+who is dubious about the claim. This is typically done by insisting that those who<br />
+are unconvinced of the truth of the arguer’s claim have the responsibility to disprove it or to provide support for the contradictory claim. If the doubters don’t accept that responsibility, the arguer fallaciously assumes that no proof is needed for<br />
+the claim at issue. But proof is needed. An argument that employs an appeal to the<br />
+“evidence” of no evidence does not satisfy the sufficiency criterion of a good<br />
+argument.<br />
+</p>
+
+<p>
+There are some situations of inquiry in which this kind of reasoning seems to<br />
+be acceptable. In our judicial procedure, for example, a defendant is assumed to<br />
+be innocent unless proven guilty. But this is not a case of arguing from ignorance.<br />
+The principle of innocent until proven guilty is a highly technical judicial construct<br />
+that actually means not proven guilty. It does not mean that the person is innocent;<br />
+it simply means that a defendant is not deemed to be guilty unless he or she is<br />
+proven guilty.<br />
+</p>
+
+<p>
+The fallacy of arguing from ignorance probably gains some of its deceptive appearance as a good argument from its similarity to a legitimate way of arguing. For<br />
+example, suppose that I claimed that there were termites in my house. If a professional termite inspection revealed no evidence to support the claim, however, it<br />
+would then be justifiable for me to conclude that there are no termites in the house.<br />
+This sounds like a case of arguing from ignorance because the lack of evidence for a<br />
+claim (“there are termites”) is used as evidence that the claim is false (“there are no<br />
+termites”), but there is a crucial difference in this case. The negative claim is based<br />
+not on a lack of evidence, but on a thorough assessment of all of the positive and<br />
+negative evidence relevant to the question of whether there are termites in the<br />
+house.<br />
+</p>
+
+
+<p>
+EXAMPLE “What’s all this business about equal pay for women? The women who<br />
+work in my office must be satisfied with their salaries, because not one of them has<br />
+ever complained or asked for a raise.” A reconstruction of this argument in standard form will clearly reveal the faulty implicit premise:<br />
+</p>
+
+<p>
+Since the women in my office do not complain about receiving less pay than<br />
+their male counterparts, (premise)<br />
+[and where there is no expression of dissatisfaction, there is no dissatisfaction,]<br />
+(implicit premise)<br />
+[because the lack of evidence against satisfaction is evidence for satisfaction,]<br />
+(implicit subpremise)<br />
+Therefore, the women in my office are quite satisfied with receiving less pay<br />
+than the men in the office. (conclusion)<br />
+</p>
+
+<p>
+The arguer assumes that the situation of a group of people must be satisfactory simply because no complaints about that situation have been expressed. In other<br />
+words, the absence of evidence against the satisfactory character of a situation is<br />
+regarded as evidence for the satisfactory character of that situation. Making such<br />
+an inference is so distinctive a form of the fallacy of arguing from ignorance that<br />
+it is often given a separate name—the fallacy of quietism. But from the fact that a<br />
+person or group is “quiet”—that is, makes no complaint—one could not infer that<br />
+there is nothing to complain about. There may indeed be many good reasons why<br />
+the complaints are not openly voiced.<br />
+</p>
+
+<p>
+EXAMPLE “Since my opponent has not clearly indicated his opposition to the new<br />
+federal gun-control bill, he obviously is in favor of it.” The only “evidence” offered<br />
+in support of such a claim is the fact that the opponent has not addressed the issue.<br />
+Interestingly, the arguer could have defended the opposite claim with the same evidence: “Since my opponent has not clearly indicated his support for the new federal gun-control bill, he obviously is opposed to it.” Any evidence that could lead<br />
+to either a positive or negative conclusion with equal strength cannot be sufficient<br />
+grounds for one of the conclusions.<br />
+</p>
+
+<p>
+EXAMPLE “I didn’t see any ‘No Trespassing’ sign, so I assumed that it was alright<br />
+to walk through the field.” The fact that there is no sign indicating that an act is<br />
+not permissible does not entitle one to assume that the act is permissible.<br />
+</p>
+
+<p>
+EXAMPLE<br />
+CONNIE: Did you get that teaching job at the University of North Carolina at Chapel<br />
+Hill?<br />
+DOT: No. I sent in my application more than two months ago, and I never heard a word<br />
+from them.<br />
+</p>
+
+<p>
+Dot is assuming that the university has rejected her job application because there is<br />
+no evidence that she has been accepted. However, she could have just as easily argued from ignorance for the opposite claim—that she has been accepted because<br />
+there is no evidence that she has been rejected. Neither inference should be drawn,<br />
+however, because it would be inappropriate to conclude anything on the basis of<br />
+no communication from the university, especially in view of the fact that the institutional procedure required for filling a teaching position is usually a very long and<br />
+complex one.<br />
+</p>
+
+<p>
+ATTACKING THE FALLACY If the absence of proof against a claim could be regarded<br />
+as proof that it is true, then even the most bizarre of claims could be construed as<br />
+true. Moreover, if a claim were so absurd or trivial that others never bothered to<br />
+address it, a defender of such a claim would always win by default.<br />
+</p>
+
+<p>
+If an arguer makes what you consider to be a highly questionable claim and<br />
+supports it by pointing out the lack of evidence against it, try playing the same<br />
+game. You could demonstrate the faulty character of that kind of reasoning by<br />
+making the opposite of the arguer’s claim and supporting it with the same method<br />
+that he or she used. For example, suppose that someone claims that because psychokinesis has not been proved false, it must be true. You could then argue that<br />
+because psychokinesis has not been proved true, it must be false. Your opponent<br />
+should then be able to see that such reasoning would lead to the contradictory conclusion that psychokinesis is both true and false.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org8c4d071" class="outline-2">
+<h2 id="org8c4d071">Special Pleading</h2>
+<div class="outline-text-2" id="text-org8c4d071">
+<p>
+Definition: Applying principles, rules, or criteria to another person while failing or refusing to apply them to oneself or to a situation that is of personal interest, without providing sufficient evidence to support such an exception.<br />
+</p>
+
+<p>
+Special pleading occurs in a context in which it is assumed or understood that a rule, principle, or law applies to all people alike. The special pleader usually accepts the principle but wishes to make himself or herself or another an exception to it. What makes special pleading a fallacy that violates the criterion of sufficiency is the fact that no evidence is provided for making that exception. While special treatment may sometimes be called for, it is always the case that the action of treating differently what appear to be similar cases must be justified.<br />
+</p>
+
+<p>
+EXAMPLE:<br />
+Neel claims that he is too tired to share in the chores of cooking, cleaning, or caring for the children after working all day. If he claims that his wife should do those domestic jobs, even though she, too, is tired from her full-time job outside the home, he is engaged in special pleading. Let us look at this argument in standard form:<br />
+</p>
+
+<p>
+Since I work hard all day and am tired at the end of the day, (premise)<br />
+and you work hard all day and are tired at the end of the day, (premise)<br />
+[and the governing principle in such a situation is that each partner should share in the domestic chores,] (implicit premise)<br />
+[and the principle applies to you but not to me,] (implicit premise)<br />
+Therefore, you should do all the domestic chores. (conclusion)<br />
+</p>
+
+<p>
+Being tired from a full day’s work outside the home presumably excuses Neel from domestic chores, while it apparently does not excuse his wife. He is applying a principle to his wife that he is not willing to apply to himself, and, as can be clearly seen, he has presented no evidence for making that exception.<br />
+</p>
+
+<p>
+EXAMPLE:<br />
+Sometimes we make a special case of ourselves through a subtle use of language: “I am confident, you are arrogant; I am aggressive, you are ruthless; I am thrifty, you are cheap; I am frank, you are rude; I am flexible, you are inconsistent; I am clever, you are conniving; I am thorough, you are picky; I am curious, you are nosy; I am excited, you are hysterical; I am firm, you are pig-headed; I am friendly, you are flirtatious; and I am a free spirit, you take license.”<br />
+</p>
+
+<p>
+But if the behaviors in these cases are the same, how can we justify assessing<br />
+our own behavior positively and another’s negatively, without being inconsistent?<br />
+When charged with inconsistency, special pleaders often respond with, “Well, this<br />
+is different!” But if they cannot convincingly make the distinction stick, they are<br />
+clearly guilty of special pleading.<br />
+</p>
+
+<p>
+EXAMPLE:<br />
+Jessie and Katrina are college roommates. Let us imagine them engaged in the following conversation:<br />
+</p>
+
+<p>
+JESSIE: Would you please turn off your music? I want to take a nap.<br />
+KATRINA: This is my room, too. I want to listen to this new CD I just got in the mail.<br />
+JESSIE: Listen to it some other time. I want to take a nap.<br />
+</p>
+
+<p>
+The principle that most roommates accept is that one’s interest is not more important than the other’s, but Jessie is implicitly claiming that her interest is more important than Katrina’s. Most of us would probably agree that Jessie is engaged in special pleading because she gives no convincing reason why her interest should have a priority status. We are not saying that there is no way to resolve this or other similar issues; we are simply saying that in this particular exchange, Jessie is guilty of special pleading.<br />
+</p>
+</div>
+
+<div id="outline-container-org5e03616" class="outline-3">
+<h3 id="org5e03616">ATTACKING THE FALLACY</h3>
+<div class="outline-text-3" id="text-org5e03616">
+<p>
+An attack that is most effective is to accuse your specialpleading opponent of applying a double standard or being inconsistent. Each of these charges is commonly understood outside logical circles and has strong negative connotations with which the arguer will not want to be associated. But you will need to explain carefully how you think the double standard has been employed and to scrutinize carefully any defense your opponent may make against the charge.<br />
+</p>
+
+<p>
+Some situations may call for making oneself a special case, but these are rare, so the careful thinker should always be suspicious of any preferential treatment claim. Ask the arguer to spell out the reasons why some people should be treated differently from others or why the principle should not apply in his or her particular case. The arguer, of course, will almost always have some kind of reason; the question is whether that reason is sufficient to support the preferential treatment desired. For the hard-to-convince, try an absurd counterexample:<br />
+</p>
+
+<p>
+Since the law with regard to the payment of income tax should be applied in all cases, (premise)<br />
+and I am an exception because my case is not like that of others, for I need that money for other things, (premise)<br />
+Therefore, the income tax law should not be applied to me. (conclusion)<br />
+</p>
+
+<p>
+The second premise should sound absurd to even the most inveterate special pleader, and the arguer should be prepared to show why the special treatment he or she is requesting is not equally absurd.<br />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org5e0ac5a" class="outline-2">
+<h2 id="org5e0ac5a">Causal Oversimplification</h2>
+<div class="outline-text-2" id="text-org5e0ac5a">
+<p>
+Definition Oversimplifying the causal antecedents of an event by specifying causal factors that are insufficient to account for the event in question or by overemphasizing the role of one or more of those factors.<br />
+</p>
+
+<p>
+In causal explanations, it is a common practice to point to a very obvious antecedent of an event and to designate it as the cause. However, a careful analysis of the notion of cause would show that the cause, or sufficient condition, of an event in most cases includes a considerable number of antecedents that only together are sufficient to bring about the event. To point to only one of those factors in a causal explanation might very well be a case of causal oversimplification.<br />
+</p>
+
+<p>
+Since the typical explanation of an event rarely includes all the literally hundreds of antecedent conditions that constitute the sufficient condition of that event, it is almost always possible to question another’s causal explanation. But one should not expect a causal explanation to include every antecedent condition of the event in question. To do so would be unnecessary and an inefficient use of time and energy. Nevertheless, an argument should include enough of those factors to escape the charge of oversimplification. Otherwise, the argument fails to provide sufficient grounds for its conclusion and thus fails to satisfy the sufficiency condition of a good argument.<br />
+</p>
+
+<p>
+EXAMPLE<br />
+"Corporal punishment is no longer allowed in public schools. This is why children have no self-discipline and are losing respect for authority." We will put this argument into standard form to make the faulty causal analysis more blatant:<br />
+</p>
+
+<p>
+Since corporal punishment is no longer allowed in public schools, (premise)<br />
+and children now have less self-discipline and respect for authority than in the past, (premise)<br />
+[and the lack of corporal punishment is by itself sufficient to explain the difference in the behavior of today’s children,] (implicit premise)<br />
+[Therefore, corporal punishment should be brought back to the public<br />
+schools.] (implicit conclusion)<br />
+</p>
+
+<p>
+The problems of self-discipline and loss of respect for authority are not new issues. The ancient Greeks used to wring their hands in anguish over such problems. But even if these were new problems, it is very unlikely that they could be traced directly to the abandonment of corporal punishment in the schools. These are very complex issues, and it is not probable that they have a single cause. For that reason, the conclusion based on a faulty causal analysis should be rejected because there is not sufficient evidence to support the implicit premise.<br />
+</p>
+
+<p>
+EXAMPLE<br />
+"Children today spend an average of five hours per day watching television—time that used to be spent in physical activity and reading. This explains why young people today are fatter and dumber than kids used to be." Even if the facts presented were true, it is unlikely that today’s television viewing habits are alone sufficient to account for higher body weights and lower test scores. These habits may well be one of the causal antecedents of the alleged effect on the weight and test scores of children, but to assign that heavy a role to one factor would oversimplify this causally complex phenomenon.<br />
+</p>
+
+<p>
+EXAMPLE<br />
+A radio preacher recently argued in the following way: “Marriage would be greatly helped if husband and wife would read the Scriptures together and pray together every day. No wonder divorce has increased so much! Family worship has dropped almost 30 percent in just the past fifteen years.” It is not likely that the rise in the national divorce rate could be sufficiently accounted for by data on family worship, even if the data were true. Because the reasons for the dissolution of a marriage are usually quite varied and complex, it seems highly questionable to reduce them to a change in worship patterns.<br />
+</p>
+</div>
+
+<div id="outline-container-org05f46e5" class="outline-3">
+<h3 id="org05f46e5">ATTACKING THE FALLACY</h3>
+<div class="outline-text-3" id="text-org05f46e5">
+<p>
+It is always appropriate to remind the arguer who commits this fallacy that events are almost always the result of many factors. This is an important feature of the dialogue, because it is unlikely that the arguer would disagree with that general claim. Hence, the door is at least opened for him or her to entertain other contributing causes and even to adjust earlier inferences that he or she may have drawn.<br />
+</p>
+
+<p>
+If you suspect that a causal analysis is oversimplified, because it seems insufficient to account for the event in question or because you think it overemphasizes the role of one or more specific factors, point out these problems to the arguer and request some further justification of the analysis. You may help, of course, by suggesting additional factors that you think should be considered in the causal analysis. Be sure to ask the arguer what he or she thinks of your suggestions so that they cannot be ignored, and the arguer will thus be forced to consider their merit.<br />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orge5bd1b5" class="outline-2">
+<h2 id="orge5bd1b5">Post Hoc Fallacy</h2>
+<div class="outline-text-2" id="text-orge5bd1b5">
+<p>
+Definition Assuming that a particular event, B, is caused by another event, A, simply because B follows A in time.<br />
+</p>
+
+<p>
+Establishing the temporal priority of one event over another is not a sufficient condition for inferring a causal relationship between those events. One cannot assume that post hoc ergo propter hoc—that an event that occurs after another event (post hoc) therefore occurs because of that other event (ergo propter hoc). A chronological relationship is only one of the indicators of a possible causal relationship. Other indicators might include a spatial connection or perhaps some history of regularity. If temporal priority alone were sufficient to establish a causal relationship, then virtually any event that preceded another could be assumed to be the cause of it. This kind of thinking has contributed to the creation of many superstitions. For example, something was often considered “bad luck” for no reason other than the fact that it preceded an undesirable event. Such thinking mistakes a sheer coincidence for a causal relation.<br />
+</p>
+
+<p>
+The post hoc fallacy is sometimes confused with the fallacy of causal oversimplification. The post hoc fallacy, however, is not a special case of causal oversimplification. Causal oversimplification usually occurs when a particular causal antecedent is mistakenly regarded as constituting the sufficient condition of an event when it is not by itself adequate to account for that event. In the case of the post hoc fallacy, a causal situation is not being oversimplified; rather, the question is whether the events have any causal relationship at all.<br />
+</p>
+
+<p>
+One who commits the post hoc fallacy has clearly argued in a way that fails to comply with the sufficient condition of a good argument. What purports to be a causal argument has a premise that does not identify a clear-cut causal factor—only the temporal priority of one event in relation to another. But this is not a sufficient reason to infer any causal connection between the two.<br />
+</p>
+
+<p>
+EXAMPLE “Only two days after my ex-husband played golf at the charity tournament, the same one that the president of our company played in, my immediate supervisor called me in and told me that my work was unsatisfactory and that Friday would be my last day. It seems that I have a right to know what my former husband said about me, so that at least I can give my side of the story.” Here is the way this argument looks in standard form:<br />
+</p>
+
+<p>
+Since my ex-husband and my boss played at the same golf tournament,(premise)<br />
+and my supervisor fired me right after the tournament, (premise)<br />
+[and since one event preceded the other, the preceding event caused the subsequent event,] (implicit premise)<br />
+[Therefore, my ex-husband must have said something very negative about me to my boss that caused him to fire me.] (implicit conclusion)<br />
+</p>
+
+<p>
+In order for this woman to give her side of the story, she will have to do a much better job of establishing that there was a causal relation between the tournament event and her firing. That will be very difficult to do if she bases it entirely upon the temporal priority of one event to the other.<br />
+</p>
+
+<p>
+EXAMPLE<br />
+“I can’t help but think that you are the cause of this. We never had any problem with the furnace until you moved into the apartment.” The manager of the apartment house, on no stated grounds other than the temporal priority of the new tenant’s occupancy, has assumed that the tenant’s presence has some causal relationship to the furnace’s not working properly.<br />
+</p>
+
+<p>
+EXAMPLE<br />
+“Ever since we quit going to church, business has been getting worse. If we want to keep from going completely bankrupt, we’d better go back to church.”<br />
+</p>
+
+<p>
+Again, the claim is that one event was brought about by another event simply because of the temporal relationship.<br />
+</p>
+
+<p>
+ATTACKING THE FALLACY<br />
+It is difficult to believe that anyone would really conclude that B is caused by A simply because B follows A in time. In most cases, additional factors probably lie behind the causal claim. In our examples, the manager of the apartment house may have reason to believe that the tenant has tampered with the furnace or the operator of the business may have strong beliefs about divine punishment. However, their actual arguments focus simply on the temporal character of the relationship of events. Insofar as other factors or assumptions are not specified or even mentioned, it is appropriate to point out the post hoc character of such a claim and to indicate that you will regard such a causal explanation as adequate only if it is supplemented by other convincing evidence.<br />
+</p>
+
+<p>
+You should have no trouble finding absurd counterexamples that could demonstrate the fallaciousness of post hoc thinking. Select any two events that you think the arguer would regard as being temporally related but causally unrelated events and claim that the prior one caused the succeeding one. For example, you might argue that a garbage truck passing by the house must have caused the phone to ring because the phone rang right after the truck passed. Since the arguer will regard temporal priority as insufficient evidence for your causal claim about the garbage truck, he or she should be encouraged to abandon such grounds in his or her own argument, or at least to supplement the temporal priority with additional causal factors.<br />
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org09b31d7" class="outline-2">
+<h2 id="org09b31d7">Confusion of Cause and Effect</h2>
+<div class="outline-text-2" id="text-org09b31d7">
+<p>
+Definition Confusing the cause with the effect of an event.<br />
+</p>
+
+<p>
+When the Scarecrow asks the Wizard of Oz for a brain, the Wizard answers that he cannot give him a brain but that he can give him a diploma from the University of Kansas. The Wizard has confused the brain with the effect of a brain. But that is no problem in the story because such confusion is simply entertaining. In the nonfantasy world, however, resolving such causal confusion can be very important; it can assist us in coming to an accurate understanding of our experiences and in constructively addressing the future. An argument that confuses the effect with the cause of an event uses evidence based upon a faulty causal analysis and therefore does not provide sufficient grounds for its conclusion, let alone a correct understanding of our world.<br />
+</p>
+
+<p>
+EXAMPLE<br />
+One prison inmate says to another: “Governor Kaine always seems to know when we’re having a good meal. He times his annual inspection visit here on the one day of the year that we have steak.” A look at this argument in standard form will help us to see the faulty causal analysis:<br />
+</p>
+
+<p>
+Since Governor Kaine always comes to visit the prison on the one day a year that we have steak, (premise)<br />
+</p>
+
+<p>
+[and either the governor has intuitive powers or the prison officials are informed of his visit in advance and serve steak because of his visit,] (implicit premise)<br />
+</p>
+
+<p>
+[and it is not likely that prison officials are informed of the governor’s visit in advance,] (implicit premise)<br />
+</p>
+
+<p>
+Therefore, Governor Kaine must have an intuitive way of knowing such things. (conclusion)<br />
+</p>
+
+<p>
+The inmate has it backwards. The third implicit premise is surely constituted by a faulty causal analysis. It is much more likely that prison officials are given advance notice of the governor’s visit than that the governor has intuitive powers that he uses to pick a day when he can get a good meal.<br />
+</p>
+
+<p>
+EXAMPLE<br />
+“It’s no wonder that Natalie makes such good grades. She’s the teacher’s pet.” It is much more likely the case that Natalie is the teacher’s pet because she makes good grades. Based upon our general knowledge of classroom dynamics, if Natalie is indeed the teacher’s pet, it would seem highly unusual to treat her as a “pet” for reasons other than those related to her superior performance.<br />
+</p>
+
+<p>
+EXAMPLE<br />
+Many theologians claim that an act is right because God approves of it. This is one of two possible answers to the ancient Socratic question about the relationship between God and morality in one of his dialogues, the Euthyphro: Is a thing good because God approves of it, or does God approve of it because it is good? In the dialogue, Socrates implicitly suggests that there is a confusion of cause and effect in Euthyphro’s endorsement of the first option. Socrates takes the second option that “God approves a thing because it is good,” which he believes is the proper understanding of the causal relationship between God and morality. Either Euthyphro or Socrates is confused about this causal relationship; and since each view has very serious moral and theological implications, it is important that the somebody’s faulty causal analysis be corrected.<br />
+</p>
+
+<p>
+ATTACKING THE FALLACY<br />
+Any causal confusion that obscures the truth should be challenged. For that reason, even if a young child were to say, “Look, Daddy, that tree moving over there is making the wind blow,” it should be considered less an occasion for being amused than an opportunity for giving the child a more accurate understanding of the nature of wind.<br />
+</p>
+
+<p>
+When the thinking of adults exhibits a confusion of cause and effect, then it is all the more dangerous because the claims of adults are more likely to have an effect on the thinking of others. Hence, any kind of causal explanation that represents what you believe to be a confusion of cause and effect should be challenged in a way that would be helpful in eliminating the confusion. If an arguer draws a conclusion based on a confusion of cause and effect, the absurd counterexample method may be the easiest way of exposing the error. If the Wizard of Oz example doesn’t work, try the following somewhat more subtle example. One staff member says to another at the unemployment office: “No wonder these people can’t get jobs. Have you noticed how irritable they are?” If the arguer is able to recognize that reversing the cause and effect creates a more plausible causal understanding of the factors in this situation—that the unemployed are irritable because they can’t find a job—then maybe he or she will be able to do the same with regard to the faulty causal claim in question.<br />
+</p>
+
+<p>
+A confusion of cause and effect is sometimes not at all easy to detect. Even the absurd counterexample method will not always ensure an acknowledgment by the arguer of a confusion in his or her own causal analysis. The arguer may acknowledge that there is a clear confusion in the absurd counterexample but still insist that no such confusion exists in the case at issue. In these cases, of course, it will be necessary to explain carefully why the reversal of the cause and effect makes more sense<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org7303e93" class="outline-2">
+<h2 id="org7303e93">Neglect of a Common Cause</h2>
+<div class="outline-text-2" id="text-org7303e93">
+<p>
+Definition Failing to recognize that two seemingly related events may not be causally related at all, but rather are effects of a common cause.<br />
+</p>
+
+<p>
+When two events are found together in what appears to be a causal relation, we tend to assume that one is the cause and one the effect. Such thinking, however, can obscure another and perhaps better understanding of the relationship. One should be open to the possibility that both events may be effects of another or common cause. However, in order to identify such a common cause, it will be necessary to place very great demands upon your understanding of causal relationships in our world.<br />
+</p>
+
+<p>
+An argument that causally connects two obvious events while neglecting a third, less obvious event that may be the underlying cause of each of the other two events does not provide sufficient grounds for its causal claim. Neglecting what appears to be a common cause means that the arguer has failed to produce the best explanation of the event in question. Hence, the argument cannot qualify as a good one.<br />
+</p>
+
+<p>
+EXAMPLE<br />
+If it were discovered that most elementary schoolteachers have children of their own, it might be concluded either that teaching stimulates an interest in parenthood or that being a parent stimulates interest in working with children. In standard form, the argument looks like this:<br />
+</p>
+
+<p>
+Since most elementary schoolteachers have children of their own, (premise)<br />
+</p>
+
+<p>
+Therefore, teaching must stimulate an interest in being a parent, or being a parent stimulates an interest in working with children. (conclusion)<br />
+</p>
+
+<p>
+However, a more likely causal analysis of the situation is that another factor, such as a love of children, causes many people to become both parents and elementary schoolteachers.<br />
+</p>
+
+<p>
+EXAMPLE<br />
+Suppose that a young college student is both obese and depressed. A typical analysis of such a situation might be that the obesity is causing the depression or that, because of the depression, the student tends to overeat. However, a more likely explanation is that some underlying psychological or physical problem is causing both effects.<br />
+</p>
+
+<p>
+EXAMPLE<br />
+We often hear that current movies and television programming are bringing about a “moral degeneration” in our country. However, it seems probable that a number of other factors at work in our culture are producing both the contemporary trend in films and our changing moral standards. Because these common factors are more difficult to detect or to isolate in a causal analysis, it is simpler, although probably fallacious, to blame the filmmakers or the television programmers.<br />
+</p>
+
+<p>
+ATTACKING THE FALLACY<br />
+Great care should be taken not to charge a person falsely with neglect of a common cause. In almost any causal relationship there will be peripheral factors common to the events in question, the neglect of which would constitute no fallacy. For example, if the explanation of the alleged causal relation between being an elementary schoolteacher and being a parent failed to mention that being an adult was causally necessary to both effects, it would not be appropriate to charge the arguer with neglecting a common cause. The common cause in this case is not a significant one. However, if one is attempting to explain an allegedly causal relationship between two things by reference to only those two things, and a more adequate account could be provided by appealing to an additional factor causally common to both, then it would indeed be fallacious to neglect that alternative explanation.<br />
+</p>
+
+<p>
+If you believe that the primary problem with a proposed explanation is its neglect of a common cause of the events in question, you should demonstrate just how that common factor could provide a more adequate explanation. The arguer should then feel obligated to scrutinize your proposal and try to determine which of the causal explanations is the more adequate one.<br />
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>

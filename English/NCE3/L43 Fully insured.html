@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-09-28 Sat 22:17 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-orgdd92251" class="outline-2">
+<h2 id="orgdd92251">Lesson 43 Fully insured</h2>
+<div class="outline-text-2" id="text-orgdd92251">
+<p class="verse">
+Who owned the pie dish and why?<br />
+<br />
+Insurance companies are normally willing to insure anything.<br />
+Insuring public or private property is a standard practice in most countries in the world.<br />
+If, however, you were holding an open air garden party or a fete<br />
+&#xa0;it would be equally possible to insure yourself in the event of bad weather.<br />
+Needless to say, the bigger the risk an insurance company takes, the higher the premium<br />
+&#xa0;you will have to pay.<br />
+It is not uncommon to hear<br />
+&#xa0;that a shipping company has made a claim for the cost of salvaging a sunken ship.<br />
+But the claim made by a local authority to recover the cost of<br />
+&#xa0;salvaging a sunken pie dish	must surely be unique.<br />
+<br />
+Admittedly it was an unusual pie dish, for it was eighteen feet long and six feet wide.<br />
+It had been purchased by a local authority<br />
+&#xa0;so that an enormous pie could be baked for an annual fair.<br />
+The pie committe decided that the best way to transport the dish would be by canal,<br />
+&#xa0;so they insured it for the trip.<br />
+Shortly after it was launched, the pie committee went to a local inn to celebrate.<br />
+At the same time, a number of teenagers climbed on to the dish<br />
+&#xa0;and held a little party of their own.<br />
+Dancing proved to be more than the dish could bear,<br />
+&#xa0;for during the party it capsized and sank in seven feet of #+OPTIONS: \n:t toc:nil num:nil html-postamble:nil<br />
+<br />
+The pie committee telephoned a local garage owner<br />
+&#xa0;who arrived in a recovery truck to salvage the pie dish.<br />
+Shivering in their wet clothes,<br />
+&#xa0;the teenagers looked on	while three men dived repeatedly into the water to locate the dish.<br />
+They had little difficulty in finding it,<br />
+&#xa0;but hauling it out of the water proved to be a serious problem.<br />
+The sides of the dish were so smooth that it was almost impossible to attach hawsers<br />
+&#xa0;and chains to the rim without damaging it.<br />
+Eventually chains were fixed to one end of the dish<br />
+&#xa0;and a powerful winch was put into operation.<br />
+The dish rose to the surface<br />
+&#xa0;and was gently drawn towards the canal bank.<br />
+For one agonizing moment,<br />
+&#xa0;the dish was perched precariously on the bank of the canal,<br />
+&#xa0;but it suddenly overbalanced and slid back into the water.<br />
+The men were now obliged to try once more.<br />
+This time they fixed heavy metal clamps to both sides of the dish<br />
+&#xa0;so that they could fasten the chains.<br />
+The dish now had to be lifted vertically<br />
+&#xa0;because one edge was resting against the side of the canal.<br />
+The winch was again put into operation<br />
+&#xa0;and one of the men started up the truck.<br />
+Several minutes later,<br />
+&#xa0;the dish was successfully hauled above the surface of the water.<br />
+Water streamed in torrents over its sides with such force<br />
+&#xa0;that it set up a huge wave in the canal.<br />
+There was a danger that the wave would rebound off the other side of the bank<br />
+&#xa0;and send the dish plunging into the water again.<br />
+By working at tremendous speed, the men managed to get the dish on to dry land<br />
+&#xa0;before the wave returned.<br />
+</p>
+</div>
+
+<div id="outline-container-orge59d1d4" class="outline-3">
+<h3 id="orge59d1d4">words</h3>
+<div class="outline-text-3" id="text-orge59d1d4">
+<p>
+insure [ɪnˈʃʊr] v.投保<br />
+fete [feɪt] n.游园会<br />
+premium [ˈpriːmiəm] n.保险费<br />
+recover [rɪˈkʌvər] v.使&#x2026;得到补偿,弥补<br />
+admittedly [ədˈmɪtɪdli] adv.公认地<br />
+purchase [ˈpɜːrtʃəs] v.买<br />
+annual [ˈænjuəl] adj.一年一度的<br />
+teenager [ˈtiːneɪdʒər] n.青少年<br />
+capsize [ˈkæpsaɪz] v.(船)翻<br />
+shiver [ˈʃɪvər] v.打颤,发抖<br />
+dive [daɪv] v.(头向下)跳水<br />
+haul [hɔːl] n.托拽<br />
+hawser [ˈhɔːzər] n.粗缆绳<br />
+rim [rɪm] n.外沿,边<br />
+winch [wɪntʃ] n.绞车<br />
+agonizing [ˈæɡənaɪzɪŋ] adj.精神紧张的,提心吊胆的<br />
+perch [pɜːrtʃ] v.处于(高处)<br />
+precariously [prɪˈkeriəsli] adv.危险地,不稳固地<br />
+overbalance [ˌoʊvərˈbæləns] v.失去平衡<br />
+clamp [klæmp] n.夹钳,夹板<br />
+vertically [ˈvɜːrtɪkli] adv.垂直地<br />
+torrent [ˈtɔːrənt] n.激流,洪流<br />
+rebound [rɪˈbaʊnd] v.弹回<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge79dbd5" class="outline-3">
+<h3 id="orge79dbd5">单词造句</h3>
+</div>
+<div id="outline-container-org6834bd1" class="outline-3">
+<h3 id="org6834bd1">反复听电影片段直到懂关键句</h3>
+</div>
+<div id="outline-container-orgcbdff84" class="outline-3">
+<h3 id="orgcbdff84">复习二册语法(笔记或视频) &amp; 红皮书</h3>
+</div>
+<div id="outline-container-org0e4c004" class="outline-3">
+<h3 id="org0e4c004">习惯用法造句</h3>
+</div>
+<div id="outline-container-org52468d4" class="outline-3">
+<h3 id="org52468d4">跟读 50遍</h3>
+</div>
+<div id="outline-container-org8e4325a" class="outline-3">
+<h3 id="org8e4325a">Comprehension 反复练习</h3>
+</div>
+<div id="outline-container-orgd72af1b" class="outline-3">
+<h3 id="orgd72af1b">Ask me if 写+读</h3>
+</div>
+<div id="outline-container-orgeb8009b" class="outline-3">
+<h3 id="orgeb8009b">摘要写作 写 &amp; 对答案</h3>
+</div>
+<div id="outline-container-orgc6eef30" class="outline-3">
+<h3 id="orgc6eef30">tell the story 口语复述</h3>
+</div>
+<div id="outline-container-org2af8eaf" class="outline-3">
+<h3 id="org2af8eaf">composition 阅读 或 写作</h3>
+</div>
+<div id="outline-container-org2976fee" class="outline-3">
+<h3 id="org2976fee">Topics for discussion</h3>
+</div>
+</div>
+</div>
+</body>
+</html>

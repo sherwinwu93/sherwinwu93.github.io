@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-08-06 Tue 22:27 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-org8d5de05" class="outline-2">
+<h2 id="org8d5de05">Lesson 15 Good news</h2>
+<div class="outline-text-2" id="text-org8d5de05">
+<p class="verse">
+What was the good news?<br />
+<br />
+The secretary told me that Mr. Harmsworth would see me.<br />
+I felt very nervous when I went into his office.<br />
+He did not look up from his desk when I entered.<br />
+After I had sat down, he said that business was very bad.<br />
+He told me that the firm could not <b>afford to pay</b> such large salaries.<br />
+Twenty people had already left.<br />
+I knew that <b>my turn had come</b>.<br />
+'Mr. Harmsworth,' I said <b>in a weak voice</b>.<br />
+'Don't interrupt', he said.<br />
+Then he smiled and told me I would receive an extra thousand pounds a year!<br />
+</p>
+</div>
+<div id="outline-container-orgf43fbfe" class="outline-3">
+<h3 id="orgf43fbfe">expression</h3>
+<div class="outline-text-3" id="text-orgf43fbfe">
+<p>
+secretary [ˈsekrət(ə)ri] n.秘书<br />
+nervous [ˈnɜːvəs] adj.精神紧张的<br />
+afford [əˈfɔːd] v.负担得起<br />
+weak [wiːk] adj.弱的<br />
+interrupt [ˌɪntəˈrʌpt] v.插话,打断<br />
+</p>
+
+<p>
+be nervous about sth. / doing sth. 对某事/做某事紧张<br />
+afford sth. 负担某物<br />
+Sorry to interrupt, but&#x2026; 很抱歉打断, 但是&#x2026;<br />
+</p>
+
+<hr />
+<p>
+宾语从句: 句子做宾语<br />
+直接引语变间接引语: 时态倒退一个时态,现在-&gt;过去,过去-&gt;过去完成;客观事实仍成立可不退<br />
+</p>
+
+<p>
+look up 抬头看<br />
+afford to pay 负担得起支付<br />
+my turn had come 轮到我了<br />
+in a weak voice 用微弱的声音<br />
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-orgcbad12e" class="outline-3">
+<h3 id="orgcbad12e">单词造句</h3>
+<div class="outline-text-3" id="text-orgcbad12e">
+<p>
+secretary<br />
+</p>
+<ul class="org-ul">
+<li>As soon as the secretary had entered the room, the boss waved to her.<br /></li>
+<li>After the secretary had got off the car, she drove on to the next meeting.<br /></li>
+<li>Before the secretary tried to pay for her dinner, he had already done that.<br /></li>
+<li>While the secretary was keeping guard at the door, I opened the parcel.<br /></li>
+<li>The secretary was not allowed to touch the clavichord.<br /></li>
+</ul>
+<p>
+nervous adj.<br />
+</p>
+<ul class="org-ul">
+<li>Take it easy, I find you nervous.<br /></li>
+<li>I'm not nervous about the exam at all.<br /></li>
+<li>She is nervous about asking for a lift.<br /></li>
+<li>I am nervous about working with beautiful girls.<br /></li>
+<li>I felt very nervous, when I went into the office.<br /></li>
+</ul>
+<p>
+afford v.<br />
+</p>
+<ul class="org-ul">
+<li>The house is too expensive for me to afford it.<br /></li>
+<li>Can we afford that?<br /></li>
+<li>We can't afford to pay that right now.<br /></li>
+<li>The firm can't afford to pay such large salaries.<br /></li>
+<li>He gets a good salary, but he still can't afford to pay such an expensive car.<br /></li>
+</ul>
+<p>
+weak adj.<br />
+</p>
+<ul class="org-ul">
+<li>You're not weak, you're so strong.<br /></li>
+<li>I feel weak. I think I must catch a cold.<br /></li>
+<li>'Give me a hand.' She said in a weak voice.<br /></li>
+<li>A weak beggar is nervous about asking me for a meat.<br /></li>
+<li>A weak beggar is standing on his head.<br /></li>
+</ul>
+<p>
+interrupt v.<br />
+</p>
+<ul class="org-ul">
+<li>I'm replying a letter, don't interrupt me please.<br /></li>
+<li>Sorry to interrupt, but is it your handbag?<br /></li>
+<li>Sorry to interrupt, but my wife will meet me in 5 minutes' time.<br /></li>
+<li>Sorry to interrupt, but smoking is not allowed there.<br /></li>
+<li>Sorry to interrupt, but can I open the window?<br /></li>
+</ul>
+<p>
+extra adj.<br />
+</p>
+<ul class="org-ul">
+<li>I could use some extra sleep.<br /></li>
+<li>I could use some extra time.<br /></li>
+<li>I could use some extra money.<br /></li>
+<li>I could use some extra hand.<br /></li>
+<li>I could use some extra help.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org5e6d9d9" class="outline-3">
+<h3 id="org5e6d9d9">反复听电影片段</h3>
+</div>
+<div id="outline-container-org628532e" class="outline-3">
+<h3 id="org628532e">Pattern Drill 写+读 see notebooks</h3>
+</div>
+<div id="outline-container-org41adab0" class="outline-3">
+<h3 id="org41adab0">给自己讲解</h3>
+</div>
+<div id="outline-container-org5bdeb58" class="outline-3">
+<h3 id="org5bdeb58">红皮书</h3>
+</div>
+<div id="outline-container-orgd9aa12c" class="outline-3">
+<h3 id="orgd9aa12c">习惯用法造句 none</h3>
+<div class="outline-text-3" id="text-orgd9aa12c">
+<p>
+afford to pay<br />
+my turn had come<br />
+in a weak voice<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org4867285" class="outline-3">
+<h3 id="org4867285">跟读至背诵</h3>
+</div>
+<div id="outline-container-orgfaf1fe6" class="outline-3">
+<h3 id="orgfaf1fe6">Ask me if 写+读</h3>
+<div class="outline-text-3" id="text-orgfaf1fe6">
+<ol class="org-ol">
+<li>Mr. Harmworth is my employer.<br />
+Who is your employer?<br /></li>
+<li>His secretary told me that he would see me.<br />
+What did his secretary tell you?<br />
+Who did his secretary tell you that would see you?<br /></li>
+<li>I went into his office. Where<br />
+Where did I go?<br /></li>
+<li>I felt very nervous.<br />
+How did I feel?<br />
+Why did I feel very nervous.<br /></li>
+<li>The firm couldn't afford to pay such large salaries.<br />
+What couldn't the firm afford to pay?<br />
+Why couldn't the firm afford to pay such large salaries?<br /></li>
+<li>Twenty people had left.<br />
+How many people had left?<br /></li>
+<li>I thought he would tell me to leave too.<br />
+What did you think he would tell you?<br /></li>
+<li>He told me not to interrupt.<br />
+What did he tell you not to do?<br /></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org407e05e" class="outline-3">
+<h3 id="org407e05e">摘要写作</h3>
+</div>
+<div id="outline-container-orgaeb3714" class="outline-3">
+<h3 id="orgaeb3714">tell the story 口语</h3>
+<div class="outline-text-3" id="text-orgaeb3714">
+<p>
+Mr. Harmworth wanted to see me.<br />
+I felt very nervous about this, when I went into his office.<br />
+He said that business was very bad, the firm couldn't pay such large salaries.<br />
+Twenty people had left, but he didn't ask me to leave as well.<br />
+He offered me an extra thousand pounds a year.<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org3f3c24c" class="outline-3">
+<h3 id="org3f3c24c">Topics for discussion</h3>
+<div class="outline-text-3" id="text-org3f3c24c">
+<p>
+Describe an interview you have had.<br />
+Have you ever felt nervous? What makes you nervous?<br />
+What would you do with an extra $1,000 a year?<br />
+</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,644 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-09-28 Sat 22:17 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-orgb875c51" class="outline-2">
+<h2 id="orgb875c51">Lesson 15 Fifty pence worth of trouble</h2>
+<div class="outline-text-2" id="text-orgb875c51">
+<p class="verse">
+Did George get anything for his fifty pence? What?<br />
+<br />
+Children always appreciate small gifts of money.<br />
+Mum or dad, of course, provide a regular <b>supply of</b> pocket money,<br />
+&#xa0;but uncles and aunts are always a source of extra income.<br />
+With some children, small sums <b>go a long way</b>.<br />
+If fifty pence pieces <b>are not exchanged for</b> sweets, they rattle for months inside money boxes.<br />
+Only very thrifty children managed to <b>fill up</b> a money box.<br />
+For most of them, fifty pence is a small price to pay for a nice big bar of chocolate.<br />
+<br />
+My nephew, George, has a money box but it is always empty.<br />
+Very few of the fifty pence pieces and pound coins I have given him have <b>found their way</b> there.<br />
+I gave him fifty pence yesterday and <b>advised him to save</b> it.<br />
+Instead he bought himself fifty pence worth of trouble.<br />
+<b>On his way to</b> the sweet shop, he dropped his fifty pence<br />
+&#xa0;and it bounced along the pavement and then disappeared down a drain.<br />
+George took off his jacket,<br />
+&#xa0;<b>rolled up</b> his sleeves and pushed his right arm through the drain cover.<br />
+He could not find his fifty pence piece anywhere, and <b>what is more</b>, he could not get his arm out.<br />
+A crowd of people gathered round him and a lady <b>rubbed his arm with</b> soap and butter,<br />
+&#xa0;but George was firmly stuck.<br />
+The fire brigade was called and two fire fighters freed George using <b>a special type of</b> grease.<br />
+George was not too upset by his experience<br />
+&#xa0;because the lady who owns the sweet shop <b>heard about</b> his troubles<br />
+&#xa0;&#xa0;and <b>rewarded him with</b> a large box of chocolates.<br />
+</p>
+</div>
+<div id="outline-container-org64ac01c" class="outline-3">
+<h3 id="org64ac01c">expression</h3>
+<div class="outline-text-3" id="text-org64ac01c">
+<p>
+appreciate: [əˈpriʃiˌeɪt] v.欣赏,感激<br />
+pocket [ˈpɑkɪt] money: 零花钱<br />
+rattle: [ˈræt(ə)l] v. if you rattle something, or if it rattles, it shakes and makes a quick series of short sounds格格作响<br />
+thrifty: [ˈθrɪfti] adj. using money carefully and wisely节俭的<br />
+nephew: [ˈnefju] n.侄子,外甥<br />
+bounce: [baʊns] v. it immediately moves up or away from a surface after hitting it弹起,跳起<br />
+pavement: [ˈpeɪvmənt] n. sidewalk人行道<br />
+stick [stɪk]-stuck-stuck: v.卡住<br />
+fire brigade: n. 消防队<br />
+grease: [ɡris] n. a thick oily substance that is put on the moving parts of a car, machine etc to make it run or move smoothly润滑油<br />
+</p>
+
+<p>
+I appreciate your honesty.: 我感谢你的诚实<br />
+	understanding/interesting/concern/support/patience/trust/time/help/it/that &#x2026;<br />
+</p>
+<hr />
+<p>
+supply of sth.: 某物的供给<br />
+go a long way: 维持很长时间<br />
+be exchanged for sth.  exchange a. for b.: 被交换成某物<br />
+fill up a. with b. 用B充满A<br />
+find one's way: reach a destination, especially with some difficulty or not as a matter of course到达<br />
+advise sb. to do sth.: 建议某人做某事<br />
+On one's way to sp.: 在去某地的路上<br />
+roll up one's sleeves: 卷起某人的袖子<br />
+What is more=what's more: 而且<br />
+rub a. with b.: 用B擦A<br />
+a special type of sth.: 一种特殊类型的某物<br />
+hear about sth.: 听说某事物<br />
+reward sb. with sth.: 用某物奖励某人<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org8432d19" class="outline-3">
+<h3 id="org8432d19">words</h3>
+<div class="outline-text-3" id="text-org8432d19">
+<p>
+appreciate [əˈpriːʃieɪt] v.欣赏<br />
+pocket [ˈpɑːkɪt] money 零用钱<br />
+rattle [ˈræt(ə)l] v.格格作响<br />
+thrifty [ˈθrɪfti] adj.节俭的<br />
+nephew [ˈnefjuː] n.侄子<br />
+bounce [baʊns] v.弹起,跳起<br />
+pavement [ˈpeɪvmənt] n.人行道<br />
+stick [stɪk] v.卡住<br />
+brigade [brɪˈɡeɪd] n.旅,(消防)队<br />
+grease [ɡriːs] n.润滑油<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org866834f" class="outline-3">
+<h3 id="org866834f">vocabulary</h3>
+<div class="outline-text-3" id="text-org866834f">
+<p>
+appreciate: are pleased with<br />
+gifts: presents<br />
+extra income: additional money<br />
+rattle: make a noise<br />
+price: sum amount<br />
+gathered: collected<br />
+was firmly stuck: could not be moved<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgffa90d4" class="outline-3">
+<h3 id="orgffa90d4"><span class="done DONE">DONE</span> 单词造句</h3>
+<div class="outline-text-3" id="text-orgffa90d4">
+<p>
+appreciate v.  I appreciate your honesty.<br />
+</p>
+<ul class="org-ul">
+<li>I appreciate you help.<br /></li>
+<li>I appreciate that you closed the window.<br /></li>
+<li>I appreciate that you gave us a performance.<br /></li>
+<li>I appreciate that you kept order last night.<br /></li>
+<li>I appreciate that you gave me a lift.<br /></li>
+</ul>
+<p>
+pocket money<br />
+</p>
+<ul class="org-ul">
+<li>He waved to his uncle and asked for pocket money.<br /></li>
+<li>On the way home, he found he had lost his pocket money.<br /></li>
+<li>He was nervous about his pocket money that I gave him.<br /></li>
+<li>You have enough pocket money and you can afford it.<br /></li>
+<li>Sorry to interrupt, but I lost my pocket money just now.<br /></li>
+</ul>
+<p>
+rattle v.<br />
+</p>
+<ul class="org-ul">
+<li>He slammed so hard that all the windows rattled.<br /></li>
+<li>Keys rattled in his pocket while the landlord was walking.<br /></li>
+<li>It seems that there are coins rattling in the washing machine.<br /></li>
+<li>I heard something rattling in the washing machine.<br /></li>
+<li>Rattling keys reminded me of my father.<br /></li>
+</ul>
+<p>
+thrifty adj.<br />
+</p>
+<ul class="org-ul">
+<li>I always asked my wife to be more thrifty.<br /></li>
+<li>Although he made large sums of money, he was still very thrifty.<br /></li>
+<li>She is so thrifty that she never wastes any money.<br /></li>
+<li>She is very thrifty and always asks for a life when she goes to work.<br /></li>
+<li>She is very thrifty and always takes buses for work.<br /></li>
+</ul>
+<p>
+nephew n.<br />
+</p>
+<ul class="org-ul">
+<li>It's a pity that our nephew died from a car accident yesterday.<br /></li>
+<li>I hurried to Greenwich where my nephew grows up.<br /></li>
+<li>My nephew may have replied a mail to us.<br /></li>
+<li>My nephew realized to his horror that he had lost his money box.<br /></li>
+<li>Instead of catching a bus, my nephew always takes a taxi.<br /></li>
+</ul>
+<p>
+bounce v.<br />
+</p>
+<ul class="org-ul">
+<li>There is a coin bouncing along the road.<br /></li>
+<li>She complained that his hair is always bouncing while she is walking.<br /></li>
+<li>So long as I get home, I bounce a ball in the garden.<br /></li>
+<li>She is mad at the girl who is bouncing a ball in the square.<br /></li>
+<li>A great many of coins bounced along the street for some reason.<br /></li>
+</ul>
+<p>
+pavement n.<br />
+</p>
+<ul class="org-ul">
+<li>You should have walked on the pavement.<br /></li>
+<li>The pavement must be repaired yesterday.<br /></li>
+<li>The pavement didn't come into use for some reason.<br /></li>
+<li>I never dreamed of walking on a pavement which only appeared in the book.<br /></li>
+<li>The villagers complain that the pavement is alwaying being broken.<br /></li>
+</ul>
+<p>
+stick-stuck-stuck<br />
+</p>
+<ul class="org-ul">
+<li>She is telling a story in which a man was stuck in the mud.<br /></li>
+<li>I woke up with a start, and realized that I was stuck in the mud.<br /></li>
+<li>The boy pretended that he was stuck in the mud and asked for our help.<br /></li>
+<li>After putting out the fire, they were all stuck in the mud.<br /></li>
+<li>He called out to the boy who was stuck in the mud.<br /></li>
+</ul>
+<p>
+fire brigade n.<br />
+</p>
+<ul class="org-ul">
+<li>The fire brigade is calling out to the man who was in the house.<br /></li>
+<li>The fire brigade used to exercise very much.<br /></li>
+<li>It's my job to call the fire brigade right now.<br /></li>
+<li>When there was a snake in the station,<br />
+the police called the fire brigade as quickly as possible.<br /></li>
+<li>On calling the fire brigade, she aimed the fire extinguisher at the house.<br /></li>
+</ul>
+<p>
+grease n.<br />
+</p>
+<ul class="org-ul">
+<li>The cup was filled up with grease.<br /></li>
+<li>This convinced her that her son's legs were covered with grease.<br /></li>
+<li>It's disturbing to think that your son is covered with grease.<br /></li>
+<li>She claimed to have seen a special type of grease.<br /></li>
+<li>The grease began to accumulate, soon the box was filled up with grease.<br /></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org44d8894" class="outline-3">
+<h3 id="org44d8894"><span class="done DONE">DONE</span> 反复听电影片段直到懂关键句</h3>
+<div class="outline-text-3" id="text-org44d8894">
+</div>
+</div>
+<div id="outline-container-org28c6d76" class="outline-3">
+<h3 id="org28c6d76">复习二册语法(笔记或视频) &amp; 红皮书</h3>
+</div>
+<div id="outline-container-org25d6791" class="outline-3">
+<h3 id="org25d6791"><span class="done DONE">DONE</span> 习惯用法造句</h3>
+<div class="outline-text-3" id="text-org25d6791">
+<p>
+supply of<br />
+</p>
+<ul class="org-ul">
+<li>There is no shortage of supply of blood in the hospital.<br /></li>
+<li>They provide an enough supply of books to read in the waitting room.<br /></li>
+<li>Waking up with a start, he realized that he didn't have enough supply of foods in the desert.<br /></li>
+<li>The hospital doesn't keep an enough supply of blood for one cause or another.<br /></li>
+<li>She is equal to take a large supply of foods on our journey.<br /></li>
+</ul>
+<p>
+go a long way<br />
+</p>
+<ul class="org-ul">
+<li>People who do manual work in China always hope that their children go a long way.<br /></li>
+<li>People in China often go to extremes to go a long way.<br /></li>
+<li>You have a splendid mind, you will go a long way.<br /></li>
+<li>She is very thrifty, and her pocket money goes a long way.<br /></li>
+<li>The man gets a good salary and will go a longer way than us.<br /></li>
+</ul>
+<p>
+be exchanged for sth.  exchange a. for b.<br />
+</p>
+<ul class="org-ul">
+<li>Where can I exchange RMB for dollar?<br /></li>
+<li>People sometimes is unwilling to exchange their money for services.<br /></li>
+<li>My mom is so thrifty that she exchanged all cans for money after the picnic.<br /></li>
+<li>I'm glad that we can exchange money for petrol.<br /></li>
+<li>Such is human nature, that people are often willing exchange money for rise in status.<br /></li>
+</ul>
+<p>
+fill up a. with b.<br />
+</p>
+<ul class="org-ul">
+<li>Fill it up, I will pay the bill tomorrow.<br /></li>
+<li>We should have filled up the petrol tank before we went.<br /></li>
+<li>It seems that he didn't fill up the petrol tank.<br /></li>
+<li>Not only did they fill up the glasses, but they found their way in the exhibition.<br /></li>
+<li>Not only did they fill up the glasses, but they drove at a high speed.<br /></li>
+</ul>
+<p>
+find one's way<br />
+</p>
+<ul class="org-ul">
+<li></li>
+
+<li></li>
+
+<li></li>
+
+<li></li>
+
+<li></li>
+</ul>
+<p>
+advise sb. to do sth.<br />
+</p>
+<ul class="org-ul">
+<li>I advised my nephew to save his pocket money which I gave him.<br /></li>
+<li>He advised his boss to put the poor man out of business.<br /></li>
+<li>She was impatient to talk to him, and advised him to ask her colleaugue for help.<br /></li>
+<li>I advised him to load his dinghy with a spear gun.<br /></li>
+<li>I wish that I had advised him to go on a diet.<br /></li>
+</ul>
+<p>
+On one's way to sw.<br />
+</p>
+<ul class="org-ul">
+<li>On my way to the mall, I grab a milk tea for you.<br /></li>
+<li>On my way to museum, I had an opportunity to meet a famous actor.<br /></li>
+<li>On my way to school, I was made to make a contribute.<br /></li>
+<li>On my way to school, I realized that I had lost my keys.<br /></li>
+<li>On my way to school, my boss gave me an order to solve bug.<br /></li>
+</ul>
+<p>
+roll up one's sleeves<br />
+</p>
+<ul class="org-ul">
+<li>The moment the order was gave, everyone rolled up their sleeves and worked hard.<br /></li>
+<li>I rolled up my sleeves, and began to do washing.<br /></li>
+<li>She rolled up her sleeves, and bounced a ball with her cat.<br /></li>
+<li>If you don't roll up your sleeves, you will get into such a mess.<br /></li>
+<li>His mother makes an impact on him. He rolls up his sleeves whenever he does homework.<br /></li>
+</ul>
+<p>
+What is more=what's more<br />
+</p>
+<ul class="org-ul">
+<li>What's more, the microphone has been connected to the tower.<br /></li>
+<li>What's more, we received a warm welcome.<br /></li>
+<li>What's more, the America gained its independence from England.<br /></li>
+<li>What's more, the boat was sinking.<br /></li>
+<li>What's more, it had fifteen water-tight compartments.<br /></li>
+</ul>
+<p>
+rub a. with b.<br />
+</p>
+<ul class="org-ul">
+<li>A kind lady rubbed my arm with grease to get my arm out.<br /></li>
+<li>She is too busy rubbing her ass with lotion.<br /></li>
+<li>My wife always asks me to rub her ass with lotion.<br /></li>
+<li>My wife stated that she was rubbing her face with fifteen pounds worth of lotion.<br /></li>
+<li>They rubbed each other with oil with the fantastic background music.<br /></li>
+</ul>
+<p>
+a special type of sth.<br />
+</p>
+<ul class="org-ul">
+<li>He is busy making a special type of butter.<br /></li>
+<li>Her arm was covered with a special type of perfume.<br /></li>
+<li>This special type of perfume is not exempt from import duty.<br /></li>
+<li>She died of a special type of disease.<br /></li>
+<li>He became an expert at making this special type of drug.<br /></li>
+</ul>
+<p>
+hear about sth.<br />
+</p>
+<ul class="org-ul">
+<li>I'm likely to hear about the car accident.<br /></li>
+<li>Soon, everyone in the village heard about the news that the vicar lost his money.<br /></li>
+<li>I'm sorry that I heard about your injury.<br /></li>
+<li>I'm sorry that I heard about the death of your father.<br /></li>
+<li>I heard about the news that America gained its independence from England.<br /></li>
+</ul>
+<p>
+reward sb. with sth.<br />
+</p>
+<ul class="org-ul">
+<li>She made a study of rewarding her student with sweets.<br /></li>
+<li>These father have one thing in common: they all reward their children with sweets.<br /></li>
+<li>Imagine his dismay when he found that his mother rewarded his rival with chocolates.<br /></li>
+<li>Instead of fish, I rewarded my cat with a can of food.<br /></li>
+<li>The bank manager rewarded the lady with 100 pounds worth of phone.<br /></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgcd15aa0" class="outline-3">
+<h3 id="orgcd15aa0">跟读 50遍</h3>
+</div>
+<div id="outline-container-orgff8667c" class="outline-3">
+<h3 id="orgff8667c"><span class="done DONE">DONE</span> Comprehension 反复练习</h3>
+<div class="outline-text-3" id="text-orgff8667c">
+</div>
+</div>
+<div id="outline-container-org4ed2273" class="outline-3">
+<h3 id="org4ed2273"><span class="done DONE">DONE</span> Ask me if 写+读</h3>
+<div class="outline-text-3" id="text-org4ed2273">
+<ol class="org-ol">
+<li>Children always appreciate small gifts of money. What<br />
+What do children always appreciate?<br /></li>
+<li>Parents provide a regular supply of pocket money. What<br />
+What do parents provide?<br /></li>
+<li>George has a money box. What<br />
+What does George have?<br /></li>
+<li>It is always empty. Why<br />
+Why is it always empty?<br /></li>
+<li>George bought fifty pence worth of trouble. What<br />
+What did George buy?<br /></li>
+<li>The coin disappeared down a drain. Where<br />
+Where did the coin disappear?<br /></li>
+<li>George pushed his arm through the drain cover. Where<br />
+Where did George push his arm?<br /></li>
+<li>He could get his arm out. Why couldn't<br />
+Why couldn't he get his arm out?<br /></li>
+<li>A lady rubbed his arm with soap and butter. What<br />
+What did a lady rub his arm with?<br /></li>
+<li>The fire fighters freed George. How<br />
+How did the fire fighters free George?<br /></li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org26d2c1c" class="outline-3">
+<h3 id="org26d2c1c"><span class="done DONE">DONE</span> 摘要写作 写 &amp; 对答案</h3>
+<div class="outline-text-3" id="text-org26d2c1c">
+<p>
+When George was going to the sweet shop, he lost his fifty pence down a drain.<br />
+After taking off his jacket,<br />
+	he put his arm through the drain cover.<br />
+He failed to find his fifty pence,<br />
+	what's more, he couldn't get his arm out.<br />
+A crowd of people gathered round him<br />
+	and a lady rubbed his arm with soap and butter.<br />
+She failed to free him, but the firemen succeeded using a special type of grease.<br />
+The owner of the sweet shop presented him with a large box of chocolates.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org171a3ac" class="outline-3">
+<h3 id="org171a3ac"><span class="done DONE">DONE</span> tell the story 口语复述</h3>
+<div class="outline-text-3" id="text-org171a3ac">
+</div>
+</div>
+<div id="outline-container-org90dac5a" class="outline-3">
+<h3 id="org90dac5a"><span class="done DONE">DONE</span> composition 阅读 或 写作</h3>
+<div class="outline-text-3" id="text-org90dac5a">
+<p>
+I was walking along the street when I saw a crowd ahead of me.<br />
+I could hear people shouting and making a noise.<br />
+On arriving at the scene, I saw a small boy on the pavement with his arm in a drain cover.<br />
+A lady carrying a large bar of soap and a saucepan of water knelt down beside the boy.<br />
+She asked the boy if he was in pain and he said he wasn't.<br />
+</p>
+
+<p>
+Then she rubbed his arm with butter, but he couldn't get it free.<br />
+Meanwhile, someone had telephoned the fire brigade.<br />
+The boy had begun to cry, but when he saw the firemen, he cheered up.<br />
+At first the firemen decided to cut through the drain cover,<br />
+	but they changed their minds and rubbed the boy's arm with a special type of grease.<br />
+The boy was soon free and though his arm hurt, he was smiling.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org84782df" class="outline-3">
+<h3 id="org84782df">Topics for discussion</h3>
+</div>
+</div>
+</div>
+</body>
+</html>

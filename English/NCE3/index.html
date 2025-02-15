@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-09-06 Fri 23:40 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NCE3</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="table-of-contents" role="doc-toc">
+<h2></h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+	<!-- <li>
+			 <ul>
+			 </ul>
+			 </li> -->
+	<li>Unit1
+		<ul>
+	<li><a href="L01 A puma at large.html">L01 A puma at large</a></li>
+	<li><a href="L02 Thirteen equals one.html">L02 Thirteen equals one</a></li>
+	<li><a href="L03 An unknown goddess.html">L03 An unknown goddess</a></li>
+	<li><a href="L04 The double life of Alfred Bloggs.html">L04 The double life of Alfred Bloggs</a></li>
+	<li><a href="L05 The facts.html">L05 The facts</a></li>
+	<li><a href="L06 Smash-and-grab.html">L06 Smash-and-grab</a></li>
+	<li><a href="L07 Mutilated ladies.html">L07 Mutilated ladies</a></li>
+	<li><a href="L08 A famous monastery.html">L08 A famous monastery</a></li>
+	<li><a href="L09 Flying cats.html">L09 Flying cats</a></li>
+	<li><a href="L10 The loss of the Titanic.html">L10 The loss of the Titanic</a></li>
+	<li><a href="L11 Not guilty.html">L11 Not guilty</a></li>
+	<li><a href="L12 Life on a desert island.html">L12 Life on a desert island</a></li>
+	<li><a href="L13 It's only me.html">L13 It's only me</a></li>
+	<li><a href="L14 A noble gangster.html">L14 A noble gangster</a></li>
+	<li><a href="L15 Fifty pence worth of trouble.html">L15 Fifty pence worth of trouble</a></li>
+	<li><a href="L16 Mary had a little lamb.html">L16 Mary had a little lamb</a></li>
+	<li><a href="L17 The longest suspension bridge in the world.html">L17 The longest suspension bridge in the world</a></li>
+	<li><a href="L18 Electric currents in modern art.html">L18 Electric currents in modern art</a></li>
+	<li><a href="L19 A very dear cat.html">L19 A very dear cat</a></li>
+	<li><a href="L20 Pioneer pilots.html">L20 Pioneer pilots</a></li>
+		</ul>
+	</li>
+	<li>Unit2
+		<ul>
+	<li><a href="L21 Daniel Mendoza.html">L21 Daniel Mendoza</a></li>
+	<li><a href="L22 By heart.html">L22 By heart</a></li>
+	<li><a href="L23 One man's meat is another man's poison.html">L23 One man's meat is another man's poison</a></li>
+	<li><a href="L24 A skeleton in the cupboard.html">L24 A skeleton in the cupboard</a></li>
+	<li><a href="L25 The Cutty Sark.html">L25 The Cutty Sark</a></li>
+	<li><a href="L26 Wanted, a large biscuit tin.html">L26 Wanted, a large biscuit tin</a></li>
+	<li><a href="L27 Nothing to sell and nothing to buy.html">L27 Nothing to sell and nothing to buy</a></li>
+	<li><a href="L28 Five pounds too dear.html">L28 Five pounds too dear</a></li>
+	<li><a href="L29 Funny or not.html">L29 Funny or not?</a></li>
+	<li><a href="L30 The death of a ghost.html">L30 The death of a ghost</a></li>
+	<li><a href="L31 A lovable eccentric.html">L31 A lovable eccentric</a></li>
+	<li><a href="L32 A lost ship.html">L32 A lost ship</a></li>
+	<li><a href="L33 A day to remember.html">L33 A day to remember</a></li>
+	<li><a href="L34 A happy discovery.html">L34 A happy discovery</a></li>
+	<li><a href="L35 Justice was done.html">L35 Justice was done</a></li>
+	<li><a href="L36 A chance in a million.html">L36 A chance in a million</a></li>
+	<li><a href="L37 The Westhaven Express.html">L37 The Westhaven Express</a></li>
+	<li><a href="L38 The first calendar.html">L38 The first calendar</a></li>
+	<li><a href="L39 Nothing to worry about.html">L39 Nothing to worry about</a></li>
+	<li><a href="L40 Who's who.html">L40 Who's who</a></li>
+		</ul>
+	</li>
+	<li>Unit3
+		<ul>
+			<li><a href="L41 Illusions of pastoral peace.html">L41 Illusions of pastoral peace</a></li>
+	<li><a href="L42 Modern cavemen.html">L42 Modern cavemen</a></li>
+	<li><a href="L43 Fully insured.html">L43 Fully insured</a></li>
+	<li><a href="L44 Speed and comfort.html">L44 Speed and comfort</a></li>
+	<li><a href="L45 The power of the press.html">L45 The power of the press</a></li>
+	<li><a href="L46 Do it yourself.html">L46 Do it yourself</a></li>
+	<li><a href="L47 Too high a price.html">L47 Too high a price?</a></li>
+	<li><a href="L48 The silent village.html">L48 The silent village</a></li>
+	<li><a href="L49 The ideal servant.html">L49 The ideal servant</a></li>
+	<li><a href="L50 New Year resolutions.html">L50 New Year resolutions</a></li>
+	<li><a href="L51 Predicting and future.html">L51 Predicting and future</a></li>
+	<li><a href="L52 Mud is mud.html">L52 Mud is mud</a></li>
+	<li><a href="L53 In the public interest.html">L53 In the public interest</a></li>
+	<li><a href="L54 Instinct or cleverness.html">L54 Instinct or cleverness?</a></li>
+	<li><a href="L55 From the earth- Greetings.html">L55 From the earth- Greetings</a></li>
+	<li><a href="L56 Our neighbours, the river.html">L56 Our neighbours, the river</a></li>
+	<li><a href="L57 Back in the old country.html">L57 Back in the old country</a></li>
+	<li><a href="L58 A spot of bother.html">L58 A spot of bother</a></li>
+	<li><a href="L59 Collecting.html">L59 Collecting</a></li>
+	<li><a href="L60 Too early and too late.html">L60 Too early and too late</a></li>
+		</ul>
+	</li>
+</ul>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-10-10 Thu 13:54 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-orgccdb0e3" class="outline-2">
+<h2 id="orgccdb0e3">Lesson 05 The facts</h2>
+<div class="outline-text-2" id="text-orgccdb0e3">
+<p class="verse">
+What was the consequence of the editor's insistence on facts and statistics?<br />
+<br />
+Editors of newspapers and magazines often <b>go to extremes</b><br />
+&#xa0;to <b>provide their readers with</b> unimportant facts and statistics.<br />
+Last year a journalist had <b>been instructed by</b> a well-known magazine<br />
+&#xa0;to <b>write an article on</b> the president's palace in a new African republic.<br />
+When the article arrived, the editor read the first sentence and then refused to publish it.<br />
+The article began: 'Hundreds of steps lead to the high wall which surrounds the president's palace.'<br />
+The editor at once sent the journalist a fax<br />
+&#xa0;instructing him to <b>find out</b> the exact number of steps and the height of the wall.<br />
+<br />
+The journalist immediately set out to obtain these important facts,<br />
+&#xa0;but he <b>took a long time to send</b> them.<br />
+Meanwhile, the editor was <b>getting impatient</b>, for the magazine would soon <b>go to press</b>.<br />
+He sent the journalist two more faxes, but received no reply.<br />
+He sent yet another fax informing the journalist that if he did not reply soon he would <b>be fired</b>.<br />
+When the journalist again failed to reply,<br />
+&#xa0;the editor reluctantly <b>published the article</b> as it had originally been written.<br />
+A week later, the editor at last received a fax from the journalist.<br />
+Not only had the poor man been arrested, but he had been sent to prison as well.<br />
+However, he had at last been allowed to <b>send a fax</b><br />
+&#xa0;in which he <b>informed the editor</b><br />
+&#xa0;&#xa0;that he had been arrested<br />
+&#xa0;&#xa0;&#xa0;while counting the 1084 steps<br />
+&#xa0;&#xa0;&#xa0;&#xa0;leading to the fifteen-foot wall which surrounded the president's palace.<br />
+</p>
+</div>
+<div id="outline-container-org4dc74c4" class="outline-3">
+<h3 id="org4dc74c4">expression</h3>
+<div class="outline-text-3" id="text-org4dc74c4">
+<p>
+editor: [ˈedɪtər] n. edit v.编辑<br />
+extreme: [ɪkˈstrim] n.极端<br />
+statistics: [stə'tɪstɪks] n. statistic 统计数字<br />
+journalist: [ˈdʒɜrn(ə)lɪst] n.新闻记者<br />
+president: [ˈprezɪdənt] n.总统<br />
+palace: [ˈpæləs] n.王宫;宏伟的住宅<br />
+publish: [ˈpʌblɪʃ] v.出版<br />
+fax: [fæks] n.v.传真<br />
+impatient: [ɪmˈpeɪʃ(ə)nt] adj.不耐烦的<br />
+fire: [faɪr] v.解雇<br />
+originally: [əˈrɪdʒən(ə)li] adv.起初,原先,从前<br />
+</p>
+
+<p>
+go to extreme(s) to do sth.: 极端地做某事<br />
+publish + a book/an article/report: 出版一本书/一篇文章/报告<br />
+send sb. a fax: 给某人发传真<br />
+get impatient: 变得不耐烦<br />
+get/be fired: 被炒鱿鱼<br />
+</p>
+<hr />
+<p>
+部分倒装:<br />
+	否定词 + 一般疑问句<br />
+</p>
+<ul class="org-ul">
+<li>example: Not only have I done it, &#x2026;<br /></li>
+<li>not / nor / neither not only<br /></li>
+<li>never<br /></li>
+<li>no<br /></li>
+<li>hardly<br /></li>
+<li>little<br /></li>
+<li>no sooner ..<br /></li>
+<li>seldom<br /></li>
+<li>not until<br /></li>
+</ul>
+<hr />
+<p>
+provide sb. with sth.: 为某人提供某物<br />
+sb. be instructed to do sth.: 某人被指示去做某事<br />
+instruct sb. to do sth.: 指示某人去做某事<br />
+write an article on/about sth.: 写一篇关于某事的文章<br />
+find out sth.: to discover, learn, or verify something发现,查明某事<br />
+sb. take a long time to do sth.: 某人花了很长时间去做某事<br />
+go to press: 送印<br />
+inform sb. that + &#x2026;: 通知某人+&#x2026;<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org91c335d" class="outline-3">
+<h3 id="org91c335d">vocabulary</h3>
+<div class="outline-text-3" id="text-org91c335d">
+<p>
+journalist: reporter<br />
+instructed: ordered<br />
+well-known: famous<br />
+publish: print, issue<br />
+surrounds: encircles<br />
+fired: dismissed<br />
+reluctantly: unwillingly<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgd0f2047" class="outline-3">
+<h3 id="orgd0f2047">words</h3>
+<div class="outline-text-3" id="text-orgd0f2047">
+<p>
+editor [ˈedɪtər] n．编辑<br />
+extreme [ɪkˈstrim] n．极端<br />
+statistics [stə'tɪstɪks] n．统计数字<br />
+journalist [ˈdʒɜrn(ə)lɪst] n．新闻记者<br />
+president [ˈprezɪdənt] n．总统<br />
+palace [ˈpæləs] n．王宫；宏伟的住宅<br />
+publish [ˈpʌblɪʃ] v．出版<br />
+fax [fæks] n．传真<br />
+impatient [ɪmˈpeɪʃ(ə)nt] adj. 不耐烦的<br />
+fire [faɪr] v．解雇<br />
+originally [əˈrɪdʒən(ə)li] adv．起初，原先，从前<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orga76be2c" class="outline-3">
+<h3 id="orga76be2c"><span class="done DONE">DONE</span> 单词造句</h3>
+<div class="outline-text-3" id="text-orga76be2c">
+<p>
+editor n. edit v.<br />
+</p>
+<ul class="org-ul">
+<li>May I have the privilege of meeting the editor?<br /></li>
+<li>The editor usually calls me Sherwin.<br /></li>
+<li>Today, the CEO have the editor posted to a remote village.<br /></li>
+<li>The editor got so angry that he refused to publish the article.<br /></li>
+<li>The editor was instructed in publishing it soon.<br /></li>
+</ul>
+<p>
+extreme n.  go to extreme(s) to do sth.<br />
+</p>
+<ul class="org-ul">
+<li>The girl is making every effort to go to extremes.<br /></li>
+<li>He is always going to extremes to do every task.<br /></li>
+<li>Even if you went to extremes to make money, you wouldn't be happy.<br /></li>
+<li>People often go to extremes to keep status quo.<br /></li>
+<li>Because of his taking work seriously, he often goes to extremes.<br /></li>
+</ul>
+<p>
+statistics n. statistic<br />
+</p>
+<ul class="org-ul">
+<li>To the authorities, I am just another statistic.<br /></li>
+<li>The statistics suggest that she often goes home by bus.<br /></li>
+<li>The statistics suggest that he couldn't afford the house.<br /></li>
+<li>The statistics suggest that there are more people being fired than last year.<br /></li>
+<li>The statistics suggest that people who work in office earn only half much as they used to.<br /></li>
+</ul>
+<p>
+journalist n.<br />
+</p>
+<ul class="org-ul">
+<li>The journalist was too embarrassed to tell anything about the palace to his editor.<br /></li>
+<li>This can give rise to curious situation, as it did in the case of the journalist<br />
+who was sent to prison.<br /></li>
+<li>The journalist often goes to extreme to figure out the facts and statistics.<br /></li>
+<li>The book which was publish yesterday was edited by the journalist.<br /></li>
+<li>The journalist feels that his rise in status is well worth the loss of money.<br /></li>
+</ul>
+<p>
+president n.<br />
+</p>
+<ul class="org-ul">
+<li>The president changed into suit for the simple reason that he likes it.<br /></li>
+<li>The president was willing to tell stories.<br /></li>
+<li>The president was refered to as the grest man in American.<br /></li>
+<li>The president goes to extremes to keep the status quo.<br /></li>
+<li>'Status quo.' The president ordered his men to do nothing.<br /></li>
+</ul>
+<p>
+palace n.<br />
+</p>
+<ul class="org-ul">
+<li>There are 1094 steps which leads to the wall which surrounds the palace.<br /></li>
+<li>The palace was burnt down for one reason or another.<br /></li>
+<li>From now on, people can visit the palace at liberty.<br /></li>
+<li>Despite the fact that the palace was fired in 1989.<br /></li>
+<li>In the most sacred room of the palace, they found the fragments of fifteen statuses.<br /></li>
+</ul>
+<p>
+publish v.  publish + a book/an article/report<br />
+</p>
+<ul class="org-ul">
+<li>The journalist was amazed to find that his report had been published.<br /></li>
+<li>We're publishing the report in an hour.<br /></li>
+<li>The editor may have published the article already.<br /></li>
+<li>The editor can't have published the article.<br /></li>
+<li>The editor must have published the article.<br /></li>
+</ul>
+<p>
+fax n.v.  send sb. a fax<br />
+</p>
+<ul class="org-ul">
+<li>I'll send you a fax. Let's keep in touch with each other.<br /></li>
+<li>He has sent me a fax in which he told me his wife was pregnant.<br /></li>
+<li>I was too embarrased to send him any fax.<br /></li>
+<li>He has sent faxs hald as many as you.<br /></li>
+<li>From now on, it's easy for us to send anyone a fax in office.<br /></li>
+</ul>
+<p>
+impatient adj.  get impatient<br />
+</p>
+<ul class="org-ul">
+<li>The secret of success is don't get impatient.<br /></li>
+<li>In the end, the flight attendant got so impatinent that she lost her temper.<br /></li>
+<li>Don't be impatient and everything will soon return to normal.<br /></li>
+<li>Don't be impatient. Let's make it official.<br /></li>
+<li>You got so impatient that you didn't double check the garage.<br /></li>
+</ul>
+<p>
+fire v.  get/be fired<br />
+</p>
+<ul class="org-ul">
+<li>I regret to inform you that you're fired.<br /></li>
+<li>I was disappointed to learn that I got fired.<br /></li>
+<li>When the news came to me that I am fired, I bursted out tears.<br /></li>
+<li>No one could account for the fact that she got fired.<br /></li>
+<li>You are responsible for this failure, so you get fired.<br /></li>
+</ul>
+<p>
+originally adv.<br />
+</p>
+<ul class="org-ul">
+<li>I was wonder who lived there originally.<br /></li>
+<li>I have difficulty in finding out where she is from originally.<br /></li>
+<li>This sort of snake is found in America originally.<br /></li>
+<li>The palace was originally designed by the artiste, Mr. Sherwin.<br /></li>
+<li>That stupid remark was originally made by the journalist.<br /></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgbe77e28" class="outline-3">
+<h3 id="orgbe77e28"><span class="done DONE">DONE</span> 反复听电影片段直到懂关键句</h3>
+<div class="outline-text-3" id="text-orgbe77e28">
+</div>
+</div>
+<div id="outline-container-org03408d8" class="outline-3">
+<h3 id="org03408d8"><span class="done DONE">DONE</span> 复习二册语法(笔记或视频) &amp; 红皮书</h3>
+<div class="outline-text-3" id="text-org03408d8">
+<p>
+部分倒装:<br />
+	否定词 + 一般疑问句<br />
+</p>
+<ul class="org-ul">
+<li>example: Not only have I done it, &#x2026;<br /></li>
+<li>not / nor / neither not only<br /></li>
+<li>never<br /></li>
+<li>no<br /></li>
+<li>hardly<br /></li>
+<li>little<br /></li>
+<li>no sooner ..<br /></li>
+<li>seldom<br /></li>
+<li>not until<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgfe34cc1" class="outline-3">
+<h3 id="orgfe34cc1"><span class="done DONE">DONE</span> 习惯用法造句</h3>
+<div class="outline-text-3" id="text-orgfe34cc1">
+<p>
+provide sb. with sth.<br />
+</p>
+<ul class="org-ul">
+<li>Have you ever asked a complete stranger to provide you with toilet paper?<br /></li>
+<li>The journalist failed to provide the editor with true facts and statistics.<br /></li>
+<li>When I was a young boy, my father provided me with many pirate stories.<br /></li>
+<li>I was too embarrassed to provide him with any drink.<br /></li>
+<li>I promise if you provide me with some apples, I will give you fifty pences.<br /></li>
+</ul>
+<p>
+sb. be instructed to do sth.  instruct sb. to do sth.<br />
+</p>
+<ul class="org-ul">
+<li>I was instructed to do a lot of work when I was very young.<br /></li>
+<li>My grandfather instructed us to help him.<br /></li>
+<li>The soldiers were instructed to stand attention to the minister.<br /></li>
+<li>My boss is always instructing me to send his companies faxes.<br /></li>
+<li>Despite the fact that the cat was instructed to press the button.<br /></li>
+</ul>
+<p>
+write an article on/about sth.<br />
+</p>
+<ul class="org-ul">
+<li>You don't have the prvilege of writing an article on my private life.<br /></li>
+<li>It's none of your business. Don't write any article about it.<br /></li>
+<li>People who do manual work rarely write an article on their lifes.<br /></li>
+<li>He is writting an article on the president's palace which dated from fifteenth century.<br /></li>
+<li>He refused to write an article about this meeting.<br /></li>
+</ul>
+<p>
+find out sth.<br />
+</p>
+<ul class="org-ul">
+<li>I did find out what to do in the future.<br /></li>
+<li>She found out that her boyfriend is going to give her a surprise.<br /></li>
+<li>I find out that I don't get enough money to buy a house in China city.<br /></li>
+<li>The detective immediately found out the truth that she had killed her husband.<br /></li>
+<li>The elderly finds out the fact that the boy is palying truent from school.<br /></li>
+</ul>
+<p>
+sb. take a long time to do sth.<br />
+</p>
+<ul class="org-ul">
+<li>I took a long time to find a job.<br /></li>
+<li>He took a long time to stay out of limelight.<br /></li>
+<li>He took a long time to make a profit.<br /></li>
+<li>The cat took a long time to prevent himself from the water of stream.<br /></li>
+<li>She took a long time to take photographs on vacation.<br /></li>
+</ul>
+<p>
+go to press<br />
+</p>
+<ul class="org-ul">
+<li>I am curious to find out whether he succeeded in going to press.<br /></li>
+<li>We are due to go to press in an hour.<br /></li>
+<li>We needn't have gone to press.<br /></li>
+<li>Who entitled you to go to press in such short time?<br /></li>
+<li>The editor was instructed to go to press in two hours.<br /></li>
+</ul>
+<p>
+inform sb. that + &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>I regret to inform you that your father is fired.<br /></li>
+<li>I inform you that you must keep the secret.<br /></li>
+<li>I inform you that it's your turn.<br /></li>
+<li>I inform you that you will have the authority to meet the queen.<br /></li>
+<li>I inform you that the forest fire was put out.<br /></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org6d5d7f8" class="outline-3">
+<h3 id="org6d5d7f8">跟读 50遍</h3>
+</div>
+<div id="outline-container-org3cff757" class="outline-3">
+<h3 id="org3cff757"><span class="done DONE">DONE</span> Comprehension 反复练习</h3>
+<div class="outline-text-3" id="text-org3cff757">
+</div>
+</div>
+<div id="outline-container-org0c193d1" class="outline-3">
+<h3 id="org0c193d1"><span class="done DONE">DONE</span> Ask me if 写+读</h3>
+<div class="outline-text-3" id="text-org0c193d1">
+<ol class="org-ol">
+<li>The editor refused to publish the article. Why<br />
+Why did the editor refuse to publish the article?<br /></li>
+<li>The article began: 'Hundreds of steps&#x2026;' How<br />
+How did the article begin?<br /></li>
+<li>The editor sent the journalist a fax. Why<br />
+Why did the editor send the journalist a fax?<br /></li>
+<li>The journalist would be fired. Why<br />
+Why would the journalist be fired?<br /></li>
+<li>The journalist failed to reply. Why<br />
+Why did the journalist fail to reply?<br /></li>
+<li>The editor published the article. When<br />
+When did the editor publish the article?<br /></li>
+<li>The editor received a fax. When<br />
+When did the editor receive a fax?<br /></li>
+<li>The poor man had been arrested. Why<br />
+Why had the poor man been arrested?<br /></li>
+<li>He had been allowed to send a fax. What &#x2026; do<br />
+What had he been allowed to do?<br /></li>
+<li>He had been counting the steps. What<br />
+What had he been counting?<br /></li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orgce376c3" class="outline-3">
+<h3 id="orgce376c3"><span class="done DONE">DONE</span> 摘要写作 写 &amp; 对答案</h3>
+<div class="outline-text-3" id="text-orgce376c3">
+<p>
+Though the journalist immediately set out to get the facts<br />
+		after receiving the instructions from his editor,<br />
+	he didn't send them at once.<br />
+Meanwhile, the editor was getting impatient,<br />
+	so he sent three faxes,<br />
+	finally threatening to fire him.<br />
+When the last fax wasn't answered, the article was printed in its original form.<br />
+The journalist at last sent a fax a week later<br />
+	explaining that he had been imprisoned<br />
+		because of counting the steps and measuring the height of the wall.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orga86d9e5" class="outline-3">
+<h3 id="orga86d9e5"><span class="done DONE">DONE</span> tell the story 口语复述</h3>
+<div class="outline-text-3" id="text-orga86d9e5">
+</div>
+</div>
+<div id="outline-container-orgb625ec4" class="outline-3">
+<h3 id="orgb625ec4"><span class="done DONE">DONE</span> composition 阅读 或 写作</h3>
+<div class="outline-text-3" id="text-orgb625ec4">
+<p>
+The journalist counted the number of steps<br />
+	as he wearily climbed up to the high wall surrounding the president's palace.<br />
+On arriving at the main gate, he sat down to get his breath back.<br />
+He then produced a tape measure in order to measure the wall.<br />
+While he was busy measuring the wall,<br />
+	a policeman approached him and asked him what he was doing.<br />
+Though the journalist explained<br />
+	he was a reporter and his editor had asked him to find out the exact height of the wall,<br />
+	the policeman refused to believe him.<br />
+He was arrested and sent to prison<br />
+	because the police though that he might be a spy<br />
+		or might even want to assassinate the president.<br />
+When the journalist insisted he was innocent,<br />
+	he made things worse for himself.<br />
+This proved to the police<br />
+	that the man certainly was guilty and deserved to stay in prison indefinitely.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org24eccf5" class="outline-3">
+<h3 id="org24eccf5">Topics for discussion</h3>
+</div>
+</div>
+</div>
+</body>
+</html>

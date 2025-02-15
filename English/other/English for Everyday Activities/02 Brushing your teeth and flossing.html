@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-11-15 Fri 14:46 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-org6f8d2f0" class="outline-2">
+<h2 id="org6f8d2f0">02 Brushing your teeth and flossing</h2>
+<div class="outline-text-2" id="text-org6f8d2f0">
+<p class="verse">
+Jenny runs some water over her toothbrush.<br />
+She squeezes toothpaste onto her toothbrush.<br />
+She moves her toothbrush up and down, and back and forth.<br />
+To rinse her mouth,<br />
+&#xa0;she takes some water, swishes it back and forth in her mouth and spits it into the sink.<br />
+She rinses off her toothbrush.<br />
+The she puts it back in the toothbrush rack.<br />
+<br />
+She flosses her teeth by pulling out a long piece of floss,<br />
+&#xa0;slipping it between her teeth, and moving it back and forth and up and down.<br />
+</p>
+</div>
+<div id="outline-container-org7d67dce" class="outline-3">
+<h3 id="org7d67dce">expression</h3>
+<div class="outline-text-3" id="text-org7d67dce">
+<p>
+squeeze [skwiz]: v. to press something firmly together with your fingers or hand压榨, 挤<br />
+toothpaste [ˈtuθˌpeɪst]: n. a thick substance that you use to clean your teeth牙膏<br />
+toothbrush [ˈtuθˌbrʌʃ]: n. a small brush that you use for cleaning your teeth牙刷<br />
+swish [swɪʃ]: v. to move or make something move quickly through the air with a quiet sound带着嗖嗖声挥动<br />
+spit [spɪt]: v. to force a small amount of ↑saliva (=the liquid in your mouth) out of your mouth吐(唾沫), 吐出<br />
+sink [sɪŋk]: n. a large open container that you fill with water and use for washing yourself, washing dishes etc ⇨ basin水槽, 水池<br />
+rack [ræk]: n. a fror shelf that has bars or hooks on which you can put things架子<br />
+floss [flɑs]: v.n. to clean between your teeth using floss牙线/牙线清洁<br />
+</p>
+<hr />
+<p>
+run some water (over sth.): 放水流过某物<br />
+up and down: 上上下下地<br />
+back and forth: 来来回回地<br />
+rinse [rɪns] off: 冲洗<br />
+pull out: 拨出/取出<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org71ab2dc" class="outline-3">
+<h3 id="org71ab2dc">sentence</h3>
+<div class="outline-text-3" id="text-org71ab2dc">
+<p>
+squeeze [skwiz]: v. to press something firmly together with your fingers or hand压榨, 挤<br />
+</p>
+<ul class="org-ul">
+<li>He squeezed it so hard that the toothpaste has been used up.<br /></li>
+<li>If you squeezed it hard, you would still have enough toothpaste to brush your teeth.<br /></li>
+<li>I squeeze frequently, Chandler replied to Phobee in an ironically voice.<br /></li>
+</ul>
+<p>
+toothpaste [ˈtuθˌpeɪst]: n. a thick substance that you use to clean your teeth牙膏<br />
+</p>
+<ul class="org-ul">
+<li>The toothpaste is on promotion and its price has been reduced to 10% of normal.<br /></li>
+<li>My wife was tempted in buying the toothpaste on promotion in the mall.<br /></li>
+<li>I have no intention of purchasing any toothpaste, so you can stop assailed me at midnight.<br /></li>
+</ul>
+<p>
+toothbrush [ˈtuθˌbrʌʃ]: n. a small brush that you use for cleaning your teeth牙刷<br />
+</p>
+<ul class="org-ul">
+<li>I asked my aunt why she had used my toothbrush in the morning.<br /></li>
+<li>The toothbrush on the base of which the word Hui was inscribed must be my sister's.<br /></li>
+<li>My father thrusted a toothbrush into my hands when I was leaving the apartment.<br /></li>
+</ul>
+<p>
+swish [swɪʃ]: v. to move or make something move quickly through the air with a quiet sound带着嗖嗖声挥动<br />
+</p>
+<ul class="org-ul">
+<li>Swishing some water back and forth in my mouth, I feel less spicy.<br /></li>
+<li>Swishing some water back and forth in your mouth will relieve your sense of spicy.<br /></li>
+<li>While swishing some water back and forth in his mouth, the water burst out on the desktop.<br /></li>
+</ul>
+<p>
+spit [spɪt]: v. to force a small amount of ↑saliva (=the liquid in your mouth) out of your mouth吐(唾沫), 吐出<br />
+</p>
+<ul class="org-ul">
+<li>If you spit in public in the street, you will be fined 50 yuan.<br /></li>
+<li>My wife is developing a fever and spitting a lot this morning.<br /></li>
+<li>I can't become comfortable with your spitting in public.<br /></li>
+</ul>
+<p>
+sink [sɪŋk]: n. a large open container that you fill with water and use for washing yourself, washing dishes etc ⇨ basin水槽, 水池<br />
+</p>
+<ul class="org-ul">
+<li>The plates are piled up high in the sink.<br /></li>
+<li>The customer lodged a complain that flies took possession of our sinks.<br /></li>
+<li>The ants swarmed upon the meat in the sink.<br /></li>
+</ul>
+<p>
+rack [ræk]: n. a fror shelf that has bars or hooks on which you can put things架子<br />
+</p>
+<ul class="org-ul">
+<li>My wife insisted on setting up a rack in front of the sink.<br /></li>
+<li>You shoule put your toothbursh back on the toothbrush rack.<br /></li>
+<li>As long as the rack is broken, the wall will begin to be rotten.<br /></li>
+</ul>
+<p>
+floss [flɑs]: v.n. to clean between your teeth using floss牙线/牙线清洁<br />
+</p>
+<ul class="org-ul">
+<li>He developed a relationship with a girl who flosses her teeth after lunch.<br /></li>
+<li>The butcher has a habit of flossing his teeth after taking a shower.<br /></li>
+<li>Consequently, I forgot to floss my teeth before I left the apartment.<br /></li>
+</ul>
+<hr />
+<p>
+run some water (over sth.): 放水流过某物<br />
+</p>
+<ul class="org-ul">
+<li>The peasants succeeded in running some water over their fields to get a good harvest.<br /></li>
+<li>All you need to do is just to run some water through your cup, and you failed.<br /></li>
+<li>If you kept running water, I would tell our parents you have wasted a lot of water.<br /></li>
+</ul>
+<p>
+up and down: 上上下下地<br />
+</p>
+<ul class="org-ul">
+<li>You should brush your teeth up and down, otherwise they wouldn't be clean.<br /></li>
+<li>When I brushed my teeth up and down, a woman went into the bathroom and took a piss.<br /></li>
+<li>Don't shave up and down, or you will hurt your face carelessly.<br /></li>
+</ul>
+<p>
+back and forth: 来来回回地<br />
+</p>
+<ul class="org-ul">
+<li>My teacher instructed me to read the book back and forth until I recited it.<br /></li>
+<li>My neighbor below stairs lodged a complaint that our cat often runs around back and forth at midnight.<br /></li>
+<li>Obviously, I received a warm welcome and my dog walked around me back and forth.<br /></li>
+</ul>
+<p>
+rinse [rɪns] off: 冲洗干净<br />
+</p>
+<ul class="org-ul">
+<li>The cat is full of urine of rats, we need to rinse her off.<br /></li>
+<li>I don't want to park my car in the basement, the rain will rinse off it.<br /></li>
+<li>All sins you committed will be rinsed off in the fire.<br /></li>
+</ul>
+<p>
+pull out: 拨出/取出<br />
+</p>
+<ul class="org-ul">
+<li>Pulling out a stick, he threatened to hit his child who was unwilling to do house chores.<br /></li>
+<li>Pulling out a stick, he fiercely hit the face of the slave and ordered him to do house chores.<br /></li>
+<li>Pulling out a piece of floss, the doctor flosses his broken teeth with great care.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org450af97" class="outline-3">
+<h3 id="org450af97">sentence2</h3>
+<div class="outline-text-3" id="text-org450af97">
+<p>
+squeeze [skwiz]: v. to press something firmly together with your fingers or hand压榨, 挤<br />
+</p>
+<ul class="org-ul">
+<li>He squeezed it so hard that the toothpaste had been used up.<br /></li>
+<li>If you squeezed it hard, you would still have enough toothpaste to brush your teeth.<br /></li>
+<li>I squeeze frequently, Chandler replied to Phobee in an ironic voice.<br /></li>
+</ul>
+<p>
+toothpaste [ˈtuθˌpeɪst]: n. a thick substance that you use to clean your teeth牙膏<br />
+</p>
+<ul class="org-ul">
+<li>The toothpaste is on promotion and its price has been reduced to 10% of normal.<br /></li>
+<li>My wife was tempted into buying toothpaste on promotion in the mall.<br /></li>
+<li>I have no intention of purchasing any toothpaste, so you can stop assailing me at midnight.<br /></li>
+</ul>
+<p>
+toothbrush [ˈtuθˌbrʌʃ]: n. a small brush that you use for cleaning your teeth牙刷<br />
+</p>
+<ul class="org-ul">
+<li>I asked my aunt why she had used my toothbrush in the morning.<br /></li>
+<li>The toothbrush on the base of which the word Hui was inscribed must be my sister's.<br /></li>
+<li>My father thrust a toothbrush into my hands when I was leaving the apartment.<br /></li>
+</ul>
+<p>
+swish [swɪʃ]: v. to move or make something move quickly through the air with a quiet sound带着嗖嗖声挥动<br />
+</p>
+<ul class="org-ul">
+<li>Swishing some water back and forth in my mouth, I feel less spicy.<br /></li>
+<li>Swishing some water back and forth in your mouth will relieve your sense of spicy.<br /></li>
+<li>While swishing some water back and forth in his mouth, the water burst out on the desktop.<br /></li>
+</ul>
+<p>
+spit [spɪt]: v. to force a small amount of ↑saliva (=the liquid in your mouth) out of your mouth吐(唾沫), 吐出<br />
+</p>
+<ul class="org-ul">
+<li>If you spit in public in the street, you will be fined 50 yuan.<br /></li>
+<li>My wife is developing a fever and spitting a lot this morning.<br /></li>
+<li>I can't become comfortable with your spitting in public.<br /></li>
+</ul>
+<p>
+sink [sɪŋk]: n. a large open container that you fill with water and use for washing yourself, washing dishes etc ⇨ basin水槽, 水池<br />
+</p>
+<ul class="org-ul">
+<li>The plates are piled up high in the sink.<br /></li>
+<li>The customer lodged a complaint that flies took possession of our sinks.<br /></li>
+<li>The ants swarmed upon the meat in the sink.<br /></li>
+</ul>
+<p>
+rack [ræk]: n. a fror shelf that has bars or hooks on which you can put things架子<br />
+</p>
+<ul class="org-ul">
+<li>My wife insisted on setting up a rack in front of the sink.<br /></li>
+<li>You should put your toothbrush back on the toothbrush rack.<br /></li>
+<li>As long as the rack is broken, the wall will begin to be rotten.<br /></li>
+</ul>
+<p>
+floss [flɑs]: v.n. to clean between your teeth using floss牙线/牙线清洁<br />
+</p>
+<ul class="org-ul">
+<li>He developed a relationship with a girl who flosses her teeth after lunch.<br /></li>
+<li>The butcher has a habit of flossing his teeth after taking a shower.<br /></li>
+<li>Consequently, I forgot to floss my teeth before I left the apartment.<br /></li>
+</ul>
+<hr />
+<p>
+run some water (over sth.): 放水流过某物<br />
+</p>
+<ul class="org-ul">
+<li>The peasants succeeded in running some water over their fields to get a good harvest.<br /></li>
+<li>All you need to do is just to run some water through your cup, but you failed.<br /></li>
+<li>If you kept running water, I would tell our parents you have wasted a lot of water.<br /></li>
+</ul>
+<p>
+up and down: 上上下下地<br />
+</p>
+<ul class="org-ul">
+<li>You should brush your teeth up and down, otherwise they won't be clean.<br /></li>
+<li>When I brushed my teeth up and down, a woman went into the bathroom and took a piss.<br /></li>
+<li>Don't shave up and down, or you will hurt your face carelessly.<br /></li>
+</ul>
+<p>
+back and forth: 来来回回地<br />
+</p>
+<ul class="org-ul">
+<li>My teacher instructed me to read the book back and forth until I recited it.<br /></li>
+<li>My neighbor below stairs lodged a complaint that our cat often runs around back and forth at midnight.<br /></li>
+<li>Obviously, I received a warm welcome and my dog walked around me back and forth.<br /></li>
+</ul>
+<p>
+rinse [rɪns] off: 冲洗干净<br />
+</p>
+<ul class="org-ul">
+<li>The cat is full of the urine of rats, we need to rinse her off.<br /></li>
+<li>I don't want to park my car in the basement, the rain will rinse off it.<br /></li>
+<li>All sins you committed will be rinsed off in the fire.<br /></li>
+</ul>
+<p>
+pull out: 拨出/取出<br />
+</p>
+<ul class="org-ul">
+<li>Pulling out a stick, he threatened to hit his child who was unwilling to do house chores.<br /></li>
+<li>Pulling out a stick, he fiercely hit the face of the slave and ordered him to do house chores.<br /></li>
+<li>Pulling out a piece of floss, the doctor flosses his broken teeth with great care.<br /></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

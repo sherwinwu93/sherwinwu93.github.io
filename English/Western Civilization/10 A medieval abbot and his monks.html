@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-02-13 Thu 12:01 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-org805727d" class="outline-2">
+<h2 id="org805727d">10 A medieval abbot and his monks</h2>
+<div class="outline-text-2" id="text-org805727d">
+<p class="verse">
+The recovery and growth of European civilization in the High Middle Ages<br />
+&#xa0;also affected the state and the church.<br />
+Both lords and vassals and the Catholic church<br />
+&#xa0;recovered from the invasions and internal dissension of the Early Middle Ages.<br />
+Although lords and vassals seemed forever mired in endless petty conflicts,<br />
+&#xa0;some medieval kings began to exert a centralizing authority<br />
+&#xa0;&#xa0;and inaugurated the process of developing new kinds of monarchical states.<br />
+By the thirteenth century,<br />
+&#xa0;European monarchs were solidifying their governmental institutions in pursuit of greater power.<br />
+<br />
+The recovery of the Catholic church produced a reform movement<br />
+&#xa0;that led to exalted claims of papal authority.<br />
+This increase in church power, coupled with the rise of monarchical states,<br />
+&#xa0;made it almost inevitable that there would be conflicts between church and state.<br />
+At the same time,<br />
+&#xa0;vigorous papal leadership combined with new dimensions of religious life<br />
+&#xa0;&#xa0;to make the Catholic church a forceful presence in every area of life.<br />
+The role of the church in the new European civilization<br />
+&#xa0;was quite evident in the career of a man named Samson,<br />
+&#xa0;who became abbot or head of the great English abbey of Bury Saint Edmonds in 1182.<br />
+According to Jocelyn of Brakeland, a monk who assisted him,<br />
+&#xa0;Abbot Samson was a devout man who wore undergarments of horsehair and a horsehair shirt.<br />
+He loved virtue and abhorred liars, drunkards and talkative folk.<br />
+His primary concern was the spiritual well-being of his monastery,<br />
+&#xa0;but he spent much of his time working on problems in the world beyond the abbey walls.<br />
+Since the monastery had fallen into debt under his predecessors,<br />
+&#xa0;Abbot Samson toiled tirelessly to recoup the abbey's fortunes by carefully supervising its manors.<br />
+He also rounded up murderers to stand trial in Saint Edmunds<br />
+&#xa0;and provided knights for the king's army.<br />
+But his actions were not always tolerant or beneficial.<br />
+He was instrumental in driving the Jews from the town of Saint Edmunds<br />
+&#xa0;and was not above improving the abbey's possessions at the expense of his neighbors:<br />
+He built up the bank of the fish-pond at Babwell so high,<br />
+&#xa0;&#xa0;for the service of a new mill,<br />
+&#xa0;that by the keeping back the water<br />
+&#xa0;&#xa0;there is not a man, rich or poor, but has lost his garden and his orchards.<br />
+The abbot's worldly cares weighed heavily on him,<br />
+&#xa0;but he had little choice<br />
+&#xa0;&#xa0;if his abbey were to flourish and fulfill its spiritual and secular functions.<br />
+But he did have regrets; as he remarked to Jocelyn:<br />
+&#xa0;If he could have returned to the circumstances he had enjoyed before he became a monk,<br />
+&#xa0;&#xa0;he would never have become a monk or an abbot.<br />
+</p>
+</div>
+<div id="outline-container-org99adb88" class="outline-3">
+<h3 id="org99adb88">expression</h3>
+<div class="outline-text-3" id="text-org99adb88">
+<p>
+vassal [ˈvæs(ə)l]: n. a man in the Middle Ages who was given land to live on by a lord in return for promising to work or fight for him封臣<br />
+dissension [dɪˈsenʃən]: n. disagreement among a group of people纠纷, 争执<br />
+petty [ˈpeti]: adj. a petty problem, detail etc is small and unimportant SYN trivial小的, 不重要的<br />
+centralize [ˈsentrəˌlaɪz]: v. to organize the control of a country, organization, or system so that everything is done or decided in one place OPP decentralize集聚, 集中, 施行中央集权<br />
+inaugurate [ɪˈnɔɡjəˌreɪt]: v. to open a building or start an organization, event etc for the first time开辟<br />
+solidify [səˈlɪdɪˌfaɪ]: v. to make an agreement, plan, attitude etc more definite and less likely to change SYN strengthen团结, 巩固<br />
+reform [rɪˈfɔrm]: v. a change or changes made to a system or organization in order to improve it改革<br />
+exalted [ɪɡˈzɔltəd]: adj. having a very high rank and highly respected尊贵的<br />
+papal [ˈpeɪp(ə)l]: adj. relating to the Pope罗马教皇的<br />
+vigorous [ˈviɡ(ə)rəs]: adj. strong and healthy精力旺盛的, 有力的, 健壮的<br />
+forceful [ˈfɔrsfəl]: adj. forceful arguments, reasons etc are strongly and clearly expressed SYN powerful有力的<br />
+abbot [ˈæbət]: n. a man who is in charge of a ↑monastery主持<br />
+abbey [ˈæbi]: n. a large church with buildings next to it where ↑monks and ↑nuns live or used to live修道院<br />
+devout [dɪˈvaʊt]: adj. someone who is devout has a very strong belief in a religion虔敬的<br />
+undergarment [ˈʌndərˌɡɑrmənt]: n. old-fashioned a piece of underwear内衣<br />
+abhor [əbˈhɔr] abhorred: v. to hate a kind of behaviour or way of thinking, especially because you think it is morally wrong憎恶, 痛恨<br />
+talkative [ˈtɔkətɪv]: adj. someone who is talkative talks a lot OPP quiet多嘴的<br />
+supervise [ˈsupərˌvaɪz]: v. to be in charge of an activity or person, and make sure that things are done in the correct way监督, 管理, 指导<br />
+secular [ˈsekjələr]: adj. not connected with or controlled by a church or other religious authority世俗的<br />
+</p>
+<hr />
+<p>
+be mired in sth.: 陷入某事<br />
+be coupled with sth./sb.: 与&#x2026;相结合<br />
+made it almost inevitable that + &#x2026;: 使得&#x2026;几乎不可避免<br />
+fall into debt (under sb.): (在某人下)陷入债务<br />
+toil tirelessly: 不知疲倦地工作<br />
+round up sb.: 聚集某人<br />
+stand trial: 接受审判<br />
+be instrumental in doing sth.: 在做某事中起作用<br />
+drive sb. from sp.: 赶某人出某地<br />
+be not above doing sth.: 不高尚地做某事<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgbb1d8f5" class="outline-3">
+<h3 id="orgbb1d8f5">sentence</h3>
+<div class="outline-text-3" id="text-orgbb1d8f5">
+<p>
+vassal: n. a man in the Middle Ages who was given land to live on by a lord in return for promising to work or fight for him封臣<br />
+</p>
+<ul class="org-ul">
+<li>On arriving at the capital city, these vassals paid their lords a visit.<br /></li>
+<li>The vassal who was supposed to fight against the Asiatic army received a warm welcome.<br /></li>
+<li>These vassals were keeping guard at the entrance of the palace.<br /></li>
+</ul>
+<p>
+dissension: n. disagreement among a group of people纠纷, 争执<br />
+</p>
+<ul class="org-ul">
+<li>She laughed at you scornfully, there must have been dissensions between you and her.<br /></li>
+<li>My boss promised to protect me from internal dissensions in the company.<br /></li>
+<li>Because of harsher working conditions, there was a burst of dissension yesterday.<br /></li>
+</ul>
+<p>
+petty: adj. a petty problem, detail etc is small and unimportant SYN trivial小的, 不重要的<br />
+</p>
+<ul class="org-ul">
+<li>It reminds me of a petty mistake I made in my code.<br /></li>
+<li>What a petty problem!<br /></li>
+<li>His figure was so petty in the dime light that no one noticed his approach.<br /></li>
+</ul>
+<p>
+centralize: v. to organize the control of a country, organization, or system so that everything is done or decided in one place OPP decentralize集聚, 集中, 施行中央集权<br />
+</p>
+<ul class="org-ul">
+<li>The emperor planned out these organizations to the last detail to centralize his vassals.<br /></li>
+<li>He found it relatively easy to centralize these subsidiaries.<br /></li>
+<li>With the breakdown of his armies, he failed to centralize the provinces of the empire.<br /></li>
+</ul>
+<p>
+inaugurate: v. to open a building or start an organization, event etc for the first time开辟,举办<br />
+</p>
+<ul class="org-ul">
+<li>The ceremony will be inaugurated next week,<br />
+during which our City Comptroller will talk about new energy.<br /></li>
+<li>China is allowed to inaugurate the next Olympic Games in Beijing.<br /></li>
+<li>The growth of trade and cities inaugurated a new way of our lives.<br /></li>
+</ul>
+<p>
+monarch monarchical: adj. 国王的<br />
+</p>
+<ul class="org-ul">
+<li>He established a set of monarchical laws prohibiting adultery.<br /></li>
+<li>After being crowned by the pope, he drew up a set of monarchical laws to stimulate the birth rate.<br /></li>
+<li>A set of monarchical laws was published in the press.<br /></li>
+</ul>
+<p>
+solidify: v. to make an agreement, plan, attitude etc more definite and less likely to change SYN strengthen团结, 巩固<br />
+</p>
+<ul class="org-ul">
+<li>The instructor claimed that spaced repetitions are solidifying my memories.<br /></li>
+<li>These vassals are solidifying the gate of the city to fight against Asiatic nomads.<br /></li>
+<li>The priest is always raising money to solidify the bank of the fish pond.<br /></li>
+</ul>
+<p>
+reform: v.n. a change or changes made to a system or organization in order to improve it改革<br />
+</p>
+<ul class="org-ul">
+<li>The century is regarded as fruitful of reforms.<br /></li>
+<li>The reform movements reached their zenith in the last year of the century.<br /></li>
+<li>The reform movements will come into their own when everyone gets acclimatized to it.<br /></li>
+</ul>
+<p>
+exalted: adj. having a very high rank and highly respected尊贵的<br />
+</p>
+<ul class="org-ul">
+<li>The monk insists on the exalted claim of papal authorities.<br /></li>
+<li>The king is so exalted that everyone in the state is subject to him.<br /></li>
+<li>The exalted prince hopes for a knight who fights for his state.<br /></li>
+</ul>
+<p>
+papal: adj. relating to the Pope罗马教皇的<br />
+</p>
+<ul class="org-ul">
+<li>According to the papal authorities, the grass will take root by then.<br /></li>
+<li>The papal authorities are barely clinging to their power because of rebellious Romans.<br /></li>
+<li>The papal authorities went out of their way to build the Gothic church.<br /></li>
+</ul>
+<p>
+vigorous: adj. strong and healthy精力旺盛的, 有力的, 健壮的<br />
+</p>
+<ul class="org-ul">
+<li>I am not so vigorous as before I went to college.<br /></li>
+<li>The prince had a major crush on a vigorous knight who used to keep guard for her.<br /></li>
+<li>I might as well keep vigorous when running into serious troubles.<br /></li>
+</ul>
+<p>
+forceful: adj. forceful arguments, reasons etc are strongly and clearly expressed SYN powerful有力的<br />
+</p>
+<ul class="org-ul">
+<li>Asiatic nomads who pushed their way westward became a forceful power in eastern Europe.<br /></li>
+<li>Butchers are forceful because they are exercised in their work on a daily basis.<br /></li>
+<li>No one could account for the fact that these nomads turned out to be forceful in action.<br /></li>
+</ul>
+<p>
+abbot: n. a man who is in charge of a ↑monastery主持<br />
+</p>
+<ul class="org-ul">
+<li>The abbot was said to be killed in action.<br /></li>
+<li>I felt obliged to protect the abbot from these invaders.<br /></li>
+<li>The abbot who committed a murder was arrested by the monarchical knights.<br /></li>
+</ul>
+<p>
+abbey: n. a large church with buildings next to it where ↑monks and ↑nuns live or used to live修道院<br />
+</p>
+<ul class="org-ul">
+<li>The life in the abbey tends to be simple in winter.<br /></li>
+<li>I never dreamed of leading a life in the abbey.<br /></li>
+<li>The abbey falls into debt under the greedy abbot.<br /></li>
+</ul>
+<p>
+devout: adj. someone who is devout has a very strong belief in a religion虔敬的<br />
+</p>
+<ul class="org-ul">
+<li>It is impolite to look scornfully at a devout nun.<br /></li>
+<li>A devout nun decided to dedicate herself to the god.<br /></li>
+<li>I shall never be suspect of a devout abbot.<br /></li>
+</ul>
+<p>
+undergarment: n. old-fashioned a piece of underwear内衣<br />
+</p>
+<ul class="org-ul">
+<li>Dressed in an undergarment, he went up the tower to figure out what had happened.<br /></li>
+<li>Not dressed in an undergarment, he felt cool caught in the snow storms.<br /></li>
+<li>I got my nerve to wear undergarments on my own.<br /></li>
+</ul>
+<p>
+abhor abhorred: v. to hate a kind of behaviour or way of thinking, especially because you think it is morally wrong憎恶, 痛恨<br />
+</p>
+<ul class="org-ul">
+<li>I abhorred his habit of drinking heavily before sleeping.<br /></li>
+<li>I needn't have abhorred your impolite behavior, for it's none of my business.<br /></li>
+<li>I abhorred the man who lies to me over and over again.<br /></li>
+</ul>
+<p>
+talkative: adj. someone who is talkative talks a lot OPP quiet多嘴的<br />
+</p>
+<ul class="org-ul">
+<li>Young man, if you were not so talkative, we would both enjoy our dinner.<br /></li>
+<li>I abhorred the talkative guy who didn't keep my secret.<br /></li>
+<li>Your mother got angry because you were talkative at the reception.<br /></li>
+</ul>
+<p>
+supervise: v. to be in charge of an activity or person, and make sure that things are done in the correct way监督, 管理, 指导<br />
+</p>
+<ul class="org-ul">
+<li>The authorities fail to supervise these companies, for they are often family-controlled.<br /></li>
+<li>It is necessary to supervise the growth of the grass in your courtyard.<br /></li>
+<li>I abhor the video camera by which our boss can supervise us whenever he wants.<br /></li>
+</ul>
+<p>
+secular: adj. not connected with or controlled by a church or other religious authority世俗的<br />
+</p>
+<ul class="org-ul">
+<li>For secular purposes, the papal pope placed a golden crown on his head.<br /></li>
+<li>For secular purposes, the abbot has to raise money to have the clock repaired.<br /></li>
+<li>For secular purposes, the abbot built up the bank of the fish pond high.<br /></li>
+</ul>
+<hr />
+<p>
+be mired in sth.: 陷入某事<br />
+</p>
+<ul class="org-ul">
+<li>I needn't have been mired in such a murder you committed.<br /></li>
+<li>The monarchical knight was said to be mired in a scandal.<br /></li>
+<li>The experiment seems mired in the abuses of animals.<br /></li>
+</ul>
+<p>
+be coupled with sth./sb.: 与&#x2026;相结合<br />
+</p>
+<ul class="org-ul">
+<li>Coupled with Lee, we set up a robot factory in the suburb of the city.<br /></li>
+<li>Coupled with Lee, we broke up a world record.<br /></li>
+<li>Coupled with Lee, we developed a model to elaborate upon an atom in public.<br /></li>
+</ul>
+<p>
+made it almost inevitable that + &#x2026;: 使得&#x2026;几乎不可避免<br />
+</p>
+<ul class="org-ul">
+<li>The growth of the university made it almost inevitable<br />
+that there was a fight between students and people in the town.<br /></li>
+<li>The development of trade made it almost inevitable<br />
+that the cities began to emerge in the 11th century.<br /></li>
+<li>The sudden death of the emperor made it almost inevitable<br />
+that there was a series of dissensions in the empire.<br /></li>
+</ul>
+<p>
+fall into debt (under sb.): 陷入债务<br />
+</p>
+<ul class="org-ul">
+<li>A burst of disasters has made the abbey fall into debt.<br /></li>
+<li>You shouldn't have fallen into debt because I had given the living expenses.<br /></li>
+<li>If you were not a good-for-nothing, you wouldn't fall into debt according to your station.<br /></li>
+</ul>
+<p>
+toil tirelessly: 不知疲倦地工作<br />
+</p>
+<ul class="org-ul">
+<li>The devout abbot toiled tirelessly to spread the mightiness of the god.<br /></li>
+<li>I used to toil tirelessly to get my work done.<br /></li>
+<li>On arriving at the hotel, she toiled tirelessly to figure out the criminal.<br /></li>
+</ul>
+<p>
+round up sb.: 聚集某人<br />
+</p>
+<ul class="org-ul">
+<li>The crowd was rounded up to reach a settlement about the working conditions and salaries.<br /></li>
+<li>It is forbidden to round up people in public in this country.<br /></li>
+<li>The priest rounded up people in the town to have the clock repaired.<br /></li>
+</ul>
+<p>
+stand trial: 接受审判<br />
+</p>
+<ul class="org-ul">
+<li>The butcher is standing trial, for he deserted his regiment in action.<br /></li>
+<li>With the lawyer being late for court, people in the court failed to stand trial.<br /></li>
+<li>You are standing trial in front of your parents<br />
+because you played truant from school to kill your girlfriend.<br /></li>
+</ul>
+<p>
+be instrumental in doing sth.: 在做某事中起作用<br />
+</p>
+<ul class="org-ul">
+<li>He was instrumental in making a profit this year.<br /></li>
+<li>He was instrumental in publishing the article about the discovery of these fossils.<br /></li>
+<li>He was instrumental in cleaning up the mass in the house.<br /></li>
+</ul>
+<p>
+drive sb. from sp.: 赶某人出某地<br />
+</p>
+<ul class="org-ul">
+<li>She got so angry that she drove her nephew from her house.<br /></li>
+<li>You needn't have driven our cat from our room because she won't jump on the bed.<br /></li>
+<li>The abbot was instrumental in driving the Asiatic nomads from the province.<br /></li>
+</ul>
+<p>
+be not above doing sth.: 不怎么高尚地做某事<br />
+</p>
+<ul class="org-ul">
+<li>He was not above building up his wall high.<br /></li>
+<li>He was not above succeeding in setting up a new world record.<br /></li>
+<li>he was not above following in his father's footsteps.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org5909ba8" class="outline-3">
+<h3 id="org5909ba8">summary</h3>
+<div class="outline-text-3" id="text-org5909ba8">
+<p>
+Because of the development and growth in the High Middle Ages,<br />
+	by the thirteenth century,<br />
+	monarchs began to exert a centralizing authority<br />
+			and inaugurated the process of new monarchical states<br />
+		so that they solidified their governmental institutions to pursue greater power.<br />
+</p>
+
+<p>
+At the same time,<br />
+	the papal leadership combined with new dimensions of religious life<br />
+		to make the church a vigorous presence in every area of life.<br />
+The increase in the Church power, coupled with the rise of monarchical states,<br />
+	made it inevitable that there would be conflicts between church and state.<br />
+Samson, an abbot in England,<br />
+	was a devout man who loved virtues and abhorred liars, drunkards, and talkative folks.<br />
+Although his primary concern is the well-being of his monastery,<br />
+	he had to spend more time working beyond the abbey walls<br />
+		because the monastery had fallen into debt under his predecessors.<br />
+He rounded up murders to stand trials and provided knights for the king's army.<br />
+However, he also played an important role in driving the Jews from his town<br />
+	and built up the bank of his fish pond to make others lose their gardens and orchards.<br />
+He regretted that if he had a chance, he would have never become an abbot.<br />
+</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,1684 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-12-24 Tue 20:42 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<p>
+CHAPTER 8
+EUROPEAN CIVILIZATION IN THE EARLY
+MIDDLE AGES, 750&#x2013;1000
+</p>
+
+<p>
+CHAPTER OUTLINE
+AND FOCUS QUESTIONS
+</p>
+
+<p>
+The World of the Carolingians
+</p>
+
+<p>
+Q What was the significance of Charlemagne’s coronation
+as emperor? In what ways did the political, intellectual,
+and daily life in the Carolingian Empire represent a
+fusion of Gallo-Roman, Germanic, and Christian
+practices?
+</p>
+
+<p>
+Disintegration of the Carolingian Empire
+</p>
+
+<p>
+Q What impact did the Vikings have on the history and
+culture of medieval Europe?
+</p>
+
+<p>
+The Emerging World of Lords and Vassals
+</p>
+
+<p>
+Q What was fief-holding, and how was it related
+to manorialism?
+</p>
+
+<p>
+The Zenith of Byzantine Civilization
+</p>
+
+<p>
+Q What were the chief developments in the Byzantine
+Empire between 750 and 1000?
+</p>
+
+<p>
+The Slavic Peoples of Central and Eastern Europe
+</p>
+
+<p>
+Q What patterns of development occurred in central and
+eastern Europe as a result of the Slavic peoples?
+</p>
+
+<p>
+The World of Islam
+</p>
+
+<p>
+Q What were the chief developments in the Islamic world
+between 750 and 1000?
+</p>
+
+<p>
+CRITICAL THINKING
+</p>
+
+<p>
+Q In what ways can it be said that Islamic civilization was
+superior to the civilization of western Europe in the
+ninth and tenth centuries?
+</p>
+
+<p>
+A medieval French manuscript illustration of the coronation
+of Charlemagne by Pope Leo III
+</p>
+
+<p>
+IN 800, CHARLEMAGNE, the king of the Franks, journeyed to
+Rome to help Pope Leo III, who was barely clinging to power in the
+face of rebellious Romans. On Christmas Day, Charlemagne and his
+family, attended by Romans, Franks, and even visitors from the Byzantine Empire, crowded into Saint Peter’s Basilica to hear Mass.
+Quite unexpectedly, at least according to a Frankish writer, ‘‘as the
+king rose from praying before the tomb of the blessed apostle Peter,
+Pope Leo placed a golden crown on his head.’’ In keeping with ancient tradition, the people in the church shouted, ‘‘Long life and victory to Charles Augustus, crowned by God the great and pacific
+Emperor of the Romans.’’ Seemingly, the Roman Empire in the West
+had been reborn, and Charles had become the first western emperor
+since 476. But this ‘‘Roman emperor’’ was actually a German king,
+and he had been crowned by the head of the western Christian
+church. In truth, the coronation of Charlemagne was a sign not of
+the rebirth of the Roman Empire but of the emergence of a new
+European civilization.
+</p>
+
+<p>
+By the year of Charlemagne’s coronation, the contours of this
+new European civilization were beginning to emerge in western
+Europe. Increasingly, Europe would become the focus and center
+of Western civilization. Building on a fusion of Germanic, GrecoRoman, and Christian elements, the medieval European world first
+became visible in the Carolingian Empire of Charlemagne. The
+agrarian foundations of the eighth and ninth centuries proved inadequate to maintain a large monarchical system, however, and a new
+political and military order based on the decentralization of political
+power subsequently evolved to become an integral part of the political world of the Middle Ages.
+</p>
+
+<p>
+European civilization began on a shaky and uncertain foundation, however. In the ninth century, Vikings, Magyars, and Muslims
+posed threats that could easily have stifled the new society. But
+European civilization absorbed the challenges. The Vikings and
+Magyars were assimilated, and recovery slowly began. By 1000,
+European civilization was ready to embark on a period of dazzling
+vitality and expansion.
+</p>
+
+<p>
+The World of the Carolingians
+</p>
+
+<p>
+Q Focus Questions: What was the significance of
+Charlemagne’s coronation as emperor? In what ways
+did the political, intellectual, and daily life in the
+Carolingian Empire represent a fusion of GalloRoman, Germanic, and Christian practices?
+</p>
+
+<p>
+By the eighth century, the Merovingian dynasty was losing its control of the Frankish lands. Charles Martel, the
+Carolingian mayor of the palace of Austrasia, became the
+virtual ruler of these territories. When Charles died in
+741, Pepin, his son, deposed the Merovingians and assumed the kingship of the Frankish state, an action approved by the pope. In imitation of an Old Testament
+practice, Pepin (751&#x2013;768) was crowned and formally
+anointed with holy oil by a representative of the pope.
+The anointing not only symbolized that the king had
+been entrusted with a sacred office but also provided yet
+another example of the fusion between Germanic institutions and Christian practices in the Early Middle
+Ages.
+</p>
+
+<p>
+Charlemagne and the Carolingian
+Empire (768&#x2013;814)
+</p>
+
+<p>
+Pepin was succeeded on the throne of the Frankish
+kingdom by his son, a dynamic and powerful ruler
+known to history as Charles the Great, or Charlemagne
+(Carolus magnus in Latin&#x2014;hence our word Carolingian).
+Charlemagne was a determined and decisive man, intelligent and inquisitive. A fierce warrior, he was also a wise
+patron of learning and a resolute statesman (see the box
+on p. 156). He greatly expanded the territory of the
+Carolingian Empire during his lengthy rule.
+</p>
+
+<p>
+Expansion of the Carolingian Empire
+</p>
+
+<p>
+In the tradition
+of the Germanic kings, Charlemagne was a determined
+warrior who undertook fifty-four military campaigns.
+Even though the Frankish army was relatively small&#x2014;only
+eight thousand men gathered each spring for campaigning&#x2014;
+supplying it and transporting it to distant areas could still
+present serious problems. The Frankish army consisted
+mostly of infantry, with some cavalry armed with swords
+and spears.
+</p>
+
+<p>
+Charlemagne’s campaigns took him to many parts of
+Europe. In 773, Charlemagne led his army into Italy,
+crushed the Lombards, and took control of the Lombard
+state. Although his son was crowned king of Italy,
+Charlemagne was its real ruler. Four years after his invasion of Italy, Charlemagne moved his forces into
+northern Spain. This campaign proved disappointing: not
+only did the Basques harass his army as it crossed the
+Pyrenees on the way home, but they also ambushed and
+annihilated his rear guard.
+</p>
+
+<p>
+Charlemagne was considerably more successful with
+his eastern campaigns into Germany, especially against
+the Saxons living between the Elbe River and the North
+Sea. As Einhard, Charlemagne’s biographer, recounted it:
+</p>
+
+<p>
+No war ever undertaken by the Frank nation was carried on
+with such persistence and bitterness, or cost so much labor,
+because the Saxons, like almost all the tribes of Germany,
+were a fierce people, given to the worship of devils, and hostile to our religion, and did not consider it dishonorable to
+transgress and violate all law, human and divine.1
+</p>
+
+<p>
+Charlemagne’s insistence that the Saxons convert to
+Christianity simply fueled their resistance. Not until 804,
+after eighteen campaigns, was Saxony finally pacified and
+added to the Carolingian domain.
+</p>
+
+<p>
+In southeastern Germany, Charlemagne invaded the
+land of the Bavarians in 787 and brought them into his
+empire by the following year, an expansion that then
+brought him into contact with the southern Slavs and the
+Avars. The latter disappeared from history after their
+utter devastation at the hands of Charlemagne’s army.
+Now at its height, Charlemagne’s empire covered much of
+western and central Europe (see Map 8.1); not until the
+time of Napoleon in the nineteenth century would an
+empire of this size be seen again in Europe.
+</p>
+
+<p>
+Governing the Empire
+</p>
+
+<p>
+Charlemagne continued the
+efforts of his father in organizing the Carolingian
+kingdom. Because there was no system of public taxation, Charlemagne was dependent on the royal estates
+for the resources he needed to govern his empire. Food
+and goods derived from these lands provided support
+for the king, his household staff, and officials. To keep
+the nobles in his service, Charlemagne granted part of
+the royal lands as lifetime holdings to nobles who assisted him.
+</p>
+
+<p>
+Besides the household staff, the administration of the
+empire was accomplished by counts, who were the king’s
+chief representatives in local areas. Counts were members
+of the nobility who had already existed under the Merovingians. They had come to control public services in
+their own lands and thus acted as judges, military leaders,
+and agents of the king. Gradually, as the rule of the
+Merovingian kings weakened, many counts had simply
+attached the royal lands and services performed on behalf
+of the king to their own family possessions.
+</p>
+
+<p>
+In an effort to gain greater control over his kingdom,
+Charlemagne attempted to limit the power of the counts.
+They were required to serve outside their own family
+lands and were moved about periodically rather than
+being permitted to remain in a county for life. By making
+the offices appointive, Charlemagne tried to prevent the
+counts’ children from automatically inheriting their offices. Moreover, as another check on the counts, Charlemagne instituted the missi dominici (‘‘messengers of the
+lord king’’), a lay lord and a church official who were sent
+out to local districts to ensure that the counts were executing the king’s wishes.
+</p>
+
+<p>
+The Carolingian system was glaringly inefficient.
+Great distances had to be covered on horseback, making
+it impossible for Charlemagne and his household staff to
+exercise much supervision over local affairs. What held
+the system together was personal loyalty to the king, who
+was strong enough to ensure loyalty by force when
+necessary.
+</p>
+
+<p>
+Charlemagne also realized that the Catholic church
+could provide valuable assistance in governing his kingdom. By the end of the seventh century, the system of
+ecclesiastical government within the Christian church
+that had been created in the Late Roman Empire had
+largely disintegrated. Many church offices were not filled
+or were held by grossly unqualified relatives of the royal
+family. Both Pepin and his son Charlemagne took up the
+cause of church reform by creating new bishoprics and
+archbishoprics, restoring old ones, and seeing to it that
+the clergy accepted the orders of their superiors and executed their duties.
+</p>
+
+<p>
+Charlemagne as Emperor
+</p>
+
+<p>
+As Charlemagne’s power grew, so did his prestige
+as the most powerful Christian ruler; one
+monk even wrote of his empire as the
+‘‘kingdom of Europe.’’ In 800, Charlemagne acquired a new title&#x2014;emperor of
+the Romans&#x2014;largely as a result of the
+ever-closer relationship between the papacy and the Frankish monarchs.
+</p>
+
+<p>
+Already during the reign of Pepin,
+an alliance emerged between the kingdom of the Franks and the papacy. The
+popes welcomed this support, and in the
+course of the second half of the eighth
+century, they increasingly severed their
+ties with the Byzantine Empire and drew
+closer to the Frankish kingdom. Charlemagne encouraged this development.
+In 799, after a rebellion against his authority, Pope Leo III (795&#x2013;816) managed to escape from Rome and flee
+to safety at Charlemagne’s court. Charlemagne offered assistance, and when
+he went to Rome in November 800 to
+settle affairs, he was received by the pope
+like an emperor. On Christmas Day in
+800, Pope Leo placed a crown on
+Charlemagne’s head and declared him
+emperor of the Romans.
+</p>
+
+<p>
+The Significance of Charlemagne
+</p>
+
+<p>
+The
+significance of this imperial coronation
+has been much debated by historians. We
+are not even sure whether the idea was
+discussed when Charlemagne and the pope met in the
+summer of 799 in Paderborn in German lands or whether
+Charlemagne was pleased or displeased. Charlemagne’s biographer Einhard claimed that Charlemagne ‘‘at first had
+such an aversion that he declared that he would not have set
+foot in the Church the day that it was conferred, although it
+was a great feast-day, if he could have foreseen the design of
+the Pope.’’2 But Charlemagne also perceived the usefulness
+of the imperial title; after all, he was now on a level of
+equality with the Byzantine emperor. Moreover, the papacy
+now had a defender of great stature, although later popes in
+the Middle Ages would become involved in fierce struggles
+with emperors over who possessed the higher power.
+</p>
+
+<p>
+In any case, Charlemagne’s coronation as Roman
+emperor demonstrated the strength, even after three
+hundred years, of the concept of an enduring Roman
+Empire. More important, it symbolized the fusion of
+Roman, Christian, and Germanic elements. Did this fusion constitute the foundation of European civilization?
+</p>
+
+<p>
+A Germanic king had been crowned emperor of the Romans by the spiritual leader of western Christendom.
+Charlemagne ruled an empire that stretched from the
+North Sea in the north to Italy in the south and from
+France in western Europe to Vienna in central Europe.
+This domain differed significantly from the Roman Empire, which encompassed much of the Mediterranean
+world. Had not a new civilization emerged? And should
+Charlemagne not be regarded, as one of his recent biographers has argued, as the ‘‘father of Europe’’?
+</p>
+
+<p>
+The Carolingian Intellectual Renewal
+</p>
+
+<p>
+Charlemagne had a strong desire to revive learning in his
+kingdom, an attitude that stemmed from his own intellectual curiosity as well as the need to provide educated
+clergy for the church and literate officials for the government. His efforts led to a revival of learning and
+culture that some historians have labeled the Carolingian
+Renaissance, or ‘‘rebirth’’ of learning.
+</p>
+
+<p>
+For the most part, the revival of Classical studies
+and the efforts to preserve Latin culture took place in the
+monasteries, many of which had been established by the Irish and English missionaries
+of the seventh and eighth centuries. By the
+ninth century, the work required of Benedictine
+monks was the copying of manuscripts.
+Monasteries established scriptoria, or writing
+rooms, where monks copied not only the
+works of early Christianity, such as the Bible,
+but also the works of Classical Latin authors.
+The production of manuscripts in Carolingian monastic scriptoria was a crucial factor in
+the preservation of the ancient legacy. About
+eight thousand manuscripts survive from
+Carolingian times. Virtually 90 percent of the
+ancient Roman works that we have today exist
+because they were copied by Carolingian monks.
+</p>
+
+<p>
+Charlemagne personally promoted learning by establishing a palace school and encouraging scholars from all over Europe to
+come to the Carolingian court. The best
+known of these scholars was Alcuin, from the
+famous school at York, founded as part of a
+great revival of learning in the Anglo-Saxon
+kingdom of Northumbria. From 782 to 796,
+while serving at Charlemagne’s court as an
+adviser on ecclesiastical affairs, Alcuin also
+provided the leadership for the palace school.
+He concentrated on teaching Classical Latin
+and adopted Cassiodorus’ sevenfold division
+of knowledge known as the liberal arts (see
+Chapter 7), which became the basis for all
+later medieval education. All in all, the Carolingian Renaissance played a crucial role in keeping the Classical
+heritage alive as well as maintaining the intellectual life of
+the Catholic church.
+</p>
+
+<p>
+Life in the Carolingian World
+</p>
+
+<p>
+In daily life as well as intellectual life, the Europe of the
+Carolingian era witnessed an amalgamation of Roman,
+Germanic, and Christian practices. These last in particular seem to have exercised an ever-increasing influence.
+</p>
+
+<p>
+Family and Marriage
+</p>
+
+<p>
+By Carolingian times, the Catholic church had begun to influence Frankish family life
+and marital and sexual attitudes. Marriages in Frankish
+society were arranged by fathers or uncles to meet the
+needs of the extended family. Although wives were expected to be faithful to their husbands, Frankish aristocrats often kept concubines, either slave girls or free
+women from their estates. Even the ‘‘most Christian king’’
+Charlemagne kept a number of concubines.
+</p>
+
+<p>
+To limit such sexual license, the church increasingly
+emphasized its role in marriage and attempted to
+Christianize it. Although marriage was a civil arrangement, priests tried to add their blessings and strengthen
+the concept of a special marriage ceremony. To stabilize
+marriages, the church also began to emphasize monogamy and permanence. A Frankish church council in 789
+stipulated that marriage was ‘‘indissoluble’’ and condemned the practice of concubinage and easy divorce, and
+during the reign of Emperor Louis the Pious (814&#x2013;840),
+the church formally prohibited divorce. Now a man who
+married was expected to remain with his wife ‘‘even
+though she were sterile, deformed, old, dirty, drunken, a
+frequenter of bad company, lascivious, vain, greedy, unfaithful, quarrelsome, abusive . . . , for when that man was
+free, he freely engaged himself.’’4
+</p>
+
+<p>
+The acceptance and spread of the Catholic church’s
+views on the indissolubility of marriage encouraged the
+development of the nuclear family at the expense of the
+extended family. Although kinship was still an influential
+social and political force, the conjugal unit came to be
+seen as the basic unit of society. The new practice of
+young couples establishing their own households brought
+a dynamic element to European society. It also had a
+significant impact on women (see the box above). In the
+extended family, the eldest woman controlled all the other
+female members; in the nuclear family, the wife was still
+dominated by her husband, but at least she now had
+control of her own household and children.
+</p>
+
+<p>
+Christianity and Sexuality
+</p>
+
+<p>
+The early church fathers
+had stressed that celibacy and complete abstinence from
+sexual activity constituted an ideal state superior to
+marriage. Subsequently, the early church gradually developed a case for clerical celibacy, although it proved
+impossible to enforce in the Early Middle Ages. The early
+fathers had also emphasized, however, that not all people
+had the self-discipline to remain celibate. It was thus
+permissible to marry, as Paul had indicated in his first
+epistle to the Corinthians:
+</p>
+
+<p>
+It is good for a man not to touch a woman. Nevertheless, to
+avoid fornication, let every man have his own wife, and let
+every woman have her own husband. . . . I say therefore to
+the unmarried and widows, it is good for them if they abide
+even as I. But if they cannot contain, let them marry: for it
+is better to marry than to burn.
+</p>
+
+<p>
+The church thus viewed marriage as the lesser of two evils;
+it was a concession to human weakness and fulfilled the
+need for companionship, sex, and children. In the church
+of the Early Middle Ages, it was generally agreed that
+marriage gave the right to indulge in sexual intercourse.
+Sex, then, was permissible within marriage, but only so
+long as it was used for the sole purpose of procreation and
+not for pleasure. The church condemned all forms of
+contraception and also strongly condemned abortion, although this prohibition failed to stop either practice.
+Various herbal potions were available to prevent conception or cause abortion. The Catholic church accepted only
+one way to limit children: periodic or total abstinence
+from intercourse.
+</p>
+
+<p>
+The Catholic church’s condemnation of sexual activity outside marriage also included homosexuality.
+Neither Roman religion nor Roman law had recognized
+any real difference between homosexual and heterosexual
+eroticism, and the Roman Empire had taken no legal
+measures against homosexual relations between adults.
+Later, in the Byzantine Empire, the emperor Justinian in
+538 condemned homosexuality, emphasizing that such
+practices brought down the wrath of God (‘‘we have
+provoked Him to anger’’) and endangered the welfare of
+the state. Justinian recommended that the guilty parties
+be punished by castration. Although the church in the
+Early Middle Ages similarly condemned homosexuality, it
+also pursued a flexible policy in its treatment of homosexuals. In the Early Middle Ages, homosexuals were
+treated less harshly than married couples who practiced
+contraception.
+</p>
+
+<p>
+Diet
+</p>
+
+<p>
+For both rich and poor, the fundamental staple of
+the Carolingian diet was bread. The aristocratic classes, as
+well as the monks, consumed it in large quantities. Ovens
+at the monastery of Saint Gall were able to bake a thousand
+loaves of bread. Sometimes a gruel made of barley and oats
+was substituted for bread in the peasant diet.
+</p>
+
+<p>
+The upper classes in Carolingian society enjoyed a
+much more varied diet than the peasants. Pork was the
+primary meat. Domestic pigs, allowed to run wild in the
+forests to find their own food, were collected and
+slaughtered in the fall, then smoked and salted to be eaten
+during the winter months. Because Carolingian aristocrats were especially fond of roasted meat, hunting wild
+game became one of their favorite activities. They ate
+little beef and mutton, however, because cattle were kept
+as dairy cows and oxen to draw plows, and sheep were
+raised for wool.
+</p>
+
+<p>
+Dairy products became prevalent in the Carolingian
+diet. Milk, which spoiled rapidly, was made into cheese
+and butter. Chickens were raised for their eggs. Vegetables
+also formed a crucial part of the diet of both the rich
+and the poor. These included legumes, such as beans,
+peas, and lentils, and roots, such as garlic, onions, and
+carrots.
+</p>
+
+<p>
+Both gluttony and drunkenness were vices shared by
+many people in Carolingian society. Monastic rations
+were greatly enlarged in the eighth century to include a
+daily allotment of 3.7 pounds of bread (nuns were permitted
+only 3 pounds), 1.5 quarts of wine or ale, 2 to 3 ounces of
+cheese, and 8 ounces of vegetables (4 for nuns). These
+rations totaled 6,000 calories a day, and since only heavy
+and fatty foods&#x2014;bread, milk, and cheese&#x2014;were considered nourishing, we begin to understand why some
+Carolingians were known for their potbellies.
+</p>
+
+<p>
+Everyone in Carolingian society, including abbots
+and monks, drank heavily and often to excess. Taverns
+became a regular feature of life and were found everywhere: in marketplaces, in pilgrimage centers, and on
+royal, episcopal, and monastic estates. Drinking contests
+were not unusual; one penitential stated, ‘‘Does drunken
+bravado encourage you to attempt to outdrink your
+friends? If so, thirty days’ fast.’’
+</p>
+
+<p>
+The aristocrats and monks favored wine above all
+other beverages, and much care was lavished on its production, especially by monasteries. Ale was especially
+popular in the northern and eastern parts of the Carolingian world. Water was also drunk as a beverage, but
+much care had to be taken to obtain pure sources from
+wells or clear streams.
+</p>
+
+<p>
+Health
+</p>
+
+<p>
+Medical practice in Carolingian times stressed
+the use of medicinal herbs and bleeding. Although the
+latter was practiced regularly, moderation was frequently
+recommended. Some advised carefulness as well: ‘‘Who
+dares to undertake a bleeding should see to it that his
+hand does not tremble.’’ Physicians were also available
+when people faced serious illnesses. Many were clerics,
+and monasteries trained their own. Monasteries kept
+medical manuscripts copied from ancient works and grew
+herbs to provide stocks of medicinal plants. Carolingian
+medical manuscripts contained descriptions of illnesses,
+recipes for medical potions, and even gynecological advice, although monks in particular expended little effort
+on female medical needs.
+</p>
+
+<p>
+Physicians of the Early Middle Ages supplemented
+their medicines and natural practices with appeals for
+otherworldly help. Magical rites and influences were
+carried over from pagan times; Germanic tribes had used
+magical medicine for centuries. But as pagans were converted to Christianity, miraculous healing through the
+intervention of God, Jesus, or the saints soon replaced
+pagan practices. Medieval chronicles abound with accounts of people healed by touching a saint’s body.
+</p>
+
+<p>
+Disintegration of the
+Carolingian Empire
+</p>
+
+<p>
+Q Focus Question: What impact did the Vikings have on
+the history and culture of medieval Europe?
+</p>
+
+<p>
+The Carolingian Empire began to disintegrate soon after
+Charlemagne’s death. Charlemagne was succeeded by his
+son Louis the Pious (814&#x2013;840), who was unable to control
+either the Frankish aristocracy or his own four sons, who
+fought continually. In 843, after their father’s death, the
+three surviving brothers signed the Treaty of Verdun. This
+agreement divided the Carolingian Empire among them
+into three major sections: Charles the Bald (843&#x2013;877)
+obtained the west
+Frankish lands, which
+formed the core of the
+eventual kingdom of
+France; Louis the German (843&#x2013;876) took
+the eastern lands, which
+became Germany; and
+Lothair (840&#x2013;855) received the title of emperor and a ‘‘Middle
+Kingdom’’ extending
+from the North Sea to
+Italy, including the
+Netherlands, the Rhineland, and northern Italy.
+The territories of the
+Middle Kingdom became a source of incessant struggle between the other
+two Frankish rulers and their heirs. Indeed, France and
+Germany would fight over the territories of the Middle
+Kingdom for centuries.
+</p>
+
+<p>
+Although this division of the Carolingian Empire was
+made for political reasons (dividing landholdings among
+the male heirs was a traditional Frankish custom), two
+different cultures began to emerge. By the ninth century,
+inhabitants of the west Frankish area were speaking a
+Romance language derived from Latin that became
+French. Eastern Franks spoke a Germanic dialect. The
+later kingdoms of France and Germany did not yet exist,
+however. In the ninth century, the frequent struggles
+among the numerous heirs of the sons of Louis the Pious
+led to further disintegration of the Carolingian Empire. In
+the meantime, while powerful aristocrats acquired even
+more power in their own local territories at the expense of
+the squabbling Carolingian rulers, the process of disintegration was abetted by external attacks on various parts
+of the old Carolingian world.
+</p>
+
+<p>
+Invasions of the Ninth and Tenth Centuries
+</p>
+
+<p>
+In the ninth and tenth centuries, western Europe was
+beset by a wave of invasions of several non-Christian
+peoples&#x2014;one old enemy, the Muslims, and two new ones,
+the Magyars and Vikings (see Map 8.2). The Muslims
+began a new series of attacks in the Mediterranean in the
+ninth century. They raided the southern coasts of Europe,
+especially Italy; occupied Sicily; destroyed the Carolingian
+defenses in northern Spain; and conducted forays into
+southern France. The Magyars were a people from western Asia who moved into eastern and central Europe at
+the end of the ninth century. They established themselves
+on the plains of Hungary and from there made raids into
+western Europe. The Magyars were finally crushed at the
+Battle of Lechfeld in Germany in 955. At the end of the
+tenth century, they were converted to Christianity and
+settled down to establish the kingdom of Hungary.
+</p>
+
+<p>
+The Vikings
+</p>
+
+<p>
+By far the most devastating and farreaching attacks of the time came from the Northmen or
+Norsemen of Scandinavia, also known as the Vikings.
+The Vikings were a Germanic people who had settled
+in Scandinavia. Why they invaded other areas of Europe
+is uncertain. Perhaps overpopulation and the emergence
+of more effective monarchs in Denmark, Norway, and
+Sweden caused some of the freedom-loving Scandinavians
+to seek escape from the growing order. The Vikings’ great
+love of adventure and their search for booty and new
+avenues of trade may also have been important factors.
+</p>
+
+<p>
+Two features of Viking society help explain what the
+Vikings accomplished. First, they were warriors. And
+second, they were superb shipbuilders and sailors. Their
+ships were the best of the period. Long and narrow with
+beautifully carved arched prows, the Viking ‘‘dragon
+ships’’ carried about fifty men. Their shallow draft enabled them to sail up European rivers and attack places at
+some distance inland. Vikings sacked villages and towns,destroyed churches, and easily defeated small local armies.
+Viking attacks frightened people and led many a clergyman to plead with them to change their behavior and
+appease God’s anger, as is revealed in this sermon in 1014
+by an English archbishop:
+</p>
+
+<p>
+Things have not gone well now for a long time at home or
+abroad, but there has been devastation and persecution in
+every district again and again, and the English have been for
+a long time now completely defeated and too greatly disheartened through God’s anger; and the pirates [Vikings] so
+strong with God’s consent that often in battle one puts to
+flight ten, and sometimes less, sometimes more, all because
+of our sins. . . . We pay them continually and they humiliate
+us daily; they ravage and they burn, plunder, and rob and
+carry on board; and lo, what else is there in all these events
+except God’s anger clear and visible over this people?6
+</p>
+
+<p>
+Because there were different groups of Scandinavians,
+Viking expansion varied a great deal. Norwegian Vikings
+moved into Ireland and western England, while the Danes
+attacked eastern England, Frisia, and the Rhineland and
+navigated rivers to enter western Frankish lands. Swedish
+Vikings dominated the Baltic Sea and progressed into the
+Slavic areas to the east. Moving into northwestern Russia,
+they went down the rivers to Novgorod and Kiev and
+established fortified ports throughout these territories.
+</p>
+
+<p>
+Early Viking raids had been carried out largely in the
+summer; by the mid-ninth century, however, the Northmen had begun to establish winter settlements in Europe
+from which they could make expeditions to conquer and
+settle new lands. By 850, groups of Norsemen had settled
+in Ireland, and the Danes occupied an area known as the
+Danelaw in northeast England by 878. Beginning in 911, the
+ruler of the western Frankish lands gave one band of Vikings land at the mouth of the Seine River, forming a section
+of France that ultimately became known as Normandy. This
+policy of settling the Vikings and converting them to
+Christianity was a deliberate one, since the new inhabitants
+served as protectors against additional Norseman attacks.
+</p>
+
+<p>
+The Vikings were also daring explorers. After 860,
+they sailed westward in their long ships across the north
+Atlantic, reaching Iceland in 874. Erik the Red, a Viking
+exiled from Iceland, traveled even farther west and discovered Greenland in 985. AViking site in North America
+was founded in Newfoundland.
+</p>
+
+<p>
+By the tenth century, Viking expansion was drawing to
+a close, but not before Viking settlements had been made
+in many parts of Europe. Like the Magyars, the Vikings
+were assimilated into European civilization. Once again,
+Christianity proved a decisive civilizing force. Europe and
+Christianity were becoming virtually synonymous.
+</p>
+
+<p>
+The Viking raids and settlements also had important
+political repercussions. The inability of royal authorities
+to protect their peoples against these incursions caused
+local populations to turn instead to the local aristocrats
+who provided security for them. In the process, the
+landed aristocrats not only increased their strength and
+prestige but also assumed even more of the functions of
+local governments that had previously belonged to kings;
+over time these developments led to a new political and
+military order.
+</p>
+
+<p>
+The Emerging World of Lords
+and Vassals
+</p>
+
+<p>
+Q Focus Question: What was fief-holding, and how was
+it related to manorialism?
+</p>
+
+<p>
+The renewed invasions and the disintegration of the
+Carolingian Empire led to the emergence of a new type of
+relationship between free individuals. When governments
+ceased to be able to defend their subjects, it became important to find some powerful lord who could offer
+protection in exchange for service. The contract sworn
+between a lord and his subordinate (known as a vassal) is
+the basis of a form of social organization that later generations of historians called feudalism. But feudalism was
+never a system, and many historians today prefer to avoid
+using the term.
+</p>
+
+<p>
+Vassalage
+</p>
+
+<p>
+The practice of vassalage was derived from Germanic society, in which warriors swore an oath of loyalty to their
+leader. They fought for their chief, and he in turn took care
+of their needs. By the eighth century, an individual who
+served a lord in a military capacity was known as a vassal.
+</p>
+
+<p>
+With the breakdown of governments, powerful nobles took control of large areas of land. They needed men
+to fight for them, so the practice arose of giving grants of
+land to vassals who in return would fight for their lord.
+The Frankish army had originally consisted of foot soldiers, dressed in coats of mail and armed with swords.
+But in the eighth century, when larger horses and the
+stirrup were introduced, a military change began to occur.
+Earlier, horsemen had been throwers of spears. Now they
+wore armored coats of mail (the larger horse could carry
+the weight) and wielded long lances that enabled them to
+act as battering rams (the stirrups kept them on their
+horses). For almost five hundred years, warfare in Europe
+was dominated by heavily armored cavalry, or knights, as
+they came to be called. The knights came to have the
+greatest social prestige and formed the backbone of the
+European aristocracy.
+</p>
+
+<p>
+Of course, a horse, armor, and weapons were expensive to purchase and maintain, and learning to wield
+these instruments skillfully on horseback took much time
+and practice. Consequently, lords who wanted men to
+fight for them had to grant each vassal a piece of land that
+provided for the support of the vassal and his family. In
+return, the vassal provided fighting skills. In the Early
+Middle Ages, when trade was minimal and wealth was
+based primarily on landholdings, land became the most
+important gift a lord could give to a vassal in return for
+military service.
+</p>
+
+<p>
+The relationship between lord and vassal was made
+official by a public ceremony. To become a vassal, a man
+performed an act of homage to his lord, as described in
+this passage from a medieval digest of law:
+</p>
+
+<p>
+The man should put his hands together as a sign of humility,
+and place them between the two hands of his lord as a token
+that he vows everything to him and promises faith to him;
+and the lord should receive him and promise to keep faith
+with him. Then the man should say: ‘‘Sir, I enter your homage and faith and become your man by mouth and hands
+[that is, by taking the oath and placing his hands between
+those of the lord], and I swear and promise to keep faith
+and loyalty to you against all others, and to guard your
+rights with all my strength.’’7
+</p>
+
+<p>
+As in the earlier Germanic band, loyalty to one’s lord was
+the chief virtue.
+</p>
+
+<p>
+Fief-Holding
+</p>
+
+<p>
+The land or some other type of income granted to a vassal
+in return for military service came to be known as a fief.
+In time, many vassals who held such grants of land came
+to exercise rights of jurisdiction or political and legal
+authority within their fiefs. As the Carolingian world
+disintegrated politically under the impact of internal
+dissension and invasions, an increasing number of powerful
+lords arose. Instead of a single government, many people
+were now responsible for keeping order.
+</p>
+
+<p>
+Fief-holding also became increasingly complicated with the development of subinfeudation. The vassals of
+a king, who were themselves great lords,
+might also have vassals who would owe
+them military service in return for a
+grant of land from their estates. Those
+vassals, in turn, might likewise have
+vassals, who at this low level would
+be simple knights with barely enough
+land to provide their equipment. The
+lord-vassal relationship, then, bound
+together both greater and lesser landowners. At all levels, the lord-vassal relationship was always an honorable
+relationship between free men and did
+not imply any sense of servitude. Since
+kings could no longer provide security
+in the midst of the breakdown created
+by the invasions of the ninth century,
+the practice of subinfeudation became
+ever more widespread. With their rights
+of jurisdiction, fiefs gave lords virtual
+possession of the rights of government.
+</p>
+
+<p>
+The new practice of lordship was
+basically a product of the Carolingian
+world, but it also spread to England, Germany, central
+Europe, and in some form to Italy. Fief-holding came to
+be characterized by a set of practices that determined the
+relationship between a lord and his vassal. The major
+obligation of a vassal to his lord was to perform military
+service, usually about forty days a year. A vassal was also
+required to appear at his lord’s court when summoned to
+give advice to the lord. He might also be asked to sit in
+judgment in a legal case because the important vassals of
+a lord were peers and only they could judge each other.
+Finally, vassals were also responsible for aids, or financial
+payments to the lord on a number of occasions, including
+the knighting of the lord’s eldest son, the marriage of his
+eldest daughter, and the ransom of the lord’s person in
+the event he was captured.
+</p>
+
+<p>
+In turn, a lord had responsibilities toward his vassals.
+His major obligation was to protect his vassal, either by
+defending him militarily or by taking his side in a court of
+law if necessary. The lord was also responsible for the
+maintenance of the vassal, usually by granting him a fief.
+</p>
+
+<p>
+The Manorial System
+</p>
+
+<p>
+The landholding class of nobles and knights comprised a
+military elite whose ability to function as warriors depended on having the leisure time to pursue the arts
+of war. Landed estates, worked by a dependent peasant
+class, provided the economic sustenance that made this
+way of life possible. A manor (see Map 8.3) was simply an
+agricultural estate operated by a lord and worked by
+peasants.
+</p>
+
+<p>
+Manorialism grew out of the unsettled circumstances
+of the Early Middle Ages, when small farmers often
+needed protection or food in a time of bad harvests. Free
+peasants gave up their freedom to the lords of large landed
+estates in return for protection and use of the lord’s land.
+Although a large class of free peasants continued to exist,
+increasing numbers of free peasants became serfs&#x2014;peasants
+bound to the land and required to provide labor services,
+pay rents, and be subject to the lord’s jurisdiction. By the
+ninth century, probably 60 percent of the population of
+western Europe had become serfs.
+</p>
+
+<p>
+Labor services consisted of working the lord’s demesne,
+the land retained by the lord, which might consist of onethird to one-half of the cultivated lands scattered throughout the manor. The rest would be used by the peasants for
+themselves. Building barns and digging ditches were also
+part of the labor services. Serfs usually worked about three
+days a week for their lord.
+</p>
+
+<p>
+The serfs paid rents by giving the lord a share of every
+product they raised. Moreover, serfs paid the lord for the
+use of the manor’s common pasturelands, streams, ponds,
+and surrounding woodlands. For example, if a serf fished
+in the pond or stream on a manor, he turned over part
+of the catch to his lord. Peasants were also obliged to pay a
+tithe (a tenth of their produce) to their local village church.
+</p>
+
+<p>
+Lords possessed a variety of legal rights over their
+serfs as a result of their unfree status. Serfs were legally
+bound to the lord’s lands and could not leave without his
+permission. Although free to marry, serfs could not marry
+anyone outside their manor without the lord’s approval.
+Moreover, lords sometimes exercised public rights or
+political authority on their lands, which gave them the
+right to try peasants in their own court. In fact, the lord’s
+manorial court provided the only law that most peasants
+knew. Peasants also had to pay the lord for certain services; for example, they might be required to bring their
+grain to the lord’s mill and pay a fee to have it ground
+into flour. Thus the rights a lord possessed on his manor
+gave him virtual control over both the lives and the
+property of his serfs.
+</p>
+
+<p>
+In the Early Middle Ages, whether free or unfree, a
+vast majority of men and women, possibly 90 percent,
+worked the land. Although trade declined precipitously
+in this period, it never entirely disappeared. Overall,
+however, compared to the Byzantine Empire or Muslim
+caliphates, western Europe in the Early Middle Ages was
+an underdeveloped, predominantly agricultural society.
+</p>
+
+<p>
+The Zenith of Byzantine
+Civilization
+</p>
+
+<p>
+Q Focus Question: What were the chief developments in
+the Byzantine Empire between 750 and 1000?
+</p>
+
+<p>
+In the seventh and eighth centuries, the Byzantine Empire
+had lost much of its territory to Slavs, Bulgars, and
+Muslims. By 750, the empire consisted only of Asia Minor,
+some lands in the Balkans, and the southern coast of Italy.
+Although Byzantium was beset with internal dissension
+and invasions in the ninth century, it was able to deal with
+them and not only endured but even expanded, reaching
+its high point in the tenth century, which some historians
+have called the ‘‘golden age of Byzantine civilization.’’
+</p>
+
+<p>
+During the reign of Michael III (842&#x2013;867), the Byzantine Empire continued to be plagued by problems. The
+Bulgars mounted new attacks, and the Arabs continued to
+harass the empire. Moreover, a new church problem with
+political repercussions erupted over differences between
+the pope as leader of the western Christian church
+and the patriarch of Constantinople as leader of the
+eastern (or Orthodox) Christian church. Patriarch Photius condemned the pope as a heretic for accepting a
+revised form of the Nicene Creed stating that the Holy
+Spirit proceeded from the Father and the Son instead
+of ‘‘the Holy Spirit, who proceeds from the Father.’’ A
+council of eastern bishops followed Photius’s wishes and
+excommunicated the pope, creating the so-called Photian
+schism. Although the differences were later papered over,
+this controversy served to further the rift between the
+eastern and western Christian churches.
+</p>
+
+<p>
+The Macedonian Dynasty
+</p>
+
+<p>
+The problems that arose during Michael’s reign were effectively dealt with by the efforts of a new dynasty of Byzantine
+emperors, known as the Macedonians (867&#x2013;1081). This
+dynastic line managed to repel the external enemies, go
+over to the offensive, and reestablish domestic order.
+Supported by the church, the emperors continued to think
+of the Byzantine Empire as a continuation of the Christian
+Roman Empire of late antiquity. Although for diplomatic
+reasons they occasionally recognized the imperial title
+of western emperors, such as Charlemagne, they still regarded them as little more than barbarian parvenus.
+</p>
+
+<p>
+The Macedonian emperors could boast of a remarkable number of achievements in the late ninth and
+tenth centuries. They worked to strengthen the position
+of free farmers, who felt threatened by the attempts of
+landed aristocrats to expand their estates at the expense of
+the farmers. The emperors were well aware that the free
+farmers made up the rank and file of the Byzantine cavalry and provided the military strength of the empire. The
+Macedonian emperors also fostered a burst of economic
+prosperity by expanding trade relations with western
+Europe, especially by selling silks and metalworks. Thanks
+to this prosperity, the city of Constantinople flourished.
+Foreign visitors continued to be astounded by its size,
+wealth, and physical surroundings. To western Europeans,
+it was the stuff of legends and fables (see the box above).
+</p>
+
+<p>
+In the midst of this prosperity, Byzantine cultural influence expanded due to the active missionary efforts of
+eastern Byzantine Christians. Eastern Orthodox Christianity
+was spread to eastern European peoples, including the Bulgars and the Serbs. Perhaps the greatest missionary success
+occurred when the prince of Kiev in Russia converted to
+Christianity in 987.
+</p>
+
+<p>
+Under the Macedonian rulers, Byzantium enjoyed a
+strong civil service, talented emperors, and military advances. In the tenth century, these competent emperors
+combined with a number of talented generals to mobilize
+the empire’s military resources and take the offensive. The
+Bulgars were defeated, and both the eastern and western
+parts of Bulgaria were annexed to the empire. The Byzantines went on to add the islands of Crete and Cyprus to
+the empire and defeat the Muslim forces in Syria, expanding
+the empire to the upper Euphrates. By the end of the reign
+of Basil II (976&#x2013;1025), the Byzantine Empire was the largest
+it had been since the beginning of the seventh century.
+</p>
+
+<p>
+The Slavic Peoples of Central
+and Eastern Europe
+</p>
+
+<p>
+Q Focus Question: What patterns of development
+occurred in central and eastern Europe as a result of
+the Slavic peoples?
+</p>
+
+<p>
+North of Byzantium and east of the Carolingian Empire
+lay a spacious plain through which a number of Asiatic
+nomads, including the Huns, Bulgars, Avars, and Magyars, had pushed their way westward, terrorizing and
+plundering the settled peasant communities. Eastern
+Europe was ravaged by these successive waves of invaders,
+who found it relatively easy to create large empires that
+were in turn overthrown by the next invaders. Over a
+period of time, the invaders themselves were largely assimilated with the native Slavic peoples of the area.
+</p>
+
+<p>
+The Slavs were originally a single people in central
+Europe who, through mass migrations and nomadic invasions, gradually divided into three major groups: the
+western, southern, and eastern Slavs (see Map 8.4).
+</p>
+
+<p>
+Western Slavs
+</p>
+
+<p>
+In the region east of the eastern Frankish or Germanic
+kingdom emerged the Polish and Bohemian kingdoms of
+the western Slavs. The Germans assumed responsibility
+for the conversion of these Slavic peoples since some
+German emperors considered it their duty to spread
+Christianity to the barbarians. Of
+course, it also gave them the opportunity to extend their political
+authority. German missionaries
+had converted the Czechs in Bohemia by the end of the ninth
+century, and a bishopric eventually occupied by a Czech bishop
+was established at Prague in the
+tenth. The Slavs in Poland were
+not converted until the reign of
+Prince Mieszko (c. 960&#x2013;992). In
+1000, an independent Polish archbishopric was set up at Gniezno by
+the pope. The non-Slavic kingdom
+of Hungary, which emerged when
+the Magyars settled down after
+their defeat at Lechfeld in 955, was
+also converted to Christianity by
+German missionaries. Saint Stephen, king of Hungary from 997
+to 1038, facilitated the acceptance
+of Christianity by his people. The
+Poles, Czechs, and Hungarians
+all accepted Catholic or western
+Christianity and became closely
+tied to the Roman Catholic
+Church and its Latin culture.
+</p>
+
+<p>
+Southern Slavs
+</p>
+
+<p>
+The southern and eastern Slavic
+populations largely took a different path because of their proximity
+to the Byzantine Empire. The Slavic peoples of Moravia
+were converted to the Eastern Orthodox Christianity of
+the Byzantine Empire by two Byzantine missionary
+brothers, Cyril and Methodius, who began their activities
+in 863. They created a Slavonic (Cyrillic) alphabet,
+translated the Bible into Slavonic, and created Slavonic
+church services. While the southern Slavic peoples accepted Christianity, a split eventually developed between
+the Croats, who accepted the Roman church, and the
+Serbs, who remained loyal to eastern Christianity.
+</p>
+
+<p>
+Although the Bulgars were originally an Asiatic people
+who conquered much of the Balkan peninsula, they were
+eventually absorbed by the larger native south Slavic
+population. Together, by the ninth century, they formed a
+largely Slavic Bulgarian kingdom. Although the conversion
+to Christianity of this state was complicated by the rivalry
+between the Roman Catholic and Eastern Orthodox
+Churches, the Bulgarians eventually accepted the latter. By
+the end of the ninth century, they embraced the Slavonic
+church services earlier developed by Cyril and Methodius.
+The acceptance of Eastern Orthodoxy by the southern
+Slavic peoples, the Serbs and Bulgarians, meant that their
+cultural life was also linked to the Byzantine state.
+</p>
+
+<p>
+Eastern Slavs
+</p>
+
+<p>
+The eastern Slavic peoples, from whom the modern
+Russians, White Russians (Belarusians), and Ukrainians
+are descended, had settled in the territory of present-day
+Ukraine and European Russia. There, beginning in the
+late eighth century, they began to contend with Viking
+invaders. Swedish Vikings, known to the eastern Slavs as
+Varangians, moved down the extensive network of rivers
+into the lands of the eastern Slavs in search of booty and
+new trade routes. After establishing commercial links
+with the Byzantine state, the Varangians built trading
+settlements, became involved in the civil wars among the
+Slavic peoples, and eventually came to dominate the native peoples, just as their fellow Vikings were doing in
+parts of western Europe. According to the traditional
+version of the story, the semilegendary Rurik secured his
+ruling dynasty in the Slavic settlement of Novgorod in
+</p>
+<ol class="org-ol">
+<li>Rurik and his fellow Vikings were called the Rus,</li>
+</ol>
+<p>
+from which Russia, the name eventually attached to the
+state they founded, is derived (see the box above). Although much about Rurik is unclear, it is certain that his
+follower Oleg (c. 873&#x2013;913) took up residence in Kiev and
+established the Rus state, a union of
+east Slavic territories known as the
+principality of Kiev. Oleg’s successors extended their control over the
+eastern Slavs and expanded the
+territory of Kiev until it encompassed the lands between the Baltic
+and Black Seas and the Danube and
+Volga Rivers. By marrying Slavic
+wives, the Viking ruling class was
+gradually assimilated into the Slavic
+population, a process confirmed by
+their assumption of Slavic names.
+</p>
+
+<p>
+The growth of the principality
+of Kiev attracted religious missionaries, especially from the Byzantine
+Empire. One Rus ruler, Vladimir (c. 980&#x2013;1015), married
+the Byzantine emperor’s sister and officially accepted
+Christianity for himself and his people in 987. His primary
+motive was probably not a spiritual one. By all accounts,
+Vladimir was a cruel and vicious man who believed an
+established church would be helpful in the development of
+an organized state. From the end of the tenth century on,
+Byzantine Christianity became the model for Russian
+religious life, just as Byzantine imperial ideals came to
+influence the outward forms of Russian political life.
+</p>
+
+<p>
+The World of Islam
+</p>
+
+<p>
+Q Focus Question: What were the chief developments in
+the Islamic world between 750 and 1000?
+</p>
+
+<p>
+The Umayyad dynasty of caliphs had established Damascus as the center of an Islamic empire created by Arab
+expansion in the seventh and eighth centuries. But
+Umayyad rule created resentment, and the Umayyads also
+helped bring about their own end by their corrupt behavior. One caliph, for example, supposedly swam in a
+pool of wine and drank enough of it to lower the wine
+level considerably. Finally, in 750, Abu al-Abbas, a descendant of the uncle of Muhammad, brought an end to
+the Umayyad dynasty and established the Abbasid dynasty, which lasted until 1258.
+</p>
+
+<p>
+The Abbasid rulers brought much change to the world
+of Islam. They tried to break down the distinctions between
+Arab and non-Arab Muslims. All Muslims, regardless of
+ethnic background, could now hold both civil and military
+offices. This helped open Islamic life to the influences of the
+civilizations they had conquered. Many Arabs now began to
+intermarry with the peoples they had conquered.
+</p>
+
+<p>
+In 762, the Abbasids built a new capital city, Baghdad, on the Tigris River far to the east of Damascus.
+The new capital was well placed. It took advantage of river
+traffic to the Persian Gulf and was located on the caravan
+route from the Mediterranean to Central Asia. The move
+eastward allowed Persian influence to come to the fore,
+encouraging a new cultural orientation. Under the Abbasids,
+judges, merchants, and government officials, rather than
+warriors, were regarded as the ideal citizens.
+</p>
+
+<p>
+The new Abbasid dynasty experienced a period of
+splendid rule well into the ninth century. Best known of
+the caliphs of the time was Harun al-Rashid (786&#x2013;809),
+whose reign is often described as the golden age of the
+Abbasid caliphate. His son al-Ma’mun (813&#x2013;833) was a
+great patron of learning. He founded an astronomical
+observatory and created a foundation for translating
+Classical Greek works. This was also a period of growing
+economic prosperity. The Arabs had conquered many of
+the richest provinces of the old Roman Empire, and they
+now controlled the trade routes to the east. Baghdad
+became the center of an enormous trade empire that
+extended into Europe, Asia, and Africa, greatly adding to
+the wealth of the Islamic world.
+</p>
+
+<p>
+Despite the prosperity, all was not quite well in the
+empire of the Abbasids. There was much fighting over the
+succession to the caliphate. When Harun al-Rashid died,
+his two sons fought to succeed him in a struggle that
+almost destroyed the city of Baghdad. As the tenth-century
+Muslim historian al-Mas’udi wrote, ‘‘Mansions were destroyed, most remarkable monuments obliterated; prices
+soared. . . . Brother turned his sword against brother, son
+against father, as some fought for Amin, others for Ma’-
+mun. Houses and palaces fuelled the flames; property was
+put to the sack.’’8
+</p>
+
+<p>
+Vast wealth also gave rise to financial corruption. By
+awarding important positions to court favorites, the Abbasid caliphs began to undermine the foundations of their
+own power and become figureheads. Rulers of the provinces of the empire broke away from the control of the
+caliphs and established their own independent dynasties.
+In the eighth century, Spain had already established its
+own caliphate when Abd al-Rahman of the
+Umayyad dynasty had fled there. In 756, he
+seized control of southern Spain and then
+expanded his power into the center of the
+peninsula. He took the title of emir, or
+commander, and set up the emirate of alAndalus (the Arabic name for Spain), with its
+center at Co´ rdoba. Under Abd al-Rahman’s
+successors, a unique society developed in
+which all religions were tolerated. The court
+also supported writers and artists, creating a
+brilliant and flourishing culture.
+</p>
+
+<p>
+The fragmentation of the Islamic empire
+accelerated in the tenth century. A caliphate
+of the Fatimid family was established in
+Egypt in 973, and an independent dynasty
+also operated in North Africa. Despite the
+political disunity of the Islamic world,
+however, the underlying Islamic civilization
+was unified by two common bonds: the
+Qur’an and the Arabic language.
+</p>
+
+<p>
+Islamic Civilization
+</p>
+
+<p>
+From the beginning of their empire, Muslim
+Arabs had demonstrated a willingness to
+absorb the culture of their conquered territories. The
+Arabs were truly heirs to the remaining Greco-Roman
+culture of the Roman Empire. Just as readily, they assimilated Byzantine and Persian culture. In the eighth and
+ninth centuries, numerous Greek, Syrian, and Persian
+scientific and philosophical works were translated into
+Arabic. As the chief language in the southern Mediterranean and the Near East and the required language of
+Muslims, Arabic became a truly international tongue.
+</p>
+
+<p>
+The Muslims created a brilliant urban culture at a
+time when western Europe was predominantly a world of
+small rural villages. This can be seen in such new cities as
+Baghdad and Cairo, but also in Co´ rdoba, the capital of the
+Umayyad caliphate in Spain. With a population of possibly 100,000, Co´ rdoba was Europe’s largest city after
+Constantinople. It had seventy public libraries, and the
+number of manuscripts in the caliph’s private library
+reached 400,000. One caliph collected books from different parts of the world and then had them translated
+into Arabic and Latin. These included works on geography that later proved valuable to Western sailors and
+merchants. Schools were also established, and the Great
+Mosque of Co´ rdoba became a center for scholars from all
+over the Islamic world. Large numbers of women served
+as teachers and librarians in Co´ rdoba.
+</p>
+
+<p>
+During the first few centuries of the Arab empire, it
+was the Islamic world that saved and spread the scientific
+and philosophical works of ancient civilizations. At a time
+when the ancient Greek philosophers were largely unknown in Europe, key works by Plato and Aristotle were
+translated into Arabic. They were put in a library called
+the House of Wisdom in Baghdad, where they were read
+and studied by Muslim scholars. Texts on mathematics
+were brought from India. This process was aided by the
+use of paper. The making of paper was introduced from
+China in the eighth century, and by the end of the century, paper factories had been established in Baghdad.
+Booksellers and libraries soon followed. European universities later benefited from this scholarship when these
+works were translated from Arabic into Latin.
+</p>
+
+<p>
+Although Islamic scholars are rightly praised for
+preserving much of Classical knowledge for the West,
+they also made considerable advances of their own. Nowhere is this more evident than in their contributions to
+mathematics and the natural sciences. The list of achievements in mathematics and astronomy alone is impressive.
+The Muslims adopted and passed on the numerical system
+of India, including the use of the zero. In Europe, it
+became known as the Arabic system. Al-Khwarizmi,
+a ninth-century Iranian mathematician, developed the
+mathematical discipline of algebra. In astronomy, the
+Muslims were aware that the earth was round, and they
+set up an observatory at Baghdad to study the stars,
+many of which they named. They also perfected the astrolabe, an instrument used by sailors to determine their
+location by observing the positions of heavenly bodies. It
+was the astrolabe that made it possible for Europeans to
+sail to the Americas.
+</p>
+
+<p>
+Muslim scholars also made discoveries in chemistry
+and developed medicine as a field of scientific study.
+Especially renowned was Ibn Sina (980&#x2013;1037), known as
+Avicenna in the West, who wrote a medical encyclopedia
+that, among other things, stressed the contagious nature
+of certain diseases and showed how they could be spread
+by contaminated water supplies. After its translation into
+Latin, Avicenna’s work became a basic medical textbook
+for medieval European university students. Avicenna was
+but one of many Arabic scholars whose work was
+translated into Latin and helped the development of
+intellectual life in Europe in the twelfth and thirteenth
+centuries.
+</p>
+
+<p>
+CONCLUSION
+</p>
+
+<p>
+After the turmoil of the disintegration of the Roman Empire
+and the establishment of the Germanic states, a new European
+civilization began to emerge in the Early Middle Ages. The
+coronation of Charlemagne, descendant of a Germanic tribe
+converted to Christianity, as Roman emperor in 800 symbolized
+the fusion of the three chief components of the new European
+civilization: the German tribes, the Classical tradition, and
+Christianity. In the long run, the creation of a western empire
+fostered the idea of a distinct European identity and marked the
+shift of power from the south to the north. Italy and the
+Mediterranean had been the center of the Roman Empire. The lands
+north of the Alps now became the political center of Europe.
+</p>
+
+<p>
+With the disintegration of the Carolingian Empire, new political
+institutions began to develop in Europe, characterized by a decentralization of political control in which lords exercised legal, administrative, and military power. The practice of fief-holding transferred
+public authority into private hands and provided the security sorely
+lacking in a time of weak central government and repeated invasions by
+Muslims, Magyars, and Vikings. While Europe struggled, the Byzantine
+and Islamic worlds continued to prosper and flourish, the brilliance
+of their urban cultures standing in marked contrast to the underdeveloped rural world of Europe. By 1000, however, the region had
+not only recovered but was beginning to expand in ways undreamed
+of by previous generations. Europe stood poised for a giant leap.
+</p>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: DESKTOP-13B7HQM</p>
+<p class="date">Created: 2024-12-24 Tue 20:42</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

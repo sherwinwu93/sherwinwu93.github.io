@@ -1,0 +1,611 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-09-28 Sat 22:17 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-org0897713" class="outline-2">
+<h2 id="org0897713">Lesson 06 Smash-and-grab</h2>
+<div class="outline-text-2" id="text-org0897713">
+<p class="verse">
+How did Mr. Taylor try to stop the thieves?<br />
+<br />
+The expensive shops in a famous arcade near Piccadilly were just opening.<br />
+At this time of morning, the arcade was almost empty.<br />
+Mr. Taylor, the owner of a jewellery shop was admiring a new window display.<br />
+Two of his assistants had been working busily since eight o'clock and had <b>only just</b> finished.<br />
+Diamond necklaces and rings had been beautifully arranged on a background of black velvet.<br />
+After gazing at the display for several minutes, Mr. Taylor went back into his shop.<br />
+<br />
+The silence was suddenly broken<br />
+&#xa0;when a large car, with its headlights on and its horn blaring, roared down the arcade.<br />
+It <b>came to a stop</b> outside the jeweller's.<br />
+One man stayed at the wheel<br />
+&#xa0;while two others with black stockings over their faces<br />
+&#xa0;&#xa0;jumped out and smashed the window of the shop with iron bars.<br />
+While this was going on, Mr. Taylor was upstairs.<br />
+He and his staff began throwing furniture out of the window.<br />
+Chairs and tables went flying into the arcade.<br />
+One of the thieves was struck by a heavy statue,<br />
+&#xa0;but he was <b>too busy helping himself to diamonds to</b> notice any pain.<br />
+The raid was all over in three minutes,<br />
+&#xa0;for the men scrambled back into the car<br />
+&#xa0;&#xa0;and it moved off <b>at a fantastic speed</b>.<br />
+Just as it was leaving,<br />
+&#xa0;Mr. Taylor rushed out and ran after it throwing ashtrays and vases,<br />
+&#xa0;but it was impossible to stop the thieves.<br />
+They had got away with <b>thousands of pounds worth of diamonds</b>.<br />
+</p>
+</div>
+<div id="outline-container-orgb87f2b3" class="outline-3">
+<h3 id="orgb87f2b3">expression</h3>
+<div class="outline-text-3" id="text-orgb87f2b3">
+<p>
+smash-and-grab: n.砸橱窗抢劫<br />
+arcade: [ɑrˈkeɪd] n.有拱廊的街道(两旁常设商店)<br />
+jewellery: [ˈdʒuːəlri] n. jewelry 珠宝(总称)<br />
+necklace: [ˈnekləs] n. a string of jewels, beads etc or a thin gold or silver chain to wear around the neck项链<br />
+ring: [rɪŋ] n.戒指<br />
+background: [ˈbækˌɡraʊnd] n.背景<br />
+velvet: [ˈvelvət] n.天鹅绒<br />
+headlight: [ˈhedˌlaɪt] n.车头灯<br />
+blare: [bler] v.to make a very loud unpleasant noise发出嘟嘟声,吼叫<br />
+staff: [stæf] n.全体工作人员<br />
+raid: [reɪd] n.v. a short attack on a place by soldiers, planes, or ships, intended to cause damage but not take control偷袭<br />
+scramble: [ˈskræmb(ə)l] v. to climb up, down, or over something quickly and with difficulty, especially using your hands to help you爬行<br />
+fantastic: [fænˈtæstɪk] adj.非常大的<br />
+ashtray: [ˈæʃtreɪ] n. a small dish where you put used cigarettes烟灰缸<br />
+</p>
+
+<p>
+smash sth. to pieces: 撕某物成碎片<br />
+grab a beer/coffee: 喝杯啤酒/咖啡<br />
+go to the arcade: 去拱廊<br />
+background music: 背景音乐<br />
+scrambled eggs: 炒鸡蛋<br />
+at a fantastic speed: at a good speed以极快的速度<br />
+That's fantastic: 很棒<br />
+</p>
+<hr />
+<p>
+独立主格<br />
+</p>
+<hr />
+<p>
+only just: Just a moment earlier刚才<br />
+come to a stop: 停下来<br />
+be too busy doing sth. to do sth.: 忙于做某事而不能做某事<br />
+[money] + worth of + n.: eg. thousands of pounds worth of diamonds多少价值的某物<br />
+help oneself to sth.:<br />
+</p>
+<ol class="org-ol">
+<li>to serve or provide oneself with (food, etc.)自己拿<br /></li>
+<li>to take without asking or being given; steal.偷窃<br /></li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orga5a31f1" class="outline-3">
+<h3 id="orga5a31f1">words</h3>
+<div class="outline-text-3" id="text-orga5a31f1">
+<p>
+smash-and-grab [smæʃ-ənd-'ɡræb] n. 砸橱窗抢劫<br />
+arcade [ɑːˈkeɪd] n. 有拱廊的街道<br />
+Piccadilly [ˌpɪkəˈdɪli] n. 皮卡迪利大街<br />
+jewellery [ˈdʒuːəlri] n. 珠宝<br />
+necklace [ˈnekləs] n. 项链<br />
+ring [rɪŋ] n. 戒指<br />
+background [ˈbækɡraʊnd] n. 背景<br />
+velvet [ˈvelvɪt] n. 天鹅绒<br />
+headlight [ˈhedlaɪt] n. 前灯<br />
+blare [bleə(r)] v. 嘟嘟声<br />
+staff [stɑːf] n. 全体工作人员<br />
+raid [reɪd] n. 偷袭<br />
+scramble [ˈskræmb(ə)l] v. 爬行<br />
+fantastic [fænˈtæstɪk] adj. 非常大的<br />
+ashtray [ˈæʃtreɪ] n. 烟灰缸<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orga9df0c1" class="outline-3">
+<h3 id="orga9df0c1">vocabulary</h3>
+<div class="outline-text-3" id="text-orga9df0c1">
+<p>
+expensive: dear<br />
+almost: nearly<br />
+assistants: helpers<br />
+gazing: looking<br />
+several: a few, a number of<br />
+stayed: remained<br />
+smashed: broke to pieces<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge93483f" class="outline-3">
+<h3 id="orge93483f"><span class="done DONE">DONE</span> 单词造句</h3>
+<div class="outline-text-3" id="text-orge93483f">
+<p>
+smash-and-grab  smash sth. to pieces  grab a beer/coffee<br />
+</p>
+<ul class="org-ul">
+<li>They had a fight and they have only just smashed the book to pieces.<br /></li>
+<li>My cat is always smashing every toys to pieces.<br /></li>
+<li>Would you like to grab a coffee upstairs?<br /></li>
+<li>Make youself comfortable and grab a beer.<br /></li>
+<li>You needn't have smashed the coach to pieces.<br /></li>
+</ul>
+<p>
+arcade n.  go to the arcade<br />
+</p>
+<ul class="org-ul">
+<li>My wife was eager to go to the arcade so that she could buy a nice ice cream.<br /></li>
+<li>Why does she look down on those people who often go to the arcade?<br /></li>
+<li>I always hesitate to go to the arcade.<br /></li>
+<li>She takes three hour to go to the arcade every week.<br /></li>
+<li>I'm gonna write an article on the well-known arcade.<br /></li>
+</ul>
+<p>
+jewellery n. jewelry<br />
+</p>
+<ul class="org-ul">
+<li>The woman in front of the jewelry shop hesitated to buy that diamond.<br /></li>
+<li>At last, the woman got impatient in the jewellery shop.<br /></li>
+<li>He informed that he was going to write an article on the story of jewelry.<br /></li>
+<li>It's a waste of time making jewelry by youself.<br /></li>
+<li>She goes to extremes to make jwellery by herself.<br /></li>
+</ul>
+<p>
+necklace n.<br />
+</p>
+<ul class="org-ul">
+<li>I was wondering whether you are wearing a necklace.<br /></li>
+<li>From now on, I will not wear any necklace.<br /></li>
+<li>Imagine your husband bought a gold necklace, and come Christmas, he presented it to you.<br /></li>
+<li>The necklace looks so fantastic that she can't help buying it.<br /></li>
+<li>Not only had you bought that necklace, but an expensive ring as well.<br /></li>
+</ul>
+<p>
+ring n.<br />
+</p>
+<ul class="org-ul">
+<li>When I found out who stole the ring, I would send him to prison immediately.<br /></li>
+<li>Before you have an operation, you have to take your ring off.<br /></li>
+<li>I didn't give the ring to you for the simple reason that I couldn't afford it.<br /></li>
+<li>Why don't you change into that ring.<br /></li>
+<li>This can give rise to curious situations,<br />
+as it did in the case of my wife who was always dressed in the ring.<br /></li>
+</ul>
+<p>
+background n.  background music<br />
+</p>
+<ul class="org-ul">
+<li>It's obvious that they provided us with wrong background music.<br /></li>
+<li>I am too embarrassed to invite her to dance with me in such background music.<br /></li>
+<li>The background music reminds me of the day when I got fired.<br /></li>
+<li>My wife complained that in front of the street, car noise is like background music.<br /></li>
+<li>This background music which I provided with gave me satisfaction a great deal.<br /></li>
+</ul>
+<p>
+velvet n.<br />
+</p>
+<ul class="org-ul">
+<li>We like these pictures in the same way that we like velvet curtains.<br /></li>
+<li>She was reluctant to offer us a velvet curtain.<br /></li>
+<li>People who do manual work often like to buy velvet curtains.<br /></li>
+<li>I am willing to sacrifice the vase for the velvet curtains.<br /></li>
+<li>Not only had my wife bought a velvet curtains, but she bought a toy for our child.<br /></li>
+</ul>
+<p>
+headlight n.<br />
+</p>
+<ul class="org-ul">
+<li>Not only is the right headlight broken, but the left one as well.<br /></li>
+<li>The right headlight turn out to be broken.<br /></li>
+<li>I am used to the broken headlight.<br /></li>
+<li>Equipped with the headlight, the bike was useful again.<br /></li>
+<li>Despite the fact that the headlights both are broken.<br /></li>
+</ul>
+<p>
+blare v.<br />
+</p>
+<ul class="org-ul">
+<li>The radio from my neighbor is alway blaring day and night.<br /></li>
+<li>The boy is always blaring for one cause or another.<br /></li>
+<li>I heard the radio blaring in the midnight.<br /></li>
+<li>I convinced that the radio was blaring last night.<br /></li>
+<li>There is a horn blaring at the entrance of the museum.<br /></li>
+</ul>
+<p>
+staff n.<br />
+</p>
+<ul class="org-ul">
+<li>The manager has give us a lot of encouragement in the staff meeting.<br /></li>
+<li>In the meantime, all staff was fast asleep.<br /></li>
+<li>All staff was put to shame by Mr. Leo, for he has sold a million worth of food.<br /></li>
+<li>The manager was disappointed to learn that his staff was arrested.<br /></li>
+<li>The managedr instructed his staff to stand their attention to him.<br /></li>
+</ul>
+<p>
+raid n.v.<br />
+</p>
+<ul class="org-ul">
+<li>This event takes its name from a raid.<br /></li>
+<li>It's you who are responsible for the raid, not him.<br /></li>
+<li>The gangsters of New York is planning a raid once more.<br /></li>
+<li>Let's suppose that a ganster is raiding us.<br /></li>
+<li>It is no use pretending that you hadn't raided the jewelry shop.<br /></li>
+</ul>
+<p>
+scramble v.  scrambled eggs<br />
+</p>
+<ul class="org-ul">
+<li>I noticed that my wife had made scrambled eggs.<br /></li>
+<li>My wife managed to make some scrambled eggs.<br /></li>
+<li>Seeing a policeman charging at them, they scrambled back into their car.<br /></li>
+<li>They scrambled back into the ambassador with someone firing a shot.<br /></li>
+<li>The scrambled eggs are popular with young people in China.<br /></li>
+</ul>
+<p>
+fantastic adj.  at a fantastic speed  That's fantastic<br />
+</p>
+<ul class="org-ul">
+<li>The velvet curtain looks so fantastic that my wife bought it at once.<br /></li>
+<li>The stories that he told us at the reception are fantastic.<br /></li>
+<li>You look fantastic. I almost didn't recoginize you.<br /></li>
+<li>Having a large circle of friends is fantastic.<br /></li>
+<li>You're also a huge fan of Knight, that's fantastic.<br /></li>
+</ul>
+<p>
+ashtray n.<br />
+</p>
+<ul class="org-ul">
+<li>You should quit smoking, for you smell look like an ashtray.<br /></li>
+<li>My mother threatened to throw away the ashtray.<br /></li>
+<li>You needn't have thrown away that ashtray.<br /></li>
+<li>The ashtray which belongs to me has been cleaned up.<br /></li>
+<li>I'm gonna send my friend a beautiful ashtray.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org21158b2" class="outline-3">
+<h3 id="org21158b2"><span class="done DONE">DONE</span> 反复听电影片段直到懂关键句</h3>
+<div class="outline-text-3" id="text-org21158b2">
+</div>
+</div>
+<div id="outline-container-orga7e16a5" class="outline-3">
+<h3 id="orga7e16a5">复习二册语法(笔记或视频) &amp; 红皮书</h3>
+</div>
+<div id="outline-container-org5f36ddf" class="outline-3">
+<h3 id="org5f36ddf"><span class="done DONE">DONE</span> 习惯用法造句</h3>
+<div class="outline-text-3" id="text-org5f36ddf">
+<p>
+only just  Just a moment earlier<br />
+</p>
+<ul class="org-ul">
+<li>I've only just ran out of the petrol.<br /></li>
+<li>I've only just carried some fruits to the classroom.<br /></li>
+<li>I've only just taught her pressing the button.<br /></li>
+<li>I've only just borrowed a book from the library.<br /></li>
+<li>We only just touched with each other.<br /></li>
+</ul>
+<p>
+come to a stop<br />
+</p>
+<ul class="org-ul">
+<li>The car came to a stop behind my house.<br /></li>
+<li>The car came to a shop in my courtyard.<br /></li>
+<li>The car came to a stop for the simple reason that a boy was in the middle of road.<br /></li>
+<li>The car came to a stop and two women got off it.<br /></li>
+<li>When two detectives were waitting in front of the entrance, a car came to a stop.<br /></li>
+</ul>
+<p>
+be too busy doing sth. to do sth.<br />
+</p>
+<ul class="org-ul">
+<li>My wife is too busy watching drama to reply my message.<br /></li>
+<li>I am too busy studying English to play with my cat.<br /></li>
+<li>My parents were too busy making money to take charge of me.<br /></li>
+<li>The authorities are too busy holding the Games to keep order.<br /></li>
+<li>The cat was too busy eating food to notice me.<br /></li>
+</ul>
+<p>
+money + worth of + n.<br />
+</p>
+<ul class="org-ul">
+<li>They are millions of dollars worth of diamonds.<br /></li>
+<li>We couldn't afford the millions of yuan worth of house.<br /></li>
+<li>She gets a good salary<br />
+for the simple reason that she has sold millions of dollars worth of foods.<br /></li>
+<li>She was fired. Despite the fact that she sold ten thousands of dollars worth of foods.<br /></li>
+<li>You luck dog. The thousands of dollars worth of diamonds is yours now.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgd82f0ac" class="outline-3">
+<h3 id="orgd82f0ac">跟读 50遍</h3>
+</div>
+<div id="outline-container-orgf547cd0" class="outline-3">
+<h3 id="orgf547cd0"><span class="done DONE">DONE</span> Comprehension 反复练习</h3>
+<div class="outline-text-3" id="text-orgf547cd0">
+</div>
+</div>
+<div id="outline-container-orge69ff04" class="outline-3">
+<h3 id="orge69ff04"><span class="done DONE">DONE</span> Ask me if 写+读</h3>
+<div class="outline-text-3" id="text-orge69ff04">
+<ol class="org-ol">
+<li>The famous arcade was near Piccaddilly. Where<br />
+Where was the famous arcade?<br /></li>
+<li>The arcade was almost empty. Why<br />
+Why was the arcade almost empty?<br /></li>
+<li>Mr. Taylor and two of his assistants had been working since eight o'clock. How long<br />
+How long had Mr. Taylor and two of his assistants been working?<br /></li>
+<li>They had just finished the window display. What<br />
+What had they just finished?<br /></li>
+<li>The silence was broken. How<br />
+How was the silence broken?<br /></li>
+<li>The car came to a stop outside the jeweller's. Where<br />
+Where did the car come to a stop?<br /></li>
+<li>The thieves had black stockings over their faces. What<br />
+What did the thieves have over their faces?<br /></li>
+<li>Mr. Taylor was upstairs. Where<br />
+Where was Mr. Taylor?<br /></li>
+<li>The thief noticed any pain. Why didn't<br />
+Why didn't the thief notice any pain?<br /></li>
+<li>The raid lasted three minutes. How long<br />
+How long did the raid last?<br /></li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org0d676ef" class="outline-3">
+<h3 id="org0d676ef"><span class="done DONE">DONE</span> 摘要写作 写 &amp; 对答案</h3>
+<div class="outline-text-3" id="text-org0d676ef">
+<p>
+A large car entered an arcade near Piccadilly<br />
+	and stopped outside a jeweller's.<br />
+Two thieves got out of the car<br />
+	and smashed the shop window.<br />
+The owner of the shop was upstairs at the time,<br />
+	so he threw furniture at the thieves<br />
+		hitting one of them with a heavy statue.<br />
+The raid lasted only three minutes and the thieves drove away.<br />
+Running after them, the owner threw ashtrays and vases,<br />
+	but the thieves got away, stealing thousands of pounds worth of diamonds.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org03f63ff" class="outline-3">
+<h3 id="org03f63ff"><span class="done DONE">DONE</span> tell the story 口语复述</h3>
+<div class="outline-text-3" id="text-org03f63ff">
+</div>
+</div>
+<div id="outline-container-org21c41e5" class="outline-3">
+<h3 id="org21c41e5">composition 阅读 或 写作</h3>
+<div class="outline-text-3" id="text-org21c41e5">
+<p>
+Seeing the thieves' car join the traffic on Piccadilly,<br />
+	Mr. Taylor took a taxi and followed them.<br />
+The taxi driver drove at full speed when Mr. Taylor told him what had happened.<br />
+There wasn't too much traffic at this time of the morning<br />
+	so there was a mad chase through the streets of London.<br />
+For a short time, the thieves' car was on the wrong side of the road and hit another car,<br />
+	but it did not stop.<br />
+Two policemen in a police car watched in amazement as the two vehicles went past,<br />
+	both breaking the speed limit.<br />
+Lights on and horn blaring,<br />
+	the police car chased both the speeding cars.<br />
+Mr. Taylor's taxi stopped when the traffic lights turned red.<br />
+The thieves ignored the traffic lights and got away.<br />
+Meanwhile, the police caught up with the taxi at the traffic lights<br />
+	and the taxi driver was charged with speeding.<br />
+They refused to let the driver off, even though Mr.Taylor carefully explained the situation.<br />
+However, the police informed another police car of the chase<br />
+	and ten minutes later the thieves' car was found abandoned in a side street.<br />
+The thieves had escaped on foot and disappeared among the crowd.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org670e1c8" class="outline-3">
+<h3 id="org670e1c8">Topics for discussion</h3>
+</div>
+</div>
+</div>
+</body>
+</html>

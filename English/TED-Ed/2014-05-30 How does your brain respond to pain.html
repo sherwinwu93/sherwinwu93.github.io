@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-01-09 Thu 23:07 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-orga5f0bea" class="outline-2">
+<h2 id="orga5f0bea">2014-05-30 How does your brain respond to pain</h2>
+<div class="outline-text-2" id="text-orga5f0bea">
+<p class="verse">
+Let's say that it would take you ten minutes to solve this puzzle.<br />
+How long would it take<br />
+&#xa0;if you received constant electric shocks to your hands?<br />
+Longer, right?<br />
+Because the pain would distract you from the task.<br />
+Well, maybe not; it depends on how you handle pain.<br />
+Some people are distracted by pain.<br />
+It takes them longer to complete a task, and they do it less well.<br />
+Other people use tasks to distract themselves from pain,<br />
+&#xa0;and those people actually do the task faster and better when they're in pain<br />
+&#xa0;&#xa0;than when they're not.<br />
+Some people can just send their mind wandering to distract themselves from pain.<br />
+How can different people be subjected to the exact same painful stimulus<br />
+&#xa0;and yet experience the pain so differently?<br />
+And why does this matter?<br />
+<br />
+First of all, what is pain?<br />
+Pain is an unpleasant sensory and emotional experience,<br />
+&#xa0;associated with actual or potential tissue damage.<br />
+Pain is something we experience, so it's best measured by what you say it is.<br />
+Pain has an intensity;<br />
+&#xa0;you can describe it on a scale from zero, no pain, to ten, the most pain imaginable.<br />
+But pain also has a character, like sharp, dull, burning, or aching.<br />
+What exactly creates these perceptions of pain?<br />
+<br />
+Well, when you get hurt,<br />
+&#xa0;special tissue damage-sensing nerve cells, called nociceptors,<br />
+&#xa0;&#xa0;fire and send signals to the spinal cord and then up to the brain.<br />
+Processing work gets done by cells called neurons and glia.<br />
+This is your Grey matter.<br />
+And brain superhighways carry information as electrical impulses from one area to another.<br />
+This is your white matter.<br />
+The superhighway that carries pain information from the spinal cord to the brain<br />
+&#xa0;is our sensing pathway that ends in the cortex,<br />
+&#xa0;&#xa0;a part of the brain that decides what to do with the pain signal.<br />
+<br />
+Another system of interconnected brain cells called the salience network<br />
+&#xa0;decides what to pay attention to.<br />
+Since pain can have serious consequences,<br />
+&#xa0;the pain signal immediately activates the salience network.<br />
+Now, you're paying attention.<br />
+The brain also responds to the pain and has to cope with these pain signals.<br />
+So, motor pathways are activated to take your hand off a hot stove, for example.<br />
+But modulation networks are also activated that deliver endorphins and enkephalins,<br />
+&#xa0;&#xa0;chemicals released when you're in pain or during extreme exercise,<br />
+&#xa0;creating the runner's high.<br />
+These chemical systems help regulate and reduce pain.<br />
+All these networks and pathways work together to create your pain experience,<br />
+&#xa0;&#xa0;to prevent further tissue damage, and help you to cope with pain.<br />
+<br />
+This system is similar for everyone,<br />
+&#xa0;but the sensitivity and efficacy of these brain circuits<br />
+&#xa0;&#xa0;determines how much you feel and cope with pain.<br />
+This is why some people have greater pain than others<br />
+&#xa0;and why some develop chronic pain that does not respond to treatment, while others respond well.<br />
+Variability in pain sensitivities is not so different<br />
+&#xa0;than all kinds of variability in responses to other stimuli.<br />
+Like how some people love roller coasters, but other people suffer from terrible motion sickness.<br />
+<br />
+Why does it matter that there is variability in our pain brain circuits?<br />
+Well, there are many treatments for pain, targeting different systems.<br />
+For mild pain, non-prescription medications can act on cells where the pain signals start.<br />
+Other stronger pain medicines and anesthetics work<br />
+&#xa0;by reducing the activity in pain-sensing circuits or boosting our coping system, or endorphins.<br />
+Some people can cope with pain using methods<br />
+&#xa0;that involve distraction, relaxation, meditation, yoga,<br />
+&#xa0;&#xa0;or strategies that can be taught, like cognitive behavioral therapy.<br />
+For some people who suffer from severe chronic pain,<br />
+&#xa0;&#xa0;that is pain that doesn't go away months after their injury should have healed,<br />
+&#xa0;none of the regular treatments work.<br />
+Traditionally, medical science has been about testing treatments on large groups<br />
+&#xa0;to determine what would help a majority of patients.<br />
+But this has usually left out some<br />
+&#xa0;who didn't benefit from the treatment or experienced side effects.<br />
+Now, new treatments<br />
+&#xa0;&#xa0;that directly stimulate or block certain pain-sensing attention or modulation networks<br />
+&#xa0;are being developed,<br />
+&#xa0;&#xa0;along with ways to tailor them to individual patients,<br />
+&#xa0;&#xa0;using tools like magnetic resonance imaging to map brain pathways.<br />
+Figuring out how your brain responds to pain is the key to finding the best treatment for you.<br />
+That's true	personalized medicine.<br />
+</p>
+</div>
+<div id="outline-container-orgcd2eb83" class="outline-3">
+<h3 id="orgcd2eb83">expression</h3>
+<div class="outline-text-3" id="text-orgcd2eb83">
+<p>
+stimulus [ˈstɪmjələs]: n. something that helps a process to develop more quickly or more strongly刺激<br />
+matter [ˈmætər]: v. to be important, especially to be important to you, or to have an effect on what happens<br />
+sensory [ˈsensəri]: adj. relating to or using your senses of sight, hearing, smell, taste, or touch感觉的, 感官的<br />
+tissue [ˈtɪʃu]: n. the material forming animal or plant cells组织<br />
+intensity [ɪnˈtensɪti]: n. technical the strength of something such as light or sound强度<br />
+dull [dʌl]: adj. a dull pain is not severe but does not stop OPP sharp迟钝的,枯燥的<br />
+damage-sensing [ˈdæmɪdʒ][sensɪŋ]: adj. 疼痛感知<br />
+nociceptor [ˌnoʊsɪ'septə]: n. 伤害感受器<br />
+spinal cord [ˈspaɪn(ə)l][kɔrd]: 脊髓<br />
+neuron [ˈnʊˌrɑn]: n. a type of cell that makes up the ↑nervous system and sends messages to other parts of the body or the brain SYN nerve cell神经元<br />
+glia ['glaɪə]: n. 神经胶质<br />
+superhighway [ˌsupərˈhaɪˌweɪ]: n. a very large road on which you can drive fast for long distances超级高速公路<br />
+electrical impulses [ɪˈlektrɪk(ə)l][ˈɪmˌpʌls] : 电子脉冲<br />
+cortex [ˈkɔrˌteks]: n. the outer layer of an organ in your body, especially your brain(脑或肾的)皮层, 皮质<br />
+salient [ˈseɪliənt] / salience: adj.n. the salient points or features of something are the most important or most noticeable parts of it<br />
+modulate [ˈmɑdʒəˌleɪt] / modulation: v.n. to change a process or activity to make it more controlled, slower, less strong etc调制<br />
+endorphin [enˈdɔrfɪn]: n. a chemical produced by your body that reduces pain and can make you feel happier内啡肽<br />
+enkephalin [en'kefəlɪn]: n. 脑啡肽<br />
+sensitivity [ˌsensəˈtɪvəti]: n. 敏感, 灵敏(度), 灵敏性<br />
+brain circuits [ˈsɜrkɪt]: 脑回路<br />
+roller coasters [ˈroʊlər][ˈkoʊstər]: 过山车<br />
+motion [ˈmoʊʃ(ə)n]: v. the process of moving or the way that someone or something moves动作<br />
+target [ˈtɑrɡət]: v. to make something have an effect on a particular limited group or area针对<br />
+mild [maɪld]: adj. a mild illness or health problem is not serious温和的<br />
+non-prescription [prɪˈskrɪpʃ(ə)n]: n. a non-prescription drug is one that you can buy in a shop without a written order from a doctor SYN over-the-counter无处方<br />
+anesthetic [ˌænəsˈθetɪk]: n. a drug that stops you feeling pain麻药<br />
+pain-sensing: adj. 感受痛觉的<br />
+map [mæp]: v. to discover or show information about something, especially about its shape or arrangement, or how it moves or works映射<br />
+</p>
+<hr />
+<p>
+receive electric shocks to sb's hands/arms: 某人的手/胳膊受到点击<br />
+distract sb. from sth.: 分散某人对于某事的注意<br />
+do sth. faster and better when +&#x2026; than when +&#x2026;: 做某事更好快当A比当B<br />
+send sb's mind wandering: 使某人心烦意乱<br />
+be subjected to sth.: 遭受某事<br />
+describe sth. on a scale from A. to B.: 用从A到B程度来描述某物<br />
+respond to sth.: 对某事作出反应<br />
+cope with sth.: 应对某事<br />
+take sb. hand off sth.: 把某人的手从某物上拿开<br />
+act on sth.: 对&#x2026;起作用<br />
+along with ways to do sth.: 伴随着做某事的方法<br />
+tailor sth. to sb.: 为某人量身定做<br />
+the key to doing sth.: 做某事的关键<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org97fe58e" class="outline-3">
+<h3 id="org97fe58e">sentences</h3>
+<div class="outline-text-3" id="text-org97fe58e">
+<p>
+receive electric shocks to sb's hands/arms: 某人的手/胳膊受到点击<br />
+</p>
+<ul class="org-ul">
+<li>I can't pay attention to Mr. Leo when I receive electric shocks to my legs.<br /></li>
+<li>After receiving electric shocks to our ass together in the prison,<br />
+we have been bonded to each other.<br /></li>
+<li>He received electric shocks to his hands in the face of the security of the supermarket.<br /></li>
+</ul>
+<p>
+distract sb. from sth.: 分散某人对于某事的注意<br />
+</p>
+<ul class="org-ul">
+<li>The nurse succeeded in distracting the girl from the needle.<br /></li>
+<li>If the bird hadn't distracted me from the course, I would have passed the test.<br /></li>
+<li>You needn't have distracted you from the drop in salary.<br /></li>
+</ul>
+<p>
+do sth. faster and better when +&#x2026; than when +&#x2026;: 做某事更好快当A比当B<br />
+</p>
+<ul class="org-ul">
+<li>I find out that I finish homework faster and better<br />
+when I have had a good sleep than when I haven't.<br /></li>
+<li>She cooks faster and better when she is at home than when she is at her friend's apartment.<br /></li>
+<li>You behave better when you're in a good mood than when you lose your temper.<br /></li>
+</ul>
+<p>
+send sb's mind wandering: 使某人心烦意乱<br />
+</p>
+<ul class="org-ul">
+<li>Getting his children far away from him has sent his mind wandering a great deal.<br /></li>
+<li>What my wife communicated with me sent my mind wandering.<br /></li>
+<li>My car has broken down and it sends my mind wandering.<br /></li>
+</ul>
+<p>
+be subjected to sth.: 遭受某事<br />
+</p>
+<ul class="org-ul">
+<li>These workers needn't have been subjected to harsher working conditions.<br /></li>
+<li>My niece is being subjected to a serious injury.<br /></li>
+<li>People all over the world will be subjected to smallpox.<br /></li>
+</ul>
+<p>
+describe sth. on a scale from A. to B.: 用从A到B程度来描述某物<br />
+</p>
+<ul class="org-ul">
+<li>We usually describe the English level on a CEFR scale from A1 to C2.<br /></li>
+<li>We'd better describe the job rank on a scale from one to three.<br /></li>
+<li>We describe the English level on a CEFR scale from A1 to C2<br />
+so that we can judge our English level by ourselves.<br /></li>
+</ul>
+<p>
+respond to sth.: 对某事作出反应<br />
+</p>
+<ul class="org-ul">
+<li>The best way to respond to your wife's violence is to ignore it.<br /></li>
+<li>He failed to respond to her smile.<br /></li>
+<li>The treatment may not respond to you.<br /></li>
+</ul>
+<p>
+cope with sth.: 应对某事<br />
+</p>
+<ul class="org-ul">
+<li>She will have to cope with scars and scabs for the rest of her life.<br /></li>
+<li>Coping with the pustules immediately is good for your health.<br /></li>
+<li>His body developed fevers to cope with the rare virus.<br /></li>
+</ul>
+<p>
+take sb. hand off sth.: 把某人的手从某物上拿开<br />
+</p>
+<ul class="org-ul">
+<li>Take your hand off my hip, she shouted at him.<br /></li>
+<li>You must take your hand off the bucket when its wick ignites.<br /></li>
+<li>You should take your hand off the corpse.<br /></li>
+</ul>
+<p>
+act on sth.: 对&#x2026;起作用<br />
+</p>
+<ul class="org-ul">
+<li>They believed that beheading acted on the so-called vampires.<br /></li>
+<li>The mixture acted on his bone to prevent it from decomposing in the air.<br /></li>
+<li>They're performing experiments to examine whether the medicine acts on the cell.<br /></li>
+</ul>
+<p>
+along with ways to do sth.: 伴随着做某事的方法<br />
+</p>
+<ul class="org-ul">
+<li>My English is improving along with ways to read, listen, write, and speak daily.<br /></li>
+<li>His triumphs in business are achieved along with ways to set up a furniture factory.<br /></li>
+<li>The evidence is accumulating along with ways to search the scene.<br /></li>
+</ul>
+<p>
+tailor sth. to sb.: 为某人量身定做<br />
+</p>
+<ul class="org-ul">
+<li>The tiger is feasting on the foods tailored to it.<br /></li>
+<li>His wife is tailoring a shirt to him.<br /></li>
+<li>He used to sustain himself by tailoring clothes to others.<br /></li>
+</ul>
+<p>
+the key to doing sth.: 做某事的关键<br />
+</p>
+<ul class="org-ul">
+<li>The key to finishing the task is to divide it into several steps.<br /></li>
+<li>The key to cooking this dish is mixing the salt at the right point.<br /></li>
+<li>The key to making a profit is to establish a law prohibiting parking in public.<br /></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

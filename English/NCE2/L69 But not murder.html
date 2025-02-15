@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-08-06 Tue 22:24 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+
+<div id="outline-container-orgb08d07a" class="outline-2">
+<h2 id="orgb08d07a">Lesson 69 But not murder!</h2>
+<div class="outline-text-2" id="text-orgb08d07a">
+<p class="verse">
+Do you think that the writer passed his driving test? Why?<br />
+<br />
+I was being tested for a driving licence for the third time.<br />
+I had been asked to drive in heavy traffic and had done so successfully.<br />
+After having <b>been instructed to drive</b> out of town, I began to acquire confidence.<br />
+Sure that I had passed, I was almost beginning to enjoy my test.<br />
+The examiner must have <b>been pleased with</b> my performance,<br />
+&#xa0;for he smiled and said, 'Just one more thing, Mr. Eames.<br />
+<b>Let us suppose that</b> a child suddenly crosses the road in front of you.<br />
+As soon as I <b>tap on the window</b>, you must stop within five feet.'<br />
+I <b>continued driving</b> and after some time, the examiner tapped loudly.<br />
+Though the sound could be heard clearly, it took me a long time to react.<br />
+I suddenly pressed the brake pedal hard and we were both thrown forward.<br />
+The examiner looked at me sadly.<br />
+'Mr. Eames,' he said, in a mournful voice, 'you have just killed that child!'<br />
+</p>
+</div>
+<div id="outline-container-orgd08b9db" class="outline-3">
+<h3 id="orgd08b9db">expression</h3>
+<div class="outline-text-3" id="text-orgd08b9db">
+<p>
+murder [ˈmɜrdər] n.谋杀<br />
+instruct [ɪnˈstrʌkt]  v.命令,指示<br />
+acquire [əˈkwaɪr]  v.取得,获得<br />
+confidence [ˈkɑnfɪdəns]  n. confident adj.信心<br />
+examiner [ɪɡˈzæmɪnər] n.主考人<br />
+suppose [səˈpoʊz] v.假设<br />
+tap [tæp] v.轻敲<br />
+react [riˈækt] v.反应<br />
+brake [breɪk] n.刹车 pedal n.踏板<br />
+mournful [ˈmɔrnfəl] adj.悲哀的<br />
+</p>
+
+<p>
+be instructed to do sth. 被指示做某事<br />
+Let's suppose that&#x2026; 让我们假设……<br />
+tap on the window  敲窗<br />
+</p>
+<hr />
+<p>
+having been done<br />
+</p>
+
+<p>
+continue doing/ to do 继续做/去做<br />
+be pleased with 对……感到满意<br />
+</p>
+</div>
+</div>
+
+
+
+<div id="outline-container-org3c2939b" class="outline-3">
+<h3 id="org3c2939b"><span class="done DONE">DONE</span> 单词造句</h3>
+<div class="outline-text-3" id="text-org3c2939b">
+<p>
+murder <i>ˈmɜːdə</i> v.n.<br />
+</p>
+<ul class="org-ul">
+<li>It's in twenty minutes' time that he has murdered his wife.<br /></li>
+<li>He has been said to murder his wife.<br /></li>
+<li>He refused to admit for murder his wife.<br /></li>
+<li>He couldn't have murder his wife in this way.<br /></li>
+<li>Shouting at his wife, he murdered her yesterday.<br /></li>
+</ul>
+<p>
+instruct <i>ɪnˈstrʌkt</i> v. be instructed to do sth.<br />
+</p>
+<ul class="org-ul">
+<li>He was instructed to take part in the competition.<br /></li>
+<li>Having been instructed to drive out of town, he suddenly press the brake pedal quickly.<br /></li>
+<li>The poor boy was instructed to give a performance in front of his family.<br /></li>
+<li>I am always being instructed to work hard to earn money.<br /></li>
+<li>After having been instructed to drink, I was nervous about my behavior.<br /></li>
+</ul>
+<p>
+acquire <i>əˈkwaɪr</i> v.<br />
+</p>
+<ul class="org-ul">
+<li>You should have acquired a good knowledge of volcanoes.<br /></li>
+<li>If you had acquired a good knowledge of volcanoes, you would have enjoyed it.<br /></li>
+<li>Sorry to interrupt, but we should acquire more knowledge of the real world.<br /></li>
+<li>After finishing fish, I acquired a lot of confidence.<br /></li>
+<li>If you pay more attention to your teacher in the class,<br />
+you will acquire a better knowledge of English.<br /></li>
+</ul>
+<p>
+confidence <i>ˈkɑːn-</i> n. confident adj.<br />
+</p>
+<ul class="org-ul">
+<li>I am confident that she must have murdered her husband.<br /></li>
+<li>If you were more confident, you would be more successful.<br /></li>
+<li>After have received a warm welcome, he began to acquire confidence.<br /></li>
+<li>She was confident that she could get along with others in the school.<br /></li>
+<li>If you had been confident, you wouldn't have parked your car in the wrong place.<br /></li>
+</ul>
+<p>
+examiner <i>ɪɡˈzæmənə</i> n.<br />
+</p>
+<ul class="org-ul">
+<li>The examiner began to pay attention to the girl.<br /></li>
+<li>The examiner hurried to the museum.<br /></li>
+<li>The examiner is determined to hand the paper to the student.<br /></li>
+<li>The examiner was give a fright by a student who was cheating.<br /></li>
+<li>The examiner excepted the lost paper to be found in twenty minutes'.<br /></li>
+</ul>
+<p>
+suppose v. Let's suppose that&#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>Let's suppose that someone is tapping on the window.<br /></li>
+<li>Let's suppose that some is knocking at your door at midnight./<br /></li>
+<li>Let's suppose that you haven't finished your homework.<br /></li>
+<li>Let's suppose that you don't mind my coming with you.<br /></li>
+<li>Let's suppose that Nigel have been following you around all morning.<br /></li>
+</ul>
+<p>
+tap v. tap on the window<br />
+</p>
+<ul class="org-ul">
+<li>She does enjoy tapping on the window which watching TV.<br /></li>
+<li>Sorry to interrupt, but I am driven mad by tapping on the table all the time.<br /></li>
+<li>The boy was instructed to tap on the window.<br /></li>
+<li>I was wondering why you are tapping on the window all morning.<br /></li>
+<li>If you tap on the window, don't follow me around this morning.<br /></li>
+</ul>
+<p>
+react v.<br />
+</p>
+<ul class="org-ul">
+<li>I really don't know how to react to you when you get very angry.<br /></li>
+<li>He always reacts right when his wife gets angry.<br /></li>
+<li>It is no use pretending that you react quickly in the class.<br /></li>
+<li>No matter how he says, his wife doesn't react.<br /></li>
+<li>If you had acquired a good knowledge of English, you would have reacted right.<br /></li>
+</ul>
+<p>
+brake n. pedal n.<br />
+</p>
+<ul class="org-ul">
+<li>Don't press the brake pedal suddenly.<br /></li>
+<li>The girl fears that she wouldn't press the brake pedal immediately.<br /></li>
+<li>A short time before, the brake pedal has been stolen.<br /></li>
+<li>The student has a reputation for pressing the brake pedal suddenly.<br /></li>
+<li>The car broke down because of the bad brake pedal.<br /></li>
+</ul>
+<p>
+mournful adj.<br />
+</p>
+<ul class="org-ul">
+<li>I couldn't stand her mournful look on her face.<br /></li>
+<li>I'm fairly certain that she was mournful.<br /></li>
+<li>You look so mournful. What happen to you?<br /></li>
+<li>Her mournful look is a source of information.<br /></li>
+<li>Her mournful look disappear because her dream comes true.<br /></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgf9b4cf8" class="outline-3">
+<h3 id="orgf9b4cf8"><span class="done DONE">DONE</span> 反复听电影片段</h3>
+<div class="outline-text-3" id="text-orgf9b4cf8">
+</div>
+</div>
+<div id="outline-container-orga25e059" class="outline-3">
+<h3 id="orga25e059"><span class="done DONE">DONE</span> Pattern Drill 写+读</h3>
+<div class="outline-text-3" id="text-orga25e059">
+<ul class="org-ul">
+<li>1T: confess-arrested<br />
+S1: Did the man <b>confess</b>?<br />
+S2: Yes, but only after being <b>arrested</b><br />
+<ul class="org-ul">
+<li>leave the restaurant &#x2013; thrown out<br />
+Did the man leave the restaurant?<br />
+Yes, but only after being thrown out.<br /></li>
+<li>give up the flight &#x2013; knocked out<br />
+Did the man give up the flight?<br />
+Yes, but only after being knocked out.<br /></li>
+<li>become well known &#x2013; murdered<br />
+Did the man become well known?<br />
+Yes, but only after being murdered.<br /></li>
+<li>call the police/guard &#x2013; robbed<br />
+Did the man call the police?<br />
+Yes, but only after being robbed.<br /></li>
+</ul></li>
+
+<li>2T: become famous &#x2013; his murder.<br />
+S1: He became famous after his murder.<br />
+S2: Oh no! He became famous before being murdered.<br />
+<ul class="org-ul">
+<li>confessed/killed the guard &#x2013; his arrest<br />
+He confessed after his arrest.<br />
+Oh no! He confessed before being arrested.<br /></li>
+<li>called the police/fell down &#x2013; the attack<br />
+He called the police after the attack.<br />
+Oh on! He called the police before being attacked.<br /></li>
+<li>phoned Mary/saw Tom &#x2013; his interview<br />
+He phoned Mary after his interview.<br />
+Oh no! He phoned Mary before being interviewed.<br /></li>
+<li>fell ill/became rich &#x2013; his election<br />
+He felt ill after his election.<br />
+Oh no! He felt ill before being elected.<br /></li>
+</ul></li>
+
+<li>3T: send the fax to Hong Kong<br />
+S1: When do you want the fax sent to Hong Kong?<br />
+S2: It should be sent some time today.<br />
+<ul class="org-ul">
+<li>return &#x2013; the books to the library<br />
+When do you want the books returned to the library?<br />
+They should be returned some time today.<br /></li>
+<li>send &#x2013; the goods to the shop<br />
+When do you want the goods sent to the shop?<br />
+They should be sent some time today.<br /></li>
+<li>collect &#x2013; the luggage from the hotel<br />
+When do you want the luggage collected from the hotel.<br />
+It should be collected some time today.<br /></li>
+<li>announce &#x2013; the result to the Press<br />
+When do you want the result announced to the Press?<br />
+It should be announced some time today.<br /></li>
+</ul></li>
+
+<li>4T: ask &#x2013; your report<br />
+S1: I'd like to ask you about your report.<br />
+S2: Not again! I was being asked about my report all day yesterday!<br />
+<ul class="org-ul">
+<li>consult &#x2013; our sales figures<br />
+I'd like to consult you about your sales figures.<br />
+Not again! I was being consulting about our sales figures all day yesterday!<br /></li>
+<li>question &#x2013; your latest film<br />
+I'd like to question you about your latest film.<br />
+Not again! I was being questioning about my latest film all day yesterday!<br /></li>
+<li>advise &#x2013; the need for economy<br />
+I'd like to advise you about the need for economy.<br />
+Not again! I was being advised about the need for economy all day yesterday!<br /></li>
+<li>inform &#x2013; the firm's future plans<br />
+I'd like to inform you about the firm's future plans.<br />
+Not again! I was being informed about the firm's future plans all day yesterday!<br /></li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org1e544ae" class="outline-3">
+<h3 id="org1e544ae"><span class="done DONE">DONE</span> 给自己讲解</h3>
+<div class="outline-text-3" id="text-org1e544ae">
+</div>
+</div>
+<div id="outline-container-org2559961" class="outline-3">
+<h3 id="org2559961">红皮书</h3>
+</div>
+<div id="outline-container-org4041e25" class="outline-3">
+<h3 id="org4041e25"><span class="done DONE">DONE</span> 习惯用法造句</h3>
+<div class="outline-text-3" id="text-org4041e25">
+<p>
+continue doing/ to do<br />
+</p>
+<ul class="org-ul">
+<li>The examiner continue instructing him to drive out of the town.<br /></li>
+<li>After having pressed the brake pedal, the examiner continued to tap on the window.<br /></li>
+<li>He noticed that he continues to make same mistakes.<br /></li>
+<li>If you continued study a good knowledge of English, you would be fluent.<br /></li>
+<li>The policeman continues to threaten to arrest the thief.<br /></li>
+</ul>
+<p>
+be pleased with<br />
+</p>
+<ul class="org-ul">
+<li>Why aren't you pleased with his hard work?<br /></li>
+<li>Why aren't you always pleased with the cat's performance?<br /></li>
+<li>Aren't you pleased with the cat's performance?<br /></li>
+<li>I'm not pleased with this.<br /></li>
+<li>I'm not pleased with my homework.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org221675b" class="outline-3">
+<h3 id="org221675b"><span class="done DONE">DONE</span> 跟读至背诵</h3>
+<div class="outline-text-3" id="text-org221675b">
+</div>
+</div>
+<div id="outline-container-org96e77f8" class="outline-3">
+<h3 id="org96e77f8"><span class="done DONE">DONE</span> Ask me if 写+读</h3>
+<div class="outline-text-3" id="text-org96e77f8">
+<ol class="org-ol">
+<li>I was being tested for my driving license.(What&#x2026;for)(Why)<br />
+What was you being tested for?<br />
+Why was you being tested for your driving license?<br /></li>
+<li>It was my third test.(Which)<br />
+Which test was it?<br /></li>
+<li>I'd been asked to drive in heavy traffic(Where)<br />
+Where had you been ask to drive?<br /></li>
+<li>I'd done so successfully.(How)<br />
+How had you done so?<br /></li>
+<li>I began to acquire confidence.(What)<br />
+What did you begin to acquire?<br /></li>
+<li>I'd been instructed to drive out of town.(Which way)(Who)<br />
+Which way had you been instructed to drive?<br />
+Who had been instructed to drive out of town?<br /></li>
+<li>I was almost beginning to enjoy my test(What)(Why)<br />
+What was you almost beginning to enjoy?<br />
+Why was you almost beginning to enjoy your test?<br /></li>
+<li>The examiner must have been pleased with my performance.(What&#x2026;with)(Why)<br />
+What must the examiner have been pleased with?<br />
+Why must the examiner have been pleased with your performance?<br /></li>
+<li>He smiled.(What&#x2026;do)(Why)<br />
+What did he do?<br />
+Why did he smile?<br /></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org87e155e" class="outline-3">
+<h3 id="org87e155e"><span class="done DONE">DONE</span> 摘要写作</h3>
+<div class="outline-text-3" id="text-org87e155e">
+<p>
+Mr Eames had driven successfully in heavy traffic during his third driving test<br />
+	when the examiner instructed him to drive out of town.<br />
+The examiner told him to suppose that a child would suddenly cross the road in front of him.<br />
+Mr. Eames would have to stop within five feets<br />
+	when the examiner tapped on the window.<br />
+Though the examiner tapped loudly,<br />
+	Mr Eames didn't react quickly enough and was told that he had just killed that child.<br />
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org34a573d" class="outline-3">
+<h3 id="org34a573d"><span class="done DONE">DONE</span> tell the story 口语</h3>
+<div class="outline-text-3" id="text-org34a573d">
+</div>
+</div>
+<div id="outline-container-org7e6664a" class="outline-3">
+<h3 id="org7e6664a">Topics for discussion</h3>
+<div class="outline-text-3" id="text-org7e6664a">
+<p>
+Have you ever been over-confident andmade a mistake? Tell us about it.<br />
+</p>
+
+<p>
+What particular things would you lookout for if you were giving someone adriving test?<br />
+</p>
+
+<p>
+Apart from bad driving, what else cancause road accidents? How can we try toprevent these?<br />
+</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

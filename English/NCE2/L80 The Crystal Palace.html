@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-08-06 Tue 22:24 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+
+<div id="outline-container-org9893fcc" class="outline-2">
+<h2 id="org9893fcc">Lesson 80 The Crystal Palace</h2>
+<div class="outline-text-2" id="text-org9893fcc">
+<p class="verse">
+How many people visited the Great Exhibition of 1851?<br />
+<br />
+Perhaps the most extraordinary building of the nineteenth century was the Crystal Palace,<br />
+&#xa0;which was built in Hyde Park for the Great Exhibition of 1851.<br />
+The Crystal Palace was different from all other buildings in the world,<br />
+&#xa0;for it <b>was made of</b> iron and glass.<br />
+It was one of the biggest buildings <b>of all time</b><br />
+&#xa0;and a lot of people from many countries came to see it.<br />
+A great many goods were sent to the exhibition from various parts of the world.<br />
+There was also a great deal of machinery <b>on display</b>.<br />
+The most wonderful piece of machinery on show was Nasmyth's steam hammer.<br />
+Though in those days, traveling was not as easy as it is today,<br />
+&#xa0;steam boats carried thousands of visitors across the Channel from Europe.<br />
+On arriving in England, they were taken to the Crystal Palace by train.<br />
+There were six million visitors <b>in all</b>,<br />
+&#xa0;and the profits from the exhibition were used to build museums and colleges.<br />
+Later, the Crystal Palace was moved to South London.<br />
+It remained one of the most famous buildings in the world until it was burnt down in 1936.<br />
+<br />
+</p>
+</div>
+<div id="outline-container-orgb5710ca" class="outline-3">
+<h3 id="orgb5710ca">expression</h3>
+<div class="outline-text-3" id="text-orgb5710ca">
+<p>
+palace [ˈpæləs] n.宫殿<br />
+extraordinary [ɪkˈstrɔrd(ə)nˌeri] adj.不平常的,非凡的<br />
+exhibition [ˌeksɪˈbɪʃ(ə)n] n.展览<br />
+iron [ˈaɪrn] n.铁<br />
+various [ˈveriəs] adj.各种各样的<br />
+machinery [məˈʃinəri] n.机器<br />
+display [dɪˈspleɪ] n.展览<br />
+steam [stim] n.蒸汽<br />
+profit [ˈprɑfɪt] n.利润<br />
+college [ˈkɑlɪdʒ] n.学院<br />
+</p>
+
+<p>
+on show/on display 展览<br />
+make a profit 赚取利润<br />
+go to college 上大学<br />
+</p>
+<hr />
+<p>
+be made of 由……制成<br />
+of all time 有史以来的<br />
+in all 总共<br />
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org08bafa4" class="outline-3">
+<h3 id="org08bafa4">words</h3>
+<div class="outline-text-3" id="text-org08bafa4">
+<p>
+palace [ˈpæləs] n.宫殿<br />
+extraordinary [ɪkˈstrɔrd(ə)nˌeri] adj.不平常的,非凡的<br />
+exhibition [ˌeksɪˈbɪʃ(ə)n] n.展览<br />
+iron [ˈaɪrn] n.铁<br />
+various [ˈveriəs] adj.各种各样的<br />
+machinery [məˈʃinəri] n.机器<br />
+display [dɪˈspleɪ] n.蒸汽<br />
+profit [ˈprɑfɪt] n.利润<br />
+college [ˈkɑlɪdʒ] n.学院<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgf82d7f7" class="outline-3">
+<h3 id="orgf82d7f7"><span class="done DONE">DONE</span> 单词造句</h3>
+<div class="outline-text-3" id="text-orgf82d7f7">
+<p>
+palace n.<br />
+</p>
+<ul class="org-ul">
+<li>They have been visiting the palace for a week.<br /></li>
+<li>Instead of the king, the palace takes its name from its builder.<br /></li>
+<li>They were afraid that the palace would be burnt down by the people.<br /></li>
+<li>'Get out of here.' A security guard in front of the palace said.<br /></li>
+<li>The farmer carried ten tons of corn stalks to the palace.<br /></li>
+</ul>
+<p>
+extraordinary adj.<br />
+</p>
+<ul class="org-ul">
+<li>What an extraordinary women she is.<br /></li>
+<li>They have been expecting an extraordinary crop this year.<br /></li>
+<li>Leo pointed out that it was an extraordinary idea.<br /></li>
+<li>It must be the only extraordinary house in the village.<br /></li>
+<li>During this time, they will give five extraordinary performances.<br /></li>
+</ul>
+<p>
+exhibition n.<br />
+</p>
+<ul class="org-ul">
+<li>On arriving the exhibition, my wife begun to take a great many photographs.<br /></li>
+<li>My wife has not only enjoyed the exhibition, but the garden as well.<br /></li>
+<li>She is losing her temper in the exhibition.<br /></li>
+<li>She sometimes goes to the exhibition on Weekends.<br /></li>
+<li>She went to the exhibition last week.<br /></li>
+</ul>
+<p>
+iron n.<br />
+</p>
+<ul class="org-ul">
+<li>They have successfully turned gold into iron.<br /></li>
+<li>Rachel, whose aunt turned gold into iron, is crying.<br /></li>
+<li>The factory has been turning gold into iron.<br /></li>
+<li>He managed to escape with an abandoned iron bar.<br /></li>
+<li>He used to wander with an abandoned iron bar around there.<br /></li>
+</ul>
+<p>
+various adj.<br />
+</p>
+<ul class="org-ul">
+<li>I'm going to read various books in office hours.<br /></li>
+<li>We all were put to shame by him who had read various books in his spare time.<br /></li>
+<li>It occured to me that he knew various actors in the society.<br /></li>
+<li>The player has met various actors in the wedding.<br /></li>
+<li>After having read various books about technology, she turned her attention to education.<br /></li>
+</ul>
+<p>
+machinery n.<br />
+</p>
+<ul class="org-ul">
+<li>There is an expensive piece of machinery.<br /></li>
+<li>Is there any piece of machinery?<br /></li>
+<li>The working machinery is made of iron and glasses.<br /></li>
+<li>He would take charge of the machinery.<br /></li>
+<li>He was talking to the manager of a local factory where the machinery was made.<br /></li>
+</ul>
+<p>
+display n. on show/on display<br />
+</p>
+<ul class="org-ul">
+<li>Machinery like this should be on display at 8 o'clock.<br /></li>
+<li>The assistant who cleaned the window did not like the way the clothes were on display.<br /></li>
+<li>The machinery had been on display before the museum was closed.<br /></li>
+<li>It is said that various luxuries would be on display in the exhibition.<br /></li>
+<li>He saw an expensive piece of machinery be on display in the exhibition.<br /></li>
+</ul>
+<p>
+steam n.<br />
+</p>
+<ul class="org-ul">
+<li>Steam engine broke down so much that it can't be repaired.<br /></li>
+<li>As soon as the water boils, it turned into steam.<br /></li>
+<li>It is no use pretending that you had invented the steam engine.<br /></li>
+<li>He repaired the steam engine with satisfaction.<br /></li>
+<li>My wife urged me to have the steam engine repaired.<br /></li>
+</ul>
+<p>
+profit n. make a profit<br />
+</p>
+<ul class="org-ul">
+<li>The moment the company makes a profit, he will get a good salary.<br /></li>
+<li>The moment you finish the work, I will offer you a great deal of money.<br /></li>
+<li>Our company will be making a profit next year.<br /></li>
+<li>Our company will have made a profit by the day of this year.<br /></li>
+<li>Our company will have been making a profit during the next year.<br /></li>
+</ul>
+<p>
+college n. go to college<br />
+</p>
+<ul class="org-ul">
+<li>Why don't you go to college?<br /></li>
+<li>She said that she wouldn't go to college.<br /></li>
+<li>She had hardly gone to college when her brother was born.<br /></li>
+<li>She had no sooner gone to college than her brother was born.<br /></li>
+<li>If she had gone to college, she would have been more successful.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orga846efc" class="outline-3">
+<h3 id="orga846efc"><span class="done DONE">DONE</span> 反复听电影片段</h3>
+<div class="outline-text-3" id="text-orga846efc">
+</div>
+</div>
+<div id="outline-container-org95904bf" class="outline-3">
+<h3 id="org95904bf"><span class="done DONE">DONE</span> Pattern Drill 写+读</h3>
+<div class="outline-text-3" id="text-org95904bf">
+<ul class="org-ul">
+<li>1t: sweet oranges - Spanish<br />
+s1: These oranges aren't sweet enough.<br />
+s2: Get some Spanish oranges. They'd be much sweeter.<br />
+<ul class="org-ul">
+<li>hard brushes - nylon<br />
+These brushes aren't hard enough.<br />
+Get some nylon brushes. They'd be much harder.<br /></li>
+<li>strong bags - leather<br />
+These bags aren't strong enough.<br />
+Get some leather bags. They'd be much stronger.<br /></li>
+<li>warm socks - woollen<br />
+These socks aren't warm enough.<br />
+Get some woollen socks. They'd be much warmer.<br /></li>
+<li>cheap toys - plastic<br />
+These toys aren't cheap enough.<br />
+Get some plastic toys. They'd be much cheaper.<br /></li>
+</ul></li>
+<li>2t: dirt on the floor<br />
+s1: Was there much dirt on the floor?<br />
+s2: No, it wasn't any dirtier than usual.<br />
+<ul class="org-ul">
+<li>noise in  the classroom<br />
+Was there much noise in the classroom.<br />
+No, it wasn't any noiser than usual.<br /></li>
+<li>mist on  the hills<br />
+Was there much mist on the hills?<br />
+No, it wasn't any mistier than usual.<br /></li>
+<li>wind on  the island<br />
+Was there much wind on the island?<br />
+No, it wasn't any windier than usual.<br /></li>
+<li>clouds in  the sky<br />
+Was there much clouds in the sky?<br />
+No, it wasn't any cloudier in the sky.<br /></li>
+</ul></li>
+<li>3t: attractive<br />
+s1: She's the most attractive person I've ever met.<br />
+s2: She's not as attractive as you are!<br />
+<ul class="org-ul">
+<li>interesting<br />
+She's the most interesting person I've ever met.<br />
+She's not as interesting as you are!<br /></li>
+<li>delightful<br />
+She's the most delightful person I've ever met.<br />
+She's not as delightful as you are!<br /></li>
+<li>hard-working<br />
+She's the most hard-working person I've ever met.<br />
+She's not as hard-working as you are!<br /></li>
+<li>understanding<br />
+She's the most understanding person I've ever met.<br />
+She's not as understanding as you are!<br /></li>
+</ul></li>
+<li>4t: drive - quickly<br />
+s1: He drove as quickly as he could.<br />
+s2: Yes, he couldn't have driven any more quickly.<br />
+<ul class="org-ul">
+<li>stay - long<br />
+He stayed as long as he could.<br />
+Yes, he couldn't have stayed any longer.<br /></li>
+<li>walk - far<br />
+He walked as far as he could.<br />
+Yes, he couldn't have walked any farther.<br /></li>
+<li>write - fast<br />
+He wrote as fast as he could.<br />
+Yes, he couldn't have written any faster.<br /></li>
+<li>fight - hard<br />
+He fought as hard as he could.<br />
+Yes, he couldn't have fought any harder.<br /></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org8d25e37" class="outline-3">
+<h3 id="org8d25e37"><span class="done DONE">DONE</span> 给自己讲解</h3>
+<div class="outline-text-3" id="text-org8d25e37">
+</div>
+</div>
+<div id="outline-container-org2f8e9de" class="outline-3">
+<h3 id="org2f8e9de">红皮书</h3>
+</div>
+<div id="outline-container-orgbf99e0a" class="outline-3">
+<h3 id="orgbf99e0a"><span class="done DONE">DONE</span> 习惯用法造句</h3>
+<div class="outline-text-3" id="text-orgbf99e0a">
+<p>
+be made of<br />
+</p>
+<ul class="org-ul">
+<li>The editor asked the journalist to figure out what the palace is made of.<br /></li>
+<li>The palace should have been made of iron and wood.<br /></li>
+<li>The palace may only be made of iron and glasses.<br /></li>
+<li>The machinery may have been made of iron and wood.<br /></li>
+<li>It's the bridge which is made of iron, not wood.<br /></li>
+</ul>
+<p>
+of all time<br />
+</p>
+<ul class="org-ul">
+<li>I might have fallen into love with her of all time.<br /></li>
+<li>He can't be the best player in the world of all time.<br /></li>
+<li>He remains the best player in the world of all time.<br /></li>
+<li>He was able to swim of all time.<br /></li>
+<li>He was regarded as one of the greatest poet of all time.<br /></li>
+</ul>
+<p>
+in all<br />
+</p>
+<ul class="org-ul">
+<li>There are two cups of milk tea in all.<br /></li>
+<li>It's said that there were 6,000 car parked in the street in all.<br /></li>
+<li>There might be 300 people in the middle of the exhibition in all.<br /></li>
+<li>It is said that there were 300 guards in front of the palace.<br /></li>
+<li>How many people stood here in all?<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org2d440fa" class="outline-3">
+<h3 id="org2d440fa"><span class="done DONE">DONE</span> 跟读至背诵</h3>
+<div class="outline-text-3" id="text-org2d440fa">
+</div>
+</div>
+<div id="outline-container-org06afdb8" class="outline-3">
+<h3 id="org06afdb8"><span class="done DONE">DONE</span> Ask me if 写+读</h3>
+<div class="outline-text-3" id="text-org06afdb8">
+<ol class="org-ol">
+<li>The Crystal Palace was built in the nineteenth century. When/What<br />
+When was the Crystal Palace built?<br />
+What was built in the nineteenth century?<br /></li>
+<li>It was built in Hyde Park. Where<br />
+Where was it built?<br /></li>
+<li>It was built for the Great Exhibition of 185- Why/What<br />
+Why was it built?<br />
+What was built for the Great Exhibition of 1851?<br /></li>
+<li>It was different from all other buildings in the world. What/How<br />
+What was it different from?<br />
+How was it different from all other buildings in the world?<br /></li>
+<li>It was made of iron and glass. What<br />
+What was it made of?<br /></li>
+<li>A lot of people came to see it. How many<br />
+How many people came to see it?<br /></li>
+<li>They came from many countries. Where<br />
+Where did they come from?<br /></li>
+<li>A great many goods were sent to the exhibition. How many<br />
+How many goods were sent to the exhibition?<br /></li>
+<li>They came from various parts of the world. Where<br />
+Where did they come from?<br /></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org3d5d892" class="outline-3">
+<h3 id="org3d5d892"><span class="done DONE">DONE</span> 摘要写作</h3>
+<div class="outline-text-3" id="text-org3d5d892">
+<p>
+The Crystal Palace, which was built for the Great Exhibition of 1851,<br />
+	was different from all others in the world<br />
+	because it was made of iron and glass.<br />
+Goods from various parts of the world were on display as well as a great deal of machinery.<br />
+So many visitors came by boat and train<br />
+	that it was possible to build colleges and museums from the profits.<br />
+After the exhibition, the Crystal Palace was moved to South London,<br />
+	where it remained util it was burnt down in 1936.<br />
+</p>
+
+<p>
+The Crystal Palace was built for the Great Exhibition of 1851.<br />
+Made of iron and glass, it was different from all other buildings.<br />
+There were not only goods from various parts of the world on display<br />
+	but there was a great deal of machinery as well.<br />
+This attracted many visitors who travelled by boat and train.<br />
+Later, the colleges and museums were built from the profits.<br />
+The Crystal Palace was moved to South London and it remained util 1936, when it was burnt down.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org82e026c" class="outline-3">
+<h3 id="org82e026c"><span class="done DONE">DONE</span> tell the story 口语</h3>
+<div class="outline-text-3" id="text-org82e026c">
+</div>
+</div>
+<div id="outline-container-org3b1c570" class="outline-3">
+<h3 id="org3b1c570">Topics for discussion</h3>
+</div>
+</div>
+</div>
+</body>
+</html>

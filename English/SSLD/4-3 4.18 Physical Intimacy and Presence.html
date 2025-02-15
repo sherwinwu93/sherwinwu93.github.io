@@ -1,0 +1,734 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-01-12 Sun 22:34 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-org12d3a9f" class="outline-2">
+<h2 id="org12d3a9f">4-3 4.18 Physical Intimacy and Presence</h2>
+<div class="outline-text-2" id="text-org12d3a9f">
+<p class="verse">
+So you promised me that we could talk a bit more about physical intimacy.<br />
+A big part of a lot of people's idea of physical intimacy comes down to sex.<br />
+And then of course, we have a lot of stereotypes about you know who enjoys sex more,<br />
+&#xa0;like you know the male persuasion liking sex more.<br />
+People getting into relationships just so they can engage in sexual relations.<br />
+Is there truth to any of these stereotypes?<br />
+Well, I think with any stereotype, there are always exceptions, right?<br />
+So obviously, there are a lot of people who,<br />
+&#xa0;at least think that sex is the thing that they're after.<br />
+And then like in the media, we are also increasing the portraying of women<br />
+&#xa0;&#xa0;as active seekers of pleasurable sexual experience,<br />
+&#xa0;which in a way is a good thing, but it also falls to another stereotype.<br />
+<br />
+So what is important from my perspective is that people know what they want and what they need.<br />
+And we have already said what you want is not necessarily what you need.<br />
+Like some people want sex because they need self-affirmation, they need to be accepted.<br />
+Some people want sex because they need physical pleasure.<br />
+Some people want sex because they need to please other people to get positive feedback.<br />
+Some people want sex<br />
+&#xa0;because they need to get to somewhere or get something done through having sex with people.<br />
+So, you know like the need that's driving the sex can be very varied,<br />
+&#xa0;and sex is just one of the many ways that people can utilize to meet those needs.<br />
+<br />
+So, and then it also takes us back to this idea of physical intimacy versus sex.<br />
+Because sex is also very difficult to define, you know.<br />
+Bill Clinton once tried, without much success, right,<br />
+&#xa0;convincing the world that oral sex is not really sex.<br />
+And maybe, only genital penetration is sex, some people still stick to that kind of imagination.<br />
+So we have to understand that physical intimacy actually entails way more than that.<br />
+Some people will feel very intimate physically<br />
+&#xa0;when they are sitting by the fire side and reading to each other<br />
+&#xa0;&#xa0;or like taking a walk in the woods.<br />
+Some people would feel like physically very intimate just by sitting next to each other.<br />
+So like the idea of physical intimacy is actually pretty fluid.<br />
+And I don't want to say that like sex is categorically different.<br />
+No, it is only part of it.<br />
+And then of course, how much physical intimacy is involved in the act of sex itself also varies.<br />
+Like when you talk about people who are getting sex from like sex workers, for instance.<br />
+They may have sex, but they may not be physically intimate at all, right?<br />
+Yeah.<br />
+So it is important to be able to distinguish between these two concepts.<br />
+<br />
+Yeah, I mean, even going off of that,<br />
+&#xa0;you can literally not be physically together at all,<br />
+&#xa0;&#xa0;but still be engaged in what some people define as sex.<br />
+So, you know, People talk about sexting, or cyber sex,<br />
+&#xa0;or even, you were mentioning earlier in an interesting documentary<br />
+&#xa0;&#xa0;where people had sex telepathically.<br />
+So there really is a range in terms of how we define it, isn't there?<br />
+Yeah, I think this is actually another good point.<br />
+And I don't not want to confuse people, but that's another concept, right,<br />
+&#xa0;which is probably not familiar to most people in the social sciences.<br />
+It is the idea of presence.<br />
+So you can be like in Toronto, you know, communicating with someone in Ecuador,<br />
+&#xa0;and there's a huge geographical distance, but you can feel the person's presence right here.<br />
+And for some people,<br />
+&#xa0;you can actually say that I actually feel physically very intimate with this person<br />
+&#xa0;&#xa0;even though we're just like having a conversation on Skype.<br />
+That is totally like comprehensible.<br />
+And then when you're talking about people having cyber sex or sexting,<br />
+&#xa0;the extent to which it feels physically present also varies.<br />
+Like for some people, they are very conscious,<br />
+&#xa0;we just like this is just the image, this is just text.<br />
+To some people, they actually feel the physical presence.<br />
+Some people feel their own physical response.<br />
+Some people are better able to communicate a physical response to others through images and words.<br />
+Some people are less capable.<br />
+So like the experience, the quality of the experience actually varies a lot.<br />
+Yeah, but I think you're pointing out a very important dimension.<br />
+So physical intimacy has to be understood within a context,<br />
+&#xa0;which is more than physical distance or geographical distance, yeah.<br />
+</p>
+</div>
+<div id="outline-container-orgbcabe2a" class="outline-3">
+<h3 id="orgbcabe2a">expression</h3>
+<div class="outline-text-3" id="text-orgbcabe2a">
+<p>
+stereotype [ˈsteriəˌtaɪp]: n. a belief or idea of what a particular type of person or thing is like. Stereotypes are often unfair or untrue刻板印象<br />
+persuasion [pərˈsweɪʒ(ə)n]: n. the act of persuading someone to do something说服<br />
+sexual [ˈsekʃuəl]: adj. relating to the physical activity of sex性的<br />
+seeker [ˈsikər]: n. someone who is trying to find or get something搜索者<br />
+pleasurable [ˈpleʒərəbəl]: adj. enjoyable OPP unpleasant快乐的, 愉快的<br />
+affirm [əˈfɜrm] affirmation [æfɜrˈmeɪʃ(ə)n]: v.n. to state publicly that something is true SYN confirm确认, 肯定<br />
+oral [ˈɔrəl]: adj. spoken, not written口头的<br />
+genital [ˈdʒenɪt(ə)l]: n. relating to or affecting the outer sex organs男生殖器<br />
+penetrate [ˈpenəˌtreɪt] penetration [ˌpenəˈtreɪʃ(ə)n]: v.n. when something or someone enters or passes through something, especially when this is difficult穿过,插入<br />
+categorically [ˌkætəˈɡɔrɪkli]: adv. in such a sure and certain way that there is no doubt无条件的, 绝对的<br />
+sexting [ˈsekstɪŋ]: n. n. the activity of sending sexual text messages or sexual pictures of yourself to someone using a mobile phone色情短信<br />
+documentary [ˌdɑkjəˈment(ə)ri]: n. a film or a television or radio programme that gives detailed information about a particular subject纪录片<br />
+telepathically [ˌtelɪˈpæθɪkli]: adv. someone who is telepathic has a mysterious ability to know what other people are thinking心灵感应地<br />
+presence [ˈprezəns]: n. when someone or something is present in a particular place OPP absence存在<br />
+comprehensible [ˌkɑmprəˈhensəb(ə)l]: adj. easy to understand SYN understandable OPP incomprehensible可理解的<br />
+image [ˈɪmɪdʒ]: n. a picture of an object in a mirror or in the ↑lens of a camera图象<br />
+geographical [ˌdʒiəˈɡræfɪk(ə)l]: adj. relating to the place in an area, country etc where something or someone is地理的<br />
+</p>
+<hr />
+<p>
+come down to sth.: 归结为某物<br />
+fall to sth.: 归属于某物<br />
+next to sb./sth.: 在某人某物旁边<br />
+go off of sth.: 脱离某物<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org5d1218c" class="outline-3">
+<h3 id="org5d1218c">ch.</h3>
+<div class="outline-text-3" id="text-org5d1218c">
+<p>
+4-3 4.18 身体亲密与存在感<br />
+</p>
+
+<p>
+所以你答应过我，我们可以更多地谈谈身体上的亲密关系。<br />
+很多人对身体亲密的理解，很大一部分集中在性上。<br />
+当然，我们也有很多关于谁更享受性的刻板印象，<br />
+比如认为男性更喜欢性，或者有人进入关系只是为了进行性行为。<br />
+这些刻板印象有多少是真实的呢？<br />
+嗯，我认为任何刻板印象都有例外，对吧？<br />
+显然有很多人，至少认为性是他们追求的目标。<br />
+此外，在媒体中，我们也越来越多地看到女性被描绘成<br />
+主动寻求愉悦性体验的形象，这在某种程度上是件好事，但也可能成为另一种刻板印象。<br />
+</p>
+
+<p>
+从我的角度来看，重要的是人们清楚自己想要什么以及需要什么。<br />
+我们之前也说过，想要的不一定是需要的。<br />
+比如，有些人想要性，因为他们需要自我肯定，渴望被接受。<br />
+有些人想要性，因为他们需要身体的愉悦。<br />
+有些人想要性，因为他们希望取悦他人以获得正面反馈。<br />
+还有一些人想要性，是因为他们需要通过性行为达到某种目的或实现某些目标。<br />
+所以，推动性行为的需求是多种多样的，而性只是人们满足这些需求的众多方式之一。<br />
+</p>
+
+<p>
+这也把我们带回到身体亲密与性之间的区别这个话题上。<br />
+因为性本身也很难定义。<br />
+比如比尔·克林顿曾经尝试说服世人，口交不算真正的性，但并不成功，对吧？<br />
+有些人可能仍然认为只有生殖器的插入才算性。<br />
+因此，我们必须理解身体亲密实际上包含的范围远远超过性本身。<br />
+有些人会觉得，当他们坐在火炉旁为对方朗读，或在树林里散步时，非常亲密。<br />
+有些人仅仅是坐在彼此身旁，也能感受到身体上的亲密。<br />
+因此，身体亲密的概念实际上是相当灵活的。<br />
+我并不是要说性完全与之不同。<br />
+不，性只是其中的一部分。<br />
+当然，性行为本身涉及的身体亲密程度也有很大差异。<br />
+比如，当你谈到人们从性工作者那里获得性行为的情况时，<br />
+他们可能发生了性行为，但完全没有身体上的亲密感，对吧？<br />
+是的。<br />
+所以，能够区分这两个概念非常重要。<br />
+</p>
+
+<p>
+是的，甚至在此基础上，<br />
+你实际上可以完全没有身体接触，但仍然参与某些人定义为性的行为。<br />
+比如，人们谈论的“情色短信（sexting）”或“网络性行为（cyber sex）”，<br />
+甚至你之前提到的一个有趣的纪录片，其中有人通过“心灵感应”进行性行为。<br />
+所以，如何定义性确实存在很大的范围，对吧？<br />
+是的，我认为这是另一个很好的观点。<br />
+我不想让人感到困惑，但这里涉及另一个概念，<br />
+这可能是大多数人、甚至社会科学领域的人都不太熟悉的，<br />
+那就是“存在感”的概念。<br />
+比如，你可能人在多伦多，与厄瓜多尔的某人交流，<br />
+地理距离非常遥远，但你可能感觉到对方就在你身边。<br />
+对于一些人来说，<br />
+他们可能会说，即使我们只是通过 Skype 交谈，我仍然感到身体上非常亲密。<br />
+这是完全可以理解的。<br />
+当谈到人们进行网络性行为或情色短信时，<br />
+他们对“身体存在感”的感受也有所不同。<br />
+有些人非常清楚这只是影像或文字，<br />
+但对另一些人来说，他们确实感受到身体的存在感，<br />
+甚至感受到自己的身体反应。<br />
+有些人更善于通过图片和文字将身体反应传递给他人，<br />
+而有些人不太擅长。<br />
+因此，这种体验的质量实际上差异很大。<br />
+是的，但我认为你指出了一个非常重要的维度。<br />
+身体亲密必须在一个超越身体距离或地理距离的上下文中理解。<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgb10796a" class="outline-3">
+<h3 id="orgb10796a">sentence</h3>
+<div class="outline-text-3" id="text-orgb10796a">
+<p>
+stereotype [ˈsteriəˌtaɪp]: n. a belief or idea of what a particular type of person or thing is like. Stereotypes are often unfair or untrue刻板印象<br />
+</p>
+<ul class="org-ul">
+<li>From the onset, you have a stereotype about undergrad students.<br /></li>
+<li>The stereotype about the fraction of the party is forming in an incremental manner.<br /></li>
+<li>It occurs to me to question the stereotype of workers who are going on a strike.<br /></li>
+</ul>
+<p>
+persuasion [pərˈsweɪʒ(ə)n]: n. the act of persuading someone to do something说服<br />
+</p>
+<ul class="org-ul">
+<li>You must articulate your persuasion in an incremental way.<br /></li>
+<li>He must posit that your persuasion is justice.<br /></li>
+<li>Your persuasion reminded me of my mom, who was alway complaining about everything around her.<br /></li>
+</ul>
+<p>
+sexual [ˈsekʃuəl]: adj. relating to the physical activity of sex性的<br />
+</p>
+<ul class="org-ul">
+<li>The professor is trying to teach us the pros and cons of sexual relations.<br /></li>
+<li>The sexual course made in America will put in use next week.<br /></li>
+<li>There is no evidence proving that she had sexual relation with me before she was murdered.<br /></li>
+</ul>
+<p>
+seeker [ˈsikər]: n. someone who is trying to find or get something搜索者<br />
+</p>
+<ul class="org-ul">
+<li>Your mother is right in being a seeker of lost treasure.<br /></li>
+<li>Let's take another angle to look at those seekers from the plain.<br /></li>
+<li>When some seekers run into serious trouble, these watchdogs often help a great deal.<br /></li>
+</ul>
+<p>
+pleasurable [ˈpleʒərəbəl]: adj. enjoyable OPP unpleasant快乐的, 愉快的<br />
+</p>
+<ul class="org-ul">
+<li>I must ensure that it will be a pleasurable date because it's your first.<br /></li>
+<li>You have all the reason to believe that your daughter who is betrothed to our king is pleasurable.<br /></li>
+<li>He is reminiscing about the pleasurable date in his high school.<br /></li>
+</ul>
+<p>
+affirm [əˈfɜrm] affirmation [æfɜrˈmeɪʃ(ə)n]: v.n. to state publicly that something is true SYN confirm确认, 肯定<br />
+</p>
+<ul class="org-ul">
+<li>When I am at times of difficulty, your affirmation really backed up me.<br /></li>
+<li>I can feel your affirmation coming from your eyes.<br /></li>
+<li>The authorities affirmed that there were still Chinese sticking around in the country.<br /></li>
+</ul>
+<p>
+oral [ˈɔrəl]: adj. spoken, not written口头的<br />
+</p>
+<ul class="org-ul">
+<li>It is disgusting that the president tries convincing that oral sex is not really sex in public.<br /></li>
+<li>Given what your oral story is, we need to go back to the scene to affirm it.<br /></li>
+<li>From his perspective, an oral promise is not defined as an actual promise.<br /></li>
+</ul>
+<p>
+genital [ˈdʒenɪt(ə)l]: n. relating to or affecting the outer sex organs男生殖器<br />
+</p>
+<ul class="org-ul">
+<li>He finds there is a scar on his genital.<br /></li>
+<li>He had his genital cut when he was trying to rape a policewoman.<br /></li>
+<li>The bastard had his genital cut when he was in prison.<br /></li>
+</ul>
+<p>
+penetrate [ˈpenəˌtreɪt] penetration [ˌpenəˈtreɪʃ(ə)n]: v.n. when something or someone enters or passes through something, especially when this is difficult穿过,插入<br />
+</p>
+<ul class="org-ul">
+<li>She was naive enough to believe that her boyfriend wouldn't penetrate and beyond doubt, she is pregnant.<br /></li>
+<li>The sexual course sheds light on how genital penetrates while having sex.<br /></li>
+<li>Because the genital penetration kicked in, you must avoid being pregnant.<br /></li>
+</ul>
+<p>
+categorically [ˌkætəˈɡɔrɪkli]: adv. in such a sure and certain way that there is no doubt无条件的, 绝对的<br />
+</p>
+<ul class="org-ul">
+<li>Everyone in the camp is obligated to obey my instructions categorically.<br /></li>
+<li>A soldier who didn't obey my instructions categorically had his head cut.<br /></li>
+<li>Following in his father's footsteps, he swore his loyalty to the king categorically.<br /></li>
+</ul>
+<p>
+sexting [ˈsekstɪŋ]: n. the activity of sending sexual text messages or sexual pictures of yourself to someone using a mobile phone色情短信<br />
+</p>
+<ul class="org-ul">
+<li>Maybe you need to talk to your son, whose phone is full of sexting.<br /></li>
+<li>A piece of sexting trys to seduce me to a gamble website.<br /></li>
+<li>The piece of sexting begins with the image of a bunch of flowers.<br /></li>
+</ul>
+<p>
+documentary [ˌdɑkjəˈment(ə)ri]: n. a film or a television or radio programme that gives detailed information about a particular subject纪录片<br />
+</p>
+<ul class="org-ul">
+<li>The documentary shows us what our earth might be down the road.<br /></li>
+<li>I learn that puma is found in America in a documentary.<br /></li>
+<li>She has a habit of watching documentaries after school.<br /></li>
+</ul>
+<p>
+telepathically [ˌtelɪˈpæθɪkli]: adv. someone who is telepathic has a mysterious ability to know what other people are thinking心灵感应地<br />
+</p>
+<ul class="org-ul">
+<li>The vicar claimed to have received message from the God telepathically.<br /></li>
+<li>The witch is trying to communicate with her husband telepathically.<br /></li>
+<li>It seems that we fell in love with each other telepathically.<br /></li>
+</ul>
+<p>
+presence [ˈprezəns]: n. when someone or something is present in a particular place OPP absence存在<br />
+</p>
+<ul class="org-ul">
+<li>The presence of the stray cat gives us a lot of comfort.<br /></li>
+<li>The presence of your father seems to do the trick.<br /></li>
+<li>My cat is attracted to the presence of the butterfly on the grass.<br /></li>
+</ul>
+<p>
+comprehensible [ˌkɑmprəˈhensəb(ə)l]: adj. easy to understand SYN understandable OPP incomprehensible可理解的<br />
+</p>
+<ul class="org-ul">
+<li>I went through the times of difficulty, so for me his behaviors were comprehensible.<br /></li>
+<li>His obsession with perfect body build is not so comprehensible.<br /></li>
+<li>The contents of his story is so comprehensible that I can't resist the temptation to tell my son.<br /></li>
+</ul>
+<p>
+image [ˈɪmɪdʒ]: n. a picture of an object in a mirror or in the ↑lens of a camera图象<br />
+</p>
+<ul class="org-ul">
+<li>He has different takes on the image of a worker who is parading.<br /></li>
+<li>The presence of naked images is central to your son's health.<br /></li>
+<li>I don't the website full of naked images.<br /></li>
+</ul>
+<p>
+geographical [ˌdʒiəˈɡræfɪk(ə)l]: adj. relating to the place in an area, country etc where something or someone is地理的<br />
+</p>
+<ul class="org-ul">
+<li>Despite the geographical distance, he is still manipulating his inferiors to do house chores.<br /></li>
+<li>The geographical distance seems to be the boundary between you and me.<br /></li>
+<li>Despite the geographical distance, the couple still get married in the Internet.<br /></li>
+</ul>
+<hr />
+<p>
+come down to sth.: 归结为某物<br />
+</p>
+<ul class="org-ul">
+<li>The idea of phisical intimacy comes down to sex.<br /></li>
+<li>The source of support comes down to your wife's dedication.<br /></li>
+<li>The sense of being accepted comes down to your recognition.<br /></li>
+</ul>
+<p>
+fall to sth.: 归属于某物<br />
+</p>
+<ul class="org-ul">
+<li>Your idea of men involed in sexual relations falls to a stereotype.<br /></li>
+<li>Applying 5G to education falls to an unrealistic dream.<br /></li>
+<li>The harnessment of enviornment falls to the sustainable way of developing.<br /></li>
+</ul>
+<p>
+next to sb./sth.: 在某人某物旁边<br />
+</p>
+<ul class="org-ul">
+<li>Your father is next to your headmaster.<br /></li>
+<li>It come up for me that I could sit next to the girl.<br /></li>
+<li>The cat sitting next to you is mine.<br /></li>
+</ul>
+<p>
+go off of sth.: 脱离某物<br />
+</p>
+<ul class="org-ul">
+<li>Going off of his influence, she gets down to earth.<br /></li>
+<li>Going off of the authorities' harnessment, many entrepreneurs set up factories in the city.<br /></li>
+<li>Going off of her control, I'm growing up in an incremental way.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org3b3301f" class="outline-3">
+<h3 id="org3b3301f">sentence2</h3>
+<div class="outline-text-3" id="text-org3b3301f">
+<p>
+stereotype [ˈsteriəˌtaɪp]: n. a belief or idea of what a particular type of person or thing is like. Stereotypes are often unfair or untrue刻板印象<br />
+</p>
+<ul class="org-ul">
+<li>From the onset, you have a stereotype about undergrad students.<br /></li>
+<li>The stereotype about the fraction of the party is forming in an incremental manner.<br /></li>
+<li>It occurs to me to question the stereotype of workers who are going on a strike.<br /></li>
+</ul>
+<p>
+persuasion [pərˈsweɪʒ(ə)n]: n. the act of persuading someone to do something说服<br />
+</p>
+<ul class="org-ul">
+<li>You must articulate your persuasion in an incremental way.<br /></li>
+<li>He must posit that your persuasion is justice.<br /></li>
+<li>Your persuasion reminded me of my mom, who was always complaining about everything around her.<br /></li>
+</ul>
+<p>
+sexual [ˈsekʃuəl]: adj. relating to the physical activity of sex性的<br />
+</p>
+<ul class="org-ul">
+<li>The professor is trying to teach us the pros and cons of sexual relations.<br /></li>
+<li>The sexual course made in America will be put into use next week.<br /></li>
+<li>There is no evidence proving that she had a sexual relationship with me before she was murdered.<br /></li>
+</ul>
+<p>
+seeker [ˈsikər]: n. someone who is trying to find or get something搜索者<br />
+</p>
+<ul class="org-ul">
+<li>Your mother is right in being a seeker of lost treasure.<br /></li>
+<li>Let's take another angle to look at those seekers from the plain.<br /></li>
+<li>When some seekers run into serious trouble, these watchdogs often help a great deal.<br /></li>
+</ul>
+<p>
+pleasurable [ˈpleʒərəbəl]: adj. enjoyable OPP unpleasant快乐的, 愉快的<br />
+</p>
+<ul class="org-ul">
+<li>I must ensure that it will be a pleasurable date because it's your first.<br /></li>
+<li>You have all the reason to believe that your daughter who is betrothed to our king is pleasurable.<br /></li>
+<li>He is reminiscing about the pleasurable date in his high school.<br /></li>
+</ul>
+<p>
+affirm [əˈfɜrm] affirmation [æfɜrˈmeɪʃ(ə)n]: v.n. to state publicly that something is true SYN confirm确认, 肯定<br />
+</p>
+<ul class="org-ul">
+<li>When I am at times of difficulty, your affirmation really backs me up.<br /></li>
+<li>I can feel your affirmation coming from your eyes.<br /></li>
+<li>The authorities affirmed that there were still Chinese sticking around in the country.<br /></li>
+</ul>
+<p>
+oral [ˈɔrəl]: adj. spoken, not written口头的<br />
+</p>
+<ul class="org-ul">
+<li>It is disgusting that the president tries convincing that oral sex is not really sex in public.<br /></li>
+<li>Given what your oral story is, we need to go back to the scene to affirm it.<br /></li>
+<li>From his perspective, an oral promise is not defined as an actual promise.<br /></li>
+</ul>
+<p>
+genital [ˈdʒenɪt(ə)l]: n. relating to or affecting the outer sex organs男生殖器的<br />
+</p>
+<ul class="org-ul">
+<li>He finds there is a genital scar.<br /></li>
+<li>He had his genital organ cut when he was trying to rape a policewoman.<br /></li>
+<li>The bastard had his genital organ cut when he was in prison.<br /></li>
+</ul>
+<p>
+penetrate [ˈpenəˌtreɪt] penetration [ˌpenəˈtreɪʃ(ə)n]: v.n. when something or someone enters or passes through something, especially when this is difficult穿过,插入<br />
+</p>
+<ul class="org-ul">
+<li>She was naive enough to believe that her boyfriend wouldn't penetrate and beyond doubt, she is pregnant.<br /></li>
+<li>The sexual course sheds light on how genital penetrates while having sex.<br /></li>
+<li>Because the genital penetration kicked in, you must avoid being pregnant.<br /></li>
+</ul>
+<p>
+categorically [ˌkætəˈɡɔrɪkli]: adv. in such a sure and certain way that there is no doubt无条件的, 绝对的<br />
+</p>
+<ul class="org-ul">
+<li>Everyone in the camp is obligated to obey my instructions categorically.<br /></li>
+<li>A soldier who didn't obey my instructions categorically had his head cut.<br /></li>
+<li>Following in his father's footsteps, he swore his loyalty to the king categorically.<br /></li>
+</ul>
+<p>
+sexting [ˈsekstɪŋ]: n. the activity of sending sexual text messages or sexual pictures of yourself to someone using a mobile phone色情短信<br />
+</p>
+<ul class="org-ul">
+<li>Maybe you need to talk to your son, whose phone is full of sexting.<br /></li>
+<li>A piece of sexting tries to seduce me to a gambling website.<br /></li>
+<li>The piece of sexting begins with the image of a bunch of flowers.<br /></li>
+</ul>
+<p>
+documentary [ˌdɑkjəˈment(ə)ri]: n. a film or a television or radio programme that gives detailed information about a particular subject纪录片<br />
+</p>
+<ul class="org-ul">
+<li>The documentary shows us what our earth might be down the road.<br /></li>
+<li>I learned in a documentary that puma is found in America.<br /></li>
+<li>She has a habit of watching documentaries after school.<br /></li>
+</ul>
+<p>
+telepathically [ˌtelɪˈpæθɪkli]: adv. someone who is telepathic has a mysterious ability to know what other people are thinking心灵感应地<br />
+</p>
+<ul class="org-ul">
+<li>The vicar claimed to have received messages from the god telepathically.<br /></li>
+<li>The witch is trying to communicate with her husband telepathically.<br /></li>
+<li>It seems that we fell in love with each other telepathically.<br /></li>
+</ul>
+<p>
+presence [ˈprezəns]: n. when someone or something is present in a particular place OPP absence存在<br />
+</p>
+<ul class="org-ul">
+<li>The presence of the stray cat gives us a lot of comfort.<br /></li>
+<li>The presence of your father seems to do the trick.<br /></li>
+<li>My cat is attracted to the presence of the butterfly on the grass.<br /></li>
+</ul>
+<p>
+comprehensible [ˌkɑmprəˈhensəb(ə)l]: adj. easy to understand SYN understandable OPP incomprehensible可理解的<br />
+</p>
+<ul class="org-ul">
+<li>I went through times of difficulty, so for me his behaviors were comprehensible.<br /></li>
+<li>His obsession with perfect body build is not so comprehensible.<br /></li>
+<li>The contents of his story are so comprehensible that I can't resist the temptation to tell my son.<br /></li>
+</ul>
+<p>
+image [ˈɪmɪdʒ]: n. a picture of an object in a mirror or in the ↑lens of a camera图象<br />
+</p>
+<ul class="org-ul">
+<li>He has different takes on the image of a worker who is parading.<br /></li>
+<li>The presence of naked images is central to your son's health.<br /></li>
+<li>I don't like the website full of naked images.<br /></li>
+</ul>
+<p>
+geographical [ˌdʒiəˈɡræfɪk(ə)l]: adj. relating to the place in an area, country etc where something or someone is地理的<br />
+</p>
+<ul class="org-ul">
+<li>Despite the geographical distance, he is still manipulating his inferiors to do house chores.<br /></li>
+<li>The geographical distance seems to be the boundary between you and me.<br /></li>
+<li>Despite the geographical distance, the couple still get married on the Internet.<br /></li>
+</ul>
+<hr />
+<p>
+come down to sth.: 归结为某物<br />
+</p>
+<ul class="org-ul">
+<li>The idea of physical intimacy comes down to sex.<br /></li>
+<li>The source of support comes down to your wife's dedication.<br /></li>
+<li>The sense of being accepted comes down to your recognition.<br /></li>
+</ul>
+<p>
+fall to sth.: 归属于某物<br />
+</p>
+<ul class="org-ul">
+<li>Your idea of men involved in sexual relations falls to a stereotype.<br /></li>
+<li>Applying 5G to education falls to an unrealistic dream.<br /></li>
+<li>The harnessing of environments falls to the sustainable way of developing.<br /></li>
+</ul>
+<p>
+next to sb./sth.: 在某人某物旁边<br />
+</p>
+<ul class="org-ul">
+<li>Your father is next to your headmaster.<br /></li>
+<li>It comes up for me that I could sit next to the girl.<br /></li>
+<li>The cat sitting next to you is mine.<br /></li>
+</ul>
+<p>
+go off of sth.: 脱离某物<br />
+</p>
+<ul class="org-ul">
+<li>Going off of his influence, she gets down to earth.<br /></li>
+<li>Going off of the authorities' harnessing, many entrepreneurs set up factories in the city.<br /></li>
+<li>Going off of her control, I'm growing up in an incremental way.<br /></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

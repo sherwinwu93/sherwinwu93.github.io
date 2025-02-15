@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-09-04 Wed 22:51 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+
+<div id="outline-container-org1bc56d7" class="outline-2">
+<h2 id="org1bc56d7">Lesson 71 A famous clock</h2>
+<div class="outline-text-2" id="text-org1bc56d7">
+<p class="verse">
+Has Big Ben ever gone wrong?<br />
+<br />
+When you visit London,<br />
+&#xa0;one of the first things you will see is Big Ben, the famous clock<br />
+&#xa0;&#xa0;which can be heard <b>all over the world</b> on the BBC.<br />
+If the Houses of Parliament had not been <b>burned down</b> in 1834,<br />
+&#xa0;the great clock would never have been erected.<br />
+Big Ben <b>takes its name</b> from sir Benjamin Hall<br />
+&#xa0;who <b>was responsible for</b> the making of the clock<br />
+&#xa0;&#xa0;when the new Houses of Parliament were being built.<br />
+It is not only of immense size, but is extremely accurate as well.<br />
+Officials from Greenwich Observatory have the clock checked twice a day.<br />
+On the BBC you can hear the clock<br />
+&#xa0;when it is actually striking because microphones <b>are connected to</b> the clock tower.<br />
+Big Ben has rarely <b>gone wrong</b>.<br />
+Once, however, it failed to give the correct time.<br />
+A painter who had been working on the tower<br />
+&#xa0;hung a pot of paint on one of the hands and slowed it down!<br />
+</p>
+</div>
+<div id="outline-container-org3413bd3" class="outline-3">
+<h3 id="org3413bd3">expression</h3>
+<div class="outline-text-3" id="text-org3413bd3">
+<p>
+parliament [ˈpɑrləmənt]: n.议会,国会<br />
+erect [ɪˈrekt]: v.建起<br />
+accurate [ˈækjərət]: adj.准确的<br />
+official [əˈfɪʃ(ə)l]: n.adj.官员,行政人员<br />
+Greenwich [ˈgrɪnɪdʒ]: n.<br />
+observatory [əbˈzɜrvəˌtɔri]: n.天文台<br />
+check [tʃek]: v.n.检查<br />
+microphone [ˈmaɪkrəˌfoʊn]: n.扩音器,麦克风<br />
+tower [ˈtaʊr]: n.塔<br />
+</p>
+
+<p>
+make it official: 使其正式化<br />
+double check: 复查<br />
+</p>
+<hr />
+
+<p>
+all over the world: 全世界<br />
+burn down: 烧毁<br />
+take its name from: 以……命名<br />
+be responsible for: 对……负责<br />
+be connected to: 与……相连<br />
+go wrong: 出错<br />
+</p>
+</div>
+</div>
+
+
+
+<div id="outline-container-orgeb0969e" class="outline-3">
+<h3 id="orgeb0969e"><span class="done DONE">DONE</span> 单词造句</h3>
+<div class="outline-text-3" id="text-orgeb0969e">
+<p>
+parliament n.<br />
+erect v.<br />
+</p>
+<ul class="org-ul">
+<li>Would you mind my erecting the tent by myself?<br /></li>
+<li>I never enjoy erecting tents.<br /></li>
+<li>The child who was only 5 years old managed to erect his camp.<br /></li>
+<li>My wife insisted on erecting a gate in front of our house.<br /></li>
+<li>We tried everything to prevent him from erecting the wall between his yard and ours.<br /></li>
+</ul>
+<p>
+accurate adj.<br />
+</p>
+<ul class="org-ul">
+<li>I caught a sight of his watch, and I have to say it's accurate.<br /></li>
+<li>It is no use pretending that the report is accurate.<br /></li>
+<li>The poor reporter finished finding the accurate number.<br /></li>
+<li>It is worth finding the accurate number.<br /></li>
+<li>I am fairly certain that we did a accurate survey.<br /></li>
+</ul>
+<p>
+official n.adj. make it official<br />
+</p>
+<ul class="org-ul">
+<li>It's hard to imagine that you have trouble with the officials.<br /></li>
+<li>The official has been arrested after he removed the door from the man's house.<br /></li>
+<li>The official became an expert at collecting stamps.<br /></li>
+<li>The official trained his dog to press on buttons.<br /></li>
+<li>The official pointed out that he deserves to be elected.<br /></li>
+</ul>
+<p>
+Greenwich n.<br />
+observatory n.<br />
+</p>
+<ul class="org-ul">
+<li>Where's Tom? He has already gone to the observatory.<br /></li>
+<li>If you were at the observatory right now, you would understand me.<br /></li>
+<li>If you had been at the observatory at the time, you would have seen the drunk bowing.<br /></li>
+<li>He spent the weekends at the observatory.<br /></li>
+<li>The observatory has been burnt in 1980.<br /></li>
+</ul>
+<p>
+check v.n. double check<br />
+</p>
+<ul class="org-ul">
+<li>Have you checked in the bathroom? I have checked everywhere.<br /></li>
+<li>I'll double check that.<br /></li>
+<li>I've checked all the thing in the box. Don't worry.<br /></li>
+<li>Have you checked your key in your bag? Yes, I have.<br /></li>
+<li>The girl began to check the room for her safety.<br /></li>
+</ul>
+<p>
+microphone n.<br />
+</p>
+<ul class="org-ul">
+<li>He was being busy with the microphone all morning yesterday.<br /></li>
+<li>After having caught sight of the microphone, he noticed that he had been listened to.<br /></li>
+<li>The old gentleman taked the microphone clumsily.<br /></li>
+<li>It's no use pretending that you haven't taken the microphone clumsily.<br /></li>
+<li>The girl tried everything to avoid touching the dirty microphone.<br /></li>
+</ul>
+<p>
+tower n.<br />
+</p>
+<ul class="org-ul">
+<li>The tower should have been closed this evening.<br /></li>
+<li>The tower needn't have been opened this evening.<br /></li>
+<li>The authorities claimed that because the tower had costed a lot of money, they will have it closed.<br /></li>
+<li>The microphone is connected to the tower so that people could listen to on BBC.<br /></li>
+<li>The worker managed to escape from the tower when the earthquake happened.<br /></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orga08d3c1" class="outline-3">
+<h3 id="orga08d3c1"><span class="done DONE">DONE</span> 反复听电影片段</h3>
+<div class="outline-text-3" id="text-orga08d3c1">
+</div>
+</div>
+<div id="outline-container-org6bc9b7d" class="outline-3">
+<h3 id="org6bc9b7d"><span class="done DONE">DONE</span> 习惯用法造句</h3>
+<div class="outline-text-3" id="text-org6bc9b7d">
+<p>
+all over the world<br />
+</p>
+<ul class="org-ul">
+<li>People all over the world saw that UFO last night.<br /></li>
+<li>Did people all over the world see that UFO last night?<br /></li>
+<li>When did people all over the would see that UFO.<br /></li>
+<li>People taked part in the party from all over the world.<br /></li>
+<li>There are many people who work for the company all over the world.<br /></li>
+</ul>
+<p>
+burn down<br />
+</p>
+<ul class="org-ul">
+<li>He insisted on burning down the house.<br /></li>
+<li>It's hard to imagine that he's pleased with burning down the tree.<br /></li>
+<li>A car was burnt down and it held up the traffic.<br /></li>
+<li>It's fortunate that the car isn't burnt down in the accident.<br /></li>
+<li>His house was being burnt down when he was on the way home.<br /></li>
+</ul>
+<p>
+take its name from<br />
+</p>
+<ul class="org-ul">
+<li>The machine takes its name from its inventor.<br /></li>
+<li>Does the machine take its name from its inventor?<br /></li>
+<li>Why does the machine take its name from a great man?<br /></li>
+<li>The scientist fears that the street will not take its from him.<br /></li>
+<li>The town takes its name from a captain, who had saved many people's lives in a flood.<br /></li>
+</ul>
+<p>
+be responsible for<br />
+</p>
+<ul class="org-ul">
+<li>No matter what happened to the cat, you will be responsible for it.<br /></li>
+<li>Three men were responsible for the drunk's safety.<br /></li>
+<li>I'm responsible for my accomplishment.<br /></li>
+<li>It occurred to me that you are the one who is responsible for the accident, not her.<br /></li>
+<li>It's you who is responsible for all this.<br /></li>
+</ul>
+<p>
+be connected to<br />
+</p>
+<ul class="org-ul">
+<li>Has the keyboard been conected to the computer right?<br /></li>
+<li>The notice reminds me of that the bluetooth has already been connected to the computer.<br /></li>
+<li>In spite of this, I am connected to my father in the village.<br /></li>
+<li>She noticed that the microphone wasn't connected to the phone.<br /></li>
+<li>It's no use pretending that you are connected to the people.<br /></li>
+</ul>
+<p>
+go wrong<br />
+</p>
+<ul class="org-ul">
+<li>Don't feel sorry for me if anything goes wrong.<br /></li>
+<li>Did anything still go wrong?<br /></li>
+<li>If you hadn't won a prize for the competition, nothing wouldn't have gone wrong.<br /></li>
+<li>He managed to prevent anything from going wrong.<br /></li>
+<li>Suddenly, everything goes wrong.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgfebecbf" class="outline-3">
+<h3 id="orgfebecbf"><span class="done DONE">DONE</span> 跟读至背诵</h3>
+<div class="outline-text-3" id="text-orgfebecbf">
+</div>
+</div>
+<div id="outline-container-org96ae44c" class="outline-3">
+<h3 id="org96ae44c"><span class="done DONE">DONE</span> Ask me if 写+读</h3>
+<div class="outline-text-3" id="text-org96ae44c">
+<ol class="org-ol">
+<li>Big Ben is a famous clock.(What)<br />
+What is Big Ben?<br /></li>
+<li>It's in London.(Where)<br />
+Where is it?<br /></li>
+<li>It's one of the first things a visitor sees. (What)<br />
+What is it?<br /></li>
+<li>It can be heard all over the world.(Where)(Why)What)<br />
+Where can it be heard?<br />
+Why can it be heard all over the world?<br />
+What can be heard all over the world?<br /></li>
+<li>You can hear it on the B.B.C.(How)<br />
+How can you hear it?<br /></li>
+<li>It's called after Sir Benjamin Hall.(Who)<br />
+Who is it called after?<br /></li>
+<li>He was responsible for making the clock.(What)Who)<br />
+What was he responsible for?<br />
+Who was responsible for making the clock?<br /></li>
+<li>The Houses of Parliament were burnt down in 1834.(What)(When)<br />
+What were burnt down in 1834?<br />
+When were the Houses of Parliament burnt down?<br /></li>
+<li>The clock was made when the new Houses of Parliament were being built.(When)<br />
+When was the clock made?<br /></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org0bee734" class="outline-3">
+<h3 id="org0bee734"><span class="done DONE">DONE</span> 摘要写作</h3>
+<div class="outline-text-3" id="text-org0bee734">
+<p>
+After the Houses of Parliament were burnt down in 1834,<br />
+	 Sir Benjamin Hall was made responsible for the construction of a huge clock,<br />
+		which became know as Big Ben.<br />
+Despite its immense size, it is very accurate,<br />
+	for officials from Greenwich Observatory have it checked twice a day.<br />
+The clock, which has rarely gone wrong,<br />
+	can be heard on the BBC when it is striking,<br />
+	because microphones ware connecteed to the clock tower.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org951cbf4" class="outline-3">
+<h3 id="org951cbf4"><span class="done DONE">DONE</span> tell the story 口语</h3>
+<div class="outline-text-3" id="text-org951cbf4">
+</div>
+</div>
+
+<div id="outline-container-org3abfe4b" class="outline-3">
+<h3 id="org3abfe4b">Topics for discussion</h3>
+<div class="outline-text-3" id="text-org3abfe4b">
+<ul class="org-ul">
+<li>Describe a famous building you have visited and tell what you know of its history.<br /></li>
+<li>Why is it necessary to have an international standard measure of time?<br /></li>
+<li>How many foreign radio stations can you get on your radio?<br />
+Which do you listen to most frequently? Why?<br /></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

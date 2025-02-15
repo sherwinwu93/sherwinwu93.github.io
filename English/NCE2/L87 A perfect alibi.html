@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-08-06 Tue 22:24 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+
+<div id="outline-container-org6faa482" class="outline-2">
+<h2 id="org6faa482">Lesson 87 A perfect alibi</h2>
+<div class="outline-text-2" id="text-org6faa482">
+<p class="verse">
+What was wrong with the man's story?<br />
+<br />
+'At the time the murder was committed,<br />
+&#xa0;I was travelling on the 8 o'clock train to London,' said the man.<br />
+'Do you always catch such an early train?' asked the inspector.<br />
+'Of course I do,' answered the man.<br />
+'I must be at work at 10 o'clock.<br />
+My employer will confirm that I was there on time.'<br />
+'Would a later train get you to work on time?' asked the inspector.<br />
+'I suppose it would, but I never catch a later train.'<br />
+'At what time did you arrive at the station?'<br />
+'At ten to eight.<br />
+I bought a paper and waited for the train.'<br />
+'And you didn't notice anything unusual?'<br />
+'Of course not.'<br />
+'I suggest,' said the inspector, 'that you are not telling the truth.<br />
+I suggest that you did not catch the 8 o'clock train,<br />
+&#xa0;but that you caught the 8.25 which would still get you to work on time.<br />
+You see, on the morning of the murder, the 8 o'clock train did not run at all.<br />
+It broke down at Ferngreen station and was taken off the line.'<br />
+</p>
+</div>
+<div id="outline-container-orgfaf89f7" class="outline-3">
+<h3 id="orgfaf89f7">expression</h3>
+<div class="outline-text-3" id="text-orgfaf89f7">
+<p>
+alibi [ˈælɪˌbaɪ] n.不在犯罪现场<br />
+commit [kəˈmɪt] v.犯(罪,错)<br />
+inspector [ɪnˈspektər] n.探长<br />
+employer [ɪmˈplɔɪər] n.雇主<br />
+confirm [kənˈfɜrm] v.确认,证实<br />
+suggest [səɡˈdʒest] v.提醒<br />
+truth [truθ] n.真相<br />
+</p>
+
+<p>
+have a alibi 有不在场证明<br />
+commit a murder 犯下谋杀罪<br />
+sb. confirm that + &#x2026; 某人证实……<br />
+Are you suggesting + &#x2026; 你是在表示&#x2026;<br />
+tell the truth 说实话<br />
+</p>
+<hr />
+<p>
+on time 准时<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org25212e0" class="outline-3">
+<h3 id="org25212e0">words</h3>
+<div class="outline-text-3" id="text-org25212e0">
+<p>
+alibi [ˈælɪˌbaɪ] n.不在犯罪现场<br />
+commit [kəˈmɪt] v.犯(罪~错)<br />
+inspector [ɪnˈspektər] n.探长<br />
+employer [ɪmˈplɔɪər] n.雇主<br />
+confirm [kənˈfɜrm] v.确认,证实<br />
+suggest [səɡˈdʒest] v.提醒<br />
+truth [truθ] n.真相<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgc6ac6ea" class="outline-3">
+<h3 id="orgc6ac6ea"><span class="done DONE">DONE</span> 单词造句</h3>
+<div class="outline-text-3" id="text-orgc6ac6ea">
+<p>
+alibi n. have a alibi<br />
+</p>
+<ul class="org-ul">
+<li>Because he didn't have a perfect alibi, the police was investigating him.<br /></li>
+<li>He has such a perfect alibi that nobody found that he was suspicous.<br /></li>
+<li>On the following day, he claimed to have a perfect alibi.<br /></li>
+<li>If he had a perfect alibi, the police wouldn't continue to search his house.<br /></li>
+<li>The inspector volunteered to find out whether he had a perfect alibi.<br /></li>
+</ul>
+<p>
+commit v. commit a murder<br />
+</p>
+<ul class="org-ul">
+<li>If I had commited a murder, the police would have arrested me. He said in a strong voice.<br /></li>
+<li>The fisherman stated that he had commited a murder out at sea.<br /></li>
+<li>It is known that he commited a murder on the last day of the year.<br /></li>
+<li>He admited that he commited a murder on Christmas day.<br /></li>
+<li>It is possible for him to commit a murder.<br /></li>
+</ul>
+<p>
+inspector n.<br />
+</p>
+<ul class="org-ul">
+<li>The inspector double checked his house and found nothing.<br /></li>
+<li>The inspector feared that a murder would be commited again.<br /></li>
+<li>The inspector enjoy finding out whether he had a perfect alibi.<br /></li>
+<li>The inspector is following us around.<br /></li>
+<li>I was wondering that the inspector had checked the place.<br /></li>
+</ul>
+<p>
+employer n.<br />
+</p>
+<ul class="org-ul">
+<li>I'm a big fan of my employer.<br /></li>
+<li>You will get a better salary. my employer said.<br /></li>
+<li>Our employer is used to going to office very early.<br /></li>
+<li>We're trying to avoid meeting our employer in the mall.<br /></li>
+<li>Fancy meeting you here. My employer said hello to me.<br /></li>
+</ul>
+<p>
+confirm v. sb. confirm that + &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>I confirmed that my cat hadn't eatten any food.<br /></li>
+<li>I confirmed that she was pleased with her behavior.<br /></li>
+<li>I confirmed that he had made that stupid remark.<br /></li>
+<li>I confirmed that he love to hear this.<br /></li>
+<li>I confirmed that he had stood to attention by then.<br /></li>
+</ul>
+<p>
+suggest v. Are you suggesting + &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>Are you suggesting that I don't feel sorry for her?<br /></li>
+<li>Are you suggesting that I am busy with my work?<br /></li>
+<li>Are you suggesting that they has made it official?<br /></li>
+<li>Are you suggesting that I am sensitive about accepting criticism?<br /></li>
+<li>Are you suggesting that she had sent a signal for help?<br /></li>
+</ul>
+<p>
+truth n. tell the truth<br />
+</p>
+<ul class="org-ul">
+<li>The local authorities keep on telling the truth to people.<br /></li>
+<li>The boy who tapped on the window was instructed to tell the truth.<br /></li>
+<li>Why are you so tired? I have been telling the truth.<br /></li>
+<li>He has told the truth and explained it to everyone.<br /></li>
+<li>He noticed with dismay that she hadn't told the the truth about the accident.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org75687cc" class="outline-3">
+<h3 id="org75687cc"><span class="done DONE">DONE</span> 反复听电影片段</h3>
+<div class="outline-text-3" id="text-org75687cc">
+</div>
+</div>
+<div id="outline-container-org9b8349f" class="outline-3">
+<h3 id="org9b8349f"><span class="done DONE">DONE</span> Pattern Drill 写+读</h3>
+<div class="outline-text-3" id="text-org9b8349f">
+<ul class="org-ul">
+<li>1t: broke that plate<br />
+s1: I wonder who broke that plate.<br />
+s2: John told me he'd broken it.<br />
+<ul class="org-ul">
+<li>tore the curtain<br />
+I wonder who tore the curtain.<br />
+John told me he'd torn it.<br /></li>
+<li>drew up the plan<br />
+I wonder who drew up the plan.<br />
+John told me he'd drown up it.<br /></li>
+<li>posted the card<br />
+I wonder who posted the card.<br />
+John told me he'd posted it.<br /></li>
+<li>sent the message<br />
+I wonder who sent the message.<br />
+John told me he'd sent it.<br /></li>
+</ul></li>
+<li>2t: he'll be coming<br />
+s1: Have you asked him when he'll be coming?<br />
+s2: Yes, he said he'd be coming tomorrow.<br />
+<ul class="org-ul">
+<li>she'll be singing<br />
+Have you asked her when she'll be coming?<br />
+Yes, she said she'd be singing tomorrow.<br /></li>
+<li>they'll be sailing<br />
+Have you asked them when they'll be sailing?<br />
+Yes, they said they'd be sailing tomorrow.<br /></li>
+<li>she'll be teaching<br />
+Have you asked her when she'll be teaching?<br />
+Yes, she said she'd be teaching tomorrow.<br /></li>
+<li>he'll be arriving<br />
+Have you asked him when he'll be arriving?<br />
+Yes, he said he'd be arriving tomorrow.<br /></li>
+</ul></li>
+<li>3t: visit him<br />
+s1: When will you visit him?<br />
+s2: He hasn't asked me to visit him yet!<br />
+<ul class="org-ul">
+<li>teach them<br />
+When will you teach them?<br />
+They haven't asked me to teach them yet!<br /></li>
+<li>go out with him<br />
+When will you go out with him?<br />
+He hasn't asked me to go out with them yet!<br /></li>
+<li>sing for her<br />
+When will you sing for her?<br />
+She hasn't asked me to sing for her yet!<br /></li>
+<li>photograph them<br />
+When will you photograph them?<br />
+They haven't asked me to photograph them yet!<br /></li>
+</ul></li>
+<li>4t: sell this car<br />
+s1: I think I'll have to sell this car.<br />
+s2: I suggested you should sell it weeks ago!<br />
+<ul class="org-ul">
+<li>phone John<br />
+I think I'll have to phone John.<br />
+I suggested you should phone him weeks ago!<br /></li>
+<li>apply for the job<br />
+I think I'll have to apply for the job.<br />
+I suggested you should apply for it weeks ago!<br /></li>
+<li>apologize to Mary<br />
+I think I'll have to apologize to Mary.<br />
+I suggested you should apologize to her weeks ago!<br /></li>
+<li>enter for the race<br />
+I think I'll have to enter for the race.<br />
+I suggested you should enter for it weeks ago!<br /></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgf331f9c" class="outline-3">
+<h3 id="orgf331f9c"><span class="done DONE">DONE</span> 给自己讲解</h3>
+<div class="outline-text-3" id="text-orgf331f9c">
+</div>
+</div>
+<div id="outline-container-org16602f7" class="outline-3">
+<h3 id="org16602f7">红皮书</h3>
+</div>
+<div id="outline-container-org5e915d6" class="outline-3">
+<h3 id="org5e915d6"><span class="done DONE">DONE</span> 习惯用法造句</h3>
+<div class="outline-text-3" id="text-org5e915d6">
+<p>
+on time<br />
+</p>
+<ul class="org-ul">
+<li>It's the last day of the year, I must be on duty on time.<br /></li>
+<li>He insists on studying English on time.<br /></li>
+<li>The girl agreed to meet him on time next time.<br /></li>
+<li>The car has hold up the traffic and I didn't arrive on time.<br /></li>
+<li>My aunt was dressed up as a young girl and arrived on the scene on time.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgeed7e4c" class="outline-3">
+<h3 id="orgeed7e4c"><span class="done DONE">DONE</span> 跟读至背诵</h3>
+<div class="outline-text-3" id="text-orgeed7e4c">
+</div>
+</div>
+<div id="outline-container-org531ad66" class="outline-3">
+<h3 id="org531ad66">Ask me if 写+读</h3>
+<div class="outline-text-3" id="text-org531ad66">
+<ol class="org-ol">
+<li>The inspector was interviewing a man. Who/Why<br />
+Who was the inspector interviewing?<br />
+Why was the inspector interviewing a man?<br /></li>
+<li>The man said he was travelling to London. What/Where/Woh<br />
+What did the man say?<br />
+Where did the man said he was travelling?<br />
+Who said he was travelling to London?<br /></li>
+<li>He was on the train. Where<br />
+Where was he?<br /></li>
+<li>He always caught the early train. When/Which train/Why<br />
+When did he always catch the train?<br />
+Which train did he always catch?<br />
+Why did he always catch the early train?<br /></li>
+<li>He had to be at work at 10 o'clock. At what time/Where<br />
+At what time did he have to at work?<br />
+Where did he have to be at 10 o'clock?<br /></li>
+<li>His employer would confirm that he was there on time. What/Who<br />
+What would his employer confirm?<br />
+Who would confirm that he was there on time?<br /></li>
+<li>A later train would get him to work on time. When<br />
+When would a later train get him to work?<br /></li>
+<li>He was at the station at 7.50. Where<br />
+Where was he at 7.50?<br /></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org0ff1f94" class="outline-3">
+<h3 id="org0ff1f94"><span class="done DONE">DONE</span> 摘要写作</h3>
+<div class="outline-text-3" id="text-org0ff1f94">
+<p>
+At the time of murder,<br />
+	the man claimed that<br />
+		he had ben travelling on the 8 o'clock train to London<br />
+		and had at work on time.<br />
+When the inspector asked him<br />
+	whether a later train would get him to work on time,<br />
+		the man agrred it would<br />
+			but said that he always travelled early.<br />
+The inspector suggested that he was lying<br />
+	because, that morning, the 8 o'clock train broke down,<br />
+	so the man must have caught the 8.25.<br />
+</p>
+
+<p>
+When the murder was commited,<br />
+	the man claimed that he was travelling on the 8 o'clock to London.<br />
+He said that he had been at work on time.<br />
+Then, the spector asked him<br />
+	if a later train would get him to work on time.<br />
+Though the man agreed it would, he said he always travelled early.<br />
+In reply, the inspector suggested he was lying,<br />
+	as, that morning, the 8 o'clock train broke down<br />
+	and therefore the man must have caught the 8.25.<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orge6b4d26" class="outline-3">
+<h3 id="orge6b4d26"><span class="done DONE">DONE</span> tell the story 口语</h3>
+<div class="outline-text-3" id="text-orge6b4d26">
+</div>
+</div>
+<div id="outline-container-orga678d60" class="outline-3">
+<h3 id="orga678d60">Topics for discussion</h3>
+</div>
+</div>
+</div>
+</body>
+</html>

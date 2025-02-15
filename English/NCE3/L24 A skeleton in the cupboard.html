@@ -1,0 +1,760 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-09-28 Sat 22:17 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-org2384879" class="outline-2">
+<h2 id="org2384879">Lesson 24 A skeleton in the cupboard</h2>
+<div class="outline-text-2" id="text-org2384879">
+<p class="verse">
+Who was Sebastian?<br />
+<br />
+We often read in novels<br />
+&#xa0;how a seemingly respectable person or family has some terrible secret<br />
+&#xa0;&#xa0;which has <b>been concealed from</b> strangers for years.<br />
+The English language possesses a vivid saying to describe this sort of situation.<br />
+The terrible secret is called 'a skeleton in the cupboard'.<br />
+At some dramatic moment in the story, the terrible secret becomes known and a reputation is ruined.<br />
+The reader's <b>hair stands on end</b><br />
+&#xa0;when he reads in the final pages of the novel<br />
+&#xa0;&#xa0;that the heroine, a dear old lady who had always been so kind to everybody,<br />
+&#xa0;&#xa0;&#xa0;had, <b>in her youth</b>, poisoned every one of her five husbands.<br />
+<br />
+<b>It is all very well</b> for such things to occur in fiction.<br />
+<b>To varying degrees</b>, we all have secrets<br />
+&#xa0;&#xa0;which we do not want even our closest friends to learn,<br />
+&#xa0;but few of us have skeletons in the cupboard.<br />
+The only person I know who has a skeleton in the cupboard is George Carlton,<br />
+&#xa0;and he is very pround of the fact.<br />
+George studied medicine in his youth.<br />
+Instead of becoming a doctor, however, he became a successful writer of detective stories.<br />
+I once spent an uncomfortable weekend which I shall never forget at his house.<br />
+George <b>showed me to</b> the guestroom which, he said, was rarely used.<br />
+He told me to unpack my things and then come down to dinner.<br />
+After I had stacked my shirts and underclothes <b>in two empty drawers</b>,<br />
+&#xa0;I decided to hang one of the two suits I had <b>brought with me</b> in the cupboard.<br />
+I opened the cupboard door and then stood in front of it petrified.<br />
+A skeleton was dangling before my eyes.<br />
+The sudden movement of the door made it sway slightly<br />
+&#xa0;and <b>it gave me the impression that</b> it <b>was about to leap out at</b> me.<br />
+Dropping my suit, I dashed downstairs to tell George.<br />
+This was worse than 'a terrible secret'; this was a real skeleton!<br />
+But George was unsympathetic,<br />
+&#xa0;'Oh, that,'	he said with a smile as if he were talking about an old friend.<br />
+'That's Sebastian. You forget that I was a <b>medical student once upon a time</b>.'<br />
+</p>
+</div>
+<div id="outline-container-org276cc33" class="outline-3">
+<h3 id="org276cc33">expression</h3>
+<div class="outline-text-3" id="text-org276cc33">
+<p>
+skeleton: [ˈskelɪt(ə)n] n. the structure consisting of all the bones in a human or animal body骷髅<br />
+seemingly: [ˈsimɪŋli] adv. apparently 似乎,好像<br />
+respectable: [rɪˈspektəb(ə)l] adj. someone who is respectable behaves in a way that is considered socially acceptable体面的,雅观的<br />
+conceal: [kənˈsil] v.隐藏,隐瞒<br />
+vivid: [ˈvɪvɪd] adj. vividly adv.生动的<br />
+dramatic: [drəˈmætɪk] adj. drama n. dramatically adv.  great and sudden令人激动的,扣人心弦的<br />
+ruin: [ˈruɪn] v.毁坏<br />
+heroine: [ˈheroʊɪn] n. hero 女主角<br />
+fiction: [ˈfɪkʃ(ə)n] n. books and stories about imaginary people and events小说<br />
+varying: [ˈveriɪŋ] adj. different不同的<br />
+medicine: [ˈmedɪsɪn] n.医学<br />
+guestroom: [ɡest] n.客房<br />
+unpack: [ʌnˈpæk] v.(从箱子)取出<br />
+stack: [stæk] v. to make things into a neat pile, or to form a neat pile堆放,排放<br />
+underclothes: [ˈʌndərˌkloʊðz] n. = underwear内衣<br />
+drawer: [ˈdrɔːə(r)] n.抽屉<br />
+petrify: [ˈpetrɪˌfaɪ] v. extremely frightened, especially so frightened that you cannot move or think使惊呆<br />
+dangle: [ˈdæŋɡ(ə)l] v. to hang or swing loosely, or to make something do this悬挂<br />
+sway: [sweɪ] v. to move slowly from one side to another摇摆<br />
+unsympathetic: [ˌʌnsɪmpəˈθetɪk] adj.不表同情的,无动于衷的<br />
+medical: [ˈmedɪk(ə)l] adj.医学的<br />
+</p>
+
+<p>
+a skeleton in the cupboard/closet: they are keeping secret a bad or embarrassing fact about themselves橱柜的骷髅,不为人知的秘密<br />
+sth. be concealed from sb. = conceal sth. from sb.对某人隐瞒某事<br />
+drama queen: 戏精<br />
+ruin my day: 毁了我一天<br />
+science fiction: 科幻小说<br />
+to varying degrees: 多种程度上<br />
+in the drawer/ from the drawer: 在抽屉<br />
+be petrified of sth.: 被某物惊呆<br />
+medical student/school: 医学生/院<br />
+</p>
+<hr />
+<p>
+It is all very well (and good)&#x2026;, but not in reality + &#x2026;: 一切都很好&#x2026;,但是事实并非如此+&#x2026;<br />
+make one's hair stand on end: 使某人汗毛耸立<br />
+in sb's youth: 在某人年轻时<br />
+show sb. to sp.: 带某人去某地<br />
+bring sth. with sb.: 随身携带某物<br />
+it give sb. the impression that + &#x2026;: 它给我一种印象+&#x2026;<br />
+be about to do sth.: 要做某事<br />
+leap out at sb.: 扑向某人<br />
+once upon a time: 曾经<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc819b3d" class="outline-3">
+<h3 id="orgc819b3d">words</h3>
+<div class="outline-text-3" id="text-orgc819b3d">
+<p>
+skeleton [ˈskelɪt(ə)n] n. 骷髅<br />
+seemingly [ˈsiːmɪŋli] adv. 表面上<br />
+respectable [rɪˈspektəbl] adj. 体面<br />
+conceal [kənˈsiːl] v. 隐藏<br />
+vivid [ˈvɪvɪd] adj. 生动的<br />
+dramatic [drəˈmætɪk] adj. 令人激动的,扣人心弦的<br />
+ruin [ˈruːɪn] v. 毁坏<br />
+heroine [ˈheroʊɪn] n. 女主人公<br />
+fiction [ˈfɪkʃ(ə)n] n. 小说<br />
+varying [ˈveriɪŋ; ˈværiɪŋ] adj. 不同的<br />
+medicine [ˈmedɪs(ə)n] n. 医学<br />
+guestroom [ˈɡestrʊm; ˈɡestruːm] n. (家中)客房<br />
+unpack [ˌʌnˈpæk] vt. 取出<br />
+stack [stæk] v. (整体地)堆放,排放<br />
+underclothes [ˈʌndərkloʊðz] n. 内衣<br />
+drawer [drɔːr] n. 抽屉<br />
+petrify [ˈpetrɪfaɪ] v. 使惊呆<br />
+dangle [ˈdæŋɡ(ə)l] v. 悬挂<br />
+sway [sweɪ] v. 摇摆<br />
+unsympathetic [ˌʌnˌsɪmpəˈθetɪk] adj. 不表同情的<br />
+medical [ˈmedɪk(ə)l] adj. 医学的<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org2e3f759" class="outline-3">
+<h3 id="org2e3f759">vocabulary</h3>
+<div class="outline-text-3" id="text-org2e3f759">
+<p>
+seemingly: apparently<br />
+concealed: hidden<br />
+vivid saying: a memorable expression<br />
+reputation: a good name<br />
+ruined: destroyed<br />
+fiction: invented stories<br />
+to varying degrees: sometimes more, sometimes less<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org1a6fb44" class="outline-3">
+<h3 id="org1a6fb44"><span class="done DONE">DONE</span> 单词造句</h3>
+<div class="outline-text-3" id="text-org1a6fb44">
+<p>
+skeleton n.  a skeleton in the cupboard/closet<br />
+</p>
+<ul class="org-ul">
+<li>We needn't have had a skeleton in the cupboard.<br /></li>
+<li>He was said to have a skeleton in the cupboard.<br /></li>
+<li>The girl who played truent from school has a skeleton in the cupboard.<br /></li>
+<li>The richest family in our town has a skeleton in the cupboard.<br /></li>
+<li>It is clear that this family has a skeleton in the cupboard.<br /></li>
+</ul>
+<p>
+seemingly adv. apparently<br />
+</p>
+<ul class="org-ul">
+<li>You just seemingly found me playing video games.<br /></li>
+<li>I was relieved to hear that she began to deal with the seemingly impossible task.<br /></li>
+<li>Seemingly, it convinced him that he believes in these mystery stroies.<br /></li>
+<li>Seemingly, I have a circle of friends.<br /></li>
+<li>Seemingly, I spot a cat pressing the button.<br /></li>
+</ul>
+<p>
+respectable adj.<br />
+</p>
+<ul class="org-ul">
+<li>This convinced me that the headmaster is a respectable teacher.<br /></li>
+<li>It is disturbing to think that you have yelled at a respectable doctor in public.<br /></li>
+<li>Some respectable experts began to take it seriously.<br /></li>
+<li>The respectable doctor confirmed that you have a cancel.<br /></li>
+<li>The respectable man claimed to have prevented people from war.<br /></li>
+</ul>
+<p>
+conceal v.  sth. be concealed from sb. = conceal sth. from sb.<br />
+</p>
+<ul class="org-ul">
+<li>I felt obliged to conceal my diseater from my family.<br /></li>
+<li>It is disturbing to think that your child is still concealing pockety money from you.<br /></li>
+<li>I have found a gangster concealing the bag from us.<br /></li>
+<li>Dana managed to conceal her pregancy from her family.<br /></li>
+<li>As time go on, I couldn't conceal your pregancy from my family any more.<br /></li>
+</ul>
+<p>
+vivid adj. vividly adv.<br />
+</p>
+<ul class="org-ul">
+<li>I always have a vivid dream that I am studying in high school.<br /></li>
+<li>I've got vivid memories of the girl who worked for the corporation.<br /></li>
+<li>She didn't get enough money to fulfill her vivid dream.<br /></li>
+<li>I had a vivid dream that I was equal to go to university.<br /></li>
+<li>After having had a vivid dream, I woke up with a start last night.<br /></li>
+</ul>
+<p>
+dramatic adj. drama n. dramatically adv.  drama queen<br />
+</p>
+<ul class="org-ul">
+<li>Her life changes dramatically when she was pregnant.<br /></li>
+<li>She always acts on such a sudden impulse that she is a dramatic queen.<br /></li>
+<li>What a dramatic queen.<br /></li>
+<li>It happened dramatically that all the sweets were sold out.<br /></li>
+<li>She has dramatically got enough money to move to Beijing.<br /></li>
+</ul>
+<p>
+ruin v. ruin my day<br />
+</p>
+<ul class="org-ul">
+<li>I was just wondering that the argument has almost ruined my day.<br /></li>
+<li>I am always ruining my day on weekends for one cause or another.<br /></li>
+<li>What's going on? I wished it hadn't ruined my day.<br /></li>
+<li>You just recognized me as a stranger. It hurts me and ruins my day.<br /></li>
+<li>You did give me a surprise which ruins my day.<br /></li>
+</ul>
+<p>
+heroine n. hero<br />
+</p>
+<ul class="org-ul">
+<li>I'm glad that the heroine is still alive at the end of the story.<br /></li>
+<li>The heroine soon gets used to life at the monastery.<br /></li>
+<li>The heroine claimed that the room was used as a place of worship.<br /></li>
+<li>The heroine has disappeared on the promontory.<br /></li>
+<li>The heroine will have built the drainage system by the last day of this year.<br /></li>
+</ul>
+<p>
+fiction n.  science fiction<br />
+</p>
+<ul class="org-ul">
+<li>I'm gonna have a rest with a science fiction.<br /></li>
+<li>You'd better return the science fiction to me or I will go to the police.<br /></li>
+<li>The science fiction dating from 17th century turns out to be very interesting.<br /></li>
+<li>The film is said to be based on a science fiction.<br /></li>
+<li>She happened to read a science fiction these days.<br /></li>
+</ul>
+<p>
+varying adj.  to varying degrees<br />
+</p>
+<ul class="org-ul">
+<li>To varying degrees, we visited these sacred room.<br /></li>
+<li>To varying degrees, we both have identity cards of our own.<br /></li>
+<li>To varying degrees, we makes a discovery of ancient philosophies.<br /></li>
+<li>To varying degrees, we were equipped with weapons during the war.<br /></li>
+<li>To varying degrees, we do manual work for a long time.<br /></li>
+</ul>
+<p>
+medicine n.<br />
+</p>
+<ul class="org-ul">
+<li>The worker who do manual work has the impulse to study medicine.<br /></li>
+<li>I used to study medicine when I was in the university.<br /></li>
+<li>Equipped with new machine, they proceeded to study medicine.<br /></li>
+<li>Despite the fact that he had been studying medicine in the university.<br /></li>
+<li>I am amazed to find that my girlfriend gets accustomed to studying medicine.<br /></li>
+</ul>
+<p>
+guest room<br />
+</p>
+<ul class="org-ul">
+<li>You should have showed your relative to the guest room.<br /></li>
+<li>Let's me show you to the guest room.<br /></li>
+<li>Would I have the privilege of living in the guest room, mummy?<br /></li>
+<li>I was asked to keep a secret in this guest room.<br /></li>
+<li>Keep the status quo, live in the guest room.<br /></li>
+</ul>
+<p>
+unpack v.<br />
+</p>
+<ul class="org-ul">
+<li>After having unpacked several dozens of suitcases, I took a shower.<br /></li>
+<li>The worker unpacked far more boxes than you.<br /></li>
+<li>It was you who unpacked her suitcase, not me.<br /></li>
+<li>She was too embarrassed to unpack her suitcase.<br /></li>
+<li>I am not willing to unpack my suitcase.<br /></li>
+</ul>
+<p>
+stack v.<br />
+</p>
+<ul class="org-ul">
+<li>After having stacked my shirts and underclothes in two empty drawers, I received a warm welcome.<br /></li>
+<li>After I had stacked my shirts and underclothes, I was called in to do housework.<br /></li>
+<li>After I had stacked my shirts and underclothes, I attempted to study medicine.<br /></li>
+<li>After I had stacked my shirts and underclothes, the alarm to leave the house was given.<br /></li>
+<li>After she had stacked her shirts and underclothes, she died from a slip.<br /></li>
+</ul>
+<p>
+underclothes n. = underwear<br />
+</p>
+<ul class="org-ul">
+<li>They have onething in common: they don't wear underwear.<br /></li>
+<li>I'll change into the underwear you buy me as soon as possible.<br /></li>
+<li>She found him repulsive, for he hasn't changed his underwear for a week.<br /></li>
+<li>There is no shortage of underwears.<br /></li>
+<li>The boy learned to change underclothes by his own.<br /></li>
+</ul>
+<p>
+drawer n.  in the drawer/ from the drawer<br />
+</p>
+<ul class="org-ul">
+<li>Let's put the letter in the drawer and keep a secret.<br /></li>
+<li>It seems that there is a button in the drawer.<br /></li>
+<li>There is no shortage of socks in the drawer.<br /></li>
+<li>The underwears in the drawer are yours, you can touch them.<br /></li>
+<li>She is likely to hide the snack in the drawer.<br /></li>
+</ul>
+<p>
+petrify v.  be petrified of sth.<br />
+</p>
+<ul class="org-ul">
+<li>She was so petrified of the Japanese horror movie that she had nightmares for a long time.<br /></li>
+<li>When my teacher shouted at me, I was petrified of fear.<br /></li>
+<li>I was petrified of fear, for I didn't get enough money to pay the bill.<br /></li>
+<li>I was petrified of fear, as the order to abandon ship was given.<br /></li>
+<li>I was petrified of fear when I was greeted by an unpleasant smell from the kitchen.<br /></li>
+</ul>
+<p>
+dangle v.<br />
+</p>
+<ul class="org-ul">
+<li>The long thin wire attacted to metal spheres was dangling in the centre of the hall.<br /></li>
+<li>I realized to my horror that a big spider was dangling in the guest room.<br /></li>
+<li>These days, I was tolerant of the big spider dangling in my guest room.<br /></li>
+<li>I was made to clean up the spider dangling in my room.<br /></li>
+<li>After I lit up, I found a spider dangling in the center of the hall.<br /></li>
+</ul>
+<p>
+sway v.<br />
+</p>
+<ul class="org-ul">
+<li>I got the vivid memories of the trees swaying in the wind in the my school.<br /></li>
+<li>I wished that the boat hadn't swayed from side to side out at sea.<br /></li>
+<li>For instance, I saw the spider swaying in the guest room.<br /></li>
+<li>He lost his concentration and kept seeing the tree swaying in the wind.<br /></li>
+<li>I am sure that it is swaying slightly.<br /></li>
+</ul>
+<p>
+unsympathetic adj.<br />
+</p>
+<ul class="org-ul">
+<li>I found you unsympathetic.<br /></li>
+<li>A man who is unsympathetic is not welcomed here.<br /></li>
+<li>I don't mean to be unsympathetic, but it's very funny.<br /></li>
+<li>I don't mean to be unsympathetic, but everything should return to normal.<br /></li>
+<li>I don't mean to be unsympathetic, but we should make it official.<br /></li>
+</ul>
+<p>
+medical adj.  medical student/school<br />
+</p>
+<ul class="org-ul">
+<li>At last, the medical student lost his temper.<br /></li>
+<li>Do you hear about the medical student who is doing manual work now?<br /></li>
+<li>Do you hear about the medical student who takes charge of the school?<br /></li>
+<li>Do you hear about the medical student who used to play truent from school?<br /></li>
+<li>Do you hear about the medical student who concealed her pregancy from her family?<br /></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org0f2c5f6" class="outline-3">
+<h3 id="org0f2c5f6"><span class="done DONE">DONE</span> 反复听电影片段直到懂关键句</h3>
+<div class="outline-text-3" id="text-org0f2c5f6">
+</div>
+</div>
+<div id="outline-container-orgfebe47c" class="outline-3">
+<h3 id="orgfebe47c">复习二册语法(笔记或视频) &amp; 红皮书</h3>
+</div>
+<div id="outline-container-orgebc129a" class="outline-3">
+<h3 id="orgebc129a"><span class="done DONE">DONE</span> 习惯用法造句</h3>
+<div class="outline-text-3" id="text-orgebc129a">
+<p>
+It is all very well (and good)&#x2026;, but not in reality<br />
+</p>
+<ul class="org-ul">
+<li>It is all very well that they are curious to find out the fact.<br /></li>
+<li>It is all very well that they go to the college.<br /></li>
+<li>It is all very well that the company makes a profit of all time.<br /></li>
+<li>It is all very well for you to look down on money.<br /></li>
+<li>It is all very well for you to have the impulse to study medicine.<br /></li>
+</ul>
+<p>
+make one's hair stand on end<br />
+</p>
+<ul class="org-ul">
+<li>The horror movie has made my hair stand on end.<br /></li>
+<li>The company hasn't made a profit yet. This made my hair stand on end.<br /></li>
+<li>The stoy which made my hair stand on end is based on a really event.<br /></li>
+<li>This is a special type of smell which really makes your hair stand on end.<br /></li>
+<li>This horror stoy is likely to make our hair stand on end.<br /></li>
+</ul>
+<p>
+in sb's youth<br />
+</p>
+<ul class="org-ul">
+<li>She was said to poison her husband in her youth.<br /></li>
+<li>She used to set houses on fire in her youth.<br /></li>
+<li>She made a study of ancient philosophy in her youth.<br /></li>
+<li>She has had a tremendous impact on people in America in her youth.<br /></li>
+<li>His father died from a cancer in her youth.<br /></li>
+</ul>
+<p>
+show sb. to sw.<br />
+</p>
+<ul class="org-ul">
+<li>Why don't we show you friend to the guest room?<br /></li>
+<li>Oddly enough, she didn't show me to the guest room.<br /></li>
+<li>Seemingly, she is showing me to the guest room.<br /></li>
+<li>It was your father who showed me to the guest room, not you.<br /></li>
+<li>He was impatient to show me to the guest room.<br /></li>
+</ul>
+<p>
+bring sth. with sb.<br />
+</p>
+<ul class="org-ul">
+<li>He always brings a torchlight with him for one reason or another.<br /></li>
+<li>As he put it, he brought his men with him near Florence.<br /></li>
+<li>He was impatient to bring a bottle of wine with him.<br /></li>
+<li>He brought a torchlight with him when he wandered around the street.<br /></li>
+<li>It was estimated that the commander has brought 1000 men with him.<br /></li>
+</ul>
+<p>
+it give sb. the impression that + &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>It gave me the impression that we were close friend.<br /></li>
+<li>It gave him the impression that she wanted to have sex with him.<br /></li>
+<li>It gave me the impression that she led a normally life.<br /></li>
+<li>It gave me the impression that the boat was loaed with goods.<br /></li>
+<li>It gave me the impression that you were yelling at me.<br /></li>
+</ul>
+<p>
+be about to do sth.<br />
+</p>
+<ul class="org-ul">
+<li>I am about to make myself comfortable.<br /></li>
+<li>I am about to load the boat with foods.<br /></li>
+<li>I am about to pay money to the landlord.<br /></li>
+<li>I am about to fight against him.<br /></li>
+<li>I am about to reward the cat with a can.<br /></li>
+</ul>
+<p>
+leap out at sb.<br />
+</p>
+<ul class="org-ul">
+<li>Acting on a sudden impulse, he leaped out at her.<br /></li>
+<li>She claimed that he leaped out at her first.<br /></li>
+<li>Do you hear about the medical student who leaped out at a lady in public?<br /></li>
+<li>The puma was about to leap out at me.<br /></li>
+<li>My dog always leaps out at me when I arrive home.<br /></li>
+</ul>
+<p>
+once upon a time<br />
+</p>
+<ul class="org-ul">
+<li>Once upon a time, a girl who owns $10 wanted to exchange it for sweets.<br /></li>
+<li>Once upon a time, a lady was rubbing a boy's arm with soap and butter.<br /></li>
+<li>Once upon a time, there was an aunt who always gave her nephew fifty pence.<br /></li>
+<li>Once upon a time, there was a special type of perfume.<br /></li>
+<li>Once upon a time, there was a businessman who had the opportunity to meet the queen.<br /></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgeed401d" class="outline-3">
+<h3 id="orgeed401d">跟读 50遍</h3>
+</div>
+<div id="outline-container-org3c42a76" class="outline-3">
+<h3 id="org3c42a76">Comprehension 反复练习</h3>
+</div>
+<div id="outline-container-orgf33dcc8" class="outline-3">
+<h3 id="orgf33dcc8"><span class="done DONE">DONE</span> Ask me if 写+读</h3>
+<div class="outline-text-3" id="text-orgf33dcc8">
+<ol class="org-ol">
+<li>A terrible secret is sometimes called 'a skeleton in the cupboard'. What<br />
+What is a terrible secret sometimes called?<br /></li>
+<li>The reader's hair stands on end when he reads the final pages of the novel. When<br />
+When does the reader's hair stand on end?<br /></li>
+<li>The dear old lady had poisoned every one of her five husbands. How many<br />
+How many husbands had the dear old lady poisoned?<br /></li>
+<li>We all have secrets that we don't want our closest friends to learn. What secrets<br />
+What kind of secrets do we all have?<br /></li>
+<li>George is proud of the fact that he has skeleton in the cupboard. Why<br />
+Why is George proud of the fact that he has skeleton in the cupboard?<br /></li>
+<li>George became a writer of detective stories. What<br />
+What did George become?<br /></li>
+<li>The guest room was used a lot. How often<br />
+How often was the guest room used?<br /></li>
+<li>A skeleton was dangling in the cupboard. What<br />
+What was dangling in the cupboard?<br /></li>
+<li>The movement of the door made it sway slightly. What<br />
+What made it sway slightly?<br /></li>
+<li>The writer dropped his suit. Who<br />
+Who dropped his suit?<br /></li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org6011cb3" class="outline-3">
+<h3 id="org6011cb3"><span class="done DONE">DONE</span> 摘要写作 写 &amp; 对答案</h3>
+<div class="outline-text-3" id="text-org6011cb3">
+<p>
+I was showed to the guest room which was rarely used.<br />
+After having stacked my shirts and underclothes in the drawers,<br />
+	I opened the cupboard door to hang my suit in the cupboard.<br />
+A skeleton was dangling before my eyes<br />
+	and it gave me the impression that it was about to leap out at me.<br />
+Dropping my suit, I rushed downstairs to tell George.<br />
+But George was unsympathetic and told me:<br />
+	'That's Sebastian. You forget that I was a medical student once upon a time'.<br />
+</p>
+
+<p>
+The writer started to unpack and put his shirts and underclothes into drawers<br />
+	and then decided to hang a suit in the cupboard.<br />
+He opened the cupboard and stood petrified: there, dangling in front of him, was a skeleton.<br />
+It was swaying and ready to leap out at him.<br />
+He dropped his suit and dashed downstairs to tell George.<br />
+Georage was unsympathetic and told the writer<br />
+	it was Sebastian, a skeleton he had when he was a medical student.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org33d15d4" class="outline-3">
+<h3 id="org33d15d4"><span class="done DONE">DONE</span> tell the story 口语复述</h3>
+<div class="outline-text-3" id="text-org33d15d4">
+</div>
+</div>
+<div id="outline-container-orgaedabff" class="outline-3">
+<h3 id="orgaedabff"><span class="done DONE">DONE</span> composition 阅读 或 写作</h3>
+<div class="outline-text-3" id="text-orgaedabff">
+<p>
+Now that George had explained about the skeleton, I felt better,<br />
+	but I still didn't want to sleep in the room with a skeleton hanging in the cupboard.<br />
+I asked George to remove him, but he refused.<br />
+'There's nowhere else to put him,' said George, 'so he'll have to stay.'<br />
+I couldn't disagree of course,<br />
+	but the moment I lay down to sleep, I knew it was going to be an uncomfortable night.<br />
+In the end, I decided that I would take Sebastian somewhere for the night<br />
+	and bring him back up to my room early in the morning.<br />
+So I took him out of cupboard and walked around the house with him<br />
+	trying to find somewhere to put him.<br />
+</p>
+
+<p>
+George's maid was just going to bed as I walked along the landing.<br />
+She saw Sebastian apparently walking around, screamed and fainted.<br />
+She had obviously woken Carlton who appeared from his bedroom and,<br />
+	when the girl had regained consciousness, explained everything to her.<br />
+He accused me of being stupid and sent me and Sebastian back to our's room<br />
+	where I hung him up in the cupboard again.<br />
+Imagine my surprise when I picked up one of Carlton's detective stories two years later.<br />
+There I was, with Sebastianthe skeleton,<br />
+	as the main characters in one of his stories for the whole world to read.<br />
+Still, he didn't use my real name,so I should be glad of that!<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge0d0df8" class="outline-3">
+<h3 id="orge0d0df8">Topics for discussion</h3>
+</div>
+</div>
+</div>
+</body>
+</html>

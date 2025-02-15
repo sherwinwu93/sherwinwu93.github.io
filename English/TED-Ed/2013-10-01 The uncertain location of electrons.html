@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-01-09 Thu 23:07 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-org2a83349" class="outline-2">
+<h2 id="org2a83349">The uncertain location of electrons</h2>
+<div class="outline-text-2" id="text-org2a83349">
+<p class="verse">
+You probably know that all stuff is made up of atoms<br />
+&#xa0;and that an atom is a really, really, really, really tiny particle.<br />
+Every atom has a core,<br />
+&#xa0;which is made up of at least one positively charged particle called a proton,<br />
+&#xa0;and in most cases, some number of neutral particles called neutrons.<br />
+That core is surrounded by negatively charged particles called electrons.<br />
+The identity of an atom is determined only by the number of protons in its nucleus.<br />
+Hydrogen is hydrogen because it has just one proton,<br />
+&#xa0;carbon is carbon because it has six,<br />
+&#xa0;gold is gold because it has 79, and so on.<br />
+<br />
+Indulge me in a momentary tangent.<br />
+How do we know about atomic structure?<br />
+We can't see protons, neutrons, or electrons.<br />
+So, we do a bunch of experiments and develop a model for what we think is there.<br />
+Then we do some more experiments and see if they agree with the model.<br />
+If they do, great.<br />
+If they don't, it might be time for a new model.<br />
+We've had lots of very different models for atoms since Democritus in 400 BC,<br />
+&#xa0;and there will almost certainly be many more to come.<br />
+Okay, tangent over.<br />
+<br />
+The cores of atoms tend to stick together,<br />
+&#xa0;but electrons are free to move,<br />
+&#xa0;and this is why chemists love electrons.<br />
+If we could marry them, we probably would.<br />
+But electrons are weird.<br />
+They appear to behave either as particles, like little baseballs, or as waves, like water waves,<br />
+&#xa0;depending on the experiment that we perform.<br />
+One of the weirdest things about electrons is that we can't exactly say where they are.<br />
+It's not that we don't have the equipment,<br />
+&#xa0;it's that this uncertainty is part of our model of the electron.<br />
+So, we can't pinpoint them, fine.<br />
+But we can say<br />
+&#xa0;there's a certain probability of finding an electron in a given space around the nucleus.<br />
+And that means that we can ask the following question:<br />
+&#xa0;If we drew a shape around the nucleus<br />
+&#xa0;&#xa0;&#xa0;such that we would be 95% sure of finding a given electron within that shape,<br />
+&#xa0;&#xa0;what would it look like?<br />
+<br />
+Here are a few of these shapes.<br />
+Chemists call them orbitals, and what each one looks like depends on, among other things,<br />
+&#xa0;how much energy it has.<br />
+The more energy an orbital has, the farther most of its density is from the nucleus.<br />
+By they way, why did we pick 95% and not 100%?<br />
+Well, that's another quirk of our model of the electron.<br />
+Past a certain distance from the nucleus,<br />
+&#xa0;the probability of finding an electron starts to decrease more or less exponentially,<br />
+&#xa0;&#xa0;which means that while it will approach zero, it'll never actually hit zero.<br />
+So, in every atom, there is some small, but non-zero, probability that<br />
+&#xa0;for a very, very short period of time,<br />
+&#xa0;&#xa0;one of its electrons is at the other end of the known universe.<br />
+But mostly electrons stay close to their nucleus as clouds of negative charged density<br />
+&#xa0;that shift and move with time.<br />
+<br />
+How electrons from one atom interact with electrons from another determines almost everything.<br />
+Atoms can give up their electrons, surrendering them to other atoms, or they can share electrons.<br />
+And the dynamics of this social network are what make chemistry interesting.<br />
+From plain old rocks to the beautiful complexity of life,<br />
+&#xa0;the nature of everything we see, hear, smell, taste, touch, and even feel is<br />
+&#xa0;&#xa0;determined at the atomic level.<br />
+</p>
+</div>
+<div id="outline-container-orgcbde0af" class="outline-3">
+<h3 id="orgcbde0af">expression</h3>
+<div class="outline-text-3" id="text-orgcbde0af">
+<p>
+particle [ˈpɑrtɪk(ə)l]: n. a very small piece of something粒子<br />
+proton [ˈproʊˌtɑn]: n. a very small piece of matter with a positive electrical charge that is in the central part of an atom[核]质子<br />
+neutral [ˈnutrəl]: adj. not supporting any of the people or groups involved in an argument or disagreement中性的,中立的<br />
+nucleus [ˈnukliəs] nuclear: n. the central part of an atom, made up of ↑neutrons, ↑protons, and other ↑elementary particles原子核<br />
+indulge [ɪnˈdʌldʒ]: v. to let yourself do or have something that you enjoy纵容<br />
+orbitals [ˈɔrbɪt(ə)l]: n. ring road 轨道<br />
+pinpoint [ˈpɪnˌpɒɪnt]: v. to discover or explain exactly the real facts about something or the cause of a problem查明<br />
+density [ˈdensəti]: n. the degree to which an area is filled with people or things密度<br />
+quirk [kwɜrk]: n. a strange habit or feature of someone’s character, or a strange feature of something怪异<br />
+exponential [ˌekspəˈnenʃ(ə)l] exponentially: adj.adv. exponential growth/increase etc exponential growth, increase etc becomes faster as the amount of the thing that is growing increases指数的<br />
+</p>
+<hr />
+<p>
+in a momentary tangent: to suddenly start talking or thinking about a completely new subject在片刻的切题中<br />
+develop a model for sth.: 为某物发展出模型<br />
+agree with the model: 与这个模型相符<br />
+it might be time for sth./ to do sth.: 可能是做某事的时间<br />
+there will be many more (sth.) to come: 有更多(某事物)到来<br />
+tend to do sth.: 倾向于做某事<br />
+stick together: 聚集在一起<br />
+behave as/like sth.: 表现得像某物<br />
+perform experiment: 做实验<br />
+It's not that + &#x2026;, it's that + ..: 不是&#x2026;,而是&#x2026;<br />
+there's a certain probability of doing sth.: 有确定的可能做某事<br />
+be 95% sure of doing: 95%的确信做某事<br />
+more or less: 或多或少<br />
+decrease/increase exponentially: 减少或增加指数级<br />
+approach zero: 接近0<br />
+hit zero: 到达0<br />
+there is some small, but non-zero, probability that + ..: 有很小但不是0的可能&#x2026;<br />
+for a very, very short period of time: 很短的时间<br />
+interact with sb.: 与某人互动<br />
+surrender A. to B.: to give up something or someone, especially because you are forced to割让A给B<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgf352c29" class="outline-3">
+<h3 id="orgf352c29">sentences</h3>
+<div class="outline-text-3" id="text-orgf352c29">
+<p>
+in a momentary tangent: to suddenly start talking or thinking about a completely new subject<br />
+</p>
+<ul class="org-ul">
+<li>He is reading another book in the course in a momentary tangent.<br /></li>
+<li>If you kept in a momentary tangent, you would get a bad grade in this subject.<br /></li>
+<li>It dawned on me that we were in a momentary tangent.<br /></li>
+</ul>
+<p>
+develop a model for sth.:<br />
+</p>
+<ul class="org-ul">
+<li>He noted with satisfaction that his child developed a model for an atom.<br /></li>
+<li>It strikes him as developing a model for an atom.<br /></li>
+<li>He succeeded in taking advantage of his imagination to develop a model for a cat.<br /></li>
+</ul>
+<p>
+agree with the model:<br />
+</p>
+<ul class="org-ul">
+<li>It is all too easy to agree with the model without thinking carefully.<br /></li>
+<li>He held up and stopped agreeing with the model.<br /></li>
+<li>You said you agreed with the model in black and white.<br /></li>
+</ul>
+<p>
+it might be time for sth./ to do sth.:<br />
+</p>
+<ul class="org-ul">
+<li>It might be time to reflect on the last bad experience.<br /></li>
+<li>It might be time for lodgeing a complaint.<br /></li>
+<li>It might be time to consult your dictionary instead of complaining anymore.<br /></li>
+</ul>
+<p>
+there will be many more to do sth.:<br />
+</p>
+<ul class="org-ul">
+<li>There will be many more to consult the map.<br /></li>
+<li>There will be many more to be conditioned to play truant from school.<br /></li>
+<li>There will be many more to reflect on the war.<br /></li>
+</ul>
+<p>
+tend to do sth.:<br />
+</p>
+<ul class="org-ul">
+<li>She tends to fly directly to Beijing.<br /></li>
+<li>I tended to return to my hometown after working in the city for years.<br /></li>
+<li>There is a chance in a million that she tends to raise the kid.<br /></li>
+</ul>
+<p>
+stick together:<br />
+</p>
+<ul class="org-ul">
+<li>Needless to say, these tomatoes stuck together.<br /></li>
+<li>Sticking together, they are difficult to be separated from each other.<br /></li>
+<li>It is incredible how these liquid foods stuck together.<br /></li>
+</ul>
+<p>
+behave as/like sth.:<br />
+</p>
+<ul class="org-ul">
+<li>The cat used to behave like a dog, asking me to play ball with her.<br /></li>
+<li>After acquainted with each other, they behaved like close friends.<br /></li>
+<li>It is incredible for a cat to behave as a dog to be so friendly to humans.<br /></li>
+</ul>
+<p>
+perform experiment:<br />
+</p>
+<ul class="org-ul">
+<li>The experiment which was performed bears no resemblance to the last one.<br /></li>
+<li>The experiment which was performed bears a close resemblance to that one in 1990.<br /></li>
+<li>He is naive enough to believe that he could perform experiments after his retirement.<br /></li>
+</ul>
+<p>
+It's not that + &#x2026;, it's that + ..:<br />
+</p>
+<ul class="org-ul">
+<li>It's not that I don't love you, it's that I hate you.<br /></li>
+<li>It's not that he plotted to lead his father's downfall,<br />
+it's that he offered much help to his father.<br /></li>
+<li>It's not that your daughter brought about your downfall, it's that you led to your downfall.<br /></li>
+</ul>
+<p>
+there's a certain probability of doing sth.:<br />
+</p>
+<ul class="org-ul">
+<li>There's a certain probability of winning a prize for the best teacher.<br /></li>
+<li>There's a certain probability of acquainting him with the model of an atom.<br /></li>
+<li>It seems reasonable to assume<br />
+that there's a certain probability of living a good life on a desert island.<br /></li>
+</ul>
+<p>
+be 95% sure of doing:<br />
+</p>
+<ul class="org-ul">
+<li>I could be 95% sure that she would pay a ransom of $100.<br /></li>
+<li>She's 95% sure of passing the exam.<br /></li>
+<li>I was 95% sure of completing this course.<br /></li>
+</ul>
+<p>
+more or less:<br />
+</p>
+<ul class="org-ul">
+<li>She is dear to me more or less.<br /></li>
+<li>She has shared her house with me more or less.<br /></li>
+<li>I got worried about the IELTS exam more or less.<br /></li>
+</ul>
+<p>
+decrease/increase exponentially:<br />
+</p>
+<ul class="org-ul">
+<li>The population of China increased exponentially in the 1980s.<br /></li>
+<li>She explained that the population of China had increased exponentially.<br /></li>
+<li>The number of these rabbits may increase exponentially in such a good environment.<br /></li>
+</ul>
+<p>
+approach zero:<br />
+</p>
+<ul class="org-ul">
+<li>The probability of meeting approached zero.<br /></li>
+<li>Following his instructions, the probability of playing truant from school approaches zero.<br /></li>
+<li>The probability of making mistakes will approach zero in this way.<br /></li>
+</ul>
+<p>
+hit zero:<br />
+</p>
+<ul class="org-ul">
+<li>There are rare instances when the probability of an accident hits zero.<br /></li>
+<li>I hope you don't mind the interference, but the probability of passing the exam hits zero.<br /></li>
+<li>The probability of my understanding these abstract concepts hits zero.<br /></li>
+</ul>
+<p>
+there is some small, but non-zero, probability that + ..:<br />
+</p>
+<ul class="org-ul">
+<li>There is some small, but non-zero, probability that the cat set his house on fire.<br /></li>
+<li>There is some small, but non-zero, probability<br />
+that the footnote conducted him to the bottom of the note.<br /></li>
+<li>There is some small, but non-zero, probability that she is taking advantage of you.<br /></li>
+</ul>
+<p>
+for a very, very short period of time:<br />
+</p>
+<ul class="org-ul">
+<li>I have wished to get a good salary for a very short period of time.<br /></li>
+<li>It dawned on me that she fell in love with me for a very short period of time.<br /></li>
+<li>I can't help thinking of that embarrassing experience for a very short period of time.<br /></li>
+</ul>
+<p>
+interact with:<br />
+</p>
+<ul class="org-ul">
+<li>How to interact with people around me is still disturbing me.<br /></li>
+<li>She suggested that I interact with that pretty girl.<br /></li>
+<li>We can't help interacting with each other towards the end of the party.<br /></li>
+</ul>
+<p>
+surrender A. to B.: to give up something or someone, especially because you are forced to<br />
+</p>
+<ul class="org-ul">
+<li>She complained that her boss ordered her to surrender her project to her workmate.<br /></li>
+<li>He made his way back to surrender his play station to his wife.<br /></li>
+<li>Separated from his wife, he still surrendered his property to his wife.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org7decfab" class="outline-3">
+<h3 id="org7decfab">Summary</h3>
+<div class="outline-text-3" id="text-org7decfab">
+<p class="verse">
+All stuff is made up of atoms and an atom is a really tiny particle.<br />
+It has a core called a nucleus,<br />
+&#xa0;which is made up of at least a proton and some number of neutrons in most cases<br />
+&#xa0;&#xa0;and is surrounded by electrons.<br />
+The identity of an atom only depends on the number of protons.<br />
+In addition, we can't see those particles<br />
+&#xa0;so we do a series of experiments to develop a model,<br />
+&#xa0;&#xa0;which is examined by more experiments later.<br />
+The cores of atoms tend to stick together,<br />
+&#xa0;but electrons,<br />
+&#xa0;&#xa0;&#xa0;which behave either as particles, like little baseballs, or as waves, like water waves,<br />
+&#xa0;&#xa0;are free to move.<br />
+So we can't exactly say where electrons are and that's part of our model of the electron.<br />
+However, we could draw a shape called an orbital around the nucleus<br />
+&#xa0;within which we would be 95% sure of finding a given electron.<br />
+Most of its density from the nucleus is obviously determined by the energy an orbital has.<br />
+The reason why we pick 95% and not 100% is<br />
+&#xa0;one of its electrons could be a random position in the known universe.<br />
+The nature of everything we see, hear, smell, and so on,<br />
+&#xa0;is determined at the atomic level.<br />
+</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

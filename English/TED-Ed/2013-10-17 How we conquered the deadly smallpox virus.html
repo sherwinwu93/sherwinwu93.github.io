@@ -1,0 +1,589 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-01-09 Thu 23:07 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-orgeeb21c5" class="outline-2">
+<h2 id="orgeeb21c5">2013-10-17 How we conquered the deadly smallpox virus</h2>
+<div class="outline-text-2" id="text-orgeeb21c5">
+<p class="verse">
+10,000 years ago, a deadly virus arose in northeastern Africa.<br />
+The virus spread through the air,<br />
+&#xa0;attacking the skin cells, bone marrow, spleen, and lymph nodes of its victims.<br />
+The unlucky infected developed fevers, vomiting, and rashes.<br />
+30% of infected people died during the second week of infection.<br />
+Survivors bore scars and scabs for the rest of their lives.<br />
+Smallpox had arrived.<br />
+<br />
+In 1350 B.C., the first smallpox epidemics hit during the Egypt-Hittite war.<br />
+Egyptian prisoners spread smallpox to the Hittites,<br />
+&#xa0;which killed their king and devastated his civilization.<br />
+Insidiously, smallpox made its way around the world via Egyptian merchants,<br />
+&#xa0;then through the Arab world with the Crusades,<br />
+&#xa0;and all the way to the Americas with the Spanish and Portuguese conquests.<br />
+Since then, it has killed billions of people<br />
+&#xa0;with an estimated 300 to 500 million people killed in the 20th century alone.<br />
+<br />
+But smallpox is not unbeatable.<br />
+In fact, the fall of smallpox started long before modern medicine.<br />
+It began all the way back in 1022 A.D.<br />
+According to a small book, called "The Correct Treatment of Small Pox,"<br />
+&#xa0;a Buddhist nun living in a famous mountain<br />
+&#xa0;&#xa0;&#xa0;named O Mei Shan in the southern providence of Sichuan<br />
+&#xa0;&#xa0;would grind up smallpox scabs and blow the powder into nostrils of healthy people.<br />
+She did this after noticing that those who managed to survive smallpox never got it again,<br />
+&#xa0;and her odd treatment worked.<br />
+The procedure, called variolation, slowly evolved and by the 1700's,<br />
+&#xa0;doctors were taking material from sores<br />
+&#xa0;&#xa0;and putting them into healthy people through four or five scratches on the arm.<br />
+This worked pretty well as inoculated people would not get reinfected, but it wasn't foolproof.<br />
+Up to three percent of people would still die after being exposed to the pass.<br />
+<br />
+It wasn't until English physician Edward Jenner noticed something interesting about dairy maids<br />
+&#xa0;that we got our modern solution.<br />
+At age 13, while Jenner was apprentice to a country surgeon and apothecary in Sodbury, near Bristol,<br />
+&#xa0;he heard a dairy maid say,<br />
+&#xa0;"I shall never have smallpox, for I have had cowpox.<br />
+&#xa0;I shall never have an ugly, pockmarked face."<br />
+Cowpox is a skin disease that resembles smallpox and infects cows.<br />
+Later on, as a physician, he realized that she was right,<br />
+&#xa0;women who got cowpox didn't develop the deadly smallpox.<br />
+Smallpox and cowpox viruses are from the same family.<br />
+But when a virus infects an unfamiliar host,<br />
+&#xa0;in this case cowpox infecting a human, it is less virulent,<br />
+&#xa0;so Jenner decided to test whether the cowpox virus could be used to protect against smallpox.<br />
+In May 1796, Jenner found a young dairy maid, Sarah Nelmes,<br />
+&#xa0;who had fresh cowpox lesions on her hand and arm caught from the utters of a cow named Blossom.<br />
+Using matter from her pustules,<br />
+&#xa0;he inoculated James Phipps, the eight-year-old son of his gardener.<br />
+After a few days of fever and discomfort, the boy seemed to recover.<br />
+Two months later, Jenner inoculated the boy again,<br />
+&#xa0;this time with matter from a fresh smallpox lesion.<br />
+No disease developed, and Jenner concluded that protection was complete.<br />
+His plan had worked.<br />
+Jenner later used the cowpox virus in several other people<br />
+&#xa0;&#xa0;and challenged them repeatedly with smallpox,<br />
+&#xa0;proving that they were immune to the disease.<br />
+With this procedure, Jenner invented the smallpox vaccination.<br />
+<br />
+Unlike variolation, which used actual smallpox virus to try to protect people,<br />
+&#xa0;vaccination used the far less dangerous cowpox virus.<br />
+The medical establishment, cautious then as now,<br />
+&#xa0;deliberated at length over his findings before accepting them.<br />
+But eventually vaccination was gradually accepted<br />
+&#xa0;and variolation became prohibited in England in 1840.<br />
+After large vaccination campaigns throughout the 19th and 20th centuries,<br />
+&#xa0;the World Health Organization certified smallpox's eradication in 1979.<br />
+Jenner is forever remembered as the father of immunology,<br />
+&#xa0;but let's not forget the dairy maid Sarah Nelmes, Blossom the cow, and James Phipps,<br />
+&#xa0;&#xa0;all heroes in this great adventure of vaccination who helped eradicate smallpox.<br />
+</p>
+</div>
+<div id="outline-container-org88e7968" class="outline-3">
+<h3 id="org88e7968">expressions</h3>
+<div class="outline-text-3" id="text-org88e7968">
+<p>
+marrow [ˈmeroʊ]: n. the soft fatty substance in the hollow centre of bones骨髓<br />
+spleen [splin]: n. an organ near your stomach that controls the quality of your blood 脾脏<br />
+lymph [lɪmf] nodes [noʊd]: n. 淋巴结<br />
+vomit [ˈvɒmit]: v. to bring food or drink up from your stomach out through your mouth, because you are ill呕吐<br />
+scar [skɑr]: n. 疤痕<br />
+scab [skæb]: n. 痂<br />
+epidemic [ˌepɪˈdemɪk]: n. a large number of cases of a disease that happen at the same time传染病<br />
+insidiously [ɪn'sɪdɪrslɪ]: adv. an insidious change or problem spreads gradually without being noticed, and causes serious harm暗中为害地<br />
+merchant [ˈmɜrtʃənt]: n. someone whose job is to buy and sell things商人<br />
+Buddhist ['bʊdɪst]: n. 佛教徒<br />
+nun [nʌn]: n. someone who is a member of a group of religious women that live together尼姑<br />
+providence ['prɒvɪdəns]: n. a force which is believed by some people to control what happens in our lives and to protect us ⇨ fate深谋远虑, 天意, 上帝, 神的眷顾<br />
+variolation [vəraɪə'leɪʃ(ə)n]: n. 天花接种<br />
+sore [sɔr]: adj. a part of your body that is sore is painful疼痛的<br />
+inoculate [ɪˈnɑkjəˌleɪt]: v. to protect someone against a disease by putting a weak form of the disease into their body using a needle打预防针<br />
+foolproof [ˈfulˌpruf]: adj. a foolproof method, plan, system etc is certain to be successful万无一失的<br />
+dairy [ˈderi]: n. dairy products/produce milk, butter, cheese etc<br />
+apothecary [əˈpɑθəˌkeri]: n. someone who mixed and sold medicines in the past药剂师<br />
+pockmarked : adj. covered with hollow marks or holes麻子的<br />
+udders [ˈʌdər]: n. the part of a cow, female goat etc that hangs down between its back legs and that produces milk牛奶子<br />
+pustule [ˈpʌsˌtjʃ(ə)l]: n. a small raised spot on your skin containing ↑pus脓疱<br />
+lesion [ˈliʒ(ə)n]: n. damage to someone’s skin or part of their body such as their stomach or brain, caused by injury or illness损害<br />
+vaccinate [ˈvæksɪˌneɪt] vaccination: v.n. to protect a person or animal from a disease by giving them a vaccine牛痘疫苗<br />
+establishment [ɪˈstæblɪʃmənt]: n. formal an organization or institution, especially a business, shop etc机构<br />
+</p>
+<hr />
+<p>
+spread through: 通过&#x2026;传播<br />
+develop fevers, vomiting, rashes, smallpox: 发烧,呕吐,皮疹,天花<br />
+bear scars and scabs: 忍受疤和痂<br />
+spread sth. to sb.: 传播某物到某人<br />
+devastate the civilization: 摧毁文明<br />
+make its way around the world via sb.: 通过某人传播到世界<br />
+an estimated A.xx to B.xx sth.: 预估A到B的某物<br />
+the fall of sb./sth. start: 某人/某物的倒台开始了<br />
+It begins all the way back when + &#x2026;: 这要追溯到&#x2026;<br />
+grind up sth.: 磨碎某物<br />
+blow the powder into sp.: 吹粉末到某地<br />
+up to xx percent of sth.: 高达某物的百分比<br />
+be exposed to sth.: you are in danger from it暴露于某物<br />
+be an apprentice to sjob.: pupil做某职业的学徒<br />
+a pockmarked face: 麻子脸<br />
+protect against sth.: 抵御某物<br />
+A. be caught from B.: 从B带来A(病毒)<br />
+challenge sb. with sth.: 用某物去挑战某人<br />
+be immune to sth.: 对某物免疫<br />
+with this procedure: 通过这个过程<br />
+deliberate at length over sth.: 仔细考虑某事<br />
+become prohibited: 被禁止<br />
+certify sth's eradication: 证明某物已被根除<br />
+be forever remembered as: 永久被记住为&#x2026;<br />
+the father of -logy.: &#x2026;之父<br />
+in this great adventure of sth.: 在某事的伟大冒险中<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org112011b" class="outline-3">
+<h3 id="org112011b">sentence</h3>
+<div class="outline-text-3" id="text-org112011b">
+<p>
+spread through:<br />
+</p>
+<ul class="org-ul">
+<li>I cherish the hope that this knowledge spreads through the social media.<br /></li>
+<li>It is said that the deadly virus spread through the drainage system.<br /></li>
+<li>The deadly virus has already spread through the air.<br /></li>
+</ul>
+<p>
+developed fevers, vomiting, rashes, smallpox:<br />
+</p>
+<ul class="org-ul">
+<li>My wife always has a fascination for me, when I develop a fever.<br /></li>
+<li>When he developed fevers, he mobilized his immune system.<br /></li>
+<li>If you kept eating so many times a day, you would develop vomiting.<br /></li>
+</ul>
+<p>
+bear scars and scabs:<br />
+</p>
+<ul class="org-ul">
+<li>I couldn't bear scars and scabs for the rest of my life.<br /></li>
+<li>I couldn't bear scars and scabs after I developed smallpox.<br /></li>
+<li>I was reminiscing about these days when I was bearing scars and scabs.<br /></li>
+</ul>
+<p>
+spread sth. to sb.:<br />
+</p>
+<ul class="org-ul">
+<li>These prisoners succeeded in spreading cowpox to their enemies.<br /></li>
+<li>The entrepreneur stated that he would spread fear to everyone in China.<br /></li>
+<li>While you were quaking in every limb, you spread emotions to everyone at the reception.<br /></li>
+</ul>
+<p>
+devastate the civilization:<br />
+</p>
+<ul class="org-ul">
+<li>It's a pity that the Hittites devastated the civilization of Egyptian.<br /></li>
+<li>He's giving the eulogy in memories of the devastated civilization.<br /></li>
+<li>The civilization which was devastated may date back to 1700 BC.<br /></li>
+</ul>
+<p>
+make its way around the world via sb.:<br />
+</p>
+<ul class="org-ul">
+<li>The arab number made its way around the world via Arabs in the 17th century.<br /></li>
+<li>The tea which is found in China made its way around the world via English merchants.<br /></li>
+<li>This special kind of pen makes its way around China via Wenzhou merchants.<br /></li>
+</ul>
+<p>
+an estimated A.xx to B.xx n.:<br />
+</p>
+<ul class="org-ul">
+<li>An estimated 100 to 200 thousand people went on vocations in the festive.<br /></li>
+<li>It was incredible that an estimated 10 to 20 thousand people took part in the competition.<br /></li>
+<li>An estimated 10 to 20 students's experiences bear a close resemblance to his.<br /></li>
+</ul>
+<p>
+the fall of sb./sth. start:<br />
+</p>
+<ul class="org-ul">
+<li>The fall of the emperor must start in 1975.<br /></li>
+<li>He poured scorn on the idea that the fall of the emperor started in 1975.<br /></li>
+<li>The fall of smallpox might start in 1975.<br /></li>
+</ul>
+<p>
+It begins all the way back when + &#x2026;:<br />
+</p>
+<ul class="org-ul">
+<li>It began all the way back at a time when people had to pay protection money to these gangsters.<br /></li>
+<li>It began all the way back when I received an anonymous letter.<br /></li>
+<li>It began all the way back when I shared my house with her.<br /></li>
+</ul>
+<p>
+grind up sth.:<br />
+</p>
+<ul class="org-ul">
+<li>He ground up the body to conceal it from the police.<br /></li>
+<li>The pepper which was ground up is in the drawer.<br /></li>
+<li>He is trying his best to grind up these bones.<br /></li>
+</ul>
+<p>
+blow the powder into sp.:<br />
+</p>
+<ul class="org-ul">
+<li>What a drama queen. I just blew the powder into your mouth.<br /></li>
+<li>After blowing the powder into his room, he began reading books.<br /></li>
+<li>The child blew the powder into his room, concealing his footsteps from his parents.<br /></li>
+</ul>
+<p>
+up to xx percent of sth.:<br />
+</p>
+<ul class="org-ul">
+<li>Up to 3 percent of people passed this exam.<br /></li>
+<li>Up to 3 percent of science fiction was in the exhibition.<br /></li>
+<li>Up to 99 percent of soldiers stood to attention.<br /></li>
+</ul>
+<p>
+be exposed to sth.: you are in danger from it<br />
+</p>
+<ul class="org-ul">
+<li>Exposed to the enemies, he went up and down in front of the camp.<br /></li>
+<li>Exposed to the soldier, he knocked him to the ground.<br /></li>
+<li>She discovered that she had already been exposed to the teacher.<br /></li>
+</ul>
+<p>
+be an apprentice to sjob.: pupil<br />
+</p>
+<ul class="org-ul">
+<li>My son used to be an apprentice to a baker in Beijing.<br /></li>
+<li>I was curious to find out that my father used to be an apprentice to a barkery.<br /></li>
+<li>You must have been an apprentice to a cook.<br /></li>
+</ul>
+<p>
+a pockmarked face:<br />
+</p>
+<ul class="org-ul">
+<li>In the end, she couldn't bear a pockmarked face so she had an operation.<br /></li>
+<li>She tends to have an operation because of her pockmarked face.<br /></li>
+<li>The probability of having a pockmarked face after the operation approaches zero.<br /></li>
+</ul>
+<p>
+protect against sth.:<br />
+</p>
+<ul class="org-ul">
+<li>She drew on her wisdom to protect against these gangsters.<br /></li>
+<li>If you hadn't paid attention in the course,<br />
+you wouldn't have protected against the enemies in the action.<br /></li>
+<li>She couldn't protect herself against the virus so she died of it.<br /></li>
+</ul>
+<p>
+A. be caught from B.: 从B带来A(病毒)<br />
+</p>
+<ul class="org-ul">
+<li>If I hadn't stayed overnight in the hay,<br />
+the virus wouldn't have been caught from the udders of the cow.<br /></li>
+<li>Thanks to your carelessness, the virus has been caught from the laboratory.<br /></li>
+<li>It became an accepted fact that this kind of virus was caught from monkeys in Africa.<br /></li>
+</ul>
+<p>
+challenge sb. with sth.:<br />
+</p>
+<ul class="org-ul">
+<li>My wife used to challenge me with my bad grades in our childhood.<br /></li>
+<li>When I challenged her with a frog, she burst into tears.<br /></li>
+<li>I was disappointed to learn that you challenged her with a frog.<br /></li>
+</ul>
+<p>
+be immune to sth.:<br />
+</p>
+<ul class="org-ul">
+<li>Having had an operation, you must be immune to smallpox.<br /></li>
+<li>We needn't have been immune to smallpox.<br /></li>
+<li>You should have been immune to smallpox.<br /></li>
+</ul>
+<p>
+with this procedure:<br />
+</p>
+<ul class="org-ul">
+<li>With this procedure, he has developed a model for an atom.<br /></li>
+<li>With this procedure, he set up a world record.<br /></li>
+<li>With this procedure, he became fluent in English.<br /></li>
+</ul>
+<p>
+deliberate at length over sth.:<br />
+</p>
+<ul class="org-ul">
+<li>These scientists deliberated at length over his discovery before they decided to give him a prize.<br /></li>
+<li>I felt disappointed that you guys deliberated at length over something useless.<br /></li>
+<li>I'd rather deliberate at length over it than make stupid mistakes.<br /></li>
+</ul>
+<p>
+become prohibited:<br />
+</p>
+<ul class="org-ul">
+<li>Smoking became prohibited in public in 2004 in China.<br /></li>
+<li>Smoking should become prohibited in public in China.<br /></li>
+<li>This asterisk conducted me to the footnote,<br />
+which says: 'Smoking became prohibited in London's subway.'<br /></li>
+</ul>
+<p>
+certify sth's eradication:<br />
+</p>
+<ul class="org-ul">
+<li>After having been fighting for over three months,<br />
+the firefighters certified forest fire's eradication.<br /></li>
+<li>The flight attendant has certified the bombs' eradication.<br /></li>
+<li>After the authorities certified the smallpox's eradication, everything returned to normal.<br /></li>
+</ul>
+<p>
+be forever remembered as:<br />
+</p>
+<ul class="org-ul">
+<li>Mr. Leo will be forever remembered as our teacher.<br /></li>
+<li>He is forever remembered as a state hero so that people gave him a state funeral.<br /></li>
+<li>I'm sure that Mr. Leo will be forever remembered as our teacher.<br /></li>
+</ul>
+<p>
+the father of -logy.:<br />
+</p>
+<ul class="org-ul">
+<li>He was delighted that he was remembered as the father of astrology.<br /></li>
+<li>LiaoXuefeng stated on his website that he is the father of Java.<br /></li>
+<li>He got the nerve to call himself the father of Java.<br /></li>
+</ul>
+<p>
+in this great adventure of sth.:<br />
+</p>
+<ul class="org-ul">
+<li>This gives him satisfaction in this great adventure of the voyage.<br /></li>
+<li>It's a pity that she was killed in this great adventure of voyage.<br /></li>
+<li>A regiment of soldiers risked their lives in this great adventure of conquest.<br /></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org49ec0a6" class="outline-3">
+<h3 id="org49ec0a6">summary</h3>
+<div class="outline-text-3" id="text-org49ec0a6">
+<p class="verse">
+10,000 years ago, a deadly virus called smallpox,<br />
+&#xa0;&#xa0;which spread through the air and attacks many organs of its victims<br />
+&#xa0;arose in northeastern Africa.<br />
+Up to 30% of infected died during the second week of infection<br />
+&#xa0;and survivors bore scars and scabs for the rest of their lives.<br />
+In 1350 B.C., the first smallpox epidemics hit<br />
+&#xa0;because Egyptian prisoners spread smallpox to their invaders, the Hittites.<br />
+As time went on, smallpox arrived all over the world,<br />
+&#xa0;which has killed billions of people.<br />
+However, smallpox is not unbeatable and its fall started long before modern medicine.<br />
+In 1022 AD, a Buddhist nun in Sichuan would grind up smallpox scabs<br />
+&#xa0;to blow the powder into the nostrils of healthy people.<br />
+It worked pretty well, but up to three percent of inoculated people would still die of the virus.<br />
+It was English physician Edward Jenner who found vaccination<br />
+&#xa0;that led to the eradication of smallpox.<br />
+According to the words of a dairy maid,<br />
+&#xa0;he realized that people who have cowpox wouldn't have smallpox.<br />
+In May 1796, a young dairy maid, Sarah Nelmes,<br />
+&#xa0;was infected with cowpox from the udders of a cow named Blossom.<br />
+Using matter from her pustules, he inoculated James Phipps<br />
+&#xa0;and challenged him with smallpox to prove that it did work.<br />
+He achieved his triumph and repeated it several times.<br />
+In the end, the vaccination was gradually accepted.<br />
+After large vaccination campaigns,<br />
+&#xa0;the World Health Organization certified smallpox eradication in 1979.<br />
+</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

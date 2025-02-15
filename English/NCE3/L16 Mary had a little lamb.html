@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-09-28 Sat 22:17 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-org61303e9" class="outline-2">
+<h2 id="org61303e9">Lesson 16 Mary had a little lamb</h2>
+<div class="outline-text-2" id="text-org61303e9">
+<p class="verse">
+Was Dimitri right to apologize to his neighbour? Why not?<br />
+<br />
+Mary and her husband Dimitri lived in the tiny village of Perachora in southern Greece.<br />
+One of Mary's prize possessions was a little white lamb which her husband had given her.<br />
+She kept it <b>tied to a tree</b> in a field during the day and went to fetch it every evening.<br />
+One evening, however, the lamb was missing.<br />
+The rope had been cut, so it was obvious that the lamb had been stolen.<br />
+<br />
+When Dimitri came in from the fields, his wife told him what had happened.<br />
+Dimitri at once set out to find the thief.<br />
+He knew it would not prove difficult in such a small village.<br />
+After <b>telling several of his friends about the theft</b>,<br />
+&#xa0;Dimitri found out that his neighbour, Aleko, had suddenly acquired a new lamb.<br />
+Dimitri immediately went to Aleko's house and angrily <b>accused him of stealing</b> the lamb.<br />
+He told him he had better return it or he would call the police.<br />
+Aleko <b>denied taking</b> it and led Dimitri into his backyard.<br />
+<b>It was true that</b> he had just bought a lamb, he explained, <b>but</b> his lamb was black.<br />
+<b>Ashamed of having acted</b> so rashly, Dimitri <b>apologized to Aleko for having accused</b> him.<br />
+While they were talking<br />
+&#xa0;it began to rain and Dimitri stayed in Aleko's house until the rain stopped.<br />
+When he went outside half an hour later,<br />
+&#xa0;he <b>was astonished to find that</b> the little black lamb was almost white.<br />
+Its wool, which had <b>been dyed black</b>, had been washed clean by the rain!<br />
+</p>
+</div>
+<div id="outline-container-org9c02857" class="outline-3">
+<h3 id="org9c02857">expression</h3>
+<div class="outline-text-3" id="text-org9c02857">
+<p>
+prize: [praɪz] adj. very good or important珍贵的,宝贵的<br />
+tie: [taɪ] v.拴,系<br />
+accuse: [əˈkjuz] v.指控<br />
+theft: [θeft] n. an act of stealing something偷盗行为,偷盗案<br />
+deny: [dɪˈnaɪ] v. SAY STH IS NOT TRUE否认<br />
+ashamed: [əˈʃeɪmd] adj. feeling very sorry and embarrassed because of something you have done感到羞耻,忏愧<br />
+apologize: [əˈpɒləˌdʒaɪz] v.道歉<br />
+dye: [daɪ] v. to give something a different colour using a dye染<br />
+</p>
+
+<p>
+prize money: 奖金<br />
+tie sb. to sth. = sb. be tied to sth.: 把某人绑某物上<br />
+accuse sb. of doing sth.: 指控某人做了某事<br />
+deny doing&#x2026;/sb. deny that + &#x2026;: 某人做某事/某人否认+&#x2026;<br />
+be ashamed of sth./doing sth./having done sth.: 羞于某事/做某事/做过某事<br />
+apologize to sb. (for doing sth.): 对某人道歉<br />
+dye something + some-color.: eg. dye his hair red把某物染色<br />
+</p>
+<hr />
+<p>
+tell sb. about sth.: 告诉某人关于某事<br />
+It's ture that + &#x2026;, but + &#x2026;: 虽然&#x2026;,但是&#x2026;<br />
+sb. be astonished to find (that) + &#x2026;: 某人很惊讶地发现+&#x2026;<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org2e71fd7" class="outline-3">
+<h3 id="org2e71fd7">Words</h3>
+<div class="outline-text-3" id="text-org2e71fd7">
+<p>
+prize [praɪz] adj. 珍贵的，宝贵的<br />
+tie [taɪ] v. 拴，系<br />
+theft [θeft] n．偷盗行为，偷盗案<br />
+accuse [əˈkjuz] v. 指控<br />
+deny [dɪˈnaɪ] v. 否认<br />
+ashamed [əˈʃeɪmd] adj．感到羞耻，惭愧<br />
+apologize [əˈpɒləˌdʒaɪz] v. 道歉<br />
+dye [daɪ] v. 染<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org234e5bb" class="outline-3">
+<h3 id="org234e5bb">vocabulary</h3>
+<div class="outline-text-3" id="text-org234e5bb">
+<p>
+tiny: very small<br />
+fetch: get<br />
+missing: gone<br />
+acquired: got obtained<br />
+denied: said it wasn't true<br />
+apologized: said he was sorry<br />
+dyed: colored<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org3917be6" class="outline-3">
+<h3 id="org3917be6"><span class="done DONE">DONE</span> 单词造句</h3>
+<div class="outline-text-3" id="text-org3917be6">
+<p>
+prize adj.  prize money<br />
+</p>
+<ul class="org-ul">
+<li>One of my prize possessions is a little cat.<br /></li>
+<li>If you enter for the competition, you will win the prize money.<br /></li>
+<li>It was obvious that your rival won the prize woney.<br /></li>
+<li>It was he who won the prize money, not you.<br /></li>
+<li>I did win the prize money in the competition.<br /></li>
+</ul>
+<p>
+tie v.  tie sb. to sth. = sb. be tied to sth.<br />
+</p>
+<ul class="org-ul">
+<li>There is a special type of horse tied to the tree.<br /></li>
+<li>After they were tied to the chair, John went through the contents of their bags.<br /></li>
+<li>My grandfather ordered me to tie the dog to the gate.<br /></li>
+<li>I was able to tie the bull to the tree.<br /></li>
+<li>It seems that the horse wasn't tied to the fence.<br /></li>
+</ul>
+<p>
+accuse v.  accuse sb. of doing sth.<br />
+</p>
+<ul class="org-ul">
+<li>He was accused of watching a political musical last night.<br /></li>
+<li>Why don't we accuse him of murder?<br /></li>
+<li>I regret accusing my nephew of stealing my money.<br /></li>
+<li>My nephew was accused of stealing his parents' pocket money.<br /></li>
+<li>The doctor who had an operation last night was accused of murder.<br /></li>
+</ul>
+<p>
+theft n.<br />
+</p>
+<ul class="org-ul">
+<li>The boy who played truant from school yesterday was accused of theft.<br /></li>
+<li>The relative of the patient is inquiring about theft.<br /></li>
+<li>I advised him to accuse his wife of theft.<br /></li>
+<li>The journalist is going to write an article on theft.<br /></li>
+<li>She heard about a story which was about theft.<br /></li>
+</ul>
+<p>
+deny v.  deny doing&#x2026;/sb. deny that + &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>I denied filling up my father's petrol tank with water.<br /></li>
+<li>She denied exchanging money for sweets last night.<br /></li>
+<li>She denied that she killed her husband at the edge of forest.<br /></li>
+<li>She denied that she offered to drive a bus.<br /></li>
+<li>I denied that I paid money to him.<br /></li>
+</ul>
+<p>
+ashamed adj.  be ashamed of sth./doing sth./having done sth.<br />
+</p>
+<ul class="org-ul">
+<li>Ashamed of having made my cat to drink water, I offered her a can of food.<br /></li>
+<li>I was never ashamed of kicking his ass.<br /></li>
+<li>I was deeply ashamed of my bad behavior at the party.<br /></li>
+<li>The busmen are never ashamed of have gone on strike.<br /></li>
+<li>It seems that Miumiu is ashamed of having eaten this.<br /></li>
+</ul>
+<p>
+apologize v.  apologize to sb. (for doing sth.)<br />
+</p>
+<ul class="org-ul">
+<li>I have apologized to my cat for stamping her.<br /></li>
+<li>I must apologize to my wife for forgeting our wedding anniversary again.<br /></li>
+<li>I have difficult in apologizing to my coworkers after arguing with them.<br /></li>
+<li>I was disappointed to learn that my son hadn't apologized to his sister.<br /></li>
+<li>After I apologized to her, my wife bursted into tears.<br /></li>
+</ul>
+<p>
+dye v.  dye something + adj.<br />
+</p>
+<ul class="org-ul">
+<li>We were all put to shame by the boy who dyed his hair green.<br /></li>
+<li>Liu Xing claimed that he would dye his hair green.<br /></li>
+<li>If you dye your hair red, your father will get very angry.<br /></li>
+<li>We should dye it red, and then make it offical.<br /></li>
+<li>The painter dyed the wall red, then double checked it.<br /></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org7493653" class="outline-3">
+<h3 id="org7493653"><span class="done DONE">DONE</span> 反复听电影片段直到懂关键句</h3>
+<div class="outline-text-3" id="text-org7493653">
+</div>
+</div>
+<div id="outline-container-org72628f6" class="outline-3">
+<h3 id="org72628f6">复习二册语法(笔记或视频) &amp; 红皮书</h3>
+</div>
+<div id="outline-container-org9272dff" class="outline-3">
+<h3 id="org9272dff"><span class="done DONE">DONE</span> 习惯用法造句</h3>
+<div class="outline-text-3" id="text-org9272dff">
+<p>
+tell sb. about sth.<br />
+</p>
+<ul class="org-ul">
+<li>I have told you about the program over and over again.<br /></li>
+<li>I have told you about turning your attention to the commander.<br /></li>
+<li>She was told about a story on theft.<br /></li>
+<li>She told me about her history that she was a pilot.<br /></li>
+<li>The detective has already told me about your affairs.<br /></li>
+</ul>
+<p>
+It's ture that + &#x2026;, but + &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>It's ture that I made that stupid remark, but I love my country.<br /></li>
+<li>It's ture that I am sensitive about criticism, but I want to make a progress.<br /></li>
+<li>It's ture that you got a good salary, but the company hadn't made a profit.<br /></li>
+<li>It's ture that the toy is on show, but it is sold out.<br /></li>
+<li>It's ture that I went to college, but I haven't learnt any skill yet.<br /></li>
+</ul>
+<p>
+be astonished to find (that) + &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>I was astonished to find that my cat was in unhealthy condition.<br /></li>
+<li>I was astonished to find that my nephew exchanged his fifty pence for a bar of chocolate.<br /></li>
+<li>I was astonished to find that my rival said hello to me.<br /></li>
+<li>I was astonished to find that the girl I had a crush on relied a letter to me.<br /></li>
+<li>I was astonished to find that the cat was stuck in the mud.<br /></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org70060e9" class="outline-3">
+<h3 id="org70060e9">跟读 50遍</h3>
+</div>
+<div id="outline-container-org85d9a79" class="outline-3">
+<h3 id="org85d9a79"><span class="done DONE">DONE</span> Comprehension 反复练习</h3>
+<div class="outline-text-3" id="text-org85d9a79">
+</div>
+</div>
+<div id="outline-container-org818792d" class="outline-3">
+<h3 id="org818792d"><span class="done DONE">DONE</span> Ask me if 写+读</h3>
+<div class="outline-text-3" id="text-org818792d">
+<ol class="org-ol">
+<li>Mary and her husband lived in Perachora. Where<br />
+Where did Mary and her husband live?<br /></li>
+<li>Her husband had given her a lamb. What<br />
+What had her husband given her?<br /></li>
+<li>Mary kept it in a field. Where<br />
+Where did Mary keep it?<br /></li>
+<li>The rope had been cut. What<br />
+What had been cut?<br /></li>
+<li>Aleko had acquired a new lamb. Who<br />
+Who had acquired a new lamb?<br /></li>
+<li>Dimitri accused Aleko of stealing the lamb. What<br />
+What did Dimitri accuse Aleko of?<br /></li>
+<li>Aleko denied taking it. Why<br />
+Why did Aleko deny taking it?<br /></li>
+<li>He led Dimitri into his backyard. Where<br />
+Where did he lead Dimitri?<br /></li>
+<li>His lamb was black. What color<br />
+What color was his lamb?<br /></li>
+<li>Dimitri apologized to Aleko. Why<br />
+Why did Dimitri apologize to Aleko?<br /></li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orgdb233e2" class="outline-3">
+<h3 id="orgdb233e2"><span class="done DONE">DONE</span> 摘要写作 写 &amp; 对答案</h3>
+<div class="outline-text-3" id="text-orgdb233e2">
+<p>
+WHen Dimitri came home, Mary told him that her white lamb had been stolen.<br />
+On learning that his neighbour, Aleko, had acquired a lamb,<br />
+	Dimitri went to Aleko's house and accused him of stealing it.<br />
+When Aleko showed his lamb,<br />
+	Dimitri saw it was black,<br />
+	so he apologized.<br />
+After staying in Aleko's house for a while because it had begun to rain,<br />
+	Dimitri got a surprise outside when he found the lamb was almost white.<br />
+It had been dyed black!<br />
+</p>
+</div>
+</div>
+
+
+
+<div id="outline-container-org5aab60b" class="outline-3">
+<h3 id="org5aab60b"><span class="done DONE">DONE</span> tell the story 口语复述</h3>
+<div class="outline-text-3" id="text-org5aab60b">
+</div>
+</div>
+<div id="outline-container-orgd0128dc" class="outline-3">
+<h3 id="orgd0128dc"><span class="done DONE">DONE</span> composition 阅读 或 写作</h3>
+<div class="outline-text-3" id="text-orgd0128dc">
+<p>
+Dimitri was surprised to find that the lamb had turned white.<br />
+He took a close look at it and recognized it as his own.<br />
+This discovery immediately led to an angry scene between Dimitri and Aleko.<br />
+Dimitri repeated his accusation that Aleko had stolen the lamb,<br />
+	but Aleko still denied any theft.<br />
+During the violent argument,<br />
+	Dimitri said the rain had proved that the lamb had been dyed black<br />
+		and he recognized it immediately as the one he had given to his wife.<br />
+When Aleko finally admitted he had stolen the lamb, Dimitri called the police.<br />
+Aleko was arrested and Dimitri took his lamb home.<br />
+The story caused a lot of excitement in the village.<br />
+The villagers didn't often have the opportunity to talk about such an important event<br />
+	and they were greatly amused by what had happened.<br />
+Some thought Aleko had been very clever.<br />
+Others thought he had been extremely stupid.<br />
+Others said God had sent the rain to punish Aleko for his crime<br />
+	and to prove he was a thief.<br />
+They discussed the event at great length for a long time,<br />
+	as there wasn't much else to talk about in a village<br />
+		where nothing much ever happened.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org6645067" class="outline-3">
+<h3 id="org6645067">Topics for discussion</h3>
+</div>
+</div>
+</div>
+</body>
+</html>

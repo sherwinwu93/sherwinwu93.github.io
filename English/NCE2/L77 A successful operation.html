@@ -1,0 +1,647 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-08-06 Tue 22:24 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+
+<div id="outline-container-org1386670" class="outline-2">
+<h2 id="org1386670">Lesson 77 A successful operation</h2>
+<div class="outline-text-2" id="text-org1386670">
+<p class="verse">
+Did the doctors find out how the woman died?<br />
+<br />
+The mummy of an Egyptian woman who died in 800 B.C. has just had an operation.<br />
+The mummy is that of Shepenmut who was once a singer in the Temple of Thebes.<br />
+As there were strange marks on the X-ray plates taken of the mummy,<br />
+&#xa0;doctors have been trying to find out whether the woman died of a rare disease.<br />
+The only way to do this was to operate.<br />
+The operation, which lasted for over four hours,<br />
+&#xa0;&#xa0;proved to be very difficult because of the hard resin which covered the skin.<br />
+The doctors removed a section of the mummy and sent it to a laboratory.<br />
+They also found something which the X-ray plates did not show:<br />
+&#xa0;a small wax figure of the god Duamutef.<br />
+This god which has the head of a cow was normally placed inside a mummy.<br />
+The doctors have not yet decided how the woman died.<br />
+They feared that the mummy would fall to pieces when they cut it open,<br />
+&#xa0;but fortunately this has not happened.<br />
+The mummy successfully survived the operation.<br />
+</p>
+</div>
+<div id="outline-container-orgb510ddb" class="outline-3">
+<h3 id="orgb510ddb">expression</h3>
+<div class="outline-text-3" id="text-orgb510ddb">
+<p>
+mummy [ˈmʌmi] n.木乃伊<br />
+Egyptian [ɪ'dʒɪpʃ(ə)n] adj.埃及的<br />
+temple [ˈtemp(ə)l] n.庙<br />
+mark [mɑrk] n.斑点<br />
+plate [pleɪt] n.底片<br />
+disease [dɪˈziz] n.疾病<br />
+last [læst] v.持续<br />
+prove [pruv] v.显示出<br />
+resin [ˈrezɪn] n.树脂<br />
+skin [skɪn] n.皮,皮肤<br />
+section [ˈsekʃ(ə)n] n.切片<br />
+figure [ˈfɪɡjər] n.(人的)体形; 人像<br />
+normally [ˈnɔrm(ə)li] adv.通常地<br />
+survive [sərˈvaɪv] v.幸免于<br />
+</p>
+
+<p>
+have a rare disease 患有罕见的疾病<br />
+a section of &#x2026; 一部分<br />
+prove to be adj. 证明是…<br />
+</p>
+<hr />
+<p>
+非限定定语从句: 解释,补充,说明<br />
+</p>
+<ul class="org-ul">
+<li>which非限整句:<br />
+<ul class="org-ul">
+<li>位置: 句尾<br /></li>
+<li>指代被修饰词<br /></li>
+</ul></li>
+<li>as非限整句<br />
+<ul class="org-ul">
+<li>位置: 前中后<br /></li>
+<li>指代整句<br /></li>
+</ul></li>
+<li>非限定只能who/which/whose<br />
+<ul class="org-ul">
+<li>none of/neither of/any of/either of + which/whom<br /></li>
+<li>some of/many of/much of/(a) few of + which/whom<br /></li>
+<li>both of/ half of /each of/one of/two of + which/whom<br /></li>
+</ul></li>
+</ul>
+
+<hr />
+<p>
+have an operation 动手术<br />
+died of &#x2026; 死于……<br />
+fall to pieces 破碎<br />
+cut it open 把它切开<br />
+</p>
+</div>
+</div>
+
+
+
+
+<div id="outline-container-org7ace6fa" class="outline-3">
+<h3 id="org7ace6fa">words</h3>
+<div class="outline-text-3" id="text-org7ace6fa">
+<p>
+mummy [ˈmʌmi] n.木乃伊<br />
+Egyptian [ɪ'dʒɪpʃ(ə)n] adj.埃及的<br />
+temple [ˈtemp(ə)l] n.庙<br />
+mark [mɑrk] n.斑点<br />
+plate [pleɪt] n.底片<br />
+disease [dɪˈziz] n.疾病<br />
+last [læst] v.持续<br />
+prove [pruv] v.显示出<br />
+resin [ˈrezɪn] n.树脂<br />
+skin [skɪn] n.皮,皮肤<br />
+section [ˈsekʃ(ə)n] n.切片<br />
+figure [ˈfɪɡjər] n.(人的)体形; 人像<br />
+normally [ˈnɔrm(ə)li] adv.通常地<br />
+survive [sərˈvaɪv] v.幸免于<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org7d314c1" class="outline-3">
+<h3 id="org7d314c1"><span class="done DONE">DONE</span> 单词造句</h3>
+<div class="outline-text-3" id="text-org7d314c1">
+<p>
+mummy [ˈmʌmi] n.木乃伊<br />
+Egyptian [ɪ'dʒɪpʃ(ə)n] adj.埃及的<br />
+</p>
+<ul class="org-ul">
+<li>He has carried a few mummy to his country from Egyptian.<br /></li>
+<li>The mummy which was sent here from Egyptian has been cut open.<br /></li>
+<li>It's no use pretending that you were a big fan of the mummy.<br /></li>
+<li>Leo was said to be a huge fan of the mummy.<br /></li>
+<li>It's you who are responsible for the mummy, not Leo.<br /></li>
+</ul>
+<p>
+temple [ˈtemp(ə)l] n.庙<br />
+</p>
+<ul class="org-ul">
+<li>He has paid a visit the temple over and over again.<br /></li>
+<li>He has been visiting temples all over the world.<br /></li>
+<li>Don't make that stupid remark in the temple.<br /></li>
+<li>The is a bull charging at her in the temple.<br /></li>
+<li>The temple will have been finished by the time.<br /></li>
+</ul>
+<p>
+mark [mɑrk] n.斑点<br />
+</p>
+<ul class="org-ul">
+<li>There are some weird marks on the X-ray plates.<br /></li>
+<li>She always complained abouth the dirty mark on her child trousers.<br /></li>
+<li>She had a red mark on her arm because of the flood.<br /></li>
+<li>She fears that she has a rare disease, for she has a red mark on her leg.<br /></li>
+<li>It is possible to have a red mark on you face.<br /></li>
+</ul>
+<p>
+plate [pleɪt] n.底片<br />
+</p>
+<ul class="org-ul">
+<li>Would you carry the X-ray plates to a shady spot under some trees.<br /></li>
+<li>Take your plate and get out of here.<br /></li>
+<li>Why don't we double check the X-ray plates?<br /></li>
+<li>The nurse has glanced at the X-ray plates over and over again.<br /></li>
+<li>We should have taken plates of the mummy.<br /></li>
+</ul>
+<p>
+disease [dɪˈziz] n.疾病 have a rare disease<br />
+</p>
+<ul class="org-ul">
+<li>He had a rare disease which I forget its name.<br /></li>
+<li>All has been put to shame by the rare disease.<br /></li>
+<li>The rare disease takes its name from Doctor Wu and has been made official.<br /></li>
+<li>If you drunk this water, you might have a rare disease.<br /></li>
+<li>He was disappointed to learn that he had had a rare disease.<br /></li>
+</ul>
+<p>
+last [læst] v.持续<br />
+</p>
+<ul class="org-ul">
+<li>Would you mind the meeting's lasting for over three hours?<br /></li>
+<li>He noticed that the show lasted for over two hours.<br /></li>
+<li>The harvesting lasted for the whole summar.<br /></li>
+<li>The Asian Game will last in Hangzhou for two week.<br /></li>
+<li>It will last for two hours. The teacher said with a sneer.<br /></li>
+</ul>
+<p>
+prove [pruv] v.显示出 prove to be adj.<br />
+</p>
+<ul class="org-ul">
+<li>Although she insisted on playing piano, it proved to be difficult.<br /></li>
+<li>The operation which the mummy survived has proved to be very difficult.<br /></li>
+<li>The news bulletin on April 1st proved to be true.<br /></li>
+<li>She proved to be great at the time.<br /></li>
+<li>The bull proved to be very angry.<br /></li>
+</ul>
+<p>
+resin [ˈrezɪn] n.树脂<br />
+</p>
+<ul class="org-ul">
+<li>It was not long before the body was covered with the resin.<br /></li>
+<li>In the meantime, the woman's finger was covered with the resin.<br /></li>
+<li>The child who played truant from school enjoy covering himself with the resin.<br /></li>
+<li>You needn't have covered your pen with the resin.<br /></li>
+<li>The famous actor carried the resin to a shedy spot under some trees.<br /></li>
+</ul>
+<p>
+skin [skɪn] n.皮,皮肤<br />
+</p>
+<ul class="org-ul">
+<li>She might have died of a rare skin disease.<br /></li>
+<li>Jackson had been trying to stay out of the limelight because of his skin disease.<br /></li>
+<li>It was obvious that she had a skin disease.<br /></li>
+<li>She covers her skin with perfume before she goes to sleep.<br /></li>
+<li>The doctor refused to cut her skin off.<br /></li>
+</ul>
+<p>
+section [ˈsekʃ(ə)n] n.切片 a section of &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>If you had just read a section of the book, you wouldn't have said that.<br /></li>
+<li>The book takes its name from a section of your body.<br /></li>
+<li>A section of the mummy has been smashed to pieces.<br /></li>
+<li>This section of body proved to be his.<br /></li>
+<li>You should have read a section of the book.<br /></li>
+</ul>
+<p>
+figure [ˈfɪɡjər] n.(人的)体形; 人像<br />
+</p>
+<ul class="org-ul">
+<li>We saw two figures playing truant from school.<br /></li>
+<li>We saw two figures break into the tears.<br /></li>
+<li>It was so dark that I could only see a figure put out the fire.<br /></li>
+<li>Let's suppose that there was a figure in front of the museum.<br /></li>
+<li>The figure behind me was following me around.<br /></li>
+</ul>
+<p>
+normally [ˈnɔrm(ə)li] adv.通常地<br />
+</p>
+<ul class="org-ul">
+<li>Normally, Leo would tell the story once more.<br /></li>
+<li>I normally catch sight of the sign in the street.<br /></li>
+<li>I am normally busy with studying English.<br /></li>
+<li>Normally, student would turn their attention to Leo.<br /></li>
+<li>Normally, he would make that stupid remark over and over again.<br /></li>
+</ul>
+<p>
+survive [sərˈvaɪv] v.幸免于<br />
+</p>
+<ul class="org-ul">
+<li>These plants woul survive in such good condition.<br /></li>
+<li>I was wondering wether the heroine would survive in the flood.<br /></li>
+<li>Make yourself comfortable, we would survive this.<br /></li>
+<li>If I don't survive this,  don't feel sorry for me.<br /></li>
+<li>They survived apparently at the end of harvesting.<br /></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orge32f08d" class="outline-3">
+<h3 id="orge32f08d"><span class="done DONE">DONE</span> 反复听电影片段</h3>
+<div class="outline-text-3" id="text-orge32f08d">
+</div>
+</div>
+<div id="outline-container-orgeac31ec" class="outline-3">
+<h3 id="orgeac31ec"><span class="done DONE">DONE</span> Pattern Drill 写+读</h3>
+<div class="outline-text-3" id="text-orgeac31ec">
+<ul class="org-ul">
+<li>1T: play football<br />
+S1: I didn't know you played football!<br />
+S2: Didn't you? I've been playing it for some time now.<br />
+<ul class="org-ul">
+<li>wear glassess<br />
+I didn't know you weared glasses!<br />
+Didn't you? I've been weaing it for some time now.<br /></li>
+<li>design dresses<br />
+I didn't know you designed dresses!<br />
+Didn't you? I've been designing them for some time now.<br /></li>
+<li>teach chemistry<br />
+I didn't know you teach chemistry!<br />
+Didn't you? I've been teaching it for some time now.<br /></li>
+<li>give concerts<br />
+I didn't know you give concerts!<br />
+Didn't you? I've been giving them for some time now.<br /></li>
+</ul></li>
+<li>2T: sing solo<br />
+S1: I didn't know she sang solo!<br />
+S2: Didn't you? She's sung solo on several occassions now.<br />
+<ul class="org-ul">
+<li>swim, for the school team<br />
+I didn't know she swam!<br />
+Didn't you? She's swum for the school team now.<br /></li>
+<li>act  in television plays<br />
+I didn't know she acted!<br />
+Didn't you? She's acted in television plays now.<br /></li>
+<li>write  for this newspaper<br />
+I didn't know she wrote!<br />
+Didn't you? She's written for this newspaper now.<br /></li>
+<li>read the news  on the radio<br />
+I didn't know she read!<br />
+Didn't you? She's read the news on the radio now.<br /></li>
+</ul></li>
+<li>3T: cry - during the film<br />
+S1: He's been crying, hasn't he?<br />
+S2: Yes, he has. He cried during the film.<br />
+<ul class="org-ul">
+<li>ride - all the way here<br />
+He's been riding, hasn't he?<br />
+Yes, he has. He rode all the way here.<br /></li>
+<li>eat garlic - at lunch<br />
+He's been eating garlic, hasn't he?<br />
+Yes, he has. He ate at lunch.<br /></li>
+<li>sleep - on your bed for an hour<br />
+He's been sleeping, hasn't he?<br />
+Yes, he has. He slept on your bed for an hour.<br /></li>
+<li>read - for a while after lunch<br />
+He's been reading, hasn't he?<br />
+Yes, he has. He read for a while after lunch.<br /></li>
+</ul></li>
+<li>4T: play - tennis - at school<br />
+S1: You've played tennis before, haven't you?<br />
+S2: Yes, I played tennis at school.<br />
+<ul class="org-ul">
+<li>speak - on the radio - last month<br />
+You've spoken on the radio before, haven't you?<br />
+Yes, I spoke on the radio last month.<br /></li>
+<li>mend - a bridge - during the war<br />
+You've mended a bridge  before, haven't you?<br />
+Yes, I mended a bridge during the war.<br /></li>
+<li>travel - round the world - 5 years ago<br />
+You've traveled round the world before, haven't you?<br />
+Yes, I traveled round the world 5 years ago.<br /></li>
+<li>take - this test - last<br />
+You've taken this test before, haven't you?<br />
+Yes, I taked this test last.<br /></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org46b84ff" class="outline-3">
+<h3 id="org46b84ff"><span class="done DONE">DONE</span> 给自己讲解</h3>
+<div class="outline-text-3" id="text-org46b84ff">
+</div>
+</div>
+<div id="outline-container-org8ae9f47" class="outline-3">
+<h3 id="org8ae9f47">红皮书</h3>
+</div>
+<div id="outline-container-orgc22a093" class="outline-3">
+<h3 id="orgc22a093"><span class="done DONE">DONE</span> 习惯用法造句</h3>
+<div class="outline-text-3" id="text-orgc22a093">
+<p>
+have an operation<br />
+</p>
+<ul class="org-ul">
+<li>You needn't have had an operation.<br /></li>
+<li>She had a red mark on her leg and may have had an operation.<br /></li>
+<li>She was instructed to have an operation by the local authorities.<br /></li>
+<li>Let's suppose that you are having an operation.<br /></li>
+<li>He is having an operation.<br /></li>
+</ul>
+<p>
+died of &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>He must have died of heart disease.<br /></li>
+<li>To make matters worse, all of them died of a rare disease.<br /></li>
+<li>She feared that she would died of skin disease.<br /></li>
+<li>A large number of people die of heart disease every year.<br /></li>
+<li>He died of the car accident on the way home.<br /></li>
+</ul>
+<p>
+fall to pieces<br />
+</p>
+<ul class="org-ul">
+<li>Threatened to kill his child, he falled to pieces.<br /></li>
+<li>It was not long before he falled to pieces.<br /></li>
+<li>A gust of wind swept the vase off the table and it fell to pieces.<br /></li>
+<li>She is always falling to pieces on the way home.<br /></li>
+<li>You shouldn't have fell to pieces.<br /></li>
+</ul>
+<p>
+cut it open<br />
+</p>
+<ul class="org-ul">
+<li>He has solved the problem of cutting the mummy open.<br /></li>
+<li>The mummy is having an operation and is cut open.<br /></li>
+<li>The black was ordered to cut the watermelon open.<br /></li>
+<li>All the doctors in the department admires Mr. Leo for cutting the mummy open.<br /></li>
+<li>You should have cut it open.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org2373a62" class="outline-3">
+<h3 id="org2373a62"><span class="done DONE">DONE</span> 跟读至背诵</h3>
+<div class="outline-text-3" id="text-org2373a62">
+</div>
+</div>
+<div id="outline-container-orgedff6ad" class="outline-3">
+<h3 id="orgedff6ad"><span class="done DONE">DONE</span> Ask me if 写+读</h3>
+<div class="outline-text-3" id="text-orgedff6ad">
+<ul class="org-ul">
+<li>Doctors have just operated on a mummy. What/Why/Who<br />
+What have doctors just done on a mummy?<br />
+Why have doctors just operated on a mummy?<br />
+Who have just operated on a mummy?<br /></li>
+<li>The woman died in 800 B.C. When<br />
+When did the woman die?<br /></li>
+<li>Her name was Shepenmut. What<br />
+What was her name?<br /></li>
+<li>She was a singer. What/Who<br />
+What did she do?<br />
+Who was a singer?<br /></li>
+<li>She used to sing in the Temple of Thebes. Where/Who<br />
+Where did she use to sing?<br />
+Who used to sing in the Temple of Thebes?<br /></li>
+<li>There were strange marks on the X-ray plates. What/Where<br />
+What were there on the X-ray plates?<br />
+Where were there strange marks?<br /></li>
+<li>Doctors have been trying to find out what she died of. What/Who<br />
+What have doctors been trying to find out?<br /></li>
+<li>They suspected a rare disease. What/Why<br />
+What did they suspect?<br />
+Why did they suspect a rare disease?<br /></li>
+<li>The operation lasted for over four hours. How long/Why/What<br />
+How long did the operation last?<br />
+Why did the operation last for over hour hours?<br />
+What lasted for over four hours?<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org3332b9a" class="outline-3">
+<h3 id="org3332b9a"><span class="done DONE">DONE</span> 摘要写作</h3>
+<div class="outline-text-3" id="text-org3332b9a">
+<p>
+Doctors have just operated on the mummy of an Egyptian woman who died in 800 B.C.<br />
+They wanted to find out whether the woman died of a rare disease.<br />
+After removing a section of the mummy, doctors sent it to a laboratory.<br />
+During the operation, doctors have unexpectedly found a small wax figure of a god.<br />
+Though they were afraid that it would fall to pieces, the mummy survived the operation.<br />
+</p>
+
+<p>
+Doctors have just operated on the mummy of an Egyptian woman who died in 800 B.C,<br />
+	in order to find out if she died of a rare disease.<br />
+They removed a section of the mumm,y which they sent to a laboratory.<br />
+Inside the mummy, they unexpected found a small wax figure of a god.<br />
+They were afraid that mummy would fall to pieces, but it survived the operation.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org3292ca8" class="outline-3">
+<h3 id="org3292ca8"><span class="done DONE">DONE</span> tell the story 口语</h3>
+<div class="outline-text-3" id="text-org3292ca8">
+</div>
+</div>
+<div id="outline-container-org9bfbcdf" class="outline-3">
+<h3 id="org9bfbcdf">Topics for discussion</h3>
+</div>
+</div>
+</div>
+</body>
+</html>

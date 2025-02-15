@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-12-05 Thu 22:20 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-org0257cf1" class="outline-2">
+<h2 id="org0257cf1">3-3 3.18 Expression - Ideas 2 - Technical Tips</h2>
+<div class="outline-text-2" id="text-org0257cf1">
+<p class="verse">
+In this negotiation between two people,<br />
+&#xa0;I'm wondering if you have any technical tips or strategies for<br />
+&#xa0;&#xa0;how to express one's idea effectively to the other person?<br />
+<br />
+We have talked about focusing on the other person's needs,<br />
+&#xa0;and that is primary, primary, most important.<br />
+Other than that, one of the things that we want to be paying attention to is,<br />
+&#xa0;are we using language or metaphors or illustrations<br />
+&#xa0;&#xa0;that are easily understood by the other party?<br />
+Because we all grow up and got educated in different context,<br />
+&#xa0;and sometimes we think that what we have taken for granted to be understood or easy<br />
+&#xa0;&#xa0;may not be what the other person's idea of the same thing.<br />
+And we sometimes use simple examples like spending time together.<br />
+And so, one person's idea of spending time together<br />
+&#xa0;can be totally different than another person's idea of what is spending time together.<br />
+So clarifying what we want to, communication is important.<br />
+It is also important to understand<br />
+&#xa0;what the familiar language or metaphors that the other person is using.<br />
+<br />
+I very often use this analogy.<br />
+If you're in early childhood education,<br />
+&#xa0;for example, you want to be explaining some very complex ideas to younger children.<br />
+You sort of break it down into smaller parts<br />
+&#xa0;and then you use metaphors that the child can understand.<br />
+And sometimes we are not preoccupied with the technical accuracy of what you're conveying.<br />
+If you're trying to explain the concept of time [LAUGH] to a young child,<br />
+&#xa0;or you're trying to deal with epistemological issues.<br />
+<br />
+I can give you a wonderful example.<br />
+I was out in Sichuan helping with the disaster relief after the 2008 earthquake,<br />
+&#xa0;and I was in high school.<br />
+And this high school headmaster actually taught an epistemology class.<br />
+Some people don't even understand the word epistemology, which refers to the theory of knowledge.<br />
+And I asked, how do you teach grade six students?<br />
+They have a very different system there.<br />
+He said that I went to the classroom with an apple, and then I ask my students, what is this?<br />
+And they all say apple, so and then I ask them, so what is an apple?<br />
+And then they will say fruit.<br />
+And then he will, at that point, take the apple and then throw it at another student.<br />
+And then, so the student will take the apple and catch it,<br />
+&#xa0;and then he'll ask the student, throw it to someone else.<br />
+And after a few rounds, he'll be asking the class again, so what is an apple?<br />
+<br />
+Right. What is the apple now?<br />
+So he's using that to convey an idea.<br />
+And trying to use it within the context.<br />
+Why people would have a different language and metaphor,<br />
+&#xa0;but they were getting this idea that an apple is not always a fruit.<br />
+The apple can also be a toy.<br />
+Therefore, in this case, can function like a ball.<br />
+So, you know, that is an example of how we utilize different language,<br />
+&#xa0;metaphors, and circumstantial reality to convey ideas in a creative way.<br />
+</p>
+</div>
+<div id="outline-container-org7014f46" class="outline-3">
+<h3 id="org7014f46">expression</h3>
+<div class="outline-text-3" id="text-org7014f46">
+<p>
+technical [ˈteknɪk(ə)l]: adj. technical language is language that is difficult for most people to understand because it is connected with one particular subject or used in one particular job技术的, 技术上的<br />
+strategy [ˈstrætədʒi]: n. a planned series of actions for achieving something策略<br />
+metaphor [ˈmetəˌfɔr]: n. a way of describing something by referring to it as something different and suggesting that it has similar qualities to that thing ⇨ simile暗喻, 比喻<br />
+illustrate [ˈɪləˌstreɪt] illustration: v.n. the act or process of illustrating something说明,举例说明<br />
+clarify [ˈklerɪˌfaɪ]: v. formal to make something clearer or easier to understand ⇨ clarification澄清, 阐明<br />
+epistemology [ɪˌpɪstə'mɒlədʒi]: n. [哲]认识论<br />
+convey [kənˈveɪ]: v. to communicate or express something, with or without using words传达<br />
+function [ˈfʌŋkʃ(ə)n]: v. if something functions in a particular way, it works in that way作用<br />
+circumstantial [ˌsɜrkəmˈstænʃ(ə)l]: adj. based on something that appears to be true but is not proven间接的<br />
+</p>
+<hr />
+<p>
+Other than that, + &#x2026;: 除那之外<br />
+get educated: 接受教育<br />
+in different context: 在不同背景下<br />
+take sth. for granted to be done/adj.: 认为某事理所应当被../是&#x2026;<br />
+break sth. down into smaller parts: 分解某物成更小的部分<br />
+be preoccupied with sth.: 专注于某事<br />
+After a few rounds, + &#x2026;: 几个回合后, &#x2026;<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgbe7e5b7" class="outline-3">
+<h3 id="orgbe7e5b7">sentence</h3>
+<div class="outline-text-3" id="text-orgbe7e5b7">
+<p>
+technical [ˈteknɪk(ə)l]: adj. technical language is language that is difficult for most people to understand because it is connected with one particular subject or used in one particular job技术的, 技术上的<br />
+</p>
+<ul class="org-ul">
+<li>There are still some technical issues in this project, we have to delay in publishing it.<br /></li>
+<li>Our manager put forward a plan existing some technical issues.<br /></li>
+<li>I asked my uncle for some technical tips, but he hesitated to teach me a lesson.<br /></li>
+</ul>
+<p>
+strategy [ˈstrætədʒi]: n. a planned series of actions for achieving something策略<br />
+</p>
+<ul class="org-ul">
+<li>The police planned out the strategy for dealing with crime in the town to the last detail.<br /></li>
+<li>Our essential strategy to pass the exam is by no other than learning knowledge.<br /></li>
+<li>His strategy to overrun Winterfell proved to be effective.<br /></li>
+</ul>
+<p>
+metaphor [ˈmetəˌfɔr]: n. a way of describing something by referring to it as something different and suggesting that it has similar qualities to that thing ⇨ simile暗喻, 比喻<br />
+</p>
+<ul class="org-ul">
+<li>What a brilliant metaphor that has clarified the contents of the story.<br /></li>
+<li>The metaphor is designed to teach children who can't understand complex ideas directly.<br /></li>
+<li>Mr. Leo took the matphor for granted to be understood by his students. Obviously, it's not the case.<br /></li>
+</ul>
+<p>
+illustrate [ˈɪləˌstreɪt] illustration: v.n. the act or process of illustrating something说明,举例说明<br />
+</p>
+<ul class="org-ul">
+<li>Mr. Leo has a habit of illustrating ideas in his class when his students are comfused with them.<br /></li>
+<li>The asterisk conducted him to a illustration in the next page.<br /></li>
+<li>The combination of illustrations and experiments helps our student study in different dimensions.<br /></li>
+</ul>
+<p>
+clarify [ˈklerɪˌfaɪ]: v. formal to make something clearer or easier to understand ⇨ clarification澄清, 阐明<br />
+</p>
+<ul class="org-ul">
+<li>The knight had to clarify the fact that the princess hadn't committed suicide because she was betrothed to a crippled.<br /></li>
+<li>Consequently, our king failed to clarify whether this boy is his bastard or not.<br /></li>
+<li>Realizing that he couldn't clarify the crime, he went abroad secretly.<br /></li>
+</ul>
+<p>
+convey [kənˈveɪ]: v. to communicate or express something, with or without using words传达<br />
+</p>
+<ul class="org-ul">
+<li>What your wife was conveying yesterday may be the idea of going to a shopping mall.<br /></li>
+<li>The message will be conveyed to King's Landing, five thousands miles away, in three days.<br /></li>
+<li>The day before being betrothed to a mutilated lord, the princess sent her knights off to convery her love to the general.<br /></li>
+</ul>
+<p>
+function [ˈfʌŋkʃ(ə)n]: v. if something functions in a particular way, it works in that way作用<br />
+</p>
+<ul class="org-ul">
+<li>The blanket now functions as my cat's nest in winter.<br /></li>
+<li>The apple that functioned like a ball was being throwing between students.<br /></li>
+<li>The mutilated coat hangers function as fuel in the fireplace.<br /></li>
+</ul>
+<p>
+circumstantial [ˌsɜrkəmˈstænʃ(ə)l]: adj. based on something that appears to be true but is not proven间接的<br />
+</p>
+<ul class="org-ul">
+<li>He is naive enough to believe that circumstantial evidences can prove a lord's crime.<br /></li>
+<li>Circumstantial evidences show us that the shape of molecule is a pyramid.<br /></li>
+<li>Because of these circumstantial evidences, the elf will never give up hunting for Sauron.<br /></li>
+</ul>
+<hr />
+<p>
+Other than that, + &#x2026;: 除那之外<br />
+</p>
+<ul class="org-ul">
+<li>Other than that, Winterfell is the outermost city from the Seven Kingdom.<br /></li>
+<li>Other than that, Sansa is not a virgin because she got married to the king, Renly.<br /></li>
+<li>Other than that, like charges will try to minmize the repulsion between each other.<br /></li>
+</ul>
+<p>
+get educated: 接受教育<br />
+</p>
+<ul class="org-ul">
+<li>He can't make friends with this immigrants who got educated in different culture.<br /></li>
+<li>He has an idead of having his child get educated in the town.<br /></li>
+<li>Getting educated abord in his youth, he can't get along with people around when he's home.<br /></li>
+</ul>
+<p>
+in different context: 在不同背景下<br />
+</p>
+<ul class="org-ul">
+<li>A single word may have different meaning in different context.<br /></li>
+<li>Although getting edcucated in different context, they both have a merciful heart.<br /></li>
+<li>It's difficult to imagine that people in different context are bunched up together in the castle.<br /></li>
+</ul>
+<p>
+take sth. for granted to be done/adj.: 认为某事理所应当被../是&#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>My wife is always taking a good job for granted to be found in the context.<br /></li>
+<li>He takes her love for granted to be selfless.<br /></li>
+<li>My cat seems to take her food for granted to be offered on time.<br /></li>
+</ul>
+<p>
+break sth. down into smaller parts: 分解某物成更小的部分<br />
+</p>
+<ul class="org-ul">
+<li>Even if he broke his father precious clock down into smaller parts and it was broken, his father hadn't blamed him.<br /></li>
+<li>The clock that was broken down into smaller parts can't be assembled together anymore.<br /></li>
+<li>The boy has a habit of breaking his clock down into smaller parts on Saturday and assembling them together on the next day.<br /></li>
+</ul>
+<p>
+be preoccupied with sth.: 专注于某事<br />
+</p>
+<ul class="org-ul">
+<li>Preoccupied with his work, he missed the meeting in which he was promoted as the new leader.<br /></li>
+<li>Preoccupied with his homework, he didn't answer his mother's call.<br /></li>
+<li>Preoccupied with the details, he can't form a complete picture of labyrinth.<br /></li>
+</ul>
+<p>
+After a few rounds, + &#x2026;: 几个回合后, &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>After a few rounds, the knight was knocked to the ground.<br /></li>
+<li>After a few rounds, my cat can't be bothered to go to bed.<br /></li>
+<li>After a few rounds, the local grocer agreed to do me a favor.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orga3ffe4c" class="outline-3">
+<h3 id="orga3ffe4c">sentence2</h3>
+<div class="outline-text-3" id="text-orga3ffe4c">
+<p>
+technical [ˈteknɪk(ə)l]: adj. technical language is language that is difficult for most people to understand because it is connected with one particular subject or used in one particular job技术的, 技术上的<br />
+</p>
+<ul class="org-ul">
+<li>There are still some technical issues in this project, so we have to delay publishing it.<br /></li>
+<li>Our manager put forward a plan regarding some technical issues.<br /></li>
+<li>I asked my uncle for some technical tips, but he hesitated to teach me a lesson.<br /></li>
+</ul>
+<p>
+strategy [ˈstrætədʒi]: n. a planned series of actions for achieving something策略<br />
+</p>
+<ul class="org-ul">
+<li>The police planned out the strategy for dealing with crime in the town to the last detail.<br /></li>
+<li>Our essential strategy to pass the exam is no other than learning knowledge.<br /></li>
+<li>His strategy to overrun Winterfell proved to be effective.<br /></li>
+</ul>
+<p>
+metaphor [ˈmetəˌfɔr]: n. a way of describing something by referring to it as something different and suggesting that it has similar qualities to that thing ⇨ simile暗喻, 比喻<br />
+</p>
+<ul class="org-ul">
+<li>What a brilliant metaphor that has clarified the contents of the story.<br /></li>
+<li>The metaphor is designed to teach children who can't understand complex ideas directly.<br /></li>
+<li>Mr. Leo took the metaphor for granted to be understood. Obviously, it's not the case.<br /></li>
+</ul>
+<p>
+illustrate [ˈɪləˌstreɪt] illustration: v.n. the act or process of illustrating something说明,举例说明<br />
+</p>
+<ul class="org-ul">
+<li>Mr. Leo has a habit of illustrating ideas in his class when his students are confused with them.<br /></li>
+<li>The asterisk conducted him to an illustration on the next page.<br /></li>
+<li>The combination of illustrations and experiments helps our students study in different dimensions.<br /></li>
+</ul>
+<p>
+clarify [ˈklerɪˌfaɪ]: v. formal to make something clearer or easier to understand ⇨ clarification澄清, 阐明<br />
+</p>
+<ul class="org-ul">
+<li>The knight had to clarify the fact that the princess hadn't committed suicide because she was betrothed to a crippled.<br /></li>
+<li>Consequently, our king failed to clarify whether this boy was his bastard or not.<br /></li>
+<li>Realizing that he couldn't clarify the crime, he went abroad secretly.<br /></li>
+</ul>
+<p>
+convey [kənˈveɪ]: v. to communicate or express something, with or without using words传达<br />
+</p>
+<ul class="org-ul">
+<li>What your wife was conveying yesterday may be the idea of going to a shopping mall.<br /></li>
+<li>The message will be conveyed to King's Landing, five thousand miles away, in three days.<br /></li>
+<li>The day before being betrothed to a mutilated lord, the princess sent her knights off to convey her love to the general.<br /></li>
+</ul>
+<p>
+function [ˈfʌŋkʃ(ə)n]: v. if something functions in a particular way, it works in that way作用<br />
+</p>
+<ul class="org-ul">
+<li>The blanket now functions as my cat's nest in winter.<br /></li>
+<li>The apple that functioned like a ball was being thrown between students.<br /></li>
+<li>The mutilated coat hangers function as fuel in the fireplace.<br /></li>
+</ul>
+<p>
+circumstantial [ˌsɜrkəmˈstænʃ(ə)l]: adj. based on something that appears to be true but is not proven间接的<br />
+</p>
+<ul class="org-ul">
+<li>He is naive enough to believe that circumstantial evidence can prove a lord's crime.<br /></li>
+<li>Circumstantial evidence proved that the shape of the molecule is a pyramid.<br /></li>
+<li>Because of this circumstantial evidence, the elf will never give up hunting for Sauron.<br /></li>
+</ul>
+<hr />
+<p>
+Other than that, + &#x2026;: 除那之外<br />
+</p>
+<ul class="org-ul">
+<li>Other than that, Winterfell is the outermost city of the Seven Kingdoms.<br /></li>
+<li>Other than that, Sansa is not a virgin because she got married to the king, Renly.<br /></li>
+<li>Other than that, like charges will try to minimize the repulsion between each other.<br /></li>
+</ul>
+<p>
+get educated: 接受教育<br />
+</p>
+<ul class="org-ul">
+<li>He can't make friends with these immigrants who got educated in different cultures.<br /></li>
+<li>He has an idea of having his child get educated in the town.<br /></li>
+<li>Getting educated abroad in his youth, he can't get along with people around when he's home.<br /></li>
+</ul>
+<p>
+in a different context: 在不同背景下<br />
+</p>
+<ul class="org-ul">
+<li>A single word may have different meanings in different contexts.<br /></li>
+<li>Although getting educated in different contexts, they both have a merciful heart.<br /></li>
+<li>It's difficult to imagine that people in different contexts are bunched up together in the castle.<br /></li>
+</ul>
+<p>
+take sth. for granted to be done/adj.: 认为某事理所应当被../是&#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>My wife is always taking a good job for granted to be found in the context.<br /></li>
+<li>He takes her love for granted to be selfless.<br /></li>
+<li>My cat seems to take her food for granted to be offered on time.<br /></li>
+</ul>
+<p>
+break sth. down into smaller parts: 分解某物成更小的部分<br />
+</p>
+<ul class="org-ul">
+<li>Even if he broke his father's precious clock down into smaller parts and it was broken, his father hadn't blamed him.<br /></li>
+<li>The clock that was broken down into smaller parts can't be assembled together anymore.<br /></li>
+<li>The boy has a habit of breaking his clock down into smaller parts on Saturday and assembling them together on the next day.<br /></li>
+</ul>
+<p>
+be preoccupied with sth.: 专注于某事<br />
+</p>
+<ul class="org-ul">
+<li>Preoccupied with his work, he missed the meeting in which he was promoted as the new leader.<br /></li>
+<li>Preoccupied with his homework, he didn't answer his mother's call.<br /></li>
+<li>Preoccupied with the details, he can't form a complete picture of the labyrinth.<br /></li>
+</ul>
+<p>
+After a few rounds, + &#x2026;: 几个回合后, &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>After a few rounds, the knight was knocked to the ground.<br /></li>
+<li>After a few rounds, my cat can't be bothered to go to bed.<br /></li>
+<li>After a few rounds, the local grocer agreed to do me a favor.<br /></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

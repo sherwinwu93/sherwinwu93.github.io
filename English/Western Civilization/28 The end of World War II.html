@@ -1,0 +1,786 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-01-09 Thu 23:35 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-org77f267f" class="outline-2">
+<h2 id="org77f267f">28 The end of World War II</h2>
+<div class="outline-text-2" id="text-org77f267f">
+<p class="verse">
+The end of World War II in Europe was met with great joy.<br />
+One visitor to Moscow reported,<br />
+&#xa0;'I looked out of the window at 2 A.M., almost everywhere there were lights in the window<br />
+&#xa0;&#xa0;&#x2014;people were staying awake.<br />
+&#xa0;Everyone embraced everyone else, someone sobbed aloud.'<br />
+But after the victory parades and celebrations, Europeans awoke to a devastating realization:<br />
+&#xa0;their civilization was in ruins.<br />
+Some wondered if Europe would ever regain its former prosperity and importance.<br />
+Winston Churchill wrote,<br />
+&#xa0;'What is Europe now?<br />
+&#xa0;A rubble heap, a charnel house, a breeding ground of pestilence and hate.'<br />
+There was ample reason for his pessimism.<br />
+Forty million people (both soldiers and civilians) had been killed during the last six years.<br />
+Massive air raids and artillery bombardments<br />
+&#xa0;had reduced many of the great cities of Europe to heaps of rubble.<br />
+An American general described Berlin:<br />
+&#xa0;'Wherever we looked we saw desolation.<br />
+&#xa0;It was like a city of the dead.<br />
+&#xa0;Suffering and shock were visible in every face.<br />
+&#xa0;Dead bodies still remained in canals and lakes and were being dug out from under bomb debris.'<br />
+Millions of Europeans faced starvation<br />
+&#xa0;because grain harvests were only half of what they had been in 1939.<br />
+Millions were also homeless.<br />
+In the parts of the Soviet Union that had been occupied by the Germans,<br />
+&#xa0;almost 25 million people were without homes.<br />
+The destruction of bridges, roads, and railroads had left transportation systems paralyzed.<br />
+Eleven million prisoners of war had to be returned to their native countries,<br />
+&#xa0;and fifteen million Germans and Eastern Europeans were driven out of countries<br />
+&#xa0;&#xa0;where they were no longer wanted.<br />
+Yet despite the chaos, Europe was soon on the road to a remarkable recovery.<br />
+Already by 1950, Europe's industrial and agricultural output was 30 percent above prewar levels.<br />
+<br />
+World War II had also destroyed European supremacy in world affairs.<br />
+After 1945, the colonial empires of the European nations rapidly disintegrated,<br />
+&#xa0;and Europe's place in the world changed radically.<br />
+As the Cold War conflict between the world's two superpowers<br />
+&#xa0;&#xa0;&#x2014;the United States and the Soviet Union&#x2014;intensified,<br />
+&#xa0;the European nations were divided into two armed camps<br />
+&#xa0;&#xa0;dependent on one or the other of these two major powers.<br />
+The United States and the Soviet Union,<br />
+&#xa0;&#xa0;whose rivalry raised the specter of nuclear war,<br />
+&#xa0;seemed to hold the survival of Europe and the world in their hands.<br />
+</p>
+</div>
+<div id="outline-container-org7784873" class="outline-3">
+<h3 id="org7784873">expression</h3>
+<div class="outline-text-3" id="text-org7784873">
+<p>
+embrace [ɪmˈbreɪs]: v. to put your arms around someone and hold them in a friendly or loving way SYN hug拥抱<br />
+sob [sɑb]: v. to cry noisily while athing in short sudden bursts哭泣<br />
+parade [pəˈreɪd]: n. a public celebration when musical bands, brightly decorated vehicles etc move down the street游行,阅兵<br />
+rubble [ˈrʌb(ə)l]: n. broken stones or bricks from a building or wall that has been destroyed碎石<br />
+heap [hip]: n. a large untidy pile of things堆<br />
+pestilence [ˈpestɪləns]: n. literary a disease that spreads quickly and kills a lot of people SYN plague瘟疫<br />
+ample [ˈæmp(ə)l]: adj. more than enough SYN sufficient OPP insufficient充足的, 丰富的<br />
+pessimism [ˈpesəˌmɪzəm]: n. a tendency to believe that bad things will happen OPP optimism悲观,悲观主义<br />
+artillery [ɑrˈtɪl(ə)ri]: n. large guns, either on wheels or fixed in one place大炮, 炮兵<br />
+bombard [bɑmˈbɑrd] bombardment: v.n. to attack a place for a long time using large weapons, bombs etc炮轰；轰击<br />
+canal [kəˈnæl]: n. a long passage dug into the ground and filled with water, either for boats to travel along, or to take water to a place运河<br />
+debris [dəˈbri]: n. the pieces of something that are left after it has been destroyed in an accident, explosion etc碎片, 残骸<br />
+grain [ɡreɪn]: n. the seeds of crops such as corn, wheat, or rice that are gathered for use as food, or these crops themselves谷物<br />
+homeless [ˈhoʊmləs]: adj. without a home无家的, 无家可归的<br />
+paralyzed [ˈperəˌlaɪzd]: adj. unable to move part or all of your body or feel it瘫痪的,麻痹的<br />
+chaos [ˈkeɪˌɑs] chaotic: n.adj. a chaotic situation is one in which everything is happening in a confused way混乱的<br />
+output [ˈaʊtˌpʊt]: n. the amount of goods or work produced by a person, machine, factory etc ⇨ production产量, 输出<br />
+affairs [əˈfer]: n. public or political events and activities事务, 事件<br />
+</p>
+<hr />
+<p>
+with great joy: 怀着极大的喜悦<br />
+stay awake: 保持清醒<br />
+awake to sth.: 意识到某事<br />
+in ruins: 一片废墟<br />
+charnel house: 尸骨堆积处<br />
+an air raid: 空袭<br />
+be without homes: 无家可归<br />
+be on the road to sp.: 在通往某处的路上<br />
+be dependent on sth./sb.: 依赖某人/某物<br />
+the specter of sth.: 某物的幽灵(引起发生某事的恐惧)<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org3da039a" class="outline-3">
+<h3 id="org3da039a">sentence</h3>
+<div class="outline-text-3" id="text-org3da039a">
+<p>
+embrace [ɪmˈbreɪs]: to put your arms around someone and hold them in a friendly or loving way SYN hug拥抱<br />
+</p>
+<ul class="org-ul">
+<li>A short time before, they embraced with great joy.<br /></li>
+<li>When news came to London, people in the streets embraced everyone else.<br /></li>
+<li>Mobs who were going on a strike embraced everyone else for miles around.<br /></li>
+</ul>
+<p>
+sob [sɑb]: to cry noisily while athing in short sudden bursts哭泣<br />
+</p>
+<ul class="org-ul">
+<li>The man grabbed a beer and then began to sob.<br /></li>
+<li>The girl embraced her cat sobbing aloud.<br /></li>
+<li>He noticed that the gangsters had stolen two thousands dollars of his jewelery, and began to sob aloud.<br /></li>
+</ul>
+<p>
+parade [pəˈreɪd]: a public celebration when musical bands, brightly decorated vehicles etc move down the street游行,阅兵<br />
+</p>
+<ul class="org-ul">
+<li>In some totalitarian countries, parades are still forbidden in public.<br /></li>
+<li>With the authorities not meeting their demands, they were due to initiate a parade in the street.<br /></li>
+<li>Exspareated by the authorities, the mobs armed with weapons initiated a parade in the festival.<br /></li>
+</ul>
+<p>
+rubble [ˈrʌb(ə)l]: n. broken stones or bricks from a building or wall that has been destroyed碎石<br />
+</p>
+<ul class="org-ul">
+<li>The rubble of the mountained were soon used up by the village who desired to build their houses.<br /></li>
+<li>The rubble bounced along the pavement and then disappear in the drain.<br /></li>
+<li>Don't use rubble to attack my dog even if he is barking.<br /></li>
+</ul>
+<p>
+heap [hip]: n. a large untidy pile of things堆<br />
+</p>
+<ul class="org-ul">
+<li>I complained that my house was full of rubbish heaps.<br /></li>
+<li>She lost no time in cleaning the rubbish heap.<br /></li>
+<li>There used to be a stone heap on my way to school.<br /></li>
+</ul>
+<p>
+pestilence [ˈpestɪləns]: n. literary a disease that spreads quickly and kills a lot of people SYN plague瘟疫<br />
+</p>
+<ul class="org-ul">
+<li>The pestilence Japanese spread devastated our cilivization.<br /></li>
+<li>Stunned by the pestilence, the priest prayed for the help from god.<br /></li>
+<li>Appalled at the pestilence, the spokesman condemned those unfriendly countries as brtual animals.<br /></li>
+</ul>
+<p>
+ample [ˈæmp(ə)l]: adj. more than enough SYN sufficient OPP insufficient充足的, 丰富的<br />
+</p>
+<ul class="org-ul">
+<li>Beyond doubt, the church would provide these refugees with ample shelters.<br /></li>
+<li>Ample industrial output made the regime continued into the next century.<br /></li>
+<li>I felt entitled to make ample money with my hands.<br /></li>
+</ul>
+<p>
+pessimism [ˈpesəˌmɪzəm]: n. a tendency to believe that bad things will happen OPP optimism悲观,悲观主义<br />
+</p>
+<ul class="org-ul">
+<li>If you are always having pessimism about future, you will not lead a happy life.<br /></li>
+<li>Due to the extend of the war's casualties, there is a deep pessimism about the progress of Western cilivazation.<br /></li>
+<li>Unemployed workers in 1970s had a deep pessimism about the economic depression.<br /></li>
+</ul>
+<p>
+artillery [ɑrˈtɪl(ə)ri]: n. large guns, either on wheels or fixed in one place大炮, 炮兵<br />
+</p>
+<ul class="org-ul">
+<li>The royal armory was said to be full of artillery.<br /></li>
+<li>These knights defended the king against the Asiatic nomads using a special kind of artillery.<br /></li>
+<li>This kind of artillery was invented without no other aim than to attack the wall.<br /></li>
+</ul>
+<p>
+bombard [bɑmˈbɑrd] bombardment: v.n. to attack a place for a long time using large weapons, bombs etc炮轰；轰击<br />
+</p>
+<ul class="org-ul">
+<li>The military confrontation may lead to a prominent bombardment.<br /></li>
+<li>Bombarded with machine guns for two days, the city was virtually lost.<br /></li>
+<li>Being bombarded with machine guns, we can't advance any more without new equipment.<br /></li>
+</ul>
+<p>
+canal [kəˈnæl]: n. a long passage dug into the ground and filled with water, either for boats to travel along, or to take water to a place运河<br />
+</p>
+<ul class="org-ul">
+<li>My wife and I used to walk on the pavement along the canal.<br /></li>
+<li>It was near the canal that we met our first cat, Miumiu.<br /></li>
+<li>On holidays, people swamped upon the park near the cannal having picnics with their friends or families.<br /></li>
+</ul>
+<p>
+debris [dəˈbri]: n. the pieces of something that are left after it has been destroyed in an accident, explosion etc碎片, 残骸<br />
+</p>
+<ul class="org-ul">
+<li>Because of the iron debris left in your stomach, we shall have a operation as soon as possible.<br /></li>
+<li>If the police arrived on the scene, they would find nothing but the debris.<br /></li>
+<li>This is why I spent a lot of time dealing with the debris of the body.<br /></li>
+</ul>
+<p>
+grain [ɡreɪn]: n. the seeds of crops such as corn, wheat, or rice that are gathered for use as food, or these crops themselves谷物<br />
+</p>
+<ul class="org-ul">
+<li>Obviously, the grain is not your precious daughter's favorite food.<br /></li>
+<li>Indeed, the grain harvest will bring our people to the next vitory.<br /></li>
+<li>On that occasion, people will hold a celebration to expect the grain harvest next year.<br /></li>
+</ul>
+<p>
+homeless [ˈhoʊmləs]: adj. without a home无家的, 无家可归的<br />
+</p>
+<ul class="org-ul">
+<li>If you keep gambling, we will be homeless.<br /></li>
+<li>The beautiful dog seems to be homeless, maybe we can adopt her.<br /></li>
+<li>It occurs to my wife to figure out whether the cat is homeless or not.<br /></li>
+</ul>
+<p>
+paralyzed [ˈperəˌlaɪzd]: adj. unable to move part or all of your body or feel it瘫痪的,麻痹的<br />
+</p>
+<ul class="org-ul">
+<li>The man who fought for our country is paralyzed for the rest of his life.<br /></li>
+<li>After the accident, I was afflicted by the paralyzed leg.<br /></li>
+<li>Afflicted by the paralyzed leg, the soldier tried to do away with himself but failed.<br /></li>
+</ul>
+<p>
+chaos [ˈkeɪˌɑs] chaotic: n.adj. a chaotic situation is one in which everything is happening in a confused way混乱的<br />
+</p>
+<ul class="org-ul">
+<li>Because of political chaos, a new law is often opposite to the former law.<br /></li>
+<li>Suffering from political chaos, the empire lost control of its two colonies in Africa.<br /></li>
+<li>People all over England are concern about the military chaos in Eastern Europe.<br /></li>
+</ul>
+<p>
+output [ˈaʊtˌpʊt]: n. the amount of goods or work produced by a person, machine, factory etc ⇨ production产量, 输出<br />
+</p>
+<ul class="org-ul">
+<li>The output of industry is expected to triple by next year.<br /></li>
+<li>The new kind of tomato scientist cultivated is expected to double output.<br /></li>
+<li>The output of calculator doesn't agree on our calculation.<br /></li>
+</ul>
+<p>
+affairs [əˈfer]: n. public or political events and activities事务, 事件<br />
+</p>
+<ul class="org-ul">
+<li>The United State is reluctant to intervene in domestic affairs in other countries.<br /></li>
+<li>Our domestic affiars are none of your business, the spokesman claimed.<br /></li>
+<li>The two superpowers promised not to intervene in African affairs.<br /></li>
+</ul>
+<hr />
+<p>
+with great joy: 怀着极大的喜悦<br />
+</p>
+<ul class="org-ul">
+<li>My wife told me she was pregnant with great joy.<br /></li>
+<li>My dog pounced on me and licked my hands with great joy.<br /></li>
+<li>The hunter realized that it must be a puma at large with great joy.<br /></li>
+</ul>
+<p>
+stay awake: 保持清醒<br />
+</p>
+<ul class="org-ul">
+<li>On that occasion, you'd better stay awake.<br /></li>
+<li>I am grateful to those who asked me to stay awake when I was in the face of a pyramid scheme.<br /></li>
+<li>Staying awake, he went up the tower to see what had happened.<br /></li>
+</ul>
+<p>
+awake to sth.: 意识到某事<br />
+</p>
+<ul class="org-ul">
+<li>Awaking to the failure of the game, the player let out a cry.<br /></li>
+<li>Awaking to the danger in the ring, the drunk stepped aside to avoid the attack of the cow.<br /></li>
+<li>Awaking to the seriousness of the event, he lost no time in informing his superior.<br /></li>
+</ul>
+<p>
+in ruins: 一片废墟<br />
+</p>
+<ul class="org-ul">
+<li>The city in ruins used to a shelter for millions of peasants.<br /></li>
+<li>The city in ruins was being bombarded with long-last artillery.<br /></li>
+<li>The nomads pushed their way westward and made the city in ruins.<br /></li>
+</ul>
+<p>
+charnel house: 尸骨堆积处<br />
+</p>
+<ul class="org-ul">
+<li>The house used to be a charnel house for a hospital.<br /></li>
+<li>Military chaos turned the palace into a charnel house.<br /></li>
+<li>You shall send your dead child to a charnel house.<br /></li>
+</ul>
+<p>
+an air raid: 空袭<br />
+</p>
+<ul class="org-ul">
+<li>He hasn't been killed in the air raid.<br /></li>
+<li>In an air raid, he expressed his love to the girl and promised to marry her in a few years.<br /></li>
+<li>In an air raid, the teacher succeeded in teaching the children the last lesson.<br /></li>
+</ul>
+<p>
+be without homes: 无家可归<br />
+</p>
+<ul class="org-ul">
+<li>People without homes was appalled at the prosperity of the palace.<br /></li>
+<li>People without homes gathered round the City Hall and asked for food.<br /></li>
+<li>People without homes organized a number of marches.<br /></li>
+</ul>
+<p>
+be on the road to sp.: 在通往某处的路上<br />
+</p>
+<ul class="org-ul">
+<li>'I am on the road to school', I said in a weak voice.<br /></li>
+<li>She may be on the road to school.<br /></li>
+<li>She must be on the road to school.<br /></li>
+</ul>
+<p>
+be dependent on sth./sb.: 依赖某人/某物<br />
+</p>
+<ul class="org-ul">
+<li>I am dependent on the supply of pocket money which my parent give on a daily basis.<br /></li>
+<li>She is dependent on the money her boyfriend offer.<br /></li>
+<li>The philosophes were dependent on the money the hostess of the salon offered.<br /></li>
+</ul>
+<p>
+the specter of sth.: 某物的幽灵(引起发生某事的恐惧)<br />
+</p>
+<ul class="org-ul">
+<li>The military confrontation between two regimes raised the spector of civil war.<br /></li>
+<li>The priest burnt a church down, which raised the spector of civil war.<br /></li>
+<li>Their rivalry raised the specter of nuclear war.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org1e3eb83" class="outline-3">
+<h3 id="org1e3eb83">sentence2</h3>
+<div class="outline-text-3" id="text-org1e3eb83">
+<p>
+embrace [ɪmˈbreɪs]: to put your arms around someone and hold them in a friendly or loving way SYN hug拥抱<br />
+</p>
+<ul class="org-ul">
+<li>A short time before, they embraced with great joy.<br /></li>
+<li>When news came to London, people in the streets embraced everyone else.<br /></li>
+<li>Mobs going on a strike embraced everyone else for miles around.<br /></li>
+</ul>
+<p>
+sob [sɑb]: to cry noisily while athing in short sudden bursts哭泣<br />
+</p>
+<ul class="org-ul">
+<li>The man grabbed a beer and then began to sob.<br /></li>
+<li>The girl embraced her cat sobbing aloud.<br /></li>
+<li>He noticed that the gangsters had stolen two thousand dollars of his jewelry, and began to sob aloud.<br /></li>
+</ul>
+<p>
+parade [pəˈreɪd]: a public celebration when musical bands, brightly decorated vehicles etc move down the street游行,阅兵<br />
+</p>
+<ul class="org-ul">
+<li>In some totalitarian countries, parades are still forbidden in public.<br /></li>
+<li>With the authorities not meeting their demands, they were due to initiate a parade in the street.<br /></li>
+<li>Exspareated by the authorities, the mobs armed with weapons initiated a parade in the festival.<br /></li>
+</ul>
+<p>
+rubble [ˈrʌb(ə)l]: n. broken stones or bricks from a building or wall that has been destroyed碎石<br />
+</p>
+<ul class="org-ul">
+<li>The rubble of the mountain was soon used up by the villagers who desired to build their houses.<br /></li>
+<li>The rubble bounced along the pavement and then disappeared down the drain.<br /></li>
+<li>Don't use rubble to attack my dog even if he is barking.<br /></li>
+</ul>
+<p>
+heap [hip]: n. a large untidy pile of things堆<br />
+</p>
+<ul class="org-ul">
+<li>I complained that my house was full of rubbish heaps.<br /></li>
+<li>She lost no time in cleaning the rubbish heap.<br /></li>
+<li>There used to be a stone heap on my way to school.<br /></li>
+</ul>
+<p>
+pestilence [ˈpestɪləns]: n. literary a disease that spreads quickly and kills a lot of people SYN plague瘟疫<br />
+</p>
+<ul class="org-ul">
+<li>The pestilence the Japanese spread devastated our civilization.<br /></li>
+<li>Stunned by the pestilence, the priest prayed for help from god.<br /></li>
+<li>Appalled at the pestilence, the spokesman condemned those unfriendly countries as brutal animals.<br /></li>
+</ul>
+<p>
+ample [ˈæmp(ə)l]: adj. more than enough SYN sufficient OPP insufficient充足的, 丰富的<br />
+</p>
+<ul class="org-ul">
+<li>Beyond doubt, the church would provide these refugees with ample shelter.<br /></li>
+<li>Ample industrial output made the regime continue into the next century.<br /></li>
+<li>I felt entitled to make ample money with my hands.<br /></li>
+</ul>
+<p>
+pessimism [ˈpesəˌmɪzəm]: n. a tendency to believe that bad things will happen OPP optimism悲观,悲观主义<br />
+</p>
+<ul class="org-ul">
+<li>If you are always having pessimism about the future, you will not lead a happy life.<br /></li>
+<li>Due to the extent of the war's casualties, there is a deep pessimism about the progress of Western civilization.<br /></li>
+<li>Unemployed workers in the 1970s had a deep pessimism about the economic depression.<br /></li>
+</ul>
+<p>
+artillery [ɑrˈtɪl(ə)ri]: n. large guns, either on wheels or fixed in one place大炮, 炮兵<br />
+</p>
+<ul class="org-ul">
+<li>The royal armory was said to be full of artillery.<br /></li>
+<li>These knights defended the king against the Asiatic nomads using a special kind of artillery.<br /></li>
+<li>This kind of artillery was invented with no other aim than to attack the wall.<br /></li>
+</ul>
+<p>
+bombard [bɑmˈbɑrd] bombardment: v.n. to attack a place for a long time using large weapons, bombs etc炮轰；轰击<br />
+</p>
+<ul class="org-ul">
+<li>The military confrontation may lead to a prominent bombardment.<br /></li>
+<li>Bombarded with machine guns for two days, the city was virtually lost.<br /></li>
+<li>Being bombarded with machine guns, we can't advance anymore without new equipment.<br /></li>
+</ul>
+<p>
+canal [kəˈnæl]: n. a long passage dug into the ground and filled with water, either for boats to travel along, or to take water to a place运河<br />
+</p>
+<ul class="org-ul">
+<li>My wife and I used to walk on the pavement along the canal.<br /></li>
+<li>It was near the canal that we met our first cat, Miumiu.<br /></li>
+<li>On holidays, people swamped upon the park near the canal having picnics with their friends or families.<br /></li>
+</ul>
+<p>
+debris [dəˈbri]: n. the pieces of something that are left after it has been destroyed in an accident, explosion etc碎片, 残骸<br />
+</p>
+<ul class="org-ul">
+<li>Because of the iron debris left in your stomach, we shall have an operation as soon as possible.<br /></li>
+<li>If the police arrived on the scene, they would find nothing but the debris.<br /></li>
+<li>This is why I spent a lot of time dealing with the debris of the body.<br /></li>
+</ul>
+<p>
+grain [ɡreɪn]: n. the seeds of crops such as corn, wheat, or rice that are gathered for use as food, or these crops themselves谷物<br />
+</p>
+<ul class="org-ul">
+<li>Obviously, the grain is not your precious daughter's favorite food.<br /></li>
+<li>Indeed, the grain harvest will bring our people to the next victory.<br /></li>
+<li>On that occasion, people will hold a celebration to expect the grain harvest next year.<br /></li>
+</ul>
+<p>
+homeless [ˈhoʊmləs]: adj. without a home无家的, 无家可归的<br />
+</p>
+<ul class="org-ul">
+<li>If you keep gambling, we will be homeless.<br /></li>
+<li>The beautiful dog seems to be homeless, maybe we can adopt her.<br /></li>
+<li>It occurs to my wife to figure out whether the cat is homeless or not.<br /></li>
+</ul>
+<p>
+paralyzed [ˈperəˌlaɪzd]: adj. unable to move part or all of your body or feel it瘫痪的,麻痹的<br />
+</p>
+<ul class="org-ul">
+<li>The man who fought for our country is paralyzed for the rest of his life.<br /></li>
+<li>After the accident, I was afflicted by the paralyzed leg.<br /></li>
+<li>Afflicted by the paralyzed leg, the soldier tried to do away with himself but failed.<br /></li>
+</ul>
+<p>
+chaos [ˈkeɪˌɑs] chaotic: n.adj. a chaotic situation is one in which everything is happening in a confused way混乱的<br />
+</p>
+<ul class="org-ul">
+<li>Because of political chaos, a new law is often opposite to the former law.<br /></li>
+<li>Suffering from political chaos, the empire lost control of its two colonies in Africa.<br /></li>
+<li>People all over England are concerned about the military chaos in Eastern Europe.<br /></li>
+</ul>
+<p>
+output [ˈaʊtˌpʊt]: n. the amount of goods or work produced by a person, machine, factory etc ⇨ production产量, 输出<br />
+</p>
+<ul class="org-ul">
+<li>The output of industry is expected to triple by next year.<br /></li>
+<li>The new kind of tomato scientists cultivated is expected to double output.<br /></li>
+<li>The output of a calculator doesn't agree with our calculation.<br /></li>
+</ul>
+<p>
+affairs [əˈfer]: n. public or political events and activities事务, 事件<br />
+</p>
+<ul class="org-ul">
+<li>The United States is reluctant to intervene in domestic affairs in other countries.<br /></li>
+<li>Our domestic affairs are none of your business, the spokesman claimed.<br /></li>
+<li>The two superpowers promised not to intervene in African affairs.<br /></li>
+</ul>
+<hr />
+<p>
+with great joy: 怀着极大的喜悦<br />
+</p>
+<ul class="org-ul">
+<li>My wife told me she was pregnant with great joy.<br /></li>
+<li>My dog pounced on me and licked my hands with great joy.<br /></li>
+<li>The hunter realized that it must be a puma at large with great joy.<br /></li>
+</ul>
+<p>
+stay awake: 保持清醒<br />
+</p>
+<ul class="org-ul">
+<li>On that occasion, you'd better stay awake.<br /></li>
+<li>I am grateful to those who asked me to stay awake when I was in the face of a pyramid scheme.<br /></li>
+<li>Staying awake, he went up the tower to see what had happened.<br /></li>
+</ul>
+<p>
+awake to sth.: 意识到某事<br />
+</p>
+<ul class="org-ul">
+<li>Awaking to the failure of the game, the player let out a cry.<br /></li>
+<li>Awaking to the danger in the ring, the drunk stepped aside to avoid the attack of the cow.<br /></li>
+<li>Awaking to the seriousness of the event, he lost no time in informing his superior.<br /></li>
+</ul>
+<p>
+in ruins: 一片废墟<br />
+</p>
+<ul class="org-ul">
+<li>The city in ruins used to be a shelter for millions of peasants.<br /></li>
+<li>The city in ruins was being bombarded with long-last artillery.<br /></li>
+<li>The nomads pushed their way westward and left the city in ruins.<br /></li>
+</ul>
+<p>
+charnel house: 尸骨堆积处<br />
+</p>
+<ul class="org-ul">
+<li>The house used to be a charnel house for a hospital.<br /></li>
+<li>Military chaos turned the palace into a charnel house.<br /></li>
+<li>You shall send your dead child to a charnel house.<br /></li>
+</ul>
+<p>
+an air raid: 空袭<br />
+</p>
+<ul class="org-ul">
+<li>He hasn't been killed in the air raid.<br /></li>
+<li>In an air raid, he expressed his love to the girl and promised to marry her in a few years.<br /></li>
+<li>In an air raid, the teacher succeeded in teaching the children the last lesson.<br /></li>
+</ul>
+<p>
+be without homes: 无家可归<br />
+</p>
+<ul class="org-ul">
+<li>People without homes were appalled at the prosperity of the palace.<br /></li>
+<li>People without homes gathered around the City Hall and asked for food.<br /></li>
+<li>People without homes organized a number of marches.<br /></li>
+</ul>
+<p>
+be on the road to sp.: 在通往某处的路上<br />
+</p>
+<ul class="org-ul">
+<li>'I am on the road to school', I said in a weak voice.<br /></li>
+<li>She may be on the road to school.<br /></li>
+<li>She must be on the road to school.<br /></li>
+</ul>
+<p>
+be dependent on sth./sb.: 依赖某人/某物<br />
+</p>
+<ul class="org-ul">
+<li>I am dependent on the supply of pocket money which my parent give on a daily basis.<br /></li>
+<li>She is dependent on the money her boyfriend offers.<br /></li>
+<li>The philosophes were dependent on the money the hostess of the salon offered.<br /></li>
+</ul>
+<p>
+the specter of sth.: 某物的幽灵(引起发生某事的恐惧)<br />
+</p>
+<ul class="org-ul">
+<li>The military confrontation between two regimes raised the specter of civil war.<br /></li>
+<li>The priest burnt a church down, which raised the specter of civil war.<br /></li>
+<li>Their rivalry raised the specter of nuclear war.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org35bded2" class="outline-3">
+<h3 id="org35bded2">summary</h3>
+<div class="outline-text-3" id="text-org35bded2">
+<p>
+The end of World War II was met by great joy.<br />
+But after the victory parades and celebrations, Europeans realized that their civilization in ruins.<br />
+As Winston Churchil put it,<br />
+	Europe was now a rubble heap, a charnel house, a breeding groud of pestilence and hate.<br />
+Forty million people had been killed and many of the great cities remained heaps of rubble.<br />
+Millions of Europeans not only were homeless, but also faced starvation.<br />
+Yet despite the chaos, Europe was soon recovering.<br />
+Besides, the colonial empires of the European nations rapidly disintegrated.<br />
+At the Cold War the conflict between the United States and the Soviet Union<br />
+	divided these nations into two armed camps.<br />
+Their rivalry raised the spector of nuclear war.<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org60b8d3f" class="outline-3">
+<h3 id="org60b8d3f">summary2</h3>
+<div class="outline-text-3" id="text-org60b8d3f">
+<p>
+The end of World War II was met with great joy.<br />
+But after the victory parades and celebrations,<br />
+	Europeans realized that their civilization was in ruins.<br />
+As Winston Churchill put it,<br />
+	Europe was now a rubble heap, a charnel house, a breeding ground of pestilence and hate.<br />
+Forty million people had been killed and many of the great cities remained heaps of rubble.<br />
+Millions of Europeans not only were homeless but also faced starvation.<br />
+Yet despite the chaos, Europe was soon recovering.<br />
+Besides, the colonial empires of the European nations rapidly disintegrated.<br />
+During the Cold War, the conflict between the United States and the Soviet Union<br />
+	divided these nations into two armed camps.<br />
+Their rivalry raised the specter of nuclear war, which seemed to destroy the world.<br />
+</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

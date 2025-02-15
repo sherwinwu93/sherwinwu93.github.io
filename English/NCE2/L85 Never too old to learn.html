@@ -1,0 +1,616 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-08-06 Tue 22:24 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+
+<div id="outline-container-orgcf62811" class="outline-2">
+<h2 id="orgcf62811">Lesson 85 Never too old to learn</h2>
+<div class="outline-text-2" id="text-orgcf62811">
+<p class="verse">
+How long has Mr. Page been teaching?<br />
+<br />
+I have just received a letter from my old school,<br />
+&#xa0;<b>informing me</b> that my former headmaster, Mr. Stuart Page, will be retiring next week.<br />
+Pupils of the school, old and new, will be sending him a present to <b>mark the occasion</b>.<br />
+All those who have <b>contributed towards</b> the gift<br />
+&#xa0;will sign their names in a large album which will be sent to the headmaster's home.<br />
+We shall all <b>remember Mr. Page for</b> his patience and understanding<br />
+&#xa0;and for the kindly encouragement he gave us when we went so unwillingly to school.<br />
+A great many former pupils will be attending a farewell dinner <b>in his honour</b> next Thursday.<br />
+<b>It is a curious coincidence that</b> the day before his retirement,<br />
+&#xa0;Mr. Page will have been teaching for <b>a total of</b> forty years.<br />
+After he has retired, he will <b>devote himself to gardening</b>.<br />
+For him, this will be an entirely new hobby.<br />
+But this does not matter,<br />
+&#xa0;for, as he has often remarked, one is never too old to learn.<br />
+</p>
+</div>
+<div id="outline-container-org391cf14" class="outline-3">
+<h3 id="org391cf14">expression</h3>
+<div class="outline-text-3" id="text-org391cf14">
+<p>
+inform [ɪnˈfɔrm] v.告诉,通知<br />
+headmaster [ˈhedˌmæstər] n.校长<br />
+contribute [ˈkɑntrɪˌbjut] v.捐助,援助<br />
+gift [ɡɪft] n.礼物,赠品<br />
+album [ˈælbəm] n.签名簿,相册<br />
+patience [ˈpeɪʃəns] n.耐心<br />
+encouragement [ɪnˈkʌrɪdʒmənt] n.鼓励<br />
+farewell [ferˈwel] n.告别<br />
+honour [ˈɑnər] honor n.敬意<br />
+coincidence [koʊˈɪnsɪdəns] n.巧合<br />
+total [ˈtoʊt(ə)l] n.总数<br />
+devote [dɪˈvoʊt] v.致力于<br />
+gardening [ˈɡɑrd(ə)nɪŋ] n.园艺<br />
+hobby [ˈhɑbi] n.爱好,嗜好<br />
+</p>
+
+<p>
+sb. inform sb. that + &#x2026; 某人通知某人<br />
+make a contribution 做贡献<br />
+contribute to sth. 促成某事物<br />
+lose sb's patience 失去某人的耐心<br />
+have a lot of patience 有很多耐心<br />
+give sb. encouragement 给某人鼓励<br />
+in one's honor: it is done specially to show appreciation of them 纪念某人<br />
+It is a curious coincidence that + &#x2026; 这是一个奇怪的巧合……<br />
+a total of &#x2026;(176) 总共176<br />
+devote oneself to sth./doing sth. 投身于某事/做某事<br />
+</p>
+<hr />
+<p>
+mark the occassion 纪念这个场合<br />
+remember sb. for sth. 因某事记住某人<br />
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-orga646e4d" class="outline-3">
+<h3 id="orga646e4d">words</h3>
+<div class="outline-text-3" id="text-orga646e4d">
+<p>
+inform [ɪnˈfɔrm] v.告诉,通知<br />
+headmaster [ˈhedˌmæstər] n.校长<br />
+contribute [ˈkɑntrɪˌbjut] v.捐助,援助<br />
+gift [ɡɪft] n.礼物,赠品<br />
+album [ˈælbəm] n.签名簿,相册<br />
+patient [ˈpeɪʃ(ə)nt] n.耐心<br />
+encouragement [ɪnˈkʌrɪdʒmənt] n.鼓励<br />
+farewell [ferˈwel] n.告别<br />
+honour [ˈɑnər] n.敬意<br />
+coincidence [koʊˈɪnsɪdəns] n.巧合<br />
+total [ˈtoʊt(ə)l] n.总数<br />
+devote [dɪˈvoʊt] v.致力于<br />
+gardening [ˈɡɑrd(ə)nɪŋ] n.园艺<br />
+hobby [ˈhɑbi] n.爱好,嗜好<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org8e137cd" class="outline-3">
+<h3 id="org8e137cd"><span class="done DONE">DONE</span> 单词造句</h3>
+<div class="outline-text-3" id="text-org8e137cd">
+<p>
+inform v. sb. inform sb. that + &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>The student informed us that he have objected to driving buses.<br /></li>
+<li>The student informed me that he volunteered to drive buses.<br /></li>
+<li>Public was informed that this will relieve pressure on the trains.<br /></li>
+<li>The busmen informed that they would go on strike.<br /></li>
+<li>The busmen informed that the agreement was reached about pay and working condition.<br /></li>
+</ul>
+<p>
+headmaster n.<br />
+</p>
+<ul class="org-ul">
+<li>The headmaster has stated that students who play a truent from school will be punished.<br /></li>
+<li>The student refused to express his gratitude to the headmaster.<br /></li>
+<li>The headmaster was fantical about football.<br /></li>
+<li>The headmaster loves to drive buses.<br /></li>
+<li>The headmaster is used to winning the election.<br /></li>
+</ul>
+<p>
+contribute v. make a contribution  contribute to sth.<br />
+</p>
+<ul class="org-ul">
+<li>It is no use pretending that you haven't contributed to our family.<br /></li>
+<li>The police on duty have contributed to the railway station.<br /></li>
+<li>The headmaster stated that he has contribute to the school a great deal.<br /></li>
+<li>I was relieved to hear that she begun to contribute to her family.<br /></li>
+<li>Why did she object to contribute to helping the poor?<br /></li>
+</ul>
+<p>
+gift n.<br />
+</p>
+<ul class="org-ul">
+<li>He refused to give his girlfriend a gift and knocked her to the ground.<br /></li>
+<li>She claim to have been given a lot of gifts.<br /></li>
+<li>It is known that she is always asking for a gift in any way.<br /></li>
+<li>It was found to be a gift which will be given her son.<br /></li>
+<li>He discovered that the gift her girlfriend gived him is a piano.<br /></li>
+</ul>
+<p>
+album n.<br />
+</p>
+<ul class="org-ul">
+<li>The boy made every effort to send his father an album.<br /></li>
+<li>While he was seeing the album, she felt frightened.<br /></li>
+<li>He is curious to find out if the album has been made.<br /></li>
+<li>I am sure that the headmaster will receive an album from his students.<br /></li>
+<li>When they saw the album, they burst into cheers.<br /></li>
+</ul>
+<p>
+patience n. lose sb's patience  have a lot of patience<br />
+</p>
+<ul class="org-ul">
+<li>Would you mind my asking for your patience.<br /></li>
+<li>Don't be too hard on us, and thank you for your patience.<br /></li>
+<li>In the end I lost my patience, I talked to him with a sneer.<br /></li>
+<li>In spite of this, she made every effort not to lose her patience.<br /></li>
+<li>He lost his patience and had a good appetite.<br /></li>
+</ul>
+<p>
+encouragement n. give sb. encouragement<br />
+</p>
+<ul class="org-ul">
+<li>Sister Juan is used to giving her friends encouragement.<br /></li>
+<li>If my father hadn't given me encouragement, I wouldn't have gone to college.<br /></li>
+<li>If you had given him encouragement, he would had crossed the channel.<br /></li>
+<li>She had a good temper and gave her children encouragement at times.<br /></li>
+<li>She is suffering from a rare disease. We're going to give her some encouragement.<br /></li>
+</ul>
+<p>
+farewell n.<br />
+</p>
+<ul class="org-ul">
+<li>She attended a farewell dinner and told some funny stories.<br /></li>
+<li>She's going to have an operation in other country,<br />
+everyone in the town wil be attending a farewell dinner.<br /></li>
+<li>Students are instructed to attend a farewell dinner.<br /></li>
+<li>I never get the nerve to attend a farewell dinner.<br /></li>
+<li>It was no long before she attended a farewell dinner.<br /></li>
+</ul>
+<p>
+honour honor n. in one's honor<br />
+</p>
+<ul class="org-ul">
+<li>The building takes its name from the headmaster in his honor.<br /></li>
+<li>We decide to name it her name in her honor.<br /></li>
+<li>She was covered with the national flag in her honor.<br /></li>
+<li>The games will be held in her honor.<br /></li>
+<li>He will follow in his father's footsteps in his honor.<br /></li>
+</ul>
+<p>
+coincidence n. It is a curious coincidence that + &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>It is a curious coincidence that the oarfish was caught out at sea.<br /></li>
+<li>It is no coincidence that the man is following us around for an hour.<br /></li>
+<li>It is no coincidence that the busmen go on strike after he won the election.<br /></li>
+<li>It is a coincidence that he succeed in hitchhike to Paris.<br /></li>
+<li>It is a coincidence that I am responsible for the accident.<br /></li>
+</ul>
+<p>
+total n. a total of &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>A total of 5 house have been burnt down.<br /></li>
+<li>There are a total of 5 lands in the world.<br /></li>
+<li>A total of 5 people were killed in the flood in Beijing.<br /></li>
+<li>A total of 5 students played truents from school last week.<br /></li>
+<li>A total of 1000 soldiers stood to attention.<br /></li>
+</ul>
+<p>
+devote v. devote oneself to sth./doing sth.<br />
+</p>
+<ul class="org-ul">
+<li>After his entirement, he devoted himself to gardening.<br /></li>
+<li>After I had graduted, I failed to devote myself to research.<br /></li>
+<li>He really enjoy speaking and writing, so he devoted himself to making stories.<br /></li>
+<li>He has devoted himself to build the big clock.<br /></li>
+<li>He insisted on devoting himself to helping the poor.<br /></li>
+</ul>
+<p>
+gardening n.<br />
+</p>
+<ul class="org-ul">
+<li>She devoted herself to the gardening, I felt sorry for her.<br /></li>
+<li>I'm not instered in the gardening, I'm instered in catching a good sight of view.<br /></li>
+<li>She continued doing the gardening on Staurday afternoon.<br /></li>
+<li>She is always pleased with doing the gardening.<br /></li>
+<li>Let's suppose that you're doing the gardening.<br /></li>
+</ul>
+<p>
+hobby n.<br />
+</p>
+<ul class="org-ul">
+<li>You should have had a hobby.<br /></li>
+<li>Would you mind my talking about your hobby.<br /></li>
+<li>For your healthy, you shouldn't devote yourself to the hobby.<br /></li>
+<li>However, she is sensitive about others talk about her hobby.<br /></li>
+<li>He is unaware of having the hobby for over 3 years.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orge19bbb9" class="outline-3">
+<h3 id="orge19bbb9"><span class="done DONE">DONE</span> 反复听电影片段</h3>
+<div class="outline-text-3" id="text-orge19bbb9">
+</div>
+</div>
+<div id="outline-container-org1bf1ab8" class="outline-3">
+<h3 id="org1bf1ab8"><span class="done DONE">DONE</span> Pattern Drill 写+读</h3>
+<div class="outline-text-3" id="text-org1bf1ab8">
+<ul class="org-ul">
+<li>1t: the library-read those papers<br />
+s1: How much longer will he be staying at the library?<br />
+s2: He'll have to stay here until he's read those papers.<br />
+<ul class="org-ul">
+<li>the hotel - buy a flat<br />
+How much longer will he be staying at the hotel?<br />
+He'll have to stay here until he's bought a flat.<br /></li>
+<li>the hotel - rent a flat<br />
+How much longer will he be staying at the hotel?<br />
+He'll have to stay here until he's rented a flat.<br /></li>
+<li>school - mark the tests<br />
+How much longer will he be staying at school?<br />
+He'll have to stay here until he's marked the tests.<br /></li>
+<li>home - find a new job<br />
+How much longer will he be staying at home?<br />
+He'll have to stay here until he's found a new job.<br /></li>
+</ul></li>
+<li>2t: print invitations - wedding<br />
+s1: Will you be having invitations printed for the wedding?<br />
+s2: Yes, we will. I only hope they'll be printed in time.<br />
+<ul class="org-ul">
+<li>check the car - trip<br />
+Will you be having the car checked for the trip?<br />
+Yes, we will. I only hope they'll be checked in time.<br /></li>
+<li>renew your passport - trip<br />
+Will you be having your passport renewed for the trip?<br />
+Yes, we will. I only hope they'll be renewed in time.<br /></li>
+<li>put up decorations - dance<br />
+Will you be having decorations put up for the dance?<br />
+Yes, we will. I only hope they'll be put up in time.<br /></li>
+<li>make costumes - play<br />
+Will you be having custumes made for the play?<br />
+Yes, we will. I only hope they'll be made in time.<br /></li>
+</ul></li>
+<li>3t: have lunch<br />
+s1: We can't visit the Smiths now. They'll be having lunch.<br />
+s2: They'll have had lunch by now, surely?<br />
+<ul class="org-ul">
+<li>pack their bags<br />
+We can't visit the Smiths now. They'll be packing their bags.<br />
+They'll have packed their bags by now, surely?<br /></li>
+<li>feed the horses<br />
+We can't visit the Smiths now. They'll be feeding the horses.<br />
+They'll have fed the horses by now, surely?<br /></li>
+<li>read the papers<br />
+We can't visit the Smiths now. They'll be reading the papers.<br />
+They'll have read the papers by now, surely?<br /></li>
+<li>put the children to bed<br />
+We can't visit the Smiths now. They'll be putting the children to bed.<br />
+They'll have put the children to bed by now, surely?<br /></li>
+</ul></li>
+<li>4t: working<br />
+s1: Shall we visit the Smiths tonight, or will they still be working?<br />
+s2: If they are, they'll have been working the whole day!<br />
+<ul class="org-ul">
+<li>painting<br />
+Shall we visit the Smiths tonight, or will they still be painting?<br />
+If they are, they'll have been painting the whole day!<br /></li>
+<li>decorating<br />
+Shall we visit the Smiths tonight, or will they still be decorating?<br />
+If they are, they'll have been decorating the whole day!<br /></li>
+<li>cleaning<br />
+Shall we visit the Smiths tonight, or will they still be cleaning?<br />
+If they are, they'll have been cleaning the whole day!<br /></li>
+<li>packing<br />
+Shall we visit the Smiths tonight, or will they still be packing?<br />
+If they are, they'll have been packing the whole day!<br /></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org44a7906" class="outline-3">
+<h3 id="org44a7906"><span class="done DONE">DONE</span> 给自己讲解</h3>
+<div class="outline-text-3" id="text-org44a7906">
+</div>
+</div>
+<div id="outline-container-orgbc170b5" class="outline-3">
+<h3 id="orgbc170b5">红皮书</h3>
+</div>
+<div id="outline-container-orga3cfe71" class="outline-3">
+<h3 id="orga3cfe71"><span class="done DONE">DONE</span> 习惯用法造句</h3>
+<div class="outline-text-3" id="text-orga3cfe71">
+<p>
+mark the occassion<br />
+</p>
+<ul class="org-ul">
+<li>If you have marked the occassion, you would have done something to celebrate.<br /></li>
+<li>All the students were instructed to mark the occassion.<br /></li>
+<li>Let's suppose that we're marking the occassion.<br /></li>
+<li>To mark the occassion, she made a big contribution.<br /></li>
+<li>I am eager to tell stories to mark the occassion.<br /></li>
+</ul>
+<p>
+remember sb. for sth.<br />
+</p>
+<ul class="org-ul">
+<li>I will remember him for our friendship.<br /></li>
+<li>You should remember him for the encouragement he gave you.<br /></li>
+<li>She claim to have remembered him for his contribution.<br /></li>
+<li>You should have remember him for his patience.<br /></li>
+<li>I will always remember my father for the love he gave me.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org0f6460d" class="outline-3">
+<h3 id="org0f6460d"><span class="done DONE">DONE</span> 跟读至背诵</h3>
+<div class="outline-text-3" id="text-org0f6460d">
+</div>
+</div>
+<div id="outline-container-org9b46770" class="outline-3">
+<h3 id="org9b46770"><span class="done DONE">DONE</span> Ask me if 写+读</h3>
+<div class="outline-text-3" id="text-org9b46770">
+<ol class="org-ol">
+<li>I've just received a letter. What<br />
+What have you just received?<br /></li>
+<li>It was about Mr. Stuart Page, my former headmaster. What<br />
+What was it about?<br /></li>
+<li>He will be retiring next week. When<br />
+When will he be retiring?<br /></li>
+<li>His pupils will send him a present. Who<br />
+Who will send him a present.<br /></li>
+<li>They'll be sending him a present to mark the occasion. Why/What/Who<br />
+Why will they be sending him a present?<br />
+What will they be sending him to mark the occasion?<br />
+Who will be sending him a present to mark the occasion?<br /></li>
+<li>The contributors will sign their names in an album. Where/What<br />
+Where will the contributors sign their names?<br />
+What will the contributors sign in an album?<br /></li>
+<li>It will be sent to his home. Where<br />
+Where will it be sent?<br /></li>
+<li>We shall all remember Mr. Page for his patience and understanding. What<br />
+What will you all remember Mr. Page for?<br /></li>
+<li>He gave us kindly encouragement when we went to school. What/When<br />
+What did he give us when we went to school?<br />
+When did he give us kindly encoragement?<br /></li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orgba3e0e1" class="outline-3">
+<h3 id="orgba3e0e1"><span class="done DONE">DONE</span> 摘要写作</h3>
+<div class="outline-text-3" id="text-orgba3e0e1">
+<p>
+Now that my former headmaster, Mr. Page, will be retiring,<br />
+	pupils of the school will be sending him a gift and an album with their signatures of those<br />
+		who have contributed.<br />
+A great many former pupils will be attending a farewell dinner in his honor.<br />
+After having completed forty years as a teacher,<br />
+	Mr. Page will devote himself to the gardening,<br />
+		which will be a new hobby for him,<br />
+	  but one is never too old to learn.<br />
+</p>
+
+<p>
+After twenty-eight years as headmaster, Mr. Page is retiring.<br />
+Pupils of the school will not only be sending him a gift,<br />
+	but also an album with their signatures.<br />
+Many former pupils will be attending a farewell dinner in honor of a man<br />
+	who has completed forty years as a teacher.<br />
+Now he will devote himself to the gardening.<br />
+Though  this is a new hobby, it doesn't matter because one is never too old to learn.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgcd99227" class="outline-3">
+<h3 id="orgcd99227"><span class="done DONE">DONE</span> tell the story 口语</h3>
+<div class="outline-text-3" id="text-orgcd99227">
+</div>
+</div>
+<div id="outline-container-orgd5e6cb0" class="outline-3">
+<h3 id="orgd5e6cb0">Topics for discussion</h3>
+</div>
+</div>
+</div>
+</body>
+</html>

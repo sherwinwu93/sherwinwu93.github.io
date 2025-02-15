@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-01-21 Tue 11:11 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-org0ea7b10" class="outline-2">
+<h2 id="org0ea7b10">5-1 Overview of Module 5</h2>
+<div class="outline-text-2" id="text-org0ea7b10">
+<p class="verse">
+So as we know from previous sessions, people really do change.<br />
+And as we grow and develop within a relationship,<br />
+&#xa0;we have to find ways to transform that relationship<br />
+&#xa0;&#xa0;in order to make sure that is mutually gratifying for both parties.<br />
+So in this session,<br />
+&#xa0;one of the things we're going to be talking about are some of the strategies and methods<br />
+&#xa0;&#xa0;that we can use in order to help transform relationships.<br />
+But before we even get there, Dr. Tsang,<br />
+&#xa0;maybe you can explain what kind of relationships would need to be transformed.<br />
+<br />
+That's a good question.<br />
+I think the tempting answer would be every relationship, right?<br />
+[LAUGH] But like we also talk about people<br />
+&#xa0;who would prefer to keep a relationship for a long time<br />
+&#xa0;&#xa0;without necessarily making any significant change to them.<br />
+Those relationships do exist and they are valued by some people.<br />
+So I guess there might be some relationships that do not necessarily need drastic transformation.<br />
+But even with those I would add that<br />
+&#xa0;like it might not be a bad idea to be checking in every now and then<br />
+&#xa0;&#xa0;to make sure that the relationship is actually working.<br />
+And this is why we always emphasize good communication between the partners in any relationship.<br />
+But other than that I would say most relationships would go through some kind of transformation.<br />
+<br />
+If you think of a sort of like normal socially scripted relationship in the Western world,<br />
+&#xa0;it would be like people who met and dated and you know, decided to be together.<br />
+They might go through a phase of engagement.<br />
+Some people would start living together for a while.<br />
+And then maybe they get married or they don't but they stay together.<br />
+Some people would like decide to have children and raise a family.<br />
+Some people don't.<br />
+And then the feeling, the mode of interaction, and the kind of things that they do together,<br />
+&#xa0;I believe, would change, right?<br />
+So even if we're talking about like personal significant relationship<br />
+&#xa0;&#xa0;that is supposed to last for a long time,<br />
+&#xa0;there would be changes.<br />
+<br />
+And then of course there are relationships that are by nature time-limited,<br />
+&#xa0;like the friends you have at kindergarten, [LAUGH] or elementary school or high school or college,<br />
+&#xa0;your relationship with your teachers, your ballet instructor, or whoever.<br />
+And people that you work with, like if you work in a company and your coworkers,<br />
+&#xa0;your relationship with them would last for so long, right.<br />
+And then your relationship with your teachers, and you know, maybe even other family members.<br />
+And then the current state of family life,<br />
+&#xa0;and you know that there are people that you're connected with through marriage.<br />
+And then all of a sudden your cousin, or your brother, or your sister gets divorced<br />
+&#xa0;and then you're no longer related to these people in the same way.<br />
+So, those relationships would change, right?<br />
+So, there are all sorts of transformations that we can imagine.<br />
+</p>
+</div>
+<div id="outline-container-org99fdde5" class="outline-3">
+<h3 id="org99fdde5">expression</h3>
+<div class="outline-text-3" id="text-org99fdde5">
+<p>
+previous [ˈpriviəs]: adj. having happened or existed before the event, time, or thing that you are talking about now以前的<br />
+session [ˈseʃ(ə)n]: n. a period of time used for a particular activity, especially by a group of people阶段(一段时间)<br />
+tempting [ˈtemptɪŋ]: adj. something that is tempting seems very good and you would like to have it or do it诱惑人的<br />
+engagement [ɪnˈɡeɪdʒmənt]: n. an agreement between two people to marry, or the period of time they are engaged约会,订婚<br />
+time-limited [taɪm] [ˈlɪmɪtəd]: adj. 有时间限制的<br />
+kindergarten [ˈkɪndərˌɡɑrd(ə)n]: n. a school or class for children aged five幼儿园<br />
+instructor [ɪnˈstrʌktər]: n. someone who teaches a sport or practical skill教练<br />
+coworker ['kəʊˌwɜːkə]: n. someone who works with you and has a similar position SYN colleague同事<br />
+cousin [ˈkʌz(ə)n]: n. the child of your ↑uncle or ↑aunt ⇨ ↑first cousin, ↑kissing cousin, SECOND COUSIN堂兄弟姊妹, 表兄弟姊妹<br />
+</p>
+<hr />
+<p>
+add that + &#x2026;: 补充+&#x2026;<br />
+by nature: 自然地<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgd00b9c0" class="outline-3">
+<h3 id="orgd00b9c0">ch.</h3>
+<div class="outline-text-3" id="text-orgd00b9c0">
+<p>
+5-1 模块概览<br />
+正如我们从之前的课程中了解到的，人们确实会发生变化。<br />
+当我们在一段关系中成长和发展时，我们必须找到方法来转变这段关系，以确保双方都能从中获得满足感。<br />
+在这一课中，我们将讨论一些我们可以用来帮助转变关系的策略和方法。<br />
+但在我们深入探讨之前，曾博士，也许您可以解释一下，哪些类型的关系需要转变呢？<br />
+这是个好问题。我想诱人的回答是所有关系都需要改变，对吧？[笑]<br />
+但我们也讨论过一些人可能希望保持一段关系很长时间，而不一定要对其做出重大改变。<br />
+这种关系确实存在，并且对某些人来说非常重要。<br />
+所以，我猜也有一些关系可能不需要彻底的转变。<br />
+但即便是那些关系，我也认为定期检查一下，确保关系真正运作良好，并不是一个坏主意。<br />
+这就是为什么我们总是强调任何关系中伴侣之间要有良好的沟通。<br />
+除此之外，我会说，大多数关系都会经历某种形式的转变。<br />
+如果你想到西方社会中的常见社会化关系，可能是像人们相识、约会、决定在一起。<br />
+他们可能会经历一段订婚的阶段。有些人会开始同居一段时间。<br />
+然后他们可能结婚，或者不结婚但继续在一起。有些人可能决定生孩子并养育家庭，有些人则不这么做。<br />
+然后他们的互动方式、彼此之间的感觉以及共同做的事情，我相信都会发生变化，对吧？<br />
+所以即使我们谈论的是那些本应维持很长时间的个人重要关系，它们也会发生变化。<br />
+当然，也有一些关系本质上是有限时效的，比如你在幼儿园时的朋友，[笑] 或小学、高中、大学的朋友，<br />
+你与老师的关系、芭蕾舞导师的关系等等。<br />
+还有你工作中的人际关系，比如你在公司里工作的同事，你与他们的关系只会持续一段时间，对吧？<br />
+然后是你与老师的关系，甚至可能是你与其他家庭成员的关系。<br />
+再比如当前家庭生活的状况，你知道有些人通过婚姻与他人建立了联系。<br />
+然后突然间，你的表兄、哥哥或姐姐离婚了，你与这些人的关系也不再是原来的那种方式。<br />
+这些关系会发生变化，对吧？<br />
+所以，我们可以想象到各种各样的转变。<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orga36a01d" class="outline-3">
+<h3 id="orga36a01d">sentence</h3>
+<div class="outline-text-3" id="text-orga36a01d">
+<p>
+previous [ˈpriviəs]: adj. having happened or existed before the event, time, or thing that you are talking about now以前的<br />
+</p>
+<ul class="org-ul">
+<li>He behaved as having met me on a previous occassion.<br /></li>
+<li>The previous experiment we performed didn't agree on the theory.<br /></li>
+<li>It's not that I have met you on a previous occassion, it's that you become popular with people in our town.<br /></li>
+</ul>
+<p>
+session [ˈseʃ(ə)n]: n. a period of time used for a particular activity, especially by a group of people阶段(一段时间)<br />
+</p>
+<ul class="org-ul">
+<li>There is a certain probability of passing test through the training session.<br /></li>
+<li>I am 95% sure of passing test through that training session.<br /></li>
+<li>He got familiar to cooking skills more or less in the training session.<br /></li>
+</ul>
+<p>
+tempting [ˈtemptɪŋ]: adj. something that is tempting seems very good and you would like to have it or do it诱惑人的<br />
+</p>
+<ul class="org-ul">
+<li>It is tempting that the sales of this kind of clothes increases exponentially.<br /></li>
+<li>It is tempting for gay couples to adopt a child from China or Vietnam.<br /></li>
+<li>It is tempting to take advantage of a weak man who takes raising family as granted.<br /></li>
+</ul>
+<p>
+engagement [ɪnˈɡeɪdʒmənt]: n. an agreement between two people to marry, or the period of time they are engaged约会,订婚<br />
+</p>
+<ul class="org-ul">
+<li>The chance of my wife selling our engagement ring approaches zero.<br /></li>
+<li>There is small, but non-zero probability that they will announce their engagement at the party.<br /></li>
+<li>Waking up with a start, the vicar realized that there was an engagement waiting for him.<br /></li>
+</ul>
+<p>
+time-limited [taɪm] [ˈlɪmɪtəd]: adj. 有时间限制的<br />
+</p>
+<ul class="org-ul">
+<li>The laboratory is so time-limited that we can only perform our experiment for a very short period of time.<br /></li>
+<li>The relationship between you and your gross leader is time-limited.<br /></li>
+<li>The ship we rent is time-limited, so we will be fined if we are late for returning.<br /></li>
+</ul>
+<p>
+kindergarten [ˈkɪndərˌɡɑrd(ə)n]: n. a school or class for children aged five幼儿园<br />
+</p>
+<ul class="org-ul">
+<li>My son intends to interact with girls in the kindergarten.<br /></li>
+<li>Our boss decided to surrender the kindergarten to the company because of our debts.<br /></li>
+<li>The kindergarten was hit by a stone from out space.<br /></li>
+</ul>
+<p>
+instructor [ɪnˈstrʌktər]: n. someone who teaches a sport or practical skill教练<br />
+</p>
+<ul class="org-ul">
+<li>Our instructor has been abducted by a student who he bullied.<br /></li>
+<li>Our instructor enjoys telling our story about strange creatures in the universe.<br /></li>
+<li>It is only within last century that ballet instructors receive a warm welcome in China.<br /></li>
+</ul>
+<p>
+coworker ['kəʊˌwɜːkə]: n. someone who works with you and has a similar position SYN colleague同事<br />
+</p>
+<ul class="org-ul">
+<li>Our coworker is undertaking a new project about psychotherapy.<br /></li>
+<li>Our coworkers are just the right distance from each other.<br /></li>
+<li>My coworker is parading in front of the City Hall.<br /></li>
+</ul>
+<p>
+cousin [ˈkʌz(ə)n]: n. the child of your ↑uncle or ↑aunt ⇨ ↑first cousin, ↑kissing cousin, SECOND COUSIN堂兄弟姊妹, 表兄弟姊妹<br />
+</p>
+<ul class="org-ul">
+<li>What my cousin has done in high school is fatal for his career.<br /></li>
+<li>One of my cousins used to explore in the dark depths of the lake.<br /></li>
+<li>My cousin often risks his life on the flanks of volcanoes.<br /></li>
+</ul>
+<hr />
+<p>
+add that + &#x2026;: 补充+&#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>The professer added that in most stiuation, a good negotiation and a good communication can maintain a transforming relationship.<br /></li>
+<li>My wife added that we would go on a vacation at a seaside resort when we made enough money.<br /></li>
+<li>I added that my cat was sitting in the boat and doing nothing.<br /></li>
+</ul>
+<p>
+by nature: 自然地<br />
+</p>
+<ul class="org-ul">
+<li>When someone asks how he is able to lose weight, he always tells he makes it by nature.<br /></li>
+<li>He explained that he could speak English fluently by nature.<br /></li>
+<li>He started exercising with a song by nature.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org00956dd" class="outline-3">
+<h3 id="org00956dd">sentence2</h3>
+<div class="outline-text-3" id="text-org00956dd">
+<p>
+previous [ˈpriviəs]: adj. having happened or existed before the event, time, or thing that you are talking about now以前的<br />
+</p>
+<ul class="org-ul">
+<li>He behaved as having met me on a previous occasion.<br /></li>
+<li>The previous experiment we performed didn't agree with the theory.<br /></li>
+<li>It's not that I have met you on a previous occassion, it's that you become popular with people in our town.<br /></li>
+</ul>
+<p>
+session [ˈseʃ(ə)n]: n. a period of time used for a particular activity, especially by a group of people阶段(一段时间)<br />
+</p>
+<ul class="org-ul">
+<li>There is a certain probability of passing the test through the training session.<br /></li>
+<li>I am 95% sure of passing the test through that training session.<br /></li>
+<li>He got more or less familiar with cooking skills in the training session.<br /></li>
+</ul>
+<p>
+tempting [ˈtemptɪŋ]: adj. something that is tempting seems very good and you would like to have it or do it诱惑人的<br />
+</p>
+<ul class="org-ul">
+<li>It is tempting that the sales of this kind of clothes increase exponentially.<br /></li>
+<li>It is tempting for gay couples to adopt a child from China or Vietnam.<br /></li>
+<li>It is tempting to take advantage of a weak man who takes raising his family for granted.<br /></li>
+</ul>
+<p>
+engagement [ɪnˈɡeɪdʒmənt]: n. an agreement between two people to marry, or the period of time they are engaged约会,订婚<br />
+</p>
+<ul class="org-ul">
+<li>The chance of my wife selling our engagement ring approaches zero.<br /></li>
+<li>There is a small, but non-zero probability that they will announce their engagement at the party.<br /></li>
+<li>Waking up with a start, the vicar realized that there was an engagement waiting for him.<br /></li>
+</ul>
+<p>
+time-limited [taɪm] [ˈlɪmɪtəd]: adj. 有时间限制的<br />
+</p>
+<ul class="org-ul">
+<li>The laboratory is so time-limited that we can only perform our experiment for a very short period of time.<br /></li>
+<li>The relationship between you and your gross leader is time-limited.<br /></li>
+<li>The ship we rent is time-limited, so we will be fined if we are late for returning.<br /></li>
+</ul>
+<p>
+kindergarten [ˈkɪndərˌɡɑrd(ə)n]: n. a school or class for children aged five幼儿园<br />
+</p>
+<ul class="org-ul">
+<li>My son intends to interact with girls in the kindergarten.<br /></li>
+<li>Our boss decided to surrender the kindergarten to the company because of our debts.<br /></li>
+<li>The kindergarten was hit by a stone from outer space.<br /></li>
+</ul>
+<p>
+instructor [ɪnˈstrʌktər]: n. someone who teaches a sport or practical skill教练<br />
+</p>
+<ul class="org-ul">
+<li>Our instructor has been abducted by a student who he bullied.<br /></li>
+<li>Our instructor enjoys telling our story about strange creatures in the universe.<br /></li>
+<li>It is only within the last century that ballet instructors received a warm welcome in China.<br /></li>
+</ul>
+<p>
+coworker ['kəʊˌwɜːkə]: n. someone who works with you and has a similar position SYN colleague同事<br />
+</p>
+<ul class="org-ul">
+<li>Our coworker is undertaking a new project about psychotherapy.<br /></li>
+<li>Our coworkers are just the right distance from each other.<br /></li>
+<li>My coworker is parading in front of the City Hall.<br /></li>
+</ul>
+<p>
+cousin [ˈkʌz(ə)n]: n. the child of your ↑uncle or ↑aunt ⇨ ↑first cousin, ↑kissing cousin, SECOND COUSIN堂兄弟姊妹, 表兄弟姊妹<br />
+</p>
+<ul class="org-ul">
+<li>What my cousin has done in high school is fatal for his career.<br /></li>
+<li>One of my cousins used to explore in the dark depths of the lake.<br /></li>
+<li>My cousin often risks his life on the flanks of volcanoes.<br /></li>
+</ul>
+<hr />
+<p>
+add that + &#x2026;: 补充+&#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>The professer added that in most stiuation, a good negotiation and a good communication can maintain a transforming relationship.<br /></li>
+<li>My wife added that we would go on a vacation at a seaside resort when we made enough money.<br /></li>
+<li>I added that my cat was sitting in the boat and doing nothing.<br /></li>
+</ul>
+<p>
+by nature: 自然地<br />
+</p>
+<ul class="org-ul">
+<li>When someone asks how he is able to lose weight, he always answers he does it by nature.<br /></li>
+<li>He explained that he could speak English fluently by nature.<br /></li>
+<li>He started exercising with a song by nature.<br /></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,1218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-02-14 Fri 11:17 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-orgb4cc12d" class="outline-2">
+<h2 id="orgb4cc12d">2-2 1 Sleeping well</h2>
+<div class="outline-text-2" id="text-orgb4cc12d">
+<p class="verse">
+Insomnia is an extremely common sleep disorder.<br />
+A third of the population in the western world<br />
+&#xa0;experiences regular difficulties with falling asleep or staying asleep.<br />
+However, for about 10% of the population, the insomnia also causes problems in the daytime,<br />
+&#xa0;such as tiredness, poor concentration, or irritable moods.<br />
+So what is insomnia?<br />
+Well, insomnia disorders diagnosed when someone has the following features:<br />
+&#xa0;difficulties going to sleep,<br />
+&#xa0;staying asleep - where it takes longer than 30 minutes,<br />
+&#xa0;non-restorative sleep,<br />
+&#xa0;impairment of daytime functioning,<br />
+&#xa0;and symptoms that are present for at least three months.<br />
+The essence of insomnia is that the person feels unsatisfied with the amount or quality of sleep.<br />
+So much so that it leads to significant distress<br />
+&#xa0;or an inability to function in important areas of life.<br />
+This can affect the person's relationships, work, education, social life, or other important areas.<br />
+Any sleep problems that are present for less than three months<br />
+&#xa0;are not considered to meet the criteria for insomnia disorder.<br />
+It is simply thought of as an episode of insomnia rather than a disorder.<br />
+Sometimes people's sleep experience does not meet their expectations.<br />
+For example, many people wake often at night but are still able to function well during the day.<br />
+This does not constitute insomnia.<br />
+<br />
+Impacts of insomnia on everyday life includes things<br />
+&#xa0;such as a person feeling wired and tired, while fatigue is the overwhelming symptom.<br />
+If the person often feels sleepy, they may also have another type of sleep disorder,<br />
+&#xa0;such as untreated obstructive sleep apnoea and/or restless leg syndrome, periodic limb movement.<br />
+The most important factor in the sleepy insomnia individual is depression<br />
+&#xa0;where there is a strong bidirectional relationship.<br />
+Both of these disorders require equal treatment.<br />
+People with insomnia often feel that their performance is significantly reduced.<br />
+But the research does not always show objective impairments.<br />
+People with insomnia often have difficulty switching tasks along with some aspects of memory.<br />
+In one study, a functional MRI, a top of brain scan,<br />
+&#xa0;was used to measure blood flow in certain areas of the brain.<br />
+Individuals with insomnia had reduced blood flow in some areas<br />
+&#xa0;when asked to participate in some cognitive tasks in the scanner.<br />
+<br />
+Perhaps the most important thing is the way people think about the sleep.<br />
+Some people with insomnia can become extremely preoccupied with their sleep<br />
+&#xa0;and develop a condition termed sleep anxiety.<br />
+Instead of being an important component of healthy life,<br />
+&#xa0;sleep becomes a stressful focal point of all the activities<br />
+&#xa0;&#xa0;the person is not able to do due to their chronic poor sleep quality, perceived or otherwise.<br />
+Behavior may become ritualized to ensure better sleep.<br />
+And individuals might also give up the little pleasures of life,<br />
+&#xa0;&#xa0;such as exercise, coffee or socializing,<br />
+&#xa0;for fear that these activities will negatively impact on sleep.<br />
+Many people start spending more and more time in bed<br />
+&#xa0;trying to achieve at least 50% of that time sleeping.<br />
+This is a common but unhelpful behavior as it is the development of sleep anxiety.<br />
+Interestingly, in a recent study of nurses doing shift work:<br />
+&#xa0;tiredness, anxiety, depression, bullying in the workplace,<br />
+&#xa0;&#xa0;and spillover between work and family life were significant factors related to insomnia.<br />
+However, insomnia was more likely to be caused by personal and work related factors<br />
+&#xa0;rather than being a cause of the problems.<br />
+<br />
+We also have a number of sleep myths.<br />
+And there are three common misperceptions regarding sleep.<br />
+One being that good sleepers sleep through the night and do not wake until the morning,<br />
+&#xa0;when they wake refreshed.<br />
+Number two, we start the night in light sleep and finish sleep in deep sleep.<br />
+So if the sleep period is shortened, in any way, then sleep will be severely compromised.<br />
+Number three, rapid eye movement sleep is deep sleep.<br />
+<br />
+This hypnogram shows the stages of sleep<br />
+&#xa0;that a normal adult will cycle through during a good night's sleep.<br />
+REM sleep means rapid eye movement and is a lighter sleep stage during which dreams occur.<br />
+Stage three or N3 is the deepest stage of sleep.<br />
+In humans, most of the night is spent in relatively light sleep.<br />
+An evolutionary overflow, most likely from our caveman days,<br />
+&#xa0;when it was important to be alert for predators.<br />
+Only 20% of the night is spent in deep sleep and 25% in REM sleep.<br />
+We cycle through all the stages of sleep every 90 minutes<br />
+&#xa0;and most of our deep sleep is in the first one third of the night<br />
+&#xa0;&#xa0;with mostly lightest stages in the latter part of the night.<br />
+The onset of sleep is triggered by increasing darkness that causes the brain to produce melatonin.<br />
+Light suppresses melatonin and leads to waking.<br />
+The role of temperature is also important and changes with sleep onset and waking.<br />
+A healthy 70 year old will cycle through the same stages of sleep<br />
+&#xa0;but somewhat more rapidly during the night.<br />
+So sleep patterns change of a person's lifetime.<br />
+<br />
+So how do we treat insomnia?<br />
+Medication is usually the first line of treatment<br />
+&#xa0;when an individual presents to their GP with insomnia.<br />
+In a 2010 study,<br />
+&#xa0;95% of people were given a sedative medication with almost half being prescribed Temazepam.<br />
+Only 2% were referred to a psychologist for psychological treatment,<br />
+&#xa0;which we know is the proven and most effective treatment long-term.<br />
+Cognitive behavioral therapy or CBT aims to enable a person with insomnia<br />
+&#xa0;to gain confidence about his or her sleep<br />
+&#xa0;&#xa0;by giving factual information about sleep in order to combat the many common myths.<br />
+Some examples are: 'I must stay in bed longer to make up for my lost or poor quality sleep'<br />
+&#xa0;and 'I only doze in the second half of the night.'<br />
+CBT is approached as a retraining in sleep with the aim of reducing some of the pressure<br />
+&#xa0;that people tend to place on themselves when trying to change the behavior.<br />
+Along with the behavior changes is the need to change perceptions and expectations of sleep<br />
+&#xa0;which is equally important.<br />
+<br />
+There are some strategies for managing sleep patterns.<br />
+One is bed or sleep restriction therapy<br />
+&#xa0;which means reducing the time spent in bed by either going to be later or getting up earlier.<br />
+This can improve the length and quality of a sleep.<br />
+Avoiding unhelpful cues associated with the bed,<br />
+&#xa0;&#xa0;such as using computer screens or television in the bedroom,<br />
+&#xa0;can also be helpful.<br />
+The quarter hour rule means that if you are awake for more than a quarter of an hour,<br />
+&#xa0;it is helpful to get out of bed and do a quiet activity<br />
+&#xa0;&#xa0;until you are comfortable with that but not necessarily sleepy.<br />
+Paradoxical intention is a strategy that involves putting the effort into staying awake.<br />
+Paradoxically, this makes you sleepy.<br />
+It is also important to have exposure to early morning light, regular exercise, and a healthy diet.<br />
+Avoiding caffeine or alcohol close to bed time can also be useful.<br />
+If depression is an issue,<br />
+&#xa0;managing your mood in conjunction with changing sleep behaviors and thoughts<br />
+&#xa0;&#xa0;is both effective and useful.<br />
+Relaxation and mindfulness strategies help to reduce anxiety and can promote sleep.<br />
+These are covered in other sections of the course.<br />
+Using these strategies,<br />
+&#xa0;people with insomnia learn to go from being a victim of poor sleep<br />
+&#xa0;&#xa0;&#xa0;to changing the boundaries around the bed and the night,<br />
+&#xa0;&#xa0;and can learn to sleep well again.<br />
+</p>
+</div>
+<div id="outline-container-org2de4417" class="outline-3">
+<h3 id="org2de4417">expression</h3>
+<div class="outline-text-3" id="text-org2de4417">
+<p>
+insomnia [ɪnˈsɑmniə]: n. if you suffer from insomnia, you are not able to sleep失眠<br />
+disorder [dɪsˈɔrdər]: n. medical a mental or physical illness which prevents part of your body from working properly紊乱<br />
+population [ˌpɑpjəˈleɪʃ(ə)n]: n. the number of people living in a particular area, country etc人口,种群<br />
+irritable [ˈɪrɪtəb(ə)l]: adj. getting annoyed quickly or easily SYN crabby, bad-tempered易怒的<br />
+non-restorative [rɪˈstɔrətɪv]: adj. making you feel healthier or stronger恢复健康的<br />
+impairment [ɪmˈpermənt]: n. mental/visual/cognitive/hearing etc impairment a condition in which a part of a person’s mind or body is damaged or does not work well(身体)不适<br />
+meet [mit]: v. meet a need/demand/requirement/condition etc to do something that someone wants, needs, or expects you to do or be as good as they need, expect etc满足<br />
+criterion [kraɪˈtɪriən] criteria: n.n. a standard that you use to judge something or make a decision about something标准, 准据, 规范<br />
+constitute [ˈkɑnstɪˌtut]: v. if several people or things constitute something, they are the parts that form it SYN make up构成<br />
+fatigue [fəˈtiɡ]: n. very great tiredness SYN exhaustion疲乏, 疲劳<br />
+obstructive [əbˈstrʌktɪv]: adj. medical relating to a blocked tube, passage etc in the body阻碍的<br />
+syndrome [ˈsɪnˌdroʊm]: n. medical an illness which consists of a set of physical or mental problems – often used in the name of illnesses综合症<br />
+periodic [ˌpɪriˈɑdɪk]: adj. happening a number of times, usually at regular times周期的<br />
+limb [lɪm]: n. an arm or leg肢<br />
+scanner [ˈskænər]: n. a machine that passes an electrical beam over something in order to produce a picture of what is inside it ⇨ scan扫描仪<br />
+socialize [ˈsoʊʃ(ə)lˌaɪz]: v. to spend time with other people in a friendly way交友<br />
+spillover [ˈspɪlˌoʊvər]: n. the effect that one situation or problem has on another situation溢出,影响<br />
+shorten [ˈʃɔrt(ə)n]: v. to become shorter or make something shorter OPP lengthen缩短, (使)变短<br />
+alert [əˈlɜrt]: adj. able to think quickly and clearly警惕的<br />
+melatonin [ˌmeləˈtoʊnɪn]: n. a ↑hormone that is sometimes used as a drug to help you sleep褪黑激素<br />
+sedative [ˈsedətɪv]: n. a drug used to make someone calm or go to sleep镇静剂<br />
+prescribe [prɪˈskraɪb]: v. to say what medicine or treatment a sick person should have ⇨ prescription处(方), 开(药)<br />
+doze [doʊz]: v. to sleep lightly for a short time瞌睡<br />
+cue [kju]: n. an action or event that is a signal for something else to happen暗示,线索<br />
+paradoxical [ˌperəˈdɑksɪk(ə)l]: adj. a situation that seems strange because it involves two ideas or qualities that are very different矛盾的<br />
+caffeine [ˈkæˌfin]: n. a substance in tea, coffee, and some other drinks that makes you feel more active ⇨ decaffeinated咖啡因<br />
+alcohol [ˈælkəˌhɔl]: n. drinks such as beer or wine that contain a substance which can make you drunk酒精<br />
+</p>
+<hr />
+<p>
+fall/stay asleep: 入睡/维持睡眠<br />
+in the daytime: 在白天<br />
+participate in sth.: 参加某事<br />
+focal point: n. 焦点<br />
+shift work: n. 轮班工作<br />
+cycle through sth.: 循环遍历某事物<br />
+the first line of treatment: 首选的治疗<br />
+aim to do sth.: 旨在于某事<br />
+in the second half of the night: 在后半夜<br />
+put the effort into doing sth.: 努力做某事<br />
+in conjunction with doing sth.: 一边做某事<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgf7b41a1" class="outline-3">
+<h3 id="orgf7b41a1">ch.</h3>
+<div class="outline-text-3" id="text-orgf7b41a1">
+<p>
+2-2 1 睡得好<br />
+</p>
+
+<p>
+失眠是一种极为常见的睡眠障碍。<br />
+在西方世界，三分之一的人经常会遇到入睡或保持睡眠的困难。<br />
+然而，大约10%的人在白天也会因此受到影响，例如疲劳、注意力不集中或情绪易怒。<br />
+</p>
+
+<p>
+那么，什么是失眠？<br />
+失眠障碍的诊断标准包括以下特征：<br />
+</p>
+
+<p>
+入睡困难，<br />
+保持睡眠困难（入睡时间超过30分钟），<br />
+睡眠质量欠佳，<br />
+白天功能受损，<br />
+症状持续至少三个月。<br />
+失眠的本质在于，个体对自身的睡眠时间或质量感到不满意，<br />
+以至于这种不满导致了显著的痛苦，或者影响到了重要的生活领域。<br />
+这可能会影响个人的人际关系、工作、教育、社交生活或其他重要方面。<br />
+</p>
+
+<p>
+如果睡眠问题持续时间少于三个月，<br />
+那么它不符合失眠障碍的诊断标准，<br />
+而只是一次失眠的经历，而非一种疾病。<br />
+</p>
+
+<p>
+有时，人们的睡眠体验未能达到他们的预期。<br />
+例如，许多人夜间经常醒来，但白天仍然能够正常运作，<br />
+这种情况并不构成失眠。<br />
+</p>
+
+<p>
+失眠对日常生活的影响包括：<br />
+个体可能感到精神紧绷且疲惫，但主要症状仍然是极度的疲劳。<br />
+如果一个人经常感到困倦，那么他们可能患有另一种睡眠障碍，<br />
+例如未治疗的阻塞性睡眠呼吸暂停综合症（OSA）、<br />
+不宁腿综合症（RLS）或周期性肢体运动障碍（PLMD）。<br />
+</p>
+
+<p>
+对于那些因失眠而感到困倦的人来说，<br />
+最重要的影响因素是抑郁症，<br />
+而失眠与抑郁症之间存在强烈的双向关系。<br />
+这两种疾病都需要同等的关注和治疗。<br />
+</p>
+
+<p>
+失眠患者常常觉得自己的表现大幅下降，<br />
+但研究并未总能显示出客观的损害。<br />
+失眠患者在任务切换和某些记忆方面可能会遇到困难。<br />
+</p>
+
+<p>
+在一项研究中，科学家使用功能性磁共振成像（fMRI）<br />
+来测量大脑某些区域的血流量。<br />
+当受试者执行某些认知任务时，<br />
+失眠者的大脑某些区域的血流量减少。<br />
+</p>
+
+<p>
+或许最重要的是，人们如何看待睡眠。<br />
+一些失眠患者可能会对睡眠产生极度的焦虑，<br />
+并发展出一种被称为“睡眠焦虑”的状况。<br />
+</p>
+
+<p>
+睡眠本应是健康生活的重要组成部分，<br />
+但对这些人来说，<br />
+睡眠却变成了一个压力源，<br />
+让他们不断关注自己因长期睡眠质量差而无法完成的事情——<br />
+无论这种睡眠质量的下降是真实的还是感知上的。<br />
+</p>
+
+<p>
+他们的行为可能变得仪式化，以确保更好的睡眠。<br />
+此外，个体可能会放弃生活中的一些小乐趣，<br />
+比如锻炼、喝咖啡或社交，<br />
+因为他们害怕这些活动会对睡眠产生负面影响。<br />
+</p>
+
+<p>
+许多人开始花越来越多的时间待在床上，<br />
+试图确保至少有一半的时间是用来睡觉的。<br />
+但这是一种常见且无益的行为，<br />
+它实际上助长了睡眠焦虑的发展。<br />
+</p>
+
+<p>
+有趣的是，在最近一项针对轮班工作的护士的研究中，<br />
+疲劳、焦虑、抑郁、工作场所欺凌，<br />
+以及工作与家庭生活之间的冲突，<br />
+都是与失眠相关的重要因素。<br />
+</p>
+
+<p>
+然而，失眠更可能是由个人和工作相关因素引起的，<br />
+而不是这些问题的直接原因。<br />
+</p>
+
+<p>
+我们还存在一些关于睡眠的误区，<br />
+其中有三种常见的错误认知：<br />
+</p>
+
+<p>
+好的睡眠者整夜不醒，直到早晨醒来时神清气爽。<br />
+我们在夜晚开始时处于浅睡眠，最后进入深度睡眠，<br />
+因此，如果睡眠时间被缩短，睡眠质量将受到严重影响。<br />
+快速眼动（REM）睡眠是深度睡眠。<br />
+这个睡眠图示（睡眠波形图）展示了一个健康成年人<br />
+在良好夜间睡眠中的各个睡眠阶段。<br />
+</p>
+
+<p>
+REM 睡眠（快速眼动睡眠）是一个较轻的睡眠阶段，<br />
+在此期间会发生梦境。<br />
+第三阶段（N3）是最深的睡眠阶段。<br />
+</p>
+
+<p>
+对于人类来说，大部分夜晚的时间都处于较浅的睡眠状态。<br />
+这种进化遗留可能源自我们的穴居时代，<br />
+当时保持一定的警觉度以防捕食者至关重要。<br />
+</p>
+
+<p>
+一个健康成年人在深度睡眠中度过的时间大约占20%，<br />
+在 REM 睡眠中度过的时间约占25%。<br />
+我们每90分钟循环一次所有睡眠阶段，<br />
+大部分深度睡眠发生在夜晚的前三分之一，<br />
+而后期大部分是较轻的睡眠阶段。<br />
+</p>
+
+<p>
+睡眠的开始受黑暗程度的增加所触发，<br />
+黑暗促使大脑分泌褪黑素。<br />
+光线会抑制褪黑素的分泌，并导致醒来。<br />
+</p>
+
+<p>
+温度变化在睡眠启动和清醒过程中也起着重要作用。<br />
+一个健康的70岁老人同样会经历相同的睡眠阶段，<br />
+但其夜间睡眠周期的转换速度可能会更快。<br />
+这表明，睡眠模式会随着人的一生而发生变化。<br />
+</p>
+
+<p>
+那么，我们如何治疗失眠呢？<br />
+当一个人因失眠而去看医生时，<br />
+药物通常是首选的治疗方法。<br />
+</p>
+
+<p>
+在2010年的一项研究中，<br />
+95%的患者被开具了镇静剂，<br />
+其中近一半的人服用了替马西泮（Temazepam）。<br />
+然而，仅有2%的患者被转诊至心理学家接受心理治疗。<br />
+而我们已知，心理治疗才是长期最有效的治疗方法。<br />
+</p>
+
+<p>
+认知行为疗法（CBT）旨在帮助失眠患者重建对睡眠的信心，<br />
+通过提供有关睡眠的真实信息来消除常见的睡眠误解。<br />
+</p>
+
+<p>
+例如：<br />
+</p>
+
+<p>
+“我必须在床上待更长时间，以弥补丧失的睡眠。”<br />
+“我在夜晚后半程只是打盹。”<br />
+CBT 的目标是重新训练睡眠模式，<br />
+减少个体在尝试改变睡眠行为时施加给自己的压力。<br />
+</p>
+
+<p>
+除行为调整外，改变对睡眠的认知和期望同样重要。<br />
+一些管理睡眠模式的策略包括：<br />
+</p>
+
+<p>
+睡眠限制疗法：减少在床上的时间，例如晚点上床或早点起床，<br />
+这样可以改善睡眠的长度和质量。<br />
+避免床上不相关的刺激：例如，不要在卧室里使用电脑或电视。<br />
+“15分钟规则”：如果清醒超过15分钟，<br />
+建议起床进行安静的活动，直到感到舒适，但不一定要困倦。<br />
+悖论意图：刻意尝试保持清醒，反而会让人更容易入睡。<br />
+早晨阳光暴露、规律运动和健康饮食：都有助于改善睡眠。<br />
+避免睡前摄入咖啡因或酒精。<br />
+如果抑郁是一个问题，<br />
+那么结合情绪管理和睡眠习惯调整，<br />
+将是既有效又有益的做法。<br />
+</p>
+
+<p>
+放松训练和正念冥想可以减少焦虑，促进睡眠。<br />
+这些内容将在课程的其他部分进行详细介绍。<br />
+</p>
+
+<p>
+通过这些策略，<br />
+失眠患者可以从受失眠困扰的状态，<br />
+逐渐调整睡眠环境和习惯，<br />
+最终恢复良好的睡眠质量。<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org59a0420" class="outline-3">
+<h3 id="org59a0420">sentence</h3>
+<div class="outline-text-3" id="text-org59a0420">
+<p>
+insomnia [ɪnˈsɑmniə]: n. if you suffer from insomnia, you are not able to sleep失眠<br />
+</p>
+<ul class="org-ul">
+<li>The man diagnosed with insomia watched the stone being eroded away.<br /></li>
+<li>Fingers crossed the man diagnosed with insomia will be treated in the hospital.<br /></li>
+<li>Fingers crossed the man diagnosed with insomia will have a good night in the monastery.<br /></li>
+</ul>
+<p>
+disorder [dɪsˈɔrdər]: n. medical a mental or physical illness which prevents part of your body from working properly紊乱<br />
+</p>
+<ul class="org-ul">
+<li>The patient claimed that he suffered from a disorder of the liver after the sign in front of his house had gotten lifted up.<br /></li>
+<li>The lawyer suffering from a disorder of the brain has a difficult time wiping away the marks on his windows.<br /></li>
+<li>The attorney suffering from a disorder of the brain is scouting for his pills.<br /></li>
+</ul>
+<p>
+population [ˌpɑpjəˈleɪʃ(ə)n]: n. the number of people living in a particular area, country etc人口,种群<br />
+</p>
+<ul class="org-ul">
+<li>Ten percents of population in this city hope for a subway from the City Hall to the Railway Station.<br /></li>
+<li>A third of population in the village worked together to whack away the huge stone.<br /></li>
+<li>An estimated 10 percents of population in the village laid on the creek bank enjoying rainbow.<br /></li>
+</ul>
+<p>
+irritable [ˈɪrɪtəb(ə)l]: adj. getting annoyed quickly or easily SYN crabby, bad-tempered易怒的<br />
+</p>
+<ul class="org-ul">
+<li>These days, my cat is so irritable that my kids stay away from her.<br /></li>
+<li>The paleontologist is becoming irritable because of the loss of the fossil, millions of years in the making.<br /></li>
+<li>He is irritable when he is trying to extract gold from sand.<br /></li>
+</ul>
+<p>
+non-restorative [rɪˈstɔrətɪv]: adj. making you feel healthier or stronger恢复健康的<br />
+</p>
+<ul class="org-ul">
+<li>His physician instructed him to hold that pose which is regarded as restorative.<br /></li>
+<li>The effects vary greatly between those restorative gestures which are recommanded by the yogis.<br /></li>
+<li>It seems that this kind of yoga gesture is born to a restorative meditation.<br /></li>
+</ul>
+<p>
+impairment [ɪmˈpermənt]: n. mental/visual/cognitive/hearing etc impairment a condition in which a part of a person’s mind or body is damaged or does not work well(身体)不适<br />
+</p>
+<ul class="org-ul">
+<li>A quarter of students in our school suffer from impairment at some point.<br /></li>
+<li>The link between the two patients is that they are both suffering from impairment in the daytime.<br /></li>
+<li>In practice you are not diagnosed with insomia because you don't suffer from impairment.<br /></li>
+</ul>
+<p>
+meet [mit]: v. meet a need/demand/requirement/condition etc to do something that someone wants, needs, or expects you to do or be as good as they need, expect etc满足<br />
+</p>
+<ul class="org-ul">
+<li>He realized that the tables were turned and he had to meet his wife's needs which he used to neglect.<br /></li>
+<li>I have a relationship with the girl to meet my intimate needs.<br /></li>
+<li>Your behaviors in the public ceremony don't meet the standard.<br /></li>
+</ul>
+<p>
+criterion [kraɪˈtɪriən] criteria: n.n. a standard that you use to judge something or make a decision about something标准, 准据, 规范<br />
+</p>
+<ul class="org-ul">
+<li>Whether our worker meet the criteria in the workshop is at stake.<br /></li>
+<li>As long as you meet the criteria, you will became independent from your mentor.<br /></li>
+<li>The kid is encouraged by his parents to meet the criteria in the kindergarten.<br /></li>
+</ul>
+<p>
+constitute [ˈkɑnstɪˌtut]: v. if several people or things constitute something, they are the parts that form it SYN make up构成<br />
+</p>
+<ul class="org-ul">
+<li>These wood and metal parts constituted robots on display.<br /></li>
+<li>Salaries and pocket money from my parents constitute my source of income.<br /></li>
+<li>The arrival of my cat constitutes a significant part of my daily life.<br /></li>
+</ul>
+<p>
+fatigue [fəˈtiɡ]: n. very great tiredness SYN exhaustion疲乏, 疲劳<br />
+</p>
+<ul class="org-ul">
+<li>You'd better focus on your work rather your fatigue.<br /></li>
+<li>Because of fatigue, the security eased the restriction on the check of visitors.<br /></li>
+<li>He is unwilling to feed his cat on his own with fatigue.<br /></li>
+</ul>
+<p>
+obstructive [əbˈstrʌktɪv]: adj. medical relating to a blocked tube, passage etc in the body阻碍的<br />
+</p>
+<ul class="org-ul">
+<li>The quality of his sleep is shaped by his obstructive breath.<br /></li>
+<li>His difficulty staying asleep is one of his obstructive symptoms.<br /></li>
+<li>Studies have shown that obstructive breath is leading cause of difficulty staying asleep.<br /></li>
+</ul>
+<p>
+syndrome [ˈsɪnˌdroʊm]: n. medical an illness which consists of a set of physical or mental problems – often used in the name of illnesses综合症<br />
+</p>
+<ul class="org-ul">
+<li>While she was pregnant, her baby was diagnosed with down syndrome.<br /></li>
+<li>With proper periodic treatmemts, a person diagnosed with down syndrome can lead a normal life.<br /></li>
+<li>The village was bombarded with weapons, the rate of children with down syndrome is as 2 times as in his neighbor village.<br /></li>
+</ul>
+<p>
+periodic [ˌpɪriˈɑdɪk]: adj. happening a number of times, usually at regular times周期的<br />
+</p>
+<ul class="org-ul">
+<li>Peridoic examinations are good for not only your physical healthy, but your mental healthy.<br /></li>
+<li>The child diagnosed with down syndrome is recommanded to do periodic examinations.<br /></li>
+<li>The child diagnosed with down syndrome is tried of periodic examinations.<br /></li>
+</ul>
+<p>
+limb [lɪm]: n. an arm or leg肢<br />
+</p>
+<ul class="org-ul">
+<li>It is a shame that I quake in every limb while I am speaking in public.<br /></li>
+<li>After the village was bombarded with air raid, the square was backed up by limbs of dead.<br /></li>
+<li>The shape of the limbs seems to point the way towards the forest.<br /></li>
+</ul>
+<p>
+scanner [ˈskænər]: n. a machine that passes an electrical beam over something in order to produce a picture of what is inside it ⇨ scan扫描仪<br />
+</p>
+<ul class="org-ul">
+<li>The scanner broke down, I must report it to our superior.<br /></li>
+<li>No one could account for the fact that the box of the scanner is so heavy.<br /></li>
+<li>While the scanner got lifted up, the boy found his coin on the ground.<br /></li>
+</ul>
+<p>
+socialize [ˈsoʊʃ(ə)lˌaɪz]: v. to spend time with other people in a friendly way交友<br />
+</p>
+<ul class="org-ul">
+<li>He was assigned to the group in which he socialzed with some girls.<br /></li>
+<li>He went out of his way to socialized with those patients with headaches.<br /></li>
+<li>Failing to socialize with the boxer he admires, he had a difficult time falling asleep.<br /></li>
+</ul>
+<p>
+spillover [ˈspɪlˌoʊvər]: n. the effect that one situation or problem has on another situation溢出,影响<br />
+</p>
+<ul class="org-ul">
+<li>The spillover from the diplomatic policy is tremendous.<br /></li>
+<li>The spillover from a money enconomy was beyond our description.<br /></li>
+<li>The spillover from the war between the two cities remained for over ten years.<br /></li>
+</ul>
+<p>
+shorten [ˈʃɔrt(ə)n]: v. to become shorter or make something shorter OPP lengthen缩短, (使)变短<br />
+</p>
+<ul class="org-ul">
+<li>I am shortening the stick to put it into Miumiu's nest.<br /></li>
+<li>My wife is shortening the curtain to fit into our window.<br /></li>
+<li>Due to the lack of money, he is trying to shorten the period of his study.<br /></li>
+</ul>
+<p>
+alert [əˈlɜrt]: adj. able to think quickly and clearly警惕的<br />
+</p>
+<ul class="org-ul">
+<li>The authorities must be alert for the epidemic spread from Europe.<br /></li>
+<li>Today our securities should be more alert for passengers coming from the USA.<br /></li>
+<li>These days, the cops are more alert for drug dealers abroad.<br /></li>
+</ul>
+<p>
+melatonin [ˌmeləˈtoʊnɪn]: n. a ↑hormone that is sometimes used as a drug to help you sleep褪黑激素<br />
+</p>
+<ul class="org-ul">
+<li>Th light prevents your brain from producing melatonin so you'd better keep the curtain on.<br /></li>
+<li>Melatonin is a substance which is good for your sleep.<br /></li>
+<li>Because of lack of melatonin, he has a difficult time staying asleep.<br /></li>
+</ul>
+<p>
+sedative [ˈsedətɪv]: n. a drug used to make someone calm or go to sleep镇静剂<br />
+</p>
+<ul class="org-ul">
+<li>The patient diagnosed with bipolar disorder need two pills of the sedative a day.<br /></li>
+<li>Although he was prescribed sedatives, he refused to take them because of his emotions.<br /></li>
+<li>He is assigned to the cohort prescribed sedatives.<br /></li>
+</ul>
+<p>
+prescribe [prɪˈskraɪb]: v. to say what medicine or treatment a sick person should have ⇨ prescription处(方), 开(药)<br />
+</p>
+<ul class="org-ul">
+<li>The patient with headaches is prescribed sedatives.<br /></li>
+<li>The patient prescribed sedatives also has explosure to yoga and mental health service.<br /></li>
+<li>A comparison group of patients prescribed sedatives makes no difference.<br /></li>
+</ul>
+<p>
+doze [doʊz]: v. to sleep lightly for a short time瞌睡<br />
+</p>
+<ul class="org-ul">
+<li>He has been dozing in schooltime, that's why I want to have a conversation with you, their parents.<br /></li>
+<li>That's the punishment for your dozing in schooltime.<br /></li>
+<li>My little sister accused me of my dozing in schooltime, which was none of her business.<br /></li>
+</ul>
+<p>
+cue [kju]: n. an action or event that is a signal for something else to happen暗示,线索<br />
+</p>
+<ul class="org-ul">
+<li>There is no cue that I will be designated as the headmaster.<br /></li>
+<li>In addition to fuzzy cues, do you have any evidence that proves your alibi?<br /></li>
+<li>I can feel the link between those cues about the crime.<br /></li>
+</ul>
+<p>
+paradoxical paradoxically [ˌperəˈdɑksɪk(ə)l]: adj.adv. a situation that seems strange because it involves two ideas or qualities that are very different矛盾的<br />
+</p>
+<ul class="org-ul">
+<li>Paradoxically, I try to stay awake, which certainly makes me fall asleep.<br /></li>
+<li>Paradoxically, the man who used to play truant from school won a lot of prizes in competitions.<br /></li>
+<li>Paradoxically, my cat refused to drink milk when I tempt her.<br /></li>
+</ul>
+<p>
+caffeine [ˈkæˌfin]: n. a substance in tea, coffee, and some other drinks that makes you feel more active ⇨ decaffeinated咖啡因<br />
+</p>
+<ul class="org-ul">
+<li>During her pregnancy, her husband don't allow her to drink any beverage with caffeine.<br /></li>
+<li>Fearing that I can't go to sleep at night, I refuse any beverage with caffeine.<br /></li>
+<li>Refusing any beverage with caffeine, you lost a lot of pleasure in the meantime.<br /></li>
+</ul>
+<p>
+alcohol [ˈælkəˌhɔl]: n. drinks such as beer or wine that contain a substance which can make you drunk酒精<br />
+</p>
+<ul class="org-ul">
+<li>Realizing the chocolate contained alcohol, the pregant woman spitted it out immediately.<br /></li>
+<li>Any beverage with alcohol is strictly forbidden at home.<br /></li>
+<li>The customer is complaining that beverage with alcohol is forbidden in our resturant.<br /></li>
+</ul>
+<hr />
+<p>
+fall/stay asleep: 入睡/维持睡眠<br />
+</p>
+<ul class="org-ul">
+<li>With my grandmother telling pirate stories, I fell fast asleep quickly.<br /></li>
+<li>Worrying about her husband's affair, she is not able to stay asleep as usual.<br /></li>
+<li>Don't be too hard on yourself, otherwise you won't stay asleep.<br /></li>
+</ul>
+<p>
+in the daytime: 在白天<br />
+</p>
+<ul class="org-ul">
+<li>His mother complains about his fast sleep in the daytime.<br /></li>
+<li>My cat is always sleeping in the daytime and running at night when we fall asleep.<br /></li>
+<li>The subway is noisy not only in the daytime, but also at night.<br /></li>
+</ul>
+<p>
+participate in sth.: 参加某事<br />
+</p>
+<ul class="org-ul">
+<li>Because of participation in the party, she is fired by her boss.<br /></li>
+<li>Everyone participating in the experiment must keep it secret.<br /></li>
+<li>My wife was full of enthusiasm when she learned that she could participate in the party.<br /></li>
+</ul>
+<p>
+focal point: n. 焦点<br />
+</p>
+<ul class="org-ul">
+<li>The focal point of treatment still remains the invention of new medication.<br /></li>
+<li>The focal point of your cat's health is that she should be fed on a regular basis.<br /></li>
+<li>The focal point of your English study is that your should practice more frequently.<br /></li>
+</ul>
+<p>
+shift work: n. 轮班工作<br />
+</p>
+<ul class="org-ul">
+<li>Tired of doing shift work, the nurse decided to quit the hospital.<br /></li>
+<li>I have an opportunity to do shift work.<br /></li>
+<li>He is unwilling to do shift work that makes him hard to fall asleep.<br /></li>
+</ul>
+<p>
+cycle through sth.: 循环遍历某事物<br />
+</p>
+<ul class="org-ul">
+<li>After cycling through these statements, the outcome of caculation will appear.<br /></li>
+<li>The focal point is that you should mimic cycling through these statements in your mind.<br /></li>
+<li>As long as it finished cycling through these statements, the outcome of caculation will be print out on the console.<br /></li>
+</ul>
+<p>
+the first line of treatment: 首选的治疗<br />
+</p>
+<ul class="org-ul">
+<li>The first line of treatment is cognitive behavioral therapy.<br /></li>
+<li>The first line of treatment remains this kind of medication.<br /></li>
+<li>The first lien of treatment is surgery that works well.<br /></li>
+</ul>
+<p>
+aim to do sth.: 旨在于某事<br />
+</p>
+<ul class="org-ul">
+<li>He aims to get a good grade in biology.<br /></li>
+<li>My wife aims to get our apartment spotless.<br /></li>
+<li>My cat aims to get a can that she enjoyed a great deal.<br /></li>
+</ul>
+<p>
+in the second half of the night: 在后半夜<br />
+</p>
+<ul class="org-ul">
+<li>There are some noises like dog barking in the second half of the night.<br /></li>
+<li>It seemed that someone broke into our house in the second half of the night.<br /></li>
+<li>Our cat seemed to try to wake up us in the second half of the night.<br /></li>
+</ul>
+<p>
+put the effort into doing sth.: 努力做某事<br />
+</p>
+<ul class="org-ul">
+<li>While I put the effort into cooking dinner, you are still fast asleep.<br /></li>
+<li>My grandfather put the effort into maintaining his exalted position in the family.<br /></li>
+<li>The drug dealer put the effort into paying the real estate debt.<br /></li>
+</ul>
+<p>
+in conjunction with doing sth.: 一边做某事<br />
+</p>
+<ul class="org-ul">
+<li>He is taking medications prescribed by the physician in conjunction with drinking soup of herb medicine.<br /></li>
+<li>He read English textbooks in conjunction with taking open course in English.<br /></li>
+<li>My wife watch TV in conjunction with asking me to feed her salmon.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org2533354" class="outline-3">
+<h3 id="org2533354">sentence2</h3>
+<div class="outline-text-3" id="text-org2533354">
+<p>
+insomnia [ɪnˈsɑmniə]: n. if you suffer from insomnia, you are not able to sleep失眠<br />
+</p>
+<ul class="org-ul">
+<li>The man diagnosed with insomnia watched the stone being eroded.<br /></li>
+<li>Fingers crossed the man diagnosed with insomnia will be treated in the hospital.<br /></li>
+<li>Fingers crossed the man diagnosed with insomnia will have a good night in the monastery.<br /></li>
+</ul>
+<p>
+disorder [dɪsˈɔrdər]: n. medical a mental or physical illness which prevents part of your body from working properly紊乱<br />
+</p>
+<ul class="org-ul">
+<li>The patient claimed that he suffered from a disorder of the liver after the sign in front of his house had gotten lifted up.<br /></li>
+<li>The lawyer suffering from a disorder of the brain has a difficult time wiping away the marks on his windows.<br /></li>
+<li>The attorney suffering from a disorder of the brain is scouting for his pills.<br /></li>
+</ul>
+<p>
+population [ˌpɑpjəˈleɪʃ(ə)n]: n. the number of people living in a particular area, country etc人口,种群<br />
+</p>
+<ul class="org-ul">
+<li>Ten percent of the population in this city hopes for a subway from the City Hall to the Railway Station.<br /></li>
+<li>A third of the population in the village worked together to whack away the huge stone.<br /></li>
+<li>An estimated 10 percent of the population in the village lay on the creek bank enjoying a rainbow.<br /></li>
+</ul>
+<p>
+irritable [ˈɪrɪtəb(ə)l]: adj. getting annoyed quickly or easily SYN crabby, bad-tempered易怒的<br />
+</p>
+<ul class="org-ul">
+<li>These days, my cat is so irritable that my kids stay away from her.<br /></li>
+<li>The paleontologist is becoming irritable because of the loss of fossils, that are millions of years in the making.<br /></li>
+<li>He is irritable when he is trying to extract gold from sand.<br /></li>
+</ul>
+<p>
+non-restorative [rɪˈstɔrətɪv]: adj. making you feel healthier or stronger恢复健康的<br />
+</p>
+<ul class="org-ul">
+<li>His physician instructed him to hold that pose which is regarded as restorative.<br /></li>
+<li>The effects vary greatly between those restorative gestures which are recommended by the yogis.<br /></li>
+<li>It seems that this kind of yoga gesture is regarded as a restorative meditation.<br /></li>
+</ul>
+<p>
+impairment [ɪmˈpermənt]: n. mental/visual/cognitive/hearing etc impairment a condition in which a part of a person’s mind or body is damaged or does not work well(身体)不适<br />
+</p>
+<ul class="org-ul">
+<li>A quarter of students in our school suffer from impairment at some point.<br /></li>
+<li>The link between the two patients is that they are both suffering from impairment in the daytime.<br /></li>
+<li>In practice, you are not diagnosed with insomnia because you don't suffer from impairment.<br /></li>
+</ul>
+<p>
+meet [mit]: v. meet a need/demand/requirement/condition etc to do something that someone wants, needs, or expects you to do or be as good as they need, expect etc满足<br />
+</p>
+<ul class="org-ul">
+<li>He realized that the tables were turned and he had to meet his wife's needs which he used to neglect.<br /></li>
+<li>I have a relationship with the girl to meet my intimate needs.<br /></li>
+<li>Your behaviors in the public ceremony don't meet the standard.<br /></li>
+</ul>
+<p>
+criterion [kraɪˈtɪriən] criteria: n.n. a standard that you use to judge something or make a decision about something标准, 准据, 规范<br />
+</p>
+<ul class="org-ul">
+<li>Whether our workers meet the criteria in the workshop is at stake.<br /></li>
+<li>As long as you meet the criteria, you will become independent from your mentor.<br /></li>
+<li>The kid is encouraged by his parents to meet the criteria in kindergarten.<br /></li>
+</ul>
+<p>
+constitute [ˈkɑnstɪˌtut]: v. if several people or things constitute something, they are the parts that form it SYN make up构成<br />
+</p>
+<ul class="org-ul">
+<li>These wood and metal parts constituted robots on display.<br /></li>
+<li>Salaries and pocket money from my parents constitute my source of income.<br /></li>
+<li>The arrival of my cat constitutes a significant part of my daily life.<br /></li>
+</ul>
+<p>
+fatigue [fəˈtiɡ]: n. very great tiredness SYN exhaustion疲乏, 疲劳<br />
+</p>
+<ul class="org-ul">
+<li>You'd better focus on your work rather than your fatigue.<br /></li>
+<li>Because of fatigue, the security eased the restriction on the check of visitors.<br /></li>
+<li>He is unwilling to feed his cat on his own with fatigue.<br /></li>
+</ul>
+<p>
+obstructive [əbˈstrʌktɪv]: adj. medical relating to a blocked tube, passage etc in the body阻碍的<br />
+</p>
+<ul class="org-ul">
+<li>The quality of his sleep is shaped by his obstructive breath.<br /></li>
+<li>His difficulty staying asleep is one of his obstructive symptoms.<br /></li>
+<li>Studies have shown that obstructive breath is the leading cause of difficulty staying asleep.<br /></li>
+</ul>
+<p>
+syndrome [ˈsɪnˌdroʊm]: n. medical an illness which consists of a set of physical or mental problems – often used in the name of illnesses综合症<br />
+</p>
+<ul class="org-ul">
+<li>While she was pregnant, her baby was diagnosed with Down syndrome.<br /></li>
+<li>With proper periodic treatments, a person diagnosed with Down syndrome can lead a normal life.<br /></li>
+<li>The village was bombarded with weapons, rate of children with Down syndrome increased.<br /></li>
+</ul>
+<p>
+periodic [ˌpɪriˈɑdɪk]: adj. happening a number of times, usually at regular times周期的<br />
+</p>
+<ul class="org-ul">
+<li>Periodic examinations are good for not only your physical health but your mental health.<br /></li>
+<li>The child diagnosed with Down syndrome is recommended to do periodic examinations.<br /></li>
+<li>The child diagnosed with Down syndrome is tried of periodic examinations.<br /></li>
+</ul>
+<p>
+limb [lɪm]: n. an arm or leg肢<br />
+</p>
+<ul class="org-ul">
+<li>It is a shame that I quake in every limb while I am speaking in public.<br /></li>
+<li>After the village was bombarded with an air raid, the square was backed up by limbs of the dead.<br /></li>
+<li>The shape of the limbs seems to point the way towards the forest.<br /></li>
+</ul>
+<p>
+scanner [ˈskænər]: n. a machine that passes an electrical beam over something in order to produce a picture of what is inside it ⇨ scan扫描仪<br />
+</p>
+<ul class="org-ul">
+<li>The scanner broke down, I must report it to our superior.<br /></li>
+<li>No one could account for the fact that the box of the scanner is so heavy.<br /></li>
+<li>While the scanner was lifted up, the boy found his coin on the ground.<br /></li>
+</ul>
+<p>
+socialize [ˈsoʊʃ(ə)lˌaɪz]: v. to spend time with other people in a friendly way交友<br />
+</p>
+<ul class="org-ul">
+<li>He was assigned to the group in which he socialized with some girls.<br /></li>
+<li>He went out of his way to socialize with those patients with headaches.<br /></li>
+<li>Failing to socialize with the boxer he admires, he had a difficult time falling asleep.<br /></li>
+</ul>
+<p>
+spillover [ˈspɪlˌoʊvər]: n. the effect that one situation or problem has on another situation溢出,影响<br />
+</p>
+<ul class="org-ul">
+<li>The spillover from the diplomatic policy is tremendous.<br /></li>
+<li>The spillover from a money economy was beyond our description.<br /></li>
+<li>The spillover from the war between the two cities remained for over ten years.<br /></li>
+</ul>
+<p>
+shorten [ˈʃɔrt(ə)n]: v. to become shorter or make something shorter OPP lengthen缩短, (使)变短<br />
+</p>
+<ul class="org-ul">
+<li>I am shortening the stick to put it into Miumiu's nest.<br /></li>
+<li>My wife is shortening the curtain to fit into our window.<br /></li>
+<li>Due to the lack of money, he is trying to shorten the period of his study.<br /></li>
+</ul>
+<p>
+alert [əˈlɜrt]: adj. able to think quickly and clearly警惕的<br />
+</p>
+<ul class="org-ul">
+<li>The authorities must be alert for the epidemic spread from Europe.<br /></li>
+<li>Today our security guards should be more alert for passengers coming from the USA.<br /></li>
+<li>These days, the cops are more alert for drug dealers abroad.<br /></li>
+</ul>
+<p>
+melatonin [ˌmeləˈtoʊnɪn]: n. a ↑hormone that is sometimes used as a drug to help you sleep褪黑激素<br />
+</p>
+<ul class="org-ul">
+<li>Light prevents your brain from producing melatonin so you'd better keep the curtain on.<br /></li>
+<li>Melatonin is a substance that promotes your sleep.<br /></li>
+<li>Because of the lack of melatonin, he has a hard time staying asleep.<br /></li>
+</ul>
+<p>
+sedative [ˈsedətɪv]: n. a drug used to make someone calm or go to sleep镇静剂<br />
+</p>
+<ul class="org-ul">
+<li>The patient diagnosed with bipolar disorder needs two pills of the sedative a day.<br /></li>
+<li>Although he was prescribed sedatives, he refused to take them because of his emotions.<br /></li>
+<li>He is assigned to the cohort prescribed sedatives.<br /></li>
+</ul>
+<p>
+prescribe [prɪˈskraɪb]: v. to say what medicine or treatment a sick person should have ⇨ prescription处(方), 开(药)<br />
+</p>
+<ul class="org-ul">
+<li>The patient with headaches is prescribed sedatives.<br /></li>
+<li>The patient prescribed sedatives also has exposure to yoga and mental health services.<br /></li>
+<li>A comparison group of patients prescribed sedatives makes no difference.<br /></li>
+</ul>
+<p>
+doze [doʊz]: v. to sleep lightly for a short time瞌睡<br />
+</p>
+<ul class="org-ul">
+<li>He has been dozing during school time, that's why I want to have a conversation with you, their parents.<br /></li>
+<li>That's the punishment for your dozing during school time.<br /></li>
+<li>My little sister accused me of dozing during school time, which was none of her business.<br /></li>
+</ul>
+<p>
+cue [kju]: n. an action or event that is a signal for something else to happen暗示,线索<br />
+</p>
+<ul class="org-ul">
+<li>There is no cue that I will be designated as the headmaster.<br /></li>
+<li>In addition to fuzzy cues, do you have any evidence that proves your alibi?<br /></li>
+<li>I can feel the link between those cues about the crime.<br /></li>
+</ul>
+<p>
+paradoxical paradoxically [ˌperəˈdɑksɪk(ə)l]: adj.adv. a situation that seems strange because it involves two ideas or qualities that are very different矛盾的<br />
+</p>
+<ul class="org-ul">
+<li>Paradoxically, I try to stay awake, which certainly makes me fall asleep.<br /></li>
+<li>Paradoxically, the man who used to play truant from school won a lot of prizes in competitions.<br /></li>
+<li>Paradoxically, my cat refused to drink milk when I tempted her.<br /></li>
+</ul>
+<p>
+caffeine [ˈkæˌfin]: n. a substance in tea, coffee, and some other drinks that makes you feel more active ⇨ decaffeinated咖啡因<br />
+</p>
+<ul class="org-ul">
+<li>During her pregnancy, her husband doesn't allow her to drink any beverage with caffeine.<br /></li>
+<li>Fearing that I can't go to sleep at night, I refuse any beverage with caffeine.<br /></li>
+<li>Refusing any beverage with caffeine, you lose a lot of pleasure in the meantime.<br /></li>
+</ul>
+<p>
+alcohol [ˈælkəˌhɔl]: n. drinks such as beer or wine that contain a substance which can make you drunk酒精<br />
+</p>
+<ul class="org-ul">
+<li>Realizing the chocolate contained alcohol, the pregnant woman spat it out immediately.<br /></li>
+<li>Any beverage with alcohol is strictly forbidden at home.<br /></li>
+<li>The customer is complaining that beverage with alcohol is forbidden in our restaurant.<br /></li>
+</ul>
+<hr />
+<p>
+fall/stay asleep: 入睡/维持睡眠<br />
+</p>
+<ul class="org-ul">
+<li>With my grandmother telling pirate stories, I fell fast asleep quickly.<br /></li>
+<li>Worrying about her husband's affair, she is not able to stay asleep as usual.<br /></li>
+<li>Don't be too hard on yourself, otherwise you won't stay asleep.<br /></li>
+</ul>
+<p>
+in the daytime: 在白天<br />
+</p>
+<ul class="org-ul">
+<li>His mother complains about his fast sleep in the daytime.<br /></li>
+<li>My cat is always sleeping in the daytime and running at night when we fall asleep.<br /></li>
+<li>The subway is noisy not only in the daytime but also at night.<br /></li>
+</ul>
+<p>
+participate in sth.: 参加某事<br />
+</p>
+<ul class="org-ul">
+<li>Because of participation in the party, she is fired by her boss.<br /></li>
+<li>Everyone participating in the experiment must keep it secret.<br /></li>
+<li>My wife was full of enthusiasm when she learned that she could participate in the party.<br /></li>
+</ul>
+<p>
+focal point: n. 焦点<br />
+</p>
+<ul class="org-ul">
+<li>The focal point of treatment remains the invention of a new medication.<br /></li>
+<li>The focal point of your cat's health is that she should be fed regularly.<br /></li>
+<li>The focal point of your English study is that you should practice it more frequently.<br /></li>
+</ul>
+<p>
+shift work: n. 轮班工作<br />
+</p>
+<ul class="org-ul">
+<li>Tired of doing shift work, the nurse was determined to quit the hospital.<br /></li>
+<li>I have an opportunity to do shift work.<br /></li>
+<li>He is unwilling to do shift work which makes it hard to fall asleep.<br /></li>
+</ul>
+<p>
+cycle through sth.: 循环遍历某事物<br />
+</p>
+<ul class="org-ul">
+<li>After cycling through these statements, the outcome of the calculation will appear.<br /></li>
+<li>The focal point is that you should mimic cycling through these statements in your mind.<br /></li>
+<li>As long as it finished cycling through these statements, the outcome of the calculation will be printed out on the console.<br /></li>
+</ul>
+<p>
+the first line of treatment: 首选的治疗<br />
+</p>
+<ul class="org-ul">
+<li>The first line of treatment is cognitive behavioral therapy.<br /></li>
+<li>The first line of treatment remains this kind of medication.<br /></li>
+<li>The first lien of treatment is surgery that works well.<br /></li>
+</ul>
+<p>
+aim to do sth.: 旨在于某事<br />
+</p>
+<ul class="org-ul">
+<li>He aims to get a good grade in biology.<br /></li>
+<li>My wife aims to get our apartment spotless.<br /></li>
+<li>My cat aims to get a can that she enjoyed a great deal.<br /></li>
+</ul>
+<p>
+in the second half of the night: 在后半夜<br />
+</p>
+<ul class="org-ul">
+<li>There are some noises like dogs barking in the second half of the night.<br /></li>
+<li>It seemed that someone broke into our house in the second half of the night.<br /></li>
+<li>Our cat seemed to try to wake up us in the second half of the night.<br /></li>
+</ul>
+<p>
+put effort into doing sth.: 努力做某事<br />
+</p>
+<ul class="org-ul">
+<li>While I put effort into cooking dinner, you are still fast asleep.<br /></li>
+<li>My grandfather put effort into maintaining his exalted position in the family.<br /></li>
+<li>The drug dealer put effort into paying the real estate debt.<br /></li>
+</ul>
+<p>
+in conjunction with doing sth.: 一边做某事<br />
+</p>
+<ul class="org-ul">
+<li>He is taking medications prescribed by the physician in conjunction with drinking soup of herb medicine.<br /></li>
+<li>He read English textbooks in conjunction with taking an open course in English.<br /></li>
+<li>My wife watches TV in conjunction with asking me to feed her salmon.<br /></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,646 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-09-28 Sat 22:17 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-orgc86bd2b" class="outline-2">
+<h2 id="orgc86bd2b">Lesson 32 A lost ship</h2>
+<div class="outline-text-2" id="text-orgc86bd2b">
+<p class="verse">
+Did the crew of the Elkor find what they were looking for? Why?<br />
+<br />
+The <b>salvage operation</b> had been a complete failure.<br />
+The small ship, Elkor, which had been searching the Barents Sea for weeks,<br />
+&#xa0;was on its way home.<br />
+A radio message from the mainland had been received by the ship's captain<br />
+&#xa0;instructing him to give up the search.<br />
+The captain knew that another attempt would be made later,<br />
+&#xa0;for the sunken ship he was trying to find had been carrying <b>a precious cargo of</b> gold bullion.<br />
+<br />
+Despite the message, the captain of the Elkor decided to try once more.<br />
+The sea bed was scoured with powerful nets<br />
+&#xa0;and there was tremendous excitement on board when a chest was raised from the bottom.<br />
+Though the crew <b>were at first under the impression that</b> the lost ship had been found,<br />
+&#xa0;the contents of the chest proved them wrong.<br />
+What they had in fact found was a ship which had been sunk many years before.<br />
+<br />
+The chest contained the personal belongings of a seaman, Alan Fielding.<br />
+There were books, clothing and photographs,<br />
+&#xa0;<b>together with</b> letters which the seaman had once received from his wife.<br />
+The captain of the Elkor ordered his men to salvage as much as possible from the wreck.<br />
+Nothing of value was found,<br />
+&#xa0;but the numerous items which were brought to the surface proved to be of great interest.<br />
+From a heavy gun that was raised,<br />
+&#xa0;the captain realized that the ship must have been a cruiser.<br />
+In another chest, which contained the belongings of a ship's officer,<br />
+&#xa0;there was an unfinished letter which had been written on March 14th, 1943.<br />
+The captain leant from the letter that the name of the lost ship was the Karen.<br />
+The most valuable find of all was the ship's log book,<br />
+&#xa0;parts of which it was still possible to read.<br />
+From this the captain was able to <b>piece together</b> all the information that had <b>come to light</b>.<br />
+The Karen had been sailing <b>in a convoy</b> to Russia when she was torpedoed by an enemy submarine.<br />
+This was later confirmed by <b>a naval official</b> at the Ministry of Defence<br />
+&#xa0;after the Elkor had returned home.<br />
+All the items that were found were sent to the War Museum.<br />
+</p>
+</div>
+<div id="outline-container-org111c99f" class="outline-3">
+<h3 id="org111c99f">expression</h3>
+<div class="outline-text-3" id="text-org111c99f">
+<p>
+salvage: [ˈsælvɪdʒ] v.n. 救助;打捞<br />
+Barents: n.(海)<br />
+sunken: [ˈsʌŋkən] adj.沉没的<br />
+cargo: [ˈkɑrɡoʊ] n.一车/船货物<br />
+bullion: [ˈbʊljən] n. un. bars of gold or silver金条;银条<br />
+scour: [skaʊr] v.搜寻<br />
+chest: [tʃest] n.大箱子<br />
+contents: [kənˈtent] n.(复数)所装的东西<br />
+belongings: [bɪˈlɔŋɪŋz] n.(复数)所有物<br />
+item: [ˈaɪtəm] n.物件<br />
+cruiser: [ˈkruzər] n.巡洋舰<br />
+find: [faɪnd] n. thing找到的物品<br />
+log: [lɔɡ] book: 日志本<br />
+piece: [pis] v. 拼成整体<br />
+convoy: [ˈkɑnˌvɔɪ] n. 护航<br />
+torpedo: [tɔrˈpidoʊ] v. n. 用鱼雷攻击<br />
+submarine: [ˈsʌbməˌrin] n. 潜水艇<br />
+naval: [ˈneɪv(ə)l] adj. navy n.海军的<br />
+ministry: [ˈmɪnɪstri] n. (政府的)部<br />
+</p>
+<hr />
+<p>
+salvage operation: 打捞行动<br />
+a cargo of: 一货&#x2026;<br />
+piece together: 拼装起来<br />
+in a convoy: 在护航中<br />
+a naval officer: 一个海军军官<br />
+</p>
+<hr />
+<p>
+sb. be under the impression that + &#x2026;: 某人在&#x2026;幻觉/印象下<br />
+together with: 除了&#x2026;还有<br />
+come to light: 披露出来<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org8388014" class="outline-3">
+<h3 id="org8388014">words</h3>
+<div class="outline-text-3" id="text-org8388014">
+<p>
+salvage [ˈsælvɪdʒ] v.救助,营救; 打捞<br />
+Barents ['bærənts] n.巴伦支(海)<br />
+sunken [ˈsʌŋkən] adj.沉没的<br />
+cargo n.货物<br />
+bullion [ˈbʊliən] n.金条;银条<br />
+scour [ˈskaʊər] v.彻底搜索<br />
+chest [tʃest] n.大箱子<br />
+contents [ˈkɑːntents] n.(复数)所装的东西<br />
+belongings [bɪˈlɔːŋɪŋz] n.(复数)所有物<br />
+item [ˈaɪtəm] n.物件<br />
+cruiser [ˈkruːzər] n.巡洋舰<br />
+find [faɪnd] n.找到的物品<br />
+log book [lɔːɡ-bʊk] 航海日志<br />
+piece [piːs] v.拼成整体<br />
+convoy [ˈkɑːnvɔɪ] n.护航<br />
+torpedo [tɔːrˈpiːdoʊ] v.用鱼雷攻击<br />
+submarine [ˈsʌbməriːn] n.潜水艇<br />
+naval [ˈneɪv(ə)l] adj.海军的<br />
+ministry [ˈmɪnɪstri] n.(政府的)部<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org7f16e95" class="outline-3">
+<h3 id="org7f16e95"><span class="done DONE">DONE</span> 单词造句</h3>
+<div class="outline-text-3" id="text-org7f16e95">
+<p>
+salvage v.n.  salvage operation<br />
+</p>
+<ul class="org-ul">
+<li>As we were struck by a rainstrom, the salvage operation was delayed for days.<br /></li>
+<li>Sure enough, there was a salvage operation in the open seas.<br /></li>
+<li>The salvage operation must have been gone on for sevaral days.<br /></li>
+<li>The salvage operation failed because of bad weather.<br /></li>
+<li>The salvage operation which was delayed for days should have gone on for weeks.<br /></li>
+</ul>
+<p>
+Barents n.<br />
+sunken adj.<br />
+</p>
+<ul class="org-ul">
+<li>These archaeologists never dreamed of finding a sunken ship which dates back to ancient times.<br /></li>
+<li>While the salvage operation was going on, a sunken ship had been found on the sea bed.<br /></li>
+<li>The captain was conscious that the sunken ship can't be found ever.<br /></li>
+<li>The captain found it impossible to find the sunken ship which they searched for weeks.<br /></li>
+<li>The captain kept the sunken ship in hiding until the end of the war.<br /></li>
+</ul>
+<p>
+cargo n.  a cargo of<br />
+</p>
+<ul class="org-ul">
+<li>The ship was gonna carry a cargo of fresh fruits and vegetables to London.<br /></li>
+<li>These workers had the impulse to unload a cargo of oranges from the ship.<br /></li>
+<li>The student in the university set a cargo of cell phones on fire last night.<br /></li>
+<li>A worker felt sick to his stomach while waiting for a cargo of furniture.<br /></li>
+<li>My boss got very angry when waitting for a cargo of furniture.<br /></li>
+</ul>
+<p>
+bullion n. un.<br />
+</p>
+<ul class="org-ul">
+<li>The pirate was delighted to unload gold bullion from the ship.<br /></li>
+<li>The boat was said to be loaded with silver bullion.<br /></li>
+<li>The boat was supposed to be loaded with gold bullion, together with silver bullion.<br /></li>
+<li>While I was taking a shower, I found a bullion in my bathroom.<br /></li>
+<li>It is illogical for your wife to throw away a gold bullion.<br /></li>
+</ul>
+<p>
+scour v.<br />
+</p>
+<ul class="org-ul">
+<li>I was anxious to scour my room to find my key to the truck.<br /></li>
+<li>My wife scoured our yard to clean up the snails.<br /></li>
+<li>The sad truth is that we scoured his room and found no evidence.<br /></li>
+<li>I noticed you scouring your room, why did you do that?<br /></li>
+<li>He scoured his drawer to find the pictures of his wife at the idea of his daughter.<br /></li>
+</ul>
+<p>
+chest n.<br />
+</p>
+<ul class="org-ul">
+<li>Going through the contents of chest, the pirate throw it into the sea.<br /></li>
+<li>I had the impulse to open the chest that belongs to my wife.<br /></li>
+<li>As he was tired of work, he dumpped his clothes on the chest.<br /></li>
+<li>He has received abuse from his mother, for he sat on the precious chest.<br /></li>
+<li>The chest was said to have numerous gold bullion.<br /></li>
+</ul>
+<p>
+contents n.<br />
+belongings n.<br />
+</p>
+<ul class="org-ul">
+<li>To my dismay, when we are about to drive you have not packed your belongings.<br /></li>
+<li>If you had packed your belongings in time, we wouldn't have been late for work.<br /></li>
+<li>For instance, he forgot to pack his belongings.<br /></li>
+<li>My wife is brought up to pack her belongings by herself.<br /></li>
+<li>Don't forget your belongings just before you left the washroom.<br /></li>
+</ul>
+<p>
+item n.<br />
+</p>
+<ul class="org-ul">
+<li>You are free to take these items with you.<br /></li>
+<li>Leo expressed his gratitude to me, for I let him have these items for free.<br /></li>
+<li>Make yourself comfortable. These items are free samples of perfume.<br /></li>
+<li>It is illogical to classify these items as something exempted from import duty.<br /></li>
+<li>The item I gave you last week is a mixture of wather and alcohol.<br /></li>
+</ul>
+<p>
+curiser n.<br />
+</p>
+<ul class="org-ul">
+<li>It used to be my job to fix curiser.<br /></li>
+<li>We were greeted by an unpleasant smell when we repaired the curiser.<br /></li>
+<li>I felt guilty that I failed to repair the curiser.<br /></li>
+<li>On the other hand, the curiser was used to attack people without weapons.<br /></li>
+<li>There were a lot of excitement in the curiser after the salvage operation.<br /></li>
+</ul>
+<p>
+find n. thing<br />
+</p>
+<ul class="org-ul">
+<li>A gold bullion is always a find of value.<br /></li>
+<li>The order was given because of a valuable find.<br /></li>
+<li>Armed with a torchlight in the cave, we indeed got valuable finds.<br /></li>
+<li>The well-known archaeologist always gets valuable finds for one cause or another.<br /></li>
+<li>On another occasion, he claimed that he got a valuable find in the cave.<br /></li>
+</ul>
+<p>
+log book<br />
+</p>
+<ul class="org-ul">
+<li>Waking up with a start, the captain begun to read the log book.<br /></li>
+<li>The seaman caught sight of a log book the captain was reading.<br /></li>
+<li>This seaman is equal to read the log book.<br /></li>
+<li>It is a pity that we didn't get enough money to read that log book in the museum.<br /></li>
+<li>We got used to reading the log book.<br /></li>
+</ul>
+<p>
+piece v.  piece together<br />
+</p>
+<ul class="org-ul">
+<li>After having pieced together what happened concerned with him, we all got very angry.<br /></li>
+<li>The detective managed to piece together the information.<br /></li>
+<li>I'm sure that you had a perfect alibi, for I have pieced together what happened.<br /></li>
+<li>I'm glad that you pieced together the fragments of the clock.<br /></li>
+<li>Equipped with a torchlight, he pieced together the fragments of paper.<br /></li>
+</ul>
+<p>
+convoy n.  in a convoy<br />
+</p>
+<ul class="org-ul">
+<li>In a convoy, these officers went to extremes to protect the president.<br /></li>
+<li>In a convoy, no one was allowed to walk on the street.<br /></li>
+<li>I was punished for the simple reason that they were in a convoy.<br /></li>
+<li>In a convoy, the local police usually have a difficult time in keeping order.<br /></li>
+<li>Despite the fact that he was in a convoy, he put out the fire in the antique store.<br /></li>
+</ul>
+<p>
+torpedo v. n.<br />
+</p>
+<ul class="org-ul">
+<li>I consloed the crew of the ship that we wasn't torpedoed by a submarine.<br /></li>
+<li>After several times, the captain found it hard to torpedo the ship out at sea.<br /></li>
+<li>Whether we are torpedoed or not largely depends on the damn weather.<br /></li>
+<li>The captain took heart and torpedoed the enemy ship.<br /></li>
+<li>To compensate for our loss, we must torpedo their ship.<br /></li>
+</ul>
+<p>
+submarine n.<br />
+</p>
+<ul class="org-ul">
+<li>The speical kind o submarine stems from the U.S.<br /></li>
+<li>The editor is so fanatical about submarines that he wrote an article on them.<br /></li>
+<li>His father claimed that he was killed in action in the submarine.<br /></li>
+<li>We might stay overnight in the submarine.<br /></li>
+<li>The expert went to great lengths to prove that the submarine hadn't been torpedoed.<br /></li>
+</ul>
+<p>
+naval adj. navy n.  a naval officer<br />
+</p>
+<ul class="org-ul">
+<li>A naval officer ordered his men to get rid of the submarine.<br /></li>
+<li>A naval officer claimed that he was impressed by the loss of the Titanic.<br /></li>
+<li>I can't conceal the fact that the naval officer was killed in action.<br /></li>
+<li>A naval officer sped to the cruiser.<br /></li>
+<li>The naval officer had no intention of concealing it.<br /></li>
+</ul>
+<p>
+ministry<br />
+</p>
+<ul class="org-ul">
+<li>I used to work for the Ministry of Defence.<br /></li>
+<li>The teacher should be someone who used to work for the Ministry of Education.<br /></li>
+<li>A man who works for the Ministry of Defence asked me to do him a favor.<br /></li>
+<li>It is outrageous that some students set the Ministry of Defence on fire.<br /></li>
+<li>It is outrageous that a vendor bargained with passers-by in front of the Ministry of Education.<br /></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org88e6cff" class="outline-3">
+<h3 id="org88e6cff">反复听电影片段直到懂关键句</h3>
+</div>
+<div id="outline-container-orgbf63744" class="outline-3">
+<h3 id="orgbf63744">复习二册语法(笔记或视频) &amp; 红皮书</h3>
+</div>
+<div id="outline-container-orgbf9284a" class="outline-3">
+<h3 id="orgbf9284a"><span class="done DONE">DONE</span> 习惯用法造句</h3>
+<div class="outline-text-3" id="text-orgbf9284a">
+<p>
+sb. be under the impression that + &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>I was under the impression that the dog was about to leap out at me.<br /></li>
+<li>They were under the impression that they had finished their task.<br /></li>
+<li>You should not be under the impression that he still fall in love with you.<br /></li>
+<li>Everyone was under the impression that the naval officer was killed in action.<br /></li>
+<li>We were under the impression that the salvage operation was a compelete failure.<br /></li>
+</ul>
+<p>
+together with<br />
+</p>
+<ul class="org-ul">
+<li>Dickie presented his wife with a $300 watch,<br />
+together with a precious cell phone on her birthday.<br /></li>
+<li>We was caught in a rainstorm, together with an air crash.<br /></li>
+<li>Our friend, Joey, went on foot, together with his brother, Chandler.<br /></li>
+<li>I am apologetic about my son's asking for money, together with meal.<br /></li>
+<li>He dumped the heavy bag on the counter, together with a receipt.<br /></li>
+</ul>
+<p>
+come to light<br />
+</p>
+<ul class="org-ul">
+<li>He managed to piece together all information that had come to light.<br /></li>
+<li>Before this came to light, we all thought that cats have nine lives.<br /></li>
+<li>Before the new evidence came to light, he had a perfect alibi.<br /></li>
+<li>If this had come to light, he would have had a perfect alibi.<br /></li>
+<li>If this evidence comes to light, you will be judged in the court.<br /></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org6bc16af" class="outline-3">
+<h3 id="org6bc16af">跟读 50遍</h3>
+</div>
+<div id="outline-container-orgc3177c1" class="outline-3">
+<h3 id="orgc3177c1"><span class="done DONE">DONE</span> Comprehension 反复练习</h3>
+<div class="outline-text-3" id="text-orgc3177c1">
+</div>
+</div>
+<div id="outline-container-org9d3d186" class="outline-3">
+<h3 id="org9d3d186"><span class="done DONE">DONE</span> Ask me if 写+读</h3>
+<div class="outline-text-3" id="text-org9d3d186">
+<ol class="org-ol">
+<li>The salvage operation had been a complete failure. Why<br />
+Why had the salvage operation been a complete failure?<br /></li>
+<li>The radio message had instructed him to give up the search. What &#x2026; do<br />
+What had the radio message instructed him to do?<br /></li>
+<li>The sunken ship had been carrying a cargo of gold. What<br />
+What had the sunken ship been carrying?<br />
+What had been carrying a cargo of gold?<br /></li>
+<li>The captain decided to try once more. Who<br />
+Who decided to try once more?<br /></li>
+<li>A chest was raised from the bottom of the sea. Where<br />
+Where was a chest raised?<br /></li>
+<li>The ship had been sunk many years before. When<br />
+When had the ship been sunk?<br /></li>
+<li>The chest had belonged to a seaman. Who<br />
+Who had the chest belonged to?<br /></li>
+<li>They knew that the ship had been a cruiser. How<br />
+How did they know that the ship had been a cruiser?<br /></li>
+<li>The lost ship had been called the Karen. What<br />
+What had been called the Karen?<br />
+What had the lost ship been called?<br /></li>
+<li>The Karen had been torpedoed by an enemy submarine. When<br />
+When had the Karen been torpedoed by an enemy submarine?<br /></li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org5135c20" class="outline-3">
+<h3 id="org5135c20"><span class="done DONE">DONE</span> 摘要写作 写 &amp; 对答案</h3>
+<div class="outline-text-3" id="text-org5135c20">
+<p>
+A chest, which contained books, clothing, photographs and letters,<br />
+	was raised from the bottom of the sea.<br />
+Because this proved that it belonged to a seaman,<br />
+	the captain of the Elkor instructed his men to salvage as much as possible.<br />
+From a heavy gun that was raised, the captain knew the ship must have been a cruiser.<br />
+The captain learnt from the letter in another chest that the name of the lost ship was the Karen.<br />
+From the ship's log book, parts of which it was still able to read,<br />
+	the captain piece together all the information.<br />
+The Karen was torpedoed by an enemy submarine in a convoy to Russia.<br />
+All the items that were salvaged were sent to the War Museum.<br />
+</p>
+
+<p>
+The chest containing the personal belongings of Alan Fielding told them a lot,<br />
+	and there were other items of interest.<br />
+A heavy gun proved the ship was a cruiser.<br />
+Another chest belonging to a ship's officer<br />
+	contained an unfinished letter dated March 14th, 1943,<br />
+		from which they learnt the ship's name.<br />
+The most valuable find was the ship's log book,<br />
+	which told them the Karen had been sailing in convoy to Russia<br />
+	when she was torpedoed by an enemy submarine.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org811fff9" class="outline-3">
+<h3 id="org811fff9"><span class="done DONE">DONE</span> tell the story 口语复述</h3>
+<div class="outline-text-3" id="text-org811fff9">
+</div>
+</div>
+<div id="outline-container-org2bc148f" class="outline-3">
+<h3 id="org2bc148f"><span class="done DONE">DONE</span> composition 阅读 或 写作</h3>
+<div class="outline-text-3" id="text-org2bc148f">
+<p>
+The journey has gone well so far.<br />
+We are now on the way to Russia and hope that we arrive with no more problems.<br />
+But we are watching the sea and sky.<br />
+The convoy successfully fought off an air attack early this morning.<br />
+No ships were lost and we managed to shoot down three enemy aircraft<br />
+	before they broke off the attack.<br />
+</p>
+
+<p>
+At 10 a.m. this morning we were attacked by a U-boat.<br />
+This was the first time we had been attacked<br />
+	and for most men on board this was the first time they had been in action at sea.<br />
+We were fortunate, but the ship ahead of us, the Dauntless, was torpedoed and sunk.<br />
+</p>
+
+<p>
+After the ship sank, there were hundreds of men in the sea.<br />
+We picked up as many survivors as we could in the Karen.<br />
+In fact in the end we picked up 720 men.<br />
+Which meant that 50 men lost their lives in the attack on the Dauntless.<br />
+The Karen was packed with men, many crowded on the open decks,<br />
+	when we turned and attacked the U-boat.<br />
+Depth charges were dropped and the U-boat was put out of action.<br />
+</p>
+
+<p>
+It is now 3.15 p.m., the light is already beginning to fade and storm clouds are gathering.<br />
+We are about to be attacked by a second U-boat, this time from the north.<br />
+The captain has just announced.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org131e3a7" class="outline-3">
+<h3 id="org131e3a7">Topics for discussion</h3>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,650 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-08-06 Tue 22:24 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+
+<div id="outline-container-org7a091b7" class="outline-2">
+<h2 id="org7a091b7">Lesson 88 Trapped in a mine</h2>
+<div class="outline-text-2" id="text-org7a091b7">
+<p class="verse">
+Why is the rescue taking so long?<br />
+<br />
+Six men have been trapped in a mine for seventeen hours.<br />
+If they are not brought to the surface soon they may <b>lose their lives</b>.<br />
+However, rescue operations are proving difficult.<br />
+If explosives are used, vibrations will <b>cause the roof of the mine to collapse</b>.<br />
+Rescue workers are therefore drilling a hole on the north side of the mine.<br />
+They intend to bring the men up <b>in a special capsule</b>.<br />
+If there had not been <b>a hard layer of</b> rock beneath the soil,<br />
+&#xa0;they would have completed the job in a few hours.<br />
+<b>As it is</b>, they have been drilling for sixteen hours and they still have a long way to go.<br />
+Meanwhile, a microphone, which was lowered into the mine two hours ago,<br />
+&#xa0;has <b>enabled the men to keep in touch with</b> their closest relatives.<br />
+Though they are <b>running out of</b> food and drink,<br />
+&#xa0;the men are cheerful and confident that they will get out soon.<br />
+They have been told that rescue operations are progressing smoothly.<br />
+If they knew how difficult it was to drill through the hard rock, they would <b>lose heart</b>.<br />
+</p>
+</div>
+<div id="outline-container-org78337c1" class="outline-3">
+<h3 id="org78337c1">expression</h3>
+<div class="outline-text-3" id="text-org78337c1">
+<p>
+trap [træp] v.陷入,使陷入困境<br />
+surface [ˈsɜrfəs] n.地面,表面<br />
+explosive [ɪkˈsploʊsɪv] n.炸药<br />
+vibration [vaɪˈbreɪʃ(ə)n] n.震动<br />
+collapse [kəˈlæps] v.n.坍塌<br />
+drill [drɪl] v.n.钻孔<br />
+capsule [ˈkæpˌsjul] n.容器<br />
+layer [ˈleɪr] n.层<br />
+beneath [bɪˈniθ] prep.在&#x2026;之下<br />
+lower [ˈloʊr] v.adj.放下,降低<br />
+progress [prəˈɡres] v.n.进展,进行<br />
+smoothly [ˈsmuːðli] adv.顺利地<br />
+</p>
+
+<p>
+on the surface 表面上<br />
+in a special capsule 在一个特殊的胶囊里<br />
+layers of 几层的&#x2026;<br />
+a layer of 一层的&#x2026;<br />
+make progress 取得进展<br />
+go/run smoothly 进展顺利<br />
+</p>
+<hr />
+<p>
+wish型虚拟语气: 从句: should(可省略) do<br />
+</p>
+
+<p>
+lose one's life 死亡<br />
+As it is&#x2026; 事实上(状语)<br />
+enable sb. to do sth. 使某人能够做某事<br />
+keep in touch with &#x2026; 与……保持联系<br />
+run out of &#x2026; 用完<br />
+lose heart &#x2026; 丧失信心<br />
+cause sb./sth/ to do sth. 造成某人做某事<br />
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org8428322" class="outline-3">
+<h3 id="org8428322">words</h3>
+<div class="outline-text-3" id="text-org8428322">
+<p>
+trap [træp] v.陷入,使陷入困境<br />
+surface [ˈsɜrfəs] n.地面,表面<br />
+explosive [ɪkˈsploʊsɪv] n.炸药<br />
+vibration [vaɪˈbreɪʃ(ə)n] n.震动<br />
+collapse [kəˈlæps] v.坍塌<br />
+drill [drɪl] v.钻孔<br />
+capsule [ˈkæpˌsjul] n.容器<br />
+layer [ˈleɪr] n.层<br />
+beneath [bɪˈniθ] prep.在&#x2026;之下<br />
+lower [ˈloʊr] v.放下,降低<br />
+progress [prəˈɡres] v.进展,进行<br />
+smoothly [ˈsmuːðli] adv.顺利地<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org6e38f02" class="outline-3">
+<h3 id="org6e38f02"><span class="done DONE">DONE</span> 单词造句</h3>
+<div class="outline-text-3" id="text-org6e38f02">
+<p>
+trap v.<br />
+</p>
+<ul class="org-ul">
+<li>How long have six men been trapped in the gold mine?<br /></li>
+<li>The workers begun to complain of being trapped in a mine.<br /></li>
+<li>The workers was trained to rescue themselves while trapped in a mine.<br /></li>
+<li>I felt trapped in a place where I had to work hard.<br /></li>
+<li>He pointed out that six worker had been trapped in a mine.<br /></li>
+</ul>
+<p>
+surface n.on the surface<br />
+</p>
+<ul class="org-ul">
+<li>It is no use helping her on the surface.<br /></li>
+<li>On the surface, he has followed his father's footstep.<br /></li>
+<li>He enjoys helping others on the surface.<br /></li>
+<li>No matter what you do on the surface, you wouldn't be fluent.<br /></li>
+<li>He pointed out that his children is always studying hard on the surface.<br /></li>
+</ul>
+<p>
+explosive n.<br />
+</p>
+<ul class="org-ul">
+<li>He has become an expert at explosives.<br /></li>
+<li>The gangster has a habit of planting explosive on the place in where he had been.<br /></li>
+<li>The expert managed to remove the explosives from the car.<br /></li>
+<li>A number of explosives are planted on the plane.<br /></li>
+<li>He had a bad reputation for planting explosives.<br /></li>
+</ul>
+<p>
+vibration n.<br />
+</p>
+<ul class="org-ul">
+<li>I have been waking up by the vibration of the window.<br /></li>
+<li>If you hadn't turned it up, our parents would have felt the vibration of music.<br /></li>
+<li>If you turned it up, our parents would feel the vibration of music.<br /></li>
+<li>Why can some animals feel vibrations in the sand?<br /></li>
+<li>It is no use pretending that you hadn't felt the vibration of music.<br /></li>
+</ul>
+<p>
+collapse v.n.<br />
+</p>
+<ul class="org-ul">
+<li>The heavy rain may cause the collapse of our camp.<br /></li>
+<li>It is a blessing that the heavy rain hadn't caused the collapse of our houses.<br /></li>
+<li>It is a blessing that the collapse of our tents weren't caused during the flood.<br /></li>
+<li>It is you who are responsible for the collapse of the building,not her.<br /></li>
+<li>He is eager to see the collapse of the bridge.<br /></li>
+</ul>
+<p>
+drill v.n.<br />
+</p>
+<ul class="org-ul">
+<li>After drilling for several months, they eventually found a gold mine in the end.<br /></li>
+<li>He is eager to drill holes in his bed.<br /></li>
+<li>When he drilled a hole on his car door, it broke down.<br /></li>
+<li>They were disappointed  to find out that nobody was drilling for them.<br /></li>
+<li>My father hesitated to drill a hole.<br /></li>
+</ul>
+<p>
+capsule n.in a special capsule<br />
+</p>
+<ul class="org-ul">
+<li>It is the most special capsule I've ever met.<br /></li>
+<li>A party of young men and young women are walking in a circle around the special capsule.<br /></li>
+<li>They continued to live in a special capsule.<br /></li>
+<li>They couldn't tell the difference from capsule and container.<br /></li>
+<li>Nobody account for the fact that they are standing in a circle around the capsule.<br /></li>
+</ul>
+<p>
+layer n.layers of/a layer of<br />
+</p>
+<ul class="org-ul">
+<li>China must be packed in several layers of paper. I said in a weak voice.<br /></li>
+<li>It occured to me that I weared several layers of clothes.<br /></li>
+<li>He admitted that he weared several layers of clothes.<br /></li>
+<li>There is still a layer of dust on the table. she said with a sneer.<br /></li>
+<li>He turn his attention to a layer of dust.<br /></li>
+</ul>
+<p>
+beneath prep.<br />
+</p>
+<ul class="org-ul">
+<li>Nobody account for the fact that the cat was beneath the air conditioner.<br /></li>
+<li>We broke into cheers beneath a shady tree.<br /></li>
+<li>We caught sight of rabbits beneath a shady tree.<br /></li>
+<li>The boy was trapped beneath the bed once more.<br /></li>
+<li>The boy must have been hidden beneath a thin layer of soil.<br /></li>
+</ul>
+<p>
+lower v.adj.<br />
+</p>
+<ul class="org-ul">
+<li>We are ordered to lower our voice in his class.<br /></li>
+<li>It is worth lowering the noise in public places.<br /></li>
+<li>In reasonable condition, if we lower our voice, the baby will not wake up.<br /></li>
+<li>Why don't we have the television lowered its voice?<br /></li>
+<li>He agreed to lower his voice in the plane.<br /></li>
+</ul>
+<p>
+progress v.n.make progress<br />
+</p>
+<ul class="org-ul">
+<li>We have solved the problem of noise population, and we're making progress.<br /></li>
+<li>It is fortunate that we made progress last year.<br /></li>
+<li>Dressed up as a gentleman, he was sure that he made progress this time.<br /></li>
+<li>Even though we aren't finished yet, we make big progress.<br /></li>
+<li>We must put forward a plan to make progress.<br /></li>
+</ul>
+<p>
+smoothly adv.go/run smoothly<br />
+</p>
+<ul class="org-ul">
+<li>It is a glessing that everything runs smoothly.<br /></li>
+<li>We must stick to our plan and everything will go smoothly.<br /></li>
+<li>He was dismay to find that everything goes smoothly.<br /></li>
+<li>I'm fairly certain that things go smoothly and both of us will write to each other soon.<br /></li>
+<li>His dream came true and everything goes smoothly.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgc7c12d0" class="outline-3">
+<h3 id="orgc7c12d0">反复听电影片段</h3>
+</div>
+<div id="outline-container-org559662b" class="outline-3">
+<h3 id="org559662b"><span class="done DONE">DONE</span> Pattern Drill 写+读</h3>
+<div class="outline-text-3" id="text-org559662b">
+<ul class="org-ul">
+<li>1t: catch the train - hurry<br />
+s1: I can't possibly catch the train now!<br />
+s2: You might catch it if you hurry!<br />
+<ul class="org-ul">
+<li>pass the exam - work hard<br />
+I can't pass the exam now!<br />
+You might pass it if you work hard!<br /></li>
+<li>sell the car - mend it<br />
+I can't sell the car now!<br />
+You might sell it if you mend it!<br /></li>
+<li>win the race - keep calm<br />
+I can't win the race now!<br />
+You might win it if you keep calm!<br /></li>
+<li>finish in time - get help<br />
+I can't finish in time now!<br />
+You might finish it if you get help!<br /></li>
+</ul></li>
+<li>2t: catch the train - pack<br />
+s1: He won't catch the train if he doesn't pack soon!<br />
+s2: He won't catch it now, even if he's already packed!<br />
+<ul class="org-ul">
+<li>be in time - leave<br />
+He won't be in the time if he doesn't leave soon!<br />
+He won't be in time now, even if he's already left!<br /></li>
+<li>be in time - call a taxi<br />
+He won't be in time if he doesn't call a taxi soon!<br />
+He won't be in time now, even if he's already called!<br /></li>
+<li>get the job - apply<br />
+He won't get the job if he doesn't apply!<br />
+He won't get it now, even if he's already applied!<br /></li>
+<li>find his case - tell the police<br />
+He won't find his case if he doesn't tell the police!<br />
+He won't find it now, even if he's already told.<br /></li>
+</ul></li>
+<li>3t: go with him - ask<br />
+s1: Will you go with him?<br />
+s2: I'd go with him if he asked me to - but I don't think he will!<br />
+<ul class="org-ul">
+<li>clean his room - ask<br />
+Will you clean his room?<br />
+I'd clean it if he asked me to - but I don't think he will!<br /></li>
+<li>enter for the race - advise<br />
+Will you enter for the race?<br />
+I'd enter it if he advised me to - but I don't think he will!<br /></li>
+<li>join his team - invite<br />
+Will you join his team?<br />
+I'd join it if he invited me to - but I don't think he will!<br /></li>
+<li>work late - tell<br />
+Will you work late?<br />
+I'd work late if he told me to - but I don't think he will!<br /></li>
+</ul></li>
+<li>4t: failed so badly - worked harder<br />
+s1: He shouldn't have failed so badly.<br />
+s2: He wouldn't have failed so badly if he'd worked harder.<br />
+<ul class="org-ul">
+<li>lost his way - had a map<br />
+He shouldn't have lost his way.<br />
+He wouldn't have lost his way if he'd had a map.<br /></li>
+<li>died - gone into hospital<br />
+He shouldn't have died.<br />
+He wouldn't have died if he'd gone into hospital.<br /></li>
+<li>been late - taken a taxi<br />
+He shouldn't have been late.<br />
+He wouldn't have been late if he'd taken a taxi.<br /></li>
+<li>retired - had a good job<br />
+He shouldn't have retired.<br />
+He wouldn't have retired if he'd had a good job.<br /></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org20f4fac" class="outline-3">
+<h3 id="org20f4fac"><span class="done DONE">DONE</span> 给自己讲解</h3>
+<div class="outline-text-3" id="text-org20f4fac">
+</div>
+</div>
+<div id="outline-container-org23e7904" class="outline-3">
+<h3 id="org23e7904">红皮书</h3>
+</div>
+<div id="outline-container-org288aeb0" class="outline-3">
+<h3 id="org288aeb0"><span class="done DONE">DONE</span> 习惯用法造句</h3>
+<div class="outline-text-3" id="text-org288aeb0">
+<p>
+lose one's life<br />
+</p>
+<ul class="org-ul">
+<li>He lost his life in a rescue operation.<br /></li>
+<li>It's a blessing that he didn't lose his life during the flood.<br /></li>
+<li>Though a firefighter lost his life, all the people in the building were saved.<br /></li>
+<li>He intended to commit a murder, but he lost his life during this.<br /></li>
+<li>He confirmed that his son had lost his wife.<br /></li>
+</ul>
+<p>
+As it is&#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>As it is, you did not catch the 8 o'clock train, but you caught the 8.2-<br /></li>
+<li>As it is, he had a perfect alibi.<br /></li>
+<li>As it is, I'm telling you the truth.<br /></li>
+<li>We were hoping to have a holiday tomorrow as it is, it will rain.<br /></li>
+<li>As it is, he has been at work on time.<br /></li>
+</ul>
+<p>
+enable sb. to do sth.<br />
+</p>
+<ul class="org-ul">
+<li>This would enable you to cut it open.<br /></li>
+<li>This enabled the boat to come towards them at tremendous speed.<br /></li>
+<li>The new test will enable drivers to drive more carefully.<br /></li>
+<li>He was enabled to devote himself to volcanoes.<br /></li>
+<li>The encouragement he gives us enabled us to go to school.<br /></li>
+</ul>
+<p>
+keep in touch with &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>Next week, they decided to keep in touch with each other.<br /></li>
+<li>If you kept in touch with her, she might fall in love with you.<br /></li>
+<li>If we had kept in touch with each other, we would have divorced.<br /></li>
+<li>It is a curious coincidence that both of them keep in touch with each other.<br /></li>
+<li>He has a lot of patience and kept in touch with the student who plays truent from school.<br /></li>
+</ul>
+<p>
+run out of &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>She noticed with dismay that they had ran out of money on journey.<br /></li>
+<li>She was due to run out of her pocket money.<br /></li>
+<li>I object to her running out of money.<br /></li>
+<li>To some extend, I has run out of my father's money.<br /></li>
+<li>In the end, the flight attendent has run out of her patience and lost her temper.<br /></li>
+</ul>
+<p>
+lose heart &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>I'll keep studying English and won't lose my heart.<br /></li>
+<li>He has failed the test and lost his heart.<br /></li>
+<li>After having been rescued for ten hours, the men lost their heart.<br /></li>
+<li>Don't be hard on us, we'll lose our heart.<br /></li>
+<li>Although he is a huge fans of soccer, he lost his heart in the games.<br /></li>
+</ul>
+<p>
+cause sb./sth/ to do sth.<br />
+</p>
+<ul class="org-ul">
+<li>I confirm that the pepper caused me to sneeze.<br /></li>
+<li>You've almost caused me to lose my life.<br /></li>
+<li>The prisident caused the party to have a good reputation.<br /></li>
+<li>This will cause the plane to gain height slowly.<br /></li>
+<li>This can't cause the plane to touch down smoothly.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org2b22063" class="outline-3">
+<h3 id="org2b22063"><span class="done DONE">DONE</span> 跟读至背诵</h3>
+<div class="outline-text-3" id="text-org2b22063">
+</div>
+</div>
+<div id="outline-container-org256227c" class="outline-3">
+<h3 id="org256227c"><span class="done DONE">DONE</span> Ask me if 写+读</h3>
+<div class="outline-text-3" id="text-org256227c">
+<ol class="org-ol">
+<li>Six men have been trapped in a mine. How many/Where<br />
+How many men have been trapped in a mine?<br />
+Where have six men trapped?<br /></li>
+<li>They've been there for seventeen hours. How long/Where<br />
+How long have they been there?<br />
+Where have they been for seventeen hours?<br /></li>
+<li>Rescue operations are proving difficult. What/Why<br />
+What are proving difficult?<br />
+Why are rescue operations proving difficult?<br /></li>
+<li>The men will lose their lives. Who<br />
+Who will lose their lives?<br /></li>
+<li>The roof will collapse. What<br />
+What will collapse?<br /></li>
+<li>Rescue workers are drilling a hole. What<br />
+What are rescue workers drilling?<br /></li>
+<li>They're drilling on the north side. Where<br />
+Where are they drilling?<br /></li>
+<li>They'll bring the men up in a special capsule. How/What kind/Who<br />
+How will they bring the men up?<br />
+What kind of capsule will they bring the men up in?<br />
+Who will bring the men up in a special capsule?<br /></li>
+<li>There's a hard layer of rock beneath the soil. What/Where<br />
+What is there beneath the soil?<br />
+Where is there a hard layer of rock?<br /></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org27a3cf8" class="outline-3">
+<h3 id="org27a3cf8"><span class="done DONE">DONE</span> 摘要写作</h3>
+<div class="outline-text-3" id="text-org27a3cf8">
+<p>
+Six men who have been trapped in a mine for seventeen hours<br />
+	may lose their lives<br />
+	because rescue operations are proving difficult.<br />
+Since explosive might cause the roof of the mine to collapse,<br />
+	rescue workers are drilling a hole through hard rock,<br />
+	but progress is slow.<br />
+Tow hours ago, a microphone was lowered into the mine<br />
+	and the men have been in touch with their closest relatives.<br />
+They are running short of food and drink<br />
+	but they are in good spirits.<br />
+</p>
+
+<p>
+Six men have been trapped in a mine for seventeen hours<br />
+	and may lose their lives.<br />
+Rescue operations are proving difficult<br />
+	as explosives might cause the roof of the mine to collapse.<br />
+Because of this, rescue workers are drilling a hole through hard rock,<br />
+	 yet progress is slow.<br />
+Now that a microphone has been lowered into the mine,<br />
+	the men are in touch with their closest relatives.<br />
+Though they are running short of food and drink,<br />
+	they are in good spirits.<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org0aa9300" class="outline-3">
+<h3 id="org0aa9300"><span class="done DONE">DONE</span> tell the story 口语</h3>
+<div class="outline-text-3" id="text-org0aa9300">
+</div>
+</div>
+<div id="outline-container-org8092e49" class="outline-3">
+<h3 id="org8092e49">Topics for discussion</h3>
+</div>
+</div>
+</div>
+</body>
+</html>

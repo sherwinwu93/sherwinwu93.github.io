@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-05-27 Mon 15:06 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="lenovo" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+
+<div id="outline-container-orgf431c14" class="outline-2">
+<h2 id="orgf431c14">读博获得的最大的收获是什么?</h2>
+<div class="outline-text-2" id="text-orgf431c14">
+</div>
+<div id="outline-container-orgd7dcf9d" class="outline-3">
+<h3 id="orgd7dcf9d">wusd</h3>
+<div class="outline-text-3" id="text-orgd7dcf9d">
+<ol class="org-ol">
+<li><p>
+目的意识<br />
+做任何事情前,首先问自己一个问题,我的目的是什么?<br />
+并且后面要经常问自己,我现在在做的事情,和我的目的的关系是什么,有没有偏离我的目的?<br />
+</p>
+
+<p>
+在做事情的时候会遇到各种各样的困难,我能不能依旧静下心来高效工作?<br />
+答案是:心中装着优先级,知道什么是最重要的,就行.<br />
+</p>
+
+<p>
+同理,你这一生要追求什么?<br />
+不信任的人,就让它去.不重要的事,就让它去.<br />
+你的人生,就是你的project,这是最重要的.<br />
+</p></li>
+<li>独立意识<br />
+对于任何问题,首先要自己建立一个思路,再从别人和实践中借鉴和总结,改正或优化这个思路.<br />
+但是首先,自己要有一个思路.这是解决问题的起点,一切靠自己.<br /></li>
+<li><p>
+自主和主动意识<br />
+别人有很多自己的事情,只有你自己最了解自己.所以他很有可能给出误导性的判断,浪费了我们的时间.<br />
+你是你工作的主人,同时也是你生活的主人.你要为自己的事情负责.<br />
+</p>
+
+<p>
+做事情都是自我驱动的,没人拿鞭子赶着你.没有人告诉你该做什么,该如何做,该多快做,做到什么地步,要回答什么问题&#x2026;<br />
+全靠你自己的主动性,把工作向前推进.<br />
+</p></li>
+<li><p>
+实事求是<br />
+实事求是的人最有魅力。实事求是的意思是，你能吃几碗饭，就该有吃几碗饭的口气，不要多，也不要少。<br />
+能吃几碗饭是你的绝对硬实力。<br />
+</p>
+
+<p>
+你不能维护你的实力本来可以主张的东西，是愚蠢或者懦弱。愚蠢是指，你对后果的不确定性没有能力预测，或者没有勤奋去预测；然后你被不确定性吓跑了，不去伸张你本可以占有的权利。懦弱是指，你预测了不确定性，但没有胆魄去做。<br />
+</p>
+
+<p>
+如果你的主张和脾气比你的实力要大，会遭到有能力的人的厌恶。因为你可能会损害他的利益。当他选择和你硬碰硬时，你就露馅了。当然，你可以'赌博'，就看运气好不好了。<br />
+</p>
+
+<p>
+恰如其分地让脾气和实力相符，把自己手里的牌，打出最大的价值，是最有魅力的。<br />
+</p></li>
+<li>智力<br />
+智力.这个智力不仅仅是数理化的智力,它是"在具体情况下分析出如何应对"的解决问题的综合能力.<br />
+它让一个人最大化地利用手里的资源~达到自己的目的,以及,趋利避害.<br /></li>
+<li>行动意识<br />
+不要试图没开始就计划"完美",快行动.<br />
+有一个general idea后,就可以先行动来.在做事的过程当中,更多是一个动态决策的过程.在一开始就没有完美计划,也不可能有.因为新情况一直出现.<br /></li>
+<li>试错意识<br />
+错误是纠正方法的窗口,是让我们接近真相的一件好事.所以,不要怕犯错.<br /></li>
+<li>信息筛选和学习能力<br />
+如何快速甄别重要和不重要的信息,以及如何快速学习重要信息.<br /></li>
+</ol>
+</div>
+</div>
+
+
+<div id="outline-container-orgd5ebccf" class="outline-3">
+<h3 id="orgd5ebccf">2</h3>
+<div class="outline-text-3" id="text-orgd5ebccf">
+<ol class="org-ol">
+<li>永远要有主见，知道自己要去哪<br />
+为自己的project负责的，只有我自己。导师有很多学生有很多事，并不是最了解我的工作的人。因此，他有可能给出误导性的判断。如果我们不知道自己的研究主线是什么，自己的主要兴趣是什么，自己到底想做什么，很容易被导师的个别错误性指导误导，因此浪费时间。<br />
+不仅是在工作上，在生活里也是，知道自己要去哪，是最大的效率。<br /></li>
+
+<li>人际交往能力，最重要的能力之一<br />
+博士读得成不成功，直接取决于你和导师的个人关系如何，以及他愿意在你身上投入多少资源。同事关系，决定了你能得到多少支持和想法。朋友关系，决定了你有多少信息渠道。<br />
+天才毕竟是少数。社会还是人的社会。即使是强调个人能力的学术界，人际能力也是最重要的能力之一。<br /></li>
+
+<li>学习能力其实就是专注能力，静的能力<br />
+越能静下来，越有idea。<br /></li>
+
+<li>永远不要试图没开始就计划“完美”，快行动<br />
+有一个general idea后，就可以先行动了。研究的过程，更多是一个动态决策的过程。在一开始就没有完美计划，也不可能有。因为新情况一直在出现。<br /></li>
+
+<li>主动性<br />
+机会、信息、想法、导师的指导，都是你越追求越多的。你越行动，你越有收获。<br />
+对于实验学科来说，我感觉博士成不成功，很大程度上决定于兴趣和精力，而非智力。<br /></li>
+
+<li>由研究得到的人生观<br />
+<ul class="org-ul">
+<li>没有完美计划，做动态决策<br />
+人生亦如是。先上场，先行动。<br /></li>
+<li>我的眼里只有目的<br />
+读博期间会遇见各种困难，你能不能依旧静下心来高效工作？心中装着优先级，知道什么是最重要的，就行。<br />
+由此同理，你这一生要追求什么？<br />
+不信任的人，就让它去。不重要的事，就让它去。<br />
+你的人生，是你的project。这是最重要的。<br />
+
+<ul class="org-ul">
+<li>要喜欢和人交往，讨厌的，喜欢的<br />
+你摆脱不了，就要学习共存，以实现目的。<br /></li>
+
+<li>人生是非线性的<br />
+前三年没发文章，博四发一篇顶刊、博后发一篇nature，然后找到很好教职的师兄，见过两个。博士读得不成功，就业赚大钱的人，大有人在。<br />
+人生不是线性的。走着瞧。<br /></li>
+</ul></li>
+</ul></li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orgd8dc3e1" class="outline-3">
+<h3 id="orgd8dc3e1">1</h3>
+<div class="outline-text-3" id="text-orgd8dc3e1">
+<p>
+最大的收获，其实是精神财富。<br />
+</p>
+
+<ol class="org-ol">
+<li>目的意识<br />
+做任何工作时，首先问自己一个问题，我的目的是什么？<br />
+经常问自己，我现在做的事情，和我目的的关系是什么，有没有偏离我的目的？<br /></li>
+
+<li>独立意识<br />
+对于问题，首先要自己建立一个思路，再从别人和实践中借鉴和总结，改正或者优化这个思路。<br />
+但首先，自己要有一个思路。这是解决问题的起点。一切靠自己。<br /></li>
+
+<li>主动意识<br />
+做研究都是自我驱动的。没人拿鞭子赶着你。没有人告诉你该做什么，该如何做，该多快做，做到什么地步，要回答什么问题&#x2026;.<br />
+全靠你自己的主动性，在把工作向前推进。<br />
+你是你工作的主人，同时你也是你生活的主人。你要为自己的事情负责。<br /></li>
+
+<li>永远不要试图没开始就计划“完美”，快行动<br />
+有一个general idea后，就可以先行动了。研究的过程，更多是一个动态决策的过程。在一开始就没有完美计划，也不可能有。因为新情况一直在出现。<br /></li>
+
+<li>试错意识<br />
+错误是纠正方法的窗口，是让我们接近真相的一件好事。所以，不要怕犯错。<br /></li>
+
+<li>信息筛选和学习的能力<br />
+在实践思路的过程中，总要学习新的知识。如何快速甄别重要的和不重要的信息，以及如何快速学习重要信息，是博士训练的内容。<br />
+很多博士之所以毕业时变得特别自信了，就在于他在读博过程中变得独立了。他具有了独立解决问题的能力。<br />
+独立解决问题的能力，是宝贵的精神力量。<br /></li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,784 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-01-09 Thu 23:35 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-org03bd951" class="outline-2">
+<h2 id="org03bd951">30 The disintegration of the Soviet Union and terrorist attacks</h2>
+<div class="outline-text-2" id="text-org03bd951">
+<p class="verse">
+By 1985, after four decades of the Cold War,<br />
+&#xa0;Westerners had become accustomed to a division of Europe between West and East<br />
+&#xa0;&#xa0;that seemed to be permanent.<br />
+A prosperous Western Europe allied with the United States<br />
+&#xa0;stood opposed to a still-struggling Eastern Europe<br />
+&#xa0;&#xa0;that remained largely subject to the Soviet Union.<br />
+The division of Germany symbolized the new and seemingly well-established order.<br />
+Yet in just a few years,<br />
+&#xa0;a revolutionary upheaval in the Soviet Union and Eastern Europe<br />
+&#xa0;&#xa0;brought an end to the Cold War and to the division of postwar Europe.<br />
+Even the Soviet Union ceased to exist as a nation.<br />
+And much of this can be traced to the reform efforts of one man, Mikhail Gorbachev.<br />
+<br />
+On August 19, 1991,<br />
+&#xa0;a group of Soviet leaders opposed to reform arrested Gorbachev, the president of the Soviet Union,<br />
+&#xa0;&#xa0;and tried to seize control of the government.<br />
+Spontaneously, hundreds of thousands of Russians, led by Boris Yeltsin,<br />
+&#xa0;poured into the streets of Moscow and Leningrad to protest the attempted coup.<br />
+Some army units, sent out to enforce the wishes of the upstart leaders,<br />
+&#xa0;&#xa0;defected to Yeltsin’s side,<br />
+&#xa0;and within days, the usurpers were forced to surrender.<br />
+This failed attempt to seize power had unexpected results<br />
+&#xa0;as Russia and many of the other Soviet republics turned their backs on the government<br />
+&#xa0;&#xa0;and declared their independence.<br />
+By the end of 1991, the Soviet Union&#x2014;one of the largest empires in world history&#x2014;<br />
+&#xa0;&#xa0;had come to an astonishingly swift end,<br />
+&#xa0;and a new era of cooperation<br />
+&#xa0;&#xa0;between the successor states of the old Soviet Union and the nations of the West had begun.<br />
+<br />
+As the world adjusted to the transformation from Cold War to post&#x2013;Cold War sensibilities,<br />
+&#xa0;other changes shaped the Western outlook.<br />
+The demographic face of European countries changed<br />
+&#xa0;as massive numbers of immigrants created more ethnically diverse populations.<br />
+New artistic and intellectual currents, the continued advance of science and technology,<br />
+&#xa0;&#xa0;the emergence of the Digital Age, the surge of the women’s liberation movement&#x2014;<br />
+&#xa0;all spoke of a vibrant, ever-changing world.<br />
+At the same time, a devastating terrorist attack on the World Trade Center in New York City<br />
+&#xa0;&#xa0;and the Pentagon outside Washington, D.C., in 2001<br />
+&#xa0;made the Western world vividly aware of its vulnerability to international terrorism.<br />
+But most important of all,<br />
+&#xa0;Western nations, like all nations on the planet,<br />
+&#xa0;&#xa0;had become acutely aware of the political and economic interdependence of the world's nations<br />
+&#xa0;&#xa0;&#xa0;and the global nature of the challenges of the twenty-first century.<br />
+</p>
+</div>
+<div id="outline-container-org057e50b" class="outline-3">
+<h3 id="org057e50b">expression</h3>
+<div class="outline-text-3" id="text-org057e50b">
+<p>
+Westerner [ˈwestərnər]: n. someone from the western part of the world西方人<br />
+permanent [ˈpɜrmənənt]: adj. continuing to exist for a long time or for all the time in the future OPP temporary永久的, 持久的<br />
+symbolize [ˈsɪmbəˌlaɪz]: v. if something symbolizes a quality, feeling etc, it represents it象征, 用符号表现<br />
+spontaneously [spɔnˈtenɪəslɪ] spontaneous: adv.adj. something that is spontaneous has not been planned or organized, but happens by itself, or because you suddenly feel you want to do it自发的, 自然产生的<br />
+protest [prəˈtest]: v. something that you do to show publicly that you think that something is wrong and unfair, for example taking part in big public meetings, refusing to work, or refusing to buy a company’s products抗议<br />
+coup [ku]: n. a sudden and sometimes violent attempt by citizens or the army to take control of the government SYN coup d'état政变<br />
+usurp [juˈzɜrp]: v. formal to take someone else’s power, position, job etc when you do not have the right to篡夺, 篡位<br />
+successor [səkˈsesər]: n. someone who takes a job or position previously held by someone else ⇨ predecessor继承者, 接任者<br />
+outlook [ˈaʊtˌlʊk]: n. your general attitude to life and the world世界观<br />
+demographic [ˌdeməˈɡræfɪk]: adj. demographics [plural] information about a group such as the people who live in a particular area人口统计学的<br />
+ethnic [ˈeθnɪk] ethnically: adj.adv. relating to a particular race, nation, or tribe and their customs and traditions种族的<br />
+diverse [daɪˈvɜrs]: adj. very different from each other不同的<br />
+digital [ˈdɪdʒɪt(ə)l]: adj. using a system in which information is recorded or sent out electronically in the form of numbers, usually ones and zeros数字的<br />
+surge [sɜrdʒ]: v.n. to suddenly move very quickly in a particular direction汹涌, 澎湃,涌入<br />
+vibrant [ˈvaɪbrənt]: adj. full of activity or energy in a way that is exciting and attractive SYN lively活跃的<br />
+pentagon [ˈpentəˌɡɑn]: n. a flat shape with five sides and five angles五角形<br />
+acutely [əˈkjutli]: adv. feeling or noticing something very strongly剧烈地<br />
+</p>
+<hr />
+<p>
+be allied with sb./sth.: 与某人结盟<br />
+be opposed to sb./sth.: 反对某事/某人<br />
+remain subject to sb./sth.: 继续服从于&#x2026;<br />
+bring an end to sth.: 终结某事<br />
+be traced to sth.: 追溯到某事物<br />
+seize control of sth.: 控制某事物<br />
+pour into sp.: 涌入某地<br />
+enforce the wishes of sb.: 执行某人的意愿<br />
+defect to sb's side: 投靠某一边<br />
+turn one's back on sb./sth.: 背弃某人/某事物<br />
+come to an end: 结束<br />
+adjust to sth./sb.: 适应某事物/某人<br />
+most important of all, &#x2026;: 最重要的, &#x2026;<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org3e72931" class="outline-3">
+<h3 id="org3e72931">sentence</h3>
+<div class="outline-text-3" id="text-org3e72931">
+<p>
+Westerner [ˈwestərnər]: n. someone from the western part of the world西方人<br />
+</p>
+<ul class="org-ul">
+<li>The bridge was said to be named after a Westerner in ancient times.<br /></li>
+<li>Our government must take these Westerners into account for our safety.<br /></li>
+<li>These Westerners used to be described as barbarians who behaved rudely.<br /></li>
+</ul>
+<p>
+permanent [ˈpɜrmənənt]: adj. continuing to exist for a long time or for all the time in the future OPP temporary永久的, 持久的<br />
+</p>
+<ul class="org-ul">
+<li>The division between you and dad seems to remain permanent.<br /></li>
+<li>THe noble ganster's name may remain permanent, for when he died people gave him a state funeral.<br /></li>
+<li>He never dreams of being offered a permanent job in his university.<br /></li>
+</ul>
+<p>
+symbolize [ˈsɪmbəˌlaɪz]: v. if something symbolizes a quality, feeling etc, it represents it象征, 用符号表现<br />
+</p>
+<ul class="org-ul">
+<li>The withering flower may symbolize your dying wife.<br /></li>
+<li>The dog that symbolized our friendship was killed in an action.<br /></li>
+<li>Needless to say, the statue which French people presented to America symbolized their friendship.<br /></li>
+</ul>
+<p>
+spontaneously [spɔnˈtenɪəslɪ] spontaneous: adv.adj. something that is spontaneous has not been planned or organized, but happens by itself, or because you suddenly feel you want to do it自发的, 自然产生的<br />
+</p>
+<ul class="org-ul">
+<li>Spontaneously, I double check the program he made yesterday.<br /></li>
+<li>Spontaneously, I drew the enormous object as faintly as possible.<br /></li>
+<li>Spontaneously, my cat fell fast asleep on my legs.<br /></li>
+</ul>
+<p>
+protest [prəˈtest]: v.n. something that you do to show publicly that you think that something is wrong and unfair, for example taking part in big public meetings, refusing to work, or refusing to buy a company’s products抗议<br />
+</p>
+<ul class="org-ul">
+<li>These protests in the streets proved effective, for the authoritarian regime soon gave up their policy about the pestilence.<br /></li>
+<li>If the protest were unsettled, there would be a civil war in our country.<br /></li>
+<li>These immigrants protested for unfair treatments in force market.<br /></li>
+</ul>
+<p>
+coup [ku]: n. a sudden and sometimes violent attempt by citizens or the army to take control of the government SYN coup d'état政变<br />
+</p>
+<ul class="org-ul">
+<li>A fraction of the party was due to initiate a coup on National Day.<br /></li>
+<li>The coup made the prince assume political and military power in the Holy Roman Empire.<br /></li>
+<li>Fearing of a coup, the king ordered his men to kill the peasants in the palace.<br /></li>
+</ul>
+<p>
+usurp [juˈzɜrp]: v. formal to take someone else’s power, position, job etc when you do not have the right to篡夺, 篡位<br />
+</p>
+<ul class="org-ul">
+<li>In spite of great achievement in domestic affairs, the king was still described as a usurper among people.<br /></li>
+<li>The new king considered to be a usurper was protested by mobs of ten thousand of people in the streets.<br /></li>
+<li>If your married the princess, we would increase the possibilities of usurping the throne.<br /></li>
+</ul>
+<p>
+successor [səkˈsesər]: n. someone who takes a job or position previously held by someone else ⇨ predecessor继承者, 接任者<br />
+</p>
+<ul class="org-ul">
+<li>The monastery was expected to fall into debt under your successor.<br /></li>
+<li>If the monastery fell into debt under your successor, you would have to devote yourself to money for the rest of your life.<br /></li>
+<li>Your successor had a great vision, for he built numerous canals to keep in touch with other states.<br /></li>
+</ul>
+<p>
+outlook [ˈaʊtˌlʊk]: n. your general attitude to life and the world世界观<br />
+</p>
+<ul class="org-ul">
+<li>If his outlook had been shaped, you are incapable of persuading him to go to university.<br /></li>
+<li>Since his outlook had been shaped, we were becoming more and more unfamiliar with him.<br /></li>
+<li>Reading enormous history books may have shaped my outlook.<br /></li>
+</ul>
+<p>
+demographic [ˌdeməˈɡræfɪk]: adj. demographics [plural] information about a group such as the people who live in a particular area人口统计学的<br />
+</p>
+<ul class="org-ul">
+<li>The demographic face of Europe has been changing dramatically when the number of immigrants increased.<br /></li>
+<li>With the number of old people increasing, the demographic face of China was not energetic any more.<br /></li>
+<li>The scientists made a remarkable discovery that our demographic face had not changed a great deal during the war.<br /></li>
+</ul>
+<p>
+ethnic [ˈeθnɪk] ethnically: n.adj. adv. relating to a particular race, nation, or tribe and their customs and traditions种族的<br />
+</p>
+<ul class="org-ul">
+<li>The authorities offer a series of advantages to the ethnic to solve problems.<br /></li>
+<li>In our country, ethnic is in harmony with majority.<br /></li>
+<li>Ethnic considered to be barbarians receives a sophicated education nowadays.<br /></li>
+</ul>
+<p>
+diverse [daɪˈvɜrs]: adj. very different from each other不同的<br />
+</p>
+<ul class="org-ul">
+<li>On the flame of his ambition, entrepreneurs were led to set up diverse factories in the suburbs of the city.<br /></li>
+<li>In my youth, my grandmother often asked me to attend a party where diverse foods were offered.<br /></li>
+<li>Our cat seems to realize that the box is full of diverse snacks.<br /></li>
+</ul>
+<p>
+digital [ˈdɪdʒɪt(ə)l]: adj. using a system in which information is recorded or sent out electronically in the form of numbers, usually ones and zeros数字的<br />
+</p>
+<ul class="org-ul">
+<li>I hope that my father will present a digital watch on my birthday.<br /></li>
+<li>I don't think the digital watch need mending, it works punctually.<br /></li>
+<li>You have lost a thousand of dollars worth of digital watch.<br /></li>
+</ul>
+<p>
+surge [sɜrdʒ]: v.n. to suddenly move very quickly in a particular direction汹涌, 澎湃,涌入<br />
+</p>
+<ul class="org-ul">
+<li>Keeping up with the surge of day-trippers, the owner of amusement park lost no time in building more tools.<br /></li>
+<li>keeping up with the surge of refugees, the authorities set up numerous soup lines.<br /></li>
+<li>People in HongKong is always complaining about the surge of tourists from mainland.<br /></li>
+</ul>
+<p>
+vibrant [ˈvaɪbrənt]: adj. full of activity or energy in a way that is exciting and attractive SYN lively活跃的<br />
+</p>
+<ul class="org-ul">
+<li>The vibrant electron is hard to capture.<br /></li>
+<li>These vibrant nomads pushed their way westward and overran a village twelve miles outside the city of Paris.<br /></li>
+<li>The vibrant Catholic churches continued into the next century.<br /></li>
+</ul>
+<p>
+pentagon [ˈpentəˌɡɑn]: n. a flat shape with five sides and five angles五角形<br />
+</p>
+<ul class="org-ul">
+<li>Instead of catching fishes, I caught an object like a pentagon.<br /></li>
+<li>He is drawing a pentagon as faintly as possible.<br /></li>
+<li>Obviously, the view of the pentagon captured the heart of your wife.<br /></li>
+</ul>
+<p>
+acutely [əˈkjutli]: adv. feeling or noticing something very strongly剧烈地<br />
+</p>
+<ul class="org-ul">
+<li>The drunk was acutely aware that he was in danger in the ring.<br /></li>
+<li>The prime minister was acutely aware that the protest must have been settled as quickly as possible.<br /></li>
+<li>The pope was acutely aware that a group of soldiers had overrun the church.<br /></li>
+</ul>
+<hr />
+<p>
+be allied with sb./sth.: 与某人结盟<br />
+</p>
+<ul class="org-ul">
+<li>Allied with my daugter, I agreed on whether my wife would have an operation.<br /></li>
+<li>She claimed that all nations allied with the United States were persperous.<br /></li>
+<li>France allied with Britain prevented these peasant from revolts.<br /></li>
+</ul>
+<p>
+be opposed to sb./sth.: 反对某事/某人<br />
+</p>
+<ul class="org-ul">
+<li>Opposed to the Western Imperialism, the Soviet Union was allied with many nations in Asia.<br /></li>
+<li>Opposed to his father, he gave up following his father's footsteps.<br /></li>
+<li>Opposed to my wife, I sneaked out of the room to play video games with my friends.<br /></li>
+</ul>
+<p>
+remain subject to sb./sth.: 继续服从于&#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>Remaining subject to the Soviet Union makes our people suffer from starvation.<br /></li>
+<li>Remaining subject to the Soviet Union makes our regime more stable.<br /></li>
+<li>The authoritarian regime remained subject to the Soviet Union.<br /></li>
+</ul>
+<p>
+bring an end to sth.: 终结某事<br />
+</p>
+<ul class="org-ul">
+<li>It is time to bring an end to the revolts from those peasants.<br /></li>
+<li>A carnage has brought a radical end to the civil war from the division of religion.<br /></li>
+<li>The death of the king brought an end to the authoritarian regime.<br /></li>
+</ul>
+<p>
+be traced to sth.: 追溯到某事物<br />
+</p>
+<ul class="org-ul">
+<li>The company which employs three thousand people can be traced to a small workshop.<br /></li>
+<li>The breakdown in the trust of the monarchs can be traced to a revolt from the division of religions.<br /></li>
+<li>Your illness can be traced to a solitary mold in the back of fridge.<br /></li>
+</ul>
+<p>
+seize control of sth.: 控制某事物<br />
+</p>
+<ul class="org-ul">
+<li>Seizing control of Eastern Europe, the Soviet Union began to collective private farms.<br /></li>
+<li>Seizing control of the empire, the queen drew up a series of laws seeking for revenues.<br /></li>
+<li>Seizing control of the gangster, the police began to collect evidences on the scene.<br /></li>
+</ul>
+<p>
+pour into sp.: 涌入某地<br />
+</p>
+<ul class="org-ul">
+<li>Pouring into the arcade, these refugees took away one thousand dollars worth of diamonds.<br /></li>
+<li>These tourists poured into beach and littered.<br /></li>
+<li>As streams poured into the field, the field was soon full of water.<br /></li>
+</ul>
+<p>
+enforce the wishes of sb.: 执行某人的意愿<br />
+</p>
+<ul class="org-ul">
+<li>The knights were reluctant to enforce the wishes of our king.<br /></li>
+<li>The crusade claimed to enforce the wishes of god.<br /></li>
+<li>Enforcing the wishes of king, the knights killed those innocent peasants.<br /></li>
+</ul>
+<p>
+defect to sb's side: 投靠某一边<br />
+</p>
+<ul class="org-ul">
+<li>Defecting to our enemies' side, you will be punished by the king.<br /></li>
+<li>Defecting to our enemies' side, you will be incapable of returning to your home.<br /></li>
+<li>Defecting to our enemies' side, all members of your family will be beheaded in the square.<br /></li>
+</ul>
+<p>
+turn one's back on sb./sth.: 背弃某人/某事物<br />
+</p>
+<ul class="org-ul">
+<li>Turning its back on the Soviet Union, the state formed a friendly relation with the United States.<br /></li>
+<li>Turning its back on the Soviet Union, China tended to be allied with the United States.<br /></li>
+<li>Turning his back on his classmates, he lodged a complaint about their cheats.<br /></li>
+</ul>
+<p>
+come to an end: 结束<br />
+</p>
+<ul class="org-ul">
+<li>When the war came to an end, everyone in the streets embraced everyelse and someone sobbed aloud.<br /></li>
+<li>The time of our king came to an end.<br /></li>
+<li>The authoritarian regime came to an end.<br /></li>
+</ul>
+<p>
+adjust to sth./sb.: 适应某事物/某人<br />
+</p>
+<ul class="org-ul">
+<li>Adjusting to a difficult leader, I must be on time for work.<br /></li>
+<li>Adjusting to my wife's schedule, I must take a bath before 22 o'clock.<br /></li>
+<li>My cat grew up her fur to adjust to the cold winter.<br /></li>
+</ul>
+<p>
+most important of all, &#x2026;: 最重要的, &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>Most important of all, you lost your heart when you failed the exam.<br /></li>
+<li>Most important of all, my cat survived the fire.<br /></li>
+<li>Most important of all, you are not in debt.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org39d7de5" class="outline-3">
+<h3 id="org39d7de5">sentence2</h3>
+<div class="outline-text-3" id="text-org39d7de5">
+<p>
+Westerner [ˈwestərnər]: n. someone from the western part of the world西方人<br />
+</p>
+<ul class="org-ul">
+<li>The bridge was said to be named after a Westerner in ancient times.<br /></li>
+<li>Our government must take these Westerners into account for our safety.<br /></li>
+<li>These Westerners used to be described as barbarians who behaved rudely.<br /></li>
+</ul>
+<p>
+permanent [ˈpɜrmənənt]: adj. continuing to exist for a long time or for all the time in the future OPP temporary永久的, 持久的<br />
+</p>
+<ul class="org-ul">
+<li>The division between you and Dad seems to remain permanent.<br /></li>
+<li>THe noble ganster's name may remain permanent, for when he died,  people gave him a state funeral.<br /></li>
+<li>He never dreams of being offered a permanent job at his university.<br /></li>
+</ul>
+<p>
+symbolize [ˈsɪmbəˌlaɪz]: v. if something symbolizes a quality, feeling etc, it represents it象征, 用符号表现<br />
+</p>
+<ul class="org-ul">
+<li>The withering flower may symbolize your dying wife.<br /></li>
+<li>The dog that symbolized our friendship was killed in an action.<br /></li>
+<li>Needless to say, the statue that the French people presented to America symbolized their friendship.<br /></li>
+</ul>
+<p>
+spontaneously [spɔnˈtenɪəslɪ] spontaneous: adv.adj. something that is spontaneous has not been planned or organized, but happens by itself, or because you suddenly feel you want to do it自发的, 自然产生的<br />
+</p>
+<ul class="org-ul">
+<li>Spontaneously, I double-checked the program he made yesterday.<br /></li>
+<li>Spontaneously, I drew the enormous object as faintly as possible.<br /></li>
+<li>Spontaneously, my cat fell fast asleep on my legs.<br /></li>
+</ul>
+<p>
+protest [prəˈtest]: v.n. something that you do to show publicly that you think that something is wrong and unfair, for example taking part in big public meetings, refusing to work, or refusing to buy a company’s products抗议<br />
+</p>
+<ul class="org-ul">
+<li>These protests in the streets proved effective, for the authoritarian regime soon gave up its policy about the pestilence.<br /></li>
+<li>If the protest were unsettled, there would be a civil war in our country.<br /></li>
+<li>These immigrants protested for unfair treatment in the force market.<br /></li>
+</ul>
+<p>
+coup [ku]: n. a sudden and sometimes violent attempt by citizens or the army to take control of the government SYN coup d'état政变<br />
+</p>
+<ul class="org-ul">
+<li>A fraction of the party was due to initiate a coup on National Day.<br /></li>
+<li>The coup made the prince assume political and military power in the Holy Roman Empire.<br /></li>
+<li>Fearing a coup, the king ordered his men to kill the peasants in the palace.<br /></li>
+</ul>
+<p>
+usurp [juˈzɜrp]: v. formal to take someone else’s power, position, job etc when you do not have the right to篡夺, 篡位<br />
+</p>
+<ul class="org-ul">
+<li>In spite of great achievements in domestic affairs, the king was still described as a usurper among people.<br /></li>
+<li>The new king considered to be a usurper was protested by mobs of ten thousand of people in the streets.<br /></li>
+<li>If you married the princess, we would increase the possibilities of usurping the throne.<br /></li>
+</ul>
+<p>
+successor [səkˈsesər]: n. someone who takes a job or position previously held by someone else ⇨ predecessor继承者, 接任者<br />
+</p>
+<ul class="org-ul">
+<li>The monastery was expected to fall into debt under your successor.<br /></li>
+<li>If the monastery fell into debt under your successor, you would have to devote yourself to money for the rest of your life.<br /></li>
+<li>Your successor had a great vision, for he built numerous canals to keep in touch with other states.<br /></li>
+</ul>
+<p>
+outlook [ˈaʊtˌlʊk]: n. your general attitude to life and the world世界观<br />
+</p>
+<ul class="org-ul">
+<li>If his outlook had been shaped, you are incapable of persuading him to go to university.<br /></li>
+<li>Since his outlook had been shaped, we were becoming more and more unfamiliar with him.<br /></li>
+<li>Reading enormous history books may have shaped my outlook.<br /></li>
+</ul>
+<p>
+demographic [ˌdeməˈɡræfɪk]: adj. demographics [plural] information about a group such as the people who live in a particular area人口统计学的<br />
+</p>
+<ul class="org-ul">
+<li>The demographic face of Europe has been changing dramatically when the number of immigrants increased.<br /></li>
+<li>With the number of old people increasing, the demographic face of China was not energetic anymore.<br /></li>
+<li>The scientists made a remarkable discovery that our demographic face had not changed a great deal during the war.<br /></li>
+</ul>
+<p>
+ethnic [ˈeθnɪk] ethnically: n.adj. adv. relating to a particular race, nation, or tribe and their customs and traditions种族的<br />
+</p>
+<ul class="org-ul">
+<li>The authorities offer a series of advantages to the ethnic to solve problems.<br /></li>
+<li>In our country, ethnicity is in harmony with the majority.<br /></li>
+<li>Ethnic considered to be barbarians receive a sophisticated education nowadays.<br /></li>
+</ul>
+<p>
+diverse [daɪˈvɜrs]: adj. very different from each other不同的<br />
+</p>
+<ul class="org-ul">
+<li>On the flame of his ambition, entrepreneurs were led to set up diverse factories in the suburbs of the city.<br /></li>
+<li>In my youth, my grandmother often asked me to attend a party where diverse foods were offered.<br /></li>
+<li>Our cat seems to realize that the box is full of diverse snacks.<br /></li>
+</ul>
+<p>
+digital [ˈdɪdʒɪt(ə)l]: adj. using a system in which information is recorded or sent out electronically in the form of numbers, usually ones and zeros数字的<br />
+</p>
+<ul class="org-ul">
+<li>I hope that my father will present a digital watch on my birthday.<br /></li>
+<li>I don't think the digital watch needs mending, it works punctually.<br /></li>
+<li>You have lost thousands of dollars worth of digital watches.<br /></li>
+</ul>
+<p>
+surge [sɜrdʒ]: v.n. to suddenly move very quickly in a particular direction汹涌, 澎湃,涌入<br />
+</p>
+<ul class="org-ul">
+<li>Keeping up with the surge of day-trippers, the owner of the amusement park lost no time in building more tools.<br /></li>
+<li>keeping up with the surge of refugees, the authorities set up numerous soup lines.<br /></li>
+<li>People in Hong Kong are always complaining about the surge of tourists from the mainland.<br /></li>
+</ul>
+<p>
+vibrant [ˈvaɪbrənt]: adj. full of activity or energy in a way that is exciting and attractive SYN lively活跃的<br />
+</p>
+<ul class="org-ul">
+<li>The vibrant electron is hard to capture.<br /></li>
+<li>These vibrant nomads pushed their way westward and overran a village twelve miles outside the city of Paris.<br /></li>
+<li>The vibrant Catholic churches continued into the next century.<br /></li>
+</ul>
+<p>
+pentagon [ˈpentəˌɡɑn]: n. a flat shape with five sides and five angles五角形<br />
+</p>
+<ul class="org-ul">
+<li>Instead of catching fish, I caught an object like a pentagon.<br /></li>
+<li>He is drawing a pentagon as faintly as possible.<br /></li>
+<li>Obviously, the view of the Pentagon captured the heart of your wife.<br /></li>
+</ul>
+<p>
+acutely [əˈkjutli]: adv. feeling or noticing something very strongly剧烈地<br />
+</p>
+<ul class="org-ul">
+<li>The drunk was acutely aware that he was in danger in the ring.<br /></li>
+<li>The prime minister was acutely aware that the protest must have been settled as quickly as possible.<br /></li>
+<li>The pope was acutely aware that a group of soldiers had overrun the church.<br /></li>
+</ul>
+<hr />
+<p>
+be allied with sb./sth.: 与某人结盟<br />
+</p>
+<ul class="org-ul">
+<li>Allied with my daughter, I agreed on whether my wife would have an operation.<br /></li>
+<li>She claimed that all nations allied with the United States were prosperous.<br /></li>
+<li>France was allied with Britain to prevent these peasant from revolts.<br /></li>
+</ul>
+<p>
+be opposed to sb./sth.: 反对某事/某人<br />
+</p>
+<ul class="org-ul">
+<li>Opposed to Western Imperialism, the Soviet Union was allied with many nations in Asia.<br /></li>
+<li>Opposed to his father, he gave up following his father's footsteps.<br /></li>
+<li>Opposed to my wife, I sneaked out of the room to play video games with my friends.<br /></li>
+</ul>
+<p>
+remain subject to sb./sth.: 继续服从于&#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>Remaining subject to the Soviet Union makes our people suffer from starvation.<br /></li>
+<li>Remaining subject to the Soviet Union makes our regime more stable.<br /></li>
+<li>The authoritarian regime remained subject to the Soviet Union.<br /></li>
+</ul>
+<p>
+bring an end to sth.: 终结某事<br />
+</p>
+<ul class="org-ul">
+<li>It is time to bring an end to the revolts from those peasants.<br /></li>
+<li>A carnage has brought a radical end to the civil war from the division of religion.<br /></li>
+<li>The death of the king brought an end to the authoritarian regime.<br /></li>
+</ul>
+<p>
+be traced to sth.: 追溯到某事物<br />
+</p>
+<ul class="org-ul">
+<li>The company which employs three thousand people can be traced to a small workshop.<br /></li>
+<li>The breakdown in the trust of the monarchs can be traced to a revolt from the division of religions.<br /></li>
+<li>Your illness can be traced to a solitary mold in the back of a fridge.<br /></li>
+</ul>
+<p>
+seize control of sth.: 控制某事物<br />
+</p>
+<ul class="org-ul">
+<li>Seizing control of Eastern Europe, the Soviet Union began to collect private farms.<br /></li>
+<li>Seizing control of the empire, the queen drew up a series of laws seeking revenues.<br /></li>
+<li>Seizing control of the gangster, the police began to collect evidence on the scene.<br /></li>
+</ul>
+<p>
+pour into sp.: 涌入某地<br />
+</p>
+<ul class="org-ul">
+<li>Pouring into the arcade, these refugees took away one thousand dollars worth of diamonds.<br /></li>
+<li>These tourists poured into the beach and littered.<br /></li>
+<li>As streams poured into the field, the field was soon full of water.<br /></li>
+</ul>
+<p>
+enforce the wishes of sb.: 执行某人的意愿<br />
+</p>
+<ul class="org-ul">
+<li>The knights were reluctant to enforce the wishes of our king.<br /></li>
+<li>The crusade claimed to enforce the wishes of god.<br /></li>
+<li>Enforcing the wishes of the king, the knights killed those innocent peasants.<br /></li>
+</ul>
+<p>
+defect to sb's side: 投靠某一边<br />
+</p>
+<ul class="org-ul">
+<li>Defecting to our enemies' side, you will be punished by the king.<br /></li>
+<li>Defecting to our enemies' side, you will be incapable of returning to your home.<br /></li>
+<li>Defecting to our enemies' side, all members of your family will be beheaded in the square.<br /></li>
+</ul>
+<p>
+turn one's back on sb./sth.: 背弃某人/某事物<br />
+</p>
+<ul class="org-ul">
+<li>Turning its back on the Soviet Union, the state formed a friendly relationship with the United States.<br /></li>
+<li>Turning its back on the Soviet Union, China tended to be allied with the United States.<br /></li>
+<li>Turning his back on his classmates, he lodged a complaint about their cheats.<br /></li>
+</ul>
+<p>
+come to an end: 结束<br />
+</p>
+<ul class="org-ul">
+<li>When the war came to an end, everyone in the streets embraced everyone else and someone sobbed aloud.<br /></li>
+<li>The time of our king came to an end.<br /></li>
+<li>The authoritarian regime came to an end.<br /></li>
+</ul>
+<p>
+adjust to sth./sb.: 适应某事物/某人<br />
+</p>
+<ul class="org-ul">
+<li>Adjusting to a difficult leader, I must be on time for work.<br /></li>
+<li>Adjusting to my wife's schedule, I must take a bath before 22 o'clock.<br /></li>
+<li>My cat grew up her fur to adjust to the cold winter.<br /></li>
+</ul>
+<p>
+most important of all, &#x2026;: 最重要的, &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>Most important of all, you lost your heart when you failed the exam.<br /></li>
+<li>Most important of all, my cat survived the fire.<br /></li>
+<li>Most important of all, you are not in debt.<br /></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

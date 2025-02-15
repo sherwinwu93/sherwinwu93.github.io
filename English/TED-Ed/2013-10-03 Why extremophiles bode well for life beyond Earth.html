@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-01-25 Sat 16:26 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-org2dfff44" class="outline-2">
+<h2 id="org2dfff44">2013-10-03 Why extremophiles bode well for life beyond Earth</h2>
+<div class="outline-text-2" id="text-org2dfff44">
+<p class="verse">
+<br />
+We've all seen movies about terrible insects<br />
+&#xa0;&#xa0;from outer space or stories of abduction by little green men,<br />
+&#xa0;but the study of life in the universe, including the possibility of extraterrestrial life,<br />
+&#xa0;&#xa0;is also a serious, scientific pursuit.<br />
+Astrobiology draws on diverse fields, such as physics, biology, astronomy, and geology,<br />
+&#xa0;&#xa0;to study how life was formed on Earth,<br />
+&#xa0;how it could form elsewhere, and how we might detect it.<br />
+Many ancient religions described other worlds inhabited by known human beings,<br />
+&#xa0;but these are more like mythical realms or parallel universes<br />
+&#xa0;&#xa0;than other planets existing in the same physical world.<br />
+It is only within the last century<br />
+&#xa0;that scientists have been able to seriously undertake the search for extraterrestrial life.<br />
+<br />
+We know that at the most basic level organisms on Earth need three things:<br />
+&#xa0;liquid water, a source of energy, and organic, carbon-based material.<br />
+We also know that the Earth is just the right distance from the Sun,<br />
+&#xa0;so as not to be either frozen or molten.<br />
+So, planets within such a habitable range from their own stars may be able to support life.<br />
+But while we used to think that life could only exist in such Earth-like environments,<br />
+&#xa0;one of the most amazing discoveries of astrobiology has been just how versatile life is.<br />
+We now know that life can thrive in some of the most extreme environments<br />
+&#xa0;that'd be fatal for most known organisms.<br />
+Life is found everywhere,<br />
+&#xa0;from black smoke of hydrothermal vents in the dark depths of Earth's oceans,<br />
+&#xa0;to bubbling, hot, acidic springs on the flanks of volcanoes,<br />
+&#xa0;to high-up in the atmosphere.<br />
+Organisms that live in these challenging environments are called extremophiles,<br />
+&#xa0;and they can survive at extremes of temperature, pressure, and radiation,<br />
+&#xa0;&#xa0;&#xa0;as well as salinity, acidity,<br />
+&#xa0;&#xa0;and limited availability of sunlight, water, or oxygen.<br />
+What is most remarkable about these extremophiles is<br />
+&#xa0;that they are found thriving in environments that mimic those on alien worlds.<br />
+<br />
+One of the most important of these worlds is our red and dusty neighbor, Mars.<br />
+Today, astrobiologists are exploring places<br />
+&#xa0;where life might once have existed on Mars using NASA's Curiosity rover.<br />
+One of these is Gale Crater,<br />
+&#xa0;an impact crater created<br />
+&#xa0;&#xa0;when a meteor hit the surface of Mars nearly 3.8 billions years ago.<br />
+Evidence from orbit suggest past traces of water,<br />
+&#xa0;which means the crater might once have supported life.<br />
+Planets are not the only places astrobiologists are looking at.<br />
+For example, Europa, one of the moons of Jupiter, and Enceladus and Titan, two of Saturn's moons,<br />
+&#xa0;are all exciting possibilities.<br />
+Although these moons are extremely cold and two are covered in thick ice,<br />
+&#xa0;there is evidence of liquid oceans beneath the shell.<br />
+Could life be floating around in these oceans,<br />
+&#xa0;or could it be living around black smoker vents at the bottom?<br />
+Titan is particularly promising<br />
+&#xa0;as it has an atmosphere and Earth-like lakes, seas, and rivers flowing across the surface.<br />
+It is very cold, however, too cold for liquid water,<br />
+&#xa0;so these rivers may instead be flowing with liquid hydrocarbons such as methane and ethane.<br />
+These are composed of hydrogen, and, more importantly, carbon,<br />
+&#xa0;which is the basic building block of all life as we know it.<br />
+So, could life be found in these lakes?<br />
+<br />
+Although instruments are being designed to study these distant worlds,<br />
+&#xa0;it takes many years to build them and even longer to get them where they need to be.<br />
+In the meantime, astrobiologists work in our own natural laboratory, the Earth,<br />
+&#xa0;to learn about all the weird and wonderful forms of life that can exist<br />
+&#xa0;and to help us one day answer one of humanity's oldest questions: Are we alone?<br />
+</p>
+</div>
+<div id="outline-container-org724d405" class="outline-3">
+<h3 id="org724d405">expression</h3>
+<div class="outline-text-3" id="text-org724d405">
+<p>
+insect [ˈɪnˌsekt]: n. a small creature such as a fly or ↑ant, that has six legs, and sometimes wings昆虫<br />
+extraterrestrial [ˌekstrətəˈrestriəl]: adj. a creature that people think may exist on another planet地球外的, 宇宙的<br />
+pursuit [pərˈsut]: n. when someone tries to get, achieve, or find something in a determined way ⇨ pursue追求<br />
+astrobiology [æstrəʊba'ɪɒlədʒɪ]: n. 太空生物学<br />
+diverse [daɪˈvɜrs]: adj. very different from each other不同的, 变化多的<br />
+astronomy [əˈstrɑnəmi]: n. the scientific study of the stars and ↑planets ⇨ astrology天文学<br />
+planet [ˈplænɪt]: n. a very large round object in space that moves around the Sun or another star行星<br />
+organic [ɔrˈɡænɪk]: adj. LIVING THINGS living, or produced by or from living things OPP inorganic有机的<br />
+organism [ˈɔrɡəˌnɪzəm]: n. an animal, plant, human, or any other living thing有机体<br />
+carbon-based [ˈkɑrbən]: adj. 碳基<br />
+molten [ˈmoʊlt(ə)n]: adj. molten metal or rock has been made into a liquid by being heated to a very high temperature熔化<br />
+habitable [ˈhæbɪtəb(ə)l]: adj. good enough for people to live in可居住的<br />
+versatile [ˈvɜrsət(ə)l]: adj. someone who is versatile has many different skills多才多艺的<br />
+thrive [θraɪv]: v. to become very successful or very strong and healthy兴旺<br />
+hydrothermal [ˌhaɪdrə'θɜrməl]: adj. 热液的<br />
+vent [vent]: n. a hole or pipe through which gases, liquid etc can enter or escape from an enclosed space or container通风孔, 出烟孔<br />
+acidic [æˈsidik] acidity: adj.n. very sour酸的, 酸性的<br />
+bubble [ˈbʌb(ə)l]: n. a ball of air or gas in liquid泡沫<br />
+oxygen [ˈɑksɪdʒən]: n. a gas that has no colour or smell, is present in air, and is necessary for most animals and plants to live. It is a chemical ↑element: symbol O[化]氧<br />
+spring [sprɪŋ]: n. a place where water comes up naturally from the ground泉<br />
+high-up: n. someone who has a high rank in an organization SYN higher-up社会地位高的人, 要人<br />
+extremophile [ɪks'təiməfɪl]: n. 极端微生物<br />
+radiation [ˌreɪdiˈeɪʃ(ə)n]: n. a form of energy that comes especially from ↑nuclear reactions, which in large amounts is very harmful to living things辐射<br />
+saline salinity [sə'lɪnəti]: adj.n. containing or consisting of salt盐的/盐度<br />
+mimic [ˈmɪmɪk]: v. to copy the way someone speaks or behaves, especially in order to make people laugh SYN imitate, take off 模仿<br />
+rover [ˈroʊvər]: n. 流浪者, 漫游者<br />
+crater [ˈkreɪtər]: n. a round hole in the ground made by something that has fallen on it or by an explosion弹坑<br />
+impact [ɪmˈpækt]: n. the effect or influence that an event, situation etc has on someone or something冲击<br />
+meteor [ˈmitiər]: n. a piece of rock or metal that travels through space, and makes a bright line in the night sky when it falls down towards the Earth流星<br />
+trace [treɪs]: n. a small sign that shows that someone or something was present or existed踪迹<br />
+moon [mun]: n. the moon/the Moon the round object that you can see shining in the sky at night, and that moves around the Earth every 28 days卫星<br />
+shell [ʃel]: n. the hard outer part that covers and protects an egg, nut, or seed地壳<br />
+promise [ˈprɑmɪs]: v. to show signs of something预示<br />
+hydrocarbon [ˌhaɪdroʊˈkɑrbən]: n. technical a chemical compound that consists of ↑hydrogen and ↑carbon, such as coal or gas碳氢化合物<br />
+methane [ˈmeˌθeɪn]: n. a gas that you cannot see or smell, which can be burned to give heat甲烷<br />
+ethane [ˈiθeɪn]: n. 乙烷<br />
+</p>
+<hr />
+<p>
+outer space: 外太空<br />
+abduction by sb.: 被某人的绑架<br />
+in the universe: 在宇宙中<br />
+draw on sth.: draw on/upon something to use information, experience, knowledge etc for a particular purpose利用某物<br />
+form life: 形成生命<br />
+ancient religions: 古老的宗教<br />
+be inhabited by sb.: 被某人居住<br />
+sth. be more like A. than B.: 某物更像A而不是B<br />
+mythical realms: 神话王国<br />
+parallel universes: 平行宇宙<br />
+It is only within the last century that + &#x2026;: 只在最近一个世界<br />
+undertake sth./ to do sth.: 着手做某事<br />
+A. is just the right distance from B.: A从B是适当距离的<br />
+support life: 支持生命<br />
+sth. is fatal for sb.: resulting in someone’s death某物对某人是致命的<br />
+in the dark depths of oceans/lakes/rivers: 在海洋的黑暗深处<br />
+on the flanks of volcanoes: the side of a hill, mountain, or very large building在火山的侧面<br />
+at extremes of sth.: a form of energy that comes especially from ↑nuclear reactions, which in large amounts is very harmful to living things处于某物的极端<br />
+What is most remarkable about sth. is that + &#x2026;: 关于某物最值得注意的是&#x2026;<br />
+hit the surface of sth.: 击打某物的表面<br />
+be flowing with sth.: to have some liquid coursing on the surface or within someone or something流满某物<br />
+be composed of sth.: 有&#x2026;组成consist of<br />
+be the basic building block of sth.: 是某物的基础组成部分<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org020968c" class="outline-3">
+<h3 id="org020968c">sentence</h3>
+<div class="outline-text-3" id="text-org020968c">
+<p>
+outer space: 外太空<br />
+</p>
+<ul class="org-ul">
+<li>The authorities feel obliged to explore outer space.<br /></li>
+<li>This convinced him that lives exist in outer space.<br /></li>
+<li>It is disturbing to think that the shuttle is still in outer space.<br /></li>
+</ul>
+<p>
+abduction by sb.: 被某人的绑架<br />
+</p>
+<ul class="org-ul">
+<li>It's time to tell a story of abduction by little green men.<br /></li>
+<li>During this time, they will give a performance to tell a story of abduction by an English.<br /></li>
+<li>On these occasions, he will tell stories of abduction by green men in outer space.<br /></li>
+</ul>
+<p>
+in the universe: 在宇宙中<br />
+</p>
+<ul class="org-ul">
+<li>It reminded him of a planet in the universe.<br /></li>
+<li>The astronaut claimed to have left a note in the universe.<br /></li>
+<li>Let's pay attention to these monsters in the universe.<br /></li>
+</ul>
+<p>
+draw on sth.: draw on/upon something to use information, experience, knowledge etc for a particular purpose利用某物<br />
+</p>
+<ul class="org-ul">
+<li>She drew on her knowledge to take advantage of her students.<br /></li>
+<li>She drew on this information which is unknown to her husband to cheat on him.<br /></li>
+<li>She drew on this experience to develop a model for an atom.<br /></li>
+</ul>
+<p>
+form life: 形成生命<br />
+</p>
+<ul class="org-ul">
+<li>It is said that life was formed on the earth in billions BC.<br /></li>
+<li>It is a blessing that life was formed in the ocean.<br /></li>
+<li>In spite of drawing on diverse fields, he fails to know how life was formed on the earth.<br /></li>
+</ul>
+<p>
+ancient religions: 古老的宗教<br />
+</p>
+<ul class="org-ul">
+<li>Many ancient religions have a bad reputation.<br /></li>
+<li>Many ancient religions used to have a bad reputation.<br /></li>
+<li>The ancient religion may have used this room as a place of worship.<br /></li>
+</ul>
+<p>
+be inhabited by sb.: 被某人居住<br />
+</p>
+<ul class="org-ul">
+<li>The promontory was inhabited by him who comes from China.<br /></li>
+<li>I was amazed to find that my house had been inhabited by my nephew when I was in the prison.<br /></li>
+<li>This room which was used as a place of worship happened to be inhabited by a journalist.<br /></li>
+</ul>
+<p>
+sth. be more like A. than B.: 某物更像A而不是B<br />
+</p>
+<ul class="org-ul">
+<li>The figure we saw last night was more like a cat than a dog.<br /></li>
+<li>Equipped with this hat, you're more like a policeman than an official.<br /></li>
+<li>Despite the fact that the sculpture is more like an insect than a butterfly.<br /></li>
+</ul>
+<p>
+mythical realms: 神话王国<br />
+</p>
+<ul class="org-ul">
+<li>It turned out to be a mythical realm.<br /></li>
+<li>It's more like a mythical realm than a real country.<br /></li>
+<li>There are drainage systems in the mythical realm.<br /></li>
+</ul>
+<p>
+parallel universes: 平行宇宙<br />
+</p>
+<ul class="org-ul">
+<li>I might be having a rest in a parallel universe.<br /></li>
+<li>If I didn't go to the university, I might do manual work in a parallel universe.<br /></li>
+<li>These days, more and more people believe in parallel universes<br />
+which were described by ancient religions.<br /></li>
+</ul>
+<p>
+It is only within the last century that + &#x2026;: 只在最近一个世界<br />
+</p>
+<ul class="org-ul">
+<li>It is only within the last century that the ancient religion explained this story to us.<br /></li>
+<li>It is only within the last century that NASA launched the shuttle into outer space.<br /></li>
+<li>It is only within the last century that people have a habit of grabbing a beer after work.<br /></li>
+</ul>
+<p>
+undertake sth./ to do sth.: 着手做某事<br />
+</p>
+<ul class="org-ul">
+<li>She undertook to have her drainage system repaired.<br /></li>
+<li>In the end, the artist undertook to make the sculpture of the President of America.<br /></li>
+<li>She refused to undertake to develop a model for an atom.<br /></li>
+</ul>
+<p>
+A. is just the right distance from B.: A从B是适当距离的<br />
+</p>
+<ul class="org-ul">
+<li>She noted with satisfaction that the chair is just the right distance from the table.<br /></li>
+<li>Although the chair was just the right distance from the table,<br />
+the manager still blamed this on me.<br /></li>
+<li>It seems odd that the Earth is just the right distance from the sun.<br /></li>
+</ul>
+<p>
+support life: 支持生命<br />
+</p>
+<ul class="org-ul">
+<li>There is plenty of water in the vase to support life.<br /></li>
+<li>The star proved to be suitable to support life.<br /></li>
+<li>A star which doesn't have liquid water is not possible to support life.<br /></li>
+</ul>
+<p>
+sth. is fatal for sb.: resulting in someone’s death某物对某人是致命的<br />
+</p>
+<ul class="org-ul">
+<li>These rotten foods may be fatal for your baby.<br /></li>
+<li>The mixture of water and hair gel must be fatal for you.<br /></li>
+<li>The chemist was made to a special type of mixture which is fatal for a baby elephant.<br /></li>
+</ul>
+<p>
+in the dark depths of oceans/lakes/rivers: 在海洋的黑暗深处<br />
+</p>
+<ul class="org-ul">
+<li>There are a number of snakes in the dark depths of lakes.<br /></li>
+<li>The sailor claimed that he had seen a monster in the dark depths of the ocean.<br /></li>
+<li>I'm 95% sure that life was formed in the dark depths of oceans.<br /></li>
+</ul>
+<p>
+on the flanks of volcanoes: the side of a hill, mountain, or very large building在火山的侧面<br />
+</p>
+<ul class="org-ul">
+<li>A patch of green began to appear on the flank of the volcano.<br /></li>
+<li>A party of scientists ran into serious trouble on the flank of the volcanoes.<br /></li>
+<li>I'm genuinely sorry that I left you on the flank of a volcano.<br /></li>
+</ul>
+<p>
+at extremes of sth.: a form of energy that comes especially from ↑nuclear reactions, which in large amounts is very harmful to living things处于某物的极端<br />
+</p>
+<ul class="org-ul">
+<li>She must starve to death at extremes of the lack of food.<br /></li>
+<li>No life could thrive at extremes of temperature.<br /></li>
+<li>I wished that they had survived at extremes of radiation.<br /></li>
+</ul>
+<p>
+What is most remarkable about sth. is that + &#x2026;: 关于某物最值得注意的是&#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>What is most remarkable about an atom is that its electrons are free to move.<br /></li>
+<li>What is most remarkable about the prizefighter is that he brought science to this sport.<br /></li>
+<li>What is most remarkable about this guy is<br />
+that he is one of the key founders of positive psychology movement.<br /></li>
+</ul>
+<p>
+hit the surface of sth.: 击打某物的表面<br />
+</p>
+<ul class="org-ul">
+<li>I wish that the hammer didn't hit the surface of the table.<br /></li>
+<li>I had an opportunity to hit the surface of the moon.<br /></li>
+<li>There is an element of truth that the cat hit the surface of television.<br /></li>
+</ul>
+<p>
+be flowing with sth.: to have some liquid coursing on the surface or within someone or something流满某物<br />
+</p>
+<ul class="org-ul">
+<li>The river must be flowing with some broken wood after a heavy shower.<br /></li>
+<li>The river used to be flowing with some cigarette ends which were threw by inhabitants.<br /></li>
+<li>It turned my stomach when I saw the river being flowing with these bodies.<br /></li>
+</ul>
+<p>
+be composed of sth.: 有&#x2026;组成consist of<br />
+</p>
+<ul class="org-ul">
+<li>The mixture is said to be composed of fruit juice and milk.<br /></li>
+<li>I have the impulse to throw away the drink which is composed of orange juice and milk.<br /></li>
+<li>It's well-known that an atom is composed of electrons, protons, and neutrons.<br /></li>
+</ul>
+<p>
+be the basic building block of sth.: 是某物的基础组成部分<br />
+</p>
+<ul class="org-ul">
+<li>My teacher said that reading and listening is the basic building block of English skills.<br /></li>
+<li>For instance, water is the basic building block of life.<br /></li>
+<li>Good ingredients are the basic building block of a good meal.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgf304417" class="outline-3">
+<h3 id="orgf304417">summary writting</h3>
+<div class="outline-text-3" id="text-orgf304417">
+<p>
+Astrobiology takes advantage of diverse fields, such as physics, biology, astronomy, and geology,<br />
+	to study the form of life on Earth and how to detect it.<br />
+Although there are many vivid says about other worlds in ancient religious,<br />
+	only within the last century<br />
+		scientists can undertake the search for extraterrestrial life.<br />
+We used to believe that life could only form in Earth-like environments,<br />
+	however, astrobiologist makes a discovery<br />
+		that extremophiles can survive at extremes of temperature, pressure, and radiation,<br />
+			as well as salinity, acidity, and limited availability of sunlight, water, or oxygen.<br />
+This environment mimics those on alien worlds.<br />
+Not only the planet, Mars, may exist life in Gale Crater which may support life,<br />
+	but the moons of some planets proved to have earth-like environments.<br />
+Astrobiologists are working to learn about these extremophiles on the earth<br />
+	to figure out whether there is extraterrestrial life in outer space.<br />
+</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

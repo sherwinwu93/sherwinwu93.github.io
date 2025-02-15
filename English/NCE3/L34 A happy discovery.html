@@ -1,0 +1,801 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-09-28 Sat 22:17 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-org6654db0" class="outline-2">
+<h2 id="org6654db0">Lesson 34 A happy discovery</h2>
+<div class="outline-text-2" id="text-org6654db0">
+<p class="verse">
+What was the 'happy discovery'?<br />
+<br />
+<b>Antique shops exert a peculiar fascination on</b> a great many people.<br />
+The more expensive kind of antique shop<br />
+&#xa0;&#xa0;where rare objects are beautiful displayed in glass cases to keep them free from dust<br />
+&#xa0;is usually a <b>forbiding place</b>.<br />
+But no one has to <b>muster up courage to enter</b> a less pretentious antique shop.<br />
+<b>There is always hope</b><br />
+&#xa0;that <b>in its labyrinth of</b> musty, dark, disordered rooms<br />
+&#xa0;&#xa0;a real rarity will be found amongst the piles of assorted junk that <b>litter the floors</b>.<br />
+<br />
+No one discovers a rarity <b>by chance</b>.<br />
+A truly dedicated bargain hunter must have patience,<br />
+&#xa0;and <b>above all</b>, the ability to recognize the worth of something when he sees it.<br />
+To do this, he must be at least as knowledgeable as the dealer.<br />
+Like a scientist <b>bent on making</b> a discovery,<br />
+&#xa0;he must <b>cherish the hope that</b> one day he will be amply rewarded.<br />
+<br />
+My old friend, Frank Halliday, is just such a person.<br />
+He has often <b>described to me how</b> he <b>picked up</b> a masterpiece of a mere 50 dollars.<br />
+One Saturday morning, Frank visited an antique shop in my neighbourhood.<br />
+As he had never been there before, he found a great deal to interest him.<br />
+The morning passed rapidly<br />
+&#xa0;and Frank was about to leave when he noticed a large packing case lying on the floor.<br />
+The dealer told him that it had just come in,<br />
+&#xa0;but that he <b>could not be bothered to open</b> it.<br />
+Frank <b>begged him to do</b> so and the dealer reluctantly <b>prised it open</b>.<br />
+The contents were disappointing.<br />
+Apart from an interesting-looking carved dagger, the box was full of crockery, much of it broken.<br />
+Frank gently lifted the crockery out of the box<br />
+&#xa0;and suddenly noticed a miniature painting <b>at the bottom of</b> the packing case.<br />
+As its composition and line reminded him of an Italian painting he knew well, he decided to buy it.<br />
+Glancing at it briefly, the dealer told him that it was worth 50 dollars.<br />
+Frank could hardly conceal his excitement,<br />
+&#xa0;for he knew that he had made a real discovery.<br />
+The tiny painting proved to be an unknown masterpiece by Corrggio<br />
+&#xa0;and was worth hundreds of thousands of dollars.<br />
+</p>
+</div>
+<div id="outline-container-orgc961ce1" class="outline-3">
+<h3 id="orgc961ce1">expression</h3>
+<div class="outline-text-3" id="text-orgc961ce1">
+<p>
+antique: [ænˈtiːk] n.古董,古玩<br />
+fascination: [ˌfæsɪˈneɪʃ(ə)n] n.魅力,迷惑力<br />
+forbidding: [fəˈbɪd] adj.望而生畏的<br />
+muster: [ˈmʌstər] v.鼓起<br />
+pretentious: [prɪˈtenʃəs] adj.自命不凡的,绞饰的<br />
+labyrinth: [ˈlæbəˌrɪnθ] n.迷宫<br />
+musty: [ˈmʌsti] adj.陈腐的,发霉的<br />
+rarity: [ˈrerəti] n.稀世珍品<br />
+assorted: [əˈsɔrtəd] adj.各式各样的<br />
+junk: [dʒʌŋk] n.破落货,废品<br />
+litter: [ˈlɪtər] v.杂乱地布满<br />
+dedicated: [ˈdedɪˌkeɪtəd] adj.专心致志的<br />
+bargain: [ˈbɑrɡən] hunter 到处找便宜买的人<br />
+dealer: [ˈdilər] v.商人<br />
+cherish: [ˈtʃerɪʃ] v.期望,渴望<br />
+amply: ['æmpli] adv.足够地<br />
+masterpiece: [ˈmæstərˌpis] n.杰作<br />
+mere: [mɪr] adj.仅仅<br />
+prise: [praɪz] v.撬开<br />
+carve: [kɑrv] v.镌刻<br />
+dagger: [ˈdæɡər] n.短剑,匕首<br />
+miniature: [ˈmɪnɪtʃər] adj.小巧的,小型的<br />
+composition: [ˌkɑmpəˈzɪʃ(ə)n] n.构图<br />
+</p>
+
+<p>
+antique shop/store/desk/jewelry: 古董店<br />
+hold/have a fascination for sb./sth.: 对某人/某事物着迷<br />
+forbidding place/look: 冷冰冰的地方/脸<br />
+muster (up) the courage/confidence/to do sth.: 鼓起勇气/自信去某事<br />
+in the labyrinth of sth.: 在某物的迷宫中<br />
+junk mail: 垃圾邮件<br />
+be littered with sth.: 乱扔某物<br />
+sb. cherish the hope that + &#x2026;: 某人怀着希望+&#x2026;<br />
+The mere fact that + &#x2026; + 23456: 事实(&#x2026;)仅仅是<br />
+prise sth. open: 撬开某物<br />
+carve a. from/out of b.=a. be carved from/out of b.: 从B中雕刻出A<br />
+</p>
+<hr />
+<p>
+There is always hope that + &#x2026;: 总有希望&#x2026;<br />
+by chance: 偶然<br />
+above all: 所有之上,尤其是<br />
+be bent on doing sth.: 决心做某事<br />
+sb. cherish the hope that + &#x2026;: 某人怀着希望+&#x2026;<br />
+describe to sb. what/how + 宾从 = describe sth. to sb. 向某人描述&#x2026;<br />
+pick up: 捡起<br />
+sb. can't/couldn't be bothered to do sth.: 做某事不耐烦(不想做)<br />
+beg sb. to do sth.: 恳求某人做某事<br />
+at the bottom of &#x2026;: 在&#x2026;的底部<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org66503d8" class="outline-3">
+<h3 id="org66503d8">words</h3>
+<div class="outline-text-3" id="text-org66503d8">
+<p>
+antique [ænˈtiːk] n. 古董,古玩<br />
+fascination [ˌfæsɪˈneɪʃ(ə)n] n.魅力,迷惑力<br />
+forbidding [fərˈbɪdɪŋ] adj.望而生畏的<br />
+muster [ˈmʌstər] v.鼓起<br />
+pretentious [prɪˈtenʃəs] adj.自命不凡的<br />
+labyrinth [ˈlæbərɪnθ] n.迷宫<br />
+musty [ˈmʌsti] adj.陈腐的,发霉的<br />
+rarity [ˈrerəti] n.稀世珍品<br />
+assorted [əˈsɔːrtɪd] adj.各式各样的<br />
+junk [dʒʌŋk] n.破烂货,废品<br />
+carve [kɑːrv] v.雕刻<br />
+dagger [ˈdæɡər] n.短剑<br />
+litter [ˈlɪtər] v.杂乱地布满<br />
+dedicated [ˈdedɪkeɪtɪd] adj.专心致志的<br />
+bargain [ˈbɑːrɡən] hunter 到处找便宜货买的人<br />
+dealer [ˈdiːlər] v.商人<br />
+cherish [ˈtʃerɪʃ] v.期望<br />
+amply [ˈæmpli] adv.足够地<br />
+masterpiece [ˈmæstərpiːs] n.杰作<br />
+mere [mɪr] adj.仅仅的<br />
+prise [praɪz] v.撬开<br />
+miniature [ˈmɪnətʃər] adj.小巧的<br />
+composition [ˌkɑːmpəˈzɪʃ(ə)n] n.构图<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgd9ceef8" class="outline-3">
+<h3 id="orgd9ceef8"><span class="done DONE">DONE</span> 单词造句</h3>
+<div class="outline-text-3" id="text-orgd9ceef8">
+<p>
+antique n.  antique shop/store/desk/jewelry<br />
+</p>
+<ul class="org-ul">
+<li>He showed me to his antique shop on Christmas day.<br /></li>
+<li>The only person who benefited from the antique desk is our cat, for she always sleeps on it.<br /></li>
+<li>The destory of the antique desk set up a chain of reactions.<br /></li>
+<li>The antique was set up on fire by students in the university and got out of control rapidly.<br /></li>
+<li>What invariably happens is that an antique jewelry can be broken.<br /></li>
+</ul>
+<p>
+fascination n.  hold/have a fascination for sb./sth.<br />
+</p>
+<ul class="org-ul">
+<li>I used to hold a fascination for Faker, a famous LoL player who won champions four times.<br /></li>
+<li>My wife seems to have a fascination for the room so that she swept it up all day.<br /></li>
+<li>The famous actor who stayed out of limelight has a fascination for antique jewelry.<br /></li>
+<li>It comes as a surprise to learn that she has a fascination for the albums of Leo.<br /></li>
+<li>I used to have a fascination for videos about traffic on rush hour.<br /></li>
+</ul>
+<p>
+forbidding adj.  forbidding place/look<br />
+</p>
+<ul class="org-ul">
+<li>A regiment of detectives are keeping guard in front of the door, it looks forbidding.<br /></li>
+<li>The forest must be a forbidding place which lives a witch.<br /></li>
+<li>The forbidding look of the policeman made it possible for him to get the traffic on the move.<br /></li>
+<li>He looked forbidding all of a sudden and pulled up.<br /></li>
+<li>The lorry driver who had a forbidding look was drawing up alongside our car.<br /></li>
+</ul>
+<p>
+muster v.  muster (up) the courage/confidence/to do sth.<br />
+</p>
+<ul class="org-ul">
+<li>If we mustered up the courage to build our country, we would be rich now.<br /></li>
+<li>The boy mustered up the courage to talk to his lover on the phone.<br /></li>
+<li>The action that he mustered up courage to tell her that he loves her<br />
+was a prelude to a series of catastrophes.<br /></li>
+<li>Fearing of unforeseen changes, he mustered up the courage to ask her out.<br /></li>
+<li>I decided to muster up the courage to propose to her in the suburbs.<br /></li>
+</ul>
+<p>
+pretentious adj.自命不凡的;炫耀的<br />
+</p>
+<ul class="org-ul">
+<li>He is so pretentious that he was under the impression that girls in the class love him.<br /></li>
+<li>He is so pretentious that he refused to follow his boss's instructions.<br /></li>
+<li>He is so pretentious that he always pulls up all of a sudden.<br /></li>
+<li>I was so pretentious that I made every effort to laugh at some students who had bad grades.<br /></li>
+<li>She was so pretentious that she didn't follow in her father's footsteps.<br /></li>
+</ul>
+<p>
+labyrinth n.  in the labyrinth of sth.<br />
+</p>
+<ul class="org-ul">
+<li>I was curious to find out that there is a house in the labyrinth of trees.<br /></li>
+<li>In the labyrinth of traffic, she managed to go to work on time.<br /></li>
+<li>The police was told that a bomb was planted in the labyrinth of mall.<br /></li>
+<li>She might feel frightened in the labyrinth of trees.<br /></li>
+<li>In the labyrinth of items, I found a packet of sweets which my daughter kept in hidding.<br /></li>
+</ul>
+<p>
+musty adj.<br />
+</p>
+<ul class="org-ul">
+<li>I am sure that the clothes smells musty and you should change into another.<br /></li>
+<li>The room smells so musty that she lights a cigarette.<br /></li>
+<li>The lady kept on sweeping up these musty cigarette ends.<br /></li>
+<li>I am genuinely sorry that I offered you a musty room.<br /></li>
+<li>Everything in the room returns to normal and you will not find it musty anymore.<br /></li>
+</ul>
+<p>
+rarity n.<br />
+</p>
+<ul class="org-ul">
+<li>I am delighted that you made a discovery of a rarity in the antique shop.<br /></li>
+<li>This rarity he found in the antique shop gave him satisfaction a great deal.<br /></li>
+<li>He had a great appetite, for he got a rarity just then.<br /></li>
+<li>He lost his temper at the idea of the loss of a rarity.<br /></li>
+<li>He has suffered from the loss of a rarity for a few days.<br /></li>
+</ul>
+<p>
+assorted adj.<br />
+</p>
+<ul class="org-ul">
+<li>The assorted butterflies broke students' concentration and Mr. Leo got very angry.<br /></li>
+<li>I never have the nerve to handle assorted problems about friend relationships.<br /></li>
+<li>She noticed her aunt carrying a bag of assorted sweets to her room.<br /></li>
+<li>Rachel has the impluse to share assorted sweets with these children.<br /></li>
+<li>She went to great length to prove that there was a bag of assorted sweets on the table.<br /></li>
+</ul>
+<p>
+junk n.  junk mail<br />
+</p>
+<ul class="org-ul">
+<li>I am gonna go on a diet and refused to eat junk foods.<br /></li>
+<li>The surgeon had an operation and the room was full of junk.<br /></li>
+<li>It must be considered as a junk mail.<br /></li>
+<li>It gave me the impression that the junk mail was not important so I dropped it.<br /></li>
+<li>Oddly enough, my coworker pestered me to open the junk mail.<br /></li>
+</ul>
+<p>
+litter v.  be littered with sth.<br />
+</p>
+<ul class="org-ul">
+<li>The sign say: don't litter.<br /></li>
+<li>My wife never dreamed of litter the entrance hall with toys.<br /></li>
+<li>To compensate the experience in the school, she littered the living room with sweets.<br /></li>
+<li>She dreaded us littering the living room with junk.<br /></li>
+<li>Oddly enough, littering bed with flower has a universal appeal to girls.<br /></li>
+</ul>
+<p>
+dedicated adj.<br />
+</p>
+<ul class="org-ul">
+<li>I think of myself as a dedicated student, as I spend a few hours studying English.<br /></li>
+<li>It seems that a dedicated girl has a universal appeal to us.<br /></li>
+<li>I consoled my father that I am very dedicated.<br /></li>
+<li>My teacher indicated that I am the most dedicated student in our class.<br /></li>
+<li>The dedicated student eventually got rid of her classmate<br />
+who invited her to his house on rush hour.<br /></li>
+</ul>
+<p>
+bargain hunter<br />
+</p>
+<ul class="org-ul">
+<li>The bargain hunter was tempted to buy it from me.<br /></li>
+<li>It is outrageous that a bargain hunter buys something without comparing prices.<br /></li>
+<li>I was impressed by the bargain hunter who opened an antique shop.<br /></li>
+<li>It took me half an hour to get rid of the bargain hunter.<br /></li>
+<li>I have no intention of showing a bargain hunter to my antique shop.<br /></li>
+</ul>
+<p>
+dealer n.<br />
+</p>
+<ul class="org-ul">
+<li>The art dealer whose gallery was set on fire lived in poverty.<br /></li>
+<li>The art dealer threw up his arms and agreed to reduce the price to $300.<br /></li>
+<li>The art dealer always thinks of relationships in term of money.<br /></li>
+<li>The art dealer went to great lengths to prove<br />
+that the diamond was real.<br /></li>
+<li>I can't conceal the fact that I bought it from the art dealer.<br /></li>
+</ul>
+<p>
+cherish v.  sb. cherish the hope that + &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>She cherishes the hope that the diamond as big as marbles is real.<br /></li>
+<li>She cherished the hope that she will not be assailed by her ex-boyfriend anymore.<br /></li>
+<li>She cherished the hope that the girl was tempted to eat the apple.<br /></li>
+<li>She cherished the hope that her keys ring was still on the desk.<br /></li>
+<li>She cherished the hope that she was free from housework.<br /></li>
+</ul>
+<p>
+amply adv.<br />
+</p>
+<ul class="org-ul">
+<li>She complained that the hotel didn't amply provide with Wi-Fi.<br /></li>
+<li>The love of my wife amply gave me spiritual comfort.<br /></li>
+<li>It is anticipated that hotels in China will amply provide us with Wi-Fi.<br /></li>
+<li>She was amply influenced by her mother who had recently studied English.<br /></li>
+<li>I amply pride myself on programming.<br /></li>
+</ul>
+<p>
+masterpiece n.<br />
+</p>
+<ul class="org-ul">
+<li>She devised a plan to buy a masterpiece abroad.<br /></li>
+<li>The painting was by no means considered to be a masterpiece.<br /></li>
+<li>They devised a way to turn these lesson into a masterpiece.<br /></li>
+<li>Whether you believe it or not, the masterpiece exerted a subtle influence on me.<br /></li>
+<li>Fulfilling my dream, I managed to turn it into a masterpiece.<br /></li>
+</ul>
+<p>
+mere adj.  The mere fact that + &#x2026; + 23456<br />
+</p>
+<ul class="org-ul">
+<li>The mere fact that she classified us as tramps is unacceptable.<br /></li>
+<li>The mere fact that she forgot to turn off the light set the house on fire.<br /></li>
+<li>The mere fact that a butterfly capture his attention makes him fail the exam.<br /></li>
+<li>The mere fact that she is so pretentious makes us get angry.<br /></li>
+<li>The mere fact that we were struck by storm made us fail to break the world record.<br /></li>
+</ul>
+<p>
+prise v.  prise sth. open<br />
+</p>
+<ul class="org-ul">
+<li>There is a danger that we must prise it open.<br /></li>
+<li>She managed to prise the lock open and take the lead.<br /></li>
+<li>Found that the lock coundn't be fitted with the key, she prised it open.<br /></li>
+<li>The mananger delayed in prising the door open.<br /></li>
+<li>The police arrived on the scene and prised it open with great ease.<br /></li>
+</ul>
+<p>
+carve v.  carve a. from/out of b.=a. be carved from/out of b.<br />
+</p>
+<ul class="org-ul">
+<li>There is no doubt that the statue was carved from a large stone.<br /></li>
+<li>It is clear that the Medoza was carved from a wood.<br /></li>
+<li>The man was able to carve a bear from the stone and took the lead.<br /></li>
+<li>Once upon a time, a sculptor carved a witch from a large stone.<br /></li>
+<li>It gave me the impression that the cat was carved from a skeleton.<br /></li>
+</ul>
+<p>
+dagger n.<br />
+</p>
+<ul class="org-ul">
+<li>I couldn't conceal the fact that I bought a toy dagger from a vendor.<br /></li>
+<li>There must have been a dagger in the drawer.<br /></li>
+<li>To varying degrees, the dagger must be carved from a large stone.<br /></li>
+<li>I won't let a lost dagger ruin my day.<br /></li>
+<li>Oddly enough, the medical student has a fascination on assorted daggers.<br /></li>
+</ul>
+<p>
+miniature adj.<br />
+</p>
+<ul class="org-ul">
+<li>I was strucked by a miniature train in the kindergarden.<br /></li>
+<li>My stomach would turn at the idea of miniature golf.<br /></li>
+<li>I noticed him playing with miniature train.<br /></li>
+<li>We used to play miniature train and stay for dinner in his house.<br /></li>
+<li>To my dismay, she didn't allow me to play her miniature train.<br /></li>
+</ul>
+<p>
+composition n.<br />
+</p>
+<ul class="org-ul">
+<li>The sad truth is that I can't take the composition of photographs into account.<br /></li>
+<li>My wife sticked to the composition of photographs.<br /></li>
+<li>It occurs to me to my wife at idea of composition of photographs.<br /></li>
+<li>My wife is always complaining that the composition of photographs are not good enough.<br /></li>
+<li>I didn't have the nerve to take the composition of photographs into account.<br /></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org6ec9206" class="outline-3">
+<h3 id="org6ec9206">vocabulary</h3>
+<div class="outline-text-3" id="text-org6ec9206">
+<p>
+rare objects: very unusual things<br />
+displayed: shown, put on show<br />
+piles: stacks,(untidy) collections<br />
+assorted junk: mixed rubbish of all kinds<br />
+truly: really, seriously<br />
+bent on: determined to<br />
+amply: sufficiently<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org61e2924" class="outline-3">
+<h3 id="org61e2924"><span class="done DONE">DONE</span> 反复听电影片段直到懂关键句</h3>
+<div class="outline-text-3" id="text-org61e2924">
+</div>
+</div>
+<div id="outline-container-org9412ce7" class="outline-3">
+<h3 id="org9412ce7">复习二册语法(笔记或视频) &amp; 红皮书</h3>
+</div>
+<div id="outline-container-org12f2b0b" class="outline-3">
+<h3 id="org12f2b0b"><span class="done DONE">DONE</span> 习惯用法造句</h3>
+<div class="outline-text-3" id="text-org12f2b0b">
+<p>
+There is always hope that + &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>There is always hope that we get a good salary.<br /></li>
+<li>There is always hope that the gas will reduce price to $1 a liter.<br /></li>
+<li>There is always hope that he will have a fascination for the course.<br /></li>
+<li>There is always hope that he musters up the courage to ask her out.<br /></li>
+<li>There is always hope that there is a rarity in the labyrinth of items in room.<br /></li>
+</ul>
+<p>
+by chance<br />
+</p>
+<ul class="org-ul">
+<li>I have told you that I met her by chance.<br /></li>
+<li>She cherished th hope that he will be killed in action by chance.<br /></li>
+<li>I'm genuinely sorry that I prised the lock open by chance.<br /></li>
+<li>I found a rarity in the antique shop by chance.<br /></li>
+<li>We benefited from the cold weather by chance and made a profit.<br /></li>
+</ul>
+<p>
+above all<br />
+</p>
+<ul class="org-ul">
+<li>Above all, we should get it under control at the beginning of the meeting.<br /></li>
+<li>Above all, we need to draw up alongside his car.<br /></li>
+<li>Above all, you needn't have reduced your mother to tears.<br /></li>
+<li>Above all, you should attend to your baby at first.<br /></li>
+<li>Above all, you asked your neighbor keep an eye on your baby.<br /></li>
+</ul>
+<p>
+be bent on doing sth.<br />
+</p>
+<ul class="org-ul">
+<li>The archaeologist was bent on making a real discovery.<br /></li>
+<li>The policeman arrived on the scene and was bent on keeping order.<br /></li>
+<li>My wife was bent on sweeping up our room in hometown.<br /></li>
+<li>My boss was bent on making a profit last year.<br /></li>
+<li>The lady was bent on taking care of stray dogs.<br /></li>
+</ul>
+<p>
+sb. cherish the hope that + &#x2026;<br />
+described to sb. what/how + 宾从 = describe sth. to sb.<br />
+</p>
+<ul class="org-ul">
+<li>I found it impossible to describe to Leo what set up a chain of reactions.<br /></li>
+<li>My wife described to me what happened in her company.<br /></li>
+<li>My child was trying to describe to me how he got everything in classroom under control.<br /></li>
+<li>The lorry drive described to the police why he kept drawing up alongside the car.<br /></li>
+<li>The captain described to us what had come to light.<br /></li>
+</ul>
+<p>
+pick up<br />
+</p>
+<ul class="org-ul">
+<li>Wandering around the university, I always pick up some bargains from these students.<br /></li>
+<li>I was under the impression that I picked up a rare book.<br /></li>
+<li>He managed to pick up a nice suit which he changed into last night.<br /></li>
+<li>The man picked up a car which was worth $1000.<br /></li>
+<li>Such is human nature, that we are willing to pick up some bargains in the street.<br /></li>
+</ul>
+<p>
+sb. can't/couldn't be bothered to do sth.<br />
+</p>
+<ul class="org-ul">
+<li>I can't be bothered to take a bath.<br /></li>
+<li>She can't be bothered to buy nuts from a vendor.<br /></li>
+<li>I couldn't be bothered to be dressed in that pants.<br /></li>
+<li>She couldn't be bothered to keep the status quo.<br /></li>
+<li>She couldn't be bothered to keep secret anymore.<br /></li>
+</ul>
+<p>
+beg sb. to do sth.<br />
+</p>
+<ul class="org-ul">
+<li>I begged you to do me a flavor.<br /></li>
+<li>She begged her husband to go to street with her.<br /></li>
+<li>The cat begged me to offer her some foods.<br /></li>
+<li>The captain begged us to keep the secret that he had killed a seaman.<br /></li>
+<li>She begged the editor to publish an article on her story.<br /></li>
+</ul>
+<p>
+at the bottom of &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>At the bottom of the desk, I spotted a lot of sweets.<br /></li>
+<li>At the bottom of my heart, I couldn't conceal the fact that I was still love with him.<br /></li>
+<li>At the bottom of the drawer, she found a rare carved dagger.<br /></li>
+<li>Have you find anything unusual at the bottom the desk?<br /></li>
+<li>There are his pocket money at the bottom of the desk. It's just between you and me.<br /></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org70af02f" class="outline-3">
+<h3 id="org70af02f">跟读 50遍</h3>
+</div>
+<div id="outline-container-orgecdf56d" class="outline-3">
+<h3 id="orgecdf56d"><span class="done DONE">DONE</span> Comprehension 反复练习</h3>
+<div class="outline-text-3" id="text-orgecdf56d">
+</div>
+</div>
+<div id="outline-container-orgc3667fc" class="outline-3">
+<h3 id="orgc3667fc"><span class="done DONE">DONE</span> Ask me if 写+读</h3>
+<div class="outline-text-3" id="text-orgc3667fc">
+<ol class="org-ol">
+<li>Antique shops fascinate a lot of people. Why<br />
+Why do antique shops fascinate a lot of people?<br /></li>
+<li>Anyone has to muster up courage to enter a cheap antique shop. Who<br />
+Who has to muster up courage to enter a cheap antique shop?<br /></li>
+<li>Piles of assorted junk litter the floors. What kinds of junk<br />
+What kinds of junk litter the floors?<br /></li>
+<li>A dedicated bargain hunter must have patience. What<br />
+What must a dedicated bargain hunter have?<br /></li>
+<li>A bargain hunter is rather like a scientist. What &#x2026; like<br />
+What is a bargain hunter like?<br /></li>
+<li>Frank visited an antique shop in the writer's neighbourhood. Where<br />
+Where did Frank visit an antique shop?<br /></li>
+<li>Frank noticed a large packing case on the floor. What<br />
+What did Frank notice on the floor?<br /></li>
+<li>The dealer opened the packing case reluctantly. How<br />
+How did the dealer open the packing case?<br /></li>
+<li>Frank noticed a miniature painting at the bottom of the packing case. What<br />
+What did Frank notice at the bottom of the packing case?<br /></li>
+<li>The painting proved to be an unknown masterpiece by Correggio. What<br />
+What did the painting prove to be?<br /></li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orga38373b" class="outline-3">
+<h3 id="orga38373b"><span class="done DONE">DONE</span> 摘要写作 写 &amp; 对答案</h3>
+<div class="outline-text-3" id="text-orga38373b">
+<p>
+One Saturday morning, Frank Halliday visited an antique shop in my neighbour hood<br />
+	where he had never been before.<br />
+He was about to leave when he noticed a packing case lying on the floor,<br />
+	which had just come in,<br />
+	in which there are an carved dagger and broken crokery.<br />
+Frank lifted the crockey out of the box<br />
+	and found a miniature painting at the bottom.<br />
+He bought the painting from the dealer for mere $50,<br />
+	which proved to be an unknown masterpiece by Correggio<br />
+		and was wroth hundreds of thousands of dollars.<br />
+</p>
+
+
+<p>
+While visiting an antique shop one Saturday,<br />
+	Frank was about to leave when he saw a large packing case.<br />
+He asked the dealer to open it but the contents were disappointting<br />
+	until he lifted some crockery and noticed a miniature painting at the bottom.<br />
+He had already decided to buy it when the dealer told him it was $50.<br />
+Frank was excited because this was a real discovery.<br />
+The painting was an unknown masterpiece worth hundreds of thousands of dollars.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org54e23d8" class="outline-3">
+<h3 id="org54e23d8"><span class="done DONE">DONE</span> tell the story 口语复述</h3>
+<div class="outline-text-3" id="text-org54e23d8">
+</div>
+</div>
+<div id="outline-container-org192c74b" class="outline-3">
+<h3 id="org192c74b"><span class="done DONE">DONE</span> composition 阅读 或 写作</h3>
+<div class="outline-text-3" id="text-org192c74b">
+<p>
+'The Antique Shop' has been in the little street near the church for years.<br />
+As you look at it from across the road, it draws you towards it.<br />
+It has one large window display designed to attract all sorts of customers.<br />
+There is expensive glass, porcelain and jewellery to attract people with a lot of money;<br />
+	there is secondhand furniture, modern silver and other things (hardly antique!)<br />
+		to attract those with not so much.<br />
+When you enter the shop, a little bell rings<br />
+	and the owner, a little grey-haired old lady called Mrs. Century,<br />
+		comes out from a room at the back<br />
+		and greets you like a lost relative!<br />
+She greets everyone the same and always with a smile.<br />
+The shop sells all kinds of antiques.<br />
+</p>
+
+<p>
+There are shelves full of old books along the back of the shop.<br />
+There are two large tables in the middle of the shop covered with pieces of glass and porcelain.<br />
+Then, around the walls on the floor are large pots, brass statues and things.<br />
+There are lots of painting on the walls, too.<br />
+At the weekend, the shop usually has five or six customers in it at one time.<br />
+You might find a professional antique collector,<br />
+	a holiday couple and a young mother(with child in pram) looking for a cheap antique<br />
+		for her husband's birthday.<br />
+We all like looking for unusual things<br />
+	and hope to find a bargain one day.<br />
+You might find one in Mrs. Century's 'Antique Shop'.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org73e3152" class="outline-3">
+<h3 id="org73e3152">Topics for discussion</h3>
+</div>
+</div>
+</div>
+</body>
+</html>

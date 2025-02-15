@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-08-06 Tue 22:24 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+
+<div id="outline-container-orged198d3" class="outline-2">
+<h2 id="orged198d3">Lesson 89 A slip of the tongue</h2>
+<div class="outline-text-2" id="text-orged198d3">
+<p class="verse">
+Who made the only funny joke that evening and why?<br />
+<br />
+People will <b>do anything to see</b> a free show -&#x2014; even if it is a bad one.<br />
+When <b>the news got round</b><br />
+&#xa0;that <b>a comedy show</b> would be presented at our local cinema by the P. and U. Bird Seed Company,<br />
+&#xa0;we all rushed to see it.<br />
+We had to queue for hours to get in and there must have been several hundred people present<br />
+&#xa0;just before the show began.<br />
+Unfortunately, the show was one of the dullest we have ever seen.<br />
+Those who failed to get in need not have <b>felt disappointed</b>,<br />
+&#xa0;as many of the artistes who should have appeared did not come.<br />
+The only funny things we heard that evening<br />
+&#xa0;came from the advertiser <b>at the beginning of the programme</b>.<br />
+He was obviously very nervous and for some minutes stood awkwardly before the microphone.<br />
+As soon as he opened his mouth, everyone <b>burst out laughing</b>.<br />
+We all know what the poor man should have said,<br />
+&#xa0;but what he actually said was: 'This is the Poo and Ee Seed Bird Company.<br />
+Good ladies, evening and gentlemen!’<br />
+</p>
+</div>
+<div id="outline-container-orga7748c0" class="outline-3">
+<h3 id="orga7748c0">expression</h3>
+<div class="outline-text-3" id="text-orga7748c0">
+<p>
+slip [slɪp] n.小错误<br />
+comedy [ˈkɑmədi] n.喜剧<br />
+present [ˈprezənt] v.演出 adj.出席,到场的<br />
+queue [kju] v.n.排队<br />
+dull [dʌl] adj.枯燥,无味<br />
+artiste [ɑrˈtist] n.artist 艺人<br />
+advertiser [ˈædvərˌtaɪzər] n.报幕员<br />
+</p>
+
+<p>
+a slip of the tongue 口误<br />
+a comedy show 喜剧表演<br />
+hold up the queue 排队等候<br />
+</p>
+<hr />
+<p>
+do anything to do sth. 尽一切努力做某事<br />
+the news get around 消息传开了<br />
+feel disappointed 感到失望<br />
+at the beginning of a. 在……的开始<br />
+burst out laughing 突然大笑<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge8801d2" class="outline-3">
+<h3 id="orge8801d2">words</h3>
+<div class="outline-text-3" id="text-orge8801d2">
+<p>
+slip [slɪp] n.小错误<br />
+comedy [ˈkɑmədi] n.喜剧<br />
+present [ˈprezənt] v.演出;adj.出席,到场的<br />
+queue [kju] v.排队<br />
+dull [dʌl] adj.枯燥,无味<br />
+artiste [ɑrˈtist] n.艺人<br />
+advertiser [ˈædvərˌtaɪzər] n.报幕员<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org6a166e8" class="outline-3">
+<h3 id="org6a166e8"><span class="done DONE">DONE</span> 单词造句</h3>
+<div class="outline-text-3" id="text-org6a166e8">
+<p>
+slip n. a slip of the tongue<br />
+</p>
+<ul class="org-ul">
+<li>It was obvious that it was just a slip of the tongue.<br /></li>
+<li>A slip of the tongue made me say Jie instead of Baobei.<br /></li>
+<li>Did I say $200? It must have been a slip of the tongue.<br /></li>
+<li>It may be a slip of the tongue.<br /></li>
+<li>Did I say he smashed everything to pieces? It must be a slip of the tongue.<br /></li>
+</ul>
+<p>
+comedy n. a comedy show<br />
+</p>
+<ul class="org-ul">
+<li>They must have watched a comedy show last night.<br /></li>
+<li>He has just written out a long list of comedy shows.<br /></li>
+<li>This is the most instersting comedy show I've ever watched.<br /></li>
+<li>He gets tired of wacthing comedy shows.<br /></li>
+<li>A gust of wind swept the roof of the tent, the comedy show wasn't presented on time.<br /></li>
+</ul>
+<p>
+present v.adj.<br />
+</p>
+<ul class="org-ul">
+<li>A comedy show will be presented at the square this night.<br /></li>
+<li>They should have presented a comedy show tonight.<br /></li>
+<li>They needn't have presented a comedy show tonight.<br /></li>
+<li>They may presented a comeday show tonight.<br /></li>
+<li>They must have presented a comedy show tonight.<br /></li>
+</ul>
+<p>
+queue v.n. hold up the queue<br />
+</p>
+<ul class="org-ul">
+<li>Don't be too hard on us, don't hold up the queue.<br /></li>
+<li>I heard the vegetarian holding up the queue.<br /></li>
+<li>No one account for the fact that they are holding up the queue.<br /></li>
+<li>The workers have decided to go on strike and hold up the queue.<br /></li>
+<li>The poor man admited that he had held up the queue last night.<br /></li>
+</ul>
+<p>
+dull adj.<br />
+</p>
+<ul class="org-ul">
+<li>It is the dullest comedy show I've ever seen.<br /></li>
+<li>All work and no play have made me a dull boy.<br /></li>
+<li>A dull boy shouldn't have gone to cinema on weekdays.<br /></li>
+<li>A dull boy need playing more.<br /></li>
+<li>The dull boy suggested that we have a picnic over and over again.<br /></li>
+</ul>
+<p>
+artiste n.artist<br />
+</p>
+<ul class="org-ul">
+<li>Enough money enabled the artiste to build the bridge.<br /></li>
+<li>If the artiste wasn't brought out to the mine, he would lose his life.<br /></li>
+<li>I'll do anything to keep in touch with the artiste.<br /></li>
+<li>The artiste is running out of his money.<br /></li>
+<li>It makes the artiste to tear up his paper.<br /></li>
+</ul>
+<p>
+advertiser n.<br />
+</p>
+<ul class="org-ul">
+<li>On the surface, the advertiser had a perfect alibi.<br /></li>
+<li>In the end, we found out that the advertiser commited a murder.<br /></li>
+<li>The advertiser confirmed that it wasn't a slip of tongue.<br /></li>
+<li>The advertiser refused to tell the truth.<br /></li>
+<li>The advertisers are moving in a circle.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org3e86744" class="outline-3">
+<h3 id="org3e86744"><span class="done DONE">DONE</span> 反复听电影片段</h3>
+<div class="outline-text-3" id="text-org3e86744">
+</div>
+</div>
+<div id="outline-container-org0a12c8e" class="outline-3">
+<h3 id="org0a12c8e"><span class="done DONE">DONE</span> Pattern Drill 写+读</h3>
+<div class="outline-text-3" id="text-org0a12c8e">
+<ul class="org-ul">
+<li>1t: wash the dishes<br />
+s1: She needn't have washed the dishes.<br />
+s2: She had to wash them or her husband would have been furious with her.<br />
+<ul class="org-ul">
+<li>buy a paper<br />
+She needn't have bought a paper.<br />
+She had to buy a paper or her husband would have been furious with her.<br /></li>
+<li>make the beds<br />
+She needn't have made the beds.<br />
+She had to make the beds or her husband would have been furious with her.<br /></li>
+<li>visit Mary<br />
+She needn't have visited Mary.<br />
+She had to visit Mary or her husband would have been furious with her.<br /></li>
+<li>cook lunch<br />
+She needn't have cooked lunch.<br />
+She had to cook lunch or her husband would have been furious with her.<br /></li>
+</ul></li>
+<li>2t: type the letters<br />
+s1: Didn't Mary type the letters yesterday?<br />
+s2: They'd already been typed, so she didn't have to type them.<br />
+<ul class="org-ul">
+<li>buy the food<br />
+Didn't Mary buy the food yesterday?<br />
+It'd already been bought, so she didn't have to buy the food.<br /></li>
+<li>prepare the speech<br />
+Didn't Mary prepare the speech yesterday?<br />
+It'd alreay been prepared, so she didn't have to prepare the speech.<br /></li>
+<li>sell the tickets<br />
+Didn't Mary sell the tickets yesterday?<br />
+They'd already been sold, so she didn't have to sell the tickets.<br /></li>
+<li>make the decision<br />
+Didn't Mary make the decision yesterday?<br />
+It'd already been made, so she didn't have to make the decision.<br /></li>
+</ul></li>
+<li>3t: read - your eyes<br />
+s1: You mustn't read so much or you'll strain your eyes.<br />
+s2: I've got to do a lot of reading. It's part of my job.<br />
+<ul class="org-ul">
+<li>talk - your voice<br />
+You mustn't talk so much or you'll strain your voice.<br />
+I've got to do a lot of talking. It's part of my job.<br /></li>
+<li>shout - your voice<br />
+You mustn't shout so much or you'll strain your voice.<br />
+I've got to do a lot of talking. It's part of my job.<br /></li>
+<li>climb - your heart<br />
+You mustn't climb so much or you'll strain your heart.<br />
+I've got to do a lot of climbing. It's part of my job.<br /></li>
+<li>carry - your back<br />
+You mustn't carry so much or you'll strain your back.<br />
+I've got to do a lot of carrying. It's part of my job.<br /></li>
+</ul></li>
+<li>4t: arrived - delayed<br />
+s1: I can't understand it. He ought to have arrived by now.<br />
+s2: He must have been delayed.<br />
+<ul class="org-ul">
+<li>been here - kept at the office<br />
+I can't understand it. He ought to have been here by now.<br />
+He must have been kept at the office.<br /></li>
+<li>come back - caught by the police<br />
+I can't understand it. He ought to have come back by now.<br />
+He must have been caught by the police.<br /></li>
+<li>left home - taken ill<br />
+I can't understand it. He ought to have left home by now.<br />
+He must have been taken ill.<br /></li>
+<li>done the job - arrested<br />
+I can't understand it. He ought to have done the job by now.<br />
+He must have been arrested.<br /></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org7d7643c" class="outline-3">
+<h3 id="org7d7643c">给自己讲解</h3>
+</div>
+<div id="outline-container-org1b7bddf" class="outline-3">
+<h3 id="org1b7bddf">红皮书</h3>
+</div>
+<div id="outline-container-org6420dcf" class="outline-3">
+<h3 id="org6420dcf"><span class="done DONE">DONE</span> 习惯用法造句</h3>
+<div class="outline-text-3" id="text-org6420dcf">
+<p>
+do anything to do sth.<br />
+</p>
+<ul class="org-ul">
+<li>My wife will do anything to go on vacation in summer.<br /></li>
+<li>The petrol was almost used up, we must do anything to find a petrol station.<br /></li>
+<li>He devoted himself to education and will do anything to help his students.<br /></li>
+<li>I'll do anything to make agreement with the busmen.<br /></li>
+<li>She will do anything to pass the exam.<br /></li>
+</ul>
+<p>
+the news get around<br />
+</p>
+<ul class="org-ul">
+<li>When the news get around, the villagers began to make a tribution to the exhibition.<br /></li>
+<li>The news get around that the agreement was reachoued about pay and work condition.<br /></li>
+<li>When the news get around, everything bursted into cheers.<br /></li>
+<li>The advertiser has stated that the news get around.<br /></li>
+<li>When the news get around, he expressed his gratitude to the reporters.<br /></li>
+</ul>
+<p>
+feel disappointed<br />
+</p>
+<ul class="org-ul">
+<li>I felt disappointed that my wife had ran out of her pocket money.<br /></li>
+<li>I felt disappointed that my child had played a truent from school.<br /></li>
+<li>I felt disappointed that nobody volunteered to make a contribution to our school.<br /></li>
+<li>The strike have been continued for two weeks, we all felt disappointed.<br /></li>
+<li>He felt disappointed that his wife lost her temper once more.<br /></li>
+</ul>
+<p>
+at the beginning of a.<br />
+</p>
+<ul class="org-ul">
+<li>At the beginning of the Winter, they haven't decided to go on strike.<br /></li>
+<li>At the beginning of the election, he is fanatical about objecting Mr. Wu.<br /></li>
+<li>He claimed to have seen the monster at the beginning of July.<br /></li>
+<li>At the beginning of the war, they made every effort to move to America.<br /></li>
+<li>At the beginning of the war, they hope everything return to normal.<br /></li>
+</ul>
+<p>
+burst out laughing<br />
+</p>
+<ul class="org-ul">
+<li>In the end, I turned around and bursted out laughing.<br /></li>
+<li>I am delighted that my father bursted out laughing.<br /></li>
+<li>He was offered a good job and bursted out laughing.<br /></li>
+<li>It was a slip of the tongue and the flight attendant bursted into laughing.<br /></li>
+<li>He made every effort not to burst out laughing, but he couldn't control himself.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org79bc42f" class="outline-3">
+<h3 id="org79bc42f"><span class="done DONE">DONE</span> 跟读至背诵</h3>
+<div class="outline-text-3" id="text-org79bc42f">
+</div>
+</div>
+<div id="outline-container-org58b4d0e" class="outline-3">
+<h3 id="org58b4d0e"><span class="done DONE">DONE</span> Ask me if 写+读</h3>
+<div class="outline-text-3" id="text-org58b4d0e">
+<ol class="org-ol">
+<li>People like to see a free show. What<br />
+What do people like to do?<br /></li>
+<li>The P. &amp; U. Bird Seed Company presented a comedy show. What kind/Who<br />
+What kind of show did the P. &amp; U. Bird Seed Company present?<br />
+Who presented a comedy show?<br /></li>
+<li>It was presented at a cinema. Where<br />
+Where was it presented?<br /></li>
+<li>The news got round. What<br />
+What got round?<br /></li>
+<li>We all rushed to see it. What<br />
+What did we all rush to see?<br /></li>
+<li>We had to queue to get in. Why<br />
+Why did we have to queue?<br /></li>
+<li>We queued for hours. How long/Who<br />
+How long did he queue?<br />
+Who queued for hours?<br /></li>
+<li>Several hundred people were present. How many<br />
+How many people were present?<br /></li>
+<li>The show was very dull. What&#x2026;like<br />
+What was the show like?<br /></li>
+<li>The advertiser stood awkwardly before the microphone. How/Where<br />
+How did the advertiser stand before the microphone?<br />
+Where did the advertiser stand awkwardly?<br /></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org8188643" class="outline-3">
+<h3 id="org8188643"><span class="done DONE">DONE</span> 摘要写作</h3>
+<div class="outline-text-3" id="text-org8188643">
+<p>
+The local cinema was packed<br />
+	because P. &amp; U Bird Seed was presenting a free comedy show.<br />
+As many of artistes who should have appeared failed to turn up,<br />
+	the show was very dull.<br />
+The funniest thing was we heard came at the beginning from the advertiser<br />
+	who introduced programme saying:<br />
+	"This is the Poo and Ee Seed Bird Company.Good ladies, evening and gentlemen!".<br />
+</p>
+
+<p>
+The local cinema was packed.<br />
+The P. &amp; U. Bird Seed Company was presenting a free comedy show,<br />
+	but many of artistes who should have appeared failed to turn up.<br />
+Because of this, the show was very dull.<br />
+The funniest thing we heard came at the beginning from the advertiser<br />
+	who introduced the programme saying:<br />
+	"This is the Poo and Ee Seed Bird Company.Good ladies, evening and gentlemen!".<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org2ec80b8" class="outline-3">
+<h3 id="org2ec80b8">tell the story 口语</h3>
+</div>
+<div id="outline-container-orgb387955" class="outline-3">
+<h3 id="orgb387955">Topics for discussion</h3>
+</div>
+</div>
+</div>
+</body>
+</html>

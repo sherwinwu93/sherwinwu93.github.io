@@ -1,0 +1,790 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-09-28 Sat 22:17 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-org65ea7ac" class="outline-2">
+<h2 id="org65ea7ac">Lesson 21 Daniel Mendoza</h2>
+<div class="outline-text-2" id="text-org65ea7ac">
+<p class="verse">
+How many unsuccessful attempts did Mendoza make before becoming Champion of all England?<br />
+<br />
+Boxing matches were very popular in England two hundred years ago.<br />
+In those days, boxers fought <b>with bare fists</b> for prize money.<br />
+<b>Because of this</b>, they were known as 'prizefighters'.<br />
+However, boxing was very crued, for there were no rules<br />
+&#xa0;and a prizefighter could be seriously injured or even killed during a match.<br />
+<br />
+One of the most colourful figures in boxing history was Daniel Mendoza, who <b>was born in</b> 1764.<br />
+The use of gloves was not introduced until 1860,<br />
+&#xa0;when the Marquis of Queensberry <b>drew up</b> the first <b>set of</b> rules.<br />
+Though he was technically a prizefighter,<br />
+&#xa0;&#xa0;Mendoza did much to <b>change crude prizefighting into a sport</b>,<br />
+&#xa0;for he <b>brought science to the game</b>.<br />
+<b>In his day</b>, Mendoza enjoyed tremendous popularity.<br />
+He was adored by rich and poor alike.<br />
+<br />
+Mendoza <b>rose to fame</b> swiftly after a boxing match when he was only fourteen years old.<br />
+This attracted the attention of Richard Humphries,<br />
+&#xa0;who was then the most eminent boxer in England.<br />
+He offered to train Mendoza and his young pupil <b>was quick to learn</b>.<br />
+<b>In fact</b>, Mendoza soon became so successful that Humphries <b>turned against him</b>.<br />
+The two men <b>quarrelled bitterly</b><br />
+&#xa0;and <b>it was clear that</b> the <b>argument could only be settled</b> by a fight.<br />
+A match was held at Stilton, where both men fought for an hour.<br />
+The public <b>bet a great deal of money on Mendoza</b>, but he was defeated.<br />
+Mendoza met Humphries in the ring on a later occasion and he lost for a second time.<br />
+<b>It was not until</b> his third match in 1790<br />
+&#xa0;that he finally beat Humphries and became Champion of England.<br />
+Meanwhile, he founded a highly successful Academy and even Lord Byron became one of his pupils.<br />
+He earned enormous sums of money and was paid <b>as much as</b> 100 dollars for a single appearance.<br />
+Despite this, he was so extravagant that he <b>was always in debt</b>.<br />
+After he was defated by a boxer called Gentleman Jackson, he was quickly forgotten.<br />
+He was sent to prison for failing to pay his debts and died <b>in poverty</b> in 1836.<br />
+</p>
+</div>
+<div id="outline-container-orgf732ce1" class="outline-3">
+<h3 id="orgf732ce1">expression</h3>
+<div class="outline-text-3" id="text-orgf732ce1">
+<p>
+boxing: [ˈbɑksɪŋ] n.拳击<br />
+boxer: [ˈbɑksər] n.拳击手<br />
+bare: [ber] adj. not covered with clothes赤裸的<br />
+prizefighter: [ˈpraɪzˌfaɪtər] n.古拳手<br />
+crude: [krud] adj. rude and offensive粗野的<br />
+marquis: [mɑrˈki] n. has a rank between duke and earl侯爵<br />
+technically: [ˈteknɪkli] adv.严格根据法律意义地<br />
+science: [ˈsaɪəns] n.科学<br />
+popularity: [ˌpɑpjəˈlerəti] n.名望<br />
+adore: [əˈdɔr] v. to love someone very much and feel very proud of them崇拜,爱戴<br />
+alike: [əˈlaɪk] adv. in a similar way  adj. very similar not before noun一样地<br />
+fame: [feɪm] n.名声<br />
+eminent: [ˈemɪnənt] adj. an eminent person is famous, important, and respected著名的,杰出的<br />
+bitterly: [ˈbɪtərli] adv. very厉害地<br />
+bet: [bet] bet betted v. to risk money on the result of a race, game, competition, or other future event打赌<br />
+academy: [əˈkædəmi] n.专业学校<br />
+extravagant: adj. spending or costing a lot of money, especially more than is necessary or more than you can afford浪费的,奢侈的<br />
+poverty: [ˈpɑvərti] n.贫困<br />
+</p>
+
+<p>
+with sb's bare hands: using only one's hands and no tools or weapons赤手空拳地<br />
+Technically speaking, + &#x2026;: According to the rules严格意义上说<br />
+gain/grow/increase in popularity:  something or someone is liked, enjoyed, or supported获得欢迎<br />
+great minds think alike: 英雄所见略同<br />
+rise to fame: make a name for oneself变得出名<br />
+quarrel/complain/be disappointed &#x2026; + bitterly: 吵架剧烈<br />
+bet ($) on sth.: 在某事打赌多少钱<br />
+I bet + &#x2026;: 我赌 + &#x2026;<br />
+live in poverty: 生活贫困<br />
+</p>
+<hr />
+<p>
+Because of + n.: 因为某物<br />
+be born in + (year): 出生于<br />
+draw up: 起草<br />
+a set of sth.: a series of; a trail of一系列某物<br />
+change a. into b.: 把A变成B,而 exchange A for B是交换<br />
+bring a. to b.: eg. brought science to the game把A带给B<br />
+in sb's day: 在他的时代<br />
+be quick to do sth.: 很快做某事<br />
+in fact: 实际上<br />
+turn against sb.: 与某人反目<br />
+It is clear that + &#x2026;: 很明显<br />
+settle the argument: 解决争端<br />
+It was not until [stp.] that + &#x2026;: 直到某事+&#x2026;<br />
+	stp. can not only be 'in 1790' but also 'third match' as well<br />
+as much as &#x2026;   half as much as: 一样多,一半多<br />
+be in debt: owe money在欠债<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge20bdfe" class="outline-3">
+<h3 id="orge20bdfe">words</h3>
+<div class="outline-text-3" id="text-orge20bdfe">
+<p>
+boxing [ˈbɑːksɪŋ] n. 拳击<br />
+boxer [ˈbɑːksər] n. 拳击手<br />
+bare [ber] adj. 赤裸的<br />
+prizefighter [ˈpraɪzfaɪtər] n. 职业拳击手<br />
+crude [kruːd] adj. 粗野的<br />
+marquis [ˈmɑːrkwɪs] n. 侯爵<br />
+technically [ˈteknɪkli] adv. 严格地;技术地<br />
+science [ˈsaɪəns] n. 科学<br />
+popularity [ˌpɑːpjuˈlærəti] n. 名望<br />
+adore [əˈdɔːr] v. 崇拜,爱戴<br />
+alike [əˈlaɪk] adv. 一样地<br />
+fame [feɪm] n. 名声<br />
+eminent [ˈemɪnənt] adj. 著名的<br />
+bitterly [ˈbɪtərli] adv. 厉害地<br />
+bet [bet] v. 打赌<br />
+academy [əˈkædəmi] n. 专业学校<br />
+extravagant [ɪkˈstrævəɡənt] adj. 浪费的<br />
+poverty [ˈpɑːvərti] n. 贫困的<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org5213ea1" class="outline-3">
+<h3 id="org5213ea1">vocabulary</h3>
+<div class="outline-text-3" id="text-org5213ea1">
+<p>
+bare: without gloves<br />
+injured: hurt<br />
+drew up: prepared and wrote<br />
+crude: basic, rough , not very skillful<br />
+enjoyed tremendous popularity: was extremely popular<br />
+adored: loved and respected<br />
+alike: in the same way<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgfc844e7" class="outline-3">
+<h3 id="orgfc844e7"><span class="done DONE">DONE</span> 单词造句</h3>
+<div class="outline-text-3" id="text-orgfc844e7">
+<p>
+boxing n.<br />
+</p>
+<ul class="org-ul">
+<li>They will fight against each other in the boxing match.<br /></li>
+<li>The police will have a difficult time in keeping order during the boxing match.<br /></li>
+<li>He made a name for himself and became a boxing champion of the world.<br /></li>
+<li>The boxing is so dangerous that it should be banned in US.<br /></li>
+<li>These days, the boxing is very popular with young man.<br /></li>
+</ul>
+<p>
+boxer n.<br />
+</p>
+<ul class="org-ul">
+<li>The boxer was picked up by police at the station.<br /></li>
+<li>On the same day, the boxer was defeated.<br /></li>
+<li>It looked as if he used to a boxer.<br /></li>
+<li>We are gonna offer a prize of $1000 to the boxer.<br /></li>
+<li>The boxer attempted to kick his rival's ass.<br /></li>
+</ul>
+<p>
+bare adj. not covered with clothes  with sb's bare hands<br />
+</p>
+<ul class="org-ul">
+<li>I was allowed to walk on the floor with bare feet.<br /></li>
+<li>She explained that the boxers fought with each other with bare fists.<br /></li>
+<li>You should not carry the fruits to there with bare hands.<br /></li>
+<li>It was not long before she walked on the beach with bare feet.<br /></li>
+<li>A group of children walked on the squre with bare feet.<br /></li>
+</ul>
+<p>
+prizefighter n.<br />
+</p>
+<ul class="org-ul">
+<li>The prizefighted was asked to pay a ransom of $1000.<br /></li>
+<li>The prizefighter stated that he had received an anonymous letter.<br /></li>
+<li>It was said that the cat was very dear to the prizefighter.<br /></li>
+<li>It was rather like a prizefighter in boxing match.<br /></li>
+<li>The prizefighter studied English on and off.<br /></li>
+</ul>
+<p>
+crude adj. rude and offensive<br />
+</p>
+<ul class="org-ul">
+<li>The man was so crude that no one wanted to talk to him.<br /></li>
+<li>You are mistaken about your crude behavior.<br /></li>
+<li>Because of his crude languages, everyone took no interest in the drama.<br /></li>
+<li>Oddly enough, she was not crude any more.<br /></li>
+<li>The crude man may give you some eletric shocks.<br /></li>
+</ul>
+<p>
+marquis<br />
+technically adv.  Technically speaking, + &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>Technically, this suspension bridge hadn't fulfilled his dream.<br /></li>
+<li>Technically, the bridge are suspended from the towers.<br /></li>
+<li>Technically, it will be only a third of its full capcity.<br /></li>
+<li>Technically, the microphone isn't connected to the tower.<br /></li>
+<li>Technically speaking, it's not my fault.<br /></li>
+</ul>
+<p>
+science n.<br />
+</p>
+<ul class="org-ul">
+<li>It is said the film is based on science.<br /></li>
+<li>I was astonished to find that they don't teach science at school anymore.<br /></li>
+<li>It's ture that they don't teach science at school,<br />
+but they still enjoyed a high level of civilization.<br /></li>
+<li>My nephew always asks me to tell him about science stories.<br /></li>
+<li>She denied that she teaches science at school.<br /></li>
+</ul>
+<p>
+popularity n.  gain/grow/increase in popularity<br />
+</p>
+<ul class="org-ul">
+<li>These days, the group of pop singers is growing in popularity.<br /></li>
+<li>However, after he stayed out of limelight, he gained in popularity.<br /></li>
+<li>On the otherhand, prepared dishes are growing increase in popularity in China.<br /></li>
+<li>This special kind of sweet is increasing in popularity.<br /></li>
+<li>The boxer who was defeated in the boxing match is growing in popularity.<br /></li>
+</ul>
+<p>
+adore v.<br />
+</p>
+<ul class="org-ul">
+<li>After fulfulling his dream that he built this bridge, he was adored by rich and poor alike.<br /></li>
+<li>People who go a long way are ususally adored by their parents.<br /></li>
+<li>I appreciate that you adore me.<br /></li>
+<li>Why don't you adore that dress?<br /></li>
+<li>As long as you adore him, you will believe in him.<br /></li>
+</ul>
+<p>
+alike adv. in a similar way  adj. very similar not before noun  great minds think alike<br />
+</p>
+<ul class="org-ul">
+<li>It is said, great minds think alike.<br /></li>
+<li>In times of peace, these two countries are alike in many ways.<br /></li>
+<li>The behaviors of monkeys and people are alike in many ways.<br /></li>
+<li>Both of them made large sums of money alike.<br /></li>
+<li>These pop singers made names for themself alike.<br /></li>
+</ul>
+<p>
+fame n.  rise to fame (=make a name for oneself)<br />
+</p>
+<ul class="org-ul">
+<li>Though she decided to stay out of limelight, she rised to fame swiftly.<br /></li>
+<li>The titanic was regarded as unsinkable and rose to fame.<br /></li>
+<li>The woman rised to fame as a teacher when she returned to China.<br /></li>
+<li>She rose to fame when she was very young, for she used to be an actress.<br /></li>
+<li>He made a discovery of a special type of fish and rose to fame.<br /></li>
+</ul>
+<p>
+eminent adj.<br />
+</p>
+<ul class="org-ul">
+<li>Little is known about the eminent detective, for she remains anonymous.<br /></li>
+<li>Not everything is known about the eminent actor who dated back to fifty century.<br /></li>
+<li>On his way to home, the eminent lawyer decided to go to the police.<br /></li>
+<li>As he made an such tremendous mistake, the eminent lawyer was put out of business.<br /></li>
+<li>The eminent detective was mistaken about the fact that she didn't have a perfect alibi.<br /></li>
+</ul>
+<p>
+bitterly adv.  quarrel/complain/be disappointed &#x2026; + bitterly<br />
+</p>
+<ul class="org-ul">
+<li>He was disappointed bitterly to find that the detective still remained anonymous.<br /></li>
+<li>They needn't have quarrel bitterly.<br /></li>
+<li>I complained bitterly that my wife spend too much money.<br /></li>
+<li>I complained bitterly that the exhibition was prehistoric.<br /></li>
+<li>I complained bitterly that she was mistaken about her child.<br /></li>
+</ul>
+<p>
+bet - bet betted v.  bet ($) on sth.  I bet + &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>During the boxing match, I have bet $1000 on Anna.<br /></li>
+<li>I bet you takes no interest in fishing.<br /></li>
+<li>I bet she will cry in response to your yelling.<br /></li>
+<li>I bet these lights will go on and off.<br /></li>
+<li>I bet she managed to quit smoking.<br /></li>
+</ul>
+<p>
+academy n.<br />
+</p>
+<ul class="org-ul">
+<li>Leo and Berlin was able to found an academy.<br /></li>
+<li>I will be studying English at that academy.<br /></li>
+<li>I'm going to that academy tomorrow.<br /></li>
+<li>It was at that academy that you gave me electric shocks.<br /></li>
+<li>It is my job to create a sculpture at the academy.<br /></li>
+</ul>
+<p>
+extravagant adj.<br />
+</p>
+<ul class="org-ul">
+<li>I complained bitterly that my wife was so extravagant.<br /></li>
+<li>She was so extravagant that she was always in debt.<br /></li>
+<li>Oddly enough, the dustman led an extravagant.<br /></li>
+<li>The kidnappers took interest in the woman who led an extravagant life.<br /></li>
+<li>Little is known that the woman who used to lead an extravagant life.<br /></li>
+</ul>
+<p>
+poverty n.  live in poverty<br />
+</p>
+<ul class="org-ul">
+<li>Because he was fired, he lived in poverty.<br /></li>
+<li>She did by no means live in poverty.<br /></li>
+<li>Little is known that the dustman who lives in poverty.<br /></li>
+<li>She is ashamed of living in poverty.<br /></li>
+<li>It is said that billions of people in China still live in poverty in 21 century.<br /></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orge9ee3c3" class="outline-3">
+<h3 id="orge9ee3c3"><span class="done DONE">DONE</span> 反复听电影片段直到懂关键句</h3>
+<div class="outline-text-3" id="text-orge9ee3c3">
+</div>
+</div>
+<div id="outline-container-org28ae173" class="outline-3">
+<h3 id="org28ae173">复习二册语法(笔记或视频) &amp; 红皮书</h3>
+</div>
+<div id="outline-container-org201bf97" class="outline-3">
+<h3 id="org201bf97"><span class="done DONE">DONE</span> 习惯用法造句</h3>
+<div class="outline-text-3" id="text-org201bf97">
+<p>
+Because of + n.<br />
+</p>
+<ul class="org-ul">
+<li>Because of the ransome of $1000, she lived in poverty.<br /></li>
+<li>Because of bad behaviours, the eminent lawyer was put out of business.<br /></li>
+<li>Because of the suspension bridge, we arrived here on time.<br /></li>
+<li>Because of good education, she passed the exam.<br /></li>
+<li>Because of good salary, she is going to work for the corporation next year.<br /></li>
+</ul>
+<p>
+be born in + (year/place)<br />
+</p>
+<ul class="org-ul">
+<li>It is said that she is born in 1993.<br /></li>
+<li>Although she was borin in China, she leads an extravagant life in America.<br /></li>
+<li>On her way to home, her son was born in the car.<br /></li>
+<li>He was born in Xiabu, which is a remote village in China.<br /></li>
+<li>The baby should be born in NewYork.<br /></li>
+</ul>
+<p>
+draw up<br />
+</p>
+<ul class="org-ul">
+<li>There was a time when a set of rules was drawn up.<br /></li>
+<li>After they reach an agreement, they drew up a set of plans.<br /></li>
+<li>We will draw up plans in the meeting.<br /></li>
+<li>These two countries who were at war with each other drew up a set of plans.<br /></li>
+<li>The eminent volunteered to draw up a set of rules.<br /></li>
+</ul>
+<p>
+a set of sth.<br />
+</p>
+<ul class="org-ul">
+<li>A set of toys was abandoned in the park.<br /></li>
+<li>For your own protection, you need to wear a set of special types of clothes.<br /></li>
+<li>She dedicated herself to a set of laws.<br /></li>
+<li>A set of rules was drawn up in memory of the eminent lawyer.<br /></li>
+<li>I am impatient to clean a set of keys.<br /></li>
+</ul>
+<p>
+change a. into b.<br />
+</p>
+<ul class="org-ul">
+<li>The insect was supposed to be changed into a butterfly.<br /></li>
+<li>I'm glad that you are changed into stone.<br /></li>
+<li>I wished that you had been changed into stone.<br /></li>
+<li>I was disappointed to find that my cat wasn't able to be changed into a beauty.<br /></li>
+<li>The body of animals was changed into soils.<br /></li>
+</ul>
+<p>
+bring a. to b.<br />
+</p>
+<ul class="org-ul">
+<li>The prizefighter managed to bring science to boxing.<br /></li>
+<li>Could I bring my friends to the party?<br /></li>
+<li>He asked me to bring everything to him.<br /></li>
+<li>I refused to bring everything to him.<br /></li>
+<li>They succeeded in bringing peace to this country.<br /></li>
+</ul>
+<p>
+in sb's day<br />
+</p>
+<ul class="org-ul">
+<li>In his day, he drawn up a set of laws.<br /></li>
+<li>In his day, a number of boxers was defeated by him.<br /></li>
+<li>In his day, he made a large sums of money.<br /></li>
+<li>In his day, he dedicated himself to education.<br /></li>
+<li>In his day, he was adored by poor and rich alike.<br /></li>
+</ul>
+<p>
+be quick to do sth.<br />
+</p>
+<ul class="org-ul">
+<li>The teacher explained that children is usually quick to learn that adults.<br /></li>
+<li>Be patient. And you will be quick to deal with that.<br /></li>
+<li>The child was quick to build a wood bridge.<br /></li>
+<li>The eminent lawyer was quick to solve the problem.<br /></li>
+<li>She was quick to get used to her work.<br /></li>
+</ul>
+<p>
+in fact<br />
+</p>
+<ul class="org-ul">
+<li>In fact, I had an opportunity to talk to Leo.<br /></li>
+<li>In fact, there is an element of truth in this idea that cats have nine lives.<br /></li>
+<li>In fact, I starved to death at that time.<br /></li>
+<li>In fact, I was genuinely sorry that I made such stupid remarks.<br /></li>
+<li>In fact, the boat was loaded with diamonds.<br /></li>
+</ul>
+<p>
+turn against sb.<br />
+</p>
+<ul class="org-ul">
+<li>The brothers turned against each other because of the house.<br /></li>
+<li>They needn't have turned against each other.<br /></li>
+<li>Why didn't you turn against with him.<br /></li>
+<li>I wished that they hadn't turned against each other.<br /></li>
+<li>They quarrelled bitterly and turned against each other.<br /></li>
+</ul>
+<p>
+It is clear that + &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>It is clear that I didn't form an unrealistic picture of America.<br /></li>
+<li>It is clear that the bag was full of sand and stone.<br /></li>
+<li>It is clear that the order has been given.<br /></li>
+<li>It is clear that our baby woke up with a start.<br /></li>
+<li>It is clear that there is not shortage of water and foods.<br /></li>
+</ul>
+<p>
+settle the argument<br />
+</p>
+<ul class="org-ul">
+<li>They should have settled the argument.<br /></li>
+<li>They will settle the argument in the meeting.<br /></li>
+<li>They have one thing in comman: they all want to settle the argument in peaceful way.<br /></li>
+<li>If you didn't keep touch in each other, you wouldn't have settled the argument.<br /></li>
+<li>I wished that the argument was settled in peaceful way.<br /></li>
+</ul>
+<p>
+It was not until &#x2026; that + &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>It was not until 2015 that I gradated from university.<br /></li>
+<li>It was not until that afternoon that she apologized to me.<br /></li>
+<li>It was not until 2015 that she led an extravagant life.<br /></li>
+<li>It was not until 1993 that she died of cancer.<br /></li>
+<li>It was not until 2000 that the great ship sunk out at sea.<br /></li>
+</ul>
+<p>
+as much as &#x2026;   half as much as<br />
+</p>
+<ul class="org-ul">
+<li>It rises to as much as 17 miles.<br /></li>
+<li>Be enthusiasm as much as you can when you study English.<br /></li>
+<li>You should use English as much as you can.<br /></li>
+<li>My wife said it was cheap, but it costed me as much as $1000.<br /></li>
+<li>The great ship has as much as 17 watertight compartments.<br /></li>
+</ul>
+<p>
+be in debt<br />
+</p>
+<ul class="org-ul">
+<li>Although he led an extravagant life, he was usually in debt.<br /></li>
+<li>She had to offer him her naked pictures, for she was in debt.<br /></li>
+<li>It seems as if she was in debt these days.<br /></li>
+<li>She is likely to be in debt.<br /></li>
+<li>These women have one thing in common: they all are in debt.<br /></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org4e49837" class="outline-3">
+<h3 id="org4e49837">跟读 50遍</h3>
+</div>
+<div id="outline-container-org30b0940" class="outline-3">
+<h3 id="org30b0940"><span class="done DONE">DONE</span> Comprehension 反复练习</h3>
+<div class="outline-text-3" id="text-org30b0940">
+</div>
+</div>
+<div id="outline-container-orgc31ab1a" class="outline-3">
+<h3 id="orgc31ab1a"><span class="done DONE">DONE</span> Ask me if 写+读</h3>
+<div class="outline-text-3" id="text-orgc31ab1a">
+<ol class="org-ol">
+<li>Boxing matches were popular 200 years ago. When<br />
+When were boxing matches popular?<br /></li>
+<li>A prizefighter could be killed during a match. Why<br />
+Why could a prizefighter be killed during a match?<br /></li>
+<li>Daniel Mendoza was born in 176- Who<br />
+Who was born in 1764?<br /></li>
+<li>Mendoza brought science to the game. What<br />
+What did Mendoza bring to the game?<br /></li>
+<li>He was tremendously popular in his day. How popular<br />
+How popular was he in his day?<br /></li>
+<li>Humphries offered to train young Mendoza. What<br />
+What did Humphries offer to do?<br /></li>
+<li>The men's argument could only be settled by a fight. How<br />
+How could the men's argument only be settled?<br /></li>
+<li>Humphries beat Mendoza twice. How many times<br />
+How many times did Humphries beat Mendoza?<br /></li>
+<li>Lord Byron was one of Mendoza's pupils. Who<br />
+Who was one of Mendoza's pupils?<br /></li>
+<li>Mendoza was sent to prison for failing to pay his debts. Why<br />
+Why was Mendoza sent to prison?<br /></li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org1397188" class="outline-3">
+<h3 id="org1397188"><span class="done DONE">DONE</span> 摘要写作 写 &amp; 对答案</h3>
+<div class="outline-text-3" id="text-org1397188">
+<p>
+Because Mendoza rose to fame swiftly after a boxing match,<br />
+	Richard Humphries offered to train the pupil.<br />
+He became so successful that the two men quarrelled bitterly.<br />
+Both men fought at a match, but Mendoza was defeated.<br />
+On a later occasion they met in the ring and Mendoza was defeated for another time.<br />
+Until 1790 he finally beat Humphries and became Champion of England.<br />
+Although he founded a highly successful Academy and earned enormous sums of money,<br />
+	he was so extravagant that he was always in debt.<br />
+He was sent to prison for failing to pay his debts and died in 1836.<br />
+</p>
+
+<p>
+When the two men quarrelled, they settled the arugment by a fight.<br />
+This took place at Stilton.<br />
+It lasted an hour and Humphries won.<br />
+When they met again, Mendoza lost again, but in their third match in 1790,<br />
+	Mendoza finally beat Humphries to become Champion of England.<br />
+He founded a successful boxing Academy and earned a lot of money,<br />
+	but was so extravagant he was always in debt.<br />
+He was finally sent to prison and died in porverty in 1836.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org0fa278d" class="outline-3">
+<h3 id="org0fa278d"><span class="done DONE">DONE</span> tell the story 口语复述</h3>
+<div class="outline-text-3" id="text-org0fa278d">
+</div>
+</div>
+<div id="outline-container-orgdbf6e18" class="outline-3">
+<h3 id="orgdbf6e18"><span class="done DONE">DONE</span> composition 阅读 或 写作</h3>
+<div class="outline-text-3" id="text-orgdbf6e18">
+<p>
+The first fight between Humphries and his pupil Mendoza,<br />
+	after a quarrel,<br />
+	was held at Stilton and attracted a lot of attention.<br />
+At the time, Richard Humphries was the most eminent boxer in England and had many supporters.<br />
+But the young Mendoza had his supporters, too.<br />
+The atmosphere before the fight was electric.<br />
+Half of the people there made bets on Humphries,<br />
+	the other half bet on Mendoza.<br />
+When the two fighters entered the ring,<br />
+	there was a lot of shouting and cheering.<br />
+The referee called both fighters to the middle of the ring,<br />
+	spoke to them and the fight started.<br />
+At first, both men were very wary.<br />
+</p>
+
+<p>
+After all, this was a fight between teacher and pupil<br />
+	so they knew very well what the other could do<br />
+	-&#x2014; and they were fighting with bare fists.<br />
+Each of the boxers fought well for most of the match,<br />
+	but in the end Humphries was too strong and too experienced for the young Mendoza.<br />
+He knocked him down once: Mendoza got up.<br />
+He nocked him down again, and although Mendoza tried to get up, he just couldn't.<br />
+The referee counted ten and that was the end of the match.<br />
+When Mendoza got up, he was very angry, but eventually congratulated Humphries.<br />
+However, his defeat made him determined to go on and fight his teacher again<br />
+	so that he could finally become champion.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org109af15" class="outline-3">
+<h3 id="org109af15">Topics for discussion</h3>
+</div>
+</div>
+</div>
+</body>
+</html>

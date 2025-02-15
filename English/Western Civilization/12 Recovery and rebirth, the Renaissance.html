@@ -1,0 +1,720 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-01-09 Thu 23:35 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-org37f55ef" class="outline-2">
+<h2 id="org37f55ef">12 Recovery and rebirth, the Renaissance</h2>
+<div class="outline-text-2" id="text-org37f55ef">
+<p class="verse">
+The Renaissance was a period of transition<br />
+&#xa0;that extended most of the economic, political, and social trends<br />
+&#xa0;&#xa0;that had begun in the High Middle Ages.<br />
+It was also a movement<br />
+&#xa0;in which intellectuals and artists proclaimed a new vision of humankind<br />
+&#xa0;&#xa0;and raised fundamental questions about the value and importance of the individual.<br />
+Of course, intellectuals and artists wrote and painted for the upper classes,<br />
+&#xa0;and the brilliant intellectual, cultural, and artistic accomplishments of the Renaissance<br />
+&#xa0;&#xa0;were really products of and for the elite.<br />
+The ideas of the Renaissance did not have a broad base among the masses of the people.<br />
+As Lorenzo the Magnificent, ruler of Florence, once commented,<br />
+&#xa0;'Only men of noble birth can obtain perfection.<br />
+&#xa0;The poor, who work with their hands and have no time to cultivate their minds,<br />
+&#xa0;&#xa0;are incapable of it.'<br />
+<br />
+The Renaissance did, however, raise new questions about medieval traditions.<br />
+In criticizing current religious practices,<br />
+&#xa0;the humanists raised fundamental issues about the Catholic church,<br />
+&#xa0;&#xa0;which was still an influential institution.<br />
+As we shall see in the next chapter,<br />
+&#xa0;the intellectual revolution of the fifteenth century gave way to a religious renaissance<br />
+&#xa0;&#xa0;that touched the lives of people, including the masses, in new and profound ways.<br />
+After the Reformation,<br />
+&#xa0;Europe would never again be the unified Christian commonwealth it once believed it was.<br />
+</p>
+</div>
+<div id="outline-container-org4a9c0a6" class="outline-3">
+<h3 id="org4a9c0a6">expression</h3>
+<div class="outline-text-3" id="text-org4a9c0a6">
+<p>
+transition [trænˈzɪʃ(ə)n]: n. formal when something changes from one form or state to another转变,过渡<br />
+extend [ɪkˈstend]: v. to continue for a longer period of time, or to make something last longer延伸<br />
+trend [trend]: n. a general tendency in the way a situation is changing or developing倾向, 趋势<br />
+proclaim [prəˈkleɪm]: v. to say publicly or officially that something important is true or exists宣布, 声明<br />
+humankind [ˌhjumənˈkaɪnd]: n. people in general SYN mankind人类<br />
+accomplishment [əˈkʌmplɪʃmənt]: n. something successful or impressive that is achieved after a lot of effort and hard work SYN achievement成就<br />
+elite [ɪˈlit]: n. a group of people who have a lot of power and influence because they have money, knowledge, or special skills精英<br />
+broad [brɔd]: adj. WIDE a road, river, or part of someone’s body etc that is broad is wide OPP narrow ⇨ adth宽的, 阔的<br />
+mass [mæs]: n. a large crowd群众<br />
+obtain [əbˈteɪn]: v. to get something that you want, especially through your own effort, skill, or work SYN get获得, 得到<br />
+cultivate [ˈkʌltɪˌveɪt]: v. to work hard to develop a particular skill, attitude, or quality培养, 耕作<br />
+influential [ˌɪnfluˈenʃəl]: adj. having a lot of influence and therefore changing the way people think and behave有影响的, 有势力的<br />
+institution [ˌɪnstɪˈtuʃ(ə)n]: n. an important system of organization in society that has existed for a long time公共机构, 协会, 制度<br />
+revolution [ˌrevəˈluʃ(ə)n]: n. a time when people change a ruler or political system by using force or violence ⇨ revolt, rebellion革命<br />
+profound [prəˈfaʊnd]: adj. having a strong influence or effect深刻的, 意义深远的<br />
+reformation [ˌrefərˈmeɪʃ(ə)n]: n. formal when something is completely changed in order to improve it改革, 革新<br />
+unify [ˈjunɪˌfaɪ] unified: v.adj. if you unify two or more parts or things, or if they unify, they are combined to make a single unit SYN unite OPP divide ⇨ unification统一<br />
+commonwealth [ˈkɑmənˌwelθ]: n. the official title of some countries made up of a group of states联邦<br />
+</p>
+<hr />
+<p>
+a new vision of sth.: 对某事的新视野/认识<br />
+raise fundamental questions/issues about sth.: 提出关于某事的基本问题<br />
+upper classes: 上层阶级<br />
+with sb's hands: 用某人双手<br />
+be incapable of sth./doing sth.: 无法做某事<br />
+have no time to do sth.: 没有时间去做某事<br />
+give way to sth.: 让位于某事;被某事取代<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org4091798" class="outline-3">
+<h3 id="org4091798">sentence</h3>
+<div class="outline-text-3" id="text-org4091798">
+<p>
+transition: n. formal when something changes from one form or state to another转变,过渡<br />
+</p>
+<ul class="org-ul">
+<li>The period of transition gave rise to curious situations, as it did in the case of Mr. Leo, a peasant.<br /></li>
+<li>The Asiatic nomads may sack the city which is in transition.<br /></li>
+<li>While the European society was in transition, these Asiatic nomads pushed their way westward through the plain.<br /></li>
+</ul>
+<p>
+extend: v. to continue for a longer period of time, or to make something last longer延伸<br />
+</p>
+<ul class="org-ul">
+<li>Exasparated by his brutal behaviors, his boss refused to extend the deadline of the task.<br /></li>
+<li>The stick should be extended so that I could hang clothes by myself.<br /></li>
+<li>His power was extended after his triumph of the civil war.<br /></li>
+</ul>
+<p>
+trend: n. a general tendency in the way a situation is changing or developing倾向, 趋势<br />
+</p>
+<ul class="org-ul">
+<li>Lately there was a trend towards lower wages and losing jobs in transition.<br /></li>
+<li>A trend towards the collapse of this vampire gave rise to some independent cities.<br /></li>
+<li>Although he has worked to his bone, he has a trend towards giving up studying English.<br /></li>
+</ul>
+<p>
+proclaim: v. to say publicly or officially that something important is true or exists宣布, 声明<br />
+</p>
+<ul class="org-ul">
+<li>The spokeswoman proclaimed that as soon as it was indentified, we would compensate for your loss of money.<br /></li>
+<li>A fisherman proclaimed that he had lost his money while he was on his way to ticket office.<br /></li>
+<li>The pope proclaimed that the German king would be crowned by him at the coronation.<br /></li>
+</ul>
+<p>
+humankind: n. people in general SYN mankind人类<br />
+</p>
+<ul class="org-ul">
+<li>He never dreams of becoming an expert at explaining the actions of humankind.<br /></li>
+<li>He published an article on the value and importance of humankind.<br /></li>
+<li>No one thinks that this seeming disaster turns out to be the fortune of humankind.<br /></li>
+</ul>
+<p>
+accomplishment: n. something successful or impressive that is achieved after a lot of effort and hard work SYN achievement成就<br />
+</p>
+<ul class="org-ul">
+<li>The king proclaimed that he shared his accomplishments with all of his subjects.<br /></li>
+<li>It is impossible for me to be jealous of his accomplishments.<br /></li>
+<li>Jealous of his colleague's accomplishments, the artist had his colleague thrown down from the scaffolding.<br /></li>
+</ul>
+<p>
+elite: n. a group of people who have a lot of power and influence because they have money, knowledge, or special skills精华, 精锐, 中坚分子<br />
+</p>
+<ul class="org-ul">
+<li>The artist's temperament forbid him to work for elites.<br /></li>
+<li>The elite explained his experience in the war to his lord with modest.<br /></li>
+<li>The elite never loses his temper and behaves in public with modest.<br /></li>
+</ul>
+<p>
+broad: adj. WIDE a road, river, or part of someone’s body etc that is broad is wide OPP narrow ⇨ adth宽的, 阔的<br />
+</p>
+<ul class="org-ul">
+<li>The broad river used to be flooded with bodies during the war.<br /></li>
+<li>He succeeded in making a broad path towards his house.<br /></li>
+<li>Under the new Comptroller's control, the river becomes broader and cleaner.<br /></li>
+</ul>
+<p>
+mass: n. a large crowd群众<br />
+</p>
+<ul class="org-ul">
+<li>The mass began to gather round and held up the traffic.<br /></li>
+<li>The leader prevented the mass from being sold into slavery in Africa.<br /></li>
+<li>Thanks to the wisdom of the mass, we built the tremendous suspension bridge in two years.<br /></li>
+</ul>
+<p>
+obtain: v. to get something that you want, especially through your own effort, skill, or work SYN get获得, 得到<br />
+</p>
+<ul class="org-ul">
+<li>Obtaining good grades won't make us as happy as we think.<br /></li>
+<li>He obtained skills in high school so that he could catch fishes with bare hands.<br /></li>
+<li>He obtained the money which I had lost on my way home.<br /></li>
+</ul>
+<p>
+cultivate: v. to work hard to develop a particular skill, attitude, or quality培养, 耕作<br />
+</p>
+<ul class="org-ul">
+<li>He is determined to cultivate his child's swimming skills.<br /></li>
+<li>Failing to cultivate the crops in the field, the farmer began to get drunk every day.<br /></li>
+<li>My leader told me that he would cultivate me so that I could undertake the project on my own.<br /></li>
+</ul>
+<p>
+influential: adj. having a lot of influence and therefore changing the way people think and behave有影响的, 有势力的<br />
+</p>
+<ul class="org-ul">
+<li>The vast empire was so influential that many historians admire it.<br /></li>
+<li>The man is so influential that he has a large circle of close friends.<br /></li>
+<li>The invention of clocks proved influential, it developed Europeans' habit of doing stuff on time.<br /></li>
+</ul>
+<p>
+institution: n. an important system of organization in society that has existed for a long time公共机构, 协会, 制度<br />
+</p>
+<ul class="org-ul">
+<li>My boss went out of his way to establish an institution that checks the fire extinguisher of enterprises on a daily basis.<br /></li>
+<li>He pestered the institution on a regular basis about when the library would be elected in the prison.<br /></li>
+<li>The king established a law prohibiting the institution which had broken his monarchical law regularly.<br /></li>
+</ul>
+<p>
+revolution: n. a time when people change a ruler or political system by using force or violence ⇨ revolt, rebellion革命<br />
+</p>
+<ul class="org-ul">
+<li>The revelution in the thirteenth century no doubt continued into the fourteethth.<br /></li>
+<li>There were elements of techonology which made the fourteenth century a period of revolution.<br /></li>
+<li>A revolution erupting in China was so influential that it captured the attentions of people all over the world.<br /></li>
+</ul>
+<p>
+profound: adj. having a strong influence or effect深刻的, 意义深远的<br />
+</p>
+<ul class="org-ul">
+<li>Sacrificing money for land exerted a profound influence on this monarchical state.<br /></li>
+<li>The Black Death erupted in Europe through the flea-infested rats which was brought from China, which exerted a profound influence on Western Civilization.<br /></li>
+<li>His painting of the ceiling of the Sistine Chapel exerted a profound influence on the following arts.<br /></li>
+</ul>
+<p>
+reformation: n. formal when something is completely changed in order to improve it改革, 革新<br />
+</p>
+<ul class="org-ul">
+<li>Even though the reformation turned out to be a failure, its profound influence inspired awe in many historians.<br /></li>
+<li>The reformation benifited many peasant who were free from fief which was dominated by old aristocracies.<br /></li>
+<li>The reformation was expected to restor the warriors to new glory.<br /></li>
+</ul>
+<p>
+unify unified: v.adj. if you unify two or more parts or things, or if they unify, they are combined to make a single unit SYN unite OPP divide ⇨ unification统一<br />
+</p>
+<ul class="org-ul">
+<li>Monogols unified a vast empire stretching from Russia in the west to China in the east.<br /></li>
+<li>The unified territorial empire soon taught the Pope a lesson.<br /></li>
+<li>The unified territorial empire couldn't bear the papal supremacy over secular authorties.<br /></li>
+</ul>
+<p>
+commonwealth: n. the official title of some countries made up of a group of states联邦<br />
+</p>
+<ul class="org-ul">
+<li>At last, the pope unified a vast Christian commonwealth in Europe.<br /></li>
+<li>The commonwealth constitutes many territorial states in the peninsula.<br /></li>
+<li>The meeting of the commonwealth will be held at the promontory of the island.<br /></li>
+</ul>
+<hr />
+<p>
+a new vision of sth.: 对某事的新视野/认识<br />
+</p>
+<ul class="org-ul">
+<li>The new vision of math inspired awe in these intellectuals.<br /></li>
+<li>He would not be satisfied until he got a new vision of the painting.<br /></li>
+<li>A new vision of gunpower gave rise to a profound reformation in warfare.<br /></li>
+</ul>
+<p>
+raise fundamental questions/issues about sth.: 提出关于某事的基本问题<br />
+</p>
+<ul class="org-ul">
+<li>My wife raised a fundamental question about who should pay for the hotel when we went on a date for the first time.<br /></li>
+<li>Needless to say, he raised a fundamental question about the protection money which was provided by these merchants.<br /></li>
+<li>The superior raised fundamental issues about the bugs I made.<br /></li>
+</ul>
+<p>
+upper classes: 上层阶级<br />
+</p>
+<ul class="org-ul">
+<li>She managed to marry to a upper class.<br /></li>
+<li>The man who has worked for our company for over 5 years turns out to be a long-lost child of a upper class in our town.<br /></li>
+<li>The upper classes hired the great arist to paint the ceiling of the chapel.<br /></li>
+</ul>
+<p>
+with sb's hands: 用某人双手<br />
+</p>
+<ul class="org-ul">
+<li>Lee said he would make your dream come ture with his hands.<br /></li>
+<li>I hate to work with my hands in the field on summer holiday.<br /></li>
+<li>I was instructed to wash my wife's underwears with my hands.<br /></li>
+</ul>
+<p>
+be incapable of sth./doing sth.: 无法做某事<br />
+</p>
+<ul class="org-ul">
+<li>Our manager who claimed he was an accomplished programmer turns out to be incapable of programming.<br /></li>
+<li>Everyone laughed at him who was incapable of programming.<br /></li>
+<li>I am incapable of programming with my hands, so I quit.<br /></li>
+</ul>
+<p>
+have no time to do sth.: 没有时间去做某事<br />
+</p>
+<ul class="org-ul">
+<li>In spite of graduating from school, my sister still has no time to babysit our child.<br /></li>
+<li>We have no time to cultivate your English skills which cost so many time.<br /></li>
+<li>I have no time to listen to your awful stories.<br /></li>
+</ul>
+<p>
+give way to sth.: 让位于某事;被某事取代<br />
+</p>
+<ul class="org-ul">
+<li>The candle must give way to electrical light in my house.<br /></li>
+<li>Our dog gave way to our cat which would never bark at passers-by.<br /></li>
+<li>The complaints gave way to admiration, for it solved my problem on time.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgcf99dad" class="outline-3">
+<h3 id="orgcf99dad">sentence2</h3>
+<div class="outline-text-3" id="text-orgcf99dad">
+<p>
+transition: n. formal when something changes from one form or state to another转变,过渡<br />
+</p>
+<ul class="org-ul">
+<li>The period of transition gave rise to curious situations, as it did in the case of Mr. Leo, a peasant.<br /></li>
+<li>The Asiatic nomads may sack the city which is in transition.<br /></li>
+<li>While the European society was in transition, these Asiatic nomads pushed their way westward through the plain.<br /></li>
+</ul>
+<p>
+extend: v. to continue for a longer period of time, or to make something last longer延伸<br />
+</p>
+<ul class="org-ul">
+<li>Exasperated by his brutal behaviors, his boss refused to extend the deadline of the task.<br /></li>
+<li>The stick should be extended so that I can hang clothes by myself.<br /></li>
+<li>His power was extended after his triumph in the civil war.<br /></li>
+</ul>
+<p>
+trend: n. a general tendency in the way a situation is changing or developing倾向, 趋势<br />
+</p>
+<ul class="org-ul">
+<li>Lately, there has been a trend towards lower wages and job loss in transition.<br /></li>
+<li>A trend towards the collapse of this vampire gave rise to some independent cities.<br /></li>
+<li>Although he has worked to his bone, he has a trend towards giving up studying English.<br /></li>
+</ul>
+<p>
+proclaim: v. to say publicly or officially that something important is true or exists宣布, 声明<br />
+</p>
+<ul class="org-ul">
+<li>The spokeswoman proclaimed that as soon as it was identified, we would compensate for your loss of money.<br /></li>
+<li>A fisherman proclaimed that he had lost his money while he was on his way to a ticket office.<br /></li>
+<li>The pope proclaimed that the German king would be crowned by him at the coronation.<br /></li>
+</ul>
+<p>
+humankind: n. people in general SYN mankind人类<br />
+</p>
+<ul class="org-ul">
+<li>He never dreams of becoming an expert at explaining the actions of humankind.<br /></li>
+<li>He published an article on the value and importance of humankind.<br /></li>
+<li>No one thinks that this seeming disaster turns out to be the fortune of humankind.<br /></li>
+</ul>
+<p>
+accomplishment: n. something successful or impressive that is achieved after a lot of effort and hard work SYN achievement成就<br />
+</p>
+<ul class="org-ul">
+<li>The king proclaimed that he shared his accomplishments with all his subjects.<br /></li>
+<li>It is impossible for me to be jealous of his accomplishments.<br /></li>
+<li>Jealous of his colleague's accomplishments, the artist had his colleague thrown down from the scaffolding.<br /></li>
+</ul>
+<p>
+elite: n. a group of people who have a lot of power and influence because they have money, knowledge, or special skills精华, 精锐, 中坚分子<br />
+</p>
+<ul class="org-ul">
+<li>The artist's temperament forbids him to work for elites.<br /></li>
+<li>The elite explained his experience in the war to his lord with modesty.<br /></li>
+<li>The elite never loses his temper and behaves in public with modesty.<br /></li>
+</ul>
+<p>
+broad: adj. WIDE a road, river, or part of someone’s body etc that is broad is wide OPP narrow ⇨ adth宽的, 阔的<br />
+</p>
+<ul class="org-ul">
+<li>The broad river used to be flooded with bodies during the war.<br /></li>
+<li>He succeeded in making a broad path towards his house.<br /></li>
+<li>Under the new Comptroller's control, the river becomes broader and cleaner.<br /></li>
+</ul>
+<p>
+mass: n. a large crowd群众<br />
+</p>
+<ul class="org-ul">
+<li>The masses began to gather around and held up the traffic.<br /></li>
+<li>The leader prevented the masses from being sold into slavery in Africa.<br /></li>
+<li>Thanks to the wisdom of the masses, we built the tremendous suspension bridge in two years.<br /></li>
+</ul>
+<p>
+obtain: v. to get something that you want, especially through your own effort, skill, or work SYN get获得, 得到<br />
+</p>
+<ul class="org-ul">
+<li>Obtaining good grades won't make us as happy as we think.<br /></li>
+<li>He obtained skills in high school so that he could catch fish with bare hands.<br /></li>
+<li>He obtained the money which I had lost on my way home.<br /></li>
+</ul>
+<p>
+cultivate: v. to work hard to develop a particular skill, attitude, or quality培养, 耕作<br />
+</p>
+<ul class="org-ul">
+<li>He is determined to cultivate his child's swimming skills.<br /></li>
+<li>Failing to cultivate the crops in the field, the farmer began to get drunk every day.<br /></li>
+<li>My leader told me that he would cultivate me so that I could undertake the project on my own.<br /></li>
+</ul>
+<p>
+influential: adj. having a lot of influence and therefore changing the way people think and behave有影响的, 有势力的<br />
+</p>
+<ul class="org-ul">
+<li>The vast empire was so influential that many historians admire it.<br /></li>
+<li>The man is so influential that he has a large circle of close friends.<br /></li>
+<li>The invention of clocks proved influential, it developed Europeans' habit of doing stuff on time.<br /></li>
+</ul>
+<p>
+institution: n. an important system of organization in society that has existed for a long time公共机构, 协会, 制度<br />
+</p>
+<ul class="org-ul">
+<li>My boss went out of his way to establish an institution that checks the fire extinguisher of enterprises on a daily basis.<br /></li>
+<li>He pestered the institution on a regular basis about when the library would be elected in the prison.<br /></li>
+<li>The king established a law prohibiting the institution which had broken his monarchical law regularly.<br /></li>
+</ul>
+<p>
+revolution: n. a time when people change a ruler or political system by using force or violence ⇨ revolt, rebellion革命<br />
+</p>
+<ul class="org-ul">
+<li>The revolution in the thirteenth century no doubt continued into the fourteenth.<br /></li>
+<li>There were elements of technology that made the fourteenth century a period of revolution.<br /></li>
+<li>A revolution erupting in China was so influential that it captured the attention of people all over the world.<br /></li>
+</ul>
+<p>
+profound: adj. having a strong influence or effect深刻的, 意义深远的<br />
+</p>
+<ul class="org-ul">
+<li>Sacrificing money for land exerted a profound influence on this monarchical state.<br /></li>
+<li>The Black Death erupted in Europe through the flea-infested rats that were brought from China, which exerted a profound influence on Western Civilization.<br /></li>
+<li>His painting of the ceiling of the Sistine Chapel exerted a profound influence on the following arts.<br /></li>
+</ul>
+<p>
+reformation: n. formal when something is completely changed in order to improve it改革, 革新<br />
+</p>
+<ul class="org-ul">
+<li>Even though the reformation turned out to be a failure, its profound influence inspired awe in many historians.<br /></li>
+<li>The reformation benefited many peasants who were free from fief which was dominated by old aristocracies.<br /></li>
+<li>The reformation was expected to restore the warriors to new glory.<br /></li>
+</ul>
+<p>
+unify unified: v.adj. if you unify two or more parts or things, or if they unify, they are combined to make a single unit SYN unite OPP divide ⇨ unification统一<br />
+</p>
+<ul class="org-ul">
+<li>Mongols unified a vast empire stretching from Russia in the west to China in the east.<br /></li>
+<li>The unified territorial empire soon taught the Pope a lesson.<br /></li>
+<li>The unified territorial empire couldn't bear the papal supremacy over secular authorities.<br /></li>
+</ul>
+<p>
+commonwealth: n. the official title of some countries made up of a group of states联邦<br />
+</p>
+<ul class="org-ul">
+<li>At last, the pope unified a vast Christian commonwealth in Europe.<br /></li>
+<li>The commonwealth constitutes many territorial states in the peninsula.<br /></li>
+<li>The meeting of the commonwealth will be held at the promontory of the island.<br /></li>
+</ul>
+<hr />
+<p>
+a new vision of sth.: 对某事的新视野/认识<br />
+</p>
+<ul class="org-ul">
+<li>The new vision of math inspired awe in these intellectuals.<br /></li>
+<li>He would not be satisfied until he got a new vision of the painting.<br /></li>
+<li>A new vision of gunpower gave rise to a profound reformation in warfare.<br /></li>
+</ul>
+<p>
+raise fundamental questions/issues about sth.: 提出关于某事的基本问题<br />
+</p>
+<ul class="org-ul">
+<li>My wife raised a fundamental question about who should pay for the hotel when we went on a date for the first time.<br /></li>
+<li>Needless to say, he raised a fundamental question about the protection money that was provided by these merchants.<br /></li>
+<li>The superior raised fundamental issues about the bugs I made.<br /></li>
+</ul>
+<p>
+upper classes: 上层阶级<br />
+</p>
+<ul class="org-ul">
+<li>She managed to marry the upper class.<br /></li>
+<li>The man who has worked for our company for over 5 years turns out to be a long-lost child of the upper class in our town.<br /></li>
+<li>The upper classes hired a great artist to paint the ceiling of the chapel.<br /></li>
+</ul>
+<p>
+with sb's hands: 用某人双手<br />
+</p>
+<ul class="org-ul">
+<li>Lee said he would make your dream come true with his hands.<br /></li>
+<li>I hate to work with my hands in the field on summer holidays.<br /></li>
+<li>I was instructed to wash my wife's underwear with my hands.<br /></li>
+</ul>
+<p>
+be incapable of sth./doing sth.: 无法做某事<br />
+</p>
+<ul class="org-ul">
+<li>Our manager who claimed he was an accomplished programmer turned out to be incapable of programming.<br /></li>
+<li>Everyone laughed at him who was incapable of programming.<br /></li>
+<li>I am incapable of programming with my hands, so I quit.<br /></li>
+</ul>
+<p>
+have no time to do sth.: 没有时间去做某事<br />
+</p>
+<ul class="org-ul">
+<li>In spite of graduating from school, my sister still has no time to babysit our child.<br /></li>
+<li>We have no time to cultivate your English skills.<br /></li>
+<li>I have no time to listen to your awful stories.<br /></li>
+</ul>
+<p>
+give way to sth.: 让位于某事;被某事取代<br />
+</p>
+<ul class="org-ul">
+<li>The candle must give way to electrical light in my house.<br /></li>
+<li>Our dog gave way to our cat which would never bark at passers-by.<br /></li>
+<li>The complaints gave way to admiration, for it solved my problem on time.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgbc86227" class="outline-3">
+<h3 id="orgbc86227">summary</h3>
+<div class="outline-text-3" id="text-orgbc86227">
+<p>
+Renaissance was not only a period of transition<br />
+		that extended most of trends in the High Middle Ages,<br />
+	but also a movement<br />
+		in which intellectuals proclaimed new vision of humandkind<br />
+			and raised fundamental issues about the value and importance of individuals.<br />
+Of course, the brilliant intellectual, cultural, and artistic accomplishments<br />
+	were really product of and for the elite.<br />
+The poor who work with their hands have no time to obtain perfection.<br />
+The humanists also raised fundamental questions about the Catholic church.<br />
+In the next chapter,<br />
+	the intellectual revolution of the fifteenth century gave way to the religious Renaissance,<br />
+	which touched the lives of masses in new and profound ways.<br />
+After the Reformation, Europe would never again be the unified Christian commonwealth.<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgc313280" class="outline-3">
+<h3 id="orgc313280">summary2</h3>
+<div class="outline-text-3" id="text-orgc313280">
+<p>
+Renaissance was not only a period of transition<br />
+		that extended most of the trends in the High Middle Ages,<br />
+	but also a movement<br />
+		in which intellectuals proclaimed a new vision of humankind<br />
+			and raised fundamental issues about the value and importance of individuals.<br />
+Of course, the brilliant intellectual, cultural, and artistic accomplishments<br />
+	were products of and for the elite.<br />
+The poor who work with their hands have no time to obtain perfection.<br />
+The humanists also raised fundamental questions about the Catholic church.<br />
+In the next chapter,<br />
+	the intellectual revolution of the fifteenth century gave way to the religious Renaissance,<br />
+	which touched the lives of the masses in new and profound ways.<br />
+After the Reformation, Europe would never again be the unified Christian commonwealth.<br />
+</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

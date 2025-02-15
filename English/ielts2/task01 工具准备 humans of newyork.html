@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-07-14 Sun 10:37 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-orgbdabb8c" class="outline-2">
+<h2 id="orgbdabb8c">task1 工具准备 humans of newyork &#x2014;靠阅读提升听力</h2>
+<div class="outline-text-2" id="text-orgbdabb8c">
+<p class="verse">
+Humans of New York<br />
+<br />
+"He makes me want to know about little things, so that I can teach him.<br />
+Like when we sit by this lake,<br />
+&#xa0;I wish I knew what kind of turtle that was, so I could tell him.<br />
+And I want to figure out what kind of duck that is,<br />
+&#xa0;so I can tell him all about it the next time we come."<br />
+"What do you want most for him?"<br />
+"Whatever his dreams are, I'm down to ride for him."<br />
+"What's your biggest fear for him?"<br />
+"That he won't try.<br />
+If he doesn't try, I'll be hurt.<br />
+Cause then we'll never know how far he'd get."<br />
+</p>
+</div>
+
+
+<div id="outline-container-org357912a" class="outline-3">
+<h3 id="org357912a">疑问</h3>
+<div class="outline-text-3" id="text-org357912a">
+<ol class="org-ol">
+<li>阅读和听力的关系?提升听力的方法?<br />
+阅读是听力的基础,提升听力的方法:泛听+精听??<br />
+精听的基础是精读; 泛听的基础是泛读吗???<br /></li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org7f742a4" class="outline-3">
+<h3 id="org7f742a4">设置思路：</h3>
+<div class="outline-text-3" id="text-org7f742a4">
+<p>
+课前：⾃⼰按要求完成作业<br />
+课中：课上讲解思路<br />
+课后：再做⼀遍<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org8d1296d" class="outline-3">
+<h3 id="org8d1296d">家庭作业：</h3>
+<div class="outline-text-3" id="text-org8d1296d">
+<p>
+材料：阅读Humans of New York<br />
+要求：<br />
+</p>
+<ol class="org-ol">
+<li>通读⽂章 + 查阅不会单词&amp;习惯⽤法&amp;语法<br /></li>
+<li>学会使⽤edge浏览器的真⼈发⾳功能<br /></li>
+<li>反复跟读⽂章,遍数不限（但需熟读成诵）<br /></li>
+<li>习惯⽤法造句 x 3<br /></li>
+</ol>
+</div>
+
+<div id="outline-container-orge5e92af" class="outline-4">
+<h4 id="orge5e92af">教学⽬标：</h4>
+<div class="outline-text-4" id="text-orge5e92af">
+<ol class="org-ol">
+<li>学会查字典+语法书(三本语法书)+习惯⽤法(google)=建⽴读懂⼀切英⽂⽂本的信⼼和学会读懂⽂本的⽅法论。<br /></li>
+<li>掌握edge 浏览器的真⼈发⾳功能，给以后跟读任何⽂本做技术铺垫。<br /></li>
+<li>⼤概捋清阅读与听⼒的关系,以及提升听⼒的⽅法。<br /></li>
+</ol>
+</div>
+</div>
+
+
+<div id="outline-container-org8ec2d1a" class="outline-4">
+<h4 id="org8ec2d1a">习惯用法造句</h4>
+<div class="outline-text-4" id="text-org8ec2d1a">
+<p>
+a so that b&#x2026; N2L59<br />
+</p>
+<ol class="org-ol">
+<li>I try to make money so that I can afford to buy my wife's clothes.<br /></li>
+<li>I want to pass the IELTS, so that I can land a better job.<br /></li>
+<li>I applied for an MBA from Harvard, so that I can have an edge over my competitors.<br /></li>
+</ol>
+<p>
+I wish I knew that &#x2026; (尝试查阅wish的⽤法)<br />
+</p>
+<ol class="org-ol">
+<li>I wish I knew whether she was a lesbian.<br /></li>
+<li>I wish I knew that you had already graduated college.<br /></li>
+<li>I wish I knew that you can speak English fluently.<br /></li>
+</ol>
+<p>
+sb. figure out sth.<br />
+</p>
+<ol class="org-ol">
+<li>In the end, I figured out the number of steps which lead to the high wall.<br /></li>
+<li>Last night, I figured out the poor man who is working for Ellemes Corporation.<br /></li>
+<li>I figure out whether he is my brother-in-law.<br /></li>
+</ol>
+<p>
+be down to ride<br />
+</p>
+<ol class="org-ol">
+<li>If he doesn't try, I won't be down to ride for him.<br /></li>
+<li>Whatever the situation is, I'm down to ride for you.<br /></li>
+<li>I'm down to ride for you, so that you can get enough money to have the clock repaired.<br /></li>
+</ol>
+<p>
+if ⼀般现在时，⼀般将来时。 N2L16<br />
+</p>
+<ol class="org-ol">
+<li>If you're down to ride for him, he'll be successful.<br /></li>
+<li>If you figure out what kind of turtle that is, you'll be able to tell him about it.<br /></li>
+<li>If she doesn't try to work hard, she won't be fluent in English.<br /></li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org05b64b2" class="outline-4">
+<h4 id="org05b64b2">Asking questions</h4>
+<div class="outline-text-4" id="text-org05b64b2">
+<ol class="org-ol">
+<li>Why does he want to know about little things?<br />
+so that he can teach his child.<br /></li>
+<li>Did the man know what kind of turtle that was?<br />
+No, he didn’t.<br /></li>
+<li>Why did the man want to know what kind of duck that was?<br />
+so he can tell his child all about it the next time they come.<br /></li>
+<li>What does the man want most for his child?<br />
+fulfill his dream.<br /></li>
+<li>What’s his biggest fear for the child?<br />
+He won’t even try.<br /></li>
+</ol>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org06372ba" class="outline-3">
+<h3 id="org06372ba">答疑解惑</h3>
+<div class="outline-text-3" id="text-org06372ba">
+<p>
+写出您在完成这个作业过程中产⽣的疑惑，然后带着这个疑惑去听课。<br />
+问题⼀：？<br />
+问题⼆：？<br />
+问题三：？<br />
+…<br />
+解决问题优先级如下：<br />
+</p>
+<ol class="org-ol">
+<li>⾃⼰尝试解决，请勿做伸⼿党。<br /></li>
+<li>解决不了尝试群⾥请教。<br /></li>
+<li>期待下次直播课程我会课上解决。<br /></li>
+<li>直播课程会预留答疑解惑时间，可以问。<br /></li>
+<li>直接私信我。（您⽆需⾛完前4步才找我，但我强烈建议经过前四步）<br /></li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orgdd38167" class="outline-3">
+<h3 id="orgdd38167">作业上交时间/地点</h3>
+<div class="outline-text-3" id="text-orgdd38167">
+<p>
+时间：下次直播课程开始前<br />
+地点： VX群<br />
+</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

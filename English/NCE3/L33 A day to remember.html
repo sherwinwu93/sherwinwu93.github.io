@@ -1,0 +1,785 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-09-28 Sat 22:17 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-org384cf74" class="outline-2">
+<h2 id="org384cf74">Lesson 33 A day to remember</h2>
+<div class="outline-text-2" id="text-org384cf74">
+<p class="verse">
+What incident began the series of traffic accidents?<br />
+<br />
+We have all experienced days when everything goes wrong.<br />
+A day may begin well enough, but suddenly everything seems to <b>get out of control</b>.<br />
+<b>What invariably happens is</b><br />
+&#xa0;that a great number of things choose to go wrong at precisely the same moment.<br />
+It is as if a single unimportant event <b>set up a chain of reactions</b>.<br />
+Let us suppose that you are preparing a meal and <b>keeping an eye on</b> the baby at the same time.<br />
+The telephone rings and this marks <b>the prelude to an unforseen series of</b> catastrophes.<br />
+While you <b>are on the phone</b>, the baby pulls the tablecloth off the table,<br />
+&#xa0;smashing half your best crockery and cutting himself in the process.<br />
+You <b>hang up</b> hurriedly and <b>attend to</b> baby, crockery, et cetera.<br />
+Meanwhile, the meal gets burnt.<br />
+As if this were not enough to <b>reduce you to tears</b>,<br />
+&#xa0;your husband arrives, unexpectedly bringing three guests to dinner.<br />
+<br />
+Things can go wrong <b>on a big scale</b>,<br />
+&#xa0;as a number of people recently discovered in Parramatta, <b>a suburb of Sydney</b>.<br />
+During the <b>rush hour</b> one evening two cars collided and both drivers began to argue.<br />
+The woman immediately behind the two cars happened to be a learner.<br />
+She suddenly <b>got into a panic</b> and stopped her car.<br />
+This made the driver following her brake hard.<br />
+His wife was sitting beside him holding a large cake.<br />
+As she was thrown forward, the cake went right through the windscreen and landed on the road.<br />
+Seeing a cake flying through the air,<br />
+&#xa0;a lorry driver who was <b>drawing up alongside</b> the car,<br />
+&#xa0;&#xa0;<b>pulled up all of a sudden</b>.<br />
+The lorry was loaded with empty beer bottles<br />
+&#xa0;and hundreds of them <b>slid off</b> the back of the vehicle and on to the road.<br />
+This led to yet another angry argument.<br />
+Meanwhile, the traffic <b>piled up</b> behind.<br />
+It took the police nearly an hour to <b>get the traffic on the move</b> again.<br />
+In the meantime, the lorry driver had to <b>sweep up</b> hundreds of broken bottles.<br />
+Only two <b>stray dogs benefited from</b> all this confusion,<br />
+&#xa0;for they greedily devoured what was left of the cake.<br />
+It was just one of those days!<br />
+</p>
+</div>
+<div id="outline-container-org6c20b85" class="outline-3">
+<h3 id="org6c20b85">expression</h3>
+<div class="outline-text-3" id="text-org6c20b85">
+<p>
+prelude: [ˈpreljud] n. 前奏<br />
+unforeseen: [ˌʌnfɔrˈsin] adj.意料之外的<br />
+series: [ˈsɪriz] n.系列<br />
+catastrophe: [kəˈtæstrəfi] n.大灾<br />
+crockery: [ˈkrɑkəri] un.陶器<br />
+suburb: [ˈsʌˌbɜrb] n.郊区<br />
+collide: [kəˈlaɪd] v.猛撞<br />
+learner: [ˈlɜrnər] n.初学者<br />
+panic: [ˈpænɪk] n.恐慌<br />
+windscreen: [ˈwɪn(d)ˌskrin] n. windshield 挡风玻璃<br />
+alongside: [əˈlɔŋˌsaɪd] prep. adv.在&#x2026;的旁边<br />
+slide: [slaɪd] slid slid v.滑<br />
+stray: [streɪ] adj. 迷失的,离群的<br />
+confusion: [kənˈfjuʒ(ə)n] n. 混乱<br />
+greedily: [ˈɡridɪlɪ] adv.贪婪地<br />
+devour: v. 狼吞虎咽地吃<br />
+</p>
+
+<p>
+a prelude to sth.: 某事的前奏<br />
+unforeseen + changes/problems/circumstances: 不可预见的改变/问题/情形<br />
+a series of: 一系列<br />
+be a catastrophe for sb.: 对某人来说大灾祸<br />
+in the suburbs/ a suburb of city: 在城区的郊区<br />
+collide with=run into: 碰撞<br />
+get into a panic: 陷入恐慌<br />
+draw up alongside sb.: 超车某人<br />
+slide off/open: 滑走/开<br />
+stray dogs: 流浪狗<br />
+There is some confusion about sth.: 对某事有些疑惑<br />
+</p>
+<hr />
+<p>
+get out of control: 失去控制<br />
+What invariably happens is that + &#x2026; 总是发生的是+&#x2026;<br />
+set up a chain of reactions: 建立一连串的反应<br />
+keep an eye on sb.: 留意某人<br />
+be/speak/talk on the phone: 在打电话<br />
+hang up (on sb.): 挂电话<br />
+attend to sb./sth.: 照料某人<br />
+reduce sb. to tears:  they make you feel so unhappy that you cry使某人落泪<br />
+on a big/large/small scale: 大规模地<br />
+drawing up alongside sb.: 超车某人<br />
+rush hour: 高峰期<br />
+pull up: 停车 (of a vehicle) come to a halt.<br />
+all of a sudden = suddenly: 突然地<br />
+pile up: accumulate积累<br />
+get the traffic on the move: 使得交通动起来<br />
+sweep up: 打扫干净<br />
+benefit from sth.: 得益于某事<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org31a4386" class="outline-3">
+<h3 id="org31a4386">words</h3>
+<div class="outline-text-3" id="text-org31a4386">
+<p>
+prelude [ˈpreljuːd] n.序幕<br />
+unforeseen [ˌʌnfɔːrˈsiːn] adj.意料之外的<br />
+series [ˈsɪriːz] n.系列<br />
+catastrophe [kəˈtæstrəfi] n.大祸<br />
+crockery [ˈkrɑːkəri] n.陶器<br />
+suburb [ˈsʌbɜːrb] n.郊区<br />
+collide [kəˈlaɪd] v.猛撞<br />
+leaner [ˈliːnər] n.初学者<br />
+panic [ˈpænɪk] n.惊慌<br />
+windscreen [ˈwɪndskriːn] n.挡风玻璃<br />
+alongside [əˌlɔːŋˈsaɪd] prep.在&#x2026;的旁边<br />
+slide [slaɪd] v.滑<br />
+stray [streɪ] adj.迷失的<br />
+confusion [kənˈfjuːʒ(ə)n] n.混乱的<br />
+greedily [ˈɡriːdɪli] adv.贪婪地<br />
+devour [dɪˈvaʊər] v.狼吞虎咽地吃<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org8ade2c2" class="outline-3">
+<h3 id="org8ade2c2"><span class="done DONE">DONE</span> 单词造句</h3>
+<div class="outline-text-3" id="text-org8ade2c2">
+<p>
+prelude n.  a prelude to sth.<br />
+</p>
+<ul class="org-ul">
+<li>My wife claimed that reading fiction was a neccessary prelude to sleep.<br /></li>
+<li>Its setting out from the harbour was a prelude to the salvage operation.<br /></li>
+<li>The death of a naval officer might be a prelude to a war.<br /></li>
+<li>After they pieced together what happened, they suspected this was a prelude to a bigger attack.<br /></li>
+<li>I was under the impression<br />
+that the arrival of my teacher was a prelude to the end of conversation.<br /></li>
+</ul>
+<p>
+unforeseen adj.  unforeseen + changes/problems/circumstances<br />
+</p>
+<ul class="org-ul">
+<li>Despite unforeseen changes, we have made a profit last year.<br /></li>
+<li>Despite unforeseen circumstances in the disater, the salvage operation proved to be successful.<br /></li>
+<li>Because of unforeseen problems, he at last failed the exam.<br /></li>
+<li>Due to unforeseen changes in the train schedule, he didn't have a perfect alibi any longer.<br /></li>
+<li>This manager was apologetic about sending the clothes late because of unforeseen weather.<br /></li>
+</ul>
+<p>
+series n.  a series of<br />
+</p>
+<ul class="org-ul">
+<li>I was conscious that a series of accidents was happening.<br /></li>
+<li>There used to be a series of activities in my daily routine.<br /></li>
+<li>This manager reprimanded the assistant for making a series of mistakes.<br /></li>
+<li>Although it took him three years to elaborate plan, he still made a series of mistakes.<br /></li>
+<li>The eccentric who disregards social conventions has made a series of mistakes.<br /></li>
+</ul>
+<p>
+catastrophe n.  be a catastrophe for sb.<br />
+</p>
+<ul class="org-ul">
+<li>Whether this would be a catastrophe for us or not, we should follow our father's instructions.<br /></li>
+<li>Failing the exam must have been a catastrophe for his academic future.<br /></li>
+<li>He has elaborated a plan which turned out to be a catastrophe for the life in his future.<br /></li>
+<li>He invited me to do math homework. This must be a catastrophe for me.<br /></li>
+<li>He added a sheet of paper in my collection. This may be a catastrophe for me.<br /></li>
+</ul>
+<p>
+crockery un.<br />
+</p>
+<ul class="org-ul">
+<li>It became an accepted fact that household wives love beautiful crockery.<br /></li>
+<li>The crockery was supposed to be smashed in the earthquake.<br /></li>
+<li>I stayed overnight to find her keep our crockery in hiding.<br /></li>
+<li>I found it impossible to sweep up the broken crockery in two hours.<br /></li>
+<li>She has a habit of collecting crockery for years.<br /></li>
+</ul>
+<p>
+suburb n.  in the suburbs/ a suburb of city<br />
+</p>
+<ul class="org-ul">
+<li>He claimed that his son was killed in action in the suburbs.<br /></li>
+<li>I love to wander in the suburbs in the moonlight.<br /></li>
+<li>We could not afford to the house in a suburb of New York.<br /></li>
+<li>He was said to be brought up in a suburb of New York.<br /></li>
+<li>Somehow, living in the suburbs is coming into fashion these days.<br /></li>
+</ul>
+<p>
+collide v.  collide with=run into<br />
+</p>
+<ul class="org-ul">
+<li>I felt sorry for the man whose car collided with the back of a truck last week.<br /></li>
+<li>She took heart, for she found that her car didn't run into the back of the truck.<br /></li>
+<li>For instance, she collided with another student in the process.<br /></li>
+<li>They collided with each other so that the teacher reprimanded them for this.<br /></li>
+<li>At the moment, the busman did his best not to collide with the car in front of him.<br /></li>
+</ul>
+<p>
+learner n.<br />
+</p>
+<ul class="org-ul">
+<li>You should not regard yourself as a learner and began to drive.<br /></li>
+<li>Whether you believe or not, regarding yourslef as a learner is not good for you.<br /></li>
+<li>It is important for a learner to judge for himself.<br /></li>
+<li>The great director based his film on a learner in London who has just passed the test.<br /></li>
+<li>The learner found it hard to drive as well as he thought.<br /></li>
+</ul>
+<p>
+panic n.  get into a panic<br />
+</p>
+<ul class="org-ul">
+<li>My wife got into a panic and pestered me to ask for a better salary.<br /></li>
+<li>These horror movies have a universal appeal which make us get into a panic swiftly.<br /></li>
+<li>Fearing of being put out of business, he soon got into a panic.<br /></li>
+<li>The policeman consoled a person getting into a panic that everything was under control.<br /></li>
+<li>My tank wasn't filled with gas. This really made me get into a panic.<br /></li>
+</ul>
+<p>
+windscreen n. windshield<br />
+</p>
+<ul class="org-ul">
+<li>She has the impluse to clean the windscreen.<br /></li>
+<li>Though the windscreen reduced the price to $300, we still couldn't afford it.<br /></li>
+<li>She found her windscreen broken when she got back home.<br /></li>
+<li>My teacher used to order us to clean the windscreen.<br /></li>
+<li>He had the windscreen cleaned for free.<br /></li>
+</ul>
+<p>
+alongside prep. adv.  draw up alongside<br />
+</p>
+<ul class="org-ul">
+<li>He drew up alongside me and said: "Fancy meeting you here!"<br /></li>
+<li>I knew I might break the world record when I drew up alongside the fastest girl.<br /></li>
+<li>The policeman, who was drawing up alongside me, asked me to pull over.<br /></li>
+<li>It is disturbing to think that a truck is drawing up alongside you in the highway.<br /></li>
+<li>In the light of the chance of meeting her, I drew up alongside her.<br /></li>
+</ul>
+<p>
+slide slid slid v.  slide off/open<br />
+</p>
+<ul class="org-ul">
+<li>As the door slid open, he glanced at a man who was having an operation.<br /></li>
+<li>After the curtain went up, the glass slid off my knee and wake up my cat.<br /></li>
+<li>No one noticed that a glass slid off my knee in the dim light.<br /></li>
+<li>The glass slid off the table onto the floor and was broken.<br /></li>
+<li>As the door slid open, I saw my cat which was kidnappered a few days ago.<br /></li>
+</ul>
+<p>
+stray adj.  stray dogs<br />
+</p>
+<ul class="org-ul">
+<li>Because of stray dogs, she changed her mind of raising a cat.<br /></li>
+<li>Don't touch these stray dogs with your bare hands.<br /></li>
+<li>Technically speaking, they are not stray dogs.<br /></li>
+<li>Oddly enought, these stray dogs gained in popularity in those days.<br /></li>
+<li>A stray dog rose to fame swiftly because of his eccentricity.<br /></li>
+</ul>
+<p>
+confusion n.  There is some confusion about sth.<br />
+</p>
+<ul class="org-ul">
+<li>There is some confusion about what made your wife get into a panic.<br /></li>
+<li>There is some confusion about how to solve this problem.<br /></li>
+<li>There is some confusion about when I become fluent in English.<br /></li>
+<li>There is some confusion about whether he is a tramp or a beggar.<br /></li>
+<li>There is some confusion about who used to smoke in our family.<br /></li>
+</ul>
+<p>
+greedily adv. devour v.<br />
+</p>
+<ul class="org-ul">
+<li>My wife asked me not to greedily devour the pizza in the resturant.<br /></li>
+<li>My wife and me quarrled bitterly, for I greedily devoured pizza at the party.<br /></li>
+<li>People who live in poverty always greedily devour foods at the party.<br /></li>
+<li>I am starving to death and I am gonna devour the meal.<br /></li>
+<li>I am genuinely sorry that I greedily devoured the elaborated meal on your birthday.<br /></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgc07a730" class="outline-3">
+<h3 id="orgc07a730">vocabulary</h3>
+<div class="outline-text-3" id="text-orgc07a730">
+<p>
+happens: occurs<br />
+precisely: exactly<br />
+preparing: getting&#x2026; ready, cooking<br />
+catastrophes: disasters, accidents<br />
+smashing: breaking<br />
+in the process: at the same time<br />
+reduce you to tears: make you cry<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org5049e37" class="outline-3">
+<h3 id="org5049e37">反复听电影片段直到懂关键句</h3>
+</div>
+<div id="outline-container-org0ed55dc" class="outline-3">
+<h3 id="org0ed55dc">复习二册语法(笔记或视频) &amp; 红皮书</h3>
+</div>
+<div id="outline-container-org7b5f748" class="outline-3">
+<h3 id="org7b5f748"><span class="done DONE">DONE</span> 习惯用法造句</h3>
+<div class="outline-text-3" id="text-org7b5f748">
+<p>
+get out of control<br />
+</p>
+<ul class="org-ul">
+<li>We'd better  make it official,<br />
+otherwises everything will get out of control over and over again.<br /></li>
+<li>The fireplace got out of control and set the house on fire.<br /></li>
+<li>Everything on stage got out of control. This made customers laughed to tears.<br /></li>
+<li>These pumas found in America got out of control because of the rainstorms.<br /></li>
+<li>I consoled myself that nothing got out of control.<br /></li>
+</ul>
+<p>
+What invariably happens is that + &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>What invariably happens is<br />
+that our senses of humor are bound up with our national characteristics.<br /></li>
+<li>What invariably happens is that everyone will die of illness or old age.<br /></li>
+<li>What invariably happens is that you must judge for yourself in a pariticuliar case.<br /></li>
+<li>What invariably happens is that your child pesters you to buy this or that product.<br /></li>
+<li>What invariably happens is that your daughter will fall in love with some guy in her youth.<br /></li>
+</ul>
+<p>
+set up a chain of reactions<br />
+</p>
+<ul class="org-ul">
+<li>The boy dreaded having an operation and set up a chain of reactions.<br /></li>
+<li>The archaeologist made a complete recovery and set up a chain of reactions in the field.<br /></li>
+<li>This writer published a comic book and set up a chain of reactions in China.<br /></li>
+<li>To this day, this fire set up a chain of reactions.<br /></li>
+<li>My father indicate that my departure set up a chain of reactions at the party.<br /></li>
+</ul>
+<p>
+keep an eye on sb.<br />
+</p>
+<ul class="org-ul">
+<li>My girlfriend pestered me to keep on eye on her nephew.<br /></li>
+<li>I was filling my tank with gas and kept an eye on the baby at the same time.<br /></li>
+<li>If you keep an eye on the baby, I will let you have it.<br /></li>
+<li>At the base of the fact that she loves baby, I asked her to keep an eye on my baby.<br /></li>
+<li>I was impressed by a pretty mother who kept an eye on her baby.<br /></li>
+</ul>
+<p>
+be/speak/talk on the phone<br />
+</p>
+<ul class="org-ul">
+<li>If we spoke earlier on the phone, everything would go right.<br /></li>
+<li>She can't conceal the fact that she talked to her ex-boyfriend on the phone.<br /></li>
+<li>As a special favour, your will have an opportunity to talk to Leo on the phone.<br /></li>
+<li>There is an element of truth that we should speak on the phone.<br /></li>
+<li>I felt guilty when I was speaking to her on the phone.<br /></li>
+</ul>
+<p>
+hang up (on sb.)<br />
+</p>
+<ul class="org-ul">
+<li>Before you hang up, you should say goodbye.<br /></li>
+<li>I realized to my horror that my wife hanged up and was frightened.<br /></li>
+<li>She hanged up on her boyfriend at the idea of his lie.<br /></li>
+<li>She hanged up on her parents and decided to gain her independence.<br /></li>
+<li>After hanging up on his wife, he realized to his horror that she was in difficulty.<br /></li>
+</ul>
+<p>
+attend to sb./sth.<br />
+</p>
+<ul class="org-ul">
+<li>The nurse attempted to attend to the paitent who was injured in air crash.<br /></li>
+<li>Imagine his dismay when he found his wife attending to other man.<br /></li>
+<li>There are lots of urgent businesses to attend to.<br /></li>
+<li>The moment he arrived in office, he attended to these tasks.<br /></li>
+<li>She was too busying attending to the baby to cook meal for us.<br /></li>
+</ul>
+<p>
+reduce sb. to tears<br />
+</p>
+<ul class="org-ul">
+<li>Just a moment earlier my shouting reduced my wife to tears.<br /></li>
+<li>If I reduce her to tears, I will apologize to her.<br /></li>
+<li>As you smashed everything in the kitchen to pieces, this reduced her to tears.<br /></li>
+<li>The background music which reminded her of her mother reduced her to tears.<br /></li>
+<li>The scrambled eggs reduced her to tears.<br /></li>
+</ul>
+<p>
+on a big/large/small scale<br />
+</p>
+<ul class="org-ul">
+<li>The mistake that is not big deal can make us run into serious trouble on a big scale.<br /></li>
+<li>It takes me a long time to do the work on a big scale.<br /></li>
+<li>They decided to manufacture these kinds of biscuits on a large scale.<br /></li>
+<li>Your behavior has an influence on young people in China on a large scale.<br /></li>
+<li>The news that the actor stayed out of limelight capture people's attention on a big scale.<br /></li>
+</ul>
+<p>
+drawing up alongside<br />
+</p>
+<ul class="org-ul">
+<li>The car which was drawing up alongside us pulled up all of a sudden.<br /></li>
+<li>There is a danger that a truck drawing up alongside us may collided with us.<br /></li>
+<li>The car which is drawing up alongside is likely to spy on us.<br /></li>
+<li>At first, the car draw up alongside us and then took the lead.<br /></li>
+<li>It gave us the impression that the car was drawing up alongside us.<br /></li>
+</ul>
+<p>
+rush hour<br />
+</p>
+<ul class="org-ul">
+<li>The rush hour is likely to start at 5.30 p.m. in China.<br /></li>
+<li>During rush hour, I found a lady following me rude.<br /></li>
+<li>During rush hour, I found a lady immediately behind me spying on me.<br /></li>
+<li>During rush hour, I used to read book to my child.<br /></li>
+<li>During rush hour, I found it impossible to have a good seat.<br /></li>
+</ul>
+<p>
+pull up<br />
+</p>
+<ul class="org-ul">
+<li>There is no doubt that I must pull up at the idea of a flying cake.<br /></li>
+<li>He did his best to pull up in front of the garage.<br /></li>
+<li>The busman is about to pull up at the entrance of the street.<br /></li>
+<li>It is all very well you pulled up at the idea of accident.<br /></li>
+<li>After I pulled up, we set up our tent and had a picnic.<br /></li>
+</ul>
+<p>
+all of a sudden = suddenly<br />
+</p>
+<ul class="org-ul">
+<li>It gave me the impression that we got everything under control all of a sudden.<br /></li>
+<li>She died of a car accident all of a sudden.<br /></li>
+<li>My stomach turned at the idea of meal she cooked yesterday all of a sudden.<br /></li>
+<li>It is illogical to decide to marry her all of a sudden.<br /></li>
+<li>It comes as a surprise to learn that I learnt it by heart all of a sudden.<br /></li>
+</ul>
+<p>
+pile up<br />
+</p>
+<ul class="org-ul">
+<li>The work began to pile up and drove me crazy.<br /></li>
+<li>Fearing that the problems piles up at work, she is anxious to attend to.<br /></li>
+<li>As the books began to pile up, my wife got very angry and asked me to throw away some of them.<br /></li>
+<li>Truman found it impossible to go through the bridge in an hour, for the traffic piled up.<br /></li>
+<li>The traffic piled up, you'd better choose to go another way.<br /></li>
+</ul>
+<p>
+get the traffic on the move<br />
+</p>
+<ul class="org-ul">
+<li>She insisted that she got the traffic on the move.<br /></li>
+<li>You should not prevent the police from getting the traffic on the move.<br /></li>
+<li>She insisted that the police get the traffic on the move.<br /></li>
+<li>The police was anxious to get the traffic on the move.<br /></li>
+<li>The policeman was expected to get the traffic on the move.<br /></li>
+</ul>
+<p>
+sweep up<br />
+</p>
+<ul class="org-ul">
+<li>If you sweep up the broken bottles, we will not call the police.<br /></li>
+<li>The assistant insisted that he sweep up the broken bottles before he left.<br /></li>
+<li>The curtain went up, there was a old lady sweeping up her courtyard.<br /></li>
+<li>My grandmother used to sweep up the ground in the dim light.<br /></li>
+<li>I proceed to sweep up the ground.<br /></li>
+</ul>
+<p>
+benefit from sth.<br />
+</p>
+<ul class="org-ul">
+<li>It became an accepted fact that we all benefit from the advice Aristole gave.<br /></li>
+<li>You will benefit from the book about computer program in many years.<br /></li>
+<li>He claimed to have benefit from the news that a puma was at large.<br /></li>
+<li>It is impossible to benefit from a blank sheet of paper.<br /></li>
+<li>It was not until the exam that she benefited from the advice from her teacher.<br /></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org01fced0" class="outline-3">
+<h3 id="org01fced0">跟读 50遍</h3>
+</div>
+<div id="outline-container-orgfd693b3" class="outline-3">
+<h3 id="orgfd693b3"><span class="done DONE">DONE</span> Comprehension 反复练习</h3>
+<div class="outline-text-3" id="text-orgfd693b3">
+</div>
+</div>
+<div id="outline-container-org795bfed" class="outline-3">
+<h3 id="org795bfed"><span class="done DONE">DONE</span> Ask me if 写+读</h3>
+<div class="outline-text-3" id="text-org795bfed">
+<ol class="org-ol">
+<li>We have days when everything goes wrong. What kinds of days<br />
+What kinds of days do we have?<br /></li>
+<li>A number of things go wrong at the same moment. How many<br />
+How many things go wrong at the same moment?<br /></li>
+<li>The baby pulls the tablecloth off the table. What<br />
+What does the baby pull off the table?<br />
+What does the baby do?<br /></li>
+<li>The baby smashes half your best crockery. Who<br />
+Who smashes half your best crockery?<br /></li>
+<li>Two cars collided during the evening rush hour. When<br />
+When did two cars collide?<br /></li>
+<li>The woman in the car behind them stopped suddenly. Why<br />
+Why did the woman in the car behind them stop suddenly?<br /></li>
+<li>The cake flew through the windscreen and landed on the road. What<br />
+What flew through the windscreen and landed on the road?<br /></li>
+<li>Hundreds of beer bottles slid off the lorry on to the road. How many<br />
+How many beer bottles slid off the lorry on to the road?<br /></li>
+<li>It took the policeman an hour to get the traffic on the move again. How long<br />
+How long did it take the policeman to get the traffic on the move again?<br /></li>
+<li>Two stary dogs devoured what was left of the cake. Who<br />
+Who devoured what was left of the cake?<br /></li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org46181de" class="outline-3">
+<h3 id="org46181de"><span class="done DONE">DONE</span> 摘要写作 写 &amp; 对答案</h3>
+<div class="outline-text-3" id="text-org46181de">
+<p>
+The driver following her brake hard,<br />
+	his wife was thrown forward<br />
+	and the large cake went through the windscreen and landed on the road.<br />
+A lorry had to pulled up suddenly<br />
+	and hundreds of empty beer bottles slid off onto the road.<br />
+The traffic piled up so that the police spent an hour to get the traffic on the move again<br />
+The lorry driver had to sweep up the bottles<br />
+	and two stray dogs ate the remains of the cake.<br />
+</p>
+
+<p>
+When the driver behind braked,<br />
+	his wife was thrown forward<br />
+	and the large cake through the windscreen and landed on the road.<br />
+A lorry had to pull up suddenly and hundreds of empty beer bottles slid off onto the road.<br />
+The traffic piled up so that it took the police an hour to get it on the move again.<br />
+The lorry driver swept up the glass and two stray dogs ate the remains of the cake.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org36792bc" class="outline-3">
+<h3 id="org36792bc"><span class="done DONE">DONE</span> tell the story 口语复述</h3>
+<div class="outline-text-3" id="text-org36792bc">
+</div>
+</div>
+<div id="outline-container-org2e95825" class="outline-3">
+<h3 id="org2e95825"><span class="done DONE">DONE</span> composition 阅读 或 写作</h3>
+<div class="outline-text-3" id="text-org2e95825">
+<p>
+We have all experienced days when everything seems to go wrong.<br />
+Things certainly went wrong for Ray, a friend of mine, one day last month.<br />
+It all started as these things do, with a simple case of mistaken identity.<br />
+Ray had been shopping and was loaded with parcels<br />
+	when he got back to the multistory car park to look for his car.<br />
+He knew he was on the correct level, but he couldn't see his car anywhere.<br />
+Then, suddenly, while he was looking, he saw one exactly like it.<br />
+It was a red Nissan.<br />
+It was exactly the same as his own car, and naturally he mistook it for his own.<br />
+Still holding the parcels, he felt in his jacket pockets and found his key.<br />
+</p>
+
+<p>
+He tried to open the driver's door, but the key just wouldn't turn.<br />
+He couldn't understand it.<br />
+In the end, he forced the lock and naturally broke the key.<br />
+At that point he dropped the parcels as well.<br />
+This infuriated him.<br />
+The only way he could get into his car was to break a window,<br />
+	so he deliberately smashed the window of the car.<br />
+As he was putting his hand in, the owner came back and saw him.<br />
+The owner rushed towards Ray, held him against the car, and called a policeman on his mobile phone.<br />
+When Ray was arrested, he tried to explain,<br />
+	but the police did not believe him - until they found Ray's car on a level below!<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org745308a" class="outline-3">
+<h3 id="org745308a">Topics for discussion</h3>
+</div>
+</div>
+</div>
+</body>
+</html>

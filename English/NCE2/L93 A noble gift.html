@@ -1,0 +1,593 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-08-06 Tue 22:24 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+
+<div id="outline-container-orgf906b1a" class="outline-2">
+<h2 id="orgf906b1a">Lesion 93 A noble gift</h2>
+<div class="outline-text-2" id="text-orgf906b1a">
+<p class="verse">
+Where was the Statue of Liberty made?<br />
+<br />
+One of the most famous monuments in the world, the Statue of Liberty,<br />
+&#xa0;was presented to the United States of America in the nineteenth century by the people of France.<br />
+The great statue, which was designed by the sculptor Auguste Bartholdi, took ten years to complete.<br />
+The actual figure was made of copper<br />
+&#xa0;supported by a metal framework which had been especially constructed by Eiffel.<br />
+Before it could be transported to the United States,<br />
+&#xa0;a site had to be found for it and a pedestal had to be built.<br />
+The site chosen was an island <b>at the entrance of</b> New York Harbour.<br />
+By 1884, a statue which was 151 feet tall had been erected in Paris.<br />
+The following year, it was <b>taken to pieces</b> and sent to America.<br />
+By the end of October 1886, the statue had been put together again<br />
+&#xa0;and it was officially presented to the American people by Bartholdi.<br />
+Ever since then, the great monument has been a symbol of liberty for the millions of people<br />
+&#xa0;who have passed through New York Harbour to make their homes in America.<br />
+</p>
+</div>
+<div id="outline-container-org0f37fdb" class="outline-3">
+<h3 id="org0f37fdb">expression</h3>
+<div class="outline-text-3" id="text-org0f37fdb">
+<p>
+noble [ˈnoʊb(ə)l] adj.高尚的,壮丽的<br />
+monument [ˈmɑnjəmənt] n.纪念碑<br />
+statue [ˈstætʃu] n.雕像 liberty n.自由<br />
+present [ˈprezənt] v.赠送<br />
+sculptor [ˈskʌlptər] n.雕刻家<br />
+actual [ˈæktʃuəl] adj.实际的,真实的<br />
+copper [ˈkɑpər] n.铜<br />
+support [səˈpɔrt] v.支持,支撑<br />
+framework [ˈfreɪmˌwɜrk] n.构架,框架<br />
+transport [trænsˈpɔrt] v.运送<br />
+site [saɪt] n.场地<br />
+pedestal [ˈpedɪst(ə)l] n.底座<br />
+</p>
+
+<p>
+a noble gift/man 一个高贵的礼物/人<br />
+camp site 露营地<br />
+</p>
+<hr />
+<p>
+at the entrance of &#x2026; 在……入口处<br />
+take sth. to pieces 把……拆散<br />
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org4fcb231" class="outline-3">
+<h3 id="org4fcb231">words</h3>
+<div class="outline-text-3" id="text-org4fcb231">
+<p>
+noble [ˈnoʊb(ə)l] adj.高尚的,壮丽的<br />
+monument [ˈmɑnjəmənt] n.纪念碑<br />
+statue [ˈstætʃu] n.雕像<br />
+liberty [ˈlɪbərti]	n.自由<br />
+present [ˈprezənt] v.赠送<br />
+sculptor [ˈskʌlptər] n.雕刻家<br />
+actual [ˈæktʃuəl] adj.实际的,真实的<br />
+copper [ˈkɑpər] n.铜<br />
+support [səˈpɔrt] v.支持,支撑<br />
+framework [ˈfreɪmˌwɜrk] n.构架,框架<br />
+transport [trænsˈpɔrt] v.运送<br />
+site [saɪt] n.场地<br />
+pedestal [ˈpedɪst(ə)l] n.底座<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org13d8b4f" class="outline-3">
+<h3 id="org13d8b4f"><span class="done DONE">DONE</span> 单词造句</h3>
+<div class="outline-text-3" id="text-org13d8b4f">
+<p>
+noble adj. a noble gift/man<br />
+</p>
+<ul class="org-ul">
+<li>Don't take that tone with the man, for he is not a noble man.<br /></li>
+<li>The noble man was remembered by his patience and understanding.<br /></li>
+<li>The noble man hates to betray his people.<br /></li>
+<li>A noble gift was represented to America in 1889.<br /></li>
+<li>As he is a noble man, we will admire him.<br /></li>
+</ul>
+<p>
+monument n.<br />
+</p>
+<ul class="org-ul">
+<li>This monument frightened out of my wits at about two in the morning.<br /></li>
+<li>In the absence of monument, less people go to the zoo.<br /></li>
+<li>As a result, the comedy show will be presenting in front of the monument.<br /></li>
+<li>The fire was put out in front of the monument.<br /></li>
+<li>The students hate to stand to attention towards the monument.<br /></li>
+</ul>
+<p>
+statue n. liberty n.<br />
+</p>
+<ul class="org-ul">
+<li>He was curious to find out that the statue of liberty was built in 1989.<br /></li>
+<li>The statue of liberty was said to be planted a bomb.<br /></li>
+<li>The architect made every effort to repair the statue of liberty.<br /></li>
+<li>France has offered America a statue of liberty.<br /></li>
+<li>Don't light a cigarette in front of the statue of liberty.<br /></li>
+</ul>
+<p>
+present v.<br />
+</p>
+<ul class="org-ul">
+<li>He never has the nerve to present any gift to his classmate.<br /></li>
+<li>In the end he lost his nerve and presented the postcard to his girlfriend.<br /></li>
+<li>A French waiter presented a book to me, but I couldn't understand a word.<br /></li>
+<li>The mother has a good temper and presents a gift to her children every Christma.<br /></li>
+<li>All the books should have been presented to the poor children who couldn't afford to but any.<br /></li>
+</ul>
+<p>
+sculptor n.<br />
+</p>
+<ul class="org-ul">
+<li>The sculptor lit a cigarette to calm his nerve.<br /></li>
+<li>The sculptor feared that the statue would fall to pieces.<br /></li>
+<li>The sculptor will have an operation because of his rare disease.<br /></li>
+<li>The sculptor was ordered to cut his masterpiece open.<br /></li>
+<li>It is said that the sculptor had a rare disease and died of it.<br /></li>
+</ul>
+<p>
+actual adj.<br />
+</p>
+<ul class="org-ul">
+<li>Would you like to give your actual phone number this time?<br /></li>
+<li>This is the boss' actual idea.<br /></li>
+<li>The actual leading cause of his death is the flood.<br /></li>
+<li>Those figures on the bulletin board are actual.<br /></li>
+<li>Why don't we reply to the actual email?<br /></li>
+</ul>
+<p>
+copper n.<br />
+</p>
+<ul class="org-ul">
+<li>The statue which is made of copper is cutting open.<br /></li>
+<li>Don't take a risk in that copper mine any more.<br /></li>
+<li>It is no use prentending that th copper don't belong to your family.<br /></li>
+<li>It is fortunate that no one was trapped in the copper mine.<br /></li>
+<li>It is well known that the pedestal is made of copper.<br /></li>
+</ul>
+<p>
+support v.<br />
+</p>
+<ul class="org-ul">
+<li>I will support you no matter what you did.<br /></li>
+<li>The woman confirmed that the policeman has supported in time.<br /></li>
+<li>Before long, the student in the university volunteer to support the busmen.<br /></li>
+<li>If I have understood you, I would have supported you.<br /></li>
+<li>The workers will be supported in a special capsule.<br /></li>
+</ul>
+<p>
+framework n.<br />
+</p>
+<ul class="org-ul">
+<li>The report has provided a framework for further research.<br /></li>
+<li>The experience provides a framework for his further development in career.<br /></li>
+<li>The bridge is said to have a copper framework.<br /></li>
+<li>The bridge which was made of stone has a copper framework.<br /></li>
+<li>The framework was taken to pieces to move to the statue of liberty.<br /></li>
+</ul>
+<p>
+transport v.<br />
+</p>
+<ul class="org-ul">
+<li>It comes as a surprise to learn that the copper was transport out of Africa.<br /></li>
+<li>We was able to transport the mummy to the nearest museum.<br /></li>
+<li>The car enabled us to transport him to the nearest hospital.<br /></li>
+<li>This caused him to transport his money abroad.<br /></li>
+<li>He has nerve to transport a great deal of money abroad.<br /></li>
+</ul>
+<p>
+site n. camp site<br />
+</p>
+<ul class="org-ul">
+<li>The new school was said to have found a new site.<br /></li>
+<li>Last week, we move to a new site.<br /></li>
+<li>The boys are telling stories at the camp site.<br /></li>
+<li>As it is, the stream had formed at the camp site.<br /></li>
+<li>On the surface, they are singing songs at the camp site.<br /></li>
+</ul>
+<p>
+pedestal n.<br />
+</p>
+<ul class="org-ul">
+<li>A pedestal was made of copper and another was made of steel.<br /></li>
+<li>It caused him to damage the pedestal of the statue.<br /></li>
+<li>A pedestal should have been built yesterday.<br /></li>
+<li>A pedestal will be being built by the Olympic Games.<br /></li>
+<li>He covered the pedestal with a rug.<br /></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgd826af6" class="outline-3">
+<h3 id="orgd826af6"><span class="done DONE">DONE</span> 反复听电影片段</h3>
+<div class="outline-text-3" id="text-orgd826af6">
+</div>
+</div>
+<div id="outline-container-orge522cb3" class="outline-3">
+<h3 id="orge522cb3"><span class="done DONE">DONE</span> Pattern Drill 写+读</h3>
+<div class="outline-text-3" id="text-orge522cb3">
+<ul class="org-ul">
+<li>1t: send my case - to your home<br />
+s1: Where will they be sending my case?<br />
+s2: It'll be sent to your home.<br />
+<ul class="org-ul">
+<li>locate oil rig - in the North Sea<br />
+Where will they be locating oil rig?<br />
+It'll be located in the North Sea.<br /></li>
+<li>give the lecture - in the town hall<br />
+Where will they be giving the lecture?<br />
+It'll be given in the town hall.<br /></li>
+<li>build the stadium - at Wembley<br />
+Where will they be building the stadium?<br />
+It'll be built at Wembley.<br /></li>
+<li>show the film - at the studios<br />
+Where will they be showing the film?<br />
+It'll be shown at the studios.<br /></li>
+</ul></li>
+<li>2t: this camera<br />
+s1: I can't get this camera to work. It must be broken.<br />
+s2: Then it'll have to be repaired.<br />
+<ul class="org-ul">
+<li>this clock<br />
+I can't get this clock to work. It must be broken.<br />
+Then it'll have to be repaired.<br /></li>
+<li>this machine<br />
+I can't get this machine to work. It must be broken.<br />
+Then it'll have to be repaired.<br /></li>
+<li>these lights<br />
+I can't get these lights to work. They must be broken.<br />
+Then they'll have to be repaired.<br /></li>
+<li>these scissors<br />
+I can't get these scissors to work. They must be broken.<br />
+Then they'll have to be repaired.<br /></li>
+</ul></li>
+<li>3t: the luggage sent - weighed<br />
+s1: Why can't the luggage be sent now?<br />
+s2: It must be weighed before it can be sent.<br />
+<ul class="org-ul">
+<li>the men admitted - searched<br />
+Why can't the men be admitted now?<br />
+They must be searched before they can be admitted.<br /></li>
+<li>the meat cooked - cut up<br />
+Why can't the meat be cooked now?<br />
+It must be cut up before it can be cooked.<br /></li>
+<li>th house occupied - cleaned<br />
+Why can't the house occupied now?<br />
+It must be cleaned before it can be occupied.<br /></li>
+<li>the notice put up - corrected<br />
+Why can't the notice be put up now?<br />
+It must be corrected before it can be put up.<br /></li>
+</ul></li>
+<li>4t: the luggage - weighed - sent<br />
+s1: What happened to the luggage?<br />
+s2: It had to be weighed before it could be sent.<br />
+<ul class="org-ul">
+<li>the men - searched - admitted<br />
+What happened to the men?<br />
+They had to be searched before they could be admitted.<br /></li>
+<li>the meat - cut up - cooked<br />
+What happened to the meat?<br />
+It had to be cut up before it could be cooked.<br /></li>
+<li>the house - cleaned - occupied<br />
+What happened to the house?<br />
+It had to be cleaned before it could be occupied.<br /></li>
+<li>the notice - corrected - put up<br />
+What happened to the notice?<br />
+It had to be corrected before it could be put up.<br /></li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org796fe53" class="outline-3">
+<h3 id="org796fe53">给自己讲解</h3>
+</div>
+<div id="outline-container-org47e6131" class="outline-3">
+<h3 id="org47e6131">红皮书</h3>
+</div>
+<div id="outline-container-org9dafe69" class="outline-3">
+<h3 id="org9dafe69"><span class="done DONE">DONE</span> 习惯用法造句</h3>
+<div class="outline-text-3" id="text-org9dafe69">
+<p>
+at the entrance of &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>There is a pretty girl at the entrance of the mall.<br /></li>
+<li>Several artistes are standing at the entrance of the airport.<br /></li>
+<li>We have ran out of our fishes and chip at the entrance of cinema.<br /></li>
+<li>As a result, the workered went on a strike at the entrance of theater.<br /></li>
+<li>The boy seems to be playing guitar at the entrance of the mall.<br /></li>
+</ul>
+<p>
+take sth. to pieces<br />
+</p>
+<ul class="org-ul">
+<li>I took the computer to pieces so that I could figure out what went wrong.<br /></li>
+<li>Despite taking the computer to pieces, I couldn't figure out what went wrong.<br /></li>
+<li>The moment he took the wash machine to pieces, his wife lost heart.<br /></li>
+<li>Ross took his sofa to pieces so that he could move it upstairs.<br /></li>
+<li>His mother noticed with dismay that he had took the television to pieces.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org29c0d29" class="outline-3">
+<h3 id="org29c0d29"><span class="done DONE">DONE</span> 跟读至背诵</h3>
+<div class="outline-text-3" id="text-org29c0d29">
+</div>
+</div>
+<div id="outline-container-orgc76d519" class="outline-3">
+<h3 id="orgc76d519"><span class="done DONE">DONE</span> Ask me if 写+读</h3>
+<div class="outline-text-3" id="text-orgc76d519">
+<ol class="org-ol">
+<li>The Statue of Liberty is a world-famous monument. How famous/What<br />
+How famous is the Status of Liberty monument?<br />
+What is a world-famous monument?<br /></li>
+<li>It was presented to the U.S.A in the nineteenth century. When/What<br />
+When was it presented to the U.S.A?<br />
+What was presented to the U.S.A. in the nineteenth century?<br /></li>
+<li>It was given by the French. Who<br />
+Who was it given by?<br /></li>
+<li>It was designed by Bartholdi. Who<br />
+Who was it designed by?<br /></li>
+<li>He was a sculptor. Who/What<br />
+Who was a sculptor.<br />
+What did he do?<br /></li>
+<li>It took ten years to complete. How long<br />
+How long did it take to complete?<br /></li>
+<li>The figure was made of copper. What<br />
+What was made of copper?<br /></li>
+<li>It was supported by a metal framework. How/What<br />
+How was it supported?<br />
+What was it supported by?<br /></li>
+<li>The frame was constructed by Eiffel. Who<br />
+Who was the frame constructed by?<br /></li>
+<li>The statue was 151 feet tall. How tall<br />
+How tall was the statue?<br /></li>
+</ol>
+<p>
+1- It was erected in 188- When<br />
+		When was it erected?<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org75b3fc3" class="outline-3">
+<h3 id="org75b3fc3"><span class="done DONE">DONE</span> 摘要写作</h3>
+<div class="outline-text-3" id="text-org75b3fc3">
+<p>
+The Statue of Liberty, which was presented to U.S.A by the people of French in the 19th century,<br />
+	was designed by Bartholdi<br />
+	and built on a mental frame constructed by Eiffel.<br />
+The site chosen for it was an island at the entrance of New York Harbour,<br />
+	where the pedestal had to be built.<br />
+The statue was erected in Paris in 1884<br />
+	and re-erected in America tow years later.<br />
+It was offically presented in October, 1886.<br />
+</p>
+
+<p>
+The statue of Liberty was presented to U.S.A. by French people in the 19th century.<br />
+Though designed by Bartholdi, it was built on a mental frame constructed by Eiffel.<br />
+The site chosen for it was an island at the entrance of New York Harbour<br />
+	and the Pedsetal had to be built there.<br />
+The statue was first erected in Paris in 1884,<br />
+	but it was re-erected two years later in America<br />
+	and officially presented in October, 1886.<br />
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org19d5c1b" class="outline-3">
+<h3 id="org19d5c1b"><span class="done DONE">DONE</span> tell the story 口语</h3>
+<div class="outline-text-3" id="text-org19d5c1b">
+</div>
+</div>
+<div id="outline-container-orge37fa8f" class="outline-3">
+<h3 id="orge37fa8f">Topics for discussion</h3>
+</div>
+</div>
+</div>
+</body>
+</html>

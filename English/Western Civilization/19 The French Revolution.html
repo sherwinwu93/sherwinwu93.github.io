@@ -1,0 +1,809 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-01-09 Thu 23:35 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-org80ff720" class="outline-2">
+<h2 id="org80ff720">19 The French Revolution</h2>
+<div class="outline-text-2" id="text-org80ff720">
+<p class="verse">
+On the morning of July 14, 1789,<br />
+&#xa0;a Parisian mob of some eight thousand people in search of weapons streamed toward the Bastille,<br />
+&#xa0;&#xa0;a royal armory filled with arms and ammunition.<br />
+The Bastille was also a state prison,<br />
+&#xa0;and although it now contained only seven prisoners,<br />
+&#xa0;in the eyes of these angry Parisians<br />
+&#xa0;&#xa0;it was a glaring symbol of the government's despotic policies.<br />
+The armory was defended by the marquis de Launay and a small garrison of 114 men.<br />
+The attack began in earnest in the early afternoon,<br />
+&#xa0;and after three hours of fighting, de Launay and the garrison surrendered.<br />
+Angered by the loss of ninety-eight of their members,<br />
+&#xa0;the victorious mob beat de Launay to death, cut off his head,<br />
+&#xa0;&#xa0;and carried it aloft in triumph through the streets of Paris.<br />
+When King Louis XVI was informed of the fall of the Bastille by the duke,<br />
+&#xa0;he exclaimed, 'Why, this is a revolt.'<br />
+'No, Sire,' replied the duke, 'it is a revolution.'<br />
+<br />
+Historians have long held<br />
+&#xa0;that the modern history of Europe began with two significant transformations<br />
+&#xa0;&#x2014;the French Revolution and the Industrial Revolution.<br />
+Accordingly, the French Revolution has been portrayed as<br />
+&#xa0;&#xa0;the major turning point	in European political and social history<br />
+&#xa0;when the institutions of the 'old regime' were destroyed<br />
+&#xa0;and a new order was created based on individual rights, representative institutions,<br />
+&#xa0;&#xa0;and a concept of loyalty to the nation rather than the monarch.<br />
+This perspective has certain limitations, however.<br />
+<br />
+France was only one of a number of places in the Western world<br />
+&#xa0;where the assumptions of the old order were challenged.<br />
+Although some historians have used the phrase 'democratic revolution'<br />
+&#xa0;&#xa0;to refer to the upheavals of the late eighteenth and nineteenth centuries,<br />
+&#xa0;it is probably more appropriate to speak not of a democratic movement but of a liberal movement<br />
+&#xa0;&#xa0;&#xa0;to extend political rights and power to the bourgeoisie 'possessing capital,'<br />
+&#xa0;&#xa0;people not of the aristocracy<br />
+&#xa0;&#xa0;&#xa0;who were literate<br />
+&#xa0;&#xa0;&#xa0;&#xa0;and had become wealthy through capitalist enterprises in trade, industry, and finance.<br />
+The years preceding and accompanying the French Revolution<br />
+&#xa0;included attempts at reform and revolt in the North American colonies,<br />
+&#xa0;&#xa0;Britain, the Dutch Republic, some Swiss cities, and the Austrian Netherlands.<br />
+The success of the American and French Revolutions<br />
+&#xa0;makes them the center of attention for this chapter.<br />
+Not all of the decadent privileges that characterized the old European regime<br />
+&#xa0;were destroyed in 1789, however.<br />
+The revolutionary upheaval of the era, especially in France,<br />
+&#xa0;did create new liberal and national political ideals,<br />
+&#xa0;&#xa0;summarized in the French revolutionary slogan, 'Liberty, Equality, Fraternity,'<br />
+&#xa0;&#xa0;&#xa0;that transformed France<br />
+&#xa0;&#xa0;&#xa0;&#xa0;and were then spread to other European countries through the conquests of Napoleon.<br />
+</p>
+</div>
+<div id="outline-container-org3fbcd35" class="outline-3">
+<h3 id="org3fbcd35">expression</h3>
+<div class="outline-text-3" id="text-org3fbcd35">
+<p>
+mob [mɑb]: n. a large noisy crowd, especially one that is angry and violent暴徒<br />
+armory [ˈɑrməri]: n. a place where weapons are stored军械库<br />
+ammunition [ˌæmjəˈnɪʃ(ə)n]: n. bullets, shells (↑shell) etc that are fired from guns军火, 弹药<br />
+glaring [ˈɡlerɪŋ]: adj. very bad and very noticeable SYN obvious刺眼的<br />
+despot [ˈdeˌspɑt] despotic: n.adj. someone, especially a ruler, who uses power in a cruel and unfair way SYN tyrant暴君<br />
+policy [ˈpɑləsi]: n. a way of doing something that has been officially agreed and chosen by a political party, a business, or another organization政策, 方针<br />
+garrison [ˈɡerɪs(ə)n]: n. a group of soldiers living in a town or ↑fort and defending it卫戍部队, 驻军<br />
+surrender [səˈrendər]: v. to say officially that you want to stop fighting, because you realize that you cannot win投降, 自首<br />
+victorious [vɪkˈtɔriəs]: adj. having won a victory, or ending in a victory获胜的, 胜利的<br />
+aloft [əˈlɔft]: adv. high up in the air在高处<br />
+regime [reɪˈʒim]: n. a government, especially one that was not elected fairly or that you disapprove of for some other reason政权<br />
+loyalty [ˈlɔɪəlti]: n. the quality of remaining faithful to your friends, principles, country etc忠诚, 忠心<br />
+democracy [dɪˈmɑkrəsi] democratic: n.adj. a system of government in which every citizen in the country can vote to elect its government officials民主政治, 民主主义<br />
+capital [ˈkæpɪt(ə)l]: n. money or property, especially when it is used to start a business or to produce more wealth资本<br />
+precede [prɪˈsid] preceding: v.adj. to happen or exist before something or someone, or to come before something else in a series ⇨ preceding先于<br />
+decadent [ˈdekədənt]: adj. having low moral standards and being more concerned with pleasure than serious matters颓废的<br />
+slogan [ˈsloʊɡən]: n. a short phrase that is easy to remember and is used in advertisements, or by politicians, organizations etc ⇨ catchphrase口号<br />
+fraternity [frəˈtɜrnəti]: n. the teaching/scientific/criminal etc fraternity all the people who work in a particular profession or share a particular interest博爱<br />
+</p>
+<hr />
+<p>
+be filled with sth.: 充满了某物<br />
+in the eyes of sb.: 在某人的眼中<br />
+be angered by sth./sb.: 被某人某事所激怒<br />
+beat sb. to death: 打死某人<br />
+cut off sth.: 切断某物<br />
+in triumph: 凯旋地<br />
+sb. holds that + &#x2026;: 某人认为+&#x2026;<br />
+Accordingly, + &#x2026;: 因此, +&#x2026;<br />
+extend rights and power to sb.: 赋予某人权利和权力<br />
+the center of attention: focus 注意力中心<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgd94ae84" class="outline-3">
+<h3 id="orgd94ae84">sentence</h3>
+<div class="outline-text-3" id="text-orgd94ae84">
+<p>
+mob [mɑb]: n. a large noisy crowd, especially one that is angry and violent暴徒<br />
+</p>
+<ul class="org-ul">
+<li>The king waked up with a start hearting noises from the mob at midnight.<br /></li>
+<li>A mob of thousands of busmen went on strike gathering around the Town Hall.<br /></li>
+<li>A mob of hundreds o feasants streamed toward the museum and held up the traffic.<br /></li>
+</ul>
+<p>
+armory [ˈɑrməri]: n. a place where weapons are stored军械库<br />
+</p>
+<ul class="org-ul">
+<li>There is a suspicious foreigner spying on the entrance of the armory.<br /></li>
+<li>Two theives were beaten to death breaking into the armory.<br /></li>
+<li>Waking up with a start, he realized to his horror that the armory was being defended by his inferiors.<br /></li>
+</ul>
+<p>
+ammunition [ˌæmjəˈnɪʃ(ə)n]: n. bullets, shells (↑shell) etc that are fired from guns军火, 弹药<br />
+</p>
+<ul class="org-ul">
+<li>There is no shortage of ammunition in the South Africa.<br /></li>
+<li>Short of ammunition, the general was killed in action.<br /></li>
+<li>Short of ammunition, the regiment asked the king to check the armory.<br /></li>
+</ul>
+<p>
+glaring [ˈɡlerɪŋ]: adj. very bad and very noticeable SYN obvious刺眼的<br />
+</p>
+<ul class="org-ul">
+<li>She could not bear the glaring tattoo on her face anymore.<br /></li>
+<li>If you noticed the glaring sign on the wall, you wouldn't get a ticket in our city.<br /></li>
+<li>The glaring scars on my face are reminding me of the injuries of the Black Death.<br /></li>
+</ul>
+<p>
+despot [ˈdeˌspɑt] despotic: n.adj. someone, especially a ruler, who uses power in a cruel and unfair way SYN tyrant暴君<br />
+</p>
+<ul class="org-ul">
+<li>The despot is reminiscing about his dead wife.<br /></li>
+<li>An eager is swirling around the despot who got very angry.<br /></li>
+<li>The despotic law was rejected by the colonies and they declared their independence from the empire.<br /></li>
+</ul>
+<p>
+policy [ˈpɑləsi]: n. a way of doing something that has been officially agreed and chosen by a political party, a business, or another organization政策, 方针<br />
+</p>
+<ul class="org-ul">
+<li>Obviously, the political policies and social changes led to the decrease brith rate in towns.<br /></li>
+<li>The emperor was eager to put forward the policies: the state sacrificed money for more lands.<br /></li>
+<li>These policies would turn upside down everything in my kingdom.<br /></li>
+</ul>
+<p>
+garrison [ˈɡerɪs(ə)n]: n. a group of soldiers living in a town or ↑fort and defending it卫戍部队, 驻军<br />
+</p>
+<ul class="org-ul">
+<li>The garrison short of ammunition is easy to be defeated.<br /></li>
+<li>The garrison joined in the war using their behaviors to swear their loyalty to the king.<br /></li>
+<li>The garrison proved undisciplined, for there were so many drunks when the king checked it.<br /></li>
+</ul>
+<p>
+surrender [səˈrendər]: v. to say officially that you want to stop fighting, because you realize that you cannot win投降, 自首<br />
+</p>
+<ul class="org-ul">
+<li>Even though the general surrenderred at the beginning of the battle, he had his head cut off by the mob.<br /></li>
+<li>It is no use surrenderring because you will meet your death at the hands of our enemies.<br /></li>
+<li>Portrayed as a gangster by his domestic political enemies, the warlike knight decided to betray his lord.<br /></li>
+</ul>
+<p>
+victorious [vɪkˈtɔriəs]: adj. having won a victory, or ending in a victory获胜的, 胜利的<br />
+</p>
+<ul class="org-ul">
+<li>The victorious group must have planned out everything to the last detail.<br /></li>
+<li>Equipped with new machine, the victorious group of explorers succeeded in finding buried treasures.<br /></li>
+<li>The war reported being victorious, which brought a smile to the despot in the celebration.<br /></li>
+</ul>
+<p>
+aloft [əˈlɔft]: adv. high up in the air在高处<br />
+</p>
+<ul class="org-ul">
+<li>The paw prints were snatched by my cat when I held her aloft.<br /></li>
+<li>The victorious team held their coach aloft to express their pleasure.<br /></li>
+<li>The balloon flying aloft can be a great threat to our aircraft.<br /></li>
+</ul>
+<p>
+regime [reɪˈʒim]: n. a government, especially one that was not elected fairly or that you disapprove of for some other reason政权<br />
+</p>
+<ul class="org-ul">
+<li>The brutal regime drew up a set of laws prohibiting the freedom of speech and press.<br /></li>
+<li>The brutal regime levied heavy taxes on those peasant who struggled for living.<br /></li>
+<li>The brutal regime was short-living, with the breakdown of people's trust in it.<br /></li>
+</ul>
+<p>
+loyalty [ˈlɔɪəlti]: n. the quality of remaining faithful to your friends, principles, country etc忠诚, 忠心<br />
+</p>
+<ul class="org-ul">
+<li>He didn't cheat on me when meeting the gorgeous widow, which proved his loyalty to our family.<br /></li>
+<li>To prove his loyalty to their love, he jumped from the 19th floor of their apartment.<br /></li>
+<li>The warlike knight swore his loyalty to his princess whom he resque from the revolt.<br /></li>
+</ul>
+<p>
+democracy [dɪˈmɑkrəsi] democratic: n.adj. a system of government in which every citizen in the country can vote to elect its government officials民主政治, 民主主义<br />
+</p>
+<ul class="org-ul">
+<li>For Catherine the Great, democratic reforms remained more a dream than a reality.<br /></li>
+<li>Diderot offered frankly her advice for a democratic program of political and financial reform.<br /></li>
+<li>Despite democratic policies inside, the king built armies to compete militarily with other European states.<br /></li>
+</ul>
+<p>
+capital [ˈkæpɪt(ə)l]: n. money or property, especially when it is used to start a business or to produce more wealth资本<br />
+</p>
+<ul class="org-ul">
+<li>Failing to attract the foreign capital, a great number of masses in this country lived in poverty.<br /></li>
+<li>The Prime Minister, refered to as the Magnificent, was expert attracting foreign capital.<br /></li>
+<li>The terrorist attack in Shenzhen repelled some foreign capital from China.<br /></li>
+</ul>
+<p>
+precede [prɪˈsid] preceding: v.adj. to happen or exist before something or someone, or to come before something else in a series ⇨ preceding先于<br />
+</p>
+<ul class="org-ul">
+<li>My departure preceded your arrival, so I have no chance to steal your ring at the party.<br /></li>
+<li>The preceding gift indeed gave me a surprise.<br /></li>
+<li>The preceding terrorist abduction in America inspired awe in people the world over.<br /></li>
+</ul>
+<p>
+decadent [ˈdekədənt]: adj. having low moral standards and being more concerned with pleasure than serious matters颓废的<br />
+</p>
+<ul class="org-ul">
+<li>Decandent I sat in a boat and did nothing at all.<br /></li>
+<li>She pointed out that the monarchs were so decadent that they couldn't defend our subject against these Asisa nomads.<br /></li>
+<li>On arriving his house, he was condemned as a decadent waste by his family.<br /></li>
+</ul>
+<p>
+slogan [ˈsloʊɡən]: n. a short phrase that is easy to remember and is used in advertisements, or by politicians, organizations etc ⇨ catchphrase口号<br />
+</p>
+<ul class="org-ul">
+<li>The former Prime Minister is fanatical about inventing various slogans.<br /></li>
+<li>The king was stunned by these terrifying slogans which heralded the emergence of another revolt.<br /></li>
+<li>He pointed out that the slogan constituted a slip of the tong.<br /></li>
+</ul>
+<p>
+fraternity [frəˈtɜrnəti]: n. the teaching/scientific/criminal etc fraternity all the people who work in a particular profession or share a particular interest博爱<br />
+</p>
+<ul class="org-ul">
+<li>The ideas of fraternity was spread through the French soldiers to the continent.<br /></li>
+<li>The family full of fraternity was accused of the participation of the rebellion.<br /></li>
+<li>The family full of fraternity is very strong in this village.<br /></li>
+</ul>
+<hr />
+<p>
+be filled with sth.: 充满了某物<br />
+</p>
+<ul class="org-ul">
+<li>Filled with wool, this kind of pillow became popular with peasants in China.<br /></li>
+<li>Filled with sand and stones, the parcel was supposed to be full of diamonds.<br /></li>
+<li>Filled with water, the car broke down in the highway.<br /></li>
+</ul>
+<p>
+in the eyes of sb.: 在某人的眼中<br />
+</p>
+<ul class="org-ul">
+<li>I might be one of the kindest human being in the eyes of my cat.<br /></li>
+<li>My cat is full of fascination in the eyes of my wife.<br /></li>
+<li>The stary dog must be gorgeous in the eyes of my wife who decided to give him a home.<br /></li>
+</ul>
+<p>
+be angered by sth./sb.: 被某人某事所激怒<br />
+</p>
+<ul class="org-ul">
+<li>Angered by decadent knights, the king established a law prohibiting drinking too much in the tavern.<br /></li>
+<li>Angered by the heresy, the pope crucified them and hung their head aloft on the wall.<br /></li>
+<li>Angered by my broken vase, I refused to feed him punctually.<br /></li>
+</ul>
+<p>
+beat sb. to death: 打死某人<br />
+</p>
+<ul class="org-ul">
+<li>The war knight claimed to have beaten a nomad to death.<br /></li>
+<li>Wusong was said to beat a tiger at large to death.<br /></li>
+<li>The king had to establish a law prohibiting beating anyone to death in public.<br /></li>
+</ul>
+<p>
+cut off sth.: 切断某物<br />
+</p>
+<ul class="org-ul">
+<li>Cutting off the rope while the worker was operating aloft, the woman was kept in prison for twenty year.<br /></li>
+<li>If you cut off the rope, we can't keep in touch anymore.<br /></li>
+<li>My grandfather found his pocket cut off and his money disappeared in the bus.<br /></li>
+</ul>
+<p>
+in triumph: 凯旋地<br />
+</p>
+<ul class="org-ul">
+<li>The general was allowed to dance with his wife in triumph in the celebration.<br /></li>
+<li>The owner of circus ride a baby elephant in triumph accompanied with a guard of honor of five pretty girls.<br /></li>
+<li>The king promised to bring his enemy's head in triumph.<br /></li>
+</ul>
+<p>
+sb. holds that + &#x2026;: 某人认为+&#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>I hold that you are not telling the truth.<br /></li>
+<li>I hold that the right answer is supposed to be A.<br /></li>
+<li>His wife held that she didn't get enough money to go on a vacation in Sanya.<br /></li>
+</ul>
+<p>
+Accordingly, + &#x2026;: 因此, +&#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>Accordingly, the worker trapped in the mine lost their hearts.<br /></li>
+<li>Accordingly, the ideas of the Enlightenment haven't capture the hearts of all Europeans.<br /></li>
+<li>Accordingly, the enlightened reform remained more a dream than a reality for the Great.<br /></li>
+</ul>
+<p>
+extend rights and power to sb.: 赋予某人权利和权力<br />
+</p>
+<ul class="org-ul">
+<li>The abbot's concern was to extend religious rights and power to monks in the monastery.<br /></li>
+<li>The pope held that the expansion of the monasteries extended secular rights and power to the papal authority.<br /></li>
+<li>The representative assembly extended political rights and power to the masses.<br /></li>
+</ul>
+<p>
+the center of attention: focus 注意力中心<br />
+</p>
+<ul class="org-ul">
+<li>A slip of the tong made the announcer the center of attention.<br /></li>
+<li>Though he trys to stay out of the limelight, his grandeur majesty always makes him the center of attention.<br /></li>
+<li>His flame of ambition makes his kingdom the center of attention.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgff3038c" class="outline-3">
+<h3 id="orgff3038c">sentence2</h3>
+<div class="outline-text-3" id="text-orgff3038c">
+<p>
+mob [mɑb]: n. a large noisy crowd, especially one that is angry and violent暴徒<br />
+</p>
+<ul class="org-ul">
+<li>The king woke up with a start when hearing noises from the mob at midnight.<br /></li>
+<li>A mob of thousands of busmen went on strike gathering around the Town Hall.<br /></li>
+<li>A mob of hundreds of peasants streamed toward the museum and held up the traffic.<br /></li>
+</ul>
+<p>
+armory [ˈɑrməri]: n. a place where weapons are stored军械库<br />
+</p>
+<ul class="org-ul">
+<li>There is a suspicious foreigner spying on the entrance of the armory.<br /></li>
+<li>Two thieves were beaten to death breaking into the armory.<br /></li>
+<li>Waking up with a start, he realized to his horror that the armory was being defended by his inferiors.<br /></li>
+</ul>
+<p>
+ammunition [ˌæmjəˈnɪʃ(ə)n]: n. bullets, shells (↑shell) etc that are fired from guns军火, 弹药<br />
+</p>
+<ul class="org-ul">
+<li>There is no shortage of ammunition in South Africa.<br /></li>
+<li>Short of ammunition, the general was killed in action.<br /></li>
+<li>Short of ammunition, the regiment asked the king to check the armory.<br /></li>
+</ul>
+<p>
+glaring [ˈɡlerɪŋ]: adj. very bad and very noticeable SYN obvious刺眼的<br />
+</p>
+<ul class="org-ul">
+<li>She could not bear the glaring tattoo on her face anymore.<br /></li>
+<li>If you noticed the glaring sign on the wall, you wouldn't get a ticket in our city.<br /></li>
+<li>The glaring scars on my face are reminding me of the injuries of the Black Death.<br /></li>
+</ul>
+<p>
+despot [ˈdeˌspɑt] despotic: n.adj. someone, especially a ruler, who uses power in a cruel and unfair way SYN tyrant暴君<br />
+</p>
+<ul class="org-ul">
+<li>The despot is reminiscing about his dead wife.<br /></li>
+<li>An eager was swirling around the despot who got very angry.<br /></li>
+<li>The despotic law was rejected by the colonies and they declared their independence from the empire.<br /></li>
+</ul>
+<p>
+policy [ˈpɑləsi]: n. a way of doing something that has been officially agreed and chosen by a political party, a business, or another organization政策, 方针<br />
+</p>
+<ul class="org-ul">
+<li>Obviously, the political policies and social changes led to a decrease birth rate in towns.<br /></li>
+<li>The emperor was eager to put forward the policies: the state sacrificed money for more lands.<br /></li>
+<li>These policies would turn upside down everything in my kingdom.<br /></li>
+</ul>
+<p>
+garrison [ˈɡerɪs(ə)n]: n. a group of soldiers living in a town or ↑fort and defending it卫戍部队, 驻军<br />
+</p>
+<ul class="org-ul">
+<li>The garrison short of ammunition is easy to be defeated.<br /></li>
+<li>The garrison joined in the war using their behaviors to swear their loyalty to the king.<br /></li>
+<li>The garrison proved undisciplined, for there were so many drunks when the king checked it.<br /></li>
+</ul>
+<p>
+surrender [səˈrendər]: v. to say officially that you want to stop fighting, because you realize that you cannot win投降, 自首<br />
+</p>
+<ul class="org-ul">
+<li>Even though the general surrendered at the beginning of the battle, he had his head cut off by the mob.<br /></li>
+<li>It is no use surrendering because you will meet your death at the hands of our enemies.<br /></li>
+<li>Portrayed as a gangster by his domestic political enemies, the warlike knight decided to betray his lord.<br /></li>
+</ul>
+<p>
+victorious [vɪkˈtɔriəs]: adj. having won a victory, or ending in a victory获胜的, 胜利的<br />
+</p>
+<ul class="org-ul">
+<li>The victorious group must have planned out everything to the last detail.<br /></li>
+<li>Equipped with the new machine, the victorious group of explorers succeeded in finding buried treasures.<br /></li>
+<li>The war reported being victorious, which brought a smile to the despot in the celebration.<br /></li>
+</ul>
+<p>
+aloft [əˈlɔft]: adv. high up in the air在高处<br />
+</p>
+<ul class="org-ul">
+<li>The paw prints were snatched by my cat when I held her aloft.<br /></li>
+<li>The victorious team held their coach aloft to express their pleasure.<br /></li>
+<li>The balloon flying aloft can be a great threat to our aircraft.<br /></li>
+</ul>
+<p>
+regime [reɪˈʒim]: n. a government, especially one that was not elected fairly or that you disapprove of for some other reason政权<br />
+</p>
+<ul class="org-ul">
+<li>The brutal regime drew up a set of laws prohibiting the freedom of speech and press.<br /></li>
+<li>The brutal regime levied heavy taxes on those peasants who struggled for life.<br /></li>
+<li>The brutal regime was short-lived, with the breakdown of people's trust in it.<br /></li>
+</ul>
+<p>
+loyalty [ˈlɔɪəlti]: n. the quality of remaining faithful to your friends, principles, country etc忠诚, 忠心<br />
+</p>
+<ul class="org-ul">
+<li>He didn't cheat on me when meeting the gorgeous widow, which proved his loyalty to our family.<br /></li>
+<li>To prove his loyalty to their love, he jumped from the 19th floor of their apartment.<br /></li>
+<li>The warlike knight swore his loyalty to his princess whom he rescued from the revolt.<br /></li>
+</ul>
+<p>
+democracy [dɪˈmɑkrəsi] democratic: n.adj. a system of government in which every citizen in the country can vote to elect its government officials民主政治, 民主主义<br />
+</p>
+<ul class="org-ul">
+<li>For Catherine the Great, democratic reforms remained more a dream than a reality.<br /></li>
+<li>Diderot offered frankly her advice for a democratic program of political and financial reform.<br /></li>
+<li>Despite democratic policies inside, the king built armies to compete militarily with other European states.<br /></li>
+</ul>
+<p>
+capital [ˈkæpɪt(ə)l]: n. money or property, especially when it is used to start a business or to produce more wealth资本<br />
+</p>
+<ul class="org-ul">
+<li>Failing to attract foreign capital, a great number of masses in this country lived in poverty.<br /></li>
+<li>The Prime Minister, referred to as the Magnificent, was an expert at attracting foreign capital.<br /></li>
+<li>The terrorist attack in Shenzhen repelled some foreign capital from China.<br /></li>
+</ul>
+<p>
+precede [prɪˈsid] preceding: v.adj. to happen or exist before something or someone, or to come before something else in a series ⇨ preceding先于<br />
+</p>
+<ul class="org-ul">
+<li>My departure preceded your arrival, so I have no chance to steal your ring at the party.<br /></li>
+<li>The preceding gift indeed gave me a surprise.<br /></li>
+<li>The preceding terrorist abduction in America inspired awe in people the world over.<br /></li>
+</ul>
+<p>
+decadent [ˈdekədənt]: adj. having low moral standards and being more concerned with pleasure than serious matters颓废的<br />
+</p>
+<ul class="org-ul">
+<li>Decadent those days I sat in a boat and did nothing at all.<br /></li>
+<li>She pointed out that the monarchs were so decadent that they couldn't defend our subject against these Asisa nomads.<br /></li>
+<li>On arriving at his house, he was condemned as a decadent waste by his family.<br /></li>
+</ul>
+<p>
+slogan [ˈsloʊɡən]: n. a short phrase that is easy to remember and is used in advertisements, or by politicians, organizations etc ⇨ catchphrase口号<br />
+</p>
+<ul class="org-ul">
+<li>The former Prime Minister is fanatical about inventing various slogans.<br /></li>
+<li>The king was stunned by these terrifying slogans which heralded the emergence of another revolt.<br /></li>
+<li>He pointed out that the slogan constituted a slip of the tongue.<br /></li>
+</ul>
+<p>
+fraternity [frəˈtɜrnəti]: n. the teaching/scientific/criminal etc fraternity all the people who work in a particular profession or share a particular interest博爱<br />
+</p>
+<ul class="org-ul">
+<li>The idea of fraternity was spread through the French soldiers to the continent.<br /></li>
+<li>The family full of fraternity was accused of participating in the rebellion.<br /></li>
+<li>The family full of fraternity is very strong in this village.<br /></li>
+</ul>
+<hr />
+<p>
+be filled with sth.: 充满了某物<br />
+</p>
+<ul class="org-ul">
+<li>Filled with wool, this kind of pillow became popular with peasants in China.<br /></li>
+<li>Filled with sand and stones, the parcel was supposed to be full of diamonds.<br /></li>
+<li>Filled with water, the car broke down on the highway.<br /></li>
+</ul>
+<p>
+in the eyes of sb.: 在某人的眼中<br />
+</p>
+<ul class="org-ul">
+<li>I might be one of the kindest human beings in the eyes of my cat.<br /></li>
+<li>My cat is full of fascination in the eyes of my wife.<br /></li>
+<li>The stray dog must be gorgeous in the eyes of my wife who decided to give him a home.<br /></li>
+</ul>
+<p>
+be angered by sth./sb.: 被某人某事所激怒<br />
+</p>
+<ul class="org-ul">
+<li>Angered by decadent knights, the king established a law prohibiting drinking too much in the tavern.<br /></li>
+<li>Angered by the heresy, the pope crucified them and hung their head aloft on the wall.<br /></li>
+<li>Angered by my broken vase, I refused to feed him punctually.<br /></li>
+</ul>
+<p>
+beat sb. to death: 打死某人<br />
+</p>
+<ul class="org-ul">
+<li>The war knight claimed to have beaten a nomad to death.<br /></li>
+<li>Wusong was said to beat a tiger at large to death.<br /></li>
+<li>The king had to establish a law prohibiting beating anyone to death in public.<br /></li>
+</ul>
+<p>
+cut off sth.: 切断某物<br />
+</p>
+<ul class="org-ul">
+<li>Cutting off the rope while the worker was operating aloft, the woman was kept in prison for twenty years.<br /></li>
+<li>If you cut off the rope, we can't keep in touch anymore.<br /></li>
+<li>My grandfather found his pocket cut off and his money disappeared on the bus.<br /></li>
+</ul>
+<p>
+in triumph: 凯旋地<br />
+</p>
+<ul class="org-ul">
+<li>The general was allowed to dance with his wife in triumph in the celebration.<br /></li>
+<li>The owner of the circus rode a baby elephant in triumph accompanied by a guard of honor of five pretty girls.<br /></li>
+<li>The king promised to bring his enemy's head in triumph.<br /></li>
+</ul>
+<p>
+sb. holds that + &#x2026;: 某人认为+&#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>I hold that you are not telling the truth.<br /></li>
+<li>I hold that the right answer is supposed to be A.<br /></li>
+<li>His wife held that she didn't get enough money to go on a vacation in Sanya.<br /></li>
+</ul>
+<p>
+Accordingly, + &#x2026;: 因此, +&#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>Accordingly, the worker trapped in the mine lost their hearts.<br /></li>
+<li>Accordingly, the ideas of the Enlightenment haven't captured the hearts and minds of all Europeans.<br /></li>
+<li>Accordingly, the enlightened reform remained more a dream than a reality for the Great.<br /></li>
+</ul>
+<p>
+extend rights and power to sb.: 赋予某人权利和权力<br />
+</p>
+<ul class="org-ul">
+<li>The abbot's concern was to extend religious rights and power to monks in the monastery.<br /></li>
+<li>The pope held that the expansion of the monasteries extended secular rights and power to the papal authority.<br /></li>
+<li>The representative assembly extended political rights and power to the masses.<br /></li>
+</ul>
+<p>
+the center of attention: focus 注意力中心<br />
+</p>
+<ul class="org-ul">
+<li>A slip of the tongue made the announcer the center of attention.<br /></li>
+<li>Though he tries to stay out of the limelight, his grandeur and majesty always make him the center of attention.<br /></li>
+<li>His flame of ambition makes his kingdom the center of attention.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org4cb07fb" class="outline-3">
+<h3 id="org4cb07fb">summary</h3>
+<div class="outline-text-3" id="text-org4cb07fb">
+<p>
+On July 14, 1789, a Parisian mob streamed toward the Bastille,<br />
+	a royal armory filled with arms and ammunition<br />
+		which was defended by the marquis de Launary.<br />
+Angered by the loss of ninety-eight of their members,<br />
+	the victorious mob beat the marquis to death,<br />
+		and carried his head aloft in triumph through the streets of Paris.<br />
+King Louis XVI was stunned by the fall of the Bastille<br />
+	and the duke thought it was a revolution.<br />
+The French Revolution has been portrayed as<br />
+	the major turning point in European political and social history<br />
+	when the old regimed was replaced by a new orer based on invidual rights,<br />
+		representative institutions,<br />
+		and loyalty to the nation rather than the monarch.<br />
+Though the pharse 'democratic revolution'<br />
+	has been used to refer to upheavals of the late eighteenth and ninetennth centuries,<br />
+	it is more appropriate to speak of a liberal movement<br />
+		to extend political rights and power to the bourgeoisie.<br />
+The revolutionary upheavl of the era, especially in Fance,<br />
+	created new liberal and national political ideals,<br />
+		summaried in the French revolutionary slogan, 'Liberty, Equality, Fraternity'.<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org6636aea" class="outline-3">
+<h3 id="org6636aea">summary2</h3>
+<div class="outline-text-3" id="text-org6636aea">
+<p>
+On July 14, 1789, a Parisian mob streamed toward the Bastille,<br />
+	a royal armory filled with arms and ammunition<br />
+		which was defended by the Marquis de Launary.<br />
+Angered by the loss of ninety-eight of their members,<br />
+	the victorious mob beat the Marquis to death,<br />
+		and carried his head aloft in triumph through the streets of Paris.<br />
+King Louis XVI was stunned by the fall of the Bastille<br />
+	and the duke thought it was a revolution.<br />
+The French Revolution has been portrayed as<br />
+	the major turning point in European political and social history<br />
+	when the old regime was replaced by a new order based on individual rights,<br />
+		representative institutions,<br />
+		and loyalty to the nation rather than the monarch.<br />
+Though the phrase 'democratic revolution'<br />
+	has been used to refer to upheavals of the late eighteenth and nineteenth centuries,<br />
+	it is more appropriate to speak of a liberal movement<br />
+		to extend political rights and power to the bourgeoisie.<br />
+The revolutionary upheaval of the era, especially in France,<br />
+	created new liberal and national political ideals,<br />
+		summarized in the French revolutionary slogan, 'Liberty, Equality, Fraternity'.<br />
+</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

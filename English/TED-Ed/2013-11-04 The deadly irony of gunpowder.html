@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-01-09 Thu 23:07 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+
+<div id="outline-container-orgdfb9ed7" class="outline-2">
+<h2 id="orgdfb9ed7">2013-11-04 The deadly irony of gunpowder</h2>
+<div class="outline-text-2" id="text-orgdfb9ed7">
+<p class="verse">
+Everybody loves fireworks &#x2013; the lights, the colors, and, of course, the big boom.<br />
+But the history of fireworks isn't all hugs and celebrations.<br />
+Long before epic fireworks displays,<br />
+&#xa0;chemists in China invented the key ingredient that propels those bright lights into the sky.<br />
+That invention was what we now call gunpowder.<br />
+<br />
+Our story begins back in ancient China in the mid-ninth century<br />
+&#xa0;where early Chinese alchemists were trying to create a potion for immortality.<br />
+Instead, what they created was a flammable powder that burned down many of their homes.<br />
+They quickly realized that this black powder,<br />
+&#xa0;&#xa0;which they called fire medicine,<br />
+&#xa0;was precisely the opposite of something that would make you live forever.<br />
+In these early days, the Chinese hadn't yet figured out how to make the powder explode;<br />
+&#xa0;it was simply very flammable,<br />
+&#xa0;&#xa0;and their armies used it to make flaming arrows and even a flamethrower.<br />
+But once they figured out the right proportions of ingredients to create a blast,<br />
+&#xa0;they began using the powder even more,<br />
+&#xa0;&#xa0;creating fireworks to keep evil spirits away<br />
+&#xa0;&#xa0;&#xa0;&#xa0;and bombs to defend themselves against Mongol invaders.<br />
+It was these Mongols,<br />
+&#xa0;most likely, who spread the invention of gunpowder across the world.<br />
+After fielding Chinese attacks,<br />
+&#xa0;they learned how to produce the powder themselves<br />
+&#xa0;&#xa0;and brought it with them on their conquests in Persia and India.<br />
+William of Rubruck, a European ambassador to the Mongols,<br />
+&#xa0;was likely responsible for bringing gunpowder back to Europe around 1254.<br />
+From there, engineers and military inventors created all kinds of destructive weapons.<br />
+From bombs to guns to cannons,<br />
+&#xa0;gunpowder left its mark on the world in some pretty terrible ways,<br />
+&#xa0;&#xa0;in contrast to the beautiful marks it can leave in the air.<br />
+<br />
+So, how does black powder propel fireworks into the sky?<br />
+You might have seen old Westerns or cartoons<br />
+&#xa0;where a trail of gunpowder is lit and it leads to a large and obviously explosive barrel.<br />
+Once the fire gets to the barrel, a large boom occurs.<br />
+But why doesn't the trail itself explode?<br />
+The reason is that burning the powder releases energy and gases.<br />
+While the trail is burning, these are easily released into the surrounding air.<br />
+But when the gunpowder is contained within the barrel,<br />
+&#xa0;the energy and gases cannot easily escape and build up until BOOM!<br />
+Firework canisters provide a single, upward-facing outlet to channel this explosive energy.<br />
+The wick ignites the gunpowder and the energy takes the easiest exit from the canister,<br />
+&#xa0;launching the firework high into the sky.<br />
+The flame then makes its way through the firework's encasing<br />
+&#xa0;and the same reaction occurs high above our heads.<br />
+So, while the Chinese alchemists never found the compound for eternal life,<br />
+&#xa0;they did find something that would go on to shape all of civilization,<br />
+&#xa0;&#xa0;something that has caused many tragic moments in human history,<br />
+&#xa0;&#xa0;&#xa0;and yet still gives us hope when we look up in celebration at the colorful night sky.<br />
+</p>
+</div>
+<div id="outline-container-orgd451062" class="outline-3">
+<h3 id="orgd451062">expression</h3>
+<div class="outline-text-3" id="text-orgd451062">
+<p>
+epic [ˈepɪk]: adj. very large and impressive壮丽的, 大规模的<br />
+gunpowder [ˈɡʌnˌpaʊdər]: n. an explosive substance used in bombs and fireworks黑色火药<br />
+alchemist [ˈælkəmɪst]: n. a science studied in the Middle Ages, that involved trying to change ordinary metals into gold炼金术士<br />
+flame [fleɪm] flammable [ˈflæməb(ə)l] : n.adj. literary to burn brightly火焰<br />
+cannon [ˈkænən]: n. a large heavy powerful gun that was used in the past to fire heavy metal balls 加农炮<br />
+barrel [ˈberəl]: n. a large curved container with a flat top and bottom, made of wood or metal, and used for storing beer, wine etc桶<br />
+canister [ˈkænɪstər]: n. a metal container for keeping something in (放咖啡, 茶叶, 烟等的)小罐, 筒<br />
+channel [ˈtʃæn(ə)l]: v. to control or direct people or things to a particular place, work, situation etc引导, 开导<br />
+wick [wɪk]: n. the piece of thread in a candle, that burns when you light it灯芯<br />
+ignite [ɪɡˈnaɪt]: v. formal to start burning, or to make something start burning 点火, 点燃<br />
+compound [ˈkɑmˌpaʊnd]: n. a substance containing atoms from two or more elements 混合物<br />
+shape [ʃeɪp]: v. to influence something such as a belief, opinion etc and make it develop in a particular way形成, 影响<br />
+upward-facing [ˈʌpwərd-feɪsɪŋ]: adj. 面向上<br />
+</p>
+<hr />
+<p>
+fireworks displays: 烟火展<br />
+propel sth. into sp.: to move, drive, or push something forward推动某事到某地<br />
+begin back: to begin to return somewhere倒回<br />
+a potion for immortality: 永生药<br />
+the opposite of sth.: 某物的反面<br />
+In these early days: 在早些年代<br />
+the right proportions of ingredients: 配料的正确比例<br />
+evil spirits: 恶灵<br />
+defend sb. against sth./sb.: 保卫某人免于&#x2026;<br />
+the invention of sth.: 某物的发明<br />
+field sb's attacks: 回击某人的攻击<br />
+on sb's conquests in sp.: 在某人某地的征服中<br />
+bringing sth. back to sp.: 把某物带回某地<br />
+From there: 从这里<br />
+left sb's mark on sth.: to have an effect that changes someone or something, usually in a bad way在某事上留下某人的印记<br />
+in contrast to: it is very different from it与……相反<br />
+be contained within/in: 包含在…之内<br />
+build up: accumulate积累<br />
+take an exit from sp.: 从&#x2026;出去<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgd9f0027" class="outline-3">
+<h3 id="orgd9f0027">sentences</h3>
+<div class="outline-text-3" id="text-orgd9f0027">
+<p>
+fireworks displays:<br />
+</p>
+<ul class="org-ul">
+<li>The authorities informed us that there would be some epic fireworks displays.<br /></li>
+<li>There used to be a large number of fireworks displays in the vicinities of Hangzhou.<br /></li>
+<li>The authorities decided to make an epic fireworks display to keep away evil spirits.<br /></li>
+</ul>
+<p>
+propel sth. into sp.: to move, drive, or push something forward<br />
+</p>
+<ul class="org-ul">
+<li>He managed to propel these candles into the sky.<br /></li>
+<li>Are you suggesting that we propel these candles into the sky?<br /></li>
+<li>I must tell you the truth that we propelled these candles into the sky last night.<br /></li>
+</ul>
+<p>
+begin back: to begin to return somewhere<br />
+</p>
+<ul class="org-ul">
+<li>Our story must begin back at a village fair.<br /></li>
+<li>Our story may begin back at a village fair.<br /></li>
+<li>Our story began back in ancient Greece when it was being invaded by the Hittites.<br /></li>
+</ul>
+<p>
+a potion for immortality: 永生药<br />
+</p>
+<ul class="org-ul">
+<li>It is said that an alchemist contributed to a potion for immortality.<br /></li>
+<li>He has a lot of patience to pursue a potion for immortality.<br /></li>
+<li>Who encouraged you to make a potion for immortality?<br /></li>
+</ul>
+<p>
+burn down: to destroy something with fire, or to be destroyed in this way<br />
+</p>
+<ul class="org-ul">
+<li>Honey, why do you get into such a mess? Our house has been just burnt down.<br /></li>
+<li>If the palace hadn't been burnt down, we would have had a lot of evidence of our history.<br /></li>
+<li>I have memories of the house which was burnt down last year.<br /></li>
+</ul>
+<p>
+the opposite of sth.:<br />
+</p>
+<ul class="org-ul">
+<li>Giving up practices is the opposite of something that makes you pass the test.<br /></li>
+<li>Quarrelling bitterly is the opposite of something that settles the argument.<br /></li>
+<li>Complaint is the opposite of something that gets you away from trouble.<br /></li>
+</ul>
+<p>
+In these early days:<br />
+</p>
+<ul class="org-ul">
+<li>In these early days, these merchants from Persia had to pay protection money.<br /></li>
+<li>In these early days, if you didn't pay protection money, you would soon be put out of business.<br /></li>
+<li>In these early days, he devoted himself to gardening.<br /></li>
+</ul>
+<p>
+the right proportions of ingredients:<br />
+</p>
+<ul class="org-ul">
+<li>Once they figure out the right proportions of ingredients,<br />
+they will invade us and devastate our civilization.<br /></li>
+<li>People in Florence gave him a state funeral in memory of the alchemist<br />
+who figured out the right proportions of ingredients of the gunpowder.<br /></li>
+<li>He dedicated himself to the right proportions of ingredients of the gunpowder.<br /></li>
+</ul>
+<p>
+evil spirits:<br />
+</p>
+<ul class="org-ul">
+<li>It's no use pretending that you are an evil spirit.<br /></li>
+<li>The vicar pointed out that these saying evil spirits are a source of income.<br /></li>
+<li>The Buddhist non has had a bad reputation for raising evil spirits.<br /></li>
+</ul>
+<p>
+defend sb. against sb.:<br />
+</p>
+<ul class="org-ul">
+<li>The soldiers from China succeeded in defending the people in South Korea against the Americans.<br /></li>
+<li>It is a blessing that our soldiers defend themselves against the American invaders.<br /></li>
+<li>These young men are eager to defend our country against these invaders.<br /></li>
+</ul>
+<p>
+the invention of sth.:<br />
+</p>
+<ul class="org-ul">
+<li>The invention of gunpowder may have a bad influence on us.<br /></li>
+<li>He prides himself on the invention of the lamp.<br /></li>
+<li>The invention of the map exerts a positive influence on us.<br /></li>
+</ul>
+<p>
+field sb's attacks:<br />
+</p>
+<ul class="org-ul">
+<li>The Mongols managed to field China's attacks.<br /></li>
+<li>After fielding China's attacks, they bought a lot of gunpowder from China.<br /></li>
+<li>I anticipate that we will not be able to field China's attacks.<br /></li>
+</ul>
+<p>
+on sb's conquests in sp.:<br />
+</p>
+<ul class="org-ul">
+<li>He became an expert at putting out fires on his conquests in China.<br /></li>
+<li>He was infected with smallpox on his conquests in China.<br /></li>
+<li>He must have been infected with smallpox on his conquests in China.<br /></li>
+</ul>
+<p>
+bring sth. back to sp.:<br />
+</p>
+<ul class="org-ul">
+<li>I asked my grandfather to bring some meals back home.<br /></li>
+<li>Sir, you can't bring our chairs back to your house.<br /></li>
+<li>I really appreciate that you brought my skirt back to our school.<br /></li>
+</ul>
+<p>
+From there:<br />
+</p>
+<ul class="org-ul">
+<li>From there, they enjoyed studying in the school.<br /></li>
+<li>From there, he played piano every day.<br /></li>
+<li>From there, China has surrendered this island to England.<br /></li>
+</ul>
+<p>
+left sb's mark on sth.: to have an effect that changes someone or something, usually in a bad way<br />
+</p>
+<ul class="org-ul">
+<li>The invention of gunpowder left its mark on the history of China.<br /></li>
+<li>The headmaster who dedicated himself to teaching left his mark on the development of the school.<br /></li>
+<li>The loss of the Titanic left its mark on the history of voyages.<br /></li>
+</ul>
+<p>
+in contrast to sth.: it is very different from it<br />
+</p>
+<ul class="org-ul">
+<li>He is in contrast to his sister.<br /></li>
+<li>In contrast to his father, aunts and uncles provided a regular supply of pocket money.<br /></li>
+<li>In contrast to sweets, he bought himself fifty dollars worth of trouble.<br /></li>
+</ul>
+<p>
+be contained within/in:<br />
+</p>
+<ul class="org-ul">
+<li>The soap and butter should have been contained in the box.<br /></li>
+<li>The soap and butter needn't have been contained in the box.<br /></li>
+<li>If the soap had been contained in the box, we wouldn't have left it at home.<br /></li>
+</ul>
+<p>
+build up: accumulate<br />
+</p>
+<ul class="org-ul">
+<li>My anger had built up until she apologized to me.<br /></li>
+<li>His knowledge began to build up so he passed the test.<br /></li>
+<li>My pocket money builds up so that I can buy a PlayStation in the future.<br /></li>
+</ul>
+<p>
+take an exit from sp.:<br />
+</p>
+<ul class="org-ul">
+<li>I must take an exit from the office now.<br /></li>
+<li>She insists on taking an exit from the office now.<br /></li>
+<li>You shouldn't prevent me from taking an exit from the house.<br /></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

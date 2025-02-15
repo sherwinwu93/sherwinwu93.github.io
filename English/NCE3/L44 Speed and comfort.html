@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-09-28 Sat 22:17 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-orgd414d4d" class="outline-2">
+<h2 id="orgd414d4d">Lesson 44 Speed and comfort</h2>
+<div class="outline-text-2" id="text-orgd414d4d">
+<p class="verse">
+Which type of transport does the writer prefer, do you think?<br />
+<br />
+People travelling long distances frequently have to decide<br />
+&#xa0;whether they would prefer to go by land, sea, or air.<br />
+Hardly anyone can positively enjoy sitting in a train for more than a few hours.<br />
+Train compartments soon get cramped and stuffy.<br />
+It is almost impossible to take your mind off the journey.<br />
+Reading is only a partial solution,<br />
+&#xa0;for the monotonous rhythm of the wheels clicking on the rails soon lulls you to sleep.<br />
+During the day, sleep comes in snatches.<br />
+At night, when you really wish to go to sleep,<br />
+&#xa0;you rarely manage to do so.<br />
+If you are lucky enough to get a sleeper,<br />
+&#xa0;you spend half the night staring at the small blue light in the ceiling,<br />
+&#xa0;&#xa0;or fumbling to find your ticket for inspection.<br />
+Inevitably you arrive at your destination almost exhausted.<br />
+Long car journeys are even less pleasant,<br />
+&#xa0;for it is quite impossible even to read.<br />
+On motorways you can, at least,<br />
+&#xa0;travel fairly safely at high sppeeds, but more often than not,<br />
+&#xa0;the greater part of the journey is spent on roads with few service stations and too much traffic.<br />
+By comparison, ferry trips or cruises offer a great variety of civilized comforts.<br />
+You can stretch your legs on the spacious desks, play games, meet interesting people<br />
+&#xa0;and enjoy good food &#x2013; always assuming, of course, that the sea is calm.<br />
+If it is not, and you are likely to get seasick, no form of transport could be worse.<br />
+Even if you travel in ideal weather, sea journeys take a long time.<br />
+Relatively few people are prepared to sacrifice holiday time for the pleasure of travelling by sea.<br />
+<br />
+Aeroplanes have the reputation of being dangerous<br />
+&#xa0;and even hardened travellers are intimidated by them.<br />
+They also have the disadvantage of being an expensive form of transport.<br />
+But nothing can match them for speed and comfort.<br />
+Travelling at a height of 30,000 feet, far above the clouds,<br />
+&#xa0;and at over 500 miles an hours is an exhilarating experience.<br />
+You do not have to devise ways of taking your mind off the journey,<br />
+&#xa0;for an aeroplane gets you to your destination rapidly.<br />
+For a few hours, you settle back in a deep armchair to enjoy the flight.<br />
+The real escapist can watch a film and sip champagne on some services.<br />
+But even when such refinements are not available,<br />
+&#xa0;there is plenty to keep you occupied.<br />
+An aeroplane offers you an unusual and breathtakig view of the world.<br />
+You soar effortlessly over high mountains and deep valleys.<br />
+You really see the shape of the land.<br />
+If the landscape is hidden from view,<br />
+&#xa0;you can enjoy the extraordinary sight of unbroken cloud plains<br />
+&#xa0;&#xa0;that strethc out for miles before you,<br />
+&#xa0;while the sun shines brilliantly in a clear sky.<br />
+The journey is so smooth that there is nothing to prevent you from reading or sleeping.<br />
+However you decide to speed your time, one thing is certain:<br />
+&#xa0;you will arrive at your destination fresh and uncrumpled.<br />
+You will not have to spend the next few days recovering from a long and arduous journey.<br />
+</p>
+</div>
+
+<div id="outline-container-org7a99c93" class="outline-3">
+<h3 id="org7a99c93">words</h3>
+<div class="outline-text-3" id="text-org7a99c93">
+<p>
+positively [ˈpɑːzətɪvli] adv.绝对地,完全地<br />
+compartment [kəmˈpɑːrtmənt] n.列车客车车厢内的分隔间(或单间)<br />
+cramped [kræmpt] adj.窄小的<br />
+stuffy [ˈstʌfi] adj.憋气的,闷气的<br />
+monotonous [məˈnɑːtənəs] adj.枯燥的,乏味的,单调的<br />
+rhythm [ˈrɪðəm] n.有节奏的运用<br />
+click [klɪk] v.发出咔嗒声<br />
+lull [lʌl] v.催人欲睡<br />
+snatch [snætʃ] n.短时,片刻<br />
+sleeper [ˈsliːpər] n.卧铺<br />
+fumble [ˈfʌmb(ə)l] v.乱摸,摸索<br />
+inspection [ɪnˈspekʃ(ə)n] n.检查<br />
+inevitably [ɪnˈevɪtəbli] adv.必然地<br />
+destination [ˌdestɪˈneɪʃ(ə)n] n.目的地<br />
+exhaust [ɪɡˈzɔːst] v.使精疲力尽<br />
+motorway [ˈmoʊtərweɪ] n.快车道<br />
+ferry [ˈferi] n.渡船<br />
+cruise [kruːz] n.巡游船<br />
+civilize [ˈsɪvəlaɪz] v.使文明<br />
+spacious [ˈspeɪʃəs] adj.宽敞的<br />
+seasick [ˈsiːsɪk] adj.晕船的<br />
+intimidate [ɪnˈtɪmɪdeɪt] v.恐吓<br />
+disadvantage [ˌdɪsədˈvæntɪdʒ] n.短处<br />
+exhilarating [ɪɡˈzɪləreɪtɪŋ] v.使人高兴的<br />
+escapist [ɪˈskeɪpɪst] n.逍遥者<br />
+sip [sɪp] v.嘬<br />
+champagne [ʃæmˈpeɪn] n.香槟酒<br />
+refinement [rɪˈfaɪnmənt] n.精心的安排<br />
+breathtaking [ˈbreθteɪkɪŋ] adj.激动人心的;不寻常的<br />
+soar [sɔːr] v.高飞<br />
+effortlessly [ˈefərtləsli] adv.不费力地<br />
+landscape [ˈlændskeɪp] n.景色<br />
+fresh [freʃ] adj.精神饱满的<br />
+uncrumpled [ʌn'krʌmpld] adj.没有垮下来<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgd6981db" class="outline-3">
+<h3 id="orgd6981db">单词造句</h3>
+</div>
+<div id="outline-container-orgd0d6bfa" class="outline-3">
+<h3 id="orgd0d6bfa">反复听电影片段直到懂关键句</h3>
+</div>
+<div id="outline-container-orgbd8004c" class="outline-3">
+<h3 id="orgbd8004c">复习二册语法(笔记或视频) &amp; 红皮书</h3>
+</div>
+<div id="outline-container-org10b307b" class="outline-3">
+<h3 id="org10b307b">习惯用法造句</h3>
+</div>
+<div id="outline-container-org92dd25e" class="outline-3">
+<h3 id="org92dd25e">跟读 50遍</h3>
+</div>
+<div id="outline-container-orgebbed97" class="outline-3">
+<h3 id="orgebbed97">Comprehension 反复练习</h3>
+</div>
+<div id="outline-container-org2fbe7e3" class="outline-3">
+<h3 id="org2fbe7e3">Ask me if 写+读</h3>
+</div>
+<div id="outline-container-org350df97" class="outline-3">
+<h3 id="org350df97">摘要写作 写 &amp; 对答案</h3>
+</div>
+<div id="outline-container-orgd44d374" class="outline-3">
+<h3 id="orgd44d374">tell the story 口语复述</h3>
+</div>
+<div id="outline-container-org77ba56d" class="outline-3">
+<h3 id="org77ba56d">composition 阅读 或 写作</h3>
+</div>
+<div id="outline-container-org3351535" class="outline-3">
+<h3 id="org3351535">Topics for discussion</h3>
+</div>
+</div>
+</div>
+</body>
+</html>

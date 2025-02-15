@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2023-10-13 Fri 15:17 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="lenovo" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orga826f86">task9-prereading 泛读实战2</a>
+<ul>
+<li><a href="#org0a88d79">1. task8 课前作业再来(体验很重要，有1章就有30章)</a></li>
+<li><a href="#org0dd827f">2. 制定阅读+听力的学习计划 (具体;6个月内;挑战性)</a></li>
+<li><a href="#orga984654">3. 回答如下问题(汉语) : 涉及您不适或者隐私的部分可以不发出来。</a></li>
+<li><a href="#org59481e7">4. 泛读chapter 13 MOTIVATION,TEACHING,ANDLEARNING 中第二部分Achievement Processes ，第四部分选读部分。</a></li>
+<li><a href="#org943dd48">5. 练习skimming/scanning/summary/段首尾/Features/1.5h/阅读速度。</a></li>
+<li><a href="#orgff1ee40">6. 记录下实战中的所有问题或困惑。</a></li>
+<li><a href="#org2422538">7. 阅读完请判断某水1中教育模式的利弊。</a></li>
+<li><a href="#org6d4dcb1">8. [选修] 按照今天提供的申请学校的思路，去查找目标学校，学完立刻实践，否则容易忘。</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orga826f86" class="outline-2">
+<h2 id="orga826f86">task9-prereading 泛读实战2</h2>
+<div class="outline-text-2" id="text-orga826f86">
+<p>
+材料: Santrock,J.W.(2017). Educational psychology 6th. McGraw-Hill Education.<br />
+</p>
+<ol class="org-ol">
+<li>task8 课前作业再来(体验很重要，有1章就有30章)<br /></li>
+<li>制定阅读+听力的学习计划 (具体;6个月内;挑战性)<br /></li>
+<li>回答如下问题(汉语) : 涉及您不适或者隐私的部分可以不发出来。<br />
+<ul class="org-ul">
+<li>What's most important to you in your life?<br /></li>
+<li>Why do you care about those things?<br /></li>
+<li>Do you have any long-term goals?<br /></li>
+<li>Why are these goals important to you?<br /></li>
+<li>What does it mean to have a good life?<br /></li>
+<li>What does it mean to be a good person? If you were looking back on your life now, how would you like to be remembered?<br /></li>
+<li>以上这些问题与雅思托福考试的关系? 与提升英语水平的关系?<br /></li>
+</ul></li>
+<li>泛读chapter 13 MOTIVATION,TEACHING,ANDLEARNING 中第二部分Achievement Processes ，第四部分选读部分。<br />
+算算大概等于做了几套真题阅读?<br />
+先完成再完美，不要记录单词含义，不要摘抄习惯用法，不要造句。<br /></li>
+<li>练习skimming/scanning/summary/段首尾/Features/1.5h/阅读速度。<br /></li>
+<li>记录下实战中的所有问题或困惑。<br /></li>
+<li>阅读完请判断某水1中教育模式的利弊。<br /></li>
+<li>[选修] 按照今天提供的申请学校的思路，去查找目标学校，学完立刻实践，否则容易忘。<br /></li>
+</ol>
+</div>
+
+
+<div id="outline-container-org0a88d79" class="outline-3">
+<h3 id="org0a88d79">1. task8 课前作业再来(体验很重要，有1章就有30章)</h3>
+</div>
+<div id="outline-container-org0dd827f" class="outline-3">
+<h3 id="org0dd827f">2. 制定阅读+听力的学习计划 (具体;6个月内;挑战性)</h3>
+<div class="outline-text-3" id="text-org0dd827f">
+<p>
+本人上班族, 出门8点25, 到家晚上8点,双休.<br />
+---------------&#x2013;&#x2014;名词解释<br />
+空时: 上班没工作时<br />
+黄金时间: 8-11点当中的两个小时<br />
+C1,2: Cambridge grammar 1,2<br />
+---------------&#x2013;&#x2014;时间规划<br />
+不论工作忙或空:<br />
+</p>
+<ol class="org-ol">
+<li>早晨 20遍, 中午 10遍, 晚上跟读20遍, NCE2,3 / C1, 2/ 习惯用法造句<br /></li>
+<li>黄金时间: ielts课程/NCE2,3/humans of NewYork<br /></li>
+</ol>
+<p>
+空时: 1-5是配合黄金时间任务的作业,6-~看心情<br />
+</p>
+<ol class="org-ol">
+<li>Topic<br /></li>
+<li>Cambridge grammar 1,2<br /></li>
+<li>ielts作业<br /></li>
+<li>习惯用法整理到文件中<br /></li>
+<li>习惯用法造句<br /></li>
+<li>泛读What Smart Students know?/Critical Thinking/&#x2026;<br /></li>
+<li>刷reddit<br /></li>
+<li>精读美国读者<br /></li>
+</ol>
+<p>
+---------------&#x2013;&#x2014;原则<br />
+原则:<br />
+</p>
+<ul class="org-ul">
+<li>每日跟读必做<br /></li>
+<li>IELTS是第一优先级,黄金时间做<br /></li>
+<li>NCE2,3是第二优先级,黄金时间做,并且围绕NCE2,3,做对应其他所有的作业<br /></li>
+<li>让自己围绕在英文世界<br /></li>
+</ul>
+<p>
+---------------&#x2013;&#x2014;时间预估<br />
+时间估算: 6 * 4 = 24周<br />
+</p>
+<ul class="org-ul">
+<li>IELTS 学3周 剩21周<br /></li>
+<li>NCE2 学30课(已经完成66课) 5周 剩16周<br /></li>
+<li>NCE3 学27课 13周 剩3周<br /></li>
+<li>Humans of NewYork 学50课 3周 剩-1周<br /></li>
+<li>两月一本泛读,预计能完成泛读3本<br /></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orga984654" class="outline-3">
+<h3 id="orga984654">3. 回答如下问题(汉语) : 涉及您不适或者隐私的部分可以不发出来。</h3>
+<div class="outline-text-3" id="text-orga984654">
+<ul class="org-ul">
+<li>What's most important to you in your life?<br />
+幸福<br /></li>
+<li>Why do you care about those things?<br />
+我想让自己和身边的人过得更加幸福.<br /></li>
+<li>Do you have any long-term goals?<br />
+<ul class="org-ul">
+<li>成为好丈夫,好父亲,好儿子和好朋友<br /></li>
+<li>成为一个Stoics<br /></li>
+<li>成为一个计算机科学家<br /></li>
+<li>拥有批判性思维和逻辑推理的能力<br /></li>
+<li>成为一个通才:方法论~进化心理学&#x2026;这些都能掌握大道理,并且用来解决实际的问题<br /></li>
+</ul></li>
+<li>Why are these goals important to you?<br />
+<ul class="org-ul">
+<li>成为好丈夫,好父亲,好儿子和好朋友 我想让我爱的人也拥有幸福<br /></li>
+<li>成为计算机科学家,首先编程本身非常有趣,第二能够解决我和家人的生存问题<br /></li>
+<li>Stoics: 清晰看到can和can't的那道界限,在内心当中真正的拥有幸福<br /></li>
+<li>批判性思维: 把纷扰地世界看的真切明白,做出正确行为<br /></li>
+<li>通才&#x2026;解决实际的问题<br /></li>
+</ul></li>
+<li>What does it mean to have a good life?<br />
+他们都导向幸福,幸福就是好的生活.<br /></li>
+<li>What does it mean to be a good person? If you were looking back on your life now, how would you like to be remembered?<br />
+对身边的人和对自己都好的人,叫做好人.<br />
+我希望我的孩子,记住我是他的好父亲;我的老婆,记住我是她的好丈夫;我的朋友,记得我是他们的好朋友.<br /></li>
+<li>以上这些问题与雅思托福考试的关系? 与提升英语水平的关系?<br />
+这些事情都需要能力,需要从书中获取,然后在实践慢慢熟练.<br />
+我需要提升英语,才能从以英文为载体的文本~媒体中获取相应的知识.<br />
+然后随便考个雅思???<br /></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org59481e7" class="outline-3">
+<h3 id="org59481e7">4. 泛读chapter 13 MOTIVATION,TEACHING,ANDLEARNING 中第二部分Achievement Processes ，第四部分选读部分。</h3>
+<div class="outline-text-3" id="text-org59481e7">
+<p>
+完成<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org943dd48" class="outline-3">
+<h3 id="org943dd48">5. 练习skimming/scanning/summary/段首尾/Features/1.5h/阅读速度。</h3>
+<div class="outline-text-3" id="text-org943dd48">
+<p>
+完成<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgff1ee40" class="outline-3">
+<h3 id="orgff1ee40">6. 记录下实战中的所有问题或困惑。</h3>
+<div class="outline-text-3" id="text-orgff1ee40">
+<ol class="org-ol">
+<li>脑海会由英文翻译成中文的,没法用英语思考,怎么样才能用英语思考.<br />
+比如:1+2=3,在脑子是一加二等于,而不是one plus two equals three.<br /></li>
+<li>翻英英字典时,会忍不住查中文意思,有时候会尝试自己用中文代换英英翻译的句子,是否有害?<br />
+比如: alienate的英文解释是 to do something that makes someone unfriendly or unwilling to support you.<br />
+     会忍不住翻译成中文"疏远",或者忍不住去看中文解释<br /></li>
+<li>想要应用泛读的内容,是否需要和北极熊一样50遍?<br /></li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org2422538" class="outline-3">
+<h3 id="org2422538">7. 阅读完请判断某水1中教育模式的利弊。</h3>
+<div class="outline-text-3" id="text-org2422538">
+<p>
+利: 高考高分,也许能上个985/211,也有的可能成为蛊王<br />
+弊: 往后余生,可能都在治愈自己的痛苦.仿佛把一声的动力都用完了.<br />
+</p>
+
+<p>
+按书中的解释:<br />
+?水1中完全是extrinsic motivation: 通过老师的奖励或惩罚来实现控制他们,这样会几乎抹杀掉了自己Intrinsic motivation.<br />
+他们没有 Long-Term Goals,只有Challenging Goals.<br />
+也没有锻炼和发展自己延迟满足感的机会.<br />
+他们也没有Planning and Self-Monitoring,完全靠外部的监督<br />
+他们的VALUES是歪曲的,他们的PURPOSE只有高考.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org6d4dcb1" class="outline-3">
+<h3 id="org6d4dcb1">8. [选修] 按照今天提供的申请学校的思路，去查找目标学校，学完立刻实践，否则容易忘。</h3>
+</div>
+</div>
+</div>
+</body>
+</html>

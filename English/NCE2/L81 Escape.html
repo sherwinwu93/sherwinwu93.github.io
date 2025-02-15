@@ -1,0 +1,632 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-08-06 Tue 22:24 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+
+<div id="outline-container-orgf8d67ad" class="outline-2">
+<h2 id="orgf8d67ad">Lesson 81 Escape</h2>
+<div class="outline-text-2" id="text-orgf8d67ad">
+<p class="verse">
+Why did the prisoner attack the driver?<br />
+<br />
+When he had killed the guard, the prisoner of war quickly dragged him into the bushes.<br />
+Working rapidly in the darkness, he soon <b>changed into</b> the dead man's clothes.<br />
+Now, dressed in a blue uniform and with a rifle over his shoulder,<br />
+&#xa0;the prisoner marched boldly <b>up and down</b> in front of the camp.<br />
+He could hear shouting in the camp itself.<br />
+Lights were blazing and men were running here and there:<br />
+&#xa0;they had just <b>discovered that</b> a prisoner had escaped.<br />
+At that moment, a large black car with four officers inside it, stopped at the camp gates.<br />
+The officers got out and the prisoner <b>stood to attention</b> and saluted as they passed.<br />
+When they had gone, the driver of the car came towards him.<br />
+The man obviously wanted to talk.<br />
+He was rather elderly with grey hair and clear blue eyes.<br />
+The prisoner felt sorry for him, but there was nothing else he could do.<br />
+As the man came near,<br />
+&#xa0;the prisoner <b>knocked him to the ground</b> <b>with a sharp blow</b>.<br />
+Then, jumping into the car, he drove off as quickly as he could.<br />
+</p>
+</div>
+<div id="outline-container-orga2607b8" class="outline-3">
+<h3 id="orga2607b8">expression</h3>
+<div class="outline-text-3" id="text-orga2607b8">
+<p>
+prisoner [ˈprɪz(ə)nər] n.囚犯<br />
+bush [bʊʃ] n.灌木丛<br />
+rapidly ['ræpɪdli] adv.迅速地<br />
+uniform [ˈjunɪˌfɔrm] n.制服<br />
+rifle [ˈraɪf(ə)l] n.来福枪,步枪<br />
+shoulder [ˈʃoʊldər] n.肩<br />
+march [mɑrtʃ] v.行进<br />
+boldly ['bəʊldli] adv.大胆地<br />
+blaze [bleɪz] v.闪耀<br />
+salute [səˈlut] v.行礼<br />
+elderly [ˈeldərli] adj.n.上了年纪的<br />
+grey [ɡreɪ] adj.灰白的<br />
+sharp [ʃɑrp] adj.猛烈的 blow n.打击<br />
+</p>
+
+<p>
+grow/change/move&#x2026; + rapidly 成长/改变/移动……+ 快速地<br />
+with a sharp blow 用一记猛击<br />
+</p>
+<hr />
+<p>
+change into &#x2026; 换上&#x2026;(衣服)<br />
+up and down &#x2026; 上上下下<br />
+sb. discovered that 某人发现<br />
+stand to attention 立正<br />
+knock him to the ground 击打某人在地<br />
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-orgbd4b307" class="outline-3">
+<h3 id="orgbd4b307">words</h3>
+<div class="outline-text-3" id="text-orgbd4b307">
+<p>
+prisoner [ˈprɪz(ə)nər] n.囚犯<br />
+bush [bʊʃ] n.灌木丛<br />
+rapidly ['ræpɪdli] adv.迅速地<br />
+uniform [ˈjunɪˌfɔrm] n.制服<br />
+rifle [ˈraɪf(ə)l] n.来福枪,步枪<br />
+shoulder [ˈʃoʊldər] n.肩<br />
+march [mɑrtʃ] v.行进<br />
+boldly ['bəʊldli] adv.大胆地<br />
+blaze [bleɪz] v.闪耀<br />
+salute [səˈlut] v.行礼<br />
+elderly [ˈeldərli] adj.上了年纪的<br />
+grey [ɡreɪ] adj.灰白的<br />
+sharp [ʃɑrp] adj.猛烈的<br />
+blow [bloʊ] n.打击<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org68d4a1b" class="outline-3">
+<h3 id="org68d4a1b"><span class="done DONE">DONE</span> 单词造句</h3>
+<div class="outline-text-3" id="text-org68d4a1b">
+<p>
+prisoner n.<br />
+</p>
+<ul class="org-ul">
+<li>When he realized that the prisoner had gone to the college, he felt frightened.<br /></li>
+<li>There are two hundreds prisoner in all.<br /></li>
+<li>The prisoner managed to hitchhike to Paris.<br /></li>
+<li>The prisoner made no effort to escape from there.<br /></li>
+<li>After the prisoner arrested, everything returned to normal.<br /></li>
+</ul>
+<p>
+bush n.<br />
+</p>
+<ul class="org-ul">
+<li>I was curious to find out whether there was any person in the bush.<br /></li>
+<li>He has made every effort to plant the bushes.<br /></li>
+<li>He was given satisfaction from planting the bushes.<br /></li>
+<li>The prisoner got the nerve to cross the bushes.<br /></li>
+<li>The player likes hiding in the bushes.<br /></li>
+</ul>
+<p>
+rapidly adv. grow/change/move&#x2026; + rapidly<br />
+</p>
+<ul class="org-ul">
+<li>No matter what you do, the world would change rapidly.<br /></li>
+<li>My cousin grows up so rapidly that he went to college last year.<br /></li>
+<li>The flight attendant was moving rapidly and lost her temper.<br /></li>
+<li>If you keep moving so rapidly, you will lose your weight.<br /></li>
+<li>She was sure that a puma was moving rapidly in the bushes.<br /></li>
+</ul>
+<p>
+uniform n.<br />
+</p>
+<ul class="org-ul">
+<li>The boy who is dressed in a school uniform has just lit a cigarette.<br /></li>
+<li>His parents urged him to change into the school uniform.<br /></li>
+<li>The uniform is so expensive that we couldn't afford to it.<br /></li>
+<li>The security guard offered him a uniform and asked him to get out of here.<br /></li>
+<li>I have lost my appetite because of my uniform which was covered with a body.<br /></li>
+</ul>
+<p>
+rifle n.<br />
+</p>
+<ul class="org-ul">
+<li>He was used to being armed with a rifle in the army.<br /></li>
+<li>He was given satisfaction from succeeding in buying a rifle.<br /></li>
+<li>Armed wit a rifle, she has the nerve to ask for meat.<br /></li>
+<li>Who entitled you to carry a rifle to the exhibition?<br /></li>
+<li>I had to calm my nerve, for he was armed with a rifle.<br /></li>
+</ul>
+<p>
+shoulder n.<br />
+</p>
+<ul class="org-ul">
+<li>This proved to be a lamb shoulder.<br /></li>
+<li>At the end of the harvesting, he hurted his shoulder careless.<br /></li>
+<li>It says on the bulletin board. A boy who played truant from school has hurted his shoulder.<br /></li>
+<li>The actor stayed out of the limelight, for he hurted his shoulder.<br /></li>
+<li>Don't be too hard on us and stop touching my shoulder.<br /></li>
+</ul>
+<p>
+march v.<br />
+</p>
+<ul class="org-ul">
+<li>The baby elephant accompanied by four pretty girls marched along the main street.<br /></li>
+<li>The flight attendant marched out of the plane.<br /></li>
+<li>The solders are marching along the avenue right now.<br /></li>
+<li>The solders will be marching along the street in 20 minutes.<br /></li>
+<li>The girl marched out of the door and bursted into tears.<br /></li>
+</ul>
+<p>
+boldly adv.<br />
+</p>
+<ul class="org-ul">
+<li>She finally rode a bike boldly over and over again.<br /></li>
+<li>He came there and spoke boldy in front of the crowd.<br /></li>
+<li>He got close to the puma at large boldly.<br /></li>
+<li>The woman marched out of the manager's office boldly.<br /></li>
+<li>The drunker was charging at the bull boldly.<br /></li>
+</ul>
+<p>
+blaze v.<br />
+</p>
+<ul class="org-ul">
+<li>In the end, the lights were successfully blazing again.<br /></li>
+<li>When the light was blazing, the prisoner immediately hid into the bushses.<br /></li>
+<li>He was delight that the lights were blazing again.<br /></li>
+<li>After the lights were blazing over and over again, he lost his temper.<br /></li>
+<li>Though the sun is blazing, everyone in the village is working hard for the crop.<br /></li>
+</ul>
+<p>
+salute v.<br />
+</p>
+<ul class="org-ul">
+<li>Even though he is Stephen Hawking, he still have to salute the leader in China.<br /></li>
+<li>It's said that Stephen Hawking would have to salute the leader in Chian.<br /></li>
+<li>When the mummy was cut open, all the doctors saluted it.<br /></li>
+<li>He saluted the emperor and survived this event.<br /></li>
+<li>He was disappointed to find out that his still had to salute the leader.<br /></li>
+</ul>
+<p>
+elderly adj.n.<br />
+</p>
+<ul class="org-ul">
+<li>My father likes following elderly around.<br /></li>
+<li>It was not long before I persuaded the elderly to buy our products.<br /></li>
+<li>He covered the elderly with a warm coat.<br /></li>
+<li>The elderly stamped out the fire to send a signal.<br /></li>
+<li>We all were put to shame by the elderly who played got a good salary.<br /></li>
+</ul>
+<p>
+grey adj.<br />
+</p>
+<ul class="org-ul">
+<li>I don't like that grey school uniform.<br /></li>
+<li>The woman takes precautions so that her hair wouldn't be grey quickly.<br /></li>
+<li>I have difficulty in finding your grey hair.<br /></li>
+<li>I turned my attention to his grey socks.<br /></li>
+<li>The bull looked on his grey clothes sympathetically.<br /></li>
+</ul>
+<p>
+sharp adj. blow n. with a sharp blow<br />
+</p>
+<ul class="org-ul">
+<li>He was knocked down by a sharp blow on his head.<br /></li>
+<li>I found out that she's a thief and knocked her to the ground with a sharp blow.<br /></li>
+<li>Don't hit your brother with a sharp blow.<br /></li>
+<li>I was wondering how to hit him with a sharp blow.<br /></li>
+<li>No matter what you say, I will knock you to the ground with a sharp blow.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org2e7fb87" class="outline-3">
+<h3 id="org2e7fb87"><span class="done DONE">DONE</span> 反复听电影片段</h3>
+<div class="outline-text-3" id="text-org2e7fb87">
+</div>
+</div>
+<div id="outline-container-org27a347e" class="outline-3">
+<h3 id="org27a347e"><span class="done DONE">DONE</span> Pattern Drill 写+读</h3>
+<div class="outline-text-3" id="text-org27a347e">
+<ul class="org-ul">
+<li>1t: hall - five minutes<br />
+s1: John said he'd be at the hall at six.<br />
+s2: Well, if he's not here in five minutes, we'll have to go inside.<br />
+<ul class="org-ul">
+<li>theatre - half an hour<br />
+John said he'd be in the theatre at six.<br />
+Well, if he's not here in half an hour, we'll have to go inside.<br /></li>
+<li>restaurant - ten minutes<br />
+John said he'd be in the restaurant at six.<br />
+Well, if he's not here in ten minutes, we'll have to go inside.<br /></li>
+<li>stadium - a quarter of an hour<br />
+John said he'd be in the stadium at six.<br />
+Well, if he's not here in a quarter of an hour, we'll have to go inside.<br /></li>
+<li>club - fifteen minutes.<br />
+John said he'd be at the club at six.<br />
+Well, if he's not here in fifteen minutes, we'll have to go inside.<br /></li>
+</ul></li>
+<li>2t: library<br />
+s1: Mary's just gone into the library.<br />
+s2: That's funny! I've just come out of the library and I didn't see her in there.<br />
+<ul class="org-ul">
+<li>classroom<br />
+Mary's just gone into the classroom.<br />
+That's funny! I've just come out of the classroom and I didn't see her in there.<br /></li>
+<li>restaurant<br />
+Mary's just gone into the restaurant.<br />
+That's funny! I've just come out of the restaurant and I didn't see her in there.<br /></li>
+<li>dining room<br />
+Mary's just gone into the dining room.<br />
+That's funny! I've just come out of the dining room and I didn't see her in there.<br /></li>
+<li>pub<br />
+Mary's just gone into the pub.<br />
+That's funny! I've just come out of the pub and I didn't see her in there.<br /></li>
+</ul></li>
+<li>3t: the cake out of the oven - tin<br />
+s1: Have you taken the cake out of the oven yet?<br />
+s2: Yes, and I've put it in the tin.<br />
+<ul class="org-ul">
+<li>some ice from the fridge - jug<br />
+Have you taken some ice from the fridge.<br />
+Yes, and I've put it in the jug.<br /></li>
+<li>the beef out of the fridge - oven<br />
+Have you taken the beef out of the fridge yet?<br />
+Yes, and I've put it in the oven.<br /></li>
+<li>the apples out of the box - bowl<br />
+Have you taken the apples out of the box yet?<br />
+Yes, and I've put it in the bowl.<br /></li>
+<li>some fruit from the basket - box<br />
+Have you taken some fruit from the basket yet?<br />
+Yes, and I've put it in the box.<br /></li>
+</ul></li>
+<li>4t: jeans - a dress<br />
+s1: Isn't she going to change out of those jeans?<br />
+s2: Yes, she's going to change into a dress.<br />
+<ul class="org-ul">
+<li>shorts - a shirt and blouse<br />
+Isn't she going to change out of those shorts?<br />
+Yes, she's going to change into a shirt and blouse.<br /></li>
+<li>overalls - a suit<br />
+Isn't she going to change out of those overalls?<br />
+Yes, she's going to change into a suit.<br /></li>
+<li>wet clothes - something dry<br />
+Isn't she going to change out of those wet clothes?<br />
+Yes, she's going to change into something dry.<br /></li>
+<li>old clothes - something new<br />
+Isn't she going to change out of those old clothes?<br />
+Yes, she's going to change into something new.<br /></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org3335cac" class="outline-3">
+<h3 id="org3335cac"><span class="done DONE">DONE</span> 给自己讲解</h3>
+<div class="outline-text-3" id="text-org3335cac">
+</div>
+</div>
+<div id="outline-container-org01a434b" class="outline-3">
+<h3 id="org01a434b">红皮书</h3>
+</div>
+<div id="outline-container-org4903faf" class="outline-3">
+<h3 id="org4903faf"><span class="done DONE">DONE</span> 习惯用法造句</h3>
+<div class="outline-text-3" id="text-org4903faf">
+<p>
+change into &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>The moment she gets home, she will change into the new clothes.<br /></li>
+<li>Would you mind my changing into your clothes?<br /></li>
+<li>You needn't have changed into your best clothes.<br /></li>
+<li>Let's suppose that you have changed into your best clothes.<br /></li>
+<li>He is used to changing into school uniform on weekends.<br /></li>
+</ul>
+<p>
+up and down &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>He was walking up and down the archway yesterday.<br /></li>
+<li>The solders kept marching up and down the street.<br /></li>
+<li>The crowd marched up and down the street last week.<br /></li>
+<li>The man is walking up and down inside the waiting room, for his wife is having an operation.<br /></li>
+<li>He walked up and down the factory and double checked this piece of machinery.<br /></li>
+</ul>
+<p>
+sb. discovered that<br />
+</p>
+<ul class="org-ul">
+<li>I discovered that my wife has a sense of humor.<br /></li>
+<li>I discovered that my wife was making a speech in the party.<br /></li>
+<li>I discovered that she bursted into tears at the reception.<br /></li>
+<li>I discovered that my close friend had helped a lot.<br /></li>
+<li>I discovered that my wife has a large circle of friends.<br /></li>
+</ul>
+<p>
+stand to attention<br />
+</p>
+<ul class="org-ul">
+<li>At that time, I was busy standing to attention.<br /></li>
+<li>We were instructed to stand to attention.<br /></li>
+<li>The leader of the school standed to attention at reception over and over again.<br /></li>
+<li>The students in China often spend a lot of time standing to attention.<br /></li>
+<li>The students were trained to stand to attention in the university.<br /></li>
+</ul>
+<p>
+knock him to the ground<br />
+</p>
+<ul class="org-ul">
+<li>She hit him so hard that she knocked him to the ground.<br /></li>
+<li>Why do you knock her to the ground?<br /></li>
+<li>Would you mind my knocking you to the ground? She said with a sneer.<br /></li>
+<li>You shouldn't have knoced him to the ground.<br /></li>
+<li>The police pointed out that the man knocked his wife to the ground.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org876a74b" class="outline-3">
+<h3 id="org876a74b"><span class="done DONE">DONE</span> 跟读至背诵</h3>
+<div class="outline-text-3" id="text-org876a74b">
+</div>
+</div>
+<div id="outline-container-org93c75d7" class="outline-3">
+<h3 id="org93c75d7"><span class="done DONE">DONE</span> Ask me if 写+读</h3>
+<div class="outline-text-3" id="text-org93c75d7">
+<ol class="org-ol">
+<li>The prisoner of war escaped from a camp. Where&#x2026;from/Who<br />
+Where did the prisoner of war escape from?<br />
+Who escaped from a camp?<br /></li>
+<li>He killed the guard. Who<br />
+Who did he kill?<br /></li>
+<li>He dragged him into the bushes. Where<br />
+Where did he dragged him?<br /></li>
+<li>He worked rapidly. How fast<br />
+How fast did he work?<br /></li>
+<li>He changed into the dead man's clothes. What/Whose/Why<br />
+What did he change into?<br />
+Whose clothes did he change into?<br />
+Why did he change into the dead man's clothes?<br /></li>
+<li>He was now dressed in a blue uniform. What/Who<br />
+What was he now dressed in?<br />
+Who was now dressed in a blue uniform?<br /></li>
+<li>He put a rifle over his shoulder. What<br />
+What did he put over his shoulder?<br /></li>
+<li>He marched boldly up and down in front of the camp. How/Where<br />
+How did he march up and down in front of the camp?<br />
+Where did he march boldly?<br /></li>
+<li>He could hear shouting in the camp itself. What<br />
+What could he hear in the camp itself?<br /></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org222ccc4" class="outline-3">
+<h3 id="org222ccc4"><span class="done DONE">DONE</span> 摘要写作</h3>
+<div class="outline-text-3" id="text-org222ccc4">
+<p>
+After having killed the guard,<br />
+	the prisoner of war dragged him into the bushes and changed into his clothes.<br />
+The he put a rifle over his shoulder and marched up and down in front of the camp.<br />
+A short time afterwars, four officer drove up in a car,<br />
+	so he stood to attention and saluted.<br />
+When they had gone,<br />
+	the driver came towards him and after he had knocked him out,<br />
+	the prisoner jumped into the car and drove away.<br />
+</p>
+
+<p>
+As soon as he had killed the guard and dragged him into the bushes,<br />
+	the prisoner of war changed into the his clothes.<br />
+With a rifle over his shoulder, he was marching up and down in front of the camp<br />
+	when four officers drove up in a car.<br />
+He stood to attention and saluted.<br />
+When the driver came towards him, the prisoner knocked him out.<br />
+Then jumping into the car, he drove away.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org9fa3851" class="outline-3">
+<h3 id="org9fa3851"><span class="done DONE">DONE</span> tell the story 口语</h3>
+<div class="outline-text-3" id="text-org9fa3851">
+</div>
+</div>
+<div id="outline-container-org53ad14f" class="outline-3">
+<h3 id="org53ad14f">Topics for discussion</h3>
+</div>
+</div>
+</div>
+</body>
+</html>

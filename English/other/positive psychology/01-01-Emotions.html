@@ -1,0 +1,601 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-09-03 Tue 10:04 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+
+<div id="outline-container-orgdb8c015" class="outline-2">
+<h2 id="orgdb8c015">Emotions</h2>
+<div class="outline-text-2" id="text-orgdb8c015">
+<p class="verse">
+Welcome to positive psychology.<br />
+I'm so glad you're here.<br />
+You know one of the key founders of the positive psychology movement, Mihaly Csikszentmihalyi,<br />
+&#xa0;tells us that,<br />
+&#xa0;to live a good life it's not enough to remove what is wrong with it,<br />
+&#xa0;&#xa0;and positive psychology is two things at once.<br />
+First and foremost it's an active area of science.<br />
+That investigates, those positive things that we need to add to our lives to make them good.<br />
+Yet in addition, it's a movement, a dynamic force, the world over.<br />
+And I'm captivated by the image of you out there,<br />
+&#xa0;being able to take your curiosity about positive psychology to the next level.<br />
+Just by taking this course, you'll gain skills to make a positive difference,<br />
+&#xa0;not only in your own life, but also in the lives of others in your community.<br />
+Now imagine the positive ripples that radiate out from your efforts here.<br />
+And now imagine those positive ripples multiplied by thousands or tens of thousands.<br />
+You are part of something much larger here.<br />
+That's the positive psychology movement and you're right at the center of it.<br />
+Now I see the broad reach of this movement first hand,<br />
+&#xa0;having been elected President of the International Positive Psychology Association.<br />
+Members of IPPA as we call it, hail from more than 70 countries<br />
+&#xa0;and includes scientists and practitioners.<br />
+Alongside students and anyone else in an abiding interest, in positive psychology.<br />
+In fact, IPPA can help you maintain your connection to the positive psychology community,<br />
+&#xa0;long after you've completed this course.<br />
+Now speaking of community, you'll notice that I teach this online course, as a small seminar<br />
+&#xa0;and that you'll be taking it alongside four in video classmates, Brett, Kelly, Patrick, and Debby.<br />
+Now I chose this format for two reasons.<br />
+First, each of these people has a unique perspective on positive psychology,<br />
+&#xa0;that I know you'll benefit from hearing.<br />
+Second, I think learning happens best through dialogue and sharing ideas.<br />
+And this small seminar format, allows this exchange in the videos themselves.<br />
+Also, from time to time in these videos, you'll see tiny yellow lines, bisect the timeline.<br />
+At each of those moments, and there's one coming up soon.<br />
+I'll pause the action, to give you a moment to reflect, or answer a quick question.<br />
+Doing so will heighten your engagement with positive psychology, so don't miss out.<br />
+And you know<br />
+&#xa0;scientific studies show<br />
+&#xa0;&#xa0;that whenever you shift, from passively absorbing course material to actively engaging with it,<br />
+&#xa0;&#xa0;&#xa0;your learning accelerates.<br />
+So welcome to week one.<br />
+Let's begin.<br />
+<br />
+Thanks so much for being here, everybody.<br />
+This is going to be a, a fun way to learn positive psychology together.<br />
+Before we get into it, I want to take a moment just to lay the playing field and get introductions.<br />
+<br />
+I'm Barb Fredrickson.<br />
+I've been studying positive psychology even before there was positive psychology.<br />
+And, over the course of the weeks that we're together here we'll be diving into a lot of that more.<br />
+So, I'm going to just stay short with that.<br />
+But I'd, love to hear from each of you guys what draws you to positive psych<br />
+&#xa0;what do you hope to do with it?<br />
+So just take a moment and we'll introduce ourselves.<br />
+<br />
+My name is Debbie, I am a professor here and also an administrator<br />
+&#xa0;and I think I'm blending my world's of athletics and business.<br />
+And so I apply positive psychology in everything that I do,<br />
+&#xa0;from competition, to coaching, to inspiring others,<br />
+&#xa0;&#xa0;and certainly in the classroom working with young people.<br />
+Having to stay positive, and help that tender age of 17 to 25.<br />
+<br />
+And I'm Patrick.<br />
+I'm a professor here at UNC.<br />
+And teach in our school of education.<br />
+So, prepare teachers councilors, and principals.<br />
+I'm interested<br />
+&#xa0;because, when I was a councilor with middle school kids, when we talked about something positive,<br />
+&#xa0;&#xa0;they really responded.<br />
+Versus the problems they were having.<br />
+And so now I prepare counselors that way<br />
+&#xa0;and study hope and some other things around positive psych.<br />
+Great. Kelly?<br />
+<br />
+My name's Kelly, and I have a degree in psychology<br />
+&#xa0;and then I went back to school to get certified as a holistic health coach.<br />
+I work with people who want to live more fully and deeply.<br />
+And I offer coaching to improve their health on any number of levels in mind, body, and spirit.<br />
+I'm especially excited about applying positive psychology to people who have chronic illness,<br />
+&#xa0;based on my own experience with that.<br />
+<br />
+And I'm Brett and I'm a phd student here at Carolina<br />
+&#xa0;and I research positive emotions and try to use science, to help us understand<br />
+&#xa0;&#xa0;how positive emotions shape our health and our social relationships with others and<br />
+&#xa0;&#xa0;how we can utilize positive emotions.<br />
+In, in our everyday lives.<br />
+<br />
+Great.<br />
+I am so grateful that you're all here, joining me with in this course.<br />
+Because your perspectives are going to mean so much to the other people who take this course,<br />
+&#xa0;and through other means, so, thanks a lot.<br />
+I'm really grateful.<br />
+So I really love to refer back to Chris Peterson,<br />
+&#xa0;a good friend of mine who has been a leader in positive psychology.<br />
+He used to say positive psychology is not a spectator's sport.<br />
+That, you have to dive right in and experience it,<br />
+&#xa0;because otherwise it's just a bunch of abstract ideas.<br />
+So we, I want to start us off by getting us familiar with the concepts of emotion.<br />
+So I want you to have an emotion. Right now.<br />
+So you know, and we're going to start off with the bad.<br />
+I want you to think of relive a negative emotional experience.<br />
+Maybe something that was so frustrating that, you know, just made you want to explode.<br />
+And just take a moment to relive that in your mind.<br />
+Think about where you were,<br />
+&#xa0;who you were with,<br />
+&#xa0;what had just happened<br />
+&#xa0;and as you begin to relive that in your mind,<br />
+&#xa0;&#xa0;just notice whether you can make it grow for just a second of two.<br />
+And then, take a moment to reflect on what, what stands out, in that experience.<br />
+How does reliving this, make your body feel.<br />
+How d, what does it make your face feel like?<br />
+What thoughts come to mind?<br />
+What does it, what does it make you want to do?<br />
+<br />
+My first thought is to reject it.<br />
+Yeah. I don't want to go back there, and so I'm getting rigid, and heart starts racing.<br />
+Right. Yeah. Right.<br />
+It's uncomfortable.<br />
+Right, so, with any emotional experience,<br />
+&#xa0;we, they either fit with or against what we want<br />
+&#xa0;and so a big part of emotion experience is that is this wanted or unwanted.<br />
+Mm-hm,.<br />
+And so there's often a you know, either a embrace it,<br />
+&#xa0;I want to feel this way or you know I don't want to feel this way,<br />
+&#xa0;so that, great example of just that you know responses to emotion are a big part of emotion.<br />
+You can't, you can't have an emotion without having a response to emotion at the same time.<br />
+Anyone else?<br />
+<br />
+I wanted to echo something<br />
+&#xa0;that you mentioned in that when I think about something that negative emotion.<br />
+You said your heart started racing<br />
+&#xa0;and I, I have, I experience that too both in the moment<br />
+&#xa0;&#xa0;when I'm experiencing it but even when I'm thinking about it.<br />
+Again, sometimes, you know, you can feel your, your heart racing, and kind of tense up.<br />
+And it's, like it's a very full body type of feeling.<br />
+<br />
+Right, right.<br />
+One of the things that's so true of emotions is<br />
+&#xa0;it's not, emotions aren't something that just sit up in your head.<br />
+Roll around in your skull.<br />
+They are embodied.<br />
+And there's no emotion that isn't embodied<br />
+&#xa0;so it, it's going to affect of th, what happens in your heart.<br />
+It's going to affect your muscle tension.<br />
+It's going to you know, certainly affect aspects of how you carry yourself, even, so.<br />
+Anyone else want to join in?<br />
+<br />
+I just, my, my reaction a little bit is I want to move on,<br />
+&#xa0;so it's a little bit hard for me to come<br />
+&#xa0;&#xa0;and, you know, process that negative thing.<br />
+Yeah.<br />
+I always try to be future-focused so if, you know, I try to move from that.<br />
+So it's hard for me to go back and do that reflection on negative stuff.<br />
+<br />
+Right.<br />
+So again, I, I think there's a real way<br />
+&#xa0;in which individual differences come into play here a lot,<br />
+&#xa0;whereas, you know some people can't move on from the negative<br />
+&#xa0;&#xa0;and then some people you know, want to move past them really quickly.<br />
+Again, so again, you're kind of preferences<br />
+&#xa0;and home way of being with emotions kind of shows up right away.<br />
+Yeah.<br />
+One of the things that I wanted to just point out is there's a typical model.<br />
+Of emotion that help us understand sort of what's all happening, in an emotional experience.<br />
+I asked you to think about a circumstance that might have made you frustrated.<br />
+So, a lot of times, emotions they start as situated experiences.<br />
+So, you know, some way in which your current circumstance is good for you or bad for you,<br />
+&#xa0;but it's not like there's an automatic connection between a situation<br />
+&#xa0;and everybody is going to feel the same way.<br />
+How people interpret that situation is the, the place<br />
+&#xa0;&#xa0;that turns an emotion into despair or hope or,<br />
+&#xa0;&#xa0;you know, it kind of, it's,<br />
+&#xa0;&#xa0;&#xa0;it's a major gateway into whether emotions are negative are positive,<br />
+&#xa0;&#xa0;or what flavor of positive<br />
+&#xa0;&#xa0;or what flavor of negative they'll be.<br />
+So that interpretation phase is often called, you know, the, the sense making or the appraisal,<br />
+&#xa0;that comes out of it.<br />
+<br />
+Brett, you mentioned, that, you could definitely feel the changes in,<br />
+&#xa0;&#xa0;in you know, heart rate, or muscle tension,<br />
+&#xa0;and so, one of the things I would want to point out is that,<br />
+&#xa0;&#xa0;you know, that's not just a private experience.<br />
+I mean, what, what, how are other people going to be able to pick up on that,<br />
+&#xa0;you know certainly, your face feels kind of a little bit different.<br />
+If you're holding your jaw tight, people can see that.<br />
+You know, if you're starting to get like, tense or whatever, people can see that.<br />
+This is part of emotions aren't just a private experience.<br />
+They are, you know, whether we like it or not, they're broadcast.<br />
+Their broadcast out so, those bodily changes show up in posture.<br />
+They show up in the tone of our voice.<br />
+The show up, you know, in you know,<br />
+&#xa0;what people are picking up from our smiles or our frowns or scowls.<br />
+You know, so and then this last piece Debby, you started with that.<br />
+<br />
+That of responses to emotions like oh, you know, do I want to, do I want to go there?<br />
+Would I, do I want to hold, hold back.<br />
+One thing that's I, I really want to emphasize is these responses to emotion are no small thing.<br />
+I mean they you can respond to a situation by, you know, like oh I don't want to feel this way.<br />
+I don't want to show anybody what I'm feeling.<br />
+You know I'm going to try to be kind of stone-faced about it.<br />
+So one response would be to try to modify or clamp down on what you were feeling.<br />
+Another response would be like, oh, I want to think about this situation differently.<br />
+You know, you might think, you first come across something kind of scary.<br />
+Maybe going to a transition to high school.<br />
+You know, your, your example.<br />
+And then you can reframe it.<br />
+Oh, it's an opportunity to make new friends.<br />
+Or, you know, something.<br />
+Some kind of a, one response could be to, I don't want to feel this way,<br />
+&#xa0;let me think about it differently.<br />
+Another response is to go and change the situation,<br />
+&#xa0;you know, like this is a great situation.<br />
+I want to, you know, these people are kind of at odds with each other.<br />
+I want to bring them together or something like that.<br />
+So these, responses to emotion create this, like, dynamic change over time.<br />
+So it's sometimes people take emotions, just to be that feeling state,<br />
+&#xa0;like, oh, I feel happy, or I feel irritated,<br />
+&#xa0;but what we have is so much more in terms of, you know, there's the embodied.<br />
+Thoughts and a dynamic change in what, what those are.<br />
+So, from a scientific perspective we don't think of emotions as just a feeling state,<br />
+&#xa0;it's an embodied feeling state<br />
+&#xa0;&#xa0;that comes with action urges<br />
+&#xa0;&#xa0;that comes with responses<br />
+&#xa0;&#xa0;that get us to change the situation or, or change our, our thoughts.<br />
+So, anyway thanks for playing along with going, going to the negative for a moment.<br />
+But I appreciate that.<br />
+</p>
+</div>
+<div id="outline-container-org3e470ce" class="outline-3">
+<h3 id="org3e470ce">experession</h3>
+<div class="outline-text-3" id="text-org3e470ce">
+<p>
+positive psychology:<br />
+be glad + &#x2026;:<br />
+the key founders of the positive psychology movement:<br />
+live a good life:<br />
+it's not enough to do sth.:<br />
+at once:<br />
+foremost:<br />
+investigate:<br />
+add A. to B.<br />
+in addition:<br />
+the world over:<br />
+be captivated by:<br />
+take sth. to sp.<br />
+curiosity about positive psychology:<br />
+take this course:<br />
+gain skills:<br />
+in your life/in the live of ..:<br />
+ripple:<br />
+radiate out from:<br />
+be multiplied by:<br />
+part of something:<br />
+be right at the center of sp:<br />
+the broad reach of sth.:<br />
+first hand:<br />
+hail from:<br />
+abiding:<br />
+maintain sb. connection to sth.:<br />
+complete this course:<br />
+sb. notices that + &#x2026;:<br />
+have a unique perspective on sth.:<br />
+benefit from doing sth.:<br />
+share ideas:<br />
+from time to time: sometimes<br />
+bisect: formal to divide something into two equal parts<br />
+pause the action:<br />
+give you a moment to do sth.:<br />
+heighten sb. engagement with sth.:<br />
+miss out:<br />
+show that + ..:<br />
+absorbing:<br />
+accelerate:<br />
+</p>
+
+<p>
+a fun way to do sth.:<br />
+get into:<br />
+take a moment to do sth.:<br />
+lay the playing field:<br />
+get introductions:<br />
+dive into:<br />
+draws sb. to sth.:<br />
+</p>
+
+<p>
+my world's of sth.:A very large amount of something<br />
+apply A in B:<br />
+tender age: the time when you are young or do not have much experience<br />
+</p>
+
+<p>
+council: 委员会<br />
+principal: headteacher<br />
+Versus the problem: face this issue together instead of putting our heads in the sand and ignoring it<br />
+have a degree in subject.:<br />
+get certified as sjob.:<br />
+offer A to do B.:<br />
+apply sth. to sb.:<br />
+chronic: continues for a long time and cannot be cured<br />
+</p>
+
+<p>
+use sth. to do sth.:<br />
+shape our health:<br />
+shape our social relationships with others:<br />
+in our everyday lives:<br />
+</p>
+
+<p>
+be grateful that + &#x2026;:<br />
+refer back to sb.: consult sb.<br />
+spectator:<br />
+a second of two: 后者<br />
+dive right in:to start doing something with enthusiasm<br />
+a bunch of:a number of things of the same type fastened or closely grouped together, or any particular group of things or people<br />
+relive:<br />
+reflect on:Consider or think carefully about<br />
+stand out:to be very easy to see or notice:<br />
+come to mind:<br />
+get rigid: is very unwilling to change their ideas or behaviour<br />
+fit with/against: 贴合/相反<br />
+embrace: hug<br />
+feel this way:有这种感觉<br />
+echo: to repeat an idea or opinion because you agree with it<br />
+feel sb. doing sth.:<br />
+tense up:very nervous and worried and unable to relax because of something that is going to happen<br />
+</p>
+
+<p>
+be so true of sth.:<br />
+sit up: to be in a sitting position or get into a sitting position after you have been lying down<br />
+skull: the bones of a person’s or animal’s head<br />
+embodied:具身性<br />
+affect of sth.:<br />
+tension: nervous worried feeling that makes it impossible for you to relax<br />
+move on: pass<br />
+it's hard for sb. to do sth.:<br />
+</p>
+
+<p>
+come into play:becoming active, operative, or effective.<br />
+</p>
+
+<p>
+preference:prefer<br />
+home way of doing sth.: 做……的传统方法<br />
+turns A. into B.:<br />
+a major gateway into sth.:<br />
+flavor:<br />
+appraisal:评价<br />
+pick up on sth.: to notice something about the way someone is behaving or feeling, even though they are trying not to show it<br />
+hold sb's jaw tight:<br />
+frown:<br />
+scowl:<br />
+</p>
+
+<p>
+hold back:<br />
+be stone-faced about sth.: showing no emotion<br />
+clamp down: stop<br />
+come across sth.: meet, find, or discover someone or something by chance<br />
+it's an opportunity to make:<br />
+make new friends:<br />
+A. be at odds with B.:<br />
+dynamic: full of energy and new ideas, and determined to succeed<br />
+take A. to be B.:<br />
+from a scientific perspective:<br />
+think of A as B:<br />
+change sb's situation:<br />
+change sb's thoughts:<br />
+playing along with doing sth.:<br />
+</p>
+
+<p>
+reigion:<br />
+word:<br />
+pronunciation:<br />
+result:<br />
+dict:<br />
+brief:<br />
+result:<br />
+window:<br />
+number:<br />
+refresh:<br />
+number:<br />
+window:<br />
+number:<br />
+window-number-refresh:<br />
+select-window-by:<br />
+go to bed:<br />
+</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

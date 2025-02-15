@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-01-09 Thu 23:07 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-orgf7d15bb" class="outline-2">
+<h2 id="orgf7d15bb">2014-06-03 How to choose your news</h2>
+<div class="outline-text-2" id="text-orgf7d15bb">
+<p class="verse">
+How do you know what's happening in your world?<br />
+The amount of information just a click away may be limitless,<br />
+&#xa0;but the time and energy we have to absorb and evaluate it is not.<br />
+All the information in the world won't be very useful unless you know how to read the news.<br />
+To your grandparents, parents, or even older siblings, this idea would have sounded strange.<br />
+Only a few decades ago, news was broad-based.<br />
+Your choices were limited to a couple of general interest magazines and newspaper of record,<br />
+&#xa0;and three or four TV networks<br />
+&#xa0;&#xa0;where trusted newscasters delivered the day's news at the same reliable time every evening.<br />
+<br />
+But the problems with this system soon became apparent as mass media spread.<br />
+While it was known that authoritarian countries controlled and censored information,<br />
+&#xa0;a series of scandals showed<br />
+&#xa0;&#xa0;that democratic governments were also misleading the public, often with media cooperation.<br />
+Revelations of covert wars, secret assassinations, and political corruption<br />
+&#xa0;undermined public faith in official narratives presented by mainstream sources.<br />
+This breakdown of trust in media gatekeepers<br />
+&#xa0;&#xa0;lead to alternative newspapers, radio shows, and cable news<br />
+&#xa0;competing with the major outlets and covering events from various perspectives.<br />
+More recently, the Internet has multiplied the amount of information and viewpoints,<br />
+&#xa0;&#xa0;with social media, blogs, and online video<br />
+&#xa0;turning every citizen into a potential reporter.<br />
+But if everyone is a reporter,<br />
+&#xa0;nobody is,<br />
+&#xa0;and different sources may disagree, not only opinions, but on the facts themselves.<br />
+So how do you get the truth, or something close?<br />
+<br />
+One of the best ways is to get the original news unfiltered by middlemen.<br />
+Instead of articles interpreting a scientific study or a politician's speech,<br />
+&#xa0;you can often find the actual material and judge for yourself.<br />
+For current events, follow reporters on social media.<br />
+During major events, such as the Arab Spring or the Ukrainian protests,<br />
+&#xa0;newscasters and bloggers have posted updates and recordings from the midst of the chaos.<br />
+Though many of these later appear in articles or broadcasts,<br />
+&#xa0;keep in mind that these polished versions<br />
+&#xa0;&#xa0;often combine the voice of the person who was there with the input of editors who weren't.<br />
+<br />
+At the same time, the more chaotic the story, the less you should try to follow it in real time.<br />
+In events like terrorist attacks and natural disasters,<br />
+&#xa0;today's media attempts continuous coverage even when no reliable new information is available,<br />
+&#xa0;&#xa0;sometimes leading to incorrect information or false accusations of innocent people.<br />
+It's easy to be anxious in such events,<br />
+&#xa0;but try checking for the latest information at several points in the day,<br />
+&#xa0;&#xa0;rather than every few minutes,<br />
+&#xa0;allowing time for complete details to emerge and false reports to be refuted.<br />
+While good journalism aims for objectivity, media bias is often unavoidable.<br />
+When you can't get the direct story,<br />
+&#xa0;read coverage in multiple outlets<br />
+&#xa0;&#xa0;which employ different reporters and interview different experts.<br />
+Tuning in to various sources and noting the differences<br />
+&#xa0;lets you put the pieces together for a more complete picture.<br />
+<br />
+It's also crucial to separate fact from opinion.<br />
+Words like think, likely, or probably<br />
+&#xa0;mean that the outlet is being careful or, worse, taking a guess.<br />
+And watch out for reports that rely on anonymous sources.<br />
+These could be people who have little connection to the story,<br />
+&#xa0;&#xa0;or have an interest in influencing coverage,<br />
+&#xa0;their anonymity making them unaccountable for the information they provide.<br />
+<br />
+Finally, and most importantly, try to verify news before spreading it.<br />
+While social media has enabled the truth to reach us faster,<br />
+&#xa0;it's also allowed rumors to spread before they can be verified<br />
+&#xa0;&#xa0;and falsehoods to survive long after they've been refuted.<br />
+So, before you share that unbelievable or outrageous news item,<br />
+&#xa0;do a web search to find any additional information or context you might have missed<br />
+&#xa0;&#xa0;and what others are saying about it.<br />
+Today, we are more free than ever from the old media gatekeepers<br />
+&#xa0;who used to control the flow of information.<br />
+But with freedom comes responsibility:<br />
+&#xa0;the responsibility to curate our own experience<br />
+&#xa0;&#xa0;&#xa0;and ensure that this flow does not become a flood,<br />
+&#xa0;&#xa0;leaving us less informed than before we took the plunge.<br />
+</p>
+</div>
+<div id="outline-container-org0bb5ebe" class="outline-3">
+<h3 id="org0bb5ebe">expression</h3>
+<div class="outline-text-3" id="text-org0bb5ebe">
+<p>
+absorb [əbˈzɔrb]: v. to read or hear a large amount of new information and understand it吸收<br />
+broad-based [brɔd]: adj. 基础深厚的<br />
+newspaper of record: 主流报纸<br />
+authoritarian [ɔˌθɔrɪˈteriən]: adj. strictly forcing people to obey a set of rules or laws, especially ones that are wrong or unfair独裁的, 独裁主义的<br />
+censor [ˈsensər]: v. to examine books, films, letters etc to remove anything that is considered offensive, morally harmful, or politically dangerous审查<br />
+scandal [ˈskænd(ə)l]: n. talk about dishonest or immoral things that famous or important people are believed to have done丑闻<br />
+revelation [ˌrevəˈleɪʃ(ə)n]: n. a surprising fact about someone or something that was previously secret and is now made known揭露<br />
+covert [koʊˈvɜrt]: adj. secret or hidden隐蔽的, 偷偷摸摸的<br />
+assassination [əˌsæsɪˈneɪʃ(ə)n]: n. the act of murdering an important person暗杀<br />
+corruption [kəˈrʌpʃ(ə)n]: n. dishonest, illegal, or immoral behaviour, especially from someone with power贪污<br />
+narrative [ˈnerətɪv]: n. a description of events in a story, especially in a ↑novel叙述<br />
+mainstream [ˈmeɪnˌstrim]: n. the mainstream the most usual ideas or methods, or the people who have these ideas or methods主流<br />
+gatekeeper [ˈɡeɪtˌkiːpə(r)]: n. someone whose job is to open and close a gate, and to allow or not allow people to go through it看门人<br />
+outlet [ˈaʊtˌlet]: n. a pipe or hole through which something such as a liquid or gas can flow out出路<br />
+unfiltered [ʌn'fɪltəd]: adj. 未滤过的<br />
+protest [prəˈtest: v. something that you do to show publicly that you think that something is wrong and unfair, for example taking part in big public meetings, refusing to work, or refusing to buy a company’s products抗议<br />
+blog [blɒɡ] / blogger: n.n. a web page containing information or opinions from a particular person or about a particular subject, to which new information is added regularly SYN web log博客<br />
+polished [ˈpɑlɪʃt]: adj. polite, confident, and graceful 精练的, 优美的<br />
+chaotic [keɪˈɑtɪk]: adj. a chaotic situation is one in which everything is happening in a confused way混乱的, 无秩序的<br />
+terrorist [ˈterərɪst]: n. someone who uses violence such as bombing, shooting etc to obtain political demands恐怖分子<br />
+coverage [ˈkʌv(ə)rɪdʒ]: n. when a subject or event is reported on television or radio, or in newspapers新闻报告<br />
+accusation [ˌækjəˈzeɪʃ(ə)n]: n. a statement saying that someone is guilty of a crime or of doing something wrong谴责<br />
+refute [rɪˈfjut]: v. to prove that a statement or idea is not correct SYN rebut驳倒<br />
+bias [ˈbaɪəs]: n. an opinion about whether a person, group, or idea is good or bad that influences how you deal with it偏见<br />
+anonymity [ˌænəˈnɪməti]: n. when other people do not know who you are or what your name is匿名<br />
+rumor [ˈrumər]: n. information or a story that is passed from one person to another and which may or may not be true流言<br />
+falsehood [ˈfɔlsˌhʊd]: n. a statement that is untrue SYN lie谬误<br />
+outrageous [aʊtˈreɪdʒəs]: adj. very shocking and extremely unfair or offensive骇人的<br />
+curate [kjəˈreɪt]: v. organize操持<br />
+flow [floʊ]: v. when a liquid, gas, or electricity flows, it moves in a steady continuous stream流动<br />
+</p>
+<hr />
+<p>
+a click away: 用鼠标点击一下<br />
+undermine sb's faith in sth./sb.: 减弱某人对某事/某人的信任<br />
+the breakdown of trust in sb./sth.:  对某人某物信任的崩溃<br />
+compete with sb.: 同某人竞争<br />
+from various perspectives: 从各种各样的视角<br />
+More recently: 更近期地<br />
+multiply the amount of sth.: 倍增某物的数量<br />
+sb. keeps in mind that + &#x2026;: 某人牢记&#x2026;<br />
+in real time: 实时<br />
+at several points in the day: 在一天的几个点<br />
+allow time for sth./sb. to do sth.:  给某人/某物留时间去做某事<br />
+aim for sth.: 争取某物<br />
+tuning in to sth.: 收听某事<br />
+take a guess: 做猜测<br />
+watch out for sth.: 小心提防<br />
+have little connection to sth./sb.: 和某事/某物没关系<br />
+make sb. unaccountable for sth.: 使某人对于某物没有责任<br />
+with A. comes B.: 伴随A来的B<br />
+ensure that + &#x2026;: 确保&#x2026;<br />
+leave sb. less informed than before + &#x2026;: 让某人比&#x2026;之前更加无知<br />
+took the plunge: 冒险<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgd6f2029" class="outline-3">
+<h3 id="orgd6f2029">sentences</h3>
+<div class="outline-text-3" id="text-orgd6f2029">
+<p>
+a click away: 用鼠标点击一下<br />
+</p>
+<ul class="org-ul">
+<li>Rating our application is just a click away on your computer.<br /></li>
+<li>Your computer will run a complex series of calculations just a click away.<br /></li>
+<li>Shopping in China is just a click away on your cell phone.<br /></li>
+</ul>
+<p>
+undermine sb's faith in sth./sb.: 减弱某人对某事/某人的信任<br />
+</p>
+<ul class="org-ul">
+<li>Rateing his personality behind his back must undermine his faith in you.<br /></li>
+<li>These events I learned from the newspaper have undermined my faith in shopping on the internet.<br /></li>
+<li>What he told me yesterday undermined my faith in his product.<br /></li>
+</ul>
+<p>
+the breakdown of trust in sb./sth.:  对某人某物信任的崩溃<br />
+</p>
+<ul class="org-ul">
+<li>The product hasn't enhanced his memory, which leads to his breakdown of trust in it.<br /></li>
+<li>This might explain why it leads to the breakdown of trust in mainstream sources in China.<br /></li>
+<li>The breakdown of trust in his boss put him out of business.<br /></li>
+</ul>
+<p>
+compete with sb.: 同某人竞争<br />
+</p>
+<ul class="org-ul">
+<li>Don't compete with anyone but you in the past.<br /></li>
+<li>Decades before, I set up a furniture factory to compete with my wife.<br /></li>
+<li>These workers must have competed with each other in harsher working conditions.<br /></li>
+</ul>
+<p>
+from various perspectives: 从各种各样的视角<br />
+</p>
+<ul class="org-ul">
+<li>You can describe your pain from various perspectives.<br /></li>
+<li>He reported cheating on his wife from various perspectives.<br /></li>
+<li>This event sent my mind wandering from various perspectives.<br /></li>
+</ul>
+<p>
+More recently: 更近期地<br />
+</p>
+<ul class="org-ul">
+<li>More recently, the terms the Internet and the World Wide Web are used interchangeably.<br /></li>
+<li>More recently, basketball was popular with young men in China.<br /></li>
+<li>More recently, people in China use the World Wide Web from their cell phones.<br /></li>
+</ul>
+<p>
+multiply the amount of sth.: 倍增某物的数量<br />
+</p>
+<ul class="org-ul">
+<li>Spoiled food that you left in the kitchen last night multiplied the amount of flies.<br /></li>
+<li>The pain stimulation multiplied the amount of the chemicals released by the network in his brain.<br /></li>
+<li>The rise of malls on the internet has multiplied the amount of workers who lost their jobs.<br /></li>
+</ul>
+<p>
+sb. keeps in mind that + &#x2026;: 某人牢记&#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>I keep in mind that I borrowed 1300 dollars from you.<br /></li>
+<li>You should keep in mind that I have done you a favor just now.<br /></li>
+<li>Keep in mind that if we work together to undertake the task, it will be finished soon.<br /></li>
+</ul>
+<p>
+in real time: 实时<br />
+</p>
+<ul class="org-ul">
+<li>It couldn't be faster, because it runs a series of calculations in real time.<br /></li>
+<li>We can't cut it down, sir. It's live in real time.<br /></li>
+<li>The application can interact with you in real time.<br /></li>
+</ul>
+<p>
+at several points in the day: 在一天的几个点<br />
+</p>
+<ul class="org-ul">
+<li>He likes to wander around the arcade at several points in the day.<br /></li>
+<li>For current events, what we need to do is to watch TV news at several points in the day.<br /></li>
+<li>The doctor performs experiments at several points in the day.<br /></li>
+</ul>
+<p>
+allow time for sth./sb. to do sth.:  给某人/某物留时间去做某事<br />
+</p>
+<ul class="org-ul">
+<li>My boss doesn't allow time for me to perform experiments.<br /></li>
+<li>Your mother tends to allow time for you to have a rest.<br /></li>
+<li>We must allow time for us to stick together to go on strike.<br /></li>
+</ul>
+<p>
+aim for sth.: 争取某物<br />
+</p>
+<ul class="org-ul">
+<li>The journalist aimed for an article on the puma at large in London.<br /></li>
+<li>You achieve your triumphs better and faster<br />
+when you're aiming for pleasure than when for success.<br /></li>
+<li>He always changes his job, aiming for a higher salary.<br /></li>
+</ul>
+<p>
+tune in to sth.: 倾听/收听某事<br />
+</p>
+<ul class="org-ul">
+<li>Tuning in to various sources may be good for your judgments.<br /></li>
+<li>Tuning in to my own spiritual need, I don't try to interact with him anymore.<br /></li>
+<li>Although I have already been an adult, I still have no idea how to tune in to my inner world.<br /></li>
+</ul>
+<p>
+take a guess: 做猜测<br />
+</p>
+<ul class="org-ul">
+<li>Taking a guess without any evidence is not responsible for yourself.<br /></li>
+<li>What is most remarkable about him is that he has taken a great guess.<br /></li>
+<li>Taking a guess may be the basic building block of studying anything.<br /></li>
+</ul>
+<p>
+watch out for sth.: 小心提防<br />
+</p>
+<ul class="org-ul">
+<li>Watch out for your coworker who rates your personality behind your back.<br /></li>
+<li>Watch out for the lady who is trying to steal the clothes.<br /></li>
+<li>Watch out for the lady who is said to poison her five husbands in her youth.<br /></li>
+</ul>
+<p>
+have little connection to sth./sb.: 和某事/某物没关系<br />
+</p>
+<ul class="org-ul">
+<li>Although we share the same basic goal, we have little connection to each other.<br /></li>
+<li>She claimed that she had little connection to our boss.<br /></li>
+<li>She must have little connection to the murder which was committed yesterday.<br /></li>
+</ul>
+<p>
+make sb. unaccountable for sth.: 使某人对于某物没有责任<br />
+</p>
+<ul class="org-ul">
+<li>You can't make yourself unaccountable for the task you undertook.<br /></li>
+<li>He has made himself unaccountable for the project to prevent himself from getting fired.<br /></li>
+<li>He made her unaccountable for the loss of the ship, in return for this, she rewarded him with sex.<br /></li>
+</ul>
+<p>
+with A. comes B.: 伴随A来的B<br />
+</p>
+<ul class="org-ul">
+<li>With salary comes work, I have to go to work in the subway every day.<br /></li>
+<li>With the loss of money comes the rise in status, they call me Mr. Wu, not Dong.<br /></li>
+<li>With privileges comes responsibilities, I must lead my people to a happy life as the leader.<br /></li>
+</ul>
+<p>
+ensure that + &#x2026;: 确保&#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>I ensured that the virus mobilized his immune system.<br /></li>
+<li>I ensured that I hadn't left my keys in the living room.<br /></li>
+<li>He ensured that his boss agreed with his model of people's behaviors in public.<br /></li>
+</ul>
+<p>
+leave sb. less informed than before + &#x2026;: 让某人比&#x2026;之前更加无知<br />
+</p>
+<ul class="org-ul">
+<li>The tremendous mistakes which he made left him less informed<br />
+than before he performed experiments.<br /></li>
+<li>Your help left him less informed than before he did it by himself.<br /></li>
+<li>Watching TV a great deal left him less informed than before he went to university.<br /></li>
+</ul>
+<p>
+took the plunge: 冒险<br />
+</p>
+<ul class="org-ul">
+<li>I decided to take the plunge.<br /></li>
+<li>When I was very young, I was encouraged by my father to take the plunge.<br /></li>
+<li>I was shaped by taking the plunge.<br /></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-09-10 Tue 20:29 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+
+<div id="outline-container-org84722e3" class="outline-2">
+<h2 id="org84722e3">Lesson 74 Out of the limelight</h2>
+<div class="outline-text-2" id="text-org84722e3">
+<p class="verse">
+Why was their disguise ‘too perfect’?<br />
+<br />
+An ancient bus stopped by a dry river bed and <b>a party of</b> famous actors and actresses got off.<br />
+Dressed in dark glasses and old clothes,<br />
+&#xa0;they had <b>taken special precautions</b> so that no one should recognize them.<br />
+But as they soon discovered, disguises can sometimes be too perfect.<br />
+'This is a wonderful place for a picnic,' said Gloria Gleam.<br />
+'It couldn't be better, Gloria,' Brinksley Meers agreed.<br />
+'No newspaper men, no film fans!<br />
+<b>Why don't we</b> come more often?'<br />
+Meanwhile, two other actors, Rockwall Slinger and Merlin Greeves,<br />
+&#xa0;had <b>carried two large food baskets to</b> a shady spot under some trees.<br />
+When they had all <b>made themselves comfortable</b>, a stranger appeared.<br />
+He looked very angry.<br />
+'Now you get out of here, all of you!' he shouted.<br />
+'I'm sheriff here.<br />
+Do you see that notice? It says "No Camping" &#x2013; in case you can't read!'<br />
+'Look, sheriff,' said Rockwall, '<b>don't be too hard on us</b>.<br />
+I'm Rockwall Slinger and this is Merlin Greeves.'<br />
+'Oh, is it?' said the sheriff with a sneer.<br />
+'Well, I'm Brinksley Meers, and my other name is Gloria Gleam.<br />
+Now you <b>get out of here</b> fast!'<br />
+</p>
+</div>
+<div id="outline-container-orgd7c83a6" class="outline-3">
+<h3 id="orgd7c83a6">expression</h3>
+<div class="outline-text-3" id="text-orgd7c83a6">
+<p>
+limelight ['laɪmlaɪt] n.舞台灯光<br />
+precaution [prɪˈkɔʃ(ə)n] n.预防措施<br />
+fan [fæn] n.狂热谜,迷<br />
+shady [ˈʃeɪdi] adj.遮荫的<br />
+sheriff [ˈʃerɪf] n.司法长官<br />
+notice [ˈnoʊtɪs] n.v.告示<br />
+sneer [snɪr] n.v.冷笑<br />
+</p>
+
+<p>
+stay out of the limelight 避免引人注目<br />
+take precautions 采取预防<br />
+sb. is a big/huge fan of a. 某人是……的超级粉丝<br />
+on such short notice 在这么短的时间内<br />
+with a sneer/ sneer at sb. 对某人冷笑地<br />
+</p>
+<hr />
+<p>
+a party of 一群<br />
+why don't we 为什么我们不<br />
+carry sth. to sw. 将某物带到某处<br />
+make oneself comfortable 别客气<br />
+don't be too hard on us 不要对我们太苛刻<br />
+get out of here 离开这里<br />
+</p>
+</div>
+</div>
+
+
+
+<div id="outline-container-org75006cd" class="outline-3">
+<h3 id="org75006cd"><span class="done DONE">DONE</span> 单词造句</h3>
+<div class="outline-text-3" id="text-org75006cd">
+<p>
+limelight n. stay out of the limelight<br />
+</p>
+<ul class="org-ul">
+<li>Cristal Liu used to stay out of the limelight.<br /></li>
+<li>You needn't have stayed out the limelight.<br /></li>
+<li>She makes a big decision and stays out of the limelight for the rest of her life.<br /></li>
+<li>It's no use pretending that you haven't stayed out of the limelight.<br /></li>
+<li>He's always thinking about staying out of the limelight.<br /></li>
+</ul>
+<p>
+precaution n. take precaution<br />
+</p>
+<ul class="org-ul">
+<li>On the last day of the year, everyone was instructed to take great precaution.<br /></li>
+<li>"Take precaution!", the security shouted at the girl.<br /></li>
+<li>The foreigner refused to take precaution in Shanghai.<br /></li>
+<li>People in Disney land have to take every precaution before entering it.<br /></li>
+<li>Chinese were not allowed to take great precaution in USA.<br /></li>
+</ul>
+<p>
+fan n. sb. is a big/huge fan of a.<br />
+</p>
+<ul class="org-ul">
+<li>He's such a big fan of the truth that he refused to tell lies to people.<br /></li>
+<li>I'm a huge fan of your cooking, darlin.<br /></li>
+<li>Would you mind my following around you? I'm a huge fan of your movie.<br /></li>
+<li>The police which is trying to keep order is a fan of the Greenwood Boys.<br /></li>
+<li>He's such a big fan of the actoress that he keep following her around all morning.<br /></li>
+</ul>
+<p>
+shady adj.<br />
+</p>
+<ul class="org-ul">
+<li>I have been reading aloud in that shady spot every afternoon for a long time.<br /></li>
+<li>A man in the shady spot is waving to us.<br /></li>
+<li>I had to take a rest in that shady spot, for I'm too exhausted.<br /></li>
+<li>They were hold the meeting in the shady spot.<br /></li>
+<li>He is busy looking for a insect in that shady spot.<br /></li>
+</ul>
+<p>
+sheriff n.<br />
+</p>
+<ul class="org-ul">
+<li>The sheriff continued to shout at the boy.<br /></li>
+<li>It's the sheriff who makes mistakes, not you.<br /></li>
+<li>The sheriff will arrest him as soon as he arrives at the airport.<br /></li>
+<li>The sheriff shouldn't have arrested the girl who has a clear conscience.<br /></li>
+<li>The sheriff return the stolen car to the young mother.<br /></li>
+</ul>
+<p>
+notice n.v. on such short notice<br />
+</p>
+<ul class="org-ul">
+<li>There is a notice sticking to the wall.<br /></li>
+<li>Thank you for your helping on such short notice.<br /></li>
+<li>We can't have done homework on such short notice.<br /></li>
+<li>It was you who put the notice on the wall, not your student.<br /></li>
+<li>It is said that the notice was put by a student who plays truent from school every day.<br /></li>
+</ul>
+<p>
+sneer n.v. with a sneer/ sneer at sb.<br />
+</p>
+<ul class="org-ul">
+<li>"You needn't have said that.", his wife said with a sneer.<br /></li>
+<li>The police double check his parcel with a sneer.<br /></li>
+<li>"It's you who are responsible for the whole thing, not me", she said with a sneer.<br /></li>
+<li>Don't sneer at me.<br /></li>
+<li>The officer sneered at the man who was bursting into tears.<br /></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org6fa3d1c" class="outline-3">
+<h3 id="org6fa3d1c">反复听电影片段</h3>
+</div>
+<div id="outline-container-org7a49e74" class="outline-3">
+<h3 id="org7a49e74"><span class="done DONE">DONE</span> Pattern Drill 写+读</h3>
+<div class="outline-text-3" id="text-org7a49e74">
+<ul class="org-ul">
+<li>1T: wearing your glasses -hate<br />
+S1: Why aren't you wearing your glasses?<br />
+S2: Because I hate wearing them.<br />
+<ul class="org-ul">
+<li>polishing the car&#x2013;don't like<br />
+Why aren't you polishing the car?<br />
+Because I don't like polishing it.<br /></li>
+<li>washing the dishes &#x2013; dislike<br />
+Why aren't you washing the dishes?<br />
+Because I dislike wasking them.<br /></li>
+<li>talking to Frank &#x2013; hate<br />
+Why aren't you talking to Frank?<br />
+Because I hate talking to him.<br /></li>
+<li>watching football&#x2013;don't enjoy<br />
+Why aren't you watching football?<br />
+Because I don't enjoy watching it.<br /></li>
+</ul></li>
+<li>2T: wears glasses<br />
+S1: John always wears glasses.<br />
+S2: Are you sure? He isn't wearing any today.<br />
+<ul class="org-ul">
+<li>takes a taxi<br />
+John always takes a taxi.<br />
+Are you sure? He isn't taking any today.<br /></li>
+<li>catches a bus<br />
+John always catches a bus.<br />
+Are you sure? He isn't catching any today.<br /></li>
+<li>smokes a cigar<br />
+John always smokes a cigar.<br />
+Are you sure? He isn't smoking any today.<br /></li>
+<li>wear gloves<br />
+John always wears gloves.<br />
+Are you sure? He isn't wearing any today.<br /></li>
+</ul></li>
+<li>3T: pen - No/Yes<br />
+S1: I'm using your pen. Do you mind?<br />
+S2: No, it's all right. I don't need it just now.<br />
+Yes, I do. I want to use it myself.<br />
+<ul class="org-ul">
+<li>computer - No/Yes<br />
+I'm using your computer. Do you mind?<br />
+Yes, I do. I want to use it myself.<br /></li>
+<li>dictionary - Yes/No<br />
+I'm using your dictionary. Do you mind?<br />
+No, it's all right. I don't need it just now.<br /></li>
+<li>ladder - Yes/No<br />
+I'm using your ladder. Do you mind?<br />
+Yes, I do. I want to use it myself.<br /></li>
+<li>mirror - No/Yes<br />
+I'm using your mirror. Do you mind?<br />
+No, it's all right. I don't need it just now.<br /></li>
+</ul></li>
+<li>4T: she's doing - see<br />
+S1: What's she doing?<br />
+S2: I don't know what she's doing. I can't see anything.<br />
+<ul class="org-ul">
+<li>he's saying &#x2013;hear<br />
+What's he saying?<br />
+I don't know what he's saying. I can't hear anything.<br /></li>
+<li>she's cooking &#x2013;smell<br />
+What's she cooking?<br />
+I don't know what she's cooking. I can't smell anything.<br /></li>
+<li>they're making &#x2013;see<br />
+What're they making.<br />
+I don't know what they're making. I can't see anything.<br /></li>
+<li>we're eating &#x2013;taste<br />
+What're we eating?<br />
+I don't know what we're eating. I can't taste anything.<br /></li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgbeac1bb" class="outline-3">
+<h3 id="orgbeac1bb"><span class="done DONE">DONE</span> 给自己讲解</h3>
+<div class="outline-text-3" id="text-orgbeac1bb">
+</div>
+</div>
+<div id="outline-container-orgdde5be0" class="outline-3">
+<h3 id="orgdde5be0">红皮书</h3>
+</div>
+<div id="outline-container-org5d41857" class="outline-3">
+<h3 id="org5d41857"><span class="done DONE">DONE</span> 习惯用法造句</h3>
+<div class="outline-text-3" id="text-org5d41857">
+<p>
+a party of<br />
+</p>
+<ul class="org-ul">
+<li>A party of children who played truant from school hitchhiked to Paris last night.<br /></li>
+<li>A part of women gather round and sang the same song over and over again.<br /></li>
+<li>In the meantime, a party of fans are meeting the group of singer at the station.<br /></li>
+<li>I was disappointed to learn that a party of student were arrested by the local authorities.<br /></li>
+<li>A party of student have difficulty in finishing homework.<br /></li>
+</ul>
+<p>
+why don't we<br />
+</p>
+<ul class="org-ul">
+<li>Why don't we turn our attention to the cat?<br /></li>
+<li>Why don't we go to disney land once more.<br /></li>
+<li>Why don't we stay out of limelight?<br /></li>
+<li>Why don't we connect the microphone to the big Ben?<br /></li>
+<li>Why don't we make the plan official?<br /></li>
+</ul>
+<p>
+carry sth. to sp.<br />
+</p>
+<ul class="org-ul">
+<li>The boy who played truant from school was carried to the border.<br /></li>
+<li>You're responsible for carrying the paper to office.<br /></li>
+<li>He refused to carry his homework to school.<br /></li>
+<li>He should have carried his homework to school.<br /></li>
+<li>The official should have carried the postcards to office.<br /></li>
+</ul>
+<p>
+make oneself comfortable<br />
+</p>
+<ul class="org-ul">
+<li>Please come in and make yourself comfortable.<br /></li>
+<li>Why don't we make ourselves comfortable first?<br /></li>
+<li>Why don't we set up the tent and make ourselves comfortable?<br /></li>
+<li>It's difficult for her to make herself comfortable in the hotel.<br /></li>
+<li>The landlord is making himself comfortable.<br /></li>
+</ul>
+<p>
+don't be too hard on us<br />
+</p>
+<ul class="org-ul">
+<li>You shouldn't have been too hard on your child.<br /></li>
+<li>Don't be too hard on yourself, you aren't responsible for the mistake.<br /></li>
+<li>Don't be too hard on her, for she's very young.<br /></li>
+<li>Don't be too hard on us, you should turn attention to them.<br /></li>
+<li>If you hadn't been too hard on your child, you wouldn't have argued with him.<br /></li>
+</ul>
+<p>
+get out of here<br />
+</p>
+<ul class="org-ul">
+<li>Let us know when we can get out of here.<br /></li>
+<li>Would you mind my getting out of here?<br /></li>
+<li>Get out of here, for your safety.<br /></li>
+<li>The cow is charging at you, get out of here.<br /></li>
+<li>Get out of here. Ross yelled at Rachel.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org0fe606f" class="outline-3">
+<h3 id="org0fe606f"><span class="done DONE">DONE</span> 跟读至背诵</h3>
+<div class="outline-text-3" id="text-org0fe606f">
+</div>
+</div>
+<div id="outline-container-org046db0f" class="outline-3">
+<h3 id="org046db0f"><span class="done DONE">DONE</span> Ask me if 写+读</h3>
+<div class="outline-text-3" id="text-org046db0f">
+<ol class="org-ol">
+<li>An ancient bus stopped by a dry river bed. What kind of/Where<br />
+What kind of bus stopped by a dry river bed?<br />
+Where did an ancient bus stop?<br /></li>
+<li>A party of famous actors and actresses got off. Who/When<br />
+Who got off?<br />
+When did a party of famous actors and actresses get off?<br /></li>
+<li>They were dressed in dark glasses and old clothes. How/Why/Who<br />
+How were they dressed in?<br />
+Why were they dressed in dark glasses and old clothes?<br />
+Who were dressed in dark glasses and old clothes?<br /></li>
+<li>They'd come for a picnic. What/Why<br />
+What had they come for?<br />
+Why had they come?<br /></li>
+<li>They had taken special precautions so that no one should recognize them. Why<br />
+Why had they taken special precautions?<br /></li>
+<li>Disguises can sometimes be too perfect. What/Why<br />
+What can sometimes be too perfect?<br />
+Why can disguises sometimes be too perfect?<br /></li>
+<li>It was a wonderful place for a picnic. What kind of<br />
+What kind of place was it?<br /></li>
+<li>They got out their food. What<br />
+What did they get out?<br /></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-orgdab4bed" class="outline-3">
+<h3 id="orgdab4bed"><span class="done DONE">DONE</span> 摘要写作</h3>
+<div class="outline-text-3" id="text-orgdab4bed">
+<p>
+After an ancient bus had stopped by a river bed, a party of famous film stars descended.<br />
+They were dressed in dark glasses and old clothes so as not to be recognized.<br />
+Two of the actors carried some picnic things to a shady spot and everyone sat down.<br />
+Just then a sheriff told them rudely that they must leave because camping was not allowed.<br />
+Even when they told him who they were, he did not believe them.<br />
+</p>
+
+<p>
+An ancient bus stopped by a dry river bed.<br />
+A party of famous film stars descended,<br />
+	dressed in dark glasses and old clothes in order that they wouldn't be recognized.<br />
+They carrid some picnic things to a shady spot.<br />
+Everyone had sat down,<br />
+	when a sheriff told them rudely that they must leave as camping was not allowed there.<br />
+The actors told him who they were but he did not believe them.<br />
+</p>
+</div>
+</div>
+
+
+
+<div id="outline-container-orga43ec88" class="outline-3">
+<h3 id="orga43ec88"><span class="done DONE">DONE</span> tell the story 口语</h3>
+<div class="outline-text-3" id="text-orga43ec88">
+</div>
+</div>
+<div id="outline-container-orgdc8b343" class="outline-3">
+<h3 id="orgdc8b343">Topics for discussion</h3>
+</div>
+</div>
+
+<div id="outline-container-orgbeb3781" class="outline-2">
+<h2 id="orgbeb3781">单词造句指南</h2>
+<div class="outline-text-2" id="text-orgbeb3781">
+<ul class="org-ul">
+<li>v+v.变化<br /></li>
+<li>四句型转换<br /></li>
+<li>方式/地点/时间<br /></li>
+<li>其他习惯用法<br /></li>
+<li>其他单词+词性<br /></li>
+<li>原文+变<br /></li>
+<li>6123456<br /></li>
+</ul>
+</div>
+</div>
+</div>
+</body>
+</html>

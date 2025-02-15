@@ -1,0 +1,769 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-01-09 Thu 23:34 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-orge6b325f" class="outline-2">
+<h2 id="orge6b325f">01 Ruins of the ancient Sumerian city of Uruk</h2>
+<div class="outline-text-2" id="text-orge6b325f">
+<p class="verse">
+In 1849,<br />
+&#xa0;a daring young Englishman made a hazardous journey into the deserts and swamps of southern Iraq.<br />
+Moving south down the banks of the Euphrates River<br />
+&#xa0;&#xa0;while braving high winds and temperatures that reached 120 degrees Fahrenheit,<br />
+&#xa0;William Loftus led a small expedition in search of the roots of civilization.<br />
+As he said,<br />
+&#xa0;'From our childhood we have been led to regard this place as the cradle of the human race.'<br />
+<br />
+Guided by native Arabs into the southernmost reaches of Iraq,<br />
+&#xa0;Loftus and his small group of explorers were soon overwhelmed by what they saw.<br />
+He wrote,<br />
+&#xa0;'I know of nothing more exciting or impressive than the first sight of one of these great piles,<br />
+&#xa0;looming in solitary grandeur from the surrounding plains and marshes.'<br />
+One of these piles, known to the natives as the mound of Warka,<br />
+&#xa0;contained the ruins of Uruk,<br />
+&#xa0;&#xa0;one of the first cities in the world and part of the world's first civilization.<br />
+<br />
+Southwest Asia was one area in the world where civilization began.<br />
+Although Western civilization did not yet exist,<br />
+&#xa0;its origins can be traced back to the ancient Near East,<br />
+&#xa0;where people in Southwest Asia and in Egypt, in northeastern Africa,<br />
+&#xa0;&#xa0;developed organized societies, invented writing,<br />
+&#xa0;&#xa0;and created the ideas and institutions that we associate with civilization.<br />
+The later Greeks and Romans<br />
+&#xa0;&#xa0;who played such a crucial role in the development of Western civilization,<br />
+&#xa0;were nourished and influenced by these older Near Eastern societies.<br />
+It is appropriate, therefore,<br />
+&#xa0;to begin our story of Western civilization<br />
+&#xa0;&#xa0;with the early civilizations of Southwest Asia and Egypt.<br />
+Before considering them, however,<br />
+&#xa0;we must briefly examine prehistory<br />
+&#xa0;&#xa0;and observe how human beings made the shift from hunting and gathering<br />
+&#xa0;&#xa0;&#xa0;to agricultural communities and ultimately to cities and civilization.<br />
+</p>
+</div>
+<div id="outline-container-org0948b39" class="outline-3">
+<h3 id="org0948b39">expression</h3>
+<div class="outline-text-3" id="text-org0948b39">
+<p>
+dare [der] daring: v.adj. involving a lot of risk or danger, or brave enough to do risky things大胆的<br />
+hazardous [ˈhæzərdəs]: adj. dangerous, especially to people’s health or safety危险的, 冒险的<br />
+swamp [swɑmp]: n. land that is always very wet or covered with a layer of water沼泽, 湿地<br />
+brave [breɪv]: v. brave it out to deal bravely with something that is frightening or difficult勇敢地面对<br />
+expedition [ˌekspəˈdɪʃ(ə)n]: n. a long and carefully organized journey, especially to a dangerous or unfamiliar place, or the people that make this journey远征, 探险队<br />
+cradle [ˈkreɪd(ə)l]: n. a small bed for a baby, especially one that moves gently from side to side ⇨ cot摇篮, 发源地<br />
+southernmost [ˈsʌðərnˌmoʊst]: adj. furthest south最南的<br />
+solitary [ˈsɑləˌteri]: adj. used to emphasize that there is only one of something SYN single单一的,孤独的<br />
+grandeur [ˈɡrænˌdʒʊr]: n. impressive beauty, power, or size壮丽,雄伟<br />
+marsh [mɑrʃ]: n. an area of low flat ground that is always wet and soft ⇨ bog, swamp湿地, 沼泽<br />
+mound [maʊnd]: n. a pile of earth or stones that looks like a small hill山冈<br />
+crucial [ˈkruʃ(ə)l]: adj. something that is crucial is extremely important, because everything else depends on it SYN vital至关紧要的<br />
+nourish [ˈnɜrɪʃ]: v. to give a person or other living thing the food and other substances they need in order to live, grow, and stay healthy滋养<br />
+prehistory [ˌpriˈhɪst(ə)ri]: n. the time in history before anything was written down史前史<br />
+agriculture [ˈæɡrɪˌkʌltʃər] agricultural: n.adj. the practice or science of farming农业的, 农艺的<br />
+community [kəˈmjunəti]: n. the people who live in the same area, town etc社区<br />
+ultimate [ˈʌltɪmət] ultimately: adj.adv. someone’s ultimate aim is their main and most important aim, that they hope to achieve in the future SYN final最终的<br />
+Fahrenheit [ˈferənˌhaɪt]: n. a scale of temperature in which water freezes at 32° and boils at 212°华氏温度计<br />
+</p>
+<hr />
+<p>
+move south down sp.: 沿着某地南下<br />
+in search of sth.: 寻找某物<br />
+high winds: 强风<br />
+loom from sth.: 从&#x2026;隐现<br />
+know of nothing more adj. than sth.: 不知道什么比某事更&#x2026;<br />
+make the shift from A to B: 从A转变到B<br />
+the roots of sth.: 某事物的根源<br />
+human race: 人类<br />
+be appropriate to do sth.: 适宜做某事<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org9a0665b" class="outline-3">
+<h3 id="org9a0665b">sentence</h3>
+<div class="outline-text-3" id="text-org9a0665b">
+<p>
+dare daring: v. adj. involving a lot of risk or danger, or brave enough to do risky things大胆的<br />
+</p>
+<ul class="org-ul">
+<li>How dare you?<br /></li>
+<li>A daring Englishman journeyed to the Mongol where he brought gunpowder to Europe.<br /></li>
+<li>In my youth, a kid who plays truant from school was regarded as daring.<br /></li>
+</ul>
+<p>
+hazardous: adj. dangerous, especially to people’s health or safety危险的, 冒险的<br />
+</p>
+<ul class="org-ul">
+<li>His hazardous trip reached its apogee when he crept into a boat which was sailing across the Atlantic.<br /></li>
+<li>Before your hazardous journey, you must take precaution so that no one can recognize you.<br /></li>
+<li>It is hazardous to cook meth in such a hurry.<br /></li>
+</ul>
+<p>
+swamp: n. land that is always very wet or covered with a layer of water沼泽, 湿地<br />
+</p>
+<ul class="org-ul">
+<li>At last, they decided to carry the body to the swamp.<br /></li>
+<li>No one could account for the fact that they enact a ritual to bury body in the swamp.<br /></li>
+<li>When winter comes in, these girls and boys like to ice skate on the freeze swamp.<br /></li>
+</ul>
+<p>
+brave: v. brave it out to deal bravely with something that is frightening or difficult勇敢地面对<br />
+</p>
+<ul class="org-ul">
+<li>Don't be hard on me, I am braving bad grades at the semester.<br /></li>
+<li>He couldn't brave the lung cancer on such short notice.<br /></li>
+<li>When the steering wheel came away, the driver braved it and tried his best to make it under control.<br /></li>
+</ul>
+<p>
+expedition: n. a long and carefully organized journey, especially to a dangerous or unfamiliar place, or the people that make this journey远征, 探险队<br />
+</p>
+<ul class="org-ul">
+<li>He leads a group of expedition to find buried treasures which were said to be buried by pirates.<br /></li>
+<li>The high winds and temperatures exhausted expedition, which led to rebellions in the plain.<br /></li>
+<li>The expedition must have sacked this village.<br /></li>
+</ul>
+<p>
+cradle: n. a small bed for a baby, especially one that moves gently from side to side ⇨ cot摇篮, 发源地<br />
+</p>
+<ul class="org-ul">
+<li>You are a shoplifter who stole the cradle from a store.<br /></li>
+<li>You must have the cradle repaired.<br /></li>
+<li>All cradles must have been sold out, she exclaimed.<br /></li>
+</ul>
+<p>
+southernmost: adj. furthest south最南的<br />
+</p>
+<ul class="org-ul">
+<li>Sorry to interrupt you, but the country is southernmost in Europe.<br /></li>
+<li>He tried to drive to a southernmost halmet in this plain so that he could stay out of the limenight.<br /></li>
+<li>You, the southernmost guy, get out of my house, now.<br /></li>
+</ul>
+<p>
+solitary: adj. used to emphasize that there is only one of something SYN single单一的,孤独的<br />
+</p>
+<ul class="org-ul">
+<li>My house is the solitary modern house in the district.<br /></li>
+<li>He noticed with dismay that his daughter did solitary work in the factory.<br /></li>
+<li>He was the solitary boy who moved in a circle in the class.<br /></li>
+</ul>
+<p>
+grandeur: n. impressive beauty, power, or size壮丽,雄伟<br />
+</p>
+<ul class="org-ul">
+<li>As soon as he goes to China, he will admire for the grandeur of the Great Wall.<br /></li>
+<li>I was stunned by the grandeur of the mountains.<br /></li>
+<li>The grandeur of the painting on the ceiling of the Sistine chapel must satisfy him as an artist.<br /></li>
+</ul>
+<p>
+marsh: n. an area of low flat ground that is always wet and soft ⇨ bog, swamp湿地, 沼泽<br />
+</p>
+<ul class="org-ul">
+<li>Imagine his dismay when he found he couldn't ice skate on the marsh even though it froze.<br /></li>
+<li>He often risks his life in this way to look at marshes.<br /></li>
+<li>He must kill his wife who was thrown into the marsh.<br /></li>
+</ul>
+<p>
+mound: n. a pile of earth or stones that looks like a small hill山冈<br />
+</p>
+<ul class="org-ul">
+<li>Patches of green appeared on the deserted mound.<br /></li>
+<li>These mounds threated surrounding villages, for it would cause serious floods.<br /></li>
+<li>Villagers tried to cultivate tomatoes on the mound.<br /></li>
+</ul>
+<p>
+crucial: adj. something that is crucial is extremely important, because everything else depends on it SYN vital至关紧要的<br />
+</p>
+<ul class="org-ul">
+<li>The profit our company made last year is so crucial that we began to dominate the market of this kind of product.<br /></li>
+<li>Your disguise proved crucial, for these police haven't recognized you.<br /></li>
+<li>The portion of the ingredient was so crucial that they managed to make cannons.<br /></li>
+</ul>
+<p>
+nourish: v. to give a person or other living thing the food and other substances they need in order to live, grow, and stay healthy滋养<br />
+</p>
+<ul class="org-ul">
+<li>The soil near the river nourished the masses of the continent.<br /></li>
+<li>The poor who work with their hands have no time to nourish their warfare skills.<br /></li>
+<li>These street skills nourished a famous prizefighter who brought science to the box.<br /></li>
+</ul>
+<p>
+prehistory: n. the time in history before anything was written down史前史<br />
+</p>
+<ul class="org-ul">
+<li>He raised a fundamental question about prehistory.<br /></li>
+<li>He published an article on prehistory which inspired awe in many historians.<br /></li>
+<li>The prehistory of human race still remains a mystery.<br /></li>
+</ul>
+<p>
+agriculture agricultural: n.adj. the practice or science of farming农业的, 农艺的<br />
+</p>
+<ul class="org-ul">
+<li>Pratices make your agricultural skills perfect.<br /></li>
+<li>I don't have access to the archives of the Argicultural Bank.<br /></li>
+<li>The agricultural civilization proved resilent, for it have continued for over 5000 years.<br /></li>
+</ul>
+<p>
+community: n. the people who live in the same area, town etc社区<br />
+</p>
+<ul class="org-ul">
+<li>The sheriff in the community is always raising money for one cause or another.<br /></li>
+<li>A fire extinguisher came away in our community.<br /></li>
+<li>A daring Englishman will carry the weapon to our community.<br /></li>
+</ul>
+<p>
+ultimate ultimately: adj.adv. someone’s ultimate aim is their main and most important aim, that they hope to achieve in the future SYN final最终的<br />
+</p>
+<ul class="org-ul">
+<li>The corporation proclaimed that the system they published yesterday would be the ultimate version.<br /></li>
+<li>She likes to sneer at anyone who talks to her, ultimately let everyone dislike her in the community.<br /></li>
+<li>The bull charged at him at tremendous speed, ultimately the poor guy had to go to hospital.<br /></li>
+</ul>
+<p>
+Fahrenheit: n. a scale of temperature in which water freezes at 32° and boils at 212°华氏温度计<br />
+</p>
+<ul class="org-ul">
+<li></li>
+
+<li></li>
+
+<li></li>
+</ul>
+<hr />
+<p>
+move south down sp.: 沿着某地南下<br />
+</p>
+<ul class="org-ul">
+<li>If our legions had moved south down the river, we wouldn't have ran into the lack of water.<br /></li>
+<li>Move south down the road, you will find the library on your left.<br /></li>
+<li>As the steering wheel came away, the car just moved south down the road.<br /></li>
+</ul>
+<p>
+in search of sth.: 寻找某物<br />
+</p>
+<ul class="org-ul">
+<li>He is search of diamond which is worth $15.<br /></li>
+<li>In search of $15 worth of fish he caught old boots.<br /></li>
+<li>His wife cheated on he when he was in search of his private collection.<br /></li>
+</ul>
+<p>
+high winds: 强风<br />
+</p>
+<ul class="org-ul">
+<li>A gust of high wind swept the matress out of his roof.<br /></li>
+<li>In spite of high winds, he succeeded in sailing across the Atlantic.<br /></li>
+<li>If there had not been high winds, they would have taken lead in the competition.<br /></li>
+</ul>
+<p>
+loom from sth.: 从&#x2026;隐现<br />
+</p>
+<ul class="org-ul">
+<li>Looming from a shady spot, a puma at large is hunting a rabbit.<br /></li>
+<li>Looming from the tower, he pointed out that the priest had a skeleton in a cupboard.<br /></li>
+<li>Looming from the dark, he admitted that he had kept his wife in hiding.<br /></li>
+</ul>
+<p>
+know of nothing more adj. than sth.: 不知道什么比某事更&#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>I know of nothing more dear than my cat I shared my house with.<br /></li>
+<li>In her youth, she knew of nothing more important than good grades which qualified her.<br /></li>
+<li>My wife exclaimed that she knew of nothing more delicious than this special kind of fish.<br /></li>
+</ul>
+<p>
+make the shift from A to B: 从A转变到B<br />
+</p>
+<ul class="org-ul">
+<li>No one could account for the fact that the boy made the shift from a poor to a millionaire.<br /></li>
+<li>No doubt, he made the shift from a manual worker to a white collar.<br /></li>
+<li>It astounded him that his wife made the shift from a housewife to a CEO.<br /></li>
+</ul>
+<p>
+the roots of sth.: 某事物的根源<br />
+</p>
+<ul class="org-ul">
+<li>I have no time to figure out the roots of every worker.<br /></li>
+<li>He undertook the arduous project to search for the roots of the civilization.<br /></li>
+<li>The police took precaution to figure out the root of the new meth.<br /></li>
+</ul>
+<p>
+human race: 人类<br />
+</p>
+<ul class="org-ul">
+<li>The intellectual raised fundamental questions about the value and importance of human race.<br /></li>
+<li>In pursuit of the happiness of human race, a group of scientists undertook the arduous project.<br /></li>
+<li>The pope enacted a ritual to ask for the salvation of human race.<br /></li>
+</ul>
+<p>
+be appropriate to do sth.: 适宜做某事<br />
+</p>
+<ul class="org-ul">
+<li>His wife complained it was not appropriate to buy a car on such short notice.<br /></li>
+<li>Sir, it's not apporpriate to park on a no-parking area.<br /></li>
+<li>You're appropriate to follow in your father's footstep.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgec9e306" class="outline-3">
+<h3 id="orgec9e306">sentence2</h3>
+<div class="outline-text-3" id="text-orgec9e306">
+<p>
+dare daring: v. adj. involving a lot of risk or danger, or brave enough to do risky things大胆的<br />
+</p>
+<ul class="org-ul">
+<li>How dare you?<br /></li>
+<li>A daring Englishman journeyed to the Mongols where he brought gunpowder to Europe.<br /></li>
+<li>In my youth, a kid who plays truant from school was regarded as daring.<br /></li>
+</ul>
+<p>
+hazardous: adj. dangerous, especially to people’s health or safety危险的, 冒险的<br />
+</p>
+<ul class="org-ul">
+<li>His hazardous trip reached its apogee when he crept into a boat that was sailing across the Atlantic.<br /></li>
+<li>Before your hazardous journey, you must take precautions so that no one can recognize you.<br /></li>
+<li>It is hazardous to cook meth in such a hurry.<br /></li>
+</ul>
+<p>
+swamp: n. land that is always very wet or covered with a layer of water沼泽, 湿地<br />
+</p>
+<ul class="org-ul">
+<li>At last, they decided to carry the body to the swamp.<br /></li>
+<li>No one could account for the fact that they enacted a ritual to bury the body in the swamp.<br /></li>
+<li>When winter comes in, these girls and boys like to ice skate on the frozen swamp.<br /></li>
+</ul>
+<p>
+brave: v. brave it out to deal bravely with something that is frightening or difficult勇敢地面对<br />
+</p>
+<ul class="org-ul">
+<li>Don't be hard on me, I am braving bad grades during the semester.<br /></li>
+<li>He couldn't brave the lung cancer on such short notice.<br /></li>
+<li>When the steering wheel came away, the driver braved it and tried his best to make it under control.<br /></li>
+</ul>
+<p>
+expedition: n. a long and carefully organized journey, especially to a dangerous or unfamiliar place, or the people that make this journey远征, 探险队<br />
+</p>
+<ul class="org-ul">
+<li>He leads an expedition to find buried treasures that were said to be buried by pirates.<br /></li>
+<li>The high winds and temperatures exhausted the expedition, which led to rebellions in the plain.<br /></li>
+<li>The expedition must have sacked this village.<br /></li>
+</ul>
+<p>
+cradle: n. a small bed for a baby, especially one that moves gently from side to side ⇨ cot摇篮, 发源地<br />
+</p>
+<ul class="org-ul">
+<li>You are a shoplifter who stole the cradle from a store.<br /></li>
+<li>You must have the cradle repaired.<br /></li>
+<li>All cradles must have been sold out, she exclaimed.<br /></li>
+</ul>
+<p>
+southernmost: adj. furthest south最南的<br />
+</p>
+<ul class="org-ul">
+<li>Sorry to interrupt you, but the country is the southernmost in Europe.<br /></li>
+<li>He tried to drive to one of the southernmost helmets in this plain so that he could stay out of the limelight.<br /></li>
+<li>You, the southernmost guy, get out of my house, now.<br /></li>
+</ul>
+<p>
+solitary: adj. used to emphasize that there is only one of something SYN single单一的,孤独的<br />
+</p>
+<ul class="org-ul">
+<li>My house is the solitary modern house in the district.<br /></li>
+<li>He noticed with dismay that his daughter did solitary work in the factory.<br /></li>
+<li>He was the solitary boy who moved in a circle in the class.<br /></li>
+</ul>
+<p>
+grandeur: n. impressive beauty, power, or size壮丽,雄伟<br />
+</p>
+<ul class="org-ul">
+<li>As soon as he goes to China, he will admire the grandeur of the Great Wall.<br /></li>
+<li>I was stunned by the grandeur of the mountains.<br /></li>
+<li>The grandeur of the painting on the ceiling of the Sistine Chapel must satisfy him as an artist.<br /></li>
+</ul>
+<p>
+marsh: n. an area of low flat ground that is always wet and soft ⇨ bog, swamp湿地, 沼泽<br />
+</p>
+<ul class="org-ul">
+<li>Imagine his dismay when he found he couldn't ice skate on the marsh even though it froze.<br /></li>
+<li>He often risks his life in this way to look at marshes.<br /></li>
+<li>He must kill his wife who was thrown into the marsh.<br /></li>
+</ul>
+<p>
+mound: n. a pile of earth or stones that looks like a small hill山冈<br />
+</p>
+<ul class="org-ul">
+<li>Patches of green appeared on the deserted mound.<br /></li>
+<li>These mounds threatened surrounding villages, for it would cause serious floods.<br /></li>
+<li>Villagers tried to cultivate tomatoes on the mound.<br /></li>
+</ul>
+<p>
+crucial: adj. something that is crucial is extremely important, because everything else depends on it SYN vital至关紧要的<br />
+</p>
+<ul class="org-ul">
+<li>The profit our company made last year is so crucial that we began to dominate the market for this kind of product.<br /></li>
+<li>Your disguise proved crucial, for these police haven't recognized you.<br /></li>
+<li>The portion of the ingredient was so crucial that they managed to make cannons.<br /></li>
+</ul>
+<p>
+nourish: v. to give a person or other living thing the food and other substances they need in order to live, grow, and stay healthy滋养<br />
+</p>
+<ul class="org-ul">
+<li>The soil near the river nourished the masses of the continent.<br /></li>
+<li>The poor who work with their hands have no time to nourish their warfare skills.<br /></li>
+<li>These street skills nourished a famous prizefighter who brought science to the box.<br /></li>
+</ul>
+<p>
+prehistory: n. the time in history before anything was written down史前史<br />
+</p>
+<ul class="org-ul">
+<li>He raised a fundamental question about prehistory.<br /></li>
+<li>He published an article on prehistory which inspired awe in many historians.<br /></li>
+<li>The prehistory of the human race still remains a mystery.<br /></li>
+</ul>
+<p>
+agriculture agricultural: n.adj. the practice or science of farming农业的, 农艺的<br />
+</p>
+<ul class="org-ul">
+<li>Pratices make your agricultural skills perfect.<br /></li>
+<li>I don't have access to the Agricultural Bank archives.<br /></li>
+<li>The agricultural civilization proved resilient, for it has continued for over 5000 years.<br /></li>
+</ul>
+<p>
+community: n. the people who live in the same area, town etc社区<br />
+</p>
+<ul class="org-ul">
+<li>The sheriff in the community is always raising money for one cause or another.<br /></li>
+<li>A fire extinguisher came away in our community.<br /></li>
+<li>A daring Englishman will carry the weapon to our community.<br /></li>
+</ul>
+<p>
+ultimate ultimately: adj.adv. someone’s ultimate aim is their main and most important aim, that they hope to achieve in the future SYN final最终的<br />
+</p>
+<ul class="org-ul">
+<li>The corporation proclaimed that the system they published yesterday would be the ultimate version.<br /></li>
+<li>She likes to sneer at anyone who talks to her, ultimately letting everyone dislike her in the community.<br /></li>
+<li>The bull charged at him at tremendous speed, ultimately the poor guy had to go to hospital.<br /></li>
+</ul>
+<p>
+Fahrenheit: n. a scale of temperature in which water freezes at 32° and boils at 212°华氏温度计<br />
+</p>
+<ul class="org-ul">
+<li></li>
+
+<li></li>
+
+<li></li>
+</ul>
+<hr />
+<p>
+move south down sp.: 沿着某地南下<br />
+</p>
+<ul class="org-ul">
+<li>If our legions had moved south down the river, we wouldn't have run into the lack of water.<br /></li>
+<li>Move south down the road, you will find the library on your left.<br /></li>
+<li>As the steering wheel came away, the car just moved south down the road.<br /></li>
+</ul>
+<p>
+in search of sth.: 寻找某物<br />
+</p>
+<ul class="org-ul">
+<li>He is in search of the diamond which is worth $15.<br /></li>
+<li>In search of $15 worth of fish he caught old boots.<br /></li>
+<li>His wife cheated on him when he was in search of his private collection.<br /></li>
+</ul>
+<p>
+high winds: 强风<br />
+</p>
+<ul class="org-ul">
+<li>A gust of high wind swept the mattress out of his roof.<br /></li>
+<li>In spite of high winds, he succeeded in sailing across the Atlantic.<br /></li>
+<li>If there had not been high winds, they would have taken the lead in the competition.<br /></li>
+</ul>
+<p>
+loom from sth.: 从&#x2026;隐现<br />
+</p>
+<ul class="org-ul">
+<li>Looming from a shady spot, a puma at large is hunting a rabbit.<br /></li>
+<li>Looming from the tower, he pointed out that the priest had a skeleton in a cupboard.<br /></li>
+<li>Looming from the dark, he admitted that he had kept his wife in hiding.<br /></li>
+</ul>
+<p>
+know of nothing more adj. than sth.: 不知道什么比某事更&#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>I know of nothing more dear than the cat I shared my house with.<br /></li>
+<li>In her youth, she knew of nothing more important than good grades which qualified her.<br /></li>
+<li>My wife exclaimed that she knew of nothing more delicious than this special kind of fish.<br /></li>
+</ul>
+<p>
+make the shift from A to B: 从A转变到B<br />
+</p>
+<ul class="org-ul">
+<li>No one could account for the fact that the boy made the shift from a poor to a millionaire.<br /></li>
+<li>No doubt, he made the shift from a manual worker to a white collar.<br /></li>
+<li>It astounded him that his wife made the shift from a housewife to a CEO.<br /></li>
+</ul>
+<p>
+the roots of sth.: 某事物的根源<br />
+</p>
+<ul class="org-ul">
+<li>I have no time to figure out the roots of every worker.<br /></li>
+<li>He undertook the arduous project to search for the roots of the civilization.<br /></li>
+<li>The police took precautions to figure out the root of the new meth.<br /></li>
+</ul>
+<p>
+the human race: 人类<br />
+</p>
+<ul class="org-ul">
+<li>The intellectual raised fundamental questions about the value and importance of the human race.<br /></li>
+<li>In pursuit of the happiness of the human race, a group of scientists undertook the arduous project.<br /></li>
+<li>The pope enacted a ritual to ask for the salvation of the human race.<br /></li>
+</ul>
+<p>
+be appropriate to do sth.: 适宜做某事<br />
+</p>
+<ul class="org-ul">
+<li>His wife complained it was not appropriate to buy a car on such short notice.<br /></li>
+<li>Sir, it's not appropriate to park in a no-parking area.<br /></li>
+<li>You're appropriate to follow in your father's footsteps.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org7c8f358" class="outline-3">
+<h3 id="org7c8f358">summary</h3>
+<div class="outline-text-3" id="text-org7c8f358">
+<p>
+In 1849, a daring Englishman led a small expedition into the desert and swamps of the Iraq,<br />
+	which is regarded as the cradle of the human race.<br />
+Into the southernmost reaches of the Iraq,<br />
+	he and his group of explorers were overwhelmed by what they saw,<br />
+	one of the great piles looming in grandeur from the surrouding plains and marshes.<br />
+One of these piles called the mound of Warka contained the ruin of Uruk,<br />
+	one of the first cities in the world and part of the world's first civilization.<br />
+The origins of Western Civilization can be traced back to the ancient near Nest.<br />
+The later Greeks and Romans who play a crucial role in Western Civilization<br />
+	were nourished and influenced by these older near Nest socities.<br />
+Therefore, it is appropriate to begin our story with the ancient Near Nest.<br />
+Before that, we must briefly examine prehistory<br />
+	and obverse how human being made the shift from hunting and gathering<br />
+		to agricultural communities and ultimately to cities and cilivization.<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org2f264e6" class="outline-3">
+<h3 id="org2f264e6">summary2</h3>
+<div class="outline-text-3" id="text-org2f264e6">
+<p>
+In 1849, a daring Englishman led a small expedition into the desert and swamps of Iraq,<br />
+	which is regarded as the cradle of the human race.<br />
+Into the southernmost reaches of Iraq,<br />
+	he and his group of explorers were overwhelmed by what they saw,<br />
+	one of the great piles looming in grandeur from the surrounding plains and marshes.<br />
+One of these piles called the mound of Warka contained the ruin of Uruk,<br />
+	one of the first cities in the world and part of the world's first civilization.<br />
+The origins of Western Civilization can be traced back to the ancient Near East.<br />
+The later Greeks and Romans who played a crucial role in Western Civilization<br />
+	were nourished and influenced by these older Near East societies.<br />
+Therefore, it is appropriate to begin our story with the ancient Near East.<br />
+Before that, we must briefly examine prehistory<br />
+	and observe how human beings made the shift from hunting and gathering<br />
+		to agricultural communities and ultimately to cities and civilization.<br />
+</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

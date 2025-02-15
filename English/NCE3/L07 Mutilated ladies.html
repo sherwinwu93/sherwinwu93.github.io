@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-09-28 Sat 22:17 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-orgf6a98f4" class="outline-2">
+<h2 id="orgf6a98f4">Lesson 07 Mutilated ladies</h2>
+<div class="outline-text-2" id="text-orgf6a98f4">
+<p class="verse">
+Why did Jane cook John's wallet?<br />
+<br />
+Has it ever happened to you?<br />
+Have you ever put your trousers in the washing machine<br />
+&#xa0;and then remembered there was a large bank note in your back pocket?<br />
+When you rescued your trousers, did you find the note was whiter than white?<br />
+People who live in Britain needn't despair<br />
+&#xa0;when they make mistakes like this (and a lot of people do)!<br />
+Fortunately for them, the Bank of England has a team<br />
+&#xa0;called Mutilated Ladies which <b>deals with</b> claims from people<br />
+&#xa0;&#xa0;who fed their money to a machine or to their dogs.<br />
+Dogs, it seems, love to chew up money!<br />
+<br />
+A recent case concerns Jane Butlin whose fiance, John, runs a successful furniture business.<br />
+John had a very good day<br />
+&#xa0;and put his wallet containing 3000 dollars into the microwave oven <b>for safekeeping</b>.<br />
+Then he and Jane <b>went horse-riding</b>.<br />
+When they got home, Jane cooked their dinner in the microwave oven and without realizing it,<br />
+&#xa0;cooked her fiance's wallet as well.<br />
+<b>Imagine their dismay when</b> they found a beautifully-cooked wallet and notes turned to ash!<br />
+John went to see his bank manager who sent the remains of wallet<br />
+&#xa0;and the money to the special department of the Bank of England in Newcastle: the Mutilated Ladies!<br />
+They examined the remains and John got all his money back.<br />
+'<b>So long as</b> there's something to identify, we will give people their money back,'<br />
+&#xa0;said a spokeswoman for the Bank,<br />
+'Last year, we paid 1.5 million dollars on 21,000 claims.'<br />
+</p>
+</div>
+<div id="outline-container-orge745500" class="outline-3">
+<h3 id="orge745500">expression</h3>
+<div class="outline-text-3" id="text-orge745500">
+<p>
+mutilate: [ˈmjut(ə)lˌeɪt] v. damage someone’s body, especially by cutting or removing part of it使残缺不全<br />
+chew: [tʃu] v. chew up  chewing gum咀嚼<br />
+fiance: [ˌfiən'seɪ] n.未婚夫<br />
+microwave: [ˈmaɪkrəˌweɪv] n.微波,微波炉<br />
+oven: [ˈʌv(ə)n] n.炉灶<br />
+safekeeping: [seɪfˈkipɪŋ] n.妥善保管<br />
+Newcastle: [ˈnjuːkɑːsl] n.<br />
+identify: [aɪˈdentɪˌfaɪ] v.鉴定,识别<br />
+spokeswoman: [ˈspoʊksˌwʊmən] n.女发言人<br />
+</p>
+
+<p>
+chewing gum: 口香糖<br />
+for safekeeping: 为了妥善保管<br />
+</p>
+<hr />
+<p>
+deal with: 处理<br />
+go doing sth.: 去做某事<br />
+Imagine sb's dismay when + &#x2026;: 想象某人的沮丧当&#x2026;<br />
+so long as + &#x2026;, sb. will do sth.: 只要&#x2026;,某人就会做某事<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgbb579a2" class="outline-3">
+<h3 id="orgbb579a2">words</h3>
+<div class="outline-text-3" id="text-orgbb579a2">
+<p>
+mutilate [ˈmjuːtɪleɪt] v. 使残缺不全<br />
+chew [tʃuː] v. 咀嚼<br />
+fiance [fiˈɒnseɪ; fiˈɑːnseɪ] n. 未婚夫<br />
+microwave [ˈmaɪkrəweɪv] n. 微波<br />
+oven [ˈʌv(ə)n] n. 炉灶<br />
+safekeeping [ˌseɪfˈkiːpɪŋ] n. 妥善保管<br />
+Newcastle [ˈnjuːkɑːsl] n. 纽卡斯尔<br />
+identify [aɪˈdentɪfaɪ] v. 鉴别<br />
+spokeswoman [ˈspəʊkswʊmən] n. 女发言人<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge92e484" class="outline-3">
+<h3 id="orge92e484"><span class="done DONE">DONE</span> 单词造句</h3>
+<div class="outline-text-3" id="text-orge92e484">
+<p>
+mutilate v.<br />
+</p>
+<ul class="org-ul">
+<li>The prisoner was mutilated, for he has been tortured before.<br /></li>
+<li>He ran into serious trouble and was mutilated in the accident.<br /></li>
+<li>Mutilated ladies is an organization which recoginzed mutilated bank notes.<br /></li>
+<li>I regreted to inform you that your left leg was mutilated in the plane crash.<br /></li>
+<li>The pilot was disappointed to learn that his leg was mutilated in the place crash.<br /></li>
+</ul>
+<p>
+chew v. chew up  chewing gum<br />
+</p>
+<ul class="org-ul">
+<li>Are you chewing chocolate? My wife said with a sneer.<br /></li>
+<li>I haven't chew gum hald as much as you.<br /></li>
+<li>From now on, I quit chewing gum.<br /></li>
+<li>I promise that I will grab some chewing gum for you.<br /></li>
+<li>She was reluctant to chew up the rice.<br /></li>
+</ul>
+<p>
+fiance n.<br />
+</p>
+<ul class="org-ul">
+<li>His fiance was too embarrassed to say hello to her when they met at the first time.<br /></li>
+<li>My fiance is going to write an article about ancient Greek rings.<br /></li>
+<li>His fiance called him baby.<br /></li>
+<li>At last, his fiance got impatient and left her alone at the airport.<br /></li>
+<li>Not only have I had my hair cut, but my fiance as well.<br /></li>
+</ul>
+<p>
+microwave n.<br />
+</p>
+<ul class="org-ul">
+<li>He has sold ten thousands of dollars worth microwaves.<br /></li>
+<li>He sent his customer a fax informing that the microwaves were sold out.<br /></li>
+<li>Despite the fact that he gets used to selling microwaves.<br /></li>
+<li>He went to extremes to get a free microwave from the market.<br /></li>
+<li>She is making a discovery of the microwave.<br /></li>
+</ul>
+<p>
+oven n.<br />
+</p>
+<ul class="org-ul">
+<li>If we buy the oven, we will have delicious roast duck tonight.<br /></li>
+<li>The moment the cat touched the oven, she scrambled back into her box.<br /></li>
+<li>He was amazed to find that her wife had already bought an oven.<br /></li>
+<li>He claimed that this oven can date back to his childhood.<br /></li>
+<li>In her youth, she always recognized an oven as an microwave.<br /></li>
+</ul>
+<p>
+safekeeping n.  for safekeeping<br />
+</p>
+<ul class="org-ul">
+<li>The authorities are always instructing people to do a lot of work for safekeeping.<br /></li>
+<li>You should have closed the door for safekeeping yesterday.<br /></li>
+<li>I'm glad that these detectives are waitting for safety at the airport.<br /></li>
+<li>The archaeologist refused to explore the ancient caves for safekeeping.<br /></li>
+<li>I felt obliged to give all my money to my wife for safekeeping.<br /></li>
+</ul>
+<p>
+identify v.<br />
+</p>
+<ul class="org-ul">
+<li>The security wasn't able to identify his boss and made a spectacle of himself.<br /></li>
+<li>The policeman is accustomed to identifing thieves.<br /></li>
+<li>They competed against each other to identify the photos of someone.<br /></li>
+<li>If you weren't identified, they wouldn't stand to attention.<br /></li>
+<li>Don't take that tone with me. Have you ever identified me?<br /></li>
+</ul>
+<p>
+spokeswoman n.<br />
+</p>
+<ul class="org-ul">
+<li>The spokeswoman claimed to have seen the soldiers.<br /></li>
+<li>After entiring, the spokeswoman devoted herself to garden.<br /></li>
+<li>The spokeswoman claimed that someone fired a shot through the window of embassy.<br /></li>
+<li>The spokeswoman was found be the ambassador's wife.<br /></li>
+<li>The ambassador is very popular with these spokeswomen.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgd063b9d" class="outline-3">
+<h3 id="orgd063b9d">vocabulary</h3>
+<div class="outline-text-3" id="text-orgd063b9d">
+<p>
+happened: occurred<br />
+remembered: recalled<br />
+fortunately: luckily<br />
+concerns: is about<br />
+dismay: sadness<br />
+the remains: what was left<br />
+department: section<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org05b73ea" class="outline-3">
+<h3 id="org05b73ea"><span class="done DONE">DONE</span> 反复听电影片段直到懂关键句</h3>
+<div class="outline-text-3" id="text-org05b73ea">
+</div>
+</div>
+<div id="outline-container-org4d3a617" class="outline-3">
+<h3 id="org4d3a617">复习二册语法(笔记或视频) &amp; 红皮书</h3>
+</div>
+<div id="outline-container-org1bdbc79" class="outline-3">
+<h3 id="org1bdbc79"><span class="done DONE">DONE</span> 习惯用法造句</h3>
+<div class="outline-text-3" id="text-org1bdbc79">
+<p>
+deal with<br />
+</p>
+<ul class="org-ul">
+<li>If you lived in a fantasy world, you will not be able to deal with these troubles.<br /></li>
+<li>How do I deal with such a mess?<br /></li>
+<li>I hated to deal with the ambassador's affairs.<br /></li>
+<li>The ambassador managed to deal with this.<br /></li>
+<li>While the ambassador was fast asleep, I knocked at his door.<br /></li>
+</ul>
+<p>
+go doing<br />
+climbing dancing fishing hunting riding sailing shooting skating skiing swimming walking<br />
+</p>
+<ul class="org-ul">
+<li>I hate to go fishing on rainy days.<br /></li>
+<li>My wife often goes to extremes to go sailing.<br /></li>
+<li>If Chandler hadn't been fanatical about skating, he wouldn't have been mulilated.<br /></li>
+<li>Are you going shopping tonight?<br /></li>
+<li>I am due to go swimming on Saturday.<br /></li>
+</ul>
+<p>
+imagine sb's dismay when<br />
+</p>
+<ul class="org-ul">
+<li>Imagine my dismay when I found out that I had lost my child again.<br /></li>
+<li>Imagine my dismay when I found you had failed in the test.<br /></li>
+<li>Imagine your mother's dismay when she leant that you got into such a mess.<br /></li>
+<li>Imagine our dismay when the busmen went on a strike again.<br /></li>
+<li>Imagine her dismay when her fiance objected to her.<br /></li>
+</ul>
+<p>
+so long as + &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>So long as you love me, I don't care what you did.<br /></li>
+<li>We will provide you with foods so long as we reached agreement.<br /></li>
+<li>The gangster has stated that so long as we gave him an helicopter, he will relieve the poor man.<br /></li>
+<li>So long as they begin rescuing, everything will go smoothly.<br /></li>
+<li>So long as she was mutilated, I will offer her the job.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org973a93a" class="outline-3">
+<h3 id="org973a93a">跟读 50遍</h3>
+</div>
+<div id="outline-container-orgce784d2" class="outline-3">
+<h3 id="orgce784d2"><span class="done DONE">DONE</span> Comprehension 反复练习</h3>
+<div class="outline-text-3" id="text-orgce784d2">
+</div>
+</div>
+<div id="outline-container-org705f2e8" class="outline-3">
+<h3 id="org705f2e8"><span class="done DONE">DONE</span> Ask me if 写+读</h3>
+<div class="outline-text-3" id="text-org705f2e8">
+<ol class="org-ol">
+<li>Clothes put in the washing machine sometimes contain bank notes. What<br />
+What do clothes put in the washing machine sometime contain?<br /></li>
+<li>The Mutilated Ladies department deals with claims for money. What<br />
+What does the Mutilated Ladies department deal with?<br /></li>
+<li>John runs a furniture business. What kind<br />
+What kind of business does John run?<br /></li>
+<li>He put a wallet containing 3000 dollars into the microwave oven. What<br />
+What did he put into the microwave oven?<br /></li>
+<li>He had told his fiance, Jane, about this. Why hadn't<br />
+Why hadn't he told his fiance, Jane, about this?<br /></li>
+<li>She cooked the dinner. Where<br />
+Where did she cook the dinner?<br /></li>
+<li>The notes turned into ash. What<br />
+What did the notes turn into?<br /></li>
+<li>The bank manager sent the remains to Newcastle. Where<br />
+Where did the bank manager send the remains to?<br /></li>
+<li>John got his money back. What<br />
+What did John get back?<br /></li>
+<li>They could identify the notes. How<br />
+How could they identify the notes?<br /></li>
+</ol>
+</div>
+</div>
+
+
+<div id="outline-container-org88fe9dd" class="outline-3">
+<h3 id="org88fe9dd"><span class="done DONE">DONE</span> 摘要写作 写 &amp; 对答案</h3>
+<div class="outline-text-3" id="text-org88fe9dd">
+<p>
+John Butlin runs a successful furniture business<br />
+	and after a very good day,<br />
+		he put his wallet containing 3000 dollars into the microwave oven for safekeeping.<br />
+Then he and his fiancee, Jane, went horse-riding,<br />
+	after which Jane cooked their dinner in the microwave oven<br />
+		only to find to their dismay that the money had been destroyed.<br />
+John went and saw his bank manager,<br />
+	who sent the remains to the Mutilated Ladies<br />
+		who identified the reamins and returned the money.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org570220f" class="outline-3">
+<h3 id="org570220f"><span class="done DONE">DONE</span> tell the story 口语复述</h3>
+<div class="outline-text-3" id="text-org570220f">
+</div>
+</div>
+<div id="outline-container-org3a83592" class="outline-3">
+<h3 id="org3a83592">composition 阅读 或 写作</h3>
+<div class="outline-text-3" id="text-org3a83592">
+<p>
+Jane opened the oven door and saw that her meal was ready to serve.<br />
+She took the food out of the oven and in doing so,<br />
+	noticed something strange inside the oven which she couldn't recognize.<br />
+So she went to find John and told him about it.<br />
+In dismay, John quickly explained<br />
+	that he had put his wallet containing the day's takings into the oven for safekeeping.<br />
+</p>
+
+<p>
+They both rushed to the oven and saw that the money had been destroyed.<br />
+At first they didn't know what to do.<br />
+John wanted to throw the money away, but Jane wouldn't let him.<br />
+'lt's best not to disturb the wallet,' Jane said.<br />
+'You can see all the money is there, even if it has been destroyed.'<br />
+Jane told John to go and see his bank manager for advice,<br />
+	so the next day John took the wallet and the ashes to the bank.<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org563d145" class="outline-3">
+<h3 id="org563d145">Topics for discussion</h3>
+</div>
+</div>
+</div>
+</body>
+</html>

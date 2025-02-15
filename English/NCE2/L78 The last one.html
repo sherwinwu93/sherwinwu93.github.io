@@ -1,0 +1,627 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-08-06 Tue 22:24 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+
+<div id="outline-container-orgb125ba6" class="outline-2">
+<h2 id="orgb125ba6">Lesson 78 The last one?</h2>
+<div class="outline-text-2" id="text-orgb125ba6">
+<p class="verse">
+For how long did the writer give up smoking?<br />
+<br />
+After reading an article entitled 'Cigarette Smoking and Your Health'<br />
+&#xa0;I lit a cigarette to <b>calm my nerves</b>.<br />
+I smoked with concentration and pleasure as I <b>was sure that</b> this would be my last cigarette.<br />
+For a whole week I did not smoke at all and during this time, my wife suffered terribly.<br />
+I had all the usual symptoms of someone giving up smoking: a bad temper and an enormous appetite.<br />
+My friends <b>kept on offering me cigarettes and cigars</b>.<br />
+They <b>made no effort to hide</b> their amusement<br />
+&#xa0;whenever I produced <b>a packet of</b> sweets from my pocket.<br />
+After seven days of this I went to a party.<br />
+Everybody around me was smoking and I felt extremely uncomfortable.<br />
+When my old friend Brian <b>urged me to accept</b> a cigarette, it was more than I could bear.<br />
+I took one guiltily, lit it and smoked with satisfaction.<br />
+My wife <b>was delighted that</b> things had <b>returned to normal</b> once more.<br />
+Anyway, as Brian pointed out, it is the easiest thing in the world to give up smoking.<br />
+He himself has done it lots of times!<br />
+</p>
+</div>
+<div id="outline-container-org6537ad7" class="outline-3">
+<h3 id="org6537ad7">expression</h3>
+<div class="outline-text-3" id="text-org6537ad7">
+<p>
+entitle [ɪnˈtaɪt(ə)l] v.以&#x2026;为名<br />
+calm [kɑm] v.使镇静<br />
+nerve [nɜrv] n.神经<br />
+concentration [ˌkɑnsənˈtreɪʃ(ə)n] n.集中<br />
+suffer [ˈsʌfər] v.受苦<br />
+symptom [ˈsɪmptəm] n.症状<br />
+temper [ˈtempər] n.脾气<br />
+appetite [ˈæpəˌtaɪt] n.胃口<br />
+produce [prəˈdus] v.拿出<br />
+urge [ɜrdʒ] v.怂恿<br />
+satisfaction [ˌsætɪsˈfækʃ(ə)n] n.满足<br />
+delighted [dɪˈlaɪtəd] adj.欣喜的<br />
+</p>
+
+<p>
+entitle sb. to do sth. 使某人有权利做某事<br />
+calm down 冷静下来<br />
+keep calm 保持冷静<br />
+calm my nerve calm my nerve<br />
+have/get the nerve to do sth.: To draw upon one's courage or resolve to do something 鼓起勇气做某事<br />
+lose sb's nerve: 失去某人的勇气<br />
+lose/break/have sb's concentration 某人无法集中注意力<br />
+suffer from 遭受<br />
+have a good/bad temper 有好/坏脾气<br />
+lose sb's temper 发脾气<br />
+have/get a good/great appetite 有个好胃口<br />
+lose sb's appetite 失去食欲<br />
+urge sb. to do sth. 敦促某人做某事<br />
+give him satisfaction 给他满足感<br />
+sb. be delighted that + &#x2026; 某人很高兴+……<br />
+</p>
+<hr />
+<p>
+light a cigarette 点燃一支烟<br />
+sb. be sure that + &#x2026; 某人确信……<br />
+keep on doing sth. 继续做某事<br />
+offer sb. sth. 给某人提供某物<br />
+make no effort to do sth. 不努力做某事<br />
+a packet of&#x2026; 一包……<br />
+return to normal 恢复正常<br />
+</p>
+</div>
+</div>
+
+
+
+<div id="outline-container-orgda1aa9e" class="outline-3">
+<h3 id="orgda1aa9e">words</h3>
+<div class="outline-text-3" id="text-orgda1aa9e">
+<p>
+entitle [ɪnˈtaɪt(ə)l] v.以&#x2026;为名<br />
+calm [kɑm] v.使镇静<br />
+nerve [nɜrv] n.神经<br />
+concentration [ˌkɑnsənˈtreɪʃ(ə)n] n.集中<br />
+suffer [ˈsʌfər] v.受苦<br />
+symptom [ˈsɪmptəm] n.症状<br />
+temper [ˈtempər] n.脾气<br />
+appetite [ˈæpəˌtaɪt] n.胃口<br />
+produce [prəˈdus] v.拿出<br />
+urge [ɜrdʒ] v.怂恿<br />
+satisfaction [ˌsætɪsˈfækʃ(ə)n] n.满足<br />
+delighted [dɪˈlaɪtəd] adj.欣喜的<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org059f0eb" class="outline-3">
+<h3 id="org059f0eb"><span class="done DONE">DONE</span> 单词造句</h3>
+<div class="outline-text-3" id="text-org059f0eb">
+<p>
+entitle [ɪnˈtaɪt(ə)l] v.以&#x2026;为名<br />
+entitle sb. to do sth.<br />
+</p>
+<ol class="org-ol">
+<li>He has just published his new book entitled "Pirate Stories".<br /></li>
+<li>Get out of here no matter who entitled you to be my home.<br /></li>
+<li>He entitle this tower "Big Ben".<br /></li>
+<li>This ticket should have entitled me to travel second class.<br /></li>
+<li>People have never entitled the local authorities to do that.<br /></li>
+</ol>
+<p>
+calm [kɑm] v.使镇静<br />
+calm down<br />
+keep calm<br />
+</p>
+<ul class="org-ul">
+<li>She refused to keep calm when she was talking to me.<br /></li>
+<li>Please keep calm and don't get angry.<br /></li>
+<li>She tried to keep calm when the young man and young woman talked loudly.<br /></li>
+<li>Gather round and keep calm.<br /></li>
+<li>She failed to keep calm when she turned her attention to the price.<br /></li>
+</ul>
+<p>
+nerve [nɜrv] n.神经<br />
+calm my nerve<br />
+have/get the nerve to do sth.<br />
+lose sb's nerve<br />
+</p>
+<ul class="org-ul">
+<li>What would you like to do to calm your nerve?<br /></li>
+<li>Although he made a decision, he finally lost his nerve and returned to China.<br /></li>
+<li>I feared that my wife wouldn't have the nerve to ask for raise.<br /></li>
+<li>After the beggar stood on his head, the woman lost he nerve.<br /></li>
+<li>In return for this, he has the nerve to finish cutting the corn stalks.<br /></li>
+</ul>
+<p>
+concentration [ˌkɑnsənˈtreɪʃ(ə)n] n.集中<br />
+lose/break/have sb's concentration<br />
+</p>
+<ul class="org-ul">
+<li>If I had studied last night, I wouldn't had lost my concentration.<br /></li>
+<li>I wish that I hadn't lost my concentration.<br /></li>
+<li>I wish that I had had my concentration to study the course of Leo.<br /></li>
+<li>She always has a splendid concentration during the class.<br /></li>
+<li>Sorry to interrupt but you're breaking my concentration.<br /></li>
+</ul>
+<p>
+suffer [ˈsʌfər] v.受苦<br />
+suffer from<br />
+</p>
+<ul class="org-ul">
+<li>After have been suffering from heart attack, she died of it.<br /></li>
+<li>It was not long before she suffered from a skin illness.<br /></li>
+<li>After having had an operation, she suffered from terribly for several month.<br /></li>
+<li>After quitting smoking, I suffered from terribly for several months.<br /></li>
+<li>As there are some strange marks on the X-ray plates taken of her,<br />
+she are suffering from a rare disease.<br /></li>
+</ul>
+<p>
+symptom [ˈsɪmptəm] n.症状<br />
+</p>
+<ul class="org-ul">
+<li>We must not only treat symptom, but also the cause.<br /></li>
+<li>At the end of his life, her symptom was becoming weird.<br /></li>
+<li>A party of children have the same symptom of depression.<br /></li>
+<li>It was not long before she told me her symptom.<br /></li>
+<li>She said her symptom to ask me for some help.<br /></li>
+</ul>
+<p>
+temper [ˈtempər] n.脾气<br />
+have a good/bad temper<br />
+lose sb's temper<br />
+</p>
+<ul class="org-ul">
+<li>Have a good temper and don't be too hard on a cat.<br /></li>
+<li>After the cat smashed everything to pieces, she lost her temper.<br /></li>
+<li>The woman, which has a bad temper, has difficulty in talking to other.<br /></li>
+<li>I was disappointed to learn that my wife have a bad temper.<br /></li>
+<li>Losing his temper Leo instructed us to turn our attention to him.<br /></li>
+</ul>
+<p>
+appetite [ˈæpəˌtaɪt] n.胃口<br />
+have/get a good/great appetite<br />
+lose sb's appetite<br />
+</p>
+<ul class="org-ul">
+<li>She had such a good appetite that she ate three bowls of rice.<br /></li>
+<li>Having been swimming all the afternoon, he had a great appetite.<br /></li>
+<li>It's you who are responsible for losing her appetite, not me.<br /></li>
+<li>I feel sorry for you, you lost your appetite once more.<br /></li>
+<li>He lost her appetite because of the mummy which he got close to in the morning.<br /></li>
+</ul>
+<p>
+produce [prəˈdus] v.拿出<br />
+</p>
+<ul class="org-ul">
+<li>The lovely girl produced a apple from the basket and asked me to eat.<br /></li>
+<li>He double checked his box and produced his key.<br /></li>
+<li>He produced a book entitled "Story" and began to tell a pirate story.<br /></li>
+<li>I was wondering weather he would produce his exercise book.<br /></li>
+<li>Would you mind my producing the perfume.<br /></li>
+</ul>
+<p>
+urge [ɜrdʒ] v.怂恿<br />
+urge sb. to do sth.<br />
+</p>
+<ul class="org-ul">
+<li>My cousin was always urging me to stole my father's money.<br /></li>
+<li>She enjoys urging children to play truent from school.<br /></li>
+<li>He has urged me to fish for over two hours.<br /></li>
+<li>I am afraid that they would urge me to smoke once more.<br /></li>
+<li>She urged us to go camping.<br /></li>
+</ul>
+<p>
+satisfaction [ˌsætɪsˈfækʃ(ə)n] n.满足<br />
+give him satisfaction<br />
+</p>
+<ul class="org-ul">
+<li>He got satisfaction from setting up his tent.<br /></li>
+<li>It is no use pretending that English had given you satisfaction.<br /></li>
+<li>His mother avoids giving him satisfaction.<br /></li>
+<li>It is worth giving some kind people satisfaction.<br /></li>
+<li>The scientist got a satisfaction from naming the volcano "Kituro".<br /></li>
+</ul>
+<p>
+delighted [dɪˈlaɪtəd] adj.欣喜的<br />
+sb. be delighted that + &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>He was delighted that he had broken the world record.<br /></li>
+<li>My father was delighted that I had recited the story of New Concept English.<br /></li>
+<li>She is delighted that her husband is as strong as a horse.<br /></li>
+<li>She was delighted that her daughter succeeded in crossing the Channel.<br /></li>
+<li>She was delighted that she had passed the driving test.<br /></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org204f0c2" class="outline-3">
+<h3 id="org204f0c2"><span class="done DONE">DONE</span> 反复听电影片段</h3>
+<div class="outline-text-3" id="text-org204f0c2">
+</div>
+</div>
+<div id="outline-container-org218b68b" class="outline-3">
+<h3 id="org218b68b">Pattern Drill 写+读</h3>
+</div>
+<div id="outline-container-orgcb10c0d" class="outline-3">
+<h3 id="orgcb10c0d">给自己讲解</h3>
+</div>
+<div id="outline-container-orgb51637f" class="outline-3">
+<h3 id="orgb51637f">红皮书</h3>
+</div>
+<div id="outline-container-orgb9dcbd3" class="outline-3">
+<h3 id="orgb9dcbd3"><span class="done DONE">DONE</span> 习惯用法造句</h3>
+<div class="outline-text-3" id="text-orgb9dcbd3">
+<p>
+light a cigarette<br />
+</p>
+<ul class="org-ul">
+<li>As soon as you lit a ciagarette, he got out of here.<br /></li>
+<li>She lit a ciagarette with a sneer.<br /></li>
+<li>Who entitled you to light my cigarette?<br /></li>
+<li>After having lost her nerves, she lit a cigarette.<br /></li>
+<li>As soon as you lit a ciagarette, I knew that you were playing truent from school.<br /></li>
+</ul>
+<p>
+sb. be sure that + &#x2026;<br />
+keep on doing sth.<br />
+</p>
+<ul class="org-ul">
+<li>She kept on having operations to make her prettier.<br /></li>
+<li>The baby kept on smashing the paper to pieces.<br /></li>
+<li>He keeps on cutting it open.<br /></li>
+<li>He kept on expecting a splendid harvesting.<br /></li>
+<li>He keeps on eating processed food.<br /></li>
+</ul>
+<p>
+offer sb. sth.<br />
+</p>
+<ul class="org-ul">
+<li>The farmer have been offering the local authorities stalks.<br /></li>
+<li>The police have offered the gangsters a helicopter.<br /></li>
+<li>We couldn't offer you a job on such short notice.<br /></li>
+<li>Why don't we have the nerve to offer him a job.<br /></li>
+<li>He kept on offering me cigarettes.<br /></li>
+</ul>
+<p>
+make no effort to do sth.<br />
+</p>
+<ul class="org-ul">
+<li>The doctors made every effort to have an operation on the mummy.<br /></li>
+<li>The mummy made no effort to fall to pieces.<br /></li>
+<li>The boy always makes no effort to find out the truth.<br /></li>
+<li>The cat makes every effort to hide himself.<br /></li>
+<li>My wife makes every effort to travel in the remote village.<br /></li>
+</ul>
+<p>
+a packet of&#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>The policewoman asked me to calm down and gave me a packet of sweets.<br /></li>
+<li>My wife glanced at a packet of candies with satisfaction.<br /></li>
+<li>Two of the leading growers offered me a packet of corns.<br /></li>
+<li>The farmers have gathered a packet of corn stalks.<br /></li>
+<li>Don't be too hard on us and here is a packet of sweets.<br /></li>
+</ul>
+<p>
+return to normal&#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>Don't be too hard on me and let everything return to normal.<br /></li>
+<li>She wanted to stay out of the limelight to return to normal.<br /></li>
+<li>We were eager to return to normal during the that period.<br /></li>
+<li>I wish that your temper had returned to normal.<br /></li>
+<li>I wish that your appetite returned to normal.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org37eefce" class="outline-3">
+<h3 id="org37eefce"><span class="done DONE">DONE</span> 跟读至背诵</h3>
+<div class="outline-text-3" id="text-org37eefce">
+</div>
+</div>
+<div id="outline-container-orgde4d652" class="outline-3">
+<h3 id="orgde4d652"><span class="done DONE">DONE</span> Ask me if 写+读</h3>
+<div class="outline-text-3" id="text-orgde4d652">
+<ul class="org-ul">
+<li>I read an article on cigarette smoking. What/Who<br />
+What did you read?<br />
+Who read an article on cigarette smoking?<br /></li>
+<li>I lit a cigarette to calm my nerves. Why<br />
+Why did you light a cigarette?<br /></li>
+<li>I smoked with concentration and pleasure. How/Why/Who<br />
+How did you smoke?<br />
+Why did you smoke with concentration and pleasure?<br />
+Who smoked with concentration and pleasure?<br /></li>
+<li>I gave up smoking for a whole week. How long/What<br />
+How long did you give up smoking?<br />
+What did you give up for a whole week?<br /></li>
+<li>My wife suffered during this time. When/Why/Who<br />
+When did your wife suffer?<br />
+Why did your wife suffer during this time?<br />
+Who suffered during this time?<br /></li>
+<li>She suffered terribly. How badly/Why<br />
+How badly did she suffer?<br />
+Why did she suffer terribly?<br /></li>
+<li>I had the usual symptoms. What symptoms<br />
+What symptoms did you have?<br /></li>
+<li>I had a bad temper. When/Why<br />
+When did you have a bad temper?<br />
+Why did you have a bad temper?<br /></li>
+<li>My friends kept on offering me cigarettes. What/Who<br />
+What did your friends keep on offering you?<br />
+Who kept on offering you cigarettes?<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org293aa78" class="outline-3">
+<h3 id="org293aa78">摘要写作</h3>
+<div class="outline-text-3" id="text-org293aa78">
+<p>
+Having read an article on smoking,<br />
+	the writer smoked his last cigarette.<br />
+For a week he did not smoke and his wife suffered terribly<br />
+	because he had a bad temper and a large appetite.<br />
+Meanwhile, his friends offered him cigarettes<br />
+	and were amused to see him produce a packet of sweets from his pocket.<br />
+When he went to a party,<br />
+	the writer accepted a cigarette which was offered by his old friend,<br />
+	and since then things have returned to normal.<br />
+</p>
+
+<p>
+The writer read an article on smoking and smoked his last cigarette.<br />
+He did not smoke for a week<br />
+	and his wife suffered terribly because of her husband's bad temper and large appetite.<br />
+Whenever his friends offered him cigarettes<br />
+	they were amused because he would produce a packet of sweets from his pocket.<br />
+However, at a party he accepted a cigarette from his friend.<br />
+Now things have returned to normal.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org298f061" class="outline-3">
+<h3 id="org298f061"><span class="done DONE">DONE</span> tell the story 口语</h3>
+<div class="outline-text-3" id="text-org298f061">
+</div>
+</div>
+<div id="outline-container-org3da2576" class="outline-3">
+<h3 id="org3da2576">Topics for discussion</h3>
+</div>
+
+<div id="outline-container-org8057e7b" class="outline-3">
+<h3 id="org8057e7b">单词造句</h3>
+</div>
+<div id="outline-container-org4d2bc77" class="outline-3">
+<h3 id="org4d2bc77">反复听电影片段</h3>
+</div>
+<div id="outline-container-org43a22c8" class="outline-3">
+<h3 id="org43a22c8">Pattern Drill 写+读</h3>
+</div>
+<div id="outline-container-org14d8fcc" class="outline-3">
+<h3 id="org14d8fcc">给自己讲解</h3>
+</div>
+<div id="outline-container-orgfe18edf" class="outline-3">
+<h3 id="orgfe18edf">红皮书</h3>
+</div>
+<div id="outline-container-orgd297cb8" class="outline-3">
+<h3 id="orgd297cb8">习惯用法造句</h3>
+</div>
+<div id="outline-container-org6d293d6" class="outline-3">
+<h3 id="org6d293d6">跟读至背诵</h3>
+</div>
+<div id="outline-container-org283e891" class="outline-3">
+<h3 id="org283e891">Ask me if 写+读</h3>
+</div>
+<div id="outline-container-org8bc2fc7" class="outline-3">
+<h3 id="org8bc2fc7">摘要写作</h3>
+</div>
+<div id="outline-container-org9b70e4f" class="outline-3">
+<h3 id="org9b70e4f">tell the story 口语</h3>
+</div>
+<div id="outline-container-org717fafb" class="outline-3">
+<h3 id="org717fafb">Topics for discussion</h3>
+</div>
+</div>
+</div>
+</body>
+</html>

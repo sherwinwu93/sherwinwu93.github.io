@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-09-28 Sat 22:17 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-org93ad231" class="outline-2">
+<h2 id="org93ad231">Lesson 39 Nothing to worry about</h2>
+<div class="outline-text-2" id="text-org93ad231">
+<p class="verse">
+What was the difference between Bruce's behaviour and that of other people?<br />
+<br />
+The rough road across the plain soon became so bad<br />
+&#xa0;that we tried to get Bruce to drive back to the village we had come from.<br />
+Even though the road was littered with boulders and pitted with holes,<br />
+&#xa0;Bruce was not in the least perturbed.<br />
+Glancing at his map,<br />
+&#xa0;he informed us that the next village was a mere twenty miles away.<br />
+It was not that Bruce always underestimated difficulties.<br />
+He simply had no sense of danger at all.<br />
+No matter what the conditions were,<br />
+&#xa0;he believed that a car should be driven as fast as it could possibly go.<br />
+<br />
+As we bumped over the dusty track,<br />
+&#xa0;we swerved to avoid large boulders.<br />
+The wheels scooped up stones which hammered ominously under the car.<br />
+We felt sure<br />
+&#xa0;that sonner or later a stone would rip a hole in our petrol tank or damage the engine.<br />
+Because of this, we kept looking back,<br />
+&#xa0;wondering if we were leaving a trail of oil and petrol behind us.<br />
+<br />
+What a relief it was when the boulders suddenly disappeared,<br />
+&#xa0;giving way to a stretch of plain where the only obstacles were clumps of bushes.<br />
+But there was worse to come.<br />
+Just ahead of us there was a huge fissure.<br />
+In response to renewed pleadings, Bruce stopped.<br />
+Though we all go out to examine the fissure, he remained in the car.<br />
+We informed him that the fissure extended for fifty yards and was two feet wide and four feet deep.<br />
+Even this had no effect.<br />
+Bruce went into a low gear and drove at a terrifying speed,<br />
+&#xa0;keeping the front wheels astride the crack as he followed its zigzag course.<br />
+Before we had time to worry about what might happen,<br />
+&#xa0;we were back on the plain again.<br />
+Bruce consulted the map once more and told us that the village was now only fifteen miles away.<br />
+Our next obstacle was a shallow pool of water about half a mile cross.<br />
+&#xa0;giving way to a stretch of plain<br />
+&#xa0;&#xa0;where the only obstacles were clumps of bushes.<br />
+But there was worse to come.<br />
+Just ahead of us there was a huge fissure.<br />
+In reponse to renewed pleadings, Bruce stopped.<br />
+Though we all got out to examine the fissure,<br />
+&#xa0;he remained in the car.<br />
+We informed him<br />
+&#xa0;that the fissure extended for fifty yards and was two feet wide and four feet deep.<br />
+Even this had no effect.<br />
+Bruce went into a low gear and drove at a terrifying speed,<br />
+&#xa0;keeping the front wheels astride the crack<br />
+&#xa0;&#xa0;as he followed its zigzag course.<br />
+Before we had time to worry about what might happen,<br />
+&#xa0;we were back on the plain again.<br />
+Bruce consulted the map once more<br />
+&#xa0;and told us<br />
+&#xa0;&#xa0;that the village was now only fifteen miles away.<br />
+Our next obstacle was a shallow pool of water about half a mile across.<br />
+Bruce charged at it,<br />
+&#xa0;but in the middle, the car came to a grinding halt.<br />
+A yellow light on the dashboard flashed angrily<br />
+&#xa0;and Bruce cheerfully announced that there was no oil in the engine!<br />
+</p>
+</div>
+
+<div id="outline-container-orge78f56f" class="outline-3">
+<h3 id="orge78f56f">words</h3>
+<div class="outline-text-3" id="text-orge78f56f">
+<p>
+rough [rʌf] adj.崎岖不平的<br />
+boulder [ˈboʊldər] n.大石块<br />
+pit [pɪt] v.使得坑坑洼洼<br />
+perturb [pərˈtɜːrb] v.使不安<br />
+underestimate [ˌʌndərˈestɪmeɪt] v.低估<br />
+swerve [swɜːrv] v.急转变<br />
+scoop [skuːp] v.挖出<br />
+hammer [ˈhæmər] v.(用锤)击打,捶打<br />
+ominously [ˈɑːmɪnəsli] adv.有预兆的,不详的<br />
+rip [rɪp] v.划破,撕,扯<br />
+petrol [ˈpetrəl] n.汽油<br />
+stretch [stretʃ] n.一大片(平地或水)<br />
+obstacle [ˈɑːbstək(ə)l] n.障碍<br />
+clump [klʌmp] n.(一)丛(花)<br />
+fissure [ˈfɪʃər] n.(石,地的)深缝<br />
+renew [rɪˈnuː] v.重复<br />
+pleading [ˈpliːdɪŋ] n.恳求<br />
+gear [ɡɪr] n.(汽车)排档<br />
+astride [əˈstraɪd] prep.骑<br />
+crack [kræk] n.缝隙<br />
+zigzag [ˈzɪɡzæɡ] n."之"字型<br />
+shallow [ˈʃæloʊ] adj.浅得<br />
+grind [ɡraɪnd] v.摩擦<br />
+halt [hɔːlt] n.停<br />
+dashboard [ˈdæʃbɔːrd] n.(汽车上的)仪表盘<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb24d907" class="outline-3">
+<h3 id="orgb24d907">单词造句</h3>
+</div>
+<div id="outline-container-org060c2d9" class="outline-3">
+<h3 id="org060c2d9">反复听电影片段直到懂关键句</h3>
+</div>
+<div id="outline-container-org43d6b6b" class="outline-3">
+<h3 id="org43d6b6b">复习二册语法(笔记或视频) &amp; 红皮书</h3>
+</div>
+<div id="outline-container-org225740f" class="outline-3">
+<h3 id="org225740f">习惯用法造句</h3>
+</div>
+<div id="outline-container-orga3ca23b" class="outline-3">
+<h3 id="orga3ca23b">跟读 50遍</h3>
+</div>
+<div id="outline-container-orgafd5f05" class="outline-3">
+<h3 id="orgafd5f05">Comprehension 反复练习</h3>
+</div>
+<div id="outline-container-orgfe4ab8f" class="outline-3">
+<h3 id="orgfe4ab8f">Ask me if 写+读</h3>
+</div>
+<div id="outline-container-org96dc59d" class="outline-3">
+<h3 id="org96dc59d">摘要写作 写 &amp; 对答案</h3>
+</div>
+<div id="outline-container-org32590be" class="outline-3">
+<h3 id="org32590be">tell the story 口语复述</h3>
+</div>
+<div id="outline-container-org4a4950e" class="outline-3">
+<h3 id="org4a4950e">composition 阅读 或 写作</h3>
+</div>
+<div id="outline-container-orgf838dc4" class="outline-3">
+<h3 id="orgf838dc4">Topics for discussion</h3>
+</div>
+</div>
+</div>
+</body>
+</html>
