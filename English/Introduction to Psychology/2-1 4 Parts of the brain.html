@@ -1,0 +1,811 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-03-02 Sun 16:54 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-orgd8c160b" class="outline-2">
+<h2 id="orgd8c160b">2-1 4 Parts of the brain</h2>
+<div class="outline-text-2" id="text-orgd8c160b">
+<p class="verse">
+So, let's talk about the different parts of the brain and what they do.<br />
+Parts of the brain are functionalized for different purposes, they do different things.<br />
+Which is why damage to different parts of the brain has different effects.<br />
+It's why when you look at an fMRI scan or PET scan or some something that records neural activity,<br />
+&#xa0;you could figure out based on the location of the activity what's going on.<br />
+So, the first thing to realize is I'm talking about the brain,<br />
+&#xa0;but I'd be more precise and more inclusive<br />
+&#xa0;&#xa0;if I talked about the brain and parts of the spinal cord.<br />
+So, you don't need your brain for everything.<br />
+There're certain activities we do that can happen without a brain.<br />
+Like sucking in newborns or pulling your limb back to withdraw from pain or vomiting.<br />
+But for everything else we talk about in this course, we'll really be talking about the brain.<br />
+<br />
+So, some of the structures of the brain that are highly relevant are called subcortical,<br />
+&#xa0;which means they're below the cortex, which means they're in the center of the brain.<br />
+This includes part of the brain like the medulla,<br />
+&#xa0;which control certain automatic function<br />
+&#xa0;&#xa0;like your heart rate, your blood pressure, swallowing, and so on.<br />
+It includes the cerebellum, which is involved in body balance and muscle coordination.<br />
+It contains about 30 billion neurons.<br />
+So, this isn't small potatoes.<br />
+The hypothalamus, which is involved in feeding and sex and thirst and different appetites.<br />
+We're going to talk about emotions or visceral desires, we'll return to those parts of the brain.<br />
+<br />
+But for the aspects of psychology that are distinctive for us, that make us human,<br />
+&#xa0;we're mostly focused on the outer layer, the cerebral cortex.<br />
+So, the cerebral cortex it is all crumpled up.<br />
+If you were to take a brain, pull out the cortex and straighten it out,<br />
+&#xa0;&#xa0;like you're removing a rug you got from the trunk of your car and you have to straighten it out,<br />
+&#xa0;it's about two feet square.<br />
+So, it's lot of crumpling to get it in.<br />
+It's about three millimeters thick.<br />
+This is where the action is.<br />
+This is where at least for the things I'm interested in, this is where it takes place.<br />
+Is where reasoning and language and complex perception comes from.<br />
+Fish don't have any cerebral cortex, reptiles and birds have a little bit,<br />
+&#xa0;but primates, including humans, have a lot.<br />
+<br />
+When you look at the cortex, you'll see it has two halves.<br />
+It has a left half and a right half.<br />
+For each of these halves, when you look at it,<br />
+&#xa0;you can demarcate the brain, the cortex into different lobes.<br />
+There's going from your forehead and swooping to the back.<br />
+You have the frontal lobe conveniently enough on the front.<br />
+The parietal lobe, the occipital lobe, and the temporal lobe.<br />
+Each of these lobes, there's different things, which we'll talk about in a bit.<br />
+<br />
+Another thing about the cortex though which is super interesting, is that it includes maps.<br />
+What I mean by this is it includes topographical maps<br />
+&#xa0;where two things that are close together in the brain are similarly close together in the body.<br />
+So, there is a motor area<br />
+&#xa0;where if you were to shock, parts of that brain, parts of the body would twitch accordingly.<br />
+Just like you'd expect, the middle finger is close to the thumb which is closer to elbow.<br />
+If it's close in the real-world and your body it's close to the brain<br />
+&#xa0;and there is a primary somatosensory area, which is the sense organs.<br />
+There if you have somebody in the operating table and you shocked people,<br />
+&#xa0;they would experience things, they might experience a sound or a flash of light or a touch.<br />
+In fact, in the occipital lobe, you have a map for vision<br />
+&#xa0;and in the temporal lobe, you have a map for sound.<br />
+What's really cool is, I said the map is topographical,<br />
+&#xa0;but the size of the brain areas don't correspond to the size of the actual body areas,<br />
+&#xa0;&#xa0;but rather to the extent to which there's motor or sensory function.<br />
+So, artists have drawn pictures of people<br />
+&#xa0;if their body was proportioned to the extent that their brain was.<br />
+You'd see the trunk of the body is relatively small,<br />
+&#xa0;but their hands are enormous and the face is enormous because there's a whole lot of sensation.<br />
+There is much more sensation going on in your hand than in your whole back<br />
+&#xa0;even though the back is physically apart.<br />
+So, part of the cortex is these projection areas.<br />
+But less than a quarter of the cortex contains projection areas.<br />
+As I said, the rest is involved with the cool stuff.<br />
+With language, with reasoning, with moral thoughts, and so on.<br />
+<br />
+Then the question comes in, how do we know this?<br />
+How do we know what parts of the brain do what, what parts of the brain are involved, and why?<br />
+There's different answers.<br />
+So, one answer is we can scan the brain.<br />
+We can use MRI, which is a high-frequency magnetic field, to look at the activity of the brain,<br />
+&#xa0;what parts are active when people do different things.<br />
+We can also look at so-called natural experiments<br />
+&#xa0;when people have tumors or strokes or motorcycle accidents.<br />
+In damaged part of your brain and we can ask the question,<br />
+&#xa0;what damage to which parts of the brain correspond to damage to which functions?<br />
+Through these different methods,<br />
+&#xa0;we've learned about the different parts of the brain and what they do.<br />
+We could talk about some certain specific things that can go wrong<br />
+&#xa0;due to brain damage or stroke or trauma.<br />
+<br />
+So, for instance, there's Apraxia.<br />
+Apraxia is problems of actions.<br />
+So, you're unable to do an action<br />
+&#xa0;like waving goodbye or picking up before or can bring some food to your mouth.<br />
+You're not paralyze.<br />
+You can make the movements if you have to,<br />
+&#xa0;but you can't coordinate these basic movements into complex actions.<br />
+<br />
+There's Agnosia.<br />
+Agnosia is a disorders of perception.<br />
+And they're not like you can't see, but you can't recognize.<br />
+Some is called psychic blindness.<br />
+People of various forms of Agnosia can describe a picture in terms of it's part,<br />
+&#xa0;but can't recognize the objects that are being depicted.<br />
+That's a form of visual Agnosia.<br />
+There's also a specific Prosopagnosia, where you can't recognize faces.<br />
+Oliver Sacks wrote a wonderful book many years ago called The Man Who Mistook His Wife For a Hat.<br />
+This was a series of profiles of people who had surprising neurological disorders<br />
+&#xa0;and the title case of the book was a man who actually had such an inability to recognize faces,<br />
+&#xa0;&#xa0;he couldn't distinguishes his wife's face from that of a hat.<br />
+Milder forms of Prosopagnosia, which some people suffer from<br />
+&#xa0;and to be honest, I got a little bit of some terrible faces.<br />
+Is that you could recognize faces as faces,<br />
+&#xa0;but you can't recognize whose face they are and it's very hard for you to recognize people.<br />
+<br />
+There's problems of sensory neglect.<br />
+You get disorders that block out one part of the world.<br />
+You might have damage to parts of your brain that would block out the left side of the world.<br />
+It's not just the sort of physical thing,<br />
+&#xa0;when you ask somebody with such a disorder to draw clock for instance,<br />
+&#xa0;&#xa0;they'll put all the numbers from one to 12 on the right side of the clock.<br />
+It's as if they don't think of the left side of the world again.<br />
+So, maybe it's not even a sensory problem, but an attentional problem.<br />
+<br />
+There's Aphasia, which refers to disorders of language.<br />
+Some forms of aphasia are expressive like a Broca's Aphasia, where you can't really speak.<br />
+A famous case of somebody who can only use the word tan,<br />
+&#xa0;would say tan, tan, tan, but couldn't say anything else.<br />
+Or then there's something that's called Receptive Aphasia,<br />
+&#xa0;&#xa0;where you can speak although what you say doesn't make much sense,<br />
+&#xa0;but also you have a terrible time understanding other people.<br />
+<br />
+Then there's all sorts of other disorders.<br />
+There's the disorder which we talked about with regard to Phineas Gage and various forms of it.<br />
+Where damage to your brain, it's debatable whether this is true Phineas Gage,<br />
+&#xa0;but there are other cases where it's much more clear.<br />
+Cause you to lose your moral sense, your sense of right and wrong,<br />
+&#xa0;&#xa0;your ability to control yourself,<br />
+&#xa0;to restrain yourself perhaps your conscience.<br />
+<br />
+Now, we're going to talk about all of these things through the course but the moral here is that,<br />
+&#xa0;A, there's some localization of function.<br />
+There's some sense in which it correspond to different brain areas.<br />
+B, again, this is an argument against dualism.<br />
+We can see that in that anyone who argued that the mind isn't the brain<br />
+&#xa0;would be hard-pressed to explain why damage to the brain<br />
+&#xa0;&#xa0;&#xa0;seems to affect some very intimate and very important aspects of ourselves.<br />
+</p>
+</div>
+<div id="outline-container-org9eb1a65" class="outline-3">
+<h3 id="org9eb1a65">expression</h3>
+<div class="outline-text-3" id="text-org9eb1a65">
+<p>
+inclusive [ɪnˈklusɪv]: adj. an inclusive price or cost includes everything OPP exclusive包含的, 包括的<br />
+suck [sʌk]: v. to take air, liquid etc into your mouth by making your lips form a small hole and using the muscles of your mouth to pull it in吮吸<br />
+newborn [ˈnuˌbɔrn]: n. newborn child/baby/son etc a child that has just been born婴儿<br />
+vomit [ˈvɒmit]: v. to bring food or drink up from your stomach out through your mouth, because you are ill呕吐<br />
+cerebral [səˈribrəl]: adj. medical relating to or affecting your brain大脑的<br />
+cortex [ˈkɔrˌteks]: n. the outer layer of an organ in your body, especially your brain(脑或肾的)皮层, 皮质<br />
+cerebellum [ˌserəˈbeləm]: n. technical the bottom part of your brain that controls your muscles小脑<br />
+visceral [ˈvɪsərəl]: adj. literary visceral beliefs and attitudes are the result of strong feelings rather than careful thought肺腑的<br />
+distinctive [dɪˈstɪŋktɪv]: adj. having a special quality, character, or appearance that is different and easy to recognize独特的<br />
+rug [rʌɡ]: n. a piece of thick cloth or wool that covers part of a floor, used for warmth or as a decoration ⇨ mat, carpet(小)地毯, 垫子<br />
+reason [ˈriz(ə)n]: v. to form a particular judgment about a situation after carefully considering the facts推理<br />
+reptile [ˈreptɪl]: n. a type of animal, such as a snake or ↑lizard, whose body temperature changes according to the temperature around it, and that usually lays eggs to have babies爬行动物<br />
+primate [ˈpraɪmeɪt]: n. a member of the group of animals that includes humans and monkeys灵长类的动物<br />
+lobe [loʊb]: n. technical a round part of an organ in your body, especially in your brain or lungs(脑)叶<br />
+swoop [swup]: v. if a bird or aircraft swoops, it moves suddenly down through the air, especially in order to attack something俯冲<br />
+frontal [ˈfrʌnt(ə)l]: adj. medical relating to the front part of the head额骨的<br />
+parietal [pə'raɪətəl]: adj. 顶骨的<br />
+occipital [ɒk'sɪpətəl]: adj. 枕骨的<br />
+temporal [ˈtemp(ə)rəl]: adj. 太阳穴的<br />
+topography [təˈpɑɡrəfi] topographical: n.adj. the science of describing an area of land, or making maps of it地形学<br />
+motor [ˈmoʊtər]: adj. technical relating to nerves that make muscles move肌肉运动的<br />
+twitch [twɪtʃ]: v. if a part of someone’s body twitches, or if they twitch it, it makes a small sudden movement抽搐<br />
+somatosensory [ˌsoʊmətə'sensərɪ]: adj. (耳、目、口等以外的)体觉的<br />
+projection [prəˈdʒekʃ(ə)n]: n. the act of projecting a film or picture onto a screen投影<br />
+magnetic [mæɡˈnetɪk]: adj. concerning or produced by ↑magnetism磁的<br />
+tumor [ˈtumər]: n. a mass of diseased cells in your body that have divided and increased too quickly肿瘤<br />
+stroke [stroʊk]: n. if someone has a stroke, an ↑artery (=tube carrying blood) in their brain suddenly bursts or becomes blocked, so that they may die or be unable to use some muscles中风<br />
+motorcycle [ˈmoʊtərˌsaɪk(ə)l]: n. a fast two-wheeled vehicle with an engine SYN motorbike摩托车<br />
+psychic [ˈsaɪkɪk]: adj. affecting the mind rather than the body精神的<br />
+blind [blaɪnd] blindness: adj.n. unable to see瞎的, 盲目的<br />
+profile [ˈproʊˌfaɪl]: n. a side view of someone’s head侧面像<br />
+mild [maɪld]: adj. a mild illness or health problem is not serious温和的<br />
+sensory [ˈsensəri]: adj. relating to or using your senses of sight, hearing, smell, taste, or touch感觉的, 感官的<br />
+moral [ˈmɔrəl]: n. a practical lesson about what to do or how to behave, which you learn from a story or from something that happens to you ⇨ message教益<br />
+hard-pressed: adj. having a lot of problems and not enough money or time处于困境的<br />
+</p>
+<hr />
+<p>
+spinal cord [ˈspaɪn(ə)l] [kɔrd]: 脊髓<br />
+this isn't small potatoes: 这可不是小事<br />
+crumple sth. up: 弄皱某物<br />
+straighten sth. out: 变直弄直某物<br />
+demarcate A into B(s): 界定A为B(复数)<br />
+correspond to sth.: 对应于某事物<br />
+be proportioned to the extend: 与程度成比例<br />
+mistake A for B: 把A误认为B<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgc29e4b0" class="outline-3">
+<h3 id="orgc29e4b0">ch.</h3>
+</div>
+
+<div id="outline-container-orgc64f303" class="outline-3">
+<h3 id="orgc64f303">sentence</h3>
+<div class="outline-text-3" id="text-orgc64f303">
+<p>
+inclusive [ɪnˈklusɪv]: adj. an inclusive price or cost includes everything OPP exclusive包含的, 包括的<br />
+</p>
+<ul class="org-ul">
+<li></li>
+
+<li></li>
+
+<li></li>
+</ul>
+<p>
+suck [sʌk]: v. to take air, liquid etc into your mouth by making your lips form a small hole and using the muscles of your mouth to pull it in吮吸<br />
+</p>
+<ul class="org-ul">
+<li></li>
+
+<li></li>
+
+<li></li>
+</ul>
+<p>
+newborn [ˈnuˌbɔrn]: n. newborn child/baby/son etc a child that has just been born婴儿<br />
+</p>
+<ul class="org-ul">
+<li></li>
+
+<li></li>
+
+<li></li>
+</ul>
+<p>
+vomit [ˈvɒmit]: v. to bring food or drink up from your stomach out through your mouth, because you are ill呕吐<br />
+</p>
+<ul class="org-ul">
+<li></li>
+
+<li></li>
+
+<li></li>
+</ul>
+<p>
+cerebral [səˈribrəl]: adj. medical relating to or affecting your brain大脑的<br />
+</p>
+<ul class="org-ul">
+<li></li>
+
+<li></li>
+
+<li></li>
+</ul>
+<p>
+cortex [ˈkɔrˌteks]: n. the outer layer of an organ in your body, especially your brain(脑或肾的)皮层, 皮质<br />
+</p>
+<ul class="org-ul">
+<li></li>
+
+<li></li>
+
+<li></li>
+</ul>
+<p>
+cerebellum [ˌserəˈbeləm]: n. technical the bottom part of your brain that controls your muscles小脑<br />
+</p>
+<ul class="org-ul">
+<li></li>
+
+<li></li>
+
+<li></li>
+</ul>
+<p>
+visceral [ˈvɪsərəl]: adj. literary visceral beliefs and attitudes are the result of strong feelings rather than careful thought肺腑的<br />
+</p>
+<ul class="org-ul">
+<li></li>
+
+<li></li>
+
+<li></li>
+</ul>
+<p>
+distinctive [dɪˈstɪŋktɪv]: adj. having a special quality, character, or appearance that is different and easy to recognize独特的<br />
+</p>
+<ul class="org-ul">
+<li></li>
+
+<li></li>
+
+<li></li>
+</ul>
+<p>
+rug [rʌɡ]: n. a piece of thick cloth or wool that covers part of a floor, used for warmth or as a decoration ⇨ mat, carpet(小)地毯, 垫子<br />
+</p>
+<ul class="org-ul">
+<li></li>
+
+<li></li>
+
+<li></li>
+</ul>
+<p>
+reason [ˈriz(ə)n]: v. to form a particular judgment about a situation after carefully considering the facts推理<br />
+</p>
+<ul class="org-ul">
+<li></li>
+
+<li></li>
+
+<li></li>
+</ul>
+<p>
+reptile [ˈreptɪl]: n. a type of animal, such as a snake or ↑lizard, whose body temperature changes according to the temperature around it, and that usually lays eggs to have babies爬行动物<br />
+</p>
+<ul class="org-ul">
+<li></li>
+
+<li></li>
+
+<li></li>
+</ul>
+<p>
+primate [ˈpraɪmeɪt]: n. a member of the group of animals that includes humans and monkeys灵长类的动物<br />
+</p>
+<ul class="org-ul">
+<li></li>
+
+<li></li>
+
+<li></li>
+</ul>
+<p>
+lobe [loʊb]: n. technical a round part of an organ in your body, especially in your brain or lungs(脑)叶<br />
+</p>
+<ul class="org-ul">
+<li></li>
+
+<li></li>
+
+<li></li>
+</ul>
+<p>
+swoop [swup]: v. if a bird or aircraft swoops, it moves suddenly down through the air, especially in order to attack something俯冲<br />
+</p>
+<ul class="org-ul">
+<li></li>
+
+<li></li>
+
+<li></li>
+</ul>
+<p>
+frontal [ˈfrʌnt(ə)l]: adj. medical relating to the front part of the head额骨的<br />
+parietal [pə'raɪətəl]: adj. 顶骨的<br />
+occipital [ɒk'sɪpətəl]: adj. 枕骨的<br />
+temporal [ˈtemp(ə)rəl]: adj. 太阳穴的<br />
+topography [təˈpɑɡrəfi] topographical: n.adj. the science of describing an area of land, or making maps of it地形学<br />
+</p>
+<ul class="org-ul">
+<li></li>
+
+<li></li>
+
+<li></li>
+</ul>
+<p>
+motor [ˈmoʊtər]: adj. technical relating to nerves that make muscles move肌肉运动的<br />
+</p>
+<ul class="org-ul">
+<li></li>
+
+<li></li>
+
+<li></li>
+</ul>
+<p>
+twitch [twɪtʃ]: v. if a part of someone’s body twitches, or if they twitch it, it makes a small sudden movement抽搐<br />
+</p>
+<ul class="org-ul">
+<li></li>
+
+<li></li>
+
+<li></li>
+</ul>
+<p>
+somatosensory [ˌsoʊmətə'sensərɪ]: adj. (耳、目、口等以外的)体觉的<br />
+</p>
+<ul class="org-ul">
+<li></li>
+
+<li></li>
+
+<li></li>
+</ul>
+<p>
+projection [prəˈdʒekʃ(ə)n]: n. the act of projecting a film or picture onto a screen投影<br />
+</p>
+<ul class="org-ul">
+<li></li>
+
+<li></li>
+
+<li></li>
+</ul>
+<p>
+magnetic [mæɡˈnetɪk]: adj. concerning or produced by ↑magnetism磁的<br />
+</p>
+<ul class="org-ul">
+<li></li>
+
+<li></li>
+
+<li></li>
+</ul>
+<p>
+tumor [ˈtumər]: n. a mass of diseased cells in your body that have divided and increased too quickly肿瘤<br />
+</p>
+<ul class="org-ul">
+<li></li>
+
+<li></li>
+
+<li></li>
+</ul>
+<p>
+stroke [stroʊk]: n. if someone has a stroke, an ↑artery (=tube carrying blood) in their brain suddenly bursts or becomes blocked, so that they may die or be unable to use some muscles中风<br />
+</p>
+<ul class="org-ul">
+<li></li>
+
+<li></li>
+
+<li></li>
+</ul>
+<p>
+motorcycle [ˈmoʊtərˌsaɪk(ə)l]: n. a fast two-wheeled vehicle with an engine SYN motorbike摩托车<br />
+</p>
+<ul class="org-ul">
+<li></li>
+
+<li></li>
+
+<li></li>
+</ul>
+<p>
+psychic [ˈsaɪkɪk]: adj. affecting the mind rather than the body精神的<br />
+</p>
+<ul class="org-ul">
+<li></li>
+
+<li></li>
+
+<li></li>
+</ul>
+<p>
+blind [blaɪnd] blindness: adj.n. unable to see瞎的, 盲目的<br />
+</p>
+<ul class="org-ul">
+<li></li>
+
+<li></li>
+
+<li></li>
+</ul>
+<p>
+profile [ˈproʊˌfaɪl]: n. a side view of someone’s head侧面像<br />
+</p>
+<ul class="org-ul">
+<li></li>
+
+<li></li>
+
+<li></li>
+</ul>
+<p>
+mild [maɪld]: adj. a mild illness or health problem is not serious温和的<br />
+</p>
+<ul class="org-ul">
+<li></li>
+
+<li></li>
+
+<li></li>
+</ul>
+<p>
+sensory [ˈsensəri]: adj. relating to or using your senses of sight, hearing, smell, taste, or touch感觉的, 感官的<br />
+</p>
+<ul class="org-ul">
+<li></li>
+
+<li></li>
+
+<li></li>
+</ul>
+<p>
+moral [ˈmɔrəl]: n. a practical lesson about what to do or how to behave, which you learn from a story or from something that happens to you ⇨ message教益<br />
+</p>
+<ul class="org-ul">
+<li></li>
+
+<li></li>
+
+<li></li>
+</ul>
+<p>
+hard-pressed: adj. having a lot of problems and not enough money or time处于困境的<br />
+</p>
+<ul class="org-ul">
+<li></li>
+
+<li></li>
+
+<li></li>
+</ul>
+<hr />
+<p>
+spinal cord [ˈspaɪn(ə)l] [kɔrd]: 脊髓<br />
+</p>
+<ul class="org-ul">
+<li></li>
+
+<li></li>
+
+<li></li>
+</ul>
+<p>
+this isn't small potatoes: 这可不是小事<br />
+</p>
+<ul class="org-ul">
+<li></li>
+
+<li></li>
+
+<li></li>
+</ul>
+<p>
+crumple sth. up: 弄皱某物<br />
+</p>
+<ul class="org-ul">
+<li></li>
+
+<li></li>
+
+<li></li>
+</ul>
+<p>
+straighten sth. out: 变直弄直某物<br />
+</p>
+<ul class="org-ul">
+<li></li>
+
+<li></li>
+
+<li></li>
+</ul>
+<p>
+demarcate A into B(s): 界定A为B(复数)<br />
+</p>
+<ul class="org-ul">
+<li></li>
+
+<li></li>
+
+<li></li>
+</ul>
+<p>
+correspond to sth.: 对应于某事物<br />
+</p>
+<ul class="org-ul">
+<li></li>
+
+<li></li>
+
+<li></li>
+</ul>
+<p>
+be proportioned to the extend: 与程度成比例<br />
+</p>
+<ul class="org-ul">
+<li></li>
+
+<li></li>
+
+<li></li>
+</ul>
+<p>
+mistake A for B: 把A误认为B<br />
+</p>
+<ul class="org-ul">
+<li></li>
+
+<li></li>
+
+<li></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
