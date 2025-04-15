@@ -1,0 +1,631 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-04-15 Tue 22:45 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org576a2f1">1. Docker</a>
+<ul>
+<li><a href="#orga133dc3">1.1. Docker是什么?</a></li>
+<li><a href="#orge347fd1">1.2. 什么端口?</a></li>
+<li><a href="#orgd87ebe4">1.3. 为什么要使用Docker?</a></li>
+<li><a href="#orgc6fa511">1.4. Docker-compose</a></li>
+</ul>
+</li>
+<li><a href="#org15d9a2d">2. 分库分表</a>
+<ul>
+<li><a href="#orgf4b8264">2.1. 什么是分库分表</a></li>
+<li><a href="#org3847a6c">2.2. 如何切分库分表</a></li>
+<li><a href="#org6da676f">2.3. 为什么要分库分表</a></li>
+<li><a href="#orged5925d">2.4. 切分策略</a></li>
+<li><a href="#org563964e">2.5. 分库分表产生的问题</a></li>
+<li><a href="#org647aaea">2.6. 分库分表如何落地?</a></li>
+</ul>
+</li>
+<li><a href="#orge13607b">3. Mybatis</a>
+<ul>
+<li><a href="#orgea2c18b">3.1. 一级缓存和二级缓存的区别</a></li>
+</ul>
+</li>
+<li><a href="#org1472ec9">4. GC</a>
+<ul>
+<li><a href="#orgbd67811">4.1. GCRoot</a></li>
+<li><a href="#org0973d72">4.2. GC算法</a></li>
+<li><a href="#org54e304a">4.3. 实际GC</a></li>
+</ul>
+</li>
+<li><a href="#org00beaba">5. Java</a>
+<ul>
+<li><a href="#orgee741aa">5.1. Java的多态是什么?</a></li>
+<li><a href="#org2f9ead1">5.2. Java中变量,代码块,构造器之间的执行顺序是怎样的?</a></li>
+<li><a href="#orgdf13d94">5.3. final关键字有什么作用?</a></li>
+<li><a href="#orgaa1ffd8">5.4. Integer类会进行缓存吗?</a></li>
+<li><a href="#org0b5a603">5.5. 抽象类有那些特点?</a></li>
+<li><a href="#org629f018">5.6. String, StringBuffer和StringBuilder的区别是什么?</a></li>
+<li><a href="#org2c5a385">5.7. Object类有哪些自带方法?</a>
+<ul>
+<li><a href="#org6e8c0f4">5.7.1. hashCode()和equals()</a></li>
+<li><a href="#orgd735df2">5.7.2. clone()方法</a></li>
+<li><a href="#org5aa1323">5.7.3. toString()方法</a></li>
+<li><a href="#orgab410b3">5.7.4. wait()和notify() !!!</a></li>
+<li><a href="#org350748a">5.7.5. finalize()</a></li>
+</ul>
+</li>
+<li><a href="#org08b6a2e">5.8. 编译型,解释型,和伪编译型语言的区别?</a></li>
+<li><a href="#org82693ba">5.9. Java中访问控制符有哪些?</a></li>
+<li><a href="#org4305b04">5.10. Java的构造器有哪些特点?</a></li>
+<li><a href="#org7d0876f">5.11. Java的内部类是怎样的?</a></li>
+<li><a href="#orgc30e8b1">5.12. Java的注解是什么?</a></li>
+<li><a href="#org97a1830">5.13. 为什么hashCode和equal()方法要一起重写?</a></li>
+<li><a href="#orgb640ea4">5.14. Java有哪些数据类型?</a></li>
+<li><a href="#org6ed0760">5.15. 包装类型和基本类型的区别是什么?</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org576a2f1" class="outline-2">
+<h2 id="org576a2f1"><span class="section-number-2">1.</span> Docker</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+<div id="outline-container-orga133dc3" class="outline-3">
+<h3 id="orga133dc3"><span class="section-number-3">1.1.</span> Docker是什么?</h3>
+<div class="outline-text-3" id="text-1-1">
+<p>
+Docker是Linux容器,可以理解成轻便的Linux虚拟机,只有需要的应用及其依赖.
+</p>
+</div>
+</div>
+<div id="outline-container-orge347fd1" class="outline-3">
+<h3 id="orge347fd1"><span class="section-number-3">1.2.</span> 什么端口?</h3>
+<div class="outline-text-3" id="text-1-2">
+<p>
+使用Docker-compose, 选择image生成实例, 由容器内部的接口映射到容器外部(也就是服务器的接口), 并且提供相应环境变量.
+例如 某个微服务 在容器内部是8080, 映射到服务器上是8081, 环境变量指定是正式环境
+</p>
+</div>
+</div>
+<div id="outline-container-orgd87ebe4" class="outline-3">
+<h3 id="orgd87ebe4"><span class="section-number-3">1.3.</span> 为什么要使用Docker?</h3>
+<div class="outline-text-3" id="text-1-3">
+<ol class="org-ol">
+<li>构造和部署管道, 只需要一个命令就可以构造和部署到任何环境</li>
+<li>把微服务的基础设施变成可以执行和管理的代码去对待, Dockerfile和run.sh</li>
+<li>一旦创建了微服务镜像,确保它部署后永远不会改变</li>
+<li>如果在服务器上运行,服务器自身容易发生环境变量的改变,确保其不会发生改变</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-orgc6fa511" class="outline-3">
+<h3 id="orgc6fa511"><span class="section-number-3">1.4.</span> Docker-compose</h3>
+<div class="outline-text-3" id="text-1-4">
+<p>
+Docker-compose,用来简化Docker的操作
+编写yml文件,使用镜像,指定容器内外端口(映射)和环境变量,管理实例(加载/卸载,运行,停止,删除)
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org15d9a2d" class="outline-2">
+<h2 id="org15d9a2d"><span class="section-number-2">2.</span> 分库分表</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-orgf4b8264" class="outline-3">
+<h3 id="orgf4b8264"><span class="section-number-3">2.1.</span> 什么是分库分表</h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+分库分表,指把一张表水平分割,分为多个子表,放入不同的数据库内
+</p>
+</div>
+</div>
+<div id="outline-container-org3847a6c" class="outline-3">
+<h3 id="org3847a6c"><span class="section-number-3">2.2.</span> 如何切分库分表</h3>
+<div class="outline-text-3" id="text-2-2">
+<p>
+水平分库分表: 表结构不变,按每条数据分割,把表分成多个子表,放入或不放入不同的库中
+	记录数过多
+垂直分库分表: 表的结构改变,按字段分割.
+	一条记录的数据太多
+</p>
+</div>
+</div>
+<div id="outline-container-org6da676f" class="outline-3">
+<h3 id="org6da676f"><span class="section-number-3">2.3.</span> 为什么要分库分表</h3>
+<div class="outline-text-3" id="text-2-3">
+<p>
+磁盘, CPU, 内存, 宽带, 连接数不够用了
+</p>
+</div>
+</div>
+<div id="outline-container-orged5925d" class="outline-3">
+<h3 id="orged5925d"><span class="section-number-3">2.4.</span> 切分策略</h3>
+<div class="outline-text-3" id="text-2-4">
+<ol class="org-ol">
+<li>范围,根据某字段的范围,比如ID,每百万放一张表
+缺陷: 写入数据都是写新表,新表写入问题比较大</li>
+<li>Hash切分, 用ID对总表数取余数, 决定库和表
+解决了新表写入问题
+缺陷: Hash算法如果不合理的话,会造成数据分布不均匀的情况. 还有跨表查询和分页的问题</li>
+<li>映射表
+把每行数据的ID和分表映射记录下来</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org563964e" class="outline-3">
+<h3 id="org563964e"><span class="section-number-3">2.5.</span> 分库分表产生的问题</h3>
+<div class="outline-text-3" id="text-2-5">
+<ol class="org-ol">
+<li>查询数据难度增加,需要先查询映射表,再查询到数据</li>
+<li>分布式ID. UUID</li>
+<li>分布式事务, 之前的本地事务没法用了
+<ol class="org-ol">
+<li>在业务里避免分布式事务</li>
+<li>用分布式框架</li>
+</ol></li>
+<li>跨表关联/分页/排序: 在业务代码中分别查询,然后组装数据 Sharding-Proxy</li>
+<li>业务服务器直连, 数据库(代理). 都是把逻辑抽象封装,业务无需关心细节</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org647aaea" class="outline-3">
+<h3 id="org647aaea"><span class="section-number-3">2.6.</span> 分库分表如何落地?</h3>
+</div>
+</div>
+<div id="outline-container-orge13607b" class="outline-2">
+<h2 id="orge13607b"><span class="section-number-2">3.</span> Mybatis</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+Mybatis我们项目用的是MybatisGenerator,尽量不写SQL,在Java代码中解决.
+比如:用一张新表生成统计数据,定时执行.或者直接把数据存入Elasticsearch中,解决搜索和统计的问题.
+</p>
+</div>
+<div id="outline-container-orgea2c18b" class="outline-3">
+<h3 id="orgea2c18b"><span class="section-number-3">3.1.</span> 一级缓存和二级缓存的区别</h3>
+<div class="outline-text-3" id="text-3-1">
+<p>
+一级缓存范围在一个SqlSession内部,不是全局缓存
+二级缓存是全局
+如果二级缓存开启的话,执行顺序是先去二级缓存查询,二级缓存有,则直接返回.没有再去一级缓存查,有直接返回.没有的话,去数据库查.
+多表查询的时候,多个sqlSession的时候,另外一个事务未提交的时候,二级缓存不生效.
+一个事务已经提交的时候,二级缓存生效有50%的概率.
+使用微服务框架的话,二级缓存和一级缓存的变量都可能不在同一台服务器上,容易出现脏读~幻读的现象.不建议使用.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org1472ec9" class="outline-2">
+<h2 id="org1472ec9"><span class="section-number-2">4.</span> GC</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+<div id="outline-container-orgbd67811" class="outline-3">
+<h3 id="orgbd67811"><span class="section-number-3">4.1.</span> GCRoot</h3>
+<div class="outline-text-3" id="text-4-1">
+<p>
+GCRoot指的是栈中,本地方法栈,方法区.
+直接引用的对象,或者间接引用的对象.
+没有被引用则会被删除
+</p>
+</div>
+</div>
+<div id="outline-container-org0973d72" class="outline-3">
+<h3 id="org0973d72"><span class="section-number-3">4.2.</span> GC算法</h3>
+<div class="outline-text-3" id="text-4-2">
+<ol class="org-ol">
+<li>标记-清理: 标记后直接清理
+缺: 内存碎片</li>
+<li>标记-整理: 标记后删除,再前移动
+缺: 移动频繁,开销大</li>
+<li>复制: 复制到另一块区域
+缺: 内存开销大</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org54e304a" class="outline-3">
+<h3 id="org54e304a"><span class="section-number-3">4.3.</span> 实际GC</h3>
+<div class="outline-text-3" id="text-4-3">
+<p>
+分为新生区,和老年区
+新生区Young: 分为Edan, Survivor0, Survivor1. 因为很多对象生命周期短,所以是8:1:1
+老年区Old: Old. 大对象直接出生在Old区,比如大数组.
+</p>
+
+<p>
+实际GC:
+	新创建的对象实例,在Edan.然后Young GC. 一次Edan+S1复制到S0.再一次GC由Edan+S0复制到S1.每一次复制,年龄+1.
+	到Age=6的时候,复制到Old.
+	Old满了,产生FullGC.用的是标记清理或标记整理的算法.
+</p>
+<ul class="org-ul">
+<li>如果Edan+S1复制到S0满了,直接进入Old区</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org00beaba" class="outline-2">
+<h2 id="org00beaba"><span class="section-number-2">5.</span> Java</h2>
+<div class="outline-text-2" id="text-5">
+</div>
+<div id="outline-container-orgee741aa" class="outline-3">
+<h3 id="orgee741aa"><span class="section-number-3">5.1.</span> Java的多态是什么?</h3>
+<div class="outline-text-3" id="text-5-1">
+<p>
+编译类型是一个类,实际类型可能不同(可以是当前类,也可以子类),实际会调用实际类型的方法,造成方法行为的不同.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org2f9ead1" class="outline-3">
+<h3 id="org2f9ead1"><span class="section-number-3">5.2.</span> Java中变量,代码块,构造器之间的执行顺序是怎样的?</h3>
+<div class="outline-text-3" id="text-5-2">
+<p>
+先父子静态变量;再父子静态代码块;先父普通成员变量+代码块+构造器;再子普通成员变量+代码块+构造器.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgdf13d94" class="outline-3">
+<h3 id="orgdf13d94"><span class="section-number-3">5.3.</span> final关键字有什么作用?</h3>
+<div class="outline-text-3" id="text-5-3">
+<ul class="org-ul">
+<li>用于类时:类不能被继承,且所有方法也被final修饰</li>
+<li>用于方法:方法不能被子类重写</li>
+<li>用于变量:变量一旦初始化,不能被修改</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgaa1ffd8" class="outline-3">
+<h3 id="orgaa1ffd8"><span class="section-number-3">5.4.</span> Integer类会进行缓存吗?</h3>
+<div class="outline-text-3" id="text-5-4">
+<p>
+Integer 在-128到127之间,有一个共有的缓存数组. 所以会出现-128到127之间,会相等.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org0b5a603" class="outline-3">
+<h3 id="org0b5a603"><span class="section-number-3">5.5.</span> 抽象类有那些特点?</h3>
+<div class="outline-text-3" id="text-5-5">
+<ol class="org-ol">
+<li>可以有抽象方法,由子类来实现</li>
+<li>不能被实例化</li>
+<li>抽象类可以被继承,子类没实现,则继续作为抽象类</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org629f018" class="outline-3">
+<h3 id="org629f018"><span class="section-number-3">5.6.</span> String, StringBuffer和StringBuilder的区别是什么?</h3>
+<div class="outline-text-3" id="text-5-6">
+<p>
+String: 不可变,用final修饰,每次变化都会产生新的对象
+StringBuilder和StringBuffer: 可变,StringBuffer读写用了synchronized修饰,线程安全.StringBuilder不安全.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org2c5a385" class="outline-3">
+<h3 id="org2c5a385"><span class="section-number-3">5.7.</span> Object类有哪些自带方法?</h3>
+<div class="outline-text-3" id="text-5-7">
+<ul class="org-ul">
+<li>获取class:
+<ul class="org-ul">
+<li>instance.getClass(): 返回对象运行时的类(实际的类,而不是编译的类)</li>
+<li>Class.forName("")</li>
+<li>类型+.class</li>
+</ul></li>
+</ul>
+</div>
+<div id="outline-container-org6e8c0f4" class="outline-4">
+<h4 id="org6e8c0f4"><span class="section-number-4">5.7.1.</span> hashCode()和equals()</h4>
+<div class="outline-text-4" id="text-5-7-1">
+</div>
+<ol class="org-ol">
+<li><a id="orgb719821"></a>hashCode()<br />
+<div class="outline-text-5" id="text-5-7-1-1">
+<ul class="org-ul">
+<li>对对象做散列,比如: HashMap</li>
+<li>快速判断对象是否equals()</li>
+</ul>
+</div>
+</li>
+<li><a id="orgf527f12"></a>为什么hashCode()和equals()方法一起重写?<br />
+<div class="outline-text-5" id="text-5-7-1-2">
+<ul class="org-ul">
+<li>只重写hashCode,会导致相等的对象但内存地址不同,HashMap无法去重</li>
+<li>只重写equals方法,equals的对象HashCode不同,进入不同的数组,仍然无法去重</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-orgd735df2" class="outline-4">
+<h4 id="orgd735df2"><span class="section-number-4">5.7.2.</span> clone()方法</h4>
+<div class="outline-text-4" id="text-5-7-2">
+<p>
+返回对象的副本,相等,但是存储位置不同
+</p>
+</div>
+</div>
+<div id="outline-container-org5aa1323" class="outline-4">
+<h4 id="org5aa1323"><span class="section-number-4">5.7.3.</span> toString()方法</h4>
+<div class="outline-text-4" id="text-5-7-3">
+<p>
+返回对象+@+hashCode的十六进制
+</p>
+</div>
+</div>
+<div id="outline-container-orgab410b3" class="outline-4">
+<h4 id="orgab410b3"><span class="section-number-4">5.7.4.</span> wait()和notify() !!!</h4>
+</div>
+
+<div id="outline-container-org350748a" class="outline-4">
+<h4 id="org350748a"><span class="section-number-4">5.7.5.</span> finalize()</h4>
+<div class="outline-text-4" id="text-5-7-5">
+<p>
+gc调用的,有可能重新被引用,也可能被清理
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org08b6a2e" class="outline-3">
+<h3 id="org08b6a2e"><span class="section-number-3">5.8.</span> 编译型,解释型,和伪编译型语言的区别?</h3>
+<div class="outline-text-3" id="text-5-8">
+<ul class="org-ul">
+<li>编译型: 根据平台编译成机器码,打包成可执行程序.如: C,C++</li>
+<li>解释型: JavaScript, 对源码逐行解释且立即执行</li>
+<li>Java: 生成与JVM有关的字节码(.class文件),由不同平台的JVM解释执行</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org82693ba" class="outline-3">
+<h3 id="org82693ba"><span class="section-number-3">5.9.</span> Java中访问控制符有哪些?</h3>
+<div class="outline-text-3" id="text-5-9">
+<ul class="org-ul">
+<li>private: 类</li>
+<li>default: 包</li>
+<li>protected: 包+子类</li>
+<li>public: 任何</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org4305b04" class="outline-3">
+<h3 id="org4305b04"><span class="section-number-3">5.10.</span> Java的构造器有哪些特点?</h3>
+<div class="outline-text-3" id="text-5-10">
+<ol class="org-ol">
+<li>默认无参构造器</li>
+<li>可以多个构造器,传参不同</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org7d0876f" class="outline-3">
+<h3 id="org7d0876f"><span class="section-number-3">5.11.</span> Java的内部类是怎样的?</h3>
+<div class="outline-text-3" id="text-5-11">
+<p>
+静态内部类: new OutClass.InnerClass()
+非静态内部类 new OutClass().InnerClass()
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc30e8b1" class="outline-3">
+<h3 id="orgc30e8b1"><span class="section-number-3">5.12.</span> Java的注解是什么?</h3>
+</div>
+<div id="outline-container-org97a1830" class="outline-3">
+<h3 id="org97a1830"><span class="section-number-3">5.13.</span> 为什么hashCode和equal()方法要一起重写?</h3>
+</div>
+<div id="outline-container-orgb640ea4" class="outline-3">
+<h3 id="orgb640ea4"><span class="section-number-3">5.14.</span> Java有哪些数据类型?</h3>
+</div>
+<div id="outline-container-org6ed0760" class="outline-3">
+<h3 id="org6ed0760"><span class="section-number-3">5.15.</span> 包装类型和基本类型的区别是什么?</h3>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: DESKTOP-13B7HQM</p>
+<p class="date">Created: 2025-04-15 Tue 22:45</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
