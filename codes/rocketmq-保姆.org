@@ -1,0 +1,34 @@
+* RocketMQ保姆级教程
+1. 核心概念和工作流程的讲解
+2. 纯手动搭建环境
+3. 基于环境测试和集成到SpringBoot
+** 前言
+纯java~分布式~队列模型的开源消息中间件,支持事务~顺序消息~批量~定时消息和消息回溯等
+** 核心概念
+- NameServer: 注册中心,保存topic路由信息,管理Broker.
+	NameServer与NameServer之间没有任何通信
+- Broker: 用于保存topic信息.Broker集群中,相同的BrokerName可以称为Broker组.
+- 生产者
+- 生产者组
+- 消费者
+- 消费者组
+- topic(主题)
+- Tag(子主题)
+** 工作流程
+- Broker启动时,去每台NameServer注册自己的ip和端口号,以及有哪些topic信息
+- Producer启动后,定期从NameServer获取Broker信息.
+	发送消息时.根据topic去查找Broker地址,如果没有找到的,会判断是否自动在Broker创建topic
+- Broker接受到消息后,会存储消息.如果有从节点,则主从复制
+- Consumer启动后,定期从NameServer获取Broker信息和topic信息.根据订阅规则找到对应的Broker地址,获取消息,进行消费.
+** 环境搭建
+** SpringBoot环境下集成RocketMQ
+** 最后
+生产者:
+	- 创建生产者,指定生产者组
+	- 指定注册中心
+	- 发送带topic和tags的消息到broker(直接发,会从注册中心拿到broker地址)
+消费者:
+	- 创建消费者, 指定消费者组
+	- 指定注册中心
+	- 创建监听器(一直别的线程后台运行的),监听并处理从broker拉取到的消息(注册中心会告诉broker地址)
+

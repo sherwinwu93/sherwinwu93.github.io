@@ -1,0 +1,118 @@
+* 概览
+** Spring Cloud Alibaba是什么
+- 无侵入服务治理(全链路灰度,无损上下线,离群实例摘除)
+- Nacos注册配置中心
+- 云原生网关
+*** Spring Cloud微服务体系
+- API Gateway
+- Service registry
+- Config server
+- Distributed tracing
+两套实现:
+- Eureka~Ribbon~Feign~Hystrix
+- Nacos~Sentinel~Seata
+*** Spring Cloud Alibaba定位
+从里到外
+1. RPC调用/服务注册&发现
+2. 负载均衡/网关/分布式追踪/断路器/路由
+3. 分布式配置/函数/分布式消息/安全
+4. 开源产品与阿里云平台服务集成
+	 - 开源:RocketMQ~Dubbo~Nacos~Sentinel~Seata
+	 - 阿里云:SMS~Schedulex~Sidecar~OSS
+** 版本发布声明
+** FAQ
+* 用户指南
+** 注册配置中心 Nacos
+*** 概述
+**** 服务注册与发现
+- 所有微服务启动时,把服务名词~IP和端口发送到 注册中心
+- 上游的微服务处理请求时,根据服务名称到注册中心查找对应的所有IP地址和端口号进行服务调用
+**** 配置管理
+配置:
+- 系统配置: OS~硬件和网络
+- 应用配置: 应用程序的参数,如数据库连接url~日志级别等
+- 用户配置: 用户自定义的配置
+分布式配置中心解决问题:
+- 集中管理和分发配置信息
+- 环境隔离,dev与prod的隔离
+- 提高安全性, 把配置信息加密,进行访问权限控制,而不是放在代码库中
+- 动态更新配置
+**** Nacos概述
+Nacos:
+- 服务发现
+- 服务配置
+- 服务元数据: 关于服务数据的数据
+- 流量管理: 一定时间的服务调用请求数量
+*** 快速开始
+*** 进阶指南
+** 限流降级 Sentinel
+*** 概述
+**** 限流降级
+长的服务调用链路,出现大量相关服务不断发起请求,导致所有资源耗尽发生雪崩
+用限流和降级来解决它
+***** 限流
+用在服务提供者
+- 设定流量阀值
+- 排队/拒绝请求或返回错误信息
+***** 降级
+在消费者上
+- 返回默认值
+- 备用数据/简化功能
+**** Sentinel概述
+特征:
+- 场景多: 秒杀~消息队列削峰填谷~实时熔断下游不可用应用
+- 实时监控: 可以控制台看应用单台机器秒级数据,以及多态的汇总运行情况
+- 易整合: Spring Cloud~Dubbo~gRPC
+- SPI扩展点: 定制规则管理(流控规则)~适配数据源
+** 分布式消息 spring-cloud-starter-stream-rocketmq
+*** 概述
+**** RocketMQ介绍
+RocketMQ:分布式消息系统,消息发布与订阅
+特定:
+- 严格的消息顺序
+- 丰富的消息拉取模式
+- 高效的订阅者水平扩展能力
+- 实时的消息订阅机制
+- 亿级消息堆积能力
+
+**** Spring Cloud Stream介绍
+Spring Cloud Stream推出消息中间件配置的统一抽象:
+- publish-subscribe
+- consumer groups
+- partition
+内部的概念:
+- Binder: 和外部消息中间件继成的组件,用来创建Binding(类似与数据库连接),类似与各种JDBC
+- Binding: Input Binding和Output Binding
+架构设计:
+Application Core->inputs/outputs(Binding)->Binder->Middleware
+
+** 分布式定时任务 SCA SchedulingTasks
+*** 概述
+**** 定时任务简介
+主要场景:
+- 异步数据处理: 订单先入库,再扫描
+- 自动化运维: 每小时清理数据库的历史记录
+- 系统监控: 每分钟扫描监控指标,超过阈值,则报警
+- 数据同步: 每天凌晨把mysql同步到大数据平台
+**** Spring Cloud Alibaba SchedulingTasks
+解决多个节点任务重复执行
+** 分布式事务 Seata
+*** 概述
+**** 分布式事务
+分布式事务: 事务的参与者~支持事务的服务器~资源服务器以及事务管理器在不同的节点上
+分布式事务实现:ACID
+- 本地事务
+- 分布式事务:要满足到什么程度
+场景:
+- 跨表事务
+- 分库分表
+- 微服务化
+**** Seata
+** 异构服务 Spring Cloud Alibaba Sidecar
+*** 概述
+**** 为什么要编写Spring Cloud Alibaba Sidecar
+异构服务: 不用类型的服务器组成的系统
+**** 支持的组件
+Nacos
+**** 为什么不使用Service Mesh?
+Service Mesh过重了
