@@ -1,0 +1,59 @@
+* 用哪本词典?
+** ESL词典
+English as Second Lanuage
+** Collis
+新手用的,不够全
+** Longman
+THESAURUS: 同义词
+	- 提供多个近义词,精准用词
+	- ex: cold, cool, freezing, shivery
+单词解释中有短语搭配
+
+最好理由就是防止中文解释带来的信息失真
+那么你点一下上述两本词典的英英解释（点击一下红框），就可以跳出中文释义（建议尽量不使用）。
+
+** 如何查找短语
+** 母语词典
+** 其他词典
+** Vocabulary.com
+** Oxford Collocation Dictionary
+** 欧陆词典自定义隐藏自带元素
+-------------------- 电脑版
+在 欧路安装目录\dat\res\style.css末添加代码
+// 隐藏位置1 蓝色标题条
+#dic_banner {
+	display: none !important;
+}
+// 生词
+.five-star-level {
+	display: none !important;
+}
+// 全球发音
+.globalVoiceLink,#eudic_wordtag_info,#dic_searchcount{
+	display: none !important;
+}
+// 隐藏/显示所有词典
+.ifShow{
+	display: none !important;
+}
+// 您是否要查找
+.spellHint{
+	display: none !important;
+}
+// 词典名标题
+.expHead{
+	display: none !important;
+}
+// 我的笔记
+#NoteBottom{
+	display: none !important;
+}
+-------------------- 手机版
+// 新建与mdx文件同名的js文件. 例如: 有LDOCE5++ V 2-15.mdx, 则新建LDOCE5++ V 2-15.js
+setTimeout(function () {
+document.getElementById("eudicWordInfoHead").style.display = "none";
+document.getElementById("customNote").style.display = "none";},0);
+
+#eudicWordInfoHead,#customNote {
+	display: none !important;
+}
