@@ -1,0 +1,640 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-09-28 Sat 22:17 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-orgb33d7b0" class="outline-2">
+<h2 id="orgb33d7b0">Lesson 12 Life on a desert island</h2>
+<div class="outline-text-2" id="text-orgb33d7b0">
+<p class="verse">
+What was exceptional about the men's stay on the desert island?<br />
+<br />
+Most of us have <b>formed an unrealistic picture of</b> life on a desert island.<br />
+We sometimes <b>imagine a desert island to be a sort of</b> paradise where the sun always shines.<br />
+Life there is simple and good.<br />
+Ripe fruit falls from the trees and you never have to work.<br />
+The other side of the picture is quite the opposite.<br />
+Life on a desert island is wrectched.<br />
+You either <b>starve to death</b> or live like Robinson Crusoe,<br />
+&#xa0;waiting for a boat which never comes.<br />
+Perhaps there is <b>an element of truth</b> in both these pictures,<br />
+&#xa0;but few of us have <b>had the opportunity to</b> find out.<br />
+<br />
+Two men who recently spent five days on a coral island <b>wished they had stayed</b> there longer.<br />
+They were taking a badly damaged boat from the Virgin Islands to Miami to have it repaired.<br />
+During the journey, their boat began to sink.<br />
+They quickly <b>loaded a small rubber dinghy with</b> food, matches, and cans of beer<br />
+&#xa0;&#xa0;and rowed for a few miles across the Caribbean<br />
+&#xa0;until they arrived at a tiny coral island.<br />
+There were hardly any trees on the island and there was no water,<br />
+&#xa0;but this did not prove to be a problem.<br />
+The men collected rainwater in the rubber dinghy.<br />
+As they had brought a spear gun with them, they had plenty to eat.<br />
+They caught lobster and fish every day, and, <b>as one of them put it</b> 'ate like kings'.<br />
+When a passing tanker rescued them five days later,<br />
+&#xa0;both men <b>were genuinely sorry that</b> they had to leave.<br />
+</p>
+</div>
+<div id="outline-container-orge981c16" class="outline-3">
+<h3 id="orge981c16">expression</h3>
+<div class="outline-text-3" id="text-orge981c16">
+<p>
+desert: [ˈdezərt] island 荒岛<br />
+unrealistic: [ˌʌnriəˈlɪstɪk] adj.不真实的<br />
+paradise: [ˈperəˌdaɪs] n.天堂,乐土<br />
+wretched: [ˈretʃəd] adj. someone who is wretched is very unhappy or ill, and you feel sorry for them可怜的,艰苦的<br />
+starve: [stɑrv] v.挨饿<br />
+element: [ˈelɪmənt] n.成分<br />
+opportunity: [ˌɑpərˈtunəti] n.机会<br />
+coral: [ˈkɔrəl] n.珊瑚<br />
+Virgin: [ˈvɜrdʒɪn] Islands<br />
+Miami: [maɪ'æmi] n.<br />
+dinghy: [ˈdɪŋi] n.皮艇<br />
+Caribbean: [ˌkerɪˈbiən] n.加勒比海<br />
+spear: [spɪr] gun: 鱼叉枪<br />
+lobster: [ˈlɑbstər] n.龙虾<br />
+tanker: [ˈtæŋkər] n.油轮<br />
+genuinely: [ˈdʒenjuɪnli] adv.由衷地<br />
+</p>
+
+<p>
+have an opportunity to do sth.: have the privilege of doing sth.有机会做某事<br />
+an element of truth/danger: 有点..<br />
+starve to death: 饿死<br />
+sb. be genuinely sorry that + &#x2026;某人真的很抱歉+&#x2026;<br />
+</p>
+<hr />
+<p>
+wish that sb. did: 现在虚拟<br />
+wish that sb. had done: 过去虚拟<br />
+</p>
+<hr />
+<p>
+formed an unrealistic picture of sth.:对某事有不切实际的想象<br />
+imagine sth./sb. to be n./adj.: 把某事想象成<br />
+a sort of: 某种程度上/一种<br />
+wish that + &#x2026;: 希望+&#x2026;<br />
+load a. with b.: 用B装载A<br />
+As sb. put it: 如某人所说<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org37652ea" class="outline-3">
+<h3 id="org37652ea">words</h3>
+<div class="outline-text-3" id="text-org37652ea">
+<p>
+desert island ['dezət-aɪlənd] 荒岛<br />
+unrealistic [ˌʌnriːəˈlɪstɪk] adj.不真实的<br />
+paradise [ˈpærədaɪs] n.天堂,乐土<br />
+wretched [ˈretʃɪd] adj.可怜的,艰苦的<br />
+starve [stɑːrv] v.挨饿<br />
+element [ˈelɪmənt] n.成分<br />
+opportunity [ˌɑːpərˈtuːnəti] n.机会<br />
+coral [ˈkɔːrəl] n.珊瑚<br />
+Virgin islands ['və:dʒin] [ˈaɪləndz] 维尔京群岛<br />
+Miami [maɪˈæmi] n.迈阿密(美国最南的城市)<br />
+dinghy [ˈdɪŋi; ˈdɪŋɡi] n.救生筏,小船<br />
+Caribbean [ˌkærɪˈbiːən; kəˈrɪbiən] n.加勒比海<br />
+spear gun [spɪr ɡʌn] 捕鱼枪<br />
+tanker [ˈtæŋkər] n.油轮<br />
+genuinely [ˈdʒenjuɪnli] adv.由衷地<br />
+Robinson Crusoe [ˈrɑbɪnsən] [ˈkruːsoʊ] 鲁滨逊丶克鲁索<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge9eb7e2" class="outline-3">
+<h3 id="orge9eb7e2">vocabulary</h3>
+<div class="outline-text-3" id="text-orge9eb7e2">
+<p>
+picture: image<br />
+wretched: miserable<br />
+starve to death: die of hunger<br />
+opportunity: chance<br />
+repaired: fixed, mended<br />
+loaded: filled, stacked<br />
+dinghy: small boat<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org6a03143" class="outline-3">
+<h3 id="org6a03143"><span class="done DONE">DONE</span> 单词造句</h3>
+<div class="outline-text-3" id="text-org6a03143">
+<p>
+desert island<br />
+</p>
+<ul class="org-ul">
+<li>If you were on a desert island, what would you like to carry most?<br /></li>
+<li>There is a strange mixture on the desert island.<br /></li>
+<li>Image his dismay when he found that he was on a desert island alone.<br /></li>
+<li>I was always being greeted by an unpleasant smell on the desert island.<br /></li>
+<li>I was made to cook by myself on the desert island.<br /></li>
+</ul>
+<p>
+unrealistic adj.<br />
+</p>
+<ul class="org-ul">
+<li>On the other hand, this idea proved to be unrealistic.<br /></li>
+<li>The order given by the captain proved to be unrealistic.<br /></li>
+<li>I found it unrealistic that a puma was still at large.<br /></li>
+<li>This proved to be unrealistic, for there was no puma on a desert island.<br /></li>
+<li>It is unrealistic that perfume will be exempted from import duty.<br /></li>
+</ul>
+<p>
+paradise n.<br />
+</p>
+<ul class="org-ul">
+<li>They was disappointed to find that the countryside is not a paradise.<br /></li>
+<li>So long as humen don't come here anymore, it will soon be a paradise of fishing.<br /></li>
+<li>The village used to be regarded as a paradise.<br /></li>
+<li>If you provided us with some background music, this bar would be a paradise.<br /></li>
+<li>The journalist is instructed to write an article about this paradise.<br /></li>
+</ul>
+<p>
+wretched adj.<br />
+</p>
+<ul class="org-ul">
+<li>They lived in a wretched conditions, for most of them had cancers.<br /></li>
+<li>He found out that the wretched animal had been killed last night.<br /></li>
+<li>She was so kind that she often provided these wretched animal with some foods.<br /></li>
+<li>She went to extremes to get away from wretched place.<br /></li>
+<li>This village turned out to be a wretched place, instead of a paradise.<br /></li>
+</ul>
+<p>
+starve v.  starve to death<br />
+</p>
+<ul class="org-ul">
+<li>As the authorities didn't provide enough food with them, many of them have starved in floods.<br /></li>
+<li>If there were only one man like you in the world, I'd starve to death.<br /></li>
+<li>If I didn't have the privilege of going to the desert island, I'd starve to death.<br /></li>
+<li>She may be starving, for she is extremely weak.<br /></li>
+<li>This convinced me that the wretched animal was starving.<br /></li>
+</ul>
+<p>
+element n.  an element of truth/danger<br />
+</p>
+<ul class="org-ul">
+<li>I was relieved to hear that there was still an element of truth in this pirate story.<br /></li>
+<li>The zoo has stated that there is an element of danger in climbing this mountain.<br /></li>
+<li>My wife proved that rise in status was a key element in our decision.<br /></li>
+<li>There is an element  of danger in knocking the security to the ground.<br /></li>
+<li>There must be an element of truth in this statistics.<br /></li>
+</ul>
+<p>
+opportunity n.  have an opportunity to do sth.<br />
+</p>
+<ul class="org-ul">
+<li>I'm glad I have an opportunity to go to disneyland.<br /></li>
+<li>I'm sure that I have an opportunity to go to university.<br /></li>
+<li>It was not long before that she had an opportunity to break the wrold record.<br /></li>
+<li>The detective had an opportunity to catch the thieves.<br /></li>
+<li>We have only an opportunity to send a signal to have us rescued.<br /></li>
+</ul>
+<p>
+coral n.<br />
+</p>
+<ul class="org-ul">
+<li>It was not long before we found out that she was expert at coral.<br /></li>
+<li>She carried a basket of fruits to the coral island.<br /></li>
+<li>It is you who should be responsible for the coral island, not me.<br /></li>
+<li>I have been living on a coral island for ten years, I am tired of world outside.<br /></li>
+<li>The scientist named the coral island the Swag.<br /></li>
+</ul>
+<p>
+Virgin Islands<br />
+Miami n.<br />
+dinghy n.<br />
+</p>
+<ul class="org-ul">
+<li>We couldn't sail to the other bank of the river. Despite the fact that we get a dinghy.<br /></li>
+<li>I didn't have enough money to have my dinghy repaired.<br /></li>
+<li>It's hard to imagine that this wonderful dinghy belongs to me.<br /></li>
+<li>The dinghy is now holding up the traffic on the river.<br /></li>
+<li>This dinghy is going to set out to Miami this night.<br /></li>
+</ul>
+<p>
+Caribbean n.<br />
+spear gun<br />
+</p>
+<ul class="org-ul">
+<li>The spear gun is regarded as precious, for he double checks it every day.<br /></li>
+<li>I must have lost my spear gun on the way home.<br /></li>
+<li>All sorts of spear gun will be on show on this exhibition.<br /></li>
+<li>A large circle of my friends are expert at spear gun.<br /></li>
+<li>Euiped with a spear gun, I sat in the boat on the river.<br /></li>
+</ul>
+<p>
+lobster n.<br />
+</p>
+<ul class="org-ul">
+<li>The moment I see the lobster, you should fire a shot.<br /></li>
+<li>I have a habit of eating lobster on weekends.<br /></li>
+<li>You should have removed dirty soil from the lobster.<br /></li>
+<li>Lobsters are a source of income in this village.<br /></li>
+<li>Somehow lobsters had a bad reputation for spreading diseases in this country.<br /></li>
+</ul>
+<p>
+tanker n.<br />
+</p>
+<ul class="org-ul">
+<li>If we missed the tanker, we would never be rescued.<br /></li>
+<li>It is a blessing that a passing tanker rescued us.<br /></li>
+<li>The order to abandon the tanker was given by the captain.<br /></li>
+<li>The tanker broke down last night out at sea.<br /></li>
+<li>On the other hand, this businessman is eager to have a tanker.<br /></li>
+</ul>
+<p>
+genuinely adv.  sb. be geuninely sorry that + &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>I'm geuninely sorry that I kicked your ass last night.<br /></li>
+<li>I'm geuninely sorry that we have sold it out.<br /></li>
+<li>She's geuninely sorry that she has made a colossal mistake at the meeting.<br /></li>
+<li>I'm genuinely sorry that the games will be cancelled.<br /></li>
+<li>I'm genuinely sorry that I didn't preventing you from hurt.<br /></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org6fc045f" class="outline-3">
+<h3 id="org6fc045f"><span class="done DONE">DONE</span> 反复听电影片段直到懂关键句</h3>
+<div class="outline-text-3" id="text-org6fc045f">
+</div>
+</div>
+<div id="outline-container-org365ade1" class="outline-3">
+<h3 id="org365ade1">复习二册语法(笔记或视频) &amp; 红皮书</h3>
+<div class="outline-text-3" id="text-org365ade1">
+<p>
+wish that sb. did: 现在虚拟<br />
+wish that sb. had done: 过去虚拟<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org801f217" class="outline-3">
+<h3 id="org801f217"><span class="done DONE">DONE</span> 习惯用法造句</h3>
+<div class="outline-text-3" id="text-org801f217">
+<p>
+formed an unrealistic picture of a.<br />
+</p>
+<ul class="org-ul">
+<li>Why do most people form an unrealistic picture of life abroad?<br /></li>
+<li>No one could account for the fact<br />
+that people who do manual work often<br />
+  formed an unrealistic picture of people's life who work in offices.<br /></li>
+<li>She used to form an unrealistic picture of the man she will marry to.<br /></li>
+<li>My wife used to form an unrealistic picture of cat's nature.<br /></li>
+<li>She formed an unrealistic picture of life at the famous monostery.<br /></li>
+</ul>
+<p>
+imagine sth./sb. to be n./adj.<br />
+</p>
+<ul class="org-ul">
+<li>I used to imagine myself to be a hero who saves the world.<br /></li>
+<li>My wife has imagined me to be a millionaire for ten years.<br /></li>
+<li>It was obvious that the cat imagined this to be a can of foods.<br /></li>
+<li>When I was going on a diet, I always imagined the chair to be a bread.<br /></li>
+<li>I prefered to imagine my father to be a hero.<br /></li>
+</ul>
+<p>
+a sort of<br />
+</p>
+<ul class="org-ul">
+<li>He is a sort of people who believe in ancient philosophy.<br /></li>
+<li>He is following her around some like a kind of dog.<br /></li>
+<li>He ran straight at her like a kind of angry bull.<br /></li>
+<li>She is a sort of cat who behaves like dogs.<br /></li>
+<li>She is a sort of cat who has a habit of catching mouse.<br /></li>
+</ul>
+<p>
+quite the opposite<br />
+</p>
+<ul class="org-ul">
+<li>Quite the opposite, she ran into serous trouble.<br /></li>
+<li>Quite the opposite, she was able to settle down in New York.<br /></li>
+<li>Quiet the opposite, we couldn't afford a new car.<br /></li>
+<li>Quiet the opposite, I never dreamed of marrying you.<br /></li>
+<li>Quiet the opposite, she is always complaining about you.<br /></li>
+</ul>
+<p>
+wish that + &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>I wished that I had a good reputation for taking job seriously.<br /></li>
+<li>I wished that you had washed my clothes.<br /></li>
+<li>I wished that this tanker had belonged to me.<br /></li>
+<li>I wished that I worked hard in high school.<br /></li>
+<li>I wished that I hadn't argued with my wife last night.<br /></li>
+</ul>
+<p>
+load a. with b.<br />
+</p>
+<ul class="org-ul">
+<li>You needn't have loaded your car with fruits .<br /></li>
+<li>The boat loaded with goods received a warm welcome.<br /></li>
+<li>The truck loaded with diamond needn't cleaning now.<br /></li>
+<li>It seems that the truck was loaded with too much goods.<br /></li>
+<li>The truck was said to be loaded with 100,000 dollars worth of diamonds.<br /></li>
+</ul>
+<p>
+As sb. put it<br />
+</p>
+<ul class="org-ul">
+<li>As my father put it "reading, reading and reading".<br /></li>
+<li>As my wife put it "If you didn't finish it, you might run into serious trouble".<br /></li>
+<li>As Aristole put it "I prefer truth to my teacher".<br /></li>
+<li>As the headmaster used to put it "It is never too old to learn".<br /></li>
+<li>As Leo put it "I counldn't tell the difference from Britsh and American English".<br /></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org36421ac" class="outline-3">
+<h3 id="org36421ac">跟读 50遍</h3>
+</div>
+<div id="outline-container-org95fd6cd" class="outline-3">
+<h3 id="org95fd6cd"><span class="done DONE">DONE</span> Comprehension 反复练习</h3>
+<div class="outline-text-3" id="text-org95fd6cd">
+</div>
+</div>
+<div id="outline-container-orgcab1770" class="outline-3">
+<h3 id="orgcab1770"><span class="done DONE">DONE</span> Ask me if 写+读</h3>
+<div class="outline-text-3" id="text-orgcab1770">
+<ol class="org-ol">
+<li>We imagine a desert island to be a sort of paradise. How<br />
+How do we imagine a desert island to be?<br /></li>
+<li>Ripe fruit falls from the trees. What<br />
+What falls from the trees?<br />
+Where does ripe fruit fall from?<br /></li>
+<li>You never have to work. Why<br />
+Why do you never have to work?<br /></li>
+<li>Two men spent five days on a coral island. How many days<br />
+How many days did two men spend on a coral island?<br /></li>
+<li>They wished they had stayed there longer. Why<br />
+Why did they wish they had stayed there longer?<br /></li>
+<li>They were taking their badly damaged boat to Miami. Where<br />
+Where were they taking their badly damaged boat to?<br /></li>
+<li>The boat began to sink. When<br />
+When did the boat begin to sink?<br /></li>
+<li>They loaded it with food. What<br />
+What did they load it with?<br />
+What did they load with food?<br /></li>
+<li>They rowed a few miles across the Caribbean. Where<br />
+Where did they row a few miles?<br /></li>
+<li>They collected rainwater in the rubber dinghy. Where<br />
+Where did they collect rainwater?<br /></li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orga31d36e" class="outline-3">
+<h3 id="orga31d36e"><span class="done DONE">DONE</span> 摘要写作 写 &amp; 对答案</h3>
+<div class="outline-text-3" id="text-orga31d36e">
+<p>
+As the men's boat was damaged,<br />
+	they were taking it from Virgin Islands to Miami<br />
+	when on the way it boat began to sink on the way.<br />
+After having loaded food, matches, and cans of beer on to their rubber dinghy,<br />
+	the two men rowed a few miles across the Caribbean util they arrived at a tiny coral island.<br />
+There they collected water in the rubber dinghy<br />
+	and catching fish and lobster with a spear gun.<br />
+For five days, they ate 'like kings' until they were rescued by a passing tanker.<br />
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org92d5c5f" class="outline-3">
+<h3 id="org92d5c5f"><span class="done DONE">DONE</span> tell the story 口语复述</h3>
+<div class="outline-text-3" id="text-org92d5c5f">
+</div>
+</div>
+<div id="outline-container-org901be19" class="outline-3">
+<h3 id="org901be19"><span class="done DONE">DONE</span> composition 阅读 或 写作</h3>
+<div class="outline-text-3" id="text-org901be19">
+<p>
+The ship went down and everyone was drowned.<br />
+I was the only one who managed to jump into the sea.<br />
+I clung to a plank in the water for several hours till I was washed up on a desert island.<br />
+I slept on the beach for a very long time &#x2013; I can't remember how long.<br />
+When I woke up, I was hungry and thirsty, so I decided to explore the island.<br />
+It was uninhabited, but I found plenty of fruit which had fallen from the trees.<br />
+I lived on coconuts and pineapples and there was plenty of fresh spring water.<br />
+</p>
+
+<p>
+I tried to hunt wild animals with my bare hands(small pigs and other creatures),<br />
+	but I failed to catch anything.<br />
+So I spent my days swimming in the warm clear water and lying in the sun.<br />
+One afternoon while I was lying on the beach as usual, I saw a boat on the horizon.<br />
+I signalled with my white shirt and shouted as loudly as I could.<br />
+Fortunately, someone on the boat saw me and I was rescued.<br />
+Of course, I was pleased to get back to civilization,<br />
+	but I was very sorry to leave this island paradise.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org72192b0" class="outline-3">
+<h3 id="org72192b0">Topics for discussion</h3>
+</div>
+</div>
+</div>
+</body>
+</html>

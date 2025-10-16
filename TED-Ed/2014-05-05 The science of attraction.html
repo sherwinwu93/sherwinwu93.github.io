@@ -1,0 +1,575 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-01-09 Thu 23:07 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-orga0addbd" class="outline-2">
+<h2 id="orga0addbd">2014-05-05 The science of attraction</h2>
+<div class="outline-text-2" id="text-orga0addbd">
+<p class="verse">
+We like to think of romantic feelings as spontaneous and indescribable things<br />
+&#xa0;that come from the heart.<br />
+But it's actually your brain running a complex series of calculations within a matter of seconds<br />
+&#xa0;that's responsible for determining attraction.<br />
+Doesn't sound quite as poetic, does it?<br />
+But just because the calculations are happening in your brain<br />
+&#xa0;doesn't mean those warm, fuzzy feelings are all in your head.<br />
+<br />
+In fact, all five of your senses play a role, each able to vote for, or veto, a budding attraction.<br />
+The eyes are the first components in attraction.<br />
+Many visual beauty standards vary between cultures and eras,<br />
+&#xa0;and signs of youth, fertility and good health,<br />
+&#xa0;&#xa0;&#xa0;such as long lustrous hair, or smooth, scar-free skin,<br />
+&#xa0;&#xa0;are almost always in demand<br />
+&#xa0;because they're associated with reproductive fitness.<br />
+And when the eyes spot something they like,<br />
+&#xa0;our instinct is to move closer so the other senses can investigate.<br />
+<br />
+The nose's contribution to romance is more than noticing perfume or cologne.<br />
+It's able to pick up on natural chemical signals known as pheromones.<br />
+These not only convey important physical or genetic information about their source<br />
+&#xa0;but are able to activate a physiological or behavioral response in the recipient.<br />
+In one study, a group of women at different points in their ovulation cycles<br />
+&#xa0;wore the same T-shirts for three nights.<br />
+After male volunteers were randomly assigned to smell either one of the worn shirts,<br />
+&#xa0;&#xa0;or a new unworn one,<br />
+&#xa0;saliva samples showed an increase in testosterone in those<br />
+&#xa0;&#xa0;who had smelled a shirt worn by an ovulating woman.<br />
+Such a testosterone boost may give a man the nudge to pursue a woman<br />
+&#xa0;he might not have otherwise noticed.<br />
+A woman's nose is particularly attuned to MHC molecules, which are used to fight disease.<br />
+In this case, opposites attract.<br />
+When a study asked women to smell T-shirts that had been worn by different men,<br />
+&#xa0;they preferred the odors of those whose MHC molecules differed from theirs.<br />
+This makes sense.<br />
+Genes that result in a greater variety of immunities may give offspring a major survival advantage.<br />
+<br />
+Our ears also determine attraction.<br />
+Men prefer females with high-pitched, breathy voices, and wide formant spacing,<br />
+&#xa0;correlated with smaller body size.<br />
+While women prefer low-pitched voices with a narrow formant spacing<br />
+&#xa0;that suggest a larger body size.<br />
+<br />
+And not surprisingly, touch turns out to be crucial for romance.<br />
+In this experiment, not realizing the study had begun,<br />
+&#xa0;participants were asked to briefly hold the coffee, either hot or iced.<br />
+Later, the participants read a story about a hypothetical person,<br />
+&#xa0;and were asked to rate their personality.<br />
+Those who had held the hot cup of coffee<br />
+&#xa0;perceived the person in the story as happier, more social, more generous and better-natured<br />
+&#xa0;&#xa0;than those who had held the cup of iced coffee,<br />
+&#xa0;&#xa0;&#xa0;who rated the person as cold, stoic, and unaffectionate.<br />
+<br />
+If a potential mate has managed to pass all these tests, there's still one more:<br />
+&#xa0;the infamous first kiss, a rich and complex exchange of tactile and chemical cues,<br />
+&#xa0;&#xa0;such as the smell of one's breath, and the taste of their mouth.<br />
+This magical moment is so critical<br />
+&#xa0;&#xa0;that a majority of men and women have reported losing their attraction to someone<br />
+&#xa0;after a bad first kiss.<br />
+Once attraction is confirmed,<br />
+&#xa0;your bloodstream is flooded with norepinephrine,<br />
+&#xa0;activating your fight or flight system.<br />
+Your heart beats faster, your pupils dilate, and your body releases glucose for additional energy,<br />
+&#xa0;not because you're in danger<br />
+&#xa0;but because your body is telling you that something important is happening.<br />
+To help you focus, norepinephrine creates a sort of tunnel vision,<br />
+&#xa0;blocking out surrounding distractions,<br />
+&#xa0;possibly even warping your sense of time, and enhancing your memory.<br />
+This might explain why people never forget their first kiss.<br />
+<br />
+The idea of so much of our attraction being influenced by chemicals and evolutionary biology<br />
+&#xa0;&#xa0;may seem cold and scientific rather than romantic,<br />
+&#xa0;but the next time you see someone you like,<br />
+&#xa0;&#xa0;try to appreciate how your entire body is playing matchmaker to decide<br />
+&#xa0;&#xa0;&#xa0;if that beautiful stranger is right for you.<br />
+</p>
+</div>
+<div id="outline-container-org6952b1b" class="outline-3">
+<h3 id="org6952b1b">expression</h3>
+<div class="outline-text-3" id="text-org6952b1b">
+<p>
+indescribable [ˌɪndɪˈskraɪbəb(ə)l]: adj. it is too difficult to describe难以形容的<br />
+poetic [poʊˈetɪk]: adj. relating to poetry, or typical of poetry诗歌的<br />
+fuzzy [ˈfʌzi]: adj. unclear or confused OPP clear模糊的<br />
+veto [ˈvitoʊ]: v. to refuse to accept a particular plan or suggestion否决<br />
+budding [ˈbʌdɪŋ]: adj. beginning to develop萌芽的<br />
+component [kəmˈpoʊnənt]: n. one of several parts that together make up a whole machine, system etc SYN constituent成分<br />
+fertility [fɜrˈtɪləti]: n. the ability of the land or soil to produce good crops肥沃<br />
+lustrous [ˈlʌstrəs]: adj. shining in a soft gentle way有光泽的, 光辉的<br />
+reproductive [ˌriprəˈdʌktɪv]: adj. relating to the process of producing babies, young animals, or plants生殖的<br />
+fitness [ˈfɪtnəs]: n. when you are healthy and strong enough to do hard work or play sports健壮<br />
+cologne [kəˈloʊn]: n. liquid that smells slightly of flowers or plants, that you put on your neck or wrists ⇨ perfume古龙水<br />
+pheromones [ˈferəˌmoʊn]: n. a chemical that is produced by people’s and animals’ bodies and is thought to influence the behaviour of other people or animals信息素<br />
+physiological [ˌfɪziəˈlɑdʒɪk(ə)l]: adj. the science that studies the way in which the bodies of living things work生理学的<br />
+recipient [rɪˈsɪpiənt]: n. someone who receives something接受者<br />
+saliva [səˈlaɪvə]: n. the liquid that is produced naturally in your mouth SYN spit口水<br />
+testosterone [teˈstɑstəˌroʊn]: n. the ↑hormone in males that gives them their male qualities睾丸激素<br />
+odor [ˈoʊdər]: n. a smell, especially an unpleasant one气味<br />
+breathy [ˈbreθi]: adj. if someone’s voice is breathy, you can hear their breath when they speak带呼吸声的<br />
+formant ['fɔrmənt] spacing: 共振峰间距<br />
+hypothetical [ˌhaɪpəˈθetɪk(ə)l]: adj. based on a situation that is not real, but that might happen假设的<br />
+unaffectionate: adj. 没有感情的<br />
+infamous [ˈɪnfəməs]: adj. well known for being bad or evil声名狼籍的<br />
+tactile [ˈtækt(ə)l]: adj. relating to your sense of touch触觉的<br />
+cue [kju]: n. an action or event that is a signal for something else to happen暗示<br />
+norepinephrine [ˌnɔrɛpə'nɛfrɪn]: n. 去甲肾上腺素<br />
+tunnel [ˈtʌn(ə)l] vision: 视野狭隘(引申义:封闭思想)<br />
+bloodstream [ˈblʌdˌstrim]: n. the blood flowing in your body血流<br />
+dilate [daɪˈleɪt]: v. if a hollow part of your body dilates or if something dilates it, it becomes wider扩大<br />
+glucose [ˈɡluˌkoʊz]: n. a natural form of sugar that exists in fruit葡萄糖<br />
+warp [wɔrp]: v. if something warps, or if heat or cold warps it, it becomes bent or twisted, and loses its original shape扭曲<br />
+</p>
+<hr />
+<p>
+think of A. as B.: 认为A是B<br />
+perceive A. as B.: 把A当作B<br />
+run a (complex) series of calculations: 进行一系列(复杂)的运算<br />
+within a matter of seconds: 在几秒钟之内<br />
+sounds quite as adj.: 听起来很像<br />
+Just because +&#x2026; doesn't mean + &#x2026;:  仅仅因为 +&#x2026;并不意味着 +&#x2026;<br />
+all num. of sth.: 某物的全部几个<br />
+play a role in doing sth./sth.: 在某事上起作用<br />
+be in demand: 是需要的<br />
+pick up on sth.: 注意到某事<br />
+In one study: 在一项研究中<br />
+in sb's ovulation cycle: 在某人的排卵周期内<br />
+be randomly assigned to do sth.: 被随机派遣做某事<br />
+give sb. the nudge to do sth.: 给某人动力去做某事<br />
+be particularly attuned to sth.: 对某事非常熟悉 be familiar with<br />
+differ from sth.: 不同于某事某物<br />
+result in sth.(death/failure/contradiction): 导致某事<br />
+be correlated with sth.: 和某事相关<br />
+rate sb's personality: 评价某人的性格<br />
+lose sb's attraction to sb.: 丢失对某人的吸引力<br />
+be flooded with sth.: 被某事淹没<br />
+activate (sb's fight/flight/immune) system: 激活&#x2026;系统<br />
++&#x2026;, not because +&#x2026;,but because + &#x2026;: &#x2026;,不是因为&#x2026;, 而是因为&#x2026;<br />
+block out sth.: 遮挡<br />
+enhance sb's memory: 增强某人的记忆力<br />
+This might explain why + &#x2026;: 这可能解释了为什么<br />
+play matchmaker: 做媒<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org199812e" class="outline-3">
+<h3 id="org199812e">sentences</h3>
+<div class="outline-text-3" id="text-org199812e">
+<p>
+think of A. as B.: 认为A是B<br />
+</p>
+<ul class="org-ul">
+<li>I regret thinking of these as the normal symptoms of the lack of sleep.<br /></li>
+<li>I used to think of it as a stake.<br /></li>
+<li>These local villagers made mistakes and thought of the corpse as a vampire.<br /></li>
+</ul>
+<p>
+perceive A. as B.: 把A当作B<br />
+</p>
+<ul class="org-ul">
+<li>This local villagers perceived the poor butcher as a thief who stole money last night.<br /></li>
+<li>This vicar perceived the figure as the local butcher.<br /></li>
+<li>My nephew always perceives the pocket money I give him as something<br />
+exchanged for a piece of chocolate.<br /></li>
+</ul>
+<p>
+run a (complex) series of calculations: 进行一系列(复杂)的运算<br />
+</p>
+<ul class="org-ul">
+<li>This computer is able to run a complex series of calculations in a second.<br /></li>
+<li>He is said to run a series of calculations in a minute.<br /></li>
+<li>This computer broke down so that it can't run a complex series of calculations in a second.<br /></li>
+</ul>
+<p>
+within a matter of seconds: 在几秒钟之内<br />
+</p>
+<ul class="org-ul">
+<li>The fire brigade put out the fire within a matter of seconds.<br /></li>
+<li>Believe it or not, he fixed the bug within a matter of seconds.<br /></li>
+<li>These guys who took part in a game stuck together within a matter of seconds.<br /></li>
+</ul>
+<p>
+sounds quite as adj.: 听起来很像<br />
+</p>
+<ul class="org-ul">
+<li>It doesn't sound quite as difficult.<br /></li>
+<li>It doesn't sound quite as great.<br /></li>
+<li>It doesn't sound quite as romantic.<br /></li>
+</ul>
+<p>
+Just because +&#x2026; doesn't mean + &#x2026;:  仅仅因为 +&#x2026;并不意味着 +&#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>Just because I love you doesn't mean I don't hate you anymore.<br /></li>
+<li>Just because China surrendered the island to England doesn't mean they failed.<br /></li>
+<li>Just because it approached zero doesn't mean it hit zero.<br /></li>
+</ul>
+<p>
+all num. of sth.: 某物的全部几个<br />
+</p>
+<ul class="org-ul">
+<li>All 5 of the pop singers will be arriving at the station.<br /></li>
+<li>All 5 of the engineers will be working hard on the scene.<br /></li>
+<li>All 5 of the firefighters will be rescuing these kids in the flood.<br /></li>
+</ul>
+<p>
+play a role in doing sth./sth.: 在某事上起作用<br />
+</p>
+<ul class="org-ul">
+<li>She played a role in combining her brother with her friend.<br /></li>
+<li>Journalists play a role in bombarding people with medical studies.<br /></li>
+<li>Studies have shown that taking vitamins every day plays a role in your health.<br /></li>
+</ul>
+<p>
+be in demand: 是需要的<br />
+</p>
+<ul class="org-ul">
+<li>The food was in demand during this earthquake.<br /></li>
+<li>This special type of herb ingredient is in demand in China.<br /></li>
+<li>A piece of paper is always in demand when I am giving a speech in public.<br /></li>
+</ul>
+<p>
+pick up on sth.: 注意到某事<br />
+</p>
+<ul class="org-ul">
+<li>The pianist who pretended to be blind picked up on the corpse behind the soft.<br /></li>
+<li>I picked up on my salary is worse than his last week.<br /></li>
+<li>The boy who picked up on a mosquito was trying to swat it away.<br /></li>
+</ul>
+<p>
+In one study: 在一项研究中<br />
+</p>
+<ul class="org-ul">
+<li>In one study, this herb ingredient proved to be bad for your health.<br /></li>
+<li>In one study, husbands were 50% sure of cheating on their wives when meeting a chance.<br /></li>
+<li>In one study, all statistics agreed with the model which the professor developed.<br /></li>
+</ul>
+<p>
+in sb's ovulation cycle: 在某人的排卵周期内<br />
+</p>
+<ul class="org-ul">
+<li>My wife claimed that she was in her ovulation cycle.<br /></li>
+<li>My wife tends to get angry in her ovulation cycle.<br /></li>
+<li>There is some small, but non-zero, probability that she is in her ovulation cycle.<br /></li>
+</ul>
+<p>
+be randomly assigned to do sth.: 被随机派遣做某事<br />
+</p>
+<ul class="org-ul">
+<li>They are randomly assigned to interact with a girl.<br /></li>
+<li>They have been assigned to build the bridge in their youth.<br /></li>
+<li>These soldiers were assigned to plant bombs in action.<br /></li>
+</ul>
+<p>
+give sb. the nudge to do sth.: 给某人动力去做某事<br />
+</p>
+<ul class="org-ul">
+<li>In the cinema, Her signals gave me the nudge to pursue her.<br /></li>
+<li>I suspected that your behavior gave him the nudge to take the test.<br /></li>
+<li>His encouragement must have given me the nudge to go to university.<br /></li>
+</ul>
+<p>
+be particularly attuned to sth.: 对某事非常熟悉 be familiar with<br />
+</p>
+<ul class="org-ul">
+<li>In the process, I was attuned to the model he developed for an atom.<br /></li>
+<li>I was particularly attuned to wolves in the face of many in the prairie.<br /></li>
+<li>I am attuned to the museum built from iron and glass.<br /></li>
+</ul>
+<p>
+differ from sth.: 不同于某事某物<br />
+</p>
+<ul class="org-ul">
+<li>The boy I dated yesterday must differ from my classmate in high school.<br /></li>
+<li>The boy may differ from your ex-boyfriend in high school.<br /></li>
+<li>The company which I am working for differs from the last one.<br /></li>
+</ul>
+<p>
+result in sth.(death/failure/contradiction): 导致某事<br />
+</p>
+<ul class="org-ul">
+<li>The mistakes you made resulted in the failure of our team.<br /></li>
+<li>These monks must have resulted in the spread of smallpox in China.<br /></li>
+<li>Being exposed to poison air resulted in his cancer.<br /></li>
+</ul>
+<p>
+be correlated with sth.: 和某事相关<br />
+</p>
+<ul class="org-ul">
+<li>The movie star, Bingbing Fan, is said to be correlated with the craze.<br /></li>
+<li>The pustule may be correlated with smallpox.<br /></li>
+<li>Beheading was always correlated with some brutal executions in ancient China.<br /></li>
+</ul>
+<p>
+rate sb's personality: 评价某人的性格<br />
+</p>
+<ul class="org-ul">
+<li>I don't like to rate my colleague's personality.<br /></li>
+<li>It's impolite to rate your wife's personality in public.<br /></li>
+<li>He explained why he rated her personality.<br /></li>
+</ul>
+<p>
+lose sb's attraction to sb.: 丢失对某人的吸引力<br />
+</p>
+<ul class="org-ul">
+<li>Cats never lose their attraction to human beings.<br /></li>
+<li>He refused to stay with her after she lost her attraction to him.<br /></li>
+<li>His daughter doesn't obey the rules which lose their attraction to her.<br /></li>
+</ul>
+<p>
+be flooded with sth.: 被某事淹没<br />
+</p>
+<ul class="org-ul">
+<li>The street is being flooded with cats and dogs in the exhibition.<br /></li>
+<li>The village will be flooded with corpses in the flood next week.<br /></li>
+<li>Arriving on the scene, he was flooded with rubbish in the house.<br /></li>
+</ul>
+<p>
+activate (sb's fight/flight/immune) system: 激活&#x2026;系统<br />
+</p>
+<ul class="org-ul">
+<li>For a very short period of time, it succeeded in activating its protection system.<br /></li>
+<li>After being infected with smallpox, he succeeded in activating his immune system.<br /></li>
+<li>When I realized that my phone had been stolen, I activated its protection system.<br /></li>
+</ul>
+<p>
++&#x2026;, not because +&#x2026;,but because + &#x2026;: &#x2026;,不是因为&#x2026;, 而是因为&#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>I kissed you, not because I love you, but because it's fun.<br /></li>
+<li>He developed a serious cold, not because he hasn't worn enough clothes,<br />
+but because he has played with snow.<br /></li>
+<li>He died from a car accident, not because he drove carelessly,<br />
+but because it was bad weather.<br /></li>
+</ul>
+<p>
+block out sth.: 遮挡<br />
+</p>
+<ul class="org-ul">
+<li>I blocked out the torchlight when they were laughing at me.<br /></li>
+<li>I really want to remove these clothes, which block out sunlight.<br /></li>
+<li>It begins all the way back when he blocked out sunlight in front of her.<br /></li>
+</ul>
+<p>
+enhance sb's memory: 增强某人的记忆力<br />
+</p>
+<ul class="org-ul">
+<li>Taking vitamins may enhance your memory.<br /></li>
+<li>He developed a model for the material to enhance his memory.<br /></li>
+<li>The pain I suffered from may have enhanced my memory.<br /></li>
+</ul>
+<p>
+This might explain why + &#x2026;: 这可能解释了为什么<br />
+</p>
+<ul class="org-ul">
+<li>This might explain why this law became prohibited.<br /></li>
+<li>This might explain why he continued to dig up corpses.<br /></li>
+<li>This might explain why people conquered the deadly smallpox.<br /></li>
+</ul>
+<p>
+play matchmaker: 做媒<br />
+</p>
+<ul class="org-ul">
+<li>You must avoid playing matchmaker for your single boss.<br /></li>
+<li>I was wondering if you are playing matchmaker for us.<br /></li>
+<li>Would you mind my playing matchmaker for your sister and my brother?<br /></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

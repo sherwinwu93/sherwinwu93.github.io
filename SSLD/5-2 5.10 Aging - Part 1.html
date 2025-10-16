@@ -1,0 +1,738 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-02-03 Mon 19:49 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-org1f992ca" class="outline-2">
+<h2 id="org1f992ca">5-2 5.10 Aging - Part 1</h2>
+<div class="outline-text-2" id="text-org1f992ca">
+<p class="verse">
+So when we talk about people who are older or growing older in life.<br />
+Obviously, we will be looking at the changing N3C as well.<br />
+So like circumstances change, and you know, when people grow older, their needs will change, right.<br />
+Say for example, some of us will be needing assistance to just move around.<br />
+Some of us may even need help to address our basic physical needs for survival, you know.<br />
+So obviously not every aging person needs that.<br />
+Like some people can be very healthy and very active.<br />
+And not only can they take care of themselves, they can also take care of other people.<br />
+They may still continue to do wonderful things, creative things<br />
+&#xa0;&#xa0;like making significant contribution to humankind,<br />
+&#xa0;so there's a diversity of needs.<br />
+<br />
+And in our society, we have this arrangement,<br />
+&#xa0;which is also gradually being transformed itself, the institution of retirement, right?<br />
+So the concept itself is being redefined and you know, stretched.<br />
+But then we also understand that like people are going through some kind of transformation,<br />
+&#xa0;like maybe you are working full time at a place, and then you become part time.<br />
+Or you stop working and you become self-employed, or you stop working.<br />
+Obviously your relationship with your co-workers would be transformed.<br />
+Mm-hm.<br />
+Right, like take me as an example.<br />
+I'm working in a university.<br />
+And if I stop doing this,<br />
+&#xa0;then my relationship with my students and my co-workers, it will be changed.<br />
+So that is the kind of transformation that we expect.<br />
+<br />
+What is like more challenging about this situation<br />
+&#xa0;is that very often people do not understand the changing needs.<br />
+And then certain needs will therefore go neglected.<br />
+The couple of examples that I can give<br />
+&#xa0;will be you know the need for the personal space, for your autonomy, for your agency,<br />
+&#xa0;&#xa0;to assert itself, like taking risks for example.<br />
+In a lot of situations we encourage younger people to take risks.<br />
+Say for example, you have a toddler walking and falls.<br />
+The toddler will be encouraged to stand up and walk again.<br />
+You have a 90-year old person like walking and falls.<br />
+Then people will be encouraging him or her to use a wheelchair.<br />
+Right.<br />
+All right, so that is a very different understanding.<br />
+And young people can get into high risk or high impact sports,<br />
+&#xa0;but if an older person wants to take risks with<br />
+&#xa0;&#xa0;&#xa0;what he or she wants to do in a long-term care facility,<br />
+&#xa0;&#xa0;that person usually is discouraged.<br />
+So some of the needs would be neglected.<br />
+<br />
+Another big topic that I always talk about is the sexual and intimacy needs, right,<br />
+&#xa0;which is one of the key topics that we are interested in this course.<br />
+And you know like older people also have like sexual needs and needs for intimacy,<br />
+&#xa0;but those are usually not recognized.<br />
+Yeah, I think I feel like a lot of society doesn't believe that,<br />
+&#xa0;you know, we become asexual once we've hit a certain age.<br />
+Or it's considered strange if you have, I don't know, sexual desires and that kind of thing, yeah.<br />
+<br />
+So and then the other thing is<br />
+&#xa0;other than that<br />
+&#xa0;&#xa0;you find that because of the ageist discourse and practice that we have around us,<br />
+&#xa0;&#xa0;&#xa0;like older people are usually scripted in sort of like a passive role.<br />
+You have like even TV commercials<br />
+&#xa0;showing you know old people waiting around during Christmas for the family to visit<br />
+&#xa0;&#xa0;or you know like waiting for grandchildren to call.<br />
+And they're expected to be thrilled when that happened.<br />
+And I think there is some systematic bias here, right,<br />
+&#xa0;Imagining their lives to be without content, without fun.<br />
+And I believe that a lot can be done by society and also by the older people themselves<br />
+&#xa0;&#xa0;to change that impression and also to enrich their lives<br />
+&#xa0;so that you know the characteristics as older people<br />
+&#xa0;&#xa0;will be positively valued rather than pathologized.<br />
+<br />
+And then we also have to recognize that they have capacity that can be developed.<br />
+I have been like working a lot in the last few years with people with dementia.<br />
+And one of the things that I am fully convinced with many, many examples<br />
+&#xa0;is that people even when they're diagnosed with dementia,<br />
+&#xa0;&#xa0;many of these people can actually still continue to learn and develop.<br />
+Like when we are expected to think of them as generally deteriorating in all aspects of life,<br />
+&#xa0;well, which do happen, right?<br />
+They do experience some deterioration or some decline in some functions.<br />
+But it doesn't mean that they cannot learn new stuff,<br />
+&#xa0;and it doesn't mean that their lives cannot be enriched by doing things differently.<br />
+So I believe that the transformation, right, of their own condition<br />
+&#xa0;and the relationship with the world can be reimagined.<br />
+</p>
+</div>
+<div id="outline-container-org20d2c31" class="outline-3">
+<h3 id="org20d2c31">expression</h3>
+<div class="outline-text-3" id="text-org20d2c31">
+<p>
+aging [ˈeɪdʒɪŋ]: n. the process of getting old变老<br />
+institution [ˌɪnstɪˈtuʃ(ə)n]: n. an important system of organization in society that has existed for a long time制度<br />
+toddler [ˈtɑdlər]: n. a very young child who is just learning to walk学走路的儿童<br />
+wheelchair [ˈhwilˌtʃer]: n. a chair with wheels, used by people who cannot walk轮椅<br />
+facility [fəˈsɪləti]: n. a place or building used for a particular activity or industry, or for providing a particular type of service场所<br />
+asexual [eɪˈsekʃuəl]: adj. technical not having sexual organs or not involving sex无性的<br />
+ageist [ˈeɪdʒɪst]: adj. treating older people unfairly because of a belief that they are less important than younger people歧视老年人的<br />
+discourse [ˈdɪsˌkɔrs]: n. a serious speech or piece of writing on a particular subject谈论<br />
+passive [ˈpæsɪv]: adj. someone who is passive tends to accept things that happen to them or things that people say to them, without taking any action ⇨ impassive被动的<br />
+commercial [kəˈmɜrʃ(ə)l]: n. an advertisement on television or radio广告<br />
+thrilled [θrɪld]: adj. very excited, happy, and pleased极为兴奋,激动<br />
+enrich [ɪnˈrɪtʃ]: v. to improve the quality of something, especially by adding things to it丰富<br />
+pathologize [pəˈθɒlədʒaiz]: v. 归于病态<br />
+dementia [dɪˈmenʃə]: n. an illness that affects the brain and memory, and makes you gradually lose the ability to think and behave normally[医] 痴呆<br />
+deteriorate [dɪˈtɪriəreɪt] deterioration: v.n. to become worse恶化,退化<br />
+</p>
+<hr />
+<p>
+full time: adj./adv. 全职<br />
+part time: adj./adv. 兼职的<br />
+take sb. as an example: 拿某人举例<br />
+go neglected: 被忽视<br />
+wait (around) for sb. to do sth.: 等待某人做某事<br />
+be diagnosed with sth.: 被诊断患有&#x2026;<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org37d0568" class="outline-3">
+<h3 id="org37d0568">ch.</h3>
+<div class="outline-text-3" id="text-org37d0568">
+<p>
+5-2 5.10 老龄化 - 第一部分<br />
+当我们谈论年长者或步入老年的人时，显然，我们也会关注N3C的变化。<br />
+随着环境的变化，人们的需求也会发生改变，对吧。<br />
+比如说，有些人可能需要帮助才能四处走动。<br />
+有些人甚至需要协助来满足基本的生存需求。<br />
+当然，并不是所有老年人都需要这些帮助。<br />
+有些人可能仍然非常健康和活跃。<br />
+他们不仅能够照顾自己，还能照顾他人。<br />
+他们甚至可以继续做出卓越的贡献，创造有意义的事物，为人类社会做出重大贡献。<br />
+所以，老年人的需求是多样化的。<br />
+</p>
+
+<p>
+在我们的社会中，存在着这样一种制度——退休制度，而它本身也在逐步发生转变。<br />
+退休的概念正在被重新定义和拓展。<br />
+与此同时，我们也看到人们正在经历某种转变。<br />
+比如，一个人原本是全职工作，然后变成兼职。<br />
+或者他完全停止工作，成为自由职业者，或者直接退休。<br />
+很显然，他与同事之间的关系也会因此发生变化。<br />
+嗯哼。<br />
+就拿我自己来说吧，我在大学工作。<br />
+如果我不再做这份工作，那么我和我的学生、同事之间的关系也会改变。<br />
+这种变化是可以预见的。<br />
+</p>
+
+<p>
+然而，这种情况更具挑战性的一点是，很多时候，人们并不了解老年人需求的变化。<br />
+因此，某些需求往往被忽视。<br />
+举几个例子，比如个人空间、独立性、自主性以及自我表达的需求，比如冒险精神。<br />
+在很多情况下，我们鼓励年轻人去冒险。<br />
+比如，一个蹒跚学步的幼儿摔倒了，我们会鼓励他站起来再试一次。<br />
+但是，如果一个90岁的老人摔倒了，人们则会建议他坐上轮椅。<br />
+对吧？<br />
+这是一种完全不同的理解。<br />
+年轻人可以从事高风险或高冲击性的运动，<br />
+但如果一个老人在长期护理机构中想要冒险尝试自己想做的事情，<br />
+通常他会被劝阻。<br />
+因此，某些需求就被忽略了。<br />
+</p>
+
+<p>
+另一个我经常谈论的重要话题是性与亲密关系的需求。<br />
+这是本课程中我们关注的关键问题之一。<br />
+老年人同样有性需求和亲密关系的需求，<br />
+但这些需求往往得不到认可。<br />
+我觉得社会上很多人认为，<br />
+一旦到了某个年纪，我们就会变得“无性化”。<br />
+或者，如果老年人仍然有性需求，<br />
+人们会觉得这很奇怪，对吧？<br />
+</p>
+
+<p>
+除此之外，由于社会存在年龄歧视的话语和实践，<br />
+老年人往往被描绘成一种被动的角色。<br />
+比如，我们在电视广告中看到，<br />
+老年人坐在那里，等着家人圣诞节来探望，<br />
+或者等着孙子孙女打电话。<br />
+当家人真的来看望他们时，他们被期待表现得欣喜若狂。<br />
+但我认为，这里存在某种系统性的偏见。<br />
+这种刻板印象将老年人的生活想象成无趣、无内容的状态。<br />
+我相信，无论是社会还是老年人自身，<br />
+都可以做很多事情来改变这种印象，同时也丰富老年人的生活。<br />
+这样一来，老年人的特质将被积极地看待，而不是被病态化。<br />
+</p>
+
+<p>
+此外，我们也必须认识到，老年人依然有可以发展的能力。<br />
+在过去几年里，我一直与失智症患者合作。<br />
+通过大量实例，我深信，<br />
+即使是被诊断患有失智症的人，<br />
+他们中的许多人依然可以继续学习和成长。<br />
+虽然我们倾向于认为，他们的各方面能力都会全面退化，<br />
+的确，他们在某些方面会经历衰退或功能下降，<br />
+但这并不意味着他们无法学习新事物。<br />
+这也不意味着，他们的生活无法通过不同的方式变得更加丰富。<br />
+因此，我相信，<br />
+他们自身的状态以及他们与世界的关系，<br />
+都可以被重新想象和塑造。<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org931740f" class="outline-3">
+<h3 id="org931740f">sentence</h3>
+<div class="outline-text-3" id="text-org931740f">
+<p>
+aging [ˈeɪdʒɪŋ]: n. the process of getting old变老<br />
+</p>
+<ul class="org-ul">
+<li>What the make-up brought is the oppsite of what you want, the aging.<br /></li>
+<li>In these early days, people regarded the aging as a normal thing.<br /></li>
+<li>The right propotions of ingredients will prevent you from the aging.<br /></li>
+</ul>
+<p>
+institution [ˌɪnstɪˈtuʃ(ə)n]: n. an important system of organization in society that has existed for a long time制度<br />
+</p>
+<ul class="org-ul">
+<li>In the institution of defending vampires, the evil spirits will die down in no time.<br /></li>
+<li>The institution is designed to defend aging people against risks of illness.<br /></li>
+<li>The invention of institution caused the evil practices die down.<br /></li>
+</ul>
+<p>
+toddler [ˈtɑdlər]: n. a very young child who is just learning to walk学走路的儿童<br />
+</p>
+<ul class="org-ul">
+<li>The toddler mumbled a great deal as he was fielding your so-called attacks.<br /></li>
+<li>Even toddlers have been executed on his conquests in India.<br /></li>
+<li>It is my duty to bring those toddlers back to their home country.<br /></li>
+</ul>
+<p>
+wheelchair [ˈhwilˌtʃer]: n. a chair with wheels, used by people who cannot walk轮椅<br />
+</p>
+<ul class="org-ul">
+<li>From there the wheelchairs were not allowed to used.<br /></li>
+<li>The scientist left his marks on this kind of wheelchair designed for aging people.<br /></li>
+<li>The wheelchair is designed for toddlers in contrast to olders.<br /></li>
+</ul>
+<p>
+facility [fəˈsɪləti]: n. a place or building used for a particular activity or industry, or for providing a particular type of service场所<br />
+</p>
+<ul class="org-ul">
+<li>It doesn't worry me, the wheelchair is also contained in the nursing facility.<br /></li>
+<li>As the buckets built up in the facility, the olders lodged a complaint about their behaviors.<br /></li>
+<li>The truck is hard to take an exit from the facility because of its tremendous shape.<br /></li>
+</ul>
+<p>
+asexual [eɪˈsekʃuəl]: adj. technical not having sexual organs or not involving sex无性的<br />
+</p>
+<ul class="org-ul">
+<li>A new promising treatment captures the imagination and the hearts of those asexual people.<br /></li>
+<li>Having long tolerated asexual marriage, she becomes sensitive about any potential partner.<br /></li>
+<li>There are a lot of asexual marriages in which couples suffer a great deal.<br /></li>
+</ul>
+<p>
+ageist [ˈeɪdʒɪst]: adj. treating older people unfairly because of a belief that they are less important than younger people歧视老年人的<br />
+</p>
+<ul class="org-ul">
+<li>You depicted him as asexual because of his aging, which is ageist.<br /></li>
+<li>There are endlessly abundant ageist commerials on TV during Christmas.<br /></li>
+<li>In the institution of retirement, the number of ageist discourses is in rapid free fall.<br /></li>
+</ul>
+<p>
+discourse [ˈdɪsˌkɔrs]: n. a serious speech or piece of writing on a particular subject谈论<br />
+</p>
+<ul class="org-ul">
+<li>So to speak, the discourse didn't prove anything in terms of aging.<br /></li>
+<li>For one thing, your discourse in public is really offensive.<br /></li>
+<li>The discourse is about how penguins evolve from high-fly birds.<br /></li>
+</ul>
+<p>
+passive [ˈpæsɪv]: adj. someone who is passive tends to accept things that happen to them or things that people say to them, without taking any action ⇨ impassive被动的<br />
+</p>
+<ul class="org-ul">
+<li>The ability to listen to others is just a passive skill.<br /></li>
+<li>Contrary to his brother, he played a more passive role in the insitution of retirement.<br /></li>
+<li>Being restricted to the school, he behaves very passively in the class.<br /></li>
+</ul>
+<p>
+commercial [kəˈmɜrʃ(ə)l]: n. an advertisement on television or radio广告<br />
+</p>
+<ul class="org-ul">
+<li>This form of beer commercial becomes extremely popular with people in subtemperate regions.<br /></li>
+<li>This form of oral commerical is forbidden off the nursing facility.<br /></li>
+<li>This commercial is how penguins molt their feathers and why we should protect them from hunting.<br /></li>
+</ul>
+<p>
+thrilled [θrɪld]: adj. very excited, happy, and pleased极为兴奋,激动<br />
+</p>
+<ul class="org-ul">
+<li>When he found an egg in tussock grasses, he felt very thrilled.<br /></li>
+<li>The reason why he felt so thrilled was he found an egg in tussock grasses.<br /></li>
+<li>As the evidence began to accumulate, the detective became very thrilled.<br /></li>
+</ul>
+<p>
+enrich [ɪnˈrɪtʃ]: v. to improve the quality of something, especially by adding things to it丰富<br />
+</p>
+<ul class="org-ul">
+<li>A clutch of singers enriched the performance for free.<br /></li>
+<li>Stuffs we found were being listed as raw materials, which enriched our food in the forest.<br /></li>
+<li>The arrival of these toddlers enriched the performance beyond doubt.<br /></li>
+</ul>
+<p>
+pathologized [pəˈθɒlədʒaiz]: v. 归于病态<br />
+</p>
+<ul class="org-ul">
+<li>You can't pathologize your father because his behaviors doesn't fit into your interests.<br /></li>
+<li>The aging man expressed his sexual desires, which was pathologized by his co-workers.<br /></li>
+<li>The request about the vacation was so excessive that I almost pathologized it.<br /></li>
+</ul>
+<p>
+dementia [dɪˈmenʃə]: n. an illness that affects the brain and memory, and makes you gradually lose the ability to think and behave normally[医] 痴呆<br />
+</p>
+<ul class="org-ul">
+<li>The worker who used to work in the coal mine was diagnosed with dementia.<br /></li>
+<li>The lady with dementia is hiding herself in the coal mine.<br /></li>
+<li>Simply put, even if he is with dementia, he still has the capacity to learn new stuff.<br /></li>
+</ul>
+<p>
+deteriorate [dɪˈtɪriəreɪt] deterioration: v.n. to become worse恶化,退化<br />
+</p>
+<ul class="org-ul">
+<li>The deterioration in all aspects of his life forced him to live in a nursing facility.<br /></li>
+<li>His bad memory is contributable to the deterioration of his brain.<br /></li>
+<li>The deterioration of his listening misled him to take part in the competition.<br /></li>
+</ul>
+<hr />
+<p>
+full time: adj./adv. 全职<br />
+</p>
+<ul class="org-ul">
+<li>I want a full time job from which I can have a steady monthly income.<br /></li>
+<li>Because of the aging, my grandfather gave up his full time job.<br /></li>
+<li>My wife works full time, so she can afford a vacation at a seaside resort.<br /></li>
+</ul>
+<p>
+part time: adj./adv. 兼职的<br />
+</p>
+<ul class="org-ul">
+<li>It's not easy to find a part time job because of economic crisis.<br /></li>
+<li>I was asked to find a part time job in a city far away from my hometown.<br /></li>
+<li>Sorry to interrupt, but the part time job has been taken.<br /></li>
+</ul>
+<p>
+go neglected: 被忽视<br />
+</p>
+<ul class="org-ul">
+<li>His dedication to the family always goes neglected.<br /></li>
+<li>With his needs going neglected, he played truant from school.<br /></li>
+<li>With his needs going neglected, he lodged a complain about the mistreatment in the nursing facility.<br /></li>
+</ul>
+<p>
+wait (around) for sb. to do sth.: 等待某人做某事<br />
+</p>
+<ul class="org-ul">
+<li>I wait for my wife to cook when I am watching TV in English.<br /></li>
+<li>My cat is waitting around for me to open the can up.<br /></li>
+<li>The lady is waitting for her husband to peresent a gift to her.<br /></li>
+</ul>
+<p>
+be diagnosed with sth.: 被诊断患有&#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>When she was diagnosed with dementia, she got very angry.<br /></li>
+<li>My father was diagnosed with psychiatric condition in my youth.<br /></li>
+<li>Because my father was diagnosed with psychiatric condition, my father got divorced with him in my childhood.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgf70ef95" class="outline-3">
+<h3 id="orgf70ef95">sentence2</h3>
+<div class="outline-text-3" id="text-orgf70ef95">
+<p>
+aging [ˈeɪdʒɪŋ]: n. the process of getting old变老<br />
+</p>
+<ul class="org-ul">
+<li>What the make-up brings is the opposite of what you want, the aging.<br /></li>
+<li>In these early days, people regarded aging as a normal thing.<br /></li>
+<li>The right proportions of ingredients will prevent you from aging.<br /></li>
+</ul>
+<p>
+institution [ˌɪnstɪˈtuʃ(ə)n]: n. an important system of organization in society that has existed for a long time制度<br />
+</p>
+<ul class="org-ul">
+<li>In the institution of defending vampires, the evil spirits will die down in no time.<br /></li>
+<li>The institution is designed to defend aging people against risks of illness.<br /></li>
+<li>The invention of the institution caused the evil practices to die down.<br /></li>
+</ul>
+<p>
+toddler [ˈtɑdlər]: n. a very young child who is just learning to walk学走路的儿童<br />
+</p>
+<ul class="org-ul">
+<li>The toddler mumbled a great deal as he was fielding your so-called attacks.<br /></li>
+<li>Even toddlers were executed on his conquests in India.<br /></li>
+<li>It is my duty to bring those toddlers back to their home country.<br /></li>
+</ul>
+<p>
+wheelchair [ˈhwilˌtʃer]: n. a chair with wheels, used by people who cannot walk轮椅<br />
+</p>
+<ul class="org-ul">
+<li>From there wheelchairs were not allowed to be used.<br /></li>
+<li>The scientist left his marks on this kind of wheelchair designed for aging people.<br /></li>
+<li>The wheelchair is designed for toddlers in contrast to elders.<br /></li>
+</ul>
+<p>
+facility [fəˈsɪləti]: n. a place or building used for a particular activity or industry, or for providing a particular type of service场所<br />
+</p>
+<ul class="org-ul">
+<li>It doesn't worry me, the wheelchair is also contained in the nursing facility.<br /></li>
+<li>As the buckets built up in the facility, the elders lodged a complaint about their behaviors.<br /></li>
+<li>The truck is hard to take an exit from the facility because of its tremendous shape.<br /></li>
+</ul>
+<p>
+asexual [eɪˈsekʃuəl]: adj. technical not having sexual organs or not involving sex无性的<br />
+</p>
+<ul class="org-ul">
+<li>A new promising treatment captures the imagination and the hearts of those asexual people.<br /></li>
+<li>Having long tolerated asexual marriage, she becomes sensitive about any potential partner.<br /></li>
+<li>There are a lot of asexual marriages in which couples suffer a great deal.<br /></li>
+</ul>
+<p>
+ageist [ˈeɪdʒɪst]: adj. treating older people unfairly because of a belief that they are less important than younger people歧视老年人的<br />
+</p>
+<ul class="org-ul">
+<li>You depicted him as asexual because of his aging, which is ageist.<br /></li>
+<li>There are endlessly abundant ageist commercials on TV during Christmas.<br /></li>
+<li>In the institution of retirement, the number of ageist discourses is in rapid free fall.<br /></li>
+</ul>
+<p>
+discourse [ˈdɪsˌkɔrs]: n. a serious speech or piece of writing on a particular subject谈论<br />
+</p>
+<ul class="org-ul">
+<li>So to speak, the discourse didn't prove anything in terms of aging.<br /></li>
+<li>For one thing, your discourse in public is really offensive.<br /></li>
+<li>The discourse is about how penguins evolved from high-fly birds.<br /></li>
+</ul>
+<p>
+passive [ˈpæsɪv]: adj. someone who is passive tends to accept things that happen to them or things that people say to them, without taking any action ⇨ impassive被动的<br />
+</p>
+<ul class="org-ul">
+<li>The ability to listen to others is just a passive skill.<br /></li>
+<li>Contrary to his brother, he played a more passive role in the institution of retirement.<br /></li>
+<li>Being restricted to the school, he behaves very passively in class.<br /></li>
+</ul>
+<p>
+commercial [kəˈmɜrʃ(ə)l]: n. an advertisement on television or radio广告<br />
+</p>
+<ul class="org-ul">
+<li>This form of beer commercial has become extremely popular with people in sub-temperate regions.<br /></li>
+<li>This form of oral commerical is forbidden off the nursing facility.<br /></li>
+<li>This commercial is about how penguins molt their feathers and why we should protect them from hunting.<br /></li>
+</ul>
+<p>
+thrilled [θrɪld]: adj. very excited, happy, and pleased极为兴奋,激动<br />
+</p>
+<ul class="org-ul">
+<li>When he found an egg in tussock grasses, he felt very thrilled.<br /></li>
+<li>The reason why he felt so thrilled was he found an egg in tussock grasses.<br /></li>
+<li>As the evidence began to accumulate, the detective became very thrilled.<br /></li>
+</ul>
+<p>
+enrich [ɪnˈrɪtʃ]: v. to improve the quality of something, especially by adding things to it丰富<br />
+</p>
+<ul class="org-ul">
+<li>A clutch of singers enriched the performance for free.<br /></li>
+<li>The stuff we found was listed as raw materials, which enriched our food in the forest.<br /></li>
+<li>The arrival of these toddlers enriched the performance beyond doubt.<br /></li>
+</ul>
+<p>
+pathologized [pəˈθɒlədʒaiz]: v. 归于病态<br />
+</p>
+<ul class="org-ul">
+<li>You can't pathologize your father because his behavior doesn't fit into your interests.<br /></li>
+<li>The aging man expressed his sexual desires, which were pathologized by his co-workers.<br /></li>
+<li>The request about the vacation was so excessive that I almost pathologized it.<br /></li>
+</ul>
+<p>
+dementia [dɪˈmenʃə]: n. an illness that affects the brain and memory, and makes you gradually lose the ability to think and behave normally[医] 痴呆<br />
+</p>
+<ul class="org-ul">
+<li>The worker who used to work in the coal mine was diagnosed with dementia.<br /></li>
+<li>The lady with dementia is hiding herself in the coal mine.<br /></li>
+<li>Simply put, even if he is with dementia, he still has the capacity to learn new stuff.<br /></li>
+</ul>
+<p>
+deteriorate [dɪˈtɪriəreɪt] deterioration: v.n. to become worse恶化,退化<br />
+</p>
+<ul class="org-ul">
+<li>The deterioration in all aspects of his life forced him to live in a nursing facility.<br /></li>
+<li>His bad memory is contributable to the deterioration of his brain.<br /></li>
+<li>The deterioration of his listening misled him to take part in the competition.<br /></li>
+</ul>
+<hr />
+<p>
+full time: adj./adv. 全职<br />
+</p>
+<ul class="org-ul">
+<li>I want a full-time job from which I can have a steady monthly income.<br /></li>
+<li>Because of the aging, my grandfather gave up his full-time job.<br /></li>
+<li>My wife works full time, so she can afford a vacation at a seaside resort.<br /></li>
+</ul>
+<p>
+part time: adj./adv. 兼职的<br />
+</p>
+<ul class="org-ul">
+<li>It's not easy to find a part-time job because of the economic crisis.<br /></li>
+<li>I was asked to find a part-time job in a city far away from my hometown.<br /></li>
+<li>Sorry to interrupt, but the part-time job has been taken.<br /></li>
+</ul>
+<p>
+go neglected: 被忽视<br />
+</p>
+<ul class="org-ul">
+<li>His dedication to the family always goes neglected.<br /></li>
+<li>With his needs going neglected, he played truant from school.<br /></li>
+<li>With his needs going neglected, he lodged a complaint about the mistreatment in the nursing facility.<br /></li>
+</ul>
+<p>
+wait (around) for sb. to do sth.: 等待某人做某事<br />
+</p>
+<ul class="org-ul">
+<li>I wait for my wife to cook when I am watching TV in English.<br /></li>
+<li>My cat is waiting around for me to open the can up.<br /></li>
+<li>The lady is waiting for her husband to present a gift to her.<br /></li>
+</ul>
+<p>
+be diagnosed with sth.: 被诊断患有&#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>When she was diagnosed with dementia, she got very angry.<br /></li>
+<li>My father was diagnosed with a psychiatric condition in my youth.<br /></li>
+<li>Because my father was diagnosed with a psychiatric condition, my mother got divorced from him in my childhood.<br /></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

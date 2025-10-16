@@ -1,0 +1,633 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-02-07 Fri 11:47 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-org2dd905e" class="outline-2">
+<h2 id="org2dd905e">1&#x2013;1 MOOC overview</h2>
+<div class="outline-text-2" id="text-org2dd905e">
+<p class="verse">
+Welcome to the Positive Psychiatry online course<br />
+&#xa0;created by the Education Department at the Brain and Mind Center, University of Sydney.<br />
+We are a team of three psychiatrists<br />
+&#xa0;who are passionate about community education as a means of empowerment.<br />
+That is Associate Professor Louise Nash, Associate Professor Loyola McLean, and myself.<br />
+We have brought together a large number of Australia's leading experts<br />
+&#xa0;&#xa0;from psychiatry, psychology, and mental health research,<br />
+&#xa0;to share their ideas.<br />
+We'll also hear from experts by experience - people<br />
+&#xa0;who have lived with mental illness and share their stories of personal recovery.<br />
+<br />
+Good mental health is about feeling good and functioning well.<br />
+And positive psychiatry is about building strength as well as fixing problems.<br />
+The course will also cover the fundamentals of mental illness<br />
+&#xa0;and practical strategies for staying strong and enhancing well-being.<br />
+The course is organized into five modules, each designed to be covered in one week.<br />
+<br />
+In the first module, we meet Tina,<br />
+&#xa0;a lived experience and recovery expert who tells the first part of her story.<br />
+This module will cover positive mental health, stress, and resilience,<br />
+&#xa0;and some of the important findings from Aristotle<br />
+&#xa0;&#xa0;through to recent research on the correlates of happiness.<br />
+<br />
+The second module is about the body and mind.<br />
+We will learn about the central importance of physical health and lifestyle,<br />
+&#xa0;and how exercise can be used as an evidence-based treatment for common mental health conditions.<br />
+We will cover basic relaxation and mindfulness strategies,<br />
+&#xa0;as well as personality strengths and how to identify your own strengths.<br />
+<br />
+In the third module we talk about love and work,<br />
+&#xa0;and introduce the complementary ideas of rest and play.<br />
+We will hear about attachment theory, social connections,<br />
+&#xa0;and the ancient wisdom of Australian Aboriginal views on well-being.<br />
+We discuss the importance of contributing,<br />
+&#xa0;and here you will find out whether or not work is good for you.<br />
+<br />
+In the fourth module, we cover the major categories of mental illness;<br />
+&#xa0;their symptoms, causes, and treatments.<br />
+This includes the more common conditions such as anxiety, depression, and addictions,<br />
+&#xa0;as well as less common mental illness such as psychosis, schizophrenia, and bipolar disorder.<br />
+<br />
+Our fifth and final module in this course will detail some of the many paths to recovery.<br />
+From early intervention through the philosophy of personal recovery, consumer support networks,<br />
+&#xa0;creative arts as therapy, as well as spiritual and religious practices.<br />
+<br />
+Within each module there will be many lectures and links to recommended readings.<br />
+There will be self-assessment questionnaires<br />
+&#xa0;and practical homework tasks including SMART goal setting.<br />
+Assessments include quizzes and peer marked short answer questions.<br />
+<br />
+So join us for the next five weeks on a shared journey of learning towards better mental health<br />
+&#xa0;and better understanding of this fundamental aspect of our well-being.<br />
+</p>
+</div>
+<div id="outline-container-org3597f6a" class="outline-3">
+<h3 id="org3597f6a">expression</h3>
+<div class="outline-text-3" id="text-org3597f6a">
+<p>
+psychiatry [sɪˈkaɪətri] psychiatrist: n.n.the study and treatment of mental illnesses ⇨ psychology精神病学<br />
+brain [breɪn]: n. the organ inside your head that controls how you think, feel, and move脑<br />
+associate [əˈsoʊʃiət]: n. someone who you work or do business with SYN colleague合作人<br />
+strength [streŋθ]: n. the physical power and energy that makes someone strong OPP weakness优势<br />
+lifestyle [ˈlaɪfˌstaɪl]: n. the way a person or group of people live, including the place they live in, the things they own, the kind of job they do, and the activities they enjoy生活方式<br />
+mindfulness : n. 正念<br />
+complementary [ˌkɑmpləˈment(ə)ri]: adj. complementary things go well together, although they are usually different补充的, 补足的<br />
+category [ˈkætəɡəri]: n. a group of people or things that are all of the same type种类<br />
+anxiety [æŋˈzaɪəti]: n. the feeling of being very worried about something SYN concern焦虑<br />
+depression [dɪˈpreʃ(ə)n]: n. a medical condition that makes you very unhappy and anxious and often prevents you from living a normal life抑郁<br />
+psychosis [saɪˈkoʊsɪs]: n. a serious mental illness that can change your character and make you unable to behave in a normal way ⇨ psychotic精神错乱<br />
+schizophrenia [ˌskɪtsəˈfriniə]: n. a serious mental illness in which someone’s thoughts and feelings are not based on what is really happening around them[心]精神分裂症<br />
+bipolar [ˌbaɪˈpoʊlər]: adj. bipolar disorder technical ↑manic depression狂躁的<br />
+intervention [ˌɪntərˈvenʃ(ə)n]: n. the act of becoming involved in an argument, fight, or other difficult situation in order to change what happens干涉<br />
+quiz [kwɪz]: n. a competition or game in which people have to answer questions测验<br />
+peer [pɪr]: n. formal your peers are the people who are the same age as you, or who have the same type of job, social class etc同伴<br />
+</p>
+<hr />
+<p>
+be passionate about sth.: 对某事充满热情<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org973b291" class="outline-3">
+<h3 id="org973b291">ch.</h3>
+<div class="outline-text-3" id="text-org973b291">
+<p>
+1-1 慕课概述<br />
+</p>
+
+<p>
+欢迎来到由悉尼大学大脑与心智中心教育部创建的积极精神病学在线课程。<br />
+我们是一支由三位精神科医生组成的团队，热衷于通过社区教育来赋权大众。<br />
+他们是路易丝·纳什副教授、洛约拉·麦克莱恩副教授，以及我本人。<br />
+我们汇集了澳大利亚众多精神病学、心理学和心理健康研究领域的顶尖专家，与大家分享他们的见解。<br />
+我们还将听取“经验专家”的声音——那些曾经历精神疾病并分享个人康复故事的人。<br />
+</p>
+
+<p>
+良好的心理健康意味着感觉良好并具备良好的功能。<br />
+而积极精神病学不仅关注解决问题，还强调如何培养心理韧性与优势。<br />
+本课程还将涵盖精神疾病的基本知识，以及保持心理健康和提升幸福感的实用策略。<br />
+课程共分为五个模块，每个模块的设计都适用于一周的学习。<br />
+</p>
+
+<p>
+在第一模块中，我们将认识蒂娜——一位有着亲身经历的康复专家，她将讲述自己的故事。<br />
+本模块将探讨积极心理健康、压力与韧性，以及从亚里士多德到当代幸福感相关研究的重要发现。<br />
+</p>
+
+<p>
+第二模块关注身心健康。<br />
+我们将学习身体健康与生活方式对心理健康的重要性，并探讨运动如何作为循证治疗方法来应对常见心理健康问题。<br />
+本模块还将介绍基础放松技巧、正念策略，以及性格优势与如何识别自己的优势。<br />
+</p>
+
+<p>
+第三模块涉及爱与工作，并引入“休息与娱乐”这两个互补概念。<br />
+我们将学习依恋理论、社会联系，以及澳大利亚原住民关于幸福的古老智慧。<br />
+此外，我们还将探讨贡献的价值，并帮助你思考工作是否对你有益。<br />
+</p>
+
+<p>
+第四模块将介绍主要的精神疾病类别，包括其症状、成因和治疗方法。<br />
+涵盖内容包括焦虑、抑郁、成瘾等常见疾病，以及精神病、精神分裂症和双相情感障碍等较少见的精神疾病。<br />
+</p>
+
+<p>
+第五模块是本课程的最后一部分，我们将探讨多种康复路径。<br />
+内容包括早期干预、个人康复理念、患者支持网络、艺术治疗，以及精神与宗教实践等。<br />
+</p>
+
+<p>
+在每个模块中，都将包含多场讲座及推荐阅读材料的链接。<br />
+同时，还会有自我评估问卷和实践作业，例如SMART 目标设定。<br />
+评估内容包括测验以及由同伴评分的简答题。<br />
+</p>
+
+<p>
+欢迎加入我们的五周学习旅程，一起探索心理健康的奥秘，<br />
+共同提升对这一基本生命要素的理解！<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org284cdcd" class="outline-3">
+<h3 id="org284cdcd">sentence</h3>
+<div class="outline-text-3" id="text-org284cdcd">
+<p>
+psychiatry [sɪˈkaɪətri] psychiatrist: n.n.the study and treatment of mental illnesses ⇨ psychology精神病学<br />
+</p>
+<ul class="org-ul">
+<li>I am looking for a sophicated psychiatrist who can treat my father.<br /></li>
+<li>My grandmother living a long life in a village attributes my father's psychiatry to his disrespect to the god.<br /></li>
+<li>Due to my father's psychiatry, my mother got divorced with him and left me since I was 3 years old.<br /></li>
+</ul>
+<p>
+brain [breɪn]: n. the organ inside your head that controls how you think, feel, and move脑<br />
+</p>
+<ul class="org-ul">
+<li>The scientist is underway to research humanity brains.<br /></li>
+<li>The scientist is trying to carry the monkey's brain far away from the village.<br /></li>
+<li>It is believed that somewhere raw monkey's brains are regarded as delicacy.<br /></li>
+</ul>
+<p>
+associate [əˈsoʊʃiət]: n. someone who you work or do business with SYN colleague合作人<br />
+</p>
+<ul class="org-ul">
+<li>Due to his brother's death, he is unwilling to be an associate of the corporation.<br /></li>
+<li>Imagine being an associate of the famous corporation and working with these beautiful girls.<br /></li>
+<li>What the associate have done in the court inspired awe in every attorneys in this corporation.<br /></li>
+</ul>
+<p>
+strength [streŋθ]: n. the physical power and energy that makes someone strong OPP weakness优势<br />
+</p>
+<ul class="org-ul">
+<li>Hordes of children have found their strengths in our workshops.<br /></li>
+<li>You have forgot about the only strenth of a singer mother.<br /></li>
+<li>Listen up, the associate is talking about your strengths and weaknesses.<br /></li>
+</ul>
+<p>
+lifestyle [ˈlaɪfˌstaɪl]: n. the way a person or group of people live, including the place they live in, the things they own, the kind of job they do, and the activities they enjoy生活方式<br />
+</p>
+<ul class="org-ul">
+<li>After he was in the Hall of Fame basketball player, his lifestyle eventually have been changed.<br /></li>
+<li>At the some point, the boxer who was adored by poor and rich alike had changed his lifestyle totally.<br /></li>
+<li>In theory, you don't need to change your lifestyle after your retirement.<br /></li>
+</ul>
+<p>
+mindfulness : n. 正念<br />
+</p>
+<ul class="org-ul">
+<li>Obviously, he has got to a mindfulness state.<br /></li>
+<li>The ancient sport turns into an effective mindfulness exercise.<br /></li>
+<li>The religious mindfulness exercise, thousands of years in the making, survives intact.<br /></li>
+</ul>
+<p>
+complementary [ˌkɑmpləˈment(ə)ri]: adj. complementary things go well together, although they are usually different补充的, 补足的<br />
+</p>
+<ul class="org-ul">
+<li>The snacks are complementary and rice still remains the domain of your food.<br /></li>
+<li>The mob is hanging around looking for some complementary money in the street.<br /></li>
+<li>The complementary energy has slowed down the deterioration of the station.<br /></li>
+</ul>
+<p>
+category [ˈkætəɡəri]: n. a group of people or things that are all of the same type种类<br />
+</p>
+<ul class="org-ul">
+<li>There are five categories of fruits decaying away in the warehouse.<br /></li>
+<li>The associate will give you more time to deal with categories of cases.<br /></li>
+<li>You are lucky enough to touch categories of cases in the first year of your job.<br /></li>
+</ul>
+<p>
+anxiety [æŋˈzaɪəti]: n. the feeling of being very worried about something SYN concern焦虑<br />
+</p>
+<ul class="org-ul">
+<li>What's your next move for your anxiety inspired by your enemies?<br /></li>
+<li>Saturated with anxiety, I am not able to fall asleep at night.<br /></li>
+<li>Bit by bit anxiety is destorying the eminent lawyer.<br /></li>
+</ul>
+<p>
+depression [dɪˈpreʃ(ə)n]: n. a medical condition that makes you very unhappy and anxious and often prevents you from living a normal life抑郁<br />
+</p>
+<ul class="org-ul">
+<li>The stuff precipitated out of these waters can treat depression.<br /></li>
+<li>I hope you treat your depression not in a pathological way.<br /></li>
+<li>The psychiatrist created a perfect cast of this category of depression.<br /></li>
+</ul>
+<p>
+psychosis [saɪˈkoʊsɪs]: n. a serious mental illness that can change your character and make you unable to behave in a normal way ⇨ psychotic精神错乱<br />
+</p>
+<ul class="org-ul">
+<li>You're not in the clear yet because your father is with psychosis.<br /></li>
+<li>The patient with psychosis claimed to be seeing a mountain range.<br /></li>
+<li>Any patient with psychosis will receive a warm welcome in the long-term care facility.<br /></li>
+</ul>
+<p>
+schizophrenia [ˌskɪtsəˈfriniə]: n. a serious mental illness in which someone’s thoughts and feelings are not based on what is really happening around them[心]精神分裂症<br />
+</p>
+<ul class="org-ul">
+<li>His father with schizophrenia is scouting for enemies.<br /></li>
+<li>The patient with schizophrenia hopes for a man who agrees with him.<br /></li>
+<li>The patient with schizophrenia is trying to whack away the stone wall.<br /></li>
+</ul>
+<p>
+bipolar [ˌbaɪˈpoʊlər]: adj. bipolar disorder technical ↑manic depression狂躁的<br />
+</p>
+<ul class="org-ul">
+<li>He has been diagnosed with bipolar disorder.<br /></li>
+<li>We found the patient with bipolar disorder lying on a creek bank.<br /></li>
+<li>The patient with bipolar disorder extracted the candy from the box.<br /></li>
+</ul>
+<p>
+intervention [ˌɪntərˈvenʃ(ə)n]: n. the act of becoming involved in an argument, fight, or other difficult situation in order to change what happens干涉<br />
+</p>
+<ul class="org-ul">
+<li>Your husband's intervention in this case made it more difficult for us to exile the criminal.<br /></li>
+<li>Your intervention makes me not able to concentrate on the game.<br /></li>
+<li>The spokesman is accusing USA of intervention in other country's internal affairs.<br /></li>
+</ul>
+<p>
+quiz [kwɪz]: n. a competition or game in which people have to answer questions测验<br />
+</p>
+<ul class="org-ul">
+<li>The quiz is full of dense and boring questions.<br /></li>
+<li>An estimated 5 percent of students in our class can pass the quiz.<br /></li>
+<li>The quiz is used to test your reading skills.<br /></li>
+</ul>
+<p>
+peer [pɪr]: n. formal your peers are the people who are the same age as you, or who have the same type of job, social class etc同伴<br />
+</p>
+<ul class="org-ul">
+<li>Your peer is telling us funny stories at the party.<br /></li>
+<li>It was embarrassing that your peer behaved so rude in the wedding.<br /></li>
+<li>I am looking for my peer who was just telling pirate stories to you guys.<br /></li>
+</ul>
+<hr />
+<p>
+be passionate about sth.: 对某事充满热情<br />
+</p>
+<ul class="org-ul">
+<li>I am passionate about taking care of my cat beyond doubt.<br /></li>
+<li>He is passionate about making surprises for his beautiful girlfriend.<br /></li>
+<li>The programmer is so passionate about whoring that he has been called by police.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orga69fc2c" class="outline-3">
+<h3 id="orga69fc2c">sentence2</h3>
+<div class="outline-text-3" id="text-orga69fc2c">
+<p>
+psychiatry [sɪˈkaɪətri] psychiatrist: n.n.the study and treatment of mental illnesses ⇨ psychology精神病学<br />
+</p>
+<ul class="org-ul">
+<li>I am looking for a sophisticated psychiatrist who can treat my father.<br /></li>
+<li>My grandmother living a long life in a village attributes my father's psychiatry to his disrespect to the god.<br /></li>
+<li>Due to my father's psychiatry my mother divorced him and left me when I was 3 years old.<br /></li>
+</ul>
+<p>
+brain [breɪn]: n. the organ inside your head that controls how you think, feel, and move脑<br />
+</p>
+<ul class="org-ul">
+<li>The scientist is underway to research humanity's brains.<br /></li>
+<li>The scientist is trying to carry the monkey's brain far away from the village.<br /></li>
+<li>It is believed that somewhere raw monkey brains are regarded as a delicacy.<br /></li>
+</ul>
+<p>
+associate [əˈsoʊʃiət]: n. someone who you work or do business with SYN colleague合作人<br />
+</p>
+<ul class="org-ul">
+<li>Due to his brother's death, he is unwilling to be an associate of the corporation.<br /></li>
+<li>Imagine being an associate of a famous corporation and working with these beautiful girls.<br /></li>
+<li>What the associate has done in the court inspired awe in every attorney in this corporation.<br /></li>
+</ul>
+<p>
+strength [streŋθ]: n. the physical power and energy that makes someone strong OPP weakness优势<br />
+</p>
+<ul class="org-ul">
+<li>Hordes of children have found their strengths in our workshops.<br /></li>
+<li>You have forgotten about the only strength of a singer mother.<br /></li>
+<li>Listen up, the associate is talking about your strengths and weaknesses.<br /></li>
+</ul>
+<p>
+lifestyle [ˈlaɪfˌstaɪl]: n. the way a person or group of people live, including the place they live in, the things they own, the kind of job they do, and the activities they enjoy生活方式<br />
+</p>
+<ul class="org-ul">
+<li>After he was in the Hall of Basketball Players Fame, his lifestyle eventually has been changed.<br /></li>
+<li>At some point, the boxer who was adored by poor and rich alike had changed his lifestyle totally.<br /></li>
+<li>In theory, you don't need to change your lifestyle after your retirement.<br /></li>
+</ul>
+<p>
+mindfulness: n. 正念<br />
+</p>
+<ul class="org-ul">
+<li>Obviously, he has got to a mindfulness state.<br /></li>
+<li>The ancient sport turns into an effective mindfulness exercise.<br /></li>
+<li>The religious mindfulness exercise, thousands of years in the making, survives intact.<br /></li>
+</ul>
+<p>
+complementary [ˌkɑmpləˈment(ə)ri]: adj. complementary things go well together, although they are usually different补充的, 补足的<br />
+</p>
+<ul class="org-ul">
+<li>The snacks are complementary and rice still remains the domain of your food.<br /></li>
+<li>The mob is hanging around looking for some complementary money in the street.<br /></li>
+<li>The complementary energy has slowed down the deterioration of the station.<br /></li>
+</ul>
+<p>
+category [ˈkætəɡəri]: n. a group of people or things that are all of the same type种类<br />
+</p>
+<ul class="org-ul">
+<li>There are five categories of fruits decaying away in the warehouse.<br /></li>
+<li>The associate will give you more time to deal with categories of cases.<br /></li>
+<li>You are lucky enough to touch categories of cases in the first year of your job.<br /></li>
+</ul>
+<p>
+anxiety [æŋˈzaɪəti]: n. the feeling of being very worried about something SYN concern焦虑<br />
+</p>
+<ul class="org-ul">
+<li>What's your next move for your anxiety inspired by your enemies?<br /></li>
+<li>Saturated with anxiety, I am not able to fall asleep at night.<br /></li>
+<li>Bit by bit anxiety is destroying the eminent lawyer.<br /></li>
+</ul>
+<p>
+depression [dɪˈpreʃ(ə)n]: n. a medical condition that makes you very unhappy and anxious and often prevents you from living a normal life抑郁<br />
+</p>
+<ul class="org-ul">
+<li>The stuff precipitated out of these waters can treat depression.<br /></li>
+<li>I hope you treat your depression not in a pathological way.<br /></li>
+<li>The psychiatrist created a perfect cast of this category of depression.<br /></li>
+</ul>
+<p>
+psychosis [saɪˈkoʊsɪs]: n. a serious mental illness that can change your character and make you unable to behave in a normal way ⇨ psychotic精神错乱<br />
+</p>
+<ul class="org-ul">
+<li>You're not in the clear yet because your father is with psychosis.<br /></li>
+<li>The patient with psychosis claimed to be seeing a mountain range.<br /></li>
+<li>Any patient with psychosis will receive a warm welcome in the long-term care facility.<br /></li>
+</ul>
+<p>
+schizophrenia [ˌskɪtsəˈfriniə]: n. a serious mental illness in which someone’s thoughts and feelings are not based on what is really happening around them[心]精神分裂症<br />
+</p>
+<ul class="org-ul">
+<li>His father with schizophrenia is scouting for enemies.<br /></li>
+<li>The patient with schizophrenia hopes for a man who agrees with him.<br /></li>
+<li>The patient with schizophrenia is trying to whack away the stone wall.<br /></li>
+</ul>
+<p>
+bipolar [ˌbaɪˈpoʊlər]: adj. bipolar disorder technical ↑manic depression狂躁的<br />
+</p>
+<ul class="org-ul">
+<li>He has been diagnosed with bipolar disorder.<br /></li>
+<li>We found the patient with bipolar disorder lying on a creek bank.<br /></li>
+<li>The patient with bipolar disorder extracted the candy from the box.<br /></li>
+</ul>
+<p>
+intervention [ˌɪntərˈvenʃ(ə)n]: n. the act of becoming involved in an argument, fight, or other difficult situation in order to change what happens干涉<br />
+</p>
+<ul class="org-ul">
+<li>Your husband's intervention in this case made it more difficult for us to exile the criminal.<br /></li>
+<li>Your intervention makes me not able to concentrate on the game.<br /></li>
+<li>The spokesman is accusing the USA of intervening in other country's internal affairs.<br /></li>
+</ul>
+<p>
+quiz [kwɪz]: n. a competition or game in which people have to answer questions测验<br />
+</p>
+<ul class="org-ul">
+<li>The quiz is full of dense and boring questions.<br /></li>
+<li>An estimated 5 percent of students in our class can pass the quiz.<br /></li>
+<li>The quiz is used to test your reading skills.<br /></li>
+</ul>
+<p>
+peer [pɪr]: n. formal your peers are the people who are the same age as you, or who have the same type of job, social class etc同伴<br />
+</p>
+<ul class="org-ul">
+<li>Your peer is telling us funny stories at the party.<br /></li>
+<li>It was so embarrassing that your peer behaved rudely at the wedding.<br /></li>
+<li>I am looking for my peer who was just then telling pirate stories to you guys.<br /></li>
+</ul>
+<hr />
+<p>
+be passionate about sth.: 对某事充满热情<br />
+</p>
+<ul class="org-ul">
+<li>I am passionate about taking care of my cat beyond doubt.<br /></li>
+<li>He is passionate about making surprises for his beautiful girlfriend.<br /></li>
+<li>The programmer is so passionate about whoring that he has been called by police.<br /></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

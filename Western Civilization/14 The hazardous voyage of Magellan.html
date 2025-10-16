@@ -1,0 +1,912 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-01-09 Thu 23:35 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-orgb3b837f" class="outline-2">
+<h2 id="orgb3b837f">14 The hazardous voyage of Magellan</h2>
+<div class="outline-text-2" id="text-orgb3b837f">
+<p class="verse">
+While many Europeans were occupied with the problems of dynastic expansion and religious reform,<br />
+&#xa0;others were taking voyages that propelled Europeans far beyond the medieval walls<br />
+&#xa0;&#xa0;in which they had been enclosed for almost a thousand years.<br />
+One of these adventurers was the Portuguese explorer Ferdinand Magellan.<br />
+Convinced that he could find a sea passage to Asia through America,<br />
+&#xa0;Magellan persuaded the king of Spain to finance an exploratory voyage.<br />
+On August 10, 1519,<br />
+&#xa0;Magellan set sail on the Atlantic with five ships and a Spanish crew of 277 men.<br />
+After a stormy and difficult crossing of the ocean,<br />
+&#xa0;Magellan’s fleet moved down the coast of South America,<br />
+&#xa0;&#xa0;searching for the strait that would take him through.<br />
+His Spanish ship captains thought he was crazy:<br />
+&#xa0;'The fool is obsessed with his search for a strait,' one remarked.<br />
+'On the flame of his ambition he will crucify us all.'<br />
+At last, in October 1520, he found it,<br />
+&#xa0;passing through a narrow waterway (later named the Strait of Magellan)<br />
+&#xa0;and emerging into an unknown ocean that he called the Pacific Sea.<br />
+Magellan reckoned that it would then be a short distance to the Spice Islands of the East,<br />
+&#xa0;but he was badly mistaken.<br />
+Week after week, he and his crew sailed on across the Pacific as their food supplies dwindled.<br />
+According to one account,<br />
+&#xa0;'When their last biscuit had gone,<br />
+&#xa0;&#xa0;they scraped the maggots out of the casks, mashed them and served them as gruel.<br />
+They made cakes out of sawdust soaked with the urine of rats<br />
+&#xa0;&#x2014;the rats themselves, as delicacies, had long since been hunted to extinction.'<br />
+At last they reached the Philippines (named after King Philip II of Spain),<br />
+&#xa0;where Magellan met his death at the hands of the natives.<br />
+Although only one of his original fleet of five ships survived and returned to Spain,<br />
+&#xa0;Magellan is still remembered as the first person to circumnavigate the world.<br />
+<br />
+At the beginning of the sixteenth century,<br />
+&#xa0;European adventurers like Magellan<br />
+&#xa0;&#xa0;had begun launching small fleets into the vast reaches of the Atlantic Ocean.<br />
+They were hardly aware that they were launching a new era,<br />
+&#xa0;not only for Europe, but for the peoples of Asia, Africa, and the Americas as well.<br />
+Nevertheless, the voyages of these Europeans marked the beginning of a process<br />
+&#xa0;that led to radical changes in the political, economic, and cultural life of the entire world.<br />
+<br />
+Between 1500 and 1800, European power engulfed the globe.<br />
+In the Americas, Europeans established colonies that spread their laws, religions, and cultures.<br />
+In the island regions of Southeast Asia, Europeans firmly implanted their rule.<br />
+Elsewhere in Asia and in many parts of Africa,<br />
+&#xa0;their trading activities dramatically affected the lifeways of the local peoples.<br />
+</p>
+</div>
+<div id="outline-container-orgb80df35" class="outline-3">
+<h3 id="orgb80df35">expression</h3>
+<div class="outline-text-3" id="text-orgb80df35">
+<p>
+dynasty dynastic [dɪ'næstɪk]: n.adj. a family of kings or other rulers whose parents, grandparents etc have ruled the country for many years朝代, 王朝<br />
+propel [prəˈpel]: v. to move, drive, or push something forward ⇨ propulsion推进, 驱使<br />
+adventure adventurer [ədˈventʃərər]: n. an exciting experience in which dangerous or unusual things happen冒险<br />
+passage ['pæsɪdʒ]: n. a way through something通道, 通路<br />
+finance [fɪˈnæns]: v. to provide money, especially a lot of money, to pay for something SYN fund供给&#x2026;经费, 负担经费<br />
+exploratory [ɪkˈsplɔrəˌtɔri]: adj. done in order to find out more about something探险的, 探测的<br />
+stormy [ˈstɔrmi]: adj. with strong winds, heavy rain, and dark clouds暴风雨的<br />
+strait [streɪt]: n. a narrow passage of water between two areas of land, usually connecting two seas海峡<br />
+crucify [ˈkrusɪˌfaɪ]: v. to kill someone by fastening them to a cross十字架上钉死<br />
+waterway [ˈwɔtərˌweɪ]: n. a river or ↑canal that boats travel on水路<br />
+spice [spaɪs]: n. a type of powder or seed, taken from plants, that you put into food you are cooking to give it a special taste ⇨ spicy香料, 调味品<br />
+dwindle [ˈdwɪnd(ə)l]: v. to gradually become less and less or smaller and smaller缩小<br />
+scrape [skreɪp]: v. to remove something from a surface using the edge of a knife, a stick etc刮, 擦<br />
+maggot [ˈmæɡət]: n. a small creature like a ↑worm that is the young form of a ↑fly and lives in decaying food, flesh etc蛆<br />
+cask [kæsk]: n. a round wooden container used for storing wine or other liquids, or the amount of liquid that it contains SYN barrel桶, 木桶<br />
+mash [mæʃ]: v. to crush something, especially a food that has been cooked, until it is soft and smooth捣碎<br />
+gruel [ɡrul]: n. a food made of ↑oats cooked in water or milk, which poor people ate in the past稀粥<br />
+sawdust [ˈsɔˌdʌst]: n. very small pieces of wood that are left when you have been cutting wood锯屑<br />
+urine [ˈjʊrɪn]: n. the yellow liquid waste that comes out of the body from the ↑bladder尿<br />
+extinction [ɪkˈstɪŋkʃ(ə)n]: n. when a particular type of animal or plant stops existing消失<br />
+circumnavigate [ˌsɜrkəmˈnævɪˌɡeɪt]: v. to sail, fly, or travel completely around the Earth, an island etc环航<br />
+engulf [ɪnˈɡʌlf]: v. to completely surround or cover something吞没,完全包围<br />
+implant [ˈɪmˌplænt]: v. to strongly fix an idea, feeling, attitude etc in someone’s mind or character灌输<br />
+elsewhere [ˈelsˌhwer]: adv. in, at, or to another place在别处<br />
+affect [əˈfekt]: v. to do something that produces an effect or change in something or in someone’s situati影响<br />
+</p>
+<hr />
+<p>
+be occupied with sth.: 忙于做某事<br />
+set sail: 起航<br />
+be obsessed with sth.: 沉迷于某事<br />
+On the flame of sb's ambition: 在某人野心的火焰上<br />
+emerge into sp.: 出现在某地<br />
+sb. reckoned that + &#x2026;: 某人认为&#x2026;<br />
+Week after week: 连续多周<br />
+be soaked with sth.: 被某物浸湿<br />
+at the hands of sb.: 在某人手上<br />
+Nevertheless, +&#x2026;: 然而, &#x2026;<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org31c6564" class="outline-3">
+<h3 id="org31c6564">sentence</h3>
+<div class="outline-text-3" id="text-org31c6564">
+<p>
+dynasty dynastic [dɪ'næstɪk]: n.adj. a family of kings or other rulers whose parents, grandparents etc have ruled the country for many years朝代, 王朝<br />
+</p>
+<ul class="org-ul">
+<li>His dynasty seemed to revive its fortunes by this reformation.<br /></li>
+<li>The dynatsic expansion gave rise to a great number of colonies.<br /></li>
+<li>It comes as a surprise to learn that the team's dynastic was ended in this competition.<br /></li>
+</ul>
+<p>
+propel [prəˈpel]: v. to move, drive, or push something forward ⇨ propulsion推进, 驱使<br />
+</p>
+<ul class="org-ul">
+<li>Propelled by the papal authority, he lost no time in completing the commission.<br /></li>
+<li>Propelled by his family, he has to fellow in his father's footsteps.<br /></li>
+<li>Propelled by the invention of compass, people in Europe began to explore outside world.<br /></li>
+</ul>
+<p>
+adventure adventurer [ədˈventʃərər]: n. an exciting experience in which dangerous or unusual things happen冒险<br />
+</p>
+<ul class="org-ul">
+<li>He was remembered as a great adventurer who travelled across the Atlantic alone.<br /></li>
+<li>The adventurer is protecting himself from being arrested by the local monarchs.<br /></li>
+<li>The bridge was named after an adventure who used to be a pirate.<br /></li>
+</ul>
+<p>
+passage ['pæsɪdʒ]: n. a way through something通道, 通路<br />
+</p>
+<ul class="org-ul">
+<li>If the passage hadn't been burnt down, they wouldn't have lost their life in floods.<br /></li>
+<li>I was scared out of my wits by the noise from the narrow passage.<br /></li>
+<li>The businessman exclaimed that the bomb had been planted on the passage.<br /></li>
+</ul>
+<p>
+finance [fɪˈnæns]: v. to provide money, especially a lot of money, to pay for something SYN fund供给&#x2026;经费, 负担经费<br />
+</p>
+<ul class="org-ul">
+<li>I am sure that my parent would finance me if I went to university.<br /></li>
+<li>The king was determined to finance the church, which enabled it to assume political power.<br /></li>
+<li>Staying out of the limelight, the Queen financed the noble in the Netterlands.<br /></li>
+</ul>
+<p>
+exploratory [ɪkˈsplɔrəˌtɔri]: adj. done in order to find out more about something探险的, 探测的<br />
+</p>
+<ul class="org-ul">
+<li>The prince urged the warrior to take an exploratory voyage as soon as he could.<br /></li>
+<li>He led an exploratory team to dig up treasure near the seashore.<br /></li>
+<li>The exploratory team held a grudge against their team leader.<br /></li>
+</ul>
+<p>
+stormy [ˈstɔrmi]: adj. with strong winds, heavy rain, and dark clouds暴风雨的<br />
+</p>
+<ul class="org-ul">
+<li>What a stormy night.<br /></li>
+<li>A stormy night can give rise to a series of disaters.<br /></li>
+<li>In a stormy night, he lost his temper and had a bad appetite.<br /></li>
+</ul>
+<p>
+strait [streɪt]: n. a narrow passage of water between two areas of land, usually connecting two seas海峡<br />
+</p>
+<ul class="org-ul">
+<li>The voyage on the strait proved dangerous, for a group of vessels had sunken there.<br /></li>
+<li>The adventurer put forward a crazy plan to build a suspension bridge over the strait.<br /></li>
+<li>The absence of whale in the strait caused our favourite fishes to live and grow.<br /></li>
+</ul>
+<p>
+crucify [ˈkrusɪˌfaɪ]: v. to kill someone by fastening them to a cross十字架上钉死<br />
+</p>
+<ul class="org-ul">
+<li>The brutal ruler piled up some peasants to stand trials and then crucified them.<br /></li>
+<li>Crucifing murderers gave the judge a special type of satisfaction.<br /></li>
+<li>The murderer went out of his way to prevent himself from being crucified in the prison.<br /></li>
+</ul>
+<p>
+waterway [ˈwɔtərˌweɪ]: n. a river or ↑canal that boats travel on水路<br />
+</p>
+<ul class="org-ul">
+<li>The captain had a bad appetite because he lost his way in the waterway.<br /></li>
+<li>If you don't pay protection money, they will put you out of business in the waterway.<br /></li>
+<li>They must have bumped into a band of pirates in the waterway.<br /></li>
+</ul>
+<p>
+spice [spaɪs]: n. a type of powder or seed, taken from plants, that you put into food you are cooking to give it a special taste ⇨ spicy香料, 调味品<br />
+</p>
+<ul class="org-ul">
+<li>He was delighted that his wife presented him a special type of spice.<br /></li>
+<li>For the first time, he had the nerve to taste this spice.<br /></li>
+<li>I am delighted that you mixed our dishes with spices.<br /></li>
+</ul>
+<p>
+dwindle [ˈdwɪnd(ə)l]: v. to gradually become less and less or smaller and smaller缩小<br />
+</p>
+<ul class="org-ul">
+<li>He had a bad temper because of his dwindling pocket money.<br /></li>
+<li>When the stream flows into my field, it already dwindles to nothing.<br /></li>
+<li>Finding his food was dwindling, he lit a cigarette to calm his nerve.<br /></li>
+</ul>
+<p>
+scrape [skreɪp]: v. to remove something from a surface using the edge of a knife, a stick etc刮, 擦<br />
+</p>
+<ul class="org-ul">
+<li>He is scraping pastry from his computer surface with great care.<br /></li>
+<li>You should have scraped pastry from the cask.<br /></li>
+<li>The expert scraped the dust from the antique.<br /></li>
+</ul>
+<p>
+maggot [ˈmæɡət]: n. a small creature like a ↑worm that is the young form of a ↑fly and lives in decaying food, flesh etc蛆<br />
+</p>
+<ul class="org-ul">
+<li>Suffering from a rare disease, he resorted to a type of maggot.<br /></li>
+<li>He condemned his son as a maggot.<br /></li>
+<li>Maggots which are rarely associated with foods are regarded as delicacies in this country.<br /></li>
+</ul>
+<p>
+cask [kæsk]: n. a round wooden container used for storing wine or other liquids, or the amount of liquid that it contains SYN barrel桶, 木桶<br />
+</p>
+<ul class="org-ul">
+<li>Someone fired a shot at the cask, so these detectives were scared out of their wits.<br /></li>
+<li>Dressed up as a servant, my wife sat down on the cask.<br /></li>
+<li>One thousand dollors worth of cask was burnt down during the fire.<br /></li>
+</ul>
+<p>
+mash [mæʃ]: v. to crush something, especially a food that has been cooked, until it is soft and smooth捣碎<br />
+</p>
+<ul class="org-ul">
+<li>He mashed it so that he could mixed it with the perfume.<br /></li>
+<li>My brother threatened to mash my precious stone.<br /></li>
+<li>The grass has taken root in the mashed stone.<br /></li>
+</ul>
+<p>
+gruel [ɡrul]: n. a food made of ↑oats cooked in water or milk, which poor people ate in the past稀粥<br />
+</p>
+<ul class="org-ul">
+<li>In my youth, a hot cup of gruel had been regraded as a type of delicacy.<br /></li>
+<li>The gruel she didn't hand to you proved to be poisonous.<br /></li>
+<li>The detective succeeded in protecting his host from the poisonous gruel.<br /></li>
+</ul>
+<p>
+sawdust [ˈsɔˌdʌst]: n. very small pieces of wood that are left when you have been cutting wood锯屑<br />
+</p>
+<ul class="org-ul">
+<li>He found some sawdust in the soil near the entrance of the cave.<br /></li>
+<li>The sawdust may be a special evidence of the murder, the detective exclaimed.<br /></li>
+<li>It is a pity that our sawdust has been used up.<br /></li>
+</ul>
+<p>
+urine [ˈjʊrɪn]: n. the yellow liquid waste that comes out of the body from the ↑bladder尿<br />
+</p>
+<ul class="org-ul">
+<li>Over the period scientists were enclosed in the house full of the smell of urine.<br /></li>
+<li>He was kept in a cell full of the smell of urine.<br /></li>
+<li>He kept his brother in hiding in a room full of the smell of urine.<br /></li>
+</ul>
+<p>
+extinction [ɪkˈstɪŋkʃ(ə)n]: n. when a particular type of animal or plant stops existing消失<br />
+</p>
+<ul class="org-ul">
+<li>The oil spills gave rise to the extinction of a type of animal.<br /></li>
+<li>The extinction of tigers in China inspired awe in some people.<br /></li>
+<li>The extinction of tigers in China makes the expert feels obliged to research it.<br /></li>
+</ul>
+<p>
+circumnavigate [ˌsɜrkəmˈnævɪˌɡeɪt]: v. to sail, fly, or travel completely around the Earth, an island etc环航<br />
+</p>
+<ul class="org-ul">
+<li>My dream of circumnavigating the globe came true recently.<br /></li>
+<li>My wife lost concentration when I was explaining to the experience of the circumnavigation of the world.<br /></li>
+<li>Our ship is underway to circumnavigate the globe in the competition.<br /></li>
+</ul>
+<p>
+engulf [ɪnˈɡʌlf]: v. to completely surround or cover something吞没,完全包围<br />
+</p>
+<ul class="org-ul">
+<li>The businessman complained that he was engulfed by peasants in the city.<br /></li>
+<li>He held a grudge against the masses of poor who engulfed him because of the lack of food.<br /></li>
+<li>The masses engulfed the Comptroller and held up the traffic.<br /></li>
+</ul>
+<p>
+implant [ˈɪmˌplænt]: v. to strongly fix an idea, feeling, attitude etc in someone’s mind or character灌输<br />
+</p>
+<ul class="org-ul">
+<li>The implanted idea exerted an enormous influence on his career.<br /></li>
+<li>He implanted the sense of humor in his children in their youth.<br /></li>
+<li>I felt that a set of laws were implanted in me on such short notice.<br /></li>
+</ul>
+<p>
+elsewhere [ˈelsˌhwer]: adv. in, at, or to another place在别处<br />
+</p>
+<ul class="org-ul">
+<li>We must find some water elsewhere in the desert.<br /></li>
+<li>This is a no-parking area, you must park your car elsewhere in the park.<br /></li>
+<li>The seat has been taken, please sit down elsewhere in the class.<br /></li>
+</ul>
+<p>
+affect [əˈfekt]: v. to do something that produces an effect or change in something or in someone’s situati影响<br />
+</p>
+<ul class="org-ul">
+<li>Beyond doubts, the area has been affected by the reformation.<br /></li>
+<li>The raising power of the monarchical states affected the temporal authority of the Catholic church.<br /></li>
+<li>The eruption of the Black Death affects the history of Western Civilization a great deal.<br /></li>
+</ul>
+<hr />
+<p>
+be occupied with sth.: 忙于做某事<br />
+</p>
+<ul class="org-ul">
+<li>I was occupied with fixing bugs you had made by your negligence.<br /></li>
+<li>Occupied with washing dishes, he grudged to wash his wife's underwear.<br /></li>
+<li>Occupied with finding lost treasures, the pirates took no interest in sacking this village.<br /></li>
+</ul>
+<p>
+set sail: 起航<br />
+</p>
+<ul class="org-ul">
+<li>It has been five weeks since he set sail from the port.<br /></li>
+<li>The man who she fell in love with must have set sail.<br /></li>
+<li>The man who used to play truant from school set sail from the port to take exploratory voyage.<br /></li>
+</ul>
+<p>
+be obsessed with sth.: 沉迷于某事<br />
+</p>
+<ul class="org-ul">
+<li>Obsessed with political power, the king sacrificed his daughter for the friendship of his neighbor.<br /></li>
+<li>The warlike knight was obssessed with meanless fights.<br /></li>
+<li>Obsessed with the pirate story, he left his home alone and crept into a boat.<br /></li>
+</ul>
+<p>
+On the flame of sb's ambition: 在某人野心的火焰上<br />
+</p>
+<ul class="org-ul">
+<li>On the flame of his ambition, he was rewared with his fourth champion in the world games.<br /></li>
+<li>On the flame of his ambition, the king sacrificed money for land.<br /></li>
+<li>On the flame of his ambition, the monk organized new form of churchs to fight against the Catholic churchs.<br /></li>
+</ul>
+<p>
+emerge into sp.: 出现在某地<br />
+</p>
+<ul class="org-ul">
+<li>He emerged into the school to which he dedicated his life.<br /></li>
+<li>The pirate who was said to die emerged into the square.<br /></li>
+<li>The lost treasure emerged into the sight of these pirates.<br /></li>
+</ul>
+<p>
+sb. reckoned that + &#x2026;: 某人认为&#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>He reckoned that he should be rewarded with more prize.<br /></li>
+<li>He reckoned that he would receive a ransom of 1000 dollars.<br /></li>
+<li>He reckoned that his wife should be subject to him.<br /></li>
+</ul>
+<p>
+Week after week: 连续多周<br />
+</p>
+<ul class="org-ul">
+<li>Week after week, he has lost money in gambles.<br /></li>
+<li>Week after week, he has been reading English article aloud in mornings.<br /></li>
+<li>Week after week, there has been a car parking in front of his gate.<br /></li>
+</ul>
+<p>
+be soaked with sth.: 被某物浸湿<br />
+</p>
+<ul class="org-ul">
+<li>Needless to say, he is a worker, for his shirt is soaked with sewage.<br /></li>
+<li>No one could account for the fact his shirt was soaked with sewage.<br /></li>
+<li>I grudged to eat the tomatoes soaked with sweat.<br /></li>
+</ul>
+<p>
+at the hands of sb.: 在某人手上<br />
+</p>
+<ul class="org-ul">
+<li>He will meet his deat at the hands of mine.<br /></li>
+<li>He will be put out of business at the hands of mine.<br /></li>
+<li>He will be kept in prison at the hands of mine.<br /></li>
+</ul>
+<p>
+Nevertheless, +&#x2026;: 然而, &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>Nevertheless, he reckoned that he received a cold welcome.<br /></li>
+<li>Nevertheless, he catched old boots all morning.<br /></li>
+<li>Nevertheless, he mustered up his courage to tell her he loved her.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orga083926" class="outline-3">
+<h3 id="orga083926">sentence2</h3>
+<div class="outline-text-3" id="text-orga083926">
+<p>
+dynasty dynastic [dɪ'næstɪk]: n.adj. a family of kings or other rulers whose parents, grandparents etc have ruled the country for many years朝代, 王朝<br />
+</p>
+<ul class="org-ul">
+<li>His dynasty seemed to revive its fortunes by this reformation.<br /></li>
+<li>The dynastic expansion gave rise to a great number of colonies.<br /></li>
+<li>It comes as a surprise to learn that the team's dynastic was ended in this competition.<br /></li>
+</ul>
+<p>
+propel [prəˈpel]: v. to move, drive, or push something forward ⇨ propulsion推进, 驱使<br />
+</p>
+<ul class="org-ul">
+<li>Propelled by the papal authority, he lost no time in completing the commission.<br /></li>
+<li>Propelled by his family, he has to follow in his father's footsteps.<br /></li>
+<li>Propelled by the invention of the compass, people in Europe began to explore the outside world.<br /></li>
+</ul>
+<p>
+adventure adventurer [ədˈventʃərər]: n. an exciting experience in which dangerous or unusual things happen冒险<br />
+</p>
+<ul class="org-ul">
+<li>He was remembered as a great adventurer who traveled across the Atlantic alone.<br /></li>
+<li>The adventurer is protecting himself from being arrested by the local monarchs.<br /></li>
+<li>The bridge was named after an adventurer who used to be a pirate.<br /></li>
+</ul>
+<p>
+passage ['pæsɪdʒ]: n. a way through something通道, 通路<br />
+</p>
+<ul class="org-ul">
+<li>If the passage hadn't been burnt down, they wouldn't have lost their life in floods.<br /></li>
+<li>I was scared out of my wits by the noise from the narrow passage.<br /></li>
+<li>The businessman exclaimed that the bomb had been planted on the passage.<br /></li>
+</ul>
+<p>
+finance [fɪˈnæns]: v. to provide money, especially a lot of money, to pay for something SYN fund供给&#x2026;经费, 负担经费<br />
+</p>
+<ul class="org-ul">
+<li>I am sure that my parent would finance me if I went to university.<br /></li>
+<li>The king was determined to finance the church, which enabled it to assume political power.<br /></li>
+<li>Staying out of the limelight, the Queen financed the noble in the Netherlands.<br /></li>
+</ul>
+<p>
+exploratory [ɪkˈsplɔrəˌtɔri]: adj. done in order to find out more about something探险的, 探测的<br />
+</p>
+<ul class="org-ul">
+<li>The prince urged the warrior to take an exploratory voyage as soon as he could.<br /></li>
+<li>He led an exploratory team to dig up treasure near the seashore.<br /></li>
+<li>The exploratory team held a grudge against their team leader.<br /></li>
+</ul>
+<p>
+stormy [ˈstɔrmi]: adj. with strong winds, heavy rain, and dark clouds暴风雨的<br />
+</p>
+<ul class="org-ul">
+<li>What a stormy night.<br /></li>
+<li>A stormy night can give rise to a series of disasters.<br /></li>
+<li>On a stormy night, he lost his temper and had a bad appetite.<br /></li>
+</ul>
+<p>
+strait [streɪt]: n. a narrow passage of water between two areas of land, usually connecting two seas海峡<br />
+</p>
+<ul class="org-ul">
+<li>The voyage on the strait proved dangerous, for a group of vessels had sunken there.<br /></li>
+<li>The adventurer put forward a crazy plan to build a suspension bridge over the strait.<br /></li>
+<li>The absence of whales in the strait caused our favorite fishes to live and grow.<br /></li>
+</ul>
+<p>
+crucify [ˈkrusɪˌfaɪ]: v. to kill someone by fastening them to a cross十字架上钉死<br />
+</p>
+<ul class="org-ul">
+<li>The brutal ruler piled up some peasants to stand trials and then crucified them.<br /></li>
+<li>Crucifying murderers gave the judge a special type of satisfaction.<br /></li>
+<li>The murderer went out of his way to prevent himself from being crucified in the prison.<br /></li>
+</ul>
+<p>
+waterway [ˈwɔtərˌweɪ]: n. a river or ↑canal that boats travel on水路<br />
+</p>
+<ul class="org-ul">
+<li>The captain had a bad appetite because he lost his way in the waterway.<br /></li>
+<li>If you don't pay protection money, they will put you out of business in the waterway.<br /></li>
+<li>They must have bumped into a band of pirates in the waterway.<br /></li>
+</ul>
+<p>
+spice [spaɪs]: n. a type of powder or seed, taken from plants, that you put into food you are cooking to give it a special taste ⇨ spicy香料, 调味品<br />
+</p>
+<ul class="org-ul">
+<li>He was delighted that his wife presented him with a special type of spice.<br /></li>
+<li>For the first time, he had the nerve to taste this spice.<br /></li>
+<li>I am delighted that you mixed our dishes with spices.<br /></li>
+</ul>
+<p>
+dwindle [ˈdwɪnd(ə)l]: v. to gradually become less and less or smaller and smaller缩小<br />
+</p>
+<ul class="org-ul">
+<li>He had a bad temper because of his dwindling pocket money.<br /></li>
+<li>When the stream flows into my field, it already dwindles to nothing.<br /></li>
+<li>Finding his food was dwindling, he lit a cigarette to calm his nerves.<br /></li>
+</ul>
+<p>
+scrape [skreɪp]: v. to remove something from a surface using the edge of a knife, a stick etc刮, 擦<br />
+</p>
+<ul class="org-ul">
+<li>He is scraping pastry from his computer surface with great care.<br /></li>
+<li>You should have scraped pastry from the cask.<br /></li>
+<li>The expert scraped the dust from the antique.<br /></li>
+</ul>
+<p>
+maggot [ˈmæɡət]: n. a small creature like a ↑worm that is the young form of a ↑fly and lives in decaying food, flesh etc蛆<br />
+</p>
+<ul class="org-ul">
+<li>Suffering from a rare disease, he resorted to a type of maggot.<br /></li>
+<li>He condemned his son as a maggot.<br /></li>
+<li>Maggots which are rarely associated with foods are regarded as delicacies in this country.<br /></li>
+</ul>
+<p>
+cask [kæsk]: n. a round wooden container used for storing wine or other liquids, or the amount of liquid that it contains SYN barrel桶, 木桶<br />
+</p>
+<ul class="org-ul">
+<li>Someone fired a shot at the cask, so these detectives were scared out of their wits.<br /></li>
+<li>Dressed up as a servant, my wife sat down on the cask.<br /></li>
+<li>One thousand dollars worth of cask was burnt down during the fire.<br /></li>
+</ul>
+<p>
+mash [mæʃ]: v. to crush something, especially a food that has been cooked, until it is soft and smooth捣碎<br />
+</p>
+<ul class="org-ul">
+<li>He mashed it so that he could mix it with the perfume.<br /></li>
+<li>My brother threatened to mash my precious stone.<br /></li>
+<li>The grass has taken root in the mashed stone.<br /></li>
+</ul>
+<p>
+gruel [ɡrul]: n. a food made of ↑oats cooked in water or milk, which poor people ate in the past稀粥<br />
+</p>
+<ul class="org-ul">
+<li>In my youth, a hot cup of gruel had been regarded as a type of delicacy.<br /></li>
+<li>The gruel she didn't hand to you proved to be poisonous.<br /></li>
+<li>The detective succeeded in protecting his host from the poisonous gruel.<br /></li>
+</ul>
+<p>
+sawdust [ˈsɔˌdʌst]: n. very small pieces of wood that are left when you have been cutting wood锯屑<br />
+</p>
+<ul class="org-ul">
+<li>He found some sawdust in the soil near the entrance of the cave.<br /></li>
+<li>The sawdust may be a special evidence of the murder, the detective exclaimed.<br /></li>
+<li>It is a pity that our sawdust has been used up.<br /></li>
+</ul>
+<p>
+urine [ˈjʊrɪn]: n. the yellow liquid waste that comes out of the body from the ↑bladder尿<br />
+</p>
+<ul class="org-ul">
+<li>Over the period scientists were enclosed in the house full of the smell of urine.<br /></li>
+<li>He was kept in a cell full of the smell of urine.<br /></li>
+<li>He kept his brother in hiding in a room full of the smell of urine.<br /></li>
+</ul>
+<p>
+extinction [ɪkˈstɪŋkʃ(ə)n]: n. when a particular type of animal or plant stops existing消失<br />
+</p>
+<ul class="org-ul">
+<li>The oil spills gave rise to the extinction of a type of animal.<br /></li>
+<li>The extinction of tigers in China inspired awe in some people.<br /></li>
+<li>The extinction of tigers in China makes the expert feel obliged to research it.<br /></li>
+</ul>
+<p>
+circumnavigate [ˌsɜrkəmˈnævɪˌɡeɪt]: v. to sail, fly, or travel completely around the Earth, an island etc环航<br />
+</p>
+<ul class="org-ul">
+<li>My dream of circumnavigating the globe came true recently.<br /></li>
+<li>My wife lost concentration when I was explaining to the experience of the circumnavigation of the world.<br /></li>
+<li>Our ship is underway to circumnavigate the globe in the competition.<br /></li>
+</ul>
+<p>
+engulf [ɪnˈɡʌlf]: v. to completely surround or cover something吞没,完全包围<br />
+</p>
+<ul class="org-ul">
+<li>The businessman complained that he was engulfed by peasants in the city.<br /></li>
+<li>He held a grudge against the masses of poor who engulfed him because of the lack of food.<br /></li>
+<li>The masses engulfed the Comptroller and held up the traffic.<br /></li>
+</ul>
+<p>
+implant [ˈɪmˌplænt]: v. to strongly fix an idea, feeling, attitude etc in someone’s mind or character灌输<br />
+</p>
+<ul class="org-ul">
+<li>The implanted idea exerted an enormous influence on his career.<br /></li>
+<li>He implanted the sense of humor in his children in their youth.<br /></li>
+<li>I felt that a set of laws were implanted in me on such short notice.<br /></li>
+</ul>
+<p>
+elsewhere [ˈelsˌhwer]: adv. in, at, or to another place在别处<br />
+</p>
+<ul class="org-ul">
+<li>We must find some water elsewhere in the desert.<br /></li>
+<li>This is a no-parking area, you must park your car elsewhere in the park.<br /></li>
+<li>The seat has been taken, please sit down elsewhere in the class.<br /></li>
+</ul>
+<p>
+affect [əˈfekt]: v. to do something that produces an effect or change in something or in someone’s situation影响<br />
+</p>
+<ul class="org-ul">
+<li>Beyond doubts, the area has been affected by the reformation.<br /></li>
+<li>The raising power of the monarchical states affected the temporal authority of the Catholic church.<br /></li>
+<li>The eruption of the Black Death affects the history of Western Civilization a great deal.<br /></li>
+</ul>
+<hr />
+<p>
+be occupied with sth.: 忙于做某事<br />
+</p>
+<ul class="org-ul">
+<li>I was occupied with fixing bugs you had made by your negligence.<br /></li>
+<li>Occupied with washing dishes, he grudged to wash his wife's underwear.<br /></li>
+<li>Occupied with finding lost treasures, the pirates took no interest in sacking this village.<br /></li>
+</ul>
+<p>
+set sail: 起航<br />
+</p>
+<ul class="org-ul">
+<li>It has been five weeks since he set sail from the port.<br /></li>
+<li>The man who she fell in love with must have set sail.<br /></li>
+<li>The man who used to play truant from school set sail from the port to take the exploratory voyage.<br /></li>
+</ul>
+<p>
+be obsessed with sth.: 沉迷于某事<br />
+</p>
+<ul class="org-ul">
+<li>Obsessed with political power, the king sacrificed his daughter for the friendship of his neighbor.<br /></li>
+<li>The warlike knight was obssessed with meanless fights.<br /></li>
+<li>Obsessed with the pirate story, he left his home alone and crept into a boat.<br /></li>
+</ul>
+<p>
+On the flame of sb's ambition: 在某人野心的火焰上<br />
+</p>
+<ul class="org-ul">
+<li>On the flame of his ambition, he was rewarded with his fourth champion in the world Games.<br /></li>
+<li>On the flame of his ambition, the king sacrificed money for land.<br /></li>
+<li>On the flame of his ambition, the monk organized a new form of church to fight against the Catholic church.<br /></li>
+</ul>
+<p>
+emerge into sp.: 出现在某地<br />
+</p>
+<ul class="org-ul">
+<li>He emerged into the school to which he dedicated his life.<br /></li>
+<li>The pirate who was said to die emerged into the square.<br /></li>
+<li>The lost treasure emerged into the sight of these pirates.<br /></li>
+</ul>
+<p>
+sb. reckoned that + &#x2026;: 某人认为&#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>He reckoned that he should be rewarded with more.<br /></li>
+<li>He reckoned that he would receive a ransom of 1000 dollars.<br /></li>
+<li>He reckoned that his wife should be subject to him.<br /></li>
+</ul>
+<p>
+Week after week: 连续多周<br />
+</p>
+<ul class="org-ul">
+<li>Week after week, he has lost money in gambles.<br /></li>
+<li>Week after week, he has been reading English articles aloud in the mornings.<br /></li>
+<li>Week after week, there has been a car parking in front of his gate.<br /></li>
+</ul>
+<p>
+be soaked with sth.: 被某物浸湿<br />
+</p>
+<ul class="org-ul">
+<li>Needless to say, he is a worker, for his shirt is soaked with sewage.<br /></li>
+<li>No one could account for the fact his shirt was soaked with sewage.<br /></li>
+<li>I grudged to eat the tomatoes soaked with sweat.<br /></li>
+</ul>
+<p>
+at the hands of sb.: 在某人手上<br />
+</p>
+<ul class="org-ul">
+<li>He will meet his death at the hands of mine.<br /></li>
+<li>He will be put out of business at the hands of mine.<br /></li>
+<li>He will be kept in prison at the hands of mine.<br /></li>
+</ul>
+<p>
+Nevertheless, +&#x2026;: 然而, &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>Nevertheless, he reckoned that he received a cold welcome.<br /></li>
+<li>Nevertheless, he caught old boots all morning.<br /></li>
+<li>Nevertheless, he mustered up his courage to tell her he loved her.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org427d1d6" class="outline-3">
+<h3 id="org427d1d6">summary</h3>
+<div class="outline-text-3" id="text-org427d1d6">
+<p>
+While many Europeans were occupied with the problems of dynastic expansion and religious reforms,<br />
+	others were taking voyages beyond the wall which enclosed them for over a thousand years.<br />
+The Portuguese explorer Magellan was convinced that he could find a passway through America to Asia,<br />
+	he moved down the coast of south America, searching for the strait that would take him through.<br />
+His ship captains thought he was obsessed with the strait and would crucify them all.<br />
+At last, he found it and emeraged into the Pacific Sea.<br />
+He thought in error it would be a short distance to Asia,<br />
+	before they sailed on the Ocean week after week and their food supplies dwindled.<br />
+In the end, they reached the Philippiness, where Magellan met his death at the hands of natives.<br />
+Although only one of the ships returned to Spain,<br />
+	he was still remembered as the first person to circumnavigate the world.<br />
+European adventurers like Magellan who launched small fleets into the reaches of the Atlantic<br />
+	marked the begining of a process that gave rise to radical changes in the world.<br />
+Within this process, European power began to engulf the globe.<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgdd14716" class="outline-3">
+<h3 id="orgdd14716">summary2</h3>
+<div class="outline-text-3" id="text-orgdd14716">
+<p>
+While many Europeans were occupied with the problems of dynastic expansion and religious reforms,<br />
+	others were taking voyages beyond the wall which enclosed them for over a thousand years.<br />
+The Portuguese explorer, Magellan,<br />
+		was convinced that he could find a passway through America to Asia,<br />
+	he moved down the coast of South America, searching for the strait that would take him through.<br />
+His ship captains thought he was obsessed with the strait and would crucify them all.<br />
+At last, he found it and emerged into the Pacific Sea.<br />
+He felt in error it would be a short distance to Asia<br />
+	before they sailed on the ocean week after week and their food supplies dwindled.<br />
+In the end, they reached the Philippines, where Magellan met his death at the hands of natives.<br />
+Although only one of the ships returned to Spain,<br />
+	he was still remembered as the first person to circumnavigate the world.<br />
+European adventurers like Magellan that launched small fleets into the reaches of the Atlantic<br />
+	marked the beginning of a process that gave rise to radical changes in the world.<br />
+Within this process, European powers began to engulf the globe.<br />
+</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

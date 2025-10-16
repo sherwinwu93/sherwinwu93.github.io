@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-09-28 Sat 22:17 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-orgb0e849c" class="outline-2">
+<h2 id="orgb0e849c">Lesson 20 Pioneer pilots</h2>
+<div class="outline-text-2" id="text-orgb0e849c">
+<p class="verse">
+What was the name of the first plane to fly across the English Channel?<br />
+<br />
+In 1908 Lord Northcliffe <b>offered a prize of 1,000 dollars to the first man</b><br />
+&#xa0;who would fly across the English Channel.<br />
+Over a year passed before the first <b>attempt was made</b>.<br />
+On July 19th, 1909, in the early morning,<br />
+&#xa0;Hubert Latham took off from the French coast in his plane the 'Antoinette IV'.<br />
+He had travelled only seven miles across the Channel<br />
+&#xa0;when his engine failed and he <b>was forced to</b> land on the sea.<br />
+The 'Antoinette' floated on the water until Latham <b>was picked up by</b> a ship.<br />
+<br />
+Two days later, Louis Bleriot arrived near Calais with a plane called 'No. XI'.<br />
+Bleriot had been making planes since 1905 and this was his latest model.<br />
+A week before, he had completed a successful overland flight<br />
+&#xa0;during which he covered twenty-six miles.<br />
+Latham, however, did not give up easily.<br />
+He, too, arrived near Calais <b>on the same day</b> with a new 'Antoinette'.<br />
+<b>It looked as if</b> there would be an exciting race across the Channel.<br />
+Both planes were going to take off on July 25th, but Latham failed to get up early enough.<br />
+After making a short test flight at 4.15 a.m., Bleriot set off half an hour later.<br />
+His great flight lasted thirty-seven minutes.<br />
+When he landed near Dover, the first person to greet him was a local policeman.<br />
+Latham made another attempt a week later and got within half a mile of Dover,<br />
+&#xa0;but he was unlucky again.<br />
+His engine failed and he landed on the sea for the second time.<br />
+</p>
+</div>
+<div id="outline-container-org885b1f2" class="outline-3">
+<h3 id="org885b1f2">expression</h3>
+<div class="outline-text-3" id="text-org885b1f2">
+<p>
+pioneer: [ˌpaɪəˈnɪr] n. someone who is important in the early development of something, and whose work or ideas are later developed by other people先驱<br />
+lord: [lɒrd] n. a man who has a rank in the aristocracy勋爵<br />
+Calais: [kæ'leɪˌ 'kæleɪ] n.(法国港市)<br />
+overland: [ˈoʊvərˌlænd] adj. adv.across land, not by sea or air陆上的<br />
+</p>
+<hr />
+<p>
+as if/though: 虚拟语气<br />
+</p>
+<hr />
+<p>
+offer sth. to sb. = offer sb. sth.: provide sth. for sb.; provide sb. with sth.提供某物给某人<br />
+a prize of + (money): eg. a prize of $1,000多少的奖金<br />
+make an attempt to do sth.: attempt to do sth; try to do sth.尝试做某事<br />
+attempt to do sth.: 尝试做某事<br />
+be forced to do sth.: be made to do sth.被迫做某事<br />
+be picked up by &#x2026;: be rescued by被&#x2026;营救<br />
+on the same day: 在同一天<br />
+It looked as if/though + 虚拟句:<br />
+	eg.	It looked as if there would be an exciting race across the Channel.<br />
+	eg.	It looked as though there would be an exciting race across the Channel.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org56db8f9" class="outline-3">
+<h3 id="org56db8f9">words</h3>
+<div class="outline-text-3" id="text-org56db8f9">
+<p>
+pioneer [ˌpaɪəˈnɪr] n. 先驱<br />
+lord [lɒrd] n. 对（英国）贵族的尊称；勋爵<br />
+Calais [kæ'leɪ] n. 加来（法国港市）<br />
+overland [ˈoʊvərˌlænd] adj. 陆上的<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org2773c36" class="outline-3">
+<h3 id="org2773c36">vocabulary</h3>
+<div class="outline-text-3" id="text-org2773c36">
+<p>
+forced to land: obliged to come down<br />
+picked up: rescued<br />
+completed: finished<br />
+covered: completed flown<br />
+test: trial<br />
+set off: started out; began his journey<br />
+failed: didn't work; stopped<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org68c2446" class="outline-3">
+<h3 id="org68c2446"><span class="done DONE">DONE</span> 单词造句</h3>
+<div class="outline-text-3" id="text-org68c2446">
+<p>
+pioneer n.<br />
+</p>
+<ul class="org-ul">
+<li>The pioneer had made that quite clear.<br /></li>
+<li>The pioneer was carrying a basket of fruits to us.<br /></li>
+<li>Following in his father's footstep, he became a pioneer of computer science.<br /></li>
+<li>The pioneer decided to go to the police.<br /></li>
+<li>He stated that the pioneer was in safe hands.<br /></li>
+</ul>
+<p>
+lord n.<br />
+Calais<br />
+overland adj. adv.<br />
+</p>
+<ul class="org-ul">
+<li>Considering the dear ticket, she decided to travel overland to Beijing.<br /></li>
+<li>At first, she decided to travel overland to Beijing.<br /></li>
+<li>She spent a lot of time traveling overland to China.<br /></li>
+<li>It astounded us that he travelled overland to Beijing.<br /></li>
+<li>The trip was designed to travel overland to Shanghai.<br /></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org0d06a7f" class="outline-3">
+<h3 id="org0d06a7f"><span class="done DONE">DONE</span> 反复听电影片段直到懂关键句</h3>
+<div class="outline-text-3" id="text-org0d06a7f">
+</div>
+</div>
+<div id="outline-container-org81da888" class="outline-3">
+<h3 id="org81da888">复习二册语法(笔记或视频) &amp; 红皮书</h3>
+</div>
+<div id="outline-container-orgc0b5d45" class="outline-3">
+<h3 id="orgc0b5d45"><span class="done DONE">DONE</span> 习惯用法造句</h3>
+<div class="outline-text-3" id="text-orgc0b5d45">
+<p>
+offer sth. to sb. = offer sb. sth.<br />
+</p>
+<ul class="org-ul">
+<li>The artist offered a sculpture to his son.<br /></li>
+<li>I will offer a considerable amount of money to my daughter.<br /></li>
+<li>I am mistaken about offering her some cardboard boxes.<br /></li>
+<li>Oddly enough, she offered her some cardboard boxes.<br /></li>
+<li>She offer a meat to the beggar in response to his request.<br /></li>
+</ul>
+<p>
+a prize of + (money)<br />
+</p>
+<ul class="org-ul">
+<li>Oddly enough, Leo has made a prize of $1000.<br /></li>
+<li>She managed to create a sculpture and won a prize of $1000.<br /></li>
+<li>If you don't win a prize of $1000, I will give you electric shocks.<br /></li>
+<li>Little is known about Leo who won a prize $1000.<br /></li>
+<li>The player has won a prize of $1000 in a span of this year.<br /></li>
+</ul>
+<p>
+make an attempt to do sth.  attempt to do sth.<br />
+</p>
+<ul class="org-ul">
+<li>She made an attempt to tell him about her stories.<br /></li>
+<li>It's ture that she made an attempt to pass the exam, but she failed.<br /></li>
+<li>I was astonished to find that she made an attempt to accuse her father of stealing.<br /></li>
+<li>I made an attempt to reward him with a prize of $1000.<br /></li>
+<li>She made an attempt to offer us a special type of fish.<br /></li>
+</ul>
+<p>
+be forced to do sth.<br />
+</p>
+<ul class="org-ul">
+<li>I was forced to rub him with a special type of mixture.<br /></li>
+<li>She was forced to hear about his story.<br /></li>
+<li>I was forced to roll up my sleeves.<br /></li>
+<li>She was forced to exchange her pocket money for sweets.<br /></li>
+<li>I was forced to make money.<br /></li>
+</ul>
+<p>
+be picked up by &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>She was picked up by a ship out at sea.<br /></li>
+<li>I will be picked up by my father at the station.<br /></li>
+<li>A large sums of money was picked up by the vicar.<br /></li>
+<li>There was a time when drunk women were picked up by beggars outside the bar.<br /></li>
+<li>She dedicated herself to pick up tea.<br /></li>
+</ul>
+<p>
+on the same day<br />
+</p>
+<ul class="org-ul">
+<li>On the same day, he was given a state funeral by people in China.<br /></li>
+<li>On the same day, the detectives were keeping guard.<br /></li>
+<li>On the same day, the boat was loaded with a mixture of oil and water.<br /></li>
+<li>On the same day, the perfume was exampted from import duty.<br /></li>
+<li>On the same day, she was made to smoke.<br /></li>
+</ul>
+<p>
+It looked as if/though<br />
+</p>
+<ul class="org-ul">
+<li>It looked as if you woke up with a start last night.<br /></li>
+<li>It looks as if she is regarded as unsinkable.<br /></li>
+<li>It looks as though the commander has given an order.<br /></li>
+<li>It looks as if she has made tremendous mistakes.<br /></li>
+<li>It looks as if the beggar is in difficulty.<br /></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org81c3161" class="outline-3">
+<h3 id="org81c3161">跟读 50遍</h3>
+</div>
+<div id="outline-container-org58af4e8" class="outline-3">
+<h3 id="org58af4e8"><span class="done DONE">DONE</span> Comprehension 反复练习</h3>
+<div class="outline-text-3" id="text-org58af4e8">
+</div>
+</div>
+<div id="outline-container-org24014d1" class="outline-3">
+<h3 id="org24014d1"><span class="done DONE">DONE</span> Ask me if 写+读</h3>
+<div class="outline-text-3" id="text-org24014d1">
+<ol class="org-ol">
+<li>Lord Northcliffe offered a prize of $1000. Why<br />
+Why did Lord Northcliffe offer a prize of $1000?<br /></li>
+<li>Hubert Latham took off from the French coast in 1909. When<br />
+When did Hubert Latham take off from the French coast?<br /></li>
+<li>He had travelled seven miles when his engine failed. How far<br />
+How far had he travelled when his engine failed?<br /></li>
+<li>He was forced to land on the sea. Where<br />
+Where was he forced to land?<br /></li>
+<li>Bleriot had been making planes since 190- How long<br />
+How long had Bleriot been making planes?<br /></li>
+<li>He had completed a successful overland flight a week before. When<br />
+When had he completed a successful overland flight?<br /></li>
+<li>It looked as if there would be an exciting race. Why<br />
+Why did it look as if there would be an exciting race?<br /></li>
+<li>Both planes were going to take off on July 25th. When<br />
+When were both planes going to take off?<br /></li>
+<li>Bleriot set off at 4.45 a.m. When<br />
+When did Bleriot set off?<br /></li>
+<li>His flight lasted thirty-seven minutes. How long<br />
+How long did his flight last?<br /></li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org63f88af" class="outline-3">
+<h3 id="org63f88af"><span class="done DONE">DONE</span> 摘要写作 写 &amp; 对答案</h3>
+<div class="outline-text-3" id="text-org63f88af">
+<p>
+Bleriot and Latham arrived in Calais on July 21st, 1909.<br />
+Though it looked as if there would be a race across the Channel on July 25th,<br />
+	Latham didn't take part, because he didn't get up early enough.<br />
+After making a short test flight,<br />
+	Bleriot crossed the Channel in thirty-seven minutes.<br />
+A policeman greeted him when he arrived in Dover.<br />
+Latham got within half a mile of Dover the following week.<br />
+	having to land on the sea for the second time because his engine failed.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgca667ca" class="outline-3">
+<h3 id="orgca667ca"><span class="done DONE">DONE</span> tell the story 口语复述</h3>
+<div class="outline-text-3" id="text-orgca667ca">
+</div>
+</div>
+<div id="outline-container-org358c4ce" class="outline-3">
+<h3 id="org358c4ce"><span class="done DONE">DONE</span> composition 阅读 或 写作</h3>
+<div class="outline-text-3" id="text-org358c4ce">
+<p>
+It was early morning.<br />
+I looked around, but there was no sign of Latham, so l decided to go on a test flight first.<br />
+At 4.15, I took off and flew over Calais for fifteen minutes.<br />
+When I landed there was still no sign of Latham.<br />
+At 4.45 I took off again.<br />
+This time I was determined to fly across the Channel.<br />
+When I looked down there was no sign of the ship below,<br />
+	which was supposed to be following me,<br />
+	I suddenly felt alone and was worried whether I was flying in the right direction.<br />
+All I could see was sea and sky.<br />
+</p>
+
+<p>
+I could feel the high winds against the plane and the engine got very hot.<br />
+Fortunately, it began to rain and the rain cooled my engine.<br />
+Suddenly, I could see land ahead.<br />
+Dover! I flew over Dover, looking for somewhere to land.<br />
+I saw a field below and brought the plane down.<br />
+I was still sitting in the cockpit,<br />
+	hardly able to believe the flight was so successful<br />
+	&#x2013; just thirty-seven minutes to cross from Calais &#x2013;<br />
+	when a British policeman arrived.<br />
+He smiled broadly at me and said,'Good morning!<br />
+I smiled back and said, 'Bonjour!'<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org5bd2c14" class="outline-3">
+<h3 id="org5bd2c14">Topics for discussion</h3>
+</div>
+</div>
+</div>
+</body>
+</html>

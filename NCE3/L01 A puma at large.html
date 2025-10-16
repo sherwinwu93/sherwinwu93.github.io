@@ -1,0 +1,598 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-09-28 Sat 22:17 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-orgcaa1939" class="outline-2">
+<h2 id="orgcaa1939">Lesson 01 A puma at large</h2>
+<div class="outline-text-2" id="text-orgcaa1939">
+<p class="verse">
+Where must the puma have come from?<br />
+<br />
+Puma are large, cat-like animals which <b>are found in</b> America.<br />
+When reports came into London Zoo<br />
+&#xa0;&#xa0;that a wild puma had been spotted forty-five miles south of London,<br />
+&#xa0;they <b>were not taken seriously</b>.<br />
+However, as the evidence began to accumulate,<br />
+&#xa0;experts from the Zoo <b>felt obliged to investigate</b>,<br />
+&#xa0;for the descriptions given by people who <b>claimed to have seen</b> the puma<br />
+&#xa0;&#xa0;were extraordinarily similar.<br />
+<br />
+The hunt for the puma began in a small village<br />
+&#xa0;where a woman picking blackberries saw 'a large cat' only five yards away from her.<br />
+It immediately ran away when she saw it,<br />
+&#xa0;and experts <b>confirmed that</b> a puma will not attack a human being unless it is cornered.<br />
+The search <b>proved difficult</b>,<br />
+&#xa0;for the puma was often observed at one place in the morning<br />
+&#xa0;&#xa0;and at another place twenty miles away in the evening.<br />
+Wherever it went, it left behind it <b>a trail of</b> dead deer and small animals like rabbits.<br />
+Paw prints were seen in a number of places and puma fur <b>was found clinging to bushes</b>.<br />
+Several people complained of 'cat-like noises' at night<br />
+&#xa0;and a businessman on a fishing trip saw the puma up a tree.<br />
+<b>The experts were now fully convinced that</b> the animal was a puma,<br />
+&#xa0;but where had it come from?<br />
+As no pumas had been reported missing from any zoo in the country,<br />
+&#xa0;this one must have been in the possession of a private collector<br />
+&#xa0;&#xa0;and somehow managed to escape.<br />
+The hunt <b>went on</b> for several weeks,<br />
+&#xa0;but the puma was not caught.<br />
+<b>It is disturbing to think</b><br />
+&#xa0;that a dangerous wild animal is still <b>at large</b> in the quiet countryside.<br />
+</p>
+</div>
+<div id="outline-container-org8a11c43" class="outline-3">
+<h3 id="org8a11c43">vocabulary</h3>
+<div class="outline-text-3" id="text-org8a11c43">
+<p>
+spotted: seen<br />
+accumulate: pile up<br />
+obliged to: bound to<br />
+claimed: stated<br />
+extraordinarily similar: surprisingly alike<br />
+immediately: at once<br />
+convinced: sure<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb4a994e" class="outline-3">
+<h3 id="orgb4a994e">words</h3>
+<div class="outline-text-3" id="text-orgb4a994e">
+<p>
+puma [ˈpjuːmə] n. 美洲狮<br />
+spot [spɒt] v. 看出,发现<br />
+evidence [ˈevɪdəns] n. 证据<br />
+accumulate [əˈkjuːmjəleɪt] v. 积累<br />
+oblige [əˈblaɪdʒ] v. 使&#x2026;感到必须<br />
+hunt [hʌnt] n. 追猎;寻找<br />
+blackberry [ˈblækbəri] n. 黑莓<br />
+human [ˈhjuːmən] being 人类<br />
+corner [ˈkɔːnə(r)] v. 逼到死角<br />
+trail [treɪl] n. 一串,一系列<br />
+print [prɪnt] n. 印痕<br />
+cling [klɪŋ] v. 粘<br />
+convince [kənˈvɪns] v. 使&#x2026;信服<br />
+somehow [ˈsʌmhaʊ] adv. 不知怎么搞得<br />
+disturb [dɪˈstɜːb] v. 令人不安<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org45c2c4c" class="outline-3">
+<h3 id="org45c2c4c"><span class="done DONE">DONE</span> 单词造句</h3>
+<div class="outline-text-3" id="text-org45c2c4c">
+<p>
+puma n.<br />
+</p>
+<ul class="org-ul">
+<li>The puma which is on show belongs to London Zoo.<br /></li>
+<li>The puma in the zoo is popular with young children these days.<br /></li>
+<li>Six pumas were lined up on the floor of square.<br /></li>
+<li>If you had seen a puma in the zoo, I would have given you 5000 pounds.<br /></li>
+<li>The puma is expected to be in the zoo.<br /></li>
+</ul>
+<p>
+spot v.n. spot sb. doing sth.<br />
+</p>
+<ul class="org-ul">
+<li>My sister spoted our father returning to home.<br /></li>
+<li>I spotted him seting the palace on fire.<br /></li>
+<li>The ambassador has spotted a student firing a shot.<br /></li>
+<li>My sister spotted me geting into a mess in the park.<br /></li>
+<li>A student was spotted holding his breath underwater.<br /></li>
+</ul>
+<p>
+evidence n.<br />
+</p>
+<ul class="org-ul">
+<li>Have you got any evidence?<br /></li>
+<li>If you don't find any evidence, don't live in a fantasy world.<br /></li>
+<li>When the policeman arrived on the scene, he managed to find evidence.<br /></li>
+<li>The girl proved that the policeman had already found evidence.<br /></li>
+<li>The policeman is reluctant to find any evidence.<br /></li>
+</ul>
+<p>
+accumulate v.<br />
+</p>
+<ul class="org-ul">
+<li>They managed to accumulate evidence.<br /></li>
+<li>The party of gangsters love to accumulate money.<br /></li>
+<li>Soon afterwards, they began to accumulate wealthy.<br /></li>
+<li>I felt disappointed that she has accumulated enough money.<br /></li>
+<li>When the news get around, people became fanatical about accumulating money.<br /></li>
+</ul>
+<p>
+oblige v. feel obliged to do sth.<br />
+</p>
+<ul class="org-ul">
+<li>We felt obliged to move in a circle.<br /></li>
+<li>It has almost been ran out of, we felt obliged to fill the petrol up.<br /></li>
+<li>We felt obliged to save them as quickly as we can.<br /></li>
+<li>I felt obliged to keep in touch with my old classmates.<br /></li>
+<li>We all feel obliged to remember our headmaster for his kindness.<br /></li>
+</ul>
+<p>
+hunt n.v.<br />
+</p>
+<ul class="org-ul">
+<li>My wife doesn't have the nerve to hunt for our cat in the night.<br /></li>
+<li>After having been hunting for a cat for a long time, I lost my temper.<br /></li>
+<li>My wife urged me to hunt for the cat which she saw last moring.<br /></li>
+<li>The hunt for the puma give the expert satisfaction.<br /></li>
+<li>I keep on hunting for my cat for a whole week.<br /></li>
+</ul>
+<p>
+blackberry n.<br />
+</p>
+<ul class="org-ul">
+<li>No one could account for the fact that there were a packet of blackberries.<br /></li>
+<li>I am sure that she ate a packet of blackberrie last night.<br /></li>
+<li>If you teach me a lesson, I will offer you a packet of blackberries.<br /></li>
+<li>Who entitled you to pick blackberries in my field?<br /></li>
+<li>These blackberries proved to be delicious.<br /></li>
+</ul>
+<p>
+human being<br />
+</p>
+<ul class="org-ul">
+<li>A puma might have attacked a human being last night.<br /></li>
+<li>A puma can't have attacked any human being last night.<br /></li>
+<li>Look, a puma is trying to attack a human being.<br /></li>
+<li>A puma doesn't have nerve to attack a human being in the city.<br /></li>
+<li>The expert was disappointed to learn that a human being was attacked by a puma last night.<br /></li>
+</ul>
+<p>
+corner v.<br />
+</p>
+<ul class="org-ul">
+<li>Such is human nature that if you are cornered, your instinct is flight or fight.<br /></li>
+<li>When people saw the drunk being cornered, they all burst out laughing.<br /></li>
+<li>If you were cornered by them, you would also tell the truth.<br /></li>
+<li>At that time I was cornered by dogs, so I have a perfect alibi.<br /></li>
+<li>It is a curious coincidence that I and my brother were corner at the same time.<br /></li>
+</ul>
+<p>
+trail n. a trail of<br />
+</p>
+<ul class="org-ul">
+<li>The flood left behind it a trail of bodies and broken houses.<br /></li>
+<li>A trail of detectives are following me around.<br /></li>
+<li>I was wonder why a train of detectives are following you around.<br /></li>
+<li>It's hard to imagine that a trail of detectives are following me around.<br /></li>
+<li>A trail of cars are holding up the traffic.<br /></li>
+</ul>
+<p>
+print n.v.<br />
+</p>
+<ul class="org-ul">
+<li>Paw prints were spotted on the sofa.<br /></li>
+<li>All these paw prints of our cat is driving my wife mad.<br /></li>
+<li>A large number of paw prints were found on the beach last night.<br /></li>
+<li>My wife is always complaining of our cat's paw prints.<br /></li>
+<li>I have a habit of cleaning paw prints of my cat in the morning.<br /></li>
+</ul>
+<p>
+cling clung clung v. cling to sb./sth.<br />
+</p>
+<ul class="org-ul">
+<li>After have been running for a long time, our clothes clung to us.<br /></li>
+<li>My wife has a habit of clinging to me when she is playing games.<br /></li>
+<li>I pointed out that the puma fur clung to the bushes.<br /></li>
+<li>I am not allowed to cling to my father since I was 10 years old.<br /></li>
+<li>The cat is clinging to the toy which we bought last week.<br /></li>
+</ul>
+<p>
+convince v. sth. convinced sb. that + &#x2026; sb. was/were convinced that + &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>I was convinced that my wife was eager to buy that house.<br /></li>
+<li>This convinced me that it's worth buying that house.<br /></li>
+<li>This convinced me that	the airport will come into use next year.<br /></li>
+<li>I was convinced that the car was used to carry fruits.<br /></li>
+<li>I was convinced that she had learned pirate stories.<br /></li>
+</ul>
+<p>
+somehow<br />
+</p>
+<ul class="org-ul">
+<li>Somehow I was armed with torchlight.<br /></li>
+<li>He owned hald of gold mines in America somehow.<br /></li>
+<li>Somehow they succeed in finding the entrance.<br /></li>
+<li>Somehow I have a good reputation.<br /></li>
+<li>Somehow I have a good appetite.<br /></li>
+</ul>
+<p>
+disturb v. It is disturbing to think that + &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>It is disturbing to think that everything doesn't return to normal.<br /></li>
+<li>It is disturbing to think that our child makes no effort to study in the school.<br /></li>
+<li>It is disturbing to think that he gets in such a mess.<br /></li>
+<li>It is disturbing to think that my wife have a bad temper.<br /></li>
+<li>It is disturbing to think that my wife has spent a lot of money.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgefb06e8" class="outline-3">
+<h3 id="orgefb06e8"><span class="done DONE">DONE</span> 反复听电影片段直到懂关键句</h3>
+<div class="outline-text-3" id="text-orgefb06e8">
+</div>
+</div>
+<div id="outline-container-org092b442" class="outline-3">
+<h3 id="org092b442">复习二册语法(笔记或视频) &amp; 红皮书</h3>
+</div>
+<div id="outline-container-org2916c16" class="outline-3">
+<h3 id="org2916c16"><span class="done DONE">DONE</span> 习惯用法造句</h3>
+<div class="outline-text-3" id="text-org2916c16">
+<p>
+at large<br />
+</p>
+<ul class="org-ul">
+<li>The smuggler who have been spotted two days ago is still at large.<br /></li>
+<li>It is considered unlucky for a cat being at large.<br /></li>
+<li>Why is our cat still at large?<br /></li>
+<li>I convinced that the puma from the London Zoo is still at large.<br /></li>
+<li>The puma seems to be at large.<br /></li>
+</ul>
+<p>
+be found in<br />
+</p>
+<ul class="org-ul">
+<li>A great deal of fat is found in this kind of foods.<br /></li>
+<li>The largest of these lakes are found in China.<br /></li>
+<li>The cat was found in these deserts at first time.<br /></li>
+<li>He has written out of a long list of fruits which are found in America.<br /></li>
+<li>It is obvious that a puma is found in America.<br /></li>
+</ul>
+<p>
+take sth. seriously<br />
+</p>
+<ul class="org-ul">
+<li>Despite of his family, Mr. Leo is always taking his job seriously.<br /></li>
+<li>For your safety, you should take the suggestion seriously.<br /></li>
+<li>I am instructed to take this work seriously.<br /></li>
+<li>On the surface, he takes his job seriously.<br /></li>
+<li>It is no use pretending that you had taken your homework seriously.<br /></li>
+</ul>
+<p>
+sth. proved adj.<br />
+</p>
+<ul class="org-ul">
+<li>What she said proved right.<br /></li>
+<li>What we value proved wrong.<br /></li>
+<li>The questions that Mr. Leo gave us yesterday proved difficult.<br /></li>
+<li>The tasks should have proved difficult.<br /></li>
+<li>All remark she made yesterday proved stupid.<br /></li>
+</ul>
+<p>
+sb. confirmed that + &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>I confirmed that I had passed the exam.<br /></li>
+<li>She confirmed that she falls in love with the guy.<br /></li>
+<li>I confirmed that I was busy studying English.<br /></li>
+<li>She confirmed that she double checked the garage.<br /></li>
+<li>I confirmed that all pupils of his school was put to shame by my son.<br /></li>
+</ul>
+<p>
+claim to have done sth.<br />
+</p>
+<ul class="org-ul">
+<li>I claimed to have hitchhiked to Shanghai.<br /></li>
+<li>She claimed to have sent clothes to me.<br /></li>
+<li>She claimed to have lent me a dictionary.<br /></li>
+<li>She claimed to have fed the cat.<br /></li>
+<li>I claimed to have sent a lot of signals.<br /></li>
+</ul>
+<p>
+find sb. doing sth.<br />
+</p>
+<ul class="org-ul">
+<li>I found my son doing chores.<br /></li>
+<li>I found my daugter kissing that boy.<br /></li>
+<li>I found them standing to attention.<br /></li>
+<li>I found you knocking him to the ground.<br /></li>
+<li>I found you changing into the new clothes.<br /></li>
+</ul>
+<p>
+go on<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org3c97d76" class="outline-3">
+<h3 id="org3c97d76"><span class="done DONE">DONE</span> 跟读 50遍</h3>
+<div class="outline-text-3" id="text-org3c97d76">
+</div>
+</div>
+<div id="outline-container-org6b10747" class="outline-3">
+<h3 id="org6b10747"><span class="done DONE">DONE</span> Comprehension 反复练习</h3>
+<div class="outline-text-3" id="text-org6b10747">
+</div>
+</div>
+<div id="outline-container-org662d9e1" class="outline-3">
+<h3 id="org662d9e1"><span class="done DONE">DONE</span> Ask me if 写+读</h3>
+<div class="outline-text-3" id="text-org662d9e1">
+<ol class="org-ol">
+<li>Pumas are found in America. Where<br />
+Where are pumas found?<br /></li>
+<li>A puma had been spotted forty-five miles south of London. Where<br />
+Where had a puma been spotted?<br /></li>
+<li>The reports were taken seriously. Why weren't<br />
+Why weren't the reports taken seriously?<br /></li>
+<li>The Zoo felt obliged to investigate. Why<br />
+Why did the Zoo feel obliged to investigate?<br /></li>
+<li>The descriptions given by people who had seen the puma were similar. In what way<br />
+In what way were the descriptions given by people who had seen the puma similar?<br /></li>
+<li>The hunt for the puma began in a small village. Where<br />
+Where did the hunt for the puma begin?<br /></li>
+<li>A puma will attack a human being. On what occasions<br />
+On what occasions will a puma attack a human being?<br /></li>
+<li>The puma left behind it a trail of dead deer and small animals. What<br />
+What did the puma leave behind it?<br /></li>
+<li>Puma fur was found clinging to bushes. What<br />
+What was found clinging to bushes?<br /></li>
+<li>A businessman saw a puma up a tree. Where<br />
+Where did a businessman see a puma?<br /></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org5be5c17" class="outline-3">
+<h3 id="org5be5c17"><span class="done DONE">DONE</span> 摘要写作 写 &amp; 对答案</h3>
+<div class="outline-text-3" id="text-org5be5c17">
+<p>
+The reports were received by London Zoo<br />
+	that a puma had been spotted forty-five miles south of London<br />
+		were similar in nature.<br />
+A woman picking blackberries saw it first,<br />
+	but the puma moved from place to place,<br />
+		leaving  a trail of dead deer and small animals.<br />
+Paw prints and puma fur were found as well.<br />
+Cat-like noise was heard at night and the animal was seen up a tree.<br />
+Now experts were convinced that the animal really was a puma.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org7b4f076" class="outline-3">
+<h3 id="org7b4f076"><span class="done DONE">DONE</span> tell the story 口语复述</h3>
+<div class="outline-text-3" id="text-org7b4f076">
+</div>
+</div>
+<div id="outline-container-orgc6f6cb8" class="outline-3">
+<h3 id="orgc6f6cb8"><span class="done DONE">DONE</span> composition 阅读 或 写作</h3>
+<div class="outline-text-3" id="text-orgc6f6cb8">
+<p>
+Mrs. Stone had spent the whole morning picking blackberries in the countryside near her home.<br />
+It was nearly lunch time, so she decided to return for lunch.<br />
+She was just picking up her basket when she heard a noise in the bushes.<br />
+Then she saw an animal which looked like a cat.<br />
+She knew it was not a cat because it was so large.<br />
+The animal suddenly turned round to look at her<br />
+	and she thought it was going to come towards her and perhaps attack her.<br />
+She dropped her basket and screamed loudly.<br />
+Hearing the sound, the animal disappeared into the bushes,<br />
+	after which Mr. Stone picked up her basket and ran all the way home.<br />
+She told her neighbours that she had seen a puma in the countryside,<br />
+	but they did not believe her.<br />
+She also telephoned the police but they didn't believe her either.<br />
+</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-01-09 Thu 23:07 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-org2bdea25" class="outline-2">
+<h2 id="org2bdea25">2013-10-29 Vampires - Folklore, fantasy and fact</h2>
+<div class="outline-text-2" id="text-org2bdea25">
+<p class="verse">
+Good evening! What's the matter?<br />
+Are you afraid of vampires?<br />
+He he, no need to worry, I'm not staying for dinner.<br />
+I'm here to guide you through a brief history of vampires,<br />
+&#xa0;illustrating how our image has changed<br />
+&#xa0;&#xa0;from a shambling corpse to the dapper gentleman you see before you.<br />
+Vampires are nearly as old as you humans.<br />
+Stories about us, revenants, appear in cultures extending as far back as prehistoric times.<br />
+But we weren't called vampires back then<br />
+&#xa0;and most of us did not look the way we imagine vampires today.<br />
+<br />
+Ha, far from it!<br />
+For example, the Mesopotamian Lamashtu was a creature with the head of a lion<br />
+&#xa0;&#xa0;and the body of the donkey,<br />
+&#xa0;and the ancient Greek Striges were simply described as bloodthirsty birds.<br />
+Others were even stranger.<br />
+The Philippine Manananggal would sever her upper torso and sprout huge, bat-like wings to fly.<br />
+The Malaysian Penanggalan was a flying female head with dangling entrails.<br />
+And the Australian Yara-ma-yha-who was a little red guy<br />
+&#xa0;with a big head, a large mouth, and bloodsuckers on his hands and feet.<br />
+Oh, and let's not forget the Caribbean's Soucouyant,<br />
+&#xa0;the West African obayifo, and the Mexican Tlahuelpuchi.<br />
+Charming, aren't they?<br />
+Though they may look vastly different, all of these beings have one common characteristic:<br />
+&#xa0;They sustain themselves by consuming the life force of a living creature.<br />
+This shared trait is what defines a vampire &#x2013; all the other attributes change with the times.<br />
+So, how do we arrive at the reanimated fellow you see before you?<br />
+<br />
+Our modern ideal emerges in 18th-century Eastern Europe.<br />
+With the dramatic increase of vampire superstitions, stories of bloodsucking,<br />
+&#xa0;shadowy creatures become nightly bedside terrors.<br />
+And popular folklore,<br />
+&#xa0;&#xa0;like the Moroi among the Romani people and the Lugat in Albania,<br />
+&#xa0;provide the most common vampire traits known today,<br />
+&#xa0;&#xa0;such as vampires being undead and nocturnal and shape-shifting.<br />
+You see, Eastern Europe in the 18th century was a pretty grim place<br />
+&#xa0;with many deaths occurring from unknown diseases and plagues.<br />
+Without medical explanations,<br />
+&#xa0;people searched for supernatural causes<br />
+&#xa0;&#xa0;and found what looked like evidence in the corpses of the victims.<br />
+When villagers dug up bodies to discern the cause of the mysterious deaths,<br />
+&#xa0;they would often find the cadavers looking very much alive<br />
+&#xa0;&#xa0;&#x2013; longer hair and fingernails, bloated bellies, and blood at the corners of mouths.<br />
+Clearly, these people were not really dead.<br />
+Heh, they were vampires!<br />
+And they had been leaving their graves to feast on the living.<br />
+The terrified villagers would quickly enact a ritual to kill the undead.<br />
+The practices varied across the region,<br />
+&#xa0;but usually included beheadings, burnings,<br />
+&#xa0;&#xa0;and staking the body to the coffin to prevent it from getting up.<br />
+Grizzly stuff!<br />
+But what the villagers interpreted as unholy reanimation were actually normal symptoms of death.<br />
+When a body decomposes, the skin dehydrates, causing the hair and fingernails to extend.<br />
+Bacteria in the stomach creates gases that fill the belly,<br />
+&#xa0;which force out blood and matter through the mouth.<br />
+Unfortunately, this science was not yet known, so the villagers kept digging.<br />
+In fact, so many bodies were dug up<br />
+&#xa0;that the Empress of Austria sent her physician around to disprove the vampire stories,<br />
+&#xa0;&#xa0;and she even established a law prohibiting grave tampering.<br />
+<br />
+Still, even after the vampire hunts had died down,<br />
+&#xa0;the stories of legends survived in local superstition.<br />
+This led to works of literature,<br />
+&#xa0;such as Polidori's 'The Vampyre,' the Gothic novel 'Carmilla,'<br />
+&#xa0;&#xa0;and, most famously, Bram Stoker's 'Dracula.'<br />
+Although Stoker incorporated historical material,<br />
+&#xa0;&#xa0;like Elizabeth Báthory's virgin blood baths and the brutal executions of Vlad Dracul,<br />
+&#xa0;it was these local myths that inspired the main elements of his story:<br />
+&#xa0;&#xa0;the Transylvanian setting, using garlic to defend oneself, and the staking of the heart.<br />
+While these attributes are certainly familiar to us,<br />
+&#xa0;elements he invented himself have also lasted over the years:<br />
+&#xa0;&#xa0;fear of crucifixes, weakness in sunlight, and the vampire's inability to see their reflection.<br />
+By inventing new traits, Stoker perfectly enacted the age-old tradition of<br />
+&#xa0;elaborating upon and expanding the myth of vampires.<br />
+As we saw, maybe you met my relatives,<br />
+&#xa0;a huge of variety of creatures stalked the night before Dracula,<br />
+&#xa0;and many more will continue to creep through our nightmares.<br />
+Yet, so long as they subsist off a living being's life force, they are part of my tribe.<br />
+Even sparkling vampires can be included.<br />
+After all, it's the continued storytelling and reimagining of the vampire legend<br />
+&#xa0;that allows us to truly live forever.<br />
+</p>
+</div>
+<div id="outline-container-org1a952c7" class="outline-3">
+<h3 id="org1a952c7">expression</h3>
+<div class="outline-text-3" id="text-org1a952c7">
+<p>
+vampire [ˈvæmˌpaɪr]: n. in stories, a dead person that sucks people’s blood by biting their necks吸血鬼<br />
+shamble [ˈʃæmb(ə)l]: v. to walk slowly and awkwardly, not lifting your feet much, for example because you are tired, weak, or lazy蹒跚<br />
+corpse [kɔrps]: n. the dead body of a person尸体<br />
+dapper [ˈdæpər]: adj. a man who is dapper is nicely dressed, has a neat appearance, and is usually small or thin衣冠楚楚的<br />
+revenant ['revənənt]: n. 幽灵, 亡魂<br />
+donkey [ˈdɑŋki]: n. a grey or brown animal like a horse, but smaller and with long ears驴子<br />
+bloodthirsty [ˈblʌdˌθɜrsti]: adj. eager to kill and wound, or enjoying killing and violence嗜杀的<br />
+sever [ˈsevər]: v. to cut through something completely, separating it into two parts, or to become cut in this way切断<br />
+upper [ˈʌpər]: adj. in a higher position than something else上面的, 上部的<br />
+torso [ˈtɔrsoʊ]: n. your body, not including your head, arms, or legs 身体躯干<br />
+sprout [spraʊt]: v. if vegetables, seeds, or plants sprout, they start to grow, producing shoots, buds, or leaves萌芽<br />
+wing [wɪŋ]: n. one of the parts of a bird’s or insect’s body that it uses for flying翅<br />
+entrail : n. the inside parts of an animal’s or person’s body, especially their intestines内脏<br />
+bloodsucker [ˈblʌdˌsʌkər] / bloodsucking: n.adj. a creature that sucks blood from the bodies of other animals吸血生物<br />
+trait [treɪt]: n. formal a particular quality in someone’s character显著的特点<br />
+reanimated/reanimation: adj.n. formal to give new strength to someone or something or the energy to start again 复活<br />
+folklore [ˈfoʊkˌlɔr]: n. the traditional stories, customs etc of a particular area or country民间传说<br />
+nocturnal [nɑkˈtɜrn(ə)l]: adj. an animal that is nocturnal is active at night夜的, 夜曲的<br />
+grim [ɡrɪm]: adj. making you feel worried or unhappy 严酷的<br />
+plague [pleɪɡ]: n. a disease that causes death and spreads quickly to a large number of people瘟疫<br />
+supernatural [ˌsupərˈnætʃ(ə)rəl]: adj. impossible to explain by natural causes, and therefore seeming to involve the powers of gods or magic超自然的<br />
+cadaver [kəˈdɑvər]: n. technical a dead human body, especially one used for study SYN corpse死尸<br />
+bloated [ˈbloʊtəd]: adj. if you describe an organization as bloated, you mean that it is too big and does not work effectively浮肿的<br />
+behead [bɪˈhed]: v. to cut off someone’s head as a punishment斩首<br />
+decompose [ˌdikəmˈpoʊz]: v. to decay or make something decay分解<br />
+dehydrate [diˈhaɪˌdreɪt]: v. to remove the liquid from a substance such as food or a chemical(使)脱水<br />
+incorporate [ɪnˈkɔrpəˌreɪt]: v. to include something as part of a group, system, plan etc合并<br />
+garlic [ˈɡɑrlɪk]: n. a plant like a small onion, used in cooking to give a strong taste大蒜<br />
+stake [steɪk]: n. a pointed piece of wood, metal etc, especially one that is pushed into the ground to support something or mark a particular place树桩<br />
+attribute [ˈætrɪˌbjuːt]: n. a quality or feature, especially one that is considered to be good or useful属性<br />
+crucifix [ˈkrusɪˌfɪks]: v. a cross with a figure of Christ on it十字架<br />
+reflection [rɪˈflekʃ(ə)n]: n. an image that you can see in a mirror, glass, or water映象<br />
+stalk [stɔk]: v. to follow a person or animal quietly in order to catch and attack or kill them ⇨ shadow潜伏<br />
+subsist [səbˈsɪst]: v. to stay alive when you only have small amounts of food or money SYN survive生存<br />
+</p>
+<hr />
+<p>
+What's the matter: 怎么了<br />
+extend as far back as prehistoric times: date back to追溯到<br />
+back then: at a particular time in the past that you are talking about当时<br />
+be simply described as sth.: 被简单描述成某物<br />
+have one common characteristic: 有个共同特性<br />
+sustain oneself by doing sth.: 通过做某事来维持生计<br />
+the life force of sth.: 某物的生命力<br />
+change with the times: 随时间而改变<br />
+With the dramatic increase of sth.: 随着某物的戏剧性增多<br />
+dig up &lt;-&gt; sth.: 挖掘某物<br />
+discern the cause of sth.: 查明某物的原因<br />
+at the corners of mouths: 在嘴角<br />
+feast on sth.: 享用某物<br />
+enact a ritual to do sth.: 制定仪式去做某事<br />
+stake the body to the coffin: 把尸体钉在棺材里<br />
+normal symptoms of sth.: 某事的正常现象<br />
+cause sb./sth. to do sth.: 造成某物去做某事<br />
+force out sth. through sth.: 通过某处挤出某物<br />
+establish a law prohibiting sth./doing sth.: 制定法律禁止某事<br />
+die down: 消亡<br />
+brutal executions: 残酷的死刑<br />
+inspire the main elements of sth.: 激发某事的主要元素<br />
+enact the age-old tradition of doing sth.: 延续做某事的古老传统<br />
+elaborate upon: 详细说明<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgee03e04" class="outline-3">
+<h3 id="orgee03e04">sentences</h3>
+<div class="outline-text-3" id="text-orgee03e04">
+<p>
+What's the matter: 怎么了<br />
+</p>
+<ul class="org-ul">
+<li>Everything in the kitchen was smashed into pieces. What's the matter?<br /></li>
+<li>The car has broken down, what's the matter?<br /></li>
+<li>I find you very upset, what's the matter?<br /></li>
+</ul>
+<p>
+extend as far back as prehistoric times: date back to<br />
+</p>
+<ul class="org-ul">
+<li>The invention of these tools could extend as far back as prehistoric times.<br /></li>
+<li>The invention of these tools must extend as far back as prehistoric times.<br /></li>
+<li>The practices became popular in cultures extending as far back as prehistoric times.<br /></li>
+</ul>
+<p>
+back then: at a particular time in the past that you are talking about<br />
+</p>
+<ul class="org-ul">
+<li>It was all too easy to raise money back then.<br /></li>
+<li>Back then, I didn't get enough money to travel all over the world.<br /></li>
+<li>Back then, I woke up with a start.<br /></li>
+</ul>
+<p>
+be simply described as sth.:<br />
+</p>
+<ul class="org-ul">
+<li>The animal at large was simply described as cat-like.<br /></li>
+<li>The colossal ship used to be simply described as unsinkable until his first voyage.<br /></li>
+<li>These infected people shouldn't have been simply described as a number.<br /></li>
+</ul>
+<p>
+have one common characteristic: 有个共同特性<br />
+</p>
+<ul class="org-ul">
+<li>We have one common characteristic: We are both fanatical about playing video games.<br /></li>
+<li>We have one common characteristic: We love to go on a journey.<br /></li>
+<li>We have one common characteristic: The noise from the airport drives us mad.<br /></li>
+</ul>
+<p>
+sustain oneself by doing sth.: 通过做某事来维持生计<br />
+</p>
+<ul class="org-ul">
+<li>It is said that the obscure maidservant sustains herself by the life force of the living.<br /></li>
+<li>He is said to sustain himself by running a furniture business.<br /></li>
+<li>There are rare instances when a creature sustains itself by bloodsucking.<br /></li>
+</ul>
+<p>
+the life force of sth.: 某物的生命力<br />
+</p>
+<ul class="org-ul">
+<li>The cheap labor force is the life force of some developing countries.<br /></li>
+<li>Loyalty is the life force of the regiment of soldiers.<br /></li>
+<li>Positive energy is the life force of the disabled girl.<br /></li>
+</ul>
+<p>
+change with the times: 随时间而改变<br />
+</p>
+<ul class="org-ul">
+<li>It's not support to change with the times.<br /></li>
+<li>Though I had a flat representation of the cave, it has changed with the times.<br /></li>
+<li>I had an idea that I wanted to get him far away from my daughter,<br />
+however, it has changed with the times.<br /></li>
+</ul>
+<p>
+With the dramatic increase of sth.: 随着某物的戏剧性增多<br />
+</p>
+<ul class="org-ul">
+<li>With the increase of expenditure of households, he began to suspect his wife's behaviors.<br /></li>
+<li>With the increase of enemies, he managed to move to London.<br /></li>
+<li>With the increase in income, this company made a complete recovery.<br /></li>
+</ul>
+<p>
+dig up &lt;-&gt; sth.:<br />
+</p>
+<ul class="org-ul">
+<li>I dreaded digging up the body in the coffin.<br /></li>
+<li>I dreaded my company digging up the corpse at midnight.<br /></li>
+<li>My company pestered me to dig up the corpse in the cave.<br /></li>
+</ul>
+<p>
+discern the cause of sth.: 查明某物的原因<br />
+</p>
+<ul class="org-ul">
+<li>In the end, she discerned the cause of the noises from the kitchen at midnight.<br /></li>
+<li>He discerned the cause of soldiers' deserting.<br /></li>
+<li>He discerned the cause of the loss of the Titanic.<br /></li>
+</ul>
+<p>
+at the corners of the mouth: 在嘴角<br />
+</p>
+<ul class="org-ul">
+<li>There is a drop of blood at the corner of his mouth.<br /></li>
+<li>I saw a drop of blood at the corner of his mouth.<br /></li>
+<li>There are always smiles at the corners of his mouth whenever you meet him.<br /></li>
+</ul>
+<p>
+feast on sth.: 享用某物<br />
+</p>
+<ul class="org-ul">
+<li>The beggar was eager to feast on the food in front of the coffin.<br /></li>
+<li>The maidservant pretended that she hadn't feasted on those wine in the garage.<br /></li>
+<li>I made my way back home to feast on my steak with my wife.<br /></li>
+</ul>
+<p>
+enact a ritual to do sth.: 制定仪式去做某事<br />
+</p>
+<ul class="org-ul">
+<li>What we need to do is to enact a ritual to raise money.<br /></li>
+<li>The writer enacted a ritual to bring his story to a conclusion.<br /></li>
+<li>We have to enact a ritual to certify smallpox eradication.<br /></li>
+</ul>
+<p>
+stake the body to the coffin: 把尸体钉在棺材里<br />
+</p>
+<ul class="org-ul">
+<li>The body must have been staked to the coffin.<br /></li>
+<li>The vicars managed to stake the body to the coffin.<br /></li>
+<li>The body was not allowed to be staked to the coffin.<br /></li>
+</ul>
+<p>
+normal symptoms of sth.: 某事的正常现象<br />
+</p>
+<ul class="org-ul">
+<li>No need to worry! These are the normal symptoms of having a cold.<br /></li>
+<li>His behaviors are normal symptoms of passing the test.<br /></li>
+<li>Being nervous is a normal symptom of giving a speech in public.<br /></li>
+</ul>
+<p>
+cause sb./sth. to do sth.:<br />
+</p>
+<ul class="org-ul">
+<li>You caused these refugees to build up in the capital.<br /></li>
+<li>You have caused your son to take an exit from the laboratory.<br /></li>
+<li>You caused the ambassador to bring the gunpowder back to Europe.<br /></li>
+</ul>
+<p>
+force out sth. through sth.: 通过某处挤出某物<br />
+</p>
+<ul class="org-ul">
+<li>I prevented my wife from forcing out my pimple.<br /></li>
+<li>The little cat forced out water through the pipe.<br /></li>
+<li>It seems reasonable to assume that the water is forced out through the pipe.<br /></li>
+</ul>
+<p>
+establish a law prohibiting sth./doing sth.: 制定法律禁止某事<br />
+</p>
+<ul class="org-ul">
+<li>The authorities established a law prohibiting variolation.<br /></li>
+<li>The authorities established a law prohibiting bride price.<br /></li>
+<li>The authorities established a law prohibiting smoking in public.<br /></li>
+</ul>
+<p>
+die down: 消亡<br />
+</p>
+<ul class="org-ul">
+<li>The smallpox has died down before modern medicine.<br /></li>
+<li>I'm sure that the smallpox has died before modern medicine.<br /></li>
+<li>Staking the body to the coffin died down in modern times.<br /></li>
+</ul>
+<p>
+brutal executions: 残酷的死刑<br />
+</p>
+<ul class="org-ul">
+<li>The two men who killed five innocent children must face brutal executions.<br /></li>
+<li>I must prevent you from doing that, you'll face brutal executions.<br /></li>
+<li>The chemists who were seeking a potion for immortality would face brutal executions.<br /></li>
+</ul>
+<p>
+inspire the main elements of sth.: 激发某事的主要元素<br />
+</p>
+<ul class="org-ul">
+<li>This inspires the main elements of the way to innoculate people.<br /></li>
+<li>I was reminiscing about my father back then, which inspired the main elements of my story.<br /></li>
+<li>The fireworks display inspires the main elements of his story.<br /></li>
+</ul>
+<p>
+enact the age-old tradition of doing sth.: 延续做某事的古老传统<br />
+</p>
+<ul class="org-ul">
+<li>This village enacted the age-old tradition of asking for bride price.<br /></li>
+<li>He enacted the age-old tradition of giving the eulogy at the funeral.<br /></li>
+<li>She enacted the age-old tradition of raising money to have the clock repaired.<br /></li>
+</ul>
+<p>
+elaborate upon: 详细碳素<br />
+</p>
+<ul class="org-ul">
+<li>She is one of those people who like to elaborate upon the myth of vampires.<br /></li>
+<li>She felt obliged to elaborate upon the history of the civilization.<br /></li>
+<li>My teacher elaborated upon the model of an atom in the process.<br /></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

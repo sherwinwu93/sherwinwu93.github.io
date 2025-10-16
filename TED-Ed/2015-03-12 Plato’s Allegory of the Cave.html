@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-01-09 Thu 23:07 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-orgdb302e8" class="outline-2">
+<h2 id="orgdb302e8">2015-03-12 Plato’s Allegory of the Cave</h2>
+<div class="outline-text-2" id="text-orgdb302e8">
+<p class="verse">
+What is reality, knowledge, the meaning of life?<br />
+Big topics you might tackle figuratively<br />
+&#xa0;explaining existence as a journey down a road or across an ocean,<br />
+&#xa0;&#xa0;a climb, a war, a book, a thread, a game, a window of opportunity,<br />
+&#xa0;&#xa0;&#xa0;or an all-too-short-lived flicker of flame.<br />
+<br />
+2,400 years ago, one of history's famous thinkers said life is like being chained up in a cave,<br />
+&#xa0;forced to watch shadows flitting across a stone wall.<br />
+Pretty cheery, right?<br />
+That's actually what Plato suggested in his Allegory of the Cave,<br />
+&#xa0;found in Book VII of 'The Republic,'<br />
+&#xa0;in which the Greek philosopher envisioned the ideal society<br />
+&#xa0;&#xa0;by examining concepts like justice, truth and beauty.<br />
+<br />
+In the allegory, a group of prisoners have been confined in a cavern since birth,<br />
+&#xa0;with no knowledge of the outside world.<br />
+They are chained, facing a wall, unable to turn their heads,<br />
+&#xa0;while a fire behind them gives off a faint light.<br />
+Occasionally, people pass by the fire,<br />
+&#xa0;carrying figures of animals and other objects that cast shadows on the wall.<br />
+The prisoners name and classify these illusions, believing they're perceiving actual entities.<br />
+Suddenly, one prisoner is freed and brought outside for the first time.<br />
+The sunlight hurts his eyes and he finds the new environment disorienting.<br />
+When told that the things around him are real, while the shadows were mere reflections,<br />
+&#xa0;he cannot believe it.<br />
+The shadows appeared much clearer to him.<br />
+But gradually, his eyes adjust until he can look at reflections in the water,<br />
+&#xa0;at objects directly, and finally at the Sun,<br />
+&#xa0;&#xa0;whose light is the ultimate source of everything he has seen.<br />
+The prisoner returns to the cave to share his discovery,<br />
+&#xa0;but he is no longer used to the darkness, and has a hard time seeing the shadows on the wall.<br />
+The other prisoners think the journey has made him stupid and blind,<br />
+&#xa0;and violently resist any attempts to free them.<br />
+<br />
+Plato introduces this passage as an analogy of what it's like to be a philosopher<br />
+&#xa0;trying to educate the public.<br />
+Most people are not just comfortable in their ignorance but hostile to anyone who points it out.<br />
+In fact, the real life Socrates was sentenced to death by the Athenian government<br />
+&#xa0;&#xa0;for disrupting the social order,<br />
+&#xa0;and his student Plato spends much of 'The Republic' disparaging Athenian democracy,<br />
+&#xa0;&#xa0;while promoting rule by philosopher kings.<br />
+<br />
+With the cave parable,<br />
+&#xa0;Plato may be arguing that the masses are too stubborn and ignorant to govern themselves.<br />
+But the allegory has captured imaginations for 2,400 years because it can be read in far more ways.<br />
+Importantly, the allegory is connected to the theory of forms,<br />
+&#xa0;developed in Plato's other dialogues,<br />
+&#xa0;which holds that like the shadows on the wall,<br />
+&#xa0;&#xa0;things in the physical world are flawed reflections of ideal forms,<br />
+&#xa0;&#xa0;&#xa0;such as roundness, or beauty.<br />
+In this way, the cave leads to many fundamental questions,<br />
+&#xa0;including the origin of knowledge, the problem of representation,<br />
+&#xa0;&#xa0;and the nature of reality itself.<br />
+For theologians, the ideal forms exist in the mind of a creator.<br />
+For philosophers of language viewing the forms as linguistic concepts,<br />
+&#xa0;the theory illustrates the problem of grouping concrete things under abstract terms.<br />
+And others still wonder<br />
+&#xa0;whether we can really know that the things outside the cave are any more real than the shadows.<br />
+<br />
+As we go about our lives, can we be confident in what we think we know?<br />
+Perhaps one day, a glimmer of light may punch a hole in your most basic assumptions.<br />
+Will you break free to struggle towards the light,<br />
+&#xa0;&#xa0;even if it costs you, your friends and family,<br />
+&#xa0;or stick with comfortable and familiar illusions?<br />
+Truth or habit?<br />
+Light or shadow?<br />
+Hard choices, but if it's any consolation, you're not alone.<br />
+There are lots of us down here.<br />
+</p>
+</div>
+<div id="outline-container-org3d3b081" class="outline-3">
+<h3 id="org3d3b081">expression</h3>
+<div class="outline-text-3" id="text-org3d3b081">
+<p>
+figurative [ˈfɪɡjərətɪv]/figuratively: adj.adv. a figurative word or phrase is used in a different way from its usual meaning, to give you a particular idea or picture in your mind ⇨ literal比喻的<br />
+thread [θred]: n. an idea, feeling, or feature that connects the different parts of an explanation, story etc线索<br />
+flicker [ˈflɪkər]: v. to burn or shine with an unsteady light that goes on and off quickly摇曳, 闪烁<br />
+flit [flɪt]: v. to move lightly or quickly and not stay in one place for very long掠过<br />
+cheery [ˈtʃɪri]: adj. happy or making you feel happy愉快的<br />
+allegory [ˈæləɡəri]: n. a story, painting etc in which the events and characters represent ideas or teach a moral lesson寓言<br />
+Republic [rɪˈpʌblɪk]: n. a country governed by elected representatives of the people, and led by a president, not a king or queen共和国<br />
+envision [ɪnˈvɪʒ(ə)n]: n. to imagine something that you think might happen in the future, especially something that you think will be good想象, 预想<br />
+cavern [ˈkævərn]: n. a large ↑cave巨洞, 洞窟<br />
+faint [feɪnt]: adj. difficult to see, hear, smell etc虚弱的,微弱的<br />
+cast [kæst]: v. literary to make light or a shadow appear somewhere投射<br />
+classify [ˈklæsɪˌfaɪ]: v. to decide what group something belongs to分类<br />
+perceive [pərˈsiv]: v. formal to notice, see, or recognize something ⇨ perceptive感知<br />
+entity [ˈentəti]: n. formal something that exists as a single and complete unit ⇨ being实体<br />
+disorienting [dɪsˈɔriənt]: adj. confusing you and making you not certain about what is happening around you使失去方向感, 使迷惑<br />
+reflection [rɪˈflekʃ(ə)n]: n. an image that you can see in a mirror, glass, or water映象<br />
+adjust [əˈdʒʌst]: v. to change or move something slightly to improve it or make it more suitable for a particular purpose调整<br />
+blind [blaɪnd]: adj. unable to see瞎的, 盲目的<br />
+ignorance [ˈɪɡnərəns]: n. lack of knowledge or information about something无知<br />
+disrupt [dɪsˈrʌpt]: v. to prevent something from continuing in its usual way by causing problems使中断<br />
+disparaging [dɪˈsperɪdʒɪŋ]: adj. criticizing someone or something, and showing that you do not think they are very good or important蔑视的<br />
+promote [prəˈmoʊt]: v. to try to persuade people to support or use something促进, 发扬, 提升, 提拔<br />
+rule [rul]: v. the government of a country or area by a particular group of people or using a particular system统治<br />
+parable [ˈperəb(ə)l]: n. a short simple story that teaches a moral or religious lesson, especially one of the stories told by Jesus in the Bible寓言<br />
+mass [mæs]: n. a large crowd群众<br />
+stubborn [ˈstʌbərn]: adj. determined not to change your mind, even when people think you are being unreasonable顽固的<br />
+ignorant [ˈɪɡnərənt]: adj. not knowing facts or information that you ought to know无知的<br />
+dialogue [ˈdaɪəˌlɔɡ]: n. a conversation in a book, play, or film对话<br />
+flawed [flɔd]: adj. spoiled by having mistakes, weaknesses, or by being damaged有缺陷的<br />
+roundness [raʊndnəs]: n. 圆,圆满<br />
+fundamental [ˌfʌndəˈment(ə)l]: adj. very necessary and important基础的, 基本的<br />
+representation [ˌreprɪzenˈteɪʃ(ə)n]: n. the act of representing someone or something表现<br />
+theologian [ˌθiəˈloʊdʒən]: n. someone who has studied theology神学者<br />
+linguistic [lɪŋˈɡwɪstɪk]: adj. related to language, words, or linguistics语言上的<br />
+concrete [ˈkɑŋˌkrit]: adj. definite and specific ⇨ abstract具体的, 有形的<br />
+abstract [æbˈstrækt]: adj. existing only as an idea or quality rather than as something real that you can see or touch OPP concrete抽象的<br />
+assumption [əˈsʌmpʃ(ə)n]: n. something that you think is true although you have no definite proof ⇨ assume假定<br />
+consolation [ˌkɑnsəˈleɪʃ(ə)n]: n. something that makes you feel better when you are sad or disappointed安慰<br />
+</p>
+<hr />
+<p>
+explain A. as B.: 把A解释为B<br />
+be like doing sth.: 就像是做某事<br />
+be chained up: 被锁起来<br />
+face a wall: 面对墙壁<br />
+give off: 发出(亮光)<br />
+pass by sb./sth.: 经过某人某物<br />
+have a hard time doing sth.: 做某事很困难<br />
+resist an attempt to do sth.: 抵制做某事的企图<br />
+introduce A. as an analogy of B.: 解释A当作B的比喻<br />
+be hostile to sb.: 对某人有敌意<br />
+the real life: 真实生活中<br />
+be sentenced to death/imprisonment: 被判处死刑<br />
+capture imaginations: 引起想象<br />
+view A. as B.: 把A看作是B<br />
+group A under B: 把A归类为B<br />
+go about sth.: 忙于某事<br />
+a glimmer of light: 一丝光<br />
+punch a hole: 打孔<br />
+break free (from sth.): 从某事中解脱出来<br />
+stick with sth.: 坚持使用某事<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org168fec9" class="outline-3">
+<h3 id="org168fec9">sentences</h3>
+<div class="outline-text-3" id="text-org168fec9">
+<p>
+explain A. as B.: 把A解释为B<br />
+</p>
+<ul class="org-ul">
+<li>He explained playing truant from school as an adventure.<br /></li>
+<li>That's why he explained the seat as harsher working condition.<br /></li>
+<li>Why do you explain his pocket money as yours?<br /></li>
+</ul>
+<p>
+be like doing sth.: 就像是做某事<br />
+</p>
+<ul class="org-ul">
+<li>The philosopher claimed that life is like being chained up in a cavern.<br /></li>
+<li>Devoting himself to education is like promoting plants in the garden.<br /></li>
+<li>His behaviors at the fancy dress party were like playing the role of a detective.<br /></li>
+</ul>
+<p>
+be chained up: 被锁起来<br />
+</p>
+<ul class="org-ul">
+<li>The man who is being chained up is your boss, who promised to give you a better salary.<br /></li>
+<li>How dare the man chained up squinted at me when I arrived on the scene.<br /></li>
+<li>After having seen a man chained up, the police proceed to search for evidence.<br /></li>
+</ul>
+<p>
+face a wall: 面对墙壁<br />
+</p>
+<ul class="org-ul">
+<li>My father insisted that I stand and face a wall for my failure of the test.<br /></li>
+<li>I was facing a wall yesterday, because of a blank sheet of paper in the test.<br /></li>
+<li>It seemed reasonable to assume that a man were facing the wall at the monastery.<br /></li>
+</ul>
+<p>
+give off: 发出(亮光)<br />
+</p>
+<ul class="org-ul">
+<li>The light is broken, which only gives off the dim light.<br /></li>
+<li>The candle is being used up giving off the faint light.<br /></li>
+<li>At midnight, the old lady is looking for the switch,<br />
+with the torchlight giving off the faint light.<br /></li>
+</ul>
+<p>
+pass by sb./sth.: 经过某人某物<br />
+</p>
+<ul class="org-ul">
+<li>She got very angry because a car had passed by her.<br /></li>
+<li>My ex-girlfriend passed by me without any word, which made me lose my heart.<br /></li>
+<li>The powerful engine made us pass by the taxi again.<br /></li>
+</ul>
+<p>
+have a hard time doing sth.: 做某事很困难<br />
+</p>
+<ul class="org-ul">
+<li>The police often have a hard time keeping order, when the group is giving performances.<br /></li>
+<li>I have a hard time keeping in touch with my difficult colleagues.<br /></li>
+<li>The scientist had a hard time proving his theory of an atom true.<br /></li>
+</ul>
+<p>
+resist an attempt to do sth.: 抵制做某事的企图<br />
+</p>
+<ul class="org-ul">
+<li>The king resisted an attempt to surrender the castle to his enemies.<br /></li>
+<li>I can't resist an attempt to kiss my wife when she is fast asleep.<br /></li>
+<li>I have resisted an attempt to bargain with the grocer<br />
+with the accompany of my wife who used to be my girlfriend.<br /></li>
+</ul>
+<p>
+introduce A. as an analogy of B.: 解释A当作B的比喻<br />
+</p>
+<ul class="org-ul">
+<li>Teachers in China usually introduce flowers in the garden as an analogy of children.<br /></li>
+<li>The scientist introduces minimum wage as an analogy of these chemical substances.<br /></li>
+<li>He likes to introduce a powerful engine as an analogy of his wife who is always hard-working.<br /></li>
+</ul>
+<p>
+be hostile to sb.: 对某人有敌意<br />
+</p>
+<ul class="org-ul">
+<li>I can't recognize the men who are hostile to me.<br /></li>
+<li>Driving in harsher working conditions, the busman was hostile to the passengers.<br /></li>
+<li>He is always being hostile to people around him in a pinch.<br /></li>
+</ul>
+<p>
+In real life,: 真实生活中<br />
+</p>
+<ul class="org-ul">
+<li>In real life, he has been put out of business.<br /></li>
+<li>In real life, we have to be in the face of low salaries and the lack of jobs.<br /></li>
+<li>In real life, the ability to make friends matters to your social status.<br /></li>
+</ul>
+<p>
+be sentenced to death/imprisonment: 被判处死刑/监禁<br />
+</p>
+<ul class="org-ul">
+<li>The poor journalist who was instructed to figure out the number of steps to the palace<br />
+was sentenced to imprisonment.<br /></li>
+<li>The man who hit the surface of the artifact was sentenced to imprisonment.<br /></li>
+<li>It seems odd that the philosopher is sentenced to death for spreading knowledge.<br /></li>
+</ul>
+<p>
+capture the imagination: 引起想象<br />
+</p>
+<ul class="org-ul">
+<li>The article he wrote on the World Wide Web captured the imagination.<br /></li>
+<li>A note of triumph coming from her mouth captured our imaginations.<br /></li>
+<li>A faint smile on the face of the heroine at the end of the movie captured the imagination.<br /></li>
+</ul>
+<p>
+view A. as B.: 把A看作是B<br />
+</p>
+<ul class="org-ul">
+<li>It seemed odd that you viewed my description as a complaint.<br /></li>
+<li>You needn't have viewed this reminder as a ticket and lost your temper.<br /></li>
+<li>It is a blessing that he always views difficulties as challenges.<br /></li>
+</ul>
+<p>
+group A under B: 把A归类为B<br />
+</p>
+<ul class="org-ul">
+<li>The experts from the zoo group pumas under cat-like animals.<br /></li>
+<li>I am delighted that you group your classmates under friends.<br /></li>
+<li>I am sure that the animal is grouped under a mammal.<br /></li>
+</ul>
+<p>
+go about sth.: 忙于某事<br />
+</p>
+<ul class="org-ul">
+<li>I am going about preparing for dinner, make yourself comfortable.<br /></li>
+<li>Don't be too hard on me, I am going about the tasks you arranged last week.<br /></li>
+<li>'You are going about climbing stairs.' The police said with a sneer.<br /></li>
+</ul>
+<p>
+a glimmer of light: 一丝光<br />
+</p>
+<ul class="org-ul">
+<li>He has been reading for several nights, with a glimmer of light casting on his book.<br /></li>
+<li>A glimmer of light? What a harsher working condition!<br /></li>
+<li>She has been walled off and could only enjoy a glimmer of light.<br /></li>
+</ul>
+<p>
+punch a hole: 打孔<br />
+</p>
+<ul class="org-ul">
+<li>Before assembling the leg into the body, we must punch a hole.<br /></li>
+<li>My neighbor complained that I punched a hole across the wall.<br /></li>
+<li>The worker will punch a hole in the wall to suspend your TV.<br /></li>
+</ul>
+<p>
+break free (from sth.): 从某事中解脱出来<br />
+</p>
+<ul class="org-ul">
+<li>You must break free from tremendous works to begin thinking.<br /></li>
+<li>After breaking free from work, I will knock at your door.<br /></li>
+<li>Little thing is known about how he broke free from the prison.<br /></li>
+</ul>
+<p>
+stick with sth.: 坚持使用某事<br />
+</p>
+<ul class="org-ul">
+<li>I decided not to stick with working for this company.<br /></li>
+<li>Fulfilling his dream, he sticks with the job which he dreamed of in his youth.<br /></li>
+<li>Following in his father's footsteps, he stopped sticking with working for Apple.<br /></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

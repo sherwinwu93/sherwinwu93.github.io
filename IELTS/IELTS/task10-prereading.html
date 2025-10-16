@@ -1,0 +1,990 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2023-10-13 Fri 15:17 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="lenovo" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org6a6a2e5">task10-prereading</a>
+<ul>
+<li><a href="#orgb29c9f6">结合之前所有课程，汉语书写[写作与阅读&amp;听力] 的关系</a></li>
+<li><a href="#org45abe14">泛读如下节选自《葛传英文写作》一书中的内容 (pdf文件) ，并用1-3句话总结 (可以用汉语) 每个篇章的核心内容。</a>
+<ul>
+<li><a href="#orgb2c183d">练习: skimming + summary，体验输出倒逼输入</a></li>
+<li><a href="#org92d083e">可以借助汉语: 直接全面先翻译成汉语并阅读</a></li>
+<li><a href="#org0a92340">边阅读思考《葛传梨英文写作》一书中的内容，边思考我的NCE23中，哪些环节对于提升英语写作是有帮助的，以及为什么?</a></li>
+<li><a href="#org194d2e8">[选修] 阅读张中行先生《作文杂谈》一书中“什么是作文”一文。感受下来自母语的铁拳暴击。</a></li>
+</ul>
+</li>
+<li><a href="#orgf1d959f">questions</a></li>
+<li><a href="#orgef7a849">材料</a></li>
+<li><a href="#org229e594">summary</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org6a6a2e5" class="outline-2">
+<h2 id="org6a6a2e5">task10-prereading</h2>
+<div class="outline-text-2" id="text-org6a6a2e5">
+<p>
+雅思写作教学框架:<br />
+1.写作与阅读&amp;听力的关系<br />
+2.如何提升写作能力?<br />
+3.雅思托福考试相关: 题型，评分标准，备考建议etc.<br />
+</p>
+
+<p>
+Task10 课前作业<br />
+材料:《葛传梨英文写作》<br />
+教学目标:<br />
+1.理解写作与阅读&amp;听力的关系<br />
+2.理解写作包含哪些内容?<br />
+3.理解如何提升写作能力?<br />
+家庭作业:<br />
+</p>
+<ol class="org-ol">
+<li>结合之前所有课程，汉语书写[写作与阅读&amp;听力] 的关系<br /></li>
+<li>泛读如下节选自《葛传英文写作》一书中的内容 (pdf文件) ，并用1-3句话总结 (可以用汉语) 每个篇章的核心内容。<br />
+<ol class="org-ol">
+<li>练习: skimming + summary，体验输出倒逼输入<br /></li>
+<li>可以借助汉语: 直接全面先翻译成汉语并阅读<br /></li>
+<li>边阅读思考《葛传梨英文写作》一书中的内容，边思考我的NCE23中，哪些环节对于提升英语写作是有帮助的，以及为什么?<br /></li>
+<li>[选修] 阅读张中行先生《作文杂谈》一书中“什么是作文”一文。感受下来自母语的铁拳暴击。<br /></li>
+</ol></li>
+</ol>
+</div>
+
+<div id="outline-container-orgb29c9f6" class="outline-3">
+<h3 id="orgb29c9f6">结合之前所有课程，汉语书写[写作与阅读&amp;听力] 的关系</h3>
+<div class="outline-text-3" id="text-orgb29c9f6">
+<p>
+阅读和听力是写作的基础.<br />
+阅读和听力是输入,写作是输出.<br />
+阅读分为精读和泛读.精读可以积攒单词~习惯用法~语法,而写作需要这些.泛读大量积攒单词,积攒一些内容,和行文的结构.<br />
+单词不必多解释.内容的话脑中有东西,才能有话讲.行文结构,看别人这样多了,自己也会跟着模仿.<br />
+听力分为精听+泛听,精听是在加强单词~习惯用法~语法~内容和行为结构,事实上比精读更进一步做了加强.泛听和泛读类似.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org45abe14" class="outline-3">
+<h3 id="org45abe14">泛读如下节选自《葛传英文写作》一书中的内容 (pdf文件) ，并用1-3句话总结 (可以用汉语) 每个篇章的核心内容。</h3>
+<div class="outline-text-3" id="text-org45abe14">
+</div>
+<div id="outline-container-orgb2c183d" class="outline-4">
+<h4 id="orgb2c183d">练习: skimming + summary，体验输出倒逼输入</h4>
+<div class="outline-text-4" id="text-orgb2c183d">
+<p>
+完成<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org92d083e" class="outline-4">
+<h4 id="org92d083e">可以借助汉语: 直接全面先翻译成汉语并阅读</h4>
+</div>
+
+<div id="outline-container-org0a92340" class="outline-4">
+<h4 id="org0a92340">边阅读思考《葛传梨英文写作》一书中的内容，边思考我的NCE23中，哪些环节对于提升英语写作是有帮助的，以及为什么?</h4>
+<div class="outline-text-4" id="text-org0a92340">
+<ol class="org-ol">
+<li>单词造句<br />
+模仿性地造句,可以为写作积累素材.<br /></li>
+<li>习惯用法造句<br />
+模仿性地造句,可以为写作积累素材.<br /></li>
+<li>跟读<br />
+反复阅读,内化了单词和习惯用法<br /></li>
+<li>摘要写作<br />
+提炼了原文,可以更好地看到有经验的作家是怎么组织自己的想法的.<br /></li>
+<li>Tell the story<br />
+同义转化,可以练就自己简单且清晰表达的能力<br /></li>
+<li>Topics for discussion<br />
+直接就联系写作了.从捕捉观点到,到大纲,再到写作的练习.<br /></li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org194d2e8" class="outline-4">
+<h4 id="org194d2e8">[选修] 阅读张中行先生《作文杂谈》一书中“什么是作文”一文。感受下来自母语的铁拳暴击。</h4>
+</div>
+</div>
+
+<div id="outline-container-orgf1d959f" class="outline-3">
+<h3 id="orgf1d959f">questions</h3>
+<div class="outline-text-3" id="text-orgf1d959f">
+<ol class="org-ol">
+<li>材料本身短,1-3句太多,感觉像翻译了.<br /></li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orgef7a849" class="outline-3">
+<h3 id="orgef7a849">材料</h3>
+<div class="outline-text-3" id="text-orgef7a849">
+<ol class="org-ol">
+<li>Something to Say.<br /></li>
+</ol>
+<p>
+Composition, as has been said in Section 1, is the art or practice of writing.<br />
+In other words, it is the art or practice of saying something in written words.<br />
+When nothing is to be said, no composition is possible.<br />
+You simply cannot learn composition if you always have nothing to say.<br />
+Since you are bent upon learning it, you must find something to say.<br />
+This finding is necessary to practice in composition.<br />
+When you come to think about it, it is not at all difficult to find something to say.<br />
+You may find it from a great many sources,<br />
+	the most common of which are perhaps personal experience, observation, conversation, and reading.<br />
+Of course you have occasion to speak and write the Han language every day.<br />
+Just ask yourself the question "How shall I say it in English?",<br />
+	and you will find something for practice in English composition.<br />
+You will find far more material than you have time for every day.”<br />
+Skimming + Summary：<br />
+要说些什么?<br />
+个人经验~观察~对话和阅读都是素材.日常生活中用汉语说的,换成英语来,这样每天就有很多材料了.<br />
+6<br />
+</p>
+
+<ol class="org-ol">
+<li>How to Say It.<br /></li>
+</ol>
+<p>
+Your question is not what to say but how to say it.<br />
+You may often have an idea or a thought that you do not know how to express.<br />
+For instance, you may not be able to express the idea of the glass tube	measuring temperature<br />
+	if you do not happen to know the word "thermometer".<br />
+To take another example, suppose you wish to apply for a position by letter but you cannot do so.<br />
+Now suppose you ask a friend to write the letter for you, and he writes it.<br />
+You read it and understand it all right.<br />
+You come to realize that you did not think of arranging those simple words in that simple order.<br />
+You did have something to say, but you did not know how to say it!<br />
+Hence the importance of studying composition.<br />
+Skimming + Summary：<br />
+怎么去说?<br />
+不会写信让朋友帮写,看了朋友的信,发现自己没有想过把简单的单词用简单的顺序组合起来.<br />
+这就是学习写作的重要性.<br />
+6<br />
+</p>
+
+<ol class="org-ol">
+<li>A Consolation.<br /></li>
+</ol>
+<p>
+I take it for granted that when you ask yourself the question<br />
+	"How shall I say it in English?", you often find that you cannot.<br />
+Well, let me give you a word of consolation.<br />
+Even experienced writers may sometimes find that they cannot say something that they wish to say.<br />
+As you are merely a young Chinese student of English,<br />
+	what cause have you to feel disappointed?<br />
+Skimming + Summary：<br />
+小安慰:<br />
+	即使是有经验的作家,有时候也说不出自己想说的,何况你仅仅是个中国学生,有什么理由失望.<br />
+</p>
+
+<ol class="org-ol">
+<li>Others May Have Said It before You.<br /></li>
+</ol>
+<p>
+As a matter of fact, many of the ideas and thoughts you often have occasion to express<br />
+	have already been expressed by others before you.<br />
+Read any page in any book carefully,<br />
+	and you will perhaps find some expressions that will help you to say things.<br />
+Many of such expressions may seem to you to be too simple to deserve much attention,<br />
+	but you cannot invent them, nor can you use them unless you have noted them.<br />
+There appear to be many Chinese students<br />
+	who have read a number of books on grammar and composition and done many exercises<br />
+		in correcting and improving sentences and yet cannot write even tolerable English.<br />
+The trouble is that they may either have not read widely enough or have not read carefully enough.”<br />
+Skimming + Summary：<br />
+其他人可能比你说的早:<br />
+中国学生,学了一堆语法和组合的书,经常不能说出蹩脚的英语.<br />
+原因是读得不够仔细,不够多.<br />
+书中有大量的表达,而你既不能自己创造,没有做好笔记又不能使用.<br />
+</p>
+
+
+<ol class="org-ol">
+<li>What to Read.<br /></li>
+</ol>
+<p>
+Since it is for the purpose of learning composition that you read,<br />
+	and since it is in present-day English prose that you ought to learn to express yourself,<br />
+	what you read must be present-day English prose.<br />
+Expressions in common use a hundred years ago may not be so at the present day.<br />
+Likewise, expressions in common use in verse may not be so in prose.<br />
+The term "present-day English prose", however, requires qualification here.<br />
+Since it is in standard English that you ought to learn to express yourself,<br />
+	what you read must not contain too much slang,<br />
+	whatever significance one may attach to the word.<br />
+Again, since it is things in everyday life that you ought to learn to write about,<br />
+	what you read must not be of a technical character.<br />
+One limitation more.<br />
+What you read must be fairly easy for you;<br />
+	too much time and energy spent in reading between the lines<br />
+	and finding out all kinds of references<br />
+	and allusions would very likely distract your mind from your purpose,<br />
+		which is to	learn English composition.<br />
+Skimming + Summary：<br />
+读什么.<br />
+读现代英语白话文,不要读那些口号过多的.<br />
+读那些跟你日常相关的,对你来说足够简单,太难会转移你学英语组合的注意力.<br />
+</p>
+
+<ol class="org-ol">
+<li>How to Read.<br /></li>
+</ol>
+<p>
+As you may have gathered from the above,<br />
+	in reading to learn English composition,<br />
+	you ought to regard the language as the main thing.<br />
+To quote from my A Word to the Wise:<br />
+	"When you read a story in English, do you read it for the story or for the English?<br />
+	This is a question that is not so foolish as it may seem.<br />
+	For I find that many students of English pay far more attention to the story<br />
+		than to the English.<br />
+They read and enjoy and for a long time afterwards remember the story,<br />
+	but do not care to study the use of words and phrases in it.<br />
+For instance, they cherish the memory of how the mystery of the eternal triangle is solved,<br />
+	but do not remember a single sentence in the story and cannot tell<br />
+		what preposition is used before or after a certain word in the speech of a certain character.”<br />
+Of course, it is all right to read and enjoy and remember a story,<br />
+	and so long as one wants to know the story only,<br />
+		one need not bother about the language.<br />
+But the case is quite different with a student of English.<br />
+I mean a student of English as distinguished from a student of stories<br />
+	or what is called the general reader”.<br />
+As you may also have gathered from the above, you ought to read very carefully.<br />
+Not only very carefully but also aloud,<br />
+	and that again and again till you know the passage by heart.<br />
+Skimming + Summary：<br />
+怎么阅读:<br />
+作为英语学习者,别光读故事.<br />
+要仔细的读里面的单词和习语,而且要反复朗读,知道内化这些单词和习语.<br />
+3<br />
+</p>
+
+<ol class="org-ol">
+<li>Self-cultivation.<br /></li>
+</ol>
+<p>
+Though it is not on the assumption<br />
+	that you are a self-taught student<br />
+	that I am writing this book,<br />
+	yet I have to point out that when it comes to reading with a view to learning composition,<br />
+	you ought to treat the matter as a form of self-cultivation.<br />
+The five selections in the above exercise are by no means<br />
+	all that you ought to read in the way indicated.<br />
+Nor should you confine yourself to what American teachers call "assignments".<br />
+Nor should you regard the reading as something to be done in a composition class.<br />
+Fortunately there is no lack of material<br />
+	in these days of easy access to various kinds of publications.<br />
+Your teacher is of course expected to be both able<br />
+	and willing to advise you in the choice of material.<br />
+Skimming + Summary：<br />
+自我修养:<br />
+	你不该把阅读看作是作业,也不应该当作组合课堂里的必须完成的事.<br />
+	把广泛且带学组合的视角去阅读当作自我修养.<br />
+</p>
+
+
+<ol class="org-ol">
+<li>Writing from Memory.<br /></li>
+</ol>
+<p>
+A very helpful exercise in composition is to write a passage from memory<br />
+	and correct your work in strict accordance with the passage.<br />
+This is tantamount to getting the author of that passage to correct your work.<br />
+Incidentally, you will do well to try this exercise in reading any passage<br />
+	just before you feel you can recite it correctly.<br />
+Skimming + Summary：<br />
+根据记忆写作:<br />
+	根据记忆写作,然后改正的自己的写作.<br />
+	这个练习要做到,你感觉任何短文看过之后都能正确复述出来.<br />
+5<br />
+</p>
+
+
+<ol class="org-ol">
+<li>Imitation, Conscious and Unconscious. （赶紧想想我们的NCE23+泛读）<br /></li>
+</ol>
+<p>
+The careful reading of suitable present-day English prose will help you<br />
+	in learning composition through imitation,<br />
+		which is either conscious or unconscious.<br />
+Things unconscious cannot be taught, of course.<br />
+Conscious imitation, however, is well worth discussing as an aid to composition.<br />
+Take the first sentence in the first selection in Exercise 1:<br />
+	"The Outline of History proved an extremely successful book",<br />
+	where the verb "proved" is a copulative one having "book" as its complement.<br />
+Now you may write as many sentences as you can in imitation of this single sentence; thus:<br />
+</p>
+<ol class="org-ol">
+<li>The old man proved the father of the young man.<br /></li>
+<li>The story proved true.<br /></li>
+<li>The experiment proved a success.<br /></li>
+<li>This book will prove very helpful to you.<br /></li>
+</ol>
+<p>
+	…<br />
+Skimming + Summary：<br />
+模仿~有意识和无意识:<br />
+	学习组合可以通过有意或无意的模仿.<br />
+	无意当然不用说了,有意地比如对于某个单词,模仿性地造句.<br />
+NCE23:<br />
+	有意识,造句,模仿,造句指南 v+v变化,四句型转化,how/where/when,结合其他习惯用法, 其他单词+词性,原文+变<br />
+泛读:<br />
+	无意识地模仿<br />
+1,2<br />
+</p>
+
+<ol class="org-ol">
+<li>Expressing Another Person's Thoughts.<br /></li>
+</ol>
+<p>
+Expressing another person's thoughts is a valuable training in English composition<br />
+	both because you may sometimes have occasion to do so<br />
+	and because it will help you to express your own.<br />
+The thoughts are there for you to express:<br />
+	there is something to say.<br />
+Besides, there are often some words and phrases for you to use.<br />
+Skimming + Summary：<br />
+表达其他人的想法:<br />
+	表达其他人的想法对你来讲也是很好的练习.<br />
+	有一些东西需要去说,同时也有单词和习语需要去用.<br />
+</p>
+
+<ol class="org-ol">
+<li>Paraphrasing Sentences.<br /></li>
+</ol>
+<p>
+Paraphrasing is a simple form of expressing another person’s thoughts.<br />
+It means giving the meaning of a passage in other words,<br />
+	that is, giving it a simpler and clearer expression.<br />
+It may be called close reproduction or close retelling.<br />
+But it is not mere substitution of words, nor mere sentence transformation.<br />
+Skimming + Summary：<br />
+同义句:<br />
+	同义句就是用更简单清楚的句子表达原先的意思.<br />
+	但是不仅仅是单词缩简一下,或者句式转换一下.<br />
+</p>
+
+<ol class="org-ol">
+<li>Suggestions for Paraphrasing.<br /></li>
+</ol>
+<p>
+In order to paraphrase well, it is necessary to follow a few simple suggestions:<br />
+</p>
+<ol class="org-ol">
+<li>Study the passage carefully to get a thorough grasp of its meaning.<br />
+You can never paraphrase anything that you do not fully understand.<br /></li>
+<li>Try to express the meaning in the simplest and clearest manner you can.<br />
+You may use any word or phrase in the original that you find simple and clear enough;<br />
+ do not avoid any word or phrase merely because it is in the original.<br />
+Similarly, while it is anything but necessary to follow the construction of the original,<br />
+ it is not advisable to change merely for the sake of a change.<br />
+It is often better to paraphrase a sentence in two or more sentences.<br /></li>
+<li>Get rid of all figurative language.<br /></li>
+<li>Paraphrase a passage in as many ways as you can<br />
+  till you come to what you consider the best way.<br />
+Though you may not be able to write such good English as the original,<br />
+  yet you ought to aim at doing so — remembering, however,<br />
+  that you must express the meaning in a simpler and clearer manner.<br /></li>
+</ol>
+<p>
+Skimming + Summary：<br />
+同义转化的建议:<br />
+</p>
+<ol class="org-ol">
+<li>仔细理解短文的意思<br /></li>
+<li>尽全力表达更简单和清楚,遵循原本的结构,造2-3个.<br /></li>
+<li>别修辞<br /></li>
+<li>多用几种方式对短文同义转化,直到你觉得那是最好的.<br /></li>
+</ol>
+<hr />
+<ol class="org-ol">
+<li>Condensing.<br /></li>
+</ol>
+<p>
+Condensing is another form of expressing another person's thoughts.<br />
+It means giving the meaning of a passage, a story, an essay, a poem, or even a whole book,<br />
+	in one or more sentences.<br />
+It may be called summarizing, abstract-writing, or précis-writing.<br />
+Skimming + Summary：<br />
+压缩:<br />
+	用一句话或者多句话表示短文的意思,也叫总结~抽象<br />
+4<br />
+</p>
+
+<ol class="org-ol">
+<li>Suggestions for Condensing.<br /></li>
+</ol>
+<p>
+Below are some simple suggestions for condensing:<br />
+</p>
+<ol class="org-ol">
+<li>Study the original carefully to get a thorough grasp or its meaning.<br /></li>
+<li>Pick out the main points, and leave out all unnecessary points.<br /></li>
+<li>If possible, arrange the points in the condensation in the same order as in the original.<br /></li>
+<li>Unless the original is a short passage,<br />
+ you had better write the main points down instead of merely picking them out mentally,<br />
+ and arrange them in something like an outline.<br />
+This note-taking and outline-making will prepare you for original composition.<br />
+They will be treated further on in this chapter.<br /></li>
+</ol>
+<p>
+Skimming + Summary：<br />
+关于压缩的建议:<br />
+</p>
+<ol class="org-ol">
+<li>仔细学习理解主旨和意思<br /></li>
+<li>找出主要点,抛弃不要紧点<br /></li>
+<li>可以的话,把缩写点按原文顺序排列<br /></li>
+<li>不是的短文,有必要写下来,把他们做成大纲.<br /></li>
+</ol>
+<p>
+	记笔记和弄大纲为你准备原始的composition<br />
+Expressing your own ideas<br />
+	还可以靠自己去总结,不单单依赖文中的句子.<br />
+</p>
+
+<ol class="org-ol">
+<li>Choosing a Subject.<br /></li>
+</ol>
+<p>
+Composition is saying something about something.<br />
+This latter something is the subject. …<br />
+Skimming + Summary：<br />
+选个科目:<br />
+	写作就是说一些A关于B,B就是科目.<br />
+</p>
+
+<ol class="org-ol">
+<li>Taking Notes.<br /></li>
+</ol>
+<p>
+When you have chosen a subject, think about it hard.<br />
+Ideas will come into your mind.<br />
+Take a note of each as it comes.<br />
+The ideas are likely to come in a confusing manner:<br />
+	some may overlap, some may be unimportant, some may he irrelevant,<br />
+	some may be indefinite.<br />
+Never mind.<br />
+Note them all down.<br />
+Catch them before they may escape.<br />
+Do not stop until no more ideas come.<br />
+Suppose your subject is your family (whatever your title may be).<br />
+Such ideas as the following may come into your mind:<br />
+</p>
+<ol class="org-ol">
+<li>My father.<br /></li>
+<li>My mother.<br /></li>
+<li>My brothers.<br /></li>
+<li>My sisters.<br /></li>
+<li>My grandfather, dead since 1939.<br /></li>
+<li>My grandmother, an invalid, dead since 1937.<br /></li>
+<li>My uncle, a widower since 1967.<br /></li>
+<li>My aunt, an old maid.<br /></li>
+<li>A distant relation, having been living with us for nearly twenty years.<br /></li>
+<li>A cat and a dog.<br /></li>
+<li>Recent removal into a new house.<br /></li>
+<li>A small garden.<br /></li>
+<li>Pleasant surroundings.<br /></li>
+</ol>
+<p>
+14.Mutual love among all members of my family.<br />
+</p>
+<ol class="org-ol">
+<li>Occasional tiffs between my younger brother and younger sister.<br /></li>
+<li>Not rich, but nothing to worry about.<br /></li>
+<li>My father's hobby.<br /></li>
+</ol>
+<p>
+Skimming + Summary：<br />
+做笔记:<br />
+记笔记:<br />
+	选个科目后,脑子想到什么记什么,不管有用没用,相关还是不相关<br />
+</p>
+
+
+<ol class="org-ol">
+<li>Making an Outline.<br /></li>
+</ol>
+<p>
+When you have taken enough notes about your subject,<br />
+	consider each to see whether it is closely connected with your subject.<br />
+The answer to this question depends partly upon how long your composition is to be. …<br />
+Skimming + Summary：<br />
+做大纲:<br />
+	捕捉想法后,看每个想法是否和主题相关,并且根据篇幅来做选择.<br />
+</p>
+
+<ol class="org-ol">
+<li>Making Outlines of What You Read.<br /></li>
+</ol>
+<p>
+Making outlines of what you read is a valuable training in making outlines;<br />
+	for it shows you how experienced writers arrange their ideas.<br />
+Skimming + Summary：<br />
+把读的做大纲:<br />
+	可以让你看到有经验的作家是怎么组织他们的想法.<br />
+</p>
+
+<ol class="org-ol">
+<li>Expanding an Outline.<br /></li>
+</ol>
+<p>
+When you have finished your outline,<br />
+	expand it into a composition,<br />
+	that is, do the actual writing.<br />
+You may be able to do it at a sitting,<br />
+	or you may have to stop from time to time.<br />
+In either case, you will do well to follow the following suggestions:<br />
+</p>
+<ol class="org-ol">
+<li>Do something more than merely expanding each point in your outline into a complete sentence.<br />
+Additional ideas are often necessary.<br /></li>
+<li>Do not follow your outline slavishly<br />
+if you find it desirable or necessary to make any omission or addition or alteration or adaptation.<br /></li>
+<li>As a rule expand each main point in your outline into a paragraph.<br /></li>
+<li>Consult one or more dictionaries as often as you need.<br /></li>
+<li>Do not drag in any word or idiom just to show off your knowledge of it. (注意思考)<br /></li>
+<li>Revise your work very carefully.<br />
+Do not be content with anything short of your best.<br /></li>
+</ol>
+<p>
+Skimming + Summary：<br />
+扩展大纲:<br />
+</p>
+<ol class="org-ol">
+<li>别一个点一句话,附加点经常很必要<br /></li>
+<li>别完全按大纲,增删改都正常<br /></li>
+<li>扩展一个主要观点为一个段落<br /></li>
+<li>查多个字典<br /></li>
+<li>别卖弄单词和习语<br /></li>
+<li>仔细检查<br /></li>
+</ol>
+<hr />
+<ol class="org-ol">
+<li>What is a Paragraph? (认真思考，下⽂答案并不明晰，但是答案本身对提升写作分数帮助巨⼤)<br /></li>
+</ol>
+<p>
+A paragraph may be defined as a distinct part or section of any piece of writing,<br />
+	whether of one or more sentences,<br />
+	that deals with a particular point of the subject.<br />
+It is to a sentence what a sentence is to a word.<br />
+The term is also applied to a short composition<br />
+	consisting of a group of sentences dealing with a single topic<br />
+	and closely related to each other, such as a leaderette（这个单词不会，影响您理解整段⽂字梗概么？）in a newspaper.<br />
+Skimming + Summary：<br />
+啥是段落:<br />
+	段落是文章中单独的一小块,处理科目的一个点.<br />
+	段落之于句子就像句子之于单词.<br />
+	也被,几句话用在短文中处理单独主题,但是互相紧密联系.<br />
+</p>
+<hr />
+<p>
+不影响<br />
+</p>
+<ol class="org-ol">
+<li>Paragraphs and Outline.<br /></li>
+</ol>
+<p>
+The third suggestion given in Section 48 on expanding an outline into a composition is:<br />
+	"As a rule expand each main point in your outline into a paragraph".<br />
+When you have made an outline carefully, therefore, you ought to have little difficulty in paragraphing.<br />
+Skimming + Summary：<br />
+段落和大纲:<br />
+	认真制作大纲的话,你搞段落就只有一点小困难了.<br />
+</p>
+
+
+<ol class="org-ol">
+<li>Topic Sentence. （可以回想polar bear 或者 ⻄⽅⽂明简史第三章的某些内容思考）<br /></li>
+</ol>
+<p>
+The main point to which a paragraph confines itself is called the topic,<br />
+	and when the topic is definitely stated in one of the sentences in the paragraph,<br />
+	that sentence is called the topic sentence.<br />
+It must not be supposed, however,<br />
+	that every paragraph must have a topic sentence.<br />
+While in a paragraph of exposition or argument the topic is as a rule definitely stated in a sentence,<br />
+	it is, in a paragraph of narration or description,<br />
+		usually implied father than stated.<br />
+The topic sentence occurs usually at the beginning of the paragraph,<br />
+	but sometimes at the end and sometimes in the middle.<br />
+Occasionally the topic is stated at or near the beginning and repeated,<br />
+	in different words, at or near the end.<br />
+Skimming + Summary：<br />
+主题句:<br />
+	表述整个段落的句子叫主题句,所有的段落都有主题句.有时候是暗示,而不是直接列出来.<br />
+	通常行文开始,或结束,有时候也在正中间,或者反复强调的句子.<br />
+</p>
+
+
+<ol class="org-ol">
+<li>Qualities of a Good Paragraph.<br /></li>
+</ol>
+<p>
+A paragraph should possess unity, coherence, and emphasis.<br />
+Unity, which is the fundamental quality, can be secured by sticking to the topic.<br />
+This is not difficult when you have a carefully made outline to follow.<br />
+Coherence can be secured by the use of connecting words<br />
+	and phrases and the avoidance of successive short sentences.<br />
+Emphasis can be secured by writing the topic sentence at the beginning<br />
+	or at the end, by giving more space to the central idea, and …<br />
+Skimming + Summary：<br />
+好段落的要点:<br />
+	一个段落应该有统一性,连贯性和强调点.<br />
+	统一性,小心按大纲就没问题.<br />
+	连贯性,用紧密联系的词和习语,避免用太多的短句.<br />
+	强调句,确定在文章开始和结束写主题句.<br />
+</p>
+
+
+<ol class="org-ol">
+<li>Transition between Paragraphs.<br /></li>
+</ol>
+<p>
+The transition between paragraphs should, needless to say, be as easy and smooth as possible,<br />
+	so that the reader will feel no break of thought but merely a natural step forward.<br />
+This result can usually be accomplished by the use of connecting words and phrases<br />
+	at the beginning of paragraphs.<br />
+Skimming + Summary：<br />
+段与段的转变:<br />
+	应该尽可能的平滑和简单.通常可以被相关联的词和习语联系起来.<br />
+</p>
+
+<p>
+以下篇章取⾃张中⾏先⽣《作⽂杂谈》⼀书<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org229e594" class="outline-3">
+<h3 id="org229e594">summary</h3>
+<div class="outline-text-3" id="text-org229e594">
+<p>
+要说些什么?<br />
+个人经验~观察~对话和阅读都是素材.日常生活中用汉语说的,换成英语来,这样每天就有很多材料了.<br />
+</p>
+
+<p>
+怎么去说?<br />
+不会写信让朋友帮写,看了朋友的信,发现自己没有想过把简单的单词用简单的顺序组合起来.<br />
+这就是学习写作的重要性.<br />
+</p>
+
+<p>
+小安慰:<br />
+	即使是有经验的作家,有时候也说不出自己想说的,何况你仅仅是个中国学生,有什么理由失望.<br />
+</p>
+
+<p>
+其他人可能比你说的早:<br />
+中国学生,学了一堆语法和组合的书,经常不能说出蹩脚的英语.<br />
+原因是读得不够仔细,不够多.<br />
+书中有大量的表达,而你既不能自己创造,没有做好笔记又不能使用.<br />
+</p>
+
+<p>
+读什么.<br />
+读现代英语白话文,不要读那些口号过多的.<br />
+读那些跟你日常相关的,对你来说足够简单,太难会转移你学英语组合的注意力.<br />
+</p>
+
+<p>
+怎么阅读:<br />
+作为英语学习者,别光读故事.<br />
+要仔细的读里面的单词和习语,而且要反复朗读,知道内化这些单词和习语.<br />
+</p>
+
+<p>
+自我修养:<br />
+	你不该把阅读看作是作业,也不应该当作组合课堂里的必须完成的事.<br />
+	把广泛且带学组合的视角去阅读当作自我修养.<br />
+</p>
+
+<p>
+根据记忆写作:<br />
+	根据记忆写作,然后改正的自己的写作.<br />
+	这个练习要做到,你感觉任何短文看过之后都能正确复述出来.<br />
+</p>
+
+<p>
+模仿~有意识和无意识:<br />
+	学习组合可以通过有意或无意的模仿.<br />
+	无意当然不用说了,有意地比如对于某个单词,模仿性地造句.<br />
+</p>
+
+<p>
+表达其他人的想法:<br />
+	表达其他人的想法对你来讲也是很好的练习.<br />
+	有一些东西需要去说,同时也有单词和习语需要去用.<br />
+</p>
+
+<p>
+同义句:<br />
+	同义句就是用更简单清楚的句子表达原先的意思.<br />
+	但是不仅仅是单词缩简一下,或者句式转换一下.<br />
+同义转化的建议:<br />
+</p>
+<ol class="org-ol">
+<li>仔细理解短文的意思<br /></li>
+<li>尽全力表达更简单和清楚,遵循原本的结构,造2-3个.<br /></li>
+<li>别修辞<br /></li>
+<li>多用几种方式对短文同义转化,直到你觉得那是最好的.<br /></li>
+</ol>
+
+<p>
+压缩:<br />
+	用一句话或者多句话表示短文的意思,也叫总结~抽象<br />
+关于压缩的建议:<br />
+</p>
+<ol class="org-ol">
+<li>仔细学习理解主旨和意思<br /></li>
+<li>找出主要点,抛弃不要紧点<br /></li>
+<li>可以的话,把缩写点按原文顺序排列<br /></li>
+<li>不是的短文,有必要写下来,把他们做成大纲.<br /></li>
+</ol>
+<p>
+记笔记和弄大纲为你准备原始的composition<br />
+</p>
+
+
+<p>
+选个科目:<br />
+	写作就是说一些A关于B,B就是科目.<br />
+记笔记:<br />
+	选个科目后,脑子想到什么记什么,不管有用没用,相关还是不相关<br />
+做大纲:<br />
+	捕捉想法后,看每个想法是否和主题相关,并且根据篇幅来做选择.<br />
+把读的做大纲:<br />
+	可以让你看到有经验的作家是怎么组织他们的想法.<br />
+扩展大纲:<br />
+</p>
+<ol class="org-ol">
+<li>别一个点一句话,附加点经常很必要<br /></li>
+<li>别完全按大纲,增删改都正常<br /></li>
+<li>扩展一个主要观点为一个段落<br /></li>
+<li>查多个字典<br /></li>
+<li>别卖弄单词和习语<br /></li>
+<li>仔细检查<br /></li>
+</ol>
+<p>
+啥是段落:<br />
+	段落是文章中单独的一小块,处理科目的一个点.<br />
+	段落之于句子就像句子之于单词.<br />
+	也被,几句话用在短文中处理单独主题,但是互相紧密联系.<br />
+段落和大纲:<br />
+	认真制作大纲的话,你搞段落就只有一点小困难了.<br />
+主题句:<br />
+	表述整个段落的句子叫主题句,所有的段落都有主题句.有时候是暗示,而不是直接列出来.<br />
+	通常行文开始,或结束,有时候也在正中间,或者反复强调的句子.<br />
+好段落的要点:<br />
+	一个段落应该有统一性,连贯性和强调点.<br />
+	统一性,小心按大纲就没问题.<br />
+	连贯性,用紧密联系的词和习语,避免用太多的短句.<br />
+	强调句,确定在文章开始和结束写主题句.<br />
+段与段的转变:<br />
+	应该尽可能的平滑和简单.通常可以被相关联的词和习语联系起来.<br />
+</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-08-06 Tue 22:27 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-orged66e45" class="outline-2">
+<h2 id="orged66e45">Lesson 3 Please send me a card.</h2>
+<div class="outline-text-2" id="text-orged66e45">
+<p class="verse">
+How many cards did the writer send?<br />
+<br />
+Postcards always spoil my holidays.<br />
+Last summer, I went to Italy.<br />
+I visited museums and sat in public gardens.<br />
+A friendly waiter <b>taught me a few words of Italian</b>.<br />
+Then he <b>lent me a book</b>.<br />
+I read a few lines, but I did not understand a word.<br />
+Every day I <b>thought about</b> postcards.<br />
+My holidays passed quickly, but I did not send cards to my friends.<br />
+<b>On the last day</b> I made a big decision.<br />
+I got up early and bought thirty-seven cards.<br />
+I <b>spent the whole day in my room</b>, but I did not write a single card!<br />
+</p>
+</div>
+<div id="outline-container-org6a4421d" class="outline-3">
+<h3 id="org6a4421d">expression</h3>
+<div class="outline-text-3" id="text-org6a4421d">
+<p>
+send [send] v.寄,送<br />
+postcard [ˈpəʊstkɑːd] n.明信片<br />
+spoil [spɔɪl] v. 使索然无味,损坏<br />
+museum [mjuˈziːəm] n.博物馆<br />
+public [ˈpʌblɪk] adj.公共的<br />
+friendly [ˈfrendli] adj.友好的<br />
+waiter [ˈweɪtə(r)] n.服务员<br />
+lend [lend] v.借给<br />
+decision [dɪˈsɪʒ(ə)n] n.决定<br />
+whole [həʊl] adj.整个的<br />
+single [ˈsɪŋɡ(ə)l] adj.唯一的,单一的<br />
+</p>
+
+<p>
+buy sb. sth. = buy sth. for sb. 买东西给某人<br />
+send sb. sth. = send sth. to sb. 送东西给某人<br />
+lend sb. sth. = lend sth. to sb. 借东西给某人<br />
+borrow sth. from sb. / borrow sb. sth. 从某人那借东西<br />
+make a decision: 做决定<br />
+</p>
+
+<hr />
+<p>
+was/were/did: 过去的状态(was/were) &amp; 动作发生在过去(did) &amp; 和过去时间点连用<br />
+</p>
+
+<p>
+teach sb. sth. 教某人某事<br />
+lend sb. sth. 借给某人某物<br />
+think about sth./sb. 想某人某物<br />
+on the last day 在最后一天<br />
+make a decision 做决定<br />
+send sth. to sb. 送某人某物<br />
+spend st. sw. 在某地花多少时间<br />
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-orgb562dbf" class="outline-3">
+<h3 id="orgb562dbf">单词造句</h3>
+<div class="outline-text-3" id="text-orgb562dbf">
+<p>
+buy sb. sth.<br />
+</p>
+<ul class="org-ul">
+<li>I bought my wife an expensive iphone 13.<br /></li>
+<li>Did you buy your wife an expensive iphone 13?<br /></li>
+<li>What did you buy for your wife?<br /></li>
+<li>Why did you buy an expensive iphone 13 for your wife?<br /></li>
+<li>When did you buy your wife an expensive iphone 13.<br /></li>
+</ul>
+<p>
+send sb. sth.<br />
+</p>
+<ul class="org-ul">
+<li>I sent my wife the tea.<br /></li>
+<li>Did you send your wife tea?<br /></li>
+<li>Why did you send your wife tea?<br /></li>
+<li>When did you send tea to your wife?<br /></li>
+<li>How did you send tea to your brother?<br /></li>
+</ul>
+<p>
+lend sb. sth.<br />
+</p>
+<ul class="org-ul">
+<li>I usually lend money to my friend!<br /></li>
+<li>Did you lend money to your friend?<br /></li>
+<li>Why did you lend money to your friend?<br /></li>
+<li>What did you lend to your friend?<br /></li>
+<li>Where did you lend money to your friend?<br /></li>
+</ul>
+<p>
+borrow sth. from sb.<br />
+</p>
+<ul class="org-ul">
+<li>I borrow a book from public library yesterday.<br /></li>
+<li>What did you borrow from public library yesterday?<br /></li>
+<li>When did you borrow a book from library?<br /></li>
+<li>Did you borrow a book from public library yesterday?<br /></li>
+<li>How often do you borrow books from public library.<br /></li>
+</ul>
+<p>
+make a decision<br />
+</p>
+<ul class="org-ul">
+<li>According to the fact, I made this decision.<br /></li>
+<li>Did you make a decision about learning?<br /></li>
+<li>What did you make?<br /></li>
+<li>Why did you make this decision?<br /></li>
+<li>When did you make this decision?<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgc6e33b9" class="outline-3">
+<h3 id="orgc6e33b9">反复听电影片段</h3>
+</div>
+<div id="outline-container-org9d5723c" class="outline-3">
+<h3 id="org9d5723c">Pattern Drill 写+读</h3>
+<div class="outline-text-3" id="text-org9d5723c">
+<ul class="org-ul">
+<li>1t: work - at the weekend<br />
+s1: Do you ever work at the weekend?<br />
+s2: Yes, I worked last weekend.<br />
+<ul class="org-ul">
+<li>catch a cold - in winter<br />
+Do you ever catch a cold in winter?<br />
+Yes, I caught a cold last winter.<br /></li>
+<li>stay in bed - at the weekend<br />
+Do you ever stay in bed at the weekend?<br />
+Yes, I stayed in bed last weekend.<br /></li>
+<li>watch TV - at night<br />
+Do you ever watch TV at night?<br />
+Yes, I watched TV last night.<br /></li>
+<li>play golf - in summer<br />
+Do you ever play gold in summer?<br />
+Yes, I played gold last summer.<br /></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org44cd8f7" class="outline-3">
+<h3 id="org44cd8f7">给自己讲解</h3>
+</div>
+<div id="outline-container-org5b30702" class="outline-3">
+<h3 id="org5b30702">红皮书</h3>
+</div>
+<div id="outline-container-orgf87cbea" class="outline-3">
+<h3 id="orgf87cbea">习惯用法造句</h3>
+<div class="outline-text-3" id="text-orgf87cbea">
+<p>
+teach sb. sth.<br />
+</p>
+<ul class="org-ul">
+<li>Sedgewick taught me the knowledge of algorithms.<br /></li>
+<li>Who taught you the knowledge of algorithms?<br /></li>
+<li>Did Sedgewick teach you the knowledge of algorithms?<br /></li>
+<li>Why did Sedgewick teach you the knowledge of algorithms?<br /></li>
+</ul>
+<p>
+think about sth.<br />
+</p>
+<ul class="org-ul">
+<li>I think about it every night and every day.<br /></li>
+<li>What do you think about every night and every day?<br /></li>
+<li>How often do you think about it?<br /></li>
+<li>Why do you think about it?<br /></li>
+</ul>
+<p>
+on the last day<br />
+</p>
+<ul class="org-ul">
+<li>I had finished my homework on the last day.<br /></li>
+<li>Did you have finished your homework on the last day?<br /></li>
+<li>When have you finished your homework?<br /></li>
+<li>When did you finish your homework on the last day?<br /></li>
+</ul>
+<p>
+spend st. sw.<br />
+</p>
+<ul class="org-ul">
+<li>I spend the half day at the office.<br /></li>
+<li>How long did we spend at the office?<br /></li>
+<li>Where did you spend the whole day?<br /></li>
+<li>Why did you spend the half day at the office?<br /></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org7824bda" class="outline-3">
+<h3 id="org7824bda">跟读至背诵</h3>
+</div>
+<div id="outline-container-orgdad0371" class="outline-3">
+<h3 id="orgdad0371">Ask me if 写+读</h3>
+<div class="outline-text-3" id="text-orgdad0371">
+<ol class="org-ol">
+<li>I went to Italy for my summer holidays. Where/Why/When<br />
+Where did you go for your summer holidays?<br />
+Why did you go to Italy for your summer holidays?<br />
+When did you go to Italy?<br /></li>
+<li>I visited museums. What/When<br />
+What did you visit?<br />
+When did you visit museums?<br /></li>
+<li>I sat in public gardens. Where<br />
+Where did you sit?<br /></li>
+<li>I learnt a little Italian. How much<br />
+How much Italian did you learn?<br /></li>
+<li>A friendly waiter taught me. Who<br />
+Who taught you?<br /></li>
+<li>He read a book. What/Who<br />
+What did he read?<br />
+Who read a book?<br /></li>
+<li>I read a few lines. How many<br />
+How many lines did you read?<br /></li>
+<li>I thought about postcards every day. How often/ What<br />
+How often did you think about postcards?<br />
+What did you think everyday?<br /></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-orgdf3235c" class="outline-3">
+<h3 id="orgdf3235c">摘要写作</h3>
+<div class="outline-text-3" id="text-orgdf3235c">
+<p>
+Postcards always spoilt his holidays.<br />
+He went to Italy last summer, but he thought about postcards every day.<br />
+He didn't send any postcards to his friends.<br />
+He made a big decision, he bought 37 cards on the last day.<br />
+He stayed in his room all day, but he didn't write any cards.<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org423e945" class="outline-3">
+<h3 id="org423e945">tell the story 口语</h3>
+</div>
+<div id="outline-container-org9bc7052" class="outline-3">
+<h3 id="org9bc7052">Topics for discussion</h3>
+<div class="outline-text-3" id="text-org9bc7052">
+<ol class="org-ol">
+<li>How did you spend your holidays last year? Where did you go and what did you do?<br /></li>
+<li>Talk about some of the things that can spoil a holiday.<br /></li>
+<li>What is the best way to learn a foreign language?<br /></li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

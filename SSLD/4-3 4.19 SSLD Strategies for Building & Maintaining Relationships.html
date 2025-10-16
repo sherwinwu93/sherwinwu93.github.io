@@ -1,0 +1,597 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-01-13 Mon 19:51 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-org0447208" class="outline-2">
+<h2 id="org0447208">4-3 4.19 SSLD Strategies for Building &amp; Maintaining Relationships</h2>
+<div class="outline-text-2" id="text-org0447208">
+<p class="verse">
+So, so far we've talked a lot about the key concepts in building a relationship.<br />
+But of course with SSLD it's all about strategies and skills really applied to a relationship.<br />
+So, what are some ways that we can really apply this to building and maintaining a relationship?<br />
+<br />
+Well, actually in SSLD, we have extensive experience working with people in various contexts.<br />
+Like, we have helped people who have difficulties in engaging in interpersonal relationships.<br />
+Like, some people who might have like long history of mental health concerns<br />
+&#xa0;and we also work with people with social phobia.<br />
+We also work with people who do not have like clinical challenges<br />
+&#xa0;and we have been running like dating workshops in different parts of the world for people<br />
+&#xa0;&#xa0;who want to start a relationship through dating.<br />
+We also have extensive experience working with couples<br />
+&#xa0;&#xa0;who are like either going through some challenging moments in their relationship<br />
+&#xa0;or people who just want to be enhancing their relationship.<br />
+And I have to say, we really need to thank all those people who have come to us.<br />
+Because I think,<br />
+&#xa0;while they think that they learned a lot from us and benefited from the experience,<br />
+&#xa0;I think we actually learned a lot from them and through this working with them,<br />
+&#xa0;&#xa0;we have gained very valuable lessons.<br />
+<br />
+We do have quite a few very like specific procedures<br />
+&#xa0;that we are utilizing in this different context.<br />
+We have like listening exercise for instance,<br />
+&#xa0;which I learned can be traced back to people like Carl Rogers.<br />
+Getting people to learn to listen carefully before they speak<br />
+&#xa0;so that they will always like have accurate understanding of their partner's message<br />
+&#xa0;&#xa0;and then like the topic doesn't get shifted and displaced.<br />
+<br />
+We also have like simple procedures like taking what we call behavioural diary,<br />
+&#xa0;which will record your experience of the relationship.<br />
+And I just want to give you this example.<br />
+Maybe I've already used it before in this course, I can't remember.<br />
+But like we gave a behavioural diary<br />
+&#xa0;for a couple to be recording their activity for one week, right.<br />
+Basically, they have to account for every hour.<br />
+And then you will have like one person<br />
+&#xa0;coming back saying that like these are the hours that I spend with my partner.<br />
+And then the partner will give us another record which shows a very different tally all the time.<br />
+Because, the guy thinks<br />
+&#xa0;that like sitting in the family room watching hockey is spending time with his partner.<br />
+And the woman who is working in the kitchen doesn't really think that is spending time together.<br />
+So that actually helps them to understand better,<br />
+&#xa0;we also ask them to colour code diary<br />
+&#xa0;so that they have like an indication of how satisfied or how happy they are with this experience<br />
+&#xa0;so that they would have some clue<br />
+&#xa0;&#xa0;with regard to what are the things that they enjoy doing together<br />
+&#xa0;&#xa0;&#xa0;and what are the things that they hate doing together, right.<br />
+So, that is one example of very specific procedures that we use.<br />
+<br />
+I can give you a third example, which is something we call the 3D appreciation exercise.<br />
+The 3D refers to discover, document, and display.<br />
+So, basically you have to discover something that you appreciate in your partner.<br />
+And then you have to document it.<br />
+And then you stage a display, you know, to openly recognized.<br />
+It doesn't have to be public.<br />
+It can be just like two of you, or you know, close friends or family, it doesn't matter.<br />
+Like you decide, but it would be an event<br />
+&#xa0;in which one person would be displaying appreciation for another person.<br />
+So like we have very specific procedures that are in a way time-tested.<br />
+We have like asked people in very different circumstances to try to use them,<br />
+&#xa0;usually with very encouraging results.<br />
+<br />
+The SSLD procedures on building and maintaining relationships shared in lecture are:<br />
+&#xa0;One, the listening exercises by Carl Rogers<br />
+&#xa0;&#xa0;that would allow you to reconstruct the speakers' thinking and feeling<br />
+&#xa0;&#xa0;&#xa0;and being able to relate their understanding back to the speaker.<br />
+Another one is behavioural diary,<br />
+&#xa0;which helps you to assess the activities, events and experiences of the relationship.<br />
+This helps a couple understand each other's needs and feelings better<br />
+&#xa0;by comparing daily activities and subjective moments together.<br />
+Lastly, we introduce a 3D appreciation exercise,<br />
+&#xa0;where the 3Ds stand for discover, document, and display.<br />
+This helps the couple appreciate each other more<br />
+&#xa0;by discovering the things you appreciate of your partner,<br />
+&#xa0;&#xa0;document it, and display openly to each other of your gratefulness or appreciation.<br />
+</p>
+</div>
+<div id="outline-container-org2bffc77" class="outline-3">
+<h3 id="org2bffc77">expression</h3>
+<div class="outline-text-3" id="text-org2bffc77">
+<p>
+extensive [ɪkˈstensɪv]: adj. large in size, amount, or degree广泛的<br />
+concern [kənˈsɜrn]: n. a feeling of worry about something important担心,关心<br />
+clinical [ˈklɪnɪk(ə)l]: adj. relating to treating or testing people who are sick临床的, 病房用的<br />
+shift [ʃɪft]: v. if someone’s opinions, beliefs etc shift, they change改变<br />
+displace [dɪsˈpleɪs]: v. to take the place or position of something or someone SYN replace转移,置换<br />
+procedure [prəˈsidʒər]: n. a way of doing something, especially the correct or usual way ⇨ process过程,程序<br />
+diary [ˈdaɪəri]: n. a book in which you write down the things that happen to you each day SYN journal日记<br />
+tally [ˈtæli]: n. a record of how much you have spent, won etc by a particular point in time账<br />
+clue [klu]: n. information that helps you understand the reasons why something happens线索<br />
+time-tested: adj. That has been tested by time; of which the effectiveness, worth, etc., has been established over time.经受时间考验的<br />
+</p>
+<hr />
+<p>
+be traced back to &#x2026;: 追述到&#x2026;<br />
+get sb. to do sth.: 让某人做某事<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org11fad54" class="outline-3">
+<h3 id="org11fad54">ch.</h3>
+<div class="outline-text-3" id="text-org11fad54">
+<p>
+4-3 4.19 SSLD 构建与维系关系的策略<br />
+</p>
+
+<p>
+到目前为止，我们已经讨论了很多关于构建关系的关键概念。<br />
+但当然，在SSLD中，更重要的是如何将策略和技能真正应用到关系中。<br />
+那么，有哪些方法可以真正将这些策略应用于构建和维系关系呢？<br />
+</p>
+
+<p>
+实际上，在SSLD中，我们在各种情境中与人合作的经验非常丰富。<br />
+例如，我们帮助过一些在建立人际关系方面有困难的人。<br />
+这些人可能有着长期的心理健康问题历史，<br />
+我们还与患有社交恐惧症的人合作。<br />
+同时，我们也与没有临床问题的人合作。<br />
+我们曾在世界不同地区举办约会工作坊，<br />
+帮助那些希望通过约会开始一段关系的人。<br />
+此外，我们还在帮助情侣方面经验丰富，<br />
+无论是正在经历关系挑战的伴侣，<br />
+还是那些希望提升关系质量的人。<br />
+我必须感谢那些曾经向我们寻求帮助的人们，<br />
+因为我觉得，虽然他们认为从我们这里学到了很多并从中受益，<br />
+但实际上，我们也从他们身上学到了很多。<br />
+通过与他们的合作，我们获得了非常宝贵的经验教训。<br />
+</p>
+
+<p>
+我们确实在不同情境中采用了许多非常具体的程序。<br />
+例如，我们有一种叫倾听练习的方法，<br />
+它可以追溯到卡尔·罗杰斯（Carl Rogers）。<br />
+通过这种练习，人们可以在开口说话前学会认真倾听，<br />
+这样他们就能准确理解对方的意思，<br />
+从而避免话题被转移或偏离。<br />
+</p>
+
+<p>
+此外，我们还使用了像行为日记这样的简单程序，<br />
+用来记录你在关系中的经历。<br />
+我想举个例子，或许我之前在课程中已经提到过，但我记不太清了。<br />
+我们让一对伴侣记录一周的活动，<br />
+基本上，他们需要记录每个小时的活动内容。<br />
+然后，我们会发现一个人记录的“和伴侣一起的时间”，<br />
+和对方记录的往往完全不一致。<br />
+比如，男方可能认为，坐在家庭房里看冰球比赛就是和伴侣在一起的时间，<br />
+而女方在厨房忙碌时并不觉得那是共同度过的时光。<br />
+这帮助他们更好地理解彼此。<br />
+我们还要求他们用颜色标记日记，<br />
+以显示他们对某段经历的满意度或幸福感，<br />
+这样他们可以知道哪些活动是双方享受的，<br />
+而哪些是他们不喜欢一起做的。<br />
+这就是我们使用的一个具体程序的例子。<br />
+</p>
+
+<p>
+我还可以再举一个例子，叫做3D欣赏练习。<br />
+3D代表“发现（Discover）”、“记录（Document）”和“展示（Display）”。<br />
+基本上，你需要发现伴侣身上让你欣赏的某件事情，<br />
+然后把它记录下来，接着策划一个展示活动。<br />
+展示可以是公开的，也可以只是两个人之间的，<br />
+或者与亲密的朋友或家人一起，形式由你决定。<br />
+但关键是这会成为一个特殊的时刻，<br />
+一个人向另一个人表达欣赏和感激的时刻。<br />
+因此，我们有很多这样的具体程序，<br />
+它们经过时间的验证，我们也曾在各种情况下邀请人们尝试使用，<br />
+通常都取得了非常令人鼓舞的效果。<br />
+</p>
+
+<p>
+课堂中分享的SSLD在构建和维系关系方面的程序包括：<br />
+</p>
+
+<p>
+卡尔·罗杰斯的倾听练习，<br />
+这可以帮助你重构讲话者的想法和感受，<br />
+并将你对他们的理解反馈给讲话者。<br />
+行为日记，这有助于评估关系中的活动、事件和经历，<br />
+帮助伴侣通过比较日常活动和主观感受更好地理解彼此的需求和感情。<br />
+3D欣赏练习，其中3D代表“发现”、“记录”和“展示”，<br />
+帮助伴侣通过发现、记录和公开展示对彼此的欣赏，<br />
+增强彼此的感激之情和关系质量。<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org3f23879" class="outline-3">
+<h3 id="org3f23879">sentence</h3>
+<div class="outline-text-3" id="text-org3f23879">
+<p>
+extensive [ɪkˈstensɪv]: adj. large in size, amount, or degree广泛的<br />
+</p>
+<ul class="org-ul">
+<li>No need to worry, this prison is furnished with extensive food.<br /></li>
+<li>The walkers are attcking the prison that's furnished with extensive food.<br /></li>
+<li>The teacher admired the girl who had extensive interests outdoor.<br /></li>
+</ul>
+<p>
+concern [kənˈsɜrn]: n. a feeling of worry about something important担心,关心<br />
+</p>
+<ul class="org-ul">
+<li>The majority whip shows concern about the scandal of which the president is mindful.<br /></li>
+<li>With your safety in mind, his concern for ransom had never reduced.<br /></li>
+<li>Whether she has paid in her fair share is my concern now.<br /></li>
+</ul>
+<p>
+clinical [ˈklɪnɪk(ə)l]: adj. relating to treating or testing people who are sick临床的, 病房用的<br />
+</p>
+<ul class="org-ul">
+<li>This kind of clinical medicine is forbidden to be sold in the market.<br /></li>
+<li>The clincial medicine will prevail in the market in this mode.<br /></li>
+<li>The special clinical medicine pertains to the patient.<br /></li>
+</ul>
+<p>
+shift [ʃɪft]: v. if someone’s opinions, beliefs etc shift, they change改变<br />
+</p>
+<ul class="org-ul">
+<li>As the circumstances have shifted, the poor programmer gets laid off in no time.<br /></li>
+<li>While the circumstances have shifted, the naive boy refused to grow up.<br /></li>
+<li>With circumstances shifting, he moves on to get married to his colleague.<br /></li>
+</ul>
+<p>
+displace [dɪsˈpleɪs]: v. to take the place or position of something or someone SYN replace转移,置换<br />
+</p>
+<ul class="org-ul">
+<li>You needn't have displaced the apartment on your own.<br /></li>
+<li>Let's come together, refuse to displace our post in the office.<br /></li>
+<li>The request for displacing the computer is come up as the signal of firing the programmer.<br /></li>
+</ul>
+<p>
+procedure [prəˈsidʒər]: n. a way of doing something, especially the correct or usual way ⇨ process过程,程序<br />
+</p>
+<ul class="org-ul">
+<li>The programmer gets to make the procedure for paying section.<br /></li>
+<li>We see eye to eye about promoting the procedure.<br /></li>
+<li>After a few rounds, the programmer is satisfied with the efficacy of the procedure.<br /></li>
+</ul>
+<p>
+diary [ˈdaɪəri]: n. a book in which you write down the things that happen to you each day SYN journal日记<br />
+</p>
+<ul class="org-ul">
+<li>I had a habit of keeping a diary until I found my mother looked at it secretly.<br /></li>
+<li>The research for the diary that a vicar kept works out.<br /></li>
+<li>In his diary, the archaeologist drove home the point that the tree was a source of income.<br /></li>
+</ul>
+<p>
+tally [ˈtæli]: n. a record of how much you have spent, won etc by a particular point in time账<br />
+</p>
+<ul class="org-ul">
+<li>The tally you got is totally different from your wife's.<br /></li>
+<li>How much is the final tally?<br /></li>
+<li>We all subscribe to that we can't afford the final tally.<br /></li>
+</ul>
+<p>
+clue [klu]: n. information that helps you understand the reasons why something happens线索<br />
+</p>
+<ul class="org-ul">
+<li>Close with the peasant, the policeman tried to find more clues about the murder.<br /></li>
+<li>For the police to find less clues, the murderer was going to burn the apartment down.<br /></li>
+<li>With clues accumulating, the expert from zoo felt obliged to hunt for the animal.<br /></li>
+</ul>
+<p>
+time-tested: adj. That has been tested by time; of which the effectiveness, worth, etc., has been established over time.经受时间考验的<br />
+</p>
+<ul class="org-ul">
+<li>My wife is striking toward a time-tested friendship.<br /></li>
+<li>Stay the same, our friendship must be time-tested.<br /></li>
+<li>The knight has kept the secret for the rest of his life, his loylty is time-tested.<br /></li>
+</ul>
+<hr />
+<p>
+be traced back to &#x2026;: 追述到&#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>The jewelry is said to be traced back to a French king.<br /></li>
+<li>The lost treasure can be traced back to a ship which was sacked by pirates.<br /></li>
+<li>The school can be traced back to an infamous general during last dynasty.<br /></li>
+</ul>
+<p>
+get sb. to do sth.: 让某人做某事<br />
+</p>
+<ul class="org-ul">
+<li>You have the chance to get your husband to bring you a coat.<br /></li>
+<li>He failed to get his cat to drink water.<br /></li>
+<li>The professor gets me to explore more about relationships.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org5657ee7" class="outline-3">
+<h3 id="org5657ee7">sentence2</h3>
+<div class="outline-text-3" id="text-org5657ee7">
+<p>
+extensive [ɪkˈstensɪv]: adj. large in size, amount, or degree广泛的<br />
+</p>
+<ul class="org-ul">
+<li>No need to worry, this prison is furnished with extensive food.<br /></li>
+<li>The walkers are attacking the prison that's furnished with extensive food.<br /></li>
+<li>The teacher admired the girl who had extensive interests in the outdoors.<br /></li>
+</ul>
+<p>
+concern [kənˈsɜrn]: n. a feeling of worry about something important担心,关心<br />
+</p>
+<ul class="org-ul">
+<li>The majority whip shows concern about the scandal of which the president is mindful.<br /></li>
+<li>With your safety in mind, his concern for ransom had never been reduced.<br /></li>
+<li>Whether she has paid her fair share is my concern now.<br /></li>
+</ul>
+<p>
+clinical [ˈklɪnɪk(ə)l]: adj. relating to treating or testing people who are sick临床的, 病房用的<br />
+</p>
+<ul class="org-ul">
+<li>This kind of clinical medicine is forbidden from being sold in the market.<br /></li>
+<li>The clinical medicine will prevail in the market in this mode.<br /></li>
+<li>The special clinical medicine pertains to the patient.<br /></li>
+</ul>
+<p>
+shift [ʃɪft]: v. if someone’s opinions, beliefs etc shift, they change改变<br />
+</p>
+<ul class="org-ul">
+<li>As the circumstances have shifted, the poor programmer gets laid off in no time.<br /></li>
+<li>While the circumstances have shifted, the naive boy refused to grow up.<br /></li>
+<li>With circumstances shifting, he moves on to get married to his colleague.<br /></li>
+</ul>
+<p>
+displace [dɪsˈpleɪs]: v. to take the place or position of something or someone SYN replace转移,置换<br />
+</p>
+<ul class="org-ul">
+<li>You needn't have displaced the apartment on your own.<br /></li>
+<li>Let's come together, and refuse to displace our post in the office.<br /></li>
+<li>The request to displace the computer is come up as the signal of firing the programmer.<br /></li>
+</ul>
+<p>
+procedure [prəˈsidʒər]: n. a way of doing something, especially the correct or usual way ⇨ process过程,程序<br />
+</p>
+<ul class="org-ul">
+<li>The programmer gets to make the procedure for the paying section.<br /></li>
+<li>We see eye to eye about promoting the procedure.<br /></li>
+<li>After a few rounds, the programmer is satisfied with the efficacy of the procedure.<br /></li>
+</ul>
+<p>
+diary [ˈdaɪəri]: n. a book in which you write down the things that happen to you each day SYN journal日记<br />
+</p>
+<ul class="org-ul">
+<li>I had a habit of keeping a diary until I found my mother looked at it secretly.<br /></li>
+<li>The research for the diary that a vicar kept works out.<br /></li>
+<li>In his diary, the archaeologist drove home the point that the tree was a source of income.<br /></li>
+</ul>
+<p>
+tally [ˈtæli]: n. a record of how much you have spent, won etc by a particular point in time账<br />
+</p>
+<ul class="org-ul">
+<li>The tally you got is totally different from your wife's.<br /></li>
+<li>How much is the final tally?<br /></li>
+<li>We all subscribe to that we can't afford the final tally.<br /></li>
+</ul>
+<p>
+clue [klu]: n. information that helps you understand the reasons why something happens线索<br />
+</p>
+<ul class="org-ul">
+<li>The policeman who is close to the peasant tries to find more clues about the murder.<br /></li>
+<li>For the police to find fewer clues, the murderer was going to burn the apartment down.<br /></li>
+<li>With clues accumulating, the expert from the zoo felt obliged to hunt for the animal.<br /></li>
+</ul>
+<p>
+time-tested: adj. That has been tested by time; of which the effectiveness, worth, etc., has been established over time.经受时间考验的<br />
+</p>
+<ul class="org-ul">
+<li>My wife is striking toward a time-tested friendship.<br /></li>
+<li>Stay the same, our friendship must be time-tested.<br /></li>
+<li>The knight has kept the secret for the rest of his life, his loyalty is time-tested.<br /></li>
+</ul>
+<hr />
+<p>
+be traced back to &#x2026;: 追述到&#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>The jewelry is said to be traced back to a French king.<br /></li>
+<li>The lost treasure can be traced back to a ship that was sacked by pirates.<br /></li>
+<li>The school can be traced back to an infamous general during the last dynasty.<br /></li>
+</ul>
+<p>
+get sb. to do sth.: 让某人做某事<br />
+</p>
+<ul class="org-ul">
+<li>You have the chance to get your husband to bring you a coat.<br /></li>
+<li>He failed to get his cat to drink water.<br /></li>
+<li>The professor gets me to explore more about relationships.<br /></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

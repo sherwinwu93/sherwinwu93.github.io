@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-01-25 Sat 16:22 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-org0463258" class="outline-2">
+<h2 id="org0463258">2014-04-18 Not all scientific studies are created equal</h2>
+<div class="outline-text-2" id="text-org0463258">
+<p class="verse">
+Studies have shown that taking vitamins is good for your health and bad for your health.<br />
+That newly discovered herb can improve your memory or destroy your liver.<br />
+Headlines proclaim a promising new cancer treatment and never mention it again.<br />
+On a daily basis, we are bombarded with attention-grabbing news, backed up by scientific studies,<br />
+&#xa0;but what are these studies?<br />
+How are they performed?<br />
+And how do we know whether they're reliable?<br />
+<br />
+When it comes to dietary or medical information,<br />
+&#xa0;the first thing to remember is<br />
+&#xa0;&#xa0;that while studies on animals or individual cells can point the way towards further research,<br />
+&#xa0;&#xa0;&#xa0;the only way to know how something will affect humans<br />
+&#xa0;&#xa0;&#xa0;&#xa0;is through a study involving human subjects.<br />
+And when it comes to human studies,<br />
+&#xa0;the scientific gold standard is the randomized clinical trial, or RCT.<br />
+The key to RCTs is that the subjects are randomly assigned to their study groups.<br />
+They are often blinded to make them more rigorous.<br />
+This process attempts to ensure<br />
+&#xa0;that the only difference between the groups is the one the researchers are attempting to study.<br />
+For example, when testing a new headache medication,<br />
+&#xa0;a large pool of people with headaches would be randomly divided into two groups,<br />
+&#xa0;&#xa0;one receiving the medication and another receiving a placebo.<br />
+With proper randomization,<br />
+&#xa0;the only significant overall difference between the two groups<br />
+&#xa0;&#xa0;will be whether or not they received the medication,<br />
+&#xa0;&#xa0;&#xa0;rather than other differences that could affect results.<br />
+Randomized clinical trials are incredible tools,<br />
+&#xa0;and, in fact, the US Food and Drug Administration often requires at least two to be conducted<br />
+&#xa0;&#xa0;before a new drug can be marketed.<br />
+<br />
+But the problem is that an RCT is not possible in many cases,<br />
+&#xa0;either because it's not practical or would require too many volunteers.<br />
+In such cases, scientists use an epidemiological study,<br />
+&#xa0;&#xa0;which simply observes people going about their usual behavior,<br />
+&#xa0;rather than randomly assigning active participants to control invariable groups.<br />
+Let's say we wanted to study whether an herbal ingredient on the market causes nausea.<br />
+Rather than deliberately giving people something that might make them nauseated,<br />
+&#xa0;we would find those who already take the ingredient in their everyday lives.<br />
+This group is called the cohort.<br />
+We would also need a comparison group of people who do not have exposure to the ingredient.<br />
+And we would then compare statistics.<br />
+If the rate of nausea is higher in the herbal cohort,<br />
+&#xa0;it suggests an association between the herbal supplement and nausea.<br />
+Epidemiological studies are great tools to study the health effects of almost anything,<br />
+&#xa0;without directly interfering in people's lives<br />
+&#xa0;&#xa0;or assigning them to potentially dangerous exposures.<br />
+<br />
+So, why can't we rely on these studies<br />
+&#xa0;to establish causal relationships between substances and their effects on health?<br />
+The problem is that even the best conducted epidemiological studies have inherent flaws.<br />
+Precisely because the test subjects are not randomly assigned to their groups.<br />
+For example, if the cohort in our herbal study consisted of people<br />
+&#xa0;&#xa0;who took the supplement for health reasons,<br />
+&#xa0;they may have already had higher rates of nausea than the other people in the sample.<br />
+Or the cohort group could've been composed of people<br />
+&#xa0;who shop at health food stores and have different diets or better access to healthcare.<br />
+These factors that can affect results, in addition to the factor being studied,<br />
+&#xa0;are known as confounding variables.<br />
+These two major pitfalls,<br />
+&#xa0;&#xa0;&#xa0;combined with more general dangers, such as conflicts of interest or selective use of data,<br />
+&#xa0;&#xa0;can make the findings of any particular epidemiological study suspect,<br />
+&#xa0;and a good study must go out of its way to prove<br />
+&#xa0;&#xa0;that its authors have taken steps to eliminate these types of errors.<br />
+<br />
+But even when this has been done,<br />
+&#xa0;the very nature of epidemiological studies,<br />
+&#xa0;&#xa0;&#xa0;which examine differences between preexisting groups,<br />
+&#xa0;&#xa0;&#xa0;rather than deliberately inducing changes within the same individuals,<br />
+&#xa0;&#xa0;means that a single study can only demonstrate a correlation<br />
+&#xa0;&#xa0;&#xa0;&#xa0;between a substance and a health outcome,<br />
+&#xa0;&#xa0;&#xa0;rather than a true cause and effect relationship.<br />
+At the end of the day, epidemiological studies have served as excellent guides to public health,<br />
+&#xa0;alerting us to critical health hazards, such as smoking, asbestos, lead, and many more.<br />
+But these were demonstrated through multiple, well-conducted epidemiological studies,<br />
+&#xa0;all pointing in the same direction.<br />
+So, the next time you see a headline about a new miracle cure<br />
+&#xa0;&#xa0;or the terrible danger posed by an everyday substance,<br />
+&#xa0;try to learn more about the original study<br />
+&#xa0;&#xa0;&#xa0;and the limitations inherent in any epidemiological study or clinical trial<br />
+&#xa0;&#xa0;before jumping to conclusions.<br />
+</p>
+</div>
+<div id="outline-container-org2d7a44a" class="outline-3">
+<h3 id="org2d7a44a">expression</h3>
+<div class="outline-text-3" id="text-org2d7a44a">
+<p>
+herb [ɜrb]: n. a small plant that is used to improve the taste of food, or to make medicine ⇨ spice药草<br />
+liver [ˈlɪvər]: n. a large organ in your body that produces ↑bile and cleans your blood肝脏<br />
+vitamin [ˈvaɪtəmɪn]: n. a chemical substance in food that is necessary for good health维他命, 维生素<br />
+headline [ˈhedˌlaɪn]: n. the title of a newspaper report, which is printed in large letters above the report大字标题<br />
+attention-grabbing: adj. 引人注意的<br />
+proclaim [prəˈkleɪm]: v. to say publicly or officially that something important is true or exists声明<br />
+promising [ˈprɑmɪsɪŋ]: adj. showing signs of being successful or good in the future有前途的<br />
+dietary [ˈdaɪəˌteri]: adj. related to the food someone eats饭食的<br />
+randomized [ˈrændəmaɪz]: adj. to choose things in a way that is not carefully controlled or planned in order to do a scientific test随机化的<br />
+clinical [ˈklɪnɪk(ə)l]: adj. relating to treating or testing people who are sick临床的, 病房用的<br />
+trial [ˈtraɪəl]: n. a process of testing to find out whether something works effectively and is safe试验<br />
+rigorous [ˈrɪɡərəs]: adj. careful, thorough, and exact严格的<br />
+medication [ˌmedɪˈkeɪʃ(ə)n]: n. medicine or drugs given to people who are ill药物治疗<br />
+placebo [pləˈsiboʊ]: n. a harmless substance given to a sick person instead of medicine, without telling them it is not real. 安慰剂<br />
+significant [sɪɡˈnɪfɪkənt]: adj. having an important effect or influence, especially on what will happen in the future OPP insignificant有意义的, 重大的, 重要的<br />
+overall [ˈoʊvərˌɔl]: adj. considering or including everything全部的, 全面的<br />
+epidemiology [ˌepɪdimiˈɑlədʒi]/epidemiological: n.adj. the study of the way diseases spread, and how to control them流行病学<br />
+nausea [ˈnɔːziə]: n. the feeling that you have when you think you are going to ↑vomit (=bring food up from your stomach through your mouth) SYN sickness反胃<br />
+cohort [ˈkoʊˌhɔrt]: n. technical a group of people of the sage, social class etc, especially when they are being studied一群(组)<br />
+substance [ˈsʌbstəns]: n. a particular type of solid, liquid, or gas物质<br />
+inherent [ɪnˈherənt]: adj. a quality that is inherent in something is a natural part of it and cannot be separated from it固有的, 内在的, 与生俱来的<br />
+flaw [flɔ]: n. a mistake, mark, or weakness that makes something imperfect SYN defect瑕疵<br />
+confound [kənˈfaʊnd]: v. to confuse and surprise people by being unexpected混淆<br />
+pitfall [ˈpɪtˌfɔl]: n. a problem or difficulty that is likely to happen in a particular job, course of action, or activity缺陷<br />
+eliminate [ɪˈlɪməˌnet]: v. to defeat a team or person in a competition, so that they no longer take part in it SYN knock out淘汰<br />
+critical [ˈkrɪtɪk(ə)l]: adj. something that is critical is very important because what happens in the future depends on it SYN crucial至关重要的<br />
+hazard [ˈhæzərd]: n. something that may be dangerous, or cause accidents or problems冒险<br />
+asbestos [æzˈbestəs]: n. a grey mineral that does not burn easily, that was used in the past as a building material or in protective clothing石棉<br />
+lead [lid]: n. a soft heavy grey metal that melts easily and is poisonous, used to cover roofs, or in the past, for water pipes. It is a chemical ↑element: symbol Pb铅<br />
+cure [kjʊr]: v.n. a medicine or medical treatment that makes an illness go away治愈<br />
+</p>
+<hr />
+<p>
+Studies have shown that + &#x2026;: 研究证明<br />
+be bombarded with sth.: 被某物轰炸<br />
+be backed up by sth.: 被某物堆积<br />
+point the way towards sth.: 指出去某物/处的路<br />
+be assigned to sth./ assign sb. to sth.: 被分派到(组/队)<br />
+with headaches: 患头痛<br />
+be divided into sth.: 被分成&#x2026;<br />
+a comparison group of &#x2026;: &#x2026;的对照组<br />
+have exposure to sth.: 接触某物<br />
+establish causal relationships between sth.(pl.): 建立某物之间的因果关系<br />
+in addition to: 除&#x2026;之外<br />
+be combined with sth.: 与&#x2026;结合<br />
+go out of sb's way to do sth.: 给自己带来不便或额外的麻烦去做超出要求的事情<br />
+take steps (to do sth.): 采取措施(去做某事)<br />
+induce changes within &#x2026;: 在&#x2026;内部引起变化<br />
+demonstrate a correlation between sth.(pl.): 说明了事物间的相互关系<br />
+At the end of the day: 最终<br />
+alert sb. to sth.: 提醒某人注意某事<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgf0b29fd" class="outline-3">
+<h3 id="orgf0b29fd">sentences</h3>
+<div class="outline-text-3" id="text-orgf0b29fd">
+<p>
+Studies have shown that + &#x2026;: 研究证明<br />
+</p>
+<ul class="org-ul">
+<li>Studies have shown that a fossil is often millions of years in the making.<br /></li>
+<li>Studies have shown that holding that pose for half an hour a day is good for your health.<br /></li>
+<li>Studies have shown that taking vitamins is beneficial for your teeth.<br /></li>
+</ul>
+<p>
+be bombarded with sth.: 被某物轰炸<br />
+</p>
+<ul class="org-ul">
+<li>Bombarded with a bomb, he must have been killed in action.<br /></li>
+<li>Bombarded with a bomb, the enemies must have lost their hearts.<br /></li>
+<li>We must deliberate over the chance of being bombarded with bombs.<br /></li>
+</ul>
+<p>
+be backed up by sth.: 被某物堆积<br />
+</p>
+<ul class="org-ul">
+<li>Our garage has been backed up by the bodies of pigeons.<br /></li>
+<li>In this great adventure of crossing the Atlantic, our compartment has been backed up by food.<br /></li>
+<li>The door shall not be backed up by anything.<br /></li>
+</ul>
+<p>
+point the way towards sth.: 指出去某物/处的路<br />
+</p>
+<ul class="org-ul">
+<li>In these early days, there were some people in Shanghai<br />
+pointing the way towards the destinations of tourists to make money.<br /></li>
+<li>This experiment points the way toward the right proportions of ingredients.<br /></li>
+<li>The search for extraterrestrial life points the way toward cancer treatment.<br /></li>
+</ul>
+<p>
+be assigned to sth./ assign sb. to sth.: 被分派到(组/队)<br />
+</p>
+<ul class="org-ul">
+<li>I have been long assigned to the fans of Jay Chou.<br /></li>
+<li>Assigned to the 'guard of honor', he was practicing in harsher working conditions.<br /></li>
+<li>Assigned to the 'guard of honor', he caught the eye of the one he loved.<br /></li>
+</ul>
+<p>
+with headaches: 患头痛<br />
+</p>
+<ul class="org-ul">
+<li>With a headache, I must draw energy from healthy foods.<br /></li>
+<li>With a headache, he stopped to ask for leave.<br /></li>
+<li>With a headache, he couldn't deliberate at length over his job.<br /></li>
+</ul>
+<p>
+be divided into sth.: 被分成&#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>The stake might be divided into several parts if you hit the surface of it.<br /></li>
+<li>She got very angry and the toy was divided into three parts.<br /></li>
+<li>Fingers crossed the computer will not be divided into several pieces after the earthquake.<br /></li>
+</ul>
+<p>
+a comparison group of &#x2026;: &#x2026;的对照组<br />
+</p>
+<ul class="org-ul">
+<li>A comparison group of viruses will infect these people.<br /></li>
+<li>The comparison group of foods might have been thrown away.<br /></li>
+<li>A comparison group of foods has already decayed away.<br /></li>
+</ul>
+<p>
+have exposure to sth.: 接触某物<br />
+</p>
+<ul class="org-ul">
+<li>She had exposure to the fossil on a creek bank.<br /></li>
+<li>Until you have exposure to her hands, you're not in the clear yet.<br /></li>
+<li>Having had exposure to a special kind of mixture, he extracted gold from these sands.<br /></li>
+</ul>
+<p>
+establish causal relationships between sth.(pl.): 建立某物之间的因果关系<br />
+</p>
+<ul class="org-ul">
+<li>These scientists were trying to establish causal relationships between cancers and smoking.<br /></li>
+<li>I can't establish causal relationships between weather and food shortage in the earth.<br /></li>
+<li>He established causal relationships between monogamy and democracy.<br /></li>
+</ul>
+<p>
+in addition to: 除&#x2026;之外<br />
+</p>
+<ul class="org-ul">
+<li>In addition to him, we played truant from school.<br /></li>
+<li>In addition to the election, he has been eliminated all the time.<br /></li>
+<li>In addition to his studies, he became independent from his family.<br /></li>
+</ul>
+<p>
+be combined with sth.: 与&#x2026;结合<br />
+</p>
+<ul class="org-ul">
+<li>My manager always asks me to combine our project with more extensions in another platform.<br /></li>
+<li>It tastes great. The bread is combined with milk.<br /></li>
+<li>His money was combined with his father's idea so that he ran a successful furniture business.<br /></li>
+</ul>
+<p>
+go out of sb's way to do sth.: 给自己带来不便或额外的麻烦去做超出要求的事情<br />
+</p>
+<ul class="org-ul">
+<li>In my youth, I always went out of my way to finish my homework.<br /></li>
+<li>I get tired of going out of my wife to ask for your happiness.<br /></li>
+<li>He went out of his way to ease restrictions on drugs in this state.<br /></li>
+</ul>
+<p>
+take steps (to do sth.): 采取措施(去做某事)<br />
+</p>
+<ul class="org-ul">
+<li>He took steps to improve the life force of the ant.<br /></li>
+<li>The vampire hasn't taken steps to feast on the life force of humans.<br /></li>
+<li>They have one common characteristic: they take steps to make money in their youth.<br /></li>
+</ul>
+<p>
+induce changes within &#x2026;: 在&#x2026;内部引起变化<br />
+</p>
+<ul class="org-ul">
+<li>The stalk of the enemy might have induced changes in our party.<br /></li>
+<li>As the brutal executions have been prohibited,<br />
+it has induced changes within people in this state.<br /></li>
+<li>The stalk of the enemy must have induced changes in our party.<br /></li>
+</ul>
+<p>
+demonstrate a correlation between sth.(pl.): 说明了事物间的相互关系<br />
+</p>
+<ul class="org-ul">
+<li>The doctor demonstrates a correlation between the lungs and heart.<br /></li>
+<li>Mr. Leo demonstrated a correlation between reading and speaking in English in his course.<br /></li>
+<li>Mr. Leo demonstrated a correlation between wisdom and Critical Thinking last Saturday.<br /></li>
+</ul>
+<p>
+At the end of the day: 最终<br />
+</p>
+<ul class="org-ul">
+<li>At the end of the day, he sustains himself by running a furniture business.<br /></li>
+<li>At the end of the day, he discerned the cause of these people who have committed a murder.<br /></li>
+<li>At the end of the day, the authorities established a law prohibiting digging up corpses.<br /></li>
+</ul>
+<p>
+alert sb. to sth.: 提醒某人注意某事<br />
+</p>
+<ul class="org-ul">
+<li>He alerted me to the meeting which would be held last Saturday.<br /></li>
+<li>I'm tired of being alerted to the bugs you made because of your carelessness.<br /></li>
+<li>I alerted him to the blood at the corners of his mouth.<br /></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

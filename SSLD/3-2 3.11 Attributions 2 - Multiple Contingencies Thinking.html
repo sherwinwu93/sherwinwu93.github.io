@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-11-29 Fri 10:39 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-org947d174" class="outline-2">
+<h2 id="org947d174">3-2 3.11 Attributions 2 - Multiple Contingencies Thinking</h2>
+<div class="outline-text-2" id="text-org947d174">
+<p class="verse">
+It sounds almost like a way of<br />
+&#xa0;sort of simplifying the world or simplifying a situation for yourself to understand.<br />
+Well yeah, I think that is a good way to put it.<br />
+Most people actually are seeking simple attributions,<br />
+&#xa0;but what we're advocating in the SSLD is that we introduce multiple contingencies thinking,<br />
+&#xa0;&#xa0;meaning that we recognize that most human realities are more complicated<br />
+&#xa0;&#xa0;&#xa0;than a simple one to one relationship.<br />
+So when a relationship breaks down, it's normally not just because of one reason.<br />
+<br />
+It's usually because of multiple reasons but sometimes we make attributions simple because one,<br />
+&#xa0;it takes time and energy to deal with more complicated attributions.<br />
+Two is that the kind of attributions people choose<br />
+&#xa0;were actually more often related to their own needs.<br />
+I make attributions that will make me feel better.<br />
+I make attributions that's more consistent with my view of the world.<br />
+<br />
+Say for example, if I am a xenophobic person,<br />
+&#xa0;I really do not like to see these immigrants or people who are different in my neighbourhood.<br />
+So if anything goes wrong,<br />
+&#xa0;I would just say, okay, this is because of these people who are different.<br />
+That's causing my discomfort.<br />
+And we find it all the time.<br />
+Say for example,<br />
+&#xa0;if you see a black person doing something violent and you attribute it to their race.<br />
+But when we look at global statistics on violence,<br />
+&#xa0;then we find, it is not really race, it is like ancient trend,<br />
+&#xa0;&#xa0;young men are more likely to be violent than any other demographic combination.<br />
+But then in a context like North America we are more likely to be attributing it to,<br />
+&#xa0;you know, ethno-racial characteristics which might be totally irrelevant in another context.<br />
+But that is, sort of a very common attribution that we make.<br />
+<br />
+And of course, when people make this kind of attribution<br />
+&#xa0;we sometimes we refer to that as an attribution error.<br />
+Yeah.<br />
+Right, because it's not accurate.<br />
+Of course.<br />
+<br />
+In SSLD, we believe in multiple contingencies thinking<br />
+&#xa0;meaning that the cause of something cannot be explained by just one simple attribution<br />
+&#xa0;&#xa0;and there are usually many other underlying factors.<br />
+For example, there are actually multiple reasons of relationship failure<br />
+&#xa0;rather than the simple attribution that we tend to make.<br />
+People make simple attribution,<br />
+&#xa0;because it takes time and energy to deal with the more complicated ones,<br />
+&#xa0;&#xa0;and we tend to make attributions that will make us feel better.<br />
+</p>
+</div>
+<div id="outline-container-org2081ea6" class="outline-3">
+<h3 id="org2081ea6">expression</h3>
+<div class="outline-text-3" id="text-org2081ea6">
+<p>
+simplify [ˈsɪmplɪˌfaɪ]: v. to make something easier or less complicated简单化<br />
+multiple [ˈmʌltɪp(ə)l]: adj. many, or involving many things, people, events etc多样的, 多重的<br />
+contingency [kənˈtɪndʒənsi]: n. possiblity 可能性<br />
+complicated [ˈkɑmplɪˌkeɪtəd]: adj. difficult to understand or deal with, because many parts or details are involved SYN complex复杂的<br />
+xenophobia [ˌzenəˈfoʊbiə] xenophobic: n.adj. strong fear or dislike of people from other countries仇外, 惧外者<br />
+combination [ˌkɑmbɪˈneɪʃ(ə)n]: n. two or more different things that exist together or are used or put together ⇨ combine结合, 联合<br />
+race [reɪs] racial: n.adj. relating to the relationships between different races of people who now live in the same country or area人种<br />
+</p>
+<hr />
+<p>
+be related to sth./sb.: 与某人/某事有关<br />
+be consistent with sth./sb.: 与某人/某事一致<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org1e74bca" class="outline-3">
+<h3 id="org1e74bca">sentence</h3>
+<div class="outline-text-3" id="text-org1e74bca">
+<p>
+simplify [ˈsɪmplɪˌfaɪ]: v. to make something easier or less complicated简单化<br />
+</p>
+<ul class="org-ul">
+<li>We tend to simplify the cause of breakup of a relationship to understand it.<br /></li>
+<li>What invariably happens is to simplify the situation ignoring whether justice has been done.<br /></li>
+<li>Let's me simpify what she puts, it serves him right.<br /></li>
+</ul>
+<p>
+multiple [ˈmʌltɪp(ə)l]: adj. many, or involving many things, people, events etc多样的, 多重的<br />
+</p>
+<ul class="org-ul">
+<li>Our army is in the face of multiple crises, like lack of sustenance, weapons, and so on.<br /></li>
+<li>When you faced multiple issues on emotions, you'd better focus on the most salient one at first.<br /></li>
+<li>One piece of cake flying through the street caused multiple accidents this morning.<br /></li>
+</ul>
+<p>
+contingency [kənˈtɪndʒənsi]: n. possiblity 可能性<br />
+</p>
+<ul class="org-ul">
+<li>The second contingency is that I take the throne and burn the city down.<br /></li>
+<li>The salient contingency is that our soldiers lost their hearts because of rude commands.<br /></li>
+<li>The obvious contingency is that his aunt provided him with 5 dollars to exchange for a big bar of chocolate.<br /></li>
+</ul>
+<p>
+complicated [ˈkɑmplɪˌkeɪtəd]: adj. difficult to understand or deal with, because many parts or details are involved SYN complex复杂的<br />
+</p>
+<ul class="org-ul">
+<li>If you asked me how to study English, I would answer that it's complicated to be expert at a language.<br /></li>
+<li>The coomplicated event led to the changing order of things in our capital.<br /></li>
+<li>The labyrinth is so complicated that we couldn't find our way to the castle for three days.<br /></li>
+</ul>
+<p>
+xenophobia [ˌzenəˈfoʊbiə] xenophobic: n.adj. strong fear or dislike of people from other countries仇外, 惧外者<br />
+</p>
+<ul class="org-ul">
+<li>The diplomatic policy is supposed to diminish the xenophobia from our people.<br /></li>
+<li>The xenophobia has already taken root in the boy who saw his family killed in a raid.<br /></li>
+<li>It is hard to build a relationship with a xenophobic officer who started a war.<br /></li>
+</ul>
+<p>
+combination [ˌkɑmbɪˈneɪʃ(ə)n]: n. two or more different things that exist together or are used or put together ⇨ combine结合, 联合<br />
+</p>
+<ul class="org-ul">
+<li>A combination of wisdom and hard work give rise to our prosperous motherland.<br /></li>
+<li>A combination of opportunities and hard work rewarded him with a job working for Apple.<br /></li>
+<li>A combination of talent and hard work will never be mistreated by fate.<br /></li>
+</ul>
+<p>
+race [reɪs] racial: n.adj. relating to the relationships between different races of people who now live in the same country or area人种<br />
+</p>
+<ul class="org-ul">
+<li>The dustman who works for our company was accused of racial remarks in public.<br /></li>
+<li>You needn't have mentioned racial advantages and disadvantages.<br /></li>
+<li>You must make sense of your racial advantages in the context.<br /></li>
+</ul>
+<hr />
+<p>
+be related to sth./sb.: 与某人/某事有关<br />
+</p>
+<ul class="org-ul">
+<li>He can't be bothered to deal with what is not related to his job.<br /></li>
+<li>Raising up three boys alone is related to a combination of love and brave.<br /></li>
+<li>What you get used to eating is related to what you're brought up to eat.<br /></li>
+</ul>
+<p>
+be consistent with sth./sb.: 与某人/某事一致<br />
+</p>
+<ul class="org-ul">
+<li>Consistent with our queen, I ride the dragon to the battle field.<br /></li>
+<li>Consistent with the king in the North, the prince led his army to fight against these Asiatic nomads.<br /></li>
+<li>Consistent with what we expected, the result of the experiment proved his theory to be true.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgc899360" class="outline-3">
+<h3 id="orgc899360">sentence2</h3>
+<div class="outline-text-3" id="text-orgc899360">
+<p>
+simplify [ˈsɪmplɪˌfaɪ]: v. to make something easier or less complicated简单化<br />
+</p>
+<ul class="org-ul">
+<li>We tend to simplify the cause of the breakup of a relationship to understand it.<br /></li>
+<li>What invariably happens is to simplify the situation ignoring whether justice has been done.<br /></li>
+<li>Let me simplify what she puts, it serves him right.<br /></li>
+</ul>
+<p>
+multiple [ˈmʌltɪp(ə)l]: adj. many, or involving many things, people, events etc多样的, 多重的<br />
+</p>
+<ul class="org-ul">
+<li>Our army is in the face of multiple crises, like lack of sustenance, weapons, and so on.<br /></li>
+<li>When you face multiple issues about emotions, you'd better focus on the most salient one at first.<br /></li>
+<li>One piece of cake flying through the street caused multiple accidents this morning.<br /></li>
+</ul>
+<p>
+contingency [kənˈtɪndʒənsi]: n. possiblity 可能性<br />
+</p>
+<ul class="org-ul">
+<li>The second contingency is that I take the throne and burn the city down.<br /></li>
+<li>The salient contingency is that our soldiers lost their hearts because of rude commands.<br /></li>
+<li>The obvious contingency is that his aunt provided him with 5 dollars to exchange for a big bar of chocolate.<br /></li>
+</ul>
+<p>
+complicated [ˈkɑmplɪˌkeɪtəd]: adj. difficult to understand or deal with, because many parts or details are involved SYN complex复杂的<br />
+</p>
+<ul class="org-ul">
+<li>If you asked me how to study English, I would answer that it's complicated to be expert at a language.<br /></li>
+<li>The complicated event led to the changing order of things in our capital.<br /></li>
+<li>The labyrinth is so complicated that we couldn't find our way to the castle for three days.<br /></li>
+</ul>
+<p>
+xenophobia [ˌzenəˈfoʊbiə] xenophobic: n.adj. strong fear or dislike of people from other countries仇外, 惧外者<br />
+</p>
+<ul class="org-ul">
+<li>The diplomatic policy is supposed to diminish the xenophobia from our people.<br /></li>
+<li>The xenophobia has already taken root in the boy who saw his family killed in a raid.<br /></li>
+<li>It is hard to build a relationship with a xenophobic officer who started a war.<br /></li>
+</ul>
+<p>
+combination [ˌkɑmbɪˈneɪʃ(ə)n]: n. two or more different things that exist together or are used or put together ⇨ combine结合, 联合<br />
+</p>
+<ul class="org-ul">
+<li>A combination of wisdom and hard work give rise to our prosperous motherland.<br /></li>
+<li>A combination of opportunities and hard work rewarded him with a job working for Apple.<br /></li>
+<li>A combination of talent and hard work will never be mistreated by fate.<br /></li>
+</ul>
+<p>
+race [reɪs] racial: n.adj. relating to the relationships between different races of people who now live in the same country or area人种<br />
+</p>
+<ul class="org-ul">
+<li>The dustman who works for our company was accused of racial remarks in public.<br /></li>
+<li>You needn't have mentioned racial advantages and disadvantages.<br /></li>
+<li>You must make sense of your racial advantages in the context.<br /></li>
+</ul>
+<hr />
+<p>
+be related to sth./sb.: 与某人/某事有关<br />
+</p>
+<ul class="org-ul">
+<li>He can't be bothered to deal with the things that are not related to his job.<br /></li>
+<li>Raising up three boys alone is related to a combination of love and bravery.<br /></li>
+<li>What you get used to eating is related to what you're brought up to eat.<br /></li>
+</ul>
+<p>
+be consistent with sth./sb.: 与某人/某事一致<br />
+</p>
+<ul class="org-ul">
+<li>Consistent with our queen, I ride the dragon to the battlefield.<br /></li>
+<li>Consistent with the king in the North, the prince led his army to fight against these Asiatic nomads.<br /></li>
+<li>Consistent with what we expected, the result of the experiment proved his theory to be true.<br /></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

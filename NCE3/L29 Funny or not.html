@@ -1,0 +1,699 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-09-28 Sat 22:17 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-orgcfa3866" class="outline-2">
+<h2 id="orgcfa3866">Lesson 29 Funny or not?</h2>
+<div class="outline-text-2" id="text-orgcfa3866">
+<p class="verse">
+What is the basis of 'sick' humour?<br />
+<br />
+Whether we find a joke funny or not largely depends on where we have been brought up.<br />
+The sense of humour <b>is mysteriously bound up with</b> national characteristics.<br />
+A Frenchman, for instance, might <b>find it hard to laugh</b> at a Russian joke.<br />
+In the same way, a Russian might fail to see anything amusing in a joke<br />
+&#xa0;which would make an Englishman <b>laugh to tears</b>.<br />
+<br />
+Most funny stories are based on comic situations.<br />
+In spite of national differences, certain funny situations <b>have a universal appeal</b>.<br />
+No matter where you live, you would find it difficult not to laugh at,<br />
+&#xa0;say, Charlie Chaplin's early films.<br />
+However, a new type of humour, which <b>stems largely from</b> the US, has recently <b>come into fashion</b>.<br />
+It is called 'sick humour'.<br />
+Comedians <b>base their jokes on</b> tragic situations like violent death or serious accidents.<br />
+Many people find this sort of joke distasteful.<br />
+The following example of 'sick humour' will enable you to <b>judge for yourself</b>.<br />
+<br />
+A man who had broken his right leg was taken to hospital a few weeks before Christmas.<br />
+From the moment he arrived there,<br />
+&#xa0;he kept on <b>pestering his doctor to tell</b> him when he would be able to go home.<br />
+He <b>dreaded having</b> to spend Christmas in hospital.<br />
+Though the doctor <b>did his best</b>, the patient's recovery was slow.<br />
+On Christmas Day, the man still had his right leg in plaster.<br />
+He spent a miserable day in bed thinking of all the fun he was missing.<br />
+The following day, however, the doctor consoled him by telling him<br />
+&#xa0;that his chances of being able to leave hospital in time for New Year celebrations were good.<br />
+The man <b>took heart</b> and, sure enough, on New Year's Eve he was able to hobble along to a party.<br />
+To <b>compensate for</b> his unpleasant experiences in hospital,<br />
+&#xa0;the man drank a little more than <b>was good for him</b>.<br />
+<b>In the process</b>, he enjoyed himself thoroughly<br />
+&#xa0;and kept telling everybody how much he hated hospitals.<br />
+He was still mumbling something about hospitals at the end of the party<br />
+&#xa0;when he slipped on a piece of ice and broke his left leg.<br />
+</p>
+</div>
+<div id="outline-container-org612660f" class="outline-3">
+<h3 id="org612660f">expression</h3>
+<div class="outline-text-3" id="text-org612660f">
+<p>
+largely: [ˈlɑrdʒli] adv.很大程度上<br />
+comic: [ˈkɑmɪk] adj.n.漫画<br />
+universal: [ˌjunɪˈvɜrs(ə)l] adj.普遍的<br />
+comedian: [kəˈmidiən] n.喜剧演员<br />
+distasteful: [dɪsˈteɪstfəl] adj.讨厌的<br />
+pester: [ˈpestər] v.纠缠<br />
+dread: [dred] v.惧怕<br />
+recovery: [rɪˈkʌvəri] n.康复<br />
+plaster: [ˈplæstər] n.熟石膏<br />
+console: [ˈkɑnˌsoʊl] v.安慰<br />
+hobble: [ˈhɑb(ə)l] v.瘸着腿走<br />
+compensate: [ˈkɑmpənˌseɪt] v.补偿<br />
+mumble: [ˈmʌmb(ə)l] v.喃喃自语<br />
+</p>
+
+<p>
+comic book/movie/novel: 漫画书/电影/小说<br />
+have a universal appeal: 有通用的吸引力<br />
+pester sb. to do sth.: 纠缠某人做某事<br />
+dread doing sth. 惧怕做某事<br />
+dread sb. doing sth.: 害怕某人做某事<br />
+make a complete/quick/speedy/slow recovery: xx恢复<br />
+console sb./yourself that + &#x2026;: 安慰某人道 + &#x2026;<br />
+compensate (for sth.) = make up for: 补偿<br />
+</p>
+<hr />
+<p>
+whether/whether or not &#x2026;/whether&#x2026;or not 主从 VS 让步状语<br />
+</p>
+<ol class="org-ol">
+<li>主从Whether引导, 不可被if代替, 在句中做1的成分<br /></li>
+<li>whether引导让步状语从句, 在句子中状语的成分<br /></li>
+</ol>
+<p>
+have: stay 原则:万能+猜<br />
+</p>
+<hr />
+<p>
+be bound up with: 与&#x2026;密切相关<br />
+find it hard to do sth.: 发现做某事困难<br />
+make sb. laugh to tears: 使某人笑出眼泪<br />
+stem from &#x2026;: 源于<br />
+come into fashion: 流行起来<br />
+base A on B: 建立A在B上<br />
+judge for yourself: 自己判断<br />
+do one's best (to do sth.): try my best to do sth.尽某人最大努力做某事<br />
+take heart: 获得鼓舞<br />
+be good for sb.: 对某人有好处<br />
+in the process: 在过程中<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org1989151" class="outline-3">
+<h3 id="org1989151">words</h3>
+<div class="outline-text-3" id="text-org1989151">
+<p>
+largely [ˈlɑːrdʒli] adv. 在很大程度上<br />
+comic [ˈkɑːmɪk] adj. 喜剧的,可笑的<br />
+universal [ˌjuːnɪˈvɜːrs(ə)l] adj. 普遍的<br />
+comedian [kəˈmiːdiən] n. 滑稽演员,喜剧演员<br />
+distasteful [dɪsˈteɪstf(ə)l] adj. 讨厌的<br />
+pester [ˈpestər] v. 一再要求,纠缠<br />
+dread [dred] v. 惧怕<br />
+recovery [rɪˈkʌvəri] n. 康复<br />
+plaster [ˈplæstər] n. 熟石膏<br />
+console [kənˈsoʊl] v. 安慰,慰问<br />
+hobble [ˈhɑːb(ə)l] v. 瘸着退走<br />
+compensate [ˈkɑːmpenseɪt] v. 补偿<br />
+mumble [ˈmʌmb(ə)l] v. 喃喃自语<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org81cbca7" class="outline-3">
+<h3 id="org81cbca7">vocabulary</h3>
+<div class="outline-text-3" id="text-org81cbca7">
+<p>
+brought up: raised<br />
+mysteriously bound up with: strangely connected to<br />
+universal appeal: international attraction<br />
+stems: comes<br />
+come into fashion: become popular<br />
+distasteful: unpleasant or offensive<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge3bb93d" class="outline-3">
+<h3 id="orge3bb93d"><span class="done DONE">DONE</span> 单词造句</h3>
+<div class="outline-text-3" id="text-orge3bb93d">
+<p>
+largely adv.<br />
+</p>
+<ul class="org-ul">
+<li>It is him who are largely responsible for the team's success, not you.<br /></li>
+<li>We are largely likely to make a profit this year.<br /></li>
+<li>I largely work with people who work in office.<br /></li>
+<li>I largely read science fiction to my daughter before she sleeps.<br /></li>
+<li>This largely indicates that she has got back to the ship.<br /></li>
+</ul>
+<p>
+comic adj.n.漫画  comic book/movie/novel<br />
+</p>
+<ul class="org-ul">
+<li>I spoted him reading comic books in the class.<br /></li>
+<li>She claimed to have not read comic books in the class.<br /></li>
+<li>Our parents always put the comic books in the same class as harmful.<br /></li>
+<li>It is outrageous that she is interested in comic novels.<br /></li>
+<li>My friend thrust his comic book into my hands.<br /></li>
+</ul>
+<p>
+universal adj.  have a universal appeal<br />
+</p>
+<ul class="org-ul">
+<li>The songs which he made in his youth have a universal appeal all over the world.<br /></li>
+<li>It is all very well that a delicacy has a universal appeal.<br /></li>
+<li>She claimed that snails have a universal appeal as a dish.<br /></li>
+<li>We devised a plan to make a movie that has a universal appeal.<br /></li>
+<li>Countless people have been influenced by a song which has a universal appeal.<br /></li>
+</ul>
+<p>
+comedian n.<br />
+</p>
+<ul class="org-ul">
+<li>Damn it. I have recognized the comedian as a normal person in the market.<br /></li>
+<li>The comedian which play the role of a teacher gave us a surprise.<br /></li>
+<li>The comedian was cast in the role of a kidnappered.<br /></li>
+<li>The comedian proceed to stay out of the limelight.<br /></li>
+<li>The comedian insisted that the paper should be written out in full.<br /></li>
+</ul>
+<p>
+distasteful adj.<br />
+</p>
+<ul class="org-ul">
+<li>I insisted that the woman who made such distasteful remarks apologize to us.<br /></li>
+<li>You have played a joke on your husband at the party. I found this distasteful.<br /></li>
+<li>Don't bring your custom to my mouth. I found it distasteful.<br /></li>
+<li>If you found it distasteful, you should tell me.<br /></li>
+<li>It was not until an hour after the police arrived on the scene<br />
+that he stop making distasteful remark.<br /></li>
+</ul>
+<p>
+pester v.  pester sb. to do sth.<br />
+</p>
+<ul class="org-ul">
+<li>My wife has been pestering me to travel abroad.<br /></li>
+<li>Because I pestered him to go to university, we eventually reached an agreement.<br /></li>
+<li>Don't pester me to buy this or that product, I am under a lot of pressure.<br /></li>
+<li>I am relieved to hear that he stop pestering his father to check the garage.<br /></li>
+<li>My cat have been pestering me to play ball with her.<br /></li>
+</ul>
+<p>
+dread v.  dread doing sth.  dread sb. doing sth.<br />
+</p>
+<ul class="org-ul">
+<li>In fact, I really dread traveling abroad.<br /></li>
+<li>I am under a lot of pressure and dread my boss ordering me to finish it.<br /></li>
+<li>Much as she loved to go on a jourey, she dreaded asking his father for money.<br /></li>
+<li>The thief caught sight of policemen in front of his house and dreaded getting back home.<br /></li>
+<li>She woke up with a start and dreaded peeing in the midnight.<br /></li>
+</ul>
+<p>
+recovery n.  make a complete/quick/speedy/slow recovery<br />
+</p>
+<ul class="org-ul">
+<li>After an operation, he soon made a complete recovery.<br /></li>
+<li>The fact that my cat made a slow recovery afflicted me a great deal.<br /></li>
+<li>If you had an operation, you would make a complete recovery.<br /></li>
+<li>He made a complete recovery, for he refused to follow his doctor's instructions.<br /></li>
+<li>I'm glad that you made a full recovery.<br /></li>
+</ul>
+<p>
+plaster n.<br />
+</p>
+<ul class="org-ul">
+<li>She wasn't able to play truent from school, for her leg was still in plaster.<br /></li>
+<li>As my foot was in plaster at that time, I have a perfect alibi.<br /></li>
+<li>Whether my leg is in plaster or not is something that has no influence on taking the test.<br /></li>
+<li>Whether my leg is in plaster or not doesn't prevent me from watching TV.<br /></li>
+<li>Whether my leg is in plaster or not doesn't prevent me from being your husband.<br /></li>
+</ul>
+<p>
+console v.  console sb./yourself that + &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>I consoled myself that Miumiu is very dear to me.<br /></li>
+<li>I consoled myself that I would get a good salary in the future.<br /></li>
+<li>She consoled me that our daughter has said magic word.<br /></li>
+<li>I consoled my wife that the girl just classified us as beggars.<br /></li>
+<li>I consoled my wife that our son would soon take heart.<br /></li>
+</ul>
+<p>
+hobble v.<br />
+</p>
+<ul class="org-ul">
+<li>I was strucked by a ball and had to hobble home.<br /></li>
+<li>As the medicine exerts some influence on him, he had to hobble across the park.<br /></li>
+<li>A old lady hobbled to the store to get samples of perfume for nothing.<br /></li>
+<li>The cat who is hobbling arose the pity of mine.<br /></li>
+<li>It is anticipated that he would hobble home afther he was hurt in the game.<br /></li>
+</ul>
+<p>
+compensate v.  compensate (for sth.) = make up for<br />
+</p>
+<ul class="org-ul">
+<li>In the university, my breakfast used to be compensated by lunch.<br /></li>
+<li>The busmen were compensated for better salary and less work time.<br /></li>
+<li>My wife was compensated for a nice dress which she expected to buy for a long time.<br /></li>
+<li>The fans of the singer were made up for some tickets.<br /></li>
+<li>You will be made up for studying abroad.<br /></li>
+</ul>
+<p>
+mumble v.<br />
+</p>
+<ul class="org-ul">
+<li>He seems to be mumbling his lover's name in sleep.<br /></li>
+<li>A woman who was making a speech in the open was mumbling, you made a spectacle of herself.<br /></li>
+<li>If you mumbled at that time, you might make a spectacle of yourself.<br /></li>
+<li>She was mumbling her cat's name to herself.<br /></li>
+<li>In going to office, I always mumble names of my wife and my cat.<br /></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org80460c2" class="outline-3">
+<h3 id="org80460c2"><span class="done DONE">DONE</span> 反复听电影片段直到懂关键句</h3>
+<div class="outline-text-3" id="text-org80460c2">
+</div>
+</div>
+<div id="outline-container-org644c3bb" class="outline-3">
+<h3 id="org644c3bb"><span class="done DONE">DONE</span> 讲语法</h3>
+<div class="outline-text-3" id="text-org644c3bb">
+</div>
+</div>
+<div id="outline-container-org58e3be3" class="outline-3">
+<h3 id="org58e3be3">复习二册语法(笔记或视频) &amp; 红皮书</h3>
+</div>
+<div id="outline-container-orgba54e45" class="outline-3">
+<h3 id="orgba54e45"><span class="done DONE">DONE</span> 习惯用法造句</h3>
+<div class="outline-text-3" id="text-orgba54e45">
+<p>
+be bound up with<br />
+</p>
+<ul class="org-ul">
+<li>My problems are bound up with my mother's departure when I was three.<br /></li>
+<li>His achivement is bound up with his philosophy.<br /></li>
+<li>His breaking world record is bound up with the support from his father.<br /></li>
+<li>Our progress will be bound up with our determination and plans.<br /></li>
+<li>High civilization is bound up with our educational development.<br /></li>
+</ul>
+<p>
+find it hard to do sth.<br />
+</p>
+<ul class="org-ul">
+<li>I found it hard to make a complete recovery.<br /></li>
+<li>He was assailed by a vendor and found it hard to get back to the ship.<br /></li>
+<li>My wife found it hard to reduce the price to $5.<br /></li>
+<li>He found it hard to throw up his arms in plaster.<br /></li>
+<li>I find it hard to get rid of the gangster who asked for protection money.<br /></li>
+</ul>
+<p>
+make sb. laugh to tears<br />
+</p>
+<ul class="org-ul">
+<li>The comedian went to great lengths to make his customers laugh to tears.<br /></li>
+<li>It should have made us laugh to tears.<br /></li>
+<li>My wife used to make me laugh to tears in our attic.<br /></li>
+<li>His little brother went to great lengths to prove that he had made his daughter laugh to tears.<br /></li>
+<li>He lives by making his customers laugh to tears.<br /></li>
+</ul>
+<p>
+stem from &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>This kind of jokes stem large from the U.S.<br /></li>
+<li>When he told me that this sort of biscuit stems from the U.S,<br />
+I question the wisdom of his judgement.<br /></li>
+<li>My problem stems from the fact that I was afflicted by anxieties every day.<br /></li>
+<li>His problem stems from the fact that he didn't pass the test.<br /></li>
+<li>My problem stems from the fact that I became envious of my wife.<br /></li>
+</ul>
+<p>
+come into fashion<br />
+</p>
+<ul class="org-ul">
+<li>It is said that long shirts come into fashion these days.<br /></li>
+<li>Long shirts do come into fashion in China.<br /></li>
+<li>As this kind of clothes come into fashion again, my wife got a better salary.<br /></li>
+<li>I question the wisdom of buying this kind of clothes which came into fashion last year.<br /></li>
+<li>Whether you like it or not, it came into fashion again.<br /></li>
+</ul>
+<p>
+base a. on b.<br />
+</p>
+<ul class="org-ul">
+<li>The director based his movie on a science fiction which came into fashion.<br /></li>
+<li>It was not until a week after the book was published that the director based his film on this.<br /></li>
+<li>The writer based his novel on a story<br />
+that a prizefighter and his pupil turned against each other.<br /></li>
+<li>He based his story on two countries which were at war with each other.<br /></li>
+<li>He based his story on an aristocrat who was born in 14th B.C.<br /></li>
+</ul>
+<p>
+judge for yourself<br />
+</p>
+<ul class="org-ul">
+<li>Leo grudged telling me the answer and asked me to judge for myself.<br /></li>
+<li>It is clear that you are able to judge for yourself.<br /></li>
+<li>He is so clever that he is quick to judge fro himself.<br /></li>
+<li>He has already judged for himself and made it official.<br /></li>
+<li>Technically speaking, you have been judging for yourself all the time.<br /></li>
+</ul>
+<p>
+do one's best (to do sth.)<br />
+</p>
+<ul class="org-ul">
+<li>My wife claimed that she did her best to take care of me.<br /></li>
+<li>Jackie Ma told us not to do our best to do anything worthless.<br /></li>
+<li>There are countless people in China who do their best to achive their goals.<br /></li>
+<li>He does his best to prevent his family from living in poverty.<br /></li>
+<li>Obviously, Mendoza did his best and rose to fame swiftly.<br /></li>
+</ul>
+<p>
+be good for sb.<br />
+</p>
+<ul class="org-ul">
+<li>Reading a great deal is good for your English.<br /></li>
+<li>Working hard is good for us.<br /></li>
+<li>Running daily is good for my health.<br /></li>
+<li>It is clear that fresh fruits and vegetables are good for you.<br /></li>
+<li>Playing football is good for my health.<br /></li>
+</ul>
+<p>
+in the process<br />
+</p>
+<ul class="org-ul">
+<li>She was moving to New York and had an accident in the process.<br /></li>
+<li>Our company will make a profit in the process.<br /></li>
+<li>His rise in status happened in the process.<br /></li>
+<li>This special type of cat gained in popularity in the process.<br /></li>
+<li>The code has been cleaned up in the process.<br /></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org1c8dd47" class="outline-3">
+<h3 id="org1c8dd47">跟读 50遍</h3>
+</div>
+<div id="outline-container-orgb4d47e6" class="outline-3">
+<h3 id="orgb4d47e6"><span class="done DONE">DONE</span> Comprehension 反复练习</h3>
+<div class="outline-text-3" id="text-orgb4d47e6">
+</div>
+</div>
+<div id="outline-container-orgd8179ed" class="outline-3">
+<h3 id="orgd8179ed"><span class="done DONE">DONE</span> Ask me if 写+读</h3>
+<div class="outline-text-3" id="text-orgd8179ed">
+<ol class="org-ol">
+<li>Our sense of humor is bound up with national characteristics. What<br />
+What is bound up with national characteristics?<br />
+What is our sense of humor bound up with?<br /></li>
+<li>A Frenchman will find it hard to laugh at a Russian joke. Why<br />
+Why will a Frenchman find it hard to laugh at a Russian joke?<br /></li>
+<li>Most funny stories are based on comic situations. What<br />
+What are based on comic situations?<br />
+What are most funny stories based on?<br /></li>
+<li>Certain funny situations have a universal appeal. Why<br />
+Why do certain funny situations have a universal appeal?<br /></li>
+<li>A new type of humor has recently come into fashion. What<br />
+What has recently come into fashion?<br /></li>
+<li>A man was taken to hospital a few weeks before Christmas. When<br />
+When was a man taken to hospital?<br /></li>
+<li>He dreaded having to spend Christmas in hospital. Where<br />
+Where did he dread having to spend Christmas?<br /></li>
+<li>The doctor said he could go home for New Year. When<br />
+When did the doctor say he could go home?<br /></li>
+<li>The man drank a little more than was good for him. How much<br />
+How much did the man drink?<br /></li>
+<li>He was mumbling about hospitals when he slipped on a piece of ice. What<br />
+What was he mumbling about when he slipped on a piece of ice?<br /></li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orgfd6643a" class="outline-3">
+<h3 id="orgfd6643a"><span class="done DONE">DONE</span> Summary Writting 写 &amp; 对答案</h3>
+<div class="outline-text-3" id="text-orgfd6643a">
+<p>
+A man who had broken his right leg a few weeks before Christmas<br />
+	kept on pestering his doctor to tell him when he could go home,<br />
+	beacuse he didn't want to spend Christams in hospiatl.<br />
+As his recovery was slow, on Christmas Day, he spent a miserable day in bed.<br />
+The next day, the doctor told him that he may be able to leave hospital for New Year celebrations.<br />
+Sure enough, on New Year's Eve he managed to hobble along to a party.<br />
+To compensate for his experiences in hospital, he drank a little more.<br />
+In the process, he told everybody how much he hated hospitals.<br />
+When he slipped on a piece of ice and broke his left leg,<br />
+	he wast still mumbling somethings about hospitals.<br />
+</p>
+
+<p>
+A man broke his right leg just before Christmas and was taken to hospital.<br />
+He wanted to know when he could go home.<br />
+On Chirstams Day he was still in hospital with his leg in plaster,<br />
+	but there was a good chance of leaving hospital for the New Year.<br />
+In fact, he was out in time to go to a New Year's Eve party where he drank too much,<br />
+	slipped on a piece of ice and broke his left leg.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgadd8bcb" class="outline-3">
+<h3 id="orgadd8bcb"><span class="done DONE">DONE</span> tell the story 口语复述</h3>
+<div class="outline-text-3" id="text-orgadd8bcb">
+</div>
+</div>
+<div id="outline-container-orgcd4513f" class="outline-3">
+<h3 id="orgcd4513f"><span class="done DONE">DONE</span> composition 阅读 或 写作</h3>
+<div class="outline-text-3" id="text-orgcd4513f">
+<p>
+An aunt of mine lives in a small village in the country<br />
+	and tells this story of what happened to her once.<br />
+In order to understand the story, you should know a little about life in an English village.<br />
+For example, people often enjoy afternoon tea together,<br />
+	they still leave doors unlocked,<br />
+	and certain tradesmen are used to delivering goods and,<br />
+	with permission, leaving them inside the owner's house.<br />
+One day my aunt had invited some friends round for afternoon tea.<br />
+She had put some cakes in the oven to bake, and had gone upstairs to do some cleaning.<br />
+When she finished, she decided to have a bath before her friends arrived.<br />
+</p>
+
+<p>
+She was just about to get into the bath when she suddenly remembered the cakes.<br />
+She wrapped a bath towel round her, went down to the kitchen and took the cakes out of the oven.<br />
+Just then, there was a knock on the back door.<br />
+She was sure it was the baker,<br />
+	who would open the door, come in and leave the bread on the kitchen table.<br />
+She panicked, dashed into the cupboard under the stairs and closed the door.<br />
+Then, horrified, she heard footsteps coming to the cupboard.<br />
+The door opened and there stood the gasman who had come to read the meter<br />
+	&#x2013; which was in the cupboard.<br />
+My aunt blushed and said, 'I'm very sorry. I was expecting the baker.'<br />
+'Oh,' the gasman said."Sorry, madam".<br />
+He closed the door gently and left.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org6fa6063" class="outline-3">
+<h3 id="org6fa6063">Topics for discussion</h3>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,852 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-09-28 Sat 22:17 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-org818e9ce" class="outline-2">
+<h2 id="org818e9ce">Lesson 37 The Westhaven Express</h2>
+<div class="outline-text-2" id="text-org818e9ce">
+<p class="verse">
+What was the mistake the author made?<br />
+<br />
+We have learnt to expect that trains will be punctual.<br />
+After years of conditioning,<br />
+&#xa0;most of us have <b>developed an unshakable faith in</b> railway timetables.<br />
+Ships may be delayed by storms; flights may be cancelled because of bad weather;<br />
+&#xa0;but trains must be on time.<br />
+Only an exceptionally heavy snowfall might temporarily dislocate railway services.<br />
+<b>It is all too easy to blame</b> the railway authorities when something does go wrong.<br />
+The truth is that when mistakes occur, they are more likely to be ours than theirs.<br />
+<br />
+After <b>consulting my railway timetable</b>,<br />
+&#xa0;I <b>noted with satisfaction that</b> there was an express train to Westhaven.<br />
+It <b>went direct</b> from my local station and the journey lasted a mere hour and seventeen minutes.<br />
+When I boarded the train, I <b>could not help noticing</b> that a great many local people got on as well.<br />
+At the time, this did not <b>strike me as odd</b>.<br />
+I <b>reflected that</b> there must be a great many people besides myself<br />
+&#xa0;who <b>wished to take advantage of</b> this excellent service.<br />
+Neither was I surprised when the train stopped at Widley,<br />
+&#xa0;a tiny station a few miles along the line.<br />
+Even a mighty express train can <b>be held up</b> by signals.<br />
+But when the train dawdled at station after station, I began to wonder.<br />
+<b>It suddenly dawned on me</b><br />
+&#xa0;that this express was not <b>roaring down</b> the line at ninety miles an hour,<br />
+&#xa0;&#xa0;but barely chugging along at thirty.<br />
+One hour and seventeen minutes passed and we had not even covered half the distance.<br />
+I asked a passenger if this was the Westhaven Express,<br />
+&#xa0;but he had not even <b>heard of</b> it.<br />
+I determined to <b>lodge a complaint</b> as soon as we arrived.<br />
+Two hours later, I was talking angrily to the station master at Westhaven.<br />
+When he denied the train's existence, I borrowed his <b>copy of</b> the timetable.<br />
+There was <b>a note of triumph</b> in my voice when I told him that it was there <b>in black and white</b>.<br />
+Glancing at it briefly, he told me to look again.<br />
+A tiny asterisk <b>conducted me to</b> a footnote <b>at the bottom of</b> the page.<br />
+It said: 'This service has been suspended.'<br />
+</p>
+</div>
+<div id="outline-container-orgec6feec" class="outline-3">
+<h3 id="orgec6feec">expression</h3>
+<div class="outline-text-3" id="text-orgec6feec">
+<p>
+express: [ɪkˈspres] n.快车 adj.高速的<br />
+punctual: [ˈpʌŋktʃuəl] adj. punctually adv.准时的<br />
+condition: [kənˈdɪʃ(ə)n] v.使习惯于<br />
+unshakable: [ʌn'ʃeɪkəbl] adj.不可动摇的<br />
+faith: [feɪθ] n.信任<br />
+cancel: [ˈkæns(ə)l] v.取消<br />
+exceptionally: [ɪkˈsepʃənli] adv.例外地<br />
+dislocate: [ˈdɪsləˌkeɪt] v.打乱(计划等)<br />
+blame: [bleɪm] v.责怪<br />
+consult: [kənˈsʌlt] v.请教,查阅<br />
+direct: [daɪˈrekt] adv.径直地<br />
+odd: [ɑd] adj.奇怪的<br />
+reflect: [rɪˈflekt] v.细想<br />
+advantage: [ədˈvæntɪdʒ] n.优势<br />
+mighty: [ˈmaɪti] adj.强大的,有力的<br />
+dawdle: [ˈdɔd(ə)l] v.慢吞吞地动或做<br />
+chug: [tʃʌɡ] v.喀嚓喀嚓地响<br />
+lodge: [lɑdʒ] v.提出<br />
+complaint: [kəmˈpleɪnt] n.抱怨<br />
+triumph: [ˈtraɪəmf] n.胜利<br />
+asterisk: [ˈæstərɪsk] n.星号<br />
+conduct: [ˈkɑnˌdʌkt] v.引向<br />
+</p>
+
+<p>
+be punctual for: 准时<br />
+condition sb. to (do) sth.: 训练某人做某事<br />
+sb. be conditioned to do sth.: 某人(被训练)习惯于做某事<br />
+develop an unshakable belief/faith in sb./sth.: 对某人/某事有不可动摇的信心<br />
+have/lose faith in sb./sth.: 对某人/某事有信心<br />
+blame sb. for sth.: 责怪某人某事<br />
+blame sth. on sb.: 责怪某人某事<br />
+consult the map/manual/dictionary: 查地图/手册/字典<br />
+go/fly direct: 直接去<br />
+It is/seems odd that + &#x2026;: 似乎很奇怪<br />
+reflect that + &#x2026;: 反应出&#x2026;<br />
+reflect on sth.: 思考某事<br />
+lodge a complaint: 投诉<br />
+have/make/receive/lodge a complaint: 投诉<br />
+a note of triumph: 胜利的音符<br />
+conduct sb. to sp.: 引导某人注意某处<br />
+</p>
+<hr />
+<p>
+neither + 部分倒装<br />
+not&#x2026; but &#x2026; 不是&#x2026; 而是&#x2026;<br />
+</p>
+<hr />
+<p>
+It is all too easy to do sth.: 很容易做某事<br />
+sb. noted with satisfaction that + &#x2026;: 某人满意的发现<br />
+can't help doing sth.: 忍不住做某事<br />
+strike sb as sth./sb.: 使某人想起某人某物<br />
+take advantage of sth./sb.: 利用<br />
+wish to do sth.: 期望做某事<br />
+hold up: 堵住<br />
+It dawned on me that + &#x2026;: 我突然想到<br />
+roar down: 呼啸而下<br />
+not do sth. but + &#x2026;: 不但做某事,而且&#x2026;<br />
+hear of: 听说<br />
+copy of sth.:	一本&#x2026;<br />
+in black and white: 白纸黑字地<br />
+at the bottom of sth.: 在某物的底部<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgfd3b01e" class="outline-3">
+<h3 id="orgfd3b01e">words</h3>
+<div class="outline-text-3" id="text-orgfd3b01e">
+<p>
+express [ɪkˈspres] n.快车<br />
+punctual [ˈpʌŋktʃuəl] adj.准时的<br />
+condition [kənˈdɪʃ(ə)n] v.使习惯于<br />
+unshakable [ʌnˈʃeɪkəbl] adj.不可动摇的<br />
+faith [feɪθ] n.信任<br />
+cancel [ˈkæns(ə)l] v.取消<br />
+exceptionally [ɪkˈsepʃənəli] adv.例外地<br />
+dislocate [ˈdɪsloʊkeɪt] v.打乱(计划等)<br />
+blame [bleɪm] v.责怪<br />
+consult [kənˈsʌlt] v.请教<br />
+direct [dəˈrekt] adv.径直地<br />
+odd [ɑːd] adj.奇怪的<br />
+reflect [rɪˈflekt] v.细想<br />
+advantage [ədˈvæntɪdʒ] n.优势<br />
+mighty [ˈmaɪti] adj.强大的<br />
+dawdle [ˈdɔːd(ə)l] v.慢吞吞地动<br />
+chug [tʃʌɡ] v.咔嚓喀嚓地响<br />
+lodge [lɑːdʒ] v.提出<br />
+complaint [kəmˈpleɪnt] n.抱怨<br />
+triumph [ˈtraɪʌmf] n.胜利<br />
+asterisk [ˈæstərɪsk] n.星号<br />
+conduct [kənˈdʌkt] v.引向<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org8851486" class="outline-3">
+<h3 id="org8851486">vocabulary</h3>
+<div class="outline-text-3" id="text-org8851486">
+<p>
+punctual: on time<br />
+unshakable faith: a firm belief or trust<br />
+delayed: made late<br />
+cancelled: called off<br />
+temporarily dislocate: disrupt for a short time<br />
+consulting: reading,looking at<br />
+a mere: only, just<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgf6da7b9" class="outline-3">
+<h3 id="orgf6da7b9"><span class="done DONE">DONE</span> 单词造句</h3>
+<div class="outline-text-3" id="text-orgf6da7b9">
+<p>
+express n. adj.<br />
+</p>
+<ul class="org-ul">
+<li>I had a glimpse of the express train at the station a few miles along the line.<br /></li>
+<li>This express was expected to be punctual.<br /></li>
+<li>We are conditioned to catch a express punctually.<br /></li>
+<li>If you don't hurry up, you might miss the express train.<br /></li>
+<li>We are gonna go to the theatre by an express bus.<br /></li>
+</ul>
+<p>
+punctual adj. punctually adv.  be punctual for<br />
+</p>
+<ul class="org-ul">
+<li>There is a chance that we can be punctual for the business meeting.<br /></li>
+<li>The cat was punctual for making his way back home.<br /></li>
+<li>She was thought to be punctual for the task.<br /></li>
+<li>She was thought to be punctual for the appointment which they made last week.<br /></li>
+<li>Needless to say, he wasn't punctual for the meeting which was held by his father again.<br /></li>
+</ul>
+<p>
+condition v.  condition sb. to (do) sth.  sb. be conditioned to do sth.<br />
+</p>
+<ul class="org-ul">
+<li>This conditioned me to ask for help in difficulty.<br /></li>
+<li>This conditioned the dog to rescue people struck by snow storms.<br /></li>
+<li>The dog was conditioned to sit down with order given.<br /></li>
+<li>It seems improbable that I was conditioned to have a rest in the afternoon.<br /></li>
+<li>His mother was conditioned to conspire to his downfall.<br /></li>
+</ul>
+<p>
+unshakable adj.  develop an unshakable belief/faith in  have/lose faith in sb./sth.<br />
+</p>
+<ul class="org-ul">
+<li>She developed an unshakable belief in his father who was expected to break the world record.<br /></li>
+<li>We must develop an unshakable faith in God.<br /></li>
+<li>I lost faith in my wife and don't expect her to help me anymore.<br /></li>
+<li>It is incredible that your daughter lost faith in you.<br /></li>
+<li>The man presumed guilty develop an unshakable faith in justice in the courts of law.<br /></li>
+</ul>
+<p>
+faith n.<br />
+</p>
+<ul class="org-ul">
+<li>I wished that he had had faith in me.<br /></li>
+<li>It is clear that he has lost his faith in us who are spying on him day and night.<br /></li>
+<li>Although this house was broken into, we must have faith in his downfall.<br /></li>
+<li>I have faith in my husband who managed to lead to her downfall.<br /></li>
+<li>I presumed that you have faith in your dream.<br /></li>
+</ul>
+<p>
+cancel v.<br />
+</p>
+<ul class="org-ul">
+<li>It seems highly improbable that the meeting will be cancelled because of your absence.<br /></li>
+<li>The meeting which was thought to be cancelled was held towards the end of this year.<br /></li>
+<li>We have to cancel the meeting, for we are separeted from our children.<br /></li>
+<li>The boss returned to his office and informed that the meeting had been cancelled.<br /></li>
+<li>No one know what become of the boss who was gonna to cancel the appointment.<br /></li>
+</ul>
+<p>
+exceptionally adv.<br />
+</p>
+<ul class="org-ul">
+<li>There is a chance in a million that a teacher in poverty explains it exceptionally clear.<br /></li>
+<li>Needless to say, she was exceptionally tired of work.<br /></li>
+<li>This bring his story to a conclusion that Leo was exceptionally excellent English teacher.<br /></li>
+<li>I was exceptionally with my father's characteristics.<br /></li>
+<li>Assuming that the weather was exceptionally cold, he carried a box of clothes to New York.<br /></li>
+</ul>
+<p>
+dislocate v.<br />
+</p>
+<ul class="org-ul">
+<li>It seems reasonable to assume that the snowfall will dislocate the railway service tomorrow.<br /></li>
+<li>He poured scorn on his idea, pointing out that the flight had been dislocated by a heavy fog.<br /></li>
+<li>It is incredible how a boy who played from school dislocated the railway service.<br /></li>
+<li>It is naive enough to belive that a rain can dislocate the railway service.<br /></li>
+<li>Even if this led to his downfall, we are determined to dislocate the flight.<br /></li>
+</ul>
+<p>
+blame v.  blame sb./sth. for  blame sth. on sb.<br />
+</p>
+<ul class="org-ul">
+<li>She blamed her loss in the mall on me.<br /></li>
+<li>At that time, I was under the impression that you blamed this on me.<br /></li>
+<li>You are shamed of blaming everything on a young boy.<br /></li>
+<li>In my youth, my mother used to blame broken vases on me.<br /></li>
+<li>I was unable to blame me for what happened recently.<br /></li>
+</ul>
+<p>
+consult v.  consult the map/manual/dictionary<br />
+</p>
+<ul class="org-ul">
+<li>If you consulted the map, you would know the way to your hotel.<br /></li>
+<li>Leo reprimanded us for asking him questions before consulting the dictionary.<br /></li>
+<li>I am conscious of consulting the manual of the old machine.<br /></li>
+<li>He dumped it on the drawer after consulting the dicitonary.<br /></li>
+<li>You may consult the timetables which was elaborated by the crew.<br /></li>
+</ul>
+<p>
+direct adv.  go/fly direct<br />
+</p>
+<ul class="org-ul">
+<li>It occured to me that we could fly direct from the Carribean to Beijing.<br /></li>
+<li>The poor girl accepted the fact that her boyfriend went direct back to his hometown.<br /></li>
+<li>What happened to the girl who went direct back to her room?<br /></li>
+<li>The author brought his story to a conclusion<br />
+that the young couples flied direct to their hometown.<br /></li>
+<li>Anyone but you flied direct from Shanghai to England.<br /></li>
+</ul>
+<p>
+odd adj.  It is/seems odd that + &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>It is odd that you are reunited with your husband.<br /></li>
+<li>It is odd that you poured scorn on such a beatiful girl.<br /></li>
+<li>It is odd that you bear little resemblance to your father.<br /></li>
+<li>It is odd that you are acquainted with my teacher, Mr. Leo.<br /></li>
+<li>It is odd that they conspire to bring about his downfall.<br /></li>
+</ul>
+<p>
+reflect v.  reflect that + &#x2026;  reflect on sth.<br />
+</p>
+<ul class="org-ul">
+<li>I reflected that there was a chance that she might be right.<br /></li>
+<li>I reflected that if I didn't pour scorn on her, it would be totally different.<br /></li>
+<li>I reflected that the railway service might be dislocated by the snowfall.<br /></li>
+<li>I reflected on the story which he told me last night.<br /></li>
+<li>I reflected on the woman who poisoned her five husbands in her youth.<br /></li>
+</ul>
+<p>
+advantage n.<br />
+</p>
+<ul class="org-ul">
+<li>Beyond doubt, online classes have the advantage that you can repeat it as many as you want.<br /></li>
+<li>One of the advantages of living in a hotel located	in town is that the traffic is convenient.<br /></li>
+<li>She took advantage of this material and listened it several times.<br /></li>
+<li>Disregarding social conventions, the eccentric took advantage of others' mercy.<br /></li>
+<li>I found it impossible to take advantage of this wood without sticks.<br /></li>
+</ul>
+<p>
+mighty adj.<br />
+</p>
+<ul class="org-ul">
+<li>The lady claimed to have seen a mighty puma at large.<br /></li>
+<li>I was conscious that there was still a mighty puma at large in the countryside.<br /></li>
+<li>A various of factors conspired to cause the death of a mighty lion.<br /></li>
+<li>It comes as a surprised to learn that a mighty lion was killed in the forest.<br /></li>
+<li>He denied that he didn't cut any mighty trees at the edge of a forest.<br /></li>
+</ul>
+<p>
+dawdle v.<br />
+</p>
+<ul class="org-ul">
+<li>My colleague is always asking me to dawdle on the task<br />
+so that he could make his way back to his home on Friday afternoon.<br /></li>
+<li>I hated to dawdle in the process.<br /></li>
+<li>He accepted the fact that the express train dawdled at station after station.<br /></li>
+<li>He suggested that the express train was dawdled in the way to England.<br /></li>
+<li>If you dawdled in your work, your boss might reprimand you for you delay.<br /></li>
+</ul>
+<p>
+chug v.<br />
+</p>
+<ul class="org-ul">
+<li>Oddly enough, there is a boat chugging out at sea.<br /></li>
+<li>If the boat kept chugging out into the sea, it may turn my stomach.<br /></li>
+<li>I felt sick to my stomach, for the train chugging alongside the line.<br /></li>
+<li>The sad truth is that we have to catch the train which is chugging.<br /></li>
+<li>I have the impulse to leave the chugging train.<br /></li>
+</ul>
+<p>
+lodge v.  lodge a complaint<br />
+</p>
+<ul class="org-ul">
+<li>It is illogical to lodge a comlaint when he gave you spiritual comfort.<br /></li>
+<li>After a heavy shower, I decided to lodge a complaint with his parents.<br /></li>
+<li>I have the impulse to lodge a complaint about the rude behaviors of the waiter.<br /></li>
+<li>Because I lodged a complaint with the manager, I received abuse from him.<br /></li>
+<li>Lodging a complaint about your rudeness really appeals to me.<br /></li>
+</ul>
+<p>
+complaint n.  have/make/receive/lodge a complaint<br />
+</p>
+<ul class="org-ul">
+<li>The waiter got very angry when he knew he received a complaint from the consumer.<br /></li>
+<li>I made a complaint so that justice will be done.<br /></li>
+<li>She hesitated to make a complaint, for the waiter threatened to kill her if she does.<br /></li>
+<li>She realized to her horror that she received a complaint from her student.<br /></li>
+<li>On the other hand, I was not willing to lodge a complaint.<br /></li>
+</ul>
+<p>
+triumph n.  a note of triumph<br />
+</p>
+<ul class="org-ul">
+<li>There was a note of triumph in my voice when I told my parent that I was gonna go to university.<br /></li>
+<li>I wish that you made a speech with a note of triumph in the open.<br /></li>
+<li>Passing the test, he made his way back to home with a note of triumph.<br /></li>
+<li>There was a note of triumph in my voice when I received a warm welcome at the monastery.<br /></li>
+<li>There was a note of triumph in his voice when he won a prize for the best director at Oscar.<br /></li>
+</ul>
+<p>
+asterisk n.<br />
+</p>
+<ul class="org-ul">
+<li>There is an asterisk in black and white.<br /></li>
+<li>Put asterisks beside the names of those who believe in God.<br /></li>
+<li>My boss asked to put asterisks beside the names of those who follows his instructions.<br /></li>
+<li>Attention to the asterisks. These often lead to some important extra informations.<br /></li>
+<li>So long as you pay attention to the asterisk, you would not make such mistakes.<br /></li>
+</ul>
+<p>
+conduct v.  conduct sb. to sp.<br />
+</p>
+<ul class="org-ul">
+<li>This young woman conducted my father to the block of flats.<br /></li>
+<li>The kidnappers wickedly conducted the cat to a flat.<br /></li>
+<li>My boss shaked his head and conducted me to the corner.<br /></li>
+<li>It occured to me that it was him who conducted my cat to the bank of river.<br /></li>
+<li>The salesman conducted me to a tent where I signed for a reachment.<br /></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org3d78d9f" class="outline-3">
+<h3 id="org3d78d9f"><span class="done DONE">DONE</span> 反复听电影片段直到懂关键句</h3>
+<div class="outline-text-3" id="text-org3d78d9f">
+</div>
+</div>
+<div id="outline-container-orgfd63470" class="outline-3">
+<h3 id="orgfd63470">复习二册语法(笔记或视频) &amp; 红皮书</h3>
+</div>
+<div id="outline-container-org25e82cb" class="outline-3">
+<h3 id="org25e82cb"><span class="done DONE">DONE</span> 习惯用法造句</h3>
+<div class="outline-text-3" id="text-org25e82cb">
+<p>
+It is all too easy to do sth.<br />
+</p>
+<ul class="org-ul">
+<li>It is all too easy to blame everything on your boyfriend in China.<br /></li>
+<li>It is all too easy to cook scrambled eggs.<br /></li>
+<li>It is all too easy to smash a blank sheet of paper into pieces.<br /></li>
+<li>It is all too easy to buy a pen from a vendor which couldn't write a single word.<br /></li>
+<li>It is all too easy to grab a beer after work.<br /></li>
+</ul>
+<p>
+sb. noted with satisfaction that + &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>She noted with satisfaction that she had passed the driver test.<br /></li>
+<li>I noted with satisfaction that my daughter managed to go to university.<br /></li>
+<li>She noted with satisfaction that the bus came at a fantastic speed.<br /></li>
+<li>I noted with satisfaction that I smashed everything in the kitchen to pieces.<br /></li>
+<li>I noted with satisfaction that my wife and my daughter was wandering around the arcade.<br /></li>
+</ul>
+<p>
+can't help doing sth.<br />
+</p>
+<ul class="org-ul">
+<li>I can't help noticing that she made remarks on me.<br /></li>
+<li>I can't help grabbing a coffee while having a rest.<br /></li>
+<li>I can't help listening to music while working.<br /></li>
+<li>She can't help thinking of him all the day.<br /></li>
+<li>She can't help putting her money in the microwave oven for safekeeping.<br /></li>
+</ul>
+<p>
+strike sb as &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>He strikes me as a person who is very rude to women.<br /></li>
+<li>You didn't strike me as a kind of person who is responsible for his work.<br /></li>
+<li>My boss strikes me as a man who takes his job very seriously.<br /></li>
+<li>You struck me as a busman who is determined to go on a diet.<br /></li>
+<li>He struck me as an odd man who didn't carry umbrella while raining.<br /></li>
+</ul>
+<p>
+take advantage of<br />
+</p>
+<ul class="org-ul">
+<li>My wife was determined to take advantage of the discount and go on vacation in SanYa.<br /></li>
+<li>Considering taking advantage of the discount, we ordered more meals than we expected.<br /></li>
+<li>Following my boss' instrcutions, we took advantage of the laptop.<br /></li>
+<li>It astounded me that a bird took advantage of stones and managed to drink water in the bottle.<br /></li>
+<li>The kidnapper took advantage of his love to the cat and got a ransom of $100.<br /></li>
+</ul>
+<p>
+wish to do sth.<br />
+</p>
+<ul class="org-ul">
+<li>I don't wish to receive an anonymous letter.<br /></li>
+<li>I wish to leave in an orderly fashion.<br /></li>
+<li>She wished to share her room with her boyfriend.<br /></li>
+<li>I wishes to follow in my father's footstep.<br /></li>
+<li>She wishes to have a good time in the hotel.<br /></li>
+</ul>
+<p>
+hold up<br />
+</p>
+<ul class="org-ul">
+<li>We might be late for the meeting, the traffic began to be held up.<br /></li>
+<li>A series of coincidences caused a serious accident which had held up the traffic all the day.<br /></li>
+<li>I explained how the accident help up the traffic, but they didn't believe me.<br /></li>
+<li>There was a man who was held up in the cave and starved to death.<br /></li>
+<li>There is a danger that we can be held up in the mountain and starve to death.<br /></li>
+</ul>
+<p>
+It dawned on me that + &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>It dawned on me that it was Mr. Leo who stole my lamb.<br /></li>
+<li>It dawned on me that Mr. Leo sent me an anonymous letter.<br /></li>
+<li>It dawned on me that we should go to the police.<br /></li>
+<li>It dawned on me that he didn't have a perfect alibi.<br /></li>
+<li>It dawned on me that the cat was still in safe hands.<br /></li>
+</ul>
+<p>
+roar down<br />
+</p>
+<ul class="org-ul">
+<li>She changed her mind and claimed to have seen a car roaring down the highway.<br /></li>
+<li>The car roaring down the highway is very dear to me.<br /></li>
+<li>Following my instructions, my child managed to see the train roaring down the line.<br /></li>
+<li>I used to see the train roaring downing behind my house in my youth.<br /></li>
+<li>It occured to me that an express train was roaring down the line.<br /></li>
+</ul>
+<p>
+not &#x2026; but &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>He was not a docter that we thought but a policeman.<br /></li>
+<li>He offered me not English books but Math books.<br /></li>
+<li>Not my grandfather but my father offered money to me.<br /></li>
+<li>Not the firefighter but his pupils rose to fame swiftly.<br /></li>
+<li>I am gonna changed my pocket money into not clothes but sweets.<br /></li>
+</ul>
+<p>
+hear of<br />
+</p>
+<ul class="org-ul">
+<li>After hearing of what become of his pupils, he turned against him.<br /></li>
+<li>All the arguments were settled when they heard of the news.<br /></li>
+<li>Sorry to interrupt, I never heard of books named Harry Potter.<br /></li>
+<li>I heard of an actor who was cast in the role of pirates of the Caribbean.<br /></li>
+<li>In the dim light, I heard of the fact that you poisoned your five husbands.<br /></li>
+</ul>
+<p>
+copy of &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>Would you like carry a copy of newspaper to me?<br /></li>
+<li>I am anxious to read a copy of timetables.<br /></li>
+<li>He was expected to hand a copy of paper to our boss.<br /></li>
+<li>She insited that the writer hand a copy of paper to her.<br /></li>
+<li>I don't cause to carry a copy of paper to you.<br /></li>
+</ul>
+<p>
+in black and white<br />
+</p>
+<ul class="org-ul">
+<li>The police gave me a ticket, informing that the rules had been written in black and white.<br /></li>
+<li>The prices have been written in black and white, you must pay the bill.<br /></li>
+<li>It is a pity that this hasn't been written in black and white.<br /></li>
+<li>I realized that the deal had been written in black and white.<br /></li>
+<li>She complained that the rules haven't been written in black and white.<br /></li>
+</ul>
+<p>
+at the bottom of &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>It is incredible how you add my name to the list at the bottom of the page.<br /></li>
+<li>There was an interesting carved dagger at the bottom of the chest.<br /></li>
+<li>It was Davy Jone's heart which was placed at the bottom of the chest.<br /></li>
+<li>It seems reasonable to assume that the password was written at the bottom of the page.<br /></li>
+<li>Because of the information at the bottom of the page I was reunited with my daughter.<br /></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgda15a29" class="outline-3">
+<h3 id="orgda15a29">跟读 50遍</h3>
+</div>
+<div id="outline-container-orgfb7bc0c" class="outline-3">
+<h3 id="orgfb7bc0c"><span class="done DONE">DONE</span> Comprehension 反复练习</h3>
+<div class="outline-text-3" id="text-orgfb7bc0c">
+</div>
+</div>
+<div id="outline-container-org4400871" class="outline-3">
+<h3 id="org4400871"><span class="done DONE">DONE</span> Ask me if 写+读</h3>
+<div class="outline-text-3" id="text-org4400871">
+<ol class="org-ol">
+<li>We have learnt to expect trains to be punctual. What<br />
+What have we learnt to expect?<br /></li>
+<li>Flights may be cancelled because of bad weather. Why<br />
+Why may flights be cancelled?<br /></li>
+<li>It is easy to blame the railway authorities. How easy<br />
+How easy is it to blame the railway authorities?<br /></li>
+<li>There was an express train to Westhaven. What kind of<br />
+What kind of train was there to Westhaven?<br /></li>
+<li>The journey should last an hour and seventeen minutes. How long<br />
+How long should the journey last?<br /></li>
+<li>A lot of local people got on the train as well. Who<br />
+Who got on the train as well?<br /></li>
+<li>The writer was surprised when the train stopped at Widley. Why wasn't<br />
+Why wasn't the writer surprised when the train stopped at Widley?<br /></li>
+<li>They had only gone half the distance after an hour and seventeen minutes. How far<br />
+How far had they only gone after an hour and seventeen minutes?<br /></li>
+<li>The station master denied the existence of the Westhaven Express. What<br />
+What did the station master deny?<br /></li>
+<li>A footnote said that the service had been suspended. What<br />
+What did a footnote say?<br /></li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orgae03eda" class="outline-3">
+<h3 id="orgae03eda"><span class="done DONE">DONE</span> 摘要写作 写 &amp; 对答案</h3>
+<div class="outline-text-3" id="text-orgae03eda">
+<p>
+When the writer boarded the train, he noticed that a lot of local people got on as well.<br />
+Nor was he surprised when the train stopped at Widley,<br />
+	for even an express train may be delayed by signals.<br />
+When the train dawdled at station after station,<br />
+	he realized that this express was chugging at thrity.<br />
+He didn't cover half the distance after one hour and seventeen minutes.<br />
+So he asked the passager, who told him that he didn't hear of the express.<br />
+Two hours later, he was arguing with the station master.<br />
+He told the master that the express was on the timetable in black and white.<br />
+However, a tiny asterisk conducted him to a footnote,<br />
+	which said: "This service has been suspended".<br />
+</p>
+
+<p>
+When many local people boarded the train with the writer,<br />
+	he was not surprised.<br />
+Nor was he surprised when the train stopped at Widley.<br />
+But when it stopped at each station, he began to wonder why it was going so slowly.<br />
+Finally, when the train reached Westhaven,<br />
+	the writer spoke to the station master who denied the existence of an express.<br />
+They argued and the writer was shown this timetable footnote,<br />
+	which said: 'This service has been suspended'.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgd079a2f" class="outline-3">
+<h3 id="orgd079a2f"><span class="done DONE">DONE</span> tell the story 口语复述</h3>
+<div class="outline-text-3" id="text-orgd079a2f">
+</div>
+</div>
+<div id="outline-container-orgb2b2677" class="outline-3">
+<h3 id="orgb2b2677"><span class="done DONE">DONE</span> composition 阅读 或 写作</h3>
+<div class="outline-text-3" id="text-orgb2b2677">
+<p>
+When I finally boarded the train,<br />
+	I was looking forward to a pleasant journey to the village of Slowleigh<br />
+		where my friends live.<br />
+I sat in my seat got out a book and was already reading when the train started.<br />
+According to the timetable, the train was due to arrive in Slowleigh at 4.30.<br />
+I had been so interested in my book that I had a shock when I looked at my watch.<br />
+It was almost 4.30.<br />
+I closed my book and waited for the train to slow down.<br />
+It didn't.<br />
+In fact, the train was going very fast -&#x2014;and that was Slowleigh, wasn't it?!<br />
+The train went straight on.<br />
+I asked the other passengers why the train hadn't stopped<br />
+	and they told me it was the express to the city.<br />
+</p>
+
+<p>
+I didn't believe it.<br />
+Then the ticket collector came along.<br />
+He looked at my ticket and I tried to explain,<br />
+	but in the end I had to pay the full fare to the city.<br />
+By the time we arrived in the city it was six o'clock.<br />
+The journey had lasted two hours and I was miles away from my original destination.<br />
+I rang my friends and said I would get a fast train back.<br />
+Then checked the timetable: there was no fast train back to Slowleigh,<br />
+	only a slow one, at 7 o'clock.<br />
+By the time I finally reached Slowleigh Station,<br />
+	it was nine o'clock at night.<br />
+My pleasant little train journey had taken 4.5 hours!<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org1d7c9bb" class="outline-3">
+<h3 id="org1d7c9bb">Topics for discussion</h3>
+</div>
+</div>
+</div>
+</body>
+</html>

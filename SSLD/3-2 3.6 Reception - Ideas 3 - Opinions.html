@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-11-27 Wed 16:15 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-org976a17e" class="outline-2">
+<h2 id="org976a17e">3-2 3.6 Reception - Ideas 3 - Opinions</h2>
+<div class="outline-text-2" id="text-org976a17e">
+<p class="verse">
+It sounds like there are almost patterns<br />
+&#xa0;that you can pick up with people<br />
+&#xa0;based on how they present facts<br />
+&#xa0;&#xa0;and the kind of underlying attitudes and positions that they take.<br />
+Yes.<br />
+So that takes us on to the other dimension.<br />
+So say for example you may sometimes hear a couple fighting.<br />
+And then someone will be accusing the other person.<br />
+I never know this, whatever that is,<br />
+&#xa0;like income or your looks or the size of your breasts or whatever is so important to you.<br />
+But very often, when you think back on how this person talks about other persons,<br />
+&#xa0;this is what we call characterization, right?<br />
+Right.<br />
+It's telling you a lot about what is important to this person.<br />
+<br />
+Say for example, this person who is telling you about his or her friends,<br />
+&#xa0;and every time you mention someone he or she knows<br />
+&#xa0;&#xa0;it will always be referring to this person's profession, income.<br />
+That means to this person, professional status and income are important.<br />
+Or someone is telling you about his or her friends.<br />
+Constantly referring to this person's physical features.<br />
+Height, hair color, body shape.<br />
+So that also tells you that to him or her, these are important.<br />
+If someone tells you about someone always where this person comes from.<br />
+&#xa0;which country, or ethnicity, or religion for that matter.<br />
+Then that tells you more about this person than the people that this person is talking about.<br />
+<br />
+So, giving you an example, like if I tell you that Jane is such an animal lover, right?<br />
+That means animal lover is a label that has significance for me, right?<br />
+And if I, for another person, they would not be animal lover.<br />
+For another person is like, Jane is such a music lover, right?<br />
+Yeah.<br />
+So when I tell you something about Jane, I'm actually telling you something about me.<br />
+Okay.<br />
+So this is like what we refer to as like the characterization frame.<br />
+<br />
+Right, right.<br />
+And I guess then, in what a person tells you can also affect how they are seeing you.<br />
+Yeah, exactly.<br />
+I am referring constantly to these dimensions.<br />
+You're right.<br />
+I may actually be using the same parameters or same dimension.<br />
+In my assessment of you, who you are and your value as a human being.<br />
+As a friend I may be actually be referring to this.<br />
+Say for example<br />
+&#xa0;if I think that education is important<br />
+&#xa0;&#xa0;and then I'm interacting with someone who is less educated.<br />
+If I keep referring to people's educational credentials and background<br />
+&#xa0;you have sense that like, where do I stand?<br />
+[LAUGH]<br />
+Yeah, exactly.<br />
+Yeah, so I guess that sort of answers this question<br />
+but what is the benefit of being able<br />
+&#xa0;to pick up on something in your interactions with individuals.<br />
+Well, I would say that most people actually were able to do that.<br />
+What we are trying to say here is to basically draw your attention to those different dimensions.<br />
+So when we are listening to people,<br />
+&#xa0;we understand that we shouldn't just be paying attention to facts.<br />
+We know that there are other dimensions as well<br />
+&#xa0;and that we pay attention to those dimensions<br />
+&#xa0;and sometimes when we're asked questions like, why is this person saying this?<br />
+It will actually help us to gain a more in-depth understanding of what the other person is up to.<br />
+Right.<br />
+Yeah.<br />
+</p>
+</div>
+<div id="outline-container-org8e9f686" class="outline-3">
+<h3 id="org8e9f686">expression</h3>
+<div class="outline-text-3" id="text-org8e9f686">
+<p>
+breast [brest]: n. one of the two round raised parts on a woman’s chest that produce milk when she has a baby胸部<br />
+characterization [ˌkerəktərɪˈzeɪʃ(ə)n]: n. the way in which the character of a real person or thing is described描述<br />
+profession [prəˈfeʃ(ə)n]: n. a job that needs a high level of education and training职业,专业<br />
+religion [rɪˈlɪdʒən]: n. a particular system of this belief and all the ceremonies and duties that are related to it宗教,信仰<br />
+label [ˈleɪb(ə)l]: n. a word or phrase which is used to describe a person, group, or thing, but which is unfair or not correct标签<br />
+parameter [pəˈræmɪtər]: n. a set of fixed limits that control the way that something should be done界限,范围<br />
+assessment [əˈsesmənt]: n. a process in which you make a judgment about a person or situation, or the judgment you make评估<br />
+credentials [krəˈdenʃ(ə)lz]: n. someone’s education, achievements, experience etc that prove they have the ability to do something资格,资格证书<br />
+in-depth [depθ]: adj. thorough, complete, and considering all the details深入的<br />
+</p>
+<hr />
+<p>
+refer to: 提及,称为<br />
+That means to sb. + &#x2026;: 那对于某人意味着&#x2026;<br />
+for that matter: 说到那一点<br />
+sb. guesses that + &#x2026;: 某人猜测&#x2026;<br />
+be up to sth.: Be able to do or deal with 能做某事,处理某事<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgc84784b" class="outline-3">
+<h3 id="orgc84784b">sentence</h3>
+<div class="outline-text-3" id="text-orgc84784b">
+<p>
+breast [brest]: n. one of the two round raised parts on a woman’s chest that produce milk when she has a baby胸部<br />
+</p>
+<ul class="org-ul">
+<li>His girlfriend accused him of caring about the size of her breast too much.<br /></li>
+<li>It is said that the size of breat will be enlarged after pregnancy.<br /></li>
+<li>In the end, she couldn't bear her husband who is also complaining about her breast.<br /></li>
+</ul>
+<p>
+characterization [ˌkerəktərɪˈzeɪʃ(ə)n]: n. the way in which the character of a real person or thing is described描述<br />
+</p>
+<ul class="org-ul">
+<li>The characterization of his father was so vivid that I recognized his father when we first met.<br /></li>
+<li>The characterization of his pirate story added on piece to his legendary life.<br /></li>
+<li>The detective has spent many time reflecting on the characterization of the thief.<br /></li>
+</ul>
+<p>
+profession [prəˈfeʃ(ə)n]: n. a job that needs a high level of education and training职业,专业<br />
+</p>
+<ul class="org-ul">
+<li>He is a good man who makes friends whatever his or her profession is.<br /></li>
+<li>He delayed in publishing an article on his profession in the press.<br /></li>
+<li>What invariably happens is that we miss out on the opportunities to do work about our profession.<br /></li>
+</ul>
+<p>
+religion [rɪˈlɪdʒən]: n. a particular system of this belief and all the ceremonies and duties that are related to it宗教,信仰<br />
+</p>
+<ul class="org-ul">
+<li>She apologized to me that she should've respected my religion.<br /></li>
+<li>Even though the king sentenced him to death, he still insisted on his religion.<br /></li>
+<li>The religion of people on the isolated island is very different from people on the continent.<br /></li>
+</ul>
+<p>
+label [ˈleɪb(ə)l]: n. a word or phrase which is used to describe a person, group, or thing, but which is unfair or not correct标签<br />
+</p>
+<ul class="org-ul">
+<li>These days, men are often attracted the 'sexist' label because of some inappropriate speaking in public.<br /></li>
+<li>Noticing that he was attracted the 'coward' label, he slammed the door and refused to attend the council.<br /></li>
+<li>The soldier attracted the 'coward' label died fighting in the battle.<br /></li>
+</ul>
+<p>
+parameter [pəˈræmɪtər]: n. a set of fixed limits that control the way that something should be done界限,范围<br />
+</p>
+<ul class="org-ul">
+<li>These watchdogs shall be keep within the parameters our master laid down.<br /></li>
+<li>Reek, you are forbidden to wander outside the parameters your master laid down.<br /></li>
+<li>Because of monsters in the mountain, the monk only moved with the parameters his apprentice laid down.<br /></li>
+</ul>
+<p>
+assessment [əˈsesmənt]: n. a process in which you make a judgment about a person or situation, or the judgment you make评估<br />
+</p>
+<ul class="org-ul">
+<li>In my assessment of my father, he is a very great man.<br /></li>
+<li>Our assessment of you shows that you are not up to our job.<br /></li>
+<li>Sorry to inform you that the assessment of your ability is not so well.<br /></li>
+</ul>
+<p>
+credentials [krəˈdenʃ(ə)lz]: n. someone’s education, achievements, experience etc that prove they have the ability to do something资格,资格证书<br />
+</p>
+<ul class="org-ul">
+<li>My manager asked me to develop a function which can generate credentials after taking exam.<br /></li>
+<li>Although the man has many credentials, he was not able to deal with his emotion and relationships with his colleagues.<br /></li>
+<li>The credentials are useless, for I haven't found a job for a long time.<br /></li>
+</ul>
+<p>
+in-depth [depθ]: adj. thorough, complete, and considering all the details深入的<br />
+</p>
+<ul class="org-ul">
+<li>It comes on suddenly that he didn't have an in-depth understanding of his wife.<br /></li>
+<li>Not having an in-depth understanding of his wife, he presented his wife with a gift which she doesn't like.<br /></li>
+<li>After we have an in-depth understanding of the project, everything goes smoothly.<br /></li>
+</ul>
+<hr />
+<p>
+refer to: 提及,称为<br />
+</p>
+<ul class="org-ul">
+<li>Why are you keep referring to the size of my breast? It's none of your business.<br /></li>
+<li>As you referred to your father, he is a man with honor who never breaks his oath.<br /></li>
+<li>As you referred to our house, it is me who paid for it, not you.<br /></li>
+</ul>
+<p>
+That means to sb. + &#x2026;: 那对于某人意味着&#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>That means to me I can't go on a vacation with you at seaside resort.<br /></li>
+<li>That means to me I lost in the gamble.<br /></li>
+<li>That means to me I am gonna be crucified in front of our people.<br /></li>
+</ul>
+<p>
+for that matter: 说到那一点<br />
+</p>
+<ul class="org-ul">
+<li>For that matter, it reminds me of our worker who used to clear up our table.<br /></li>
+<li>For that matter, it reminds me of your lover who betrayed you twice.<br /></li>
+<li>For that matter, your wife has poisoned five her husbands in her youth.<br /></li>
+</ul>
+<p>
+sb. guesses that + &#x2026;: 某人猜测&#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>I guess that you have lost your temper when you received a cold welcome in the restaurant.<br /></li>
+<li>I guess that your stray cat have been found.<br /></li>
+<li>I guess that our rubbish was thrown away by a kind worker.<br /></li>
+</ul>
+<p>
+be up to sth.: Be able to do or deal with 能做某事,处理某事<br />
+</p>
+<ul class="org-ul">
+<li>Are you up to a walk after dinner?<br /></li>
+<li>I am up to a walk, even though I climbed mountain yesterday.<br /></li>
+<li>Our cat is up to eat punctually, don't be too hard on yourself.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgfaa2e54" class="outline-3">
+<h3 id="orgfaa2e54">sentence2</h3>
+<div class="outline-text-3" id="text-orgfaa2e54">
+<p>
+breast [brest]: n. one of the two round raised parts on a woman’s chest that produce milk when she has a baby胸部<br />
+</p>
+<ul class="org-ul">
+<li>His girlfriend accused him of caring about the size of her breasts too much.<br /></li>
+<li>It is said that the size of breasts will be enlarged after pregnancy.<br /></li>
+<li>In the end, she can't bear her husband who is always complaining about her breasts.<br /></li>
+</ul>
+<p>
+characterization [ˌkerəktərɪˈzeɪʃ(ə)n]: n. the way in which the character of a real person or thing is described描述<br />
+</p>
+<ul class="org-ul">
+<li>The characterization of his father was so vivid that I recognized his father when we first met.<br /></li>
+<li>The characterization of his pirate story added on piece to his legendary life.<br /></li>
+<li>The detective has spent much time reflecting on the characterization of the thief.<br /></li>
+</ul>
+<p>
+profession [prəˈfeʃ(ə)n]: n. a job that needs a high level of education and training职业,专业<br />
+</p>
+<ul class="org-ul">
+<li>He is a good man who makes friends whatever his or her profession is.<br /></li>
+<li>He delayed publishing an article on his profession in the press.<br /></li>
+<li>What invariably happens is that we miss out on the opportunities to do work about our profession.<br /></li>
+</ul>
+<p>
+religion [rɪˈlɪdʒən]: n. a particular system of this belief and all the ceremonies and duties that are related to it宗教,信仰<br />
+</p>
+<ul class="org-ul">
+<li>She apologized to me that she should've respected my religion.<br /></li>
+<li>Even though the king sentenced him to death, he still insisted on his religion.<br /></li>
+<li>The religion of people on the isolated island is very different from people on the continent.<br /></li>
+</ul>
+<p>
+label [ˈleɪb(ə)l]: n. a word or phrase which is used to describe a person, group, or thing, but which is unfair or not correct标签<br />
+</p>
+<ul class="org-ul">
+<li>These days, men are often attracted to the 'sexist' label because of inappropriate speaking in public.<br /></li>
+<li>Noticing that he was attracted to the 'coward' label, he slammed the door and refused to attend the council.<br /></li>
+<li>The soldier attracted the 'coward' label died fighting in the battle.<br /></li>
+</ul>
+<p>
+parameter [pəˈræmɪtər]: n. a set of fixed limits that control the way that something should be done界限,范围<br />
+</p>
+<ul class="org-ul">
+<li>These watchdogs shall be kept within the parameters our master laid down.<br /></li>
+<li>Reek, you are forbidden to wander outside the parameters your master laid down.<br /></li>
+<li>Because of monsters in the mountain, the monk only moved with the parameters his apprentice laid down.<br /></li>
+</ul>
+<p>
+assessment [əˈsesmənt]: n. a process in which you make a judgment about a person or situation, or the judgment you make评估<br />
+</p>
+<ul class="org-ul">
+<li>In my assessment of my father, he is a very great man.<br /></li>
+<li>Our assessment of you shows that you are not up to our job.<br /></li>
+<li>I'm sorry to inform you that the assessment of your ability is not so well.<br /></li>
+</ul>
+<p>
+credentials [krəˈdenʃ(ə)lz]: n. someone’s education, achievements, experience etc that prove they have the ability to do something资格,资格证书<br />
+</p>
+<ul class="org-ul">
+<li>My manager asked me to develop a function that can generate credentials after taking exams.<br /></li>
+<li>Although the man has many credentials, he is not able to deal with his emotions and relationships with his colleagues.<br /></li>
+<li>The credentials are useless, for I haven't found a job for a long time.<br /></li>
+</ul>
+<p>
+in-depth [depθ]: adj. thorough, complete, and considering all the details深入的<br />
+</p>
+<ul class="org-ul">
+<li>It comes on suddenly that he didn't have an in-depth understanding of his wife.<br /></li>
+<li>Not having an in-depth understanding of his wife, he presented his wife with a gift that she didn't like.<br /></li>
+<li>After we have an in-depth understanding of the project, everything goes smoothly.<br /></li>
+</ul>
+<hr />
+<p>
+refer to: 提及,称为<br />
+</p>
+<ul class="org-ul">
+<li>Why do you keep referring to the size of my breasts? It's none of your business.<br /></li>
+<li>As you referred to your father, he is a man with honor who never breaks his oath.<br /></li>
+<li>As you referred to our house, it is me who paid for it, not you.<br /></li>
+</ul>
+<p>
+That means to sb. + &#x2026;: 那对于某人意味着&#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>That means to me I can't go on a vacation with you at a seaside resort.<br /></li>
+<li>That means to me I lost in the gamble.<br /></li>
+<li>That means to me I am gonna be crucified in front of our people.<br /></li>
+</ul>
+<p>
+for that matter: 说到那一点<br />
+</p>
+<ul class="org-ul">
+<li>For that matter, it reminds me of our worker who used to clear up our table.<br /></li>
+<li>For that matter, it reminds me of your lover who betrayed you twice.<br /></li>
+<li>For that matter, your wife has poisoned five of her husbands in her youth.<br /></li>
+</ul>
+<p>
+sb. guesses that + &#x2026;: 某人猜测&#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>I guess that you lost your temper when you received a cold welcome in the restaurant.<br /></li>
+<li>I guess that your stray cat has been found.<br /></li>
+<li>I guess that our rubbish was thrown away by a kind worker.<br /></li>
+</ul>
+<p>
+be up to sth.: Be able to do or deal with 能做某事,处理某事<br />
+</p>
+<ul class="org-ul">
+<li>Are you up to a walk after dinner?<br /></li>
+<li>I am up to a walk, even though I climbed a mountain yesterday.<br /></li>
+<li>Our cat is up to eat punctually, don't be too hard on yourself.<br /></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

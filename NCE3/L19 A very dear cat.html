@@ -1,0 +1,679 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-09-28 Sat 22:17 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-org8cf8c83" class="outline-2">
+<h2 id="org8cf8c83">Lesson 19 A very dear cat</h2>
+<div class="outline-text-2" id="text-org8cf8c83">
+<p class="verse">
+Why was Rastus 'very dear' in more ways than one?<br />
+<br />
+Kidnappers are rarely interested in animals,<br />
+&#xa0;but they recently took considerable interest in Mrs. Eleanor Ramsay's cat.<br />
+Mrs. Eleanor Ramsay, a very wealthy old lady,<br />
+&#xa0;has <b>shared a flat with</b> her cat, Rastus, for a great many years.<br />
+Rastus leads an orderly life.<br />
+He usually <b>takes a short walk</b> in the evenings and is always home by seven o'clock.<br />
+One evening, however, he failed to arrive.<br />
+Mrs. Ramsay <b>got very worried</b>.<br />
+She looked everywhere for him but could not find him.<br />
+<br />
+Three days after Rastus' disappearance, Mrs. Ramsay received an anonymous letter.<br />
+The writer stated that Rastus was in safe hands<br />
+&#xa0;and would be returned immediately if Mrs. Ramsay paid a ransom of 1,000 dollars.<br />
+Mrs. Ramsay was instructed to place the money in a cardboard box and to leave it outside her door.<br />
+<b>At first</b>, she decided to <b>go to the police</b>,<br />
+&#xa0;but fearing that she would never see Rastus again<br />
+&#xa0;&#x2013; the letter had <b>made that quite clear</b> &#x2013;<br />
+&#xa0;she <b>changed her mind</b>.<br />
+She withdrew 1,000 dollars from her bank and followed the kidnapper's instructions.<br />
+The next morning, the box had disappeared<br />
+&#xa0;but Mrs. Ramsay was sure that the kidnapper would keep his word.<br />
+<b>Sure enough</b>, Rastus arrived punctually at seven o'clock that evening.<br />
+He looked very well, though he was rather thirsty, for he drank half a bottle of milk.<br />
+The police were astounded when Mrs. Ramsay told them what she had done.<br />
+<b>She explained that</b> Rastus <b>was very dear to</b> her.<br />
+<b>Considering the amount</b> she paid, he was dear <b>in more ways than one</b>!<br />
+</p>
+</div>
+<div id="outline-container-orgbe7b928" class="outline-3">
+<h3 id="orgbe7b928">expression</h3>
+<div class="outline-text-3" id="text-orgbe7b928">
+<p>
+dear: [dɪr] adj.亲爱的;珍贵的;昂贵的<br />
+kidnapper: ['kɪdnæpə(r)] n.绑架者,拐骗者<br />
+considerable: [kənˈsɪd(ə)rəb(ə)l] adj.相当大的<br />
+wealthy: [ˈwelθi] adj. having a lot of money, possessions etc富的,有钱的<br />
+orderly: [ˈɔrdərli] adj. arranged or organized in a sensible or neat way有规律的<br />
+disappearance: [ˌdɪsəˈpɪrəns] n. disappear v.出现<br />
+anonymous: [əˈnɑnɪməs] adj. unknown by name匿名的<br />
+ransom: [ˈrænsəm] n.赎金<br />
+cardboard: [ˈkɑrdˌbɔrd] n. stiff thick brown paper, used especially for making boxes硬纸板<br />
+withdraw: [wɪðˈdrɔ] withdrew withdrawn(从银行)取钱<br />
+punctually: adv. on time准时地<br />
+astound: [əˈstaʊnd] v. astounded adj.使吃惊<br />
+</p>
+
+<p>
+be dear to somebody: 对某人很宝贵<br />
+a considerable amount/number of sth.: a lot of很多<br />
+in an orderly fashion/manner: in a well-organized and controlled way以有序的方式<br />
+anonymous letter/(phone) call: 匿名信/电话<br />
+remain anonymous: 匿名<br />
+a ransom of + (money): eg. a ransom of $100 &#x2026;的赎金<br />
+It astounded sb. that + &#x2026;: 使某人吃惊的是+&#x2026;<br />
+</p>
+<hr />
+<p>
+share sth. with sb.: 与某人分享某物<br />
+take a short/long walk: 走一小段路<br />
+get worried: 变得担心<br />
+in safe hands: they are being looked after by a reliable person and will not be harmed得到很好的照顾<br />
+at first: 一开始<br />
+go to the police: 报警<br />
+make sth. clear: 把某事搞的很清楚<br />
+change sb's mind: 改变主意<br />
+follow sb's instructions: 遵从某人的指示<br />
+keep sb's word: 说话算数<br />
+sure enough: 当然了<br />
+sb. explained that + &#x2026;: 某人解释到+&#x2026;<br />
+Considering + n., + &#x2026;: 考虑到<br />
+in more ways than one: to have more than one meaning不止一种意义<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org8b0120a" class="outline-3">
+<h3 id="org8b0120a">words</h3>
+<div class="outline-text-3" id="text-org8b0120a">
+<p>
+dear [dɪr] adj. 亲爱的；珍贵的；昂贵的<br />
+kidnapper ['kɪdnæpə(r)] n. 绑架者，拐骗者<br />
+considerable [kənˈsɪd(ə)rəb(ə)l] adj. 相当大的<br />
+wealthy [ˈwelθi] adj. 富的，有钱的<br />
+orderly [ˈɔrdərli] adj. 有规律的<br />
+disappearance [ˌdɪsəˈpɪrəns] n. 失踪<br />
+anonymous [əˈnɑnɪməs] adj. 匿名的<br />
+ransom [ˈrænsəm] n. 赎金<br />
+cardboard [ˈkɑrdˌbɔrd] n. 硬纸板<br />
+withdraw [wɪðˈdrɔ] (withdrew [wið'dru:],withdrawn [wið'drɔ:n]) v.(从银行)取钱<br />
+punctually ['pʌŋktʃuəli] adv. 准时地<br />
+astound [əˈstaʊnd] v. 使吃惊<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org5fed78a" class="outline-3">
+<h3 id="org5fed78a">vocabulary</h3>
+<div class="outline-text-3" id="text-org5fed78a">
+<p>
+rarely: seldom<br />
+considerable: a great deal of<br />
+wealthy: rich<br />
+worried: concerned<br />
+stated: said<br />
+changed her mind: altered her opinion<br />
+word: promise<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgff96d35" class="outline-3">
+<h3 id="orgff96d35"><span class="done DONE">DONE</span> 单词造句</h3>
+<div class="outline-text-3" id="text-orgff96d35">
+<p>
+dear adj.  be dear to somebody<br />
+</p>
+<ul class="org-ul">
+<li>She explained that the foods in that resturant are good but dear.<br /></li>
+<li>My wife is always very dear to me.<br /></li>
+<li>Sure enough, Leo became a dear friend.<br /></li>
+<li>On the surface, I'm very dear to you.<br /></li>
+<li>I lost the ring which is very dear to me.<br /></li>
+</ul>
+<p>
+kidnapper n.<br />
+</p>
+<ul class="org-ul">
+<li>In response to kidnapper's request, she paid $1000 to him.<br /></li>
+<li>The kidnapper took no interest in poor man.<br /></li>
+<li>The idea that a kidnapper is always a man is mistaken.<br /></li>
+<li>The police's action was not taken into account by the kidnapper.<br /></li>
+<li>The kidnapper is mistaken about that the man is as strong as a horse.<br /></li>
+</ul>
+<p>
+considerable adj.  a considerable amount/number of sth.<br />
+</p>
+<ul class="org-ul">
+<li>The artist has made a considerable number of pieces of sculpture.<br /></li>
+<li>Oddly enough, she ran out of a considerable amount of money.<br /></li>
+<li>The archaeologist made a considerable number of discoveries of the mummy.<br /></li>
+<li>There is a considerable number of statues in the famous monastery.<br /></li>
+<li>The monastery makes a considerable amount of money every summar.<br /></li>
+</ul>
+<p>
+wealthy adj.<br />
+</p>
+<ul class="org-ul">
+<li>The monk coming from a wealthy monastery is asking us for a meal.<br /></li>
+<li>Even she comes from a wealthy family, she couldn't afford to it.<br /></li>
+<li>I haven't bought the house, for the simple reason that I'm not wealthy.<br /></li>
+<li>Imagine her dismay when she found that her boyfriend doesn't come from a wealth family.<br /></li>
+<li>For safekeeping, the wealthy man went to the bank.<br /></li>
+</ul>
+<p>
+orderly adj.  in an orderly fashion/manner<br />
+</p>
+<ul class="org-ul">
+<li>Because the police is trying to try order, everyone leave in an orderly fashion.<br /></li>
+<li>People waitting in line for a comedy show is leaving in an orderly fashion.<br /></li>
+<li>Fearing that people would be out of control,<br />
+the commander instructed everyone to leave in an orderly fashion.<br /></li>
+<li>I lead an orderly life and went for a short walk in every evenings.<br /></li>
+<li>These ants is moving in a cirlce in an orderly fashion.<br /></li>
+</ul>
+<p>
+disappearance n. disappear v.<br />
+</p>
+<ul class="org-ul">
+<li>Because of my cat's disappearance, my wife got very worried.<br /></li>
+<li>In spite of her son's disappearance, she still had a lot of patience.<br /></li>
+<li>So long as the policeman arrived on the scene, he will explain her disappearance to you.<br /></li>
+<li>The old lady is conscious of her husband's disappearance.<br /></li>
+<li>My mother will be sensitive about her cat's disappearance.<br /></li>
+</ul>
+<p>
+anonymous adj.  anonymous letter/(phone) call  remain anonymous<br />
+</p>
+<ul class="org-ul">
+<li>If the article go to press, I must remain anonymous.<br /></li>
+<li>How could you know that I made an anonymous call?<br /></li>
+<li>My classmate accused me of making anonymous calls.<br /></li>
+<li>I denied making anonymous calls.<br /></li>
+<li>I apologized to him for sending an anonymous letter to him.<br /></li>
+</ul>
+<p>
+ransom n.  a ransom of + (money)<br />
+</p>
+<ul class="org-ul">
+<li>She is unwilling to pay the ransom.<br /></li>
+<li>She realized to her horror that she was asked for the ransom.<br /></li>
+<li>Her son was killed, for she failed to pay the ransom.<br /></li>
+<li>I was ordered to pay a ransom of $1000.<br /></li>
+<li>Oddly enough, the ransom found its way there.<br /></li>
+</ul>
+<p>
+cardboard n.<br />
+</p>
+<ul class="org-ul">
+<li>My cat must be hiding in that cardboard.<br /></li>
+<li>The worker apologized to me for taking my cardboard boxes without permissions.<br /></li>
+<li>Let's keep the status quo, I'm not gonna throw away thse cardboard boxes.<br /></li>
+<li>In response to the worker's request, I opened the door and give her my cardboard boxes.<br /></li>
+<li>I might be mistaken about the worker who took our cardboard boxes.<br /></li>
+</ul>
+<p>
+withdraw withdrew withdrawn<br />
+</p>
+<ul class="org-ul">
+<li>The boy withdrew $5 to exchange it for sweets.<br /></li>
+<li>She claimed to have withdrawn only $100 from her saving account.<br /></li>
+<li>You can't withdraw money today because of broken machine.<br /></li>
+<li>You could withdraw your money from you saving account whenever you come here.<br /></li>
+<li>There was a time when people had difficulty in withdrawing money from the bank.<br /></li>
+</ul>
+<p>
+punctually adv.<br />
+</p>
+<ul class="org-ul">
+<li>Not only do we pay punctually, but we are very polite.<br /></li>
+<li>Not only do they pay punctually, but they carried some fruits to our office.<br /></li>
+<li>Not only do they pay punctually, but they had a good temper.<br /></li>
+<li>Our teacher lost his temper, for you	didn't finish your homework punctually.<br /></li>
+<li>I confirmed that I arrived at the station punctually.<br /></li>
+</ul>
+<p>
+astound v. astounded adj.  It astounded sb. that + &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>It astounded her that she didn't have an alibi.<br /></li>
+<li>It astounded her that a polite doctor committed a murder.<br /></li>
+<li>It astounded her that he didn't tell the truth.<br /></li>
+<li>It astounded her that a considerable number of workers were trapped in the mine.<br /></li>
+<li>It astounded her that it is not a slip of the tongue.<br /></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgd81652c" class="outline-3">
+<h3 id="orgd81652c">反复听电影片段直到懂关键句</h3>
+</div>
+<div id="outline-container-orgc8fc950" class="outline-3">
+<h3 id="orgc8fc950">复习二册语法(笔记或视频) &amp; 红皮书</h3>
+</div>
+<div id="outline-container-orgda3390a" class="outline-3">
+<h3 id="orgda3390a"><span class="done DONE">DONE</span> 习惯用法造句</h3>
+<div class="outline-text-3" id="text-orgda3390a">
+<p>
+share sth. with sb.<br />
+</p>
+<ul class="org-ul">
+<li>He is reluctant to share his pie with his sister.<br /></li>
+<li>You'd better share your room with her.<br /></li>
+<li>She claimed to have shared a flat with a new boyfriend.<br /></li>
+<li>I found my cat sharing her food with the bird.<br /></li>
+<li>I felt obliged to share my room with her.<br /></li>
+</ul>
+<p>
+take a short/long walk<br />
+</p>
+<ul class="org-ul">
+<li>It convinced me that she had just took a short walk.<br /></li>
+<li>The disabled attempted to take a short walk on his own.<br /></li>
+<li>So long as I have difficult in studying, I will take a short walk in the street.<br /></li>
+<li>The famous actor received a warm welcome while taking a short walk.<br /></li>
+<li>These cats have one thing in common, that they take a short walk in every evenings.<br /></li>
+</ul>
+<p>
+get worried<br />
+</p>
+<ul class="org-ul">
+<li>She got very worried in a period of time.<br /></li>
+<li>She got very worried, for her son led a mysterious life.<br /></li>
+<li>When she heard the film is based on a true story, she got worried.<br /></li>
+<li>Because of my cat's appearace, I got worried.<br /></li>
+<li>Fearing that I was likely to be fired, I got worried.<br /></li>
+</ul>
+<p>
+in safe hands<br />
+</p>
+<ul class="org-ul">
+<li>The order was given, your money will be in safe hands.<br /></li>
+<li>On the other hand, your money is in safe hands.<br /></li>
+<li>The kidnappers informed that his cat was in safe hands.<br /></li>
+<li>I was relieved to hear that Leo's company is in safe hands.<br /></li>
+<li>The company is in safe hands, for the agreement is reached about salary.<br /></li>
+</ul>
+<p>
+at first<br />
+</p>
+<ul class="org-ul">
+<li>At first the police lit up, then he was told that it was only a perfume.<br /></li>
+<li>At first I was greeted by an unpleasant smell from the kitchen.<br /></li>
+<li>At first I thought my house was set on fire.<br /></li>
+<li>At first she claimed to have a perfert alibi.<br /></li>
+<li>At first she saw a puma at large in the remote village.<br /></li>
+</ul>
+<p>
+go to the police<br />
+</p>
+<ul class="org-ul">
+<li>I received an anonymous letter and felt obliged to go to the police.<br /></li>
+<li>If you kept making anonymous calls, I would go to the police.<br /></li>
+<li>Equipped with a torchlight, she went to the police.<br /></li>
+<li>She was too embarrassed to go to the police.<br /></li>
+<li>It took me a long time to go to the police.<br /></li>
+</ul>
+<p>
+make sth. clear<br />
+</p>
+<ul class="org-ul">
+<li>I must make it clear that you had better return it or I will call the police.<br /></li>
+<li>Let us make one thing clear &#x2013; I have lost $100 worth of ring.<br /></li>
+<li>Let us make one thing clear &#x2013; I was too busy working to meet you.<br /></li>
+<li>Let me make it clear that the cat has gained its independence.<br /></li>
+<li>Let me make it clear that parents always make an impact on their children.<br /></li>
+</ul>
+<p>
+change sb's mind<br />
+</p>
+<ul class="org-ul">
+<li>The order to abandon ship was give, but she didn't change her mind.<br /></li>
+<li>So long as the alarm was given, she would change her mind.<br /></li>
+<li>At first the policeman thought that she died from accident, then he changed his mind.<br /></li>
+<li>If you work hard, your wife may change her mind.<br /></li>
+<li>After greeted by a peculiar smell, the officer changed his mind.<br /></li>
+</ul>
+<p>
+follow sb's instructions<br />
+</p>
+<ul class="org-ul">
+<li>If you had followed our instructions, you wouldn't have made such stupid remarks.<br /></li>
+<li>Don't feel guilty, even if you didn't follow our instructions exactly.<br /></li>
+<li>She was made to follow our instructions.<br /></li>
+<li>Oddly enough, the boy managed to follow his father's instructions.<br /></li>
+<li>I'm genuinelly sorry that we don't follow your instructions.<br /></li>
+</ul>
+<p>
+keep sb's word<br />
+</p>
+<ul class="org-ul">
+<li>I was relieved to hear that she kept her word.<br /></li>
+<li>Even though she didn't keep her word, she didn't feel guilty.<br /></li>
+<li>I wished that you had kept your word.<br /></li>
+<li>I will kept my word and give you fifty pence.<br /></li>
+<li>For your own protection, you should keep your word.<br /></li>
+</ul>
+<p>
+sure enough<br />
+</p>
+<ul class="org-ul">
+<li>Sure enough, they gave him a state funeral.<br /></li>
+<li>Sure enough, she is going to dedicate herself to gardening.<br /></li>
+<li>Sure enough, the cat is wandering outside punctually.<br /></li>
+<li>She was unconscious of failing the exam sure enough.<br /></li>
+<li>Sure enough, she broke the world record.<br /></li>
+</ul>
+<p>
+sb. explained that + &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>I explained that everyone had the opportunity to meet her.<br /></li>
+<li>She explained that the cat starved to death.<br /></li>
+<li>I explained that my cat was wandering outside.<br /></li>
+<li>She explained that she had a perfect alibi.<br /></li>
+<li>She explained that she didn't set the museum on fire.<br /></li>
+</ul>
+<p>
+Considering + n., + &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>Considering the fact that his company made a profit, she felt relieved.<br /></li>
+<li>Considering the slow pace of life in the country, she moved to it.<br /></li>
+<li>Considering a ransom of $1000, she withdrew it from her saving account.<br /></li>
+<li>Considering his wife's dismay, he didn't go to the party.<br /></li>
+<li>Considering eletric shocks, she didn't touch it any more.<br /></li>
+</ul>
+<p>
+in more ways than one<br />
+</p>
+<ul class="org-ul">
+<li>You did give me a surprise in more ways than one.<br /></li>
+<li>You make me comfortable in more ways than one.<br /></li>
+<li>She is a winner in more ways than one.<br /></li>
+<li>They will give your shocks in more ways than one.<br /></li>
+<li>My cat is very dear to me in more ways than one.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgf1ef2c3" class="outline-3">
+<h3 id="orgf1ef2c3">跟读 50遍</h3>
+</div>
+<div id="outline-container-org4ce03fc" class="outline-3">
+<h3 id="org4ce03fc"><span class="done DONE">DONE</span> Comprehension 反复练习</h3>
+<div class="outline-text-3" id="text-org4ce03fc">
+</div>
+</div>
+<div id="outline-container-org5dc95aa" class="outline-3">
+<h3 id="org5dc95aa"><span class="done DONE">DONE</span> Ask me if 写+读</h3>
+<div class="outline-text-3" id="text-org5dc95aa">
+<ol class="org-ol">
+<li>Kidnappers took an interest in Mrs. Ramsay's cat. Why<br />
+Why did kidnappers take an interest in Mrs. Ramsay's cat?<br /></li>
+<li>She has shared a flat with her cat for a great many years. Who<br />
+Who has shared a flat with her cat for a great many years?<br />
+Who has she shared a flat with for a great many years?<br /></li>
+<li>Rastus leads an orderly life. What kind of life<br />
+What kind of life does Rastus lead?<br /></li>
+<li>He usually takes a short walk in the evenings. When<br />
+When does he usually take a short walk?<br /></li>
+<li>Mrs. Ramsay got very worried one evening. Why<br />
+Why did Mrs. Ramsay get very worried one evening?<br /></li>
+<li>She received an anonymous letter. What<br />
+What did she receive?<br /></li>
+<li>She withdrew $1000 from her bank. How much<br />
+How much did she withdraw from her bank?<br /></li>
+<li>The box had disappeared. Why<br />
+Why had the box disappeared?<br /></li>
+<li>He drank half a bottle of milk. How much milk<br />
+How much milk did he drink?<br /></li>
+<li>The police were astounded. Why<br />
+Why were the police astounded?<br /></li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orgfc0f936" class="outline-3">
+<h3 id="orgfc0f936"><span class="done DONE">DONE</span> 摘要写作 写 &amp; 对答案</h3>
+<div class="outline-text-3" id="text-orgfc0f936">
+<p>
+Mrs. Ramsay received an anonymous letter three days after her cat's disappearance.<br />
+The writer of the letter demanded $1000 for the return of the cat,<br />
+	and warned that she would never see her cat again if she went to the police.<br />
+She had to put the money in a cardboard box and leave it outside her door.<br />
+After drawing $1000 from her bank, she acted on the kidnapper's instructions.<br />
+The money disappeared the following morning,<br />
+	and Rastus returned at seven o'clock that morning.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb8151e2" class="outline-3">
+<h3 id="orgb8151e2"><span class="done DONE">DONE</span> tell the story 口语复述</h3>
+<div class="outline-text-3" id="text-orgb8151e2">
+</div>
+</div>
+<div id="outline-container-org6703c59" class="outline-3">
+<h3 id="org6703c59"><span class="done DONE">DONE</span> composition 阅读 或 写作</h3>
+<div class="outline-text-3" id="text-org6703c59">
+<p>
+In a bar one night, Mr. X was talking to a workman<br />
+	who told him that he often worked in Mrs. Ramsay's flat.<br />
+The workman added that Mrs. Ramsay was wealthy and she lived alone with her cat.<br />
+Every day, Mr. X stood outside Mrs. Ramsay's block of flats.<br />
+As the cat took a short walk every evening, he saw that it had regular habits.<br />
+</p>
+
+<p>
+He found out as much as he could about Mrs. Ramsay and learnt that she loved this cat very much.<br />
+One evening, as the cat was leaving the block of flats, he kidnapped it.<br />
+He took the cat to a secret address.<br />
+During the next three days, he walked past Mrs Ramsay's flat on several occasions<br />
+	and noticed that no other cat ever appeared.<br />
+Now he was sure he had the right cat, so he wrote a letter in which he stated his demands.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org32438ad" class="outline-3">
+<h3 id="org32438ad">Topics for discussion</h3>
+</div>
+</div>
+</div>
+</body>
+</html>

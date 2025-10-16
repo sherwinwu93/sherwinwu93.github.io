@@ -1,0 +1,1183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2023-10-11 Wed 11:25 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="lenovo" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org4c227df">谓语结构(时态主动&amp;时态被动&amp;情态动词主动&amp;情态动词被动&amp;情态动词表推测&amp;本该)</a>
+<ul>
+<li><a href="#orgbd2fab4">时态主动</a>
+<ul>
+<li><a href="#org44a9272">一般现在时</a></li>
+<li><a href="#org65b21bd">现在进行时</a></li>
+<li><a href="#orga79093c">一般过去时</a></li>
+<li><a href="#org9463d2f">过去进行时</a></li>
+<li><a href="#org3d6cb43">现在完成时</a></li>
+<li><a href="#org218c031">现在完成进行时</a></li>
+<li><a href="#orge687da8">过去完成时</a></li>
+<li><a href="#orgf472ed6">过去完成进行时</a></li>
+<li><a href="#orgf3bf082">一般将来时</a></li>
+<li><a href="#org2de1024">be going to(be due to) VS will do VS intend to do</a></li>
+<li><a href="#orgb51a396">将来进行时</a></li>
+<li><a href="#org311a0cd">将来完成时</a></li>
+<li><a href="#org1c7fe80">将来完成进行时</a></li>
+</ul>
+</li>
+<li><a href="#org592c769">时态被动</a>
+<ul>
+<li><a href="#orgad04c8e">have sth. done</a></li>
+</ul>
+</li>
+<li><a href="#org94d4bc2">情态动词主动</a>
+<ul>
+<li><a href="#org9761367">should &amp; can must have to</a></li>
+<li><a href="#orgf8d3d8a">would do &amp; would have done</a></li>
+<li><a href="#orgf806631">can/could VS be able to VS managed to do</a></li>
+</ul>
+</li>
+<li><a href="#org5ed2c0a">情态动词被动</a></li>
+<li><a href="#org8518348">情态动词表推测</a>
+<ul>
+<li><a href="#org80c7eb6">must和can't(现在+过去) 肯否-推测</a></li>
+<li><a href="#orgbe69620">may和may not &amp; can和could (现在+过去) 可能-推测</a></li>
+</ul>
+</li>
+<li><a href="#org8aa2c25">needn't have done &amp; should/ought to have done &amp; could have done</a></li>
+</ul>
+</li>
+<li><a href="#orgd91db48">非谓语 (to do &amp; doing &amp; done 定语状语)</a>
+<ul>
+<li><a href="#org251b946">分词作状语</a></li>
+<li><a href="#org173258c">doing &amp; done做前置定语 &amp; 后置定语 短语 + prep./done/doing</a></li>
+<li><a href="#org7855c97">to do &amp; 动名词 v.+ing</a></li>
+</ul>
+</li>
+<li><a href="#orgc9e4df1">特殊结构(needn't have done + should have done etc.)</a>
+<ul>
+<li><a href="#org34f37e5">see sb. do/doing sth.</a></li>
+<li><a href="#org3213bf1">used to do VS would do</a></li>
+<li><a href="#org30de6db">sb. be said to to/It is said that sb.</a></li>
+</ul>
+</li>
+<li><a href="#orgbe50314">条件句+虚拟语气</a></li>
+<li><a href="#orge82dbf8">特殊句型(强调etc,主语从句)</a>
+<ul>
+<li><a href="#org7d21ddd">强调句</a></li>
+<li><a href="#orgd1804a6">感叹句</a></li>
+</ul>
+</li>
+<li><a href="#orgd0229c9">名词性从句</a>
+<ul>
+<li><a href="#org1009127">宾语从句</a></li>
+<li><a href="#orgaec71e3">同位语从句</a></li>
+<li><a href="#orgc55cd34">主语/表语从句</a></li>
+</ul>
+</li>
+<li><a href="#orgc36a5cd">形容词性从句</a>
+<ul>
+<li><a href="#org7f95282">限定性定语从句</a></li>
+<li><a href="#org2e80378">非限定性定语从句</a></li>
+</ul>
+</li>
+<li><a href="#org9a81ea9">副词性从句</a>
+<ul>
+<li><a href="#org0d9263d">比较状语从句</a>
+<ul>
+<li><a href="#orgea0908d">最高级</a></li>
+</ul>
+</li>
+<li><a href="#org10e5561">方式状语从句 (in)</a></li>
+<li><a href="#orgaecadd7">时间状语从句</a></li>
+<li><a href="#orgd505bb2">目的状语从句 so that</a></li>
+<li><a href="#org17b0285">结果状语从句 so/such &#x2026; that</a></li>
+<li><a href="#org2c7c6a2">让步状语从句 no mather + 疑问词</a></li>
+</ul>
+</li>
+<li><a href="#org500c4b7">句子构成(6123456+连词+分词作状语)</a>
+<ul>
+<li><a href="#org739b4b7">语序</a></li>
+<li><a href="#org42e2c8a">两短句的连词</a></li>
+</ul>
+</li>
+<li><a href="#orge12b1f8">冠词与名词</a>
+<ul>
+<li><a href="#org6519f19">a/an VS the</a></li>
+<li><a href="#org38f58fc">动名词</a></li>
+</ul>
+</li>
+<li><a href="#org884f677">副词与介词</a>
+<ul>
+<li><a href="#org164e69c">at/on/in(时间)</a></li>
+<li><a href="#org3ce9c7f">v. + of/from/in/on</a></li>
+<li><a href="#orgd0fadad">及物VS不及物动词</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org4c227df" class="outline-2">
+<h2 id="org4c227df">谓语结构(时态主动&amp;时态被动&amp;情态动词主动&amp;情态动词被动&amp;情态动词表推测&amp;本该)</h2>
+<div class="outline-text-2" id="text-org4c227df">
+</div>
+<div id="outline-container-orgbd2fab4" class="outline-3">
+<h3 id="orgbd2fab4">时态主动</h3>
+<div class="outline-text-3" id="text-orgbd2fab4">
+</div>
+<div id="outline-container-org44a9272" class="outline-4">
+<h4 id="org44a9272">一般现在时</h4>
+<div class="outline-text-4" id="text-org44a9272">
+<p>
+N2-2,C2-1,2,3,4<br />
+am/is/are + doing: 1.动作正在发生;2.表计划(+未来时间)<br />
+do/does: 习惯动作/客观事实<br />
+am/is/are + doing VS do/does<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org65b21bd" class="outline-4">
+<h4 id="org65b21bd">现在进行时</h4>
+<div class="outline-text-4" id="text-org65b21bd">
+<p>
+N2-2,C2-1,2,3,4<br />
+am/is/are + doing: 1.动作正在发生;2.表计划(+未来时间)<br />
+do/does: 习惯动作/客观事实<br />
+am/is/are + doing VS do/does<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orga79093c" class="outline-4">
+<h4 id="orga79093c">一般过去时</h4>
+<div class="outline-text-4" id="text-orga79093c">
+<p>
+N2-3,C2-5<br />
+was/were/did: 过去的状态(was/were)/动作发生在过去(did)<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org9463d2f" class="outline-4">
+<h4 id="org9463d2f">过去进行时</h4>
+<div class="outline-text-4" id="text-org9463d2f">
+<p>
+N2-7,C2-6<br />
+was/were + doing<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org3d6cb43" class="outline-4">
+<h4 id="org3d6cb43">现在完成时</h4>
+<div class="outline-text-4" id="text-org3d6cb43">
+<p>
+N2-4,C2-7,8<br />
+have done: 1.过去事情对现在有影响; 2.从过去持续到现在<br />
+N2-5,C2-13,14<br />
+have done VS did<br />
+</p>
+<ul class="org-ul">
+<li>did: 过去的状态或动作<br /></li>
+<li>have done: 1.过去的v.对于现在的影响; 2.过去动作或状态持续(重复)到现在<br /></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org218c031" class="outline-4">
+<h4 id="org218c031">现在完成进行时</h4>
+<div class="outline-text-4" id="text-org218c031">
+<p>
+N2-52,C2-9,10<br />
+have been doing(不知持续与否): 1.过去进行的v.对现在有影响;2.从过去持续(重复!)到现在<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge687da8" class="outline-4">
+<h4 id="orge687da8">过去完成时</h4>
+<div class="outline-text-4" id="text-orge687da8">
+<p>
+N2-14,C2-15<br />
+had + done: 1.过去的过去;2.过去A发生,对于过去B产生影响(A在B前);3.动作从过去A持续(重复)到过去B<br />
+</p>
+
+<p>
+N2-38,<br />
+一前就后<br />
+had hardly done &#x2026; when &#x2026;<br />
+had no sooner done &#x2026; than &#x2026;<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgf472ed6" class="outline-4">
+<h4 id="orgf472ed6">过去完成进行时</h4>
+<div class="outline-text-4" id="text-orgf472ed6">
+<p>
+N2-62,C2-16<br />
+had been doing: 1.过去A进行的v.对过去B有影响;2.过去A进行的v.持续(重复)到过去B<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgf3bf082" class="outline-4">
+<h4 id="orgf3bf082">一般将来时</h4>
+<div class="outline-text-4" id="text-orgf3bf082">
+<p>
+N2-12,C2-21,22<br />
+will do: 将/会(当机立断决定,而非计划)<br />
+shall do: 将/会(当机立断决定,而非计划)<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org2de1024" class="outline-4">
+<h4 id="org2de1024">be going to(be due to) VS will do VS intend to do</h4>
+<div class="outline-text-4" id="text-org2de1024">
+<p>
+N2-36,C2-19,20,23<br />
+表述将来: 计划<br />
+be going to do(be due to)<br />
+will<br />
+intend to do<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb51a396" class="outline-4">
+<h4 id="orgb51a396">将来进行时</h4>
+<div class="outline-text-4" id="text-orgb51a396">
+<p>
+N2-13,C2-24<br />
+will be doing: 1.未来动作正在进行;2.计划<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org311a0cd" class="outline-4">
+<h4 id="org311a0cd">将来完成时</h4>
+<div class="outline-text-4" id="text-org311a0cd">
+<p>
+N2-37,C2-24<br />
+will have done: 1.动作持续(重复)到将来;2.动作截至到未来时间点前完成<br />
+have done VS had done VS will have done<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org1c7fe80" class="outline-4">
+<h4 id="org1c7fe80">将来完成进行时</h4>
+<div class="outline-text-4" id="text-org1c7fe80">
+<p>
+N2-61,<br />
+will be doing<br />
+will have done<br />
+will have been doing: 动作持续(重复)到将来 ?<br />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org592c769" class="outline-3">
+<h3 id="org592c769">时态被动</h3>
+<div class="outline-text-3" id="text-org592c769">
+<p>
+N2-10,C2-42<br />
+am/is/are+done<br />
+was/were+done<br />
+N2-10,C2-43,44<br />
+am/is/are+being+done<br />
+have/has+been+done<br />
+N2-34,C2-43<br />
+had been + done<br />
+N2-69,<br />
+having been done<br />
+</p>
+</div>
+
+<div id="outline-container-orgad04c8e" class="outline-4">
+<h4 id="orgad04c8e">have sth. done</h4>
+<div class="outline-text-4" id="text-orgad04c8e">
+<p>
+N2-66,C2-46<br />
+have something done: 1.使得某事被别人做;2.不幸的遭遇<br />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org94d4bc2" class="outline-3">
+<h3 id="org94d4bc2">情态动词主动</h3>
+<div class="outline-text-3" id="text-org94d4bc2">
+</div>
+<div id="outline-container-org9761367" class="outline-4">
+<h4 id="org9761367">should &amp; can must have to</h4>
+<div class="outline-text-4" id="text-org9761367">
+<p>
+N2-17,C2-26,28,31,37<br />
+must: 肯必须(主观);否禁止<br />
+have to: 肯必须(客观):否不必<br />
+'ve/have got to: 表必须<br />
+</p>
+
+<p>
+N2-65,C2-27,33,34<br />
+should/ought to do: 肯应该,否不应该<br />
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-orgf8d3d8a" class="outline-4">
+<h4 id="orgf8d3d8a">would do &amp; would have done</h4>
+<div class="outline-text-4" id="text-orgf8d3d8a">
+<p>
+N2-55,C2-36<br />
+常常和if连用表虚拟语气<br />
+would do 表假设; 过去经常进行的行为, VS used to<br />
+would have done 表过去的假设<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgf806631" class="outline-4">
+<h4 id="orgf806631">can/could VS be able to VS managed to do</h4>
+<div class="outline-text-4" id="text-orgf806631">
+<p>
+N2-43,67,C2-26!<br />
+</p>
+<ul class="org-ul">
+<li>be able to: 有能力; 做成某事的案例<br />
+<ul class="org-ul">
+<li>can: 有能力(be able to的一般时);可能发生<br /></li>
+<li>could: 有能力(be able to的过去式);可能发生;被允许<br /></li>
+<li>was able to:有能力(be able to的过去式); 做成某事的案例<br /></li>
+<li>managed to do: 做成某事的案例<br /></li>
+<li>对比以上时态更多<br /></li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org5ed2c0a" class="outline-3">
+<h3 id="org5ed2c0a">情态动词被动</h3>
+<div class="outline-text-3" id="text-org5ed2c0a">
+<p>
+N2-21,<br />
+will/would be done<br />
+can/could be done<br />
+must be done<br />
+have to be done<br />
+must have been one<br />
+</p>
+
+<p>
+N2-45,<br />
+be done<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org8518348" class="outline-3">
+<h3 id="org8518348">情态动词表推测</h3>
+<div class="outline-text-3" id="text-org8518348">
+</div>
+<div id="outline-container-org80c7eb6" class="outline-4">
+<h4 id="org80c7eb6">must和can't(现在+过去) 肯否-推测</h4>
+<div class="outline-text-4" id="text-org80c7eb6">
+<p>
+N2-17,C2-26,28,31,37<br />
+肯否猜测:<br />
+</p>
+<ul class="org-ul">
+<li>现在猜测<br />
+must: 一定是<br />
+can't: 一定不是<br /></li>
+<li>过去猜测<br />
+must have done: 当时一定是<br />
+can't have done: 当时一定不是<br /></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgbe69620" class="outline-4">
+<h4 id="orgbe69620">may和may not &amp; can和could (现在+过去) 可能-推测</h4>
+<div class="outline-text-4" id="text-orgbe69620">
+<p>
+N2-19,C2-29,30<br />
+也许 现在-猜测:<br />
+may/might (not)<br />
+can/could (没有not)<br />
+</p>
+
+<p>
+也许 过去-猜测:<br />
+may/might (not) have done<br />
+can/could(没有not) have done: 过去有可能发生;可能发生,实际没有<br />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org8aa2c25" class="outline-3">
+<h3 id="org8aa2c25">needn't have done &amp; should/ought to have done &amp; could have done</h3>
+<div class="outline-text-3" id="text-org8aa2c25">
+<p>
+N2-41,C2-32<br />
+needn't have done: 本不必如此,却做了,有后悔效果<br />
+needn't do that: needn't当情态动词<br />
+need doing sth. = need to be done<br />
+</p>
+
+<p>
+N2-65,C2-27,33,34<br />
+should have done/ought to have done: 本该做某事,却没有做,指责效果<br />
+</p>
+
+<p>
+can/could(没有not) have done: 过去有可能发生;可能发生,实际没有<br />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgd91db48" class="outline-2">
+<h2 id="orgd91db48">非谓语 (to do &amp; doing &amp; done 定语状语)</h2>
+<div class="outline-text-2" id="text-orgd91db48">
+</div>
+<div id="outline-container-org251b946" class="outline-3">
+<h3 id="org251b946">分词作状语</h3>
+<div class="outline-text-3" id="text-org251b946">
+<p>
+NCE-49,69,C2-68<br />
+分词作状语 没找到部分被动<br />
+</p>
+<ol class="org-ol">
+<li>(not) doing<br />
+主动进行/主动一般<br />
+(being) (not) + adj.<br /></li>
+<li>done<br />
+被动完成/被动一般/主动完成(少)<br /></li>
+<li>having done<br />
+主动完成(发生在主句之前)<br />
+having been + adj. (主句之前的状态)<br /></li>
+<li>having been done 在N2-69课<br />
+主动完成被动(发生在主句之前)<br /></li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org173258c" class="outline-3">
+<h3 id="org173258c">doing &amp; done做前置定语 &amp; 后置定语 短语 + prep./done/doing</h3>
+<div class="outline-text-3" id="text-org173258c">
+<p>
+N2-29,C2-97<br />
+done做定语: 表被动一般/被动完成/主动完成(少)<br />
+</p>
+<ul class="org-ul">
+<li>done + n.<br /></li>
+<li>n. + done短语<br /></li>
+</ul>
+
+<p>
+N2-30,C2-97<br />
+doing现在分词做定语: 主动进行/主动一般<br />
+</p>
+<ul class="org-ul">
+<li>the sinking ship=the ship that is sinking<br /></li>
+<li>the rising sun=the sun that is rising<br /></li>
+<li>the sleeping child=the child who is sleeping<br /></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org7855c97" class="outline-3">
+<h3 id="org7855c97">to do &amp; 动名词 v.+ing</h3>
+<div class="outline-text-3" id="text-org7855c97">
+<p>
+N2-59,C2-64<br />
+⽬的状语从句<br />
+to<br />
+</p>
+
+<p>
+N2-20<br />
+动名词<br />
+构成: v.+ing<br />
+动词变成名词<br />
+I like fishing. 动名词<br />
+She is fishing. 现在分词<br />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgc9e4df1" class="outline-2">
+<h2 id="orgc9e4df1">特殊结构(needn't have done + should have done etc.)</h2>
+<div class="outline-text-2" id="text-orgc9e4df1">
+</div>
+<div id="outline-container-org34f37e5" class="outline-3">
+<h3 id="org34f37e5">see sb. do/doing sth.</h3>
+<div class="outline-text-3" id="text-org34f37e5">
+<p>
+N2-35,C2-67<br />
+see sb. do sth VS see sb. doing sth.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org3213bf1" class="outline-3">
+<h3 id="org3213bf1">used to do VS would do</h3>
+<div class="outline-text-3" id="text-org3213bf1">
+<p>
+C2-18<br />
+used to do sth.: 过去常常,但现在不做<br />
+</p>
+
+<p>
+C2-36<br />
+would do VS used to do<br />
+</p>
+<ul class="org-ul">
+<li>过去状态只用used to do<br /></li>
+<li>used to do包含现在不发生了<br /></li>
+<li>used to do讨论过去习惯行为(不重要)<br /></li>
+</ul>
+<p>
+where &amp; whose 引导的定语从句<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org30de6db" class="outline-3">
+<h3 id="org30de6db">sb. be said to to/It is said that sb.</h3>
+<div class="outline-text-3" id="text-org30de6db">
+<p>
+N2-58,C2-45<br />
+be said to do&#x2026;: 据说<br />
+It is said that&#x2026;: 据说<br />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgbe50314" class="outline-2">
+<h2 id="orgbe50314">条件句+虚拟语气</h2>
+<div class="outline-text-2" id="text-orgbe50314">
+<p>
+N2-16,C2-38<br />
+if从句<br />
+</p>
+<ul class="org-ul">
+<li>主将从现<br /></li>
+<li>主情从现<br /></li>
+<li>主祈从现<br /></li>
+</ul>
+
+<p>
+N2-40,C2-39<br />
+虚拟语气(现在): 与现在事实相反<br />
+	If + did/were, 主+would/should/could/might do<br />
+</p>
+
+<p>
+N2-64,C2-40<br />
+If 主 had done &#x2026;, 主 would/could &#x2026; have done. L64与过去事实相反<br />
+If you could have made(=If you had been able to make)<br />
+C2-41<br />
+suggest that &#x2026; (should) do &#x2026;<br />
+wish型虚拟语气: 从句: should(可省略) do<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge82dbf8" class="outline-2">
+<h2 id="orge82dbf8">特殊句型(强调etc,主语从句)</h2>
+<div class="outline-text-2" id="text-orge82dbf8">
+</div>
+<div id="outline-container-org7d21ddd" class="outline-3">
+<h3 id="org7d21ddd">强调句</h3>
+<div class="outline-text-3" id="text-org7d21ddd">
+<p>
+N2-58<br />
+强调句:<br />
+</p>
+<ul class="org-ul">
+<li>It is(was) + 强调部分 + that(who) + 剩余部分?<br /></li>
+<li>do/does/did + v.<br /></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgd1804a6" class="outline-3">
+<h3 id="orgd1804a6">感叹句</h3>
+<div class="outline-text-3" id="text-orgd1804a6">
+<p>
+N2-2<br />
+感叹句: 关键词需要升调 ?<br />
+	What + (形容词) + n. (+ 主语 + 谓语)<br />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgd0229c9" class="outline-2">
+<h2 id="orgd0229c9">名词性从句</h2>
+<div class="outline-text-2" id="text-orgd0229c9">
+</div>
+<div id="outline-container-org1009127" class="outline-3">
+<h3 id="org1009127">宾语从句</h3>
+<div class="outline-text-3" id="text-org1009127">
+<p>
+N2-15,C2-47,48<br />
+宾语从句: 句子做宾语<br />
+直接引语变间接引语: 时态倒退一个时态,现在-&gt;过去,过去-&gt;过去完成;客观事实仍成立可不退<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgaec71e3" class="outline-3">
+<h3 id="orgaec71e3">同位语从句</h3>
+<div class="outline-text-3" id="text-orgaec71e3">
+<p>
+N2-46,<br />
+</p>
+<ul class="org-ul">
+<li>同位语: 补充说明的名词<br /></li>
+</ul>
+<p>
+I have just received a letter from my brother, Tim.<br />
+</p>
+
+<ul class="org-ul">
+<li>同位语从句: 完整(引导词不充当从句成分)句子补充说明名词.<br /></li>
+</ul>
+<p>
+No one could account for <b>the fact that</b> one of the boxes was extremely heavy.<br />
+</p>
+
+<ul class="org-ul">
+<li>同位语从句VS定语从句: 1.从句是否完整 2.是否补充说明<br /></li>
+</ul>
+<p>
+Scientists have reached <b>the conclusion that</b> the temperature on Earth is getting higher and higher.<br />
+We were all happy about the news that the experiment was very successful.<br />
+I have a theory that &#x2026;<br />
+I have no doubt that he will help me.<br />
+Tell us about a time when you went beyond what was defined or established.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc55cd34" class="outline-3">
+<h3 id="orgc55cd34">主语/表语从句</h3>
+<div class="outline-text-3" id="text-orgc55cd34">
+<p>
+It's a pity that&#x2026;<br />
+It is/was sb's job to do sth.<br />
+It is easy for sb. to do sth.<br />
+It seems that &#x2026;<br />
+It occurred to sb. that &#x2026;<br />
+It occurred to sb. to do sth.<br />
+It is impossible for sb. to do.<br />
+It was obvious that&#x2026;<br />
+It is a blessing that &#x2026;<br />
+It is said that&#x2026;<br />
+It is fortunate that + 句子&#x2026;<br />
+It's hard to imagine &#x2026;<br />
+It is no use pretending that + sentence<br />
+N2-58,C2-45<br />
+It is said that&#x2026;<br />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgc36a5cd" class="outline-2">
+<h2 id="orgc36a5cd">形容词性从句</h2>
+<div class="outline-text-2" id="text-orgc36a5cd">
+</div>
+<div id="outline-container-org7f95282" class="outline-3">
+<h3 id="org7f95282">限定性定语从句</h3>
+<div class="outline-text-3" id="text-org7f95282">
+<p>
+N2-28,C2-92,93,94,95,96<br />
+定语从句:<br />
+</p>
+<ol class="org-ol">
+<li>确定被修饰词<br /></li>
+<li>确定引导词,who/whom/which/that<br /></li>
+<li>是否可以省略(引导词在从句是宾语可省)<br /></li>
+</ol>
+<p>
+N2-55<br />
+where &amp; whose 引导的定语从句<br />
+N2-46<br />
+What的定语从句 = the thing that/the person that<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org2e80378" class="outline-3">
+<h3 id="org2e80378">非限定性定语从句</h3>
+<div class="outline-text-3" id="text-org2e80378">
+<p>
+N2-77<br />
+非限定性定语从句: 解释,补充,说明<br />
+</p>
+<ul class="org-ul">
+<li>which非限:<br />
+<ul class="org-ul">
+<li>位置: 句尾<br /></li>
+<li>指代被修饰词<br /></li>
+</ul></li>
+<li>as非限<br />
+<ul class="org-ul">
+<li>位置: 前中后<br /></li>
+<li>指代整句<br /></li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org9a81ea9" class="outline-2">
+<h2 id="org9a81ea9">副词性从句</h2>
+<div class="outline-text-2" id="text-org9a81ea9">
+</div>
+<div id="outline-container-org0d9263d" class="outline-3">
+<h3 id="org0d9263d">比较状语从句</h3>
+<div class="outline-text-3" id="text-org0d9263d">
+</div>
+<div id="outline-container-orgea0908d" class="outline-4">
+<h4 id="orgea0908d">最高级</h4>
+<div class="outline-text-4" id="text-orgea0908d">
+<p>
+N8,C2-105,106,108<br />
+adj. 比较级&amp;最高级变化规则<br />
+</p>
+<ol class="org-ol">
+<li>单音节:+er/est<br />
+<ul class="org-ul">
+<li>元+辅音字母结尾: 需双写辅音字母 big -&gt; bigger<br /></li>
+</ul></li>
+<li>双音节:<br />
+<ul class="org-ul">
+<li>辅音+y结尾: y变成i pretty -&gt; prettier<br /></li>
+</ul></li>
+<li>多音节: + more/less, most/least<br /></li>
+<li>不规则:good/well~bad~much~little<br /></li>
+</ol>
+<p>
+比较状从:<br />
+</p>
+<ol class="org-ol">
+<li>主语 + be + the + adj.est + n. + I've ever met/seen<br /></li>
+<li>主语 + be + the + adj.est + n. + 范围<br /></li>
+<li>主语 + be + adj.er + than + 比较对象 (I formal / me informal)<br /></li>
+</ol>
+<p>
+N32,C2-107<br />
+as &#x2026; as VS so &#x2026; as(否): 同样的<br />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org10e5561" class="outline-3">
+<h3 id="org10e5561">方式状语从句 (in)</h3>
+<div class="outline-text-3" id="text-org10e5561">
+<p>
+N2-57,C2-123,124,125<br />
+in(可省) the way (+定从)&#x2026; 状从 ?<br />
+</p>
+<ol class="org-ol">
+<li>The assistant who served her did not like the way she was dressed.<br /></li>
+<li>I don’t like the way (that) you talk to me.<br /></li>
+<li>We want to know the way (in which) you learn new words.<br /></li>
+</ol>
+
+<p>
+N2-63<br />
+as: in the way or manner that 按照&#x2026;方式<br />
+	You'll do as I say and ask no questions.<br />
+like<br />
+as if<br />
+as though<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgaecadd7" class="outline-3">
+<h3 id="orgaecadd7">时间状语从句</h3>
+<div class="outline-text-3" id="text-orgaecadd7">
+<p>
+N7,C2-6,25,116<br />
+when &amp; while &amp; just as: 当&#x2026;<br />
+</p>
+
+<p>
+N2-60,<br />
+A先B后<br />
+the moment A &#x2026; B&#x2026;: 一A就B<br />
+	Everything stops the moment she walks in the room.<br />
+as soon as(主将从现): 一A就B(主从都表将来时,从句用现在时即可)<br />
+	As soon as the rain stops, we shall go out.<br />
+主将从现: 主从都表将来时,从句用现在时即可<br />
+	the moment/util/when/as soon as/while/before<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgd505bb2" class="outline-3">
+<h3 id="orgd505bb2">目的状语从句 so that</h3>
+<div class="outline-text-3" id="text-orgd505bb2">
+<p>
+N2-59,C2-64<br />
+-----&#x2013;&#x2014;接do sth.<br />
+to<br />
+in order to<br />
+so as to<br />
+-----&#x2013;&#x2014; 接句子<br />
+so that 目的状语从句<br />
+in order that: 目的<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org17b0285" class="outline-3">
+<h3 id="org17b0285">结果状语从句 so/such &#x2026; that</h3>
+<div class="outline-text-3" id="text-org17b0285">
+<p>
+N2-35,C2-67,102<br />
+so + adj./adv. that = such + n. that: 如此以至于<br />
+see sb. do sth VS see sb. doing sth.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org2c7c6a2" class="outline-3">
+<h3 id="org2c7c6a2">让步状语从句 no mather + 疑问词</h3>
+<div class="outline-text-3" id="text-org2c7c6a2">
+<p>
+N2-68,C2-113<br />
+no matter how/what/where/whose/who/which/when<br />
+even though(although/though/as) VS even if<br />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org500c4b7" class="outline-2">
+<h2 id="org500c4b7">句子构成(6123456+连词+分词作状语)</h2>
+<div class="outline-text-2" id="text-org500c4b7">
+</div>
+<div id="outline-container-org739b4b7" class="outline-3">
+<h3 id="org739b4b7">语序</h3>
+<div class="outline-text-3" id="text-org739b4b7">
+<p>
+NCE2-1,2,C2-109,C2-110<br />
+6123456:<br />
+	 6: When<br />
+	 1: 主<br />
+	 2: 谓/系<br />
+	 3: 宾/表<br />
+	 4: how<br />
+	 5: where<br />
+	 6: when<br />
+</p>
+<ol class="org-ol">
+<li>如何造一个英语句子: 123<br /></li>
+<li>如何造一个好的英文句子: 123456<br /></li>
+<li>英语语序:<br />
+频率adv.位置: 助动词后和动词前 &amp; 动词后<br /></li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org42e2c8a" class="outline-3">
+<h3 id="org42e2c8a">两短句的连词</h3>
+<div class="outline-text-3" id="text-org42e2c8a">
+<p>
+NCE-25,C1-97<br />
+</p>
+<ol class="org-ol">
+<li>and,but,or,so,because: 连句子<br /></li>
+<li>both&#x2026; and, either&#x2026;or,neither&#x2026;nor ?: 连两名词<br /></li>
+<li>not only&#x2026; but also (as well) ?: 连句子<br /></li>
+</ol>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orge12b1f8" class="outline-2">
+<h2 id="orge12b1f8">冠词与名词</h2>
+<div class="outline-text-2" id="text-orge12b1f8">
+</div>
+<div id="outline-container-org6519f19" class="outline-3">
+<h3 id="org6519f19">a/an VS the</h3>
+<div class="outline-text-3" id="text-org6519f19">
+<p>
+N2-6,C2-72,85<br />
+a/an VS the<br />
+some VS any<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org38f58fc" class="outline-3">
+<h3 id="org38f58fc">动名词</h3>
+<div class="outline-text-3" id="text-org38f58fc">
+<p>
+N2-20,C2-53<br />
+动名词<br />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org884f677" class="outline-2">
+<h2 id="org884f677">副词与介词</h2>
+<div class="outline-text-2" id="text-org884f677">
+</div>
+<div id="outline-container-org164e69c" class="outline-3">
+<h3 id="org164e69c">at/on/in(时间)</h3>
+<div class="outline-text-3" id="text-org164e69c">
+<p>
+N2-9,C2-121,C122<br />
+at/on/in(时间)<br />
+</p>
+<ul class="org-ul">
+<li>on + 具体某一天<br /></li>
+<li>in + 年/季/月<br /></li>
+<li>at + 时间点<br /></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org3ce9c7f" class="outline-3">
+<h3 id="org3ce9c7f">v. + of/from/in/on</h3>
+<div class="outline-text-3" id="text-org3ce9c7f">
+<p>
+N2-22,C2-135,136<br />
+v. + of/from/in/on<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgd0fadad" class="outline-3">
+<h3 id="orgd0fadad">及物VS不及物动词</h3>
+<div class="outline-text-3" id="text-orgd0fadad">
+<p>
+及物动词,后面必须有动作的承受者(宾语),否则意思不完整.<br />
+	eg: I hit you.(意思完整) VS I hit.(意思不完整)<br />
+不及物动词,后面没有动作的承受者,意思已经完整了.<br />
+	eg. I wait.(意思完整) VS I wait for bus.(意思完整,且为了bus更加的丰富)<br />
+更多: 不能记listen to, 而是 listen 然后 to sb.<br />
+</p>
+<ul class="org-ul">
+<li>listen, to sb.<br /></li>
+<li>be afraid of sth.<br /></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

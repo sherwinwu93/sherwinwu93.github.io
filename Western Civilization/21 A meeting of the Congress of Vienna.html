@@ -1,0 +1,828 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-01-09 Thu 23:35 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-org3ca83cf" class="outline-2">
+<h2 id="org3ca83cf">21 A meeting of the Congress of Vienna</h2>
+<div class="outline-text-2" id="text-org3ca83cf">
+<p class="verse">
+In September 1814,<br />
+&#xa0;hundreds of foreigners began to converge on Vienna, the capital city of the Austrian Empire.<br />
+Many were members of European royalty&#x2014;kings, princes, archdukes, and their wives&#x2014;<br />
+&#xa0;accompanied by their diplomatic advisers and scores of servants.<br />
+Their congenial host was the Austrian emperor Francis I,<br />
+&#xa0;who never tired of regaling Vienna's guests with concerts,<br />
+&#xa0;&#xa0;glittering balls, sumptuous feasts, and hunting parties.<br />
+One participant remembered, 'Eating, fireworks, public illuminations.<br />
+For eight or ten days, I haven't been able to work at all. What a life!'<br />
+Of course, not every waking hour was spent in pleasure during this gathering of notables,<br />
+&#xa0;known to history as the Congress of Vienna.<br />
+These people were also representatives of all the states that had fought Napoleon,<br />
+&#xa0;and their real business was to arrange a final peace settlement after almost a decade of war.<br />
+On June 8, 1815, they completed their task.<br />
+<br />
+The forces of upheaval unleashed during the French revolutionary and Napoleonic wars<br />
+&#xa0;&#xa0;were temporarily quieted in 1815<br />
+&#xa0;as rulers sought to restore stability<br />
+&#xa0;&#xa0;by reestablishing much of the old order to a Europe weary of war.<br />
+Kings, landed aristocrats, and bureaucratic elites regained their control over domestic governments,<br />
+&#xa0;while internationally the forces of conservatism tried to maintain the new status quo;<br />
+&#xa0;&#xa0;some states even used military force<br />
+&#xa0;&#xa0;&#xa0;to intervene in the internal affairs of other countries in their desire to crush revolutions.<br />
+<br />
+But the Western world had been changed, and it would not readily go back to the old system.<br />
+New ideologies, especially liberalism and nationalism,<br />
+&#xa0;&#xa0;both products of the revolutionary upheaval initiated in France,<br />
+&#xa0;had become too powerful to be contained.<br />
+Not content with the status quo,<br />
+&#xa0;the forces of change gave rise first to the revolts and revolutions<br />
+&#xa0;&#xa0;&#xa0;that periodically shook Europe in the 1820s and 1830s<br />
+&#xa0;&#xa0;and then to the widespread revolutions of 1848.<br />
+Some of the revolutions and revolutionaries were successful; most were not.<br />
+Although the old order usually appeared to have prevailed,<br />
+&#xa0;by 1850 it was apparent that its days were numbered.<br />
+This perception was reinforced by the changes wrought by the Industrial Revolution.<br />
+Together the forces unleashed by the French Revolution and the Industrial Revolution<br />
+&#xa0;made it impossible to turn back.<br />
+Nevertheless,<br />
+&#xa0;although these two revolutions initiated what historians like to call the modern European world,<br />
+&#xa0;&#xa0;remnants of the old persisted in the midst of the new.<br />
+</p>
+</div>
+<div id="outline-container-org97e961f" class="outline-3">
+<h3 id="org97e961f">expression</h3>
+<div class="outline-text-3" id="text-org97e961f">
+<p>
+convergent [kən'vɜrdʒənt] convergent: v.adj. to come from different directions and meet at the spoint to become one thing会聚<br />
+diplomatic [ˌdɪpləˈmætɪk]: adj. relating to or involving the work of diplomats外交的<br />
+adviser [ədˈvaɪzər]: n. someone whose job is to give advice because they know a lot about a subject, especially in business, law, or politics顾问<br />
+congenial [kənˈdʒiniəl]: adj. pleasant in a way that makes you feel comfortable and relaxed性格相似的, 适意的<br />
+concert [ˈkɑnsərt]: n. a performance given by musicians or singers音乐会<br />
+glitter [ˈɡlɪtər]: v. to shine brightly with flashing points of light SYN sparkle闪烁<br />
+sumptuous [ˈsʌmptʃuəs]: adj. very impressive and expensive奢侈的, 华丽的<br />
+participant [pɑrˈtɪsɪpənt]: n. someone who is taking part in an activity or event参与者<br />
+illuminations [ɪˌlumɪˈneɪʃ(ə)n]: n. illuminations [plural] British English a show of coloured lights used to make a town bright and colourful灯彩<br />
+notables [ˈnoʊtəb(ə)lz]: n. important or famous people名人<br />
+representative [ˌreprɪˈzentətɪv]: n. someone who has been chosen to speak, vote, or make decisions for someone else SYN delegate代表<br />
+unleash [ʌnˈliʃ]: v. to suddenly let a strong force, feeling etc have its full effect释放<br />
+readily [ˈredɪli]: adv. quickly, willingly, and without complaining乐意地, 欣然<br />
+ideology [ˌɪdiˈɑlədʒi]: n. a set of beliefs on which a political or economic system is based, or which strongly influence the way people behave ⇨ philosophy意识形态<br />
+liberal [ˈlɪb(ə)rəl] liberalism: n.n. supporting or allowing gradual political and social changes OPP conservative自由主义者<br />
+nationalist [ˈnæʃən(ə)lɪst] nationalism: n.n. someone who is involved in trying to gain or keep political independence for their country and people国家主义者, 民族主义者<br />
+numbered [ˈnʌmbər]: adj. 有限的, 时日无多的<br />
+reinforce [ˌriɪnˈfɔrs]: v. to give support to an opinion, idea, or feeling, and make it stronger加强<br />
+</p>
+<hr />
+<p>
+scores of sb./sth.: 许多的&#x2026;<br />
+regale sb. with sth.: 用某物款待某人<br />
+sb's real business is to do sth.: 某人真正要做的事情是<br />
+arrange a peace settlement: 达成和平协议<br />
+be weary of sth.: 对某事感到厌倦<br />
+regain sb's control over sth.: 重获对某事的控股权<br />
+maintain the new status quo: 维持新的现状<br />
+be content with sth.: 对某事满足<br />
+intervene in sth.: 干涉/干预某事<br />
+in sb's desire to do sth.: 由于某人渴望做某事<br />
+appear to have done sth.: 似乎已经做了某事<br />
+remnants of sth.: 剩余部分<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org46f6acf" class="outline-3">
+<h3 id="org46f6acf">sentence</h3>
+<div class="outline-text-3" id="text-org46f6acf">
+<p>
+convergent [kən'vɜrdʒənt] convergent: v.adj. to come from different directions and meet at the spoint to become one thing会聚<br />
+</p>
+<ul class="org-ul">
+<li>The mob of thousands of peasants converge in the tennis court.<br /></li>
+<li>The water converged winding its way across the field.<br /></li>
+<li>So long as the police arrive on the scene, the gangsters will converge to fight against them.<br /></li>
+</ul>
+<p>
+diplomatic [ˌdɪpləˈmætɪk]: adj. relating to or involving the work of diplomats外交的<br />
+</p>
+<ul class="org-ul">
+<li>The diplomatic adviser was sentenced to death while counting the number of ants in the cell.<br /></li>
+<li>The country was initially so weak that the diplomatic work was in difficulty.<br /></li>
+<li>The diplomatic work ran into serious trouble, which terrorized the new-born revolution.<br /></li>
+</ul>
+<p>
+adviser [ədˈvaɪzər]: n. someone whose job is to give advice because they know a lot about a subject, especially in business, law, or politics顾问<br />
+</p>
+<ul class="org-ul">
+<li>As a result of the lack of profit, the adviser got fired.<br /></li>
+<li>The adviser sneaked into the CEO's office and was sentenced to death.<br /></li>
+<li>The adviser stemming from a peasant family came into his own.<br /></li>
+</ul>
+<p>
+congenial [kənˈdʒiniəl]: adj. pleasant in a way that makes you feel comfortable and relaxed性格相似的, 适意的<br />
+</p>
+<ul class="org-ul">
+<li>I was relieved to hear that our new superior was congenial.<br /></li>
+<li>All students in our class made progress in last test under the new congenial teacher.<br /></li>
+<li>The congenial teacher decided to devote himself to gardening after he retired.<br /></li>
+</ul>
+<p>
+concert [ˈkɑnsərt]: n. a performance given by musicians or singers音乐会<br />
+</p>
+<ul class="org-ul">
+<li>These days, concerts of pop singers become popular with these young people from rural villages in the city.<br /></li>
+<li>The chief executive officer planned out the concert to last detail.<br /></li>
+<li>A slip of the tongue in the concert did give us a surprise.<br /></li>
+</ul>
+<p>
+glitter [ˈɡlɪtər]: v. to shine brightly with flashing points of light SYN sparkle闪烁<br />
+</p>
+<ul class="org-ul">
+<li>If the indicator is glittering, you can connect your phone to the bluetooth earphone.<br /></li>
+<li>The power hasn't been run out of, for the light is still glittering.<br /></li>
+<li>When she opened the box, I had a glimpse of the glittering crystal ball.<br /></li>
+</ul>
+<p>
+sumptuous [ˈsʌmptʃuəs]: adj. very impressive and expensive奢侈的, 华丽的<br />
+</p>
+<ul class="org-ul">
+<li>The sumptuous stuffs to which the prizefighter got accustomed no longer made him happy.<br /></li>
+<li>Beyond doubts, he is willing to sacrifice his savings for a sumptuous house in the inter-ring of the city.<br /></li>
+<li>I dream of having a house with a sumptuous garden in suburbs of the city.<br /></li>
+</ul>
+<p>
+participant [pɑrˈtɪsɪpənt]: n. someone who is taking part in an activity or event参与者<br />
+</p>
+<ul class="org-ul">
+<li>The partcipants regained their control over the city, which led to other revolts in other cities.<br /></li>
+<li>The participants urged the king to restore the old regime.<br /></li>
+<li>The participants should have had their heads cut at the village fair.<br /></li>
+</ul>
+<p>
+illuminations [ɪˌlumɪˈneɪʃ(ə)n]: n. illuminations [plural] British English a show of coloured lights used to make a town bright and colourful灯彩<br />
+</p>
+<ul class="org-ul">
+<li>The sumptuous illuminations were used to be in memory of those who were killed in an action during the war.<br /></li>
+<li>The sumptuous illuminations gave us a great sense of happiness in the celebration.<br /></li>
+<li>Our cat appeared to have admired the sumptuous illuminations.<br /></li>
+</ul>
+<p>
+notables [ˈnoʊtəb(ə)lz]: n. important or famous people名人<br />
+</p>
+<ul class="org-ul">
+<li>This guy must be a notable, for he sang so well last night at the pub.<br /></li>
+<li>Such is human nature, that notables are often willing to sacrifice money for the rise in status.<br /></li>
+<li>There are notables attending these looms in the exhibition.<br /></li>
+</ul>
+<p>
+representative [ˌreprɪˈzentətɪv]: n. someone who has been chosen to speak, vote, or make decisions for someone else SYN delegate代表<br />
+</p>
+<ul class="org-ul">
+<li>I used to be a representative of my school taking part in the competition.<br /></li>
+<li>After these representatives discussed the settlement, we would have a quantum leap in our working condition.<br /></li>
+<li>The representatives are reluctant to enter for the meeting which will be in the palace.<br /></li>
+</ul>
+<p>
+unleash [ʌnˈliʃ]: v. to suddenly let a strong force, feeling etc have its full effect释放<br />
+</p>
+<ul class="org-ul">
+<li>Unleashing his dog, he instructed his dog to bite me.<br /></li>
+<li>The dog will have a greater freedom, for they are unleashed and wander outside the enclosure.<br /></li>
+<li>The French revolution exerted a tremendous influence on countries in Europe, for it unleashed the force for change.<br /></li>
+</ul>
+<p>
+readily [ˈredɪli]: adv. quickly, willingly, and without complaining乐意地, 欣然<br />
+</p>
+<ul class="org-ul">
+<li>Imagine his dismay when he found that his wife readily cheated on him while runing into a handsome man.<br /></li>
+<li>His inferior readily replaced him to complete the task.<br /></li>
+<li>Critical of the treatment of pregant women in factories, he readily drew up the petition.<br /></li>
+</ul>
+<p>
+ideology [ˌɪdiˈɑlədʒi]: n. a set of beliefs on which a political or economic system is based, or which strongly influence the way people behave ⇨ philosophy意识形态<br />
+</p>
+<ul class="org-ul">
+<li>Fear that the new ideology based on individualism will destory old regime, the monarch established laws prohibiting his treatises.<br /></li>
+<li>The pope denounced his book full of a new ideology which was guilty of heresy.<br /></li>
+<li>The widespread of the new ideology gave rise to a new party stemming from the peasants.<br /></li>
+</ul>
+<p>
+liberal [ˈlɪb(ə)rəl] liberalism: n.n. supporting or allowing gradual political and social changes OPP conservative自由主义者<br />
+</p>
+<ul class="org-ul">
+<li>The liberals composed of middle classes played a primary role in the French revolution.<br /></li>
+<li>In order to restore old regime, the monarch exiled those liberals abroad.<br /></li>
+<li>The host of the salon charmed many of philosophes, including liberals, and nationalists.<br /></li>
+</ul>
+<p>
+nationalist [ˈnæʃən(ə)lɪst] nationalism: n.n. someone who is involved in trying to gain or keep political independence for their country and people国家主义者, 民族主义者<br />
+</p>
+<ul class="org-ul">
+<li>It was the nationalists who played a crucial role in the revolution of 1830.<br /></li>
+<li>Crossing the Pass, these nationalists received a warm welcome at St. Bernard Monastery.<br /></li>
+<li>Holding a grudge against those nationalists, the king sentenced them to hang as long as he came to power.<br /></li>
+</ul>
+<p>
+numbered [ˈnʌmbərd]: adj. 有限的, 时日无多的<br />
+</p>
+<ul class="org-ul">
+<li>Aware that my life was numbered, I dedicated all my properties to my wife.<br /></li>
+<li>I realized that my cat's life was numbered  while she was walking clumsily toward me.<br /></li>
+<li>Because of the numbered food, the mixture of the urine of rats and maggots was regarded as cake.<br /></li>
+</ul>
+<p>
+reinforce [ˌriɪnˈfɔrs]: v. to give support to an opinion, idea, or feeling, and make it stronger加强<br />
+</p>
+<ul class="org-ul">
+<li>He was praised by his boss in public, so his status in the company was reinforced.<br /></li>
+<li>The village reinforced their fence fearing of the attacks of wolves at night.<br /></li>
+<li>The emergence of new ideology caused our king to reinforce censorships.<br /></li>
+</ul>
+<hr />
+<p>
+scores of sb./sth.: 许多的&#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>Guilt of possessing scores of fields, the abbot was beaten to death at the hands of local village.<br /></li>
+<li>Scores of royal servants met their death at the hands of mobs of peasants.<br /></li>
+<li>Scores of cats fell off high-rise windowsill not dieding from shock or injuries.<br /></li>
+</ul>
+<p>
+regale sb. with sth.: 用某物款待某人<br />
+</p>
+<ul class="org-ul">
+<li>In one sense, you have regaled your parent with good grades which they expected.<br /></li>
+<li>Regaling his friends with funny stories, he did plan out the party to the last detail.<br /></li>
+<li>It occurred to me that people in some remote villages regaled their guest with their wives.<br /></li>
+</ul>
+<p>
+sb's real business is to do sth.: 某人真正要做的事情是<br />
+</p>
+<ul class="org-ul">
+<li>Obviously, their real business is to reach agreement about better working condition and higher pay.<br /></li>
+<li>It occurred to me that my cat's real business was to steal my barbecue when he sneaked into the kitchen.<br /></li>
+<li>The lawyer's real business is to prove our testimony to be a lie.<br /></li>
+</ul>
+<p>
+arrange a peace settlement: 达成和平协议<br />
+</p>
+<ul class="org-ul">
+<li>A peace settlement should be arranged in the meeting after decades of war.<br /></li>
+<li>Although they arranged a peace settlement, the Asiatic nomads continued to push their way westward through the plain.<br /></li>
+<li>After the peace settlement arranged, a country who started a war would be attacked by all other countries.<br /></li>
+</ul>
+<p>
+be weary of sth.: 对某事感到厌倦<br />
+</p>
+<ul class="org-ul">
+<li>Weary of being homeless, the beggar sought for a apprentice to the baker.<br /></li>
+<li>Weary of criticism of his superior, he quit his job.<br /></li>
+<li>Weary of home sick, he moved to Paris where he had spent a lot of time with his children.<br /></li>
+</ul>
+<p>
+regain sb's control over sth.: 重获对某事的控股权<br />
+</p>
+<ul class="org-ul">
+<li>Making a profit, our CEO regained his control over these subsidiary.<br /></li>
+<li>Our family ran into serious trouble and my mother restored it to new glory, during which she regain her control over the finance.<br /></li>
+<li>Promising to restore the corporation to new glory, he regained his control over these subsidiaries..<br /></li>
+</ul>
+<p>
+maintain the new status quo: 维持新的现状<br />
+</p>
+<ul class="org-ul">
+<li>If a sophisticated police had arrived on the scene, he would had maintained the status quo.<br /></li>
+<li>You're better maintain the status quo, or I would reduce your pocket money this month.<br /></li>
+<li>I prefer to change rather than maintain the status quo.<br /></li>
+</ul>
+<p>
+be content with sth.: 对某事满足<br />
+</p>
+<ul class="org-ul">
+<li>Not content with her husband, she was due to poison him.<br /></li>
+<li>Not content with the new status, she sold her house and moved to Paris.<br /></li>
+<li>Not content with the philosophes, the hostess of salon ceased to offer them money.<br /></li>
+</ul>
+<p>
+intervene in sth.: 干涉/干预某事<br />
+</p>
+<ul class="org-ul">
+<li>You're intervening in my domestic affairs.<br /></li>
+<li>The spokeswoman denounced that the US was intervening in other countries' domestic affairs.<br /></li>
+<li>You needn't have intervened in their quarrel, it's none of your business.<br /></li>
+</ul>
+<p>
+in sb's desire to do sth.: 由于某人渴望做某事<br />
+</p>
+<ul class="org-ul">
+<li>He would crucify us all in his desire to find the strait.<br /></li>
+<li>The nun mashed the herb in her desire to save my life.<br /></li>
+<li>He regaled me with his wife and daughter in his desire to gain his control over the company.<br /></li>
+</ul>
+<p>
+appear to have done sth.: 似乎已经做了某事<br />
+</p>
+<ul class="org-ul">
+<li>Our cat appeared to have fallen off the windowsill.<br /></li>
+<li>Your sister appeared to have smashed the article to pieces.<br /></li>
+<li>My wife appeared to have washed the dishes.<br /></li>
+</ul>
+<p>
+remnants of sth.: 剩余部分<br />
+</p>
+<ul class="org-ul">
+<li>Remnants of the bomber is worth rescuing now.<br /></li>
+<li>Remnants of drugs may be 10000 dollars worth.<br /></li>
+<li>After the revolution, remnants of monarchs was eager to restore it to new glory.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org8682bfc" class="outline-3">
+<h3 id="org8682bfc">sentence2</h3>
+<div class="outline-text-3" id="text-org8682bfc">
+<p>
+convergent [kən'vɜrdʒənt] convergent: v.adj. to come from different directions and meet at the spoint to become one thing会聚<br />
+</p>
+<ul class="org-ul">
+<li>The mob of thousands of peasants converge on the tennis court.<br /></li>
+<li>The water converged winding its way across the field.<br /></li>
+<li>So long as the police arrive on the scene, the gangsters will converge to fight against them.<br /></li>
+</ul>
+<p>
+diplomatic [ˌdɪpləˈmætɪk]: adj. relating to or involving the work of diplomats外交的<br />
+</p>
+<ul class="org-ul">
+<li>The diplomatic adviser was sentenced to death while counting the number of ants in the cell.<br /></li>
+<li>The country was initially so weak that diplomatic work was in difficulty.<br /></li>
+<li>The diplomatic work ran into serious trouble, which terrorized the newborn revolution.<br /></li>
+</ul>
+<p>
+adviser [ədˈvaɪzər]: n. someone whose job is to give advice because they know a lot about a subject, especially in business, law, or politics顾问<br />
+</p>
+<ul class="org-ul">
+<li>As a result of the lack of profit, the adviser got fired.<br /></li>
+<li>The adviser sneaked into the CEO's office and was sentenced to death.<br /></li>
+<li>The adviser stemming from a peasant family came into his own.<br /></li>
+</ul>
+<p>
+congenial [kənˈdʒiniəl]: adj. pleasant in a way that makes you feel comfortable and relaxed性格相似的, 适意的<br />
+</p>
+<ul class="org-ul">
+<li>I was relieved to hear that our new superior was congenial.<br /></li>
+<li>All students in our class made progress in the last test under the new congenial teacher.<br /></li>
+<li>The congenial teacher decided to devote himself to gardening after he retired.<br /></li>
+</ul>
+<p>
+concert [ˈkɑnsərt]: n. a performance given by musicians or singers音乐会<br />
+</p>
+<ul class="org-ul">
+<li>These days, concerts of pop singers become popular with young people from rural villages in the city.<br /></li>
+<li>The chief executive officer planned out the concert to the last detail.<br /></li>
+<li>A slip of the tongue at the concert did give us a surprise.<br /></li>
+</ul>
+<p>
+glitter [ˈɡlɪtər]: v. to shine brightly with flashing points of light SYN sparkle闪烁<br />
+</p>
+<ul class="org-ul">
+<li>If the indicator is glittering, you can connect your phone to the Bluetooth earphone.<br /></li>
+<li>The power hasn't been used up, for the light is still glittering.<br /></li>
+<li>When she opened the box, I had a glimpse of the glittering crystal ball.<br /></li>
+</ul>
+<p>
+sumptuous [ˈsʌmptʃuəs]: adj. very impressive and expensive奢侈的, 华丽的<br />
+</p>
+<ul class="org-ul">
+<li>The sumptuous stuff to which the prizefighter got accustomed no longer made him happy.<br /></li>
+<li>Beyond doubt, he is willing to sacrifice his savings for a sumptuous house in the inter-ring of the city.<br /></li>
+<li>I dream of having a house with a sumptuous garden in the suburbs of the city.<br /></li>
+</ul>
+<p>
+participant [pɑrˈtɪsɪpənt]: n. someone who is taking part in an activity or event参与者<br />
+</p>
+<ul class="org-ul">
+<li>The participants regained their control over the city, which led to other revolts in other cities.<br /></li>
+<li>The participants urged the king to restore the old regime.<br /></li>
+<li>The participants should have had their heads cut at the village fair.<br /></li>
+</ul>
+<p>
+illuminations [ɪˌlumɪˈneɪʃ(ə)n]: n. illuminations [plural] British English a show of coloured lights used to make a town bright and colourful灯彩<br />
+</p>
+<ul class="org-ul">
+<li>The sumptuous illuminations were used to be in memory of those who were killed in an action during the war.<br /></li>
+<li>The sumptuous illuminations gave us a great sense of happiness in the celebration.<br /></li>
+<li>Our cat appeared to have admired the sumptuous illuminations.<br /></li>
+</ul>
+<p>
+notables [ˈnoʊtəb(ə)lz]: n. important or famous people名人<br />
+</p>
+<ul class="org-ul">
+<li>This guy must be one of the notables, for he sang so well last night at the pub.<br /></li>
+<li>Such is human nature, that notables are often willing to sacrifice money for the rise in status.<br /></li>
+<li>There are notables attending these looms in the exhibition.<br /></li>
+</ul>
+<p>
+representative [ˌreprɪˈzentətɪv]: n. someone who has been chosen to speak, vote, or make decisions for someone else SYN delegate代表<br />
+</p>
+<ul class="org-ul">
+<li>I used to be a representative of my school taking part in the competition.<br /></li>
+<li>After these representatives discussed the settlement, we would have a quantum leap in our working conditions.<br /></li>
+<li>The representatives are reluctant to enter for the meeting which will be in the palace.<br /></li>
+</ul>
+<p>
+unleash [ʌnˈliʃ]: v. to suddenly let a strong force, feeling etc have its full effect释放<br />
+</p>
+<ul class="org-ul">
+<li>Unleashing his dog, he instructed his dog to bite me.<br /></li>
+<li>The dog will have greater freedom, for they are unleashed and wander outside the enclosure.<br /></li>
+<li>The French Revolution exerted a tremendous influence on countries in Europe, for it unleashed the force for change.<br /></li>
+</ul>
+<p>
+readily [ˈredɪli]: adv. quickly, willingly, and without complaining乐意地, 欣然<br />
+</p>
+<ul class="org-ul">
+<li>Imagine his dismay when he found that his wife readily cheated on him while running into a handsome man.<br /></li>
+<li>His inferior readily replaced him to complete the task.<br /></li>
+<li>Critical of the treatment of pregnant women in factories, he readily drew up the petition.<br /></li>
+</ul>
+<p>
+ideology [ˌɪdiˈɑlədʒi]: n. a set of beliefs on which a political or economic system is based, or which strongly influence the way people behave ⇨ philosophy意识形态<br />
+</p>
+<ul class="org-ul">
+<li>Fear that the new ideology based on individualism will destroy the old regime, the monarch established laws prohibiting his treatises.<br /></li>
+<li>The pope denounced his book full of a new ideology which was guilty of heresy.<br /></li>
+<li>The widespread of the new ideology gave rise to a new party stemming from the peasants.<br /></li>
+</ul>
+<p>
+liberal [ˈlɪb(ə)rəl] liberalism: n.n. supporting or allowing gradual political and social changes OPP conservative自由主义者<br />
+</p>
+<ul class="org-ul">
+<li>The liberals composed of the middle classes played a primary role in the French Revolution.<br /></li>
+<li>In order to restore the old regime, the monarch exiled those liberals abroad.<br /></li>
+<li>The host of the salon charmed many philosophes, including liberals, and nationalists.<br /></li>
+</ul>
+<p>
+nationalist [ˈnæʃən(ə)lɪst] nationalism: n.n. someone who is involved in trying to gain or keep political independence for their country and people国家主义者, 民族主义者<br />
+</p>
+<ul class="org-ul">
+<li>It was the nationalists who played a crucial role in the revolution of 1830.<br /></li>
+<li>Crossing the Pass, these nationalists received a warm welcome at St. Bernard Monastery.<br /></li>
+<li>Holding a grudge against those nationalists, the king sentenced them to hang as long as he came to power.<br /></li>
+</ul>
+<p>
+numbered [ˈnʌmbərd]: adj. 有限的, 时日无多的<br />
+</p>
+<ul class="org-ul">
+<li>Aware that my life was numbered, I dedicated all my properties to my wife.<br /></li>
+<li>I realized that my cat's life was numbered while she was walking clumsily toward me.<br /></li>
+<li>Because of the numbered food, the mixture of the urine of rats and maggots was regarded as cake.<br /></li>
+</ul>
+<p>
+reinforce [ˌriɪnˈfɔrs]: v. to give support to an opinion, idea, or feeling, and make it stronger加强<br />
+</p>
+<ul class="org-ul">
+<li>He was praised by his boss in public, so his status in the company was reinforced.<br /></li>
+<li>The village reinforced their fence fearing the attacks of wolves at night.<br /></li>
+<li>The emergence of a new ideology caused our king to reinforce censorship.<br /></li>
+</ul>
+<hr />
+<p>
+scores of sb./sth.: 许多的&#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>Guilty of possessing scores of fields, the abbot was beaten to death at the hands of villagers.<br /></li>
+<li>Scores of royal servants met their death at the hands of mobs of peasants.<br /></li>
+<li>Scores of cats fell off high-rise windowsill not dying from shock or injuries.<br /></li>
+</ul>
+<p>
+regale sb. with sth.: 用某物款待某人<br />
+</p>
+<ul class="org-ul">
+<li>In one sense, you have regaled your parent with good grades which they expected.<br /></li>
+<li>Regaling his friends with funny stories, he did plan out the party to the last detail.<br /></li>
+<li>It occurred to me that people in some remote villages regaled their guests with their wives.<br /></li>
+</ul>
+<p>
+sb's real business is to do sth.: 某人真正要做的事情是<br />
+</p>
+<ul class="org-ul">
+<li>Obviously, their real business is to reach an agreement about better working conditions and higher pay.<br /></li>
+<li>It occurred to me that my cat's real business was to steal my barbecue when he sneaked into the kitchen.<br /></li>
+<li>The lawyer's real business is to prove our testimony to be a lie.<br /></li>
+</ul>
+<p>
+arrange a peace settlement: 达成和平协议<br />
+</p>
+<ul class="org-ul">
+<li>A peace settlement should be arranged in the meeting after decades of war.<br /></li>
+<li>Although they arranged a peace settlement, the Asiatic nomads continued to push their way westward through the plain.<br /></li>
+<li>After the peace settlement was arranged, a country that started a war would be attacked by all other countries.<br /></li>
+</ul>
+<p>
+be weary of sth.: 对某事感到厌倦<br />
+</p>
+<ul class="org-ul">
+<li>Weary of being homeless, the beggar sought for an apprentice to the baker.<br /></li>
+<li>Weary of criticism of his superior, he quit his job.<br /></li>
+<li>Weary of homesick, he moved to Paris where he had spent a lot of time with his children.<br /></li>
+</ul>
+<p>
+regain sb's control over sth.: 重获对某事的控股权<br />
+</p>
+<ul class="org-ul">
+<li>Making a profit, our CEO regained his control over these subsidiaries.<br /></li>
+<li>Our family ran into serious trouble and my mother restored it to new glory, during which she regained her control over the finances.<br /></li>
+<li>Promising to restore the corporation to new glory, he regained his control over these subsidiaries.<br /></li>
+</ul>
+<p>
+maintain the new status quo: 维持新的现状<br />
+</p>
+<ul class="org-ul">
+<li>If a sophisticated police had arrived on the scene, he would have maintained the status quo.<br /></li>
+<li>You'd better maintain the status quo, or I would reduce your pocket money this month.<br /></li>
+<li>I prefer to change rather than maintain the status quo.<br /></li>
+</ul>
+<p>
+be content with sth.: 对某事满足<br />
+</p>
+<ul class="org-ul">
+<li>Not content with her husband, she was due to poison him.<br /></li>
+<li>Not content with the new status, she sold her house and moved to Paris.<br /></li>
+<li>Not content with the philosophes, the hostess of the salon ceased to offer them money.<br /></li>
+</ul>
+<p>
+intervene in sth.: 干涉/干预某事<br />
+</p>
+<ul class="org-ul">
+<li>You're intervening in my domestic affairs.<br /></li>
+<li>The spokeswoman denounced that the US was intervening in other countries' domestic affairs.<br /></li>
+<li>You needn't have intervened in their quarrel, it's none of your business.<br /></li>
+</ul>
+<p>
+in sb's desire to do sth.: 由于某人渴望做某事<br />
+</p>
+<ul class="org-ul">
+<li>He would crucify us all in his desire to find the strait.<br /></li>
+<li>The nun mashed the herb in her desire to save my life.<br /></li>
+<li>He regaled me with his wife and daughter in his desire to gain control over the company.<br /></li>
+</ul>
+<p>
+appear to have done sth.: 似乎已经做了某事<br />
+</p>
+<ul class="org-ul">
+<li>Our cat appeared to have fallen off the windowsill.<br /></li>
+<li>Your sister appeared to have smashed the article to pieces.<br /></li>
+<li>My wife appeared to have washed the dishes.<br /></li>
+</ul>
+<p>
+remnants of sth.: 剩余部分<br />
+</p>
+<ul class="org-ul">
+<li>Remnants of the bomber are worth rescuing now.<br /></li>
+<li>Remnants of drugs may be 10000 dollars worth.<br /></li>
+<li>After the revolution, remnants of monarchs were eager to restore it to new glory.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org0445f40" class="outline-3">
+<h3 id="org0445f40">summary</h3>
+<div class="outline-text-3" id="text-org0445f40">
+<p>
+In September 1814, many members of European royalty began to converge on Vienna<br />
+	accompanied by their diplomatic advisers and scores of servants.<br />
+Their congenial host, Francis I,<br />
+	regaled them with concerts, glittering balls, sumptuous feasts, and hunting parties.<br />
+However, not every working hours were spent in pleasure,<br />
+	and as the representatives of all the states that had fought Napoleon<br />
+		their real business was to arrange a final peace settlement.<br />
+The gathering of the notables was known to history as Congress of Vienna.<br />
+In 1815, kings, landed aristocrats, and bureaucratic elites<br />
+		regained their control over domestic governments,<br />
+	while some states used military forces to crush revolutions in other coutries.<br />
+New ideaologies, especially liberalism and nationalism, were too powerful to be contained.<br />
+They gave rise first to periodically revolts and revolutions in the 1820s and 1830s<br />
+	and then to widespread revolutions of 1848.<br />
+It was apparent that the days of the old order was numbered.<br />
+These two revolutions initiated what historians call the modern European world.<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org3f1b6e5" class="outline-3">
+<h3 id="org3f1b6e5">summary2</h3>
+<div class="outline-text-3" id="text-org3f1b6e5">
+<p>
+In September 1814, many members of European royalty began to converge in Vienna<br />
+	accompanied by their diplomatic advisers and scores of servants.<br />
+Their congenial host, Francis I,<br />
+	regaled them with concerts, glittering balls, sumptuous feasts, and hunting parties.<br />
+However, not every warking hour was spent in pleasure,<br />
+	and as the representatives of all the states that had fought Napoleon<br />
+		their real business was to arrange a final peace settlement.<br />
+The gathering of the notables was known to history as the Congress of Vienna.<br />
+In 1815, kings, landed aristocrats, and bureaucratic elites<br />
+		regained their control over domestic governments,<br />
+	while some states used military forces to crush revolutions in other countries.<br />
+New ideologies, especially liberalism and nationalism, were too powerful to be contained.<br />
+They gave rise first to periodic revolts and revolutions in the 1820s and 1830s<br />
+	and then to the widespread revolutions of 1848.<br />
+It was apparent that the day of the old order was numbered.<br />
+These two revolutions initiated what historians call the modern European world.<br />
+</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,791 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-02-22 Sat 11:03 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-orgea916ea" class="outline-2">
+<h2 id="orgea916ea">1-2 1 Stress</h2>
+<div class="outline-text-2" id="text-orgea916ea">
+<p class="verse">
+Stress, stress, stress.<br />
+We seem to read about stress everywhere,<br />
+&#xa0;and more and more, it's seen as a factor in our health, affecting body, mind, and brain.<br />
+So in this talk, we're going to spend a little time on stress,<br />
+&#xa0;its positive and more difficult sides, and what to do to tame it.<br />
+This will dovetail with a lot of the other talks on our MOOC<br />
+&#xa0;because stress is one of the newer kids on the block,<br />
+&#xa0;&#xa0;and we need to know a lot about it to promote our well-being and flourishing.<br />
+<br />
+The whole idea comes out of notions from last century,<br />
+&#xa0;that human beings, like other animals,<br />
+&#xa0;&#xa0;like to operate within a comfortable zone a lot of the time.<br />
+Nowadays, we call that our window of tolerance.<br />
+We don't mind getting towards the edge of the zone for a little while.<br />
+For example, we can enjoy getting excited, a little anxious, a little angry, or a little scared,<br />
+&#xa0;if it's in a good and safe enough cause.<br />
+Most people might enjoy something like getting excited about the outcome of the footy match,<br />
+&#xa0;&#xa0;that's what Australian's call football, or in a ball game,<br />
+&#xa0;and getting terrified in a safe way, by the ride on, say, a roller coaster.<br />
+However, part of our eagerness to do these things<br />
+&#xa0;is we know that they're mostly safe for the majority.<br />
+And the feelings and body sensations will settle safely,<br />
+&#xa0;and we will feel back to normal<br />
+&#xa0;&#xa0;some time not too long after the game, or the big day out at the amusement park.<br />
+<br />
+When we get out of our comfort zone,<br />
+&#xa0;the stress begins to dramatically rise, and then we find situations distressing.<br />
+We can notice changes in our body<br />
+&#xa0;&#xa0;like pulse rate rising uncomfortably, blood pressure escalating,<br />
+&#xa0;or we feel distressing levels of emotion.<br />
+At even more extreme levels,<br />
+&#xa0;we can begin to feel frozen or trapped, or even disconnect or dissociate.<br />
+Then, we need to use ways to calm back down and feel more comfortable.<br />
+Most of us do this best<br />
+&#xa0;by using soothing from others and ways we've learnt through life to calm down.<br />
+<br />
+After particularly stressful events or periods,<br />
+&#xa0;we may even need a solid period of rest and recovery.<br />
+We don't always make time for that in our busy modern lives.<br />
+Positive psychiatry talks about using ways to settle that promote our well-being and don't hurt us.<br />
+So, using our connecting conversations with others,<br />
+&#xa0;good exercise, that mindfulness, meditation, breathing to calm down,<br />
+&#xa0;&#xa0;rather than drugs or alcohol, just as an example.<br />
+When we can't manage the high stress,<br />
+&#xa0;it can begin to do damage to our well-being and become traumatic,<br />
+&#xa0;&#xa0;meaning that our normal coping is overwhelmed.<br />
+The good news is that even here we can often recover,<br />
+&#xa0;and often become more resilient in the process.<br />
+At other times, cumulative or overwhelming stress is traumatic.<br />
+And then we need strong pathways to recovery, and what's called post-traumatic growth.<br />
+That's where we grow as a result of difficult circumstances.<br />
+<br />
+Just to be clear, stress is not just all in the mind.<br />
+Our bodies really feel it.<br />
+And too much stress can contribute to many illnesses in times when mental health breaks down.<br />
+Stress triggers inflammation for example,<br />
+&#xa0;and cumulative stress can literally become disorganizing for our mental and physical life.<br />
+So, learning to manage it becomes a keystone of our well being and health.<br />
+<br />
+Stress regulation and stress management<br />
+&#xa0;are essential part of positive psychology and positive psychiatry.<br />
+Today, we think of it as a hierarchy of stress management at the top of those strategies<br />
+&#xa0;that really help us connect to ourselves and others.<br />
+And help our brains, bodies, minds reconnect, and be restored and nourished after stress.<br />
+Stephen Porges, a psychiatrist in the US,<br />
+&#xa0;has been describing that we have a social nervous system,<br />
+&#xa0;&#xa0;evolved to manage stress best via our social connections.<br />
+So at the top of the hierarchy for managing stress are the ways<br />
+&#xa0;we connect and calm and soothe each other in relationships and connective conversations.<br />
+Our facial expression, and our capacities to speak and use body language,<br />
+&#xa0;have actually developed in evolution to help this process.<br />
+For example, we really value and feel better<br />
+&#xa0;when somebody shows, by expression and gesture, that they get us and what we're talking about.<br />
+We begin to calm down.<br />
+We feel really good after a shared laugh or occasionally a shared cry,<br />
+&#xa0;and the sharing is the connecting<br />
+&#xa0;&#xa0;that actually nourishes a part of our nervous system called the parasympathetic nervous system.<br />
+<br />
+We hear a lot about the sympathetic nervous system, the so-called fight and flight system.<br />
+And people have known for a long time<br />
+&#xa0;that the sympathetic nervous system connects with our immediate response to high stress,<br />
+&#xa0;&#xa0;and we see it at work in the innovation of heart and blood vessels.<br />
+It makes our pulse rate and our blood pressure go up like the accelerated pedal of a car.<br />
+<br />
+However, our rest and digest and restore system is the parasympathetic system.<br />
+It works in our gut and our digestive system.<br />
+It has connections like a brake to our heart.<br />
+It powers up all of those muscles of facial expression that we were just talking about.<br />
+So the social soothing comes from parasympathetic input.<br />
+Some of it's from fast-talking nerves covered in a substance called myelin.<br />
+And they connect upwards to the most important conscious thinking parts of our brain,<br />
+&#xa0;and to many systems.<br />
+<br />
+However, we also have parasympathetic input<br />
+&#xa0;from an older nervous system with fibers that are unmyelinated.<br />
+They move slower but deeper, and are responsible for some of those deep feelings in our middle<br />
+&#xa0;when we are stressed and distressed.<br />
+The terrible deep feeling of grief, for example.<br />
+When stress really overwhelms us, we can get in to that older parasympathetic state of withdrawal,<br />
+&#xa0;when the older parasympathetic system is dominating.<br />
+In that state, we need to slow down, take it easy, warm up.<br />
+Sometimes literally, sometimes emotionally.<br />
+Take time, get good care to recover.<br />
+After a period of more active symptoms of illness for example, whether mental or general medical,<br />
+&#xa0;some people find they have a period of deep fatigue<br />
+&#xa0;&#xa0;where they need to take things more slowly to restore energy<br />
+&#xa0;&#xa0;&#xa0;and come back to their normal selves.<br />
+<br />
+These days then, with a little science to back up the art of relaxation and stress relief,<br />
+&#xa0;we encourage people to find the ways to calm down<br />
+&#xa0;&#xa0;and to find stress and stress management strategies that work for them.<br />
+Meditation and mindfulness are powerfully effective,<br />
+&#xa0;and they seem to offer a space to connect to ourselves,<br />
+&#xa0;&#xa0;and literally help us to connect our body, brain, mind.<br />
+However, do take lots of social soothing.<br />
+Don't be afraid to get fit and busy, for example, with exercise,<br />
+&#xa0;which uses the sympathetic system wisely.<br />
+But also watch when the older, deeper system, your gut,<br />
+&#xa0;is telling you that you're very tired or overwhelmed,<br />
+&#xa0;&#xa0;and need to slow down and really rest and restore in quiet ways.<br />
+Hopefully you're going to tune in to other talks<br />
+&#xa0;which cover stress management through great strategies<br />
+&#xa0;&#xa0;like relaxation, mindfulness, exercise, creativity, and play.<br />
+I love to use many of them.<br />
+Find what works for you and use them daily,<br />
+&#xa0;and help your kids and those you care for to find their favorite ways.<br />
+So, as we learn to surf our stress, we get stronger.<br />
+Flexibility fosters resilience and highly connected minds and bodies, and our flourishing.<br />
+</p>
+</div>
+<div id="outline-container-orgc0be09a" class="outline-3">
+<h3 id="orgc0be09a">expression</h3>
+<div class="outline-text-3" id="text-orgc0be09a">
+<p>
+flourish [ˈflɜrɪʃ]: v. to develop well and be successful SYN thrive兴旺<br />
+sensation [senˈseɪʃ(ə)n]: n. a feeling that you get from one of your five senses, especially the sense of touch感觉<br />
+pulse [pʌls]: n. the regular beat that can be felt, for example at your wrist, as your heart pumps blood around your body ⇨ heartbeat脉搏<br />
+escalate [ˈeskəˌleɪt]: v. if fighting, violence, or a bad situation escalates, or if someone escalates it, it becomes much worse不断升级<br />
+soothe [suð]: v. to make someone feel calmer and less anxious, upset, or angry抚慰,安慰<br />
+inflammation [ˌɪnfləˈmeɪʃ(ə)n]: n. swelling and pain in part of your body, which is often red and feels hot炎症, 发炎<br />
+keystone [ˈkiˌstoʊn]: n. ormal the most important part of an idea, belief, or process that influences how it develops基础,主旨<br />
+accelerate [əkˈseləˌreɪt]: v. if a process accelerates or if something accelerates it, it happens faster than usual or sooner than you expect加速, 促进<br />
+gut [ɡʌt]: n. all the organs in someone’s body, especially when they have come out of their body内脏<br />
+digestive [daɪˈdʒestɪv]: adj. connected with the process of digestion消化的<br />
+grief [ɡrif]: n. extreme sadness, especially because someone you love has died悲痛<br />
+fatigue [fəˈtiɡ]: n. very great tiredness SYN exhaustion疲乏<br />
+flexibility [ˌfleksəˈbɪləti]: n. the ability to change or be changed easily to suit a different situation灵活性<br />
+</p>
+<hr />
+<p>
+dovetail with sth. [ˈdʌvˌteɪl]: 与某事物吻合<br />
+a kid on the block: 新手(街区的小孩)<br />
+Nowadays, + &#x2026;: 现今, + &#x2026;<br />
+mind doing sth.: 介意做某事<br />
+for a little while: 一小段时间<br />
+for the majority: 绝大多数<br />
+in times when + &#x2026;: 当&#x2026;<br />
+power up sth.: 给某物通电<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org5727cf2" class="outline-3">
+<h3 id="org5727cf2">ch.</h3>
+<div class="outline-text-3" id="text-org5727cf2">
+<p>
+1-2 1 压力<br />
+</p>
+
+<p>
+压力，压力，压力。<br />
+我们似乎在任何地方都能看到关于压力的讨论，而且越来越多的研究表明，它是影响我们健康的重要因素，会影响我们的身体、思维和大脑。<br />
+因此，在本次讲座中，我们将花些时间来探讨压力，它的积极和困难的一面，以及如何驯服它。<br />
+这与我们的 MOOC 课程中的许多其他讲座相呼应，因为压力是近年来才受到广泛关注的领域，而我们需要深入了解它，以促进我们的幸福和成长。<br />
+这个概念源自上个世纪的理论，即人类与其他动物一样，大多数时候都喜欢在一个舒适的区域内运作。<br />
+如今，我们称之为“耐受窗口”。<br />
+我们并不介意在这个区域的边缘徘徊一会儿。<br />
+例如，如果有一个合理且足够安全的理由，我们可能会享受兴奋、轻微焦虑、愤怒或害怕的感觉。<br />
+大多数人可能会喜欢因足球比赛的结果而激动不已——澳大利亚人称之为“footy”，或者在球类比赛中感受到紧张的刺激。<br />
+此外，我们也会喜欢安全地体验恐惧，比如乘坐过山车。<br />
+然而，我们愿意做这些事情的部分原因在于，我们知道对大多数人来说，它们是相对安全的。<br />
+而且，这些情绪和身体感觉会逐渐恢复平稳，我们会在比赛结束后或在游乐园玩耍一天之后不久，回归正常状态。<br />
+当我们超出舒适区时，压力就会急剧上升，我们会发现某些情况令人痛苦。<br />
+我们可能会注意到身体的变化，比如心跳加快到不适的程度、血压升高，或者经历强烈的情绪困扰。<br />
+在更极端的情况下，我们可能会感到僵住、被困住，甚至产生脱离现实或解离的感觉。<br />
+此时，我们需要采取方法让自己平静下来，重新感到舒适。<br />
+大多数人最有效的做法是依靠他人的安抚，以及我们在生活中学到的各种自我调节的方法。<br />
+在经历特别紧张的事件或时期后，我们甚至可能需要一段时间的充分休息和恢复。<br />
+然而，在忙碌的现代生活中，我们并不总是腾出时间来休养生息。<br />
+积极精神病学提倡使用不会伤害我们、但有助于恢复的方式来平复压力。<br />
+例如，我们可以通过与他人的交流、适量的运动、正念冥想、深呼吸等方式来放松自己，而不是依赖酒精或药物。<br />
+当我们无法管理高强度的压力时，它可能会对我们的幸福造成损害，甚至变成创伤，意味着我们的正常应对能力被压垮了。<br />
+不过，值得庆幸的是，即使在这种情况下，我们通常也能恢复，甚至在这个过程中变得更加坚韧。<br />
+然而，有时，长期积累或极端的压力会带来创伤。<br />
+这时，我们需要强有力的恢复路径，以及所谓的“创伤后成长”。<br />
+这意味着我们可以在艰难的环境中成长和进步。<br />
+需要明确的是，压力不仅仅存在于我们的思想中，我们的身体同样会真实地感受到它。<br />
+过度的压力可能会导致许多疾病，并在精神健康崩溃时雪上加霜。<br />
+例如，压力会触发炎症，而长期积累的压力甚至会让我们的身心变得紊乱。<br />
+因此，学会管理压力是我们健康和幸福的关键。<br />
+压力调节和压力管理是积极心理学和积极精神病学的重要组成部分。<br />
+如今，我们将压力管理视为一个分层的体系，而最顶层的策略是那些能够帮助我们与自己和他人建立联系，并让我们的身体、大脑和心灵在压力后恢复和滋养的方法。<br />
+美国精神病学家斯蒂芬·波尔吉斯提出，我们拥有一个“社会神经系统”，它是进化而来的，最有效的压力管理方式正是通过社交连接来实现。<br />
+因此，在压力管理的最高层，我们最需要的是人与人之间的互动，比如在关系中相互安慰、进行深入的沟通。<br />
+我们的面部表情、语言表达能力以及肢体语言，实际上是在进化过程中发展出来的，用于帮助这一过程。<br />
+例如，当别人通过表情和手势表达出他们理解我们、并明白我们所讲的内容时，我们会感到放松下来。<br />
+我们会发现，和他人一起开怀大笑，或者偶尔一起流泪，会让我们感觉更好。<br />
+这种共享的情感交流实际上会滋养我们的副交感神经系统。<br />
+我们经常听到交感神经系统，也就是所谓的“战斗或逃跑”系统。<br />
+人们早已知道交感神经系统会在高度压力下被激活，它与我们的心脏和血管系统密切相关，让心跳加快、血压上升，就像汽车的油门踏板一样。<br />
+然而，我们的“休息、消化和恢复”系统是副交感神经系统。<br />
+它控制着消化系统，并通过类似刹车的机制调节心脏活动，同时也作用于我们面部表情的肌肉。<br />
+因此，社会安慰主要依赖于副交感神经系统的输入。<br />
+部分副交感神经系统通过覆盖有髓鞘的神经快速传递信号，它们向上传导到我们大脑中最重要的意识思维区域，并与多个系统相连接。<br />
+然而，我们还有一个更古老的副交感神经系统，其中的神经纤维是无髓鞘的，传导速度较慢但作用更深远。<br />
+它们负责我们在压力和痛苦时产生的深层情感，例如深深的悲伤感。<br />
+当压力真正压倒我们时，我们可能会进入这种更古老的副交感神经系统主导的撤退状态。<br />
+在这种状态下，我们需要慢下来，放松自己，并让身体变暖。<br />
+有时是字面意义上的温暖，有时是情感上的温暖。<br />
+我们需要花时间，接受良好的照顾，来恢复身心健康。<br />
+例如，在经历了一段时间的疾病（无论是心理上的还是生理上的）后，有些人会经历深度疲劳的阶段。<br />
+他们需要放慢节奏，以恢复能量，并重新回到正常状态。<br />
+如今，科学研究为放松和压力缓解提供了支持，我们鼓励人们找到适合自己的方法来放松，并制定有效的压力管理策略。<br />
+冥想和正念练习被证明非常有效，它们能帮助我们与自己建立联系，并在身体、大脑和心灵之间建立连接。<br />
+然而，我们也应该多依靠社交互动带来的安慰。<br />
+不要害怕通过运动来增强体能并保持忙碌，因为运动可以合理地利用交感神经系统。<br />
+但同时，也要倾听自己身体的信号，特别是当你的肠道感觉到极度疲惫或不堪重负时。<br />
+这时，你需要放慢节奏，真正地休息，并以安静的方式恢复能量。<br />
+希望你能继续关注其他讲座，它们会介绍许多压力管理策略，比如放松、正念、运动、创造力和游戏。<br />
+我个人喜欢使用这些方法中的许多种。<br />
+找到适合自己的方法，并每天坚持使用它们。<br />
+同时，也帮助你的孩子和你关心的人找到他们喜欢的减压方式。<br />
+因此，当我们学会驾驭压力时，我们会变得更强大。<br />
+灵活性可以促进韧性，让我们的身心更加紧密地连接，并帮助我们茁壮成长。<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgdabf07d" class="outline-3">
+<h3 id="orgdabf07d">sentence</h3>
+<div class="outline-text-3" id="text-orgdabf07d">
+<p>
+flourish [ˈflɜrɪʃ]: v. to develop well and be successful SYN thrive兴旺<br />
+</p>
+<ul class="org-ul">
+<li>The entrepreneur claimed that he kept chatting with his friends to flourish his busniess.<br /></li>
+<li>First of all, only after we deal with our traumas, do we tend to be flourishing.<br /></li>
+<li>I am gonna make a call to my friend wishing her business flourish.<br /></li>
+</ul>
+<p>
+sensation [senˈseɪʃ(ə)n]: n. a feeling that you get from one of your five senses, especially the sense of touch感觉<br />
+</p>
+<ul class="org-ul">
+<li>I have a sensation that he is all around us.<br /></li>
+<li>There is another part to taking care of body sensation, without which we could achive our true nature.<br /></li>
+<li>He must ignore her sensation with no way of riding her to hospital.<br /></li>
+</ul>
+<p>
+pulse [pʌls]: n. the regular beat that can be felt, for example at your wrist, as your heart pumps blood around your body ⇨ heartbeat脉搏<br />
+</p>
+<ul class="org-ul">
+<li>There is a graphic interface showing the dynamic of your pulse rate.<br /></li>
+<li>You can watch your pulse rate on the website of the utility company.<br /></li>
+<li>His pulse rate raising dramatically lies in the stress he is being under.<br /></li>
+</ul>
+<p>
+escalate [ˈeskəˌleɪt]: v. if fighting, violence, or a bad situation escalates, or if someone escalates it, it becomes much worse不断升级<br />
+</p>
+<ul class="org-ul">
+<li>Our relationship escalating was prior to our marriage.<br /></li>
+<li>Due to your abortion and so-call my carelessness, our sentiment gets escalating in a linear fashion.<br /></li>
+<li>With the conflict between the two countries escalating, people on the border had to move to other safer places.<br /></li>
+</ul>
+<p>
+soothe [suð]: v. to make someone feel calmer and less anxious, upset, or angry抚慰,安慰<br />
+</p>
+<ul class="org-ul">
+<li>I had no idea that he had soothed you after we quarrelled.<br /></li>
+<li>My wife is feeling my heart beating trying to soothe me from anger.<br /></li>
+<li>He is an expert at soothing patients in the surgery team.<br /></li>
+</ul>
+<p>
+inflammation [ˌɪnfləˈmeɪʃ(ə)n]: n. swelling and pain in part of your body, which is often red and feels hot炎症, 发炎<br />
+</p>
+<ul class="org-ul">
+<li>The inflammation points to an epidemic traced back to the Medival Ages.<br /></li>
+<li>It is as if his inflammation is escalating beyond our expectation.<br /></li>
+<li>Meaning that because of the inflammation you are not allowed to walk on your feet.<br /></li>
+</ul>
+<p>
+keystone [ˈkiˌstoʊn]: n. ormal the most important part of an idea, belief, or process that influences how it develops基础,主旨<br />
+</p>
+<ul class="org-ul">
+<li>The next best thing is to figure out the keystone of the article.<br /></li>
+<li>After you cut it open, you will find the robot's keystone is merely a chip.<br /></li>
+<li>In reality, the keystone of the corporation is this kind of high-processed food that is popular with young people all over the world.<br /></li>
+</ul>
+<p>
+accelerate [əkˈseləˌreɪt]: v. if a process accelerates or if something accelerates it, it happens faster than usual or sooner than you expect加速, 促进<br />
+</p>
+<ul class="org-ul">
+<li>Her husband accelerated dramatically, which made her wary of their safety down the road.<br /></li>
+<li>The sex scandal ends up accelerating the destory of his company.<br /></li>
+<li>That's when the driver accelerated it as the engine of the car broke down.<br /></li>
+</ul>
+<p>
+gut [ɡʌt]: n. all the organs in someone’s body, especially when they have come out of their body内脏<br />
+</p>
+<ul class="org-ul">
+<li>What you need to get started is to examine your digestive gut in the hospital.<br /></li>
+<li>The waiter gets a good salary enough for him to examine his gut in the hospital.<br /></li>
+<li>I am willing to accompany with you, but my gut is protesting for my hunger.<br /></li>
+</ul>
+<p>
+digestive [daɪˈdʒestɪv]: adj. connected with the process of digestion消化的<br />
+</p>
+<ul class="org-ul">
+<li>The patient diagnosed with digestive disorder has already been prescribed by your wife.<br /></li>
+<li>Because of digestive disorder, he refused to go to school even though it didn't matter.<br /></li>
+<li>The warrior trimmed the body to some digestive guts.<br /></li>
+</ul>
+<p>
+grief [ɡrif]: n. extreme sadness, especially because someone you love has died悲痛<br />
+</p>
+<ul class="org-ul">
+<li>Because of the sensation of grief, she was unwilling to take part in her husband's funeral.<br /></li>
+<li>He buried his son died of the bubonic plague with grief.<br /></li>
+<li>With grief, everyone was reminiscing the headmaster who dedicated his life to the school.<br /></li>
+</ul>
+<p>
+fatigue [fəˈtiɡ]: n. very great tiredness SYN exhaustion疲乏<br />
+</p>
+<ul class="org-ul">
+<li>I am always unwilling to take photographs for my wife with fatigue when we are on vacations.<br /></li>
+<li>His deep feeling of fatigue rose from his controlling wife.<br /></li>
+<li>With fatigue I insisted on finishing my homework.<br /></li>
+</ul>
+<p>
+flexibility [ˌfleksəˈbɪləti]: n. the ability to change or be changed easily to suit a different situation灵活性<br />
+</p>
+<ul class="org-ul">
+<li>Our leader admires for his flexibility at the important meeting.<br /></li>
+<li>The next thing he did showed us his flexibility under stressful conditions.<br /></li>
+<li>Due to the flexbility of the cat, we failed to capture it in the enclosure.<br /></li>
+</ul>
+<hr />
+<p>
+dovetail with sth. [ˈdʌvˌteɪl]: 与某事物吻合<br />
+</p>
+<ul class="org-ul">
+<li>I must admit that your behavior at the wedding dovetails with your reputation.<br /></li>
+<li>To my surprise, his kindness doesn't dovetail with what you described him.<br /></li>
+<li>The trace of the cat dovetails with the feline habits.<br /></li>
+</ul>
+<p>
+a kid on the block: 新手(街区的小孩)<br />
+</p>
+<ul class="org-ul">
+<li>As a kid on the block, I am not supposed to speak in public.<br /></li>
+<li>When I was a kid on the block, the headmaster gave me the nuts to pursue my dream.<br /></li>
+<li>Imagine your teacher's dismay when he found you couldn't cope with a kid on the block.<br /></li>
+</ul>
+<p>
+Nowadays, + &#x2026;: 现今, + &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>Nowadays, girls often ask a large sum of money from their fiance in China.<br /></li>
+<li>Nowadays, people don't have the nuts to take care of a person lying on the road.<br /></li>
+<li>Nowadays, many men in China spend less money even than a dog.<br /></li>
+</ul>
+<p>
+mind doing sth.: 介意做某事<br />
+</p>
+<ul class="org-ul">
+<li>I don't mind reminiscing about your marriage.<br /></li>
+<li>Minding giving pocket money, he didn't stay for dinner.<br /></li>
+<li>My wife must have minded washing dinner on her own.<br /></li>
+</ul>
+<p>
+for a little while: 一小段时间<br />
+</p>
+<ul class="org-ul">
+<li>Would you like babysit my daughter for a little while?<br /></li>
+<li>Our cat has been drinking water for a little while since we moved to the new apartment.<br /></li>
+<li>The water and electricity will be off for a little while.<br /></li>
+</ul>
+<p>
+for the majority: 绝大多数<br />
+</p>
+<ul class="org-ul">
+<li>We tend to believe those sports are safety for the majority.<br /></li>
+<li>My wife has done the house chores for the majority.<br /></li>
+<li>The puma will not attack a human for the majority.<br /></li>
+</ul>
+<p>
+in times when + &#x2026;: 当&#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>I was distressful in times when my mother passed away.<br /></li>
+<li>Our cat was cheerful in times when I offered her snack.<br /></li>
+<li>My wife felt satisfied in time when she learned that she had an opportunity to work for Apple.<br /></li>
+</ul>
+<p>
+power up sth.: 给某物通电<br />
+</p>
+<ul class="org-ul">
+<li>Let's power up the TV, the programme may have already started.<br /></li>
+<li>Powering up my Switch, let's enjoy new games our father presented to us.<br /></li>
+<li>Powering up the TV, I am eager to take a look at the beautiful host.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orga17fb93" class="outline-3">
+<h3 id="orga17fb93">sentence2</h3>
+<div class="outline-text-3" id="text-orga17fb93">
+<p>
+flourish [ˈflɜrɪʃ]: v. to develop well and be successful SYN thrive兴旺<br />
+</p>
+<ul class="org-ul">
+<li>The entrepreneur claimed that he kept chatting with his friends to flourish his business.<br /></li>
+<li>First of all, only after we deal with our traumas, do we tend to be flourishing.<br /></li>
+<li>I am gonna make a call to my friend wishing her business flourish.<br /></li>
+</ul>
+<p>
+sensation [senˈseɪʃ(ə)n]: n. a feeling that you get from one of your five senses, especially the sense of touch感觉<br />
+</p>
+<ul class="org-ul">
+<li>I have a sensation that he is all around us.<br /></li>
+<li>There is another part to taking care of body sensation, without which we could not achieve our true nature.<br /></li>
+<li>He must ignore her sensation with no way of riding her to the hospital.<br /></li>
+</ul>
+<p>
+pulse [pʌls]: n. the regular beat that can be felt, for example at your wrist, as your heart pumps blood around your body ⇨ heartbeat脉搏<br />
+</p>
+<ul class="org-ul">
+<li>There is a graphic interface showing the dynamic of your pulse rate.<br /></li>
+<li>You can watch your pulse rate on the utility company's website.<br /></li>
+<li>His rising pulse rate lies in the stress he is being under.<br /></li>
+</ul>
+<p>
+escalate [ˈeskəˌleɪt]: v. if fighting, violence, or a bad situation escalates, or if someone escalates it, it becomes much worse不断升级<br />
+</p>
+<ul class="org-ul">
+<li>Our escalated relationship was prior to our marriage.<br /></li>
+<li>Due to your abortion and my so-called carelessness, our sentiment gets escalated in a linear fashion.<br /></li>
+<li>With the conflict between the two countries escalating, people on the border had to move to other safer places.<br /></li>
+</ul>
+<p>
+soothe [suð]: v. to make someone feel calmer and less anxious, upset, or angry抚慰,安慰<br />
+</p>
+<ul class="org-ul">
+<li>I had no idea that he had soothed you after we quarreled.<br /></li>
+<li>My wife is feeling my heart beating trying to soothe me from anger.<br /></li>
+<li>He is an expert at soothing patients in the surgery team.<br /></li>
+</ul>
+<p>
+inflammation [ˌɪnfləˈmeɪʃ(ə)n]: n. swelling and pain in part of your body, which is often red and feels hot炎症, 发炎<br />
+</p>
+<ul class="org-ul">
+<li>The inflammation points to an epidemic traced back to the Medival Ages.<br /></li>
+<li>It is as if his inflammation is escalating beyond our expectations.<br /></li>
+<li>Meaning that because of the inflammation you are not allowed to walk on your feet.<br /></li>
+</ul>
+<p>
+keystone [ˈkiˌstoʊn]: n. ormal the most important part of an idea, belief, or process that influences how it develops基础,主旨<br />
+</p>
+<ul class="org-ul">
+<li>The next best thing is to figure out the keystone of the article.<br /></li>
+<li>After you cut it open, you will find the robot's keystone is merely a chip.<br /></li>
+<li>In reality, the keystone of the corporation is this kind of high-processed food that is popular with young people all over the world.<br /></li>
+</ul>
+<p>
+accelerate [əkˈseləˌreɪt]: v. if a process accelerates or if something accelerates it, it happens faster than usual or sooner than you expect加速, 促进<br />
+</p>
+<ul class="org-ul">
+<li>Her husband accelerated dramatically, which made her wary of their safety down the road.<br /></li>
+<li>The sex scandal ends up accelerating the destruction of his company.<br /></li>
+<li>That's when the driver accelerated it as the engine of the car broke down.<br /></li>
+</ul>
+<p>
+gut [ɡʌt]: n. all the organs in someone’s body, especially when they have come out of their body内脏<br />
+</p>
+<ul class="org-ul">
+<li>What you need to get started is to examine your digestive gut in the hospital.<br /></li>
+<li>The waiter gets a good salary enough for him to examine his gut in the hospital.<br /></li>
+<li>I am willing to accompany you, but my gut is protesting for my hunger.<br /></li>
+</ul>
+<p>
+digestive [daɪˈdʒestɪv]: adj. connected with the process of digestion消化的<br />
+</p>
+<ul class="org-ul">
+<li>The patient diagnosed with digestive disorder has already been prescribed by your wife.<br /></li>
+<li>Because of digestive disorder, he refused to go to school even though it didn't matter.<br /></li>
+<li>The warrior trimmed the body to some digestive guts.<br /></li>
+</ul>
+<p>
+grief [ɡrif]: n. extreme sadness, especially because someone you love has died悲痛<br />
+</p>
+<ul class="org-ul">
+<li>Because of the sensation of grief, she was unwilling to take part in her husband's funeral.<br /></li>
+<li>He buried his son died of the bubonic plague with grief.<br /></li>
+<li>With grief, everyone was reminiscing about the headmaster who dedicated his life to the school.<br /></li>
+</ul>
+<p>
+fatigue [fəˈtiɡ]: n. very great tiredness SYN exhaustion疲乏<br />
+</p>
+<ul class="org-ul">
+<li>I am always unwilling to take photographs for my wife with fatigue when we are on vacation.<br /></li>
+<li>His deep feeling of fatigue rose from his controlling wife.<br /></li>
+<li>With fatigue, I insisted on finishing my homework.<br /></li>
+</ul>
+<p>
+flexibility [ˌfleksəˈbɪləti]: n. the ability to change or be changed easily to suit a different situation灵活性<br />
+</p>
+<ul class="org-ul">
+<li>Our leader admires him for his flexibility at the important meeting.<br /></li>
+<li>The next thing he did showed us his flexibility under stressful conditions.<br /></li>
+<li>Due to the flexibility of the cat, we failed to capture it in the enclosure.<br /></li>
+</ul>
+<hr />
+<p>
+dovetail with sth. [ˈdʌvˌteɪl]: 与某事物吻合<br />
+</p>
+<ul class="org-ul">
+<li>I must admit that your behavior at the wedding dovetails with your reputation.<br /></li>
+<li>To my surprise, his kindness doesn't dovetail with what you described him.<br /></li>
+<li>The trace of the cat dovetails with the feline habits.<br /></li>
+</ul>
+<p>
+a kid on the block: 新手(街区的小孩)<br />
+</p>
+<ul class="org-ul">
+<li>As a kid on the block, I am not supposed to speak in public.<br /></li>
+<li>When I was a kid on the block, the headmaster gave me the nuts to pursue my dream.<br /></li>
+<li>Imagine your teacher's dismay when he found you couldn't cope with a kid on the block.<br /></li>
+</ul>
+<p>
+Nowadays, + &#x2026;: 现今, + &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>Nowadays, girls often ask for a large sum of money from their fiance in China.<br /></li>
+<li>Nowadays, people don't have the guts to take care of a person lying on the road.<br /></li>
+<li>Nowadays, many men in China spend less money even than a dog.<br /></li>
+</ul>
+<p>
+mind doing sth.: 介意做某事<br />
+</p>
+<ul class="org-ul">
+<li>I don't mind reminiscing about your marriage.<br /></li>
+<li>Minding giving pocket money, he didn't stay for dinner.<br /></li>
+<li>My wife must have minded washing dinner on her own.<br /></li>
+</ul>
+<p>
+for a little while: 一小段时间<br />
+</p>
+<ul class="org-ul">
+<li>Would you please babysit my daughter for a little while?<br /></li>
+<li>Our cat has been drinking water for a little while since we moved to the new apartment.<br /></li>
+<li>The water and electricity will be off for a little while.<br /></li>
+</ul>
+<p>
+for the majority: 绝大多数<br />
+</p>
+<ul class="org-ul">
+<li>We tend to believe those sports are safe for the majority.<br /></li>
+<li>My wife has done the house chores for the majority.<br /></li>
+<li>The puma will not attack a human for the majority.<br /></li>
+</ul>
+<p>
+in times when + &#x2026;: 当&#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>I was distressful in times when my mother passed away.<br /></li>
+<li>Our cat was cheerful at times when I offered her a snack.<br /></li>
+<li>My wife felt satisfied in time when she learned that she had an opportunity to work for Apple.<br /></li>
+</ul>
+<p>
+power up sth.: 给某物通电<br />
+</p>
+<ul class="org-ul">
+<li>Let's power up the TV, the program may have already started.<br /></li>
+<li>Powering up my Switch, let's enjoy the new games our father presented to us.<br /></li>
+<li>Powering up the TV, I am eager to take a look at the beautiful host.<br /></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

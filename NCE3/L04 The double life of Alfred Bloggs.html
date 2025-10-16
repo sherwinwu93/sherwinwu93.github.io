@@ -1,0 +1,663 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-10-08 Tue 21:40 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-org0b9ea09" class="outline-2">
+<h2 id="org0b9ea09">Lesson 04 The double life of Alfred Bloggs</h2>
+<div class="outline-text-2" id="text-org0b9ea09">
+<p class="verse">
+Why did Alf want a white-collar job?<br />
+<br />
+<b>These days</b>,<br />
+&#xa0;people who <b>do manual work</b> often receive <b>far more</b> money than people who work in offices.<br />
+People who work in offices<br />
+&#xa0;<b>are frequently referred to as</b> '<b>white-collar workers</b>' <b>for the simple reason</b><br />
+&#xa0;&#xa0;that they usually wear a collar and tie to go to work.<br />
+<b>Such is human nature,</b><br />
+&#xa0;that a great many people <b>are often willing to sacrifice higher pay</b><br />
+&#xa0;&#xa0;for the privilege of becoming white-collar workers.<br />
+This can <b>give rise to</b> curious situations,<br />
+&#xa0;as it did in the case of Alfred Bloggs who worked as a dustman for the Ellesmere Corporation.<br />
+<br />
+When he got married, Alf <b>was too embarrassed to</b> say anything to his wife about his job.<br />
+He simply told her that he worked for the Corporation.<br />
+Every morning, he left home <b>dressed in</b> a smart black suit.<br />
+He then <b>changed into</b> overalls and spent the next eight hours as a dustman.<br />
+Before returning home at night, he <b>took a shower</b> and changed back into his suit.<br />
+Alf did this for over two years and his fellow dustmen kept his secret.<br />
+Alf's wife has never discovered that she married a dustman and she never will,<br />
+&#xa0;for Alf has just found another job.<br />
+He will soon be working in an office.<br />
+He will be earning only <b>half as much as</b> he used to,<br />
+&#xa0;but he feels that his rise in status is well worth the loss of money.<br />
+<b>From now on</b>, he will wear a suit all day and others will <b>call him Mr. Bloggs</b>, not Alf.<br />
+</p>
+</div>
+<div id="outline-container-org529d922" class="outline-3">
+<h3 id="org529d922">expression</h3>
+<div class="outline-text-3" id="text-org529d922">
+<p>
+manual: [ˈmænjuəl] adj. n.体力的<br />
+collar: [ˈkɑlər] n.衣领<br />
+sacrifice: [ˈsækrɪˌfaɪs] v. n.牺牲,献出<br />
+privilege: [ˈprɪvəlɪdʒ] n.好处<br />
+dustman: [ˈdʌstmən] n.清洁工<br />
+corporation: [ˌkɔrpəˈreɪʃ(ə)n] n.公司<br />
+overalls: [ˈoʊvərˌɔl] n.工作服<br />
+shower: [ˈʃaʊər] n.淋浴<br />
+secret: [ˈsikrət] n.秘密<br />
+status: [ˈstætəs] n.地位<br />
+</p>
+
+<p>
+do manual work: 做体力工作<br />
+white-collar/blue-collar workers: 白领/蓝领工人<br />
+make a sacrifice: to surrender or give up, or permit injury or disadvantage to, for the sake of something else做出牺牲<br />
+sacrifice a. for b.:为B牺牲A<br />
+have the privilege of doing sth.: an opportunity to do something special or enjoyable有荣幸做某事<br />
+take a shower: 洗淋浴<br />
+keep a secret: 保密<br />
+the secret of success: 成功的秘诀<br />
+It's between you and me: 这是你我之间<br />
+social status: 社会地位<br />
+status quo: 保持原样<br />
+keep the status quo: 保持原样<br />
+</p>
+<hr />
+<p>
+These days &#x2026;: 现在<br />
+Far more adj./n.: 非常&#x2026;<br />
+A be referred to as &#x2026; B: regrad A as B 把A称作为B<br />
+refer to A as B: regrad A as B=speak of A as B 把A称作为B<br />
+for the simple reason that + &#x2026;: 仅仅因为 + &#x2026;<br />
+Such is human nature, that + &#x2026;: 这是人类的本性, &#x2026;<br />
+be willing to do sth.: 愿意做某事<br />
+give rise to: lead to; cause导致<br />
+too embarrassed to do sth.: 不好意思做某事<br />
+be dressed in: wear穿着<br />
+change into + [clothes]: 换上(衣服)<br />
+half as much as &#x2026;:是..的一般(充当adj.)<br />
+from now on: 从现在起<br />
+call me/him/her A: 称&#x2026;作为A<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org5c78f02" class="outline-3">
+<h3 id="org5c78f02">vocabulary</h3>
+<div class="outline-text-3" id="text-org5c78f02">
+<p>
+receive: get<br />
+sacrifice: give up<br />
+privilege: special advantage, honor<br />
+curious: strange<br />
+embarrassed: shy<br />
+discovered: found out<br />
+status: social position<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org7e79b84" class="outline-3">
+<h3 id="org7e79b84">words</h3>
+<div class="outline-text-3" id="text-org7e79b84">
+<p>
+manual [ˈmænjuəl] adj. 体力的<br />
+collar [ˈkɒlə(r)] n. 衣领<br />
+sacrifice [ˈsækrɪfaɪs] v. 牺牲<br />
+privilege [ˈprɪvəlɪdʒ] n. 好处<br />
+dustman [ˈdʌstmən] n. 清洁工<br />
+corporation [ˌkɔːpəˈreɪʃ(ə)n] n. 公司<br />
+overalls [ˈəʊvərɔːlz] n. 淋浴<br />
+shower [ˈʃaʊə(r)] n. 淋浴<br />
+secret [ˈsiːkrət] n. 秘密<br />
+status [ˈsteɪtəs] n. 地位<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgfe58894" class="outline-3">
+<h3 id="orgfe58894"><span class="done DONE">DONE</span> 单词造句</h3>
+<div class="outline-text-3" id="text-orgfe58894">
+<p>
+manual adj. n.  do manual work<br />
+</p>
+<ul class="org-ul">
+<li>The former minister does manual work after entiring.<br /></li>
+<li>He was tired of doing manual work in ploughed fields.<br /></li>
+<li>I needn't have a rest. Despite the fact that I have been doing manual work for the whole morning.<br /></li>
+<li>After staying out of limelight, the actor begins to do manual work.<br /></li>
+<li>If you don't read the manual, don't ask me for anything.<br /></li>
+</ul>
+<p>
+collar n. white-collar/blue-collar workers<br />
+</p>
+<ul class="org-ul">
+<li>I happend to be a white-collar worker after I graduated from school.<br /></li>
+<li>She wanted to be a white-collar worker when she went to university.<br /></li>
+<li>Why are you glancing at the white-collar worker?<br /></li>
+<li>The privilege of becoming a white-collar worker is suspicious.<br /></li>
+<li>The woman turned out to be a blue-collar worker.<br /></li>
+</ul>
+<p>
+sacrifice v. n. make a sacrifice  sacrifice a. for b.<br />
+</p>
+<ul class="org-ul">
+<li>The authorities is always asking people to make a sarcifice.<br /></li>
+<li>The soldier insisted on making a sacrifice.<br /></li>
+<li>I hate to sacrifice my life for anyone else.<br /></li>
+<li>She decided to sacrifice herself for the success of the war.<br /></li>
+<li>He has sacrificed a lot of chances for you indeed.<br /></li>
+</ul>
+<p>
+privilege n. have the privilege of doing sth.<br />
+</p>
+<ul class="org-ul">
+<li>Get out of here. You didn't have the privilege of meeting the chairman.<br /></li>
+<li>Despite the fact that people have the privilege of driving on highway.<br /></li>
+<li>The archaeologist has the privilege of explore the temple dating back to 5th century BC.<br /></li>
+<li>I am amazed to find that I have the privilege of sacrifice myself for my love.<br /></li>
+<li>Equipped with a torch, now you have the privilege of entering the cave.<br /></li>
+</ul>
+<p>
+dustman n.<br />
+</p>
+<ul class="org-ul">
+<li>The dustman said that the museum was used as a place of worship for ten years.<br /></li>
+<li>The dustman succeeded in repairing the drainage system.<br /></li>
+<li>The dustman is having a rest on a shady spot under trees.<br /></li>
+<li>The dustman has already carried a basket of fruits to the house.<br /></li>
+<li>In the sacred room of the temple, there is a dustman worshiping the goddess.<br /></li>
+</ul>
+<p>
+corporation n.<br />
+</p>
+<ul class="org-ul">
+<li>I get used to working for such a big corporation.<br /></li>
+<li>What's going on? Why don't you work for the big corporation?<br /></li>
+<li>I was wondering whether I apply for the big corporation.<br /></li>
+<li>I'm glad that you succeed in working for a corporation.<br /></li>
+<li>She didn't work for the big corporation for one reason or another.<br /></li>
+</ul>
+<p>
+overalls n.<br />
+</p>
+<ul class="org-ul">
+<li>After waking up with a start, she changed into the overalls.<br /></li>
+<li>I caught sight of a woman dressed in the overalls.<br /></li>
+<li>She keeps on wearing her overalls even after her work.<br /></li>
+<li>I don't get enough money to wear a overalls.<br /></li>
+<li>The blue-collar worker is equal to make overalls.<br /></li>
+</ul>
+<p>
+shower n. take a shower<br />
+</p>
+<ul class="org-ul">
+<li>My wife is always taking a shower before she goes to bed.<br /></li>
+<li>My wife is always complaining that I don't take a shower before going to bed.<br /></li>
+<li>The dog has a habit of taking a shower every Saturday afternoon..<br /></li>
+<li>She has a bad reputation for not taking any shower for a week.<br /></li>
+<li>It is a blessing that we can take a shower every day.<br /></li>
+</ul>
+<p>
+secret n. keep a secret  the secret of success  It's between you and me<br />
+</p>
+<ul class="org-ul">
+<li>You have to believe in yourself. I don't think that's the secret of success.<br /></li>
+<li>I guess you can't keep any secret.<br /></li>
+<li>Now, it's not just between you and me.<br /></li>
+<li>She pointed out that the woman must have kept a secret.<br /></li>
+<li>It's worth keeping a secret.<br /></li>
+</ul>
+<p>
+status n. social status  status quo  keep the status quo<br />
+</p>
+<ul class="org-ul">
+<li>I was wondering why older people were give higher social status in Japan.<br /></li>
+<li>I'm fairly certain that his rise in status is well worth the loss of money.<br /></li>
+<li>My dream come ture that I have kept the status quo for ten years.<br /></li>
+<li>Even though he enjoys the status quo, we must make a change.<br /></li>
+<li>She is used to keeping the status quo for many years.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgc87f90d" class="outline-3">
+<h3 id="orgc87f90d"><span class="done DONE">DONE</span> 反复听电影片段直到懂关键句</h3>
+<div class="outline-text-3" id="text-orgc87f90d">
+</div>
+</div>
+<div id="outline-container-org4753a9e" class="outline-3">
+<h3 id="org4753a9e"><span class="done DONE">DONE</span> 复习二册语法(笔记或视频) &amp; 红皮书</h3>
+<div class="outline-text-3" id="text-org4753a9e">
+<ul class="org-ul">
+<li>比较级前可以用:<br />
+<ul class="org-ul">
+<li>much/a lot/far(= a lot)<br /></li>
+<li>a bit/a little/slightly(=a little)<br /></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orga232e73" class="outline-3">
+<h3 id="orga232e73"><span class="done DONE">DONE</span> 习惯用法造句</h3>
+<div class="outline-text-3" id="text-orga232e73">
+<p>
+These days&#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>These days, people is not as honest as they once were.<br /></li>
+<li>These days, people is used to phoning in public.<br /></li>
+<li>These days, peple worship firemen a great deal.<br /></li>
+<li>These days, English becomes a universal language.<br /></li>
+<li>These days, people are willing to wait in line	for a cup of coffee.<br /></li>
+</ul>
+<p>
+Far more adj./n.<br />
+</p>
+<ul class="org-ul">
+<li>Their lives are not far more valuable than mine.<br /></li>
+<li>The problem proved to be far more difficult than we thought of.<br /></li>
+<li>You can do work far more harder than actual.<br /></li>
+<li>I find it far more exciting than I imaged.<br /></li>
+<li>This story is far more insteresting than that one we heard last time.<br /></li>
+</ul>
+<p>
+a. be referred to as &#x2026; b.  refer to a. as b.<br />
+</p>
+<ul class="org-ul">
+<li>California used to be referred to as a Gold State.<br /></li>
+<li>Why did people refer to the city as the Paris of the east.<br /></li>
+<li>People who work in office are often referred to as white-collar workers.<br /></li>
+<li>My wife love me to referred to her as my baby.<br /></li>
+<li>She was referred to as a bicth when she went to university.<br /></li>
+</ul>
+<p>
+for the simple reason that + &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>I can't go on vacation for the simple reason that I didn't get enough money.<br /></li>
+<li>I was dismayed to do it for the simple reason that you should have finished it.<br /></li>
+<li>I am busy doing homework for the simple reason that my teacher has taught too much today.<br /></li>
+<li>I get into such a mess for the simple reason that I played football just then.<br /></li>
+<li>I get tired for the simple reason that I have been running.<br /></li>
+</ul>
+<p>
+Such is human nature, that + &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>Such is human nature, that I don't like to do manual work in ploughed fields.<br /></li>
+<li>Such is human nature, that people are often strict with their children.<br /></li>
+<li>Such is human nature, that young men and young women often like something new.<br /></li>
+<li>Such is human nature, that we often write out a long list of tasks at the begining of the term.<br /></li>
+<li>Such is human nature, that people make every effort to take care of their children.<br /></li>
+</ul>
+<p>
+be willing to do sth.<br />
+</p>
+<ul class="org-ul">
+<li>I am willing to sacrifice my time for my wife.<br /></li>
+<li>She is willing to go on a diet.<br /></li>
+<li>The cat is willing to play ping-pong.<br /></li>
+<li>She isn't willing to buy some drinks.<br /></li>
+<li>It was obvious that she is not willing to give you any pocket money.<br /></li>
+</ul>
+<p>
+give rise to = lead to = cause<br />
+</p>
+<ul class="org-ul">
+<li>This can give rise to some strange situations.<br /></li>
+<li>I was not surprised to see that this gave rise to some difficult problems.<br /></li>
+<li>This can give rise to the situation<br />
+nobody who wants to sacrifice himself for the country anymore.<br /></li>
+<li>This didn't give rise to any problems at all.<br /></li>
+<li>This give rise to the problem<br />
+that a great many students played truent from school.<br /></li>
+</ul>
+<p>
+too embarrassed to do sth.<br />
+</p>
+<ul class="org-ul">
+<li>The cat was too embarrased to have dinner.<br /></li>
+<li>I was too embarrased to ask for any money.<br /></li>
+<li>She was too embarrased to visit her brother.<br /></li>
+<li>She was too embarrased to talk to him.<br /></li>
+<li>She was too embarrased to shake his hands.<br /></li>
+</ul>
+<p>
+be dressed in<br />
+</p>
+<ul class="org-ul">
+<li>She will have to be dressed in block stockings in next play.<br /></li>
+<li>It occurred to me that she should be dressed in red socks.<br /></li>
+<li>She is being dressed in the suit that I return to her yesterday.<br /></li>
+<li>Dressed in black suit at night, she can't be recognized.<br /></li>
+<li>Dressed in helmet, she went into the cave.<br /></li>
+</ul>
+<p>
+change into + [clothes]<br />
+</p>
+<ul class="org-ul">
+<li>She should have changed into a full-length skirt.<br /></li>
+<li>She needn't have changed into a full-length skirt.<br /></li>
+<li>She is always changing into polo-shirts.<br /></li>
+<li>After I was wet, I changed into a jacket.<br /></li>
+<li>You don't need to change into a suit at the party.<br /></li>
+</ul>
+<p>
+half as adv.(much/hard) as &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>You didn't feed her half as often as I did.<br /></li>
+<li>I'm silly half as much as you are.<br /></li>
+<li>I costed money half as much as you did.<br /></li>
+<li>You worked only half as hard as you can.<br /></li>
+<li>You went to the museum half as often as I did.<br /></li>
+</ul>
+<p>
+from now on<br />
+</p>
+<ul class="org-ul">
+<li>From now on, I'll finish homework everyday.<br /></li>
+<li>From now on, I want you to get a good salary.<br /></li>
+<li>From now on, I want you to be happy.<br /></li>
+<li>Fron now on, call me Sherwin.<br /></li>
+<li>From now on, don't ask for any meal.<br /></li>
+</ul>
+<p>
+call me/him/her a.<br />
+</p>
+<ul class="org-ul">
+<li>Mr. Leo told me to call her Leo.<br /></li>
+<li>The doctor who I met yesterday called me Sherwin.<br /></li>
+<li>My brother-in-law calls me Sherwin.<br /></li>
+<li>I look forward to being called Sherwin.<br /></li>
+<li>I trained the dog to call me Sherwin.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org2c54453" class="outline-3">
+<h3 id="org2c54453">跟读 50遍</h3>
+</div>
+<div id="outline-container-orgc7d73aa" class="outline-3">
+<h3 id="orgc7d73aa"><span class="done DONE">DONE</span> Comprehension 反复练习</h3>
+<div class="outline-text-3" id="text-orgc7d73aa">
+</div>
+</div>
+<div id="outline-container-orgaa6e4f1" class="outline-3">
+<h3 id="orgaa6e4f1"><span class="done DONE">DONE</span> Ask me if 写+读</h3>
+<div class="outline-text-3" id="text-orgaa6e4f1">
+<ol class="org-ol">
+<li>Manual workers receive more money than office workers. Why<br />
+Why do manual workers receive more money than office workers?<br /></li>
+<li>We refer to people who work in offices as 'white-collar workers'. How<br />
+How do we refer to people who work in offices?<br /></li>
+<li>Some people are prepared to sacrifice higher pay to become office workers. Why<br />
+Why are some people prepared to sacrifice higher pay?<br /></li>
+<li>Alf was too embarrassed to tell his wife about his job. Why<br />
+Why was Alf too embarrassed to tell his wife about his job?<br /></li>
+<li>He is dressed in a smart black suit every morning. How<br />
+How is he dressed every morning?<br /></li>
+<li>He changed into overalls when he got to work. When<br />
+When did he change into overalls?<br /></li>
+<li>His wife never discovered she'd married a dustman. Why&#x2026;never<br />
+Why did his wife never discover she'd married a dustman?<br /></li>
+<li>He will soon be working in an office. Where<br />
+Where will he soon be working?<br /></li>
+<li>He will be earning half as much as he used to. How much<br />
+How much will he be earning?<br /></li>
+<li>People will call him 'Mr. Bloggs'. What<br />
+What will people call him?<br /></li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org5aa569a" class="outline-3">
+<h3 id="org5aa569a"><span class="done DONE">DONE</span> 摘要写作 写 &amp; 对答案</h3>
+<div class="outline-text-3" id="text-org5aa569a">
+<p>
+When they got married, Alfred Bloggs simply told his wife that he worked for the Corporation.<br />
+Though he was dressed in a smart black suit before he left home,<br />
+	he changed into overalls and spent the day as a dustman.<br />
+The he took a shower and changed back into the suit at night.<br />
+This lasted for over two years and his fellow dustmen kept his secret.<br />
+His wife will never learn the truth, for her husband will be working in an office in future.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org17f084f" class="outline-3">
+<h3 id="org17f084f"><span class="done DONE">DONE</span> tell the story 口语复述</h3>
+<div class="outline-text-3" id="text-org17f084f">
+</div>
+</div>
+<div id="outline-container-org3606974" class="outline-3">
+<h3 id="org3606974"><span class="done DONE">DONE</span> composition 阅读 或 写作</h3>
+<div class="outline-text-3" id="text-org3606974">
+<p>
+One morning Alf and three other dustmen were collecting rubbish in Merton Street<br />
+	and they stopped outside Mrs. Frost's house.<br />
+Though Alf didn't know it, his wife was visiting Mrs. Frost at the time.<br />
+She and Mrs. Frost were old friends, though Mrs. Frost had never met Alf.<br />
+Alf was just getting out of the dust cart to go into Mrs. Frost's backyard<br />
+	when he saw his wife leaving Mrs. Frost's house.<br />
+He quickly returned to the dust cart and hid in the driving cabin.<br />
+While he was hiding, his fellow dustmen helped him by collecting Mrs. Frost's rubbish.<br />
+</p>
+
+<p>
+Meanwhile, Alf's wife and Mrs. Frost talked on the doorstep.<br />
+It looked as though their conversation would never end!<br />
+At last Mrs. Bloggs said goodbye to Mrs. Frost.<br />
+She waved to one of the dustmen whom she recognized<br />
+	and she went towards the dustcart to greet him.<br />
+The dustman waved back and gave her a big smile as the dustcart drove off.<br />
+Mrs. Bloggs stood on the pavement and watched the dustcart disappear down the street.<br />
+Then she began to walk home.<br />
+'It's all right, Alf', his friend said.<br />
+'She can't see you now.'<br />
+'Thanks, Jim,' Alf said. 'That was a luck escape!'<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org11eb443" class="outline-3">
+<h3 id="org11eb443">Topics for discussion</h3>
+</div>
+</div>
+</div>
+</body>
+</html>

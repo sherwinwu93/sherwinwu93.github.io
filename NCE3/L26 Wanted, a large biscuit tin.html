@@ -1,0 +1,736 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-09-28 Sat 22:17 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-org0775894" class="outline-2">
+<h2 id="org0775894">Lesson 26 Wanted: a large biscuit tin</h2>
+<div class="outline-text-2" id="text-org0775894">
+<p class="verse">
+Who won the prize for the biggest biscuit?<br />
+<br />
+No one can <b>avoid being influenced by</b> advertisements.<br />
+Much as we may <b>pride ourselves on</b> our <b>good taste</b>,<br />
+&#xa0;&#xa0;we <b>are no longer free to</b> choose the things we want,<br />
+&#xa0;for advertising <b>exerts a subtle influence on</b> us.<br />
+<b>In their efforts to</b> persuade us to buy this or that product,<br />
+&#xa0;advertisers have made a close study of human nature and have classified all our little weaknesses.<br />
+<br />
+Advertisers discovered years ago that all of us love to <b>get something for nothing</b>.<br />
+An advertisement which begins with the <b>magic word</b> free can rarely go wrong.<br />
+These days, advertisers not only offer free samples,<br />
+&#xa0;but free cars, free houses, and free trips round the world as well.<br />
+They devise hundreds of competitions which will <b>enable us to</b> win huge sums of money.<br />
+Radio and television have <b>made it possible for advertisers<br />
+&#xa0;to capture the attention</b> of millions of people in this way.<br />
+<br />
+During a radio programme,<br />
+&#xa0;a company of biscuit manufacturers once asked listeners to bake biscuits<br />
+&#xa0;&#xa0;and send them to their factory.<br />
+They offered to pay 10 dollars a pound for the biggest biscuit baked by a listener.<br />
+The response to this competition was tremendous.<br />
+Before long, biscuits of all shapes and sizes began arriving at the factory.<br />
+One lady brought in a biscuit on a wheelbarrow.<br />
+It weighed nearly 500 pounds.<br />
+A little later, a man <b>came along</b> with a biscuit which occupied <b>the whole boot of his car</b>.<br />
+All the biscuits that were sent were carefully weighed.<br />
+The largest was 713 pounds.<br />
+It seemed certain that this would win the prize.<br />
+But just before the competition closed,<br />
+&#xa0;a lorry arrived at the factory with a truly colossal biscuit which weighed 2,400 pounds.<br />
+It had been baked by a college student<br />
+&#xa0;who had used over 1,000 pounds of flour,<br />
+&#xa0;&#xa0;800 pounds of sugar, 200 pounds of fat, and 400 pounds of various other ingredients.<br />
+It was so heavy that a crane had to be used to remove it from the lorry.<br />
+The manufacturers had to pay more money than they had anticipated,<br />
+&#xa0;for they <b>bought the biscuit from the student</b> for 24,000 dollars.<br />
+</p>
+</div>
+<div id="outline-container-orgdffd98d" class="outline-3">
+<h3 id="orgdffd98d">expression</h3>
+<div class="outline-text-3" id="text-orgdffd98d">
+<p>
+influence: [ˈɪnfluəns] v.n.影响<br />
+pride: [praɪd] v.骄傲<br />
+taste: [teɪst] n.v.品味<br />
+exert: [ɪɡˈzɜrt] v.施加<br />
+subtle: [ˈsʌt(ə)l] adj.微妙的<br />
+advertiser: [ˈædvərˌtaɪzər] n.做广告的人<br />
+classify: [ˈklæsɪˌfaɪ] v. to decide what group something belongs to 分类<br />
+magic: [ˈmædʒɪk] adj.有奇妙作用的<br />
+sample: [ˈsæmp(ə)l] n.样品<br />
+devise: [dɪˈvaɪz] v.设计<br />
+capture: [ˈkæptʃər] v.吸引,赢得<br />
+manufacturer: [ˌmænjəˈfæktʃərər] n.制造商<br />
+wheelbarrow: [ˈhwilˌberoʊ] n. a small cart with one wheel and two handles that you use outdoors to carry things, especially in the garden独轮手推车<br />
+boot: [but] n.(汽车尾部的)行李箱<br />
+ingredient: [ɪnˈɡridiənt] n.食材,成分<br />
+crane: [kreɪn] n. a large tall machine used by builders for lifting heavy things起重机<br />
+anticipate: [ænˈtɪsɪˌpeɪt] v. to expect that something will happen and be ready for it预期,预料<br />
+</p>
+
+<p>
+bad/good/positive etc. influence (on sb.): 坏/好/积极的影响对某人<br />
+have an influence on sb./sth.: 对某人/物有一个影响<br />
+be influenced by &#x2026;: 被&#x2026;所影响<br />
+pride oneself on (doing) sth. = be pround of:自豪于某事物<br />
+have good/bad taste in sth.: 对某物有好的品味<br />
+exert a subtle/some influence on/over sb.: 在某人上施加微妙的影响<br />
+have a subtle mind: 拥有敏锐的思想<br />
+classify a. as/under b.: 把A归类为B<br />
+say the magic word: 说出咒语<br />
+free samples of sth.: 某物的免费的样品<br />
+devise a way/plan to do sth.:设计出方法/计划去做某事<br />
+capture the attention of sb. = capture sb's attention引起某人的注意<br />
+in the boot of sb's car: 在车的后备箱<br />
+It is anticipated that + &#x2026;: 据估计<br />
+sb. anticipate that + &#x2026;: 某人预估<br />
+</p>
+<hr />
+<p>
+as引导的倒装句 表 让步<br />
+</p>
+<ul class="org-ul">
+<li>Much as &#x2026;, &#x2026;<br /></li>
+<li>adj./n./v. + as &#x2026;,句子: adj-est.去the, n.去冠, v.用原型<br /></li>
+<li>为什么要试试自己查语法书<br /></li>
+</ul>
+<hr />
+<p>
+avoid being done: 避免被做某事<br />
+be free to do sth.: 免于做某事<br />
+in sb's effort to do sth.: 在某人努力做某事下<br />
+get sth. for nothing: 免费得到东西<br />
+enable sb. to do sth.: 使得某人能做某事<br />
+a. has made it possible for sb. to do sth.: 使得某人能做某事<br />
+come along: arrive到达<br />
+buy sth. from sb.: 从某人那里买某物<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org8e7eb7c" class="outline-3">
+<h3 id="org8e7eb7c">words</h3>
+<div class="outline-text-3" id="text-org8e7eb7c">
+<p>
+influence [ˈɪnfluəns] v. 影响<br />
+pride [praɪd] v. 骄傲<br />
+taste [teɪst] n. 鉴赏力<br />
+exert [ɪɡˈzɜːrt] v. 施加<br />
+subtle [ˈsʌt(ə)l] adj. 微妙的,难以捉摸的<br />
+advertiser [ˈædvərtaɪzər] n. 做广告的人<br />
+classify [ˈklæsɪfaɪ] v. 分类<br />
+magic [ˈmædʒɪk] adj. 有奇妙作用的<br />
+sample [ˈsæmp(ə)l] n. 样品<br />
+devise [dɪˈvaɪz] v. 设计,想出<br />
+capture [ˈkæptʃər] v. 吸引,赢得<br />
+manufacturer [ˌmænjuˈfæktʃərər] n. 生产厂家,制造商<br />
+wheelbarrow [ˈwiːlbæroʊ] n. 独轮手推车<br />
+boot [buːt] n. 行李箱<br />
+ingredient [ɪnˈɡriːdiənt] n. 配料<br />
+crane [kreɪn] n. 起重机<br />
+anticipate [ænˈtɪsɪpeɪt] v. 预期,预料<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgada80c9" class="outline-3">
+<h3 id="orgada80c9">vocabulary</h3>
+<div class="outline-text-3" id="text-orgada80c9">
+<p>
+no longer: not any more, not now<br />
+in their efforts to persuade us: in their attempts to influence us to do something<br />
+classified: put into categories<br />
+free: without any cost or payment<br />
+enable: make it possible for<br />
+capture: attract and hold<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org9e8535e" class="outline-3">
+<h3 id="org9e8535e"><span class="done DONE">DONE</span> 单词造句</h3>
+<div class="outline-text-3" id="text-org9e8535e">
+<p>
+influence v.n.<br />
+	bad/good/positive etc. influence (on sb.)  have an influence on sb./sth.  be influenced by &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>I turned out to be a bad influence on my son.<br /></li>
+<li>I'm genuinely sorry that your son were influenced by me.<br /></li>
+<li>His works claimed to have had an influence on many modern teachers.<br /></li>
+<li>There is no doubt that children are heavily influenced by advertising.<br /></li>
+<li>There is a danger that it will have a bad influence on young people in the country.<br /></li>
+</ul>
+<p>
+pride v. pride oneself on (doing) sth. = be pround of<br />
+</p>
+<ul class="org-ul">
+<li>I prided myself on the tremendous speed of my sailing vessel.<br /></li>
+<li>I prided myself on that, for he is the captail of a sailing ship.<br /></li>
+<li>I prided myself on taking the lead in my class.<br /></li>
+<li>I prided myself on breaking the world record.<br /></li>
+<li>I prided myself on fitting it with great difficulty.<br /></li>
+</ul>
+<p>
+taste n.v.  have good/bad taste in sth.<br />
+</p>
+<ul class="org-ul">
+<li>My wife is always complaining that I have bad taste in clothes.<br /></li>
+<li>Struck by a fashion exhibition, she began to have good taste in clothes.<br /></li>
+<li>She had had bad taste in men once upon a time.<br /></li>
+<li>It gave me the impression that she had good taste in bed.<br /></li>
+<li>It made my hair stand on end, for my daughter has bad taste in men.<br /></li>
+</ul>
+<p>
+exert v.  exert a subtle/some influence on/over sb.<br />
+</p>
+<ul class="org-ul">
+<li>You should have obeyed traffic rules, for it would exert some influence on your children.<br /></li>
+<li>It really exert some influence on me and ruined my day.<br /></li>
+<li>What a drama queen. It's impossible not to exert some influence on her daughter.<br /></li>
+<li>The skeleton he has seen last week exerted a subtle influence on the medical student.<br /></li>
+<li>The life abroad did exert some influence on the girl who are not willing to obey the rules.<br /></li>
+</ul>
+<p>
+subtle adj.  have a subtle mind<br />
+</p>
+<ul class="org-ul">
+<li>It seems that the snake could not tell the subtle differences between them.<br /></li>
+<li>Much as they have thing in common, there are still many subtle differences between them.<br /></li>
+<li>Noticing the subtle differences between them, he was petrified of the consequent.<br /></li>
+<li>Listen to me carefully, if you don't have a subtle mind.<br /></li>
+<li>Don't break your concentration, even if you have a subtle mind.<br /></li>
+</ul>
+<p>
+advertiser n.<br />
+</p>
+<ul class="org-ul">
+<li>To our dismay, the advertiser is willing to serve it.<br /></li>
+<li>The advertiser got very angry and knocked him to the ground.<br /></li>
+<li>I have the impulse to buy a pen at the idea of the advertiser.<br /></li>
+<li>For instance, the advertiser used to be a medical student.<br /></li>
+<li>The advertiser provided us with dozens of free samples of the perfume.<br /></li>
+</ul>
+<p>
+classify v.  classify a. as/under b.<br />
+</p>
+<ul class="org-ul">
+<li>Oddly enough, they classifies snails as a delicacy.<br /></li>
+<li>Hand the suit to me, I am gonna classify it.<br /></li>
+<li>He was strucked by a car while crossing the street.<br />
+The police arrived on the scene and classified it as an accident.<br /></li>
+<li>If I don't classify it in time, my stomach will turn.<br /></li>
+<li>Imagine my dismay when I found that she classified the meat as poison.<br /></li>
+</ul>
+<p>
+magic adj.  say the magic word<br />
+</p>
+<ul class="org-ul">
+<li>We all know what is magic word in business.<br /></li>
+<li>If I say magic word, my wife will take a shower.<br /></li>
+<li>These magic word which exert some influence on people never appeals to me.<br /></li>
+<li>These magic word received far more abuse than other.<br /></li>
+<li>It is illogical to say the magic word on that occassion.<br /></li>
+</ul>
+<p>
+sample n.  free samples of sth.<br />
+</p>
+<ul class="org-ul">
+<li>The old lady is anxious to eat free samples of ice cream.<br /></li>
+<li>Much to my surprise, this bottle is only free samples of the perfume.<br /></li>
+<li>It was not until a month later that she was giving out a lot of free samples of products.<br /></li>
+<li>As she received a lot of free samples of perfume, she never bought one.<br /></li>
+<li>Because of free samples of cakes, I am not hungry now.<br /></li>
+</ul>
+<p>
+divise v.  devise a way/plan to<br />
+</p>
+<ul class="org-ul">
+<li>These medical students devised a way to drink on the duty.<br /></li>
+<li>We should have devise a plan to prevent this from happening.<br /></li>
+<li>We devised a plan to make them turn against each other.<br /></li>
+<li>We devised a plan to go on a strike.<br /></li>
+<li>We devised a way to reach an agreement.<br /></li>
+</ul>
+<p>
+capture v.  capture the attention of sb. = capture sb's attention<br />
+</p>
+<ul class="org-ul">
+<li>Because of fantasy custom, she really captured the attention of people in the exhibition.<br /></li>
+<li>It is clear that the pretty girl captures their attention.<br /></li>
+<li>The police is trying to capture their attention and settle the argument.<br /></li>
+<li>In fact, you didn't capture my attention in the museum.<br /></li>
+<li>The man bet $2000 on Mendoza and capture the attention of other people.<br /></li>
+</ul>
+<p>
+manufacturer n.<br />
+</p>
+<ul class="org-ul">
+<li>Obviously if the manufacturer reduces his price, he'll not make a profit.<br /></li>
+<li>The manufacturer claimed to have made a profit last year.<br /></li>
+<li>I bet the manufacturer will not reduce his price by the last day of the year.<br /></li>
+<li>Technically speaking, the manufacturer has already made a profit.<br /></li>
+<li>The manufacturer rose to fame swiftly because of the advertisement.<br /></li>
+</ul>
+<p>
+wheelbarrow n.<br />
+</p>
+<ul class="org-ul">
+<li>I'm gonna bring a wheelbarrow to you.<br /></li>
+<li>Despite the fact that he got a new wheelbarrow for his father, he still received much abuse.<br /></li>
+<li>Despite the fact that he got a new wheelbarrow for his father,<br />
+his father was tired of gardening.<br /></li>
+<li>Despite the fact that he got a new wheelbarrow for his father,<br />
+they didn't finish the task on time.<br /></li>
+<li>Despite the fact that he got a new wheelbarrow for his father,<br />
+his father still carries things with bare hands.<br /></li>
+</ul>
+<p>
+boot n.  in the boot of sb's car<br />
+</p>
+<ul class="org-ul">
+<li>Between you and me, there is a body in the boot of my car.<br /></li>
+<li>Leo complained that the cat was in the boot of his car.<br /></li>
+<li>I explained why the cat was in the boot of my car.<br /></li>
+<li>There used to be a hammer in the boot of my car.<br /></li>
+<li>Following your instructions, I put the money in the boot of my car.<br /></li>
+</ul>
+<p>
+ingredient n.<br />
+</p>
+<ul class="org-ul">
+<li>To our surprise, this kind of ingredient is regarded as unacceptable.<br /></li>
+<li>It looked as if it would taste better with the secret ingredient.<br /></li>
+<li>She made an attempt to cook without the ingredient.<br /></li>
+<li>She made every effort not to cook with the ingredient.<br /></li>
+<li>Considering the secret ingredient, she refused to eat it.<br /></li>
+</ul>
+<p>
+crane n.<br />
+</p>
+<ul class="org-ul">
+<li>I was astounded when I was told that the crane is over $5000.<br /></li>
+<li>Please drive these cranes in an orderly fashion.<br /></li>
+<li>It astounded me that you got the crane for nothing.<br /></li>
+<li>The crane is designed to move these boxes.<br /></li>
+<li>The idea that crane is easy to drive may be mistaken.<br /></li>
+</ul>
+<p>
+anticipate v.  It is anticipated that + &#x2026;  sb. anticipate that + &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>It is anticipated that she will remain anonymous.<br /></li>
+<li>It is anticipated that he will pay the bill.<br /></li>
+<li>It is anticipated that the archaeologist will make a close study of it.<br /></li>
+<li>She anticipated that this basket is designed to carry fruits.<br /></li>
+<li>I anticipated that my father takes no interest in the crane toy.<br /></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgb5938e3" class="outline-3">
+<h3 id="orgb5938e3">反复听电影片段直到懂关键句</h3>
+</div>
+<div id="outline-container-org01796a4" class="outline-3">
+<h3 id="org01796a4">复习二册语法(笔记或视频) &amp; 红皮书</h3>
+</div>
+<div id="outline-container-org2bc5f7e" class="outline-3">
+<h3 id="org2bc5f7e"><span class="done DONE">DONE</span> 自己讲解语法</h3>
+<div class="outline-text-3" id="text-org2bc5f7e">
+<p>
+as引导的倒装句 表 让步<br />
+</p>
+<ul class="org-ul">
+<li>Much as &#x2026;, &#x2026;<br /></li>
+<li>adj./n./v. + as &#x2026;,句子: adj-est.去the, n.去冠, v.用原型<br /></li>
+<li>为什么要试试自己查语法书<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgd3cfdb0" class="outline-3">
+<h3 id="orgd3cfdb0"><span class="done DONE">DONE</span> 习惯用法造句</h3>
+<div class="outline-text-3" id="text-orgd3cfdb0">
+<p>
+avoid being done<br />
+</p>
+<ul class="org-ul">
+<li>She managed to avoid being spyed on.<br /></li>
+<li>Even though he tired to avoid being seen with me, we happened to meet his parents.<br /></li>
+<li>Even though he tired to avoid being seen with me, we happened to be stuck by an accident.<br /></li>
+<li>She managed to avoid being followed around.<br /></li>
+<li>I was able to avoid being ordered to do housework.<br /></li>
+</ul>
+<p>
+be free to do sth.<br />
+</p>
+<ul class="org-ul">
+<li>You are free to play jokes on me.<br /></li>
+<li>I am free to play the role of the show.<br /></li>
+<li>You are free to settle the argument.<br /></li>
+<li>I am not free to turn against him.<br /></li>
+<li>You are free to bring these fruits to your wife.<br /></li>
+</ul>
+<p>
+in sb's effort to do sth.<br />
+</p>
+<ul class="org-ul">
+<li>In his effort to follow in his father's footsteps, he runs a successful furniture business.<br /></li>
+<li>In his effort to persuade me to buy it, I paid the bill.<br /></li>
+<li>In his effort to ask me for cardboard boxes, I gave him some.<br /></li>
+<li>In his effort to follow me around, we went shopping together.<br /></li>
+<li>In his effort to keep his word, he won a prize of $1000.<br /></li>
+</ul>
+<p>
+get sth. for nothing<br />
+</p>
+<ul class="org-ul">
+<li>Such is human nature that we all want to get something for nothing.<br /></li>
+<li>How do we get it for nothing?<br /></li>
+<li>It looked as if you could get the toys for nothing.<br /></li>
+<li>He explained that we can get the toys for nothing.<br /></li>
+<li>Follow my instructions, you will get a great many of sheets of paper for nothing.<br /></li>
+</ul>
+<p>
+enable sb. to do sth.<br />
+</p>
+<ul class="org-ul">
+<li>This operation may enable you to go for a walk.<br /></li>
+<li>Even though she has borrowed money from me, this wouldn't enable her to buy the house.<br /></li>
+<li>This will enable us to afford the car.<br /></li>
+<li>Following my instructions will enable him to keep his word.<br /></li>
+<li>This can't enable the microphone to be connected to the tower.<br /></li>
+</ul>
+<p>
+a. has made it possible for sb. to do sth.<br />
+</p>
+<ul class="org-ul">
+<li>Your parents made it possible for you to go to university.<br /></li>
+<li>Our teacher makes it possible for us to make a sculpture.<br /></li>
+<li>Leo makes it possible for me to study abroad.<br /></li>
+<li>This has made it possible for me to give you electric shocks.<br /></li>
+<li>This made it possible for her to live in a desert island.<br /></li>
+</ul>
+<p>
+come along<br />
+</p>
+<ul class="org-ul">
+<li>You should have come along in a car and gave us a lift.<br /></li>
+<li>A man who was waving to us came along on road.<br /></li>
+<li>An old lady come along with her cat.<br /></li>
+<li>It is said that cats come along here.<br /></li>
+<li>He always comes along in his smart suit.<br /></li>
+</ul>
+<p>
+buy sth. from sb.<br />
+</p>
+<ul class="org-ul">
+<li>I won so much prize money that I bought a purse from him.<br /></li>
+<li>I apologized to my friend for not buying computer from him.<br /></li>
+<li>I have dyed the book red which I bought from Leo.<br /></li>
+<li>I was astonished to find that you bought goods from the internet.<br /></li>
+<li>Even though China is at war with India, China authorities still buy goods from India.<br /></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org834f0dc" class="outline-3">
+<h3 id="org834f0dc">跟读 50遍</h3>
+</div>
+<div id="outline-container-org8848bbd" class="outline-3">
+<h3 id="org8848bbd"><span class="done DONE">DONE</span> Comprehension 反复练习</h3>
+<div class="outline-text-3" id="text-org8848bbd">
+</div>
+</div>
+<div id="outline-container-org33fcd46" class="outline-3">
+<h3 id="org33fcd46"><span class="done DONE">DONE</span> Ask me if 写+读</h3>
+<div class="outline-text-3" id="text-org33fcd46">
+<ol class="org-ol">
+<li>Anyone can avoid being influenced by advertisements. Why can't<br />
+Why can't anyone avoid being influenced by advertisements?<br /></li>
+<li>Some of us pride ourselves on our good taste. How many of us<br />
+How many of us pride ourselves on our good taste?<br /></li>
+<li>Advertisers have made a close study of human nature. Who<br />
+Who have made a close study of human nature?<br /></li>
+<li>Advertisers offer free samples, free cars and free houses. What<br />
+What do advertisers offer?<br /></li>
+<li>A biscuit company asked listeners to bake biscuits and send them in. What<br />
+What did a biscuit company ask listeners to do?<br /></li>
+<li>They offered to pay $10 a pound for the biggest biscuit. How much<br />
+How much did they offer to pay for the biggest biscuit?<br /></li>
+<li>One lady brought in a biscuit on a wheelbarrow. How<br />
+How did one lady bring in a biscuit?<br /></li>
+<li>The biggest biscuit weighed 2,400 pounds. How much<br />
+How much did the biggest biscuit weigh?<br /></li>
+<li>It had been baked by a college student. Who<br />
+Who had it been baked by?<br /></li>
+<li>The manufacturers had to pay the student $24,000. How much<br />
+How much did the manufacturers have to pay the student?<br /></li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org750c662" class="outline-3">
+<h3 id="org750c662"><span class="done DONE">DONE</span> 摘要写作 写 &amp; 对答案</h3>
+<div class="outline-text-3" id="text-org750c662">
+<p>
+A manufacturers asked listeners to bake biscuit<br />
+	and offered to pay $10 a pound for the biggest biscuit.<br />
+Biscuits of all shapes and sizes arrived at the factory.<br />
+One lady brought in a biscuit on a wheel barrow,<br />
+	which weighed nearly 500 pounds.<br />
+A man came along with a biscuit which occupied the whole boot of his car.<br />
+The largest of biscuits that were sent was 713 pounds.<br />
+Just before the competition closed,<br />
+	a lorry arrived	with a colossal biscuit which weighed 2,400 pounds.<br />
+The manufacturers had to pay $24,000 to the student who baked it.<br />
+</p>
+
+<p>
+A biscuit company asked its customers to bake biscuits and send them to the factory.<br />
+As a prize, they offered $10 a pound for the biggest biscuit they received.<br />
+The response was tremendous, with one biscuit weighing 500 pounds and another weighing 713 pounds.<br />
+They though that was the winner<br />
+	until a lorry delivered one which weighed 2,400 pounds baked by a college student.<br />
+A crane lifted it from the lorry and the manufacturers paid the student $24,000.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org65612dd" class="outline-3">
+<h3 id="org65612dd"><span class="done DONE">DONE</span> tell the story 口语复述</h3>
+<div class="outline-text-3" id="text-org65612dd">
+</div>
+</div>
+<div id="outline-container-orga08a6f2" class="outline-3">
+<h3 id="orga08a6f2"><span class="done DONE">DONE</span> composition 阅读 或 写作</h3>
+<div class="outline-text-3" id="text-orga08a6f2">
+<p>
+The other evening I listened to a quiz show on the radio<br />
+	which was organised by a firm of soap manufacturers.<br />
+A member of the audience was invited to answer ten questions to win money.<br />
+He could take a money prize after each correct answer or go on to a more difficult question.<br />
+Each new question was worth twice the last question.<br />
+The man was very nervous in front of the audience, but he got the first question right.<br />
+Then he slowly answered all the questions correctly<br />
+	&#x2013; spelling questions, history questions,general knowledge, mathematics, &#x2026;<br />
+The audience was getting very excited as the question master got to question number 9.<br />
+'And your ninth question,' he said, 'is worth $1,02- Here it is.'<br />
+</p>
+
+<p>
+'Which nineteenth-century sailing ship won a race from Shanghai to England?'<br />
+'It was the Thermopylae,' the man said confidently. 'She beat the CuttySark.'<br />
+'Correct,' said the question master, and the audience went mad.<br />
+The question master had to ask them to be quiet.<br />
+'And here is your tenth and last question,' the host said, 'which is worth $2,048 exactly.'<br />
+'"Advertisement": how do you spell it?'<br />
+The man paused and then said: 'I think this is a trick question.<br />
+I can spell "advertisement", but I can also spell "it".<br />
+The answer is "I-T".'<br />
+'You're absolutely right,' the host said, 'and you have won $2,048! Congratulations!'<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgfdf9cb4" class="outline-3">
+<h3 id="orgfdf9cb4">Topics for discussion</h3>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-08-06 Tue 22:24 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+
+<div id="outline-container-org9982be7" class="outline-2">
+<h2 id="org9982be7">Lesson 91 Three men in a basket</h2>
+<div class="outline-text-2" id="text-org9982be7">
+<p class="verse">
+Where was the station's Commanding Officer?<br />
+<br />
+A pilot noticed a balloon which <b>seemed to be making for</b> a Royal Air Force Station nearby.<br />
+He informed the station at once, but no one there was able to explain the mystery.<br />
+The officer in the control tower was very angry when he heard the news,<br />
+&#xa0;because balloons can be a great danger to aircraft.<br />
+He said that someone might be <b>spying on</b> the station<br />
+&#xa0;and the pilot was ordered to <b>keep track of</b> the strange object.<br />
+The pilot managed to circle the balloon for some time.<br />
+He could <b>make out</b> three men in a basket under it and one of them was holding a pair of binoculars.<br />
+When the balloon was over the station, the pilot saw one of the men taking photographs.<br />
+<b>Soon afterwards</b>, the balloon began to descend and it landed near an airfield.<br />
+The police <b>were called in</b>, but they could not arrest anyone,<br />
+&#xa0;for the basket contained two Members of Parliament and the Commanding Officer of the station!<br />
+As the Commanding Officer explained later,<br />
+&#xa0;one half of the station did not know what the other half was doing!<br />
+</p>
+</div>
+<div id="outline-container-orgbabf19b" class="outline-3">
+<h3 id="orgbabf19b">expression</h3>
+<div class="outline-text-3" id="text-orgbabf19b">
+<p>
+balloon [bəˈlun] n.气球<br />
+royal [ˈrɔɪəl] adj.皇家<br />
+spy [spaɪ] v.侦察<br />
+track [træk] n.轨迹,踪迹<br />
+binoculars [bɪˈnɑkjələrz] n.望远镜<br />
+</p>
+
+<p>
+spy on sb./sth. 监视某人/某物<br />
+keep track of 跟踪<br />
+</p>
+<hr />
+<p>
+seem to be doing &#x2026; 似乎正在做……<br />
+make for sw. 向&#x2026;前进<br />
+make out 弄清<br />
+soon afterwards 不久之后<br />
+be called in (to do) 被叫去做某事<br />
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org6f57b3f" class="outline-3">
+<h3 id="org6f57b3f">words</h3>
+<div class="outline-text-3" id="text-org6f57b3f">
+<p>
+balloon [bəˈlun] n.气球<br />
+royal [ˈrɔɪəl] adj.皇家<br />
+spy [spaɪ] v.侦察<br />
+track [træk] n.轨迹,踪迹<br />
+binoculars [bɪˈnɑkjələrz] n.望远镜<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgeff30bd" class="outline-3">
+<h3 id="orgeff30bd"><span class="done DONE">DONE</span> 单词造句</h3>
+<div class="outline-text-3" id="text-orgeff30bd">
+<p>
+balloon n.<br />
+</p>
+<ul class="org-ul">
+<li>It comes as a surprise to learn that my father sent me a total of 30 ballons.<br /></li>
+<li>As a result, the balloon flew to Royal Air Force Station.<br /></li>
+<li>The girl received a total of 30 ballons from her boyfriend.<br /></li>
+<li>I found these ballons beautiful.<br /></li>
+<li>There is a great many of ballons in the centre of the school.<br /></li>
+</ul>
+<p>
+royal adj.<br />
+</p>
+<ul class="org-ul">
+<li>The royal palace shouldn't have been burnt down.<br /></li>
+<li>The royal palace was destoryed by floods.<br /></li>
+<li>A royal detective refused them to take photographs.<br /></li>
+<li>The royal policeman took precaution so that no one can recognize hime.<br /></li>
+<li>On such short notice, the royal police arrived on the scene.<br /></li>
+</ul>
+<p>
+spy v. spy on sb./sth.<br />
+</p>
+<ul class="org-ul">
+<li>He stamped out the fire and began to spy on Miumiu.<br /></li>
+<li>He covered himself with a blanket and spied on his wife.<br /></li>
+<li>The detective kept on spying his wife for over three days.<br /></li>
+<li>Make yourself comfortable. We are not going to spy on you.<br /></li>
+<li>It is his job to spy on the woods.<br /></li>
+</ul>
+<p>
+track n. keep track of<br />
+</p>
+<ul class="org-ul">
+<li>If you didn't wear a watch, you wouldn't keep track of time.<br /></li>
+<li>As a programmer, I have to keep track of the latest development in Computer science.<br /></li>
+<li>She is such a huge fan of the singer that she kept track of his daily life.<br /></li>
+<li>On such short notice, we couldn't keep track of the total of the comedy show.<br /></li>
+<li>Why don't we keep track of our program?<br /></li>
+</ul>
+<p>
+binoculars n.<br />
+</p>
+<ul class="org-ul">
+<li>What he saw throught his binoculars were top secrets.<br /></li>
+<li>Armed with my binoculars, I started to see the comedy show.<br /></li>
+<li>Why did you carry a pair of binoculars to the cinema?<br /></li>
+<li>We don't allow anyone to carry binoculars to the museum.<br /></li>
+<li>Armed with his binoculars, he made for the royal palace.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgf0606c5" class="outline-3">
+<h3 id="orgf0606c5"><span class="done DONE">DONE</span> 反复听电影片段</h3>
+<div class="outline-text-3" id="text-orgf0606c5">
+</div>
+</div>
+<div id="outline-container-orgb7d22fd" class="outline-3">
+<h3 id="orgb7d22fd"><span class="done DONE">DONE</span> Pattern Drill 写+读</h3>
+<div class="outline-text-3" id="text-orgb7d22fd">
+<ul class="org-ul">
+<li>1t: put these towels - in the cupboard<br />
+s1: Where shall I put these towels?<br />
+s2: You can put them in the cupboard.<br />
+<ul class="org-ul">
+<li>dry the wet clothes - in the sun<br />
+Where shall I dry the wet clothes?<br />
+You can dry them in the sun.<br /></li>
+<li>write the report - in the library<br />
+Where shall I write the report?<br />
+You can write it in the library.<br /></li>
+<li>park the car - in that car park<br />
+Where shall I park the car?<br />
+You can park it in that car park.<br /></li>
+<li>get the medicine - from the chemist's<br />
+Where shall I get the medicine?<br />
+You can get it from the chemist's.<br /></li>
+</ul></li>
+<li>2t: go and see Mary<br />
+s1: Can you go and see Mary soon?<br />
+s2: I may be able to go and see her tomorrow.<br />
+<ul class="org-ul">
+<li>come to see us<br />
+Can you come to see us soon?<br />
+I may be able to come to see you tomorrow.<br /></li>
+<li>see the doctor<br />
+Can you see the doctor soon?<br />
+I may be able to see him tomorrow.<br /></li>
+<li>wash my shirt<br />
+Can you wash yor shirt soon?<br />
+I may be able to wash it tomorrow.<br /></li>
+<li>mend this strap<br />
+Can you mend this strap soon?<br />
+I may be able to mend it tomorrow.<br /></li>
+</ul></li>
+<li>3t: jump over the stream - wide<br />
+s1: Why didn't you jump over the stream?<br />
+s2: I couldn't jump over it. It was too wide.<br />
+<ul class="org-ul">
+<li>carry the case - heavy<br />
+Why didn't you carry the case?<br />
+I couldn't carry it. It was too heavy.<br /></li>
+<li>buy the flat - expensive<br />
+Why didn't you buy the flat?<br />
+I couldn't buy it. It was too expensive.<br /></li>
+<li>move the table - big<br />
+Why didn't you move the table?<br />
+I couldn't move it. It was too big.<br /></li>
+<li>drink your soup - hot<br />
+Why didn't you drink your soup?<br />
+I couldn't drink it. It was too hot.<br /></li>
+</ul></li>
+<li>4t: the door was locked - open<br />
+s1: The door was locked, wasn't it?<br />
+s2: Yes, but I managed to open it in the end.<br />
+<ul class="org-ul">
+<li>he refused to agree - convince<br />
+He refused to agree, didn't he?<br />
+Yes, but I managed to convince him in the end.<br /></li>
+<li>the horse ran way - catch<br />
+The horse ran way, didn't it?<br />
+Yes, but I managed to catch it in the end.<br /></li>
+<li>the box was very heavy - lift<br />
+The box was very heavy, wasn't it?<br />
+Yes, but I managed to lift it in the end.<br /></li>
+<li>the river was very wide - get across<br />
+The river was very wide, wasn't it?<br />
+Yes, but I managed to get across it in the end.<br /></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgc7e7b44" class="outline-3">
+<h3 id="orgc7e7b44">给自己讲解</h3>
+</div>
+<div id="outline-container-orgf80d2f6" class="outline-3">
+<h3 id="orgf80d2f6">红皮书</h3>
+</div>
+<div id="outline-container-orga41bf28" class="outline-3">
+<h3 id="orga41bf28"><span class="done DONE">DONE</span> 习惯用法造句</h3>
+<div class="outline-text-3" id="text-orga41bf28">
+<p>
+seem to be doing &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>He seems to be following in his father's footsteps.<br /></li>
+<li>The boys seem to be playing truant from school.<br /></li>
+<li>The microphone seems to be being connected to the tower.<br /></li>
+<li>The bull seems to get close to the drunk.<br /></li>
+<li>My father seems to be repairing his bicycle.<br /></li>
+</ul>
+<p>
+make for sw.<br />
+</p>
+<ul class="org-ul">
+<li>The military was instructed to make for Wuhan.<br /></li>
+<li>Let's suppose that a dog makes for our car.<br /></li>
+<li>I was wondering if you were making for the hosptial.<br /></li>
+<li>It is no use pretending that you made for the school.<br /></li>
+<li>Armed with his binoculars, the boy made for the camp.<br /></li>
+</ul>
+<p>
+make out<br />
+</p>
+<ul class="org-ul">
+<li>It is too dark to make out anything.<br /></li>
+<li>I can listen to most of this, but I can't make out the last part. Can you?<br /></li>
+<li>Fancying meeting you here. I almost can't make out you.<br /></li>
+<li>It is no use pretending that you have made out me.<br /></li>
+<li>Turn it up, or we couldn't make out what they are talking about.<br /></li>
+</ul>
+<p>
+soon afterwards<br />
+</p>
+<ul class="org-ul">
+<li>Her father complained that she had supper and wen out soon afterwards.<br /></li>
+<li>Soon afterwards, the fisherman caught a giant fish.<br /></li>
+<li>Soon afterwards, he has set up his tent.<br /></li>
+<li>Soon afterwards, the thief was arrested.<br /></li>
+<li>Soon afterwards, I have studied New Concept English textbook 2.<br /></li>
+</ul>
+<p>
+be called in (to do)<br />
+</p>
+<ul class="org-ul">
+<li>The police were called in to keep order when it happened an accident.<br /></li>
+<li>As the baby elephant is holding up the traffice, the police were called in.<br /></li>
+<li>She had hardly stolen the bag when the policeman was called in.<br /></li>
+<li>The firemen were called in to put out the big fire.<br /></li>
+<li>The military was called to get the city under control.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orge87dadc" class="outline-3">
+<h3 id="orge87dadc"><span class="done DONE">DONE</span> 跟读至背诵</h3>
+<div class="outline-text-3" id="text-orge87dadc">
+</div>
+</div>
+<div id="outline-container-orgac752a1" class="outline-3">
+<h3 id="orgac752a1"><span class="done DONE">DONE</span> Ask me if 写+读</h3>
+<div class="outline-text-3" id="text-orgac752a1">
+<ol class="org-ol">
+<li>A pilot noticed a balloon. What/Who<br />
+What did a pilot notice?<br />
+Who noticed a balloon?<br /></li>
+<li>There was a Royal Air Force Station nearby. Where/What<br />
+Where was there a Royal Air Force Station?<br />
+What was there nearby?<br /></li>
+<li>The balloon was making for it. What<br />
+What was making for it?<br /></li>
+<li>The pilot informed the station. Who<br />
+Who informed the station?<br /></li>
+<li>The officer in the control tower heard the news. What/Who<br />
+What did the officer in the control tower hear?<br />
+Who heard the news?<br /></li>
+<li>He was angry at the news. Why<br />
+Why was he angry at the news?<br /></li>
+<li>Balloons can be a danger to aircraft. What<br />
+What can be a danger to aircraft?<br /></li>
+<li>The pilot was ordered to keep track of the object. What&#x2026; do/Who<br />
+What was the pilot ordered to do?<br />
+Who was ordered to keep track of the object?<br /></li>
+<li>There were three men in the basket. How many/ Where<br />
+How many men were there in the basket?<br />
+Where were there three men?<br /></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org2e3565f" class="outline-3">
+<h3 id="org2e3565f"><span class="done DONE">DONE</span> 摘要写作</h3>
+<div class="outline-text-3" id="text-org2e3565f">
+<p>
+While circling a balloon,<br />
+	the pilot saw three men in the basket<br />
+		one of whom was holding a pair of binoculars.<br />
+When it flew over the station, one of men took photographs.<br />
+Then it landed near an airfield,<br />
+	but the police couldn't arrest anyone<br />
+  because the basket contained two members of Parliament and the Commanding Officer of the station.<br />
+Afterwards the Commmanding Officer explained<br />
+	that one half of the station didn't know what the other half was doing.<br />
+</p>
+
+<p>
+The pilot circled the balloon<br />
+	under which there was a basket containing three men,<br />
+	one of whom was holding a pair of binoculars.<br />
+Before landing near an airfield, it flew over the station and one of men took photographs.<br />
+As two of the men were members of Parliment<br />
+		and the other was the Commanding Officer of the station,<br />
+	the police couldn't arrst anyone.<br />
+The mystery was explained<br />
+	when the Commanding Officer admitted<br />
+		that one half of the station did not know what the other half was doing.<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org6229c76" class="outline-3">
+<h3 id="org6229c76"><span class="done DONE">DONE</span> tell the story 口语</h3>
+<div class="outline-text-3" id="text-org6229c76">
+</div>
+</div>
+<div id="outline-container-orgd9d935c" class="outline-3">
+<h3 id="orgd9d935c">Topics for discussion</h3>
+</div>
+</div>
+</div>
+</body>
+</html>

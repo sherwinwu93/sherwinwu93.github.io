@@ -1,0 +1,669 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-09-28 Sat 22:17 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-org716162c" class="outline-2">
+<h2 id="org716162c">Lesson 11 Not guilty</h2>
+<div class="outline-text-2" id="text-org716162c">
+<p class="verse">
+What was the Customs Officer looking for?<br />
+<br />
+Customs Officers are quite tolerant these days,<br />
+&#xa0;but they can still stop you<br />
+&#xa0;when you are going through the Green Channel and have nothing to declare.<br />
+Even really honest people <b>are often made to feel guilty</b>.<br />
+The hardened professional smuggler,<br />
+&#xa0;<b>on the other hand</b>, is never troubled by such fellings,<br />
+&#xa0;even if he has five hundred gold watches hidden in his suitcase.<br />
+When I returned from abroad recently,<br />
+&#xa0;a particularly officious young Customers Officer clearly regarded me as a smuggler.<br />
+<br />
+'Have you got anything to declare?' he asked, looking me in the eye.<br />
+'No', I answered confidently.<br />
+'Would you mind unlocking this suitcase please?'<br />
+'Not at all', I answered.<br />
+<br />
+The Officer went through the case with great care.<br />
+All the things I had packed so carefully were soon in a dreadful mess.<br />
+I felt sure I would never be able to close the case again.<br />
+Suddenly, I saw the Officer's face <b>light up</b>.<br />
+He had spotted a tiny bottle at the bottom of my case and he pounced on it with delight.<br />
+<br />
+'Perfume, eh?' he asked sarcastically.<br />
+&#xa0;'You should have declared that. Perfume <b>is not exempt from</b> import duty.'<br />
+'But it isn't perfume,' I said. 'It's hair gel.'<br />
+Then I added with a smile, 'It's a strange mixture I make myself.'<br />
+As I expected, he did not believe me.<br />
+'Try it!' I said encouragingly.<br />
+The Officer unscrewed the cap and put the bottle to his nostrils.<br />
+He <b>was greeted by</b> an unpleasant smell which convinced him that I was telling the truth.<br />
+A few minutes later, I was able to hurry away with precious chalk marks on my baggage.<br />
+</p>
+</div>
+<div id="outline-container-orgf3416a9" class="outline-3">
+<h3 id="orgf3416a9">expression</h3>
+<div class="outline-text-3" id="text-orgf3416a9">
+<p>
+guilty: [ˈɡɪlti] adj.犯罪的,违法的<br />
+tolerant: [ˈtɑlərənt] adj.宽容的<br />
+declare: [dɪˈkler] v.申报<br />
+hardened: [ˈhɑː(r)d(ə)nd] adj. a criminal, police officer etc who has had a lot of experience of things that are shocking and is therefore less affected by them有经验的<br />
+professional: [prəˈfeʃ(ə)nəl] adj. n.职业的,专业的<br />
+smuggler: [ˈsmʌɡ(ə)lər] n.走私者<br />
+officious: [əˈfɪʃəs] adj.爱管闲事的<br />
+confidently: ['kɒnfədəntlɪ] adv.自信地<br />
+dreadful: [ˈdredfəl] adj. extremely unpleasant可怕的,一团糟的<br />
+pounce: [paʊns] v.to suddenly move forward and attack someone or something, after waiting to attack them猛抓,扑住<br />
+perfume: [ˈpɜː(r)fjuːm] n.香水<br />
+sarcastically: adv.讽刺地<br />
+exempt: [ɪɡˈzempt] adj.被免除的<br />
+import: [ɪmˈpɔrt] duty n.进口税<br />
+gel: [dʒel] n.胶<br />
+mixture: [ˈmɪkstʃər] n.混合物<br />
+unscrew: [ʌnˈskru] v.拧开<br />
+nostril: [ˈnɑstrəl] n.鼻孔<br />
+chalk: [tʃɔk] n.small sticks of a white or coloured substance like soft rock, used for writing or drawing粉笔<br />
+baggage: [ˈbæɡɪdʒ] n.行李<br />
+</p>
+
+<p>
+feel guilty: 感到内疚<br />
+be tolerant of: willing对&#x2026;容忍<br />
+be exempted from: they do not have to follow it or do it免于&#x2026;<br />
+mixture of A and B: A和B的混合物<br />
+</p>
+<hr />
+<p>
+be made to do sth.: to be forced to do something被迫做某事<br />
+on the other hand/on the one hand: 一方面/另一方面<br />
+light up:  suddenly become animated with liveliness or joy照亮（脸上）<br />
+be greeted by sth.: to welcome someone with particular words or a particular action被某物问候<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org16ce4ae" class="outline-3">
+<h3 id="org16ce4ae">words</h3>
+<div class="outline-text-3" id="text-org16ce4ae">
+<p>
+guilty [ˈɡɪlti] adj. 犯罪的,违法的<br />
+tolerant [ˈtɑːlərənt] adj. 宽容的<br />
+declare [dɪˈkler] v. 申报<br />
+hardened [ˈhɑrdnd] adj. 有经验的<br />
+professional [prəˈfeʃən(ə)l] adj. 职业的,专业的<br />
+smuggler [ˈsmʌɡ(ə)lər] n. 走私者<br />
+officious [əˈfɪʃəs] adj. 爱管闲事的<br />
+confidently [ˈkɑːnfɪdəntli] adv. 自信地<br />
+dreadful [ˈdredf(ə)l] adj. 可怕的<br />
+pounce [paʊns] v. 猛抓<br />
+perfume [pərˈfjuːm] n. 香水<br />
+sarcastically [sɑːrˈkæstɪkli] adv. 讽刺地<br />
+exempt [ɪɡˈzempt] adj. 被免除的<br />
+duty [ˈduːti] n. 税<br />
+mixture [ˈmɪkstʃər] n. 混合物<br />
+nostril [ˈnɑːstrəl] n. 鼻孔<br />
+chalk [tʃɔːk] n. 粉笔<br />
+baggage [ˈbæɡɪdʒ] n. 行李<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org142014b" class="outline-3">
+<h3 id="org142014b"><span class="done DONE">DONE</span> 单词造句</h3>
+<div class="outline-text-3" id="text-org142014b">
+<p>
+guilty adj.  feel guilty<br />
+</p>
+<ul class="org-ul">
+<li>I used to have a guilty look on my face when I lied.<br /></li>
+<li>Why don't we feel guilty?<br /></li>
+<li>I realized to my horror that my wife was guilty.<br /></li>
+<li>As long as the order was given, I felt guilty soon.<br /></li>
+<li>I felt really guilty about forgetting our marry anniversary again.<br /></li>
+</ul>
+<p>
+tolerant adj.  be tolerant of<br />
+</p>
+<ul class="org-ul">
+<li>He is tolerant of those who really believe in God.<br /></li>
+<li>We have got to be tolerant of each other if we get married.<br /></li>
+<li>After the puma gained its independence, she became more tolerant.<br /></li>
+<li>If you were not tolerant of him, you wouldn't have dealed with the task.<br /></li>
+<li>Imagine your dismay when you found that your husband was so tolerant of other woman.<br /></li>
+</ul>
+<p>
+declare v.<br />
+</p>
+<ul class="org-ul">
+<li>Have you got anything to declare?<br /></li>
+<li>If you had something to declare, we couldn't go the green channel.<br /></li>
+<li>So long as there is anything to declare, you couldn't go through the green channel.<br /></li>
+<li>You needn't have declared that camera.<br /></li>
+<li>The computer you didn't declare is double checked now.<br /></li>
+</ul>
+<p>
+hardened adj.<br />
+</p>
+<ul class="org-ul">
+<li>The hardened criminal went to extremes to break into his house.<br /></li>
+<li>The hardened journalist is writing an article about an true criminal story.<br /></li>
+<li>A hardened smuggler would never be worried about officers.<br /></li>
+<li>The hardened criminal was instructed to put his hands up.<br /></li>
+<li>The authorities informed us that a hardened criminal is still at large.<br /></li>
+</ul>
+<p>
+professional adj. n.<br />
+</p>
+<ul class="org-ul">
+<li>The man who is a professional actor is trying to stay out of limelight.<br /></li>
+<li>Our professional is always dressed in black suit.<br /></li>
+<li>The professional cook was referred to as a sweet guy.<br /></li>
+<li>He is a professional doctor and he can keep your secret.<br /></li>
+<li>For the simple reason that you didn't give me any professional advices.<br /></li>
+</ul>
+<p>
+smuggler n.<br />
+</p>
+<ul class="org-ul">
+<li>These days, the smuggler is trying to keep the status quo in the party.<br /></li>
+<li>The smuggler soon changed into a green jacket and hid in the bushes.<br /></li>
+<li>The smuggler was embarrassed to meet his children in jail.<br /></li>
+<li>If you hired a real smuggler instead of a cat, we would get that diamond.<br /></li>
+<li>The smuggler was disappointed to find that the traffic was holding.<br /></li>
+</ul>
+<p>
+officious adj.<br />
+</p>
+<ul class="org-ul">
+<li>I used to be regarded as an officious little man despite of my kindness.<br /></li>
+<li>You are far more officious that I thought.<br /></li>
+<li>My landlord was so officious that I moved to another house.<br /></li>
+<li>For the simple reason that an officious policeman waved to me at that time.<br /></li>
+<li>In the end, I couldn't bear that officious woman.<br /></li>
+</ul>
+<p>
+confidently adv.<br />
+</p>
+<ul class="org-ul">
+<li>I can confidently say that it turned out to be a puma.<br /></li>
+<li>"I will break the world record." She said confidently.<br /></li>
+<li>"It must be used as a place of worship." I said confidently.<br /></li>
+<li>"It enjoyed a high civilization, for it had a drainage system." I said confidently.<br /></li>
+<li>I can confidently say that I got enough money to buy you a house.<br /></li>
+</ul>
+<p>
+dreadful adj.<br />
+</p>
+<ul class="org-ul">
+<li>Why did it get into such a dreadful mess?<br /></li>
+<li>Leo insisted on telling the dreadful story.<br /></li>
+<li>The archaeology didn't want to write a dreadful story on it.<br /></li>
+<li>I got used to such a dredful mess in my room.<br /></li>
+<li>My headmaster is so dreadful that I can't recognize him.<br /></li>
+</ul>
+<p>
+pounce v.<br />
+</p>
+<ul class="org-ul">
+<li>The vicar woke up with a start in the midnight and prunced at his torchlight.<br /></li>
+<li>My cat always pounced at me when I got home.<br /></li>
+<li>So long as the order was given, the policemen pounced at the smugglers.<br /></li>
+<li>I spotted a cat pouncing at a bird in the garden.<br /></li>
+<li>This convinced me that my cat pounced at my bird every day.<br /></li>
+</ul>
+<p>
+perfume n.<br />
+</p>
+<ul class="org-ul">
+<li>May I use some of your perfume?<br /></li>
+<li>It is considered unlucky for a man using perfume in that country.<br /></li>
+<li>This turned out to be a bottle of perfume.<br /></li>
+<li>Smell the perfume and you will soon get accustomed to it.<br /></li>
+<li>It is no use pretending that you haven't broken my favourite perfume.<br /></li>
+</ul>
+<p>
+sarcastically adv.<br />
+</p>
+<ul class="org-ul">
+<li>Chandler is always telling jokes sarcastically.<br /></li>
+<li>I realized to my horror that my boss was smiling at me sarcastically.<br /></li>
+<li>"You do give me a surprise." The vicar said sarcastically.<br /></li>
+<li>"These songs are popular with young girls." John said sarcastically.<br /></li>
+<li>"You didn't set it on fire." His father said sarcastically.<br /></li>
+</ul>
+<p>
+exempt [ɪɡˈzempt] adj.  be exempted from<br />
+</p>
+<ul class="org-ul">
+<li>He is exempted from military service because of his loss of money.<br /></li>
+<li>I lost my temper and was exempted from chore works.<br /></li>
+<li>She was exempted from the English course ,for she passed the exam.<br /></li>
+<li>People who are exampted from military service in China is always unhealthy.<br /></li>
+<li>He was exempted from paying the tax for one reason or another.<br /></li>
+</ul>
+<p>
+import duty n.<br />
+</p>
+<ul class="org-ul">
+<li>My wife asked me to buy some duty free perfume .<br /></li>
+<li>My wife loves to buy a lot of things in the duty free.<br /></li>
+<li>My wife was disappointed to find that all the duty free shops were closed.<br /></li>
+<li>A ganster fired a shot through the window of the duty free.<br /></li>
+<li>I'm glad that my wife loves to go shopping in the duty free.<br /></li>
+</ul>
+<p>
+gel n.<br />
+</p>
+<ul class="org-ul">
+<li>I was too embarrased to buy a hair gel in my youth.<br /></li>
+<li>She didn't get enough money to buy a hari gel for one reason or another.<br /></li>
+<li>Armed with my hair gel, I went to the bathroom to have a shower.<br /></li>
+<li>After having my hair cut, I used some hair gel.<br /></li>
+<li>My wife was amazed to find that I had used some hair gel.<br /></li>
+</ul>
+<p>
+mixture n.  mixture of a. and b.<br />
+</p>
+<ul class="org-ul">
+<li>My bookshelf is full of a mixture of old and new books.<br /></li>
+<li>The bar is full of a mixture of young girls and boys.<br /></li>
+<li>The kitchen now is full of a mixture of noodle and rice.<br /></li>
+<li>They gathered round him with a mixture of horror and surprise.<br /></li>
+<li>The worker went on a strike with a mixture of fearness and hopeness.<br /></li>
+</ul>
+<p>
+unscrew v.<br />
+</p>
+<ul class="org-ul">
+<li>She complained that the jar was too tight, for she couldn't unscrew the top of it.<br /></li>
+<li>If a man couldn't unscrew a cap, he would be regarded as stupid.<br /></li>
+<li>The woman unscrewed the cap and began to worship.<br /></li>
+<li>The officer unscrewed the cap and was greeted by a strange smell.<br /></li>
+<li>I unscrewed it and drunk it.<br /></li>
+</ul>
+<p>
+nostril n.<br />
+</p>
+<ul class="org-ul">
+<li>I was regarded as ugly, for my nostrils look quite big.<br /></li>
+<li>This turned out to be someone's nostrils.<br /></li>
+<li>Don't put anything to your nostrils.<br /></li>
+<li>He had a rare disease, for he put that poison mixture to his nostrils.<br /></li>
+<li>Put it to your nostril and you will live in a fantasy world.<br /></li>
+</ul>
+<p>
+chalk n.<br />
+</p>
+<ul class="org-ul">
+<li>Would you buy me some chalks?<br /></li>
+<li>My teacher ordered me to buy him some chalks.<br /></li>
+<li>Armed with a chalk, the boy pretended that he was a teacher.<br /></li>
+<li>I spotted a chalk rolling in the bushes.<br /></li>
+<li>My cat is pouncing at a chalk.<br /></li>
+</ul>
+<p>
+baggage n.<br />
+</p>
+<ul class="org-ul">
+<li>She confirmed that his baggage was still be here.<br /></li>
+<li>Fancy meeting you in baggage claim.<br /></li>
+<li>I felt obliged to take charge of his baggage.<br /></li>
+<li>He has missed his baggage in baggage claim.<br /></li>
+<li>I lost my baggage and made a spectacle of myself again.<br /></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org0dcf473" class="outline-3">
+<h3 id="org0dcf473">vocabulary</h3>
+<div class="outline-text-3" id="text-org0dcf473">
+<p>
+troubled: upset<br />
+clearly: obviously<br />
+packed: put in<br />
+dreadful: terrible<br />
+cap: top<br />
+nostrils: nose<br />
+convinced: persuaded<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org5487541" class="outline-3">
+<h3 id="org5487541"><span class="done DONE">DONE</span> 反复听电影片段直到懂关键句</h3>
+<div class="outline-text-3" id="text-org5487541">
+</div>
+</div>
+<div id="outline-container-org0ea0542" class="outline-3">
+<h3 id="org0ea0542">复习二册语法(笔记或视频) &amp; 红皮书</h3>
+</div>
+<div id="outline-container-orgd823206" class="outline-3">
+<h3 id="orgd823206"><span class="done DONE">DONE</span> 习惯用法造句</h3>
+<div class="outline-text-3" id="text-orgd823206">
+<p>
+be made to do sth.<br />
+</p>
+<ul class="org-ul">
+<li>I was made to wait for 3 hours before I taked the test.<br /></li>
+<li>He was made to represent an expensive gift to his girlfriend at Christma.<br /></li>
+<li>He was made to hold the meeting by his boss.<br /></li>
+<li>I used to be made to do chores all day.<br /></li>
+<li>I was made to give an order to abandon ship.<br /></li>
+</ul>
+<p>
+on the other hand/on the one hand<br />
+</p>
+<ul class="org-ul">
+<li>I want to go on vocation at Christma, but on the other hand, I can't afford it.<br /></li>
+<li>The order to abandon ship was given, but on the other hand, there were still many people aboard.<br /></li>
+<li>On the other hand, he is very insterested in English.<br /></li>
+<li>On the other hand, I used to be very pround of him.<br /></li>
+<li>On the other hand, both cats have one thing in common: they like eatting fishes.<br /></li>
+</ul>
+<p>
+light up<br />
+</p>
+<ul class="org-ul">
+<li>I realized to my horror that my rival's eyes lit up at that time.<br /></li>
+<li>After haveing got married to you, my face always lights up.<br /></li>
+<li>There is no shortage of children whose eyes light up.<br /></li>
+<li>When the bus came to a stop, his eye lit up.<br /></li>
+<li>After hearing that they went to the arcade, her eyes lit up.<br /></li>
+</ul>
+<p>
+be greeted by sth.<br />
+</p>
+<ul class="org-ul">
+<li>I was greeted by my cat who rushed to me.<br /></li>
+<li>The dog was greeted by an unpleasant smell which comes from my socks.<br /></li>
+<li>Just a moment earlier I was greeted by a beautiful lion.<br /></li>
+<li>When he opened the door, he was greeted by his friends and family.<br /></li>
+<li>I was greeted by flowers when I entered the liveroom.<br /></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org479ba38" class="outline-3">
+<h3 id="org479ba38">跟读 50遍</h3>
+</div>
+<div id="outline-container-org14dea68" class="outline-3">
+<h3 id="org14dea68"><span class="done DONE">DONE</span> Comprehension 反复练习</h3>
+<div class="outline-text-3" id="text-org14dea68">
+</div>
+</div>
+<div id="outline-container-org734955e" class="outline-3">
+<h3 id="org734955e"><span class="done DONE">DONE</span> Ask me if 写+读</h3>
+<div class="outline-text-3" id="text-org734955e">
+<ol class="org-ol">
+<li>Customs Officers are quite tolerant these days. Why<br />
+Why are Customs Officers quite tolerant these days?<br /></li>
+<li>Honest people are made to feel guilty. How<br />
+How are honest people made to feel?<br /></li>
+<li>The professional smuggler may have five hundred gold watches hidden in his suitcase. What<br />
+What may the professional smuggler have hidden in his suitcase?<br /></li>
+<li>The Customs Officer regarded you as a smuggler. Why<br />
+Why did the Customs Officer regard you as a smuggler?<br /></li>
+<li>I would never be able to close the case again. Why<br />
+Why would you never be able to close the case again?<br /></li>
+<li>He spotted a tiny bottle at the bottom of the case. What<br />
+What did he spot at the bottom of the case?<br /></li>
+<li>I should have declared the perfume. What<br />
+What should you have declared?<br /></li>
+<li>Perfume isn't exempt from import duty. Why<br />
+Why isn't perfume exempt from import duty?<br /></li>
+<li>He believed you. Why didn't<br />
+Why didn't he believe you?<br /></li>
+<li>He was convinced you were telling the truth. Why<br />
+Why was he convinced you were telling the truth.<br /></li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org698b5d1" class="outline-3">
+<h3 id="org698b5d1"><span class="done DONE">DONE</span> 摘要写作 写 &amp; 对答案</h3>
+<div class="outline-text-3" id="text-org698b5d1">
+<p>
+Though the writer had nothing to declare,<br />
+	the Customs Officer made him unlock his suitcase.<br />
+Searching the case very carefully,<br />
+	the Officer found a small bottle, which he thought was perfume.<br />
+The writer told him it was hair gel,<br />
+	which he had made himself.<br />
+As the Customs Officer didn't believe this,<br />
+	the writer encouraged him to try it.<br />
+The unpleasant smell convinced the Officer that the writer was telling the truth,<br />
+	so he let him pass through the Customs.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org86cc562" class="outline-3">
+<h3 id="org86cc562"><span class="done DONE">DONE</span> tell the story 口语复述</h3>
+<div class="outline-text-3" id="text-org86cc562">
+</div>
+</div>
+<div id="outline-container-orgdf2974b" class="outline-3">
+<h3 id="orgdf2974b"><span class="done DONE">DONE</span> composition 阅读 或 写作</h3>
+<div class="outline-text-3" id="text-orgdf2974b">
+<p>
+When the Customs Officer asked the traveller if he was carrying anything valuable,<br />
+	the man said that he had nothing to declare.<br />
+The Officer asked the man to open his suitcase.<br />
+Although the case contained only a suit and some dirty clothes, it was very heavy.<br />
+This made the Customs Officer suspicious, so he removed all the clothes from the case.<br />
+The case was soon empty and when the Officer lifted it, he found that it was still very heavy.<br />
+</p>
+
+<p>
+The Officer examined the case carefully and saw that the bottom was very shallow.<br />
+He pressed the base hard<br />
+	and removed the bottom part of the case<br />
+		which contained a quantity of emeralds and other precious stones.<br />
+While the Officer was looking at an emerald, the man tried to escape.<br />
+For a moment the man disappeared among the passing holiday travellers,<br />
+	but he was soon caught and placed under arrest.<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orge002db1" class="outline-3">
+<h3 id="orge002db1">Topics for discussion</h3>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-07-22 Mon 11:38 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="lenovo" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-orgb865fd8" class="outline-2">
+<h2 id="orgb865fd8">task10 6-1 泛读实战3 critical thinking</h2>
+<div class="outline-text-2" id="text-orgb865fd8">
+</div>
+<div id="outline-container-org9f9fd0e" class="outline-3">
+<h3 id="org9f9fd0e">homework1</h3>
+<div class="outline-text-3" id="text-org9f9fd0e">
+<ol class="org-ol">
+<li>task8 课前作业再来(体验很重要，有1章就有30章)<br /></li>
+<li>制定阅读+听力的学习计划(具体;6个月内;挑战性)<br /></li>
+<li>回答如下问题(汉语):涉及您不适或者隐私的部分可以不发出来。<br />
+<ul class="org-ul">
+<li>What's most important to you in your life?<br /></li>
+<li>Why do you care about those things?<br /></li>
+<li>Do you have any long term goals?<br /></li>
+<li>Why are these goals important to you?<br /></li>
+<li>What does it mean to have a good life?<br /></li>
+<li>What does it mean to be a goad person?<br /></li>
+<li>If you were looking back on your life now, how would you like tobe remembered?<br /></li>
+<li>以上这些问题与雅思托福考试的关系?与提升英语水平的关系?<br /></li>
+</ul></li>
+</ol>
+</div>
+<div id="outline-container-orgec0c331" class="outline-4">
+<h4 id="orgec0c331">1. task8 课前作业再来(体验很重要，有1章就有30章)</h4>
+<div class="outline-text-4" id="text-orgec0c331">
+<p>
+暂时不做,制定学习计划时考虑<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org49776be" class="outline-4">
+<h4 id="org49776be">2. 制定阅读+听力的学习计划(具体;6个月内;挑战性)</h4>
+<div class="outline-text-4" id="text-org49776be">
+<p>
+---------------&#x2013;&#x2014;任务<br />
+</p>
+<ul class="org-ul">
+<li>精读任务:<br />
+<ul class="org-ul">
+<li>NCE3 38-45=8篇<br /></li>
+<li>TED-Ed 20篇<br /></li>
+<li>C2 82篇<br /></li>
+<li>Topics for discussion?<br /></li>
+</ul></li>
+<li>泛读任务:<br />
+<ul class="org-ul">
+<li>Western Civilization ? Educational Psychology ? Critical Thinking? Follow your heart<br /></li>
+</ul></li>
+<li>写作任务:?<br /></li>
+<li>口语任务:?<br /></li>
+<li>休息娱乐任务: immerse yourself in English<br />
+<ul class="org-ul">
+<li>meditation<br /></li>
+<li>20分钟散步,spotify<br /></li>
+<li>美剧<br /></li>
+<li>reddit<br /></li>
+<li>spotify<br /></li>
+<li>podcast<br /></li>
+</ul></li>
+</ul>
+
+<p>
+---------------&#x2013;&#x2014;时间横向<br />
+</p>
+<ul class="org-ul">
+<li>大致的打算,每天一篇语法,把C2补完.<br /></li>
+<li>制定月完成量,再分散到周完成量.前期任务少一点,后期任务多一点.<br /></li>
+<li>周末根据月完成量,规定下周的完成量<br /></li>
+<li>前一天根据周完成量,规定下一天完成量<br /></li>
+</ul>
+<p>
+以周为周期:<br />
+</p>
+<ul class="org-ul">
+<li>一月:<br />
+<ol class="org-ol">
+<li></li>
+
+<li></li>
+
+<li></li>
+
+<li></li>
+</ol></li>
+<li>二月:<br />
+<ol class="org-ol">
+<li></li>
+
+<li></li>
+
+<li></li>
+
+<li></li>
+</ol></li>
+<li>三月:<br />
+<ol class="org-ol">
+<li></li>
+
+<li></li>
+
+<li></li>
+
+<li></li>
+</ol></li>
+<li>四月:<br />
+<ol class="org-ol">
+<li></li>
+
+<li></li>
+
+<li></li>
+
+<li></li>
+</ol></li>
+<li>五月:<br />
+<ol class="org-ol">
+<li></li>
+
+<li></li>
+
+<li></li>
+
+<li></li>
+</ol></li>
+<li>六月:<br />
+<ol class="org-ol">
+<li></li>
+
+<li></li>
+
+<li></li>
+
+<li></li>
+</ol></li>
+</ul>
+<p>
+---------------&#x2013;&#x2014;时间纵向<br />
+---------------&#x2013;&#x2014;原则<br />
+</p>
+<ol class="org-ol">
+<li>每天固定时间完成的,按时完成,要提前准备好,请老婆监督<br /></li>
+<li>每天要完成的尽快完成,完成后,就可以提前进入休闲娱乐时间,如果没完成则要推后<br /></li>
+<li>设置的任务要合理,要有一定难度,又不至于完成不了<br /></li>
+<li>问自己的心,有没有问心无愧<br /></li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orgdf57c86" class="outline-4">
+<h4 id="orgdf57c86">3. 回答如下问题(汉语):涉及您不适或者隐私的部分可以不发出来。</h4>
+<div class="outline-text-4" id="text-orgdf57c86">
+<ul class="org-ul">
+<li>What's most important to you in your life?<br />
+幸福<br /></li>
+<li>Why do you care about those things?<br />
+我想让自己和身边的人过得更加幸福.<br /></li>
+<li>Do you have any long-term goals?<br />
+<ul class="org-ul">
+<li>成为好丈夫,好父亲,好儿子和好朋友<br /></li>
+<li>成为一个Stoics<br /></li>
+<li>成为一个计算机科学家<br /></li>
+<li>拥有批判性思维和逻辑推理的能力<br /></li>
+<li>成为一个通才:方法论~进化心理学&#x2026;这些都能掌握大道理,并且用来解决实际的问题<br /></li>
+</ul></li>
+<li>Why are these goals important to you?<br />
+<ul class="org-ul">
+<li>成为好丈夫,好父亲,好儿子和好朋友 我想让我爱的人也拥有幸福<br /></li>
+<li>Stoics: 清晰看到can和can't的那道界限,在内心当中真正的拥有幸福<br /></li>
+<li>成为计算机科学家,首先编程本身非常有趣,第二能够解决我和家人的生存问题<br /></li>
+<li>批判性思维: 把纷扰地世界看的真切明白,做出正确行为<br /></li>
+<li>通才&#x2026;解决实际的问题<br /></li>
+</ul></li>
+<li>What does it mean to have a good life?<br />
+他们都导向幸福,幸福就是好的生活.<br /></li>
+<li>What does it mean to be a good person? If you were looking back on your life now, how would you like to be remembered?<br />
+对身边的人和对自己都好的人,叫做好人.<br />
+我希望我的孩子,记住我是他的好父亲;我的老婆,记住我是她的好丈夫;我的朋友,记得我是他们的好朋友.<br /></li>
+<li>以上这些问题与雅思托福考试的关系? 与提升英语水平的关系?<br />
+这些事情都需要能力,需要从书中获取,然后在实践慢慢熟练.<br />
+我需要提升英语,才能从以英文为载体的文本~媒体中获取相应的知识.<br />
+然后随便考个雅思???<br /></li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgdfa0b9e" class="outline-3">
+<h3 id="orgdfa0b9e">homework2</h3>
+<div class="outline-text-3" id="text-orgdfa0b9e">
+<p>
+家庭作业:<br />
+材料: Critical Thinking Brooke Moore Richard Parker 13th edition<br />
+</p>
+<ol class="org-ol">
+<li>泛读chapter1 [except exercise]<br /></li>
+<li>算算大概等于做了几套真题阅读?先完成再完美，不要记录单词含义，不要摘抄习惯用法，不要造句。<br /></li>
+<li>练习skimming/scanning/summary/段首尾/Features/1.5h/阅读速度。<br /></li>
+<li>记录下实战中的所有问题或困惑。<br /></li>
+</ol>
+</div>
+<div id="outline-container-org4e76ed5" class="outline-4">
+<h4 id="org4e76ed5">1. 泛读chapter1 [except exercise]</h4>
+</div>
+<div id="outline-container-org51de869" class="outline-4">
+<h4 id="org51de869">2. 算算大概等于做了几套真题阅读?先完成再完美，不要记录单词含义，不要摘抄习惯用法，不要造句。</h4>
+</div>
+<div id="outline-container-org2f3e8da" class="outline-4">
+<h4 id="org2f3e8da">3. 练习skimming/scanning/summary/段首尾/Features/1.5h/阅读速度。</h4>
+</div>
+<div id="outline-container-org4515854" class="outline-4">
+<h4 id="org4515854">4. 记录下实战中的所有问题或困惑。</h4>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

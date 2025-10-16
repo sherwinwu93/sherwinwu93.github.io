@@ -1,0 +1,2149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-12-29 Sun 22:46 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-org0c00705" class="outline-2">
+<h2 id="org0c00705">计划</h2>
+<div class="outline-text-2" id="text-org0c00705">
+<p>
+---------------&#x2013;&#x2014;任务收集<br />
+</p>
+<ul class="org-ul">
+<li>精读任务:<br />
+<ul class="org-ul">
+<li>TED-Ed 20篇<br /></li>
+<li>C2 82篇<br /></li>
+<li>Topics for discussion?<br /></li>
+<li>NCE3 38-45=8篇<br /></li>
+</ul></li>
+<li>泛读任务:<br />
+<ul class="org-ul">
+<li>Western Civilization ? Educational Psychology ? Critical Thinking? Follow your heart<br /></li>
+</ul></li>
+<li>写作任务:?<br /></li>
+<li>口语任务:?<br /></li>
+<li>休息娱乐任务: immerse yourself in English<br />
+<ul class="org-ul">
+<li>meditation<br /></li>
+<li>20分钟散步,spotify<br /></li>
+<li>美剧<br /></li>
+<li>reddit<br /></li>
+<li>spotify<br /></li>
+<li>podcast<br /></li>
+</ul></li>
+</ul>
+<p>
+---------------&#x2013;&#x2014;时间纵向<br />
+</p>
+<ul class="org-ul">
+<li>7:30-8:30 跟读,新旧大致各一半<br />
+买好牛奶+早餐: 已京东下好单!<br /></li>
+<li>11:30-12:00 跟读新旧各一半<br /></li>
+<li>11:00-11:40 跟读,新旧大致各一半<br />
+跟读完,不再接触手机: 已请老婆监督<br /></li>
+<li>上午周期: 由9点开始11点结束<br /></li>
+<li>下午周期: 由2点开始6点结束<br /></li>
+<li>晚上周期: 由7点开始10点结束?根据老婆弄饭时间调整<br /></li>
+<li>每项任务后休息15-30min:<br />
+<ul class="org-ul">
+<li>所有休息都用于被动泛听<br /></li>
+<li>活动<br />
+<ul class="org-ul">
+<li>meditation<br /></li>
+<li>健身操<br /></li>
+<li>20分钟散步,spotify<br /></li>
+<li>美剧<br /></li>
+<li>reddit<br /></li>
+<li>spotify<br /></li>
+<li>podcast<br /></li>
+</ul></li>
+</ul></li>
+<li>每周三晚休息,周六下午+晚上休息<br /></li>
+</ul>
+<p>
+---------------&#x2013;&#x2014;时间横向<br />
+</p>
+<ul class="org-ul">
+<li>大致的打算,每天一篇语法,把C2补完.<br /></li>
+<li>制定月完成量,再分散到周完成量.前期任务少一点,后期任务多一点.<br /></li>
+<li>周末根据月完成量,规定下周的完成量<br /></li>
+<li>前一天根据周完成量,规定下一天完成量<br /></li>
+<li>具体制定目的是要完成那些上面的具体任务,待任务确定后,再具体制定,月和周计划<br /></li>
+<li>听+读穿插进行,因为做相同的事情容易疲惫<br /></li>
+</ul>
+<p>
+以周为周期:<br />
+</p>
+<ul class="org-ul">
+<li>一月:<br />
+<ol class="org-ol">
+<li></li>
+
+<li></li>
+
+<li></li>
+
+<li></li>
+</ol></li>
+<li>二月:<br />
+<ol class="org-ol">
+<li></li>
+
+<li></li>
+
+<li></li>
+
+<li></li>
+</ol></li>
+<li>三月:<br />
+<ol class="org-ol">
+<li></li>
+
+<li></li>
+
+<li></li>
+
+<li></li>
+</ol></li>
+<li>四月:<br />
+<ol class="org-ol">
+<li></li>
+
+<li></li>
+
+<li></li>
+
+<li></li>
+</ol></li>
+<li>五月:<br />
+<ol class="org-ol">
+<li></li>
+
+<li></li>
+
+<li></li>
+
+<li></li>
+</ol></li>
+<li>六月:<br />
+<ol class="org-ol">
+<li></li>
+
+<li></li>
+
+<li></li>
+
+<li></li>
+</ol></li>
+</ul>
+<p>
+---------------&#x2013;&#x2014;原则<br />
+</p>
+<ol class="org-ol">
+<li>每天固定时间完成的,按时完成,要提前准备好,请老婆监督<br /></li>
+<li>每天要完成的尽快完成,完成后,就可以提前进入休闲娱乐时间,如果没完成则要推后<br /></li>
+<li>设置的任务要合理,要有一定难度,又不至于完成不了<br /></li>
+<li>问自己的心,有没有问心无愧<br /></li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org6829bde" class="outline-2">
+<h2 id="org6829bde">Habit</h2>
+<div class="outline-text-2" id="text-org6829bde">
+</div>
+<div id="outline-container-orge3b4a2b" class="outline-3">
+<h3 id="orge3b4a2b">听力+阅读+写作+口语</h3>
+<div class="outline-text-3" id="text-orge3b4a2b">
+<ul class="org-ul">
+<li>听力:<br />
+<ul class="org-ul">
+<li>提升精读(多一年,少三月)<br /></li>
+<li>跟读<br /></li>
+<li>精读精听80%+泛读泛听20%<br /></li>
+</ul></li>
+<li>阅读:<br />
+<ul class="org-ul">
+<li>精读精听20%+泛读泛听80%<br /></li>
+</ul></li>
+<li>写作/口语:<br />
+<ul class="org-ul">
+<li>跟读: Leo仍然每天在做,避免口语退化<br /></li>
+<li>泛读: 阅读量大,写作口语不会差<br /></li>
+</ul></li>
+<li>精读精听: 主要处理表达<br /></li>
+<li>泛读泛听:<br />
+<ul class="org-ul">
+<li>主要处理内容<br /></li>
+<li>是否感兴趣?先读一章试试<br /></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org115446b" class="outline-3">
+<h3 id="org115446b">English</h3>
+<div class="outline-text-3" id="text-org115446b">
+<ul class="org-ul">
+<li>要每天进行task0.5,断断续续效率极低; 因为英语没到B2应用级别,没用.<br /></li>
+<li>跟读只跟美音,听力所有都听不限于英美音.<br /></li>
+<li>每天冥想10分钟<br /></li>
+<li>把文章/听力搞到母语者的水平,就不再需要任何考试技巧<br /></li>
+<li>如果不在泛读泛听过程中放弃掉提升英语水平的念头,就无法提升英语. eg.就像看reddit(逃)<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org0ef7b0e" class="outline-3">
+<h3 id="org0ef7b0e">attitudes</h3>
+<div class="outline-text-3" id="text-org0ef7b0e">
+<ul class="org-ul">
+<li>求人先求己<br /></li>
+<li>强者改变,弱者抱怨<br /></li>
+<li>不是靠理性去记住道理,而是靠一遍又一遍的行动让道理变成下意识的习惯<br /></li>
+<li>目的和效率意识<br />
+<ol class="org-ol">
+<li>效果和效率的区别?<br />
+每天进步就行了,慢有什么关系???效率<br />
+两个月也能到.能两小时到,为什么要两个月到?<br />
+不要问有没有效果,要问有没有效率?<br /></li>
+<li>如何判断是否有效率?<br />
+用一个方法可以解决多个问题.<br />
+eg. 看不懂文章也能得满分?也不要学它,因为要用英语解决现实的问题.<br /></li>
+</ol></li>
+<li>入门时莫凡事均疑<br /></li>
+<li>复利意识: 前期需要很长时间,复利到来后会越来越短,越来越容易<br /></li>
+<li>进度条思维: 把大项目分解成一个个小项目,小项目就是你的进度条<br />
+做事情当时间拉得足够长时,要有进步条思维.把焦虑感转变成积累进步的喜悦<br /></li>
+<li>先完成再完美,莫要苛求完美的工具,够用就好.差生和大师文具多.<br />
+eg. Edge已经够跟读,不用再苛求更好的AI语音.<br /></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org9f51198" class="outline-3">
+<h3 id="org9f51198">资源</h3>
+<div class="outline-text-3" id="text-org9f51198">
+<ul class="org-ul">
+<li>精读:<br />
+<ul class="org-ul">
+<li>公众号-学英语看世界<br /></li>
+<li><a href="https://humansofnewyork.com/archive">https://humansofnewyork.com/archive</a><br />
+精读+精听的材料,用来提升听力+口语(最新的,所以最好)<br /></li>
+<li>The best life stories<br /></li>
+<li>TED-Ed<br /></li>
+<li>coursera<br /></li>
+</ul></li>
+<li>泛读+泛听<br />
+<ul class="org-ul">
+<li>精读过脚本的音频<br /></li>
+<li>本科教材+Edge语音<br /></li>
+<li>美剧<br /></li>
+<li>podcast<br /></li>
+<li>audiobook<br /></li>
+<li>coursera+udemy+etc.<br /></li>
+</ul></li>
+</ul>
+<p>
+topic for discussion: 写作口语会讲<br />
+</p>
+
+<ul class="org-ul">
+<li>词汇量:<br />
+A1 (Beginner): About 500 - 1,000 words<br />
+A2 (Elementary): About 1,000 - 2,000 words<br />
+B1 (Intermediate): About 2,000 - 3,500 words<br />
+B2 (Upper Intermediate): About 3,500 - 5,000 words<br />
+C1 (Advanced): About 5,000 - 8,000 words<br />
+C2 (Proficient): 8,000 - 16,000+ words<br /></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgf3fbad4" class="outline-2">
+<h2 id="orgf3fbad4">task0 开班</h2>
+<div class="outline-text-2" id="text-orgf3fbad4">
+<ol class="org-ol">
+<li>雅思托福课教什么?<br />
+<ol class="org-ol">
+<li>英语阅读与听力的关系<br />
+精读+泛读<br />
+精听+泛听<br />
+阅读+听力+写作+口语的关系<br /></li>
+<li>如何提升效率?<br />
+目的和效率意识+相同的时间做到的事情更多.<br /></li>
+<li>Learning how to learn<br /></li>
+<li>Critical Thinking<br /></li>
+</ol></li>
+<li>英语目标:<br />
+如果考试拿个C1,实际使用只有B2的水平,因为实际比考试情况复杂.<br /></li>
+<li>学习时间: 累计时间<br />
+<ul class="org-ul">
+<li>A1: 80-100<br /></li>
+<li>A2: 180-200<br /></li>
+<li>B1: 350-400<br /></li>
+<li>B2: 500-600<br /></li>
+<li>C1: 700-800<br /></li>
+<li>C2: 1000-1200<br /></li>
+</ul></li>
+<li>要每天进行task0.5,断断续续效率极低; 因为英语没到B2应用级别,没用.<br /></li>
+</ol>
+</div>
+
+<div id="outline-container-org833c5f7" class="outline-3">
+<h3 id="org833c5f7">how</h3>
+<div class="outline-text-3" id="text-org833c5f7">
+<ol class="org-ol">
+<li>设立英语学习目标为C1<br /></li>
+<li>准备好适当的学习时间<br />
+20240715: 720小时<br /></li>
+</ol>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orga9112e8" class="outline-2">
+<h2 id="orga9112e8">task1 工具准备 humans of newyork</h2>
+<div class="outline-text-2" id="text-orga9112e8">
+<ol class="org-ol">
+<li>跟读只跟美音,听力所有都听不限于英美音.<br /></li>
+<li><a href="https://humansofnewyork.com/archive">https://humansofnewyork.com/archive</a><br />
+精读+精听的材料,用来提升听力+口语(最新的,所以最好)<br /></li>
+<li>读懂一切英语文本<br />
+<ol class="org-ol">
+<li>单词:<br />
+查字典:发音+含义(只查文中含义,英汉均看)+例句(用法)+搭配collocation(用于造句:用法)<br />
+欧陆词典:朗文+牛津<br />
+注意:不懂就查,遇到忘记了继续查,直到记住不用查.不要背,背一次4分钟,查30次才30秒.<br /></li>
+<li>语法<br />
+查书:NCE23+C12+PEU(用索引查)<br />
+Grammarly + AI<br /></li>
+<li>习惯用法<br />
+查: Google或bing xxx meaning<br />
+单词语法都认识,理解不通,大概率是习惯用法<br /></li>
+</ol></li>
+<li>造句后用grammarly纠正错误<br />
+自己判断正确错误以及修改的能力<br /></li>
+<li>跟读前对比下GPT翻译的中文一句一句对比<br /></li>
+<li>每一遍edge跟读任何文本<br /></li>
+</ol>
+</div>
+
+<div id="outline-container-orgde8fb73" class="outline-3">
+<h3 id="orgde8fb73">how</h3>
+<div class="outline-text-3" id="text-orgde8fb73">
+<p>
+精读+精听:<br />
+what: 前期:NCE123,后期:humans of NewYork<br />
+why: 提升听力和口语<br />
+how:<br />
+</p>
+<ol class="org-ol">
+<li>查单词(欧陆)+语法(C12+PEU)+习惯用法(Google/Bing)<br /></li>
+<li>摘抄单词+习惯用法,并造句*3<br />
+<ol class="org-ol">
+<li>如何摘抄习惯用法<br />
+单词语法都认识,理解不通,大概率是习惯用法<br /></li>
+<li>如何造句<br />
+<ol class="org-ol">
+<li>v+v.变化<br /></li>
+<li>四句型转换<br /></li>
+<li>方式/地点/时间<br /></li>
+<li>其他习惯用法<br /></li>
+<li>其他单词+词性<br /></li>
+<li>原文+变<br /></li>
+<li>6123456<br /></li>
+<li>结合其他语法<br /></li>
+</ol></li>
+</ol></li>
+<li>用Grammarly检查造句<br /></li>
+<li>跟读前对比下GPT翻译的中文一句一句对比<br /></li>
+<li>跟读50遍(真人&gt;edge)<br /></li>
+<li>Ask questions(可选)<br /></li>
+<li>摘要写作(可选)<br /></li>
+<li>tell the story(可选)<br /></li>
+</ol>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org1d4a35e" class="outline-2">
+<h2 id="org1d4a35e">task2 习惯用法+英语学习框架</h2>
+<div class="outline-text-2" id="text-org1d4a35e">
+<ol class="org-ol">
+<li>输入 vs 输出<br />
+<ol class="org-ol">
+<li>输入多少是没用,只看能输出多少.不会输出就是没学会,只是你自己产生错觉.以为自己会<br /></li>
+<li>输入了之后要赶紧输出<br />
+eg.把造句大声朗读<br /></li>
+</ol></li>
+<li>,Ti: 显示org图片<br />
+<img src="./img/English framework.png" alt="English framework.png" /><br />
+内容:最核心,缺少内容给你钱都不想听.想象下英语国企开会<br />
+结构:简单.2-3天<br />
+表达:容易误以为自己只有表达不好<br />
+口语VS写作:前者多了语音,后者多了拼写(音标+自然拼读法则+造句+写作)<br />
+Task0.5提升内容和表达<br />
+泛读:大量泛读,能迅速提升单词量<br />
+  1.内化:看得多了,就内化了.开始翻译成汉语,开始不得不这样,阅读足够多,就不会了.<br />
+  2.英语用结构表达虚拟语气:熟练读从0-几(需要告诉自己什么结构是虚拟语气),几-万次(直接反应过来).由原来要想到想都不用想,要想就慢了.<br />
+    如何下意识?熟能生巧.<br />
+  3.反应速度:快慢是结果,阅读量大就快,小就慢;不需要专门练<br />
+语音++:<br />
+  语音:单词发音<br />
+  语调:模仿自然会出来<br />
+  变音:?<br />
+  语速:快慢是结果,不需要专门练<br />
+  流利度:顺畅<br />
+跟听:盯着歌词听音乐生怕丢了.<br />
+  什么时候用?嘴巴太累或不方便的时候.<br />
+  和跟读一样以精读为基础<br />
+泛听:<br />
+  eg:汉语学的雾霾<br />
+初期大量听力+阅读的时候,已经在提升口语和写作.!!!<br />
+没有阅读+听力,无法提升口语+写作,无法空中楼阁.<br /></li>
+<li>如何摘抄单词+句型+习惯用法,并造句?<br />
+<ol class="org-ol">
+<li>如何摘抄单词+句型+习惯用法?<br />
+<ol class="org-ol">
+<li>表达比你好?<br />
+例如:人固有一死,或重于泰山,或死于鸿毛.<br />
+谈起一睡前:话一样,我不会说.你说半天,别人一句话就解释清楚了.<br /></li>
+<li>真不会(初期)<br /></li>
+<li>模仿Leo的新概念2-3怎么摘的<br />
+先自己摘抄,再对比Leo摘抄的<br /></li>
+<li>习惯用法造句+单独文本文件记录<br /></li>
+</ol></li>
+<li>造句<br />
+四句型+2+345+其他单词+其他习惯用法+语法<br /></li>
+<li>用于何处?<br />
+<ol class="org-ol">
+<li>读书破万卷,下笔如有神. 写作<br /></li>
+<li>腹有诗书气自华. 口语<br /></li>
+</ol></li>
+</ol></li>
+<li>Grammarly/AI检查句子 + 文章/NCE23造句指南<br />
+1.造句靠指南提升的很快,但无法100%<br />
+ 2.大语法结构错了一定扣分<br />
+3.AI:Is this right? 造句到后面只有几个句子.<br />
+4.表达容易修改,自己修改能提升自己<br /></li>
+<li>效果VS效率<br />
+1.效果和效率的区别?<br />
+每天进步就行了,慢有什么关系???效率<br />
+两个月也能到. 能两小时到,为什么要两个月到?<br />
+不要问Leo有没有效果,问有没有效率?<br />
+2.如何提升效率?<br />
+一个方法解决多个问题.<br />
+看不懂文章也能得满分?也不要学它,因为要用英语解决现实的问题.<br /></li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org708413f" class="outline-2">
+<h2 id="org708413f">task3 0-1 习惯用法+工具使用+英语学习框架复习</h2>
+<div class="outline-text-2" id="text-org708413f">
+<ol class="org-ol">
+<li>入门时莫凡事均疑<br /></li>
+<li>进度条思维:<br />
+做事情当时间拉得足够长时,要有进步条思维.把焦虑感转变成积累进步的喜悦<br /></li>
+<li>莫要苛求完美的工具,够用就好.差生和大师文具多.<br />
+eg. Edge已经够跟读,不用再苛求更好的AI语音.<br /></li>
+<li>英语听说读写密不可分,需要齐头并进.<br /></li>
+<li>母语者也仅仅是语法大结构不会弄错,不用苛求语法<br /></li>
+<li>长难句的解决<br />
+<ol class="org-ol">
+<li>读:拆成短句+学NCE2+3+best life<br /></li>
+<li>听:多跟读<br /></li>
+<li>写:精读+跟读<br /></li>
+<li>说:精读+跟读<br /></li>
+</ol></li>
+<li>口语复述: tell the story,提升阅读+听力时,口语也会一直提升.<br /></li>
+<li>Art of Public Speaking<br />
+摘抄习惯用法:<br />
+<ol class="org-ol">
+<li>细心<br />
+eg. for which he had been nominated<br />
+  be nominated for<br /></li>
+<li>NCE3先自己摘,再对比Leo摘抄的<br /></li>
+</ol></li>
+<li>对抗焦虑<br />
+<ol class="org-ol">
+<li>调整时间<br /></li>
+<li>心态调整CBT<br />
+自己骂自己傻逼,自己不会反击.别人指责自己的,会反击.<br />
+CBT把自己和自己的想法隔离开了.<br />
+引起自己的焦虑的话写下来. 把这些当作自己最讨厌的人说的. 对抗减少焦虑<br /></li>
+<li>每周三次有氧运动,半个小时<br /></li>
+<li>冥想: 堵车和红绿灯都可以冥想. 素材:学英语看世界(公众号)<br /></li>
+<li>睡眠: 如何提升睡眠质量(附加值)<br /></li>
+<li>营养:<br />
+<ul class="org-ul">
+<li>氧气(学累了走走)<br /></li>
+<li>卡路里(杂粮+加餐[全麦+坚果干果+燕麦+香蕉])<br /></li>
+</ul></li>
+<li>寻求亲朋好友的支持: 不说风凉话,别拆台;给物质的支持<br /></li>
+<li>正确对待压力: 肌肉是撸完铁之后增长的,没有压力干活没效率,压力太久直接萎靡.<br />
+应该是间歇性周期性的压力<br /></li>
+<li>娱乐休闲计划: 干完这事后,做电脑面前很放松<br /></li>
+<li>雅思进度条: 初期养成习惯<br /></li>
+<li>问题+解决问题的意愿+研究能力=对任何话题的理解超过大多数人<br /></li>
+</ol></li>
+<li>练雅思听力第一题的方法: 精读+跟读真题<br /></li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orge7484e0" class="outline-2">
+<h2 id="orge7484e0">task4 1-1 听力</h2>
+<div class="outline-text-2" id="text-orge7484e0">
+<ol class="org-ol">
+<li>The Learning Pyramid: 1-4 input 5-7 output<br />
+<ol class="org-ol">
+<li>Lecture 5% 上课只有老师讲<br /></li>
+<li>Reading 10% 有文字<br /></li>
+<li>Audio Visual 20% 有图示<br /></li>
+<li>Demonstration 30% 实战演习<br /></li>
+<li>Discussion Group 50% 小组讨论<br /></li>
+<li>Practice by Doing 75% 通过做去练<br /></li>
+<li>Teach Others 90% 教别人<br /></li>
+</ol></li>
+<li>这篇文章跟读50遍后<br />
+7 -&gt; 10: 在这篇文章上,英语水平大幅提升<br />
+是否真的读懂?还是产生了幻觉?: 用chatgpt翻译成中文,对比自己的理解<br />
+过嘴不过脑: 每一遍带着个目的去读<br />
+拼写?: 跟中文一样同样有不会写的字.多造句+多写作.即便是拼写不行也可以拿雅思8.5.<br /></li>
+<li>听力要拿多少分?为什么7分(30/40)不可以?听写怎么样?<br />
+听力至少要8分(听懂80-90%).<br />
+7分大部分内容没听,因为要实际听别人讲话.<br />
+有效果没效率.<br /></li>
+<li>听力的sub-skills<br />
+<ul class="org-ul">
+<li>复述: 同义词+同义习惯用法+同义句型(听力问题+听力脚本)<br />
+精读解决<br /></li>
+<li>口音: 只听纯英式,纯美式? 只跟读纯英,纯美式?<br />
+都听; 只跟读一种,塑造自己的语音<br /></li>
+<li>单词+语法+习惯用法<br /></li>
+<li>单词拼写<br />
+音标+自然拼读法则+造句+多写忘掉的单词<br /></li>
+<li>语音+语调+语速<br />
+跟读<br /></li>
+<li>变音:两个方案回顾?:<br />
+学发音规则不搞,只跟读.<br /></li>
+</ul></li>
+<li>听力提升=(精读+精听:解决subskills)+泛听<br />
+模拟对话? 难度已经不够了.<br /></li>
+<li>强者改变,弱者抱怨<br /></li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org24c65ac" class="outline-2">
+<h2 id="org24c65ac">task5 2-1 听力满分计划</h2>
+<div class="outline-text-2" id="text-org24c65ac">
+<ol class="org-ol">
+<li>如果搜中文对应的英文表达,先google搜英文,再把搜到查下meaning看看对不对.<br /></li>
+<li>公众号文章: 雅思改版 和 小组讨论事项<br /></li>
+<li>复利:<br />
+<ul class="org-ul">
+<li>拐点:复利在到达拐点之前,长时间的增长速度极慢.<br /></li>
+<li>拐点及雅思7:<br />
+理论上: 雅思到C1的水平要700-800小时,折算3-6个月,为什么很多人努力3-6月达不到?<br />
+<ul class="org-ul">
+<li>3-6个月需要每天学习10小时,不打水分的10小时<br /></li>
+<li>拐点的存在<br /></li>
+<li>学习如逆水行舟,断断续续地学没倒退就不错了<br /></li>
+</ul></li>
+<li>task0.5: 全部符合复利<br />
+<ol class="org-ol">
+<li>跟读至与录音速度一致(听力+口语+阅读)<br />
+跟听初级尽量不跟听,少了口语<br /></li>
+<li>精读(积累单词+语法+习惯用法=听说读写)<br /></li>
+<li>习惯用法摘抄及造句(写作+口语)<br /></li>
+<li>内容(写作+口语)<br /></li>
+</ol></li>
+</ul></li>
+<li>听力为什么要满分?<br />
+<ol class="org-ol">
+<li>学习+工作+聊天<br /></li>
+<li>获取信息差,利用信息差省钱甚至赚钱<br /></li>
+</ol></li>
+<li>听力满分计划: 从跟读文章1到跟读文章N的复利,达到听力满分<br />
+文章N是多少? 在不跟读的前提下,几乎拿起来就能读,除了少数磕绊<br />
+<ol class="org-ol">
+<li>NCE123 + C12 (阅读/写+跟读)<br /></li>
+<li>TED-Ed (阅读+跟读)<br /></li>
+<li>Learning how to learn()<br />
+<ul class="org-ul">
+<li>下载script<br /></li>
+<li>跟读教授<br /></li>
+<li>coursera VS 真题: 多了内容,可以和雅思考官聊这个<br /></li>
+</ul></li>
+</ol></li>
+<li>进度条思维<br />
+进行长期任务时,把未完成的焦虑感转变成积累进步的喜悦.<br />
+ eg. 精读script时,不要为自己不认识的单词而焦虑,为自己有认识的而喜悦,因为表达又提升了一点<br /></li>
+</ol>
+</div>
+<div id="outline-container-org184cfae" class="outline-3">
+<h3 id="org184cfae">how</h3>
+<div class="outline-text-3" id="text-org184cfae">
+<ul class="org-ul">
+<li>跟读到和录音速度一致,后期可以跟听<br /></li>
+<li>精读+跟读NCE123<br /></li>
+<li>精读+跟读TED-Ed<br /></li>
+<li>没东西读时,读下NCE保持下语感<br /></li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org99b4d57" class="outline-2">
+<h2 id="org99b4d57">task6 3-1 泛读泛听 What Why How</h2>
+<div class="outline-text-2" id="text-org99b4d57">
+<ol class="org-ol">
+<li>考试逻辑: 考试考的是熟练<br />
+根: 精读(会) + 泛读(熟练)<br />
+树干: sub-skills<br />
+树叶: 答题技巧 + 考试技巧<br />
+答题技巧+考试技巧: 依赖于精读泛读;但是效率低,因为不能解决英语使用的问题<br />
+sub-skills: 也依赖于精读泛读<br /></li>
+<li>精读: 无限时间肯定能读懂.<br />
+what? 获取表达为主,每句话都懂<br />
+why? 所有的英语学习的基础<br />
+how? task1的how<br />
+因为先会再熟的原则,精读是泛读的基础.<br /></li>
+<li>泛读: 熟练<br />
+what? 获取内容为主,不必每句话都懂<br />
+why? 效率高+motivation+大部头恐惧+重复带来的速度提升<br />
+how? 有用+有趣+本科难度<br /></li>
+<li>泛听: 熟练表达(语音)<br />
+what?<br />
+why? 获取内容+增加重复<br />
+how? 必须先会,再熟<br />
+<ul class="org-ul">
+<li>比例变化: 1%-&gt;99%<br /></li>
+<li>听降噪耳机(被动学习) + 电脑桌前(主动学习): 获取信息知识尽量主动, 娱乐尽量被动<br />
+<ol class="org-ol">
+<li>精读过脚本的音频<br /></li>
+<li>本科教材+Edge语音<br /></li>
+<li>美剧<br /></li>
+<li>podcast<br /></li>
+<li>audiobook<br /></li>
+<li>coursera+udemy+etc.<br /></li>
+</ol></li>
+</ul></li>
+<li>泛读与泛听的QNA?<br />
+<ol class="org-ol">
+<li>提升单词量需要读多少本书才行?每天读多少页?<br />
+不知道,但是可以模考试下水平.没有限制页数<br /></li>
+<li>读啥?如何挑选?难读?<br />
+有用+感兴趣+本科难读<br /></li>
+<li>没办法都听/读懂行么?<br />
+可以,内容为主,英语为辅<br /></li>
+<li>如何判断材料与雅思托福是否有关系?<br />
+本科难度都有关<br /></li>
+<li>汉语?<br />
+汉语初期是拐杖<br /></li>
+<li>泛读材料可以(好不好)精读么?<br />
+适合,但是不要全部精读,吃不消,泛读10页精半页.<br /></li>
+<li>精读材料可以(好不好)泛读么?<br />
+不适合,没内容<br /></li>
+<li>泛听材料可以(好不好)精听么?<br />
+适合,部分精听<br /></li>
+<li>精听材料可以(好不好)泛听么?<br />
+不适合(但前期没办法,懂的太少了),因为没内容<br /></li>
+</ol></li>
+<li>冥想follow your breath<br /></li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orgc9001f7" class="outline-2">
+<h2 id="orgc9001f7">task7 3-2 阅读subskills</h2>
+<div class="outline-text-2" id="text-orgc9001f7">
+<ol class="org-ol">
+<li>把文章/听力搞到母语者的水平,就不再需要任何考试技巧<br /></li>
+<li>不是靠理性去记住道理,而是靠一遍又一遍的行动让道理变成下意识的习惯<br /></li>
+<li>雅思-阅读:<br />
+<ol class="org-ol">
+<li>总思路: 提升阅读能力(包括sub-skills),而不是答题技巧<br />
+备: 题海战术不利于备考和学习,直接提升英语能力<br /></li>
+<li>来源: 杂志~期刊~书籍和报纸改写<br />
+备: 刷雅思考题,不如直接刷第一手的.<br /></li>
+<li><p>
+涉及话题:<br />
+</p>
+<ol class="org-ol">
+<li>动植物,物品,人物<br /></li>
+<li>心理,教育,科学<br /></li>
+<li>历史,考古,文化<br /></li>
+<li>社会现象,问题,商业行为<br /></li>
+</ol>
+<p>
+备: 精读+泛读要涉及多的话题<br />
+</p></li>
+<li><p>
+阅读考试模式:<br />
+</p>
+<ol class="org-ol">
+<li>3篇文章(难度递增)+40道题=1h<br /></li>
+<li>文章长度: 700~950*3 = 2000-2750<br /></li>
+<li>时间安排: 15+15+20+10(誊写)=1h<br /></li>
+</ol>
+<p>
+备: 提升阅读量达到母语者水平(半年)+阅读时注意时间<br />
+</p></li>
+<li>考试目标: 至少8分才够实际应用<br /></li>
+<li>主要题型:<br />
+<ul class="org-ul">
+<li>选择<br /></li>
+<li>填空<br /></li>
+<li>完成句子<br /></li>
+<li>完成笔记,总结,表格或流程图<br /></li>
+<li>对图表进行标记<br /></li>
+<li>为段落选择小标题<br /></li>
+<li>寻找信息<br /></li>
+<li>寻找作者观点~论点或文章的具体信息<br /></li>
+<li>分类<br /></li>
+<li>配对<br /></li>
+</ul></li>
+</ol></li>
+<li>sub-skills: 备考: 单词+习惯用法+语法+各类工具+精读+泛读<br />
+<ul class="org-ul">
+<li>词+句子<br />
+<ol class="org-ol">
+<li>word guessing: 考试不担心生词+平常根据上下文猜生词<br />
+前提: 懂10%,一个句子只能有一块不懂<br />
+备考: 大量泛读,迅速提升单词量<br /></li>
+<li>单词+语法+习惯用法=句子<br />
+会+熟练(时间要求)+猜测<br />
+备考: 会=精读 熟练=泛读<br /></li>
+<li>Paraphrasing: 替换单词(同义词)+习惯用法+语法(句式)<br />
+备考: 大量泛读<br /></li>
+<li>表句子/词关系和层次的单词要注意:<br />
+eg. although~because~for instance~despite~in spite of~as a result &#x2026;<br />
+备考: 精读/泛读中注意这些词,标记/造句, 这些词能提升口语+写作<br /></li>
+</ol></li>
+<li>段落+篇章<br />
+<ol class="org-ol">
+<li>标题+段首&amp;段尾<br />
+段落存在的目的是为了解决一个小问题supporting ideas,围绕篇章解决的大问题 main ideas.<br />
+备考: [精读+泛读]解决会和熟练的问题<br /></li>
+<li>skimming(梗概): understand the main ideas of a text(段/篇/章/论文/书).<br />
+<ul class="org-ul">
+<li>why:<br />
+<ol class="org-ol">
+<li>a lot of reading to do<br /></li>
+<li>Determine whether a paper is useful or not<br /></li>
+<li>relevant(任意text是否值得读)<br /></li>
+</ol></li>
+<li>Limitation(适用): in-depth knowledge of the text not useful深入了解text的知识是没用的情况下<br />
+前提: 精读+泛读(考试)<br /></li>
+<li>how? 只要不影响理解主要内容,不懂就直接放过<br />
+<ol class="org-ol">
+<li>根据题目or问题确定阅读目的<br /></li>
+<li>focus on main ideas<br /></li>
+<li>Don't read every word<br /></li>
+<li>Identity Structure<br /></li>
+<li>段首尾/标题/目录/第一段<br /></li>
+<li>Summary - main/key idea(understand句子+段落)<br /></li>
+</ol></li>
+</ul></li>
+<li>scanning(细节) - find specific info.<br />
+How?<br />
+<ul class="org-ul">
+<li>不担心单词不认识<br /></li>
+<li>不必每个单词句子都反应意思<br /></li>
+<li>scanning+read sentences around it<br /></li>
+</ul></li>
+<li>Features of a reading passage: 知道这么个事就好,非正文的都是features<br />
+<ul class="org-ul">
+<li>footnote<br /></li>
+<li>subheading<br /></li>
+<li>column<br /></li>
+<li>figure/illustration<br /></li>
+<li>heading<br /></li>
+<li>caption<br /></li>
+</ul></li>
+</ol></li>
+</ul></li>
+<li>围绕考试:<br />
+<ol class="org-ol">
+<li>连续阅读1.5小时: 逐次递增由30-&gt;45-&gt;60-&gt;90<br /></li>
+<li>阅读速度(泛读) 优先于 阅读精读(精读; 句读)<br /></li>
+<li>终极大杀器: 提升精读+泛读,达到母语水平<br />
+<ul class="org-ul">
+<li>甚至可以不练习sub-skills达到满分<br /></li>
+</ul></li>
+<li>注意力集中<br />
+<ul class="org-ul">
+<li>meditation<br /></li>
+<li>模考<br /></li>
+<li>先看题,再看文章<br /></li>
+</ul></li>
+</ol></li>
+<li>答题技巧:<br />
+<ol class="org-ol">
+<li>题目出现的顺序和对应信息在文章中顺序相同<br /></li>
+<li>Speed reading,先skimming再scanning<br /></li>
+<li>边读边答题<br /></li>
+<li>利用题目中的[关键词]定位答题区域. Scanning+understand sentences<br /></li>
+<li>边阅读边标记key words/sentences<br /></li>
+<li>审题: eg. one word only&#x2026;<br /></li>
+<li>Matching Headings<br />
+<ul class="org-ul">
+<li>reading the headings<br /></li>
+<li>skim the whole passage for overall meaning<br /></li>
+<li>reading the first paragraph + match heading<br /></li>
+<li>reading the second paragraph + matching heading<br /></li>
+<li>关注梗概(大意),而非match细节(题目与段落的单词)<br /></li>
+</ul></li>
+<li>true/false/Not given 用文中的信息而不是自己知道的信息(因为文中可能没给,或者和你脑子里的不同)<br /></li>
+</ol></li>
+<li>subskills VS 答题技巧<br />
+<ol class="org-ol">
+<li>需要练习subskills,做题验证的是subskills掌握的好不好<br /></li>
+<li>subskills对考试和未来工作生活有用,做题只对考试有用<br /></li>
+<li>sub-skills可以用真题练,也可以用本科教材/畅销书<br />
+<ol class="org-ol">
+<li>弄清有哪些subskills以及如何练习<br /></li>
+<li>实践提升sub-skills<br /></li>
+<li>模考:答对题说明练到位了,答错说明不到位<br /></li>
+</ol></li>
+<li>训练sub-skills带来,读懂+知识/信息/满足好奇心+新奇/有趣+分数<br />
+训练答题技巧带来,分数+枯燥/无聊<br /></li>
+</ol></li>
+</ol>
+</div>
+<div id="outline-container-org8e8f8a5" class="outline-3">
+<h3 id="org8e8f8a5">how</h3>
+<div class="outline-text-3" id="text-org8e8f8a5">
+<ul class="org-ul">
+<li>word guessing<br /></li>
+<li>注意逻辑词<br /></li>
+<li>skimming<br />
+<ol class="org-ol">
+<li>先读标题/问题,明确阅读目的<br /></li>
+<li>再书名/目录/标题/第一段/段首尾/章节问题,搞到大纲(main ideas)<br /></li>
+<li>再superficial reading<br />
+<ol class="org-ol">
+<li>focus on main ideas<br /></li>
+<li>Don't read every word<br /></li>
+<li>Identity Structure<br /></li>
+<li>Summary - main/key idea: 着重看每篇段落的中心句<br /></li>
+</ol></li>
+</ol></li>
+<li>scanning - find specific info.<br />
+<ul class="org-ul">
+<li>scanning+read sentences around it<br /></li>
+<li>不担心单词不认识<br /></li>
+<li>不必每个单词句子都反应意思<br /></li>
+</ul></li>
+<li>看features<br /></li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgc493e9c" class="outline-2">
+<h2 id="orgc493e9c">task8 4-1 泛读实战1 西方文明简史</h2>
+<div class="outline-text-2" id="text-orgc493e9c">
+<ul class="org-ul">
+<li>Western Civilization 天天读这一章,压轴课要用<br /></li>
+<li><p>
+others<br />
+提升听力:<br />
+</p>
+<ul class="org-ul">
+<li>提升精读(多一年,少三月)<br /></li>
+<li>跟读<br /></li>
+<li>精读精听80%+泛读泛听20%<br /></li>
+</ul>
+<p>
+提升阅读: 精读精听20%+泛读泛听80%<br />
+跟读: Leo仍然每天在做,避免口语退化<br />
+泛读: 阅读量大,写作口语不会差<br />
+精读精听: 主要处理表达<br />
+泛读泛听:<br />
+</p>
+<ul class="org-ul">
+<li>主要处理内容<br /></li>
+<li>是否感兴趣?先读一章试试<br /></li>
+<li>历史:<br />
+<ul class="org-ul">
+<li>文学~影视作品大量借鉴历史<br /></li>
+<li>历史的事件,现实生活中反复发生<br /></li>
+</ul></li>
+</ul></li>
+<li>Learning how to learn<br />
+<ul class="org-ul">
+<li>what?<br />
+<ul class="org-ul">
+<li>心理学+教育学+脑神经学+两或三者的交叉学科<br /></li>
+</ul></li>
+<li>why? 'psychology and life'<br />
+<ol class="org-ol">
+<li>Critical Thinking in Your Life: How Can Memory Research Help You Prepare for Exams?192<br /></li>
+<li>Psychology in Your Life HOW CAN YOU BENEFIT FROM THE 'TESTING EFFECT'?199<br /></li>
+<li>Critical Thinking in Your Life: How Does Motivation Affect Academic Achievement?318<br /></li>
+<li>学习发生在脑子里面,而不是嘴上或手脚上. eg.跟读要动脑子反应表达(单词+语法+习惯用法)的含义,语音,用法<br /></li>
+<li>大脑的使用说明书: 心理学+教育学+脑神经学<br /></li>
+<li>书名: 情商 概念: self-motivated<br /></li>
+<li>take repsonsibilities of your life<br /></li>
+<li>主动搜索+英语语言+Critical Thinking=人生无数问题的解决方案<br /></li>
+</ol></li>
+<li>How?<br />
+<ol class="org-ol">
+<li>Task0.5任务1跟读: 贯彻task0.5的要求到位<br /></li>
+<li>study-test: teach others(include yourself)<br /></li>
+<li>spaced repetition: 间隔重复<br /></li>
+<li>学习计划 VS 娱乐计划<br />
+<ul class="org-ul">
+<li>想法设法在学习中找到乐趣<br /></li>
+<li>只有学习计划,没有娱乐计划,一定进行不下去<br /></li>
+<li>娱乐也要有计划: eg:玩之前,规定自己玩到什么程度<br /></li>
+</ul></li>
+<li>脑部方式计划-有氧/音乐/meditation<br /></li>
+<li>多学科组合拳? 碾压学霸? 查理芒格?<br /></li>
+</ol></li>
+<li>学习材料:<br />
+<ul class="org-ul">
+<li>make it stick<br /></li>
+<li>coursera: Learning how to learn<br /></li>
+<li>HBR(哈佛商业评论)<br /></li>
+<li>youtube<br /></li>
+</ul></li>
+</ul></li>
+<li>泛读原著相关,完成大Project<br />
+<ul class="org-ul">
+<li>有汉语的情况下先读汉语,提前获取内容.再读英文时,只需要处理表达,降低难度<br /></li>
+<li>分解: 把大项目分解成一个个小项目,小项目就是你的进度条<br /></li>
+<li>复利<br />
+<ul class="org-ul">
+<li>第1章10小时,30章不需要300小时<br /></li>
+</ul></li>
+<li>主要目的是获取内容,放弃掉提升英语水平的念头,才能真正提升英语水平. eg.就像看reddit(逃)<br /></li>
+<li>内容: 几乎所有的阅读都在解决一个问题<br />
+<ul class="org-ul">
+<li>主线任务(必做):第一遍(inspectional reading)解决问题<br /></li>
+<li>支线任务(选做):对内容感兴趣时<br /></li>
+</ul></li>
+<li>how<br />
+<ol class="org-ol">
+<li>是否看内容,看是否是主线任务相关(看标题+段首尾判断)<br /></li>
+<li>章节标题<br /></li>
+<li>outline(进度条,没有时直接看下两级标题) 和 focus questions<br /></li>
+<li>章节首: introduction,切忌不可直接看正文<br /></li>
+<li>章节尾: timeline/conclusion,切忌不可直接看正文<br /></li>
+<li>进入第一节<br /></li>
+<li>要不要进入第一节的小节呢,看是否解决focus question<br /></li>
+</ol></li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org70307e3" class="outline-2">
+<h2 id="org70307e3">task9 5-1 泛读实战2 教育心理学</h2>
+<div class="outline-text-2" id="text-org70307e3">
+<ul class="org-ul">
+<li>Atomic Habits(书): 那些附加值就是小的Habits,但是这些累加起来会产生巨大的改变.短期英语,长期人生.<br /></li>
+<li>影响雅思成绩的因素? 智力水平Mindset(书)<br />
+<ul class="org-ul">
+<li>Mindset(书): Growth Mindset VS Fixed Mindset<br />
+<ul class="org-ul">
+<li>学习不是线形的,复利的N是几不用管.只要每天练习,方向性不错,就会有质的飞跃<br /></li>
+<li>拥抱growth mindset<br /></li>
+<li>加大练习的量<br /></li>
+<li>刻意练习:走出舒适圈,负重训练<br /></li>
+</ul></li>
+<li>Neuroplasticity &amp; Meditation (HBR) deep breath:<br />
+<ul class="org-ul">
+<li>认知的解放: Absolutely everyone has the capacity to be better at virtually everything.<br /></li>
+<li>失败的模式: 认为我不行-&gt;尝试一两次不行-&gt;加深认为我不行 eg.社交<br /></li>
+<li>产生新的神经链接后,事情会变得无比简单<br /></li>
+<li>对于未完成的认知: 通过疏导自己,完成目标<br />
+<ul class="org-ul">
+<li>我没有完成,就不是能干这个事的人<br /></li>
+<li>虽然未完成,但是努力做了,在努力的过程中进步了<br /></li>
+</ul></li>
+<li>培养解决人生问题的能力,用英语去搞定<br /></li>
+</ul></li>
+</ul></li>
+<li>教育心理学<br />
+<ul class="org-ul">
+<li>内部VS外部动力<br />
+<ul class="org-ul">
+<li>做真题VS阅读文章的心里感觉: 动力区别. 找到属于自己的文字,那种激动的感觉<br /></li>
+<li>只有外部动力没有内部动力不好,但是有内部动力的同时有外部动力会更好<br /></li>
+<li>教育心理学在雅思课后,需要重新看,并且重点strategies<br /></li>
+</ul></li>
+<li>如何获得Flow?<br />
+<ul class="org-ul">
+<li>Apathy, Boredom新概念,因为太简单了<br /></li>
+<li>Anxiety, 君主论,因为技巧不够<br /></li>
+<li>Education Psychology焦虑比Western Civilization要少,因为技巧比之前强了,也是第二次接触大部头的英语原著<br /></li>
+<li>逐步加强: 开车:60-&gt;80-&gt;100,不要在80码彻底熟了,再去100,有适当有点焦虑感<br /></li>
+<li>Leo老师教课,骨子里的激情<br /></li>
+</ul></li>
+<li>归因理论<br />
+<ul class="org-ul">
+<li>完成和没完成某件事情的原因,成败原因: Western没读完? 努力 VS 能力<br /></li>
+<li>控制能力, 进度条去算<br /></li>
+</ul></li>
+<li>Mastery Orientation VS Perfrmance Orientation: Leo更强调的英语能力+subskills,而不是技巧<br /></li>
+<li>self-efficacy<br />
+<ul class="org-ul">
+<li>如何提升? 完成Leo的作业,完成的越多,提升的越多.因为你会越来越相信I can.<br /></li>
+<li>Teachers with a sense of high self-efficacy is better than beset by self-doubts.<br />
+Leo如何看待我们?<br /></li>
+</ul></li>
+<li>做自己的老师<br /></li>
+<li>Goal setting, planning, and self-monitoring:<br />
+eg. 阅读听力分数制定<br /></li>
+<li>Expectations<br />
+<ul class="org-ul">
+<li>自己期望雅思分数 VS Leo期望雅思分数<br /></li>
+<li>Leo才雅思7.5,那是因为Leo裸考,7.5够用,要分散精力给创业.<br /></li>
+<li>德国的平均分7.5<br /></li>
+<li>学生在跟老师相处一段,就知道了老师真正的心理预期<br /></li>
+</ul></li>
+<li>Values and purpose(接近哲学,最重要!)<br />
+<ul class="org-ul">
+<li>书中问题:<br />
+<ul class="org-ul">
+<li>What's most important to you in your life?<br /></li>
+<li>Why do you care about those things?<br /></li>
+<li>Do you have any long-term goals?<br /></li>
+<li>Why are these goals important to you?<br /></li>
+<li>What does it mean to have a good life?<br /></li>
+<li>If you were looking back on your life now, how would you like to be remembered?<br /></li>
+</ul></li>
+<li>以上问题和雅思考试的关系? 或者! 与提升英语水平的关系?<br /></li>
+<li>做某事Why最重要.<br /></li>
+<li>巨大的人生武器: values and purpose<br />
+<ul class="org-ul">
+<li>案例<br />
+<ul class="org-ul">
+<li>英语热门主播 VS 尝试过的主播: 根本原因是动力<br /></li>
+<li>Leo一年2000块 VS 新东方50-80万<br /></li>
+<li>短视频20-30万粉丝照样放弃,缺乏动力<br /></li>
+</ul></li>
+<li>钱只是生意的副产品<br /></li>
+<li>有宗教信仰的人,坚定地完成了世人不敢做的事情<br /></li>
+<li>宗教的核心是哲学,内核是values and purpose,外延是宗教<br /></li>
+<li>在别人看着觉得很黑暗的时候,自己活得怡然自得<br /></li>
+<li>尼采的超人理论+中等收入陷阱<br /></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>无用之美: Western Cilivization VS Educational Psychology<br /></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org414bf18" class="outline-2">
+<h2 id="org414bf18">task10 6-1 泛读实战3 critical thinking</h2>
+<div class="outline-text-2" id="text-org414bf18">
+<ul class="org-ul">
+<li>如何完成一章的泛读?<br />
+<ol class="org-ol">
+<li>第一个周期(1.5小时): 框架+前言目录+进度条+focus questions+conclusions<br />
+<ol class="org-ol">
+<li>书名+目录<br /></li>
+<li>第一章及所有的小节标题<br />
+<ul class="org-ul">
+<li>判断有些小节可以不读: eg. A word about the exercises<br /></li>
+<li>遇到小节名不懂高兴,因为就是来学东西的<br /></li>
+</ul></li>
+<li>明确章节要解决的问题: focus questions或标题<br /></li>
+<li>conclusions: 肯定读不懂,过一遍就好<br /></li>
+<li>把一章的任务根据小节和页数拆解小任务<br /></li>
+</ol></li>
+<li>后续的周期(1.5小时): 每次完成第一个周期的一个小任务<br />
+<ul class="org-ul">
+<li>以解决focus questions为导向<br /></li>
+<li>每个小节都是更小的任务<br /></li>
+</ul></li>
+</ol></li>
+<li>为什么要制定学习计划?<br />
+Goal setting! 长期+短期计划,提升学习动力!<br /></li>
+<li>精读精听(跟读)+泛读泛听(跟听)+模考=阅读+听力成绩<br />
+<ul class="org-ul">
+<li>精读精听(跟读): 为泛读积累经验<br /></li>
+<li>泛读泛听(跟听): 练习subskills<br /></li>
+<li>模考: 培养心态+熟悉体型<br />
+<ul class="org-ul">
+<li>模考前: 差无所谓<br /></li>
+<li>模考中: 对比初期是否进步,没进步判断方法是否出问题或练习时间不够<br /></li>
+<li>模考后: 手感嘴感<br /></li>
+</ul></li>
+</ul></li>
+<li>备考计划<br />
+<ul class="org-ul">
+<li>参考计划<br />
+<ul class="org-ul">
+<li>上午:3h+<br />
+<ul class="org-ul">
+<li>听力:<br />
+早8-9:跟读新文章30min+旧文章30min=1h<br />
+休息娱乐15min-30min(冥想+听音乐+散步+???)<br /></li>
+<li>阅读:<br />
+早9:30-11点:精读+摘抄+造句=1.5h<br />
+休息娱乐15min-30min (冥想+听音乐+散步+???)<br /></li>
+<li>听力:<br />
+11:30-12:00:跟读新文章15min+旧文章15min=30min<br />
+休息娱乐:吃饭/午休etc.<br /></li>
+</ul></li>
+<li>下午:3h+<br />
+<ul class="org-ul">
+<li>阅读听力:<br />
+午2:00-3:30:泛读泛听=1.5h<br />
+休息娱乐15min-30min<br /></li>
+<li>阅读听力:<br />
+午4:00-5:30:泛读泛听=1.5h<br />
+休息娱乐:晚饭，锻炼身体走路等<br /></li>
+</ul></li>
+<li>晚上:3h+<br />
+<ul class="org-ul">
+<li>阅读听力:<br />
+晚7:00-8:30:泛读泛听=1.5h<br />
+休息娱乐15min-30min<br /></li>
+<li>阅读听力:<br />
+晚9:00-10:30:泛读泛听 =1.5h<br />
+休息娱乐:30min<br /></li>
+<li>听力:<br />
+晚11:00-?跟读新文章?min+旧文章?min =?min<br /></li>
+</ul></li>
+</ul></li>
+<li>计划原则<br />
+<ol class="org-ol">
+<li>听+读穿插进行,因为做相同的事情容易疲惫<br /></li>
+<li>学1.5h小时,一定要休息,按娱乐休息计划休息. eg.看抖音得不到放松<br /></li>
+<li>所有休息时间都可用于被动泛听,背景英语(老友记)<br /></li>
+<li>精听先于泛听,精读先于泛读<br /></li>
+<li>临睡前只跟读,不做动脑子的事情,会导致睡不着觉<br /></li>
+<li>半周休息一晚上,一周休息一下午+晚上<br /></li>
+</ol></li>
+</ul></li>
+<li>唠叨<br />
+<ul class="org-ul">
+<li>知道为什么做一件事情,效率会得到提升<br /></li>
+<li>搜索(research)+泛读+泛听=写作+口语<br /></li>
+<li>不论skimming/scanning都依赖于精读+泛读<br /></li>
+</ul></li>
+<li>英语(信息差+judgement)+生活工作学习=reading+listening+research=提升回国干事的成功率<br />
+<ul class="org-ul">
+<li>信息差<br />
+<ul class="org-ul">
+<li>Western Civilization &amp; Educational Psychology<br /></li>
+<li>知识 信息 信息差(美国+本土的了解)<br /></li>
+<li>middle: info.<br /></li>
+</ul></li>
+<li>judgement<br />
+<ul class="org-ul">
+<li>Critical Thinking: Leo读了10遍,才有了这个技能<br /></li>
+<li>"黑科技"思辨能力(能不能想明白事)<br /></li>
+<li>upper: info+judgement<br /></li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org000f663" class="outline-2">
+<h2 id="org000f663">task11 6-2 写作1 what why how</h2>
+<div class="outline-text-2" id="text-org000f663">
+<ul class="org-ul">
+<li>自学能力的重要性<br />
+<ul class="org-ul">
+<li>英语老师不是所有语法都会怎么讲课? 备课,搜英汉大词典<br /></li>
+<li>我们早晚会遇到不懂的语法,基础的懂+搜商(查语法书)+输入(阅读+听力)<br /></li>
+</ul></li>
+<li>雅思写作如何拿高分?<br />
+<ul class="org-ul">
+<li>有阅读习惯吗?<br />
+养成阅读习惯<br /></li>
+<li>有思考习惯吗?<br />
+英文阅读+时间精力换取思考能力<br /></li>
+<li>有搜索答案习惯吗?<br />
+面对问题时,是直接问别人,还是自己找答案(问权威).这些对于写作有影响<br /></li>
+<li>喜欢写作吗?<br />
+无所谓,没有写作习惯.<br />
+因为人的天性是害怕复杂,所以从'刷短视频',到'刷剧',到'阅读',到'写作',人数逐渐变少.<br />
+如果你经常做3+4,那么你可以碾压别人.<br /></li>
+<li>经常动笔吗?<br />
+没. 阅读+思考+搜商是输入,写作是输出<br /></li>
+</ul></li>
+<li>体验输出倒逼输入: 先完成再完美(inspectional reading)<br />
+<ol class="org-ol">
+<li>读完<br /></li>
+<li>为了summary,倒逼去scanning(你产生幻觉,觉得自己读懂了.用输出检查自己)<br /></li>
+<li>输出倒逼输入,可以把写作和口语都搞牛比了<br /></li>
+<li>两种方法碰撞: 读一遍+summary几遍 VS 读多次<br /></li>
+</ol></li>
+<li>葛公英语写作:<br />
+<ul class="org-ul">
+<li>Something to Say:<br />
+不能只搞家常,还需要补充其他内容,雅思会考. 内容!!!<br />
+<ul class="org-ul">
+<li>搜商+阅读+思考<br /></li>
+<li>泛读/泛听解决<br /></li>
+</ul></li>
+<li>How to Say It:<br />
+汉语都存在嘴替的情况,何况母语. 表达!!!<br /></li>
+<li>Other must have said it before you:<br />
+摘抄习惯用法+造句能力<br /></li>
+<li>What to Read:<br />
+葛公说的是精读,选择有局限.<br />
+实际所有泛读的一部分都可以精读,永远不缺精读材料.<br /></li>
+<li>How to Read:<br />
+NCE23示范<br /></li>
+<li>Self-Cultivation:<br />
+自学可行<br /></li>
+<li>Writting from Memory<br />
+Summary时,给自己讲遍语法等等&#x2026;<br /></li>
+<li>Initation, Conscious and Unconscious<br />
+有意识的造句,无意识的泛读.<br />
+读书(泛读)破万卷,下笔如有神(内容).泛读多了,可能会写出自己都惊艳的表达.<br /></li>
+<li>Expressing Another Person's Thoughts<br /></li>
+<li>Paraphrasing Sentences<br />
+复述靠的是: 同义词(单词量)+同义习惯用法,精读+泛读(尤其)<br /></li>
+<li>Choosing a subject<br />
+自己写作想啥是啥,雅思是命题作文<br /></li>
+<li>Taking Notes<br />
+头脑风暴<br /></li>
+<li>Making an Outline<br /></li>
+<li>Making Outlines of What You Read<br />
+雅思写作是40分钟, 审题和罗列大纲要练到1分钟<br />
+写作的满分是什么样的? 找10篇满分范文,提取大纲,就可以得到满分作文的大纲.<br /></li>
+<li>Expanding an Outline<br /></li>
+<li>What is Paragrahp?<br />
+类似于编程的子方法,一个方法做一个事情.写作的一个段落,解决一个topic.<br />
+大量泛读有助于分段,雅思写作过于简单.<br /></li>
+<li>Paragraphs and Outline<br /></li>
+<li>Topic Sentence<br />
+写作与阅读的联系.你阅读了遵循写作规则的写作,无意识地提升了自己的写作水平.<br /></li>
+<li>Transition between Paragraphs<br />
+过渡=结构<br />
+总结: 写作=内容+表达+结构. 都可以靠泛读解决,并且还能为口语提供表达.<br />
+汉语短(重意境) VS 英文长(重分析)&#x2026;金瓶梅不能看了<br /></li>
+</ul></li>
+<li>吃<br />
+<ul class="org-ul">
+<li>水每天2-3L,不能渴了再喝<br /></li>
+<li>前额叶非常消耗卡路里,不能减肥<br /></li>
+<li>主食: 杂粮 + 零食: 牛奶燕麦(注意别吃太多)<br /></li>
+</ul></li>
+<li>写作目的<br />
+<ul class="org-ul">
+<li>于人:向别人证明我有英语能力<br /></li>
+<li>于己:用英文写作解决生活工作学习上的问题<br /></li>
+</ul></li>
+<li>写作的哲学三问: What Why How<br />
+<ul class="org-ul">
+<li>大众的思考习惯: 最关注how,随便想想why,不思考what<br />
+eg. 这种思考习惯会直接导致失败.只思考如何财富自由?不思考,到底什么是财富自由?为什么要财富自由?<br /></li>
+<li>what? 破除枷锁,(解锁技能树)<br />
+<ol class="org-ol">
+<li>狭义理解: 作文+作品, 轻易不敢动笔,害怕失败,导致练习量大大降低.<br /></li>
+<li>广义理解: 造句就是写作.eg.朋友圈+造句+小故事+想法.<br />
+<ul class="org-ul">
+<li>无心理负担<br /></li>
+<li>练过离散句子 VS 没练过句子.<br /></li>
+<li>实际造句写作已经从NCE23开始了<br /></li>
+</ul></li>
+<li>先广义再狭义<br /></li>
+<li>破除枷锁: 知道what使我们大脑被认知锁死的技能得以释放出来.直接造出大量的句子.<br /></li>
+</ol></li>
+<li>why? 人类为什么要写作?<br />
+无论精神或世俗层面,都离不开写作.即便是不考试,也要提升写作能力.<br />
+<ul class="org-ul">
+<li>精神层面:<br />
+<ul class="org-ul">
+<li>写作使人精确,因为写出来后,可以反复修改,提升表达的命中率<br /></li>
+<li>把自己不开心的经验写一写,可以更好地理解自己,与自己对话<br /></li>
+</ul></li>
+<li>世俗层面:<br />
+<ul class="org-ul">
+<li>工作: 撰写文档<br /></li>
+<li>解决生活问题: 改善亲密关系,提升社交能力;分享,炫耀到社交平台<br /></li>
+<li>学习: 提升学习的吸收率(输出倒逼输入)<br /></li>
+</ul></li>
+<li>总结<br />
+<ol class="org-ol">
+<li>不要只为考试而写作,还要为更好的生活工作学习写作<br /></li>
+<li>用写作让自己更精确,更好地和自己对话<br /></li>
+</ol></li>
+</ul></li>
+<li>How? 如何写作?<br />
+<ol class="org-ol">
+<li>养成用写作来精准表达的习惯. 无论英汉<br /></li>
+<li>输出倒逼输入, 提升学习吸收率<br /></li>
+<li>用作业,亲身经历而非只是听到张中行广义的写作.<br /></li>
+</ol></li>
+<li>How? 框架<br />
+输入=精读&amp;泛读+精听&amp;泛听+skimming&amp;outline&amp;scanning(段首尾)<br />
+Critical Thinking=思考+总结+处理信息<br />
+输出=写作+口语<br />
+媒介=内容+结构+表达<br /></li>
+<li>How? 步骤: 读+练+改<br />
+<ol class="org-ol">
+<li>大量阅读: task0.5,读书破万卷,下笔如有神.<br />
+<ol class="org-ol">
+<li>表达: 摘抄expression+words etc. + 造句(至少看例句)<br /></li>
+<li>言之有物: 吸取写作内容<br /></li>
+<li>行为结构: 看别人<br />
+<ul class="org-ul">
+<li>如何分段<br /></li>
+<li>段内如何组织 + 句子之间如何过度<br /></li>
+<li>段与段如何过度<br /></li>
+<li>n个段落如何排列<br /></li>
+<li>篇章的结构 (泛读+下节课)<br /></li>
+</ul></li>
+</ol></li>
+<li>随手练习: task0.5, 广义写作+summary+outline+做葛公的英文写作<br />
+<ol class="org-ol">
+<li>写什么? 句子+段落+(单词/短语)碎片<br /></li>
+<li>为什么? 养成习惯+复利提升雅思写作<br /></li>
+<li>How? 不追求好坏, 想说啥,就写啥.<br /></li>
+<li>Summary + outline + 葛公英语写作?????<br /></li>
+</ol></li>
+<li>为考试练习的写作-下节课<br />
+能不能不经过2,直接3呢?<br />
+难+实操性差导致: 练习量小<br /></li>
+<li>写完要修改: 屎上雕花<br />
+<ol class="org-ol">
+<li>修改什么?<br />
+<ol class="org-ol">
+<li>表达:单词+语法+习惯用法<br /></li>
+<li>内容(critical thinking)<br /></li>
+<li>行文结构<br /></li>
+</ol></li>
+<li>修改前提? task0.5<br />
+<ol class="org-ol">
+<li>表达: 下节课<br /></li>
+<li>内容: 必须进行新的阅读<br /></li>
+<li>行文结构: 知道满分的行文结构<br /></li>
+<li>素材: 还得先有一坨<br /></li>
+</ol></li>
+<li>为什么改?<br />
+<ol class="org-ol">
+<li>改是提分的关键.找老师改,老师提分很快,纯纯的大怨种行为.<br /></li>
+<li>阅读决定了理论写作分数的上线, 改决定了有多逼近理论上线.<br /></li>
+</ol></li>
+<li>100篇1次修改 VS 10篇改10次: 选后者!!!<br /></li>
+</ol></li>
+</ol></li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org715b14e" class="outline-2">
+<h2 id="org715b14e">task12 7-1 写作2 开始介绍+task2</h2>
+<div class="outline-text-2" id="text-org715b14e">
+<ul class="org-ul">
+<li>复习下学习金字塔<br /></li>
+<li>推荐HBR(Harvard Business Review)<br />
+<ul class="org-ul">
+<li>what: 超过对商业理解的知识<br />
+eg. mindfulness, resilience, influence persuasion, authentic leadership, empathy<br /></li>
+<li>why: HBR学会是真的有用,养成阅读满足好奇心的习惯. 靠习惯而不是靠意志力,意志力是有限的<br /></li>
+<li>How: 半小时一篇文章,非常适合做精读<br /></li>
+<li>eg.<br />
+<ol class="org-ol">
+<li>How to Practice Mindfulness Throughtout Your work day<br /></li>
+<li>Mindfulness for people who are too busy to meditate<br /></li>
+<li>Understand the four components of influence 地位/情绪/专业/微妙的肢体语言<br />
+地位: 3W粉 VS 300W粉<br />
+情绪+专业:说服大佬<br /></li>
+<li>Being Happy at Work Matters<br /></li>
+</ol></li>
+</ul></li>
+<li>中文的写作: 最早的造句(看图造句,用词语造句),才开始写日记,写作文<br /></li>
+<li>写作的提升: 提升靠的是精读+泛读,写作是最后的结果<br /></li>
+<li>输出倒逼输入: 是teach yourself的过程,有两种形式:写作和口语<br />
+用一句话总结段落的核心主旨,可以锻炼写作,验证是否读懂段落<br /></li>
+<li>雅思写作满足的仅仅是底线,绝不满足,因为工作中通常是2000-5000字,有大量的邮件来往<br /></li>
+<li>雅思G类考试: 时间充裕,但需要多准备<br />
+<ul class="org-ul">
+<li>task1 20mins,150+ 私人信件(阅读+写作)<br /></li>
+<li>task2 40mins,250+ 议论文(Conclusion+Reasons)<br /></li>
+</ul></li>
+<li>雅思G类写作task2: 整体准备方案=读(1+2)+练(3+4)+改(5+6)<br />
+<ol class="org-ol">
+<li>审题+评分标准<br /></li>
+<li>先搜商,再泛读&amp;泛听吸收内容+结构+表达<br /></li>
+<li>罗列outline:练至一分钟搞定<br /></li>
+<li>练<br /></li>
+<li>参考高分范文改: 表达+内容+结构<br /></li>
+<li>模考(前中后)<br /></li>
+</ol></li>
+<li>审题 + 评分标准<br />
+<ul class="org-ul">
+<li>审题:<br />
+审题是最重要的,你可以不努力,但是必须把正确的东西交给老板.<br />
+审题不对,十几个小时的写作全部白搭.<br />
+没有阅读能力,无法审题,也就没有资格练写作.听力与口语亦是如此,这也是要练四句型的原因.<br />
+eg. history,不单单指历史,还有经历<br /></li>
+<li>评分标准:<br />
+<ul class="org-ul">
+<li>有了评分标准,写作才有标准,往那个标准上靠<br /></li>
+<li>在四项维度上各自进行评分,最后算平均分,eg. (9+9+8+6)/4=8<br /></li>
+<li>词汇丰富程度: 单词+习惯用法<br />
+<ul class="org-ul">
+<li>词汇丰富: 同义词汇/习惯用法总量大, 总词汇量大, 靠泛读解决<br />
+eg. important, important, important VS important, of importance, crucial<br /></li>
+<li>达意准确: 更具体的词汇要优于更抽象的词汇, 仍旧是总词汇要大<br />
+eg. fruit VS apple<br /></li>
+<li>标点符号: 逗号+句号<br /></li>
+<li>拼写错误: morning vs monring,仍然可以得满分, 因为只要是人类就会有错误<br /></li>
+<li>词汇搭配错误: 习惯用法的介词有点错误,也没事<br /></li>
+</ul></li>
+<li>语法多样性及准确性: 语法<br />
+<ul class="org-ul">
+<li>在精读的时候练,而不是写作的时候. NCE23+Pattern Drill+红皮书<br /></li>
+<li>丰富多样的语法结构: 整理出大语法结构,用大语法结构和作文去检查是否出现,没有就想法弄出来<br /></li>
+<li>语法错误: 语法的三单,单复数没问题,大语法结构没错就行<br /></li>
+</ul></li>
+<li>连贯与衔接: 结构(outline)<br />
+<ul class="org-ul">
+<li>连贯<br /></li>
+<li>有条理地排序,推进<br /></li>
+</ul></li>
+<li>写作任务回应情况: 内容<br />
+<ol class="org-ol">
+<li>题目问啥,作文就写啥.每个论点内容长度控制得差不多.<br /></li>
+<li>始终一个论点,不要缺乏论点<br /></li>
+</ol></li>
+<li>总结:<br />
+<ul class="org-ul">
+<li>内容+结构: 可以脱离英语去练习,中文的水平一般是英文水平的上限<br /></li>
+<li>结构易拿高分(8-9). 词汇+语法需有些敬畏,母语者一般8-8.5. 内容只能靠积累.<br /></li>
+</ul></li>
+</ul></li>
+<li>考察内容+结构+表达<br />
+<ul class="org-ul">
+<li>表达准备: 单词+语法+习惯用法<br />
+<ul class="org-ul">
+<li>单词总量+同义词(阅读听力口语): 精读(造句)+泛读<br /></li>
+<li>语法:<br />
+<ul class="org-ul">
+<li>整理大语法结构<br />
+<ul class="org-ul">
+<li>3大从句: n. adj. adv.<br /></li>
+<li>非谓语: to do &amp; doing &amp; done定语状语<br /></li>
+<li>虚拟语气<br /></li>
+<li>特殊句型: 强调句etc.<br /></li>
+<li>特殊结构: needn't have done &amp; should have done etc.<br /></li>
+<li>谓语结构:<br />
+<ul class="org-ul">
+<li>时态主动 &amp; 被动<br /></li>
+<li>情态动词主动 &amp; 被动<br /></li>
+<li>情态动词表推测<br /></li>
+</ul></li>
+</ul></li>
+<li>大语法结构,对比自己的文章,缺什么补什么(哪怕拙劣)<br /></li>
+<li>反复看语法红皮书+反复跟读新23,可以大幅度提升正确率<br /></li>
+<li>用grammarly检查自己作文的准确性<br /></li>
+<li>自己检查语法的丰富程度,自己改提升的最快<br /></li>
+<li>介词,冠词,副词这些玩意,Leo读过研究生的都不配研究. 大量无意识的泛读,输入正确的即可.<br /></li>
+</ul></li>
+<li>习惯用法: 摘抄+造句<br /></li>
+</ul></li>
+<li>内容+结构准备: skimming+summary+outline<br />
+泛读+泛听<br /></li>
+<li>结构准备:<br />
+<ul class="org-ul">
+<li>what?:<br />
+<ul class="org-ul">
+<li>如何分段<br />
+总+分1+分2+总,不要玩花活<br /></li>
+<li>段内如何组织(topic sentence)<br />
+总1: 审题后复述题目(换单词+句型,含义不变),再复述题目2,回答题目的问题或总起句<br />
+分1: topic sentences, 放句首,因为每写一句话都可以检查,有没有回答第一句话(不跑题)<br />
+分2: 分2和分1一样,注意两段长度要差不多<br />
+总2: 总结分1,再总结分2(给的是结论).<br /></li>
+<li>段间如何过渡,n个段落如何排列,句子之间如何过度,篇章的结构<br />
+段间过渡与句子过渡是一码事,eg. 范文文件中红字都是连接结构.<br />
+靠阅读:泛读+精读高分范文(理解模仿运用红字部分)<br /></li>
+</ul></li>
+<li>常见结构:<br />
+<ul class="org-ul">
+<li>第一段落: 复述题目的主要内容(审题后复述)+提出自己的结论+支持的论点12<br /></li>
+<li>第二段: 论点1: topic sentences + details(例子+细节等等)<br /></li>
+<li>第三段: 论点2: topic sentences + details(例子+细节等等)<br /></li>
+<li>第四段: 重申+总结所有观点<br /></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>如何修改自己的作文<br />
+<ul class="org-ul">
+<li>范文: writing9找+google<br /></li>
+<li>结构<br />
+<ul class="org-ul">
+<li>分段:总1,分1,分2,总2<br /></li>
+<li>段间: 把结构词,硬往里面套<br /></li>
+<li>段内内容(分1和分2非段首尾的部分):<br />
+靠泛读+思考+模仿Band9(简单粗暴)<br /></li>
+<li>列outline:大纲只用列分1和分2,1分钟搞定(练熟)<br /></li>
+</ul></li>
+<li>标点符号: 逗号+句号<br /></li>
+<li>改表达: 相同表达重复率高的换表达<br /></li>
+<li>AI<br /></li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org3d98e00" class="outline-2">
+<h2 id="org3d98e00">task13 7-2 写作3 task2+task1</h2>
+<div class="outline-text-2" id="text-org3d98e00">
+<ul class="org-ul">
+<li>附加值: How to read a book?<br />
+<ul class="org-ul">
+<li>What is a great book?<br />
+本科教材都是科普的,称不上是great books, great books是随着你成长,会感觉跟着你成长,需要你一遍遍地去读.<br />
+雅思阅读-&gt;本科(知识)-&gt;great books<br />
+反例: 唐家三少<br /></li>
+<li>Why do we need to read great books?<br />
+通过书籍的方式与行业最牛逼的人对话, eg. 幻觉亚里士多德站在我面前与我对话<br /></li>
+<li>How to read them?<br /></li>
+<li>Levels of reading?<br />
+<ol class="org-ol">
+<li>in a linear fashion<br /></li>
+<li>inspectional, skimming and scanning<br /></li>
+<li>analytical(美高/美本/中博)<br /></li>
+<li>topical 一群大师站在你面前; 本身需要搜商,现实生活也需要<br /></li>
+</ol></li>
+</ul></li>
+<li>感受,通过改确实可以提分<br /></li>
+<li>阅读思考模仿高分范文的结构<br />
+<ol class="org-ol">
+<li>对着改第一段<br /></li>
+<li>改最后一段<br /></li>
+<li>分1,分2,首句永远是topic sentences<br /></li>
+<li>段落内,用高分范文对着修改<br /></li>
+</ol></li>
+<li>如何改表达<br />
+<ol class="org-ol">
+<li>如果准备表达(单词+习惯用法+语法)<br />
+精读/精听/泛读/泛听+NCE23+C12<br /></li>
+<li>如何改表达<br />
+<ul class="org-ul">
+<li>单词<br />
+<ol class="org-ol">
+<li>不会,查字典!!!<br /></li>
+<li>全文有10个important,字典,AI,Google查,eg. the synonyms of important<br /></li>
+<li>达意准备,eg. walk VS stumble. 中国专门有编辑做这个事情.<br />
+在主动上放弃,在被动上多积累(精读/精听/泛读/泛听)<br /></li>
+</ol></li>
+<li>习惯用法: 与单词同<br /></li>
+<li>语法:<br />
+<ol class="org-ol">
+<li>首先学NCE23+C12到80%的语法对了,这是基础<br /></li>
+<li>准备好自己的语法大结构<br />
+<ol class="org-ol">
+<li>有连词,and but or so because since<br /></li>
+<li>状语从句<br /></li>
+<li>定语从句<br /></li>
+<li>状语从句和定语从句,改成分词做状语定语<br /></li>
+<li>to do<br /></li>
+<li>谓语结构,很基础<br /></li>
+<li>名词性从句,宾语从句,同位语从句,主语(不以语法),表语从句<br /></li>
+</ol></li>
+</ol></li>
+</ul></li>
+<li>9分文章的表达在母语者眼里也一般<br /></li>
+</ol></li>
+<li>内容<br />
+<ul class="org-ul">
+<li>为什么感觉内容比表达要难?<br />
+因为从小到大,没有培养思考的能力.<br />
+<ol class="org-ol">
+<li>没有产生相关疑惑<br /></li>
+<li>没有搜索习惯<br /></li>
+<li>没有阅读能力<br /></li>
+</ol></li>
+<li>最快搞定内容 VS B站/Youtube保姆级教程<br />
+<ul class="org-ul">
+<li>how<br />
+<ol class="org-ol">
+<li>找到writing9 band9的范文,放AI翻译.<br /></li>
+<li>从问题,分1和分2的疑问,开始阅读+思考<br /></li>
+<li>千万不要背,理解复述.不以读懂为目的,以口语复述为目的.<br /></li>
+</ol></li>
+<li>time: 5分钟一篇, 1小时10篇. 投入20个小时<br /></li>
+<li>无需中文复述,无非最后把这些内容变成中文<br /></li>
+<li>内容写作需要,口语也需要<br /></li>
+</ul></li>
+<li>泛读+泛听,task0.5-4<br /></li>
+</ul></li>
+<li>writing9 4分作文利用,用来改别人的,自己不用写那么多<br /></li>
+<li>G类 Task1<br />
+<ul class="org-ul">
+<li>how:<br />
+<ol class="org-ol">
+<li>练: 试着自己写<br /></li>
+<li>读: 范文阅读<br /></li>
+<li>改<br /></li>
+<li>对比范文+评分标准 VS 自己写的文章<br />
+范文,writing9找<br /></li>
+</ol></li>
+<li>评分标准:<br />
+<ul class="org-ul">
+<li>其他与task2一致<br /></li>
+<li>写作任务回应情况: 内容<br />
+<ul class="org-ul">
+<li>内容较为日常,无需特意去学,描述(故事)或说明.<br /></li>
+<li>VS task2,task2是议论文<br /></li>
+<li>泛读泛听<br /></li>
+<li>干范文<br /></li>
+</ul></li>
+</ul></li>
+<li>备考方案<br />
+<ul class="org-ul">
+<li>练好task2<br /></li>
+<li>审题+精读范文+思考内容结构表达<br /></li>
+<li>模考1-2次<br /></li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org1e43ce7" class="outline-2">
+<h2 id="org1e43ce7">task14 8-1 口语1+口语2 实战演练</h2>
+<div class="outline-text-2" id="text-org1e43ce7">
+<ul class="org-ul">
+<li>写作回顾:<br />
+<ol class="org-ol">
+<li>写作的what why how 入门+多读练多改<br /></li>
+<li>写作task2<br />
+<ul class="org-ul">
+<li>内容: 泛读泛听+干高分范文<br /></li>
+<li>结构: 模仿高分范文+总分总<br /></li>
+<li>表达:<br />
+<ul class="org-ul">
+<li>总量+丰富+达意(大量泛读泛听)<br /></li>
+<li>语法(准确性+丰富程度)<br /></li>
+</ul></li>
+</ul></li>
+<li>写作task1: 转换成阅读+思考题,而不用写作<br /></li>
+</ol></li>
+<li>Positive psychology<br />
+<ul class="org-ul">
+<li>WHAT<br />
+"Positive psychology is the scientific study of what makes life most worthliving."<br />
+基于统计学,而不是心灵鸡汤.又译为幸福心理学,是心理学的分支.<br /></li>
+<li>WHY? -10&#x2013;0&#x2013;10<br />
+To push this brief description a bit further, positive psychology is ascientific approach to studying human thoughts, feelings, and behaviorwith a focus on strengths instead of weaknesses, building the good inlife instead of repairing the bad, and taking the lives of average peopleup to "great" instead of focusing solely on moving those who arestruggling up to"normal"(Peterson,2008).<br />
+<ul class="org-ul">
+<li>奔10走<br />
+大众一般认为-10-0才需要心理学.为了幸福,需要做一些事情.<br /></li>
+<li>my personal experience<br />
+leo学了10年,现在比10年更加幸福<br />
+大多数人上班如上坟;有为了目的,职业生涯;有为了自己的使命,为社会做贡献.<br /></li>
+<li>留学生+移民: 高危人群+学习效率更高<br />
+是抑制高焦虑高抑郁的良药.心情好对比心情差效率要高的多<br /></li>
+<li>建立大脑免疫系统<br /></li>
+<li>泛读+泛听 自己查查<br /></li>
+</ul></li>
+<li>how? 泛读+泛听(学知识+提升阅读听力能力)<br />
+<ol class="org-ol">
+<li>Harvard公开课 积极心理学<br /></li>
+<li>Learned Optimism<br /></li>
+<li>Positive psychology<br /></li>
+<li>coursera<br /></li>
+<li>搜商+泛读+泛听<br /></li>
+</ol></li>
+</ul></li>
+<li>高分视频: B站~Youtube随便找<br /></li>
+<li>哲学三问<br />
+<ul class="org-ul">
+<li>what<br />
+<ol class="org-ol">
+<li>随口说(类似写作涂鸦)<br /></li>
+<li>考试<br /></li>
+</ol></li>
+<li>why improve<br />
+<ol class="org-ol">
+<li>于外-考试成绩<br /></li>
+<li>于内-生活工作[参考&lt;Leo的奥大留学故事&gt;],去小红书,外企工作的经验<br /></li>
+</ol></li>
+<li>why hard<br />
+<ul class="org-ul">
+<li>重练习+轻积累+心理压力大(挑刺习惯)<br />
+<ol class="org-ol">
+<li>重练习: eg.才学新1就想着去找老外练习<br />
+<ul class="org-ul">
+<li>先读几本书,脑子里面淤积了一堆表达,再去找老外练习<br /></li>
+<li>英语角是去练习的,实际一大段对话,只积累了1-2单词,积累效率极低<br /></li>
+<li>聊天没内容的话,普通口语没什么好聊的<br /></li>
+<li>eg. leo看了大量的健身视频,积累了很多词汇,内容(泛读泛听)<br /></li>
+</ul></li>
+<li>轻积累: 导致不知道如何说(表达),无话可说(内容)<br /></li>
+<li>心理压力大(挑刺习惯),口音警察<br />
+<ul class="org-ul">
+<li>外交官尚且带东北腔<br /></li>
+<li>口音警察,口音几乎是口语最不重要的点<br /></li>
+<li>担心犯错,语法小错误~单词+习惯用法出错, 如何解决???<br /></li>
+</ul></li>
+</ol></li>
+<li>What is your greatest fear top5?<br />
+<ol class="org-ol">
+<li>public speaking<br /></li>
+<li>speaking up in a meeting or class<br /></li>
+<li>meeting new people<br /></li>
+<li>talking to people in authority<br /></li>
+<li>important examination or interview<br /></li>
+<li>going to parties<br /></li>
+<li>talking with strangers<br /></li>
+</ol></li>
+<li>what do you think?<br />
+<ul class="org-ul">
+<li>solution1<br />
+<ol class="org-ol">
+<li>Acquire Speaking Experience<br />
+对着镜子,自己跟自己聊<br /></li>
+<li>Prepare, Prepare, Prepare<br />
+准备到,艺高人胆大<br /></li>
+<li>Think Positively<br />
+多想想好的事情<br /></li>
+<li>Use the Power of Visualization<br />
+想想自己的成功<br /></li>
+<li>Know that most neverousness isn't<br />
+别人看不到你有多紧张<br /></li>
+<li>visible<br /></li>
+<li>Don't expect perfection<br />
+不要期望完美,一定会出错<br /></li>
+</ol></li>
+<li>solution2<br />
+问题意识+搜商+泛读+输出倒闭输入<br /></li>
+</ul></li>
+</ul></li>
+<li>how: 口语:积累+练习 VS 写作:读+练+改<br /></li>
+</ul></li>
+<li>Exam Intro. G类:11-14mins 母语者也才8-8.5,Leo8-&gt;8.5分<br />
+<ul class="org-ul">
+<li>Part1: 4-5mins<br />
+<ul class="org-ul">
+<li>topic: 考官自我介绍+核对考生身份; 熟悉的话题<br />
+eg. Summer:<br />
+  Is summer your favourite time of year? [Why/Vhy not?]<br />
+  What do you do in summer when the weather's very hot? [Why?]<br />
+  Do you go on holiday every summer? [Why/hy not?]<br />
+  Did you enjoy the summer holidays when you were at school? [Why/Why not?]<br /></li>
+<li>这是为什么有四句型转换和comprehension,这些都需要跟读成诵<br /></li>
+<li>内容: 不需要泛读泛听,很日常<br /></li>
+<li>可以不可以只回答Yes or No? 不可以,因为要解释why<br /></li>
+</ul></li>
+<li>Part2: 3-4mins<br />
+<ul class="org-ul">
+<li>topic:<br />
+Describe a luxury item you would like to own in the future.<br />
+You should say:<br />
+  what item you would like to own<br />
+  what this item looks like<br />
+  why you would like to own this item<br />
+and explain whether you think you will ever own this item.<br />
+<ol class="org-ol">
+<li>给个答题任务卡,铅笔+草稿纸做笔记<br /></li>
+<li>1min准备提纲<br /></li>
+<li>说话题1-2min<br /></li>
+<li>考官2min打断考生,问一两个问题作为结束语<br /></li>
+</ol></li>
+<li>1min准备提纲,写作task2已经练了<br /></li>
+<li>汉语说不到两分钟,英语就别做梦了.<br />
+<ol class="org-ol">
+<li>平常对于这种话题没有足够的积累讨论,没有认真阅读思考研究过.<br />
+从小到大,也没有被人鼓励去聊这些<br /></li>
+<li>这里有4个问题. 眼睛有毛病吗? 认真审题!!!<br /></li>
+<li>最后的问题可以解释为how, why<br /></li>
+</ol></li>
+<li>与其一直说被考官打断,也不要停下来被扣大分<br /></li>
+</ul></li>
+<li>Part3: 4-5mins<br />
+<ul class="org-ul">
+<li>topic: 就Part2的抽象部分双向讨论<br />
+Expensive questions:<br />
+Example questions:<br />
+  Which expensive items would many young people (in your country) like to buy?<br />
+  How do the expensive items that younger people want to buy<br />
+    differ from those that older people want to buy?<br />
+  Do you think that people are more likely to buy expensive items<br />
+    for their friends or for themselves?<br />
+Rich people:<br />
+Example questions:<br />
+  How difficuit is it to become very rich in today's worid?<br />
+  Do you agree that money does not necessarily bring happiness?<br />
+  In what ways might rich peopile use their money to help society?<br /></li>
+<li>Necessarily bring happiness: 像写作task2,议论文,这就是先写作后口语的原因<br /></li>
+<li>双向讨论:还没说完,考官打断你,说不赞成你,问你怎么看?可能会害怕,练就自圆其说的能力,就着他的话去聊.<br /></li>
+</ul></li>
+</ul></li>
+<li>评分标准+考察能力<br />
+---------------&#x2013;&#x2014;流利性与连贯性<br />
+<ol class="org-ol">
+<li>fluency=内容+表达<br />
+<ol class="org-ol">
+<li>跟读+tell the story(retell + teach yourself)<br />
+大量跟读是fluency的前置条件<br /></li>
+<li>内容: 泛读/听+写作+观看高分视频<br /></li>
+</ol></li>
+<li>fully development(crtical thinking)<br />
+task2的总分总<br /></li>
+<li>outline+连词<br />
+reading(subskills)+writting(写作task2的结构练习)<br /></li>
+<li>discourse markers<br />
+Friends+美剧电影(被动泛听+跟读美剧)<br />
+---------------&#x2013;&#x2014;words+expressions<br /></li>
+<li>总量<br />
+精读/跟读+泛读/听+写作<br /></li>
+<li>同义词<br />
+精读/跟读+泛读/听+写作<br /></li>
+<li>准确度<br />
+精读/跟读+泛读/听+写作<br />
+---------------&#x2013;&#x2014;grammar<br /></li>
+<li>准确性<br />
+精读/跟读+泛读/听+写作<br /></li>
+<li>多样性 丰富程度<br />
+精读/跟读+泛读/听+写作<br /></li>
+<li>从句使用<br />
+精读/跟读+泛读/听+写作<br />
+---------------&#x2013;&#x2014;pronunciation<br /></li>
+<li>语音 语调 语速 变音<br />
+跟读<br /></li>
+<li>accent<br />
+ 跟读<br />
+---------------&#x2013;&#x2014;隐藏<br /></li>
+<li>迅速罗列大纲<br />
+写作task2<br /></li>
+<li>听/看懂题目<br />
+听力+阅读<br /></li>
+</ol></li>
+<li>备考策略:如何积累?如何练习?<br /></li>
+<li>练习+模考:<br />
+<ol class="org-ol">
+<li>随口说(monologue像写作涂鸦)<br />
+脑海创建场景,一人分饰两角色,自己和自己过家家<br /></li>
+<li>Summary + retell(最后两课,输出倒闭输入) 下节课!!!<br /></li>
+<li>重内容+轻表达!!!<br />
+非常重要,只注重内容,只想内容,哪怕表达是乱七八糟,只想表达自己的意识.<br />
+eg. 在巴黎把钱包丢了,找到警局,要表达自己的意思.提高内容的表达率,练习如果有错怎么办?<br />
+表达有错的解决:<br />
+<ol class="org-ol">
+<li>口语之前做足够多的积累,拒绝思考语法,语音.要多练<br /></li>
+<li>或修改<br /></li>
+</ol></li>
+<li>积累与修改<br />
+<ol class="org-ol">
+<li>积累: 口语之前做足够多的积累,拒绝思考语法,语音.要多练!!!<br /></li>
+<li>修改: 要少做<br />
+口语-&gt;录音-&gt;音频转文字-&gt;阅读-&gt;修改文章-&gt;口语<br /></li>
+</ol></li>
+<li>细节: 雅思口语考试 注意预约etc.(预约和实际时间不一致)<br /></li>
+</ol></li>
+<li>实战演练<br /></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgcc97805" class="outline-2">
+<h2 id="orgcc97805">task15 8-2 方案整合 降维打击1</h2>
+<div class="outline-text-2" id="text-orgcc97805">
+<ul class="org-ul">
+<li>附加值: sleep smarter<br />
+<ul class="org-ul">
+<li>why?<br />
+醒着的时候浑身有使不完的力气; 困了到头就睡<br /></li>
+<li>How PDF<br />
+<ol class="org-ol">
+<li>白天晒太阳<br /></li>
+<li>睡前不看蓝光<br /></li>
+<li>下午3点后,不摄入咖啡因<br /></li>
+<li>室温低点,睡前半小时洗澡<br /></li>
+<li>定时睡觉<br /></li>
+<li>光线暗<br /></li>
+<li>不喝酒,喝酒晕不是深度睡眠<br /></li>
+<li>Get Grounded: 光脚接地交换电子10分钟<br /></li>
+<li>减肥<br /></li>
+<li>好床垫<br /></li>
+</ol></li>
+</ul></li>
+<li>口语<br />
+<ul class="org-ul">
+<li>口语的石化<br />
+<ol class="org-ol">
+<li>直接张嘴说,不管语法之类的.初期大面积提升,但是会长期停留在一个水平<br /></li>
+<li>大量积累,初期缓慢,容易坚持不住,到达拐点后,飞速上升<br /></li>
+</ol></li>
+<li>语言的滞后性: 三岁的弟弟突然有一天会说话<br /></li>
+<li>口语练习时,只关注内容,其他都靠积累提升<br />
+eg.学龄前的孩子说话,只会关心内容<br /></li>
+<li>口语练习时,放轻松<br />
+<ul class="org-ul">
+<li>母语照样会卡壳<br /></li>
+<li>语言的滞后性,三岁的孩子突然有一天会说话<br /></li>
+<li>不纠音也不理会别人的纠音.<br />
+<ul class="org-ul">
+<li>纠音多了会导致每次说话做判断,变得结巴<br /></li>
+<li>不用纠音,长期大量输入正确的,会自然纠错. eg. 如萍的多多<br /></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>口语真题练步骤<br />
+<ul class="org-ul">
+<li>下载真题库<br /></li>
+<li>审题,审清楚来<br /></li>
+<li>用嘴巴说,注意拓展. 多说说why和how<br /></li>
+<li>看9分视频<br /></li>
+<li>修改可以不修改<br /></li>
+<li>汉语英语都可以.但是过渡是汉语越来越少<br /></li>
+</ul></li>
+<li>雅思托福备考计划 (1000小时+具体+6个月+挑战性) 7.5分<br />
+<ul class="org-ul">
+<li>1000小时! 目标定在7分,即便考了试,继续学听说读写<br /></li>
+<li>一阶段必须到达7-8分,带着阅读和听力的技能进入下一阶段,因为下一阶段要用<br /></li>
+<li>泛读: 第二遍会小于2个月<br /></li>
+<li>泛听: 听力task4就是听课,可以直接干公开课<br /></li>
+<li>二阶段,之所以看真题是因为看有没有内容可说<br /></li>
+<li>二阶段,虽然目的不是阅读和听力,但是提升口语+写作的同时,就是会提升听力<br /></li>
+<li>模考的成绩,大概率是4-4-3.5-&#x2026;6-7,等待复利的时机,不是直线上升的<br /></li>
+<li>挑战性: 根据自己现有的能力,去鼓励自己加餐<br /></li>
+<li>要加速前进,而不是匀速,这是最重要的<br /></li>
+</ul></li>
+<li>降维打击?<br />
+<ol class="org-ol">
+<li>带着问题,时时审题<br />
+阅读听力要有问题意识<br /></li>
+<li>输入: 内容+结构+表达<br />
+方法 skimming+scanning+outline<br /></li>
+<li><p>
+输出: 写作/口语/行动<br />
+行动:<br />
+</p>
+<ol class="org-ol">
+<li>输入为行动提供方案<br /></li>
+<li>时发现做不下去,回头再去看说明书,再继续行动,循环<br /></li>
+</ol>
+<p>
+写作口语:<br />
+</p>
+<ol class="org-ol">
+<li>输入提供内容+结构+表达, 方法是paraphrase+summary<br /></li>
+<li>输出不了,又回过来再输入<br /></li>
+</ol>
+<p>
+同时用输出对于题目,检验自己自己的输入<br />
+</p></li>
+<li>生活中有这种能力,会非常成功.<br /></li>
+</ol></li>
+<li>智慧<br />
+<ol class="org-ol">
+<li>自己解决问题的意愿+问题+搜商<br /></li>
+<li>英汉[阅读+听力]<br /></li>
+<li>英汉[口语+写作=复述],123无限循环,得到4<br /></li>
+<li>知识+信息查+英语, 4多了,最后得到5<br /></li>
+<li>智慧, 最终带来钱和权<br /></li>
+</ol></li>
+</ul>
+</div>
+</div>
+</div>
+</body>
+</html>

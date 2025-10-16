@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-01-29 Wed 16:42 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-orgc481b1a" class="outline-2">
+<h2 id="orgc481b1a">5-2 5.7 Separation-Individuation 1</h2>
+<div class="outline-text-2" id="text-orgc481b1a">
+<p class="verse">
+So when we're looking at transforming relationships,<br />
+&#xa0;an important aspect that comes up is a process of Separation-Individuation.<br />
+And so traditionally that comes from Attachment Theory.<br />
+Where we look at the child's slowly but surely kind of becoming their own person<br />
+&#xa0;and separating from their very enmeshed relationship with their caregiver.<br />
+But in SSLD we kind of understand it differently, right?<br />
+Yeah, I think Attachment Theory actually makes a significant contribution<br />
+&#xa0;to our understanding of relationship from like childhood onwards.<br />
+And I think<br />
+&#xa0;Separation Individuation provides a good conceptual structure for making sense of things.<br />
+<br />
+But given our experience working not only with children, with their caregiver or parent,<br />
+&#xa0;we also work with like people<br />
+&#xa0;&#xa0;who are older and deal with issues that are discovered later in life.<br />
+We have a slightly different take on this.<br />
+First of all, when we talk about Separation Individuation,<br />
+&#xa0;we find that not everyone completes that process when they're in their childhood.<br />
+Some people actually will take way longer.<br />
+You have people<br />
+&#xa0;who are very dependent on a parent or parental figure for a long time<br />
+&#xa0;&#xa0;and doesn't really complete the separation individuation until much older.<br />
+And then we also have the other side of the story which is like the parent not being able to let go.<br />
+And then when the child is supposed to leave,<br />
+&#xa0;the parent is sort of holding on and not allowing that separation individuation to happen.<br />
+We also see that in relationships that are enmeshed<br />
+&#xa0;and then you have two persons involved in a relationship<br />
+&#xa0;&#xa0;which is like in a way resembling a parent-child situation.<br />
+And then like you have the same, or not exactly the same, but like very similar dynamics.<br />
+And one person is like making the decisions, like taking care and providing,<br />
+&#xa0;and then the other person is dependent on that other person.<br />
+And when this person wants to gradually move out of that relationship and becomes independent,<br />
+&#xa0;there will be a lot of tension and reluctance maybe.<br />
+And sometimes can be even like outright conflict, aggression, hostility.<br />
+So yeah like Separation Individuation<br />
+&#xa0;is a very useful conceptual frame or metaphor for understanding relationships.<br />
+<br />
+Maybe you can tell us a little bit about why it is so difficult for some people<br />
+&#xa0;to really engage in this process of separation and individuation in relationship?<br />
+Well, like you know,<br />
+&#xa0;in the SSLD framework we always use this one little interesting concept of needs, right?<br />
+And then like, how does it work?<br />
+Our analysis goes something like this.<br />
+When someone is heavily invested in a relationship and cannot let go,<br />
+&#xa0;and cannot leave that relationship and become like more independent.<br />
+It usually means that this person doesn't have a lot of options from other sources<br />
+&#xa0;or from other relationships to address his or her needs.<br />
+So if you imagine there's a parent like who can not let go of her child.<br />
+Well, it can happen to men, too, I'm not saying that only mothers do that.<br />
+There's fathers who cannot let their child go.<br />
+So the parent is heavily invested in this relationship.<br />
+Meaning that many of his or her needs are met through this relationship<br />
+&#xa0;and those needs can not be effectively met by other relationships.<br />
+And that's why when the child is about to go,<br />
+&#xa0;the parent will become nervous, anxious, and controlling, and want to hold onto the child.<br />
+So, but then if you are talking about someone who has multiple sources of gratification,<br />
+&#xa0;&#xa0;like many gratifying relationships in his or her life,<br />
+&#xa0;and life is rich and pleasant.<br />
+I believe this person will have less of a problem<br />
+&#xa0;allowing this other person go and separate and individuate.<br />
+So I think the key idea we have is you know, whether the person's needs are met.<br />
+<br />
+We can also talk about the person who is leaving.<br />
+It's the same thing.<br />
+For some people, they stay in the relationship and they cannot individuate or separate.<br />
+Because they're largely dependent on this one relationship to meet most of their needs.<br />
+And they may not have the confidence,<br />
+&#xa0;they may not even believe that it is possible for them to have those needs met<br />
+&#xa0;&#xa0;when they step out of the relationship.<br />
+So they stay in that relationship,<br />
+&#xa0;even when it is like, stifling, and oppressive, and sometimes even abusive.<br />
+So our approach to this is to help empower the person who has to separate and individuate.<br />
+And one of the things that we do is to let this person<br />
+&#xa0;develop a wider repertoire of skills and a wider range of working, functioning relationships.<br />
+So that his or her needs are being met.<br />
+Then it makes it easier for this person<br />
+&#xa0;to go through this transition of like separation and individuation.<br />
+</p>
+</div>
+<div id="outline-container-orgbcde1ab" class="outline-3">
+<h3 id="orgbcde1ab">expression</h3>
+<div class="outline-text-3" id="text-orgbcde1ab">
+<p>
+separation [ˌsepəˈreɪʃ(ə)n]: n. when something separates or is separate分离, 分开<br />
+individuate [ˌɪndɪˈvɪdʒuˌeɪt] individuation: v.n. to make someone or something clearly different from others of the same kind使个体化<br />
+enmesh [ɪn'meʃ]: v. involve (someone) in a difficult situation from which it is hard to escape使陷入<br />
+resemble [riˈzɛmb(ə)l]: v. to look like or be similar to someone or something象, 类似<br />
+dynamics [daɪ'næmɪks]: n. the way in which things or people behave, react, and affect each other动力<br />
+reluctance [rɪ'lʌktəns]: n. when someone is unwilling to do something, or when they do something slowly to show that they are not very willing不愿意<br />
+invest [ɪnˈvest]: v. to buy shares, property, or goods because you hope that the value will increase and you can make a profit投资,投入<br />
+stifle [ˈstaɪf(ə)l]: v. to stop something from happening or developing OPP encourage压抑<br />
+empower [emˈpaʊr]: v. to give someone more control over their own life or situation使自主<br />
+repertoire [ˈrepərˌtwɑ:r]: n. the total number of things that someone or something is able to do全部才能<br />
+</p>
+<hr />
+<p>
+take way longer: 花更长时间<br />
+hold on/onto sb.: 抓住某人不放<br />
+let go (of her child): 放手(某人)<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org86ef19c" class="outline-3">
+<h3 id="org86ef19c">ch.</h3>
+<div class="outline-text-3" id="text-org86ef19c">
+<p>
+5-2 5.7 分离-个体化 1<br />
+所以，当我们在探讨关系转变时，一个重要的方面就是分离-个体化的过程。<br />
+这通常来源于依附理论。<br />
+在这个理论中，我们关注的是孩子逐渐成为自己独立的个体，并从与照顾者的密切关系中分离出来。<br />
+但在SSLD中，我们对这一点有不同的理解，对吗？<br />
+是的，我认为依附理论实际上对我们理解从儿童时期开始的关系有着重要贡献。<br />
+而且，我认为分离-个体化为我们提供了一个很好的概念框架来理解这些事情。<br />
+但是，考虑到我们不仅与儿童及其照顾者或父母合作，还与那些在晚年发现自己存在问题的成年人合作，<br />
+我们对这一点有些不同的看法。<br />
+首先，当我们谈到分离-个体化时，我们发现并不是每个人都能在儿童时期完成这个过程。<br />
+有些人实际上会花更长的时间才能完成这一过程。<br />
+有些人会长期依赖父母或父母式的人物，直到很大年纪才完成分离-个体化。<br />
+而另一方面，父母也可能无法放手。<br />
+当孩子应该离开时，父母会拉住不放，不允许这个分离-个体化的过程发生。<br />
+我们还在那些关系密切的情境中看到这种现象，<br />
+两个参与者的关系类似于一种父母与孩子的关系。<br />
+然后就会有类似的动态，虽然不完全一样。<br />
+一个人可能会做决定，照顾和提供，而另一个人则依赖于对方。<br />
+当这个人想逐渐脱离这段关系并变得独立时，就会出现很多紧张、抵触，甚至可能是直接的冲突、攻击或敌意。<br />
+所以，分离-个体化是一个非常有用的概念框架或隐喻，用来理解关系。<br />
+也许你可以告诉我们，为什么对于某些人来说，真正参与到这个分离和个体化的过程里是如此困难？<br />
+嗯，你知道的，在SSLD的框架下，我们总是使用一个有趣的概念——需求，对吧？<br />
+那它是如何运作的呢？<br />
+我们的分析大致是这样的：当一个人深深投入一段关系，无法放手，无法离开这段关系并变得更加独立时，<br />
+通常意味着这个人没有从其他来源或其他关系中获得满足自己需求的选择。<br />
+比如你想象一下有一个父母无法放手自己的孩子，<br />
+这也可能发生在男性身上，我并不是说只有母亲才会这样。<br />
+父亲也有无法放手孩子的情况。<br />
+所以，父母深深投入这段关系，意味着他们的很多需求是通过这段关系来满足的，而这些需求无法通过其他关系得到有效满足。<br />
+因此，当孩子准备离开时，父母会变得紧张、焦虑、控制，并试图抓住孩子不放。<br />
+但如果我们谈的是一个拥有多种满足来源的人，<br />
+比如有很多让自己愉快的关系，并且生活丰富、愉快，我相信这个人就会更容易允许另一个人离开，去独立和个体化。<br />
+所以，我认为我们所强调的关键点是，这个人的需求是否得到了满足。<br />
+我们也可以谈谈离开的那个人，情况也是一样的。<br />
+有些人待在关系中，无法完成个体化或分离，<br />
+因为他们在很大程度上依赖这一段关系来满足大部分需求。<br />
+他们可能缺乏信心，甚至不相信自己在脱离这段关系后能够满足这些需求。<br />
+所以，他们会继续待在这段关系中，即便这段关系让他们窒息、压抑，有时甚至是有害的。<br />
+因此，我们的做法是帮助那些需要分离和个体化的人赋能。<br />
+我们做的其中一件事是，让这个人发展更广泛的技能和更广泛的工作、功能性关系。<br />
+这样，他们的需求就能够得到满足。<br />
+然后，这就能让这个人更容易经历分离和个体化的转变。<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgda3d4bc" class="outline-3">
+<h3 id="orgda3d4bc">sentence</h3>
+<div class="outline-text-3" id="text-orgda3d4bc">
+<p>
+separation [ˌsepəˈreɪʃ(ə)n]: n. when something separates or is separate分离, 分开<br />
+</p>
+<ul class="org-ul">
+<li>After our long time separation, I blew the powder into the cavern.<br /></li>
+<li>Within the separation process, up to 80 percent of water will be dried.<br /></li>
+<li>Exposed to a long time separatio, she desired for another Romantic relationship.<br /></li>
+</ul>
+<p>
+individuate [ˌɪndɪˈvɪdʒuˌeɪt] individuation: v.n. to make someone or something clearly different from others of the same kind使个体化<br />
+</p>
+<ul class="org-ul">
+<li>The boy who is an apprentice to the baker tries to individuate.<br /></li>
+<li>Obviously, she individuated herself and refused some of her parents' demands.<br /></li>
+<li>Ironically a pockmarked face individuated her when she was in high school.<br /></li>
+</ul>
+<p>
+enmesh [ɪn'meʃ]: v. involve (someone) in a difficult situation from which it is hard to escape纠缠<br />
+</p>
+<ul class="org-ul">
+<li>He succeeded in protecting against the detective who is enmeshed in a crime.<br /></li>
+<li>The docter is being enmeshed with a kind of virus that's caught from a cow.<br /></li>
+<li>It is stupid to challenge a woman enmeshed in a romantic relationship with her career.<br /></li>
+</ul>
+<p>
+resemble [riˈzɛmb(ə)l]: v. to look like or be similar to someone or something象, 类似<br />
+</p>
+<ul class="org-ul">
+<li>He is immune to cowpox resembling smallpox.<br /></li>
+<li>With the procedure, he can recognize some words resembling difficult notes.<br /></li>
+<li>The teacher deliberates at length over the knowledge resembling concepts in previous session.<br /></li>
+</ul>
+<p>
+dynamics [daɪ'næmɪks]: n. the way in which things or people behave, react, and affect each other动态<br />
+</p>
+<ul class="org-ul">
+<li>As long as the dynamics of the family changed dramatically, the law should become prohibited.<br /></li>
+<li>The dynamics of the family certified the eradication of the tradition.<br /></li>
+<li>The dynamics of the family proved that the couple had stolen over a million dollars.<br /></li>
+</ul>
+<p>
+reluctance [rɪ'lʌktəns]: n. when someone is unwilling to do something, or when they do something slowly to show that they are not very willing不愿意<br />
+</p>
+<ul class="org-ul">
+<li>The reluctance she expressed has been forever remembered by her child.<br /></li>
+<li>The father of immunelogy published an article about the virus with reluctance.<br /></li>
+<li>With reluctance, she took part in the great adventure of voyage.<br /></li>
+</ul>
+<p>
+invest [ɪnˈvest]: v. to buy shares, property, or goods because you hope that the value will increase and you can make a profit投资,投入<br />
+</p>
+<ul class="org-ul">
+<li>What's the matter, why do you invest so much in the relationship?<br /></li>
+<li>What the household invested in the school can extend as far back as middle ages.<br /></li>
+<li>Back then, she was reluctant to invest in a boxer school.<br /></li>
+</ul>
+<p>
+stifle [ˈstaɪf(ə)l]: v. to stop something from happening or developing OPP encourage压抑<br />
+</p>
+<ul class="org-ul">
+<li>What she went through in the marriage is simple described as a stifling times.<br /></li>
+<li>Believe it or not, those who suffer in stifle relationships have one common characteristic.<br /></li>
+<li>She has to sustain herself by whoring, which is very stifling.<br /></li>
+</ul>
+<p>
+empower [emˈpaʊr]: v. to give someone more control over their own life or situation使自主<br />
+</p>
+<ul class="org-ul">
+<li>The force of the laws is supposed to empower minority groups in our country.<br /></li>
+<li>The efficacy of the law empowering miniority groups is changing with the times.<br /></li>
+<li>With the dramatic increase of immigrants, there is increasing laws empowering them.<br /></li>
+</ul>
+<p>
+repertoire [ˈrepərˌtwɑ:r]: n. the total number of things that someone or something is able to do全部才能<br />
+</p>
+<ul class="org-ul">
+<li>He is still suspicious about the repertoire of his brother's skills as a lawyer.<br /></li>
+<li>Jimmy is tring to take advantage of the repertoire of his law skills in the court.<br /></li>
+<li>The eminent lawyer reported worrying about the repertoire of his law skill.<br /></li>
+</ul>
+<hr />
+<p>
+take way longer: 花更长时间<br />
+</p>
+<ul class="org-ul">
+<li>I always take way longer to complete my homework than my brother.<br /></li>
+<li>My wife takes way longer to take a shower than me.<br /></li>
+<li>My grandfather takes way longer to feast on dinner.<br /></li>
+</ul>
+<p>
+hold on/onto sb.: 抓住某人不放<br />
+</p>
+<ul class="org-ul">
+<li>Holding onto the attorney, the police discerned the cause of the murder.<br /></li>
+<li>Why do you hold onto an innocent citizen?<br /></li>
+<li>If you hold on the attorney who is familiar with the household, you may find more hints.<br /></li>
+</ul>
+<p>
+let go (of her child): 放手(某人)<br />
+</p>
+<ul class="org-ul">
+<li>She begged her father to let go of her and her boyfriend in public.<br /></li>
+<li>I shall let go of a child who doesn't care for the family.<br /></li>
+<li>The relationship is transforming, I have to let go of my daughter.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org88d02c4" class="outline-3">
+<h3 id="org88d02c4">sentence2</h3>
+<div class="outline-text-3" id="text-org88d02c4">
+<p>
+separation [ˌsepəˈreɪʃ(ə)n]: n. when something separates or is separate分离, 分开<br />
+</p>
+<ul class="org-ul">
+<li>After our long-time separation, I blew the powder into the cavern.<br /></li>
+<li>Within the separation process, up to 80 percent of water will be dried.<br /></li>
+<li>Exposed to a long-time separation, she desired another Romantic relationship.<br /></li>
+</ul>
+<p>
+individuate [ˌɪndɪˈvɪdʒuˌeɪt] individuation: v.n. to make someone or something clearly different from others of the same kind使个体化<br />
+</p>
+<ul class="org-ul">
+<li>The boy who is an apprentice to the baker tries to individuate.<br /></li>
+<li>Obviously, she individuated herself and refused some of her parents' demands.<br /></li>
+<li>Ironically a pockmarked face individuated her when she was in high school.<br /></li>
+</ul>
+<p>
+enmesh [ɪn'meʃ]: v. involve (someone) in a difficult situation from which it is hard to escape纠缠<br />
+</p>
+<ul class="org-ul">
+<li>He succeeded in protecting against the detective enmeshed in a crime.<br /></li>
+<li>The doctor is being enmeshed with a kind of virus that's caught from a cow.<br /></li>
+<li>It is stupid to challenge a woman enmeshed in a romantic relationship with her career.<br /></li>
+</ul>
+<p>
+resemble [riˈzɛmb(ə)l]: v. to look like or be similar to someone or something象, 类似<br />
+</p>
+<ul class="org-ul">
+<li>He is immune to cowpox resembling smallpox.<br /></li>
+<li>With the procedure, he can recognize some words resembling difficult notes.<br /></li>
+<li>The teacher deliberates at length over the knowledge resembling concepts in the previous session.<br /></li>
+</ul>
+<p>
+dynamics [daɪ'næmɪks]: n. the way in which things or people behave, react, and affect each other动态<br />
+</p>
+<ul class="org-ul">
+<li>As long as the dynamics of the family change dramatically, the law should become prohibited.<br /></li>
+<li>The dynamics of the family certified the eradication of the tradition.<br /></li>
+<li>The dynamics of the family proved that the couple had stolen over a million dollars.<br /></li>
+</ul>
+<p>
+reluctance [rɪ'lʌktəns]: n. when someone is unwilling to do something, or when they do something slowly to show that they are not very willing不愿意<br />
+</p>
+<ul class="org-ul">
+<li>The reluctance she expressed has been forever remembered by her child.<br /></li>
+<li>The father of immunology published an article about the virus, with reluctance.<br /></li>
+<li>With reluctance, she took part in the great adventure of the voyage.<br /></li>
+</ul>
+<p>
+invest [ɪnˈvest]: v. to buy shares, property, or goods because you hope that the value will increase and you can make a profit投资,投入<br />
+</p>
+<ul class="org-ul">
+<li>What's the matter, why do you invest so much in the relationship?<br /></li>
+<li>What the household invested in the school can extend as far back as the middle ages.<br /></li>
+<li>Back then, she was reluctant to invest in a boxing school.<br /></li>
+</ul>
+<p>
+stifle [ˈstaɪf(ə)l]: v. to stop something from happening or developing OPP encourage压抑<br />
+</p>
+<ul class="org-ul">
+<li>What she went through in the marriage is simply described as stifling times.<br /></li>
+<li>Believe it or not, those who suffer in stifle relationships have one common characteristic.<br /></li>
+<li>She has to sustain herself by whoring, which is very stifling.<br /></li>
+</ul>
+<p>
+empower [emˈpaʊr]: v. to give someone more control over their own life or situation使自主<br />
+</p>
+<ul class="org-ul">
+<li>The force of the laws is supposed to empower minority groups in our country.<br /></li>
+<li>The efficacy of the law empowering minority groups is changing with the times.<br /></li>
+<li>With the dramatic increase of the immigrants, there are increasing laws empowering them.<br /></li>
+</ul>
+<p>
+repertoire [ˈrepərˌtwɑ:r]: n. the total number of things that someone or something is able to do全部才能<br />
+</p>
+<ul class="org-ul">
+<li>He is still suspicious about the repertoire of his brother's skills as a lawyer.<br /></li>
+<li>Jimmy is trying to take advantage of the repertoire of his law skills in the court.<br /></li>
+<li>The eminent lawyer reported worrying about the repertoire of his law skills.<br /></li>
+</ul>
+<hr />
+<p>
+take way longer: 花更长时间<br />
+</p>
+<ul class="org-ul">
+<li>I always take way longer to complete my homework than my brother.<br /></li>
+<li>My wife takes way longer to take a shower than me.<br /></li>
+<li>My grandfather takes way longer to feast on dinner.<br /></li>
+</ul>
+<p>
+hold on/onto sb.: 抓住某人不放<br />
+</p>
+<ul class="org-ul">
+<li>Holding onto the attorney, the police discerned the cause of the murder.<br /></li>
+<li>Why do you hold onto an innocent citizen?<br /></li>
+<li>If you hold onto an attorney who is familiar with the household, you may find more hints.<br /></li>
+</ul>
+<p>
+let go (of her child): 放手(某人)<br />
+</p>
+<ul class="org-ul">
+<li>She begged her father to let go of her and her boyfriend in public.<br /></li>
+<li>I shall let go of a child who doesn't care for the family.<br /></li>
+<li>The relationship is transforming, I have to let go of my daughter.<br /></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

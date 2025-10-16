@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-08-06 Tue 22:25 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+
+<div id="outline-container-orgc109cde" class="outline-2">
+<h2 id="orgc109cde">Lesson 95 A fantasy</h2>
+<div class="outline-text-2" id="text-orgc109cde">
+<p class="verse">
+Why was the Ambassador particularly lucky?<br />
+<br />
+When the Ambassador of Escalopia returned home for lunch, his wife got a shock.<br />
+He looked pale and his clothes were in a frightful state.<br />
+'What has happened?' she asked.<br />
+'How did your clothes <b>get into such a mess</b>?'<br />
+'A fire extinguisher, my dear,' answered the Ambassador drily.<br />
+'University students <b>set the Embassy on fire</b> this morning.'<br />
+'<b>Good heavens!</b>' exclaimed his wife.<br />
+'And where were you at the time?'<br />
+'I was in my office as usual,' answered the Ambassador.<br />
+'The fire broke out in the basement.<br />
+I went down immediately, of course, and that fool, Horst, aimed a fire extinguisher at me.<br />
+He thought I was on fire.<br />
+I must definitely get that fellow posted.'<br />
+The Ambassador's wife <b>went on asking</b> questions,<br />
+&#xa0;when she suddenly noticed a big hole in her husband's hat.<br />
+'And how can you explain that?' she asked.<br />
+'Oh, that,' said the Ambassador.<br />
+'Someone <b>fired a shot</b> through my office window.<br />
+Accurate, don't you think?<br />
+Fortunately, I wasn't wearing it at the time.<br />
+If I had been,<br />
+&#xa0;I would not have been able to get home for lunch.'<br />
+</p>
+</div>
+<div id="outline-container-orgfcac47a" class="outline-3">
+<h3 id="orgfcac47a">expression</h3>
+<div class="outline-text-3" id="text-orgfcac47a">
+<p>
+fantasy [ˈfæntəsi] n.幻想故事<br />
+ambassador [æmˈbæsədər] n.大使<br />
+frightful [ˈfraɪtf(ə)l] adj.可怕的,令人吃惊的<br />
+fire [faɪr] extinguisher [ɪkˈstɪŋɡwɪʃər] 灭火器<br />
+drily [ˈdraɪli] adv.冷淡地,鼓噪无味地<br />
+embassy [ˈembəsi] n.大使馆<br />
+heaven [ˈhev(ə)n] n.天,天堂<br />
+basement [ˈbeɪsmənt] n.地下室<br />
+definitely [ˈdefənɪtli] adv.肯定地<br />
+post [poʊst] v.派任<br />
+shot [ʃɑt] n.子弹<br />
+</p>
+
+<p>
+live in a fantasy world 生活在幻想的世界里<br />
+Good heavens! 天哪<br />
+fire a shot 开一枪<br />
+</p>
+<hr />
+<p>
+get into such a mess 陷入困境<br />
+set sth. on fire 放火烧某物<br />
+go on doing sth. 继续做某事<br />
+</p>
+</div>
+</div>
+
+
+
+<div id="outline-container-orgcb4cf4b" class="outline-3">
+<h3 id="orgcb4cf4b">words</h3>
+<div class="outline-text-3" id="text-orgcb4cf4b">
+<p>
+fantasy [ˈfæntəsi] n.幻想故事<br />
+ambassador [æmˈbæsədər] n.大使<br />
+Escalopia n.艾斯卡罗比亚<br />
+frightful [ˈfraɪtf(ə)l] adj.可怕的,令人吃惊的<br />
+fire extinguisher [faɪr-ɪkˈstɪŋɡwɪʃər] 灭火器<br />
+drily [ˈdraɪli] adv.冷淡地,枯燥无味地<br />
+embassy [ˈembəsi] n.大使馆<br />
+heaven [ˈhev(ə)n] n.天,天堂<br />
+basement [ˈbeɪsmənt] n.地下室<br />
+definitely [ˈdefənɪtli] adv.肯定地<br />
+post [poʊst] v.派任<br />
+shot [ʃɑt] n.子弹<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org8fb5755" class="outline-3">
+<h3 id="org8fb5755"><span class="done DONE">DONE</span> 单词造句</h3>
+<div class="outline-text-3" id="text-org8fb5755">
+<p>
+fantasy n. live in a fantasy world<br />
+</p>
+<ul class="org-ul">
+<li>If I hadn't lived in a fantasy world, I would have gone to a top university.<br /></li>
+<li>My favourite fantasy is to be the headmaster of the university.<br /></li>
+<li>You shouldn't have lived in a fantasy world.<br /></li>
+<li>If I lived in a fantasy world, you would have a perfect alibi.<br /></li>
+<li>I'm gonna live in a fantasy world in Disney land.<br /></li>
+</ul>
+<p>
+ambassador n.<br />
+</p>
+<ul class="org-ul">
+<li>The ambassador was reluctant to live in a fantasy world.<br /></li>
+<li>The ambassador had been instructed in English for a long time.<br /></li>
+<li>The ambassadors compete against each other to get married to the girl.<br /></li>
+<li>The ambassador is accustomed to getting home for lunch.<br /></li>
+<li>The ambassador is popular with his people.<br /></li>
+</ul>
+<p>
+frightful adj.<br />
+</p>
+<ul class="org-ul">
+<li>"Get out of here." she said in a frightful voice.<br /></li>
+<li>I am accustomed to hearing frightful voices from his room.<br /></li>
+<li>Don't take that tone with me. It hears frightful.<br /></li>
+<li>I hate to hear the frightful voice over and over again.<br /></li>
+<li>They looked frightful when they were trapped in a copper mine.<br /></li>
+</ul>
+<p>
+fire extinguisher<br />
+</p>
+<ul class="org-ul">
+<li>You confirmed that she was able to use the fire extinguishier.<br /></li>
+<li>The ambassador was instrcuted in using the fire extinguisher.<br /></li>
+<li>A fire extinguisher was presented to his neighbour.<br /></li>
+<li>There are a lot of fire extinguishers at the entrance of the embassy.<br /></li>
+<li>The boy has took the fire extinguisher to pieces.<br /></li>
+</ul>
+<p>
+drily adv.<br />
+</p>
+<ul class="org-ul">
+<li>Don't take this to pieces. She said drily.<br /></li>
+<li>You get away from me. She answered drily.<br /></li>
+<li>Are you being sarcastic? He said drily.<br /></li>
+<li>I hate to swim in the lake. He said drily.<br /></li>
+<li>I am being called in to do the chores. He said drily.<br /></li>
+</ul>
+<p>
+embassy n.<br />
+</p>
+<ul class="org-ul">
+<li>A crowd have waitted in line in front of American Embassy.<br /></li>
+<li>A crowd moved in circle outside the American Embassy.<br /></li>
+<li>The American Embassy has been burnt down by local university students.<br /></li>
+<li>The embassy was full of water in floods.<br /></li>
+<li>He seems to be going to the American Embassy.<br /></li>
+</ul>
+<p>
+heaven n. Good heavens!<br />
+</p>
+<ul class="org-ul">
+<li>Good heavens! How dare you!<br /></li>
+<li>Good heavens! You get away from me.<br /></li>
+<li>Good heavens! Why don't you keep in touch with the girl?<br /></li>
+<li>Good heavens! We have ran out of our petrol.<br /></li>
+<li>Good heavens! My son has lost his life in a copper mine.<br /></li>
+</ul>
+<p>
+basement n.<br />
+</p>
+<ul class="org-ul">
+<li>The girl has been trapped in the basement for over 7 hours.<br /></li>
+<li>When the news get around, he commited a murder in his basement.<br /></li>
+<li>You must tell the truth in the basement.<br /></li>
+<li>Unfortunately, the basement was burnt down.<br /></li>
+<li>The foods in the basement is being used up.<br /></li>
+</ul>
+<p>
+definitely adv.<br />
+</p>
+<ul class="org-ul">
+<li>He noticed with dismay that he would definitely fail the exam.<br /></li>
+<li>The men will definitely lose their life if they are not rescued in time.<br /></li>
+<li>He will definitely devote himself to gardening for the rest of his life.<br /></li>
+<li>We should definitely remain him for the encouragement he give us<br />
+when we are so reluctant to go to school.<br /></li>
+<li>They will definitely send a gift to mark the occassion.<br /></li>
+</ul>
+<p>
+post v.<br />
+</p>
+<ul class="org-ul">
+<li>You shouldn't have posted Tom to Beijing.<br /></li>
+<li>Why don't we get him posted to China?<br /></li>
+<li>The detectives were posted to the airport to protect the diamond from the thief.<br /></li>
+<li>Thank you for posting me to my hometown.a<br /></li>
+<li>The secretary informed me that I would be posted to South Africa.<br /></li>
+</ul>
+<p>
+shot n. fire a shot<br />
+</p>
+<ul class="org-ul">
+<li>The ganster claimed that he fired a shot in the prime president's honor.<br /></li>
+<li>The killer has a lot of patience to fire a shot.<br /></li>
+<li>No one should have fired a shot through the window.<br /></li>
+<li>He is fanatical about firing a shot.<br /></li>
+<li>After winning the election, he was fired a shot.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org13d5dd5" class="outline-3">
+<h3 id="org13d5dd5"><span class="done DONE">DONE</span> 反复听电影片段</h3>
+<div class="outline-text-3" id="text-org13d5dd5">
+</div>
+</div>
+<div id="outline-container-org26a3ed4" class="outline-3">
+<h3 id="org26a3ed4">Pattern Drill 写+读</h3>
+</div>
+<div id="outline-container-org6e58bf4" class="outline-3">
+<h3 id="org6e58bf4">给自己讲解</h3>
+</div>
+<div id="outline-container-org4b82afc" class="outline-3">
+<h3 id="org4b82afc">红皮书</h3>
+</div>
+<div id="outline-container-org8731a14" class="outline-3">
+<h3 id="org8731a14"><span class="done DONE">DONE</span> 习惯用法造句</h3>
+<div class="outline-text-3" id="text-org8731a14">
+<p>
+get into such a mess<br />
+</p>
+<ul class="org-ul">
+<li>Leave her alone, don't get into any mess with her.<br /></li>
+<li>The moment I win the election, I'll get into a mess with them.<br /></li>
+<li>If you didn't go to the park, you wouldn't get into a mess.<br /></li>
+<li>I discovered that she had gotten into such a mess.<br /></li>
+<li>He is used to getting into a mess after taking part in race.<br /></li>
+</ul>
+<p>
+set sth. on fire<br />
+</p>
+<ul class="org-ul">
+<li>She may have set the house on fire.<br /></li>
+<li>No smoking. A spark can set the house on fire.<br /></li>
+<li>He was curious to find out that no one set the palace on fire.<br /></li>
+<li>When he knew how someone set the basement on fire, he felt frightened.<br /></li>
+<li>He was going to set the whole village on fire armed with a torch.<br /></li>
+</ul>
+<p>
+go on doing sth.<br />
+</p>
+<ul class="org-ul">
+<li>We must go on putting forward our plan.<br /></li>
+<li>You should go on having your concentration.<br /></li>
+<li>The plane is going on flying off course.<br /></li>
+<li>The woman caught in a storm went on sending a signal.<br /></li>
+<li>We can go on carrying the fruits to the shady spot.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org3f5b0fd" class="outline-3">
+<h3 id="org3f5b0fd"><span class="done DONE">DONE</span> 跟读至背诵</h3>
+<div class="outline-text-3" id="text-org3f5b0fd">
+</div>
+</div>
+<div id="outline-container-org8f74707" class="outline-3">
+<h3 id="org8f74707"><span class="done DONE">DONE</span> Ask me if 写+读</h3>
+<div class="outline-text-3" id="text-org8f74707">
+<ol class="org-ol">
+<li>The Ambassador came home for lunch. Why/When/Who<br />
+Why did the Ambassador come home?<br />
+When did the Ambassador come home?<br />
+Who came home for lunch?<br /></li>
+<li>His wife got a shock. Why/Who<br />
+Why did his wife get a shock?<br />
+Who got a shock?<br /></li>
+<li>He looked pale. How/Who<br />
+How did he look?<br />
+Who looked pale?<br /></li>
+<li>His clothes were in a mess. What/Why<br />
+What were in a mess?<br />
+Why were his clothes in a mess?<br /></li>
+<li>Students set the Embassy on fire. What<br />
+What did students set on fire?<br /></li>
+<li>The Ambassador was in his office. Where<br />
+Where was the Ambassador?<br /></li>
+<li>The fire broke out in the basement. Where/What/When<br />
+Where did the fire break out?<br />
+What broke out in the basement?<br />
+When did the fire break out in the basement?<br /></li>
+<li>The Ambassador went down immediately. Where/When/Who<br />
+Where did the Ambassador go down immediately?<br />
+When did the Ambassador go down?<br />
+Who went down immediately?<br /></li>
+<li>Horst aimed a fire extinguisher at him. What/Why/Who<br />
+What did Horst aim at him?<br />
+Why did Horst aim a fire extinguisher at him?<br />
+Who did Horst aim a fire extinguisher at?<br /></li>
+<li>There was a hole in his hat. Where<br />
+Where was there a hole?<br /></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org477351d" class="outline-3">
+<h3 id="org477351d"><span class="done DONE">DONE</span> 摘要写作</h3>
+<div class="outline-text-3" id="text-org477351d">
+<p>
+While the Ambassador of Escalopia was in his office,<br />
+	university students set the basement of the Embassy on fire.<br />
+When the Ambassador went to investigate,<br />
+	a man called Horst aimed a fire extinguisher at him<br />
+	because he thought the Ambassador was on fire.<br />
+Moreover, there was a hole in the Ambassador's hat<br />
+	which had been made when some fire a shot throught his office window.<br />
+The Ambassdor was lucky, for he was not wearing it at the time.<br />
+</p>
+
+<p>
+The Ambassdor of Escalopia was in his office<br />
+	when university students set the basement of the Embassy on fire.<br />
+After the Ambassador had gone to investigate,<br />
+	a man called Horst aimed a fire extinguisher at him<br />
+		under the impression that the Ambassador was on fire.<br />
+In addition to this, there was a hole in the Ambassador's hat.<br />
+It had been made when someone fired a shot through his office window.<br />
+It was lucky for the Ambassador that he was not wearing it at the time.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org86da219" class="outline-3">
+<h3 id="org86da219"><span class="done DONE">DONE</span> tell the story 口语</h3>
+<div class="outline-text-3" id="text-org86da219">
+</div>
+</div>
+<div id="outline-container-org75af90b" class="outline-3">
+<h3 id="org75af90b">Topics for discussion</h3>
+</div>
+</div>
+</div>
+</body>
+</html>

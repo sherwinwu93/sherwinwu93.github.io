@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-02-17 Mon 21:58 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-org6cc79bd" class="outline-2">
+<h2 id="org6cc79bd">10 The rise of Kingdoms and the growth of church power</h2>
+<div class="outline-text-2" id="text-org6cc79bd">
+<p class="verse">
+The period from 1000 to 1300 was a dynamic time in the development of Western civilization.<br />
+The nobles, whose warlike attitudes were rationalized<br />
+&#xa0;&#xa0;by labeling themselves the defenders of Christian society,<br />
+&#xa0;continued to dominate the medieval world politically, economically, and socially.<br />
+But kings gradually began to expand their powers.<br />
+Although the popes sometimes treated rulers condescendingly,<br />
+&#xa0;by the thirteenth century, the monarchs were developing the machinery of government<br />
+&#xa0;&#xa0;that would enable them to challenge exalted claims of papal power<br />
+&#xa0;&#xa0;&#xa0;and assume political authority in Europe.<br />
+The actions of these medieval monarchs laid the foundation for the European kingdoms<br />
+&#xa0;that in one form or another have dominated the European political scene ever since.<br />
+<br />
+The Catholic church shared in the challenge of new growth<br />
+&#xa0;by reforming itself and striking out on a path toward greater papal power,<br />
+&#xa0;&#xa0;both within the church and over European society.<br />
+The High Middle Ages witnessed a spiritual renewal that led to numerous and even divergent paths:<br />
+&#xa0;revived papal leadership,<br />
+&#xa0;the development of centralized administrative machinery that buttressed papal authority,<br />
+&#xa0;and new dimensions to the religious life of the clergy and laity.<br />
+At the same time,<br />
+&#xa0;this spiritual renewal also gave rise to the crusading 'holy warrior' who killed for God,<br />
+&#xa0;&#xa0;which created an animosity between Christians and Muslims<br />
+&#xa0;&#xa0;&#xa0;that still has repercussions to this day.<br />
+<br />
+The religious enthusiasm of the twelfth century continued well into the thirteenth<br />
+&#xa0;as new orders of friars gave witness to spiritual growth and passion,<br />
+&#xa0;&#xa0;but underneath lay seeds of discontent and change.<br />
+Dissent from church teaching and practices grew,<br />
+&#xa0;leading to a climate of fear and intolerance<br />
+&#xa0;&#xa0;as the church responded with inquisitorial procedures to enforce conformity to its teachings.<br />
+At the same time,<br />
+&#xa0;papal claims of supremacy over secular authorities<br />
+&#xa0;&#xa0;were increasingly challenged by the rising power of monarchical authorities,<br />
+&#xa0;&#xa0;&#xa0;who, because of the growth of cities,<br />
+&#xa0;&#xa0;&#xa0;&#xa0;the revival of trade, and the emergence of a money economy,<br />
+&#xa0;&#xa0;&#xa0;were now able to hire soldiers and officials to carry out their wishes.<br />
+<br />
+The High Middle Ages of the eleventh, twelfth, and thirteenth centuries<br />
+&#xa0;had been a period of great innovation,<br />
+&#xa0;&#xa0;evident in significant economic,<br />
+&#xa0;&#xa0;&#xa0;social, political, religious, intellectual, and cultural changes.<br />
+And yet by the end of the thirteenth century,<br />
+&#xa0;certain tensions had begun to creep into European society.<br />
+As we shall see in the next chapter, these tensions would soon bring a torrent of troubles.<br />
+</p>
+</div>
+<div id="outline-container-orgcd2fdf2" class="outline-3">
+<h3 id="orgcd2fdf2">expression</h3>
+<div class="outline-text-3" id="text-orgcd2fdf2">
+<p>
+dynamic [daɪˈnæmɪk]: adj. full of energy and new ideas, and determined to succeed充满活力的<br />
+warlike [ˈwɔrˌlaɪk]: adj. liking war and being skilful in it好战的, 尚武的<br />
+dominate [ˈdɑmɪˌneɪt]: v. to control someone or something or to have more importance than other people or things支配<br />
+condescending [ˌkɑndəˈsendɪŋ] condescendingly: adj. adv. behaving as though you think you are better, more intelligent, or more important than other people – used to show disapproval SYN patronizing居高临下的<br />
+witness [ˈwɪtnəs]: v. to see something happen, especially a crime or accident目击<br />
+renewal [rɪˈnuəl]: n. when an activity, situation, or process begins again after a period when it had stopped复兴<br />
+diverge [daɪˈvɜrdʒ] divergent: v. adj. if similar things diverge, they develop in different ways and so are no longer similar分叉的<br />
+revive [rɪˈvaɪv]: v. to bring something back after it has not been used or has not existed for a period of time(使)复兴, (使)复活<br />
+administrative [ədˈmɪnɪˌstreɪtɪv]: adj. relating to the work of managing a company or organization管理的, 行政的<br />
+buttress [ˈbʌtrəs]: v. to support a system, idea, argument etc, especially by providing money扶持<br />
+clergy [ˈklɜrdʒi]: n. the official leaders of religious activities in organized religions, such as priests, ↑rabbis, and ↑mullahs ⇨ clerical神职人员<br />
+laity [ˈleɪəti]: n. the laity all the members of a religious group apart from the priests ⇨ layman普通信徒<br />
+animosity [ˌænɪˈmɑsəti]: n. strong dislike or hatred SYN hostility仇恨, 憎恶<br />
+repercussion [ˌripərˈkʌʃ(ə)n]: n. the effects of an action or event, especially bad effects that continue for some time ⇨ consequence反响<br />
+friar [ˈfraɪər]: n. a member of a religious group of Catholic men, who travelled around in the past teaching about Christianity and who were very poor ⇨ monk男修道士<br />
+passion [ˈpæʃ(ə)n]: n. a very strong feeling of sexual love ⇨ desire激情, 热情<br />
+underneath [ˌʌndərˈniθ]: prep. adv. directly under another object or covered by it在下面<br />
+discontent [ˌdɪskənˈtent]: n. a feeling of being unhappy and not satisfied with the situation you are in OPP contentment不满<br />
+innovation [ˌɪnəˈveɪʃ(ə)n]: n. a new idea, method, or invention改革, 创新<br />
+tension [ˈtenʃ(ə)n]: n. a nervous worried feeling that makes it impossible for you to relax ⇨ tense紧张<br />
+</p>
+<hr />
+<p>
+label sb. sth.: 给某人贴上某物的标签<br />
+assume political authority: 承担政治权力<br />
+lay the foundation for sb./sth.: 为某人/某物打下基础<br />
+in one form or another: 以一种形式或另一种<br />
+in the challenge of sth.: 在&#x2026;的挑战中<br />
+strike out on a path toward sp./sth.: 开辟通往某地的道路<br />
+lay seeds of sth.: 种下某事的种子<br />
+be dissent from sth.: 对某事持不同意见<br />
+respond with sth.: 以&#x2026;回复<br />
+enforce conformity to sth.: 强制遵守某事<br />
+supremacy over sth.: 凌驾于某物<br />
+carry out sb's wishes: 实施某人的意愿<br />
+creep into sp.: 悄悄进入某地<br />
+a torrent of sth.: 一股&#x2026;的洪流<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org366c464" class="outline-3">
+<h3 id="org366c464">sentence</h3>
+<div class="outline-text-3" id="text-org366c464">
+<p>
+dynamic: adj. full of energy and new ideas, and determined to succeed充满活力的<br />
+</p>
+<ul class="org-ul">
+<li>My son told me that he was very dynamic in his age.<br /></li>
+<li>These dynamic youths shouldn't have been sold into slavery in North Africa.<br /></li>
+<li>This dynamic cat is now developing a fever.<br /></li>
+</ul>
+<p>
+warlike: adj. liking war and being skillful in it好战的, 尚武的<br />
+</p>
+<ul class="org-ul">
+<li>A group of vassals admired him for his warlike attitude.<br /></li>
+<li>The knight is so warlike that he fights with other knights once a week.<br /></li>
+<li>These warlike nomads declared the new Latin empire of Constantinople.<br /></li>
+</ul>
+<p>
+dominate: v. to control someone or something or to have more importance than other people or things支配<br />
+</p>
+<ul class="org-ul">
+<li>He didn't expect his son to dominate the whole continent of Europe.<br /></li>
+<li>The official has accused our products of dominating the market.<br /></li>
+<li>The company that made a profit last year is dominating the market the world over.<br /></li>
+</ul>
+<p>
+condescending condescendingly: adj. adv. behaving as though you think you are better, more intelligent, or more important than other people – used to show disapproval SYN patronizing居高临下的<br />
+witness: v. to see something happen, especially a crime or accident目击<br />
+</p>
+<ul class="org-ul">
+<li>'What a mupulated bitch!', he said condescendingly.<br /></li>
+<li>Not liking the way she dressed, the assistant told her condescendingly that the dress had been sold out.<br /></li>
+<li>The king was so condescending that he refused to be crowned by the pope.<br /></li>
+</ul>
+<p>
+renewal: n. when an activity, situation, or process begins again after a period when it had stopped复兴<br />
+</p>
+<ul class="org-ul">
+<li>He is anxious to see the renewal of the empire.<br /></li>
+<li>Encountering the renewal of the trade, the monarchy began to assume political authority.<br /></li>
+<li>Encountering the renewal of the cities, the emperor is determined to dominate Europe.<br /></li>
+</ul>
+<p>
+diverge divergent: v. adj. if similar things diverge, they develop in different ways and so are no longer similar分叉的<br />
+</p>
+<ul class="org-ul">
+<li>Divergent from his idea, I agreed that Mr. Leo won the election.<br /></li>
+<li>Divergent from his wife, he must have quarreled bitterly with his wife yesterday.<br /></li>
+<li>Two men holding divergent opinions quarreled bitterly in the royal court.<br /></li>
+</ul>
+<p>
+revive: v. to bring something back after it has not been used or has not existed for a period of time(使)复兴, (使)复活<br />
+</p>
+<ul class="org-ul">
+<li>Our dream will have come true that our country will be revived by our people in the future.<br /></li>
+<li>No one could account for the fact that the rise of trade in the cities revived the church power.<br /></li>
+<li>The support of these vassals revived the exalted claim of papal authority.<br /></li>
+</ul>
+<p>
+administrative: adj. relating to the work of managing a company or organization管理的, 行政的<br />
+</p>
+<ul class="org-ul">
+<li>He is known as an excellent administrative staff who works for a big firm.<br /></li>
+<li>The administrative staff who sneaked out of his office during working time would be fined $2000.<br /></li>
+<li>I hate the administrative staff in the hospital who did body research twice.<br /></li>
+</ul>
+<p>
+buttress: v. to support a system, idea, argument etc, especially by providing money扶持<br />
+</p>
+<ul class="org-ul">
+<li>The man in the boat used to buttress 2000 children who couldn't afford to pay their studying fares.<br /></li>
+<li>With a star buttressing him, he succeeded in studying abroad and getting a doctorate degree at the university.<br /></li>
+<li>The stranger who claimed to have buttressed him in his youth asked him for a large sum of money.<br /></li>
+</ul>
+<p>
+clergy: n. the official leaders of religious activities in organized religions, such as priests, ↑rabbis, and ↑mullahs ⇨ clerical神职人员<br />
+</p>
+<ul class="org-ul">
+<li>A clergy in this district has the authority to meet the lord once a week.<br /></li>
+<li>The clergy was accused of stealing the poor farmer a little lamb.<br /></li>
+<li>The clergy is always raising money to have the clock repaired for one cause or another.<br /></li>
+</ul>
+<p>
+laity: n. the laity all the members of a religious group apart from the priests ⇨ layman普通信徒<br />
+</p>
+<ul class="org-ul">
+<li>The king claimed that he was just a simple laity converted to Christianity.<br /></li>
+<li>The hero never dreamed of living a normal life as a laity in a small village.<br /></li>
+<li>These laities who ran into serious arguments with the knights left the town to settle down in the plain.<br /></li>
+</ul>
+<p>
+animosity: n. strong dislike or hatred SYN hostility仇恨, 憎恶<br />
+</p>
+<ul class="org-ul">
+<li>There should not be any animosity between colleagues in our company.<br /></li>
+<li>It astounded me that she has an animosity towards her husband.<br /></li>
+<li>My wife has an animosity towards me, as I couldn't afford to go on a vacation in Sanya.<br /></li>
+</ul>
+<p>
+repercussion: n. the effects of an action or event, especially bad effects that continue for some time ⇨ consequence反响<br />
+</p>
+<ul class="org-ul">
+<li>There must be a serious repercussion on his family because he died of cancer.<br /></li>
+<li>The crusading army sacked the great capital city, which had a profound repercussion for the collapse of the empire.<br /></li>
+<li>These knights who claimed to kill for god had repercussions for animosities between Muslims and Christians.<br /></li>
+</ul>
+<p>
+friar: n. a member of a religious group of Catholic men, who travelled around in the past teaching about Christianity and who were very poor ⇨ monk男修道士<br />
+</p>
+<ul class="org-ul">
+<li></li>
+
+<li></li>
+
+<li></li>
+</ul>
+<p>
+passion: n. a very strong feeling of sexual love ⇨ desire激情, 热情<br />
+</p>
+<ul class="org-ul">
+<li>In one study, scientists find that the passion is crucial for someone in pursuit of his goal.<br /></li>
+<li>Reducing passion for making love with his wife, he cheated on her at a time when he was on a business trip.<br /></li>
+<li>The ball reminds me of my passion for school basketball competition in my youth.<br /></li>
+</ul>
+<p>
+underneath: prep. adv. directly under another object or covered by it在下面<br />
+</p>
+<ul class="org-ul">
+<li>They were talking about the article published in the press underneath the star.<br /></li>
+<li>There is a complex drainage system underneath the street.<br /></li>
+<li>The cat was left licking his wet fur underneath the basket.<br /></li>
+</ul>
+<p>
+discontent: n. a feeling of being unhappy and not satisfied with the situation you are in OPP contentment不满<br />
+</p>
+<ul class="org-ul">
+<li>The king seems interesting with the growing discontent of townpeople with the church.<br /></li>
+<li>He failed to express his discontent to his mother, who made him apply for an army service.<br /></li>
+<li>Dare not to express his discontent in public, he stole his father's precious diamond.<br /></li>
+</ul>
+<p>
+innovation: n. a new idea, method, or invention改革, 创新<br />
+</p>
+<ul class="org-ul">
+<li>The old programmer is always beset by the speed of innovation.<br /></li>
+<li>He complained that there was not so much innovation in the exhibition.<br /></li>
+<li>The official tends to buttress the technological innovation in this district.<br /></li>
+</ul>
+<p>
+tension: n. a nervous worried feeling that makes it impossible for you to relax ⇨ tense紧张<br />
+</p>
+<ul class="org-ul">
+<li>In the end, I could not bear the tension among those officials.<br /></li>
+<li>Despite tension between me and my wife, we went for a walk last Sunday.<br /></li>
+<li>The tensions bewteen those countries led to a lengthy war.<br /></li>
+</ul>
+<hr />
+<p>
+label sb. sth.: 给某人贴上某物的标签<br />
+</p>
+<ul class="org-ul">
+<li>About 2000 children who labeled themselves the defenders of the Christians made their way across the ChangJiang to NanJing.<br /></li>
+<li>It is no use pretending that you are a knight by labeling yourself an unknown title.<br /></li>
+<li>You needn't have labelled me an enemy just because I got a better salary than you.<br /></li>
+</ul>
+<p>
+assume political authority: 承担政治权力<br />
+</p>
+<ul class="org-ul">
+<li>Now that the monarchy assumed political authority, the church couldn't insist on the exalted claim of the papal authority.<br /></li>
+<li>The monarchy saw an opportunity to assume political authority under the papal control.<br /></li>
+<li>Assuming political authority in his day, he decided to establish the Holy Roman Empire again.<br /></li>
+</ul>
+<p>
+lay the foundation for sb./sth.: 为某人/某物打下基础<br />
+</p>
+<ul class="org-ul">
+<li>The purchase of the land laid the foundation for the king to assume political power.<br /></li>
+<li>The marriage between him and his wife laid the foundation for his career.<br /></li>
+<li>The houses had been erected in the city, which laid the foundation for the renewal of population.<br /></li>
+</ul>
+<p>
+in one form or another: 以一种形式或另一种<br />
+</p>
+<ul class="org-ul">
+<li>My father always helps me in one form or another<br /></li>
+<li>Experiences in this adventure spured him to explore more in one form or another.<br /></li>
+<li>I can't be bothered to fix up the bugs you made in one form or another.<br /></li>
+</ul>
+<p>
+in the challenge of sth.: 在&#x2026;的挑战中<br />
+</p>
+<ul class="org-ul">
+<li>He must be exercised in the challenge of financial crisis.<br /></li>
+<li>The Comptroller was in the challenge of abduction by Asiatic nomads.<br /></li>
+<li>In the challenge of warlike knights he has become a real warrior.<br /></li>
+</ul>
+<p>
+strike out on a path toward sp./sth.: 开辟通往某地的道路<br />
+</p>
+<ul class="org-ul">
+<li>He won a prize for the best garden competition, for he struck out on a path toward his house.<br /></li>
+<li>As the hill threatened these villages, people had to strike out a path toward the life in town.<br /></li>
+<li>Working to his bone, he struck out on a path toward a new world record.<br /></li>
+</ul>
+<p>
+lay seeds of sth.: 种下某事的种子<br />
+</p>
+<ul class="org-ul">
+<li>Cheating on her husband laid the seeds of animosities between their families.<br /></li>
+<li>A series of disasters laid the seeds of the collapse of the great empire.<br /></li>
+<li>His father who used to tell him stories laid the seeds of a great writer.<br /></li>
+</ul>
+<p>
+be dissent from sth.: 对某事持不同意见<br />
+</p>
+<ul class="org-ul">
+<li>Dissent from the church, they laid seeds of animosities between each other.<br /></li>
+<li>Dissent from his advice, I decided to perform experiments on my own.<br /></li>
+<li>Dissent from his parents, he was left cleaning up the house by himself.<br /></li>
+</ul>
+<p>
+respond with sth.: 以&#x2026;回复<br />
+</p>
+<ul class="org-ul">
+<li>Although he received a warm welcome from the local people,<br />
+he responed with the swords and shields.<br /></li>
+<li>He responded with a warm hug to welcome his wife at the station.<br /></li>
+<li>The group of pop singers will respond with five performances during this time.<br /></li>
+</ul>
+<p>
+enforced conformity to sth.: 强制遵守某事<br />
+</p>
+<ul class="org-ul">
+<li>She has enforced conformity to the rule that there was no parking area.<br /></li>
+<li>When I was young, I had enforced conformity to the rules which my parents made.<br /></li>
+<li>Everyone in the kingdom had been enforced conformity to the royal laws.<br /></li>
+</ul>
+<p>
+supremacy over sth.: 凌驾于某物<br />
+</p>
+<ul class="org-ul">
+<li>There is no supremacy over the royal laws in this kingdom.<br /></li>
+<li>The king's claim of supremacy over the royal laws led to numerous attacks.<br /></li>
+<li>The king's claim of supremacy over the church gave rise to a curious situation in this kingdom.<br /></li>
+</ul>
+<p>
+carry out sb's wishes: 实施某人的意愿<br />
+</p>
+<ul class="org-ul">
+<li>He claimed to have carried out people's wishes.<br /></li>
+<li>Carrying out his wishes, he struck out on a path toward establishing a great empire.<br /></li>
+<li>Carrying out his wishes, his dream of dominating Europe came true.<br /></li>
+</ul>
+<p>
+creep into sp.: 悄悄进入某地<br />
+</p>
+<ul class="org-ul">
+<li>The student crept into the office when the teacher fell asleep.<br /></li>
+<li>I crept into my father's room to steal money from his locked drawer.<br /></li>
+<li>I felt guilty after I crept into my father's room and stole his money.<br /></li>
+</ul>
+<p>
+a torrent of sth.: 潮水般的&#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>She ran into a torrent of troubles when she climbed the mountain.<br /></li>
+<li>They are told to go home and receive a torrent of abuse.<br /></li>
+<li>In spite of a torrent of abuse, the butcher succeeded in raising his two sons.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org6b61310" class="outline-3">
+<h3 id="org6b61310">summary</h3>
+<div class="outline-text-3" id="text-org6b61310">
+<p>
+Over a period of 1000 to 1300, nobles continued to dominate the Medieval world.<br />
+Although they sometimes were treated condescendingly by popes,<br />
+	the kings developed a machinery of government<br />
+		that not only enabled them to challenge the exalted claim of papal power,<br />
+			but also made them dominate European politics in one form or another.<br />
+The High Middle Ages witnessed a new spiritual renewal which<br />
+	led to divergent paths:<br />
+		the revived papal leadership,<br />
+		the development of a centralized administrative system that buttressed papal authority,<br />
+		and the new dimensions of the religious life of the clergy and laity.<br />
+The renewal also gave rise to the crusading warriors<br />
+	who created an animosity between Christians and Muslims.<br />
+In the thirteenth century,<br />
+	friars gave witness to the spiritual growth<br />
+	and the growth of dissent from church teaching and practices<br />
+		to which the papal power responded with inquisitorial procedures.<br />
+At the same time,<br />
+	the exalted claims of papal power<br />
+		were gradually challenged by the rising power of monarchical authorities<br />
+			who could hire soldiers and officials because of the growth of trade and cities.<br />
+There was significant innovation in economic, political, cultural, and religious changes.<br />
+</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

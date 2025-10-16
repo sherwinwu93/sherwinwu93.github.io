@@ -1,0 +1,684 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-01-09 Thu 23:07 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-org6865eec" class="outline-2">
+<h2 id="org6865eec">2014-01-06 How to fossilize yourself</h2>
+<div class="outline-text-2" id="text-org6865eec">
+<p class="verse">
+Imagine being a fossil: touring the world's great museums,<br />
+&#xa0;inspiring awe in onlookers of all ages, posing for hordes of fawning photographers.<br />
+Sound like something you'd like?<br />
+Well, good luck!<br />
+At least 99.9% of creatures that have ever lived aren't preserved in the fossil record.<br />
+But forget about them, everyone else will, and listen up!<br />
+If you want your corpse in the exclusive 0.01% Club, the Hall of Preserved Fossil Fame,<br />
+&#xa0;it will not be easy.<br />
+You better work!<br />
+Step one: die.<br />
+It's a cold, hard fact of fossilization.<br />
+Everything paleontologists find was once alive and, at some point, died.<br />
+We'll skip the details and assume you had a long, fulfilling life<br />
+&#xa0;so we can get to what is really important &#x2013; how you die.<br />
+<br />
+There are many ways to become a fossil, so let's highlight your top death options.<br />
+You could get yourself trapped in tree sap,<br />
+&#xa0;which, when hardens, turns into amber and can survive intact for millions of years.<br />
+But unless you find a really big tree to sit under,<br />
+&#xa0;amber preservation will likely remain the domain of insects and other very small animals.<br />
+Generally, the right place to be if you want to end up a fossil<br />
+&#xa0;is wherever sediment is actively being deposited, like a lake or an ocean floor.<br />
+A mountaintop or prairie? Not good!<br />
+You need to get buried, the faster the better,<br />
+&#xa0;because the longer you hang around on the surface,<br />
+&#xa0;&#xa0;the more likely you'll get eaten, scavenged, or otherwise destroyed<br />
+&#xa0;&#xa0;&#xa0;before ever having a chance to get preserved.<br />
+If you can get buried someplace with little to no oxygen,<br />
+&#xa0;&#xa0;like a bog or a deep lake bottom,<br />
+&#xa0;even better.<br />
+That lack of oxygen will slow down your decay and give you more time to fossilize.<br />
+So, let's say you're lucky enough to die and get buried<br />
+&#xa0;in a shallow sea under muddy, sandy sediments.<br />
+What's your next move?<br />
+<br />
+One option is a process called permineralization.<br />
+While all your soft parts decay away, your bones get saturated with mineral-rich waters.<br />
+Bit by bit, microscopic crystals precipitate out of these waters<br />
+&#xa0;to fill in the empty spaces and pores in your bones.<br />
+Otherwise, you'd better hope the sediments around you harden<br />
+&#xa0;while your bones decay away<br />
+&#xa0;&#xa0;&#xa0;and another sediment or mineral fills in the spaces your bones leave behind,<br />
+&#xa0;&#xa0;creating a perfect cast of your skeleton.<br />
+Over time, the sediments around your fossil will lithify or turn into rock.<br />
+<br />
+But you're not in the clear yet!<br />
+Many things could happen to those sedimentary rocks<br />
+&#xa0;that might destroy your chances of getting discovered.<br />
+They could get uplifted into a mountain range<br />
+&#xa0;&#xa0;and eroded away or carried along in an oceanic plate<br />
+&#xa0;&#xa0;and subducted back into the Earth's mantle, melting your fossil into hot mush.<br />
+Fingers crossed your rock surroundings will get gently lifted up by plate tectonics,<br />
+&#xa0;sea levels will change,<br />
+&#xa0;and you'll end up under dry land close to the surface,<br />
+&#xa0;&#xa0;&#xa0;but not so close that erosion from wind and rain wipes you away<br />
+&#xa0;&#xa0;before someone can come to find you.<br />
+<br />
+The last step in this long process, an intrepid paleontologist has to come find you.<br />
+Maybe she's a research scientist scouting for fossils your age and type<br />
+&#xa0;or just an amateur collector hoping for a fortuitous find.<br />
+She whacks away at layers of rock above you<br />
+&#xa0;or spots your fossil exposed in a creek bank after a flood.<br />
+And there you are, a magnificent scientific discovery, millions of years in the making!<br />
+She and her colleagues gently extract you from the surrounding sediment,<br />
+&#xa0;measure and photograph all the bits and pieces they find,<br />
+&#xa0;and begin the complex task of reconstructing<br />
+&#xa0;&#xa0;how and when you lived based on the evidence they find in your bones.<br />
+Paleontologists will be some of your biggest fans<br />
+&#xa0;along with all those admiring crowds at the museum.<br />
+<br />
+You made it!<br />
+You spent years underground in obscurity, shedding blood, sweat, tears, and your internal organs.<br />
+You worked yourself to the bone<br />
+&#xa0;until your bones disintegrated and were replaced by minerals and sediments.<br />
+But it was all worth it because you're a famous fossil!<br />
+Now, you better hold that pose!<br />
+</p>
+</div>
+<div id="outline-container-org0fbcbef" class="outline-3">
+<h3 id="org0fbcbef">expression</h3>
+<div class="outline-text-3" id="text-org0fbcbef">
+<p>
+fossil [ˈfɑs(ə)l]: n. an animal or plant that lived many thousands of years ago and that has been preserved, or the shape of one of these animals or plants that has been preserved in rock化石<br />
+tour [tʊr]: v. to visit several parts of a country or area旅游<br />
+fawn [fɔn]: v. to praise someone and be friendly to them in an insincere way, because you want them to like you or give you something奉承, 讨好<br />
+exclusive [ɪkˈsklusɪv]: adj. available or belonging only to particular people, and not shared独占的<br />
+fossilize [ˈfɑsəlˌaɪz] fossilization: v.n. to become or form a ↑fossil by being preserved in rock变成化石<br />
+paleontology [ˌpæliɑnˈtɑlədʒi] paleontologist: n. the study of ↑fossils (=ancient bones, plants etc that have been preserved in rock)古生物学<br />
+highlight [ˈhaɪˌlaɪt]: v. to make a problem or subject easy to notice so that people pay attention to it高亮<br />
+sap [sæp]: n. the watery substance that carries food through a plant树液<br />
+harden [ˈhɑrd(ə)n]: v. to become firm or stiff, or to make something firm or stiff OPP soften变硬<br />
+mountaintop [ˈmaʊnt(ə)nˌtɑp]: n. the top part of a mountain山顶<br />
+prairie [ˈpreri]: n. a wide open area of fairly flat land in North America which is covered in grass or wheat大草原<br />
+bury [ˈberi]: v. to put something under the ground, often in order to hide it埋葬<br />
+scavenge [ˈskævəndʒ]: v. if someone scavenges, they search through things that other people do not want, for food or useful objects以(腐肉)为食<br />
+bog [bɔɡ]: n. an area of low wet muddy ground, sometimes containing bushes or grasses ⇨ marsh, swamp沼泽<br />
+shallow [ˈʃæloʊ]: adj. measuring only a short distance from the top to the bottom OPP deep浅的<br />
+muddy [ˈmʌdi]: adj. covered with mud or containing mud泥泞的<br />
+sandy [ˈsændi]: adj. covered with sand, or containing a lot of sand沙的<br />
+sediment [ˈsedəmənt]: n. solid substances that settle at the bottom of a liquid沉淀物<br />
+permineralization : n. 完全矿化<br />
+mineral-rich [ˈmɪn(ə)rəl]: adj. 富含矿物质<br />
+microscopic [ˌmaɪkrəˈskɑpɪk]: adj. extremely small and therefore very difficult to see用显微镜可见的<br />
+pore [pɔr]: n. one of the small holes in your skin that liquid, especially ↑sweat, can pass through, or a similar hole in the surface of a plant毛孔, 小孔, 气孔<br />
+subduct ['sʌbdʌkt]: v. 俯冲<br />
+surroundings [səˈraʊndɪŋz]: n. the objects, buildings, natural things etc that are around a person or thing at a particular time环境<br />
+erosion [ɪˈroʊʒ(ə)n]: n. the process by which rock or soil is gradually destroyed by wind, rain, or the sea腐蚀<br />
+intrepid [ɪnˈtrepɪd]: adj. willing to do dangerous things or go to dangerous places – often used humorously SYN brave无畏的<br />
+amateur [ˈæməˌtʃʊr]: n. someone who does an activity just for pleasure, not as their job OPP professional业余爱好者<br />
+fortuitous [fɔrˈtuɪtəs]: adj. happening by chance, especially in a way that has a good result偶然的, 幸运的<br />
+magnificent [mæɡˈnɪfɪs(ə)nt]: adj. very good or beautiful, and very impressive华丽的<br />
+shed [ʃed]: adj. GET RID OF to get rid of something that you no longer need or want摆脱<br />
+disintegrate [dɪsˈɪntɪˌɡreɪt]: v. to ak up, or make something ak up, into very small pieces(使)分解<br />
+plate tectonics [tek'tɒnɪks]: 版块构造<br />
+</p>
+<hr />
+<p>
+imagine doing/being sth.: 想象做某事<br />
+inspire awe in sb.: 激起某人的惊叹<br />
+hordes of sb.: a large unorganized group of individuals成群的&#x2026;人<br />
+forget about sth.: 忘记某事<br />
+listen up: 仔细听<br />
+the Hall of sth. Fame: 名人堂<br />
+at some point: at an unspecified moment在某个不确定的点<br />
+get to sth.: 到达<br />
+A. turn into B.: be transformed into or become a particular kind of thing or person A变成B<br />
+survive intact: not broken or damaged存活完好<br />
+sp. remain the domain of sb.: 遗留为某人的领地<br />
+The right place to be if you want to do sth. is wherever + &#x2026;: 你想做某事的正确地方是无论哪里&#x2026;<br />
+hang around: to pass time idly or in relaxing or socializing闲逛<br />
+slow down (&lt;-&gt; sth.): 减缓<br />
+decay away: 逐渐腐烂<br />
+give you more time to do sth.: 给你更多时间去做某事<br />
+be lucky enough to do sth.: 足够幸运去做某事<br />
+What's your next move: 你的下一步是什么<br />
+get saturated with sth.: to fill completely with something充满某物<br />
+Bit by bit: 一点点<br />
+precipitate out of these waters: 从水中析出<br />
+hope sb. do sth.: 希望某人做某事<br />
+create a perfect cast of sth.: 创造了某物的完美模型<br />
+You're not in the clear yet: 你还不能放松<br />
+a mountain range: 山脉<br />
+erode away sth.: 侵蚀消失某物<br />
+Fingers crossed + &#x2026;will: 希望成功+&#x2026;<br />
+get gently lifted up: 被抬起<br />
+wipe away sth.: to remove (something) by rubbing擦去某物<br />
+scout for sth.: 搜寻，寻找<br />
+hope for sth.: 希望得到某物<br />
+whack away: 凿穿<br />
+in a creek bank: 小溪岸边<br />
+millions of years in the making: 历经数百万年形成<br />
+extract A. from B.: 从B中提取A<br />
+begin the complex task of doing sth.: 开始某事的复杂任务<br />
+in obscurity: 默默无闻<br />
+work oneself to the bone: to work extremely hard, especially for a long time努力到骨子里<br />
+hold that pose: 保持这个姿势<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org14bd531" class="outline-3">
+<h3 id="org14bd531">sentences</h3>
+<div class="outline-text-3" id="text-org14bd531">
+<p>
+imagine doing/being sth.:<br />
+</p>
+<ul class="org-ul">
+<li>Imagine being a programmar working for Apple.<br /></li>
+<li>Imagine staying up all night.<br /></li>
+<li>Imagine setting up a factory.<br /></li>
+</ul>
+<p>
+inspire awe in sb.: 激起某人的惊叹<br />
+</p>
+<ul class="org-ul">
+<li>There's at least one way to inspire awe in tourists in the West Lake.<br /></li>
+<li>The machine which draws enery from these ants inspires awe in tourists.<br /></li>
+<li>The door embedded into the wall inspires awe in him.<br /></li>
+</ul>
+<p>
+hordes of sb.: a large unorganized group of individuals<br />
+</p>
+<ul class="org-ul">
+<li>Hordes of fans will meet him at the station.<br /></li>
+<li>Hordes of fans have gathered round in front of the hall on the last of the year.<br /></li>
+<li>During this time, hordes of tourists are being visiting this palace.<br /></li>
+</ul>
+<p>
+forget about sth.:<br />
+</p>
+<ul class="org-ul">
+<li>I forgot about our anniversary so that my wife got very angry.<br /></li>
+<li>I forgot about the test which was held last Monday.<br /></li>
+<li>You have forgotten about what we experienced together.<br /></li>
+</ul>
+<p>
+listen up:<br />
+</p>
+<ul class="org-ul">
+<li>Listen up, it's none of your business.<br /></li>
+<li>Listen up, there used to be a beggar asking for a meal once a day.<br /></li>
+<li>Listen up, there was a palace only built from glasses and iron.<br /></li>
+</ul>
+<p>
+the Hall of sth. Fame: 名人堂<br />
+</p>
+<ul class="org-ul">
+<li>Needless to say, the player, Faker, must be in the Hall of LoL Fame.<br /></li>
+<li>The player, Faker, which has been in the Hall of LoL Fame, is in the face of his loss again.<br /></li>
+<li>The statue of the player in the Hall of LoL Fame will be embedded into the map of this Game.<br /></li>
+</ul>
+<p>
+at some point: at an unspecified moment<br />
+</p>
+<ul class="org-ul">
+<li>At some point, he was able to mobilize the immune system.<br /></li>
+<li>At some point, he became familiar with those extreme chanllenges.<br /></li>
+<li>At some point, I became expert at writting in English.<br /></li>
+</ul>
+<p>
+get to sth.: 到达<br />
+</p>
+<ul class="org-ul">
+<li>Listen up, I'll get to the station in a few minutes.<br /></li>
+<li>Decades before, she got to the town where she ran into her husband in the future.<br /></li>
+<li>The fire couldn't get to the forest.<br /></li>
+</ul>
+<p>
+A. turn into B.: be transformed into or become a particular kind of thing or person<br />
+</p>
+<ul class="org-ul">
+<li>Spoiler alert: the man who cheated on his wife turns into a stone.<br /></li>
+<li>The man turned into a stone after he agreed with my enemy.<br /></li>
+<li>It might be time for you to turn into a frog.<br /></li>
+</ul>
+<p>
+survive intact: not broken or damaged<br />
+</p>
+<ul class="org-ul">
+<li>There's a certain probability of surviving intact after you paid a ransom of $1000.<br /></li>
+<li>He managed to survive intact in a serious flood.<br /></li>
+<li>For centuries, the palace only built from glasses and iron has survived intact.<br /></li>
+</ul>
+<p>
+sp. remain the domain of sb.: 遗留为某人的领地<br />
+</p>
+<ul class="org-ul">
+<li>If you kept paying minimum wage, the factory would remain the domain of angry struck workers.<br /></li>
+<li>The kitchen needn't have remained the domain of these ants.<br /></li>
+<li>The bog is said to remian the domian of frogs.<br /></li>
+</ul>
+<p>
+The right place to be if you want to do sth. is wherever + &#x2026;: 你想做某事的正确地方是无论哪里&#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>The right place to be if you want to study English is wherever there is a computer.<br /></li>
+<li>The right place to be if you want to set up a factory<br />
+is where the authorities don't ask for high taxes.<br /></li>
+<li>The right place to be if you want to sing is where you can't hear any noises.<br /></li>
+</ul>
+<p>
+hang around: to pass time idly or in relaxing or socializing<br />
+</p>
+<ul class="org-ul">
+<li>I like to hang around by the lake on weekends.<br /></li>
+<li>Decades before, there was a beggar hanging around by the lake.<br /></li>
+<li>My mother got me far away from those beggar hanging around.<br /></li>
+</ul>
+<p>
+slow down (&lt;-&gt; sth.): 减缓<br />
+</p>
+<ul class="org-ul">
+<li>We're late for work because the craggy road slowed us down.<br /></li>
+<li>The attacks on lymph nodes have slowed his recovery from smallpox.<br /></li>
+<li>He pointed out the growth in sales might have slowed down last year.<br /></li>
+</ul>
+<p>
+decay away: 逐渐腐烂<br />
+</p>
+<ul class="org-ul">
+<li>The bodies that were dug up by the local villagers decayed away swiftly.<br /></li>
+<li>They should have found the body decay away.<br /></li>
+<li>Fielding China's attacks, these Mongols made their lamb decay away.<br /></li>
+</ul>
+<p>
+give you more time to do sth.:<br />
+</p>
+<ul class="org-ul">
+<li>You should have given him more time to satisfy his curiosity.<br /></li>
+<li>He hasn't been give more time to develop a model for an atom.<br /></li>
+<li>My mother gave me more time to watch TV on weekends.<br /></li>
+</ul>
+<p>
+be lucky enough to do sth.:<br />
+</p>
+<ul class="org-ul">
+<li>I'm lucky enough to give up smoking.<br /></li>
+<li>She's lucky enough to run a furniture business.<br /></li>
+<li>You're lucky enough to surrender your seat to the boss.<br /></li>
+</ul>
+<p>
+What's your next move:<br />
+</p>
+<ul class="org-ul">
+<li>What's your next move? I'm gonna attend a fancy dress party.<br /></li>
+<li>What's your next move? I have no idea.<br /></li>
+<li>What's your next move? Make myself comfortable.<br /></li>
+</ul>
+<p>
+get saturated with sth.: to fill completely with something<br />
+</p>
+<ul class="org-ul">
+<li>The machine used to get saturated with mineral-rich water on a lake floor.<br /></li>
+<li>Saturated with this special kind of mixture, you'll feel better.<br /></li>
+<li>The electricity meter in the storeroom gets saturated with water.<br /></li>
+</ul>
+<p>
+Bit by bit: 一点点<br />
+</p>
+<ul class="org-ul">
+<li>Bit by bit, he made a name for himself decades before.<br /></li>
+<li>Bit by bit, these firefighters got the fire under control.<br /></li>
+<li>Bit by bit, he has the authority to look up the database.<br /></li>
+</ul>
+<p>
+precipitate out of these waters: 从水中析出<br />
+</p>
+<ul class="org-ul">
+<li>He poured scorn on the idea that diamonds will precipitate out of these waters.<br /></li>
+<li>No one could account for the fact that the diamond precipitated out of these waters.<br /></li>
+<li>There was a note of triumph in his voice when the diamond precipitated out of these waters.<br /></li>
+</ul>
+<p>
+hope sb. do sth.: 希望某人做某事<br />
+</p>
+<ul class="org-ul">
+<li>I hope you pass the test.<br /></li>
+<li>I hope she achive her triumph.<br /></li>
+<li>I hope him make a large sums of money.<br /></li>
+</ul>
+<p>
+create a perfect cast of sth.: 创造了某物的完美模型<br />
+</p>
+<ul class="org-ul">
+<li>He is an expert at creating casts of these old buildings.<br /></li>
+<li>He created a cast of the old house in momery of his mother.<br /></li>
+<li>He devotes himself to creating casts of these old buildings.<br /></li>
+</ul>
+<p>
+You're not in the clear yet: 你还不能放松<br />
+</p>
+<ul class="org-ul">
+<li>Though you passed the test, you're not in the clear yet.<br /></li>
+<li>Though you get a better salary, you're not in the clear yet.<br /></li>
+<li>Though your daughter begins to make money, you're not in the clear yet.<br /></li>
+</ul>
+<p>
+a mountain range: 山脉<br />
+</p>
+<ul class="org-ul">
+<li>There is a mountain range known as the Alpa.<br /></li>
+<li>The mountain range is said to be called the Alpa.<br /></li>
+<li>We have been driving for three days to cross the mountain range.<br /></li>
+</ul>
+<p>
+erode away sth.: 侵蚀消失某物<br />
+</p>
+<ul class="org-ul">
+<li>It's said that a diamond will never be eroded away.<br /></li>
+<li>I heard about a tree which got eroded away through the centuries.<br /></li>
+<li>I must discern the cause of the tree which is said to get eroded away.<br /></li>
+</ul>
+<p>
+Fingers crossed + &#x2026;will: 希望成功+&#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>Fingers crossed you will have the authority to meet the princess.<br /></li>
+<li>Fingers crossed you will get to the mythical realms.<br /></li>
+<li>Fingers crossed you will undertake the important task of searching for exterrestrial lives.<br /></li>
+</ul>
+<p>
+get gently lifted up: 被抬起<br />
+</p>
+<ul class="org-ul">
+<li>The baggage must get gently lifted up.<br /></li>
+<li>With the order given, the baggage got gently lifted up.<br /></li>
+<li>The soft should have gotten gently lifted up.<br /></li>
+</ul>
+<p>
+wipe away sth.: to remove (something) by rubbing<br />
+</p>
+<ul class="org-ul">
+<li>The authorities are trying to wipe away these street signs.<br /></li>
+<li>I saw you wipe away those signs, you must be an apprentice to a baker.<br /></li>
+<li>I kept wiping away my wife's tears.<br /></li>
+</ul>
+<p>
+scout for sth.: 搜寻，寻找<br />
+</p>
+<ul class="org-ul">
+<li>He is scounting for the soldier hiding in tussock grasses.<br /></li>
+<li>While scounting for the soldier, he was knocked to the ground.<br /></li>
+<li>These soldiers are scount for a prisoner at large up and down in front of the camp.<br /></li>
+</ul>
+<p>
+hope for sth.: 希望得到某物<br />
+</p>
+<ul class="org-ul">
+<li>I have hoped for a gun in my youth.<br /></li>
+<li>She hoped for a factory in her hard early years.<br /></li>
+<li>The medical student hopes for a vacation for a period of time.<br /></li>
+</ul>
+<p>
+whack away: 凿穿<br />
+</p>
+<ul class="org-ul">
+<li>The wall should have been whacked away.<br /></li>
+<li>He whacked away the wall to rescue his cat.<br /></li>
+<li>He whacked away the wall so that he could break into the mall.<br /></li>
+</ul>
+<p>
+in a creek bank: 小溪岸边<br />
+</p>
+<ul class="org-ul">
+<li>A businessman claimed that he had seen the puma in a creek bank.<br /></li>
+<li>There are a lot of excitements in a creek bank.<br /></li>
+<li>We have made a big mistake in a creek bank.<br /></li>
+</ul>
+<p>
+millions of years in the making: 历经数百万年形成<br />
+</p>
+<ul class="org-ul">
+<li>The fossil is millions of years in the making.<br /></li>
+<li>The fossil turns out to be millions of years in the making.<br /></li>
+<li>There is a mountain called the Alpa, millions of years in the making.<br /></li>
+</ul>
+<p>
+extract A. from B.: 从B中提取A<br />
+</p>
+<ul class="org-ul">
+<li>I failed to extract the archive from the compressed file.<br /></li>
+<li>The scientist undertook the arduous task of extracting the skeleton from the surround sediment.<br /></li>
+<li>He went through arduous process of extracting the fossil from the rock.<br /></li>
+</ul>
+<p>
+begin the complex task of doing sth.: 开始某事的复杂任务<br />
+</p>
+<ul class="org-ul">
+<li>He began the complex task of developing a model for an atom.<br /></li>
+<li>These scientists began the complex task of searching for extraterrestrial lives.<br /></li>
+<li>He began the complex task of translating the textbook into Chinese.<br /></li>
+</ul>
+<p>
+in obscurity: 默默无闻<br />
+</p>
+<ul class="org-ul">
+<li>The maidservant in obscurity has killed five of her husbands in her youth.<br /></li>
+<li>It is incredible that the writer in obscurity makes a large sum of money.<br /></li>
+<li>The student in obscurity has completed the arduous course.<br /></li>
+</ul>
+<p>
+work oneself to the bone: to work extremely hard, especially for a long time<br />
+</p>
+<ul class="org-ul">
+<li>My teacher used to ask me to work myself to the bone.<br /></li>
+<li>Although I work myself to the bone, I don't get a good salary.<br /></li>
+<li>I poured scorn on the idea that she decided to work herself to the bone.<br /></li>
+</ul>
+<p>
+hold that pose: 保持这个姿势<br />
+</p>
+<ul class="org-ul">
+<li>Following my instruction, my wife held that pose so that I could take photographs.<br /></li>
+<li>You looked beautiful while you were holding that pose.<br /></li>
+<li>I anticipated that she couldn't hold that pose for a long time.<br /></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-01-28 Sun 19:07 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orga00eeb1">1. Thinking in English</a>
+<ul>
+<li><a href="#orgb6fd9e1">1.1. sherwin</a>
+<ul>
+<li><a href="#org4b11cd5">1.1.1. daily routine:</a></li>
+<li><a href="#orgd43e3b5">1.1.2. somethings that I must obey</a></li>
+<li><a href="#org574d0e7">1.1.3. do as best as I can:</a></li>
+<li><a href="#orgf13ed31">1.1.4. exercises</a></li>
+</ul>
+</li>
+<li><a href="#org6791bb9">1.2. Leo</a></li>
+<li><a href="#orgb341b50">1.3. linguamarina</a></li>
+<li><a href="#orgf64f8b5">1.4. Luck's English mind</a>
+<ul>
+<li><a href="#org6ac0384">1.4.1. tips</a></li>
+<li><a href="#org0cb7784">1.4.2. reading</a></li>
+<li><a href="#org8545470">1.4.3. how to learn new words</a></li>
+<li><a href="#org8e3f273">1.4.4. how to learn idioms</a></li>
+<li><a href="#org2d578a9">1.4.5. 4-word exercises</a></li>
+<li><a href="#org738325f">1.4.6. Variations</a></li>
+<li><a href="#orgad2fb6f">1.4.7. Full-Variations</a></li>
+<li><a href="#org274e61d">1.4.8. listening exercise</a></li>
+<li><a href="#orgea759c5">1.4.9. Thinking exercise</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orga00eeb1" class="outline-2">
+<h2 id="orga00eeb1"><span class="section-number-2">1.</span> Thinking in English</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+<div id="outline-container-orgb6fd9e1" class="outline-3">
+<h3 id="orgb6fd9e1"><span class="section-number-3">1.1.</span> sherwin</h3>
+<div class="outline-text-3" id="text-1-1">
+<p>
+Why should I think in English?
+Thinking in English a key point
+	to move from being intermediate to upper-intermediate, advanced and native speaker level.
+</p>
+</div>
+
+<div id="outline-container-org4b11cd5" class="outline-4">
+<h4 id="org4b11cd5"><span class="section-number-4">1.1.1.</span> daily routine:</h4>
+<div class="outline-text-4" id="text-1-1-1">
+<ol class="org-ol">
+<li>reading time everyday
+<ul class="org-ul">
+<li>repeat after audios</li>
+<li>review</li>
+</ul></li>
+<li>while leaving home until arriving at work
+<ul class="org-ul">
+<li>watch English books</li>
+</ul></li>
+<li>spare time at work
+<ul class="org-ul">
+<li>finish red cover books</li>
+<li>write essays</li>
+<li>read actively or just for fun</li>
+<li>review</li>
+</ul></li>
+<li>spare time while waitting a bus and so on
+<ul class="org-ul">
+<li>read books</li>
+<li>watch dramas, movies</li>
+<li>describe something around you in English</li>
+<li>publish moment</li>
+</ul></li>
+<li>golden time
+<ul class="org-ul">
+<li>learn NCE course</li>
+<li>learn intensive course</li>
+<li>talk to foreigner teachers</li>
+</ul></li>
+<li>short time before sleeping
+<ul class="org-ul">
+<li>watch youtube, read book and so on</li>
+<li>thinking exercise</li>
+</ul></li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orgd43e3b5" class="outline-4">
+<h4 id="orgd43e3b5"><span class="section-number-4">1.1.2.</span> somethings that I must obey</h4>
+<div class="outline-text-4" id="text-1-1-2">
+<ol class="org-ol">
+<li>Don't use Chinese in short time before sleeping</li>
+<li>stop translating while learning new concepts
+<ul class="org-ul">
+<li>just google the new concept and go to images without translating it while learning it</li>
+</ul></li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org574d0e7" class="outline-4">
+<h4 id="org574d0e7"><span class="section-number-4">1.1.3.</span> do as best as I can:</h4>
+<div class="outline-text-4" id="text-1-1-3">
+<ol class="org-ol">
+<li>Do fun stuff in English as much as possible</li>
+<li>learn new concept in English straightaway</li>
+<li>switch everything around you in English as possible as you can</li>
+<li>thinking exercise</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orgf13ed31" class="outline-4">
+<h4 id="orgf13ed31"><span class="section-number-4">1.1.4.</span> exercises</h4>
+<div class="outline-text-4" id="text-1-1-4">
+<ol class="org-ol">
+<li>make sentences</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org6791bb9" class="outline-3">
+<h3 id="org6791bb9"><span class="section-number-3">1.2.</span> Leo</h3>
+<div class="outline-text-3" id="text-1-2">
+<p>
+精读：上nce课；造句； 红皮书；重复间隔；
+精听：跟读；nce电影片段
+泛读：不求甚解地看书； 带着问题去找答案地看书；
+泛听：电影；电视剧；广播；音乐；
+写作：随意写点东西，比如朋友圈发点英文想法；以某个主题去搞素材，形成论证，比如雅思作文和topic For Disscussion.
+口语：沉浸对话课程；对周边事物尝试用英语描述；hellotalk找母语者对话
+</p>
+
+<p>
+我把这些事情分了什么时间做，以及按顺序排优先级（实在不想干某个事就换一下）。
+工作划水时间：
+       红皮书补全；作文写作；带问题泛读；重复间隔；不求甚解泛读
+</p>
+
+<p>
+黄金时间（晚餐后直到休息前）：
+      上nce；沉浸对话课程；hellotalk找外教
+</p>
+
+<p>
+早中晚跟读时间：
+       跟读；重复间隔
+</p>
+
+<p>
+碎片时间：
+       听美剧、看电影、电视剧；时不时用英语描述周边事物；发朋友圈
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb341b50" class="outline-3">
+<h3 id="orgb341b50"><span class="section-number-3">1.3.</span> linguamarina</h3>
+<div class="outline-text-3" id="text-1-3">
+<p>
+So, thinking in English is a key thing for you
+	to move <b>from being intermediate to upper-intermediate, advanced and native speaker level</b>.
+</p>
+
+<p>
+I went to bed thinking in English, and I had a dream in English,
+	and I woke up in the morning, and I realized I'm actually thinking in English.
+</p>
+
+<p>
+rules for keeping thinking in English:
+</p>
+<ol class="org-ol">
+<li>travel to an English-speaking country.</li>
+<li>From now on I will only do fun stuff in English. YouTube video, Instagram, English books.</li>
+<li>learn the concept in English straightaway</li>
+<li>When you're learning a new concept you get rid of translation.
+<ol class="org-ol">
+<li>if you want to read more about photography or if you want to read more about filmmaking,
+blogging, do that in English.</li>
+<li>if you encounter a new concept, you just Google it, you go to images,
+and you read what that word means without translating it.</li>
+</ol></li>
+<li>Switch your phone, your smartphone, your laptop, to English.</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orgf64f8b5" class="outline-3">
+<h3 id="orgf64f8b5"><span class="section-number-3">1.4.</span> Luck's English mind</h3>
+<div class="outline-text-3" id="text-1-4">
+<p>
+English brain is your ability to think in English while speaking English.
+</p>
+</div>
+
+<div id="outline-container-org6ac0384" class="outline-4">
+<h4 id="org6ac0384"><span class="section-number-4">1.4.1.</span> tips</h4>
+<div class="outline-text-4" id="text-1-4-1">
+<p>
+Keep in mind:
+</p>
+<ol class="org-ol">
+<li>Learning something is often not enough, you have to learn and apply it.
+Practice it many times.</li>
+<li>If you don't learn to think in English, you won't be fluent.
+This is the only way to be a fluent English speaker.</li>
+<li>Time doesn't equal success.
+You may spend a lot of doing wrong things.</li>
+</ol>
+<p>
+three actions
+</p>
+<ol class="org-ol">
+<li>play: think creatively</li>
+<li>jump: without any reservations</li>
+<li>swim: immerse</li>
+</ol>
+<p>
+daily routines:
+</p>
+<ol class="org-ol">
+<li>30 minutes</li>
+<li>feedback AI</li>
+<li>lifestyle: enjoy it</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org0cb7784" class="outline-4">
+<h4 id="org0cb7784"><span class="section-number-4">1.4.2.</span> reading</h4>
+<div class="outline-text-4" id="text-1-4-2">
+<ol class="org-ol">
+<li>guess means of word in context</li>
+<li>look up word by using all English dictionary</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org8545470" class="outline-4">
+<h4 id="org8545470"><span class="section-number-4">1.4.3.</span> how to learn new words</h4>
+<div class="outline-text-4" id="text-1-4-3">
+<ol class="org-ol">
+<li>guess means of word in context</li>
+<li>learn all of the forms</li>
+<li>learn in the context</li>
+<li>make sentences</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org8e3f273" class="outline-4">
+<h4 id="org8e3f273"><span class="section-number-4">1.4.4.</span> how to learn idioms</h4>
+<div class="outline-text-4" id="text-1-4-4">
+<ol class="org-ol">
+<li>what it means</li>
+<li>where to use it</li>
+<li>who to use it</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org2d578a9" class="outline-4">
+<h4 id="org2d578a9"><span class="section-number-4">1.4.5.</span> 4-word exercises</h4>
+</div>
+
+<div id="outline-container-org738325f" class="outline-4">
+<h4 id="org738325f"><span class="section-number-4">1.4.6.</span> Variations</h4>
+<div class="outline-text-4" id="text-1-4-6">
+<p>
+An example of variations of a sentence:
+	origin: I think it might take a few days for me to help you book your tickets.
+	v1: I think I can have your tickets booked in a few days.
+	v2: Give me a few days to book your tickets.
+	v3: I can reserve your tickets if you like, but it might take a few days.
+	v4: If you give me a few days, I can book your tickets.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgad2fb6f" class="outline-4">
+<h4 id="orgad2fb6f"><span class="section-number-4">1.4.7.</span> Full-Variations</h4>
+<div class="outline-text-4" id="text-1-4-7">
+<p>
+A variation of a full paragraph.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org274e61d" class="outline-4">
+<h4 id="org274e61d"><span class="section-number-4">1.4.8.</span> listening exercise</h4>
+<div class="outline-text-4" id="text-1-4-8">
+<ol class="org-ol">
+<li>Listen to a mp3 which you need to only understand 20-30% again and again.</li>
+<li>1 minutes</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orgea759c5" class="outline-4">
+<h4 id="orgea759c5"><span class="section-number-4">1.4.9.</span> Thinking exercise</h4>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: DESKTOP-13B7HQM</p>
+<p class="date">Created: 2024-01-28 Sun 19:07</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

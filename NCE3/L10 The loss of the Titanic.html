@@ -1,0 +1,682 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-09-28 Sat 22:17 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-orgf659e00" class="outline-2">
+<h2 id="orgf659e00">Lesson 10 The loss of the Titanic</h2>
+<div class="outline-text-2" id="text-orgf659e00">
+<p class="verse">
+What would have happened if only two of the sixteen water-tight compartments had been flooded?<br />
+<br />
+The great ship, Titanic, sailed for New York from Southampton on April 10th, 1912.<br />
+She was carrying 1,316 passengers and <b>a crew of</b> 891.<br />
+Even by modern standards, the 46,000 ton Titanic was a colossal ship.<br />
+At that time, however, she was not only the largest ship that had ever been built,<br />
+&#xa0;&#xa0;but <b>was regarded as</b> unsinkable,<br />
+&#xa0;for she had sixteen watertight compartments.<br />
+Even if two of these were flooded, she would still be able to float.<br />
+The tragic sinking of this great liner will always be remembered,<br />
+&#xa0;for she went down on her first voyage with heavy loss of life.<br />
+<br />
+Four days after setting out,<br />
+&#xa0;while the Titanic was sailing across the icy waters of the North Atlantic,<br />
+&#xa0;a huge iceberg was suddenly spotted by a lookout.<br />
+After the <b>alarm had been given</b>, the great ship turned sharply to avoid a direct collision.<br />
+The Titanic turned just <b>in time</b>, narrowly missing the immense wall of ice<br />
+&#xa0;which rose over 100 feet out of the water beside her.<br />
+Suddenly, there was a slight trembling sound from below,<br />
+&#xa0;and the captain went down to see what had happened.<br />
+The noise had been so faint that no one thought that the ship had been damaged.<br />
+Below, the captain <b>realized to his horror that</b> the Titanic was sinking rapidly,<br />
+&#xa0;for five of her sixteen watertight compartments had already been flooded!<br />
+<b>The order to abandon ship was given</b> and hundreds of people plunged into the icy water.<br />
+As there were not enough lifeboats for everybody, 1,500 lives were lost.<br />
+</p>
+</div>
+<div id="outline-container-orgecf2b79" class="outline-3">
+<h3 id="orgecf2b79">expression</h3>
+<div class="outline-text-3" id="text-orgecf2b79">
+<p>
+Southampton: [saʊθ'hæmptənˌ saʊ'θæmp-]<br />
+colossal: [kəˈlɑs(ə)l] adj.庞大的<br />
+watertight: [ˈwɔtərˌtaɪt] adj.不漏水的<br />
+compartment: [kəmˈpɑrtmənt] n.(轮船的)密封舱<br />
+flood: [flʌd] v.充满水<br />
+float: [floʊt] v.漂浮,漂浮<br />
+tragic: [ˈtrædʒɪk] adj.悲惨的<br />
+liner: [ˈlaɪnər] n. a large ship for passengers班船<br />
+voyage: [ˈvɔɪɪdʒ] n.航行<br />
+iceberg: [ˈaɪsˌbɜrɡ] n.冰山<br />
+lookout: [ˈlʊkˌaʊt] n. someone whose duty is to watch carefully for something, especially for danger瞭望员<br />
+collision: [kəˈlɪʒ(ə)n] n.碰撞<br />
+narrowly: [ˈneroʊli] adv.刚刚,勉强地<br />
+miss: [mɪs] v.避开<br />
+slight: [slaɪt] adj.轻微的<br />
+tremble: [ˈtremb(ə)l] v.  to shake slightly in a way that you cannot control, especially because you are upset or frightened震颤<br />
+faint: [feɪnt] adj.微弱的<br />
+horror: [ˈhɔrər] n.  to sb's horror  horror movie恐惧<br />
+abandon: [əˈbændən] v.抛弃<br />
+plunge: [plʌndʒ] v.投入, 跳入<br />
+lifeboat: [ˈlaɪfˌboʊt] n.救生船<br />
+</p>
+<hr />
+<p>
+a crew of: eg. ~ workers; ~ painter; ~ waiters一群&#x2026;<br />
+be regarded as + adj./n.: 被认为是<br />
+give an alarm: give a warn of danger发出警报<br />
+in time: not late; punctual.及时<br />
+realized to his horror that: 惊恐的意识到&#x2026;<br />
+give an order: 下命令<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org10bb970" class="outline-3">
+<h3 id="org10bb970">words</h3>
+<div class="outline-text-3" id="text-org10bb970">
+<p>
+Southampton [saʊθ'hæmptən] n. 南安普敦<br />
+colossal [kəˈlɑs(ə)l] adj. 庞大的<br />
+watertight [ˈwɔtərˌtaɪt] adj. 不漏水的<br />
+compartment [kəmˈpɑrtmənt] n. 轮船的密封舱<br />
+flood [flʌd] v. 充满水<br />
+float [floʊt] v. 漂浮<br />
+tragic [ˈtrædʒɪk] adj. 悲惨的<br />
+liner [ˈlaɪnər] n. 班船<br />
+voyage [ˈvɔɪɪdʒ] n. 航行<br />
+iceberg [ˈaɪsˌbɜrɡ] n. 冰山<br />
+lookout [ˈlʊkˌaʊt] n. 瞭望员<br />
+collision [kəˈlɪʒ(ə)n] n. 碰撞<br />
+narrowly [ˈneroʊli] adv. 刚刚,勉强地<br />
+miss [mɪs] v. 避开<br />
+slight [slaɪt] adj. 轻微的<br />
+faint [feɪnt] adj. 微弱的<br />
+horror [ˈhɔrər] n. 恐惧<br />
+abandon [əˈbændən] v. 抛弃<br />
+plunge [plʌndʒ] v. 投入,跳入<br />
+lifeboat [ˈlaɪfˌboʊt] n. 救生船<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgf152dd9" class="outline-3">
+<h3 id="orgf152dd9">Vocabulary</h3>
+<div class="outline-text-3" id="text-orgf152dd9">
+<p>
+colossal: immense,huge<br />
+regarded: considered, thought to be<br />
+compartments: sections,divisions<br />
+flooded: filled with water<br />
+float: stay on the surface of the water<br />
+avoid: escape, miss<br />
+narrowly: only just<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org4a34038" class="outline-3">
+<h3 id="org4a34038"><span class="done DONE">DONE</span> 单词造句</h3>
+<div class="outline-text-3" id="text-org4a34038">
+<p>
+Southampton<br />
+colossal adj.<br />
+</p>
+<ul class="org-ul">
+<li>Instead of catching fishes, I catch nothing. This is a colossal waste of time.<br /></li>
+<li>The colossal has been burnt down last night for one reason or another.<br /></li>
+<li>To our surprise, there is a colossal wooden statue in his garden.<br /></li>
+<li>Somehow, I have made such a colossal mistake.<br /></li>
+<li>If you didn't make such a colossal mistake, you wouldn't be fired.<br /></li>
+</ul>
+<p>
+watertight adj.<br />
+</p>
+<ul class="org-ul">
+<li>If I didn't wear watertight clothes, I would be in difficulty now.<br /></li>
+<li>As long as the tire is watertight, we will be safe now.<br /></li>
+<li>I learned to make a watertight bag in the factory.<br /></li>
+<li>These clothes have one thing in common: they are watertight.<br /></li>
+<li>He is making a study of the watertight compartment.<br /></li>
+</ul>
+<p>
+compartment n.<br />
+</p>
+<ul class="org-ul">
+<li>The detective pointed out that the house has a compartment.<br /></li>
+<li>The compartment used to be connected to the garage.<br /></li>
+<li>The compartment of the house hasn't been found for hundreds of years.<br /></li>
+<li>The flight attendant lost her temper, for the customer was reluctant to leave the compartment.<br /></li>
+<li>No one has been allowed to live in compartents.<br /></li>
+</ul>
+<p>
+flood v.<br />
+</p>
+<ul class="org-ul">
+<li>Imagine my wife's dismay when she found out that the kitchen was flooded.<br /></li>
+<li>The authorities confirmed that all villages have been flooded.<br /></li>
+<li>The boys went to extremes to flood the garage.<br /></li>
+<li>Even if two of the compartments were flooded, the ship would still be able to float.<br /></li>
+<li>Because the room was flooded, I have to deal with it for a long time.<br /></li>
+</ul>
+<p>
+float v.<br />
+</p>
+<ul class="org-ul">
+<li>The lookout claimed to have spotted some leaves floating on the water.<br /></li>
+<li>The captain found the body floating nearby and call out to the police.<br /></li>
+<li>We couldn't swim in the river, for the simple reason that the boat is floating nearby.<br /></li>
+<li>This turned out to be a boat floating on the river.<br /></li>
+<li>The man love to sit in a boat floating on the river.<br /></li>
+</ul>
+<p>
+tragic adj.<br />
+</p>
+<ul class="org-ul">
+<li>She decided to make a sacrifice when she heard the tragic news.<br /></li>
+<li>When the tragic news arrived, all of us bursted into tears.<br /></li>
+<li>This is tragic news, and I felt oblige to keep the secret.<br /></li>
+<li>My cat died from a tragic accident last year.<br /></li>
+<li>I was just wondering what was the tragic news.<br /></li>
+</ul>
+<p>
+liner n.<br />
+</p>
+<ul class="org-ul">
+<li>She never dreamed of sailing to America in a large liner.<br /></li>
+<li>I woke up with a start, realizing that I was in a large liner.<br /></li>
+<li>The ocean liner was said to sail for Shanghai from New York.<br /></li>
+<li>He used to be a waiter who worked on a large liner.<br /></li>
+<li>Suddenly a large liner was spotted by a lookout.<br /></li>
+</ul>
+<p>
+voyage n.<br />
+</p>
+<ul class="org-ul">
+<li>She must have been a passenger on our first voyage.<br /></li>
+<li>You will have a happy voyage to London.<br /></li>
+<li>I thought we need to rest after a long voyage.<br /></li>
+<li>She loves to sail out at sea after her first voyage.<br /></li>
+<li>It is well known that the colossal ship sank on her first voyage.<br /></li>
+</ul>
+<p>
+iceberg n.<br />
+</p>
+<ul class="org-ul">
+<li>The lookout claimed to have seen an iceberg.<br /></li>
+<li>The tragic news came to America that the liner had hit an iceberg.<br /></li>
+<li>He is fanatical about iceberg.<br /></li>
+<li>He caught sight of a figure which seems to be an iceberg.<br /></li>
+<li>It is disturbing to think that the ship may hit an iceberg in the icy waters of Atlantic.<br /></li>
+</ul>
+<p>
+lookout n.<br />
+</p>
+<ul class="org-ul">
+<li>The look out died from a tragic accident.<br /></li>
+<li>This entitle the lookout to live in the compartment.<br /></li>
+<li>The lookout lost his nerve when he spotted  a huge iceberg.<br /></li>
+<li>It was not long before the lookout died of a rare disease.<br /></li>
+<li>The lookout claimed to have seen an iceberg moving in front of the ship.<br /></li>
+</ul>
+<p>
+collision n.<br />
+</p>
+<ul class="org-ul">
+<li>The busman and I turned sharply to avoid a collision.<br /></li>
+<li>The actor took precaution in a colllision so that no one can recognize him.<br /></li>
+<li>The detective made a study of traffic collisions in the city.<br /></li>
+<li>It is fortunate that no one was injuried in the collision.<br /></li>
+<li>The report came to the Zoo that five elephants were injuried in a collision.<br /></li>
+</ul>
+<p>
+narrowly adv.<br />
+</p>
+<ul class="org-ul">
+<li>Alan was said to narrowly avoid an accident.<br /></li>
+<li>I narrowly missed the man who stole my wallet last night.<br /></li>
+<li>He has narrowly won the elections.<br /></li>
+<li>She stated that she narrowly failed the exam.<br /></li>
+<li>The lucky woman narrowly broke the world record.<br /></li>
+</ul>
+<p>
+miss v.<br />
+</p>
+<ul class="org-ul">
+<li>He missed his exam, for he was too late.<br /></li>
+<li>If you didn't miss lunch, you wouldn't be so hungry.<br /></li>
+<li>If I didn't miss her, I would get married to her now.<br /></li>
+<li>It is still possible to miss the train if you don't hurry to the station.<br /></li>
+<li>Although we missed the chance, we should put forward our plan.<br /></li>
+</ul>
+<p>
+slight adj.<br />
+</p>
+<ul class="org-ul">
+<li>He takes his job so seriously that he still went to work while getting a slight fever.<br /></li>
+<li>If you get a slight fever, you should go home.<br /></li>
+<li>I should warn you, there's only a slight chance it works.<br /></li>
+<li>We will stick to our plan which wll make a slight change.<br /></li>
+<li>These old builds have made a slight change for hundreds of years.<br /></li>
+</ul>
+<p>
+tremble v.<br />
+</p>
+<ul class="org-ul">
+<li>My body is likely to tremble when I lose nerve.<br /></li>
+<li>You needn't have threatened to kill him, because his whole body is trembling now.<br /></li>
+<li>My body is out of control and trembling all the time.<br /></li>
+<li>It is considered unlucky for somebody trembling in front of the goddess.<br /></li>
+<li>I am expected to tremble and make a spectabcle of myself.<br /></li>
+</ul>
+<p>
+faint adj.<br />
+</p>
+<ul class="org-ul">
+<li>The faint noise they make, the more likely we are to use them.<br /></li>
+<li>She claimed to have heard a faint sound from the compartment.<br /></li>
+<li>As long as there is a faint sound, the dog will recognize it.<br /></li>
+<li>Seeing a faint light, the vicar went up to find out what had happened.<br /></li>
+<li>My wife always detects a faint smell of perfume when I meet other women.<br /></li>
+</ul>
+<p>
+horror n.  to sb's horror  horror movie<br />
+</p>
+<ul class="org-ul">
+<li>A circle of friends are watching a Japanese horror movie together.<br /></li>
+<li>To my horror, I found my brother beautiful.<br /></li>
+<li>To his horror, he found that his legs had been mutilated.<br /></li>
+<li>To my horror, I was mutilated in the tragic accident.<br /></li>
+<li>To her horror, she forgets to provide them with background music.<br /></li>
+</ul>
+<p>
+abandon v.<br />
+</p>
+<ul class="org-ul">
+<li>The abandoned ship is floating on the river.<br /></li>
+<li>Well, you are busy abandoning your children.<br /></li>
+<li>She has written an article on abandoned dogs.<br /></li>
+<li>In the end, the girl got impatient and decided to abandon her cat.<br /></li>
+<li>Who entitles you to abandon your dogs?<br /></li>
+</ul>
+<p>
+plunge v.<br />
+</p>
+<ul class="org-ul">
+<li>We are not allowed to plunge into water.<br /></li>
+<li>Don't even try to plunge into water and get such a mess.<br /></li>
+<li>If you plunge into water again, we will kick your ass.<br /></li>
+<li>If you didn't plunge into water, we would be swimming now.<br /></li>
+<li>People in this town who do manual work love to plunge into water after their work.<br /></li>
+</ul>
+<p>
+lifeboat n.<br />
+</p>
+<ul class="org-ul">
+<li>Why don't you sacrifice some money for a lifeboat?<br /></li>
+<li>I have the privilege of using the lifeboat.<br /></li>
+<li>There are not enough lifeboats on the river.<br /></li>
+<li>The man who owns a lifeboat often makes a sacrifice.<br /></li>
+<li>The man who owns a lifeboat used to be a waiter working on a colossal ship.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org62cce25" class="outline-3">
+<h3 id="org62cce25"><span class="done DONE">DONE</span> 反复听电影片段直到懂关键句</h3>
+<div class="outline-text-3" id="text-org62cce25">
+</div>
+</div>
+<div id="outline-container-org723c8cb" class="outline-3">
+<h3 id="org723c8cb">复习二册语法(笔记或视频) &amp; 红皮书</h3>
+</div>
+<div id="outline-container-org5907c75" class="outline-3">
+<h3 id="org5907c75"><span class="done DONE">DONE</span> 习惯用法造句</h3>
+<div class="outline-text-3" id="text-org5907c75">
+<p>
+a crew of<br />
+</p>
+<ul class="org-ul">
+<li>He will be writting an article on a crew of workers in the theater.<br /></li>
+<li>Did a crew of painter go into a high-rise building?<br /></li>
+<li>He is telling a story which is based on a crew of waiters.<br /></li>
+<li>A crew of waiters are watching a Japanese horror movie.<br /></li>
+<li>To his horror, a crew of worker was setting his house on fire.<br /></li>
+</ul>
+<p>
+be regarded as + adj./n.<br />
+</p>
+<ul class="org-ul">
+<li>The man who has red hair have been regarded as dangerous by police.<br /></li>
+<li>It's disturbing to think that I am regarded as ugly by my wife.<br /></li>
+<li>He has been regarded as dangerous by police for a period of time every year.<br /></li>
+<li>She may have been regarded as the most beautiful woman in China.<br /></li>
+<li>To his horror, he realized that he was regarded as dangerous by police.<br /></li>
+</ul>
+<p>
+give an alarm<br />
+</p>
+<ul class="org-ul">
+<li>So long as you give an alarm, your children will rush out of the house.<br /></li>
+<li>Now that the alarm was given, I am being considered as dangerous by people.<br /></li>
+<li>So long as the alarm is given, the bus will come to stop.<br /></li>
+<li>As long as the alarm was given, the workered stopped to rescue.<br /></li>
+<li>If the alarm was given, there would be less people injuried.<br /></li>
+</ul>
+<p>
+in time<br />
+</p>
+<ul class="org-ul">
+<li>The article has been published in time.<br /></li>
+<li>My wife changed into her new dress in time.<br /></li>
+<li>The girl is reluctant to finish her housework in time.<br /></li>
+<li>Thanks to my classmate, I finish it in time.<br /></li>
+<li>If you don't carry your identify card, you will not be here in time.<br /></li>
+</ul>
+<p>
+realized to his horror that<br />
+</p>
+<ul class="org-ul">
+<li>I realized to my horror that my passwort had been stolen by that girl.<br /></li>
+<li>I realized to my horror that she had fallen love in her teacher.<br /></li>
+<li>I realized to my horror that he was equiped with a gun.<br /></li>
+<li>I realized to my horror that I still didn't get enough money to study abroad.<br /></li>
+<li>I realized to my horror that I had made a colossal mistake.<br /></li>
+</ul>
+<p>
+give an order<br />
+</p>
+<ul class="org-ul">
+<li>Mr. Leo gave an order to read aloud.<br /></li>
+<li>I gave an order to charge at the ball.<br /></li>
+<li>The order to hit the balloon was given.<br /></li>
+<li>The order to set the museum on fire was gaven.<br /></li>
+<li>Why did you give such a stupid order?<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org6e2a435" class="outline-3">
+<h3 id="org6e2a435">跟读 50遍</h3>
+</div>
+<div id="outline-container-org7ef3a0d" class="outline-3">
+<h3 id="org7ef3a0d"><span class="done DONE">DONE</span> Comprehension 反复练习</h3>
+<div class="outline-text-3" id="text-org7ef3a0d">
+</div>
+</div>
+<div id="outline-container-orgdbd0b39" class="outline-3">
+<h3 id="orgdbd0b39"><span class="done DONE">DONE</span> Ask me if 写+读</h3>
+<div class="outline-text-3" id="text-orgdbd0b39">
+<ol class="org-ol">
+<li>The Titanic sailed from Southampton. Where<br />
+Where did the Titanic sail from?<br /></li>
+<li>She was carrying 1,316 passengers. How many passengers<br />
+How many passengers was she carrying?<br /></li>
+<li>She was regarded as unsinkable. Why<br />
+Why was she regarded as unsinkable?<br /></li>
+<li>She had sixteen watertight compartments. How many<br />
+How many watertight compartments did she have?<br /></li>
+<li>An iceberg was spotted. How many days after setting out<br />
+How many days after setting out was an iceberg spotted?<br /></li>
+<li>The ship turned sharply. Why<br />
+Why did the ship turn sharply?<br /></li>
+<li>The wall of ice rose over 100 feet out of the water. How high<br />
+How high did the wall of ice rise?<br /></li>
+<li>The captain realized the ship was sinking. What<br />
+What did the captain realize?<br /></li>
+<li>Five of her compartments had been flooded. How many<br />
+How may of her compartments had been flooded?<br /></li>
+<li>1,500 lives were lost. How many<br />
+How many lives were lost?<br /></li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org2738818" class="outline-3">
+<h3 id="org2738818"><span class="done DONE">DONE</span> 摘要写作 写 &amp; 对答案</h3>
+<div class="outline-text-3" id="text-org2738818">
+<p>
+The Titanic was sailing across the icy waters of the North Atlantic<br />
+	when an iceberg was seen by a lookout.<br />
+After the alarm was given, the ship turned sharply and sail alongside it.<br />
+Suddenly, a faint noise was heard from below,<br />
+	so the captain went down to investigate,<br />
+	only to found that five of the sixteen compartments had been flooded.<br />
+On hearing the order to abandon ship, people jumped overboard,<br />
+	but 1,500 peole were drowned because there are not enough lifeboats for everyone.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgf210ddf" class="outline-3">
+<h3 id="orgf210ddf"><span class="done DONE">DONE</span> tell the story 口语复述</h3>
+<div class="outline-text-3" id="text-orgf210ddf">
+</div>
+</div>
+<div id="outline-container-orgac74394" class="outline-3">
+<h3 id="orgac74394"><span class="done DONE">DONE</span> composition 阅读 或 写作</h3>
+<div class="outline-text-3" id="text-orgac74394">
+<p>
+The Titanic began to sink, slowly at first.<br />
+The order to abandon ship was unexpected, so passengers and crew were completely unprepared.<br />
+It was the middle of the night.<br />
+Some people were asleep in their cabins.<br />
+Others were on deck admiring the brilliant night sky and the giant icebergs rising above them.<br />
+Others were eating and dancing in the wonderful ballrooms on the ship.<br />
+The immediate effect was panic and confusion.<br />
+People began rushing in all directions, wondering what to do next.<br />
+The cold was indescribable and many passengers were still in their night clothes.<br />
+</p>
+
+<p>
+Members of the crew came up from below and began to lower the lifeboats.<br />
+It was a case of women and children first,<br />
+	but it soon became obvious that there weren't enough lifeboats for everyone,<br />
+	so people jumped overboard into the freezing water in order to save their lives.<br />
+Some of those swimming in the water struggled to get into the lifeboats,<br />
+	but most of them were already full.<br />
+The Titanic sank rapidly, carrying many people down with it.<br />
+There were cries of despair from people in the water<br />
+	as they watched the lifeboats moving away and were left to drown in the icy ocean.<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org39e1961" class="outline-3">
+<h3 id="org39e1961">Topics for discussion</h3>
+</div>
+</div>
+</div>
+</body>
+</html>

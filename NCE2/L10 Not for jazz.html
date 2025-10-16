@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-08-06 Tue 22:27 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+
+<div id="outline-container-orgb5b8638" class="outline-2">
+<h2 id="orgb5b8638">Lesson 10 Not for jazz</h2>
+<div class="outline-text-2" id="text-orgb5b8638">
+<p class="verse">
+What happened to the clavichord?<br />
+<br />
+We have an old musical instrument.<br />
+It is called a clavichord.<br />
+It <b>was made in</b> Germany in 1681.<br />
+Our clavichord is kept in the living-room.<br />
+It has <b>belonged to</b> our family for a long time.<br />
+The instrument was bought by my grandfather many years ago.<br />
+Recently it was damaged by a visitor.<br />
+She tried to <b>play jazz</b> on it!<br />
+She struck the keys too hard and two of the strings were broken.<br />
+My father was shocked.<br />
+Now we <b>are not allowed to touch</b> it.<br />
+It is being repaired by a friend of my father's.<br />
+</p>
+</div>
+<div id="outline-container-orgbc51c30" class="outline-3">
+<h3 id="orgbc51c30">expression</h3>
+<div class="outline-text-3" id="text-orgbc51c30">
+<p>
+jazz [dʒæz] n.爵士音乐<br />
+musical [ˈmjuːzɪk(ə)l] adj.音乐的<br />
+instrument [ˈɪnstrəmənt] n.乐器<br />
+clavichord [ˈklævɪkɔːd] n.古钢琴<br />
+recently [ˈriːs(ə)ntli] adv.最近<br />
+damage [ˈdæmɪdʒ] v.损坏<br />
+key [kiː] n.琴键<br />
+string [strɪŋ] n.(乐器的)弦<br />
+shock [ʃɒk] v.使不悦或生气,震惊<br />
+allow [əˈlaʊ] v.允许,让<br />
+touch [tʌtʃ] v.触摸<br />
+</p>
+
+<p>
+be allowed to do sth. 被允许做某事<br />
+allow sb. to do sth. 允许某人做某事<br />
+</p>
+
+<hr />
+<p>
+am/is/are+done<br />
+was/were+done<br />
+am/is/are+being+done<br />
+have/has+been+done<br />
+</p>
+
+<p>
+be made in sw. 某地制造<br />
+belong to sb. 属于某人<br />
+play jazz 弹爵士<br />
+be allowed to do sth. 被允许做某事<br />
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org9075951" class="outline-3">
+<h3 id="org9075951">单词造句</h3>
+<div class="outline-text-3" id="text-org9075951">
+<p>
+jazz<br />
+</p>
+<ul class="org-ul">
+<li>He began to play jazz when he was very young.<br /></li>
+<li>Did he begin to play jazz when he was very young?<br /></li>
+<li>When did he begin to play jazz?<br /></li>
+<li>Listen, he is playing jazz.<br /></li>
+<li>He is playing jazz tonight.<br /></li>
+</ul>
+<p>
+musical instrument<br />
+</p>
+<ul class="org-ul">
+<li>He refused to lend me the musical instrument.<br /></li>
+<li>Did he refuse to lend you the musical instrument?<br /></li>
+<li>Why did he refuse to lend you the musical instrument?<br /></li>
+<li>I got a musical instrument for my wife.<br /></li>
+<li>Did you get the musical instrument for your wife?<br /></li>
+</ul>
+<p>
+clavichord<br />
+</p>
+<ul class="org-ul">
+<li>The clavichord is being played by her.<br /></li>
+<li>The clavichord was played by her last night.<br /></li>
+<li>The clavichord is being played by her tonight.<br /></li>
+<li>She has been played the clavichord last night.<br /></li>
+<li>She plays the clavichord almost everyday.<br /></li>
+</ul>
+<p>
+recently<br />
+</p>
+<ul class="org-ul">
+<li>Recently, the clavichord was damaged by a visitor.<br /></li>
+<li>Was the clavichord damaged by the visitor recently?<br /></li>
+<li>How was the clavichord damaged by the visitor recently?<br /></li>
+<li>When was the clavichord damaged by the visitor?<br /></li>
+<li>Where was the clavichord damaged by the visitor?<br /></li>
+</ul>
+<p>
+damage<br />
+</p>
+<ul class="org-ul">
+<li></li>
+
+<li></li>
+
+<li></li>
+
+<li></li>
+
+<li></li>
+</ul>
+<p>
+key<br />
+</p>
+<ul class="org-ul">
+<li>I sent a request for some keys.<br /></li>
+<li>Did he send a request for some keys?<br /></li>
+<li>I have gotten some keys for my wife?<br /></li>
+<li>Have you gotten some keys for you wife?<br /></li>
+<li>How did he send a request for some keys?<br /></li>
+</ul>
+<p>
+string<br />
+</p>
+<ul class="org-ul">
+<li>This is the best string I've ever seen.<br /></li>
+<li>This string is better than that one.<br /></li>
+<li>The string is being repaired by my friend.<br /></li>
+<li>Is this the best string you've ever seen?<br /></li>
+<li>Why is the string being repaired by your friend?<br /></li>
+</ul>
+<p>
+shock<br />
+</p>
+<ul class="org-ul">
+<li>This shock my father.<br /></li>
+<li>Did this shock your father?<br /></li>
+<li>Why did this shock your father?<br /></li>
+<li>How did this shock your father?<br /></li>
+<li>What shocked your father?<br /></li>
+</ul>
+<p>
+allow<br />
+</p>
+<ul class="org-ul">
+<li>We're not allowed to smoke on the train.<br /></li>
+<li>We're not allowed to touch things in the museums.<br /></li>
+<li>My father allows me to watch TV on Friday night.<br /></li>
+<li>My wife allows me to ride the bike every day.<br /></li>
+<li>My wife doesn't allow me to play piano anymore.<br /></li>
+</ul>
+<p>
+touch<br />
+</p>
+<ul class="org-ul">
+<li>Don't touch me!<br /></li>
+<li>Don't touch that!<br /></li>
+<li>The cat refuses to touch me.<br /></li>
+<li>The children are not allowed to touch my cat.<br /></li>
+<li>Did the cat touch me just now?<br /></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org624c5fa" class="outline-3">
+<h3 id="org624c5fa">反复听电影片段</h3>
+</div>
+<div id="outline-container-org1225b15" class="outline-3">
+<h3 id="org1225b15">Pattern Drill 写+读</h3>
+<div class="outline-text-3" id="text-org1225b15">
+<ul class="org-ul">
+<li><p>
+1t: the hovercraft, invented - an Englishman.<br />
+s1: Who was the hovercraft invented by?<br />
+s2: I think it was invented by an Englishman.<br />
+</p>
+<ul class="org-ul">
+<li>the music, composed - a German<br /></li>
+</ul>
+<p>
+s1: Who was the music composed by?<br />
+s2: I think it was composed by a German.<br />
+</p>
+<ul class="org-ul">
+<li>that chair, made - my grandfather<br /></li>
+</ul>
+<p>
+s1: Who was that chair made by?<br />
+s2: I think it was made by my grandfather.<br />
+</p>
+<ul class="org-ul">
+<li>this car, designed - an Italian<br /></li>
+</ul>
+<p>
+s1: Who was the car designed by?<br />
+s2: I think it was designed by an Italian.<br />
+</p>
+<ul class="org-ul">
+<li>that competition, won - my friend<br /></li>
+</ul>
+<p>
+s1: Who was that competition won by?<br />
+s2: I think it was won by my friend.<br />
+</p></li>
+<li>2t: built this bridge - in 1937<br />
+s1: Who built this bridge?<br />
+s2: It was built in 1937 - that's all I know.<br />
+<ul class="org-ul">
+<li>wrote this play - in 1861<br />
+Who wrote this play?<br />
+It was wrote in 1861 - that's all I know.<br /></li>
+<li>invented the telephone - in America in 1876<br />
+Who invented the telephone?<br />
+It was invented in America in 1876 - that's all I know.<br /></li>
+<li>made this piano - in Germany<br />
+Who made this piano?<br />
+It was made in Germany - that's all I know.<br /></li>
+<li>stole her diamonds - in the theater last night<br />
+Who stole her diamonds?<br />
+It was stole in the theater last night - that's all I know.<br /></li>
+</ul></li>
+<li>3t:the house, painted<br />
+s1:Has the house been painted yet?<br />
+s2:It's being painted now.<br />
+<ul class="org-ul">
+<li>the TV, repaired<br />
+Has the TV been repaired yet?<br />
+It's being repaired now.<br /></li>
+<li>the film, shown<br />
+Has the film been shown yet?<br />
+It's being shown now.<br /></li>
+<li>the lunch, served<br />
+Has the lunch been served yet?<br />
+It's being served now.<br /></li>
+<li>the stereo, mended<br />
+Has the stereo been mended yet?<br />
+It's being mended now.<br /></li>
+</ul></li>
+<li>4t:house, painted - two years ago<br />
+s1:When was the house last painted?<br />
+s2:It was painted two years ago.<br />
+<ul class="org-ul">
+<li>car/stereo, repaired - last night<br />
+When was the stereo last repaired?<br />
+It was repaired last night.<br /></li>
+<li>rent, paid - a month ago<br />
+When was the rent last paid?<br />
+It was paid a month ago.<br /></li>
+<li>carpet, cleaned - on Saturday<br />
+When was the carpet last cleaned?<br />
+It was cleaned on Saturday.<br /></li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org5dc0596" class="outline-3">
+<h3 id="org5dc0596">给自己讲解</h3>
+</div>
+<div id="outline-container-orgcf553e4" class="outline-3">
+<h3 id="orgcf553e4">红皮书</h3>
+</div>
+<div id="outline-container-org213f327" class="outline-3">
+<h3 id="org213f327">习惯用法造句</h3>
+<div class="outline-text-3" id="text-org213f327">
+<p>
+be made in sw.<br />
+</p>
+<ul class="org-ul">
+<li>The chair was made in Hebei.<br /></li>
+<li>Was the chair made in Hebei?<br /></li>
+<li>Where was the chair made?<br /></li>
+<li>How was the chair made in Hebei?<br /></li>
+<li>The char must be made in Hebei.<br /></li>
+</ul>
+<p>
+belong to sb.<br />
+</p>
+<ul class="org-ul">
+<li>The computer has belonged to me for two years.<br /></li>
+<li>The computer will belong to you in twenty minutes.<br /></li>
+<li>Has the computer belonged to you for two years?<br /></li>
+<li>Who does the computer belong to?<br /></li>
+<li>He tricked me out of a computer which has belonged to me for over two years.<br /></li>
+</ul>
+<p>
+play jazz<br />
+</p>
+<ul class="org-ul">
+<li></li>
+
+<li></li>
+
+<li></li>
+
+<li></li>
+
+<li></li>
+</ul>
+<p>
+be(not) allow to do sth.<br />
+</p>
+<ul class="org-ul">
+<li></li>
+
+<li></li>
+
+<li></li>
+
+<li></li>
+
+<li></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgcc927fe" class="outline-3">
+<h3 id="orgcc927fe">跟读至背诵</h3>
+</div>
+<div id="outline-container-orgeb1389a" class="outline-3">
+<h3 id="orgeb1389a">Ask me if 写+读</h3>
+<div class="outline-text-3" id="text-orgeb1389a">
+<ol class="org-ol">
+<li>Do you own an old musical instrument?<br />
+What kind of instrument do you own?<br /></li>
+<li>It's called a clavichord.<br />
+What is it called?<br /></li>
+<li>It's kept in the living room.<br />
+Where is it kept?<br /></li>
+<li>It was made in Germany.<br />
+Where was it made?<br />
+When was it made?<br /></li>
+<li>It was made in 1681.<br />
+When was it made?<br />
+What was made in 1681.<br /></li>
+<li>It has belonged to us for a long time.<br />
+How long has it belonged to us?<br />
+What has belonged to us for a long time?<br />
+Who has it belonged to for a long time?<br /></li>
+<li>It was bought by my grandfather.<br />
+Who was it bought by?<br /></li>
+<li>It was damaged recently. When<br />
+When was it damaged?<br /></li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org696b52d" class="outline-3">
+<h3 id="org696b52d">摘要写作</h3>
+<div class="outline-text-3" id="text-org696b52d">
+<p>
+We own an old clavichord.<br />
+It was made in 1681.<br />
+My grandfather bought it many years ago.<br />
+A visitor damaged it recently.<br />
+She tried to play jazz on it.<br />
+She broke two of the strings.<br />
+It's being repaired by a friend of my father.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgbe8d3c9" class="outline-3">
+<h3 id="orgbe8d3c9">tell the story 口语</h3>
+</div>
+<div id="outline-container-org5a05743" class="outline-3">
+<h3 id="org5a05743">Topics for discussion</h3>
+<div class="outline-text-3" id="text-org5a05743">
+<p>
+Have you got anything very old in your family? How long ago was it bought?<br />
+Have you ever damaged anything old? How was it repaired?<br />
+What kinds of things are easily broken?<br />
+</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

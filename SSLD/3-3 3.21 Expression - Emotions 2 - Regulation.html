@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-12-12 Thu 12:01 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-org0a28c65" class="outline-2">
+<h2 id="org0a28c65">3-3 3.21 Expression - Emotions 2 - Regulation</h2>
+<div class="outline-text-2" id="text-org0a28c65">
+<p class="verse">
+It sounds like emotional regulation,<br />
+&#xa0;not just emotional expression, but the regulation of emotions is really important.<br />
+Yes.<br />
+I wonder if you could talk a little bit more about that.<br />
+Yeah, well, like I just said, when you're expressing emotions, you feel emotional.<br />
+And being able to regulate your own emotion is actually a very important human capacity.<br />
+<br />
+There is a concept in biology, which is also utilized a lot in psychology.<br />
+That is the concept of homeostasis, the so-called normal state that we tend to return to.<br />
+We have a sort of a normal heart rate or blood pressure.<br />
+It can change when you're active, or when you're aroused,<br />
+&#xa0;or when you're dealing with some external challenge.<br />
+But it'll, body temperature as well but then everything will return to more or less the same level.<br />
+So with emotions, we hope the same thing will happen.<br />
+So you get excited, you get stimulated, you get aroused,<br />
+&#xa0;hopefully, you'll be returning to a relatively calm and stable state.<br />
+But if it doesn't happen, it can then become a mental health challenge,<br />
+&#xa0;like people who are chronically depressed, for example.<br />
+Or people who feel sad, and they might have good reasons for feeling that,<br />
+&#xa0;but the problem is that they do not return to a more stable state in which you are not sad.<br />
+Or if you're anxious,<br />
+&#xa0;which is probably a natural response to external stress or threat or challenge.<br />
+But, again, if you’re constantly in that state<br />
+&#xa0;&#xa0;and you do not return to a more relaxed and calm state,<br />
+&#xa0;something is wrong with your emotional accumulation.<br />
+Problems with emotional regulation<br />
+&#xa0;can actually become severe mental health or even physical health issues.<br />
+<br />
+In an interpersonal relationship, if you're not able to regulate your emotion,<br />
+&#xa0;then you have a higher chance of doing things or saying things that you later regret.<br />
+So it is obviously a good thing for us to be able to become aware of our emotional experience<br />
+&#xa0;and be able to increase our capacity for regulating it.<br />
+And I just want to say this, we're not talking about suppressing your emotions,<br />
+&#xa0;&#xa0;we're not talking about denying your emotions,<br />
+&#xa0;those are actually not helpful.<br />
+Good emotional regulation actually is predicated on,<br />
+&#xa0;I know that I'm feeling this,<br />
+&#xa0;&#xa0;I know that I'm angry, I know that I am anxious, or I'm sad or depressed, doesn't matter.<br />
+I know that I have those feelings and I accept that I have those feelings.<br />
+But I also understand that,<br />
+&#xa0;yeah, I know I have those feelings<br />
+&#xa0;&#xa0;but I have the capacity to return to this, sort of homeostasis state.<br />
+Then I feel more comfortable and relaxed<br />
+&#xa0;and when I try to express my emotions<br />
+&#xa0;&#xa0;I know that this is what I need to do now, but I will get to a different state after that.<br />
+I think that is an important understanding.<br />
+</p>
+</div>
+<div id="outline-container-org2dbf382" class="outline-3">
+<h3 id="org2dbf382">expression</h3>
+<div class="outline-text-3" id="text-org2dbf382">
+<p>
+homeostasis [ˌhəʊmiə'steɪsɪs]: n. 体内平衡<br />
+arouse [əˈraʊz]: v. arouse interest/expectations etc to make you become interested, expect something etc唤醒, 唤起<br />
+external [ɪkˈstɜrn(ə)l]: adj. OUTSIDE PART relating to the outside of something or of a person’s body OPP internal外国的,外部的<br />
+stimulate [ˈstɪmjəˌleɪt]: v. to encourage or help an activity to begin or develop further OPP suppress刺激, 激励<br />
+chronic [ˈkrɑnɪk] chronically: adj.adv. a chronic disease or illness is one that continues for a long time and cannot be cured ⇨ acute慢性的, 延续很长的<br />
+depressed [dɪˈprest]: adj. suffering from a medical condition in which you are so unhappy that you cannot live a normal life抑郁的<br />
+stress [stres]: n. continuous feelings of worry about your work or personal life, that prevent you from relaxing ⇨ strain压力<br />
+</p>
+<hr />
+<p>
+return to the same state/level: 返回到相同的状态/级别<br />
+be predicated on sth.: 基于/取决于某事物<br />
+have the capacity to do sth.: 有才能/能力去做某事<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgd5c58de" class="outline-3">
+<h3 id="orgd5c58de">sentence</h3>
+<div class="outline-text-3" id="text-orgd5c58de">
+<p>
+homeostasis [ˌhəʊmiə'steɪsɪs]: n. 体内平衡<br />
+</p>
+<ul class="org-ul">
+<li>Failing to return to homeostasis, he has gotten depressing for a long period of time.<br /></li>
+<li>Being able to return to homeostasis is very important for us to regulate our emotions.<br /></li>
+<li>After developing fever, the infected gradually returned to homeostasis.<br /></li>
+</ul>
+<p>
+arouse [əˈraʊz]: arouse interest/expectations etc to make you become interested, expect something etc唤醒, 唤起<br />
+</p>
+<ul class="org-ul">
+<li>The robots in the park have been aroused and began to overthrow the management of humen.<br /></li>
+<li>The man in black coat fell in love with the woman who turned out to be a robot and tried to arouse her.<br /></li>
+<li>The place is evil, a witch is trying to arouse the devil in the hell.<br /></li>
+</ul>
+<p>
+external [ɪkˈstɜrn(ə)l]: OUTSIDE PART relating to the outside of something or of a person’s body OPP internal外国的,外部的<br />
+</p>
+<ul class="org-ul">
+<li>The king went out of his way to control external events, starting a war on the continent.<br /></li>
+<li>External events we can't control, a general in the castle mumbled in a weak voice.<br /></li>
+<li>It is the external nomads who destroyed your civilization and killed your people, not us.<br /></li>
+</ul>
+<p>
+stimulate [ˈstɪmjəˌleɪt]: to encourage or help an activity to begin or develop further OPP suppress刺激, 激励<br />
+</p>
+<ul class="org-ul">
+<li>The physician used matters from the lesion to stimulate the inoculated boy.<br /></li>
+<li>Beyond doubt, the diplomatic policy has stimulated the merchants who trade across the sea.<br /></li>
+<li>The hanging of Lord Stark stimulated his son, who started a war with the house of Lanister.<br /></li>
+</ul>
+<p>
+chronic [ˈkrɑnɪk] chronically: a chronic disease or illness is one that continues for a long time and cannot be cured ⇨ acute慢性的, 延续很长的<br />
+</p>
+<ul class="org-ul">
+<li>I feel sorry for my father's chronic mental illness.<br /></li>
+<li>My teacher raised money, because of my father's chronic mental illness.<br /></li>
+<li>On arriving at home, I was told that my father suffered from chronic mental illness.<br /></li>
+</ul>
+<p>
+depressed [dɪˈprest]: suffering from a medical condition in which you are so unhappy that you cannot live a normal life抑郁的<br />
+</p>
+<ul class="org-ul">
+<li>The test is designed to help patients who get chronically depressed.<br /></li>
+<li>The patient who gets depressed ran out of his money in the inpatient department.<br /></li>
+<li>I almost got depressed when my wife got me under a huge debt.<br /></li>
+</ul>
+<p>
+stress [stres]: continuous feelings of worry about your work or personal life, that prevent you from relaxing ⇨ strain压力<br />
+</p>
+<ul class="org-ul">
+<li>My wife's laughing at me because of my poor accent put a lot of stress on me.<br /></li>
+<li>Stop putting any stress on your child, or she will get depressed.<br /></li>
+<li>Because of heavy stress, the player developed vomitting after he was defeated in the adversarial game.<br /></li>
+</ul>
+<hr />
+<p>
+return to the same state/level: 返回到相同的状态/级别<br />
+</p>
+<ul class="org-ul">
+<li>The infected boy has returned to the normal state after developing fever for a day.<br /></li>
+<li>After the conflict had been resolved, their friendship returned to the normal state.<br /></li>
+<li>After returning to the calm state, the king gave up cutting her throat up.<br /></li>
+</ul>
+<p>
+be predicated on sth.: 基于/取决于某事物<br />
+</p>
+<ul class="org-ul">
+<li>Whether he is dead or alive is predicated on the result of the war between two houses.<br /></li>
+<li>Learning English is predicated on a variety of factors, so I can't figure it out now.<br /></li>
+<li>The king's privilege is predicated on his armies beyond the wall.<br /></li>
+</ul>
+<p>
+have the capacity to do sth.: 有才能/能力去做某事<br />
+</p>
+<ul class="org-ul">
+<li>A witcher claimed that she had the capacity to save our king's life.<br /></li>
+<li>The boy has the capacity to communicate with a foreigner, even if he doesn't know any foreign language.<br /></li>
+<li>His wife has the capacity to tell the nuance of his gestures.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org3767f5d" class="outline-3">
+<h3 id="org3767f5d">sentence2</h3>
+<div class="outline-text-3" id="text-org3767f5d">
+<p>
+homeostasis [ˌhəʊmiə'steɪsɪs]: n. 体内平衡<br />
+</p>
+<ul class="org-ul">
+<li>Failing to return to homeostasis, he has gotten depressed for a long period of time.<br /></li>
+<li>Being able to return to homeostasis is very important for us to regulate our emotions.<br /></li>
+<li>After developing a fever, the infected gradually returned to homeostasis.<br /></li>
+</ul>
+<p>
+arouse [əˈraʊz]: arouse interest/expectations etc to make you become interested, expect something etc唤醒, 唤起<br />
+</p>
+<ul class="org-ul">
+<li>The robots in the park that have been aroused began to overthrow the management of humans.<br /></li>
+<li>The man in black coat fell in love with the woman who turned out to be a robot and tried to arouse her.<br /></li>
+<li>The place is evil, a witch is trying to arouse the devil in hell.<br /></li>
+</ul>
+<p>
+external [ɪkˈstɜrn(ə)l]: OUTSIDE PART relating to the outside of something or of a person’s body OPP internal外国的,外部的<br />
+</p>
+<ul class="org-ul">
+<li>The king went out of his way to control external events, starting a war on the continent.<br /></li>
+<li>External events we can't control, a general in the castle mumbled in a weak voice.<br /></li>
+<li>It is the external nomads who destroyed your civilization and killed your people, not us.<br /></li>
+</ul>
+<p>
+stimulate [ˈstɪmjəˌleɪt]: to encourage or help an activity to begin or develop further OPP suppress刺激, 激励<br />
+</p>
+<ul class="org-ul">
+<li>The physician used matters from the lesion to stimulate the inoculated boy.<br /></li>
+<li>Beyond doubt, the diplomatic policy has stimulated the merchants who trade across the sea.<br /></li>
+<li>The hanging of Lord Stark stimulated his son, who started a war with the house of Lannister.<br /></li>
+</ul>
+<p>
+chronic [ˈkrɑnɪk] chronically: a chronic disease or illness is one that continues for a long time and cannot be cured ⇨ acute慢性的, 延续很长的<br />
+</p>
+<ul class="org-ul">
+<li>I feel sorry for my father's chronic mental illness.<br /></li>
+<li>My teacher raised money, because of my father's chronic mental illness.<br /></li>
+<li>On arriving home, I was told that my father suffered from chronic mental illness.<br /></li>
+</ul>
+<p>
+depressed [dɪˈprest]: suffering from a medical condition in which you are so unhappy that you cannot live a normal life抑郁的<br />
+</p>
+<ul class="org-ul">
+<li>The test is designed to help patients who get chronically depressed.<br /></li>
+<li>The patient who gets depressed ran out of money in the inpatient department.<br /></li>
+<li>I almost got depressed when my wife got me under a huge debt.<br /></li>
+</ul>
+<p>
+stress [stres]: continuous feelings of worry about your work or personal life, that prevent you from relaxing ⇨ strain压力<br />
+</p>
+<ul class="org-ul">
+<li>My wife's laughing at me because of my poor accent put a lot of stress on me.<br /></li>
+<li>Stop putting any stress on your child, or she will get depressed.<br /></li>
+<li>Because of heavy stress, the player developed vomiting after he was defeated in the adversarial game.<br /></li>
+</ul>
+<hr />
+<p>
+return to the same state/level: 返回到相同的状态/级别<br />
+</p>
+<ul class="org-ul">
+<li>The infected boy has returned to a normal state after developing a fever for a day.<br /></li>
+<li>After the conflict had been resolved, their friendship returned to a normal state.<br /></li>
+<li>After returning to a calm state, the king gave up cutting her throat up.<br /></li>
+</ul>
+<p>
+be predicated on sth.: 基于/取决于某事物<br />
+</p>
+<ul class="org-ul">
+<li>Whether he is dead or alive is predicated on the result of the war between two houses.<br /></li>
+<li>Learning English is predicated on a variety of factors, so I can't figure it out now.<br /></li>
+<li>The king's privilege is predicated on his armies beyond the wall.<br /></li>
+</ul>
+<p>
+have the capacity to do sth.: 有才能/能力去做某事<br />
+</p>
+<ul class="org-ul">
+<li>A witcher claimed that she had the capacity to save our king's life.<br /></li>
+<li>The boy has the capacity to communicate with a foreigner, even if he doesn't know any foreign language.<br /></li>
+<li>His wife has the capacity to tell the nuance of his gestures.<br /></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

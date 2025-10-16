@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-01-09 Thu 23:07 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+
+<div id="outline-container-org9054301" class="outline-2">
+<h2 id="org9054301">2013-10-08 The operating system of life</h2>
+<div class="outline-text-2" id="text-org9054301">
+<p class="verse">
+Every chicken was once an egg, every oak tree an acorn, every frog a tadpole.<br />
+The patch of mold on that old piece of bread in the back of your fridge,<br />
+&#xa0;not so long ago was one solitary cell.<br />
+Even you were once but a gleam in your parents' eyes.<br />
+All these organisms share the same basic goal: to perpetuate their own existence.<br />
+<br />
+All lifeforms that we've discovered so far<br />
+&#xa0;stay alive by using basically the same rules, materials, and machinery.<br />
+Imagine a factory full of robots.<br />
+These robots have two missions:<br />
+&#xa0;one, keep the factory running, and two, when the time is right, set up an entirely new factory.<br />
+To do those things, they need assembly instructions, raw materials, plenty of energy,<br />
+&#xa0;a few rules about when to work normally, when to work quickly, or when to stop,<br />
+&#xa0;&#xa0;and some exchange currencies because even robots need to get paid.<br />
+Each factory has a high security office with blueprints<br />
+&#xa0;for all the possible factory configurations<br />
+&#xa0;&#xa0;and complete sets of instructions to make all the different types of robots<br />
+&#xa0;&#xa0;&#xa0;a factory could ever need.<br />
+Special robots photocopy these instructions and send them off<br />
+&#xa0;to help make the building blocks of more robots.<br />
+Their colleagues assemble those parts into still more robots,<br />
+&#xa0;which are transported to the right location in the factory<br />
+&#xa0;&#xa0;and given the tools they need to start working.<br />
+Every robot draws energy from the central power plant,<br />
+&#xa0;a giant furnace that can burn regular fuel<br />
+&#xa0;&#xa0;but also scrap materials if not enough regular fuel is available.<br />
+Certain zones in the factory have harsher working conditions,<br />
+&#xa0;so these areas are walled off.<br />
+But the robots inside can at least communicate with the rest of the factory<br />
+&#xa0;through specialized portals embedded directly into the walls.<br />
+<br />
+And as you've probably figured out,	what we're describing here is a cell.<br />
+The high security office is the nucleus.<br />
+It stores the blueprints and instructions as deoxyribonucleic acid, or DNA.<br />
+The photocopied instructions are RNA.<br />
+The robots themselves are mostly proteins built from amino acids,<br />
+&#xa0;but they'll often use special tools that are, or are derived from, vitamins and minerals.<br />
+The walls between factory zones and around the factory itself<br />
+&#xa0;are mostly made up of lipids, a.k.a. fats.<br />
+In most organisms, the primary fuel source are sugars,<br />
+&#xa0;but in a pinch, fats and proteins can be broken down and burned in the furnace as well.<br />
+The portals are membrane proteins<br />
+&#xa0;which allow very specific materials and information to pass through the walls at the right times.<br />
+Many interactions between robot proteins require some kind of push, think robot minimum wage.<br />
+A few small but crucial forms of money are transferred between proteins to provide this push.<br />
+Electrons, protons, oxygen, and phosphate groups are the main chemical currencies,<br />
+&#xa0;and they're kept in small molecular wallets or larger tote bags to keep them safe.<br />
+This is biochemistry,<br />
+&#xa0;the study of how every part of the factory interacts<br />
+&#xa0;&#xa0;to keep your life running smoothly in the face of extreme challenges.<br />
+<br />
+Maybe there's too much fuel; your body will store the excess as glycogen or fat.<br />
+Maybe there's not enough; your body will use up those energy reserves.<br />
+Maybe a virus or bacteria tries to invade; your body will mobilize the immune system.<br />
+Maybe you touched something hot or sharp; your nerves will let you know so you can stop.<br />
+Maybe it's time to create a new cell or a new person.<br />
+Amazingly, oak trees, chickens, frogs,<br />
+&#xa0;and, yes, even you share so many of the same basic robot and factory designs<br />
+&#xa0;&#xa0;that biochemists can learn a lot about all of them all at the same time.<br />
+</p>
+</div>
+<div id="outline-container-orgfad62bc" class="outline-3">
+<h3 id="orgfad62bc">expression</h3>
+<div class="outline-text-3" id="text-orgfad62bc">
+<p>
+oak [əʊk]: n. a large tree that is common in northern countries, or the hard wood of this tree橡树, 橡木<br />
+acorn [ˈeɪˌkɔrn]: n. the nut of the ↑oak tree[植]橡树果<br />
+tadpole [ˈtædˌpoʊl]: n. a small creature that has a long tail, lives in water, and grows into a frog or toad[动]蝌蚪<br />
+mold [moʊld]: n. a soft green, grey, or black substance that grows on food which has been kept too long, and on objects that are in warm wet air ⇨ mouldy:霉菌<br />
+solitary [ˈsɑləˌteri]: adj. used to emphasize that there is only one of something SYN single孤独的<br />
+lifeform : n. 生物<br />
+machinery [məˈʃinəri]: n. machines, especially large ones[总称] 机器, 机械<br />
+mission [ˈmɪʃ(ə)n]: n. something that you feel you must do because it is your duty SYN calling, vocation使命, 任务<br />
+currency [ˈkʌrənsi]: n. the system or type of money that a country uses货币<br />
+blueprint [ˈbluˌprɪnt]: n. technical a pattern that all living cells contain, which decides how a person, animal, or plant develops and what it looks like蓝图<br />
+photocopy [ˈfoʊtoʊˌkɑpi]: v. to make a photographic copy of something影印<br />
+giant [ˈdʒaɪənt]: adj. extremely big, and much bigger than other things of the stype庞大的, 巨大的<br />
+furnace [ˈfɜrnɪs]: n. a large container for a very hot fire, used to produce power, heat, or liquid metal炉子, 熔炉<br />
+fuel [ˈfjuːəl]: n. a substance such as coal, gas, or oil that can be burned to produce heat or energy燃料<br />
+scrap [skræp]: v. to get rid of an old machine, vehicle etc, and use its parts in some other way拆毁<br />
+specialized [ˈspeʃ(ə)lˌaɪzd]: adj. trained, designed, or developed for a particular purpose, type of work, place etc专门的<br />
+portal [ˈpɔrt(ə)l]: n. literary a tall and impressive gate or entrance to a building入口<br />
+deoxyribonucleic [diˌɒksiraɪboʊnu'kliɪk] acid: DNA<br />
+protein [ˈproʊtin]: n. one of several natural substances that exist in food such as meat, eggs, and beans, and which your body needs in order to grow and remain strong and healthy[生化]蛋白质<br />
+amino [ə'mi:no]: adj. 氨基的<br />
+acid [ˈæsɪd]: n. a chemical substance that has a ↑pH of less than 7. Strong acids can burn holes in material or damage your skin[化]酸<br />
+mineral [ˈmɪn(ə)rəl]: n. a substance that is formed naturally in the earth, such as coal, salt, stone, or gold. Minerals can be dug out of the ground and used矿物, 矿石<br />
+lipid [ˈlɪpɪd]: n. technical one of several types of ↑fatty substances in living things, such as fat, oil, or ↑wax脂质, 油脂<br />
+a.k.a.: also known as, 又名&#x2026;, 也叫作&#x2026;<br />
+membrane [ˈmemˌbreɪn]: n. a very thin piece of skin that covers or connects parts of your body膜, 隔膜<br />
+interaction [ˌɪntərˈækʃən]: n. a process by which two or more things affect each other交互作用<br />
+crucial [ˈkruʃ(ə)l]: adj. something that is crucial is extremely important, because everything else depends on it SYN vital至关紧要的<br />
+phosphate [ˈfɑsˌfeɪt]: n. a substance containing a phosphate used for making plants grow better磷酸盐<br />
+molecule molecular [məˈlekjələr]: n.adj. the smallest unit into which any substance can be divided without losing its own chemical nature, usually consisting of two or more atoms[化]分子<br />
+tote [toʊt]: v. informal to carry something, especially regularly手提, 背负, 携带<br />
+biochemistry [ˌbaɪoʊˈkemɪstri]: n. the scientific study of the chemistry of living things生物化学<br />
+excess [ˈekˌses]: n. a larger amount of something than is allowed or needed超额<br />
+glycogen [ˈɡlaɪkədʒən]: n. 肝糖, 糖原质<br />
+bacteria [bækˈtɪriə]: n. very small living things, some of which cause illness or disease ⇨ virus细菌<br />
+</p>
+<hr />
+<p>
+in the back of your fridge: 冰箱深处<br />
+sb. is a gleam in sb's eyes: A是B的构想<br />
+share the same basic goal: 拥有相同的基本目标<br />
+perpetuate sb's existence: 使某人永久存在<br />
+stay alive: 设法不死<br />
+set up a factory: 开办工厂<br />
+keep sb. doing sth.: 使某人做某事<br />
+assembly instructions: 装配说明<br />
+raw materials: 原材料<br />
+get paid: 获得报酬<br />
+send sth. off: to send a letter, document, or package by mail<br />
+assemble A. into B.: 将A组装成B<br />
+be transported to sp.: 被运送到某地<br />
+draw energy from sth.: 从某物那里获取能量<br />
+harsher working conditions: 艰苦的工作环境<br />
+be walled off: 被隔离起来<br />
+the rest of sth.: 某物剩余部分<br />
+be embedded into sth.: 被嵌入到某物<br />
+be built from sth.: 由某物建造<br />
+are derived from: to come or develop from something 来源于<br />
+in a pinch: in an emergency<br />
+minimum wage: 最低薪酬<br />
+be transferred between: to move someone or something from one place, vehicle, person, or group to another<br />
+in the face of sth.: 面对某事物<br />
+extreme challenges: 极限挑战<br />
+mobilize the immune system: 激起防御系统<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org9cca32b" class="outline-3">
+<h3 id="org9cca32b">sentences</h3>
+<div class="outline-text-3" id="text-org9cca32b">
+<p>
+in the back of your fridge: 冰箱深处<br />
+</p>
+<ul class="org-ul">
+<li>My wife complained that a patch of mold began to appear in the back of our fridge.<br /></li>
+<li>His aim is to molten the big piece of ice in the back of his fridge.<br /></li>
+<li>My mom left a piece of bread in the back of my fridge in recognition of me.<br /></li>
+</ul>
+<p>
+sb. is a gleam in sb's eyes: A是B的构想<br />
+</p>
+<ul class="org-ul">
+<li>Our baby is still being a gleam in our eyes.<br /></li>
+<li>The probability of living in outer space is a gleam in our eyes.<br /></li>
+<li>You used to be a gleam in your parents' eyes.<br /></li>
+</ul>
+<p>
+share the same basic goal: 拥有相同的基本目标<br />
+</p>
+<ul class="org-ul">
+<li>The group of pop singers share the same basic goal: to make enough money to travel all over the world.<br /></li>
+<li>It's hard for me to share my house with a girl who doesn't share the same basic goal.<br /></li>
+<li>Sharing the same basic goal may be the basic building block of a marriage.<br /></li>
+</ul>
+<p>
+perpetuate sb's existence: 使某人永久存在<br />
+</p>
+<ul class="org-ul">
+<li>Although he quaked in every limb and in his soul, he succeeded in perpetuating his existence during the war.<br /></li>
+<li>The first aim of every life is to perpetuate his own life.<br /></li>
+<li>It reminds me of an ant<br />
+which was trying to perpetuate its existence while I played jokes on it.<br /></li>
+</ul>
+<p>
+stay alive: 设法不死<br />
+</p>
+<ul class="org-ul">
+<li>The ants have eaten plenty of food to stay alive in the desert.<br /></li>
+<li>It's a pity that he wasn't able to stay alive in the flood.<br /></li>
+<li>It's incredible how he stayed alive when the volcanoes were erupting.<br /></li>
+</ul>
+<p>
+set up a factory: 开办工厂<br />
+</p>
+<ul class="org-ul">
+<li>In the end, he managed to set up a factory which launches a telescope into space.<br /></li>
+<li>He set up a factory which named after his daughter.<br /></li>
+<li>It was wondering whether she succeeded in setting up a robot factory.<br /></li>
+</ul>
+<p>
+keep sb. doing sth.: 使某人做某事<br />
+</p>
+<ul class="org-ul">
+<li>She has kept her son who deserted in the war hiding for over ten years.<br /></li>
+<li>He kept his daughter laughing at the reception.<br /></li>
+<li>I admired him for keeping everyone around him staying positive.<br /></li>
+</ul>
+<p>
+assembly instructions: 装配说明<br />
+</p>
+<ul class="org-ul">
+<li>When the police arrived on the scene, they found the assembly instructions.<br /></li>
+<li>It was not long before that we received the assembly instructions.<br /></li>
+<li>Following assembly instructions, he managed to piece those together.<br /></li>
+</ul>
+<p>
+raw materials: 原材料<br />
+</p>
+<ul class="org-ul">
+<li>The pretty girl invited me to collect raw materials.<br /></li>
+<li>As raw materials began to accumulate, the warehouse soon became crowded.<br /></li>
+<li>A cargo of raw materials will sail from Beijing to London.<br /></li>
+</ul>
+<p>
+get paid: 获得报酬<br />
+</p>
+<ul class="org-ul">
+<li>As soon as agreement is reached about the salary, you will get paid.<br /></li>
+<li>I was relieved to hear that my wife got paid.<br /></li>
+<li>I didn't get paid on time and I was under a lot of pressure.<br /></li>
+</ul>
+<p>
+send sth. off: to send a letter, document, or package by mail<br />
+</p>
+<ul class="org-ul">
+<li>This advertisement was sent off to protect baby elephants.<br /></li>
+<li>The manager sent assembly instructions off to help his staff work better.<br /></li>
+<li>These pigeons are going to send these letters off.<br /></li>
+</ul>
+<p>
+assemble A. into B.: 将A组装成B<br />
+</p>
+<ul class="org-ul">
+<li>He assembled these woods into a car under a lot of pressure.<br /></li>
+<li>He volunteers to assemble these materials into a toy.<br /></li>
+<li>He managed to assemble these parts into a model in time to pass the test.<br /></li>
+</ul>
+<p>
+be transported to sp.: 被运送到某地<br />
+</p>
+<ul class="org-ul">
+<li>A cargo of raw materials has been transported to Space X.<br /></li>
+<li>For your safety, your companion was transported to the hospital.<br /></li>
+<li>I noticed with dismay that the golden watches hadn't been transported to England.<br /></li>
+</ul>
+<p>
+draw energy from sth.: 从某物那里获取能量<br />
+</p>
+<ul class="org-ul">
+<li>Your phone draws energy from the battery inside.<br /></li>
+<li>All lives on the earth draw energy from the sun more or less.<br /></li>
+<li>While swimming across the Channel, she must draw energy from liquid foods.<br /></li>
+</ul>
+<p>
+harsher working conditions: 艰苦的工作环境<br />
+</p>
+<ul class="org-ul">
+<li>Workers can't stay alive in the harsher working conditions.<br /></li>
+<li>I might lose my life in the harsher working conditions.<br /></li>
+<li>He often volunteers to repair bicycles in memory of his early harsher working conditions.<br /></li>
+</ul>
+<p>
+be walled off: 被隔离起来<br />
+</p>
+<ul class="org-ul">
+<li>These rooms must have been walled off.<br /></li>
+<li>The north area of London and the south area used to be walled off.<br /></li>
+<li>She stated that the enclosure of these dogs should have been walled off.<br /></li>
+</ul>
+<p>
+the rest of sth.: 某物剩余部分<br />
+</p>
+<ul class="org-ul">
+<li>I will love you for the rest of my life.<br /></li>
+<li>She tends to communicate with the rest of her classmates.<br /></li>
+<li>I have eaten the rest of these meals.<br /></li>
+</ul>
+<p>
+be embedded into sth.: 被嵌入到某物<br />
+</p>
+<ul class="org-ul">
+<li>The light is embedded into the ceiling.<br /></li>
+<li>The battery is designed to be embedded into the phone.<br /></li>
+<li>The bath was able to be embedded into your bathroom.<br /></li>
+</ul>
+<p>
+be built from sth.: 由某物建造<br />
+</p>
+<ul class="org-ul">
+<li>Proteins prove to be built from amino acids.<br /></li>
+<li>The diamonds are built from stones and sand.<br /></li>
+<li>The house is specially built from iron and glass.<br /></li>
+</ul>
+<p>
+are derived from: to come or develop from something 来源于<br />
+</p>
+<ul class="org-ul">
+<li>The assembly instructions are derived from the construction of the toy.<br /></li>
+<li>The fats are derived from a special type of pig.<br /></li>
+<li>My pocket money is usually derived from my aunts.<br /></li>
+</ul>
+<p>
+in a pinch: in an emergency<br />
+</p>
+<ul class="org-ul">
+<li>In a pinch, she began to fight with gangsters with her bare hands.<br /></li>
+<li>In a pinch, these two men quarreled bitterly and that argument must be settled by a fight.<br /></li>
+<li>In a pinch, she stood up to speak in public.<br /></li>
+</ul>
+<p>
+minimum wage: 最低薪酬<br />
+</p>
+<ul class="org-ul">
+<li>His boss squinted at him and just paid the minimum wage.<br /></li>
+<li>If you keep paid the minimum wage, I will quit.<br /></li>
+<li>His boss proceeded to pay her the minimum wage.<br /></li>
+</ul>
+<p>
+be transferred between: to move someone or something from one place, vehicle, person, or group to another<br />
+</p>
+<ul class="org-ul">
+<li>These days, the singer is being transferred between group A and group B.<br /></li>
+<li>The spare parts must be transferred between these garages.<br /></li>
+<li>The spare parts might have been transferred between these garages.<br /></li>
+</ul>
+<p>
+in the face of sth.: 面对某事物<br />
+</p>
+<ul class="org-ul">
+<li>They were separated from each other in the face of the war.<br /></li>
+<li>He lodged a complaint in the face of the delay of the train.<br /></li>
+<li>He is sensitive about accepting criticism in the face of his parents.<br /></li>
+</ul>
+<p>
+extreme challenges: 极限挑战<br />
+</p>
+<ul class="org-ul">
+<li>She always stays positive in the face of extreme challenges.<br /></li>
+<li>After extreme challenges, our company began to make a profit.<br /></li>
+<li>While we are in the face of extreme challenges, we must make these rules official.<br /></li>
+</ul>
+<p>
+mobilize the immune system: 激起防御系统<br />
+</p>
+<ul class="org-ul">
+<li>She died of a rare disease that disables her to mobilize the immune system.<br /></li>
+<li>Your body is mobilizing the immune system to fight against the invasion of bacteria.<br /></li>
+<li>She can't mobilize her immune system because of a special type of virus.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org3f26d9f" class="outline-3">
+<h3 id="org3f26d9f">summary writting</h3>
+<div class="outline-text-3" id="text-org3f26d9f">
+<p class="verse">
+All organisms which were once one solitary cell share the same basic goal:<br />
+&#xa0;to perpetuate their existence.<br />
+Image a factory full of robots have two missions:<br />
+&#xa0;to keep the factory running and to set up a new factory at the right time.<br />
+It has an office with blueprints for its configurations<br />
+&#xa0;and sets of instructions to make robots,<br />
+&#xa0;some of which photocopy these instructions<br />
+&#xa0;&#xa0;and send them off to help make the building block of more robots,<br />
+&#xa0;some of which assemble those parts into more robots<br />
+&#xa0;&#xa0;and give these robots the necessary tools to start working.<br />
+Every robot draws energy from a giant furnace<br />
+&#xa0;that not only burn regular fuel but also scarp materials in a pinch.<br />
+Although the furnace is walled off,<br />
+&#xa0;the robots inside can interact with the rest of the factory through specialized portals.<br />
+The factory we're describing here is a cell.<br />
+The blueprints, photocopied instructions, robots, and wall<br />
+&#xa0;respectively are DNA, RNA, proteins, and fats.<br />
+They work together to keep our lives running smoothly in the face of some extreme challenges.<br />
+</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

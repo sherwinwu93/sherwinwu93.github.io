@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-01-06 Mon 15:31 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-orga7f69db" class="outline-2">
+<h2 id="orga7f69db">4-3 4.13 Fear of Intimacy</h2>
+<div class="outline-text-2" id="text-orga7f69db">
+<p class="verse">
+Some people talk a lot about this sort of fear of intimacy that is inherent in some relationships.<br />
+And I'm wondering if you can explain what that's all about.<br />
+Well, you know, fear is very easily triggered when you get close to someone.<br />
+The reason is actually pretty simple<br />
+&#xa0;because when you get intimate, or when you get close to someone, you're more exposed.<br />
+<br />
+You're showing more of yourself,<br />
+&#xa0;and to be very honest, most people, majority of people,<br />
+&#xa0;&#xa0;are not 100% wholly comfortable with who they are.<br />
+We all have, like you know, unpleasant history,<br />
+&#xa0;we all have our sort of like dark side, things that we ourselves do not even accept.<br />
+That can be like trauma, or they are like things that we have done before that we are not proud of.<br />
+So, when we are getting close, and these are going to be disclosed.<br />
+Some people will feel very anxious.<br />
+Like would this person accept this part of me?<br />
+<br />
+So, you can see that even couples who have been together for a long time,<br />
+&#xa0;they're still keeping certain things secret.<br />
+They're not telling each other.<br />
+It can be like something that is really silly like,<br />
+&#xa0;you know, some insensitive thing that you did as a child, as a teenager<br />
+&#xa0;&#xa0;that you just did not feel proud of,<br />
+&#xa0;but you do not want your partner to know, right?<br />
+But then, when you get closer and closer,<br />
+&#xa0;it becomes increasing difficult for you to sort of like not share that,<br />
+&#xa0;&#xa0;because you also want to be understood and taken as who you really are.<br />
+So I think as people get closer, right,<br />
+&#xa0;this fear can be triggered because of these like sense of being exposed, and feeling vulnerable.<br />
+<br />
+This is what psychologists have been talking about,<br />
+&#xa0;like I don't know all who, like 70 or 80 years now, about this Approach-Avoidance Conflict.<br />
+On the one hand, we want to get close while we are approaching,<br />
+&#xa0;but as we get up to a certain point, the discomfort increases and we want to avoid.<br />
+So there is tendency to either stop or withdraw.<br />
+Fortunately some people would be able to get at the balance point, where it's just comfortable,<br />
+&#xa0;but some people can actually be experiencing this tension all the time,<br />
+&#xa0;&#xa0;you know, like wanting to get closer, but also wanting to protect oneself and stay away.<br />
+It can be pretty tormenting for people to be caught in a situation like this.<br />
+And it is also not uncommon for people to feel such discomfort<br />
+&#xa0;that you just quit and say okay, like, I'm out of here, it's too much.<br />
+<br />
+So this fear of intimacy, I think it's pretty easily understandable<br />
+&#xa0;and well, I just want to say<br />
+&#xa0;&#xa0;that if you're afraid of getting closer, it doesn't mean that you're sick.<br />
+It doesn't mean that you have a huge problem.<br />
+I just want to say that maybe it's just the human thing, like many people actually have that.<br />
+</p>
+</div>
+<div id="outline-container-orgd5c2cb8" class="outline-3">
+<h3 id="orgd5c2cb8">expression</h3>
+<div class="outline-text-3" id="text-orgd5c2cb8">
+<p>
+inherent [ɪnˈherənt]: adj. a quality that is inherent in something is a natural part of it and cannot be separated from it固有的, 内在的, 与生俱来的<br />
+wholly [ˈhoʊli]: adv. completely完全的<br />
+disclose [dɪsˈkloʊz]: v. to make something publicly known, especially after it has been kept secret SYN reveal揭露<br />
+insensitive [ɪnˈsensətɪv]: adj. not noticing, or not taking the care to notice, other people’s feelings, and not realizing when they are upset or when something that you do will upset them麻木不仁的<br />
+vulnerable [ˈvʌln(ə)rəb(ə)l]: adj. someone who is vulnerable can be easily harmed or hurt易受攻击的,脆弱的<br />
+withdraw [wɪðˈdrɔ]: v. to stop taking part in an activity, belonging to an organization etc, or to make someone do this退出<br />
+torment [tɔrˈment]: v. to make someone suffer a lot, especially mentally折磨<br />
+</p>
+<hr />
+<p>
+keep sth. secret: 保持某事秘密<br />
+all the time: 一直<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org511ea2c" class="outline-3">
+<h3 id="org511ea2c">sentence</h3>
+<div class="outline-text-3" id="text-org511ea2c">
+<p>
+inherent [ɪnˈherənt]: adj. a quality that is inherent in something is a natural part of it and cannot be separated from it固有的, 内在的, 与生俱来的<br />
+</p>
+<ul class="org-ul">
+<li>It is his inherent characteristics that drove him mad.<br /></li>
+<li>We shouldn't attribute his failure only to his inherent characteristics.<br /></li>
+<li>He attributes the disintegration of the group to the inherent flaws.<br /></li>
+</ul>
+<p>
+wholly [ˈhoʊli]: adv. completely完全的<br />
+</p>
+<ul class="org-ul">
+<li>Related to his death, I have wholly taken my responsibility all the time.<br /></li>
+<li>He gave me no choice but killing him, my hands are wholly clean.<br /></li>
+<li>Consistent with Shane, I believe that his hands are wholly clean.<br /></li>
+</ul>
+<p>
+disclose [dɪsˈkloʊz]: v. to make something publicly known, especially after it has been kept secret SYN reveal揭露<br />
+</p>
+<ul class="org-ul">
+<li>The broadcast puts into disclosing scandals about hospitals.<br /></li>
+<li>You still have a chance to disclose the criminal of his death.<br /></li>
+<li>The detective is looking into the scene to disclose the real criminal.<br /></li>
+</ul>
+<p>
+insensitive [ɪnˈsensətɪv]: adj. not noticing, or not taking the care to notice, other people’s feelings, and not realizing when they are upset or when something that you do will upset them麻木不仁的<br />
+</p>
+<ul class="org-ul">
+<li>The girl observed to the boy who is insensitive to the request of a old lady.<br /></li>
+<li>I did do something insensitive that I took care of our baby through other channels than getting into panic.<br /></li>
+<li>My wife accused me of being insensitive to our unborn baby.<br /></li>
+</ul>
+<p>
+vulnerable [ˈvʌln(ə)rəb(ə)l]: adj. someone who is vulnerable can be easily harmed or hurt易受攻击的,脆弱的<br />
+</p>
+<ul class="org-ul">
+<li>Your works are vulnerable, for there's a huge chance that your child take the power line to your computer.<br /></li>
+<li>My emotions are vulnerable and I am afraid of getting too close to any partner.<br /></li>
+<li>The vulnerable is forced to be betrothed to a lord which she doesn't love.<br /></li>
+</ul>
+<p>
+withdraw [wɪðˈdrɔ]: v. to stop taking part in an activity, belonging to an organization etc, or to make someone do this退出<br />
+</p>
+<ul class="org-ul">
+<li>The relationship you want to withdraw is precious to me.<br /></li>
+<li>She will withdraw the marriage throughout other channels than committing suicide.<br /></li>
+<li>A bucket of water means a signal of withdrawing the group.<br /></li>
+</ul>
+<p>
+torment [tɔrˈment]: v. to make someone suffer a lot, especially mentally折磨<br />
+</p>
+<ul class="org-ul">
+<li>The sheriff who fell in love with his brother's wife was being tormented by the relationship.<br /></li>
+<li>Something insensitive I did in the past torments me a great deal.<br /></li>
+<li>Marring to the bastard who slaughtered her people torments her all the time.<br /></li>
+</ul>
+<hr />
+<p>
+keep sth. secret: 保持某事秘密<br />
+</p>
+<ul class="org-ul">
+<li>I want to tell you something that you must keep secret for me.<br /></li>
+<li>If I told you I ran into the walker, would you keep it secret for me?<br /></li>
+<li>Keep it secret, she is actually the infamous witch.<br /></li>
+</ul>
+<p>
+all the time: 一直<br />
+</p>
+<ul class="org-ul">
+<li>My wife is complaining about the price of the beef all the time.<br /></li>
+<li>She shared her apartment with her precious cat all the time.<br /></li>
+<li>The country is at war with its neighbor all the time.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgbf1bd5f" class="outline-3">
+<h3 id="orgbf1bd5f">sentence2</h3>
+<div class="outline-text-3" id="text-orgbf1bd5f">
+<p>
+inherent [ɪnˈherənt]: adj. a quality that is inherent in something is a natural part of it and cannot be separated from it固有的, 内在的, 与生俱来的<br />
+</p>
+<ul class="org-ul">
+<li>It is his inherent characteristics that drove him mad.<br /></li>
+<li>We shouldn't attribute his failure only to his inherent characteristics.<br /></li>
+<li>He attributes the disintegration of the group to the inherent flaws.<br /></li>
+</ul>
+<p>
+wholly [ˈhoʊli]: adv. completely完全的<br />
+</p>
+<ul class="org-ul">
+<li>Related to his death, I have wholly taken my responsibility all the time.<br /></li>
+<li>He gave me no choice but to kill him, my hands are wholly clean.<br /></li>
+<li>Consistent with Shane, I believe that his hands are wholly clean.<br /></li>
+</ul>
+<p>
+disclose [dɪsˈkloʊz]: v. to make something publicly known, especially after it has been kept secret SYN reveal揭露<br />
+</p>
+<ul class="org-ul">
+<li>The broadcast that the TV puts into discloses scandals about hospitals.<br /></li>
+<li>You still have a chance to disclose the criminal of his death.<br /></li>
+<li>The detective is looking into the scene to disclose the real criminal.<br /></li>
+</ul>
+<p>
+insensitive [ɪnˈsensətɪv]: adj. not noticing, or not taking the care to notice, other people’s feelings, and not realizing when they are upset or when something that you do will upset them麻木不仁的<br />
+</p>
+<ul class="org-ul">
+<li>The girl observed to the boy who is insensitive to the request of an old lady.<br /></li>
+<li>I did do something insensitive, but I took care of our baby through other channels than getting into panic.<br /></li>
+<li>My wife accused me of being insensitive to our unborn baby.<br /></li>
+</ul>
+<p>
+vulnerable [ˈvʌln(ə)rəb(ə)l]: adj. someone who is vulnerable can be easily harmed or hurt易受攻击的,脆弱的<br />
+</p>
+<ul class="org-ul">
+<li>Your works are vulnerable, for there's a huge chance that your child take the power line to your computer.<br /></li>
+<li>My emotions are vulnerable and I am afraid of getting too close to any partner.<br /></li>
+<li>The vulnerable is forced to be betrothed to a lord which she doesn't love.<br /></li>
+</ul>
+<p>
+withdraw [wɪðˈdrɔ]: v. to stop taking part in an activity, belonging to an organization etc, or to make someone do this退出<br />
+</p>
+<ul class="org-ul">
+<li>The relationship you want to withdraw is precious to me.<br /></li>
+<li>She will withdraw the marriage through other channels than committing suicide.<br /></li>
+<li>A bucket of water means a signal of withdrawing the group.<br /></li>
+</ul>
+<p>
+torment [tɔrˈment]: v. to make someone suffer a lot, especially mentally折磨<br />
+</p>
+<ul class="org-ul">
+<li>The sheriff who fell in love with his brother's wife was being tormented by the relationship.<br /></li>
+<li>Something insensitive I did in the past torments me a great deal.<br /></li>
+<li>Marring to the bastard who slaughtered her people torments her all the time.<br /></li>
+</ul>
+<hr />
+<p>
+keep sth. secret: 保持某事秘密<br />
+</p>
+<ul class="org-ul">
+<li>I want to tell you something that you must keep secret.<br /></li>
+<li>If I told you I ran into the walker, would you keep it secret for me?<br /></li>
+<li>Keep it secret, she is actually the infamous witch.<br /></li>
+</ul>
+<p>
+all the time: 一直<br />
+</p>
+<ul class="org-ul">
+<li>My wife is complaining about the price of the beef all the time.<br /></li>
+<li>She shared her apartment with her precious cat all the time.<br /></li>
+<li>The country is at war with its neighbor all the time.<br /></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

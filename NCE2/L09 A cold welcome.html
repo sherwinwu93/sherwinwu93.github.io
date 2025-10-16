@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-08-06 Tue 22:27 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+
+<div id="outline-container-orgdb40808" class="outline-2">
+<h2 id="orgdb40808">Lesson 9 A cold welcome</h2>
+<div class="outline-text-2" id="text-orgdb40808">
+<p class="verse">
+What does 'a cold welcome' refer to?<br />
+<br />
+On Wednesday evening, we went to the Town Hall.<br />
+It was <b>the last day of the year</b><br />
+&#xa0;and <b>a large crowd of</b> people had gathered under the Town Hall clock.<br />
+It would strike twelve <b>in twenty minutes' time</b>.<br />
+Fifteen minutes passed and then, at five to twelve, the clock stopped.<br />
+The big minute hand did not move.<br />
+We waited and waited, but nothing happened.<br />
+Suddenly someone shouted, 'It's two minutes past twelve! The clock has stopped!'<br />
+I looked at my watch.<br />
+It was true.<br />
+The big clock <b>refused to welcome</b> the New Year.<br />
+<b>At that moment</b> everybody <b>began to laugh</b> and sing.<br />
+</p>
+</div>
+<div id="outline-container-orgc1f1744" class="outline-3">
+<h3 id="orgc1f1744">expression</h3>
+<div class="outline-text-3" id="text-orgc1f1744">
+<p>
+welcome [ˈwelkəm] v.n.欢迎.欢迎<br />
+crowd [kraʊd] n.人群<br />
+gather [ˈɡæðə(r)] v.聚集<br />
+hand [hænd] n.(表或机器的)指针<br />
+shout [ʃaʊt] v.喊叫<br />
+refuse [rɪˈfjuːz] v.拒绝<br />
+laugh [lɑːf] v.笑<br />
+</p>
+
+<p>
+a cold welcome 冷遇<br />
+a warm welcome 热遇<br />
+gather round 聚集在一起<br />
+shout at sb. 对某人大声呼叫<br />
+refuse to do sth. 拒绝去做某事<br />
+laugh at sb. 嘲笑某人<br />
+</p>
+
+<hr />
+<p>
+at/on/in(时间)<br />
+</p>
+<ul class="org-ul">
+<li>on + 具体某一天<br /></li>
+<li>in + 年/季/月<br /></li>
+<li>at + 时间点<br /></li>
+</ul>
+
+<p>
+the last day of the year 这一年的最后一天<br />
+a large crowd of 大量的人群<br />
+in twenty minutes' time 二十分钟后<br />
+refuse to do sth. 拒绝去做某事<br />
+at that moment 在那一刻<br />
+begin to do sth. 开始做某事<br />
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org685dc49" class="outline-3">
+<h3 id="org685dc49">单词造句</h3>
+<div class="outline-text-3" id="text-org685dc49">
+<p>
+welcome<br />
+</p>
+<ul class="org-ul">
+<li>What a cold welcome is.<br /></li>
+<li>What a warm welcome is.<br /></li>
+<li>Welcome to Beijing.<br /></li>
+<li>Thanks for welcome.<br /></li>
+<li>You're welcome.<br /></li>
+</ul>
+<p>
+crowd gather<br />
+</p>
+<ul class="org-ul">
+<li>A large crowd of angry farmers gathered in front of the Bar.<br /></li>
+<li>A large crowd of hungry beggars had gathered in two minutes.<br /></li>
+<li>A large crowd of people gather in front of the Bank.<br /></li>
+<li>A large crowd of engineers gathered at the door.<br /></li>
+<li>A large crowd of actors gathered in front of the theater.<br /></li>
+</ul>
+<p>
+hand<br />
+</p>
+<ul class="org-ul">
+<li>They are trying to fix that hour hand.<br /></li>
+<li>Are they trying to fix that hour hand.<br /></li>
+<li>Why are they trying to fix that hour hand, nobody uses it!<br /></li>
+<li>Who are trying to fix that hour hand?<br /></li>
+<li>When were they trying to fix that hour hand?<br /></li>
+</ul>
+<p>
+shout<br />
+</p>
+<ul class="org-ul">
+<li>Don't shout at me, it's not my fault.<br /></li>
+<li>Don't shout to me, I can hear you clearly.<br /></li>
+<li>The beggar shouted at the police.<br /></li>
+<li>Why did the beggar shout at the police?<br /></li>
+<li>Why did my father shout at me?<br /></li>
+</ul>
+<p>
+refuse to do sth.<br />
+</p>
+<ul class="org-ul">
+<li>To my surprise, my wife refuses to teach me English.<br /></li>
+<li>To my surprise, my wife refuses to enter for the competition.<br /></li>
+<li>At that moment, my wife refused to work for the big firm.<br /></li>
+<li>Up to now, my wife refuses to think about life.<br /></li>
+<li>To my surprise, my wife refuses to make a path for me.<br /></li>
+</ul>
+<p>
+laugh<br />
+</p>
+<ul class="org-ul">
+<li>She laughed at me while I was speaking English.<br /></li>
+<li>Did she laugh at you while you were speaking English?<br /></li>
+<li>Why did she laugh at you, while you were speaking English?<br /></li>
+<li>When did she laugh at you?<br /></li>
+<li>Who laughed at you while you were speaking English?<br /></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org66b7f1e" class="outline-3">
+<h3 id="org66b7f1e">反复听电影片段</h3>
+</div>
+<div id="outline-container-orga3e6505" class="outline-3">
+<h3 id="orga3e6505">Pattern Drill 写+读</h3>
+<div class="outline-text-3" id="text-orga3e6505">
+<ul class="org-ul">
+<li>1t:grandmother<br />
+s1:When was your grandmother born?<br />
+s2:She was born in 1934.<br />
+<ul class="org-ul">
+<li>grandfather - 1928<br />
+When was your grandfather born?<br />
+He was born in 1928.<br /></li>
+<li>father - 1950<br />
+When was your father born?<br />
+He was born in 1950.<br /></li>
+<li>mother - 1953<br />
+When was your mother born?<br />
+She was born in 1953.<br /></li>
+<li>aunt - 1949<br />
+When was your aunt born?<br />
+She was born in 1949.<br /></li>
+</ul></li>
+<li>2t:grandmother-October 10th<br />
+s1:When's your grandmother's birthday?<br />
+s2:It's on October 19th.<br />
+<ul class="org-ul">
+<li>grandfather - July 6th<br />
+When's your grandfather's birthday?<br />
+It's on July 6th.<br /></li>
+<li>father - Janunary 27th<br />
+When's your father's birthday?<br />
+It's on Janunary 27th.<br /></li>
+<li>sister - August 12th<br />
+When's your sister's birthday?<br />
+It's on August 12th.<br /></li>
+<li>niece - December 23rd<br />
+When's your niece's birthday?<br />
+It's on December 23rd.<br /></li>
+</ul></li>
+<li>3t:at four o'clock - at teatime<br />
+s1:John came to see me at four o'clock.<br />
+s2:But I thought you were never at home at teatime.<br />
+<ul class="org-ul">
+<li>on Saturday - at the weekend<br />
+John came to see me on Saturday.<br />
+But I thought you were never at hoem at the weekend.<br /></li>
+<li>Before lunch - in the morning<br />
+John came to see me before lunch.<br />
+But I thought you were never at home in the morning.<br /></li>
+<li>after dinner - in the evening<br />
+John came to see me after dinner.<br />
+But I thought you were never at home in the morning.<br /></li>
+<li>at midday - at lunchtime<br />
+John came to see me at midday.<br />
+But I thought you weree never at home at lunchtime.<br /></li>
+</ul></li>
+<li>4t: on Sunday afternoon - in the morning<br />
+s1: John's arriving on Sunday afternoon.<br />
+s2: Oh, I thought he was arriving in the morning.<br />
+<ul class="org-ul">
+<li>early on Monday - at midday<br />
+John's arriving early on Monday.<br />
+Oh, I thought he was arriving at midday.<br /></li>
+<li>next summer - in the autumn<br />
+John's arriving next summer.<br />
+Oh, I thought he was arriving in the autumn.<br /></li>
+<li>during the week - at the weekend<br />
+John's arriving during the week.<br />
+Oh, I thought he was arriving at the weekend.<br /></li>
+<li>on June 10th - in July<br />
+John's arriving on June 10th.<br />
+Oh, I thought he was arriving in July.<br /></li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org20387c9" class="outline-3">
+<h3 id="org20387c9">给自己讲解</h3>
+</div>
+<div id="outline-container-org64a68fe" class="outline-3">
+<h3 id="org64a68fe">红皮书</h3>
+</div>
+<div id="outline-container-orgdd92a8b" class="outline-3">
+<h3 id="orgdd92a8b">习惯用法造句</h3>
+<div class="outline-text-3" id="text-orgdd92a8b">
+<p>
+the last day of the year<br />
+</p>
+<ul class="org-ul">
+<li>On the last day of the year, I went to the theater.<br /></li>
+<li>To our surprise, he has gone to America on the last day of the year.<br /></li>
+<li>On the last day of the year, we had a great trip in Sanya.<br /></li>
+<li>On the last day of the year, she made a big decision.<br /></li>
+<li>On the last day of the year, she has sent a postcard to me.<br /></li>
+</ul>
+<p>
+a large crowd of &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li></li>
+
+<li></li>
+
+<li></li>
+
+<li></li>
+
+<li></li>
+</ul>
+<p>
+in twenty minutes' time<br />
+</p>
+<ul class="org-ul">
+<li>I would work with you in twenty minutes' time.<br /></li>
+<li>I would receive you a postcard in seven days' time.<br /></li>
+<li>Would you work with me in twenty minutes' time?<br /></li>
+<li>I would get up in twenty minutes' time.<br /></li>
+<li>I would pay attention to the teacher in one minute's time.<br /></li>
+</ul>
+<p>
+refuse to do sth.<br />
+</p>
+<ul class="org-ul">
+<li></li>
+
+<li></li>
+
+<li></li>
+
+<li></li>
+
+<li></li>
+</ul>
+<p>
+at that moment<br />
+</p>
+<ul class="org-ul">
+<li>At that moment, everybody began to stand on his head and sing.<br /></li>
+<li>Did everybody begin to stand on his head at that moment?<br /></li>
+<li>Why did everybody begin to stand on his head at that moment?<br /></li>
+<li>Where did everybody begin to stand on his hand at that moment?<br /></li>
+<li>Who began to stand on his head at that moment?<br /></li>
+</ul>
+<p>
+begin to do sth.<br />
+</p>
+<ul class="org-ul">
+<li></li>
+
+<li></li>
+
+<li></li>
+
+<li></li>
+
+<li></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgb335195" class="outline-3">
+<h3 id="orgb335195">跟读至背诵</h3>
+</div>
+<div id="outline-container-org4e6e049" class="outline-3">
+<h3 id="org4e6e049">Ask me if 写+读</h3>
+</div>
+<div id="outline-container-org8f6a781" class="outline-3">
+<h3 id="org8f6a781">摘要写作</h3>
+</div>
+<div id="outline-container-org502ab73" class="outline-3">
+<h3 id="org502ab73">tell the story 口语</h3>
+</div>
+<div id="outline-container-org1a648fa" class="outline-3">
+<h3 id="org1a648fa">Topics for discussion</h3>
+<div class="outline-text-3" id="text-org1a648fa">
+<ol class="org-ol">
+<li>What did you do to celebrate the last New Year?<br /></li>
+<li>What other important days are there in the year? How do you celebrate them?<br /></li>
+<li>Have you, or a friend, ever been late because yourwatch had stopped? Tell us about it.<br /></li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

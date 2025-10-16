@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-01-29 Wed 12:03 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-orgf4915ec" class="outline-2">
+<h2 id="orgf4915ec">2015-05-15 Debunking the myths of OCD</h2>
+<div class="outline-text-2" id="text-orgf4915ec">
+<p class="verse">
+There's a common misconception<br />
+&#xa0;that if you like to meticulously organize your things,<br />
+&#xa0;&#xa0;&#xa0;keep your hands clean, or plan out your weekend to the last detail,<br />
+&#xa0;&#xa0;you might have OCD.<br />
+In fact, OCD, which stands for obsessive compulsive disorder,<br />
+&#xa0;is a serious psychiatric condition<br />
+&#xa0;&#xa0;that is frequently misunderstood by society and mental health professionals alike.<br />
+<br />
+So let's start by debunking some myths.<br />
+Myth one: repetitive or ritualistic behaviors are synonymous with OCD.<br />
+As its name suggests, obsessive compulsive disorder has two aspects:<br />
+&#xa0;the intrusive thoughts, images, or impulses, known as obsessions,<br />
+&#xa0;and the behavioral compulsions people engage in to relieve the anxiety the obsessions cause.<br />
+The kinds of actions that people often associate with OCD,<br />
+&#xa0;&#xa0;like excessive hand washing, or checking things repeatedly,<br />
+&#xa0;may be examples of obsessive or compulsive tendencies that many of us exhibit from time to time.<br />
+But the actual disorder is far more rare and can be quite debilitating.<br />
+People affected have little or no control over their obsessive thoughts and compulsive behaviors,<br />
+&#xa0;which tend to be time consuming<br />
+&#xa0;&#xa0;and interfere with work, school or social life to the point of causing significant distress.<br />
+This set of diagnostic criteria<br />
+&#xa0;is what separates people suffering from OCD from those<br />
+&#xa0;&#xa0;who may just be a bit more meticulous or hygiene obsessed than usual.<br />
+<br />
+Myth two: the main symptom of OCD is excessive hand washing.<br />
+Although hand washing is the most common image of OCD in popular culture,<br />
+&#xa0;obsessions and compulsions can take many different forms.<br />
+Obsessions can manifest as fears of contamination and illness,<br />
+&#xa0;worries about harming others,<br />
+&#xa0;or preoccupations with numbers, patterns, morality, or sexual identity.<br />
+And compulsions can range from excessive cleaning or double checking,<br />
+&#xa0;to the fastidious arrangement of objects, or walking in predetermined patterns.<br />
+<br />
+Myth three: individuals with OCD don't understand that they are acting irrationally.<br />
+Many individuals with OCD<br />
+&#xa0;actually understand the relationship between their obsessions and compulsions quite well.<br />
+Being unable to avoid these thoughts and actions despite being aware of their irrationality<br />
+&#xa0;is part of the reason why OCD is so distressing.<br />
+OCD sufferers report feeling crazy<br />
+&#xa0;for experiencing anxiety based on irrational thoughts<br />
+&#xa0;&#xa0;and finding it difficult to control their responses.<br />
+<br />
+So what exactly causes OCD?<br />
+The frustrating answer is we don't really know.<br />
+However, we have some important clues.<br />
+OCD is considered a neurobiological disorder.<br />
+In other words, research suggests<br />
+&#xa0;&#xa0;that OCD sufferers brains are actually hardwired to behave in a certain fashion.<br />
+Research has implicated three regions of the brain<br />
+&#xa0;variously involved in social behavior and complex cognitive planning,<br />
+&#xa0;&#xa0;voluntary movement, and emotional and motivational responses.<br />
+The other piece of the puzzle<br />
+&#xa0;is that OCD is associated with low levels of serotonin,<br />
+&#xa0;&#xa0;a neurotransmitter that communicates between brain structures<br />
+&#xa0;&#xa0;&#xa0;and helps regulate vital processes,<br />
+&#xa0;&#xa0;&#xa0;&#xa0;such as mood, aggression, impulse control, sleep, appetite, body temperature and pain.<br />
+But are serotonin and activity in these brain regions<br />
+&#xa0;the sources of OCD or symptoms of an unknown underlying cause of the disorder.<br />
+We probably won't know until we have a much more intimate understanding of the brain.<br />
+<br />
+The good news is there are effective treatments for OCD,<br />
+&#xa0;including medications,<br />
+&#xa0;&#xa0;which increase serotonin in the brain by limiting its reabsorption by brain cells,<br />
+&#xa0;behavioral therapy that gradually desensitizes patients to their anxieties,<br />
+&#xa0;and in some cases, electroconvulsive therapy, or surgery,<br />
+&#xa0;&#xa0;when OCD doesn't respond to other forms of treatment.<br />
+Knowing that your own brain is lying to you<br />
+&#xa0;while not being able to resist its commands can be agonizing.<br />
+But with knowledge and understanding comes the power to seek help,<br />
+&#xa0;and future research into the brain may finally provide the answers we're looking for.<br />
+</p>
+</div>
+<div id="outline-container-org606caac" class="outline-3">
+<h3 id="org606caac">expression</h3>
+<div class="outline-text-3" id="text-org606caac">
+<p>
+misconception [ˌmɪskənˈsepʃ(ə)n]: n. an idea which is wrong or untrue, but which people believe because they do not understand the subject properly SYN fallacy ⇨ preconception误解<br />
+meticulous [mɪˈtɪkjələs] meticulously: adj.adv. very careful about small details, and always making sure that everything is done correctly小心翼翼的<br />
+obsessive [əbˈsesɪv]: adj. thinking or worrying about something all the time, so that you do not think about other things enough – used to show disapproval痴迷的<br />
+compulsive [kəmˈpʌlsɪv]: adj. compulsive behaviour is very difficult to stop or control, and is often a result of or a sign of a mental problem ⇨ obsessive强制的, 强迫的<br />
+psychiatric [ˌsaɪkiˈætrɪk]: adj. relating to the study and treatment of mental illness精神病学的<br />
+alike [əˈlaɪk]: adv. very similar以同样的方式<br />
+repetitive [rɪˈpetətɪv]: adj. done many times in the sway, and boring重复的, 反复性的<br />
+ritualistic [ˌrɪtʃuəˈlɪstɪk]: adj. ritualistic words or behaviour always follow the spattern, especially because they form part of a ritual仪式的<br />
+intrusive [ɪnˈtrusɪv]: adj. affecting someone’s private life or interrupting them in an unwanted and annoying way打扰的<br />
+obsession [əbˈseʃ(ə)n]: n. an extreme unhealthy interest in something or worry about something, which stops you from thinking about anything else痴迷<br />
+tendency [ˈtendənsi]: n. if someone or something has a tendency to do or become a particular thing, they are likely to do or become it倾向<br />
+debilitate [dɪˈbɪlɪˌteɪt] debilitating: v.adj. to make someone ill and weak使衰弱<br />
+distress [dɪˈstres]: n. a feeling of extreme unhappiness悲痛<br />
+diagnostic [ˌdaɪəɡˈnɑstɪk]: adj. relating to or used for discovering what is wrong with someone or something诊断的<br />
+contaminate [kənˈtæmɪˌneɪt] contamination [kənˈtæmɪˌneɪt][kənˌtæmɪ'neɪʃən]: v.n.to make a place or substance dirty or harmful by putting something such as chemicals or poison in it污染<br />
+hygiene obsessed [ˈhaɪdʒin]: 卫生着迷<br />
+clue [klu]: n. information that helps you understand the reasons why something happens线索<br />
+neurobiological [ˌnʊroʊˌbaɪəˈlɑːdʒɪkl]: adj. 神经生物学的<br />
+serotonin [ˌsɪrəˈtoʊnɪn]: n. a chemical in the body that helps carry messages from the brain and is believed to make you feel happy血清素<br />
+neurotransmitter ['njʊərəʊtrænzmɪtə(r)]: n. 神经传递素<br />
+regulate [ˈreɡjəˌleɪt]: v. to control an activity or process, especially by rules控制, 调节<br />
+desensitize [diˈsensəˌtaɪz]: v. to make someone react less strongly to something by making them become used to it使麻木<br />
+electroconvulsive [ɪˌlektroʊkən'vʌlsɪv]: adj. 电休克的<br />
+agonize [ˈæɡəˌnaɪz] agonizing: v.adj. extremely painful痛苦难忍的<br />
+</p>
+<hr />
+<p>
+plan out sth. to the last detail: 把某事计划到最后一个细节<br />
+debunk some myths: 破除一些迷思<br />
+A be synonymous with B: A于B同义<br />
+from time to time: 时不时地<br />
+have little or no control over sth.: 对某事几乎没有控制<br />
+interfere with sth. to the point of doing sth.: 干涉某事到做某事的地步<br />
+separates A from B: 从B分离A<br />
+manifest as sth.: 表现为&#x2026;<br />
+preoccupations with sth.: 对某事的全神贯注<br />
+range from &#x2026; to &#x2026;: 从&#x2026;到&#x2026;的范围<br />
+quite well: 相当地<br />
+be hardwired to do sth.: 注定做某事<br />
+the underlying cause of sth.: 某事的根本原因<br />
+lie to sb.: 对某人说慌<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org0d397ad" class="outline-3">
+<h3 id="org0d397ad">ch.</h3>
+<div class="outline-text-3" id="text-org0d397ad">
+<p>
+2015-05-15 打破强迫症的误区<br />
+有一种普遍的误解，如果你喜欢把东西整理得一丝不苟，保持双手干净，或者把周末计划得非常细致，你可能患有强迫症。<br />
+事实上，强迫症（OCD，强迫症障碍）是一种严重的精神障碍，通常被社会和心理健康专业人士误解。<br />
+所以，让我们从打破一些误区开始。<br />
+误区一：重复性或仪式性的行为与强迫症是同义的。<br />
+顾名思义，强迫症有两个方面：侵入性的思想、影像或冲动，被称为“强迫思维”，以及人们为缓解这些强迫思维所产生的焦虑而进行的行为强迫。<br />
+人们常常与强迫症联系在一起的行为，比如过度洗手或反复检查事物，可能是很多人偶尔表现出的强迫或强迫倾向的例子。<br />
+但实际的强迫症要罕见得多，且可能非常虚弱不堪。<br />
+受影响的人几乎无法控制自己的强迫思维和行为，这些行为通常会耗费大量时间，干扰工作、学习或社交生活，甚至造成显著的痛苦。<br />
+这一诊断标准将患有强迫症的人与那些可能只是比平时更注重细节或有洁癖的人区分开来。<br />
+误区二：强迫症的主要症状是过度洗手。<br />
+尽管洗手是大众文化中对强迫症的最常见印象，但强迫症的强迫思维和行为可以有多种不同的表现。<br />
+强迫思维可以表现为对污染和疾病的恐惧、对伤害他人的担忧、对数字、模式、道德或性别认同的困扰。<br />
+而强迫行为则可以从过度清洁或反复检查，到对物品的精确排列，或者按预定的路线行走等多种形式表现出来。<br />
+误区三：患有强迫症的人并不理解自己行为的非理性。<br />
+许多患有强迫症的人实际上非常清楚自己的强迫思维和行为之间的关系。<br />
+尽管意识到这些思维和行为的非理性，仍然无法避免它们，这也是为什么强迫症如此令人痛苦的原因之一。<br />
+强迫症患者报告说，自己因为基于非理性思维而产生焦虑，感觉自己变得疯狂，且发现难以控制自己的反应。<br />
+那么，究竟是什么导致了强迫症呢？<br />
+令人沮丧的答案是我们并不完全知道。<br />
+然而，我们有一些重要的线索。<br />
+强迫症被认为是一种神经生物学的疾病。<br />
+换句话说，研究表明，强迫症患者的大脑实际上被硬性编程，以某种方式运作。<br />
+研究已经发现，大脑中有三个区域与社会行为和复杂的认知规划、主动运动，以及情感和动机反应等方面相关。<br />
+另一个线索是，强迫症与低水平的5-羟色胺（即“血清素”）有关，这是一种在大脑结构之间传递信号的神经递质，有助于调节重要的生理过程，如情绪、攻击性、冲动控制、睡眠、食欲、体温和疼痛等。<br />
+但这些大脑区域的血清素活跃度是强迫症的根源，还是它的症状，或者是这种疾病某种未知根本原因的表现呢？<br />
+我们可能需要更深入理解大脑，才能知道答案。<br />
+好消息是，强迫症是有有效治疗方法的，包括药物治疗，药物通过限制血清素被大脑细胞再吸收来提高大脑中的血清素水平；行为疗法，通过逐渐使患者对其焦虑产生脱敏作用；以及在某些情况下，对于其他治疗方法无效的强迫症患者，电休克治疗或手术。<br />
+知道自己的大脑在欺骗自己，同时却无法抗拒它的指令，这种感受是痛苦的。<br />
+但通过了解和认识，我们就有了寻求帮助的力量，而未来对大脑的研究可能最终为我们提供我们所追求的答案。<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org2e2b120" class="outline-3">
+<h3 id="org2e2b120">sentence</h3>
+<div class="outline-text-3" id="text-org2e2b120">
+<p>
+plan out sth. to the last detail: 把某事计划到最后一个细节<br />
+</p>
+<ul class="org-ul">
+<li>He is so meticulous that he planned out his wedding to the last detail.<br /></li>
+<li>It is no use planning out everything to the last detail, for things change with the times.<br /></li>
+<li>The wedding he planned out to the last detail ran very successfully.<br /></li>
+</ul>
+<p>
+debunk some myths: 破除一些迷思<br />
+</p>
+<ul class="org-ul">
+<li>The king dispatched some officials around to debunk some myths about vampires<br />
+and established a law prohibiting digging up tombs.<br /></li>
+<li>The doctor tried to discern the cause of the rare disease to debunk those myths.<br /></li>
+<li>You are supposed to read the coverage, which may debunk some myths.<br /></li>
+</ul>
+<p>
+A be synonymous with B: A于B同义<br />
+</p>
+<ul class="org-ul">
+<li>To permit somebody to do something is synonymous with to allow somebody to do something.<br /></li>
+<li>What's the matter is synonymous with what's up.<br /></li>
+<li>He insisted that what's the matter is not synonymous with what's wrong with you.<br /></li>
+</ul>
+<p>
+from time to time: 时不时地<br />
+</p>
+<ul class="org-ul">
+<li>The beggar asks me for a meal from time to time on Weekends.<br /></li>
+<li>The monster living in the mountain is said to feast on sacrificed children from time to time.<br /></li>
+<li>I am tired that the vicar raises money to have the clock repaired from time to time.<br /></li>
+</ul>
+<p>
+have little or no control over sth.: 对某事几乎没有控制<br />
+</p>
+<ul class="org-ul">
+<li>After his military declined, the king had little or no control over these provinces,<br />
+which led to the collapse of the dynasty.<br /></li>
+<li>With disaster comes weakness, the empire had little or no control over subjects.<br /></li>
+<li>The terrorist claimed that he had little or no control over the bombs planted at the aircraft.<br /></li>
+</ul>
+<p>
+interfere with sth. to the point of doing sth.: 干涉某事到做某事的地步<br />
+</p>
+<ul class="org-ul">
+<li>The dominant father interfered with the marriage of his son<br />
+to the point of causing the death of lovers.<br /></li>
+<li>My wife interferes with my daily life to the point of restricting my pocket money.<br /></li>
+<li>The authorities interfere with public<br />
+to the point of making them watch educational movies every week.<br /></li>
+</ul>
+<p>
+separates A from B: 从B分离A<br />
+</p>
+<ul class="org-ul">
+<li>I have a difficult time separating nails from these sorts of metal.<br /></li>
+<li>My cat is trying to separate meat from her food in the courtyard.<br /></li>
+<li>A gust of wind swept off, separating clothes from baggage.<br /></li>
+</ul>
+<p>
+manifest as sth.: 表现为&#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>The stupid marks you make always manifest as injury in others' hearts.<br /></li>
+<li>The scientist developed a model for an atom, in which electrons manifested as baseballs.<br /></li>
+<li>Your careless mistakes may manifest as the loss of money of our company one day.<br /></li>
+</ul>
+<p>
+preoccupations with sth.: 对某事的全神贯注<br />
+</p>
+<ul class="org-ul">
+<li>I used to admire you for your preoccupations with your homework while I was playing video games.<br /></li>
+<li>Without noticing his preoccupations with homework, I interrupted him from time to time.<br /></li>
+<li>I am proud of my preoccupations with speaking in public.<br /></li>
+</ul>
+<p>
+range from &#x2026; to &#x2026;: 从&#x2026;到&#x2026;的范围<br />
+</p>
+<ul class="org-ul">
+<li>He wrote a long list of foods, which range from chocolate to sweet, and so on.<br /></li>
+<li>Last night, he told us stories ranging from history to pirates.<br /></li>
+<li>My wife kept complaining about the things about this hotel<br />
+ranging from the equipment to the service.<br /></li>
+</ul>
+<p>
+quite well: 相当地<br />
+</p>
+<ul class="org-ul">
+<li>I was aware of my bad salary quite well.<br /></li>
+<li>It is no use pretending that you appreciate modern art quite well.<br /></li>
+<li>The result in the experiment agrees with the model quite well.<br /></li>
+</ul>
+<p>
+be hardwired to do sth.: 注定做某事<br />
+</p>
+<ul class="org-ul">
+<li>Due to similar values and purposes,<br />
+we are hardwired to stick together in the face of economic crisis.<br /></li>
+<li>His talent in leadership meant that he was hardwired to lead invaded people.<br /></li>
+<li>It is said that Jesus is hardwired to heal the world.<br /></li>
+</ul>
+<p>
+the underlying cause of sth.: 某事的根本原因<br />
+</p>
+<ul class="org-ul">
+<li>It is fortunate that we have discerned the underlying cause of the epidemic.<br /></li>
+<li>The underlying cause of OCD remains a mystery.<br /></li>
+<li>My leader inquired about the underlying cause of this online accident.<br /></li>
+</ul>
+<p>
+lie to sb.: 对某人说慌<br />
+</p>
+<ul class="org-ul">
+<li>Obviously, she is lying to you, for she doesn't want to settle down.<br /></li>
+<li>He is accustomed to lying to his pupils.<br /></li>
+<li>Lying to classmates, he is popular with them.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org9084dcb" class="outline-3">
+<h3 id="org9084dcb">summary</h3>
+<div class="outline-text-3" id="text-org9084dcb">
+<p>
+OCD, which stands for obsessive compulsive disorder,<br />
+	is a psychiatric condition<br />
+		which has been frequently mistunderstood as meticulously organizing things,<br />
+			keeping your hands clean, etc.<br />
+obsessive-compulsive, misunderstood,<br />
+It is time to debunk some myths.<br />
+Myth one: repetitive or ritualistic behaviors are equal to OCD.<br />
+In fact, people affected are not only more meticulous than usual,<br />
+	but they can't take control of their obseesive thoughts<br />
+		which force them to behave compulsively.<br />
+obsessive<br />
+Myth two: the main symptom of OCD is excessive hand wishing.<br />
+It can manifest as fears, worries, preoccupations with something that is not necessary.<br />
+And it can behave as excessive cleaning and checking, fastidious arrangment of objects, and so on.<br />
+Myth three: individuals with OCD don't understand that they are acting irrationally.<br />
+Although people suffering from OCD are aware of their obsessions and compulsions quite well,<br />
+	they can't avoid these thoughts and actions, whch make them very distressing.<br />
+OCD is considered a neurobiogloical disorder<br />
+	that associated with low levels of serotonin and three regions of the brain.<br />
+Whether these are the sources of OCD or symptons of the disorder remains mystery.<br />
+However, there are effective treatments for OCD<br />
+	ranging from medications, behavioral therapy, to electroconvulsive therapy and surgery.<br />
+Maybe future research into the brain will give us the answers we are looking for.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org8960d60" class="outline-3">
+<h3 id="org8960d60">summary2</h3>
+<div class="outline-text-3" id="text-org8960d60">
+<p>
+OCD, which stands for obsessive-compulsive disorder,<br />
+	is a psychiatric condition<br />
+		which has been frequently misunderstood as meticulously organizing things,<br />
+			keeping your hands clean, etc.<br />
+It is time to debunk some myths.<br />
+Myth one: repetitive or ritualistic behaviors are equal to OCD.<br />
+In fact, people affected are not only more meticulous than usual,<br />
+	but they can't take control of their obsessive thoughts,<br />
+		which forces them to behave compulsively.<br />
+Myth two: the main symptom of OCD is excessive hand-wishing.<br />
+It can manifest as fears, worries, or preoccupations with something that is not necessary.<br />
+It can behave as excessive cleaning and checking, fastidious arrangement of objects, and so on.<br />
+Myth three: individuals with OCD don't understand that they are acting irrationally.<br />
+Although people suffering from OCD are aware of their obsessions and compulsions quite well,<br />
+	they can't avoid these thoughts and actions, which make them very distressing.<br />
+OCD is considered a neurobiological disorder<br />
+	that is associated with low levels of serotonin in three regions of the brain.<br />
+Whether these are the sources of OCD or symptoms of the disorder remains a mystery.<br />
+However, there are effective treatments for OCD<br />
+	ranging from medications and behavioral therapy, to electroconvulsive therapy and surgery.<br />
+Maybe future research into the brain will give us the answers we are looking for.<br />
+</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

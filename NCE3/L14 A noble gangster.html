@@ -1,0 +1,765 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-09-28 Sat 22:17 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+
+<div id="outline-container-org35a066b" class="outline-2">
+<h2 id="org35a066b">Lesson 14 A noble gangster</h2>
+<div class="outline-text-2" id="text-org35a066b">
+<p class="verse">
+How did Hawkwood make money in times of peace?<br />
+<br />
+<b>There was a time<br />
+&#xa0;when</b> the owners of shops and businesses in Chicago<br />
+&#xa0;&#xa0;had to <b>pay large sums of money to</b> gangsters in return for ‘protection’.<br />
+If the money was not paid promptly,<br />
+&#xa0;the gangsters would quickly <b>put a man out of business</b> by destroying his shop.<br />
+Obtaining '<b>protection money</b>' is not a modern crime.<br />
+<b>As long ago as</b> the fourteenth century,<br />
+&#xa0;an Englishman, Sir John Hawkwood, <b>made the remarkable discovery</b><br />
+&#xa0;&#xa0;that people <b>would rather</b> pay large sums of money<br />
+&#xa0;&#xa0;&#xa0;<b>than</b> have their life work destroyed by gangsters.<br />
+<br />
+Six hundred years ago,<br />
+&#xa0;Sir John Hawkwood arrived in Italy with <b>a band of</b> soldiers and settled near Florence.<br />
+He soon <b>made a name for himself</b> and <b>came to be known to the Italians as</b> Giovanni Acuto.<br />
+Whenever the Italian city-states <b>were at war with</b> each other,<br />
+&#xa0;Hawkwood used to hire his soldiers to princes<br />
+&#xa0;&#xa0;who were willing to pay the high price he demanded.<br />
+<b>In times of peace</b>, when business was bad,<br />
+&#xa0;Hawkwood and his men would march into a city-state and,<br />
+&#xa0;&#xa0;after burning down a few farms,<br />
+&#xa0;would <b>offer to go away</b> if protection money was paid to them.<br />
+Hawkwood <b>made large sums of money</b> in this way.<br />
+In spite of this, the Italians <b>regarded him as</b> a sort of hero.<br />
+When he died at the age of eighty,<br />
+&#xa0;the Florentines <b>gave him a state funeral</b><br />
+&#xa0;&#xa0;and had a picture painted which <b>was dedicated to the memory of</b><br />
+&#xa0;&#xa0;&#xa0;'the most valiant soldier and most notable leader, Signor Giovanni Acuto'.<br />
+</p>
+</div>
+<div id="outline-container-org8636f93" class="outline-3">
+<h3 id="org8636f93">expression</h3>
+<div class="outline-text-3" id="text-org8636f93">
+<p>
+gangster: [ˈɡæŋstər] n.歹徒,强盗<br />
+Chicago: [ʃɪ'kɑ n.<br />
+protection: [prəˈtekʃən] n.保护<br />
+promptly: [ˈprɑmptli] adv. immediately/on time准时地<br />
+destroy: [dɪˈstrɔɪ] v.毁掉;消灭<br />
+remarkable: [rɪˈmɑrkəb(ə)l] adj.unusual or surprising and therefore deserving attention or praise不寻常的<br />
+band: [bænd] n. a group of musicians, especially a group that plays popular music帮,团伙<br />
+Florence: ['flɔrəns] n. Florentine n.<br />
+city-state: n.城邦<br />
+hire: [ˈhaɪr] v. rent租出,雇给<br />
+prince: [prɪns] n. the son of a king, queen, or prince君王,诸侯<br />
+funeral: [ˈfjun(ə)rəl] n.葬礼<br />
+dedicate: [ˈdedɪˌkeɪt] v.献身于<br />
+memory: [ˈmem(ə)ri] n.纪念<br />
+valiant: [ˈvæliənt] adj.very brave, especially in a difficult situation英勇的<br />
+</p>
+
+<p>
+need protection: 需要保护<br />
+provide protection: 提供保护<br />
+for your own protection: keeping yourself safe from injury or damage为了你自己的安全<br />
+a band of: a group of一群,一伙<br />
+give him a state funeral: 给他一个国葬<br />
+dedicate yourself/your life to sth.: sacrifice a. for b.; devote oneself to sth./doing sth.投身/献身于某事/做某事<br />
+dedicate sth. to sb.: 献给某人某物<br />
+devote oneself to sth./doing sth.: 投身/献身于某事/做某事<br />
+in memory of sb. / to the memory of sb.: in sb's honor为了纪念某人<br />
+</p>
+<hr />
+<p>
+when引导的定语从句<br />
+</p>
+<ol class="org-ol">
+<li>先行词必须为时间(time, day, year&#x2026;)<br /></li>
+<li>when必须在从句中充当[6]的成分.如果从句是[1][3],那么是which引导定语从句,而不是when<br /></li>
+<li>在非书面语中,用that或者直接去掉<br /></li>
+<li>注意区分when时间状语 VS when定语从句<br /></li>
+<li>prep.+which=when, 类似的还有方式状语<br /></li>
+</ol>
+<p>
+whenever:<br />
+</p>
+<ol class="org-ol">
+<li>when的强调<br /></li>
+<li>every time or any time<br /></li>
+</ol>
+<p>
+if真实条件句和虚拟语气: 过去真实条件句和现在虚拟格式一致,只能结合上下文看.<br />
+	If did&#x2026; , would do&#x2026;<br />
+</p>
+<hr />
+<p>
+There was a time when + &#x2026;: 曾经有一段时间……<br />
+pay money to sb.: 付钱给某人<br />
+large sums of money: 大笔大笔的钱<br />
+put sb. out of business: make (someone) go bankrupt, lose their shop or company使某人破产<br />
+as long ago as: in the distant past早在&#x2026;就<br />
+make the remarkable discovery that + &#x2026;: 有显著的发现+&#x2026;<br />
+would rather do A than do B: 更愿意做A而不是B<br />
+make a name for himself: to become well-known or famous; rise to fame成名<br />
+come to do sth.: they do it at the end of a long process or period of time最终来做某事<br />
+A be known to B as C: B calls A as C A被B称为C<br />
+A be known as B: A被称为B<br />
+be at war with &#x2026;: eg. China is at war with America.与&#x2026;交战<br />
+in times of peace: 在和平时期<br />
+offer to do sth.: 主动提出做某事<br />
+make money: 赚钱<br />
+regard A as B: refer to A as B 把A看作B<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc6d9431" class="outline-3">
+<h3 id="orgc6d9431">words</h3>
+<div class="outline-text-3" id="text-orgc6d9431">
+<p>
+gangster [ˈɡæŋstər] n. 歹徒，强盗<br />
+Chicago [ʃɪ'kɑ:ɡoʊ] n. 芝加哥（美国城市）<br />
+protection [prəˈtekʃən] n. 保护<br />
+promptly [ˈprɑmptli] adv. 准时地<br />
+destroy [dɪˈstrɔɪ] v. 毁掉；消灭<br />
+remarkable [rɪˈmɑrkəb(ə)l] adj. 不寻常的<br />
+band [bænd] /bænd/n. 帮，团伙<br />
+Florence ['flɔrəns] n. 佛罗伦萨（意大利城市）<br />
+city-state [ˈsɪti'steɪt] n. （古代）城邦<br />
+hire [ˈhaɪr] v. 租出，雇给<br />
+prince [prɪns] n. 君主，诸侯<br />
+Florentine ['flɒrəntaɪn] n. 佛罗伦萨人<br />
+funeral [ˈfjun(ə)rəl] n. 葬礼<br />
+dedicate [ˈdedɪˌkeɪt] v. 奉献，题献给<br />
+memory [ˈmem(ə)ri] n. 纪念<br />
+valiant [ˈvæliənt] adj. 英勇的<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org6548e53" class="outline-3">
+<h3 id="org6548e53"><span class="done DONE">DONE</span> vocabulary</h3>
+<div class="outline-text-3" id="text-org6548e53">
+<p>
+sums: amounts<br />
+promptly: immediately<br />
+obtaining: getting, acquiring<br />
+remarkable: notable, amazing<br />
+settled: went to live<br />
+hire: rent<br />
+demanded: asked for<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgbd60632" class="outline-3">
+<h3 id="orgbd60632"><span class="done DONE">DONE</span> 单词造句</h3>
+<div class="outline-text-3" id="text-orgbd60632">
+<p>
+gangster n.<br />
+</p>
+<ul class="org-ul">
+<li>The gangster movie used to make a great impact on him.<br /></li>
+<li>These gangster have onething in common: they have a habit of breaking into houses.<br /></li>
+<li>My father was telling me a story about a New York gangster.<br /></li>
+<li>The scientist has made a close study of these gangster in New York.<br /></li>
+<li>There is no shortage of gangsters in New York.<br /></li>
+</ul>
+<p>
+Chicago n.<br />
+protection n.  need protection  provide protection  for your own protection<br />
+</p>
+<ul class="org-ul">
+<li>She states that she needs protection.<br /></li>
+<li>We needn't have provided protection for these gangsters.<br /></li>
+<li>We are providing protection for the group of singers.<br /></li>
+<li>The policeman is keeping order for our protection.<br /></li>
+<li>Don't cross the hill alone. It's for your own protection.<br /></li>
+</ul>
+<p>
+promptly adv. immediately/on time<br />
+</p>
+<ul class="org-ul">
+<li>Despite the fact she said she might be late, she arrived promtly at the party.<br /></li>
+<li>I always hand my essay to my teacher promptly.<br /></li>
+<li>She asked us to provide protection money promptly.<br /></li>
+<li>Fortunately, she explained herself to her husband promptly.<br /></li>
+<li>She has trouble finishing her work promptly.<br /></li>
+</ul>
+<p>
+destroy v.<br />
+</p>
+<ul class="org-ul">
+<li>The car was completely destoryed in the accident.<br /></li>
+<li>She put out the fire promptly and prevented the car from being destoryed.<br /></li>
+<li>No matter how you did at the time, it would be destoryed after all.<br /></li>
+<li>The museum was set on fire and was destoryed last week.<br /></li>
+<li>The building was destoryed during the war.<br /></li>
+</ul>
+<p>
+remarkable adj.<br />
+</p>
+<ul class="org-ul">
+<li>Our rival has made remarkable profit this year.<br /></li>
+<li>My wife turned out to be a remarkable actress.<br /></li>
+<li>Such is human nature that most of we are glad that we meet remarkable people.<br /></li>
+<li>I am amazed to find that his wife is a remarkable woman.<br /></li>
+<li>This remarkable ring dates from 7th century.<br /></li>
+</ul>
+<p>
+band n.  a band of<br />
+</p>
+<ul class="org-ul">
+<li>Equipped with guns, a band of police marched into the house.<br /></li>
+<li>A band of gangsters were going through my house yesterday.<br /></li>
+<li>We need a band of volunteers to drive the buses when busmen is going on a strike.<br /></li>
+<li>A band of soldiers happened to catch a thief.<br /></li>
+<li>A band of students gathered round to go on a strike.<br /></li>
+</ul>
+<p>
+Florence n. Florentine n.<br />
+city-state n.<br />
+hire v. rent<br />
+</p>
+<ul class="org-ul">
+<li>I regret to inform you that you are not hired.<br /></li>
+<li>We hired a worker to repair our drainage system.<br /></li>
+<li>If we had hired a car last night, we would have been in Beijing.<br /></li>
+<li>I'm glad that our boss hired a lot of people.<br /></li>
+<li>This house has been hired for one reason or another.<br /></li>
+</ul>
+<p>
+prince n.<br />
+</p>
+<ul class="org-ul">
+<li>I'm glad that I had the opportunity to meeting a prince.<br /></li>
+<li>The prince never gave up his power.<br /></li>
+<li>I recognize the doctor as a prince.<br /></li>
+<li>You did give our prince a surprise.<br /></li>
+<li>It was not long before I get used to meeting prince.<br /></li>
+</ul>
+<p>
+funeral n.  give him a state funeral<br />
+</p>
+<ul class="org-ul">
+<li>When I first caught sight of a funeral, I felt very depressed.<br /></li>
+<li>I think he is equal to hold a funeral for his father.<br /></li>
+<li>He asked his son to take the funeral seriously.<br /></li>
+<li>She claimed to have seen a ghost at the funeral.<br /></li>
+<li>This convinced us that prime minister decided to give him a state funeral.<br /></li>
+</ul>
+<p>
+dedicate v.  dedicate yourself/your life to sth.  dedicate sth. to sb.<br />
+	devote oneself to sth./doing sth.<br />
+</p>
+<ul class="org-ul">
+<li>The actress who stayed out of limelight decided to dedicate herself to children's charity work.<br /></li>
+<li>I will never dedicate my life to education.<br /></li>
+<li>It comes as a surprise to learn that she decided to dedicate herself to swimming.<br /></li>
+<li>He will dedicate his money to his wife.<br /></li>
+<li>We are amazed to find out that the book is dedicated to his cat.<br /></li>
+</ul>
+<p>
+memory n.  in memory of sb. / to the memory of sb.<br />
+</p>
+<ul class="org-ul">
+<li>I used to have a good memory and remember everything about her clearly.<br /></li>
+<li>The film is based on his memory of a London ganster.<br /></li>
+<li>The tower is dedicated to the memory of people's heroes in the war.<br /></li>
+<li>People who work in office usually have a better memory than people who do manual work.<br /></li>
+<li>She is willing to sacrifice her memory for his love.<br /></li>
+</ul>
+<p>
+valiant adj.<br />
+</p>
+<ul class="org-ul">
+<li>The valiant soldiers in this war have received reward.<br /></li>
+<li>It was obvious that he is the most valiant soldiers in this action.<br /></li>
+<li>The valiant soldier will have an opportunity to meet the president.<br /></li>
+<li>The fireman makes valiant efforts to save his house.<br /></li>
+<li>This valiant soldier has a clear conscience.<br /></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgc72f409" class="outline-3">
+<h3 id="orgc72f409"><span class="done DONE">DONE</span> 反复听电影片段直到懂关键句</h3>
+<div class="outline-text-3" id="text-orgc72f409">
+</div>
+</div>
+<div id="outline-container-orgcc0440e" class="outline-3">
+<h3 id="orgcc0440e"><span class="done DONE">DONE</span> 给自己讲解语法</h3>
+<div class="outline-text-3" id="text-orgcc0440e">
+<p>
+when引导的定语从句<br />
+</p>
+<ul class="org-ul">
+<li>先行词必须为时间(time, day, year&#x2026;)<br /></li>
+<li>when必须在从句中充当[6]的成分.如果从句是[1][3],那么是which引导定语从句,而不是when<br /></li>
+<li>在非书面语中,用that或者直接去掉<br /></li>
+<li>注意区分when时间状语 VS when定语从句<br /></li>
+<li>prep.+which=when, 类似的还有方式状语<br /></li>
+</ul>
+<p>
+whenever:<br />
+</p>
+<ul class="org-ul">
+<li>when的强调<br /></li>
+<li>every time or any time<br /></li>
+</ul>
+<p>
+if真实条件句和虚拟语气: 过去真实条件句和现在虚拟格式一致,只能结合上下文看.<br />
+	If did&#x2026; , would do&#x2026;<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org912eac7" class="outline-3">
+<h3 id="org912eac7">复习二册语法(笔记或视频) &amp; 红皮书</h3>
+</div>
+<div id="outline-container-org1c412ad" class="outline-3">
+<h3 id="org1c412ad"><span class="done DONE">DONE</span> 习惯用法造句</h3>
+<div class="outline-text-3" id="text-org1c412ad">
+<p>
+There was a time when + &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>There was a time when I had a conversation with her every day.<br /></li>
+<li>There was a time when I wen to the theatre twice a week.<br /></li>
+<li>There was a time when people paid more attention to their health.<br /></li>
+<li>There was a time when I spent all day in my room.<br /></li>
+<li>There was a time when I sent letters to my father once a week.<br /></li>
+</ul>
+<p>
+pay money to sb.<br />
+</p>
+<ul class="org-ul">
+<li>She claimed to have paid $5 to the beggar.<br /></li>
+<li>You needn't have paid that to the beggar.<br /></li>
+<li>In front of my girlfriend, I paid the bill to boss.<br /></li>
+<li>If you had paid $100 to him, we would have had a great trip.<br /></li>
+<li>If you pay $10 to him, you will receive a postcard from him.<br /></li>
+</ul>
+<p>
+large sums of money<br />
+</p>
+<ul class="org-ul">
+<li>My leader persuaded him to pay large sums of money to us.<br /></li>
+<li>He who works for the corporation makes large sums of money this year.<br /></li>
+<li>My wife left me a message that her father will lend me large sums of money.<br /></li>
+<li>I have sent a request for large sums of money.<br /></li>
+<li>His daughter has asked him for large sums of money.<br /></li>
+</ul>
+<p>
+put sb. out of business<br />
+</p>
+<ul class="org-ul">
+<li>In return for this, the gangsters put him out of business.<br /></li>
+<li>She is out of business and will have to move to countryside.<br /></li>
+<li>A parcel of sand and stone has put us out of business.<br /></li>
+<li>If you enter the competition, I will put you out of business.<br /></li>
+<li>The bridge was destroyed by the accident<br />
+and the architect has been put out of business since then.<br /></li>
+</ul>
+<p>
+as long ago as<br />
+</p>
+<ul class="org-ul">
+<li>As long ago as last year, I returned the money to my father.<br /></li>
+<li>As long ago as ten century, the monostery was used to be a place of worship.<br /></li>
+<li>As long ago as 2000, I has climbed the Everest moutain.<br /></li>
+<li>As long ago as 2010, she began to study English.<br /></li>
+<li>As long ago as last year, he borrowed large sums of money from the bank.<br /></li>
+</ul>
+<p>
+make the remarkable discovery that + &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>He made the discovery that his son has been very proud of him.<br /></li>
+<li>He made the remarkable discovery that the boat sailed from England to America last century.<br /></li>
+<li>He made the remarkable discovery that the goddes turned out to be a very modern-looking woman.<br /></li>
+<li>He made the remarkable discovery<br />
+that boys are willing to pay the bill when his girlfriend are behind them.<br /></li>
+<li>He made the remarkable discovery that this will make police keep order easier.<br /></li>
+</ul>
+<p>
+would rather do sth. than do sth.<br />
+</p>
+<ul class="org-ul">
+<li>I would rather die than give a performance in public place.<br /></li>
+<li>I would rather feed cats than keep order.<br /></li>
+<li>I would rather ask someone for a lift than take a bus.<br /></li>
+<li>I would rather die than look up dictionary.<br /></li>
+<li>I would rather die than hurry to Beijing.<br /></li>
+</ul>
+<p>
+make a name for himself<br />
+</p>
+<ul class="org-ul">
+<li>She makes every effort to make a name for herself as an actress.<br /></li>
+<li>If you made a name for youself, you would make large sums of money.<br /></li>
+<li>Don't try to make a name for yourself, it's a waste of time.<br /></li>
+<li>He realized to his horror that his rival has made a name for himself.<br /></li>
+<li>I'm not interesting in making a name for myself at all.<br /></li>
+</ul>
+<p>
+come to do sth.<br />
+</p>
+<ul class="org-ul">
+<li>She came to realize that she set the house on fire.<br /></li>
+<li>She came to think that her child was playing truant from school.<br /></li>
+<li>She came to realize that she is keen on sitting in a boat.<br /></li>
+<li>She came to think that her sister is determined to study abroad.<br /></li>
+<li>She came to realize that the noise from planes was driving her mad.<br /></li>
+</ul>
+<p>
+a. be known to b. as c.<br />
+</p>
+<ul class="org-ul">
+<li>Bruce Lee is known to Chinese as an actor.<br /></li>
+<li>The English prime minister is known to Chinese as Iron Lady.<br /></li>
+<li>The actor is known to Chinese as Sweet Tea.<br /></li>
+<li>The drama is known to Chinese as Old Friends.<br /></li>
+<li>The actor is known to Chineses as a gangster.<br /></li>
+</ul>
+<p>
+a. be known as b.<br />
+</p>
+<ul class="org-ul">
+<li>My husband used to be known as "The valient soldier".<br /></li>
+<li>The film is known as "The greatest masterpiece".<br /></li>
+<li>The Tatanic was known as "unsinkable".<br /></li>
+<li>This kind of cats is known as "Friend".<br /></li>
+<li>This kind of dogs is known as "Watchdog".<br /></li>
+</ul>
+<p>
+be at war with &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>I regreted being at war with my wife.<br /></li>
+<li>They are at war with each other, for his wife has viewed his letter.<br /></li>
+<li>For some reasons, they has been at war with each other for five years.<br /></li>
+<li>This airport can't come into use, for the country is at war with its neighbor.<br /></li>
+<li>They needn't have been at war with each other.<br /></li>
+</ul>
+<p>
+in times of peace<br />
+</p>
+<ul class="org-ul">
+<li>In times of peace, everyone has the opportunity to go to school.<br /></li>
+<li>In times of peace, people are more willing to run a small business.<br /></li>
+<li>In times of peace, peoplce are more likely to make large sums of money.<br /></li>
+<li>In times of peace, the teacher devoted himself to garden.<br /></li>
+<li>In times of peace, he dedicate himself to education.<br /></li>
+</ul>
+<p>
+offer to do sth.<br />
+</p>
+<ul class="org-ul">
+<li>She offered to lend us large sums of money.<br /></li>
+<li>She offered to go to the fancy dress party.<br /></li>
+<li>She offered to load her car with these baskets of fruits.<br /></li>
+<li>She offered to live on a desert island.<br /></li>
+<li>She offered to try a hair gel.<br /></li>
+</ul>
+<p>
+make money<br />
+</p>
+<ul class="org-ul">
+<li>She goes to extremes to make large sums of money.<br /></li>
+<li>She realized to her horror that her rival has made large sums of money.<br /></li>
+<li>It seems that she made large sums of money.<br /></li>
+<li>My wife learns to make money by herself.<br /></li>
+<li>His story made an impact on me and encoraged me to make more money.<br /></li>
+</ul>
+<p>
+regard a. as b.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org4616a53" class="outline-3">
+<h3 id="org4616a53">跟读 50遍</h3>
+</div>
+<div id="outline-container-orge43dc46" class="outline-3">
+<h3 id="orge43dc46"><span class="done DONE">DONE</span> Comprehension 反复练习</h3>
+<div class="outline-text-3" id="text-orge43dc46">
+</div>
+</div>
+<div id="outline-container-org56582d2" class="outline-3">
+<h3 id="org56582d2"><span class="done DONE">DONE</span> Ask me if 写+读</h3>
+<div class="outline-text-3" id="text-org56582d2">
+<ol class="org-ol">
+<li>Shop owners in Chicago used to have to pay large sums of money to gangsters. Who<br />
+Who used to have to pay large sums of money to gangsters?<br /></li>
+<li>This payment was called 'protection money'. What<br />
+What was this payment called?<br /></li>
+<li>This system was invented a long time ago. How long ago<br />
+How long ago was this system invented?<br /></li>
+<li>Sir John and his men settled near Florence. Where<br />
+Where did Sir John and his men settle?<br /></li>
+<li>He made a name for himself. How<br />
+How did he make a name for himself?<br /></li>
+<li>Princes were willing to pay high prices. What<br />
+What were princes willing to pay?<br /></li>
+<li>Sir John and his men would burn down farms. On what occasions<br />
+On what occasions would Sir John and his men burn down farms?<br /></li>
+<li>The Italians regarded him as a sort of hero. How<br />
+How did the Italians regard him?<br /></li>
+<li>He was eighty when he died. How old<br />
+How old was he when he died?<br /></li>
+<li>The Florentines gave him a state funeral. What kind of funeral<br />
+What kind of funeral did the Florentines give him?<br /></li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orgf5be6aa" class="outline-3">
+<h3 id="orgf5be6aa"><span class="done DONE">DONE</span> 摘要写作 写 &amp; 对答案</h3>
+<div class="outline-text-3" id="text-orgf5be6aa">
+<p>
+After Sir John Hawkwood settled near Florence six hundred years ago ,<br />
+	he hired soldiers to princes of city-states in times of war.<br />
+In times of peace he threatened to destory a city-state unless the protection money was paid.<br />
+In spite of this, the Italians regarded him as a sort of hero.<br />
+When he died at the age of eighty,<br />
+	the Florentins not only gave him a state funeral<br />
+	but had a picture painted of him, deictaed to his memory.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgf735676" class="outline-3">
+<h3 id="orgf735676"><span class="done DONE">DONE</span> tell the story 口语复述</h3>
+<div class="outline-text-3" id="text-orgf735676">
+</div>
+</div>
+<div id="outline-container-orge9fc1d7" class="outline-3">
+<h3 id="orge9fc1d7"><span class="done DONE">DONE</span> composition 阅读 或 写作</h3>
+<div class="outline-text-3" id="text-orge9fc1d7">
+<p>
+News that Hawkwood and his men were approaching<br />
+	caused panic among villagers who prepared to defend their farms.<br />
+Hawkwood had a bad reputation among farmers<br />
+	because they knew he would not hesitate to kill them and to burn their farms.<br />
+The farmers fought very hard, even though they were poorly armed.<br />
+With their sticks and spades, they were no match for Hawkwood's well-armed soldiers<br />
+	who had horses, swords and bows and arrows.<br />
+During the battle, a great many farmers were killed.<br />
+After Hawkwood destroyed their farms,<br />
+	he sent a message to the prince of the city-state demanding a large amount of protection money.<br />
+He said that if this money was paid, he would go away and cause no more trouble.<br />
+However, if it wasn't paid, he would invade the city.<br />
+To Hawkwood's amazement, this demand was refused, so he and his men invaded the city.<br />
+As a result, many buildings were destroyed<br />
+	and thousands of people were killed including quite a few of Hawkwood's soldiers.<br />
+The city people fought very hard until Hawkwood and his men were finally driven off.<br />
+Because the city people defended themselves so well,<br />
+	Hawkwood never attacked them again.<br />
+He and the prince even became friends.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb045f30" class="outline-3">
+<h3 id="orgb045f30">Topics for discussion</h3>
+</div>
+</div>
+</div>
+</body>
+</html>

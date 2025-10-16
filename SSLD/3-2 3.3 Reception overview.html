@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-11-27 Wed 16:15 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-orgadb8808" class="outline-2">
+<h2 id="orgadb8808">3-2 3.3 Reception overview</h2>
+<div class="outline-text-2" id="text-orgadb8808">
+<p class="verse">
+In terms of reception,<br />
+&#xa0;if you are talking to another person, and you're really trying to understand them,<br />
+&#xa0;&#xa0;what are some of the things that you should be paying attention to?<br />
+Well obviously, the one thing that almost everyone will pay attention to is the factual content<br />
+&#xa0;that this person is communicating.<br />
+If someone is telling you about oil prices, real estate prices going up or down.<br />
+It's telling you about whether you're paying any attention to the facts.<br />
+<br />
+Actually, talking about the weather is a good example<br />
+&#xa0;because when the people talk about the weather, they are not really talking about the weather.<br />
+So this leads us to this very important position<br />
+&#xa0;that the facts are not always the most important aspect of the communication.<br />
+But that is one of the things<br />
+&#xa0;that most people without special training or education or learning<br />
+&#xa0;&#xa0;would almost be automatically paying attention to.<br />
+And this is also something that I've been learning since elementary school.<br />
+So that is one thing that people know, and we probably won't be spending too much time on.<br />
+But the other aspects of the communication, the other dimensions that are less obvious,<br />
+&#xa0;like emotional content, the kind of needs that people are trying to express.<br />
+And there is a huge area that we can be exploring.<br />
+It's helping people<br />
+&#xa0;by saying something or actually communicating with positions that they're coming from.<br />
+They may be also telling you about their values, their preferences.<br />
+So, those are the things that we want to be paying attention to.<br />
+</p>
+</div>
+
+<div id="outline-container-orgee7d07f" class="outline-3">
+<h3 id="orgee7d07f">expression</h3>
+<div class="outline-text-3" id="text-orgee7d07f">
+<p>
+factural [ˈfæktʃuəl]: based on facts or relating to facts事实的, 实际的<br />
+aspect [ˈæspekt]: one part of a situation, idea, plan etc that has many parts方面<br />
+automatic [ˌɔtəˈmætɪk] automatically: an automatic machine is designed to work without needing someone to operate it for each part of a process ⇨ manual自动的<br />
+elementary [ˌeləˈment(ə)ri]: simple or basic初步的, 基本的<br />
+preference [ˈpref(ə)rəns]: if you have a preference for something, you like it more than another thing and will choose it if you can ⇨ prefer偏爱, 优先选择<br />
+</p>
+<hr />
+<p>
+real estate: 不动产<br />
+price go up/down: 上升/下降<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org66e264e" class="outline-3">
+<h3 id="org66e264e">sentence</h3>
+<div class="outline-text-3" id="text-org66e264e">
+<p>
+factual [ˈfæktʃuəl]: based on facts or relating to facts事实的, 实际的<br />
+</p>
+<ul class="org-ul">
+<li>No one could neglect the factural existence of the white walker.<br /></li>
+<li>The factural bastard led to severe wars in the seven kingdom.<br /></li>
+<li>There are always some outdated factural events on the newspaper.<br /></li>
+</ul>
+<p>
+aspect [ˈæspekt]: one part of a situation, idea, plan etc that has many parts方面<br />
+</p>
+<ul class="org-ul">
+<li>Communication is the critical aspect of our interaction on a daily basis.<br /></li>
+<li>Kindness is said to the important aspect of his characteristics.<br /></li>
+<li>The dark aspect of his characteristics can give rise to another war on the continent.<br /></li>
+</ul>
+<p>
+automatic [ˌɔtəˈmætɪk] automatically: an automatic machine is designed to work without needing someone to operate it for each part of a process ⇨ manual自动的<br />
+</p>
+<ul class="org-ul">
+<li>The entrepreneur will set up a factory in the suburb of the city equipped with automatic machine.<br /></li>
+<li>My roommates voted for buying a fully automatic wash machine in our dormitory.<br /></li>
+<li>It appeared to have worked automatically.<br /></li>
+</ul>
+<p>
+elementary [ˌeləˈment(ə)ri]: simple or basic初步的, 基本的<br />
+</p>
+<ul class="org-ul">
+<li>When I was in the elementary school, I thought that I would be grown-up in the high school.<br /></li>
+<li>They sacked our city burning down the elementary school.<br /></li>
+<li>Nowadays, playing truant from the elementary school becomes popular with these children.<br /></li>
+</ul>
+<p>
+preference [ˈpref(ə)rəns]: if you have a preference for something, you like it more than another thing and will choose it if you can ⇨ prefer偏爱, 优先选择<br />
+</p>
+<ul class="org-ul">
+<li>My cousin accused his father of the preference for another cousin.<br /></li>
+<li>My husband has had a preference for his cat and neglects my health.<br /></li>
+<li>Having a preference for his daughter, he reprimanded only his son for the loss of the ship.<br /></li>
+</ul>
+<hr />
+<p>
+real estate: 不动产<br />
+</p>
+<ul class="org-ul">
+<li>My wife had dreamt of possessing a real estate in the city before we got married.<br /></li>
+<li>When the price of real estate in the suburb began to drop, my wife regretted ignoring my advise.<br /></li>
+<li>The price of real estate is under the control of our government, so it's impossible to drop.<br /></li>
+</ul>
+<p>
+price go up/down: 上升/下降<br />
+</p>
+<ul class="org-ul">
+<li>With price going up, I decided to give up something unneccessary.<br /></li>
+<li>With price going up, these poor are starving to death because of the war you started.<br /></li>
+<li>With price going down, the housewife emptied her cart on a promotion day.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org5ed0983" class="outline-3">
+<h3 id="org5ed0983">sentence2</h3>
+<div class="outline-text-3" id="text-org5ed0983">
+<p>
+factual [ˈfæktʃuəl]: based on facts or relating to facts事实的, 实际的<br />
+</p>
+<ul class="org-ul">
+<li>No one could neglect the factual existence of the white walker.<br /></li>
+<li>The factual bastard led to severe wars in the seven kingdoms.<br /></li>
+<li>There are always some outdated factual events in the newspaper.<br /></li>
+</ul>
+<p>
+aspect [ˈæspekt]: one part of a situation, idea, plan etc that has many parts方面<br />
+</p>
+<ul class="org-ul">
+<li>Communication is a critical aspect of our interaction on a daily basis.<br /></li>
+<li>Kindness is said to be an important aspect of his characteristics.<br /></li>
+<li>The dark aspect of his characteristics can give rise to another war on the continent.<br /></li>
+</ul>
+<p>
+automatic [ˌɔtəˈmætɪk] automatically: an automatic machine is designed to work without needing someone to operate it for each part of a process ⇨ manual自动的<br />
+</p>
+<ul class="org-ul">
+<li>The entrepreneur will set up a factory in the suburb of the city equipped with automatic machines.<br /></li>
+<li>My roommates voted to buy a fully automatic wash machine in our dormitory.<br /></li>
+<li>It appeared to have worked automatically.<br /></li>
+</ul>
+<p>
+elementary [ˌeləˈment(ə)ri]: simple or basic初步的, 基本的<br />
+</p>
+<ul class="org-ul">
+<li>When I was in elementary school, I thought that I would be grown-up in high school.<br /></li>
+<li>They sacked our city burning down the elementary school.<br /></li>
+<li>Nowadays, playing truant from elementary school has become popular with these children.<br /></li>
+</ul>
+<p>
+preference [ˈpref(ə)rəns]: if you have a preference for something, you like it more than another thing and will choose it if you can ⇨ prefer偏爱, 优先选择<br />
+</p>
+<ul class="org-ul">
+<li>My cousin accused his father of a preference for another cousin.<br /></li>
+<li>My husband has had a preference for his cat and neglects my health.<br /></li>
+<li>Having a preference for his daughter, he reprimanded only his son for the loss of the ship.<br /></li>
+</ul>
+<hr />
+<p>
+real estate: 不动产<br />
+</p>
+<ul class="org-ul">
+<li>My wife had dreamt of possessing a real estate in the city before we got married.<br /></li>
+<li>When the price of real estate in the suburb began to drop, my wife regretted ignoring my advice.<br /></li>
+<li>The price of real estate is under the control of our government, so it's impossible to drop.<br /></li>
+</ul>
+<p>
+price go up/down: 上升/下降<br />
+</p>
+<ul class="org-ul">
+<li>With the price going up, I decided to give up something unnecessary.<br /></li>
+<li>With the price going up, these poor are starving to death because of the war you started.<br /></li>
+<li>With the price going down, the housewife emptied her cart on a promotion day.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org4ac83a1" class="outline-3">
+<h3 id="org4ac83a1">summary</h3>
+<div class="outline-text-3" id="text-org4ac83a1">
+<p>
+What are some of the things that we should pay attention to when we communicate with a person?<br />
+Almost everyone will pay attention to the factual content that this person is expressing.<br />
+Like oil prices, real estate prices going up or down.<br />
+It's focused on whether you're paying attention to the facts.<br />
+However, the facts are not always the most important aspects of the communication.<br />
+For example, talking about the weather is not really talking about the weather.<br />
+What we are focused on are emotional content, and needs that people are trying to express.<br />
+Sometimes, people also tell us about their positions, values, and preferences.<br />
+Those are the things that we want to pay attention to.<br />
+</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

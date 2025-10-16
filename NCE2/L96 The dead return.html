@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-08-06 Tue 22:25 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+
+<div id="outline-container-org08df64d" class="outline-2">
+<h2 id="org08df64d">Lesson 96 The dead return</h2>
+<div class="outline-text-2" id="text-org08df64d">
+<p class="verse">
+What happens to the lanterns at the end of festival?<br />
+<br />
+A Festival for the Dead is held once a year in Japan.<br />
+This festival is a cheerful occasion,<br />
+&#xa0;for on this day, the dead are said to <b>return to their homes</b> and they are welcomed by the living.<br />
+As they <b>are expected to be</b> hungry after their long journey,<br />
+&#xa0;<b>food is laid out</b> for them.<br />
+Specially-made lanterns are hung outside each house to help the dead to find their way.<br />
+All night long, people dance and sing.<br />
+In the early morning,<br />
+&#xa0;the food that had been laid out for the dead is thrown into a river or into the sea<br />
+&#xa0;as <b>it is considered unlucky for anyone living</b> to eat it.<br />
+In towns that are near the sea,<br />
+&#xa0;the tiny lanterns which had been hung in the streets the night before,<br />
+&#xa0;&#xa0;<b>are placed into</b> the water when the festival is over.<br />
+Thousands of lanterns slowly drift out to sea<br />
+&#xa0;guiding the dead on their return journey to the other world.<br />
+This is a moving spectacle,<br />
+&#xa0;for crowds of people stand on the shore<br />
+&#xa0;&#xa0;watching the lanterns drifting away until they can be seen no more.<br />
+<br />
+</p>
+</div>
+<div id="outline-container-org4f773e5" class="outline-3">
+<h3 id="org4f773e5">expression</h3>
+<div class="outline-text-3" id="text-org4f773e5">
+<p>
+festival [ˈfestɪv(ə)l] n.节目<br />
+lantern [ˈlæntə(r)n] n.灯笼<br />
+spectacle [ˈspektək(ə)l] n.景象,壮观,场面<br />
+moving [ˈmuvɪŋ] adj.<br />
+</p>
+
+<p>
+make a spectacle of oneself 出洋相<br />
+</p>
+<hr />
+<p>
+return to sp. 回到某地<br />
+be expected to be 被期待做某事<br />
+sth. is laid out 某物被布置好了<br />
+it is considered unlucky for sb. doing 做某事被认为是不吉利的<br />
+be placed into 被放置进入<br />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgc94dbb9" class="outline-2">
+<h2 id="orgc94dbb9">NCE3</h2>
+<div class="outline-text-2" id="text-orgc94dbb9">
+</div>
+<div id="outline-container-orgcc45626" class="outline-3">
+<h3 id="orgcc45626">words</h3>
+<div class="outline-text-3" id="text-orgcc45626">
+<p>
+festival [ˈfestɪv(ə)l] n.节日<br />
+lantern [ˈlæntə(r)n] n.灯笼<br />
+spectacle [ˈspektək(ə)l] n.景象,壮观,场面<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org68ad830" class="outline-3">
+<h3 id="org68ad830"><span class="done DONE">DONE</span> 单词造句</h3>
+<div class="outline-text-3" id="text-org68ad830">
+<p>
+festival n.<br />
+</p>
+<ul class="org-ul">
+<li>How long did the Spring Festival last for last year? He asked drily.<br /></li>
+<li>The boy set the cron stalk on fire in the field at the festival.<br /></li>
+<li>The building was burnt down at the festival.<br /></li>
+<li>It says on the bulletin board. We're going on vacation at the festival.<br /></li>
+<li>Don't get into such a mess at the Spring Festival.<br /></li>
+</ul>
+<p>
+lantern n.<br />
+</p>
+<ul class="org-ul">
+<li>The workers are accustomed to make lanterns.<br /></li>
+<li>I have been instructed in making lanterns.<br /></li>
+<li>Thousands of lanterns were lined up on the floor of the square.<br /></li>
+<li>He proved that there were a great many of lanterns in the basement.<br /></li>
+<li>They compete against each other to make more lanterns.<br /></li>
+</ul>
+<p>
+spectacle n. make a spectacle of oneself<br />
+</p>
+<ul class="org-ul">
+<li>Don't make a spectacle of yourself at the Spring festival.<br /></li>
+<li>Although he made a spectacle of himself, he was still very popular with these young children.<br /></li>
+<li>He who was reluctant to tell stories was making a spectacle of himself.<br /></li>
+<li>He who is always late makes a spectacle of himself over and over again.<br /></li>
+<li>The boy who failed to take the corn to pieces made a spectacle of himself.<br /></li>
+</ul>
+<p>
+moving adj.<br />
+</p>
+<ul class="org-ul">
+<li>Didn't you find that story very moving?<br /></li>
+<li>I hate to feel moving while I am watching a comedy.<br /></li>
+<li>She was called in to tell a moving story.<br /></li>
+<li>Instead of feeling moving, she got very angry.<br /></li>
+<li>Soon afterwards, people all over the world know the building take its name from a moving story.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org08911a8" class="outline-3">
+<h3 id="org08911a8"><span class="done DONE">DONE</span> 反复听电影片段</h3>
+<div class="outline-text-3" id="text-org08911a8">
+</div>
+</div>
+<div id="outline-container-orgf16d1ac" class="outline-3">
+<h3 id="orgf16d1ac">Pattern Drill 写+读</h3>
+</div>
+<div id="outline-container-org2b9ba0d" class="outline-3">
+<h3 id="org2b9ba0d">给自己讲解</h3>
+</div>
+<div id="outline-container-org500c66a" class="outline-3">
+<h3 id="org500c66a">红皮书</h3>
+</div>
+<div id="outline-container-orgdc371c0" class="outline-3">
+<h3 id="orgdc371c0"><span class="done DONE">DONE</span> 习惯用法造句</h3>
+<div class="outline-text-3" id="text-orgdc371c0">
+<p>
+return to sp.<br />
+</p>
+<ul class="org-ul">
+<li>I am going to return to my hometown after I retire.<br /></li>
+<li>The moment I get off work, I'll return to my home and watch TV.<br /></li>
+<li>I used to return to my home running after the sunset.<br /></li>
+<li>My mother usually orders me to return to my home as soon as possible.<br /></li>
+<li>Mr. Leo was relieved to hear that I had returned to my home.<br /></li>
+</ul>
+<p>
+be expected to be<br />
+</p>
+<ul class="org-ul">
+<li>My wife is expected to be angry.<br /></li>
+<li>I am always expected to get a good salary.<br /></li>
+<li>The students have been expected to be volunteers.<br /></li>
+<li>The press was expected to tell people the truth.<br /></li>
+<li>The busmen were not expected to go on a strike.<br /></li>
+</ul>
+<p>
+sth. is laid out<br />
+</p>
+<ul class="org-ul">
+<li>Why is the food laid out?<br /></li>
+<li>She has stated that thousands of mummy are laid out in the exhibition.<br /></li>
+<li>A lot of vehicles are laid out on display.<br /></li>
+<li>A variety of eating fishes are laid out for sale in the supermarket.<br /></li>
+<li>He refused to lay out his precious pen.<br /></li>
+</ul>
+<p>
+it is considered unlucky for sb. doing<br />
+</p>
+<ul class="org-ul">
+<li>It is considered unlucky for anyone touching the tree.<br /></li>
+<li>It is considered unlucky for anyone having his hair cut.<br /></li>
+<li>It is considered unlucky for him losing his life in a car accident.<br /></li>
+<li>It is considered unlucky for the actor making a spectacle of himself.<br /></li>
+<li>It is considered unlucky for him staying out of the limelight.<br /></li>
+</ul>
+<p>
+be placed into<br />
+</p>
+<ul class="org-ul">
+<li>The parcel has already been placed into stones and sands.<br /></li>
+<li>My garage was placed into a variety of furnitures the night before.<br /></li>
+<li>The football was placed into water.<br /></li>
+<li>I have trouble placing the lantern into water.<br /></li>
+<li>The tent has been placed into the corn stalks.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org8fac2ad" class="outline-3">
+<h3 id="org8fac2ad"><span class="done DONE">DONE</span> 跟读至背诵</h3>
+<div class="outline-text-3" id="text-org8fac2ad">
+</div>
+</div>
+<div id="outline-container-orgb2b3c4b" class="outline-3">
+<h3 id="orgb2b3c4b"><span class="done DONE">DONE</span> Ask me if 写+读</h3>
+<div class="outline-text-3" id="text-orgb2b3c4b">
+<ol class="org-ol">
+<li>A Festival for the Dead is held in Japan. Where/What kind<br />
+Where is a Festival for the Dead held?<br />
+What kind of Festival is held in Japan?<br /></li>
+<li>It is held once a year. How often<br />
+How often is it held?<br /></li>
+<li>The dead are said to return. Who<br />
+Who are said to return?<br /></li>
+<li>They return to their homes. Where<br />
+Where do they return?<br /></li>
+<li>They're welcomed by the living. Who<br />
+Who are welcomed by the living?<br /></li>
+<li>Food is laid out for them. Who/What<br />
+Who is food laid out for?<br />
+What is laid out for them?<br /></li>
+<li>They're expected to be hungry. Who<br />
+Who are expected to be hungry?<br /></li>
+<li>Lanterns are specially made. What<br />
+What are specially made?<br /></li>
+<li>They're hung outside each house. Where<br />
+Where are they hung?<br /></li>
+<li>They're put there to help the dead. Why<br />
+Why are they put there?<br /></li>
+</ol>
+<p>
+1- The living dance all night. How long<br />
+		How long do the living dance?<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org9ab32ea" class="outline-3">
+<h3 id="org9ab32ea"><span class="done DONE">DONE</span> 摘要写作</h3>
+<div class="outline-text-3" id="text-org9ab32ea">
+<p>
+Japanese annual Festival for the dead is a cheerful occassion.<br />
+As the dead are said to return home,<br />
+	food is laid out for them<br />
+		and lanterns was lit to guide them on their way.<br />
+People dance and sing all night<br />
+	and the uneaten food is thrown into the sea or into a river the next morning.<br />
+In some places, the lanterns are placed on the sea<br />
+	and people watch from the shore until they drift out of sight.<br />
+</p>
+
+<p>
+Japanese annual Festival for the dead is a cheerful occassion,<br />
+	for the dead are said to return home.<br />
+Not only is food laid out for them,<br />
+	but lanterns are lit to guide them on their way as well<br />
+	while people dance and sing all night.<br />
+The uneaten food is thrown into the sea or into a river the next morning.<br />
+In some places, the lanterns are placed on the sea.<br />
+People watch them from the shore as they drift out of sight.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb005868" class="outline-3">
+<h3 id="orgb005868"><span class="done DONE">DONE</span> tell the story 口语</h3>
+<div class="outline-text-3" id="text-orgb005868">
+</div>
+</div>
+<div id="outline-container-orga4d7e88" class="outline-3">
+<h3 id="orga4d7e88">Topics for discussion</h3>
+</div>
+</div>
+</div>
+</body>
+</html>

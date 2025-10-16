@@ -1,0 +1,655 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-09-28 Sat 22:17 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-org91468ec" class="outline-2">
+<h2 id="org91468ec">Lesson 02 Thirteen equals one</h2>
+<div class="outline-text-2" id="text-org91468ec">
+<p class="verse">
+Was the vicar pleased that the clock was striking? Why?<br />
+<br />
+Our vicar is always raising money <b>for one cause or another</b>,<br />
+&#xa0;but he has never managed to <b>get enough money to have</b> the church clock repaired.<br />
+The big clock which used to strike the hours day and night<br />
+&#xa0;was damaged many years ago and has been silent ever since.<br />
+<br />
+One night, however, our vicar <b>woke up with a start</b>:<br />
+&#xa0;the clock was striking the hours!<br />
+Looking at his watch, he saw that it was one o'clock,<br />
+&#xa0;but the bell struck thirteen times before it stopped.<br />
+<b>Armed with a torch</b>, the vicar went up into the clock tower to see <b>what was going on</b>.<br />
+In the torchlight, he <b>caught sight of a figure</b><br />
+&#xa0;whom he immediately <b>recognized as Bill Wilkins</b>, our local grocer.<br />
+<br />
+'Whatever are you doing up here Bill?' asked the vicar in surprise.<br />
+<br />
+'I'm trying to repair the bell,' answered Bill.<br />
+'I've been coming up here night after night for weeks now.<br />
+You see, I was hoping to <b>give you a surprise</b>.'<br />
+<br />
+'You certainly did give me a surprise!' said the vicar.<br />
+'You've probably woken up everyone in the village as well.<br />
+Still, <b>I'm glad</b> the bell is working again.'<br />
+<br />
+'That's the trouble, vicar,' answered Bill.<br />
+'It's working all right, but I'm afraid that<br />
+&#xa0;at one o'clock it will strike thirteen times and there's nothing I can do about it.'<br />
+<br />
+'We'll <b>get used to that</b>, Bill,' said the vicar.<br />
+'Thirteen is not as good as one, but it's better than nothing.<br />
+Now let's go downstairs and have a cup of tea.'<br />
+</p>
+</div>
+<div id="outline-container-org807b142" class="outline-3">
+<h3 id="org807b142">expression</h3>
+<div class="outline-text-3" id="text-org807b142">
+<p>
+equal: [ˈikwəl] v. equally adv.等于<br />
+vicar: [ˈvɪkər] n.牧师<br />
+raise: [reɪz] v.募集,筹(款) + money<br />
+torchlight: [ˈtɔrtʃˌlaɪt] n.电筒灯光 torch n.<br />
+cause: [kɔz] n.原因,理由 v.导致,引起<br />
+wake up with a start: 一激灵醒来<br />
+bell: [bel] n. ring v.响铃<br />
+catch sight of a figure: 看到人影<br />
+recognize: [ˈrekəɡˌnaɪz] v.辨认<br />
+local grocer: [ˈɡroʊsər] n.当地杂货店老板<br />
+</p>
+
+<p>
+A be equal to B: A等于B<br />
+for one cause or another: for one reason or another因为这个那个理由<br />
+wake up with a start: 惊醒<br />
+catch sight of sb./sth.看见某人某物<br />
+</p>
+<hr />
+<ol class="org-ol">
+<li>be always doing sth.: 频率过高令人生厌(非绝对,用于肯定句)<br /></li>
+<li>whatever:<br />
+<ul class="org-ul">
+<li>emphasize the speaker's surprise/astonishment/anger/irritation/dismay<br /></li>
+<li>on earth/ in the world/ fucking<br /></li>
+</ul></li>
+<li>do/does/did: 强调v.<br /></li>
+<li>was/were doing 表礼貌<br />
+<ul class="org-ul">
+<li>I was hoping to do sth.<br /></li>
+<li>I was just wondering + &#x2026;<br /></li>
+<li>I was thinking + &#x2026;<br /></li>
+</ul></li>
+</ol>
+<hr />
+<p>
+for one cause or another: for one reason or another因为这个那个理由<br />
+get enough money to do sth.: 有足够钱去做某事<br />
+sb. be armed with sth.: 装备<br />
+what's going on: 发生了什么<br />
+recognize A as B: 把A辨识为B<br />
+give sb. a surprise: 给某人一个惊喜<br />
+I'm glad that + &#x2026;: 我很高兴+&#x2026;<br />
+get used to sth.: 习惯于<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org7915054" class="outline-3">
+<h3 id="org7915054">words</h3>
+<div class="outline-text-3" id="text-org7915054">
+<p>
+equal [ˈiːkwəl] v.等于<br />
+vicar [ˈvɪkə(r)] n.牧师<br />
+raise [reɪz] v.募集,筹(款)<br />
+torchlight [ˈtɔːtʃlaɪt] n.电筒光<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org3ee6eae" class="outline-3">
+<h3 id="org3ee6eae"><span class="done DONE">DONE</span> 单词造句</h3>
+<div class="outline-text-3" id="text-org3ee6eae">
+<p>
+equal v. equally adv. be equal to sth.<br />
+</p>
+<ul class="org-ul">
+<li>It is obviously that two multipy two equals four.<br /></li>
+<li>I confirmed that she is equal to the job.<br /></li>
+<li>Though they are different, but they get equally good salaries.<br /></li>
+<li>It is no use pretending that you are equal to the task.<br /></li>
+<li>If you were equal to the task, you would be offered thousands pounds.<br /></li>
+</ul>
+<p>
+vicar n.<br />
+</p>
+<ul class="org-ul">
+<li>The vicar pointed out that the clock was a source of income.<br /></li>
+<li>The vicar began to accumulate money.<br /></li>
+<li>The vicar is always asking us to make a contribution to the clock tower.<br /></li>
+<li>The vicar felt obliged to investigate who stole his torch.<br /></li>
+<li>The vicar was found smoking in the church.<br /></li>
+</ul>
+<p>
+raise v. + money<br />
+</p>
+<ul class="org-ul">
+<li>The vicar was disappointed to learn that he hadn't raisen enough money.<br /></li>
+<li>I'm not equal to raise money.<br /></li>
+<li>If the tower hadn't been burnt down, we wouldn't have raisen any moeny.<br /></li>
+<li>We felt obliged to raise money, for she had a rare disease.<br /></li>
+<li>Raising money proved difficult, for people is not as sympathetical as before.<br /></li>
+</ul>
+<p>
+torchlight n. torch n.<br />
+</p>
+<ul class="org-ul">
+<li>I was trying to get close to my cat in the torchlight.<br /></li>
+<li>Armed with a torch, the search party got close to the puma.<br /></li>
+<li>People in China are instructed to be armed with a helmet when they are riding.<br /></li>
+<li>My children charged at me in the torchlight.<br /></li>
+<li>Would you mind my buying the torch? My wife asked in a weak voice.<br /></li>
+</ul>
+<p>
+cause n.原因,理由 v.导致,引起 for one cause or another<br />
+</p>
+<ul class="org-ul">
+<li>She couldn't have found the cause of the forest fire.<br /></li>
+<li>She made every effort to prevent police from finding the cause of the fire.<br /></li>
+<li>It was said that broken glasses cause the forest fire.<br /></li>
+<li>The beggar insisted on asking for money for one cause or another.<br /></li>
+<li>I was just wondering what cause your departure.<br /></li>
+</ul>
+<p>
+woke up with a start<br />
+</p>
+<ul class="org-ul">
+<li>I'm always waking up with a start these nights.<br /></li>
+<li>Let's suppose that you weak up with a start in midnight.<br /></li>
+<li>The mummy is trying to prevent her baby from waking up with a start at night.<br /></li>
+<li>She noticed with dismay that her baby woke up with a start once more.<br /></li>
+<li>I always wake up with a start once a week.<br /></li>
+</ul>
+<p>
+bell n. ring v.<br />
+</p>
+<ul class="org-ul">
+<li>I will ring the door bell if I arrive.<br /></li>
+<li>The beggar knocked at her door and ring the door bell.<br /></li>
+<li>I have already rung the door bell, but no one answers.<br /></li>
+<li>My child volunteers to ring the door bell.<br /></li>
+<li>I spotted a cat ringing the door bell.<br /></li>
+</ul>
+<p>
+catch sight of a figure<br />
+</p>
+<ul class="org-ul">
+<li>When she caught sight of him, she burst out laughing.<br /></li>
+<li>Why did you burst into tears when you caught sight of a figure?<br /></li>
+<li>It is disturbing to think that you catch sight of a figure at your bedroom window.<br /></li>
+<li>She claimed to have caught sight of a puma.<br /></li>
+<li>The detective caught sight of puma fur clinging to bushes.<br /></li>
+</ul>
+<p>
+recognize v.<br />
+</p>
+<ul class="org-ul">
+<li>Can you recognize him?<br /></li>
+<li>How did you recognize me?<br /></li>
+<li>I have difficult in recognizing the color.<br /></li>
+<li>It's easy for me to recognize my wife's voice.<br /></li>
+<li>The moment she knocks at the door, I'll recognize my wife's voice.<br /></li>
+</ul>
+<p>
+local grocer n.<br />
+</p>
+<ul class="org-ul">
+<li>I handed my phone to the local grocer.<br /></li>
+<li>Why was the local grocer arrested last night?<br /></li>
+<li>The local grocer woke up with a start last morning.<br /></li>
+<li>The local grocer claimed to have found out who stole his things.<br /></li>
+<li>The local grocer always has trouble using his celluar phone.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org6bc5dda" class="outline-3">
+<h3 id="org6bc5dda"><span class="done DONE">DONE</span> 反复听电影片段直到懂关键句</h3>
+<div class="outline-text-3" id="text-org6bc5dda">
+</div>
+</div>
+<div id="outline-container-org8da3061" class="outline-3">
+<h3 id="org8da3061"><span class="done DONE">DONE</span> 给自己讲解语法</h3>
+<div class="outline-text-3" id="text-org8da3061">
+</div>
+</div>
+<div id="outline-container-orgf1ef6e3" class="outline-3">
+<h3 id="orgf1ef6e3"><span class="done DONE">DONE</span> 反复朗读语法例句</h3>
+<div class="outline-text-3" id="text-orgf1ef6e3">
+<ul class="org-ul">
+<li>be always doing sth.: 频率过高令人生厌(非绝对,用于肯定句)<br />
+<ul class="org-ul">
+<li>Our vicar is always raising money for one cause or another.<br /></li>
+<li>He is always losing his keys.<br /></li>
+<li>I’m always making that mistake.<br /></li>
+<li>Attention: He’s always reading.<br /></li>
+</ul></li>
+<li>whatever:<br />
+<ul class="org-ul">
+<li>emphasize the speaker's surprise/astonishment/anger/irritation/dismay<br /></li>
+<li>on earth/ in the world/ fucking<br /></li>
+<li>example:<br />
+<ul class="org-ul">
+<li>Why ever did you wash it in boiling water? (dismay)<br /></li>
+<li>Who ever are you? (The other person is presumably an intruder.)<br /></li>
+<li>Who ever left the door open? (What stupid person left it open?)<br /></li>
+<li>Where ever have you put my briefcase? (I can't find it anywhere.)<br /></li>
+<li>Whatever are you doing in my car? (astonishment/annoyance)<br /></li>
+<li>When ever did you leave home? (You must have left very early.)<br /></li>
+<li>How ever did he escape unhurt? (The car was a complete wreck.)<br /></li>
+<li>Where ever have you been? I've been looking for you everywhere!<br /></li>
+<li>Who ever told you I'd lend you the money? I've no money at all!<br /></li>
+<li>What would you like to do? We could go and see a film, or go swimming.<br /></li>
+<li>Whatever. (I don’t care or I’m not interested)<br /></li>
+</ul></li>
+</ul></li>
+<li>do/does/did: 强调v.<br />
+<ul class="org-ul">
+<li>She did morning exercises this morning.<br />
+She did do morning exercises this morning.<br /></li>
+<li>You look nice today!<br />
+You do look nice today!<br /></li>
+<li>She thinks I don’t love her, but I love her.<br />
+She thinks I don’t love her, but I do love her.<br /></li>
+<li>I played football when I was young.<br />
+I did play football when I was young.<br /></li>
+<li>Do you study everyday?<br />
+I do study everyday.<br /></li>
+<li>It might seem easy but it takes a long time.<br />
+It might seem easy but it does take a long time.<br /></li>
+</ul></li>
+<li>was/were doing 表礼貌<br />
+<ul class="org-ul">
+<li>I was hoping to do sth.<br /></li>
+<li>I was just wondering + &#x2026;<br /></li>
+<li>I was thinking + &#x2026;<br /></li>
+</ul></li>
+<li>Were you looking for any style in particular, sir?<br />
+<ul class="org-ul">
+<li>I wondered if you were free this evening.<br /></li>
+<li>Good morning. I was wondering: do you need help moving that stuff?<br /></li>
+<li>I was thinking - what about borrowing Jake’s car?<br /></li>
+<li>Is my computer ready yet? I was wondering if my computer was ready yet<br /></li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org0c6b1bd" class="outline-3">
+<h3 id="org0c6b1bd">复习二册语法(笔记或视频) &amp; 红皮书</h3>
+</div>
+<div id="outline-container-org2d677f5" class="outline-3">
+<h3 id="org2d677f5"><span class="done DONE">DONE</span> 习惯用法造句</h3>
+<div class="outline-text-3" id="text-org2d677f5">
+<p>
+for one cause or another  for one reason or another  for some reason<br />
+</p>
+<ul class="org-ul">
+<li>The small animals is always being killed for one cause or another.<br /></li>
+<li>She is always asking for money for one cause or another.<br /></li>
+<li>She is always late for once cause or another.<br /></li>
+<li>The ganster set houses on fire for one cause or another.<br /></li>
+<li>She lives in a fantasy world for one cause or another.<br /></li>
+</ul>
+<p>
+get enough money to do sth.<br />
+</p>
+<ul class="org-ul">
+<li>I couldn't get enough money to buy a house in China.<br /></li>
+<li>We'll get enough money to buy a house.<br /></li>
+<li>I am going to get enough money to move to Canada.<br /></li>
+<li>However did you get enough money to go to Paris?<br /></li>
+<li>He proved that he got enough money to feed a cat.<br /></li>
+</ul>
+<p>
+sb. be armed with sth.<br />
+</p>
+<ul class="org-ul">
+<li>The government armed the soldiers with the new helmets.<br /></li>
+<li>Armed with a new watch, my cousin felt obliged to heal the world.<br /></li>
+<li>Armed with the new machine, the search party took the task seriously.<br /></li>
+<li>Armed with torches, a search party began to hunt for the puma.<br /></li>
+<li>I hate to be armed with a helmet while riding.<br /></li>
+</ul>
+<p>
+what's going on<br />
+</p>
+<ul class="org-ul">
+<li>What's all the fire? What's going on?<br /></li>
+<li>What a mess. What's going on?<br /></li>
+<li>The bicycles are lined up at middle of the road. What's going on?<br /></li>
+<li>These songs are popular with the children. What's going on?<br /></li>
+<li>My wife is accustomed to doing the chores. What's going on?<br /></li>
+</ul>
+<p>
+recognize A as B<br />
+</p>
+<ul class="org-ul">
+<li>I recognized him as an actor who stayed out of limelight recently.<br /></li>
+<li>The actor is popular with these children and immediately recognized as their model.<br /></li>
+<li>I succeed in recognizing the man as a thief who stole my wallet last week.<br /></li>
+<li>I trained my child to recognize my wife as her mother.<br /></li>
+<li>I recognized her as a player who sets up a new world record.<br /></li>
+</ul>
+<p>
+give sb. a surprise<br />
+</p>
+<ul class="org-ul">
+<li>We are due to give him a surprise.<br /></li>
+<li>She had hardly been give a surprise when she burst out tears.<br /></li>
+<li>I looked forward to giving my wife a surprise when she is working outside.<br /></li>
+<li>She will get a better salary. Let's give her a surprise.<br /></li>
+<li>You did give me a surprise. You're as strong as a horse.<br /></li>
+</ul>
+<p>
+I'm glad that + &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>I'm glad that she sets up a new world record.<br /></li>
+<li>I'm glad that she succeed in repairing her computer.<br /></li>
+<li>I'm glad that she is reading.<br /></li>
+<li>I'm glad that she never expect the stolen bike to be found.<br /></li>
+<li>I'm glad that I have already explained this to her.<br /></li>
+</ul>
+<p>
+get used to sth.<br />
+</p>
+<ul class="org-ul">
+<li>I have to get use to explaing everything to her at the beginning.<br /></li>
+<li>The children get used to holding their breath underwater so quickly.<br /></li>
+<li>I get used to the noise as well.<br /></li>
+<li>For some reason, I get used to bad weater.<br /></li>
+<li>It is your job to get used to impolite customers.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgacf5251" class="outline-3">
+<h3 id="orgacf5251">跟读 50遍</h3>
+</div>
+<div id="outline-container-org1ad18fd" class="outline-3">
+<h3 id="org1ad18fd"><span class="done DONE">DONE</span> Comprehension 反复练习</h3>
+<div class="outline-text-3" id="text-org1ad18fd">
+</div>
+</div>
+<div id="outline-container-org2fd863d" class="outline-3">
+<h3 id="org2fd863d"><span class="done DONE">DONE</span> Ask me if 写+读</h3>
+<div class="outline-text-3" id="text-org2fd863d">
+<ol class="org-ol">
+<li>Our vicar is always raising money. Why<br />
+Why is your vicar always raising money?<br /></li>
+<li>He has never managed to raise enough money to have the church clock reparied. Why&#x2026;never<br />
+Why has he never managed to raise enough money to have the church clock reparied?<br /></li>
+<li>The vicar woke up with a start. Why<br />
+Why did the vicar wake up with a start?<br /></li>
+<li>It was one o'clock. What time<br />
+What time was it?<br /></li>
+<li>The bell struck thirteen times. How many times<br />
+How many times did the bell strike?<br /></li>
+<li>The vicar went into the clock tower. Where<br />
+Where did the vicar go?<br /></li>
+<li>He caught sight of Bill Wilkins. Who<br />
+Who did he catch sight of?<br />
+Who caught sight of Bill Wilkins?<br /></li>
+<li>Bill was trying to repair the clock. What<br />
+What was Bill trying to repair?<br /></li>
+<li>He gave the vicar a surprise. Why<br />
+Why did he give the vicar a surprise?<br /></li>
+<li>Bill had woken everyone in the village. Why<br />
+Why had Bill woken everyone in the village?<br /></li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orgc3866c0" class="outline-3">
+<h3 id="orgc3866c0"><span class="done DONE">DONE</span> 摘要写作 写 &amp; 对答案</h3>
+<div class="outline-text-3" id="text-orgc3866c0">
+<p>
+At one o'clock in the morning,<br />
+	the church clock striking the hours woke the vicar up<br />
+		as it struck thirteen times.<br />
+The vicar went into the clock tower, taking a torch with him.<br />
+He saw Bill Wilkins, the local grocer there and<br />
+	Bill explained he was trying to repair the clock but hadn't succeeded<br />
+		because at one o'clock it struck thirteen times.<br />
+However, the vicar was pleased the bell was working and offered the grocer a cup of tea.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org8f8ef7d" class="outline-3">
+<h3 id="org8f8ef7d"><span class="done DONE">DONE</span> tell the story 口语复述</h3>
+<div class="outline-text-3" id="text-org8f8ef7d">
+</div>
+</div>
+<div id="outline-container-org770aad9" class="outline-3">
+<h3 id="org770aad9"><span class="done DONE">DONE</span> composition 阅读 或 写作</h3>
+<div class="outline-text-3" id="text-org770aad9">
+<p>
+We were used to hearing our church bell striking the hours in our small village.<br />
+For as long as anyone could remember, the bell had struck the hours day and night.<br />
+However, one night the church bell remained silent<br />
+	and the next morning we saw that the clock had stopped at exactly one a.m.<br />
+Our clock was clearly damaged, but no one could explain how this had happened.<br />
+Armed with a torch, our vicar climbed into the church tower to see what was going on.<br />
+He heard a loud buzz<br />
+	as he went towards the clock and in the torchlight he found it had been invaded by bees.<br />
+He was lucky they didn't sting him!<br />
+He shone his torch into the great bell and saw that it was full of wax and honey.<br />
+No wonder it wasn't working!<br />
+A bee keeper was called in to deal with the situation.<br />
+He immediately removed the queen bee to one of his bee hives and the other bees followed.<br />
+The clock was cleaned and was soon working again.<br />
+We not only enjoyed hearing it strike the hours day and nigt,<br />
+	but we enjoyed eating the honey as well.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgd176b9f" class="outline-3">
+<h3 id="orgd176b9f">Topics for discussion</h3>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-01-10 Fri 11:59 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-org56894da" class="outline-2">
+<h2 id="org56894da">2014-12-18 What is a gift economy</h2>
+<div class="outline-text-2" id="text-org56894da">
+<p class="verse">
+This holiday season, people around the world will give and receive presents.<br />
+You might even get a knitted sweater from an aunt.<br />
+But what if instead of saying 'thanks' before consigning it to the closet,<br />
+&#xa0;the polite response expected from you was to show up to her house in a week with a better gift?<br />
+Or to vote for her in the town election?<br />
+Or let her adopt your firstborn child?<br />
+<br />
+All of these things might not sound so strange if you are involved in a gift economy.<br />
+This phrase might seem contradictory.<br />
+After all, isn't a gift given for free?<br />
+But in a gift economy,<br />
+&#xa0;gifts given without explicit conditions<br />
+&#xa0;&#xa0;are used to foster a system of social ties and obligations.<br />
+While the market economies we know are formed by relationships between the things being traded,<br />
+&#xa0;a gift economy consists of the relationships between the people doing the trading.<br />
+<br />
+Gift economies have existed throughout human history.<br />
+The first studies of the concept came from anthropologists Bronislaw Malinowski and Marcel Mauss<br />
+&#xa0;who describe the natives of the Trobriand islands<br />
+&#xa0;&#xa0;making dangerous canoe journeys across miles of ocean to exchange shell necklaces and arm bands.<br />
+The items traded through this process, known as the kula ring,<br />
+&#xa0;&#xa0;have no practical use,<br />
+&#xa0;but derive importance from their original owners and carry an obligation to continue the exchange.<br />
+Other gift economies may involve useful items,<br />
+&#xa0;such as the potlatch feast of the Pacific Northwest,<br />
+&#xa0;&#xa0;where chiefs compete for prestige by giving away livestock and blankets.<br />
+We might say that instead of accumulating material wealth,<br />
+&#xa0;participants in a gift economy use it to accumulate social wealth.<br />
+Though some instances of gift economies may resemble barter,<br />
+&#xa0;the difference is that the original gift is given without any preconditions or haggling.<br />
+<br />
+Instead, the social norm of reciprocity obligates recipients to voluntarily return the favor.<br />
+But the rules for how and when to do so vary between cultures,<br />
+&#xa0;and the return on a gift can take many forms.<br />
+A powerful chief giving livestock to a poor man may not expect goods in return,<br />
+&#xa0;but gains social prestige at the debtor's expense.<br />
+And among the Toraja people of Indonesia,<br />
+&#xa0;the status gained from gift ceremonies even determines land ownership.<br />
+<br />
+The key is to keep the gift cycle going, with someone always indebted to someone else.<br />
+Repaying a gift immediately, or with something of exactly equal value,<br />
+&#xa0;may be read as ending the social relationship.<br />
+So, are gift economies exclusive to small-scale societies outside the industrialized world?<br />
+Not quite.<br />
+For one thing, even in these cultures,<br />
+&#xa0;gift economies function alongside a market system for other exchanges.<br />
+And when we think about it, parts of our own societies work in similar ways.<br />
+Communal spaces, such as Burning Man, operate as a mix of barter and a gift economy,<br />
+&#xa0;where selling things for money is strictly taboo.<br />
+In art and technology,<br />
+&#xa0;gift economies are emerging as an alternative to intellectual property<br />
+&#xa0;&#xa0;where artists, musicians, and open-source developers distribute their creative works,<br />
+&#xa0;&#xa0;&#xa0;not for financial profit,<br />
+&#xa0;&#xa0;&#xa0;but to raise their social profile or establish their community role.<br />
+And even potluck dinners and holiday gift traditions<br />
+&#xa0;involve some degree of reciprocity and social norms.<br />
+<br />
+We might wonder<br />
+&#xa0;if a gift is truly a gift if it comes with obligations or involves some social pay off.<br />
+But this is missing the point.<br />
+Our idea of a free gift without social obligations prevails<br />
+&#xa0;only if we already think of everything in market terms.<br />
+And in a commericialized world,<br />
+&#xa0;the idea of strengthening bonds through giving and reciprocity<br />
+&#xa0;&#xa0;may not be such a bad thing,<br />
+&#xa0;wherever you may live.<br />
+</p>
+</div>
+<div id="outline-container-org3df6eff" class="outline-3">
+<h3 id="org3df6eff">expression</h3>
+<div class="outline-text-3" id="text-org3df6eff">
+<p>
+knit [nɪt]: v. to make clothing out of wool, using two ↑knitting needles编织<br />
+adopt [əˈdɑpt]: v. to take someone else’s child into your home and legally become its parent领养<br />
+contradictory [ˌkɑntrəˈdɪktəri]: adj. two statements, beliefs etc that are contradictory are different and therefore cannot both be true or correct相互矛盾的<br />
+obligation [ˌɑblɪˈɡeɪʃ(ə)n]: n. a moral or legal duty to do something义务<br />
+social ties: 社交关系<br />
+canoe [kəˈnu]: n. a long light boat that is pointed at both ends and which you move along using a paddle独木舟<br />
+potlatch ['pɒtˌlætʃ]: n. 冬节<br />
+chief [tʃif]: n. the most important person, or one of the most important people, in a company or organization – used especially in job titles and in news reports首领<br />
+livestock [ˈlaɪvˌstɑk]: n. animals such as cows and sheep that are kept on a farm家畜, 牲畜<br />
+blanket [ˈblæŋkɪt]: n. a cover for a bed, usually made of wool ⇨ duvet毯子<br />
+participant [pɑrˈtɪsɪpənt]: n. someone who is taking part in an activity or event参与者<br />
+barter [ˈbɑrtər]: v. to exchange goods, work, or services for other goods or services rather than for money物品交换, 实物交易<br />
+haggle [ˈhæɡ(ə)l]: v. to argue when you are trying to agree about the price of something争价bargain<br />
+norm [nɔrm]: n. generally accepted standards of social behaviour标准, 规范<br />
+reciprocity [ˌresəˈprɑsəti]: n. a situation in which two people, groups, or countries give each other similar kinds of help or special rights互惠<br />
+voluntarily ['vɒləntrəli]: adv. if you do something voluntarily, you do it willingly, without anyone telling you to do it志愿地<br />
+prestige [preˈstiʒ]: n. the respect and admiration that someone or something gets because of their success or important position in society声望<br />
+communal [kəˈmjun(ə)l]: adj. shared by a group of people or animals, especially a group who live together公共的<br />
+financial [faɪˈnænʃ(ə)l]: adj. relating to money or the management of money财政的<br />
+profit [ˈprɑfɪt]: n. money that you gain by selling things or doing business, after your costs have been paid OPP loss利润<br />
+potluck [pɑtˈlʌk] dinner: 自备餐<br />
+anthropology [ˌænθrəˈpɑlədʒi]/anthropologist: n.n. the scientific study of people, their societies, cultures etc人类学<br />
+native [ˈneɪtɪv]: n. a person who was born in a particular place本地人<br />
+</p>
+<hr />
+<p>
+This holiday season: 这个假期<br />
+consign sth. to the closet: 把某物放入壁橱<br />
+expect sth. from sb.: 期待某人某物<br />
+be involved in: 涉及到&#x2026;<br />
+for free: adv.免费<br />
+without explicit conditions: 没有明显的条件<br />
+foster a system of sth.: 培养某事物的体系<br />
+be formed by: consist of<br />
+throughout human history: 贯穿人类历史<br />
+describe sb. doing sth.: 描述某人做某事<br />
+make a journey: 进行一次旅行<br />
+do sth. through this process: 通过这个过程做某事<br />
+carry an obligation to do sth.: 承担做某事的义务<br />
+give away sth.: 赠送某物<br />
+obligate sb. to do sth.: 迫使某人做某事<br />
+return the favor: 回报恩惠<br />
+take many forms: 多种形式<br />
+at sb's expense: 以某人的费用<br />
+gain sth. from sb./sth.: 从某人某物获得某物<br />
+be indebted to sb.: 对某人深表感激<br />
+be read as doing sth.: be regarded as<br />
+be exclusive to sth.: 专属于某物<br />
+social pay off: 社会回报<br />
+miss the point: 错过重点<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org1c0e1e6" class="outline-3">
+<h3 id="org1c0e1e6">ch.</h3>
+<div class="outline-text-3" id="text-org1c0e1e6">
+<p>
+2014-12-18 什么是礼物经济？<br />
+</p>
+
+<p>
+在这个假日季节，世界各地的人们将互赠礼物。你甚至可能会收到一件阿姨织的毛衣。但如果你在收下礼物后，不是说“谢谢”然后把它丢进衣橱，而是需要在一周后带着更好的礼物去她家，或者在镇上的选举中为她投票，甚至是让她收养你的第一个孩子，这该怎么办？<br />
+</p>
+
+<p>
+如果你参与的是礼物经济，这些听起来可能就不那么奇怪了。这个词组可能让人觉得自相矛盾。毕竟，礼物不是免费赠送的吗？但在礼物经济中，没有明确条件的赠与是用来促进社会关系和义务的形成的。与我们所知的市场经济通过交易的物品建立关系不同，礼物经济则是通过交易的人的关系来构建的。<br />
+</p>
+
+<p>
+礼物经济在整个人类历史中都有存在。最早关于这一概念的研究来自人类学家布罗尼斯劳·马林诺夫斯基（Bronislaw Malinowski）和马塞尔·莫斯（Marcel Mauss），他们描述了特罗布里恩群岛的原住民们如何冒着生命危险，穿越数英里的海洋，交换贝壳项链和臂环。这一过程被称为库拉环（kula ring），这些交换的物品没有实际用途，但它们从原主人的身份中获得重要性，并带有继续交换的义务。<br />
+</p>
+
+<p>
+其他形式的礼物经济可能涉及有用的物品，例如太平洋西北部的“波特拉奇”盛宴（potlatch），在这里，酋长通过赠送家畜和毛毯来争夺声望。我们可以说，礼物经济的参与者并不是通过积累物质财富，而是通过积累社会财富。虽然某些礼物经济的例子可能类似于物物交换（barter），但区别在于，原始的礼物是没有任何前提或讨价还价地赠送的。<br />
+</p>
+
+<p>
+相反，互惠的社会规范要求接受礼物的人自愿回赠。但如何以及何时回赠的规则因文化而异，回赠的形式也有很多种。一位强大的酋长给一位贫穷的人家畜，可能并不期望物质回报，但却能在债务人的代价上获得社会声望。在印尼托拉贾（Toraja）人中，礼物仪式获得的地位甚至决定了土地的所有权。<br />
+</p>
+
+<p>
+关键是保持礼物循环的持续进行，总有一个人欠另一个人。立即回赠礼物，或者用等值的物品回赠，可能会被视为结束了社会关系。那么，礼物经济仅限于工业化世界之外的小规模社会吗？其实不然。一方面，即使在这些文化中，礼物经济也与市场系统共同存在，用于其他交换。<br />
+</p>
+
+<p>
+如果我们仔细想想，自己社会的一部分也以类似的方式运作。像“燃烧人”（Burning Man）这样的共同体空间，既是物物交换也是礼物经济的结合体，在那里，用钱交易的行为是严格禁忌的。在艺术和技术领域，礼物经济作为知识产权的替代方式正逐渐兴起，艺术家、音乐家和开源开发者们分发他们的创作作品，不是为了经济利益，而是为了提升自己的社会形象或建立自己的社区角色。甚至像是聚餐晚宴和节日赠礼这样的传统，也涉及到某种程度的互惠和社会规范。<br />
+</p>
+
+<p>
+我们可能会想，如果一份礼物带有义务或涉及某种社会回报，它是否还真算是礼物呢？但这是没有抓住重点。我们对于“没有社会义务的免费礼物”的想法，只有在我们已经习惯将一切都看作市场交易时才会存在。而在一个商业化的世界里，通过赠与和互惠来加强人际关系的想法，或许并不是坏事，无论你身处何地。<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgf0c0800" class="outline-3">
+<h3 id="orgf0c0800">sentences</h3>
+<div class="outline-text-3" id="text-orgf0c0800">
+<p>
+This holiday season: 这个假期<br />
+</p>
+<ul class="org-ul">
+<li>This holiday season, the famous player, Faker, has been in the Hall of LoL Fame.<br /></li>
+<li>This holiday season, my nephew made a complete recovery after receiving a long-term treatment.<br /></li>
+<li>This holiday season, I have performed a lot of experiments with monkeys.<br /></li>
+</ul>
+<p>
+consign sth. to the closet: 把某物放入壁橱<br />
+</p>
+<ul class="org-ul">
+<li>He may have consigned the T-shirt to the closet.<br /></li>
+<li>She behaved as she consigned the cat to the closet.<br /></li>
+<li>The cat consigned to the closet smashed everything into pieces.<br /></li>
+</ul>
+<p>
+expect sth. from sb.: 期待某人某物<br />
+</p>
+<ul class="org-ul">
+<li>I never expected a letter from a girl in my age who lives abroad.<br /></li>
+<li>The left-behind children in villages are expecting calls from their parents.<br /></li>
+<li>It's not that I expected pocket money from you,<br />
+it's that your daughter expected pocket money from you.<br /></li>
+</ul>
+<p>
+be involved in: 涉及到&#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>The man you interacted with yesterday in your house may be involved in theft.<br /></li>
+<li>The chance of her being involved in murder approaches zero.<br /></li>
+<li>The way to set up a factory must be involved in the local authorities.<br /></li>
+</ul>
+<p>
+for free: adv.免费<br />
+</p>
+<ul class="org-ul">
+<li>Although the busmen are being on strike, I won't give you a lift for free.<br /></li>
+<li>I have no idea of hitting the surface of the ball for free.<br /></li>
+<li>I will provide you with some ingredients for free,<br />
+for we share the same basic goal: complete the course.<br /></li>
+</ul>
+<p>
+foster a system of sth.: 培养某事物的体系<br />
+</p>
+<ul class="org-ul">
+<li>In the process, he has fostered a system of studying English.<br /></li>
+<li>The doctors who went through smallpox fostered a system of variolation.<br /></li>
+<li>It begins all the way back when they fostered a system of medicine school.<br /></li>
+</ul>
+<p>
+be formed by: consist of<br />
+</p>
+<ul class="org-ul">
+<li>Sir, your dinner will be formed by steaks and salads.<br /></li>
+<li>The special band is formed by natives and foreigners.<br /></li>
+<li>The law formed by punishments of thefts and murders became prohibited<br />
+after the chief won the election.<br /></li>
+</ul>
+<p>
+throughout human history: 贯穿人类历史<br />
+</p>
+<ul class="org-ul">
+<li>Beheading may have existed throughout human history.<br /></li>
+<li>The habit of talking while having meals has existed throughout human history.<br /></li>
+<li>Feasting on icy water in summer has existed throughout human history.<br /></li>
+</ul>
+<p>
+describe sb. doing sth.: 描述某人做某事<br />
+</p>
+<ul class="org-ul">
+<li>He described his sister looking for the cause of the accident.<br /></li>
+<li>He described her causing her daughter to play truant from school.<br /></li>
+<li>He described the vampire feasting on the life force of the livestock.<br /></li>
+</ul>
+<p>
+make a journey: 进行一次旅行<br />
+</p>
+<ul class="org-ul">
+<li>Why did you make a journey when your mother was having an operation in the hospital?<br /></li>
+<li>He is performing a ritual that he is making a canoe journey across the lake.<br /></li>
+<li>This holiday season, we loved to make a journey on weekends.<br /></li>
+</ul>
+<p>
+do sth. through this process: 通过这个过程做某事<br />
+</p>
+<ul class="org-ul">
+<li>You can't fail to be fascinated by cats through this process.<br /></li>
+<li>The American people gained their independence through this process.<br /></li>
+<li>Mr. Leo must have made profits through this process.<br /></li>
+</ul>
+<p>
+carry an obligation to do sth.: 承担做某事的义务<br />
+</p>
+<ul class="org-ul">
+<li>You can't ask me to carry an obligation to do the work of other colleagues.<br /></li>
+<li>Carrying an obligation to lead a happy life, he has completed this course.<br /></li>
+<li>This had an enormous impact on her so she carried an obligation to be responsible for the task.<br /></li>
+</ul>
+<p>
+give away sth.: 赠送某物<br />
+</p>
+<ul class="org-ul">
+<li>My grandfather was always giving away my toys in my youth.<br /></li>
+<li>The toys he gave away belong to me.<br /></li>
+<li>She tended to give away the toys formed by wood and metal.<br /></li>
+</ul>
+<p>
+obligate sb. to do sth.: 迫使某人做某事<br />
+</p>
+<ul class="org-ul">
+<li>No one but you can obligate you to work hard.<br /></li>
+<li>The authority may have obligated the entrepreneur to make vehicles.<br /></li>
+<li>The entrepreneur obligated these workers to operate in harsher working conditions.<br /></li>
+</ul>
+<p>
+return the favor: 回报恩惠<br />
+</p>
+<ul class="org-ul">
+<li>He always receives a lot of gifts on Christmas day but never returns the favor.<br /></li>
+<li>He gave away his livestock to return the favor.<br /></li>
+<li>He gave me a pen made in China to return the favor.<br /></li>
+</ul>
+<p>
+take many forms: 多种形式<br />
+</p>
+<ul class="org-ul">
+<li>The sculptures he made took many forms in this exhibition.<br /></li>
+<li>The mistakes that students made in the test took many forms.<br /></li>
+<li>The way in which you receive electric shocks will take many forms.<br /></li>
+</ul>
+<p>
+at sb's expense: 以某人的费用<br />
+</p>
+<ul class="org-ul">
+<li>I never obligate you to give away livestock at my expense.<br /></li>
+<li>You shouldn't have paid for your friends' meal at your parent's expense.<br /></li>
+<li>The scientist is always delivering articles on biology at our academy's expense.<br /></li>
+</ul>
+<p>
+gain sth. from sb./sth.: 从某人某物获得某物<br />
+</p>
+<ul class="org-ul">
+<li>You can only gain minimum wage from your boss so that you can fire him.<br /></li>
+<li>I gained a lot of cleverness from my colleague in a pinch.<br /></li>
+<li>You will gain a lot of knowledge from my course which you will take part in last week.<br /></li>
+</ul>
+<p>
+be indebted to sb.: 对某人深表感激<br />
+</p>
+<ul class="org-ul">
+<li>I lent my classmate some money in a pinch so that she was indebted to me.<br /></li>
+<li>I am always indebted to a man who gives me a lot of help in an emergency.<br /></li>
+<li>You're protecting against a man who is indebted to you.<br /></li>
+</ul>
+<p>
+be read as doing sth.: be regarded as<br />
+</p>
+<ul class="org-ul">
+<li>The rude behaviors in the cinema are read as complaints about the movie.<br /></li>
+<li>The amount of pocket money you give to your nephew is read as your love for him.<br /></li>
+<li>The signals are read as the prelude of abortition.<br /></li>
+</ul>
+<p>
+be exclusive to sth.: 专属于某物<br />
+</p>
+<ul class="org-ul">
+<li>The seat has been exclusive to our company.<br /></li>
+<li>These donkeys may be exclusive to the chief of the tribe.<br /></li>
+<li>The beheading is exclusive to the punishment of murder in this country.<br /></li>
+</ul>
+<p>
+social payoff: 社会回报<br />
+</p>
+<ul class="org-ul">
+<li>You needn't have asked for a social payoff.<br /></li>
+<li>With social payoffs, he has devoted himself to education.<br /></li>
+<li>Without any social payoff, the contributor of the open source community lost his heart.<br /></li>
+</ul>
+<p>
+miss the point: 错过重点<br />
+</p>
+<ul class="org-ul">
+<li>It's more important than ever not to miss the point at the point.<br /></li>
+<li>The busmen on strike missed the point while reaching an agreement.<br /></li>
+<li>He noticed with dismay that his children had missed the point in the process.<br /></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

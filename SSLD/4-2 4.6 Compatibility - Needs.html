@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-12-26 Thu 14:39 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-org74368fc" class="outline-2">
+<h2 id="org74368fc">4-2 4.6 Compatibility - Needs</h2>
+<div class="outline-text-2" id="text-org74368fc">
+<p class="verse">
+Okay, so that gives me a really good idea about how power fits into relationships.<br />
+What about the concept of compatibility?<br />
+Yeah, I think this is like very important for us to understand<br />
+&#xa0;how this whole sequence of concepts link together, right?<br />
+So we talk about power,<br />
+&#xa0;and then obviously, like power has something to do with these ideas of fairness and equity.<br />
+And then when you talk about fairness and equity,<br />
+&#xa0;you're looking at some kind of balance in the relationship.<br />
+<br />
+And obviously, we want to be paying attention to compatibility.<br />
+And when we look at compatibility,<br />
+&#xa0;we're also actually implicitly asking the question of sustainability, of feasibility.<br />
+Is it going to work? Right?<br />
+So, and then, as we know in SSLD analysis, we will start with needs.<br />
+The N3C.<br />
+Exactly, yeah.<br />
+So we will be starting with N3C, and the first thing is needs.<br />
+<br />
+So basically, when we have like two individuals that are attracted to each other,<br />
+&#xa0;one of the things that we always speculate<br />
+&#xa0;&#xa0;is that some kind of needs are being met either at a very conscious level<br />
+&#xa0;&#xa0;&#xa0;or at like a not so conscious level.<br />
+Someone may be like looking for some compensation of the lack of security<br />
+&#xa0;&#xa0;that this person experienced as a child,<br />
+&#xa0;and so this person wants to be in a very stable relationship.<br />
+Some people are trying to sort of like compensate for the incomplete family that he or she had<br />
+&#xa0;and was fascinated or obsessed with this idea of a healthy family.<br />
+So you also have people who are like abused as a child,<br />
+&#xa0;who got very confused<br />
+&#xa0;&#xa0;and think that someone who is strong, dominating, and protective would be attractive, you know.<br />
+And then, there are like people with a similar background really scared of people<br />
+&#xa0;who are strong and like you know, dominating.<br />
+So these different needs, right, will all be operated.<br />
+And the problem is in a lot of situations,<br />
+&#xa0;people are not even aware that they're driven by these needs.<br />
+So it is really important, in the beginning phase of a relationship,<br />
+&#xa0;for people to pay more attention to what needs are being triggered, like the need, compatible.<br />
+<br />
+And I just want to point out a few important processes from SSLD perspective.<br />
+One is that there are always irrational needs.<br />
+So we do not need to be worried about them,<br />
+&#xa0;we just need to be more conscious of them and deal with them.<br />
+The other thing is needs do change.<br />
+And in an ideal situation, when you are involved in a good relationship,<br />
+&#xa0;the relationship would actually help you grow and develop better understanding.<br />
+You'll feel better about yourself, you become more capable of communicating your needs.<br />
+And you've also become like more capable of understanding the needs of your partner,<br />
+&#xa0;and both of you will grow.<br />
+And then some of these needs will be met.<br />
+And then when some of these needs are met,<br />
+&#xa0;say for example, an insecure person having his or her security needs met, right?<br />
+And then it will prepare this person to move forward and develop a stronger intimate relationship,<br />
+&#xa0;and the person may also be more driven towards like self-improvement, and growth and all that.<br />
+So the need profile of each participant, ideally, can also change and even improve, yeah.<br />
+</p>
+</div>
+<div id="outline-container-org238c363" class="outline-3">
+<h3 id="org238c363">expression</h3>
+<div class="outline-text-3" id="text-org238c363">
+<p>
+compatible [kəmˈpætəb(ə)l] compatibility: adj.n. able to exist or be used together without causing problems ⇨ compatibility兼容的<br />
+link [lɪŋk]: v. be linked if two things are linked, they are related in some way连结, 联合<br />
+implicit [ɪmˈplɪsɪt] implicitly: adj.adv. suggested or understood without being stated directly OPP explicit暗中的<br />
+sustainable [səˈsteɪnəb(ə)l] sustainability: adj.n. able to continue for a long time可持续的<br />
+feasible [ˈfizəb(ə)l] feasibility: adj.n. a plan, idea, or method that is feasible is possible and is likely to work SYN possible可行的, 切实可行的<br />
+speculate [ˈspekjəˌleɪt]: v. to guess about the possible causes or effects of something, without knowing all the facts or details猜测<br />
+intimate [ˈɪntɪmət]: adj. private and friendly so that you feel comfortable亲密的<br />
+profile [ˈproʊˌfaɪl]: n. a short description that gives important details about a person, a group of people, or a place轮廓,简介<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org2ed4c09" class="outline-3">
+<h3 id="org2ed4c09">sentence</h3>
+<div class="outline-text-3" id="text-org2ed4c09">
+<p>
+compatible [kəmˈpætəb(ə)l] compatibility: adj.n. able to exist or be used together without causing problems ⇨ compatibility兼容的<br />
+</p>
+<ul class="org-ul">
+<li>The controller is so compatible that it controls my new computer.<br /></li>
+<li>I desire for a compatible controller so that I can play and pause media without leaving my chair.<br /></li>
+<li>The battery is compatible, so you don't need to buy another one when you change your phone.<br /></li>
+</ul>
+<p>
+link [lɪŋk]: v. be linked if two things are linked, they are related in some way连结, 联合<br />
+</p>
+<ul class="org-ul">
+<li>Once you figure out how these concepts link, you will not ask so stupid questions.<br /></li>
+<li>With the clue in mind, the detective succeeded in linking all evidence together.<br /></li>
+<li>It is hard to link a kind lady to a criminal who has poisoned her all three of husbands.<br /></li>
+</ul>
+<p>
+implicit [ɪmˈplɪsɪt] implicitly: adj.adv. suggested or understood without being stated directly OPP explicit暗中的<br />
+</p>
+<ul class="org-ul">
+<li>You still don't make sense of his words containing an implicit threat.<br /></li>
+<li>The board of the park believed in that there is an implicit storyline.<br /></li>
+<li>Those workers who were going on a strike implicitly express their gratitude to the journalist.<br /></li>
+</ul>
+<p>
+sustainable [səˈsteɪnəb(ə)l] sustainability: adj.n. able to continue for a long time可持续的<br />
+</p>
+<ul class="org-ul">
+<li>The president proclaimed that we would do more to promote sustainable agriculture and industry.<br /></li>
+<li>The authorities purchased a special kind of grass seed which took root in the hill for sustainable agriculture.<br /></li>
+<li>This kind of cars that consume sustainable energe is being promoted.<br /></li>
+</ul>
+<p>
+feasible [ˈfizəb(ə)l] feasibility: adj.n. a plan, idea, or method that is feasible is possible and is likely to work SYN possible可行的, 切实可行的<br />
+</p>
+<ul class="org-ul">
+<li>We still have a chance to put forward a feasible plan.<br /></li>
+<li>The project of an airport in the suburb proved feasible, and it will put into use next year.<br /></li>
+<li>Although it will run out of labors in the zoo, the hunt for puma is feasible.<br /></li>
+</ul>
+<p>
+speculate [ˈspekjəˌleɪt]: v. to guess about the possible causes or effects of something, without knowing all the facts or details猜测<br />
+</p>
+<ul class="org-ul">
+<li>My grandfather refused to speculate about the lost phone.<br /></li>
+<li>He refused to speculate about the rumors of his wife who he married last year.<br /></li>
+<li>The lady speculated that her husband had an affair with his former colleague.<br /></li>
+</ul>
+<p>
+intimate [ˈɪntɪmət]: adj. private and friendly so that you feel comfortable亲密的<br />
+</p>
+<ul class="org-ul">
+<li>My wife's intimate friend is always complaining about her naive husband.<br /></li>
+<li>The manager who had an intimate relationship with the engineer has been killed in the hill.<br /></li>
+<li>Would you like to speculate your intimate husband is cooking meth?<br /></li>
+</ul>
+<p>
+profile [ˈproʊˌfaɪl]: n. a short description that gives important details about a person, a group of people, or a place轮廓,简介<br />
+</p>
+<ul class="org-ul">
+<li>Why don't we use those published identification numbers to fulfill our profile?<br /></li>
+<li>The fool detective will get exposure to my empty profile on the social website.<br /></li>
+<li>The empty profile means that she tends to hide herself in social media.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org7587738" class="outline-3">
+<h3 id="org7587738">sentence2</h3>
+<div class="outline-text-3" id="text-org7587738">
+<p>
+compatible [kəmˈpætəb(ə)l] compatibility: adj.n. able to exist or be used together without causing problems ⇨ compatibility兼容的<br />
+</p>
+<ul class="org-ul">
+<li>The controller is so compatible that it controls my new computer.<br /></li>
+<li>I desire a compatible controller so that I can play and pause media without leaving my chair.<br /></li>
+<li>The battery is compatible, so you don't need to buy another one when you change your phone.<br /></li>
+</ul>
+<p>
+link [lɪŋk]: v. be linked if two things are linked, they are related in some way连结, 联合<br />
+</p>
+<ul class="org-ul">
+<li>Once you figure out how these concepts link, you will not ask so stupid questions.<br /></li>
+<li>With the clue in mind, the detective succeeded in linking all the evidence together.<br /></li>
+<li>It is hard to link a kind lady to a criminal who has poisoned her all three of husbands.<br /></li>
+</ul>
+<p>
+implicit [ɪmˈplɪsɪt] implicitly: adj.adv. suggested or understood without being stated directly OPP explicit暗中的<br />
+</p>
+<ul class="org-ul">
+<li>You still don't make sense of his words containing an implicit threat.<br /></li>
+<li>The park board believed that there was an implicit storyline written by the dead engineer.<br /></li>
+<li>Those workers going on strike implicitly expressed their gratitude to the journalist.<br /></li>
+</ul>
+<p>
+sustainable [səˈsteɪnəb(ə)l] sustainability: adj.n. able to continue for a long time可持续的<br />
+</p>
+<ul class="org-ul">
+<li>The president proclaimed that we would do more to promote sustainable agriculture and industry.<br /></li>
+<li>The authorities purchased a special kind of grass seed which took root in the hill for sustainable agriculture.<br /></li>
+<li>This kind of car that consumes sustainable energy is being promoted.<br /></li>
+</ul>
+<p>
+feasible [ˈfizəb(ə)l] feasibility: adj.n. a plan, idea, or method that is feasible is possible and is likely to work SYN possible可行的, 切实可行的<br />
+</p>
+<ul class="org-ul">
+<li>We still have a chance to put forward a feasible plan.<br /></li>
+<li>The project of an airport in the suburb proved feasible, and it will be put into use next year.<br /></li>
+<li>Although it will run out of labor in the zoo, the hunt for puma is feasible.<br /></li>
+</ul>
+<p>
+speculate [ˈspekjəˌleɪt]: v. to guess about the possible causes or effects of something, without knowing all the facts or details猜测<br />
+</p>
+<ul class="org-ul">
+<li>My grandfather refused to speculate about the lost phone.<br /></li>
+<li>He refused to speculate about the rumors of his wife who he married last year.<br /></li>
+<li>The lady speculated that her husband had an affair with his former colleague.<br /></li>
+</ul>
+<p>
+intimate [ˈɪntɪmət]: adj. private and friendly so that you feel comfortable亲密的<br />
+</p>
+<ul class="org-ul">
+<li>My wife's intimate friend is always complaining about her naive husband.<br /></li>
+<li>The manager who had an intimate relationship with the engineer has been killed on the hill.<br /></li>
+<li>Would you like to speculate your intimate husband is cooking meth?<br /></li>
+</ul>
+<p>
+profile [ˈproʊˌfaɪl]: n. a short description that gives important details about a person, a group of people, or a place轮廓,简介<br />
+</p>
+<ul class="org-ul">
+<li>Why don't we use those published identification numbers to fulfill our profile?<br /></li>
+<li>The fool detective will get exposed to my empty profile on the social website.<br /></li>
+<li>The empty profile means that she tends to hide herself in social media.<br /></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

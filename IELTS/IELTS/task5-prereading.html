@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-05-20 Mon 23:10 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org090b53e">Task5 精听+精读 听力满分</a>
+<ul>
+<li><a href="#orgcb9f730">一考</a></li>
+<li><a href="#orgd40fc90">二考</a></li>
+<li><a href="#orgedbd9f0">三靠</a></li>
+<li><a href="#org2bcb02a">Stoicism</a></li>
+<li><a href="#orgd149ee7">all</a></li>
+<li><a href="#org41851ea">expression</a></li>
+<li><a href="#orgcc9d490">grammar</a></li>
+<li><a href="#orgd1f4a85">questions while pre-reading</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org090b53e" class="outline-2">
+<h2 id="org090b53e">Task5 精听+精读 听力满分</h2>
+<div class="outline-text-2" id="text-org090b53e">
+</div>
+<div id="outline-container-orgcb9f730" class="outline-3">
+<h3 id="orgcb9f730">一考</h3>
+<div class="outline-text-3" id="text-orgcb9f730">
+<ol class="org-ol">
+<li>F<br /></li>
+<li>publication<br />
+T<br /></li>
+<li>modern<br />
+F<br /></li>
+<li>model<br />
+F<br /></li>
+<li>noble<br />
+F<br /></li>
+<li>capitalism<br />
+F<br /></li>
+<li>F<br /></li>
+<li>F<br /></li>
+<li>F<br /></li>
+<li>rules<br />
+F<br /></li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orgd40fc90" class="outline-3">
+<h3 id="orgd40fc90">二考</h3>
+<div class="outline-text-3" id="text-orgd40fc90">
+<p>
+9<br />
+</p>
+<ol class="org-ol">
+<li>practical<br /></li>
+<li>publication<br /></li>
+<li>choices<br /></li>
+<li>transformations<br />
+F negative<br /></li>
+<li>play<br /></li>
+<li>capitalism<br /></li>
+<li>depression<br /></li>
+<li>logic<br /></li>
+<li>opportunity<br /></li>
+<li>practices<br /></li>
+</ol>
+</div>
+</div>
+
+
+<div id="outline-container-orgedbd9f0" class="outline-3">
+<h3 id="orgedbd9f0">三靠</h3>
+<div class="outline-text-3" id="text-orgedbd9f0">
+<ol class="org-ol">
+<li>practical<br /></li>
+<li>publication<br /></li>
+<li>choices<br /></li>
+<li>negetive<br /></li>
+<li>play<br /></li>
+<li>capitalism<br /></li>
+<li>depression<br /></li>
+<li>logic<br /></li>
+<li>opportunity<br /></li>
+<li>practice<br /></li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org2bcb02a" class="outline-3">
+<h3 id="org2bcb02a">Stoicism</h3>
+<div class="outline-text-3" id="text-org2bcb02a">
+<p>
+Ancient philosophy is not just about talking or lecturing,<br />
+	or even reading long, dense books.<br />
+In fact, it is something people have used throughout history<br />
+	– to solve their problems<br />
+		and to achieve their greatest triumphs.<br />
+</p>
+
+<p>
+Specifically, I am referring to Stoicism,<br />
+	which, in my opinion, is the most practical of all philosophies<br />
+		and therefore the most appealing.<br />
+Stoicism was founded in Ancient Greece by Zeno of Citium in the early 3rd century BC,<br />
+	but was practised by the likes of Epictetus, Cato, Seneca and Marcus Aurelius.<br />
+Amazingly, we still have access to these ideas,<br />
+	despite the fact that the most famous Stoics never wrote anything down for publication.<br />
+Cato definitely didn’t.<br />
+Marcus Aurelius never intended his Meditations to be anything but personal.<br />
+Seneca’s letters were, well,<br />
+	letters and Epictetus’ thoughts come to us by way of a note-taking student.<br />
+</p>
+
+<p>
+Stoic principles were based on the idea<br />
+	that its followers could have an unshakable happiness in this life<br />
+		and the key to achieving this was virtue.<br />
+The road to virtue, in turn, lay in understanding<br />
+	that destructive emotions, like anger and jealousy, are under our conscious control<br />
+		– they don’t have to control us,<br />
+	because we can learn to control them.<br />
+In the words of Epictetus:<br />
+	“external events I cannot control,<br />
+		but the choices I make with regard to them.<br />
+	I do control”.<br />
+</p>
+
+<p>
+The modern day philosopher and writer Nassim Nicholas Taleb defines a Stoic as someone<br />
+	who has a different perspective on experiences<br />
+		which most of us would see as wholly negative;<br />
+	a Stoic “transforms fear into caution,<br />
+		pain into transformation,<br />
+		mistakes into initiation and desire into undertaking”.<br />
+Using this definition as a model,<br />
+	we can see that throughout the centuries Stoicism has been practised in more recent history<br />
+			by kings, presidents, artists, writers and entrepreneurs.<br />
+</p>
+
+<p>
+The founding fathers of the United States were inspired by the philosophy.<br />
+George Washington was introduced to Stoicism by his neighbours at age seventeen,<br />
+	and later, put on a play based on the life of Cato to inspire his men.<br />
+Thomas Jefferson kept a copy of Seneca beside his bed.<br />
+</p>
+
+<p>
+Writers and artists have also been inspired by the stoics.<br />
+Eugène Delacroix, the renowned French Romantic artist<br />
+	(known best for his painting Liberty Leading the People) was an ardent Stoic,<br />
+	referring to it as his “consoling religion”.<br />
+</p>
+
+<p>
+The economist Adam Smith’s theories on capitalism were significantly influenced by the Stoicism<br />
+	that he studied as a schoolboy,<br />
+	under a teacher who had translated Marcus Aurelius works.<br />
+</p>
+
+<p>
+Today’s political leaders are no different,<br />
+	with many finding their inspiration from the ancient texts.<br />
+Former US president Bill Clinton rereads Marcus Aurelius every single year,<br />
+	and many have compared former President Obama’s calm leadership style to that of Cato.<br />
+Wen Jiabao the former prime minister of China,<br />
+	claims that Meditations is one of two books he travels with<br />
+	and that he has read it more than one hundred times over the course of his life.<br />
+</p>
+
+<p>
+Stoicism had a profound influence on Albert Ellis,<br />
+	who invented Cognitive Behaviour Therapy,<br />
+	which is used to help people manage their problems<br />
+		by changing the way that they think and behave.<br />
+It’s most commonly used to treat depression.<br />
+The idea is that we can take control of our lives<br />
+	by challenging the irrational beliefs<br />
+		that create our faulty thinking, symptoms and behaviours by using logic instead.<br />
+</p>
+
+<p>
+Stoicism has also become popular in the world of business.<br />
+Stoic principles can build the resilience and state of mind<br />
+		required to overcome setbacks<br />
+	because Stoics teach turning obstacles into opportunity.<br />
+A lesson every business entrepreneur needs to learn.<br />
+</p>
+
+<p>
+I would argue that studying Stoicism is as relevant today<br />
+	as it was 2,000 years ago,<br />
+	thanks to its brilliant insights into how to lead a good life.<br />
+At the very root of the thinking, there is a very simple way of living<br />
+</p>
+<ul class="org-ul">
+<li>control what you can and accept what you can’t.<br /></li>
+</ul>
+<p>
+This is not as easy as it sounds<br />
+	and will require considerable practice<br />
+	– it can take a lifetime to master.<br />
+The Stoics also believed the most important foundation<br />
+	for a good and happy life is not money, fame, power or pleasure,<br />
+	but having a disciplined and principled character<br />
+	– something which seems to resonate with many people today.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgd149ee7" class="outline-3">
+<h3 id="orgd149ee7">all</h3>
+<div class="outline-text-3" id="text-orgd149ee7">
+<ul class="org-ul">
+<li>lecture: 说教<br /></li>
+<li>dense: not able to understand things easily<br /></li>
+<li>specifically: used when you are adding more exact information<br /></li>
+<li>practical: effective<br /></li>
+<li>appealing:  attractive or interesting<br /></li>
+<li>meditations: serious thoughts about a particular subject<br /></li>
+<li>virtue: moral goodness of character and behaviour<br /></li>
+<li>destructive: causing damage to people or things<br /></li>
+<li>conscious: awake and able to understand what is happening around you<br /></li>
+<li>transformation: a complete change in someone or something<br /></li>
+<li>initiation: the act of starting something such as an official process, a new plan etc<br /></li>
+<li>undertaking: a promise to do something<br /></li>
+<li>entrepreneur: someone who starts a new business or arranges business deals in order to make money, often in a way that involves financial risks<br /></li>
+<li>ardent:  showing strong positive feelings about an activity and determination to succeed at it<br /></li>
+<li>religion: a belief in one or more gods<br /></li>
+<li>significantly: in an important way or to an important degree<br /></li>
+<li>Former: previous<br /></li>
+<li>Cognitive: related to the process of knowing, understanding, and learning something<br /></li>
+<li>therapy: the treatment of an illness or injury over a fairly long period of time<br /></li>
+<li>depression: a medical condition that makes you very unhappy and anxious and often prevents you from living a normal life<br /></li>
+<li>irrational: not based on clear thought or reason<br /></li>
+<li>symptom: something wrong with your body or mind which shows that you have a particular illness<br /></li>
+<li>resilience: the ability to become strong, happy, or successful again after a difficult situation or event<br /></li>
+<li>setback: a problem that delays or prevents progress, or makes things worse than they were<br /></li>
+<li>obstacle: something that makes it difficult to achieve something<br /></li>
+<li>relevant: directly relating to the subject or problem being discussed or considered<br /></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org41851ea" class="outline-3">
+<h3 id="org41851ea">expression</h3>
+<div class="outline-text-3" id="text-org41851ea">
+<ul class="org-ul">
+<li>achieve sb's triumphs<br /></li>
+<li>the likes of ..:  is used to refer to people or things of a similar type or category<br /></li>
+<li>have access to&#x2026;:  possess the ability or permission to use, enter, or obtain something.<br /></li>
+<li>come to sb.: emphasizes the process of understanding or realization<br /></li>
+<li>in turn: used to explain how a series of actions or circumstances are interconnected<br /></li>
+<li>with regard to sth.: be used synonymously with phrases like "concerning," "in relation to," or "regarding."<br /></li>
+<li>put on &#x2026;: mean to organize, present, or perform a show, event, or production.<br /></li>
+<li>prime minister: the most important minister and leader of the government in some countries which have a parliament<br /></li>
+<li>the course of &#x2026;: is used to describe the progression or development of something over a period of time.<br /></li>
+<li>at the root of sth.: refers to the fundamental or foundational essence of a concept, idea, problem, or situation<br /></li>
+<li>resonate with:  if something such as an event or a message resonates, it seems important or good to people, or continues to do this<br /></li>
+<li>refer to sth as sth.: regard sth. as sth.<br /></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgcc9d490" class="outline-3">
+<h3 id="orgcc9d490">grammar</h3>
+<div class="outline-text-3" id="text-orgcc9d490">
+<ul class="org-ul">
+<li>同从<br /></li>
+<li>宾从<br /></li>
+<li>with &#x2026; 独立主格<br /></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgd1f4a85" class="outline-3">
+<h3 id="orgd1f4a85">questions while pre-reading</h3>
+<div class="outline-text-3" id="text-orgd1f4a85">
+<ol class="org-ol">
+<li>即使跟读50之后,仍然没有看中文的感觉,好像差点什么<br /></li>
+<li>跟读是不是练习由原来的拼音标成单词,变成直接读单词.<br />
+类似老外学中文,开始读字靠拼音,后面直接读一个字.<br />
+或者类似于游戏里面,由脑子里面想连招的一步步然后出手,变成不假思索的熟练连招.<br /></li>
+<li>2考会不去听听力,而是靠自己回想<br /></li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-08-06 Tue 22:27 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+
+<div id="outline-container-org4bc9db3" class="outline-2">
+<h2 id="org4bc9db3">Lesson 7 Too late</h2>
+<div class="outline-text-2" id="text-org4bc9db3">
+<p class="verse">
+Did the detectives save the diamonds?<br />
+<br />
+The plane was late and detectives were waiting at the airport <b>all morning</b>.<br />
+They were expecting <b>a valuable parcel of diamond</b> from South Africa.<br />
+<b>A few hours earlier</b>, someone had told the police that thieves would <b>try to steal</b> the diamonds.<br />
+When the plane arrived, some of the detectives were waiting inside the main building<br />
+&#xa0;while others were waiting on the airfield.<br />
+Two men took the parcel off the plane and carried it into the Customs House.<br />
+While two detectives were <b>keeping guard</b> at the door,<br />
+&#xa0;two others opened the parcel.<br />
+<b>To their surprise</b>, <b>the precious parcel was full of stones and sand</b>!<br />
+</p>
+</div>
+<div id="outline-container-orgd27fdb4" class="outline-3">
+<h3 id="orgd27fdb4">expression</h3>
+<div class="outline-text-3" id="text-orgd27fdb4">
+<p>
+detective [dɪˈtektɪv] n.侦探<br />
+airport [ˈeəpɔːt] n.机场<br />
+expect [ɪkˈspekt] v.期待,等待<br />
+valuable [ˈvæljuəbl] adj.贵重的<br />
+parcel [ˈpɑːs(ə)l] n.包裹<br />
+diamond [ˈdaɪmənd] n.钻石<br />
+steal [stiːl] stole [stəʊl] stolen [ˈstəʊlən] v.偷<br />
+main [meɪn] adj.主要的<br />
+airfield [ˈeəfiːld] n.飞机起落的场地<br />
+guard [ɡɑːd] n.警戒,守卫<br />
+precious [ˈpreʃəs] adj.珍贵的<br />
+stone [stəʊn] n.石子<br />
+sand [sænd] n.沙子<br />
+</p>
+
+<p>
+keep guard: 站岗<br />
+</p>
+
+<hr />
+<p>
+was/were + doing: 过去正在进行<br />
+when &amp; while &amp; just as(正像,正当): 当&#x2026;<br />
+</p>
+
+
+<p>
+all morning 整个上午<br />
+	The plane was late and detectives were waiting at the airport all morning.<br />
+a parcel of sth. 一包某物<br />
+a few hours earlier 几小时前<br />
+keep guard 站岗<br />
+to sb's surprise 令某人吃惊的<br />
+try to do sth. 尝试做某事<br />
+A be full of B A充满了B<br />
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org7ea1613" class="outline-3">
+<h3 id="org7ea1613">单词造句</h3>
+<div class="outline-text-3" id="text-org7ea1613">
+<p>
+detective<br />
+</p>
+<ul class="org-ul">
+<li>The detective taught us a lesson.<br /></li>
+<li>The detective buy a diamond for his wife.<br /></li>
+<li>The detective tried to save the diamonds.<br /></li>
+<li>Did the detective try to save the diamonds?<br /></li>
+<li>Why did the detective try to save the diamonds?<br /></li>
+</ul>
+<p>
+airport<br />
+</p>
+<ul class="org-ul">
+<li>I was waiting for my wife at the airport all evening?<br /></li>
+<li>Was you waiting for your wife at the airport all evening?<br /></li>
+<li>Why was you waiting for your wife at the airport all evening?<br /></li>
+<li>How long was you waiting for your wife at the airport?<br /></li>
+<li>When was you waiting for your wife at the airport?<br /></li>
+</ul>
+<p>
+expect<br />
+</p>
+<ul class="org-ul">
+<li>My wife is expecting her holidays in Sanya.<br /></li>
+<li>Is your wife expecting her holidays in Sanya?<br /></li>
+<li>Why is your wife expecting her holidays in Sanya?<br /></li>
+<li>Where is your wife expecting her holidays?<br /></li>
+<li>When is your wife expecting her holidays?<br /></li>
+</ul>
+<p>
+valuable<br />
+</p>
+<ul class="org-ul">
+<li>I have received a valuable postcard from my friend.<br /></li>
+<li>Have you received any valuable postcard from your friends?<br /></li>
+<li>Why have you received a valuable postcard from your friends?<br /></li>
+<li>Where have you received a valuable postcard from your friends?<br /></li>
+<li>Who have you received a valuable postcard from?<br /></li>
+</ul>
+<p>
+parcel<br />
+</p>
+<ul class="org-ul">
+<li>He bought a parcel of cards.<br /></li>
+<li>Did he buy a parcel of cards?<br /></li>
+<li>Who bought a parcel of cards?<br /></li>
+<li>Where did he buy a parcel of cards?<br /></li>
+<li>Why did he buy a parcel of cards?<br /></li>
+</ul>
+<p>
+diamond<br />
+</p>
+<ul class="org-ul">
+<li>The diamond spoilt the glass quickly.<br /></li>
+<li>Did the diamond spoilt the glass quickly?<br /></li>
+<li>What spoilt the glass quickly?<br /></li>
+<li>How did the diamond spoil the glass?<br /></li>
+<li>Where did the diamond spoil the glass?<br /></li>
+</ul>
+<p>
+steal<br />
+</p>
+<ul class="org-ul">
+<li>My wife stole my pocket money?<br /></li>
+<li>Did your wife steal your pocket money?<br /></li>
+<li>Why did your wife steal your pocket money?<br /></li>
+<li>Where did your wife steal your pocket money?<br /></li>
+<li>How did your wife steal your pocket money?<br /></li>
+</ul>
+<p>
+main<br />
+</p>
+<ul class="org-ul">
+<li>They were talking loudly in the main street.<br /></li>
+<li>Were they talking loudly in the main street?<br /></li>
+<li>Why were they talking loudly in the main street?<br /></li>
+<li>Who were talking loudly in the main street?<br /></li>
+<li>How were they talking in the main street?<br /></li>
+</ul>
+<p>
+airfield<br />
+</p>
+<ul class="org-ul">
+<li>A beggar was singing song on the airfield in the morning?<br /></li>
+<li>Who was singing songs on the airfield this morning?<br /></li>
+<li>Why was the beggar singing songs on the airfield?<br /></li>
+<li>What was the beggar doing on the airfield this morning?<br /></li>
+<li>When was the beggar singing songs on the airfield?<br /></li>
+</ul>
+<p>
+guard<br />
+</p>
+<ul class="org-ul">
+<li>While I was keeping guard at the door, Miumiu ate the food.<br /></li>
+<li>Who ate the food while you were keeping guard at the door?<br /></li>
+<li>Did Miumiu eat the food while you were keeping guard at the door?<br /></li>
+<li>What did Miumiu do while you were keeping guard at the door?<br /></li>
+<li>He is a body guard in Santang.<br /></li>
+</ul>
+<p>
+precious<br />
+</p>
+<ul class="org-ul">
+<li>The thief stole a precious stone.<br /></li>
+<li>Did the thief steal a precious stone?<br /></li>
+<li>Why did the thief steal a precious stone?<br /></li>
+<li>Who stole the precious stone?<br /></li>
+<li>How the thief steal the precious stone?<br /></li>
+</ul>
+<p>
+stone<br />
+</p>
+<ul class="org-ul">
+<li></li>
+
+<li></li>
+
+<li></li>
+
+<li></li>
+
+<li></li>
+</ul>
+<p>
+sand<br />
+</p>
+<ul class="org-ul">
+<li></li>
+
+<li></li>
+
+<li></li>
+
+<li></li>
+
+<li></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgc5c8431" class="outline-3">
+<h3 id="orgc5c8431">反复听电影片段</h3>
+</div>
+<div id="outline-container-orgc431666" class="outline-3">
+<h3 id="orgc431666">Pattern Drill 写+读</h3>
+<div class="outline-text-3" id="text-orgc431666">
+<ul class="org-ul">
+<li>s1: How did you break your leg?<br />
+s2: I broke it while I was skiing.<br />
+<ul class="org-ul">
+<li>cut your thumb - cooking<br />
+How did you cut your thumb?<br />
+I cut it while I was cooking.<br /></li>
+<li>hurt your foot - climbing the mountain<br />
+How did you hurt your foot?<br />
+I hurt it while I was climbing the mountain.<br /></li>
+<li>find your ring - sweeping the floor<br />
+How did you find your ring?<br />
+I found it while I was sweeping the floor.<br /></li>
+</ul></li>
+<li>s1: What were you doing when the phone rang?<br />
+s2: I was getting into the bath when it rang.<br />
+<ul class="org-ul">
+<li>postman came - watering the garden<br />
+What were you doing when the postman came?<br />
+I was watering the garden when he came.<br /></li>
+<li>plane arrived - waiting at the airport<br />
+What were you doing when the plane arrived?<br />
+I was waiting at the airport when it arrived.<br /></li>
+<li>lesson began - reading/writing an essay<br />
+What were you doing when the lesson began?<br />
+I was reading an essay when it began.<br /></li>
+<li>lights went out - cooking/having dinner<br />
+What were you doing when the lights went out?<br />
+I was cooking dinner when they went out.<br /></li>
+</ul></li>
+<li>s1: What were you doing all afternoon? I couldn't find you anywhere.<br />
+s2: I was shopping.<br />
+<ul class="org-ul">
+<li>all night - waiting for a train<br />
+What were you doing all night? I couldn't find you anywhere.<br />
+I was waiting for a train.<br /></li>
+<li>all evening - visiting John<br />
+What were you doing all evening? I couldn't find you anywhere.<br />
+I was visiting John.<br /></li>
+<li>all morning - tidying the garage<br />
+What were you doing all morning? I couldn't find you anywhere.<br />
+I was tidying the garage.<br /></li>
+<li>all day - babysitting<br />
+What were you doing all day? I couldn't find you anywhere.<br />
+I was babysitting.<br /></li>
+</ul></li>
+<li>s1: Who knocked over the vase?<br />
+s2: I knocked it over. I hope you don't mind.<br />
+<ul class="org-ul">
+<li>put out the fire<br />
+Who put out the fire?<br />
+I put it out. I hope you don't mind.<br /></li>
+<li>let out the dogs<br />
+Who let out the dogs?<br />
+I let they out. I hope you don't mind.<br /></li>
+<li>tore up the letter<br />
+Who tore up the letter?<br />
+I tore it up. I hope you don't mind.<br /></li>
+<li>turn on the TV<br />
+Who turned on the TV?<br />
+I turnd it on. I hope you don't mind.<br /></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org68c29b9" class="outline-3">
+<h3 id="org68c29b9">给自己讲解</h3>
+</div>
+<div id="outline-container-orge318d1e" class="outline-3">
+<h3 id="orge318d1e">红皮书</h3>
+</div>
+<div id="outline-container-org6cab208" class="outline-3">
+<h3 id="org6cab208">习惯用法造句</h3>
+</div>
+<div id="outline-container-orgdfdb352" class="outline-3">
+<h3 id="orgdfdb352">跟读至背诵</h3>
+</div>
+<div id="outline-container-org8b3e5ec" class="outline-3">
+<h3 id="org8b3e5ec">Ask me if 写+读</h3>
+</div>
+<div id="outline-container-org2e20f45" class="outline-3">
+<h3 id="org2e20f45">摘要写作</h3>
+</div>
+<div id="outline-container-orgf59cc78" class="outline-3">
+<h3 id="orgf59cc78">tell the story 口语</h3>
+</div>
+<div id="outline-container-org15e65aa" class="outline-3">
+<h3 id="org15e65aa">Topics for discussion</h3>
+<div class="outline-text-3" id="text-org15e65aa">
+<ol class="org-ol">
+<li>Can you describe what happens when someone goes through Customs?<br /></li>
+<li>How can we keep our valuables safe from thieves?<br /></li>
+<li>There is a saying 'Diamonds are a girl's best friend.'<br />
+What do you think it means?<br /></li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

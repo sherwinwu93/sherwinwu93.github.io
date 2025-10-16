@@ -1,0 +1,730 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-09-28 Sat 22:17 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-orgdfe9c0c" class="outline-2">
+<h2 id="orgdfe9c0c">Lesson 31 A lovable eccentric</h2>
+<div class="outline-text-2" id="text-orgdfe9c0c">
+<p class="verse">
+Why did the shop assistant refuse to serve Dickie?<br />
+<br />
+True eccentrics never deliberately set out to <b>draw attention to themselves</b>.<br />
+They <b>disregard social conventions</b><br />
+&#xa0;without <b>being conscious that</b> they are doing anything extraordinary.<br />
+This invariably <b>wins them</b> the love and respect of others,<br />
+&#xa0;for they <b>add colour to</b> the dull <b>routine of everyday life</b>.<br />
+<br />
+<b>Up to the time of his death</b>, Richard Colson was one of the most notable figures in our town.<br />
+He was a shrewd and wealthy businessman,<br />
+&#xa0;but most people in the town hardly knew anything about this side of his life.<br />
+He was known to us all as Dickie and his eccentricity had become legendary long before he died.<br />
+<br />
+Dickie disliked snobs intensely.<br />
+Though he owned a large car, he hardly ever used it, perferring always to <b>go on foot</b>.<br />
+Even when it was raining heavily, he refused to carry an umbrella.<br />
+One day, he walked into an expensive shop after having <b>been caught in</b> a particularly heavy shower.<br />
+He wanted to buy a 300 dollars watch for his wife,<br />
+&#xa0;but he was in such a bedraggled condition that an assistant refused to serve him.<br />
+Dickie left the shop without a word and returned carrying a large cloth bag.<br />
+As it was extremely heavy, he <b>dumped it on the counter</b>.<br />
+The assistant asked him to leave,<br />
+&#xa0;but Dickie paid no attention to him and <b>requested to</b> see the manager.<br />
+Recognizing who the customer was,<br />
+&#xa0;the manager was most apologetic and reprimanded the assistant severely.<br />
+When Dickie was given the watch, he <b>presented the asssistant with</b> the cloth bag.<br />
+It contained 300 dollars in cents.<br />
+He insisted on the assistant's counting the money before he left &#x2013; 30000 cents in all!<br />
+On another occasion,<br />
+&#xa0;he <b>invited a number of important critics to see</b> his private collection of modern paintings.<br />
+This exhibition received a great deal of attention in the press,<br />
+&#xa0;for though the pictures were supposed to be the work of famous artists,<br />
+&#xa0;they had in fact been painted by Dickie.<br />
+It took him four years to stage this <b>elaborate joke</b><br />
+&#xa0;simply to prove that critics do not always know what they are talking about.<br />
+</p>
+</div>
+<div id="outline-container-org925dd5e" class="outline-3">
+<h3 id="org925dd5e">expression</h3>
+<div class="outline-text-3" id="text-org925dd5e">
+<p>
+lovable: [ˈlʌvəb(ə)l] adj.可爱的<br />
+eccentric: [ɪkˈsentrɪk] n.(行为)古怪人<br />
+disregard: [ˌdɪsrɪˈɡɑrd] v. to ignore something or treat it as unimportant不顾,漠视<br />
+convention: [kənˈvenʃ(ə)n] n.习俗,风俗<br />
+conscious: [ˈkɑnʃəs] adj. aware 感觉到的<br />
+invariably: [ɪnˈveriəbli] adv.总是<br />
+routine: [ˌruˈtin] n.常规;惯例<br />
+shrewd: [ʃrud] adj.精明的<br />
+eccentricity: [ˌeksenˈtrɪsəti] n.怪癖<br />
+legendary: [ˈledʒənˌderi] adj.传奇般的<br />
+snob: [snɑb] n.势力小人<br />
+intensely: [ɪn'tensli] adv.强烈地<br />
+bedraggled: [bɪˈdræɡ(ə)ld] adj.拖泥带水的<br />
+dump: [dʌmp] v.把&#x2026;砰的抛下<br />
+apologetic: [əˌpɑləˈdʒetɪk] adj.道歉的<br />
+reprimand: [ˈreprɪˌmænd] v.训斥<br />
+stage: [steɪdʒ] v.n.暗中策划<br />
+elaborate: [ɪˈlæb(ə)rət] adj.精心构思的<br />
+</p>
+
+<p>
+disregard social conventions: 无视社会习俗<br />
+be conscious of (doing) sth.: 意识到做某事<br />
+sb. be conscious that + &#x2026;: 某人意识到+&#x2026;<br />
+daily routine: 日常惯例<br />
+dump sth. on sth.: 扔某物在某物上<br />
+be apologetic about/for sth.: 为某事道歉<br />
+reprimand sb. for (doing) sth.: 斥责某人做某事<br />
+elaborate plan/design/meal: 精心制定计划<br />
+</p>
+<hr />
+<p>
+draw attention to sb.: 引起某人的注意<br />
+win sb. sth.: 赢得某人某物<br />
+add a. to b.: 把A加到B<br />
+up to the time of sth.: 到&#x2026;的时候<br />
+go on foot: 走路<br />
+be caught in: 淋雨<br />
+sb. request to do sth.: 某人请求做某事<br />
+present sb. with sth.: 送某人某物<br />
+invite sb. to do sth.: 邀请某人做某事<br />
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org72881bb" class="outline-3">
+<h3 id="org72881bb">words</h3>
+<div class="outline-text-3" id="text-org72881bb">
+<p>
+lovable [ˈlʌvəbl] adj. 可爱的<br />
+eccentric [ɪkˈsentrɪk] n. (行为)古怪人<br />
+disregard [ˌdɪsrɪˈɡɑːrd] v. 不顾,漠视<br />
+convention [kənˈvenʃ(ə)n] n. 习俗,风俗<br />
+conscious [ˈkɑːnʃəs] adj. 感觉到的,意识到的<br />
+invariably [ɪnˈveriəbli] adv. 总是,经常地<br />
+routine [ruːˈtiːn] n. 常规;惯例<br />
+shrewd [ʃruːd] adj. 精明的<br />
+eccentricity [ˌeksenˈtrɪsəti] n. 怪癖<br />
+legendary [ˈledʒənderi] adj. 传奇般的<br />
+snob [snɑːb] n. 势力小人<br />
+intensely [ɪnˈtensli] adv. 强烈地<br />
+bedraggled [bɪˈdræɡ(ə)ld] adj. 拖泥带水的<br />
+dump [dʌmp] v. 把&#x2026;砰的一声抛下<br />
+apologetic [əˌpɑːləˈdʒetɪk] adj. 道歉的<br />
+reprimand [ˈreprəmænd] v. 训斥<br />
+stage [steɪdʒ] v. 暗中策划<br />
+elaborate [ɪˈlæbərət] adj. 精心构思的<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgd2feeef" class="outline-3">
+<h3 id="orgd2feeef"><span class="done DONE">DONE</span> 单词造句</h3>
+<div class="outline-text-3" id="text-orgd2feeef">
+<p>
+lovable adj.<br />
+</p>
+<ul class="org-ul">
+<li>Our lovable cat grudged taking a shower and put his paw on my hands.<br /></li>
+<li>This lovable girl should be treated with dignity.<br /></li>
+<li>Why does such a lovable kid hold a grudge against you?<br /></li>
+<li>This lovable girl is questioning the wisdom of our ambassador.<br /></li>
+<li>It is disturbing to think that your lovable cat is still at large.<br /></li>
+</ul>
+<p>
+eccentric n.<br />
+</p>
+<ul class="org-ul">
+<li>Our eccentric boss is always asking us to do housework.<br /></li>
+<li>The eccentric man still remained in hiding after the war as well.<br /></li>
+<li>The eccentric found it impossible to get food for free in the restaurant.<br /></li>
+<li>The eccentric billionare thought it his duty to raise money for his country.<br /></li>
+<li>It became an accepted fact<br />
+that the eccentric billionare had gave up his bussiness long before his death.<br /></li>
+</ul>
+<p>
+disregard v.  disregard social conventions<br />
+</p>
+<ul class="org-ul">
+<li>The girl disregarded the advice her relatives given and became a medical student.<br /></li>
+<li>The eccentric was supposed to disregard social conventions.<br /></li>
+<li>The man who disregard social conventions in the town was none other than your son.<br /></li>
+<li>I woke up to find that she disregard all the advice I gave her.<br /></li>
+<li>Every time I disregard the advice my father gave, I fail.<br /></li>
+</ul>
+<p>
+convention n.<br />
+</p>
+<ul class="org-ul">
+<li>It is just social convention that people didn't believe in god in China.<br /></li>
+<li>I felt oblidged to greet him because of social conventions.<br /></li>
+<li>It is social convention that men in the town stay overnight in the hay before Christmas.<br /></li>
+<li>I often question the wisdom of the social convention that people believe in God.<br /></li>
+<li>I refused to follow social convention and took a shower in January.<br /></li>
+</ul>
+<p>
+conscious adj. aware   be conscious of (doing) sth.  sb. be conscious that + &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>The father was conscious that his son hadn't been killed in action.<br /></li>
+<li>I was conscious of your touch me in the hay that night.<br /></li>
+<li>I was conscious that my cat was kidnappered during the night.<br /></li>
+<li>I was conscious that fresh fruits and vegetables are good for me.<br /></li>
+<li>I was conscious that I had made tremendous mistakes in the process.<br /></li>
+</ul>
+<p>
+invariably adv.<br />
+</p>
+<ul class="org-ul">
+<li>In seeking for truth, we invariably make this or that mistake.<br /></li>
+<li>We invariably do our best to chase what we want in our lives.<br /></li>
+<li>We invariably have to judge for ourselves for one reason or another.<br /></li>
+<li>We invariably based our behavior on other's judgements.<br /></li>
+<li>Wether we find a joke funny or not is invariably  bound up with our national characteristics.<br /></li>
+</ul>
+<p>
+routine n.  daily routine<br />
+</p>
+<ul class="org-ul">
+<li>I was influenced by the eccentric who has a busy daily routine.<br /></li>
+<li>In my daily routine, there is a danger that I might miss the train and be late for work.<br /></li>
+<li>In my daily routine, there is no doubt that I read English material every noon.<br /></li>
+<li>In my daily routine, I consoled my patient who was anxiously to leave hospital.<br /></li>
+<li>In my daily routine, I have to pester my colleague to finish task in time.<br /></li>
+</ul>
+<p>
+shrewd adj.<br />
+</p>
+<ul class="org-ul">
+<li>The shrewd businessman never failed to fascinate pretty girls.<br /></li>
+<li>To compensate for his loss, the shrewd bussiman made profit on another occassion.<br /></li>
+<li>The shrewd businessman put his wallet in the microwave oven for safekeeping.<br /></li>
+<li>Imagine his dismay when he knew that his son, a shrewd businessman, was put out of business.<br /></li>
+<li>So long as you give enough money,<br />
+the shrewd businessman will present you with satisfying product.<br /></li>
+</ul>
+<p>
+eccentricity n.<br />
+</p>
+<ul class="org-ul">
+<li>The legendary painting which was made 2 century BC will be on display in the exhibition.<br /></li>
+<li>The poor man was given electric shocks because of his eccentricity.<br /></li>
+<li>Everyone thought that he had a rare disease because of his eccentricity.<br /></li>
+<li>Oddly enough, his eccentricity didn't capture the attention of the reporter.<br /></li>
+<li>We didn't connect his eccentricity to the murder.<br /></li>
+</ul>
+<p>
+legendary adj.<br />
+</p>
+<ul class="org-ul">
+<li>Leo who taught a great many people a course was regard as lengendary.<br /></li>
+<li>The legendary prizefighter soon turned against his pupil.<br /></li>
+<li>It is clear that the legendary player have won the prize for a second time.<br /></li>
+<li>Faker who was regarded as legendary had won the elections over and over again.<br /></li>
+<li>It was not until the 5th season games that the legendary retired.<br /></li>
+</ul>
+<p>
+snob n.<br />
+</p>
+<ul class="org-ul">
+<li>Oddly enough, the snob rose to fame swiftly.<br /></li>
+<li>The snob quarrelled bitterly with a customer who is bedraggled.<br /></li>
+<li>In lighting cigarette, the snob happened to set the curtain on fire.<br /></li>
+<li>The snob made no effort to laught at the poor man.<br /></li>
+<li>Severing a poor lay, the snob lost his temper.<br /></li>
+</ul>
+<p>
+intensely adv.<br />
+</p>
+<ul class="org-ul">
+<li>My wife dislikes to do the dishes intensely.<br /></li>
+<li>His behavior intensely proved that he played truent from school.<br /></li>
+<li>It is clear that your daughter hates you intensely.<br /></li>
+<li>It comes as a surprise to learn that my wife loved me intensely when she was very young.<br /></li>
+<li>On the surface, he loved his wife intensely.<br /></li>
+</ul>
+<p>
+bedraggled adj.<br />
+</p>
+<ul class="org-ul">
+<li>After struck by a heavy shower, she was bedraggled and wet.<br /></li>
+<li>She was so bedraggled that the assistant refused her to enter the store.<br /></li>
+<li>There is no doubt that she was bedraggled when she got back home.<br /></li>
+<li>Because he was bedraggled, he delayed in holding the meeting.<br /></li>
+<li>I woke up to find a bedraggled figure who was touching my arm.<br /></li>
+</ul>
+<p>
+dump v.  dump sth. on sth.<br />
+</p>
+<ul class="org-ul">
+<li>You needn't have dumped the letters on my table.<br /></li>
+<li>After finishing his work, he dumpped his earphone and went out fishing.<br /></li>
+<li>The gangster went through the contents of his bag and dumpped it on the ground.<br /></li>
+<li>There is a danger that the students might dump their books on the ground.<br /></li>
+<li>There is no doubt that the students will dump their books on the ground.<br /></li>
+</ul>
+<p>
+apologetic adj.  be apologetic about/for sth.<br />
+</p>
+<ul class="org-ul">
+<li>I am apologetic for what I have done last night.<br /></li>
+<li>My wife was apologetic about mistakes that she made.<br /></li>
+<li>My wife should be apologetic about works she said just now.<br /></li>
+<li>Technically speaking, the girl was apologetic about the eccentricity of her son in the mall.<br /></li>
+<li>The manager was apologetic about his misunderstanding of the shop assistant.<br /></li>
+</ul>
+<p>
+reprimand v.  reprimand sb. for (doing) sth.<br />
+</p>
+<ul class="org-ul">
+<li>He has never reprimand us for something wrong we did.<br /></li>
+<li>I have the impulse to reprimand him for his error.<br /></li>
+<li>It is illogical to reprimand him for a tiny mistake.<br /></li>
+<li>My parents reprimanded me for staying for dinner at my friend home.<br /></li>
+<li>To my dismay, my boss reprimanded me for what happened last month.<br /></li>
+</ul>
+<p>
+stage v.n.<br />
+</p>
+<ul class="org-ul">
+<li>The sad truth is that the eccentric staged a elaborate joke.<br /></li>
+<li>The museum doesn't have cause to stage an exhibition.<br /></li>
+<li>I am anxious to stage an exhibition in which goods come from all over the world.<br /></li>
+<li>He was expected to stage a successful exhibition.<br /></li>
+<li>There is no doubt that these busmen who retired recently staged a strike.<br /></li>
+</ul>
+<p>
+elaborate adj.  elaborate plan/design/meal<br />
+</p>
+<ul class="org-ul">
+<li>He put forward an elaborate plan from which everyone benefit.<br /></li>
+<li>They devised an elaborate plan to build the project.<br /></li>
+<li>I anticipated that my wife cooked an elaborate meal.<br /></li>
+<li>She cooked such an elaborate meal that she became the head chef in the resturant.<br /></li>
+<li>I must devise an elaborate plan before I take the interview.<br /></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgc8b3e75" class="outline-3">
+<h3 id="orgc8b3e75"><span class="done DONE">DONE</span> vocabulary</h3>
+<div class="outline-text-3" id="text-orgc8b3e75">
+<p>
+deliberately: on purpose, intentionally<br />
+disregard: ignore<br />
+conventions:habits, rules<br />
+conscious: aware<br />
+notable figures; famous people<br />
+shrewd: clever<br />
+elaborate: detailed, carefully planned<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org851e290" class="outline-3">
+<h3 id="org851e290"><span class="done DONE">DONE</span> 反复听电影片段直到懂关键句</h3>
+<div class="outline-text-3" id="text-org851e290">
+</div>
+</div>
+<div id="outline-container-org2ed2754" class="outline-3">
+<h3 id="org2ed2754">复习二册语法(笔记或视频) &amp; 红皮书</h3>
+</div>
+<div id="outline-container-org32a0e51" class="outline-3">
+<h3 id="org32a0e51"><span class="done DONE">DONE</span> 习惯用法造句</h3>
+<div class="outline-text-3" id="text-org32a0e51">
+<p>
+draw attention to sb.<br />
+</p>
+<ul class="org-ul">
+<li>The eccentricity of my cat never fails to draw attention to me.<br /></li>
+<li>The flashing light on the road is used to draw attention to passers-by.<br /></li>
+<li>The agreement which was reached last week drew attention to a detective.<br /></li>
+<li>Leo is trying to draw attention to his young pupils in the class.<br /></li>
+<li>You are supposed to draw attention to the public.<br /></li>
+</ul>
+<p>
+win sb. sth.<br />
+</p>
+<ul class="org-ul">
+<li>The performance the pop singer gave won him loud cheers from the crowd.<br /></li>
+<li>It became an accepted fact that she won her large sums of money in the competition.<br /></li>
+<li>I thought it my duty to win me a gold medal.<br /></li>
+<li>It was none other than Eric who won him a gold medal in Olympics.<br /></li>
+<li>In seeking for truth, he won him a lot of praises.<br /></li>
+</ul>
+<p>
+add a. to b.<br />
+</p>
+<ul class="org-ul">
+<li>He was anxious to add his name to the list.<br /></li>
+<li>I used to add standing in my spare time to my daily routine.<br /></li>
+<li>I found it impossible to add running in afternoon to my daily routine.<br /></li>
+<li>My wife has just added a special type of dress to her shopping cart.<br /></li>
+<li>The man kept his brother in hiding for over fifty years,<br />
+this experience added color to their life.<br /></li>
+</ul>
+<p>
+up to the time of sth.<br />
+</p>
+<ul class="org-ul">
+<li>Up to the time of his death, he devoted himself to garden.<br /></li>
+<li>Up to the time of his death, he dedicated his life to garden.<br /></li>
+<li>Up to the time of his death, he spent large sums of money.<br /></li>
+<li>Up to the time of his death, he was known to people in Florence as Dickie.<br /></li>
+<li>Up to the time of his death, he suffered from serious injury.<br /></li>
+</ul>
+<p>
+go on foot<br />
+</p>
+<ul class="org-ul">
+<li>I would prefer to go on foot rather than take a bus.<br /></li>
+<li>I prefer to go on foot rather than take a bus.<br /></li>
+<li>There was a time when people prefer to go on foot.<br /></li>
+<li>The friend offered to go on foot when the car is full.<br /></li>
+<li>You'd better go on foot or I will tell mom.<br /></li>
+</ul>
+<p>
+be caught in<br />
+</p>
+<ul class="org-ul">
+<li>Afther caught in a snowstorm, we expected a warm welcome at the monastery.<br /></li>
+<li>After caughht in a snowstorm, we made ourselves comfortable in front of fireplace.<br /></li>
+<li>It is anticipated that the bus will be caught in snowstorm.<br /></li>
+<li>These dogs are trained to help people who are caught in snowstorm.<br /></li>
+<li>She complained that she was caught in rainstorm and was bedraggled.<br /></li>
+</ul>
+<p>
+sb. request to do sth.<br />
+</p>
+<ul class="org-ul">
+<li>My wife requested to stay overnight in the hay.<br /></li>
+<li>My wife requested to buy a house in Hangzhou.<br /></li>
+<li>My wife requested to go on vocation to Hainan.<br /></li>
+<li>My wife requested to bring fresh fuirts to her.<br /></li>
+<li>My wife requested to provide her with background music in the restaurant.<br /></li>
+</ul>
+<p>
+present sb. with sth.<br />
+</p>
+<ul class="org-ul">
+<li>I am gonna present my wife with a daimond as big as marble.<br /></li>
+<li>Following my friend's instructions, I presented my wife with my pocket money.<br /></li>
+<li>It gave me the impression that my wife would present me with a media player.<br /></li>
+<li>I am eager to open the box which my wife presented me with yesterday.<br /></li>
+<li>I am gonna present you with a book which I read to you yesterday.<br /></li>
+</ul>
+<p>
+invite sb. to do sth.<br />
+</p>
+<ul class="org-ul">
+<li>She invited her daughter to attend the custom party.<br /></li>
+<li>It is clear that your wife invited this guy to cook dinner.<br /></li>
+<li>Much to my surprise, his wife invited her ex-boyfriend to appear her wedding.<br /></li>
+<li>She has invited him to stay for dinner.<br /></li>
+<li>She has been invited him to stay for dinner.<br /></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgfad3a8d" class="outline-3">
+<h3 id="orgfad3a8d">跟读 50遍</h3>
+</div>
+<div id="outline-container-orgc3a621d" class="outline-3">
+<h3 id="orgc3a621d"><span class="done DONE">DONE</span> Comprehension 反复练习</h3>
+<div class="outline-text-3" id="text-orgc3a621d">
+</div>
+</div>
+<div id="outline-container-org842bb6a" class="outline-3">
+<h3 id="org842bb6a"><span class="done DONE">DONE</span> Ask me if 写+读</h3>
+<div class="outline-text-3" id="text-org842bb6a">
+<ol class="org-ol">
+<li>True eccentrics disregard social conventions. Why<br />
+Why do true eccentrics disregard social conventions?<br /></li>
+<li>Eccentrics add color to the dull routine of everyday life. What<br />
+What do eccentrics add to the dull routine of everyday life?<br /></li>
+<li>Richard Colson was a shrewd and wealthy businessman. What kind of<br />
+What kind of businessman was Richard Colson?<br /></li>
+<li>His eccentricity had become legendary long before he died. When<br />
+When had his eccentricity become legnedary?<br /></li>
+<li>He refused to carry an umbrella. What<br />
+What did he refuse to carry?<br /></li>
+<li>He wanted to buy an expensive watch for his wife. Who<br />
+Who did he want to buy an expensive watch for?<br /></li>
+<li>Dickie asked to see the manager. Why<br />
+Why did Dickie ask to see the manager?<br /></li>
+<li>The cloth bag contained $300 in pennies. What<br />
+What contained $300 in pennies?<br />
+What did the cloth bag contain?<br /></li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orgd6ca5db" class="outline-3">
+<h3 id="orgd6ca5db"><span class="done DONE">DONE</span> 摘要写作 写 &amp; 对答案</h3>
+<div class="outline-text-3" id="text-orgd6ca5db">
+<p>
+After a heavy shower, Dickie walked into an expensive shop<br />
+	where he wanted to a $300 watch for his wife.<br />
+However, he was so bedraggled that an assistant refused to serve him.<br />
+After leaving the shop, Dickie returned carrying a cloth bag<br />
+	which he dumped on the counter.<br />
+As the assistant asked him to leave, Dickie requested to see the manager,<br />
+	who aplogized to him and reprimanded the assistant.<br />
+Dickie insisted on the assistant's counting 30,000 pennies contanied in the cloth bag<br />
+	before he left.<br />
+</p>
+
+<p>
+Dickie had been caught in a heavy shower when he walked into an expensive shop.<br />
+He wanted a $300 watch for his wife,<br />
+	but he was so bedraggled that the assistant refused to serve him.<br />
+He left the shop and returned with a heavy cloth bag which he dumped on the counter.<br />
+Dickie asked for the manager.<br />
+When he was given the watch, he gave the assistant the bag which contained $300 in pennies,<br />
+	which the assistant had to count.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org4e3eba2" class="outline-3">
+<h3 id="org4e3eba2"><span class="done DONE">DONE</span> tell the story 口语复述</h3>
+<div class="outline-text-3" id="text-org4e3eba2">
+</div>
+</div>
+<div id="outline-container-org6fcb243" class="outline-3">
+<h3 id="org6fcb243"><span class="done DONE">DONE</span> composition 阅读 或 写作</h3>
+<div class="outline-text-3" id="text-org6fcb243">
+<p>
+Mr. Chew is a man who has lived in our small town for years.<br />
+He is a large man (some would say 'fat'),<br />
+	he has a round face, a big black moustache and a bald head.<br />
+He always wears the same clothes &#x2013; black trousers, a white shirt and a red waistcoat,<br />
+	and is always polite to everyone he meets.<br />
+He owns an antiques shop near the river, and he lives 'over the shop'.<br />
+No one knows where he gets his things,<br />
+	but there are always lots of different interesting antiques in the shop window every week.<br />
+Mr. Chew is interested in politics, too.<br />
+Every week he puts up strange notices in his shop window to passers-by.<br />
+</p>
+
+<p>
+Usually the notices are trying to make people<br />
+	save a local building or stop a plan to build a road through the town.<br />
+Every time there is a national election,<br />
+	he automatically stands for parliament<br />
+	and gives speeches almost every day in the town park<br />
+	saying what he would do if he were Prime Minister.<br />
+He usually says he would make sure that antiques dealers did not have to pay income Tax<br />
+	and that no cars should be allowed into our little town at all.<br />
+Every year he gets a few votes,<br />
+	but not enough to worry the serious candidates.<br />
+For most people Mr. Chew is a harmless eccentric,<br />
+	and everyone likes talking to him.<br />
+After all, he is someone who adds colour to the dull routine of their daily lives.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org38b497f" class="outline-3">
+<h3 id="org38b497f">Topics for discussion</h3>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,927 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-01-09 Thu 23:35 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-orgb13b0fa" class="outline-2">
+<h2 id="orgb13b0fa">15 state building and the search for order in the seventeenth century</h2>
+<div class="outline-text-2" id="text-orgb13b0fa">
+<p class="verse">
+By the end of the sixteenth century,<br />
+&#xa0;Europe was beginning to experience some decline in religious passions<br />
+&#xa0;&#xa0;and a growing secularization that affected both the political and intellectual worlds.<br />
+Some historians like to speak of the seventeenth century as<br />
+&#xa0;a turning point in the evolution of the modern state system in Europe.<br />
+The ideal of a united Christian Europe<br />
+&#xa0;gave way to the practical realities of a system of secular entities<br />
+&#xa0;&#xa0;in which matters of state took precedence over the salvation of subjects' souls.<br />
+By the seventeenth century,<br />
+&#xa0;the credibility of Christianity had been so weakened through religious wars<br />
+&#xa0;&#xa0;that more and more Europeans came to think of politics in strictly secular terms.<br />
+<br />
+One of the responses to the religious wars and other crises of the time was a yearning for order.<br />
+As the internal social and political rebellions and revolts died down,<br />
+&#xa0;it became apparent<br />
+&#xa0;&#xa0;that the privileged classes of society&#x2014;the aristocrats&#x2014;remained in control,<br />
+&#xa0;&#xa0;&#xa0;although important differences in political forms existed in the various states.<br />
+In many places, the extension of monarchical power was viewed as a stabilizing force.<br />
+This development, which historians have called absolutism or absolute monarchy,<br />
+&#xa0;&#xa0;was most evident in France during the flamboyant reign of Louis XIV,<br />
+&#xa0;widely regarded as the perfect embodiment of an absolute monarch.<br />
+In his memoirs, the duc de Saint-Simon, who had firsthand experience of French court life,<br />
+&#xa0;said that Louis was the very figure of a hero,<br />
+&#xa0;&#xa0;so imbued with a natural but most imposing majesty<br />
+&#xa0;&#xa0;&#xa0;that it appeared even in his most insignificant gestures and movements.<br />
+The king's natural grace gave him a special charm as well:<br />
+&#xa0;He was as dignified and majestic in his dressing gown as when dressed in robes of state,<br />
+&#xa0;&#xa0;or on horseback at the head of his troops.<br />
+His life was orderly:<br />
+&#xa0;Nothing could be regulated with greater exactitude than were his days and hours.<br />
+His self-control was impeccable:<br />
+&#xa0;He did not lose control of himself ten times in his whole life,<br />
+&#xa0;&#xa0;and then only with inferior persons.<br />
+But even absolute monarchs had imperfections, and Saint-Simon had the courage to point them out:<br />
+&#xa0;Louis XIV's vanity was without limit or restraint,<br />
+&#xa0;&#xa0;which led to his distaste for all merit, intelligence, education, and, most of all,<br />
+&#xa0;&#xa0;&#xa0;for all independence of character and sentiment in others,<br />
+&#xa0;&#xa0;&#xa0;&#xa0;as well as his mistakes of judgment in matters of importance.<br />
+<br />
+But absolutism was not the only response to the search for order in the seventeenth century.<br />
+Other states, such as England,<br />
+&#xa0;reacted differently to domestic crisis, and another very different system emerged<br />
+&#xa0;&#xa0;where monarchs were limited by the power of their representative assemblies.<br />
+Absolute and limited monarchy were the two poles of seventeenth-century state building.<br />
+</p>
+</div>
+<div id="outline-container-org8283443" class="outline-3">
+<h3 id="org8283443">expression</h3>
+<div class="outline-text-3" id="text-org8283443">
+<p>
+entity [ˈentəti]: n. formal something that exists as a single and complete unit ⇨ being实体<br />
+credibility [ˌkredɪˈbɪləti]: n. the quality of deserving to be believed and trusted可信性<br />
+yearn [jɜrn] yearning: v.n. literary to have a strong desire for something, especially something that is difficult or impossible to get SYN long渴望<br />
+internal [ɪnˈtɜrn(ə)l]: adj. within a particular country SYN domestic OPP external内在的, 国内的<br />
+extension [ɪkˈstenʃ(ə)n]: n. the process of making a road, building etc bigger or longer, or the part that is added延长<br />
+flamboyant [flæmˈbɔɪənt]: adj. brightly coloured and easily noticed辉煌的<br />
+embodiment [ɪmˈbɑdɪmənt]: n. the embodiment of something someone or something that represents or is very typical of an idea or quality SYN epitome化身<br />
+memoir [ˈmemˌwɑr]: n. a book by someone important and famous in which they write about their life and experiences回忆录<br />
+imposing [imˈpoʊziŋ]: adj. large, impressive, and appearing important壮观的<br />
+majesty [ˈmædʒəsti] majestic: n.adj. the quality that something big has of being impressive, powerful, or beautiful SYN grandeur王权, 雄伟<br />
+gesture [ˈdʒestʃər]: n. a movement of part of your body, especially your hands or head, to show what you mean or how you feel姿态<br />
+grace [ɡreɪs] graceful: n.adj. a smooth way of moving that looks natural, relaxed, and attractive SYN gracefulness优雅<br />
+charm [tʃɑrm] charming: n.adj. a special quality someone or something has that makes people like them, feel attracted to them, or be easily influenced by them – used to show approval ⇨ charming吸引力<br />
+dignified [ˈdiɡniˌfaɪd]: adj. behaving in a calm and serious way, even in a difficult situation, which makes people respect you有威严的<br />
+gown [ɡaʊn]: n. a long loose piece of clothing worn for special ceremonies by judges, teachers, lawyers, and members of universities SYN robe长袍<br />
+robe [roʊb]: n. a long loose piece of clothing, especially one worn for official ceremonies长袍<br />
+regulate [ˈreɡjəˌleɪt]: v. to control an activity or process, especially by rules管制, 控制<br />
+impeccable [ɪmˈpekəb(ə)l]: adj. without any faults and impossible to criticize SYN perfect没有缺点的<br />
+inferior [ɪnˈfɪriər]: adj. not good, or not as good as someone or something else OPP superior下等的, 下级的<br />
+imperfect [ɪmˈpɜrfɪkt] imperfection: adj.n. not completely correct or perfect SYN flawed有缺点的<br />
+restrain [rɪˈstreɪn] restraint: v.n. a rule or principle that limits what people can do克制<br />
+distaste [dɪsˈteɪst]: n. a feeling that something or someone is unpleasant or morally offensive讨厌, 嫌恶<br />
+merit [ˈmerɪt]: n. an advantage or good feature of something优点, 价值<br />
+intelligence [ɪnˈtelɪdʒəns]: n. the ability to learn, understand, and think about things智能,智慧<br />
+sentiment [ˈsentɪmənt]: n. feelings of pity, love, sadness etc that are often considered to be too strong or not suitable for a particular situation SYN emotion情感<br />
+domestic [dəˈmestɪk]: adj. relating to or happening in one particular country and not involving any other countries ⇨ foreign家庭的, 国内的<br />
+assembly [əˈsembli]: n. a group of people who are elected to make decisions or laws for a particular country, area, or organization议会<br />
+</p>
+<hr />
+<p>
+a turning point: 转折点<br />
+the practical realities (of sth.): 某物的实际情况<br />
+take precedence over sth./sb.: 优先于某物/某人<br />
+in strictly secular terms: 在严格世俗角度上<br />
+it becomes apparent that: 某事显而易见<br />
+be imbued with sth.: 充满某物<br />
+lose control of sb.: 失去对某人的控制<br />
+have the courage to do sth.: 有勇气去做某事<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org6983d17" class="outline-3">
+<h3 id="org6983d17">sentence</h3>
+<div class="outline-text-3" id="text-org6983d17">
+<p>
+entity [ˈentəti]: n. formal something that exists as a single and complete unit ⇨ being实体<br />
+</p>
+<ul class="org-ul">
+<li>The manager bought the rest stocks so that the subsidiary became a separate entity.<br /></li>
+<li>After the forest fire was under control, the village had became a separate entity.<br /></li>
+<li>The build which is made of iron and glass used to be viewed as a separate entity.<br /></li>
+</ul>
+<p>
+credibility [ˌkredɪˈbɪləti]: n. the quality of deserving to be believed and trusted可信性<br />
+</p>
+<ul class="org-ul">
+<li>A slip of tongue by no means reduced the credibilty of what he told us.<br /></li>
+<li>We still need to examine the credibility of these reports.<br /></li>
+<li>The manager bought the rest stocks so that the subsidiary became a separate entity.<br /></li>
+</ul>
+<p>
+yearn [jɜrn] yearning: v.n. literary to have a strong desire for something, especially something that is difficult or impossible to get SYN long渴望<br />
+</p>
+<ul class="org-ul">
+<li>His yearning for money led to a serious murder in which he killed his wife who is far older than him.<br /></li>
+<li>When I first ran into my wife, I yearned to ask her out.<br /></li>
+<li>Mr Leo yearns to make a profile so that he can fulfill his dream of setting up an educational empire.<br /></li>
+</ul>
+<p>
+internal [ɪnˈtɜrn(ə)l]: adj. within a particular country SYN domestic OPP external内在的, 国内的<br />
+</p>
+<ul class="org-ul">
+<li>While many English were occupied with internal conflicts, others were exploring outside world.<br /></li>
+<li>The emperor succeeded in starting a war to solve internal conflicts.<br /></li>
+<li>The general is an expert at solving internal conflicts in this way in which he spurs domestic angries towards other country.<br /></li>
+</ul>
+<p>
+extension [ɪkˈstenʃ(ə)n]: n. the process of making a road, building etc bigger or longer, or the part that is added延长<br />
+</p>
+<ul class="org-ul">
+<li>It is said that there will be the extension of metro line 3 in this district.<br /></li>
+<li>The exntension of our passage turned out to be broke by our enemies.<br /></li>
+<li>The sheriff has blamed him for the extension of the apartment which caused three passengers injure in the flood.<br /></li>
+</ul>
+<p>
+flamboyant [flæmˈbɔɪənt]: adj. brightly coloured and easily noticed辉煌的<br />
+</p>
+<ul class="org-ul">
+<li>The general was determined to sack the city, where the flamboyant palace had been burnt down.<br /></li>
+<li>The flaboyant palace inspired awe in people the world over.<br /></li>
+<li>The flamboyant museum was used to be in memory of our heroes who were killed in action.<br /></li>
+</ul>
+<p>
+embodiment [ɪmˈbɑdɪmənt]: n. the embodiment of something someone or something that represents or is very typical of an idea or quality SYN epitome化身<br />
+</p>
+<ul class="org-ul">
+<li>In ancient time, the emperor of a country was regarded as the embodiment of the god.<br /></li>
+<li>The statue regarded as the embodiment of beauty stood two feets high.<br /></li>
+<li>The building fully made of iron and glass was the embodiment of technology and beauty.<br /></li>
+</ul>
+<p>
+memoir [ˈmemˌwɑr]: n. a book by someone important and famous in which they write about their life and experiences回忆录<br />
+</p>
+<ul class="org-ul">
+<li>In his memoir, he was obsessed with the painting of the ceiling in the chapel.<br /></li>
+<li>In his memoir, he had an idea of proceeding his close friend who was guilty of fraud.<br /></li>
+<li>In his memoir, he was underway to spy on his superior.<br /></li>
+</ul>
+<p>
+imposing [imˈpoʊziŋ]: adj. large, impressive, and appearing important壮观的<br />
+</p>
+<ul class="org-ul">
+<li>It is a pity that an imposing figure committed a murder for such tiny money.<br /></li>
+<li>He lost no time in compeleting an imposing building.<br /></li>
+<li>He have the ability to depict any normal buildings as imposing.<br /></li>
+</ul>
+<p>
+majesty [ˈmædʒəsti] majestic: n.adj. the quality that something big has of being impressive, powerful, or beautiful SYN grandeur王权, 雄伟<br />
+</p>
+<ul class="org-ul">
+<li>The majesty of the Alps is beyond description.<br /></li>
+<li>You can feel the majesty of the statue which holds that pose.<br /></li>
+<li>The majesty of the mountain range is millions of years in the making.<br /></li>
+</ul>
+<p>
+gesture [ˈdʒestʃər]: n. a movement of part of your body, especially your hands or head, to show what you mean or how you feel姿态<br />
+</p>
+<ul class="org-ul">
+<li>The shop assistant didn't like his gesture, so he was told that the suit had been sold out.<br /></li>
+<li>His gesture proved graceful, for he captured the attention of many girl in the party.<br /></li>
+<li>When Mr. Leo learnt that his student mimicked his gesture in class, he got very angry.<br /></li>
+</ul>
+<p>
+grace [ɡreɪs] graceful: n.adj. a smooth way of moving that looks natural, relaxed, and attractive SYN gracefulness优雅<br />
+</p>
+<ul class="org-ul">
+<li>A graceful swam is being trapped in the cage.<br /></li>
+<li>A graceful lady received a warm welcome, when she came to work at the first day.<br /></li>
+<li>A graceful lady dressed in block stocking waved to me while my wife was sitting beside me.<br /></li>
+</ul>
+<p>
+charm [tʃɑrm] charming: n.adj. a special quality someone or something has that makes people like them, feel attracted to them, or be easily influenced by them – used to show approval ⇨ charming吸引力<br />
+</p>
+<ul class="org-ul">
+<li>They are charming, aren't they.<br /></li>
+<li>A famous fossil millions of years in the making is extraordinarily charming.<br /></li>
+<li>A charming girl never loses her attraction to her mate.<br /></li>
+</ul>
+<p>
+dignified [ˈdiɡniˌfaɪd]: adj. behaving in a calm and serious way, even in a difficult situation, which makes people respect you有威严的<br />
+</p>
+<ul class="org-ul">
+<li>If you were dignified, you wouldn't be laughed at in your class.<br /></li>
+<li>The warlike knight is so dignified that everyone in the legion is subject to him.<br /></li>
+<li>The dignified father didn't heistate to push his child who played truant from school.<br /></li>
+</ul>
+<p>
+gown [ɡaʊn]: n. a long loose piece of clothing worn for special ceremonies by judges, teachers, lawyers, and members of universities SYN robe长袍<br />
+</p>
+<ul class="org-ul">
+<li>Wearing a graceful gown, he yearned to explain the cospiracy of his enemy to people.<br /></li>
+<li>Dressed in a charming gown, he has the nerve to take the plunge.<br /></li>
+<li>With the gown comes power, and he ordered his men to throw the foods sacks away.<br /></li>
+</ul>
+<p>
+robe [roʊb]: n. a long loose piece of clothing, especially one worn for official ceremonies长袍<br />
+</p>
+<ul class="org-ul">
+<li>The man who wears robe turns out to be our priest.<br /></li>
+<li>The detective could figure out who committed the murder by the special type of robe.<br /></li>
+<li>The type of robes made in Korea becomes popular with Chinese young people these days.<br /></li>
+</ul>
+<p>
+regulate [ˈreɡjəˌleɪt]: v. to control an activity or process, especially by rules管制, 控制<br />
+</p>
+<ul class="org-ul">
+<li>The emporer drew up a set of laws to regulate these states.<br /></li>
+<li>He is the CEO who is sent by our superior to regulate this subsidiary.<br /></li>
+<li>On arriving in China, the elite dispatched a circle of officers to regulate the subsidiary.<br /></li>
+</ul>
+<p>
+impeccable [ɪmˈpekəb(ə)l]: adj. without any faults and impossible to criticize SYN perfect没有缺点的<br />
+</p>
+<ul class="org-ul">
+<li>The breakdown of trust in the leaders led to a difficult sitatuion in which soilders thought of their enemies impeccable.<br /></li>
+<li>The impeccable CEO tends to plan out his project to the last detail.<br /></li>
+<li>The impeccable colossal ship sunk on her first voage, which was regarded as a tremendous tragedy.<br /></li>
+</ul>
+<p>
+inferior [ɪnˈfɪriər]: adj. not good, or not as good as someone or something else OPP superior下等的, 下级的<br />
+</p>
+<ul class="org-ul">
+<li>He deserves a job of inferior status.<br /></li>
+<li>There is a job of inferior status which was paid well.<br /></li>
+<li>My father urged me to accept a job of inferior status.<br /></li>
+</ul>
+<p>
+imperfect [ɪmˈpɜrfɪkt] imperfection: adj.n. not completely correct or perfect SYN flawed有缺点的<br />
+</p>
+<ul class="org-ul">
+<li>I'm curious to find out what his imperfection is.<br /></li>
+<li>The imperfection of our enemies is their breakdown of trust in their emperor.<br /></li>
+<li>More recently, the imperfect project have run smoothly.<br /></li>
+</ul>
+<p>
+restrain [rɪˈstreɪn] restraint: v.n. a rule or principle that limits what people can do克制<br />
+</p>
+<ul class="org-ul">
+<li>It seems that your child plays truant from school without restraint.<br /></li>
+<li>He realized to his horror that his wife tended to waste money without restrain.<br /></li>
+<li>The healthy alarm was given because he stay overnight without restrain.<br /></li>
+</ul>
+<p>
+distaste [dɪsˈteɪst]: n. a feeling that something or someone is unpleasant or morally offensive讨厌, 嫌恶<br />
+</p>
+<ul class="org-ul">
+<li>His distaste of intellectuals led to a serious revolts.<br /></li>
+<li>More recently, he paid for his distate of his teachers.<br /></li>
+<li>The distate of his teachers is the price to the bad grade.<br /></li>
+</ul>
+<p>
+merit [ˈmerɪt]: n. an advantage or good feature of something优点, 价值<br />
+</p>
+<ul class="org-ul">
+<li>The gentleman has the merit of a sense of humor.<br /></li>
+<li>He has the merit of speaking well in public.<br /></li>
+<li>My cat has the merit of hygiene obsessed.<br /></li>
+</ul>
+<p>
+intelligence [ɪnˈtelɪdʒəns]: n. the ability to learn, understand, and think about things智能,智慧<br />
+</p>
+<ul class="org-ul">
+<li>To be fluent in English, you need a reasonable level of intelligence.<br /></li>
+<li>My cat was able to prise it up at last, which showed her a level of intelligence.<br /></li>
+<li>I never undermine my faith in the intelligence of my child.<br /></li>
+</ul>
+<p>
+sentiment [ˈsentɪmənt]: n. feelings of pity, love, sadness etc that are often considered to be too strong or not suitable for a particular situation SYN emotion情感<br />
+</p>
+<ul class="org-ul">
+<li>He continued to neglect his wife's sentiment, which caused his wife cheat on her.<br /></li>
+<li>The man who paid a ransom of 1000 dollars was susceptible to other's sentiment.<br /></li>
+<li>The woman susceptible to other's sentiment has been contributing to a local school.<br /></li>
+</ul>
+<p>
+domestic [dəˈmestɪk]: adj. relating to or happening in one particular country and not involving any other countries ⇨ foreign家庭的, 国内的<br />
+</p>
+<ul class="org-ul">
+<li>The domestic conflicts proved complicated, for it was associate with a large sum of money.<br /></li>
+<li>The domestic quarrel in the monarchs led to the breakdown of subjects of trust in them.<br /></li>
+<li>The police in China are said to be good at handling domestic conflicts.<br /></li>
+</ul>
+<p>
+assembly [əˈsembli]: n. a group of people who are elected to make decisions or laws for a particular country, area, or organization议会<br />
+</p>
+<ul class="org-ul">
+<li>The assembly raised fundamental issues about the value and importance of individuals.<br /></li>
+<li>The assembly drew up a set of laws prohibiting digging up the coffin.<br /></li>
+<li>The assembly will have been helding for three weeks.<br /></li>
+</ul>
+<hr />
+<p>
+a turning point: 转折点<br />
+</p>
+<ul class="org-ul">
+<li>As a turning point, his inferiors gradually learnt that he had had a skeleton in cupborad.<br /></li>
+<li>As a turning point, the cooker poisoned his wife who threatened to turn him in.<br /></li>
+<li>As a turning point, the emperor lost his control of the city because of the Asiatic nomads.<br /></li>
+</ul>
+<p>
+the practical realities (of sth.): 某物的实际情况<br />
+</p>
+<ul class="org-ul">
+<li>Sir, I've forgotten my key. This is the practical realities of why I was climbing the ladder against the window.<br /></li>
+<li>The practical realities of so-call sales is another pyramid scheme.<br /></li>
+<li>The practical realities of the accident is an elaborated murder.<br /></li>
+</ul>
+<p>
+take precedence over sth./sb.: 优先于某物/某人<br />
+</p>
+<ul class="org-ul">
+<li>Let our child play video games as much as he wants, he would let it take precedence over study.<br /></li>
+<li>With having fun taking precedence over his work, he was put out of business.<br /></li>
+<li>While he was competing with other merchants, the profit he made took precedence over his status in social.<br /></li>
+</ul>
+<p>
+in strictly secular terms: 在严格世俗角度上<br />
+</p>
+<ul class="org-ul">
+<li>I hate to think of everything about in strictly secular terms.<br /></li>
+<li>The project by no means let us make a profit in strictly secular terms.<br /></li>
+<li>We don't need to contribute to stary children in strictly secular terms.<br /></li>
+</ul>
+<p>
+it becomes apparent that: 某事显而易见<br />
+</p>
+<ul class="org-ul">
+<li>It became apparent that the diamond had been stolen at the airport.<br /></li>
+<li>It became apparent that the snake could not tell the difference between India music and jazz.<br /></li>
+<li>It became apparent that he had five cats in all.<br /></li>
+</ul>
+<p>
+be imbued with sth.: 充满某物<br />
+</p>
+<ul class="org-ul">
+<li>Imbued with grace, he offered his seat to a young lady.<br /></li>
+<li>Imbued with honor, he defended his lord against these masses in the rebellions.<br /></li>
+<li>Imbued with horror, she covered herself with three sheets of blankets.<br /></li>
+</ul>
+<p>
+lose control of sb.: 失去对某人的控制<br />
+</p>
+<ul class="org-ul">
+<li>Losing control of the snake, he was bited by snake and sent to hospital in emergency.<br /></li>
+<li>Losing control of his inferiors, he was sensetive to accept these criticisms.<br /></li>
+<li>Losing control of his armies, he was suseptitle to the revolts in the capital.<br /></li>
+</ul>
+<p>
+have the courage to do sth.: 有勇气去做某事<br />
+</p>
+<ul class="org-ul">
+<li>I have the courage to accept criticisms of our masses in public.<br /></li>
+<li>She has the courage to lose control of the armies.<br /></li>
+<li>The explorer has the courage to take hazardous voyage across the Atlantic.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orga88ca5f" class="outline-3">
+<h3 id="orga88ca5f">sentence2</h3>
+<div class="outline-text-3" id="text-orga88ca5f">
+<p>
+entity [ˈentəti]: n. formal something that exists as a single and complete unit ⇨ being实体<br />
+</p>
+<ul class="org-ul">
+<li>The manager bought the rest stocks so that the subsidiary became a separate entity.<br /></li>
+<li>After the forest fire was under control, the village became a separate entity.<br /></li>
+<li>The building which is made of iron and glass used to be viewed as a separate entity.<br /></li>
+</ul>
+<p>
+credibility [ˌkredɪˈbɪləti]: n. the quality of deserving to be believed and trusted可信性<br />
+</p>
+<ul class="org-ul">
+<li>A slip of the tongue by no means reduced the credibility of what he told us.<br /></li>
+<li>We still need to examine the credibility of these reports.<br /></li>
+<li>The manager bought the rest stocks so that the subsidiary became a separate entity.<br /></li>
+</ul>
+<p>
+yearn [jɜrn] yearning: v.n. literary to have a strong desire for something, especially something that is difficult or impossible to get SYN long渴望<br />
+</p>
+<ul class="org-ul">
+<li>His yearning for money led to a serious murder in which he killed his wife who is far older than him.<br /></li>
+<li>When I first ran into my wife, I yearned to ask her out.<br /></li>
+<li>Mr Leo yearns to make a profile so that he can fulfill his dream of setting up an educational empire.<br /></li>
+</ul>
+<p>
+internal [ɪnˈtɜrn(ə)l]: adj. within a particular country SYN domestic OPP external内在的, 国内的<br />
+</p>
+<ul class="org-ul">
+<li>While many English were occupied with internal conflicts, others were exploring the outside world.<br /></li>
+<li>The emperor succeeded in starting a war to solve internal conflicts.<br /></li>
+<li>The general is an expert at solving internal conflicts in this way in which he spurs domestic anger towards other countries.<br /></li>
+</ul>
+<p>
+extension [ɪkˈstenʃ(ə)n]: n. the process of making a road, building etc bigger or longer, or the part that is added延长<br />
+</p>
+<ul class="org-ul">
+<li>It is said that there will be an extension of metro line 3 in this district.<br /></li>
+<li>The extension of our passage turned out to be broken by our enemies.<br /></li>
+<li>The sheriff has blamed him for the extension of the apartment which caused three passengers injured in the flood.<br /></li>
+</ul>
+<p>
+flamboyant [flæmˈbɔɪənt]: adj. brightly coloured and easily noticed辉煌的<br />
+</p>
+<ul class="org-ul">
+<li>The general was determined to sack the city, where the flamboyant palace had been burnt down.<br /></li>
+<li>The flamboyant palace inspired awe in people the world over.<br /></li>
+<li>The flamboyant museum was in memory of our heroes who were killed in action.<br /></li>
+</ul>
+<p>
+embodiment [ɪmˈbɑdɪmənt]: n. the embodiment of something someone or something that represents or is very typical of an idea or quality SYN epitome化身<br />
+</p>
+<ul class="org-ul">
+<li>In ancient times, the emperor of a country was regarded as the embodiment of the god.<br /></li>
+<li>The statue regarded as the embodiment of beauty stood two feet high.<br /></li>
+<li>The building fully made of iron and glass was the embodiment of technology and beauty.<br /></li>
+</ul>
+<p>
+memoir [ˈmemˌwɑr]: n. a book by someone important and famous in which they write about their life and experiences回忆录<br />
+</p>
+<ul class="org-ul">
+<li>In his memoir, he was obsessed with the painting of the ceiling in the chapel.<br /></li>
+<li>In his memoir, he had an idea of proceeding against his close friend who was guilty of fraud.<br /></li>
+<li>In his memoir, he was underway to spy on his superior.<br /></li>
+</ul>
+<p>
+imposing [imˈpoʊziŋ]: adj. large, impressive, and appearing important壮观的<br />
+</p>
+<ul class="org-ul">
+<li>It is a pity that an imposing figure committed a murder for such tiny money.<br /></li>
+<li>He lost no time in completing an imposing building.<br /></li>
+<li>He has the ability to depict any normal buildings as imposing.<br /></li>
+</ul>
+<p>
+majesty [ˈmædʒəsti] majestic: n.adj. the quality that something big has of being impressive, powerful, or beautiful SYN grandeur王权, 雄伟<br />
+</p>
+<ul class="org-ul">
+<li>The majesty of the Alps is beyond description.<br /></li>
+<li>You can feel the majesty of the statue which holds that pose.<br /></li>
+<li>The majesty of the mountain range is millions of years in the making.<br /></li>
+</ul>
+<p>
+gesture [ˈdʒestʃər]: n. a movement of part of your body, especially your hands or head, to show what you mean or how you feel姿态<br />
+</p>
+<ul class="org-ul">
+<li>The shop assistant didn't like his gesture, so he was told that the suit had been sold out.<br /></li>
+<li>His gesture proved graceful, for he captured the attention of many girls in the party.<br /></li>
+<li>When Mr. Leo learned that his student mimicked his gesture in class, he got very angry.<br /></li>
+</ul>
+<p>
+grace [ɡreɪs] graceful: n.adj. a smooth way of moving that looks natural, relaxed, and attractive SYN gracefulness优雅<br />
+</p>
+<ul class="org-ul">
+<li>A graceful swam is being trapped in the cage.<br /></li>
+<li>A graceful lady received a warm welcome when she came to work on the first day.<br /></li>
+<li>A graceful lady dressed in block stocking waved to me while my wife was sitting beside me.<br /></li>
+</ul>
+<p>
+charm [tʃɑrm] charming: n.adj. a special quality someone or something has that makes people like them, feel attracted to them, or be easily influenced by them – used to show approval ⇨ charming吸引力<br />
+</p>
+<ul class="org-ul">
+<li>They are charming, aren't they?<br /></li>
+<li>A famous fossil millions of years in the making is extraordinarily charming.<br /></li>
+<li>A charming girl never loses her attraction to her mate.<br /></li>
+</ul>
+<p>
+dignified [ˈdiɡniˌfaɪd]: adj. behaving in a calm and serious way, even in a difficult situation, which makes people respect you有威严的<br />
+</p>
+<ul class="org-ul">
+<li>If you were dignified, you wouldn't be laughed at in your class.<br /></li>
+<li>The warlike knight is so dignified that everyone in the legion is subject to him.<br /></li>
+<li>The dignified father didn't hesitate to push his child who played truant from school.<br /></li>
+</ul>
+<p>
+gown [ɡaʊn]: n. a long loose piece of clothing worn for special ceremonies by judges, teachers, lawyers, and members of universities SYN robe长袍<br />
+</p>
+<ul class="org-ul">
+<li>Wearing a graceful gown, he yearned to explain the conspiracy of his enemy to people.<br /></li>
+<li>Dressed in a charming gown, he has the nerve to take the plunge.<br /></li>
+<li>With the gown came power, and he ordered his men to throw the food sacks away.<br /></li>
+</ul>
+<p>
+robe [roʊb]: n. a long loose piece of clothing, especially one worn for official ceremonies长袍<br />
+</p>
+<ul class="org-ul">
+<li>The man who wears a robe turns out to be our priest.<br /></li>
+<li>The detective could figure out who committed the murder by the special type of robe.<br /></li>
+<li>The type of robes made in Korea become popular with Chinese young people these days.<br /></li>
+</ul>
+<p>
+regulate [ˈreɡjəˌleɪt]: v. to control an activity or process, especially by rules管制, 控制<br />
+</p>
+<ul class="org-ul">
+<li>The Emporer drew up a set of laws to regulate these states.<br /></li>
+<li>He is the CEO who is sent by our superior to regulate this subsidiary.<br /></li>
+<li>On arriving in China, the elite dispatched a circle of officers to regulate the subsidiary.<br /></li>
+</ul>
+<p>
+impeccable [ɪmˈpekəb(ə)l]: adj. without any faults and impossible to criticize SYN perfect没有缺点的<br />
+</p>
+<ul class="org-ul">
+<li>The breakdown of trust in the leaders led to a difficult situation in which soldiers thought their enemies were impeccable.<br /></li>
+<li>The impeccable CEO tends to plan out his project to the last detail.<br /></li>
+<li>The impeccable colossal ship sunk on her first voyage, which was regarded as a tremendous tragedy.<br /></li>
+</ul>
+<p>
+inferior [ɪnˈfɪriər]: adj. not good, or not as good as someone or something else OPP superior下等的, 下级的<br />
+</p>
+<ul class="org-ul">
+<li>He deserves a job of inferior status.<br /></li>
+<li>There is a job of inferior status that was paid well.<br /></li>
+<li>My father urged me to accept a job of inferior status.<br /></li>
+</ul>
+<p>
+imperfect [ɪmˈpɜrfɪkt] imperfection: adj.n. not completely correct or perfect SYN flawed有缺点的<br />
+</p>
+<ul class="org-ul">
+<li>I'm curious to find out what his imperfection is.<br /></li>
+<li>The imperfection of our enemies is their breakdown of trust in their emperor.<br /></li>
+<li>More recently, the imperfect project has run smoothly.<br /></li>
+</ul>
+<p>
+restrain [rɪˈstreɪn] restraint: v.n. a rule or principle that limits what people can do克制<br />
+</p>
+<ul class="org-ul">
+<li>It seems that your child plays truant from school without restraint.<br /></li>
+<li>He realized to his horror that his wife tended to waste money without restraint.<br /></li>
+<li>The health alarm was given because he stayed overnight without restraint.<br /></li>
+</ul>
+<p>
+distaste [dɪsˈteɪst]: n. a feeling that something or someone is unpleasant or morally offensive讨厌, 嫌恶<br />
+</p>
+<ul class="org-ul">
+<li>His distaste for intellectuals led to a serious revolt.<br /></li>
+<li>More recently, he paid for his distaste for his teachers.<br /></li>
+<li>The distaste of his teachers is the price of the bad grades.<br /></li>
+</ul>
+<p>
+merit [ˈmerɪt]: n. an advantage or good feature of something优点, 价值<br />
+</p>
+<ul class="org-ul">
+<li>The gentleman has the merit of a sense of humor.<br /></li>
+<li>He has the merit of speaking well in public.<br /></li>
+<li>My cat has the merit of being hygiene-obsessed.<br /></li>
+</ul>
+<p>
+intelligence [ɪnˈtelɪdʒəns]: n. the ability to learn, understand, and think about things智能,智慧<br />
+</p>
+<ul class="org-ul">
+<li>To be fluent in English, you need a reasonable level of intelligence.<br /></li>
+<li>My cat was able to prise it up at last, which showed her a level of intelligence.<br /></li>
+<li>I never undermine my faith in the intelligence of my child.<br /></li>
+</ul>
+<p>
+sentiment [ˈsentɪmənt]: n. feelings of pity, love, sadness etc that are often considered to be too strong or not suitable for a particular situation SYN emotion情感<br />
+</p>
+<ul class="org-ul">
+<li>He continued to neglect his wife's sentiment, which caused his wife to cheat on her.<br /></li>
+<li>The man who paid a ransom of 1000 dollars was susceptible to other's sentiments.<br /></li>
+<li>The woman susceptible to other's sentiments has been contributing to a local school.<br /></li>
+</ul>
+<p>
+domestic [dəˈmestɪk]: adj. relating to or happening in one particular country and not involving any other countries ⇨ foreign家庭的, 国内的<br />
+</p>
+<ul class="org-ul">
+<li>The domestic conflicts proved complicated, for it was associated with a large sum of money.<br /></li>
+<li>The domestic quarrel in the monarchs led to the breakdown of subjects of trust in them.<br /></li>
+<li>The police in China are said to be good at handling domestic conflicts.<br /></li>
+</ul>
+<p>
+assembly [əˈsembli]: n. a group of people who are elected to make decisions or laws for a particular country, area, or organization议会<br />
+</p>
+<ul class="org-ul">
+<li>The assembly raised fundamental issues about the value and importance of individuals.<br /></li>
+<li>The assembly drew up a set of laws prohibiting digging up the coffin.<br /></li>
+<li>The assembly will have been being held for three weeks.<br /></li>
+</ul>
+<hr />
+<p>
+a turning point: 转折点<br />
+</p>
+<ul class="org-ul">
+<li>As a turning point, his inferiors gradually learned that he had had a skeleton in the cupboard.<br /></li>
+<li>As a turning point, the cooker poisoned his wife who threatened to turn him in.<br /></li>
+<li>As a turning point, the emperor lost his control of the city because of the Asiatic nomads.<br /></li>
+</ul>
+<p>
+the practical reality (of sth.): 某物的实际情况<br />
+</p>
+<ul class="org-ul">
+<li>Sir, I've forgotten my key. This is the practical reality of why I was climbing the ladder against the window.<br /></li>
+<li>The practical reality of so-called sales is another pyramid scheme.<br /></li>
+<li>The practical reality of the accident on the surface is an elaborated murder.<br /></li>
+</ul>
+<p>
+take precedence over sth./sb.: 优先于某物/某人<br />
+</p>
+<ul class="org-ul">
+<li>Let our child play video games as much as he wants, he would let it take precedence over study.<br /></li>
+<li>With having fun taking precedence over his work, he was put out of business.<br /></li>
+<li>While he was competing with other merchants, the profit he made took precedence over his social status.<br /></li>
+</ul>
+<p>
+in strictly secular terms: 在严格世俗角度上<br />
+</p>
+<ul class="org-ul">
+<li>I hate to think of everything about moeny in strictly secular terms.<br /></li>
+<li>The project by no means lets us make a profit in strictly secular terms.<br /></li>
+<li>We don't need to contribute to stary children in strictly secular terms.<br /></li>
+</ul>
+<p>
+it becomes apparent that: 某事显而易见<br />
+</p>
+<ul class="org-ul">
+<li>It became apparent that the diamond had been stolen at the airport.<br /></li>
+<li>It became apparent that the snake could not tell the difference between Indian music and jazz.<br /></li>
+<li>It became apparent that he had five cats in all.<br /></li>
+</ul>
+<p>
+be imbued with sth.: 充满某物<br />
+</p>
+<ul class="org-ul">
+<li>Imbued with grace, he offered his seat to a young lady.<br /></li>
+<li>Imbued with honor, he defended his lord against these masses in the rebellions.<br /></li>
+<li>Imbued with horror, she covered herself with three sheets of blankets.<br /></li>
+</ul>
+<p>
+lose control of sb.: 失去对某人的控制<br />
+</p>
+<ul class="org-ul">
+<li>Losing control of the snake, he was bitten by the snake and sent to the hospital in an emergency.<br /></li>
+<li>Losing control of his inferiors, he was sensitive to accept these criticisms.<br /></li>
+<li>Losing control of his armies, he was susceptible to the revolts in the capital.<br /></li>
+</ul>
+<p>
+have the courage to do sth.: 有勇气去做某事<br />
+</p>
+<ul class="org-ul">
+<li>I have the courage to accept criticisms of our masses in public.<br /></li>
+<li>She has the courage to lose control of the armies.<br /></li>
+<li>The explorer has the courage to take a hazardous voyage across the Atlantic.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgb88944e" class="outline-3">
+<h3 id="orgb88944e">summary</h3>
+<div class="outline-text-3" id="text-orgb88944e">
+<p>
+By the end of sixteenth century, decline in religious passions paralleled a growing secularization.<br />
+The ideal of a united Christian Europe<br />
+	gave way to practical realities of a system of secular entities.<br />
+By the seventeenth century,<br />
+	the credibility of Christianity had been so weakened through religious wars<br />
+		that more and more Europeans came to think of politics in strictly secular terms.<br />
+As the internal social and political rebellions and revolts died down,<br />
+	the aristocrats reminded in control differently in the various states.<br />
+In many places, the extension of monarchical power called absolutism began.<br />
+It was so evident in France during the reign of Louis XIV<br />
+	that he was regarded as the perfect embodiment of absolutism.<br />
+In his memoirs, he was imbued with a natural but most imposing majesty.<br />
+Not only was his life orderly,<br />
+	but his self-control was so impeccable<br />
+		that he didn't lost control of himself ten times in his life.<br />
+As it is, he also had imperfections such as his unlimited vanity,<br />
+	distate for all merit,<br />
+		intelligence, education, and all independence of character and sentiment in others,<br />
+	as well as his mistaken judgement in important matters.<br />
+Beside, other states, such as English, developed another different system<br />
+	where monarchs were limited by the power of their representative assemblies.<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgb32bacf" class="outline-3">
+<h3 id="orgb32bacf">summary2</h3>
+<div class="outline-text-3" id="text-orgb32bacf">
+<p>
+By the end of the sixteenth century,<br />
+	the decline in religious passions paralleled a growing secularization.<br />
+The ideal of a united Christian Europe<br />
+	gave way to the practical realities of a system of secular entities.<br />
+By the seventeenth century,<br />
+	the credibility of Christianity had been so weakened through religious wars<br />
+		that more and more Europeans came to think of politics in strictly secular terms.<br />
+As the internal social and political rebellions and revolts died down,<br />
+	the aristocrats remained in control differently in the various states.<br />
+In many places, the extension of monarchical power called absolutism began.<br />
+It was so evident in France during the reign of Louis XIV<br />
+	that he was regarded as the perfect embodiment of absolutism.<br />
+In his memoirs, he was imbued with a natural but most imposing majesty.<br />
+Not only was his life orderly,<br />
+	but his self-control was so impeccable<br />
+		that he didn't lose control of himself ten times in his life.<br />
+As it is, he also had imperfections such as his unlimited vanity,<br />
+	distaste for all merit,<br />
+		intelligence, education, and all independence of character and sentiment in others,<br />
+	as well as his mistaken judgment in important matters.<br />
+Besides, other states, such as England, developed another different system<br />
+	where monarchs were limited by the power of their representative assemblies.<br />
+</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

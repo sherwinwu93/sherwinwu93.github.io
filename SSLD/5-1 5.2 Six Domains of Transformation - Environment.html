@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-01-23 Thu 15:30 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-orgea992c8" class="outline-2">
+<h2 id="orgea992c8">5-1 5.2 Six Domains of Transformation - Environment</h2>
+<div class="outline-text-2" id="text-orgea992c8">
+<p class="verse">
+Right, so you know in this day and age we have so many social connections and relationships,<br />
+&#xa0;some of which ultimately might just fizzle out.<br />
+It really just can't last, are time-limited like you said.<br />
+Or the other ones I imagine in order for them to possess really have to be transformed.<br />
+So what is involved in transforming a relationship?<br />
+<br />
+Well, like maybe we will first offer a conceptual framework for understanding this.<br />
+And then like we can also get to<br />
+&#xa0;sort of like be more practical aspect of how to manage those transformation.<br />
+Well, in the SSLD model obviously, we talk about human life as having six domains.<br />
+And first aspect would be the environment, the reality that we find ourselves in.<br />
+So when we are making a drastic transformation in a relationship.<br />
+Say for example if two persons who are living together who are married<br />
+&#xa0;and then they decide that they are not going to live together any more.<br />
+Or they're going to be separated.<br />
+Then obviously the physical environment changes.<br />
+Like you are not sleeping on the same bed anymore.<br />
+You're not living in the same house any more.<br />
+Or you have people who get resettled to another city or another country.<br />
+Then again, the very physical reality of the relationship would be changed.<br />
+So when do you do that, you know. you have to deal with, to manage like the implication of this.<br />
+You may say for example, you used to get rides to work and now you don't get it anymore.<br />
+You may have to get a bike and go to work.<br />
+<br />
+And then the other thing is when you go through this transformation,<br />
+&#xa0;the other aspect of external reality that's really important<br />
+&#xa0;&#xa0;is the social scripts that govern this transformation.<br />
+Say for example, in the West, in most situations<br />
+&#xa0;when you are separated or when you break up with someone, or when you get divorced,<br />
+&#xa0;&#xa0;many of the social obligations will almost automatically be removed, right.<br />
+If someone told you that like I'm breaking up with you<br />
+&#xa0;then you can almost safely assume<br />
+&#xa0;&#xa0;that you don't need to go to his mother's birthday party next February.<br />
+So that's the kind of social scripts that sort of direct people, but as we have said before,<br />
+&#xa0;you know like how do people follow those scripts is pretty much like personal choice as well.<br />
+<br />
+In SSLD, the six domains of human life<br />
+&#xa0;is a comprehensive framework for understanding human experience within its social context.<br />
+One of the domains introduced here is environment and social reality,<br />
+&#xa0;which for instance could be the physical environment.<br />
+One of the aspects of external reality that's really important in governing a transformation<br />
+&#xa0;is social script.<br />
+Social scripts direct and govern people or their lives<br />
+&#xa0;and it's interesting to also look at how they choose to follow these scripts.<br />
+</p>
+</div>
+<div id="outline-container-orgf6b344f" class="outline-3">
+<h3 id="orgf6b344f">expression</h3>
+<div class="outline-text-3" id="text-orgf6b344f">
+<p>
+drastic [ˈdræstɪk]: adj. extreme and sudden急剧的<br />
+implication [ˌɪmplɪˈkeɪʃ(ə)n]: n. a possible future effect or result of an action, event, decision etc可能的影响(作用)<br />
+obligation [ˌɑblɪˈɡeɪʃ(ə)n]: n. a moral or legal duty to do something义务<br />
+</p>
+<hr />
+<p>
+fizzle out [ˈfɪz(ə)l]: to gradually end, often in a disappointing or weak way逐渐消散<br />
+break up with sb.: 和某人分手<br />
+get rides to do sth.: 搭顺风车去做某事<br />
+As sb. has said/known &#x2026;, + &#x2026;: 正如某人说过/知道&#x2026;, &#x2026;<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgf8ec08a" class="outline-3">
+<h3 id="orgf8ec08a">ch.</h3>
+<div class="outline-text-3" id="text-orgf8ec08a">
+<p>
+5-1 5.2 六个转变领域 - 环境<br />
+好的，所以你知道，在当今时代，我们有这么多的社会联系和人际关系，其中有些关系最终可能会逐渐消失，真的无法长久，就像你说的那样是有时间限制的。<br />
+或者我想，其他一些关系为了继续下去，必须经历某种转变。<br />
+那么，转变一段关系到底涉及什么呢？<br />
+嗯，也许我们可以首先提供一个概念框架来理解这一点。<br />
+然后，我们也可以更实际地探讨如何管理这些转变。<br />
+在SSLD模型中，我们显然将人类生活分为六个领域。<br />
+第一个方面是环境，也就是我们所处的现实世界。<br />
+因此，当我们在一段关系中进行重大转变时，比如说，两个人住在一起，结了婚，然后他们决定不再住在一起了，或者决定分开。<br />
+那么，显然，物理环境会发生变化。<br />
+比如你不再睡在同一张床上了。<br />
+你们不再住在同一间房子里了。<br />
+或者有人搬到另一个城市，另一个国家。<br />
+那么，同样，关系的物理现实也会发生改变。<br />
+所以当你这么做时，你知道，你必须处理和管理这些转变带来的影响。<br />
+举个例子，你以前可能有人载你上班，现在就没有了。<br />
+你可能需要买一辆自行车去上班。<br />
+然后，当你经历这种转变时，另一个非常重要的外部现实方面是管理这种转变的社会脚本。<br />
+比如说，在西方，在大多数情况下，当你分手或离婚时，许多社会义务几乎会自动解除，对吧。<br />
+如果有人告诉你“我和你分手了”，那么你几乎可以肯定你不需要参加他母亲明年二月的生日派对了。<br />
+这就是那种指导人们行为的社会脚本，但正如我们之前所说的，人们如何遵循这些脚本基本上还是个人的选择。<br />
+在SSLD中，人类生活的六个领域是一个全面的框架，用于理解人类在社会背景中的经验。<br />
+这里介绍的一个领域是环境和社会现实，例如物理环境。<br />
+一个非常重要的外部现实方面是社会脚本。<br />
+社会脚本指导和规范人们的生活。<br />
+同时，观察人们如何选择遵循这些脚本也是一件非常有趣的事情。<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org3f956c2" class="outline-3">
+<h3 id="org3f956c2">sentence</h3>
+<div class="outline-text-3" id="text-org3f956c2">
+<p>
+drastic [ˈdræstɪk]: adj. extreme and sudden急剧的<br />
+</p>
+<ul class="org-ul">
+<li>What is most remarkable about this country is a drastic transformation it has made decades.<br /></li>
+<li>The soldier is doing drastic action hitting the surface of tank.<br /></li>
+<li>The empire threatens drastic action towards its neigbor countries.<br /></li>
+</ul>
+<p>
+implication [ˌɪmplɪˈkeɪʃ(ə)n]: n. a possible future effect or result of an action, event, decision etc可能的影响(作用)<br />
+</p>
+<ul class="org-ul">
+<li>The oil is flowing with the house, so you must deal with the implication of it.<br /></li>
+<li>The army is composed of mutilated soldiers, you should think about the implication of it on the battlefield.<br /></li>
+<li>You should consider the implication of executing people that are the basic building block of the camp.<br /></li>
+</ul>
+<p>
+obligation [ˌɑblɪˈɡeɪʃ(ə)n]: n. a moral or legal duty to do something义务<br />
+</p>
+<ul class="org-ul">
+<li>My aunt carried obligation to take care of me when I was in high school.<br /></li>
+<li>You have an obligation to clean up the foods in the back of our fridge.<br /></li>
+<li>She claimed that she had no obligation to wash the fridge.<br /></li>
+</ul>
+<hr />
+<p>
+fizzle out [ˈfɪz(ə)l]: to gradually end, often in a disappointing or weak way逐渐消散<br />
+</p>
+<ul class="org-ul">
+<li>The relationship between me and my friend at kindergarten has already fizzled out.<br /></li>
+<li>The fossil, millions of years in the making, has fizzled out after the operation.<br /></li>
+<li>The mummy is fizzling out because of the failure of the operation.<br /></li>
+</ul>
+<p>
+break up with sb.: 和某人分手<br />
+</p>
+<ul class="org-ul">
+<li>As long as you break up with Mike, your child will only be a gleam in your eyes.<br /></li>
+<li>The beautiful woman broke up with an explorer who often risks his life on the flanks of volcanoes.<br /></li>
+<li>Phibee has to break up with her boyfriend who is hired by a Russian university.<br /></li>
+</ul>
+<p>
+get rides to do sth.: 搭顺风车去做某事<br />
+</p>
+<ul class="org-ul">
+<li>Needless to say, I get rides to work.<br /></li>
+<li>If you break up with me, you can't get rides to go to school anymore.<br /></li>
+<li>My wife used to get rides to go to school.<br /></li>
+</ul>
+<p>
+As sb. has said/known &#x2026;, + &#x2026;: 正如某人说过/知道&#x2026;, &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>As we have learnt from the previous session, many relationships that're timed-limited may fizzle out.<br /></li>
+<li>As we have said before, she has to handle implication of the divorce.<br /></li>
+<li>As we have mentioned before, our cat always desires a delicious snack can.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orga69afc6" class="outline-3">
+<h3 id="orga69afc6">sentence2</h3>
+<div class="outline-text-3" id="text-orga69afc6">
+<p>
+drastic [ˈdræstɪk]: adj. extreme and sudden急剧的<br />
+</p>
+<ul class="org-ul">
+<li>What is most remarkable about this country is the drastic transformation it has made over the decades.<br /></li>
+<li>The soldier is doing drastic action hitting the surface of the tank.<br /></li>
+<li>The empire threatens drastic action towards its neighbor countries.<br /></li>
+</ul>
+<p>
+implication [ˌɪmplɪˈkeɪʃ(ə)n]: n. a possible future effect or result of an action, event, decision etc可能的影响(作用)<br />
+</p>
+<ul class="org-ul">
+<li>The oil is flowing with the house, so you must deal with its implications.<br /></li>
+<li>The army is composed of mutilated soldiers, you should think about the implications of it on the battlefield.<br /></li>
+<li>You should consider the implication of executing people who are the basic building block of the camp.<br /></li>
+</ul>
+<p>
+obligation [ˌɑblɪˈɡeɪʃ(ə)n]: n. a moral or legal duty to do something义务<br />
+</p>
+<ul class="org-ul">
+<li>My aunt carried an obligation to take care of me when I was in high school.<br /></li>
+<li>You have an obligation to clean up the junk in the back of our fridge.<br /></li>
+<li>She claimed that she had no obligation to wash the fridge.<br /></li>
+</ul>
+<hr />
+<p>
+fizzle out [ˈfɪz(ə)l]: to gradually end, often in a disappointing or weak way逐渐消散<br />
+</p>
+<ul class="org-ul">
+<li>The relationship between me and my friend at kindergarten has already fizzled out.<br /></li>
+<li>The fossil, millions of years in the making, has fizzled out after the operation.<br /></li>
+<li>The mummy is fizzling out because of the failure of the operation.<br /></li>
+</ul>
+<p>
+break up with sb.: 和某人分手<br />
+</p>
+<ul class="org-ul">
+<li>As long as you break up with Mike, your child will only be a gleam in your eyes.<br /></li>
+<li>The beautiful woman broke up with an explorer who often risks his life on the flanks of volcanoes.<br /></li>
+<li>Phibee has to break up with her boyfriend who is hired by a Russian university.<br /></li>
+</ul>
+<p>
+get rides to do sth.: 搭顺风车去做某事<br />
+</p>
+<ul class="org-ul">
+<li>Needless to say, I get rides to work.<br /></li>
+<li>If you break up with me, you can't get rides to go to school anymore.<br /></li>
+<li>My wife used to get rides to go to school.<br /></li>
+</ul>
+<p>
+As sb. has said/known &#x2026;, + &#x2026;: 正如某人说过/知道&#x2026;, &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>As we have learned from the previous session, many relationships that are timed-limited may fizzle out.<br /></li>
+<li>As we have said before, she has to handle the implications of the divorce.<br /></li>
+<li>As we have mentioned before, our cat always desires a delicious snack can.<br /></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

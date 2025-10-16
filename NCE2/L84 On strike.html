@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-08-06 Tue 22:24 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+
+<div id="outline-container-org5810653" class="outline-2">
+<h2 id="org5810653">Lesson 84 On strike</h2>
+<div class="outline-text-2" id="text-org5810653">
+<p class="verse">
+Who will be driving the buses next week?<br />
+<br />
+Busmen have decided to <b>go on strike</b> next week.<br />
+The strike <b>is due to</b> begin on Tuesday.<br />
+No one knows how long it will last.<br />
+<b>The busmen have stated</b><br />
+&#xa0;that the strike will continue<br />
+&#xa0;&#xa0;until general <b>agreement is reached about</b> pay and working conditions.<br />
+Most people believe that the strike will last for at least a week.<br />
+Many owners of private cars are going to offer 'free rides' to people on their way to work.<br />
+This will <b>relieve pressure</b> on the trains <b>to some extent</b>.<br />
+Meanwhile, a number of university students have <b>volunteered to drive</b> buses while the strike lasts.<br />
+All the students are expert drivers,<br />
+&#xa0;but before they drive any of the buses, they will have to <b>pass a special test</b>.<br />
+The students are going to <b>take the test</b> in two days' time.<br />
+Even so, people are going to find it difficult to get to work.<br />
+But so far, the public has <b>expressed its gratitude to</b> the students in letters to the Press.<br />
+<b>Only one or two people have objected</b> that the students will drive too fast!<br />
+</p>
+</div>
+<div id="outline-container-org56e25a8" class="outline-3">
+<h3 id="org56e25a8">expression</h3>
+<div class="outline-text-3" id="text-org56e25a8">
+<p>
+strike [straɪk] n.罢工<br />
+busman ['bʌsmən] n. bus driver公共汽车司机<br />
+state [steɪt] v.正式提出,宣布<br />
+agreement [əˈɡrimənt] n.协议<br />
+relieve [rɪˈliv] v.减轻<br />
+pressure [ˈpreʃər] n.压力,麻烦<br />
+extend [ɪkˈstend] n.程度<br />
+volunteer [ˌvɑlənˈtɪr] v.n.自动提出,自愿<br />
+gratitude [ˈɡrætɪˌtud] n.感激<br />
+press [pres] n.新闻界<br />
+object [ɑbˈdʒekt] v. objection n.不赞成,反对<br />
+</p>
+
+<p>
+go on strike 罢工<br />
+sb. have stated that + &#x2026; 有人说……<br />
+agreement is reached about sth. 就某事达成协议<br />
+reach an agreement 达成协议<br />
+sb. be relieved to hear that + &#x2026; 某人听到……感到宽慰<br />
+relieve pressure 缓解压力<br />
+under a lot of pressure 在很大压力下<br />
+to some extend 在某种程度下<br />
+volunteer to do sth. 自愿做某事<br />
+expressed sb.'s gratitude to sb. 像某人表示某人的感谢<br />
+sb. have objected that + &#x2026; 有人反对+……<br />
+object to sth./sb. 反对某事/某人<br />
+</p>
+<hr />
+<p>
+be due to do = be going to do<br />
+</p>
+
+<hr />
+<p>
+be due to do sth. 预定做某事<br />
+pass/take the test 通过/参加考试<br />
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-orga8550f2" class="outline-3">
+<h3 id="orga8550f2">words</h3>
+<div class="outline-text-3" id="text-orga8550f2">
+<p>
+strike [straɪk] n.罢工<br />
+busman ['bʌsmən] n.公交车司机<br />
+state [steɪt]	v.正式提出,宣布<br />
+agreement [əˈɡrimənt] n.协议<br />
+relieve [rɪˈliv] v.减轻<br />
+pressure [ˈpreʃər] n.压力,麻烦<br />
+extent [ɪkˈstent] n.程度<br />
+volunteer [ˌvɑlənˈtɪr] v.自动提出,自愿<br />
+gratitude [ˈɡrætɪˌtud] n.感激<br />
+Press [pres] n.新闻界<br />
+object [ɑbˈdʒekt] v.不赞成,反对<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org51c1e98" class="outline-3">
+<h3 id="org51c1e98"><span class="done DONE">DONE</span> 单词造句</h3>
+<div class="outline-text-3" id="text-org51c1e98">
+<p>
+strike n. go on strike<br />
+</p>
+<ul class="org-ul">
+<li>Workers are not allowed to go on strike in this country.<br /></li>
+<li>The drivers in the city love to go on strike.<br /></li>
+<li>On the following day, all the workers in the city went on strike.<br /></li>
+<li>The firemen on duty are going on strike for some reasons.<br /></li>
+<li>It is known that the teachers in the district have gone on strike for a month.<br /></li>
+</ul>
+<p>
+busman n. bus driver<br />
+</p>
+<ul class="org-ul">
+<li>Though a little suspicious, the bus driver gave the passenger the ticket.<br /></li>
+<li>The bus driver was found to be a gangster.<br /></li>
+<li>The bus driver has at times lost his temper while driving bus.<br /></li>
+<li>The bus driver discovered that the passenger was Prime Minister.<br /></li>
+<li>The bus driver knocked the policeman to the groud by a sharp blow.<br /></li>
+</ul>
+<p>
+state v. sb. have stated that + &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>The girl stated that she recognized the voice of her father's car enginee.<br /></li>
+<li>My bossed has stated that we will have a better salary as soon as we pass the exam.<br /></li>
+<li>My leader has stated that the program is full of mistakes.<br /></li>
+<li>He stated that his boss refused to put forward the plan.<br /></li>
+<li>He stated that he had planted a bom at the airport.<br /></li>
+</ul>
+<p>
+agreement n. agreement is reached about sth.  reach an agreement<br />
+</p>
+<ul class="org-ul">
+<li>The general agreement is reached about doing housework by my wife and me.<br /></li>
+<li>We are used to failing to reach an agreement.<br /></li>
+<li>We used to reach an agreement.<br /></li>
+<li>We needn't have reached an agreement.<br /></li>
+<li>He was curious to find out that his wife and his daughter reached a series of agreements.<br /></li>
+</ul>
+<p>
+relieve v. sb. be relieved to hear that + &#x2026;  relieve pressure<br />
+</p>
+<ul class="org-ul">
+<li>I was relieved to hear that Mr. Leo made a profit last year.<br /></li>
+<li>I was relieved to hear that my son had gone to college.<br /></li>
+<li>I was relieved to hear that the luxury was on display in the exhibition.<br /></li>
+<li>I was relieved to hear that the lady and her baby had been rescued in the mountains.<br /></li>
+<li>I was relieved to hear that the flight attandant will take charge of my baby.<br /></li>
+</ul>
+<p>
+pressure n. under a lot of pressure  relieve pressure<br />
+</p>
+<ul class="org-ul">
+<li>The kid is under a lot of pressure, for they are instructed to study day and night.<br /></li>
+<li>He was under so much pressure that I felt frightened.<br /></li>
+<li>Don't be hard on us, we are under a lot of pressure.<br /></li>
+<li>He is always under a lot of pressure on board.<br /></li>
+<li>His parents make every effort to relive his pressure, even allow him to smoke.<br /></li>
+</ul>
+<p>
+extend  n. to some extend<br />
+</p>
+<ul class="org-ul">
+<li>To some extend, you're responsible for her failure.<br /></li>
+<li>To some extend, that's a splendid idea.<br /></li>
+<li>To some extend, I was disappointed to learn that I failed the test.<br /></li>
+<li>To some extend, I have followed in my father's footsteps.<br /></li>
+<li>To some extend, she has difficulty in swimming in public places.<br /></li>
+</ul>
+<p>
+volunteer v.n. volunteer to do sth.<br />
+</p>
+<ul class="org-ul">
+<li>I need a volunteer to save the soldier's life.<br /></li>
+<li>She used to volunteer to keep order in her twenties.<br /></li>
+<li>I volunteered to teach these volunteers English.<br /></li>
+<li>I intend to volunteer to do the dishes.<br /></li>
+<li>She shouldn't have volunteered to keep order.<br /></li>
+</ul>
+<p>
+gratitude n. expressed sb.'s gratitude to sb.<br />
+</p>
+<ul class="org-ul">
+<li>I would like to express my gratitude to my relatives who ever help me.<br /></li>
+<li>You should express your gratitude to anyone who help you.<br /></li>
+<li>The moment she help me, I will express my gratitude to her.<br /></li>
+<li>The kid was ordered to express her gratitude to Mr. Leo.<br /></li>
+<li>We should have expressed our gratitude to Mr. Leo.<br /></li>
+</ul>
+<p>
+press n.v.<br />
+</p>
+<ul class="org-ul">
+<li>He is sending the news to the press.<br /></li>
+<li>If you don't press the button, the radio won't start.<br /></li>
+<li>Leo was defeated in the recent elections and I read about it in the press.<br /></li>
+<li>The poor guy read about his wife's cheating in the press.<br /></li>
+<li>He discovered that his firm had ran into serious trouble in the press.<br /></li>
+</ul>
+<p>
+object v. objection n. sb. have objected that + &#x2026;  object to sth./sb.<br />
+</p>
+<ul class="org-ul">
+<li>He objected that student study at night.<br /></li>
+<li>I objected that he is expert at driving buses.<br /></li>
+<li>She objected to Prime Minister and rushed up to him.<br /></li>
+<li>We need objecting to prepared dishes.<br /></li>
+<li>He insisted on objecting to prepared dishes.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orga408ab1" class="outline-3">
+<h3 id="orga408ab1"><span class="done DONE">DONE</span> 反复听电影片段</h3>
+<div class="outline-text-3" id="text-orga408ab1">
+</div>
+</div>
+<div id="outline-container-orga84f288" class="outline-3">
+<h3 id="orga84f288"><span class="done DONE">DONE</span> Pattern Drill 写+读</h3>
+<div class="outline-text-3" id="text-orga84f288">
+<ul class="org-ul">
+<li>1t: away - a month<br />
+s1: How long will they be away?<br />
+s2: They'll be away for a month.<br />
+<ul class="org-ul">
+<li>in Japan - about two weeks<br />
+How long will they be in Japan?<br />
+They'll be in Japan for about two weeks.<br /></li>
+<li>by the sea - a fortnight<br />
+How long will they be by the sea?<br />
+They'll be by the sea for a fortnight.<br /></li>
+<li>at the meeting - two hours<br />
+How long will they be at the meeting?<br />
+They'll be at the meeting for two hours.<br /></li>
+<li>at the seaside - quite a while<br />
+How long will they be at the seaside?<br />
+They'll be at the seaside for quite a while.<br /></li>
+</ul></li>
+<li>2t: climb the mountain-three weeks<br />
+s1: How long will they take to climb the mountain?<br />
+s2: They'll climb it in three weeks.<br />
+<ul class="org-ul">
+<li>decorate the house - three days<br />
+How long will they take to decorate the house?<br />
+They'll decorate it in three days.<br /></li>
+<li>sail the Atlantic - about a month<br />
+How long will they take to sail the Atlantic?<br />
+They'll sail it in about a month.<br /></li>
+<li>reply to the letter - a week<br />
+How long will they take to reply to the letter?<br />
+They'll reply to it in a week.<br /></li>
+<li>mend the radio - about two days<br />
+How long will they take to mend the radio?<br />
+They'll mend it in about two days.<br /></li>
+</ul></li>
+<li>3t: see the film<br />
+s1: We're going to see the film. Do you want to come?<br />
+s2: No thanks. I'll go and see it later.<br />
+<ul class="org-ul">
+<li>visit Mary<br />
+We're going to visit Mary. Do you want to come?<br />
+No thanks. I'll go and see it later.<br /></li>
+<li>see the exhibition<br />
+We're going to see the exhibition. Do you want to come?<br />
+No thanks. I'll go and see it later.<br /></li>
+<li>admire the view<br />
+We're going to admire the view. Do you want to come?<br />
+No thanks. I'll go and see it later.<br /></li>
+<li>speak to the manager<br />
+We're going to speak to the manager. Do you want to come?<br />
+No thanks. I'll go and see it later.<br /></li>
+</ul></li>
+<li>4t: go into hospital<br />
+s1: He's going into hospital some time.<br />
+s2: Is he? Let me know when he goes.<br />
+<ul class="org-ul">
+<li>set out for - the North Pole<br />
+He's setting out for the North Pole.<br />
+Is he? Let me know when he sets.<br /></li>
+<li>come back from - South America<br />
+He's coming back from South America.<br />
+Is he? Let me know when he comes.<br /></li>
+<li>return from - his holiday<br />
+He's returning from his holiday.<br />
+Is he? Let me know when he returns.<br /></li>
+<li>arrive - in this country<br />
+He's arriving in this country.<br />
+Is he? Let me know when he arrives.<br /></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org8194cd3" class="outline-3">
+<h3 id="org8194cd3">给自己讲解</h3>
+</div>
+<div id="outline-container-org6f26057" class="outline-3">
+<h3 id="org6f26057">红皮书</h3>
+</div>
+<div id="outline-container-org55cb2cd" class="outline-3">
+<h3 id="org55cb2cd"><span class="done DONE">DONE</span> 习惯用法造句</h3>
+<div class="outline-text-3" id="text-org55cb2cd">
+<p>
+be due to do sth.<br />
+</p>
+<ul class="org-ul">
+<li>They are due to catch a flight on the following day.<br /></li>
+<li>They are due to have a long walk at the other side of West Lake.<br /></li>
+<li>They are due to watch a musical in two hours.<br /></li>
+<li>They are due to settle down in hometown.<br /></li>
+<li>We are due to stick to the plan.<br /></li>
+</ul>
+<p>
+pass/take the test<br />
+</p>
+<ul class="org-ul">
+<li>I should have taken the test.<br /></li>
+<li>I regretted taking the test.<br /></li>
+<li>I was relieved to hear that I passed the test.<br /></li>
+<li>He insisted on taking the test over and over again, even though he has already passed the test.<br /></li>
+<li>Students always inquire about how to pass the test.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org74ec740" class="outline-3">
+<h3 id="org74ec740"><span class="done DONE">DONE</span> 跟读至背诵</h3>
+<div class="outline-text-3" id="text-org74ec740">
+</div>
+</div>
+<div id="outline-container-org5a88feb" class="outline-3">
+<h3 id="org5a88feb"><span class="done DONE">DONE</span> Ask me if 写+读</h3>
+<div class="outline-text-3" id="text-org5a88feb">
+<ol class="org-ol">
+<li>Busmen have decided to go on strike next week. When/Who<br />
+When have busmen decided to go on strike?<br />
+Who have decided to go on strike next week?<br /></li>
+<li>The strike will begin on Tuesday. Which day<br />
+Which day will the strike begin on?<br /></li>
+<li>Most people believe the strike will last for at least a week. How long<br />
+How long do most people belive the strike will last?<br /></li>
+<li>The busmen want more pay. What<br />
+What do the busmen want?<br /></li>
+<li>They also want better working conditions. What else<br />
+What else do the busmen want?<br /></li>
+<li>The strike will continue until agreement is reached. How long<br />
+How long will the strike continue?<br /></li>
+<li>Owners of private cars are going to offer 'free rides'. What<br />
+What are owners of private cars going to offer?<br /></li>
+<li>People will still get to work. Where<br />
+Where will people still get to?<br /></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org60fa34a" class="outline-3">
+<h3 id="org60fa34a"><span class="done DONE">DONE</span> 摘要写作</h3>
+<div class="outline-text-3" id="text-org60fa34a">
+<p>
+The busmen's strike, which begins on Tuesday,<br />
+	may last for a week.<br />
+Because of this,<br />
+	 cars owners have offered to give rides to people going to work.<br />
+University students, too, have volunteered to drive the buses too<br />
+	but they will have to pass a special test.<br />
+Though it will be difficult to get to work, the public is grateful to the students.<br />
+Only one or two people have objected that the students will drive too fast.<br />
+</p>
+
+<p>
+Because the busmen's strike which begins on Tuesday may last a week,<br />
+	car owners have offered to give rides to people going to work.<br />
+University students who have volunteered to drive the buses will have to pass a special test.<br />
+Despite the fact that it will be difficult to get to work,<br />
+	the public is grateful to the students,<br />
+	except for one or two have objected that the students will dirve to fast<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org5199d39" class="outline-3">
+<h3 id="org5199d39"><span class="done DONE">DONE</span> tell the story 口语</h3>
+<div class="outline-text-3" id="text-org5199d39">
+</div>
+</div>
+<div id="outline-container-orgbce8b7c" class="outline-3">
+<h3 id="orgbce8b7c">Topics for discussion</h3>
+</div>
+</div>
+</div>
+</body>
+</html>

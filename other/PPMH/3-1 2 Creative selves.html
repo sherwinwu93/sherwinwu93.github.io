@@ -1,0 +1,984 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-02-27 Thu 17:05 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-orgc775cdb" class="outline-2">
+<h2 id="orgc775cdb">3-1 2 Creative selves</h2>
+<div class="outline-text-2" id="text-orgc775cdb">
+<p class="verse">
+Mental well-being depends on an ongoing relationship of renewal with the environment.<br />
+As social beings, humans depend on communication and relationships with others for their well being.<br />
+The individual mind is dependent on communication through language,<br />
+&#xa0;using symbols to understand and participate in the world.<br />
+<br />
+From the beginning of life, humans have the ability to communicate.<br />
+Babies are able to cry to express other emotions, to take turns,<br />
+&#xa0;and respond musically to the rhythm and pitch of conversation.<br />
+They do all of these things in relationship with parents or carers<br />
+&#xa0;who engage with their baby in communication and play.<br />
+It's a process<br />
+&#xa0;that allows the baby to use the environment through other people as a means of growth.<br />
+The human genome provides many potentials for each individual,<br />
+&#xa0;but requires interaction with a good enough environment of responsive carers.<br />
+This way, the infant can develop the capacities<br />
+&#xa0;that will allow him or her to become a fully participating member of the human community.<br />
+Compared with other species, human babies are highly dependent on adults.<br />
+They take many years to develop the skills to care for themselves.<br />
+<br />
+Infants are not born with a sense of self.<br />
+This develops over time as part of our second nature.<br />
+It depends on early learning.<br />
+The sense of self arises through the experience of feeling during communication and exploration.<br />
+These aspects of mental life take time to become established.<br />
+A sense of self is a positive achievement reflecting a sense of value in the individual.<br />
+Positive and negative emotions need to be processed differently through early relationships.<br />
+These relationships soothe distress on the one hand,<br />
+&#xa0;and amplify a sense of aliveness in the infant on the other.<br />
+This contributes to the sense of value in the infant,<br />
+&#xa0;establishing a space for learning from others known as the Zone of Proximal Development.<br />
+<br />
+At birth, we are thrown into the human world,<br />
+&#xa0;a world where one has a place in a complex matrix of relationships<br />
+&#xa0;&#xa0;that has great meaning for each individual.<br />
+Human beings, like all other species, operate within the physical world,<br />
+&#xa0;but humans are unique in that we also operate in a symbolic sphere.<br />
+This is to say, that humans grow inside a world of language as well as the physical world.<br />
+They are able to participate emotionally and physically from the very beginning.<br />
+<br />
+Feelings and emotions are a component of all human experience,<br />
+&#xa0;acting as an in-built value system that allows the infants and adults<br />
+&#xa0;&#xa0;to asses their experience, selecting interactions that promote aliveness and growth.<br />
+This can be described as using your gut feeling or instinct or intuition.<br />
+The types of feelings<br />
+&#xa0;&#xa0;that arise for each person as they engage with others in the broader environment<br />
+&#xa0;become characteristic for each individual.<br />
+Over the last few decades, research has reexamined the role of feeling in mental life.<br />
+A sense of aliveness is central to well-being and the development of mental life.<br />
+All living organisms seek to explore the environment<br />
+&#xa0;in order to find what they need to survive and thrive.<br />
+This tendency has been called the seeking system.<br />
+And is part of an innate repertoire<br />
+&#xa0;that for humans extends to the relational and symbolic aspects of life.<br />
+This underpins the yearning for connection,<br />
+&#xa0;and the search for meaning that characterize human lives.<br />
+It also means that a large part of mental life, in health, is oriented towards the future.<br />
+A sense of meaning is not fixed or external to individuals<br />
+&#xa0;but is created through communication, relationships, and building skills.<br />
+Reality is confirmed by the recognition and response of others in communicative exchange,<br />
+&#xa0;that is, in a conversation.<br />
+This is one reason why people seek help for mental disturbances.<br />
+They have a need for re-grounding their position through a safe and validating relationship.<br />
+A sense of self can become disorganized through trauma, stress or illness.<br />
+And healing relationships are needed to restore the self.<br />
+<br />
+For a long time, play was seen as a matter for children.<br />
+This view has changed in recent decades.<br />
+Play takes two forms.<br />
+Physical play is shared in common with other mammal species<br />
+&#xa0;and is probably crucial to the development of<br />
+&#xa0;&#xa0;a broad emotional range and a sense of urgency and confidence in demanding physical activities.<br />
+Another kind of play characteristically human is symbolic play,<br />
+&#xa0;where the child, safe in the knowledge of having a secure base with a carer not too far away,<br />
+&#xa0;&#xa0;will happily play with toys and other objects in the environment,<br />
+&#xa0;&#xa0;&#xa0;often talking as he or she plays.<br />
+The toys come to represent aspects of the child's imagination<br />
+&#xa0;and have a symbolic rather than simply a literal value.<br />
+This kind of play helps the child develop a strong sense of their inner world,<br />
+&#xa0;which gives rise to the capacity for reflection and the sense of ownership of mental life.<br />
+A sense of self is not fully present until these capacities have developed.<br />
+Play is now seen as necessary for creative engagement throughout life.<br />
+For these developments to occur, the infant depends upon a responsive environment,<br />
+&#xa0;where there is interactive play between infant and carer.<br />
+This is a situation which generates a particular kind of pleasure that neither could gain alone.<br />
+It is these relationships that help generate personality and social character.<br />
+<br />
+In situations of trauma there can be a deficit in this type of relationship<br />
+&#xa0;that means that the individual doesn't have the opportunity<br />
+&#xa0;&#xa0;to gain a sense of his or her own value and capacities in relation to others.<br />
+Psychotherapy seeks to use this model of affective development, emotional development,<br />
+&#xa0;to provide a containing and responsive relationship<br />
+&#xa0;&#xa0;where the patient can be recognized, validated, and responded to.<br />
+In doing this, the therapist will bring something new into the relationship,<br />
+&#xa0;something from the therapist's self.<br />
+This process of working with what is given by the patient and contributing something new<br />
+&#xa0;is a strategy that actively promotes the growth of a healthy self.<br />
+A person can then develop the ability<br />
+&#xa0;to integrate difficult experiences into an overall affirming narrative and life experience.<br />
+We seek to reestablish the zone of proximal development.<br />
+</p>
+</div>
+<div id="outline-container-orgc2135d3" class="outline-3">
+<h3 id="orgc2135d3">expression</h3>
+<div class="outline-text-3" id="text-orgc2135d3">
+<p>
+mental [ˈment(ə)l]: adj. relating to the health or state of someone’s mind ⇨ psychiatric精神的<br />
+symbol [ˈsɪmb(ə)l]: n. a picture or shape that has a particular meaning or represents a particular organization or idea ⇨ sign符号,记号,象征<br />
+pitch [pɪtʃ]: n. how high or low a note or other sound is音高<br />
+carer ['kerər]: n. someone who looks after an old or ill person at home SYN caretaker American English看护者<br />
+genome [ˈdʒiˌnoʊm]: n. all the ↑genes in one type of living thing ⇨ DNA[生]基因组<br />
+responsive [rɪˈspɑnsɪv]: adj. eager to communicate with people, and to react to them in a positive way反应积极的<br />
+species [ˈspisiz]: n. a group of animals or plants whose members are similar and can breed together to produce young animals or plants ⇨ genus物种<br />
+process [prəˈses]: v. to deal with an official document, request etc in the usual way处理<br />
+soothe [suð]: v. to make someone feel calmer and less anxious, upset, or angry抚慰<br />
+amplify [ˈæmplɪˌfaɪ]: v. formal to increase the effects or strength of something放大, 增强<br />
+aliveness : n. the condition of living or the state of being alive活力<br />
+matrix [ˈmeɪtrɪks]: n. an arrangement of numbers, letters, or signs in rows and ↑columns that you consider to be one amount, and that you use in solving mathematical problems矩阵<br />
+unique [juˈnik]: adj. being the only one of its kind唯一的<br />
+in-built: adj. an inbuilt quality, feature etc is part of the nature of someone or something嵌入的<br />
+assess [əˈses]: v. to make a judgment about a person or situation after thinking carefully about it SYN judge评估<br />
+instinct [ˈɪnstɪŋkt]: n. a natural tendency to behave in a particular way or a natural ability to know something, which is not learned ⇨ intuition本能,直觉<br />
+intuition [ˌɪntuˈɪʃ(ə)n]: n. the ability to understand or know something because of a feeling rather than by considering the facts SYN instinct直觉<br />
+characteristic [ˌkerəktəˈrɪstɪk]: adj. very typical of a particular thing or of someone’s character独特的,典型的<br />
+innate [ˈɪˌneɪt]: adj. an innate quality or ability is something you are born with先天的, 天生的<br />
+underpin [ˌʌndərˈpɪn]: v. to give strength or support to something and to help it succeed巩固, 支撑<br />
+fixed [fɪkst]: adj. fixed times, amounts, meanings etc cannot be changed SYN set固定的<br />
+disturbance [dɪˈstɜrbəns]: n. something that interrupts what you are doing, or the act of making this happen干扰<br />
+validate [ˈvælɪˌdeɪt]: v. to make someone feel that their ideas and feelings are respected and considered seriously使得到认同<br />
+heal [hil]: v. if a wound or a broken bone heals or is healed, the flesh, skin, or bone grows back together and becomes healthy again治愈<br />
+ownership [ˈoʊnərˌʃɪp]: n. the fact of owning something所有权, 物主身份<br />
+deficit [ˈdefəsɪt]: n. the difference between the amount of something that you have and the higher amount that you need ⇨ shortfall赤字, 不足额<br />
+affective [əˈfektɪv]: adj. relating to or having an effect on the emotions情感的<br />
+</p>
+<hr />
+<p>
+take turns: 轮流<br />
+gut feeling: 直觉<br />
+be oriented towards sth.: 针对某事物<br />
+extend to sth.: 延伸到某事物<br />
+A be shared in common with B: A和B有共同之处<br />
+in the knowledge of sth./having sth.: 在知道某事下<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orga7e1cad" class="outline-3">
+<h3 id="orga7e1cad">ch.</h3>
+<div class="outline-text-3" id="text-orga7e1cad">
+<p>
+3-1 2 创造性的自我<br />
+</p>
+
+<p>
+心理健康依赖于与环境的持续更新关系。<br />
+作为社会性动物，人类的福祉依赖于与他人的沟通和关系。<br />
+个体的心智依赖于通过语言的沟通，利用符号来理解和参与世界。<br />
+</p>
+
+<p>
+从生命的起点开始，人类就具备了沟通的能力。<br />
+婴儿能够哭泣来表达其他情感，能够轮流互动，并能随着对话的节奏和音调作出音乐性反应。<br />
+他们通过与父母或看护者的互动进行这一切，他们与父母或看护者通过沟通和游戏建立关系。<br />
+这是一个让婴儿通过他人的环境作为成长手段的过程。<br />
+人类基因组为每个个体提供了许多潜能，但需要与一个足够响应的看护者环境互动。<br />
+通过这种方式，婴儿可以发展出允许他或她成为人类社会中完全参与者的能力。<br />
+</p>
+
+<p>
+与其他物种相比，人类婴儿高度依赖成年人。<br />
+他们需要许多年才能发展出照顾自己的技能。<br />
+婴儿出生时并没有自我意识。<br />
+这种意识随着时间的推移而发展，成为我们第二天性的一部分。<br />
+它依赖于早期的学习。<br />
+自我意识通过沟通和探索中的体验产生。<br />
+这些心理生活的方面需要时间才能确立。<br />
+</p>
+
+<p>
+自我意识是一个积极的成就，反映了个体对自身价值的认知。<br />
+积极和消极的情感需要通过早期的关系以不同的方式来处理。<br />
+这些关系一方面安抚困扰，另一方面增强婴儿的生命感。<br />
+这有助于婴儿的价值感的建立，为从他人那里学习提供了空间，这被称为近距离发展区。<br />
+</p>
+
+<p>
+出生时，我们被抛入人类的世界，一个人在这个复杂关系网络中有一席之地，而这些关系对每个个体都有重要意义。<br />
+人类像所有其他物种一样，存在于物质世界中，但人类的独特之处在于我们也存在于象征性的领域中。<br />
+也就是说，人类在语言的世界和物质的世界中共同成长。<br />
+从一开始，他们就能够在情感和身体上参与其中。<br />
+情感是所有人类体验的一部分，充当了内建的价值系统，帮助婴儿和成人评估他们的体验，选择那些促进生命感和成长的互动。<br />
+这可以被描述为利用直觉、感觉或本能。<br />
+每个人在与他人和更广泛环境互动时产生的情感类型，逐渐成为个体的特征。<br />
+</p>
+
+<p>
+在过去几十年中，研究重新审视了情感在心理生活中的角色。<br />
+生命感对心理健康和心理生活的发展至关重要。<br />
+所有活生生的生物都寻求探索环境，以寻找他们生存和繁荣所需的东西。<br />
+这种倾向被称为寻求系统。<br />
+它是一个天生的能力，对于人类来说，扩展到关系和象征性的生活方面。<br />
+这为人类生活中的联系渴望和寻找意义提供了基础。<br />
+这也意味着，健康的心理生活的很大一部分面向未来。<br />
+</p>
+
+<p>
+意义感不是固定的或外部的，而是通过沟通、关系和技能的建立创造出来的。<br />
+现实通过他人在交流中的认可和回应来确认，也就是说，通过对话。<br />
+这就是为什么人们寻求心理困扰帮助的原因之一。<br />
+他们有通过安全和认可的关系重新找到自身定位的需求。<br />
+自我意识可能会因创伤、压力或疾病而变得紊乱。<br />
+而治疗关系则是恢复自我的必要条件。<br />
+</p>
+
+<p>
+很长一段时间，游戏被视为儿童的事。<br />
+这一观点在最近几十年发生了变化。<br />
+游戏有两种形式。<br />
+身体游戏是与其他哺乳动物共同拥有的，可能对广泛的情感范围和对要求高强度身体活动的紧迫感和自信心的培养至关重要。<br />
+另一种典型的人类游戏是象征性游戏，孩子在有着一个可靠的看护者作为安全基地的情况下，会开心地与玩具和其他环境中的物品玩耍，通常一边玩耍一边说话。<br />
+这些玩具代表了孩子想象的某些方面，具有象征性的意义，而不仅仅是字面上的价值。<br />
+这种游戏帮助孩子发展他们内心世界的强烈意识，从而培养反思能力，并对心智生活产生主权感。<br />
+在这些能力发展之前，自我意识并未完全形成。<br />
+如今，游戏被视为一生中创造性参与的必要条件。<br />
+为了实现这些发展，婴儿依赖于一个有反应的环境，其中婴儿和看护者之间有互动性的游戏。<br />
+这是一个产生特定类型愉悦的情境，单独一方无法获得这种愉悦。<br />
+正是这些关系有助于塑造个性和社会性格。<br />
+</p>
+
+<p>
+在创伤的情境中，这种类型的关系可能会出现缺失，导致个体没有机会在与他人的关系中获得自己的价值和能力的认同。<br />
+心理治疗旨在利用这种情感发展模型，提供一个包容和反应的关系，在这种关系中，患者可以得到认同、验证和回应。<br />
+在此过程中，治疗师将带入一些新的东西，来自治疗师自身的东西。<br />
+这种与患者给予的内容合作并贡献新东西的过程，是一种积极促进健康自我成长的策略。<br />
+这样，个体可以发展出将困难的经历整合到一个肯定的叙事和生命体验中的能力。<br />
+我们寻求重新建立近距离发展区。<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org49c74e0" class="outline-3">
+<h3 id="org49c74e0">sentence</h3>
+<div class="outline-text-3" id="text-org49c74e0">
+<p>
+mental [ˈment(ə)l]: adj. relating to the health or state of someone’s mind ⇨ psychiatric精神的<br />
+</p>
+<ul class="org-ul">
+<li>Maybe you should stay attuned to your husband's mental state because he is running water into other's fields.<br /></li>
+<li>The patient with mental illness closes against his carer who used to have an intimate relatioship with him.<br /></li>
+<li>When you see water quirt out of a patient's mouth, you won't make such remark about mental illness.<br /></li>
+</ul>
+<p>
+symbol [ˈsɪmb(ə)l]: n. a picture or shape that has a particular meaning or represents a particular organization or idea ⇨ sign符号,记号,象征<br />
+</p>
+<ul class="org-ul">
+<li>The symbol of the ancient empire remains in the wall with very little wear and tear.<br /></li>
+<li>The symbol in the ceiling gave new resonance to those visitors.<br /></li>
+<li>The symbol represents how many times this school have run races.<br /></li>
+</ul>
+<p>
+pitch [pɪtʃ]: n. how high or low a note or other sound is音高<br />
+</p>
+<ul class="org-ul">
+<li>My baby, who repsonsed musically to the pitch of my voice, caught the eye of my wife.<br /></li>
+<li>When you receive eletric shocks to your hands, you won't notice the change of his pitch.<br /></li>
+<li>Don't be too hard on me, he said with a high pitch.<br /></li>
+</ul>
+<p>
+carer ['kerər]: n. someone who looks after an old or ill person at home SYN caretaker American English看护者<br />
+</p>
+<ul class="org-ul">
+<li>We need to distract carers from the door when Tom is sneaking into the house.<br /></li>
+<li>The carer soothes the infant better when he has these toys than when he is with bare hands.<br /></li>
+<li>The high picth of the infant's cry sent the carer's minds wandering.<br /></li>
+</ul>
+<p>
+genome [ˈdʒiˌnoʊm]: n. all the ↑genes in one type of living thing ⇨ DNA[生]基因组<br />
+</p>
+<ul class="org-ul">
+<li>The research for the genome is subjected to the lack of money.<br /></li>
+<li>The genome provides many potentials for humanities, who also live in the symbolic world.<br /></li>
+<li>The scientist is describing the affect of genome on a scale from an ant to a person.<br /></li>
+</ul>
+<p>
+responsive [rɪˈspɑnsɪv]: adj. eager to communicate with people, and to react to them in a positive way反应积极的<br />
+</p>
+<ul class="org-ul">
+<li>I must admit that your child is responsive in class.<br /></li>
+<li>The cat responsed to our voice, which means that she is responsive after the car accident.<br /></li>
+<li>A responsive parent should be good at coping with his or her baby crying.<br /></li>
+</ul>
+<p>
+species [ˈspisiz]: n. a group of animals or plants whose members are similar and can breed together to produce young animals or plants ⇨ genus物种<br />
+</p>
+<ul class="org-ul">
+<li>Please take your hands off the book entitled The Origin of Species.<br /></li>
+<li>The medication acts on this kind of species doesn't mean it acts well on human either.<br /></li>
+<li>The extinction of the species on the island is beyond our expectation.<br /></li>
+</ul>
+<p>
+process [prəˈses]: v. to deal with an official document, request etc in the usual way处理<br />
+</p>
+<ul class="org-ul">
+<li>The junior engineer gets promoted along with ways to process data effectively.<br /></li>
+<li>Our company began to make a profit along with ways to process requests from customers.<br /></li>
+<li>Tailing it to the company, our programmer processed and updated the project.<br /></li>
+</ul>
+<p>
+soothe [suð]: v. to make someone feel calmer and less anxious, upset, or angry抚慰<br />
+</p>
+<ul class="org-ul">
+<li>The key to soothing your wife is to satisfied her emotional needs.<br /></li>
+<li>A click away, the carer will pay you a visit and help soothe your infant.<br /></li>
+<li>The lady refused to soothe her singer husband when he told something in his heart, which undermined his faith in her.<br /></li>
+</ul>
+<p>
+amplify [ˈæmplɪˌfaɪ]: v. formal to increase the effects or strength of something放大, 增强<br />
+</p>
+<ul class="org-ul">
+<li>The background music of the movie amplified our fears in the scenario.<br /></li>
+<li>Somehow, soothing from her husband amplified her fears about the future.<br /></li>
+<li>The breakdown of trust in the authorities amplified damage of the social upheaval.<br /></li>
+</ul>
+<p>
+aliveness : n. the condition of living or the state of being alive活力<br />
+</p>
+<ul class="org-ul">
+<li>A sense of aliveness helps him compete with those famous players.<br /></li>
+<li>I could feel a sense of her aliveness from various perspectives.<br /></li>
+<li>More recently, I couldn't feel a sense of aliveness because of mental illness.<br /></li>
+</ul>
+<p>
+matrix [ˈmeɪtrɪks]: n. an arrangement of numbers, letters, or signs in rows and ↑columns that you consider to be one amount, and that you use in solving mathematical problems矩阵<br />
+</p>
+<ul class="org-ul">
+<li>He keeps in mind how to process the question about matrix.<br /></li>
+<li>The test will multiply the amount of questions about matrix to help you find your weakness.<br /></li>
+<li>The scientist will solve the question about matrix on TV in real time.<br /></li>
+</ul>
+<p>
+unique [juˈnik]: adj. being the only one of its kind唯一的<br />
+</p>
+<ul class="org-ul">
+<li>The weight of the patient is unique at several points in the day.<br /></li>
+<li>I allow time for you to find the unique key to open the door.<br /></li>
+<li>Obviously, your wife aims at the unique activity, the Hot Balloon.<br /></li>
+</ul>
+<p>
+in-built: adj. an inbuilt quality, feature etc is part of the nature of someone or something嵌入的<br />
+</p>
+<ul class="org-ul">
+<li>There is an in-built value system that assesses the value of my experience.<br /></li>
+<li>Tuining in to broadcast, the person took interest in this kind of in-built chip.<br /></li>
+<li>Take a guess whether the chip is in-built.<br /></li>
+</ul>
+<p>
+assess [əˈses]: v. to make a judgment about a person or situation after thinking carefully about it SYN judge评估<br />
+</p>
+<ul class="org-ul">
+<li>Having little connection to my ex-wife, I prefer not to assess her mental life.<br /></li>
+<li>The anomymous assessment made him unaccountable for its outcome.<br /></li>
+<li>With assessment comes the change, our company began to make a profit.<br /></li>
+</ul>
+<p>
+instinct [ˈɪnstɪŋkt]: n. a natural tendency to behave in a particular way or a natural ability to know something, which is not learned ⇨ intuition本能,直觉<br />
+</p>
+<ul class="org-ul">
+<li>The famous actor ensures that he doesn't take part in a movie which his instinct hates.<br /></li>
+<li>Due to my instinct, I was unwilling to play truant from school when they asked me to.<br /></li>
+<li>Depending on your instinct rather than facts and logic leaves you less informed than before you went to school.<br /></li>
+</ul>
+<p>
+intuition [ˌɪntuˈɪʃ(ə)n]: n. the ability to understand or know something because of a feeling rather than by considering the facts SYN instinct直觉<br />
+</p>
+<ul class="org-ul">
+<li>According to my intuition, you will pass the exam and lead a successful life.<br /></li>
+<li>A big farm couldn't take the plunge just because of your intuition.<br /></li>
+<li>It is a common saying that your first intuition always trys to protect you.<br /></li>
+</ul>
+<p>
+characteristic [ˌkerəktəˈrɪstɪk]: adj. very typical of a particular thing or of someone’s character独特的,典型的<br />
+</p>
+<ul class="org-ul">
+<li>It appears that the actor who refused our boss is characteristic.<br /></li>
+<li>His characteristic introducation made a strong impression on our boss.<br /></li>
+<li>In one case, characteristic behavors don't fill the ecological niche.<br /></li>
+</ul>
+<p>
+innate [ˈɪˌneɪt]: adj. an innate quality or ability is something you are born with先天的, 天生的<br />
+</p>
+<ul class="org-ul">
+<li>My wife has an innate ability to attract dogs.<br /></li>
+<li>The elephant has an innate ability to recognize people who he met.<br /></li>
+<li>Our cat has an innate ability to recognize colors.<br /></li>
+</ul>
+<p>
+underpin [ˌʌndərˈpɪn]: v. to give strength or support to something and to help it succeed巩固, 支撑<br />
+</p>
+<ul class="org-ul">
+<li>His crossing path with our boss on a boat underpined his social state in the company.<br /></li>
+<li>The rule, speaking in public isn't limited to managers, underpins the democracy of our company.<br /></li>
+<li>After years apart, my uncle has underpined his social state in the town.<br /></li>
+</ul>
+<p>
+fixed [fɪkst]: adj. fixed times, amounts, meanings etc cannot be changed SYN set固定的<br />
+</p>
+<ul class="org-ul">
+<li>The profit he made goes beyond the fixed salary you offer.<br /></li>
+<li>The therapist believes that a person's capacity to make friends is not fixed even though he is aging.<br /></li>
+<li>The shape of our cat is fixed in adulthood.<br /></li>
+</ul>
+<p>
+disturbance [dɪˈstɜrbəns]: n. something that interrupts what you are doing, or the act of making this happen干扰<br />
+</p>
+<ul class="org-ul">
+<li>Because of your disturbance in this afternoon, I fails to encode the framework into our project.<br /></li>
+<li>It is hard for to takcle problems with your disturbance all the time.<br /></li>
+<li>The police is trying to keep track of the deal with his relative's disturbance.<br /></li>
+</ul>
+<p>
+validate [ˈvælɪˌdeɪt]: v. to make someone feel that their ideas and feelings are respected and considered seriously使得到认同<br />
+</p>
+<ul class="org-ul">
+<li>If you want to show concern for your wife, she should be validated in what she has done for you.<br /></li>
+<li>The soldier was validated by his general because he kept standing guard when running into storm.<br /></li>
+<li>I comforted my wife with those words in which she was validated in house chores.<br /></li>
+</ul>
+<p>
+heal [hil]: v. if a wound or a broken bone heals or is healed, the flesh, skin, or bone grows back together and becomes healthy again治愈<br />
+</p>
+<ul class="org-ul">
+<li>It is hard to escape the conclusion that he has been healed and avoided going to school.<br /></li>
+<li>Even a prisoner in captivity will be healed in the activity.<br /></li>
+<li>Given that his mental illness is hard to be healed, she got divorced from him.<br /></li>
+</ul>
+<p>
+ownership [ˈoʊnərˌʃɪp]: n. the fact of owning something所有权, 物主身份<br />
+</p>
+<ul class="org-ul">
+<li>It is more important than ever to gain the ownership of your house.<br /></li>
+<li>The ownership of the field brought about peasant revolts.<br /></li>
+<li>The Army of Revolution promised that the peasants would gain the ownership of fields.<br /></li>
+</ul>
+<p>
+deficit [ˈdefəsɪt]: n. the difference between the amount of something that you have and the higher amount that you need ⇨ shortfall赤字, 不足额<br />
+</p>
+<ul class="org-ul">
+<li>There is a huge deficit of $500 in our family.<br /></li>
+<li>Because of the deficit last month, I decided not to buy the car.<br /></li>
+<li>Instead of compensating for the deficit last month, the housewife kept purchasing something expensive and unnecessary.<br /></li>
+</ul>
+<p>
+affective [əˈfektɪv]: adj. relating to or having an effect on the emotions情感的<br />
+</p>
+<ul class="org-ul">
+<li>After his wife refused to soothe him in the programme, his affective disorders erupted.<br /></li>
+<li>No one care about his affective disorders and asks him to soothe his unpolite wife.<br /></li>
+<li>After his breakup with our coworker, he was diagnosed with affective disorders.<br /></li>
+</ul>
+<hr />
+<p>
+take turns: 轮流<br />
+</p>
+<ul class="org-ul">
+<li>We take turns to take good care of the infant.<br /></li>
+<li>Neglecting the warning, the peasants took turns to steal the power line.<br /></li>
+<li>Ignoring the rules, our colleagues took turns to be late for work.<br /></li>
+</ul>
+<p>
+gut feeling: 直觉<br />
+</p>
+<ul class="org-ul">
+<li>Due to gut feeling, I asked out the girl, who is my wife now.<br /></li>
+<li>Due to gut feeling, I refused to sign for the document.<br /></li>
+<li>Due to gut feeling, I refused to make an agreement with the company.<br /></li>
+</ul>
+<p>
+be oriented towards sth.: 针对某事物<br />
+</p>
+<ul class="org-ul">
+<li>Oriented towards serious mental illness, he was sent to America to have an operation.<br /></li>
+<li>Oriented towards the future, I am determined to save money when I am able to work.<br /></li>
+<li>Oriented towards stray dogs, the lady offered them with poisonous foods.<br /></li>
+</ul>
+<p>
+extend to sth.: 延伸到某事物<br />
+</p>
+<ul class="org-ul">
+<li>Extending to our project, I need to encode the framework into it.<br /></li>
+<li>Extending to a company, everyone should obey the rule and those who break it should be punished.<br /></li>
+<li>Extending to a country, the Party should represent the common interest of people.<br /></li>
+</ul>
+<p>
+A be shared in common with B: A和B有共同之处<br />
+</p>
+<ul class="org-ul">
+<li>Beyond doubt, Chinese is shared in common with English.<br /></li>
+<li>A cat is shared in common with a dog when they are raised up in the same apartment.<br /></li>
+<li>Your wife is shared in common with my wife, who loves to journey abroad.<br /></li>
+</ul>
+<p>
+in the knowledge of sth./having sth.: 在知道某事下<br />
+</p>
+<ul class="org-ul">
+<li>In the knowledge of my dog hiding under the couch, I began to enjoy snacks.<br /></li>
+<li>In the knowledge of his wife's absense, he led my girlfriend to his apartment.<br /></li>
+<li>In the knowledge of the existence of heavy guns, he ordered his men to surrender.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org052b576" class="outline-3">
+<h3 id="org052b576">sentence2</h3>
+<div class="outline-text-3" id="text-org052b576">
+<p>
+mental [ˈment(ə)l]: adj. relating to the health or state of someone’s mind ⇨ psychiatric精神的<br />
+</p>
+<ul class="org-ul">
+<li>Maybe you should stay attuned to your husband's mental state because he is running water into other people's fields.<br /></li>
+<li>The patient with mental illness closes against his carer who used to have an intimate relationship with him.<br /></li>
+<li>When you see water squirt out of a patient's mouth, you won't make such remarks about mental illness.<br /></li>
+</ul>
+<p>
+symbol [ˈsɪmb(ə)l]: n. a picture or shape that has a particular meaning or represents a particular organization or idea ⇨ sign符号,记号,象征<br />
+</p>
+<ul class="org-ul">
+<li>The symbol of the ancient empire remains on the wall with very little wear and tear.<br /></li>
+<li>The symbol in the ceiling gave new resonance to those visitors.<br /></li>
+<li>The symbol represents how many times this school has run races.<br /></li>
+</ul>
+<p>
+pitch [pɪtʃ]: n. how high or low a note or other sound is音高<br />
+</p>
+<ul class="org-ul">
+<li>My baby, who responded musically to the pitch of my voice, caught the eye of my wife.<br /></li>
+<li>When you receive electric shocks to your hands, you won't notice the change of his pitch.<br /></li>
+<li>Don't be too hard on me, he said with a high pitch.<br /></li>
+</ul>
+<p>
+carer ['kerər]: n. someone who looks after an old or ill person at home SYN caretaker American English看护者<br />
+</p>
+<ul class="org-ul">
+<li>We need to distract carers from the door when Tom is sneaking into the house.<br /></li>
+<li>The carer soothes the infant better when he has these toys than when he is with bare hands.<br /></li>
+<li>The high pitch of the infant's cry sent the carer's mind wandering.<br /></li>
+</ul>
+<p>
+genome [ˈdʒiˌnoʊm]: n. all the ↑genes in one type of living thing ⇨ DNA[生]基因组<br />
+</p>
+<ul class="org-ul">
+<li>The research for the genome is subjected to the lack of money.<br /></li>
+<li>The genome provides many potentials for humanities, who also live in the symbolic world.<br /></li>
+<li>The scientist is describing the effect of the genome on a scale from an ant to a person.<br /></li>
+</ul>
+<p>
+responsive [rɪˈspɑnsɪv]: adj. eager to communicate with people, and to react to them in a positive way反应积极的<br />
+</p>
+<ul class="org-ul">
+<li>I must admit that your child is responsive in class.<br /></li>
+<li>The cat responded to our voice, meaning she was responsive after the car accident.<br /></li>
+<li>A responsive parent should be good at coping with his or her baby crying.<br /></li>
+</ul>
+<p>
+species [ˈspisiz]: n. a group of animals or plants whose members are similar and can breed together to produce young animals or plants ⇨ genus物种<br />
+</p>
+<ul class="org-ul">
+<li>Please take your hands off the book entitled The Origin of Species.<br /></li>
+<li>The medication acts on this kind of species doesn't mean it acts well on humans either.<br /></li>
+<li>The extinction of the species on the island is beyond our expectations.<br /></li>
+</ul>
+<p>
+process [prəˈses]: v. to deal with an official document, request etc in the usual way处理<br />
+</p>
+<ul class="org-ul">
+<li>The junior engineer gets promoted along with ways to process data effectively.<br /></li>
+<li>Our company began to make a profit along with ways to process requests from customers.<br /></li>
+<li>Tailing it to the company, our programmer processed and updated the project.<br /></li>
+</ul>
+<p>
+soothe [suð]: v. to make someone feel calmer and less anxious, upset, or angry抚慰<br />
+</p>
+<ul class="org-ul">
+<li>The key to soothing your wife is to satisfy her emotional needs.<br /></li>
+<li>A click away, the carer will pay you a visit and help soothe your infant.<br /></li>
+<li>The lady refused to soothe her singer husband when he told something in his heart, which undermined his faith in her.<br /></li>
+</ul>
+<p>
+amplify [ˈæmplɪˌfaɪ]: v. formal to increase the effects or strength of something放大, 增强<br />
+</p>
+<ul class="org-ul">
+<li>The background music of the movie amplified our fears in the scenario.<br /></li>
+<li>Somehow, soothing from her husband amplified her fears about the future.<br /></li>
+<li>The breakdown of trust in the authorities amplified the damage of the social upheaval.<br /></li>
+</ul>
+<p>
+aliveness : n. the condition of living or the state of being alive活力<br />
+</p>
+<ul class="org-ul">
+<li>A sense of aliveness helps him compete with those famous players.<br /></li>
+<li>I could feel a sense of her aliveness from various perspectives.<br /></li>
+<li>More recently, I couldn't feel a sense of aliveness because of mental illness.<br /></li>
+</ul>
+<p>
+matrix [ˈmeɪtrɪks]: n. an arrangement of numbers, letters, or signs in rows and ↑columns that you consider to be one amount, and that you use in solving mathematical problems矩阵<br />
+</p>
+<ul class="org-ul">
+<li>He keeps in mind how to process the question about the matrix.<br /></li>
+<li>The test will multiply the number of questions about the matrix to help you find your weakness.<br /></li>
+<li>The scientist will solve the question about the matrix on TV in real-time.<br /></li>
+</ul>
+<p>
+unique [juˈnik]: adj. being the only one of its kind唯一的<br />
+</p>
+<ul class="org-ul">
+<li>The weight of the patient is unique at several points in the day.<br /></li>
+<li>I allow time for you to find the unique key to open the door.<br /></li>
+<li>Obviously, your wife aims at the unique activity, the Hot Balloon.<br /></li>
+</ul>
+<p>
+in-built: adj. an inbuilt quality, feature etc is part of the nature of someone or something嵌入的<br />
+</p>
+<ul class="org-ul">
+<li>There is an in-built value system that assesses the value of my experience.<br /></li>
+<li>Tuning in to the broadcast, the person took interest in this kind of in-built chip.<br /></li>
+<li>Take a guess whether the chip is in-built.<br /></li>
+</ul>
+<p>
+assess [əˈses]: v. to make a judgment about a person or situation after thinking carefully about it SYN judge评估<br />
+</p>
+<ul class="org-ul">
+<li>Having little connection to my ex-wife, I prefer not to assess her mental life.<br /></li>
+<li>The anonymous assessment made him unaccountable for its outcome.<br /></li>
+<li>With assessment comes the change, and our company began to make a profit.<br /></li>
+</ul>
+<p>
+instinct [ˈɪnstɪŋkt]: n. a natural tendency to behave in a particular way or a natural ability to know something, which is not learned ⇨ intuition本能,直觉<br />
+</p>
+<ul class="org-ul">
+<li>The famous actor ensures that he doesn't take part in a movie which his instinct hates.<br /></li>
+<li>Due to my instinct, I was unwilling to play truant from school when they asked me to.<br /></li>
+<li>Depending on your instinct rather than facts and logic leaves you less informed than before you went to school.<br /></li>
+</ul>
+<p>
+intuition [ˌɪntuˈɪʃ(ə)n]: n. the ability to understand or know something because of a feeling rather than by considering the facts SYN instinct直觉<br />
+</p>
+<ul class="org-ul">
+<li>According to my intuition, you will pass the exam and lead a successful life.<br /></li>
+<li>A big farm couldn't take the plunge just because of your intuition.<br /></li>
+<li>It is a common saying that your first intuition always tries to protect you.<br /></li>
+</ul>
+<p>
+characteristic [ˌkerəktəˈrɪstɪk]: adj. very typical of a particular thing or of someone’s character独特的,典型的<br />
+</p>
+<ul class="org-ul">
+<li>It appears that the actor who refused our boss is characteristic.<br /></li>
+<li>His characteristic introduction made a strong impression on our boss.<br /></li>
+<li>In one case, characteristic behaviors don't fill the ecological niche.<br /></li>
+</ul>
+<p>
+innate [ˈɪˌneɪt]: adj. an innate quality or ability is something you are born with先天的, 天生的<br />
+</p>
+<ul class="org-ul">
+<li>My wife has an innate ability to attract dogs.<br /></li>
+<li>The elephant has an innate ability to recognize people who he met.<br /></li>
+<li>Our cat has an innate ability to recognize colors.<br /></li>
+</ul>
+<p>
+underpin [ˌʌndərˈpɪn]: v. to give strength or support to something and to help it succeed巩固, 支撑<br />
+</p>
+<ul class="org-ul">
+<li>His crossing path with our boss on a boat underpins his social state in the company.<br /></li>
+<li>The rule, that speaking in public isn't limited to managers, underpins the democracy of our company.<br /></li>
+<li>After years apart, my uncle has underpinned his social state in the town.<br /></li>
+</ul>
+<p>
+fixed [fɪkst]: adj. fixed times, amounts, meanings etc cannot be changed SYN set固定的<br />
+</p>
+<ul class="org-ul">
+<li>The profit he made goes beyond the fixed salary you offer.<br /></li>
+<li>The therapist believes that a person's capacity to make friends is not fixed even though he is aging.<br /></li>
+<li>The shape of our cat is fixed in adulthood.<br /></li>
+</ul>
+<p>
+disturbance [dɪˈstɜrbəns]: n. something that interrupts what you are doing, or the act of making this happen干扰<br />
+</p>
+<ul class="org-ul">
+<li>Because of your disturbance this afternoon, I failed to encode the framework into our project.<br /></li>
+<li>It is hard for to takcle problems with your disturbance all the time.<br /></li>
+<li>The policeman was trying to keep track of the dealer with his relative's disturbance.<br /></li>
+</ul>
+<p>
+validate [ˈvælɪˌdeɪt]: v. to make someone feel that their ideas and feelings are respected and considered seriously使得到认同<br />
+</p>
+<ul class="org-ul">
+<li>If you want to show concern for your wife, she should be validated in what she has done for you.<br /></li>
+<li>The soldier was validated by his general because he kept standing guard when running into a storm.<br /></li>
+<li>I comforted my wife with those words in which she was validated in house chores.<br /></li>
+</ul>
+<p>
+heal [hil]: v. if a wound or a broken bone heals or is healed, the flesh, skin, or bone grows back together and becomes healthy again治愈<br />
+</p>
+<ul class="org-ul">
+<li>It is hard to escape the conclusion that he has been healed and avoided going to school.<br /></li>
+<li>Even a prisoner in captivity will be healed in the activity.<br /></li>
+<li>Given that his mental illness is hard to heal, she got divorced from him.<br /></li>
+</ul>
+<p>
+ownership [ˈoʊnərˌʃɪp]: n. the fact of owning something所有权, 物主身份<br />
+</p>
+<ul class="org-ul">
+<li>It is more important than ever to gain ownership of your house.<br /></li>
+<li>The ownership of the field brought about peasant revolts.<br /></li>
+<li>The Army of Revolution promised that the peasants would gain the ownership of fields.<br /></li>
+</ul>
+<p>
+deficit [ˈdefəsɪt]: n. the difference between the amount of something that you have and the higher amount that you need ⇨ shortfall赤字, 不足额<br />
+</p>
+<ul class="org-ul">
+<li>There is a huge deficit of $500 in our family.<br /></li>
+<li>Because of the deficit last month, I decided not to buy the car.<br /></li>
+<li>Instead of compensating for the deficit last month, the housewife kept purchasing something expensive and unnecessary.<br /></li>
+</ul>
+<p>
+affective [əˈfektɪv]: adj. relating to or having an effect on the emotions情感的<br />
+</p>
+<ul class="org-ul">
+<li>After his wife refused to soothe him in the program, his affective disorders erupted.<br /></li>
+<li>No one cares about his affective disorders and asks him to soothe his unpolite wife.<br /></li>
+<li>After his breakup with our coworker, he was diagnosed with affective disorders.<br /></li>
+</ul>
+<hr />
+<p>
+take turns: 轮流<br />
+</p>
+<ul class="org-ul">
+<li>We take turns to take good care of the infant.<br /></li>
+<li>Neglecting the warning, the peasants took turns stealing the power line.<br /></li>
+<li>Ignoring the rules, our colleagues took turns to be late for work.<br /></li>
+</ul>
+<p>
+gut feeling: 直觉<br />
+</p>
+<ul class="org-ul">
+<li>Due to gut feeling, I asked out the girl, who is my wife now.<br /></li>
+<li>Due to gut feeling, I refused to sign the document.<br /></li>
+<li>Due to gut feeling, I refused to make an agreement with the company.<br /></li>
+</ul>
+<p>
+be oriented towards sth.: 针对某事物<br />
+</p>
+<ul class="org-ul">
+<li>Oriented towards serious mental illness, he was sent to America to have an operation.<br /></li>
+<li>Oriented towards the future, I am determined to save money when I am able to work.<br /></li>
+<li>Oriented towards stray dogs, the lady offered poisonous foods to them.<br /></li>
+</ul>
+<p>
+extend to sth.: 延伸到某事物<br />
+</p>
+<ul class="org-ul">
+<li>Extending to our project, I need to encode the framework into it.<br /></li>
+<li>Extending to a company, everyone should obey the rule and those who break it should be punished.<br /></li>
+<li>Extending to a country, the Party should represent the common interest of the people.<br /></li>
+</ul>
+<p>
+A be shared in common with B: A和B有共同之处<br />
+</p>
+<ul class="org-ul">
+<li>Beyond doubt, Chinese is shared in common with English.<br /></li>
+<li>A cat is shared in common with a dog when they are brought up in the same apartment.<br /></li>
+<li>Your wife is shared in common with my wife, who loves to journey abroad.<br /></li>
+</ul>
+<p>
+in the knowledge of sth./having sth.: 在知道某事下<br />
+</p>
+<ul class="org-ul">
+<li>In the knowledge of my dog hiding under the couch, I began to enjoy snacks.<br /></li>
+<li>In the knowledge of his wife's absence, he led my girlfriend to his apartment.<br /></li>
+<li>In the knowledge of the existence of heavy guns, he ordered his men to surrender.<br /></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

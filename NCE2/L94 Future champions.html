@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-08-06 Tue 22:24 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+
+<div id="outline-container-org598a64c" class="outline-2">
+<h2 id="org598a64c">Lesson 94 Future champions</h2>
+<div class="outline-text-2" id="text-org598a64c">
+<p class="verse">
+What kind of race do the children compete in?<br />
+<br />
+<b>Experiments have proved</b><br />
+&#xa0;that children can <b>be instructed in swimming</b> at a very early age.<br />
+At a special swimming pool in Los Angeles,<br />
+&#xa0;children become expert at <b>holding their breath</b> under water even before they can walk.<br />
+Babies of two months old do not appear to <b>be reluctant to enter</b> the water.<br />
+It is not long before<br />
+&#xa0;they <b>are so accustomed to swimming</b> that they can pick up weights from the floor of the pool.<br />
+A game that <b>is very popular with</b> these young swimmers is the underwater tricycle race.<br />
+Tricycles <b>are lined up</b> on the floor of the pool seven feet under water.<br />
+The children <b>compete against</b> each other to reach the other end of the pool.<br />
+Many pedal their tricycles, but most of them prefer to push or drag them.<br />
+Some children can cover the whole length of the pool without coming up for breath even once.<br />
+Whether they will ever become future Olympic champions, only time will tell.<br />
+Meanwhile, they should encourage those among us<br />
+&#xa0;who cannot swim five yards before they are gasping for air.<br />
+<br />
+</p>
+</div>
+<div id="outline-container-org30c2997" class="outline-3">
+<h3 id="org30c2997">expression</h3>
+<div class="outline-text-3" id="text-org30c2997">
+<p>
+instruct [ɪnˈstrʌkt] v.指导,传授<br />
+Los Angeles<br />
+reluctant [rɪˈlʌktənt] adj.勉强的,不愿意的<br />
+weight [weɪt] n.重物<br />
+underwater [ˌʌndə(r)ˈwɔːtə(r)] adj.水下的<br />
+tricycle [ˈtraɪsɪk(ə)l] n.三轮车<br />
+compete [kəmˈpit] v.比赛,对抗<br />
+yard [jɑrd] n.码<br />
+gasp [ɡæsp] v.喘气<br />
+</p>
+
+<p>
+be instructed in doing sth. 受指导做某事<br />
+be reluctant to do sth. 不情愿做某事<br />
+compete against 与…竞争<br />
+</p>
+<hr />
+<p>
+sb./sth. proved that + &#x2026; 某人/某事证明了+…<br />
+hold sb's breath 屏住呼吸<br />
+be accustomed to doing 习惯于做某事<br />
+be popular with &#x2026; 受到……的欢迎<br />
+be lined up 排队等候<br />
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org5dcd05c" class="outline-3">
+<h3 id="org5dcd05c">words</h3>
+<div class="outline-text-3" id="text-org5dcd05c">
+<p>
+instruct [ɪnˈstrʌkt] v.指导,传授<br />
+Los Angeles [lɔ:s-'ændʒələs] 洛杉矶<br />
+reluctant [rɪˈlʌktənt] adj.勉强的,不愿意的<br />
+weight [weɪt] n.重物<br />
+underwater [ˌʌndə(r)ˈwɔːtə(r)] adj.水下的<br />
+tricycle [ˈtraɪsɪk(ə)l] n.三轮车<br />
+compete [kəmˈpit] v.比赛,对抗<br />
+yard [jɑrd] n.码<br />
+gasp [ɡæsp] v.喘气<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org56e7a6c" class="outline-3">
+<h3 id="org56e7a6c"><span class="done DONE">DONE</span> 单词造句</h3>
+<div class="outline-text-3" id="text-org56e7a6c">
+<p>
+instruct v. be instructed in doing sth.<br />
+</p>
+<ul class="org-ul">
+<li>He insisted on instructing his dog in putting his pow on the button.<br /></li>
+<li>He was instructed in removing this from his gate.<br /></li>
+<li>He was instructed in constructing a mental framework.<br /></li>
+<li>He was reluctant to be instrcuted in swimming.<br /></li>
+<li>Leo's job is to instruct us in English.<br /></li>
+</ul>
+<p>
+Los Angeles<br />
+reluctant adj. be reluctant to do sth.<br />
+</p>
+<ul class="org-ul">
+<li>I am reluctant to pay the bill.<br /></li>
+<li>French people are reluctant to represent the noble gift to America.<br /></li>
+<li>The artist is reluctant to take the monument to pieces.<br /></li>
+<li>The girl was reluctant to enter for the competition at the entrance of the theater.<br /></li>
+<li>He is reluctant to go to the camp site.<br /></li>
+</ul>
+<p>
+weight n.<br />
+</p>
+<ul class="org-ul">
+<li>The boy was called in to carry these heavy weights to the shady place under the tree.<br /></li>
+<li>Get out of here with these heavy weight.<br /></li>
+<li>The patient said that he hadn't lift any heavy weight.<br /></li>
+<li>We couldn't carry these heavy weights to there on such short notice.<br /></li>
+<li>The workers kept on carrying these heavy weight to the site.<br /></li>
+</ul>
+<p>
+underwater adj.<br />
+</p>
+<ul class="org-ul">
+<li>Why don't we swim underwater?<br /></li>
+<li>In the meantime, he had to remain underwater until the beer got out of here..<br /></li>
+<li>I have difficulty in holding my breath underwater.<br /></li>
+<li>When I saw the dolphin playing underwater, I bursted out laughing.<br /></li>
+<li>The worker double checked this pipe underwater.<br /></li>
+</ul>
+<p>
+tricycle n.<br />
+</p>
+<ul class="org-ul">
+<li>It is you who are responsible for the tricycle stolen, not him.<br /></li>
+<li>The father turned his attention to the tricycle.<br /></li>
+<li>For you safety, don't ride a tricycle in such condition.<br /></li>
+<li>He was unaware that his tricycle wasn't there any more.<br /></li>
+<li>There is a bulletin board in front of the tricycle.<br /></li>
+</ul>
+<p>
+compete v. compete against<br />
+</p>
+<ul class="org-ul">
+<li>It was not long before they competed against each other for the champion.<br /></li>
+<li>At the end of the harvesting, the villagers compete each other for the prize.<br /></li>
+<li>My parents always made us competed with each other.<br /></li>
+<li>On the bulletin board, it says that we should compete again each other.<br /></li>
+<li>Both of them have been competing against each other for the Command Officer of the station.<br /></li>
+</ul>
+<p>
+yard n. xx yards away<br />
+</p>
+<ul class="org-ul">
+<li>The garage is 100 yards away from my house.<br /></li>
+<li>The map says the nearest toilet we can use is 100 yards away.<br /></li>
+<li>There is a police station 100 yards away.<br /></li>
+<li>A woman is sending a signal 100 yards away.<br /></li>
+<li>The soldier stood to attention 100 yards away.<br /></li>
+</ul>
+<p>
+gasp v.<br />
+</p>
+<ul class="org-ul">
+<li>When his wife suggests to travel abroad, he is always gasping.<br /></li>
+<li>The woman saw a ganster knocked her husband to the ground and she gasped.<br /></li>
+<li>My wife is used to gasping at wonderful view.<br /></li>
+<li>You needn't have gasped.<br /></li>
+<li>She may have already gasped.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgcf2c720" class="outline-3">
+<h3 id="orgcf2c720">反复听电影片段</h3>
+</div>
+<div id="outline-container-orgfa4aafe" class="outline-3">
+<h3 id="orgfa4aafe">Pattern Drill 写+读</h3>
+</div>
+<div id="outline-container-orge0d3620" class="outline-3">
+<h3 id="orge0d3620">给自己讲解</h3>
+</div>
+<div id="outline-container-orgc2195b7" class="outline-3">
+<h3 id="orgc2195b7">红皮书</h3>
+</div>
+<div id="outline-container-org8434bab" class="outline-3">
+<h3 id="org8434bab"><span class="done DONE">DONE</span> 习惯用法造句</h3>
+<div class="outline-text-3" id="text-org8434bab">
+<p>
+sb./sth. proved that + &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>He proved that the boy is lighting a cigarette.<br /></li>
+<li>Tests have proved that the practice works.<br /></li>
+<li>She proved that she was right and we were telling stories.<br /></li>
+<li>The girl proved that a bomb had been planted on the airplane.<br /></li>
+<li>The girl proved that she didn't feel frightened.<br /></li>
+</ul>
+<p>
+hold sb's breath<br />
+</p>
+<ul class="org-ul">
+<li>I can't hold my breath underwater for a long time.<br /></li>
+<li>Before losing my temper, I hold my breath.<br /></li>
+<li>I kept holding my breath to calm down.<br /></li>
+<li>He seems to be holding his breath.<br /></li>
+<li>You should have held your breath.<br /></li>
+</ul>
+<p>
+be accustomed to doing<br />
+</p>
+<ul class="org-ul">
+<li>I am accustomed to having an operation.<br /></li>
+<li>I am accustomed to cutting a mommy open.<br /></li>
+<li>I am accustomed to being covered with a rug.<br /></li>
+<li>She is accustomed to making herself comfortable in her brother's house.<br /></li>
+<li>The boss is accustomed to working overtime.<br /></li>
+</ul>
+<p>
+be popular with &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>The song is popular with young men and young women in the town.<br /></li>
+<li>The song must be popular with young men and young women.<br /></li>
+<li>It was not long before the cod is popular with Chinese.<br /></li>
+<li>It comes as a surprise to learn that the exam is popular with many countries.<br /></li>
+<li>Surfing is popular with the people of France.<br /></li>
+</ul>
+<p>
+be lined up<br />
+</p>
+<ul class="org-ul">
+<li>People are lined up to go on a strike.<br /></li>
+<li>People are lined up to take part in army.<br /></li>
+<li>They were lined up 100 yards away from the garage.<br /></li>
+<li>When the news get around, the crowd was lined up for the comedy show.<br /></li>
+<li>Why are they lined up across the street? It is holding up the traffic.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org7c855cd" class="outline-3">
+<h3 id="org7c855cd"><span class="done DONE">DONE</span> 跟读至背诵</h3>
+<div class="outline-text-3" id="text-org7c855cd">
+</div>
+</div>
+<div id="outline-container-orgacce48e" class="outline-3">
+<h3 id="orgacce48e"><span class="done DONE">DONE</span> Ask me if 写+读</h3>
+<div class="outline-text-3" id="text-orgacce48e">
+<ol class="org-ol">
+<li>Children can be taught to swim at a very early age. At what age/When<br />
+At what age can children be taught to swim?<br />
+When can children be taught to swim?<br /></li>
+<li>This has been proved by experiments. How<br />
+How has this been proved?<br /></li>
+<li>There is a special swimming pool in Los Angeles. Where/What<br />
+Where is there a special swimming pool?<br />
+What is there in Los Angeles?<br /></li>
+<li>Children become expert. How good<br />
+How good do children become?<br /></li>
+<li>They hold their breath under water. Where<br />
+Where do they hold their breath?<br /></li>
+<li>They can do it before they can walk. What<br />
+What can they do before they can walk?<br /></li>
+<li>It's not long before they can swim. How long<br />
+How long is it before they can swim?<br /></li>
+<li>They can pick up weights. What<br />
+What can they pick up?<br /></li>
+<li>The weights are on the floor. Where<br />
+Where are the weights?<br /></li>
+<li>The tricycle race is popular. Which<br />
+Which race is popular?<br /></li>
+</ol>
+<p>
+1- It's an underwater race. What kind<br />
+		What kind of race is it?<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org197cefb" class="outline-3">
+<h3 id="org197cefb"><span class="done DONE">DONE</span> 摘要写作</h3>
+<div class="outline-text-3" id="text-org197cefb">
+<p>
+At a swimming pool in Los Angeles,<br />
+	children are taught to hold their breath under water before they can walk.<br />
+They begin learning when they are two months old and,<br />
+	in time, they can picked up weights from the bottom of pool.<br />
+They game they enjoy most is the tricycle race,<br />
+	which takes place seven feet under water.<br />
+Some children pedal tricycles, while others push or pull them,<br />
+	and a few can get across without coming up for air.<br />
+</p>
+
+<p>
+At a swimming pool in Los Angeles,<br />
+	children who are taught to hold their breath under water before they can walk<br />
+	often begin learning to swim when they are two months old.<br />
+Though they can pick up weights from the bottom of the pool,<br />
+	the game they enjoy most is the tricyle race.<br />
+This takes place seven feet under water and,<br />
+	while some children pedal tricylces, others push or pull them.<br />
+A few get across without coming up for air.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org5d664e7" class="outline-3">
+<h3 id="org5d664e7"><span class="done DONE">DONE</span> tell the story 口语</h3>
+<div class="outline-text-3" id="text-org5d664e7">
+</div>
+</div>
+<div id="outline-container-orgd1435d7" class="outline-3">
+<h3 id="orgd1435d7">Topics for discussion</h3>
+</div>
+</div>
+</div>
+</body>
+</html>

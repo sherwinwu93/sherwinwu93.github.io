@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-01-09 Thu 23:07 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-orgd080ecf" class="outline-2">
+<h2 id="orgd080ecf">2013-10-08 What is the shape of a molecule</h2>
+<div class="outline-text-2" id="text-orgd080ecf">
+<p class="verse">
+What is the shape of a molecule?<br />
+Well, a molecule is mostly empty space.<br />
+Almost all of its mass is concentrated in the extremely dense nuclei of its atoms.<br />
+And its electrons, which determine how the atoms are bonded to each other,<br />
+&#xa0;are more like clouds of negative charge than individual, discrete particles.<br />
+So, a molecule doesn't have a shape in the same way that, for example, a statue has a shape.<br />
+But for every molecule,<br />
+&#xa0;there's at least one way to arrange the nuclei and electrons<br />
+&#xa0;&#xa0;so as to maximize the attraction of opposite charges<br />
+&#xa0;&#xa0;&#xa0;and minimize the repulsion of like charges.<br />
+Now, let's assume<br />
+&#xa0;that the only electrons that matter to a molecule's shape<br />
+&#xa0;&#xa0;are the outermost ones from each participating atom.<br />
+And let's also assume<br />
+&#xa0;that the electron clouds in between atoms,<br />
+&#xa0;&#xa0;in other words, a molecule's bonds, are shaped kind of like sausages.<br />
+Remember that nuclei are positively charged and electrons are negatively charged,<br />
+&#xa0;and if all of a molecule's nuclei were bunched up together<br />
+&#xa0;&#xa0;&#xa0;or all of its electrons were bunched up together,<br />
+&#xa0;&#xa0;they would just repel each other and fly apart, and that doesn't help anyone.<br />
+<br />
+In 1776, Alessandro Volta, decades before he would eventually invent batteries, discovered methane.<br />
+Now, the chemical formula of methane is CH4.<br />
+And this formula tells us<br />
+&#xa0;that every molecule of methane is made up of one carbon and four hydrogen atoms,<br />
+&#xa0;but it doesn't tell us what's bonded to what<br />
+&#xa0;&#xa0;or how they atoms are arranged in 3D space.<br />
+From their electron configurations,<br />
+&#xa0;we know that carbon can bond with up to four other atoms<br />
+&#xa0;&#xa0;and that each hydrogen can only bond with one other atom.<br />
+So, we can guess that the carbon should be the central atom bonded to all the hydrogens.<br />
+Now, each bond represents the sharing of two electrons<br />
+&#xa0;and we draw each shared pair of electrons as a line.<br />
+<br />
+So, now we have a flat representation of this molecule,<br />
+&#xa0;but how would it look in three dimensions?<br />
+We can reasonably say<br />
+&#xa0;that because each of these bonds is a region of negative electric charge<br />
+&#xa0;&#xa0;and like charges repel each other,<br />
+&#xa0;the most favorable configuration of atoms would maximize the distance between bonds.<br />
+And to get all the bonds as far away from each other as possible, the optimal shape is this.<br />
+This is called a tetrahedron.<br />
+<br />
+Now, depending on the different atoms involved, you can actually get lots of different shapes.<br />
+Ammonia, or NH3, is shaped like a pyramid.<br />
+Carbon dioxide, or CO2, is a straight line.<br />
+Water, H2O, is bent like your elbow would be bent.<br />
+And chlorine trifluoride, or ClF3, is shaped like the letter T.<br />
+Remember that what we've been doing here<br />
+&#xa0;is expanding on our model of atoms and electrons to build up to 3D shapes.<br />
+We'd have to do experiments to figure out<br />
+&#xa0;if these molecules actually do have the shapes we predict.<br />
+Spoiler alert: most of them do, but some of them don't.<br />
+Now, shapes get more complicated as you increase the number of atoms.<br />
+All the examples we just talked about had one obviously central atom,<br />
+&#xa0;but most molecules,<br />
+&#xa0;&#xa0;&#xa0;from relatively small pharmaceuticals all the way up to long polymers like DNA or proteins,<br />
+&#xa0;&#xa0;don't.<br />
+The key thing to remember is<br />
+&#xa0;that bonded atoms will arrange themselves to maximize the attraction between opposite charges<br />
+&#xa0;&#xa0;and minimize the repulsion between like charges.<br />
+Some molecules even have two or more stable arrangements of atoms,<br />
+&#xa0;and we can actually get really cool chemistry from the switches between those configurations,<br />
+&#xa0;&#xa0;even when the composition of that molecule,<br />
+&#xa0;&#xa0;&#xa0;&#xa0;that's to say the number and identity of its atoms,<br />
+&#xa0;&#xa0;&#xa0;has not changed at all.<br />
+</p>
+</div>
+<div id="outline-container-org1b71b79" class="outline-3">
+<h3 id="org1b71b79">expression</h3>
+<div class="outline-text-3" id="text-org1b71b79">
+<p>
+mass [mæs]: n. a large amount of a substance which does not have a definite or regular shape大量<br />
+dense [dens]: adj. made of or containing a lot of things or people that are very close together SYN thick密集的<br />
+charge [tʃɑrdʒ]: n. electricity that is put into a piece of electrical equipment such as a ↑battery电荷<br />
+discrete [dɪˈskrit]: adj. clearly separate不连续的<br />
+arrange [əˈreɪndʒ]: v. to organize or make plans for something such as a meeting, party, or trip安排<br />
+maximize [ˈmæksɪˌmaɪz]: v. to increase something such as profit or income as much as possible OPP minimize取&#x2026;最大值<br />
+minimize [ˈmɪnɪˌmaɪz]: v. to reduce something that is difficult, dangerous, or unpleasant to the smallest possible amount or degree OPP maximize最小化<br />
+outermost [ˈaʊtərˌmoʊst]: adj. furthest from the middle OPP innermost最外面的, 最远的<br />
+bond [bɑnd]: v. if two things bond with each other, they become firmly fixed together, especially after they have been joined with glue结合<br />
+sausage [ˈsɑsɪdʒ]: n. a small tube of skin filled with a mixture of meat, spices etc, eaten hot or cold after it has been cooked香肠, 腊肠<br />
+formula [ˈfɔrmjələ]: n. a series of numbers or letters that represent a mathematical or scientific rule式子<br />
+dimension [daɪˈmenʃ(ə)n]: n. a part of a situation or a quality involved in it SYN aspect维<br />
+favorable [ˈfeɪv(ə)rəb(ə)l]: adj. a favourable report, opinion, or reaction shows that you think that someone or something is good or that you agree with them赞成的<br />
+tetrahedron [ˌtetrə'hi:drən]: n. 四面体<br />
+ammonia [əˈmoʊniə]: n. 氨水<br />
+pyramid [ˈpɪrəmɪd]: n. a large stone building with four ↑triangular (=three-sided) walls that slope in to a point at the top, especially in Egypt and Central America金字塔<br />
+Carbon [ˈkɑrbən] dioxide [daɪ'ɒksaɪd]: n. 二氧化碳<br />
+pharmaceutical [ˌfɑrməˈsutɪk(ə)l]: n. relating to the production of drugs and medicines药物<br />
+polymer [ˈpɑlɪmər]: n. a chemical ↑compound that has a simple structure of large ↑molecules聚合体<br />
+</p>
+<hr />
+<p>
+be concentrated in: 聚集于<br />
+be bonded to: 与……紧密相连<br />
+there's at least one way to do sth.: 至少有一种方法去做某事<br />
+maximize/minimize the attraction/repulsion of: 最小/大化&#x2026;的吸引/排斥<br />
+A. matter to B.: A对B重要<br />
+A. be the outermost one(s) from B.: A是B最远的部分<br />
+in between sth.: 在&#x2026;之间<br />
+be kind of like sth.: 有点像某物<br />
+be bunched up together: 被聚拢在一起<br />
+fly apart: 四分五裂,飞离<br />
+doesn't help anyone: 帮不了任何人<br />
+decades before: 数十年前<br />
+be arranged in 3D space: 在3D空间被安置<br />
+bond with sth./sb.: 与他人建立紧密联系<br />
+draw sth. as a line: 把某物画成线<br />
+have a flat representation of sth.: 有某物的平面图<br />
+in three dimensions: 在3维<br />
+get A. far away from B.: 使得A远离B<br />
+expand on our model of sth. to do sth.: 扩展xx的模式/模型去做某事<br />
+Spoiler alert: 剧透<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orga17fd6f" class="outline-3">
+<h3 id="orga17fd6f">sentences</h3>
+<div class="outline-text-3" id="text-orga17fd6f">
+<p>
+be concentrated in: 聚集于<br />
+</p>
+<ul class="org-ul">
+<li>Almost all students in the town are concentrated in front of the museum.<br /></li>
+<li>Almost all my pocket money is concentrated in the box.<br /></li>
+<li>All my attention is concentrated on the beautiful girl.<br /></li>
+</ul>
+<p>
+be bonded to: 与……紧密相连<br />
+</p>
+<ul class="org-ul">
+<li>This Buddhist nun is bonded to the fall of smallpox.<br /></li>
+<li>The vicar pointed out that the cursed tree is bonded to the source of income.<br /></li>
+<li>Bonded to the manager, he has a bad reputation.<br /></li>
+</ul>
+<p>
+there's at least one way to do sth.: 至少有一种方法去做某事<br />
+</p>
+<ul class="org-ul">
+<li>There's at least one way to complete this course.<br /></li>
+<li>There's at least one way to be an expert at pressing the button.<br /></li>
+<li>There's at least one way to fulfill your dream.<br /></li>
+</ul>
+<p>
+maximize/minimize the attraction/repulsion of: 最小/大化&#x2026;的吸引/排斥<br />
+</p>
+<ul class="org-ul">
+<li>She has a habit of reading in the subway, which maximizes the attraction of her husband and her.<br /></li>
+<li>Removing the button from the door, he maximized the repulsion of his dog and him.<br /></li>
+<li>I maximized the repulsion of my cat and me so that she smashed everything to pieces.<br /></li>
+</ul>
+<p>
+A. matter to B.: A对B重要<br />
+</p>
+<ul class="org-ul">
+<li>I get tired of those tasks which matter to my English exam.<br /></li>
+<li>A gust of wind swept the expensive bed which mattered to my grandfather.<br /></li>
+<li>You should rest for a while now, which matters to your health.<br /></li>
+</ul>
+<p>
+A. be the outermost one(s) from B.: A是B最远的部分<br />
+</p>
+<ul class="org-ul">
+<li>I seem to be the outermost one from our group.<br /></li>
+<li>I don't want to be the outermost one from our class anymore.<br /></li>
+<li>For the first time in my life, I was the outermost one from my family.<br /></li>
+</ul>
+<p>
+in between sth.: 在&#x2026;之间<br />
+</p>
+<ul class="org-ul">
+<li>I took the seat in between the manager and my leader.<br /></li>
+<li>I couldn't hear a word in between the young woman and the young man.<br /></li>
+<li>It might be time to take a seat in between these couples.<br /></li>
+</ul>
+<p>
+be kind of like sth.: 有点像某物<br />
+</p>
+<ul class="org-ul">
+<li>The shape is kind of like some monsters from outer space.<br /></li>
+<li>It's kind of like mythical realms inhabited by known human beings.<br /></li>
+<li>He developed a model for an atom kind of like a water ripple.<br /></li>
+</ul>
+<p>
+be bunched up together: 被聚拢在一起<br />
+</p>
+<ul class="org-ul">
+<li>These struck busmen were bunched up together to reach an agreement.<br /></li>
+<li>The pen pals who have been interacting with each other were bunched up together last week.<br /></li>
+<li>These particles may have been bunched up together.<br /></li>
+</ul>
+<p>
+fly apart: 四分五裂,飞离<br />
+</p>
+<ul class="org-ul">
+<li>These organs began to fly apart at the extreme of pressure.<br /></li>
+<li>The car hit the surface of the building and flew apart.<br /></li>
+<li>The machinery is not supposed to fly apart on the flanks of volcanoes.<br /></li>
+</ul>
+<p>
+doesn't help anyone: 帮不了任何人<br />
+</p>
+<ul class="org-ul">
+<li>Stop complaining, it doesn't help anyone.<br /></li>
+<li>Don't interrupt me, it doesn't help anyone.<br /></li>
+<li>Although you make many building blocks of cars, these don't help anyone.<br /></li>
+</ul>
+<p>
+decades before: 数十年前<br />
+</p>
+<ul class="org-ul">
+<li>Decades before he has been able to undertake the search of extremophiles.<br /></li>
+<li>Decades before he proved that Mars might support life.<br /></li>
+<li>Decades before smallpox had been fatal for us.<br /></li>
+</ul>
+<p>
+be arranged in 3D space: 在3D空间被安置<br />
+</p>
+<ul class="org-ul">
+<li>What is remarkable about the robot is how its building blocks are arranged in 3D spaces.<br /></li>
+<li>How these atoms are arranged in 3D space is still a mystery.<br /></li>
+<li>She tries to figure out how these items are arranged in 3D space.<br /></li>
+</ul>
+<p>
+bond with sth./sb.: 与他人建立紧密联系<br />
+</p>
+<ul class="org-ul">
+<li>With this procedure, we bonded with each other.<br /></li>
+<li>I have some close friends who bond with me a great deal.<br /></li>
+<li>The actor who bonds with the director was cast in the role of a new movie.<br /></li>
+</ul>
+<p>
+draw sth. as a line: 把某物画成线<br />
+</p>
+<ul class="org-ul">
+<li>It's time to draw points A and B as a line.<br /></li>
+<li>There's a certain probability of drawing the two electrons as a line.<br /></li>
+<li>She draws points A and B as a line to develop a model for an atom.<br /></li>
+</ul>
+<p>
+have a flat representation of sth.: 有某物的平面图<br />
+</p>
+<ul class="org-ul">
+<li>The manager behaves like he has a flat representation of the layer of the building.<br /></li>
+<li>There is some small, but non-zero, probability that he has a flat representation of this house.<br /></li>
+<li>I have a flat representation of the house<br />
+that suggests this room is just the right distance from the dining room.<br /></li>
+</ul>
+<p>
+in three dimensions: 在3维<br />
+</p>
+<ul class="org-ul">
+<li>It looks kind of like a rabbit in three dimensions.<br /></li>
+<li>What does it look like in three dimensions?<br /></li>
+<li>Why does it look like a rabbit in three dimensions?<br /></li>
+</ul>
+<p>
+get A. far away from B.: 使得A远离B<br />
+</p>
+<ul class="org-ul">
+<li>I must get my daughter far away from home.<br /></li>
+<li>After getting her daughter far away from the castle, the king began to reminisce about her mother.<br /></li>
+<li>I managed to get the colleague far away from me.<br /></li>
+</ul>
+<p>
+expand on our model of sth. to do sth.: 扩展xx的模式/模型去做某事<br />
+</p>
+<ul class="org-ul">
+<li>He expanded on his model of electrons and protons to explain this phenomenon to his students.<br /></li>
+<li>He expanded on his model of cells to bring about the fall of smallpox.<br /></li>
+<li>Telescopes make it possible for him to expand on his model of stars.<br /></li>
+</ul>
+<p>
+Spoiler alert: 剧透<br />
+</p>
+<ul class="org-ul">
+<li>Spoiler alert: I passed the test.<br /></li>
+<li>Spoiler alert: he was killed in the end.<br /></li>
+<li>Spoiler alert: he didn't marry Jim.<br /></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

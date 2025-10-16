@@ -1,0 +1,735 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-09-28 Sat 22:17 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-org2a38424" class="outline-2">
+<h2 id="org2a38424">Lesson 28 Five pounds too dear</h2>
+<div class="outline-text-2" id="text-org2a38424">
+<p class="verse">
+Why was even five pounds 'too dear'?<br />
+<br />
+Small boats loaded with wares <b>sped to the great liner</b> as she was entering the harbour.<br />
+Before she had anchored,<br />
+&#xa0;the men from the boats had climbed on board<br />
+&#xa0;and the decks were soon covered with colourful rugs from Persia,<br />
+&#xa0;&#xa0;silks from India, copper coffee pots, and beautiful handmade silverware.<br />
+It was difficult not to be tempted.<br />
+Many of the tourists on board had begun <b>bargaining with the tradesmen</b>,<br />
+&#xa0;but I decided not to buy anything until I had disembarked.<br />
+<br />
+I had no sooner got off the ship than I <b>was assailed by a man</b><br />
+&#xa0;who wanted to sell me a diamond ring.<br />
+I <b>had no intention of</b> buying one,<br />
+&#xa0;but I <b>could not conceal the fact that</b> I <b>was impressed by</b> the size of the diamonds.<br />
+Some of them were as big as marbles.<br />
+The man <b>went to great lengths to prove that</b> the diamonds were real.<br />
+As we were walking past a shop,<br />
+&#xa0;he held a diamond firmly against the window and made a deep impression in the glass.<br />
+It took me over half an hour to <b>get rid of him</b>.<br />
+<br />
+The next man to approach me was selling expensive pens and watches.<br />
+I examined one of the pens closely.<br />
+It certainly looked genuine.<br />
+<b>At the base of the gold cap</b>, the words 'made in the USA' had been neatly inscribed.<br />
+The man said that the pen was worth 50 dollars,<br />
+&#xa0;but <b>as a special favour</b>, he would <b>let me have it</b> for 30 dollars.<br />
+I shook my head and held up five fingers <b>indicating that</b> I was willing to pay 5 dollars.<br />
+Gesticulating wildly, the man acted as if he found my offer outrageous,<br />
+&#xa0;but he eventually <b>reduced the price to 10 dollars</b>.<br />
+Shrugging my shoulders,<br />
+&#xa0;I began to walk away when, a moment later, he ran after me and <b>thrust the pen into</b> my hands.<br />
+Though he kept <b>throwing up his arms</b> in despair, he readily accepted the 5 dollars I gave him.<br />
+I felt especially pleased with my wonderful bargain &#x2013; until I <b>got back to the ship</b>.<br />
+No matter how hard I tried,<br />
+&#xa0;it was impossible to <b>fill this beautiful pen with ink</b><br />
+&#xa0;and <b>to this day</b> it has never written a single word!<br />
+</p>
+</div>
+<div id="outline-container-orgcd2a5b0" class="outline-3">
+<h3 id="orgcd2a5b0">expression</h3>
+<div class="outline-text-3" id="text-orgcd2a5b0">
+<p>
+wares [wer] n. silverware n.:器物  银器<br />
+anchor: [ˈæŋkər] v.n.停航下锚<br />
+deck: [dek] n.甲板<br />
+tempt: [tempt] v.吸引;引诱<br />
+bargain: [ˈbɑrɡən] v.n.讨价还价<br />
+disembark: [ˌdɪsɪmˈbɑrk] v. to get off a ship下船上岸<br />
+assail: [əˈseɪl] v.骚扰<br />
+marble: [ˈmɑrb(ə)l] n.大理石<br />
+inscribe: [ɪnˈskraɪb] v.雕刻<br />
+favour: [ˈfeɪvər] n. favor 优惠<br />
+gesticulate: [dʒəˈstɪkjəˌleɪt] v.做手势<br />
+outrageous: [aʊtˈreɪdʒəs] adj.不公的<br />
+thrust: [θrʌst] v.猛塞<br />
+</p>
+
+<p>
+on the deck: 在甲板上<br />
+tempt sb. into doing sth.  tempt sb. to do sth.  be tempted to do sth.: 引诱某人做某事<br />
+bargain with sb.: 和某人讨价还价<br />
+make a bargain with &#x2026;: 和某人讨价还价<br />
+be assailed by sb.: 被某人骚扰<br />
+A be inscribed on B A被雕刻在B上<br />
+as a special/personal favor (to sb.): 作为对某人的特殊优惠<br />
+do me a favor: 帮我个忙<br />
+it is outrageous (that) + &#x2026;: xx使非常不公的<br />
+thrust sth. into sw. (especially my hands): 猛塞某物在某处<br />
+</p>
+<hr />
+<p>
+speed to sp.: 加速到某地<br />
+sb. have no intention of doing sth.: 某人无意做某事<br />
+I can't conceal the fact that + &#x2026;: 我无法隐藏事实+&#x2026;<br />
+sb. be impressed by sth.: 某人对某事印象深刻/被打动<br />
+go to great lengths to do sth.: 努力做某事<br />
+prove that + &#x2026;: 证明+&#x2026;<br />
+go to great lengths to prove that + &#x2026;: 努力证明<br />
+get rid of sb.: 摆脱某人<br />
+at the base of sth.: 在&#x2026;的基础上<br />
+let me have it: 给我吧<br />
+indicate that + &#x2026;: 表示&#x2026;<br />
+reduce the price to $: 减少价格到&#x2026;<br />
+throw up one's arms: 举起胳膊<br />
+get back to sp.: 回到某地<br />
+fill a. with b.: 用B充满A<br />
+to this day: 直到今天 by now<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org9d57a34" class="outline-3">
+<h3 id="org9d57a34">words</h3>
+<div class="outline-text-3" id="text-org9d57a34">
+<p>
+wares [werz] n. 货物,商品<br />
+anchor [ˈæŋkər] v. 停航下锚<br />
+deck [dek] n. 甲板<br />
+silverware [ˈsɪlvərwer] n. 银器<br />
+tempt [tempt] v. 吸引;引诱<br />
+bargain [ˈbɑːrɡən] v. 讨价还价<br />
+disembark [ˌdɪsɪmˈbɑːrk] v. 下船上岸<br />
+assail [əˈseɪl] v. 纠缠<br />
+marble [ˈmɑːrb(ə)l] n. 小玻璃球<br />
+inscribe [ɪnˈskraɪb] v. 刻写,雕<br />
+favour [ˈfeɪvər] n. 好处,优惠<br />
+gesticulate [dʒeˈstɪkjuleɪt] v. (讲话时)打手势<br />
+outrageous [aʊtˈreɪdʒəs] adj. 出人意料的; 令人不悦的<br />
+thrust [θrʌst] v. 硬塞给<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org0dcc500" class="outline-3">
+<h3 id="org0dcc500">vocabulary</h3>
+<div class="outline-text-3" id="text-org0dcc500">
+<p>
+loaded with wares: piled high with goods<br />
+liner: passenger ship<br />
+rugs: mats, small carpets<br />
+bargaining: arguing about the price<br />
+went to great lengths: did everything he could<br />
+impression: mark, scratch<br />
+to get rid of him: to make him go away<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgdedee54" class="outline-3">
+<h3 id="orgdedee54"><span class="done DONE">DONE</span> 单词造句</h3>
+<div class="outline-text-3" id="text-orgdedee54">
+<p>
+wares n. silverware n.<br />
+</p>
+<ul class="org-ul">
+<li>The ship loaded with wares is sinking.<br /></li>
+<li>These craftsmen decided to sell their wares at the village fair.<br /></li>
+<li>It is not allowed to sell wares at the square.<br /></li>
+<li>The authorities forbid us to sell wares here.<br /></li>
+<li>The officer claimed that these wares is not exempted from import duty.<br /></li>
+</ul>
+<p>
+anchor v.n.<br />
+</p>
+<ul class="org-ul">
+<li>The boy didn't follow his father's instruction to anchor the ship.<br /></li>
+<li>After greeted by an unpleasant smell, he anchored the boat and arrived on the scene.<br /></li>
+<li>The ship needn't have been anchored at the harbour.<br /></li>
+<li>On the the other, the anchor has already been broken.<br /></li>
+<li>I'm genuinely sorry that I didn't arrive on time because the anchor has been broken.<br /></li>
+</ul>
+<p>
+deck n.  on the deck<br />
+</p>
+<ul class="org-ul">
+<li>He realized to his horror that his baby is sleeping on the deck.<br /></li>
+<li>The order to gather round on the deck was given.<br /></li>
+<li>I am a little tired, for I has been wandering on the deck.<br /></li>
+<li>You will have a good view on the deck.<br /></li>
+<li>Why don't we grab a beer on the deck?<br /></li>
+</ul>
+<p>
+tempt v.  tempt sb. into doing sth.  tempt sb. to do sth.  be tempted to do sth.<br />
+</p>
+<ul class="org-ul">
+<li>The archaeologist which is not tempted to touch it is the exception to the general rule.<br /></li>
+<li>In studying English, she is tempted to read science fiction.<br /></li>
+<li>I seem to be tempted to disembark in advance.<br /></li>
+<li>My cousin makes every effort to tempt me into smoking again.<br /></li>
+<li>I was greeted by a familiar smell which tempted me to light up a cigarette.<br /></li>
+</ul>
+<p>
+bargain v.n.  bargain with sb.  make a bargain with &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>I always fail to bargain with these vendors by the lake.<br /></li>
+<li>Those busmen going on a strike refused to make a bargain with their boss in this way.<br /></li>
+<li>It is said that she lives by bargaining with us.<br /></li>
+<li>In the light of this rule, I have made a bargain with devil.<br /></li>
+<li>I should have made a bargain with devil.<br /></li>
+</ul>
+<p>
+disembark v.<br />
+</p>
+<ul class="org-ul">
+<li>As long as I spoted my wife waving to me, I disembarked.<br /></li>
+<li>If I have seen you waitting for me, I would have already disembarked.<br /></li>
+<li>In his effort to sell me this product, I disembarked.<br /></li>
+<li>If you had disembarked at that time, you would have gotten a pen for nothing.<br /></li>
+<li>The anchor enables us to disembark at this harbour.<br /></li>
+</ul>
+<p>
+assail v.  be assailed by sb.<br />
+</p>
+<ul class="org-ul">
+<li>I was assailed by doubts why police asked me to station..<br /></li>
+<li>It is no use pretending that you aren't assailed by doubts.<br /></li>
+<li>I was assailed by the enthusiasm of my pupils.<br /></li>
+<li>It is difficult to be assailed by a vendor in the open in this country.<br /></li>
+<li>I was free from being assailed by his enthusiasm.<br /></li>
+</ul>
+<p>
+marble n.<br />
+</p>
+<ul class="org-ul">
+<li>He grabed these marbles with great ease.<br /></li>
+<li>He has eaten this marble and has consequences.<br /></li>
+<li>Because of the marble, one of my close friends held a grudge against me when I was very young.<br /></li>
+<li>These marbles which her mother presented to her gave her spiritual comfort.<br /></li>
+<li>The marble dyed red is the exception to the rule.<br /></li>
+</ul>
+<p>
+inscribe v.  be inscribed on sth.<br />
+</p>
+<ul class="org-ul">
+<li>People in German gave him a state funeral and his name has been insrcibed on monument.<br /></li>
+<li>My aunt told me that my wife's name was inscribed on headstone of my grandfather.<br /></li>
+<li>Instead of my wife's name, I chose to inscrib my father's name on the pen.<br /></li>
+<li>It is difficult to inscribe so many words on the wood.<br /></li>
+<li>The machine made it possible for me to inscribe these words on the plate.<br /></li>
+</ul>
+<p>
+favour n. favor  as a special/personal favor (to sb.)  do me a favor<br />
+</p>
+<ul class="org-ul">
+<li>As my wife, I am asking you to do me a favor.<br /></li>
+<li>And as a special favor, she had a really good seat.<br /></li>
+<li>I want you to reconsider it as a personal favor to me.<br /></li>
+<li>As a special favor, I will offer 5 dollars a pound for your pizza.<br /></li>
+<li>It is anticipated that local people will do us a favor.<br /></li>
+</ul>
+<p>
+gesticulate v.<br />
+</p>
+<ul class="org-ul">
+<li>I was gesticulating at her to capture her attention.<br /></li>
+<li>Wildly as he gesticulated, we failed to say the magic word.<br /></li>
+<li>Wildly as he gesticulated, we didn't have a subtle mind.<br /></li>
+<li>I was influenced by the guy who gesticulated at me wildly.<br /></li>
+<li>Before gesticulating at her, he had been smiling.<br /></li>
+</ul>
+<p>
+outrageous adj.  it is outrageous (that)<br />
+</p>
+<ul class="org-ul">
+<li>It is outrageous that you classify tramps as beggars.<br /></li>
+<li>It is outrageous that the pupil has a better salary than me.<br /></li>
+<li>It is outrageous that you didn't say the magic word.<br /></li>
+<li>It is outrageous that you have bad taste in clothes.<br /></li>
+<li>It is outrageous that she leaped out at you in the exhibition.<br /></li>
+</ul>
+<p>
+thrust v.  thrust sth. into sw. (especially my hands)<br />
+</p>
+<ul class="org-ul">
+<li>My aunt thrust pocket money into my hands.<br /></li>
+<li>You needn't have thrusted ice cream into my mouth.<br /></li>
+<li>You grandmother is about to thrust snacks into your pocket.<br /></li>
+<li>As long as the bell rang, the student thrusted his paper into my hands.<br /></li>
+<li>It is all very well that your friend thrusts marbles into your hands.<br /></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgfea8864" class="outline-3">
+<h3 id="orgfea8864"><span class="done DONE">DONE</span> 反复听电影片段直到懂关键句</h3>
+<div class="outline-text-3" id="text-orgfea8864">
+</div>
+</div>
+<div id="outline-container-org5e53ef3" class="outline-3">
+<h3 id="org5e53ef3">复习二册语法(笔记或视频) &amp; 红皮书</h3>
+</div>
+<div id="outline-container-org8a34eab" class="outline-3">
+<h3 id="org8a34eab"><span class="done DONE">DONE</span> 习惯用法造句</h3>
+<div class="outline-text-3" id="text-org8a34eab">
+<p>
+speed to sw.<br />
+</p>
+<ul class="org-ul">
+<li>If you speed to the station, you may catch the train.<br /></li>
+<li>I'm exhasuted, for I has been speeding to office.<br /></li>
+<li>I starved to death after I had sped to school.<br /></li>
+<li>I couldn't speed to the theatre because of broken car.<br /></li>
+<li>The doctor was speeding to hospital to have an operation.<br /></li>
+</ul>
+<p>
+sb. have no intention of doing sth.<br />
+</p>
+<ul class="org-ul">
+<li>He has no intention of doing housework. This made my hair stand on.<br /></li>
+<li>I have no intention of being a medical student.<br /></li>
+<li>I have no intention of having a skeleton in the cupboard.<br /></li>
+<li>I have no intention of listening to you.<br /></li>
+<li>I have no intention of using vivid sayings.<br /></li>
+</ul>
+<p>
+I can't conceal the fact that + &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>I try to conceal the fact that my stomach turned.<br /></li>
+<li>He failed to conceal the fact that he didn't pass the test.<br /></li>
+<li>He managed to conceal the fact that he hadn't taken a shower.<br /></li>
+<li>I can't concel the fact that I felt sick to my stomach at the idea of her.<br /></li>
+<li>He managed to conceal the fact that these clothes his wife bought didn't appeal to him.<br /></li>
+</ul>
+<p>
+sb. be impressed by sth.<br />
+</p>
+<ul class="org-ul">
+<li>I was impressed by the buildings.<br /></li>
+<li>The sad truth is that I wasn't impressed by the gift she gave me.<br /></li>
+<li>I was impressed by the meal which she cooked for me.<br /></li>
+<li>I was impressed by the fact that she has received so many praises.<br /></li>
+<li>I was impressed by the story she read to me last night.<br /></li>
+</ul>
+<p>
+go to great lengths to do sth.<br />
+</p>
+<ul class="org-ul">
+<li>I went to great lengths to write out the paper in full.<br /></li>
+<li>I went to great lengths to play a joken on him.<br /></li>
+<li>I went to great lengths to make a speech in front of students.<br /></li>
+<li>She went to great lengths to change into the dress which she bought last year.<br /></li>
+<li>My cat went to great lengths to capture my attention.<br /></li>
+</ul>
+<p>
+prove that + &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>My cat proved that cats never fascinate human beings.<br /></li>
+<li>It proved that she had already gained her independence.<br /></li>
+<li>It proved that she received a warm welcome.<br /></li>
+<li>It proved that she is in difficulty.<br /></li>
+<li>It proved that the microphone is connected to the tower.<br /></li>
+</ul>
+<p>
+get rid of sb.<br />
+</p>
+<ul class="org-ul">
+<li>We managed to get rid of my grandmother by speeding to forest.<br /></li>
+<li>I'm glad that I got rid of him in the morning.<br /></li>
+<li>Why don't we just get rid of him?<br /></li>
+<li>It is easy to get rid of the police.<br /></li>
+<li>I'm tired of getting rid of these tramps.<br /></li>
+</ul>
+<p>
+at the base of sth.<br />
+</p>
+<ul class="org-ul">
+<li>It is said that there is a door at the base of the tower.<br /></li>
+<li>She will insribe an article about tramps at the base of statue.<br /></li>
+<li>My cat soon disappeared at the base of the bed.<br /></li>
+<li>I'm genuinely sorry that you found my ex-girlfriend's name at the base of statue.<br /></li>
+<li>There is a big hole at the base of the tree.<br /></li>
+</ul>
+<p>
+let me have it<br />
+</p>
+<ul class="org-ul">
+<li>If you give me $5, I might let you have it.<br /></li>
+<li>It is difficult to let me have it.<br /></li>
+<li>If you gave me $5, I would let you have it.<br /></li>
+<li>If you had given me $5, I would have let you have it.<br /></li>
+<li>I'm not gonna let you have it.<br /></li>
+</ul>
+<p>
+indicate that + &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>This indicates that we put tramps in the same class as beggars.<br /></li>
+<li>This indicates that he treated me with contempt.<br /></li>
+<li>This would indicate that I am envious of the man who works for alibaba.<br /></li>
+<li>My investigations also indicate that she passed the test with great ease.<br /></li>
+<li>This would indicate that he was afflicted by these anxieties.<br /></li>
+</ul>
+<p>
+reduce the price to $<br />
+</p>
+<ul class="org-ul">
+<li>This indicates that the house would reduce the price to $100,000.<br /></li>
+<li>After I bargain with him, he agreed to reduce the price to $100.<br /></li>
+<li>We have made a bargain with each other and he will reduce the price to $100.<br /></li>
+<li>It is difficult to reduce the price $100 this summar.<br /></li>
+<li>If you reduced the price to $100,000, your house will soon be sold out.<br /></li>
+</ul>
+<p>
+throw up one's arms<br />
+</p>
+<ul class="org-ul">
+<li>In studying English, she is always throwing up her arms.<br /></li>
+<li>You needn't have thrown up your arms in the class.<br /></li>
+<li>The man who is throwing up his arms is the exception to this general rule.<br /></li>
+<li>She threw up her arms and has consequences.<br /></li>
+<li>Less people in the apartment made it possible for me to throw up my arms.<br /></li>
+</ul>
+<p>
+get back to sw.<br />
+</p>
+<ul class="org-ul">
+<li>The bicycle has made it possible for me to get back to museum.<br /></li>
+<li>I was anxious to get back to work as quickly as possible.<br /></li>
+<li>She got back to the village fair and got biscuits for nothing.<br /></li>
+<li>If you got back to work, you would be free to do housework.<br /></li>
+<li>She claimed that the ambassador has got back to his country.<br /></li>
+</ul>
+<p>
+fill a. with b.<br />
+</p>
+<ul class="org-ul">
+<li>It comes as a surprise to learn that my cat filled the bottle with little stone.<br /></li>
+<li>At the absence of his parents, the baby managed to fill the bottle with water.<br /></li>
+<li>I chose to fill the blue bottle with water.<br /></li>
+<li>In the light of this statement, the bottle is now filled with air.<br /></li>
+<li>I'm busy filling the bottle with water. This really gave me spiritual comfort.<br /></li>
+</ul>
+<p>
+to this day<br />
+</p>
+<ul class="org-ul">
+<li>To this day, I haven't sent my wife any gift.<br /></li>
+<li>To this day, I am free to pay taxes.<br /></li>
+<li>To this day, this kind of perfume is not exempted from import duty.<br /></li>
+<li>To this day, the police is quite tolerant of these thieves.<br /></li>
+<li>To this day, I haven't lit up any cigarette.<br /></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgb4abfaa" class="outline-3">
+<h3 id="orgb4abfaa">跟读 50遍</h3>
+</div>
+<div id="outline-container-org701ae0c" class="outline-3">
+<h3 id="org701ae0c"><span class="done DONE">DONE</span> Comprehension 反复练习</h3>
+<div class="outline-text-3" id="text-org701ae0c">
+</div>
+</div>
+<div id="outline-container-org9b1a29b" class="outline-3">
+<h3 id="org9b1a29b"><span class="done DONE">DONE</span> Ask me if 写+读</h3>
+<div class="outline-text-3" id="text-org9b1a29b">
+<ol class="org-ol">
+<li>Small boats sped to the great liner. Why<br />
+Why did small boats speed to the great liner?<br /></li>
+<li>Men from the boats climbed on board. Who<br />
+Who climbed on board?<br /></li>
+<li>Tourists began bargaining with the men. How many<br />
+How many tourists began bargaining with the men?<br /></li>
+<li>The writer decided not to buy anything. What<br />
+What did the writer decide?<br /></li>
+<li>The writer was impressed by the size of the diamonds. Who<br />
+Who was impressed by the size of the diamonds?<br /></li>
+<li>It took half an hour to get rid of the man. How long<br />
+How long did it take to get rid of the man?<br /></li>
+<li>The words 'made in the USA' were inscribed on the cap. Where<br />
+Where were the words 'made in the USA' inscribed?<br /></li>
+<li>The man originally offered to sell the pen for $30. How much<br />
+How much did the man originally offer to sell the pen?<br /></li>
+<li>The man agreed to sell the pen for $- How much<br />
+How much did the man agree to sell the pen?<br /></li>
+<li>It was impossible to fill the pen with ink. Why<br />
+Why was it impossible to fill the pen with ink?<br /></li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org0688589" class="outline-3">
+<h3 id="org0688589"><span class="done DONE">DONE</span> 摘要写作 写 &amp; 对答案</h3>
+<div class="outline-text-3" id="text-org0688589">
+<p>
+The man to approach me was selling pens and watches.<br />
+I examined a pen and found the words 'made in the USA' inscribed on the gold cap.<br />
+The man wanted to sell it for $30, but I was willing to pay $5.<br />
+After he reduced the price to $10, I began to walk away.<br />
+A moment later, he thrust the pen into my hands for $5.<br />
+I felt very pleased with my bargain until I found it couldn't write a single word.<br />
+</p>
+
+<p>
+The next man who approached him was selling watches and pens,<br />
+	and when the writer looked at one, it looked genuine.<br />
+The man said it worth $50 but the writer could have it for $30.<br />
+The writer offered him $5 and waited.<br />
+Eventually, as the writer was walking away, the man agreed and took $5.<br />
+The writer was very pleased &#x2013;until he was back on board.<br />
+The pen was impossible to fill.<br />
+It has never written a word since.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgaa4e8ce" class="outline-3">
+<h3 id="orgaa4e8ce"><span class="done DONE">DONE</span> tell the story 口语复述</h3>
+<div class="outline-text-3" id="text-orgaa4e8ce">
+</div>
+</div>
+<div id="outline-container-org83a4cc9" class="outline-3">
+<h3 id="org83a4cc9"><span class="done DONE">DONE</span> composition 阅读 或 写作</h3>
+<div class="outline-text-3" id="text-org83a4cc9">
+<p>
+The writer had only just got rid of a man who was trying to sell a diamond ring<br />
+	when another man approached him with some expensive pens and watches.<br />
+When he held them up for the writer to look at, the writer showed quite a lot of interest.<br />
+'Can I see one of the pens?' the writer asked the man.<br />
+They all looked genuine.<br />
+The man handed the writer one and said: 'It's a beautiful pen, sir.<br />
+	It's worth $50, but you can have it for $30.'<br />
+When the writer offered him just $5, there was an argument about the price,<br />
+	but eventually the man said: 'You can have it for $10, sir. That's the least I can take.'<br />
+</p>
+
+<p>
+As the writer walked away shrugging his shoulders the man followed him.<br />
+'I can't really do it, sir-&#x2014;I'm almost giving it away,' he said, 'but you can have it for $5.'<br />
+The writer was obviously very pleased.<br />
+He gave the man $5, took the pen, and the man disappeared quickly into the crowd.<br />
+The writer was extremely pleased: he had bought a very expensive pen for just $5.<br />
+What a bargain!<br />
+Later, back on board ship,<br />
+	the writer discovered why the man had been in such a hurry to get away:<br />
+		you couldn't fill the pen with ink and it just didn't work!<br />
+It wasn't such a 'bargain' after all!<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org6face03" class="outline-3">
+<h3 id="org6face03">Topics for discussion</h3>
+</div>
+</div>
+</div>
+</body>
+</html>

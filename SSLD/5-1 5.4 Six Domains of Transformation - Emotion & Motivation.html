@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-01-24 Fri 11:51 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-org2701cbf" class="outline-2">
+<h2 id="org2701cbf">5-1 5.4 Six Domains of Transformation - Emotion &amp; Motivation</h2>
+<div class="outline-text-2" id="text-org2701cbf">
+<p class="verse">
+And then, how do needs and motivation fit into that as a kind of other domain?<br />
+So following along with this divorce example, which is a kind of transformation,<br />
+&#xa0;some people look at it as like a termination even.<br />
+But if you have ongoing unfinished business, like custody of the children you know and all that,<br />
+&#xa0;the relationship actually is not terminated.<br />
+It's actually transformed.<br />
+So and I just mentioned<br />
+&#xa0;that whatever choice that you have made, there would be like an emotional dimension to it.<br />
+And then the emotion obviously is connected to whether your needs are being met or not.<br />
+<br />
+Some people who are in the break up situation,<br />
+&#xa0;&#xa0;or in the divorce situation, or in any kind of drastic transformation,<br />
+&#xa0;the key consideration obviously is like, am I going to be able to meet my needs, right?<br />
+So if this is the kind of needs that this relationship is supposed to meet,<br />
+&#xa0;it can be like provision of physical, material resources,<br />
+&#xa0;like the house you live in, like a car to drive, and you know, steady monthly income to depend on.<br />
+If I'm going to lose that, like some of my needs will not be met.<br />
+<br />
+Like in this relationship in which I'm depending on for like a sense of security,<br />
+&#xa0;or some people actually are dependent on relationship for their identity.<br />
+Like some people do not really know who they are,<br />
+&#xa0;but they are known as the spouse of this famous singer [LAUGH] or &gt;&gt; right,<br />
+&#xa0;&#xa0;the partner of this designer or photographer, you know.<br />
+So, and all of a sudden, their identity [LAUGH] would be questioned.<br />
+But then, you can also imagine for some people,<br />
+&#xa0;that's exactly because they find a good way to define themselves<br />
+&#xa0;&#xa0;that they feel comfortable to transform the relationship.<br />
+So, yeah, like the motivation part is important.<br />
+It's the need that are met or not met in the transformed relationship.<br />
+And, in our opinion, the most important thing to look at, when you're transforming a relationship<br />
+&#xa0;is to try to make sure that your own needs are being met.<br />
+<br />
+And especially like those emotional needs around feeling okay, right?<br />
+Mm-hm.<br />
+Would be an important aspect as well, so emotional gratification, that kind of thing?<br />
+Yeah, I think from our experience,<br />
+&#xa0;&#xa0;working with people going through drastic transformation of relationships,<br />
+&#xa0;the key issue very often is not only about the relationship, it's usually about self.<br />
+Like people, are they feeling okay about themselves?<br />
+Are they questioning themselves?<br />
+Are they questioning their own worth as a human being?<br />
+Unfortunately, some people who go through difficult transformation,<br />
+&#xa0;&#xa0;who come to the position of believing that they are worthless,<br />
+&#xa0;or they have failed, or they're not worthwhile, attractive people.<br />
+And some people may be so upset and disturbed by this experience<br />
+&#xa0;that they may actually do things that are harmful to themselves.<br />
+Yeah, so I think it's really important<br />
+&#xa0;that when we're looking at emotions and needs,<br />
+&#xa0;&#xa0;we will be focusing on the needs that pertains to one's sense of self worth, like identity.<br />
+That's really important, yeah.<br />
+</p>
+</div>
+<div id="outline-container-org06c875b" class="outline-3">
+<h3 id="org06c875b">expression</h3>
+<div class="outline-text-3" id="text-org06c875b">
+<p>
+terminate [ˈtɜrmɪˌneɪt] termination: v.n. formal if something terminates, or if you terminate it, it ends SYN end停止, 结束, 终止<br />
+ongoing [ˈɑnˌɡoʊɪŋ]: adj. continuing, or continuing to develop正在进行的<br />
+custody [ˈkʌstədi]: n. the right to take care of a child, given to one of their parents when they have ↑divorced抚养权<br />
+provision [prəˈvɪʒ(ə)n]: n. when you provide something that someone needs now or in the future供应<br />
+spouse [spaʊs]: n. a husband or wife配偶(指夫或妻)<br />
+worthwhile [ˌwɜrθˈhwaɪl]: adj. if something is worthwhile, it is important or useful, or you gain something from it值得的<br />
+</p>
+<hr />
+<p>
+follow along (with) sth./sb.: 跟随某物/某人<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org62ead79" class="outline-3">
+<h3 id="org62ead79">ch.</h3>
+<div class="outline-text-3" id="text-org62ead79">
+<p>
+5-1 5.4 六大转变领域 - 情感与动机<br />
+</p>
+
+<p>
+然后，需求和动机如何融入其中，成为另一种领域呢？<br />
+接着以离婚这个例子来说明，这是一种转变。<br />
+有些人将其视为一种结束，但如果存在未完成的事情，比如孩子的抚养权问题等等，<br />
+那么这种关系实际上并没有真正结束，而是被转变了。<br />
+所以，我刚刚提到，不管你做出了什么选择，都会有情感层面的影响。<br />
+而情感显然与需求是否得到满足密切相关。<br />
+在分手、离婚或任何剧烈转变的情况下，关键的考虑因素显然是：<br />
+“我是否能够满足自己的需求？” 对吧？<br />
+</p>
+
+<p>
+如果这是这段关系本应该满足的需求，比如提供物质上的资源，<br />
+比如你居住的房子、一辆车，或者是一个可以依赖的稳定月收入。<br />
+如果我失去了这些，那我的一些需求就无法得到满足。<br />
+比如，这段关系让我获得一种安全感，<br />
+或者有些人甚至依赖关系来确立自己的身份认同。<br />
+有些人可能并不真正了解自己是谁，但他们以“某位著名歌手的配偶” [笑] 或者<br />
+“某位设计师或摄影师的伴侣”而闻名。<br />
+然而，突然之间，他们的身份认同 [笑] 就会被质疑。<br />
+</p>
+
+<p>
+但你也可以想象，对某些人来说，<br />
+正是因为他们找到了一个良好的方式去重新定义自己，<br />
+他们才会觉得可以轻松地去转变这种关系。<br />
+所以，是的，动机部分是很重要的。<br />
+转变后的关系是否能满足需求，是关键所在。<br />
+</p>
+
+<p>
+在我们看来，转变一段关系时最重要的事情，<br />
+就是要确保自己的需求得到满足。<br />
+尤其是那些与“感到没问题”相关的情感需求，对吧？<br />
+嗯哼。这也是一个很重要的方面，比如情感满足之类的。<br />
+</p>
+
+<p>
+根据我们的经验，在与经历剧烈关系转变的人打交道时，<br />
+关键问题往往不仅仅是关于关系本身，通常还涉及“自我”。<br />
+比如，这些人是否对自己感觉良好？他们是否在质疑自己？<br />
+是否在质疑自己作为一个人的价值？<br />
+不幸的是，一些经历过痛苦转变的人，<br />
+会因此认为自己毫无价值，或者认为自己失败了，<br />
+觉得自己不是一个值得被爱、有吸引力的人。<br />
+</p>
+
+<p>
+有些人甚至可能因为这一经历而感到极度沮丧和不安，<br />
+进而做出一些对自己有害的事情。<br />
+所以，我认为，当我们讨论情感和需求时，<br />
+我们需要特别关注那些与自我价值感、身份认同相关的需求。<br />
+这一点真的很重要，是的。<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgdfbfaec" class="outline-3">
+<h3 id="orgdfbfaec">sentence</h3>
+<div class="outline-text-3" id="text-orgdfbfaec">
+<p>
+terminate [ˈtɜrmɪˌneɪt] termination: v.n. formal if something terminates, or if you terminate it, it ends SYN end停止, 结束, 终止<br />
+</p>
+<ul class="org-ul">
+<li>As long as your relationship is terminated, you can't draw any energy from your husband anymore.<br /></li>
+<li>With the terminated marriage, she has to dig up coal in harsher working conditions.<br /></li>
+<li>With the diplomatic relationships terminated, their boundary is being walled off.<br /></li>
+</ul>
+<p>
+ongoing [ˈɑnˌɡoʊɪŋ]: adj. continuing, or continuing to develop正在进行的<br />
+</p>
+<ul class="org-ul">
+<li>Besides the fifteen tasks, the rest of the tasks is ongoing.<br /></li>
+<li>The strike which was started two weeks ago is ongoing.<br /></li>
+<li>The infection of small pox is ongoing on the continent.<br /></li>
+</ul>
+<p>
+custody [ˈkʌstədi]: n. the right to take care of a child, given to one of their parents when they have ↑divorced抚养权<br />
+</p>
+<ul class="org-ul">
+<li>My heart is not built from sand and stones, so I will not give up the custody of the children.<br /></li>
+<li>My custody of the children is derived from my property and social position.<br /></li>
+<li>The old man is in posession of the custody of his grandson in a pinch.<br /></li>
+</ul>
+<p>
+provision [prəˈvɪʒ(ə)n]: n. when you provide something that someone needs now or in the future供应<br />
+</p>
+<ul class="org-ul">
+<li>Without the provision from the empire, we couldn't afford the minimum wage of our soldiers.<br /></li>
+<li>He married me only because of the provision of material resource.<br /></li>
+<li>Your love for is built from sand without the provision of material resource.<br /></li>
+</ul>
+<p>
+spouse [spaʊs]: n. a husband or wife配偶(指夫或妻)<br />
+</p>
+<ul class="org-ul">
+<li>The fascinating lady is said to be the spouse of a famous singer.<br /></li>
+<li>The spouse of the official is in the face of her husband's downfall.<br /></li>
+<li>The corruption of his spouse during the election brought about his downfall.<br /></li>
+</ul>
+<p>
+worthwhile [ˌwɜrθˈhwaɪl]: adj. if something is worthwhile, it is important or useful, or you gain something from it值得的<br />
+</p>
+<ul class="org-ul">
+<li>In his youth, he is often transferred between his father's house and his mother's house, which makes him think marriage is not worthwhile.<br /></li>
+<li>Whether the marriage is worthwhile or not depends on whether both of you meet your needs.<br /></li>
+<li>The snack is worthwhile that makes my cat happier than usual.<br /></li>
+</ul>
+<hr />
+<p>
+follow along sth./sb.: 跟随某物/某人<br />
+</p>
+<ul class="org-ul">
+<li>Following along my husband for so long, I am a little tired of him.<br /></li>
+<li>You shouldn't have followed along the tiny fraction of the party.<br /></li>
+<li>Following along my cat out there, I found he has made several girlfriends.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orga51c8fd" class="outline-3">
+<h3 id="orga51c8fd">sentence2</h3>
+<div class="outline-text-3" id="text-orga51c8fd">
+<p>
+terminate [ˈtɜrmɪˌneɪt] termination: v.n. formal if something terminates, or if you terminate it, it ends SYN end停止, 结束, 终止<br />
+</p>
+<ul class="org-ul">
+<li>As long as your relationship is terminated, you can't draw any energy from your husband anymore.<br /></li>
+<li>With the terminated marriage, she has to dig up coal in harsher working conditions.<br /></li>
+<li>With the diplomatic relationships terminated, their boundary is being walled off.<br /></li>
+</ul>
+<p>
+ongoing [ˈɑnˌɡoʊɪŋ]: adj. continuing, or continuing to develop正在进行的<br />
+</p>
+<ul class="org-ul">
+<li>Besides the fifteen tasks, the rest of the tasks are ongoing.<br /></li>
+<li>The strike which was started two weeks ago is ongoing.<br /></li>
+<li>The infection of smallpox is ongoing on the continent.<br /></li>
+</ul>
+<p>
+custody [ˈkʌstədi]: n. the right to take care of a child, given to one of their parents when they have ↑divorced抚养权<br />
+</p>
+<ul class="org-ul">
+<li>My heart is not built from sand and stones, so I will not give up the custody of the children.<br /></li>
+<li>My custody of the children is derived from my property and social position.<br /></li>
+<li>The old man is in possession of the custody of his grandson in a pinch.<br /></li>
+</ul>
+<p>
+provision [prəˈvɪʒ(ə)n]: n. when you provide something that someone needs now or in the future供应<br />
+</p>
+<ul class="org-ul">
+<li>Without the provision from the empire, we couldn't afford the minimum wage of our soldiers.<br /></li>
+<li>He married me only because of the provision of material resources.<br /></li>
+<li>Your love for is built from nothing without the provision of material resources.<br /></li>
+</ul>
+<p>
+spouse [spaʊs]: n. a husband or wife配偶(指夫或妻)<br />
+</p>
+<ul class="org-ul">
+<li>The fascinating lady is said to be the spouse of a famous singer.<br /></li>
+<li>The spouse of the official is aggressive in the face of her husband's downfall.<br /></li>
+<li>The corruption of his spouse during the election brought about his downfall.<br /></li>
+</ul>
+<p>
+worthwhile [ˌwɜrθˈhwaɪl]: adj. if something is worthwhile, it is important or useful, or you gain something from it值得的<br />
+</p>
+<ul class="org-ul">
+<li>In his youth, he is often transferred between his father's house and his mother's house, which makes him think marriage is not worthwhile.<br /></li>
+<li>Whether the marriage is worthwhile or not depends on whether both of you meet your needs.<br /></li>
+<li>The snack is worthwhile, that makes my cat happier than usual.<br /></li>
+</ul>
+<hr />
+<p>
+follow along with sth./sb.: 跟随某物/某人<br />
+</p>
+<ul class="org-ul">
+<li>Following along with my husband for so long, I am a little tired of him.<br /></li>
+<li>You shouldn't have followed along with the tiny fraction of the party.<br /></li>
+<li>Following along with my cat out there, I found he has made several girlfriends.<br /></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

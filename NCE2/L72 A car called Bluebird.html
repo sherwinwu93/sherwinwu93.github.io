@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-08-06 Tue 22:24 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+
+<div id="outline-container-orgadfb755" class="outline-2">
+<h2 id="orgadfb755">Lesson 72 A car called Bluebird</h2>
+<div class="outline-text-2" id="text-orgadfb755">
+<p class="verse">
+What mistake was made?<br />
+<br />
+The great racing driver, Sir Malcolm Campbell, was the first man to drive at over 300 miles per hour.<br />
+He set up a new world record in September 1935 at Bonneville Salt Flats, Utah.<br />
+Bluebird, the car he was driving, had been specially built for him.<br />
+It was over 30 feet in length and had a 2,500-horsepower engine.<br />
+Although Campbell reached a speed of over 304 miles per hour,<br />
+&#xa0;he <b>had great difficulty in controlling</b> the car because a tyre burst during the first run.<br />
+After his attempt,<br />
+&#xa0;Campbell <b>was disappointed to learn that</b> his average speed had been 299 miles per hour.<br />
+However, a few days later, he was told that a mistake had been made.<br />
+His average speed had been 301 miles per hour.<br />
+Since that time, racing drivers have reached speeds over 600 miles an hour.<br />
+<b>Following in his father's footsteps</b> many years later,<br />
+&#xa0;Sir Malcolm's son, Donald, also set up a world record.<br />
+Like his father, he was driving a car called Bluebird.<br />
+</p>
+</div>
+<div id="outline-container-orge418c9a" class="outline-3">
+<h3 id="orge418c9a">expression</h3>
+<div class="outline-text-3" id="text-orge418c9a">
+<p>
+racing [ˈreɪsɪŋ] n.竞赛<br />
+per [pɜr] prep.每<br />
+Utah ['ju:ta:] n.犹他(美国州)<br />
+horsepower [ˈhɔrsˌpaʊr] n.马力<br />
+burst [bɜː(r)st] v.爆裂<br />
+average [ˈæv(ə)rɪdʒ] adj.平均的<br />
+footstep [ˈfʊtˌstep] n.足迹<br />
+</p>
+
+<p>
+burst into tears 突然哭起来<br />
+follow in sb't footsteps 效法某人<br />
+</p>
+<hr />
+<p>
+have difficulty in doing sth. 做某事有困难<br />
+be disappointed to learn that 某人了解到&#x2026;很失望<br />
+</p>
+</div>
+</div>
+
+
+
+<div id="outline-container-orgbd96678" class="outline-3">
+<h3 id="orgbd96678"><span class="done DONE">DONE</span> 单词造句</h3>
+<div class="outline-text-3" id="text-orgbd96678">
+<p>
+racing n.<br />
+</p>
+<ul class="org-ul">
+<li>No one could account for the fact that a racing driver often risks his life like this.<br /></li>
+<li>A racing driver is always busy with competitions.<br /></li>
+<li>The racing driver has been burnt down, I feel sorry for him.<br /></li>
+<li>Many girls are eager to look on the handsome racing driver.<br /></li>
+<li>You should have a more relaible racing car, this is always breaking down.<br /></li>
+</ul>
+<p>
+per prep.<br />
+</p>
+<ul class="org-ul">
+<li>I'll give you 11 dollars cash per night.<br /></li>
+<li>The rooms in our hotel are twenty dollars per night, they are no higher in our town.<br /></li>
+<li>The blue-collar workers were paid per day.<br /></li>
+<li>The ticket of the Disney land is only twenty dollars per person.<br /></li>
+<li>You shouldn't have drive at over 30 miles per hour.<br /></li>
+</ul>
+<p>
+Utah n.<br />
+horsepower n.<br />
+</p>
+<ul class="org-ul">
+<li>A racing car has a 2,500-horsepower engine.<br /></li>
+<li>He has difficulty in driving a racing car having a 2,500-horsepower engine.<br /></li>
+<li>I am unaware of that the car has a 2,500-horsepower engine.<br /></li>
+<li>I usedn't to know anything about horsepower.<br /></li>
+<li>After surfing the Internet, I learnt a little bit about horsepower.<br /></li>
+</ul>
+<p>
+burst v. burst into tears<br />
+</p>
+<ul class="org-ul">
+<li>I can't find something which makes you burst into tears.<br /></li>
+<li>He suddenly bursted into tears.<br /></li>
+<li>I used to burst into tears for a tragic story.<br /></li>
+<li>The moment I heard the tragic story, I bursted into tear.<br /></li>
+<li>I no sooner bursted into tear than I had heard the story.<br /></li>
+</ul>
+<p>
+average adj.<br />
+</p>
+<ul class="org-ul">
+<li>She is the cleverest student in the class, the rest are average.<br /></li>
+<li>She often takes a ride at a average speed.<br /></li>
+<li>Mr Leo turned his attention to the average grade of his students.<br /></li>
+<li>He is an average student in the school.<br /></li>
+<li>An average car usually has a 2,500 horsepower engine.<br /></li>
+</ul>
+<p>
+footstep n. follow in sb't footsteps<br />
+</p>
+<ul class="org-ul">
+<li>I'm not following in my father's footsteps.<br /></li>
+<li>Rachel is sensitive about following in her mother's footsteps.<br /></li>
+<li>At the time, I was unaware of the footsteps in my garden.<br /></li>
+<li>The boy is instructed to following in his father footsteps.<br /></li>
+<li>However, he refused to following his father's footstep in the edge of the forest.<br /></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org084c075" class="outline-3">
+<h3 id="org084c075"><span class="done DONE">DONE</span> 反复听电影片段</h3>
+<div class="outline-text-3" id="text-org084c075">
+</div>
+</div>
+
+<div id="outline-container-orgc51b808" class="outline-3">
+<h3 id="orgc51b808"><span class="done DONE">DONE</span> 习惯用法造句</h3>
+<div class="outline-text-3" id="text-orgc51b808">
+<p>
+have difficulty in doing sth.<br />
+</p>
+<ul class="org-ul">
+<li>I have difficulty in getting close to the cat.<br /></li>
+<li>I have difficulty in accepting criticism.<br /></li>
+<li>The bull have difficulty in charging at the matador.<br /></li>
+<li>I have difficulty in having a good sight of the view.<br /></li>
+<li>I have difficulting in passing the exam.<br /></li>
+</ul>
+<p>
+be disappointed to learn that<br />
+</p>
+<ul class="org-ul">
+<li>As a citizen, I am disappointed to learn that the thief has escaped.<br /></li>
+<li>As a citizen, I am disappointed to learn that the city is out of control.<br /></li>
+<li>I am disappointed to learn that the grasses has taken root.<br /></li>
+<li>I am disappointed to learn that my son was following in my footsteps.<br /></li>
+<li>I am disappointed to learn that he lost the source of information.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org41eac7f" class="outline-3">
+<h3 id="org41eac7f"><span class="done DONE">DONE</span> 跟读至背诵</h3>
+<div class="outline-text-3" id="text-org41eac7f">
+</div>
+</div>
+<div id="outline-container-org1f4fe2a" class="outline-3">
+<h3 id="org1f4fe2a"><span class="done DONE">DONE</span> Ask me if 写+读</h3>
+<div class="outline-text-3" id="text-org1f4fe2a">
+<ol class="org-ol">
+<li>Sir Malcolm Campbell was the first man to drive at over 300 m.p.h.(Who)<br />
+Who was the first man to drive at over 300 m.p.h?<br /></li>
+<li>He set up a new world record in September 1935.(When)(Who)<br />
+When did he set up a new world record?<br />
+Who set up a new world record in September 1935?<br /></li>
+<li>He was racing at Bonneville Salt Flats, Utah.(Where)(When)<br />
+Where was he racing?<br />
+When was he racing at Bonneville Salt Flats, Utah?<br /></li>
+<li>His car was called Bluebird.(What)(Whose)<br />
+What was his car called?<br />
+Whose car was called Bluebird?<br /></li>
+<li>It had been specially built for him.(Who)<br />
+Who had it been specially built for?<br /></li>
+<li>It was over 30 feet long.(How long)<br />
+How long was it?<br /></li>
+<li>It had a 2,500 horsepower engine.(What kind of)<br />
+What kind of engine did it have?<br /></li>
+<li>Campbell's top speed was 304 miles per hour.(What)(Whose)<br />
+What was Campbell's top speed?<br />
+Whose top speed was 304 miles per hour?<br /></li>
+<li>A tyre burst on the first run.(When)<br />
+When did a tyre burst?<br /></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org9d420d7" class="outline-3">
+<h3 id="org9d420d7"><span class="done DONE">DONE</span> 摘要写作</h3>
+<div class="outline-text-3" id="text-org9d420d7">
+<p>
+Sir Malcolm Campbell set up a land-speed record in 1935<br />
+	 driving a car called Bluebird, which had been specially built for him.<br />
+His average speed was incorrect declared to be 299 miles per hour,<br />
+	 but this mistake was corrected later.<br />
+He had averaged 301 miles an hour.<br />
+Years later, his son, Donald, also broke a record and his car was also called Bluebird.<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org48499fa" class="outline-3">
+<h3 id="org48499fa"><span class="done DONE">DONE</span> tell the story 口语</h3>
+<div class="outline-text-3" id="text-org48499fa">
+</div>
+</div>
+<div id="outline-container-org2680c73" class="outline-3">
+<h3 id="org2680c73">Topics for discussion</h3>
+<div class="outline-text-3" id="text-org2680c73">
+<ul class="org-ul">
+<li>Do you enjoy travelling at great speed? Why/Why not?<br /></li>
+<li>No one can use a car like Bluebird on theroad, so what is the purpose in building it?<br /></li>
+<li>In the modern world, 'speed' sometimes seems to be all important.<br />
+Do you think this is a good or a bad thing?<br />
+Should we try to slow down a little? Why/Why not?<br /></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

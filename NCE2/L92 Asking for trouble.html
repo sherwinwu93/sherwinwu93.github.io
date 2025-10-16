@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-08-06 Tue 22:24 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+
+<div id="outline-container-orgebd24d4" class="outline-2">
+<h2 id="orgebd24d4">Lesson 92 Asking for trouble</h2>
+<div class="outline-text-2" id="text-orgebd24d4">
+<p class="verse">
+Why did the policeman ask the writer to come to the police station?<br />
+<br />
+It must have been about two in the morning when I returned home.<br />
+I tried to wake up my wife by ringing the doorbell,<br />
+&#xa0;but she was <b>fast asleep</b>,<br />
+&#xa0;so I got a ladder from the shed in the garden,<br />
+&#xa0;&#xa0;put it against the wall, and began climbing towards the bedroom window.<br />
+I was almost there when a sarcastic voice below said,<br />
+&#xa0;'I don't think the windows need cleaning at this time of the night.'<br />
+I looked down and nearly fell off the ladder when I saw a policeman.<br />
+I immediately regretted answering in the way I did,<br />
+&#xa0;but I said, 'I enjoy cleaning windows at night.'<br />
+'So do I,' answered the policeman in the same tone.<br />
+'Excuse my interrupting you.<br />
+I <b>hate to interrupt</b> a man when he's busy working,<br />
+&#xa0;but would you mind coming with me to the station?'<br />
+'Well, I'd prefer to stay here,' I said.<br />
+'You see. I've forgotten my key.'<br />
+'Your what?' he called.<br />
+'My key,' I shouted.<br />
+Fortunately, the shouting woke up my wife who opened the window<br />
+&#xa0;just as the policeman had started to climb towards me.<br />
+</p>
+</div>
+<div id="outline-container-orgb7a10c5" class="outline-3">
+<h3 id="orgb7a10c5">expression</h3>
+<div class="outline-text-3" id="text-orgb7a10c5">
+<p>
+fast [fæst] adv.熟(睡)<br />
+ladder [ˈlædər] n.梯子<br />
+shed [ʃed] n.棚子<br />
+sarcastic [sɑrˈkæstɪk] adj.讽刺的,讥笑的<br />
+tone [toʊn] n.语气,腔调<br />
+</p>
+
+<p>
+fast asleep 熟睡的<br />
+Are you being sarcastic? 你是在讽刺吗?<br />
+Don't take that tone with me! 别用那种语气跟我说话!<br />
+</p>
+<hr />
+<p>
+hate to do sth. 讨厌做某事<br />
+</p>
+</div>
+</div>
+
+
+
+<div id="outline-container-org2d874ce" class="outline-3">
+<h3 id="org2d874ce">words</h3>
+<div class="outline-text-3" id="text-org2d874ce">
+<p>
+fast [fæst] adv.熟(睡)<br />
+ladder [ˈlædər] n.梯子<br />
+shed [ʃed] n.棚子<br />
+sarcastic [sɑrˈkæstɪk] adj.讽刺的,讥笑的<br />
+tone [toʊn] n.语气,腔调<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org0d21be9" class="outline-3">
+<h3 id="org0d21be9"><span class="done DONE">DONE</span> 单词造句</h3>
+<div class="outline-text-3" id="text-org0d21be9">
+<p>
+fast [fæst] adv. fast asleep<br />
+</p>
+<ul class="org-ul">
+<li>He was fast asleep when his wife was frightened out of her wits.<br /></li>
+<li>He has watched a variety of videos before he was fast asleep.<br /></li>
+<li>He has been running out of his energy, he is fast asleep now.<br /></li>
+<li>When we saw the cat being fast asleep, we burst out laughing.<br /></li>
+<li>She felt disappointed, as her husband was fast asleep.<br /></li>
+</ul>
+<p>
+ladder [ˈlædər] n.<br />
+</p>
+<ul class="org-ul">
+<li>A fireman must get used to climbing the ladder up and down.<br /></li>
+<li>It comes as a surprise to learn that the policeman knocked him to the ground with a ladder.<br /></li>
+<li>You should protect your baby from the ladder.<br /></li>
+<li>The ladder is used to rescue people in the fire.<br /></li>
+<li>When the news get round, the ladder was soon sold out.<br /></li>
+</ul>
+<p>
+shed [ʃed] n.<br />
+</p>
+<ul class="org-ul">
+<li>They are due to have a lovely shed built in the yard.<br /></li>
+<li>Why is there a shed holding up the traffic?<br /></li>
+<li>This caused the shed to be burnt down.<br /></li>
+<li>The shed shouldn't have been burnt down.<br /></li>
+<li>As it is, we could afford to build a shed in our garden.<br /></li>
+</ul>
+<p>
+sarcastic [sɑrˈkæstɪk] adj. Are you being sarcastic?<br />
+</p>
+<ul class="org-ul">
+<li>Why are you being sarcastic?<br /></li>
+<li>"You're not playing truent from the school." The father said in a sarcastic voice.<br /></li>
+<li>We should have kept in touch with each other. His girlfriend said in a sarcastic voice.<br /></li>
+<li>The girl is always sarcastic.<br /></li>
+<li>The boy kept being sarcastic, in the end I couldn't stand it.<br /></li>
+</ul>
+<p>
+tone [toʊn] n. Don't take that tone with me!<br />
+</p>
+<ul class="org-ul">
+<li>Don't take that tone with me!<br /></li>
+<li>As long as you take that tone with me, I won't come to the station with you.<br /></li>
+<li>On the surface, he told the story to the girl in a friendly tone.<br /></li>
+<li>You had to talk to your collegue in a friendly tone.<br /></li>
+<li>Don't take that tone with us, you're too hard on us.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org9e63856" class="outline-3">
+<h3 id="org9e63856"><span class="done DONE">DONE</span> 反复听电影片段</h3>
+<div class="outline-text-3" id="text-org9e63856">
+</div>
+</div>
+<div id="outline-container-org7124b05" class="outline-3">
+<h3 id="org7124b05"><span class="done DONE">DONE</span> Pattern Drill 写+读</h3>
+<div class="outline-text-3" id="text-org7124b05">
+<ul class="org-ul">
+<li>1t: eating between meals<br />
+s1: Eating between meals is bad for you.<br />
+s2: But I like eating between meals!<br />
+<ul class="org-ul">
+<li>working all night<br />
+Working all night is bad for you.<br />
+But I like working all night!<br /></li>
+<li>swimming after a meal<br />
+Swimming after a meal is bad for you.<br />
+But I like swimming after a meal!<br /></li>
+<li>studying at night<br />
+Studying at night is bad for you.<br />
+But I like studying at night!<br /></li>
+<li>going to bed late<br />
+Going to bed late is bad for you.<br />
+But I like going to bed late.<br /></li>
+</ul></li>
+<li>2t: check these figures<br />
+s1: Would you mind checking these figures?<br />
+s2: It's no use asking me to check your figures.I'm busy checking my own!<br />
+<ul class="org-ul">
+<li>do my homework<br />
+Would you mind doing my homework?<br />
+It's no use asking me to do your homework. I'm busy doing my own!<br /></li>
+<li>prepare my speech<br />
+Would you mind preparing my speech?<br />
+It's no use asking me to prepare your speech. I'm busy preparing my own!<br /></li>
+<li>mend my radio<br />
+Would you mind mending my radio?<br />
+It's no use asking me to mend your radio. I'm busy mending my own!<br /></li>
+<li>type these letters<br />
+Would you mind typing these letters?<br />
+It's no use asking  me to type your letters. I'm busy typing my own!<br /></li>
+</ul></li>
+<li>3t: get into the car - drive<br />
+s1: Did you see him getting into the car?<br />
+s2: I didn't see him getting into the car, but I saw him driving it.<br />
+<ul class="org-ul">
+<li>open the window - climb towards<br />
+Did you see him opening the window?<br />
+I didn't see him opening the window, but I saw him climbing towards it.<br /></li>
+<li>steal the money - count<br />
+Did you see him stealing the money?<br />
+I didn't see him stealing the money, but I saw him count it.<br /></li>
+<li>enter the house - wait outside<br />
+Did you see him entering the house?<br />
+I didn't see him entering the house, but I saw him wait outside it.<br /></li>
+<li>shoot the man - hit<br />
+Did you see him shooting the man?<br />
+I didn't see him shooting the man, but I saw him hit him.<br /></li>
+</ul></li>
+<li>4t: give speeches<br />
+s1: You must be used to giving speeches now!<br />
+s2: I am, but I always look forward to giving another one!<br />
+<ul class="org-ul">
+<li>win elections<br />
+You must be used to winning elections now!<br />
+I am, but I always look forward to winning another one.<br /></li>
+<li>see 'monsters'<br />
+You must be used to seeing 'monsters' now!<br />
+I am, but I always look forward to seeing another one.<br /></li>
+<li>visit museums<br />
+You must be used to visiting museums now!<br />
+I am, but I always look forward to visiting another one.<br /></li>
+<li>receive presents<br />
+You must be used to receiving presents now!<br />
+I am, but I always look forward to receiving another one.<br /></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org9b55a6f" class="outline-3">
+<h3 id="org9b55a6f">给自己讲解</h3>
+</div>
+<div id="outline-container-orge7b18b7" class="outline-3">
+<h3 id="orge7b18b7">红皮书</h3>
+</div>
+<div id="outline-container-orgfe82d5f" class="outline-3">
+<h3 id="orgfe82d5f"><span class="done DONE">DONE</span> 习惯用法造句</h3>
+<div class="outline-text-3" id="text-orgfe82d5f">
+<p>
+hate to do sth.<br />
+</p>
+<ul class="org-ul">
+<li>I hate to apologize to anyone when I am innocent.<br /></li>
+<li>Pupils of the school always hate to move in a circle about seven in the morning.<br /></li>
+<li>I hate to fill up his car over and over again.<br /></li>
+<li>She hate to make contribute to the hospital.<br /></li>
+<li>I hate to devote myself to the education.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org5752336" class="outline-3">
+<h3 id="org5752336"><span class="done DONE">DONE</span> 跟读至背诵</h3>
+<div class="outline-text-3" id="text-org5752336">
+</div>
+</div>
+<div id="outline-container-org2d0f0fb" class="outline-3">
+<h3 id="org2d0f0fb"><span class="done DONE">DONE</span> Ask me if 写+读</h3>
+<div class="outline-text-3" id="text-org2d0f0fb">
+<ol class="org-ol">
+<li>I returned home late. When/Who<br />
+When did you return home?<br />
+Who returned home late?<br /></li>
+<li>It was about two in the morning. What time<br />
+What time was it about?<br /></li>
+<li>I tried to wake my wife by ringing the doorbell. How/Who/When<br />
+How did you try to wake your wife?<br />
+Who did you try to wake by ringing the doorbell?<br />
+When did you try to wake your wife by ringing the doorbell?<br /></li>
+<li>She was fast asleep. Who<br />
+Who was fast asleep?<br /></li>
+<li>I got a ladder. What<br />
+What did you get?<br /></li>
+<li>I got it from the garden shed. Where<br />
+Where did you get it?<br /></li>
+<li>I put it against the wall. Where<br />
+Where did you put it?<br /></li>
+<li>I began climbing towards the bedroom window. Which/Why<br />
+Which window did you begin climbing towards?<br />
+Why did you begin climbing towards the bedroom window?<br /></li>
+<li>I'd almost got to the top. How far<br />
+How far had you almost got?<br /></li>
+<li>I heard a voice. What<br />
+What did you hear?<br /></li>
+</ol>
+<p>
+1- It was a policeman. Who<br />
+		Who was it?<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orga4d7400" class="outline-3">
+<h3 id="orga4d7400"><span class="done DONE">DONE</span> 摘要写作</h3>
+<div class="outline-text-3" id="text-orga4d7400">
+<p>
+The writer returned home at about 2.0 a.m. and rang doorbell.<br />
+Having failed to wake up his wife,<br />
+	he put the ladder against the wall<br />
+	and climbed towards the bedroom window.<br />
+Suddenly a policeman called out,<br />
+	but he answered rudely.<br />
+He told him that he had forgotten his key.<br />
+The shouting woke up his wife.<br />
+She opened the window<br />
+	just as the policeman began climbing the ladder after him.<br />
+</p>
+
+<p>
+On arriving home at about two in the morning,<br />
+	the writer rang the doorbell<br />
+	but failed to wake up his wife.<br />
+After having put a ladder against the wall,<br />
+	he was climbing towards the bedroom window<br />
+	when a policeman called out.<br />
+Answering him rudely,<br />
+	the writer told him that he had forgotten his key.<br />
+The shouting woke up his wife,<br />
+	who opened the window at the moment<br />
+		when the policeman started climbing the ladder after him.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org124e211" class="outline-3">
+<h3 id="org124e211"><span class="done DONE">DONE</span> tell the story 口语</h3>
+<div class="outline-text-3" id="text-org124e211">
+</div>
+</div>
+<div id="outline-container-orgf3cbb2f" class="outline-3">
+<h3 id="orgf3cbb2f">Topics for discussion</h3>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-01-17 Fri 17:16 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-orgdcee518" class="outline-2">
+<h2 id="orgdcee518">4-4 4.22 Stability or Excitement?</h2>
+<div class="outline-text-2" id="text-orgdcee518">
+<p class="verse">
+Okay, so we're talking about how people spend time together<br />
+&#xa0;and how it ultimately impacts a relationship,<br />
+&#xa0;&#xa0;and hopefully will serve a purpose to make the relationship enjoyable for both parties.<br />
+But as I see it, you can kind of fall on any part of the spectrum, right?<br />
+So, on one end of the spectrum,<br />
+&#xa0;we have people who maybe are just kind of looking for that sense of security, or stability maybe?<br />
+And they're not necessarily looking for excitement<br />
+&#xa0;and kind of lots of crazy challenging experiences with their partner, right?<br />
+<br />
+Yeah, of course, I'm sort of biased towards the other [LAUGH] end of the spectrum.<br />
+But let us start with the couple who sort of like wanting to have more stability.<br />
+And not necessarily security, but we can say that too.<br />
+Very often, when people stay in long-term stable relationships,<br />
+&#xa0;they may sometimes also have like special events, memorable moments.<br />
+But then some of the people would just enjoy doing certain things.<br />
+I remember when I was small,<br />
+&#xa0;I used to watch a TV show and that was like,<br />
+&#xa0;&#xa0;and then every episode started off with this couple having breakfast at the breakfast table.<br />
+And I was going like, is that even real? you know?<br />
+But then, that's just me.<br />
+But later on I find out<br />
+&#xa0;things like that can actually deliver a sense of order, a sense of stability.<br />
+And people feel very comfortable and then they think, things are like that.<br />
+And I have actually spoken to even very young people, contemporary young people,<br />
+&#xa0;who tell me that well you know, this is what I'm looking forward to.<br />
+I just want to go home to this person that I know well,<br />
+&#xa0;and after a long day, I don't really need to do anything special.<br />
+I just need to have some place to go to.<br />
+And there's someone there who I know loves me,<br />
+&#xa0;and that person doesn't really have to do anything special, just be there for me, right?<br />
+And that can be very reassuring, it can be very attractive.<br />
+And then I have actually seen people<br />
+&#xa0;&#xa0;who have chosen that over a more eventful, exciting relationship,<br />
+&#xa0;because that may not be what they really want.<br />
+<br />
+But for someone like me,<br />
+&#xa0;who is constantly thinking that you should be growing, you should be changing,<br />
+&#xa0;&#xa0;life is full of opportunities, and you should spend time and create new activities together.<br />
+Don't get bogged down with routines and you know, have a lot of happenings.<br />
+That is obviously a biased opinion, [LAUGH]right, that's my opinion.<br />
+But I think the important thing is for people to figure out what they really need,<br />
+&#xa0;and be able to communicate with their partner so that they get what they need.<br />
+</p>
+</div>
+<div id="outline-container-orgca7aeaa" class="outline-3">
+<h3 id="orgca7aeaa">expression</h3>
+<div class="outline-text-3" id="text-orgca7aeaa">
+<p>
+serve [sɜrv]: v. to give someone food or drink, especially as part of a meal or in a restaurant, bar etc供应,提供<br />
+spectrum [ˈspektrəm]: n. a complete range of opinions, people, situations etc, going from one extreme to its opposite范围<br />
+memorable [ˈmem(ə)rəb(ə)l]: adj. very good, enjoyable, or unusual, and worth remembering值得纪念的,难忘的<br />
+deliver [dɪˈlɪvər]: v. to take goods, letters, packages etc to a particular place or person释放<br />
+reassuring [ˌriəˈʃʊrɪŋ]: adj. making you feel less worried or frightened SYN comforting安心的<br />
+</p>
+<hr />
+<p>
+fall on sp./sth.: 落在某地/某事物<br />
+on one end of the spectrum: 在范围的一端<br />
+get bogged down with sth.: 陷入某事run into sth.<br />
+be biased towards sth./sb.: 偏向于某事/某人<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org4bf24f3" class="outline-3">
+<h3 id="org4bf24f3">ch.</h3>
+<div class="outline-text-3" id="text-org4bf24f3">
+<p>
+4-4 4.22 稳定还是兴奋？<br />
+</p>
+
+<p>
+好吧，我们今天讨论的是人们如何一起度过时光，以及这最终如何影响一段关系，目的是希望能让双方的关系变得愉快。<br />
+但我认为，实际上你可以处于这个光谱的任何一端，对吧？<br />
+在光谱的一端，我们有一些人可能只是寻求那种安全感，或者说是稳定感？<br />
+他们不一定在寻找兴奋，也不一定想要和伴侣经历许多疯狂且具有挑战性的事情，对吧？<br />
+当然，我可能更偏向光谱的另一端（笑）。<br />
+但我们从那些希望拥有更多稳定关系的情侣说起吧。<br />
+并不一定是安全感，但我们也可以这么说。<br />
+很常见的是，当人们处于长期稳定的关系中时，他们有时也会经历一些特别的事件和难忘的时刻。<br />
+但有些人则只是享受做一些特定的事情。<br />
+我记得小时候，我曾经看过一个电视节目，每一集的开头都有一对夫妻在早餐桌上吃早餐。<br />
+我当时就在想，这真的现实吗？你知道吗？<br />
+不过那是我个人的想法。<br />
+但后来我发现，像这样的事情确实能带来一种秩序感，一种稳定感。<br />
+人们会觉得非常舒服，然后他们就会觉得事情就是这样。<br />
+有时我甚至和一些非常年轻的当代人交谈，他们告诉我说：“你知道吗，我就是在期待这样的生活。”<br />
+“我只想回到那个我非常熟悉的人身边，在忙碌的一天之后，我不需要做什么特别的事。”<br />
+“我只需要有一个地方可以去。”<br />
+“那里有一个我知道爱我的人，而那个人不需要做任何特别的事情，只要在那儿陪着我就好。”<br />
+这可以带来很大的安慰，也可以非常吸引人。<br />
+我确实见过一些人选择了这种稳定的关系，而不是选择一个更有事件性、更加刺激的关系，因为他们可能并不真心想要那种东西。<br />
+但像我这样的人，总是认为你应该不断成长，你应该不断变化，生活充满了机会，你应该一起花时间，创造新的活动。<br />
+不要被日常琐事困住，要有更多的发生。<br />
+显然，这是一种有偏见的观点（笑），对吧？这是我的看法。<br />
+但我认为，最重要的是，人们要弄清楚自己真正需要什么，并能够与伴侣沟通，以确保他们能得到自己需要的东西。<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org0dc77bb" class="outline-3">
+<h3 id="org0dc77bb">sentence</h3>
+<div class="outline-text-3" id="text-org0dc77bb">
+<p>
+serve [sɜrv]: v. to give someone food or drink, especially as part of a meal or in a restaurant, bar etc供应,提供<br />
+</p>
+<ul class="org-ul">
+<li>The soup served in line comes down to charity.<br /></li>
+<li>The ship served as a souvenir used to fall to a infamous pirate.<br /></li>
+<li>The relationship will serve a purpose for you to pursue.<br /></li>
+</ul>
+<p>
+spectrum [ˈspektrəm]: n. a complete range of opinions, people, situations etc, going from one extreme to its opposite范围<br />
+</p>
+<ul class="org-ul">
+<li>The ethnic spectrum of America fits into well in the control of our government.<br /></li>
+<li>The ethnic spectrum of America is being broken now.<br /></li>
+<li>The adorable animal becomes popular with the ethnic spectrum of America.<br /></li>
+</ul>
+<p>
+memorable [ˈmem(ə)rəb(ə)l]: adj. very good, enjoyable, or unusual, and worth remembering值得纪念的,难忘的<br />
+</p>
+<ul class="org-ul">
+<li>It is a memorable event in which we express appreciation to each other.<br /></li>
+<li>It is a memorable experience in which we first go out together.<br /></li>
+<li>It is a memorable experience in which I sit next to an eminent boxer.<br /></li>
+</ul>
+<p>
+deliver [dɪˈlɪvər]: v. to take goods, letters, packages etc to a particular place or person释放<br />
+</p>
+<ul class="org-ul">
+<li>Going off his wife, he delivered a sense of insecurity.<br /></li>
+<li>The tree traced back to a thousand years ago delivered a sense of order.<br /></li>
+<li>You succeeded in getting the squirrel to deliver a signal.<br /></li>
+</ul>
+<p>
+reassuring [ˌriəˈʃʊrɪŋ]: adj. making you feel less worried or frightened SYN comforting安心的<br />
+</p>
+<ul class="org-ul">
+<li>I am reassuring, for our headmaster is committed to the air conditioners.<br /></li>
+<li>In my sense, you should be reassuring because of the promise I made.<br /></li>
+<li>Whether your wife is reassuring is up to your words.<br /></li>
+</ul>
+<hr />
+<p>
+fall on sp./sth.: 落在某地/某事物<br />
+</p>
+<ul class="org-ul">
+<li>With an apple falling on the ground, the scientist worked through the puzzle that had confused formers for hundreds of years.<br /></li>
+<li>My wife asked to pick up the apple that fell on the ground.<br /></li>
+<li>The apple falling on the ground may be poisonous.<br /></li>
+</ul>
+<p>
+on one end of the spectrum: 在范围的一端<br />
+</p>
+<ul class="org-ul">
+<li>On one end of the spectrum, people violently refused anyone who tries to free them.<br /></li>
+<li>On one end of the spectrum, some people are unwilling to sacrifice their money for an operation.<br /></li>
+<li>On one end of the spectrum, some people give up what pertain to them.<br /></li>
+</ul>
+<p>
+get bogged down with sth.: 陷入某事run into sth.<br />
+</p>
+<ul class="org-ul">
+<li>He must get bogged down with debt because of my request.<br /></li>
+<li>The cat would get bogged down with traps in the forest.<br /></li>
+<li>I get bogged down with dull routine after I got married.<br /></li>
+</ul>
+<p>
+be biased towards sth./sb.: 偏向于某事/某人<br />
+</p>
+<ul class="org-ul">
+<li>My wife is biased towards our son, even if he makes some stupid mistakes.<br /></li>
+<li>I am biased towards my wife, when she and my son quarrelled.<br /></li>
+<li>She is biased towards the eminent lawyer who claimed to have fell love with her.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgc1c849f" class="outline-3">
+<h3 id="orgc1c849f">sentence2</h3>
+<div class="outline-text-3" id="text-orgc1c849f">
+<p>
+serve [sɜrv]: v. to give someone food or drink, especially as part of a meal or in a restaurant, bar etc供应,提供<br />
+</p>
+<ul class="org-ul">
+<li>The soup served in line comes down to charity.<br /></li>
+<li>The ship served as a souvenir used to fall to an infamous pirate.<br /></li>
+<li>The relationship will serve a purpose for you to pursue.<br /></li>
+</ul>
+<p>
+spectrum [ˈspektrəm]: n. a complete range of opinions, people, situations etc, going from one extreme to its opposite范围<br />
+</p>
+<ul class="org-ul">
+<li>The ethnic spectrum of America fits well in the control of our government.<br /></li>
+<li>The ethnic spectrum of America is being broken now.<br /></li>
+<li>The adorable animals become popular among the ethnic spectrum of America.<br /></li>
+</ul>
+<p>
+memorable [ˈmem(ə)rəb(ə)l]: adj. very good, enjoyable, or unusual, and worth remembering值得纪念的,难忘的<br />
+</p>
+<ul class="org-ul">
+<li>It is a memorable event in which we express appreciation to each other.<br /></li>
+<li>It is a memorable experience in which we first go out together.<br /></li>
+<li>It is a memorable experience in which I sit next to an eminent boxer.<br /></li>
+</ul>
+<p>
+deliver [dɪˈlɪvər]: v. to take goods, letters, packages etc to a particular place or person释放<br />
+</p>
+<ul class="org-ul">
+<li>Going off his wife, he delivered a sense of insecurity.<br /></li>
+<li>The tree traced back to a thousand years ago delivered a sense of order.<br /></li>
+<li>You succeeded in getting the squirrel to deliver a signal.<br /></li>
+</ul>
+<p>
+reassuring [ˌriəˈʃʊrɪŋ]: adj. making you feel less worried or frightened SYN comforting安心的<br />
+</p>
+<ul class="org-ul">
+<li>Our headmaster who is committed to the air conditioners is reassuring.<br /></li>
+<li>In my sense, you should be reassuring because of the promise I made.<br /></li>
+<li>Whether your wife is reassuring is up to your words.<br /></li>
+</ul>
+<hr />
+<p>
+fall on sp./sth.: 落在某地/某事物<br />
+</p>
+<ul class="org-ul">
+<li>With an apple falling on the ground, the scientist worked through the puzzle that had confused formers for hundreds of years.<br /></li>
+<li>My wife asked to pick up the apple that fell on the ground.<br /></li>
+<li>The apple falling on the ground may be poisonous.<br /></li>
+</ul>
+<p>
+on one end of the spectrum: 在范围的一端<br />
+</p>
+<ul class="org-ul">
+<li>On one end of the spectrum, people violently refuse anyone who tries to free them.<br /></li>
+<li>On one end of the spectrum, some people are unwilling to sacrifice their money for an operation.<br /></li>
+<li>On one end of the spectrum, some people give up what pertains to them.<br /></li>
+</ul>
+<p>
+get bogged down with sth.: 陷入某事run into sth.<br />
+</p>
+<ul class="org-ul">
+<li>He must get bogged down with debt because of my request.<br /></li>
+<li>The cat would get bogged down with traps in the forest.<br /></li>
+<li>I got bogged down with a dull routine after I got married.<br /></li>
+</ul>
+<p>
+be biased towards sth./sb.: 偏向于某事/某人<br />
+</p>
+<ul class="org-ul">
+<li>My wife is biased towards our son, even if he makes some stupid mistakes.<br /></li>
+<li>I was biased towards my wife when she and my son quarreled.<br /></li>
+<li>She is biased towards the eminent lawyer who claimed to have fell love with her.<br /></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

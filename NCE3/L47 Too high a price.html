@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-09-28 Sat 22:17 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-org7e00418" class="outline-2">
+<h2 id="org7e00418">Lesson 47 Too high a price?</h2>
+<div class="outline-text-2" id="text-org7e00418">
+<p class="verse">
+What does the writer describe as an 'amusing old-fashioned source of noise'?<br />
+<br />
+Pollution is the price we pay fro an overpopulated, over-industrialized planet.<br />
+When you come to think about it,<br />
+&#xa0;there are only four ways you can deal with rubbish:<br />
+&#xa0;&#xa0;dump it, burn it, turn it into something you can use again, attempt to produce less of it.<br />
+We keep trying all four methods,<br />
+&#xa0;but the sheer volume of rubbish we produce world wide threatens to overwhelm us.<br />
+<br />
+Rubbish, however, is only part of the problem of polluting our planet.<br />
+The need to produce ever-increasing quantities of cheap food<br />
+&#xa0;leads to a different kind of pollution.<br />
+Industrialized farming methods produce cheap meat products: beef, pork and chicken.<br />
+The use of pesticides and fertilizers produces cheap grain and vegetables.<br />
+The price we pay for cheap food may be already too high:<br />
+&#xa0;Mad Cow Disease(BSE) in cattle,<br />
+&#xa0;salmonella in chicken and eggs,<br />
+&#xa0;and listeria in dairy products.<br />
+And if you think you'll abandon meat and become a vegetarian,<br />
+&#xa0;you have the choice of very expensive organically-grown vegetables<br />
+&#xa0;&#xa0;or a steady diet peticiles every time<br />
+&#xa0;&#xa0;&#xa0;you think you're eating fresh salads and vegetables,<br />
+&#xa0;or just having an innocent glass of water.<br />
+<br />
+However, there is an even more insidious kind of pollution<br />
+&#xa0;that particularly affects urban areas and invades our daily lives, and that is noise.<br />
+Burglar alarms going off at any time of the day or night<br />
+&#xa0;serve only to annoy passers-by and actually assist burglars to burgle.<br />
+Car alarms constantly scream at us in the street and are a source of profound irritation.<br />
+A recent survey of the effects of noise revealed(surprisingly?)<br />
+&#xa0;that dogs barking incessantly in the night<br />
+&#xa0;&#xa0;rated the highest form of noise pollution on a scale ranging from 1 to 7.<br />
+The survey revealed a large number of source of noise that we really dislike.<br />
+Lawn mowers whining on a summer's day,<br />
+&#xa0;late-night parties in apartment blocks,<br />
+&#xa0;noisy neighbours,<br />
+&#xa0;vehicles of all kinds,<br />
+&#xa0;especially large container trucks thundering through quiet villages,<br />
+&#xa0;planes and helicopters flying overhead,<br />
+&#xa0;large radios carried round in public places and played at maximum volume.<br />
+New technology has also made its own contribution to noise.<br />
+A lot of people object to mobile phones,<br />
+&#xa0;especially when they are used in public places like restaurants or on public transport.<br />
+Loud conversations on mobile phones invade our thoughts<br />
+&#xa0;or interrupt the pleasure of meeting friends for a quiet chat.<br />
+The noise pollution survey<br />
+&#xa0;revealed a rather surprising and possibly amusing old-fashioned source of noise.<br />
+It turned out to be snoring!<br />
+Men were found to the worst offenders.<br />
+It was revealed that 20% of men in their mid-thirties snore.<br />
+This figure rises to a staggering 60% of men in their sixties.<br />
+Against these figures, it was found that only 5% of women snore regularyly,<br />
+&#xa0;while the rest are constantly woken or kept awake by their trumpeting partner.<br />
+Whatever the source of noise, one thing is certain:<br />
+&#xa0;silence, it seems, has become a golden memory.<br />
+</p>
+</div>
+
+<div id="outline-container-org1ab6ce0" class="outline-3">
+<h3 id="org1ab6ce0">words</h3>
+<div class="outline-text-3" id="text-org1ab6ce0">
+<p>
+pollution [pəˈluːʃ(ə)n] n.污染<br />
+overpopulated [ˌoʊvərˈpɑːpjuleɪtɪd] adj.人口多的<br />
+over industrialized [ˈoʊvər][ɪnˈdʌstriəlaɪzd] -adj.过度工业化的<br />
+sheer [ʃɪr] adj.纯粹的,不参杂的<br />
+worldwide [ˌwɜːrldˈwaɪd] adv.在全世界<br />
+overwhelm [ˌoʊvərˈwelm] v.降服<br />
+pollute [pəˈluːt] v.污染<br />
+pesticide [ˈpestəsaɪd] n.杀虫剂<br />
+fertilizer [ˈfɜːrtəlaɪzər] n.肥料<br />
+salmonella [ˌsælməˈnelə] n.沙门氏菌<br />
+listeria [lɪˈstɪriə] n.李斯特杆菌<br />
+vegetarian [ˌvedʒəˈteriən] n.吃素的人<br />
+organically [ɔːrˈɡænɪkli]-grown adj.有机培植的<br />
+insidious [ɪnˈsɪdiəs] adj.暗中为害的<br />
+urban [ˈɜːrbən] adj.城市的<br />
+burglar [ˈbɜːrɡlər] n.窃贼<br />
+burgle [ˈbɜːrɡl] v.入室偷窃<br />
+scream [skriːm] v.尖叫<br />
+profound [prəˈfaʊnd] adj.极度的<br />
+irritation [ˌɪrɪˈteɪʃ(ə)n] n.烦躁<br />
+incessantly [ɪnˈses(ə)ntli] adv.连续不断地<br />
+whine [waɪn] v.发呜呜声<br />
+helicopter [ˈhelɪkɑːptər] n.直升飞机<br />
+maximum [ˈmæksɪməm] adj.最大的<br />
+technology [tekˈnɑːlədʒi] n.技术<br />
+contribution [ˌkɑːntrɪˈbjuːʃ(ə)n] n.贡献<br />
+mobile [ˌmoˈbil] adj.可移动的<br />
+snore [snɔːr] v.打鼾<br />
+offender [əˈfendər] n.冒犯者<br />
+staggering [ˈstæɡərɪŋ] adj.令人惊愕的<br />
+trumpet [ˈtrʌmpɪt] v.吹号<br />
+partner [ˈpɑːrtnər] n.伙伴<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgd76bcac" class="outline-3">
+<h3 id="orgd76bcac">单词造句</h3>
+</div>
+<div id="outline-container-orgc103758" class="outline-3">
+<h3 id="orgc103758">反复听电影片段直到懂关键句</h3>
+</div>
+<div id="outline-container-org249c515" class="outline-3">
+<h3 id="org249c515">复习二册语法(笔记或视频) &amp; 红皮书</h3>
+</div>
+<div id="outline-container-org83d67fa" class="outline-3">
+<h3 id="org83d67fa">习惯用法造句</h3>
+</div>
+<div id="outline-container-org07c0b57" class="outline-3">
+<h3 id="org07c0b57">跟读 50遍</h3>
+</div>
+<div id="outline-container-orgcb431f6" class="outline-3">
+<h3 id="orgcb431f6">Comprehension 反复练习</h3>
+</div>
+<div id="outline-container-org2f6b303" class="outline-3">
+<h3 id="org2f6b303">Ask me if 写+读</h3>
+</div>
+<div id="outline-container-org8129e8c" class="outline-3">
+<h3 id="org8129e8c">摘要写作 写 &amp; 对答案</h3>
+</div>
+<div id="outline-container-orgca77372" class="outline-3">
+<h3 id="orgca77372">tell the story 口语复述</h3>
+</div>
+<div id="outline-container-orgfe3b9ab" class="outline-3">
+<h3 id="orgfe3b9ab">composition 阅读 或 写作</h3>
+</div>
+<div id="outline-container-org8cfe7cb" class="outline-3">
+<h3 id="org8cfe7cb">Topics for discussion</h3>
+</div>
+</div>
+</div>
+</body>
+</html>

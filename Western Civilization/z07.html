@@ -1,0 +1,842 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-12-24 Tue 17:04 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<p>
+CHAPTER 7 LATE ANTIQUITY AND THE EMERGENCE OF THE MEDIEVAL WORLD
+</p>
+
+<p>
+CHAPTER OUTLINE AND FOCUS QUESTIONS
+</p>
+
+<p>
+The Late Roman Empire
+</p>
+
+<p>
+Q What reforms did Diocletian and Constantine institute, and to what extent were the reforms successful?
+</p>
+
+<p>
+The Germanic Kingdoms
+</p>
+
+<p>
+Q What changes did the Germanic peoples make to the political, economic, and social conditions of the western Roman Empire? What were the main features of Germanic law and society, and how did they differ from those of the Romans?
+</p>
+
+<p>
+Development of the Christian Church
+</p>
+
+<p>
+Q How and why did the organization of the Christian church and its relations with the state change during the fourth and fifth centuries? What were the chief characteristics of Benedictine monasticism, and what role did monks play in both the conversion of Europe to Christianity and the intellectual life of the Germanic kingdoms?
+</p>
+
+<p>
+The Byzantine Empire
+</p>
+
+<p>
+Q How did the Byzantine Empire that had emerged by the eighth century differ from the empire of Justinian and from the Germanic kingdoms in the west?
+</p>
+
+<p>
+The Rise of Islam
+</p>
+
+<p>
+Q What was the basic message of Islam, and why was it able to expand so successfully?
+</p>
+
+<p>
+CRITICAL THINKING
+</p>
+
+<p>
+Q In what ways were the Byzantine and Islamic civilizations different from the civilization developing in western Europe? In what ways were they similar?
+</p>
+
+<p>
+A thirteenth-century Italian manuscript illustration of the baptism of Clovis
+</p>
+
+<p>
+BY THE THIRD CENTURY, the Roman Empire was experiencing a number of problems as well as witnessing the growth of a new religion: Christianity. To restore the empire, the emperors Diocletian and Constantine initiated a number of reforms, and Constantine converted to Christianity, starting a process that gave the Late Empire a new state religion.
+</p>
+
+<p>
+After Constantine, the empire continued to survive, but it had to deal repeatedly with incursions of Germanic tribes in the west. By the second half of the fifth century, new political arrangements were undermining the old imperial structure in the west, leading to the emergence of a series of German kingdoms that would form the basis of a new civilization. The Christian church also played a role as it converted these Germanic tribes to its faith.
+</p>
+
+<p>
+The conversion to Christianity of the pagan leaders of German tribes was sometimes dramatic, at least as reported by the sixthcentury historian Gregory of Tours. Clovis, leader of the Franks, married Clotilde, daughter of the king of the Burgundians. She was a Christian, but Clovis refused her pleas to become a Christian, telling her, ‘‘Your god can do nothing.’’ But during a battle with the Alemanni, when Clovis’s army was close to utter destruction, ‘‘he saw the danger; his heart was stirred; and he raised his eyes to heaven, saying, ‘Jesus Christ, I beseech the glory of your aid. If you shall grant me victory over these enemies, I will believe in you and be baptized in your name.’’’ When he had uttered these words, the Alemanni began to flee. Clovis soon became a Christian.
+</p>
+
+<p>
+While the Germanic kingdoms were establishing roots in the west, the eastern part of the old Roman Empire, increasingly Greek in culture, continued as the Byzantine Empire. Serving as a buffer between Europe and the peoples to the east, the Byzantine or Eastern Roman Empire also preserved the intellectual and legal accomplishments of Greek and Roman antiquity. At the same time, a new culture centered on Islam emerged in the east; it spread through large parts of the old Roman Empire, preserved much of Greek culture, and created its own flourishing civilization. This chapter concerns the dramatic transformations occurring in the Roman world in late antiquity, the heirs of the Roman Empire, and the medieval world they began to create.
+</p>
+
+<p>
+The Late Roman Empire
+</p>
+
+<p>
+Q Focus Question: What reforms did Diocletian and Constantine institute, and to what extent were the reforms successful?
+</p>
+
+<p>
+At the end of the third and beginning of the fourth centuries, the Roman Empire gained a new lease on life through the efforts of two strong emperors, Diocletian and Constantine, who restored order and stability. The Roman Empire was virtually transformed into a new state: the Late Roman Empire, which included a new governmental structure, a rigid economic and social system, and a new state religion&#x2014;Christianity.
+</p>
+
+<p>
+The Reforms of Diocletian and Constantine
+</p>
+
+<p>
+Diocletian had risen through the ranks to become a prominent military leader. After the murder of the emperor Numerian by his praetorian prefect, Diocletian executed the prefect and was then hailed as emperor by his soldiers. Diocletian’s own rise to power led him to see the need for a new system for ruling the Roman Empire.
+</p>
+
+<p>
+Political Reforms
+</p>
+
+<p>
+Believing that the empire had grown too large for a single ruler, Diocletian (284&#x2013;305) divided it into four administrative units (see Map 7.1), each with its own prefect. Despite the appearance of four-man rule, however, Diocletian’s military seniority enabled him to claim a higher status and hold the ultimate authority. Constantine (306&#x2013;337) continued and even expanded the autocratic policies of Diocletian. Both rulers greatly strengthened and enlarged the administrative bureaucracies of the Roman Empire. Henceforth, civil and military bureaucracies were sharply separated. Each contained a hierarchy of officials who exercised control at the various levels. The emperor presided over both hierarchies of officials and served as the only link between them. New titles of nobility&#x2014;such as illustres (‘‘illustrious ones’’) and illustrissimi (‘‘most illustrious ones’’)&#x2014;were instituted to dignify the holders of positions in the civil and military bureaucracies.
+</p>
+
+<p>
+Military Reforms
+</p>
+
+<p>
+Additional military reforms were also instituted. The army was enlarged to almost 400,000 men, including units filled with Germans. By the end of Constantine’s reign, a new organization of the army had also been put in place. Military forces were of two kinds: garrison troops, which were located on the frontiers and intended as a first line of defense against invaders, and mobile units, which were located behind the frontier but could be quickly moved to support frontier troops when the borders were threatened. This gave the empire greater flexibility in responding to invasion.
+</p>
+
+<p>
+Economic and Social Trends
+</p>
+
+<p>
+The political and military reforms of Diocletian and Constantine greatly enlarged two institutions&#x2014;the army and the civil service&#x2014;that drained most of the public funds. Though more revenues were needed to pay for the army and bureaucracy, the population was not growing, so the tax base could not be expanded. Diocletian and Constantine devised new economic and social policies to deal with these financial burdens, but like their political policies, they were all based on coercion and loss of individual freedom. To fight inflation, Diocletian resorted to issuing a price edict in 301 that established maximum wages and prices for the entire empire, but despite severe penalties, it was unenforceable and failed to work.
+</p>
+
+<p>
+Coercion also came to form the underlying basis for numerous occupations in the Late Roman Empire. To ensure the tax base and keep the empire going despite the shortage of labor, the emperors issued edicts that forced people to remain in their designated vocations. Basic jobs, such as bakers and shippers, became hereditary. Free tenant farmers continued to decline and soon found themselves bound to the land by large landowners who took advantage of depressed agricultural conditions to enlarge their landed estates.
+</p>
+
+<p>
+In general, the economic and social policies of Diocletian and Constantine were based on an unprecedented degree of control and coercion. Though temporarily successful, such authoritarian policies in the long run stifled the vitality the Late Empire needed to revive its sagging fortunes.
+</p>
+
+<p>
+Constantine’s Building Program
+</p>
+
+<p>
+Constantine was especially interested in building programs despite the strain they placed on the budget. Between 324 and 330, he engaged in his biggest project, the construction of a new capital city in the east, on the site of the Greek city of Byzantium, on the shores of the Bosporus. Named the ‘‘city of Constantine,’’ or Constantinople (modern Istanbul), it was developed for defensive reasons; it had an excellent strategic location. Calling it his ‘‘New Rome,’’ Constantine endowed the city with a forum, large palaces, and a vast amphitheater. It was officially dedicated on May 11, 330, ‘‘by the commandment of God,’’ and in the following years, many Christian churches were built there.
+</p>
+
+<p>
+The Empire’s New Religion
+</p>
+
+<p>
+Christianity flourished after Constantine became the first Christian emperor. According to the traditional story, before a crucial battle, he saw a vision of a Christian cross inscribed ‘‘In this sign you will conquer.’’ Having won the battle, the story goes, Constantine was convinced of the power of the Christian God. Although he was not baptized until the end of his life, in 313 he issued the famous Edict of Milan, officially tolerating the existence of Christianity. Under Theodosius ‘‘the Great’’ (378&#x2013;395), it was made the official religion of the Roman Empire. Christianity had triumphed.
+</p>
+
+<p>
+Organization and Religious Disputes
+</p>
+
+<p>
+By the fourth century, the Christian church had developed a system of government. The Christian community in each city was headed by a bishop, whose area of jurisdiction was known as a bishopric or diocese. The bishoprics of each Roman province were clustered together under the direction of an archbishop. The bishops of four great cities, Rome, Jerusalem, Alexandria, and Antioch, held positions of special power in church affairs because the churches in these cities all asserted that they had been founded by the original apostles sent out by Jesus.
+</p>
+
+<p>
+One reason the church needed a more formal organization was the problem of heresy. As Christianity developed and spread, contradictory interpretations of important doctrines emerged. Heresy came to be viewed as a teaching different from the official ‘‘catholic’’ (universal) beliefs of the church. In a world where people were concerned about salvation, the question of whether Jesus’ nature was divine or human took on great significance. These doctrinal differences also became political issues, creating factions that actually warred with one another. It is unlikely that ordinary people understood what these debates meant.
+</p>
+
+<p>
+One of the major heresies of the fourth century was Arianism, which arose among the followers of Arius, a priest from Alexandria in Egypt. Arius believed that Jesus Christ had been human and thus not truly God. Arius was opposed by Athanasius, a bishop of Alexandria, who argued that Jesus was human but also truly God. Emperor Constantine, disturbed by the controversy, called the first ecumenical council of the church, a meeting composed of representatives from the entire Christian community. The Council of Nicaea, held in 325, condemned Arianism and stated that Jesus was of ‘‘the same substance’’ as God:
+</p>
+
+<p>
+We believe in one God the Father All-sovereign, maker of all things visible and invisible; And in one Lord Jesus Christ, the Son of God, begotten of the Father, only-begotten, that is, of the substance of the Father, God of God, Light of Light, true God of true God, begotten not made, of one substance with the Father.
+</p>
+
+<p>
+The Council of Nicaea did not end the controversy, however; not only did Arianism persist in some parts of the Roman Empire for many years, but many of the Germanic Goths who established states in the west converted to Arian Christianity (see ‘‘The Germanic Kingdoms’’ later in this chapter). As a result of these fourth-century theological controversies, the Roman emperor came to play an increasingly important role in church affairs.
+</p>
+
+<p>
+The End of the Western Empire
+</p>
+
+<p>
+Constantine had reunited the Roman Empire and restored a semblance of order. After his death, however, the empire resumed its dissolution into western and eastern parts, and by 395, they two had become virtually independent states. In the fifth century, the empire in the east remained intact under the Roman emperor in Constantinople (see ‘‘The Byzantine Empire’’ later in this chapter), but the empire in the west collapsed and was replaced by a series of Germanic kingdoms.
+</p>
+
+<p>
+During the first and second centuries A.D., the Romans had established the Rhine and Danube Rivers as the empire’s northern boundary. The Romans called all the peoples to the north of the rivers ‘‘Germans’’ and regarded them as uncivilized barbarians. In fact, the Germans consisted of different groups with their own customs and identities, but these constantly changed as tribes broke up and came together in new configurations. At times, they formed larger confederations under strong warrior leaders. The Germans lived by herding and farming and also traded with people living along the northern frontiers of the empire. Their closeness to the Romans also led to some Romanization of the tribes. They were familiar with the Roman use of coins rather than barter and also gained some knowledge of both the Latin language and Roman military matters.
+</p>
+
+<p>
+Contacts between Romans and Germans were common across the boundaries established along the Rhine and the Danube. In fact, the Romans hired Germanic tribes to fight other Germanic tribes that threatened Rome and enlisted groups of Germans to fight for Rome. Until the fourth century, the empire had proved capable of absorbing and accommodating these people without harm to its political structure. As that century wore on, however, the situation began to change as the Germanic tribes came under new pressures from invaders.
+</p>
+
+<p>
+In the late fourth century, the Huns, a fierce tribe of nomads from Asia, began moving into the Black Sea region and forced the Germanic inhabitants westward. One of the largest groups, which came to be known as the Visigoths, crossed the Danube into German territory and settled down as Roman allies. Ill-treated by Roman officials, the Visigoths soon revolted, and the attempt to stop them at Adrianople in 378 led to a crushing defeat for the Romans. Soon the Visigoths were again on the move. Under their king Alaric, they moved into Italy and sacked Rome in 410. Then, at the urging of the emperor, they moved into Spain and southern Gaul as Roman allies.
+</p>
+
+<p>
+The Roman experience with the Visigoths established a precedent. The emperors in the first half of the fifth century made alliances with whole groups of Germanic peoples, who settled peacefully in the western part of the empire. The Burgundians settled themselves in much of eastern Gaul, just south of another German tribe called the Alemanni. Only the Vandals consistently remained hostile to the Romans. They ravaged parts of Gaul and crossed the Pyrenees into Spain. Defeated by incoming Visigoths, the Vandals crossed the Strait of Gibraltar and conquered the province of Africa. In 455, the Vandals even attacked Rome, sacking it more ferociously than the Visigoths had in 410.
+</p>
+
+<p>
+Increasingly, German military leaders dominated the imperial courts of the western empire, treating the Roman emperors as puppet rulers under their control. One such German leader finally ended the charade of Roman imperial rule. Odoacer deposed the Roman emperor, Romulus Augustulus, in 476 and began to rule on his own. Meanwhile, the Ostrogoths, another branch of the Goths, under their king Theodoric (493&#x2013;526), marched into Italy, killed Odoacer, and established control of Italy in 493.
+</p>
+
+<p>
+By the end of the fifth century, Roman imperial authority in the west had ceased. Nevertheless, the intellectual, governmental, and cultural traditions of the Late Roman Empire continued to live in the new Germanic kingdoms.
+</p>
+
+<p>
+The Germanic Kingdoms
+</p>
+
+<p>
+Q Focus Questions: What changes did the Germanic peoples make to the political, economic, and social conditions of the western Roman Empire? What were the main features of Germanic law and society, and how did they differ from those of the Romans?
+</p>
+
+<p>
+By 500, the western Roman Empire was being replaced politically by a series of kingdoms ruled by German kings (see Map 7.2). Although the Germans now ruled, they were greatly outnumbered by the Romans, who still controlled most of the economic resources. Both were Christian, but many of the Germans were Arian Christians, considered heretics by Roman Christians, who belonged to the Christian church in Rome, which had become known as the Roman Catholic Church. Gradually, the two groups merged into a common culture, although the pattern of settlement and the fusion of the Romans and Germans took different forms in the various Germanic kingdoms.
+</p>
+
+<p>
+The Ostrogothic Kingdom of Italy
+</p>
+
+<p>
+More than any other Germanic state, the Ostrogothic kingdom of Italy managed to maintain the Roman tradition of government. The Ostrogothic king, Theodoric, had received a Roman education while a hostage in Constantinople. After taking control of Italy, he was eager to create a synthesis of Ostrogothic and Roman practices. In addition to maintaining the entire structure of imperial Roman government, he established separate systems of rule for the Ostrogoths and the Romans. The Italian population lived under Roman law administered by Roman officials. The Ostrogoths were governed by their own customs and their own officials.
+</p>
+
+<p>
+After Theodoric’s death in 526, it quickly became apparent that much of his success had been due to the force of his personality. His successors soon found themselves facing opposition from the imperial forces of the Byzantine or eastern Roman Empire. Under Emperor Justinian (527&#x2013; 565) (see ‘‘The Byzantine Empire’’ later in this chapter), Byzantine armies reconquered Italy between 535 and 552, devastating much of the peninsula and in the process destroying Rome as one of the great urban centers of the Mediterranean world. The Byzantine reconquest proved ephemeral, however. Another German tribe, the Lombards, invaded in 568 and conquered much of northern and central Italy. Unlike the Ostrogoths, the Lombards were harsh rulers who cared little for Roman structures and traditions.
+</p>
+
+<p>
+The Visigothic Kingdom of Spain
+</p>
+
+<p>
+The Visigothic kingdom in Spain demonstrated a number of parallels to the Ostrogothic kingdom of Italy. Both favored coexistence between the Roman and German populations, both featured a warrior caste dominating a larger native population, and both continued to maintain much of the Roman structure of government while largely excluding Romans from power. There were also noticeable differences, however. Laws preventing intermarriage were dropped, and the Visigothic and Hispano-Roman peoples began to blend. A new body of law common to both peoples also developed.
+</p>
+
+<p>
+The Visigothic kingdom possessed one fatal weakness. With no established procedure for choosing new rulers, powerful Visigoths fought constantly to lay claim to the kingship. Church officials tried to help develop a sense of order, as this decree illustrates: ‘‘No one of us shall dare to seize the kingdom; no one shall arouse sedition among the citizenry; no one shall think of killing the king. . . .’’ Church edicts failed to stop the feuds, however, and assassinations remained a way of life in Visigothic Spain. In 711, Muslim invaders destroyed the Visigothic kingdom itself (see ‘‘The Rise of Islam’’ later in this chapter).
+</p>
+
+<p>
+The Frankish Kingdom
+</p>
+
+<p>
+Only one of the German states on the European continent proved long-lasting&#x2014;the kingdom of the Franks. The establishment of a Frankish kingdom was the work of Clovis (c. 482&#x2013;511), a member of the Merovingian dynasty who became a Catholic Christian around 500. He was not the first German king to convert to Christianity, but the others had joined the Arian sect of Christianity. The Roman Catholic Church regarded the Arians as heretics whose beliefs diverged from official church doctrine. Clovis’s conversion to Catholic Christianity gained him the support of the Roman Catholic Church, which was eager to obtain the friendship of a major Germanic ruler who was a Catholic Christian.
+</p>
+
+<p>
+By 510, Clovis had established a powerful new Frankish kingdom stretching from the Pyrenees in the west to German lands in the east (modern-day France and western Germany). After the death of Clovis, however, his sons divided the newly created kingdom among themselves, as was the Frankish custom. Thus during the sixth and seventh centuries, the once-united Frankish kingdom came to be partitioned into three major areas: Neustria in northern Gaul; Austrasia, consisting of the ancient Frankish lands on both sides of the Rhine; and the former kingdom of Burgundy.
+</p>
+
+<p>
+During this time, the Frankish kingdom witnessed a process of fusion between Gallo-Roman and Frankish cultures and peoples, a process accompanied by a significant decline in Roman standards of civilization and commercial activity. The Franks were warriors and did little to encourage either urban life or trade. By 750, Frankish Gaul was basically an agricultural society in which the old Roman estates of the Late Empire had continued unimpeded. Institutionally, however, Germanic concepts of kingship and customary law replaced the Roman governmental structure.
+</p>
+
+<p>
+Anglo-Saxon England
+</p>
+
+<p>
+The barbarian pressures on the western Roman Empire had forced the emperors to withdraw the Roman armies and abandon Britain by the beginning of the fifth century. This opened the door to the Angles and Saxons, Germanic tribes from Denmark and northern Germany. Although these same peoples had been conducting plundering raids for a century, the withdrawal of the Roman armies enabled them to make settlements instead. They met with resistance from the Celtic Britons, however, who still controlled the western regions of Cornwall, Wales, and Cumberland at the beginning of the seventh century. The German invaders eventually succeeded in carving out small kingdoms throughout the island, Kent in southeast England being one of them.
+</p>
+
+<p>
+The Society of the Germanic Kingdoms
+</p>
+
+<p>
+As Germans and Romans intermarried and began to create a new society, some of the social customs of the Germanic people began to play an important role. The crucial social bond among the Germanic peoples was the family, especially the extended or patriarchal family of husbands, wives, children, brothers, sisters, cousins, and grandparents. In addition to working the land together and passing it down to succeeding generations along male lines, the extended family provided protection, which was sorely needed in the violent atmosphere of Merovingian times.
+</p>
+
+<p>
+The German conception of family affected the way Germanic law treated crime and punishment. In the Roman system, as in our own, a crime such as murder was considered an offense against society or the state and was handled by a court that heard evidence and arrived at a decision. Germanic law tended to be personal. An injury by one person against another could mean a blood feud in which the family of the injured party took revenge on the kin of the wrongdoer. Feuds could lead to savage acts of revenge, such as hacking off hands or feet, gouging out eyes, or slicing off ears and noses. Because this system could easily get out of control, an alternative system arose that made use of a fine called wergeld, which was paid by a wrongdoer to the family of the person he had injured or killed. Wergeld (literally, ‘‘man money’’) was the value of a person in monetary terms. That value varied according to social status. An offense against a nobleman, for example, cost considerably more than one against a freeman or a slave.
+</p>
+
+<p>
+Under German customary law, compurgation and the ordeal were the two most commonly used procedures for determining whether an accused person was guilty and should have to pay wergeld. Compurgation was the swearing of an oath by the accused person, backed up by a group of ‘‘oath helpers,’’ numbering twelve or twentyfive, who would also swear that the accused person should be believed. The ordeal functioned in a variety of ways, all of which were based on the principle of divine intervention&#x2014;the assumption was that divine forces (pagan or Christian) would not allow an innocent person to be harmed (see the box on p. 137).
+</p>
+
+<p>
+The Frankish Family and Marriage
+</p>
+
+<p>
+For the Franks, like other Germanic peoples, the extended family was at the center of social organization. The Frankish family structure was simple. Males were dominant and made all the important decisions. A woman obeyed her father until she married and then fell under the legal domination of her husband. A widow, however, could hold property without a male guardian. In Frankish law, the wergeld of a wife of childbearing age&#x2014;of value because she could bring forth children&#x2014;was considerably higher than that of a man. The law stated, ‘‘If any one killed a free woman after she had begun bearing children, he shall be sentenced to 24,000 denars . . . . After she can have no more children, he who kills her shall be sentenced to 8,000 denars.’’2
+</p>
+
+<p>
+Because marriage affected the extended family group, fathers or uncles could arrange marriages for the good of the family without considering their children’s wishes. Most important was the engagement ceremony in which a prospective son-in-law made a payment symbolizing the purchase of paternal authority over the bride. The essential feature of the marriage itself involved placing the married couple in bed to achieve their physical union. In first marriages, it was considered important that the wife be a virgin, which ensured that any children would be the husband’s. A virgin symbolized the ability of the bloodline to continue. Accordingly, adultery was viewed as pollution of the woman and her offspring, poisoning their future. Adulterous wives were severely punished (an adulterous woman could be strangled or even burned alive); adulterous husbands were not. Divorce was relatively simple and was initiated primarily by the husband. Divorced wives simply returned to their families of origin.
+</p>
+
+<p>
+For most women in the new Germanic kingdoms, their legal status reflected the material conditions of their lives. Archaeological evidence suggests that most women had life expectancies of only thirty to forty years, and 10 to 15 percent of women died in their childbearing years, no doubt due to complications associated with childbirth. For most women, life consisted of domestic labor: providing food and clothing for the household, caring for the children, and assisting with numerous farming chores. Of all women’s labors, the most important was childbearing, because it was indispensable to perpetuating the family and its possessions.
+</p>
+
+<p>
+Development of the Christian Church
+</p>
+
+<p>
+Q Focus Questions: How and why did the organization of the Christian church and its relations with the state change during the fourth and fifth centuries? What were the chief characteristics of Benedictine monasticism, and what role did monks play in both the conversion of Europe to Christianity and the intellectual life of the Germanic kingdoms?
+</p>
+
+<p>
+By the end of the fourth century, Christianity had become the predominant religion of the Roman Empire. As the official Roman state disintegrated, the Christian church played an increasingly important role in the emergence and growth of the new European civilization.
+</p>
+
+<p>
+The Power of the Pope
+</p>
+
+<p>
+One of the far-reaching developments in the history of the Christian church was the emergence of one bishop&#x2014; that of Rome&#x2014;as the recognized leader of the western Christian church. According to church tradition, Jesus had given the keys to the kingdom of heaven to Peter, who was considered the chief apostle and the first bishop of Rome. Subsequent bishops of Rome were considered Peter’s successors and came to be known as popes (from the Latin word papa, meaning ‘‘father’’) of the Catholic church.
+</p>
+
+<p>
+Although western Christians came to accept the bishop of Rome as head of the church in the fourth and fifth centuries, there was no unanimity on the extent of the powers the pope possessed as a result of this position. Nevertheless, the emergence in the sixth century of a strong pope, Gregory I, known as Gregory the Great, set the papacy and the Roman Catholic Church on an energetic path that enabled the church in the seventh and eighth centuries to play an increasingly prominent role in civilizing the Germans and aiding the emergence of a distinctly new European civilization.
+</p>
+
+<p>
+As pope, Gregory I (590&#x2013;604) took charge of Rome and its surrounding area and made it into an administrative unit that eventually came to be known as the Papal States. Gregory also pursued a policy of extending papal authority over the Christian church in the west. He intervened in ecclesiastical conflicts throughout Italy and corresponded with the Frankish rulers, urging them to reform the church in Gaul. He successfully initiated the efforts of missionaries to convert England to Christianity and was especially active in converting the pagan peoples of Germanic Europe. His primary instrument was the monastic movement.
+</p>
+
+<p>
+The Monks and Their Missions
+</p>
+
+<p>
+A monk (Latin monachus, meaning ‘‘one who lives alone’’) was a person who sought to live a life divorced from the world, cut off from ordinary human society, in order to pursue an ideal of godliness or total dedication to the will of God. Christian monasticism was initially based on the model of the solitary hermit who forsakes all civilized society to pursue spirituality. Saint Anthony (c. 250&#x2013;350) was a prosperous peasant in Egypt who decided to follow Jesus’ injunction in the Gospel of Saint Mark: ‘‘Go your way, sell whatsoever you have, and give to the poor, and you shall have treasure in heaven: and come, take up the cross, and follow me.’’ Anthony gave away his 300 acres of land to the poor and went into the desert to pursue his ideal of holiness (see the box on p. 139). Others did likewise, often to extremes. Saint Simeon the Stylite lived for three decades in a basket atop a pillar over 60 feet high. These spiritual gymnastics established a new ideal for Christianity. Whereas the early Christian model had been the martyr who died for the faith and achieved eternal life in the process, the new ideal was the monk who died to the world and achieved spiritual life through denial, asceticism, and mystical experience of God.
+</p>
+
+<p>
+These early monks, however, soon found themselves unable to live in solitude. Their feats of holiness attracted followers on a wide scale, and as the monastic ideal spread throughout the east, a new form of monasticism based on the practice of communal life soon became the dominant form. Monastic communities came to be seen as the ideal Christian society that could provide a moral example to the wider society around them.
+</p>
+
+<p>
+Benedictine Monasticism
+</p>
+
+<p>
+Saint Benedict of Nursia (c. 480&#x2013;c. 543), who founded a monastic house for which he wrote a set of rules in the 520s, established the fundamental form of monastic life in the western Christian church. The Benedictine rule came to be used by other monastic groups and was crucial to the growth of monasticism in the western Christian world.
+</p>
+
+<p>
+Benedict’s rule favored an ideal of moderation. In chapter 40 of the rule, on the amount a monk should drink, this sense of moderation becomes apparent:
+</p>
+
+<p>
+‘‘Every man has his proper gift from God, one after this manner, another after that.’’ And therefore it is with some misgiving that we determine the amount of food for someone else. Still, having regard for the weakness of some brothers, we believe that a hemina of wine [a quarter liter] per day will suffice for all. Let those, however, to whom God gives the gift of abstinence, know that they shall have their proper reward. But if either the circumstances of the place, the work, or the heat of summer necessitates more, let it lie in the discretion of the abbot to grant it. But let him take care in all things lest satiety or drunkenness supervene.3
+</p>
+
+<p>
+At the same time, moderation did not preclude a disciplined existence based on the ideals of poverty, chastity, and obedience.
+</p>
+
+<p>
+Benedict’s rule divided each day into a series of activities, with primary emphasis on prayer and manual labor. Physical work of some kind was required of all monks for several hours a day because idleness was ‘‘the enemy of the soul.’’ At the very heart of community practice was prayer, the proper ‘‘work of God.’’ While this included private meditation and reading, all monks gathered together seven times during the day for common prayer and chanting of psalms. A Benedictine life was a communal one; monks ate, worked, slept, and worshiped together.
+</p>
+
+<p>
+Each Benedictine monastery was strictly ruled by an abbot, or ‘‘father’’ of the monastery, who held complete authority over them; unquestioning obedience to the will of the abbot was expected of each monk. Each Benedictine monastery owned lands that enabled it to be a selfsustaining community, isolated from and independent of the world surrounding it. Within the monastery, however, monks were to fulfill their vow of poverty: ‘‘Let all things be common to all, as it is written, lest anyone should say that anything is his own or arrogate it to himself.’’4 By the eighth century, Benedictine monasticism had spread throughout the west.
+</p>
+
+<p>
+Although the original monks were men, women soon followed suit in withdrawing from the world to dedicate themselves to God. The first monastic rule for western women was produced by Caesarius of Arles for his sister in the fifth century. It strongly emphasized a rigid cloistering of these nuns to preserve them from dangers.
+</p>
+
+<p>
+Monasticism played an indispensable role in early medieval civilization. Monks became the new heroes of Christian civilization. Their dedication to God became the highest ideal of Christian life. Monks copied Latin works and passed on the legacy of the ancient world to Western civilization in its European stage. Moreover, the monks played an increasingly significant role in spreading Christianity to all of Europe.
+</p>
+
+<p>
+Monks as Missionaries
+</p>
+
+<p>
+The British Isles, in particular, became an important center of Christian culture and missionary fervor. After their conversion, the Celts of Ireland and Anglo-Saxons of England created new centers of Christian learning and in turn themselves became enthusiastic missionaries.
+</p>
+
+<p>
+By the sixth century, Irish monasticism was a flourishing institution with its own unique characteristics. Unlike Benedictine monasticism, it was strongly ascetic. Monks performed strenuous fasts, prayed and meditated frequently under extreme privations, and confessed their sins on a regular basis to their superiors. In fact, Irish monasticism gave rise to the use of penitentials or manuals that provided a guide for examining one’s life to see what sins, or offenses against the will of God, one had committed (see the box on p. 141). A great love of learning also characterized Irish monasticism. The Irish eagerly absorbed both Latin and Greek culture and fostered education as a major part of their monastic life.
+</p>
+
+<p>
+Their emphasis on asceticism led many Irish monks to go into voluntary exile. This ‘‘exile for the love of God’’ was not into isolation, however, but into missionary activity. Irish monks became fervid missionaries. Saint Columba (521&#x2013;597) left Ireland in 565 as a ‘‘pilgrim for Christ’’ and founded an influential monastic community off the coast of Scotland on the island of Iona. From there Irish missionaries went to northern England to begin the process of converting the Angles and Saxons. Other Irish monks traveled to the European continent. New monasteries founded by the Irish became centers of learning wherever they were located.
+</p>
+
+<p>
+At the same time the Irish monks were busy bringing their version of Christianity to the Anglo-Saxons of Britain, Pope Gregory the Great had set into motion an effort to convert England to Roman Christianity. His most important agent was Augustine, a monk from Rome, who arrived in England in 597. England at that time had a number of Germanic kingdoms. Augustine went first to Kent, where he converted King Ethelbert; most of the king’s subjects then followed suit. Pope Gregory’s conversion techniques emphasized persuasion rather than force, and as seen in this excerpt from one of his letters, he was willing to assimilate old pagan practices in order to coax the pagans into the new faith:
+</p>
+
+<p>
+We wish you [Abbot Mellitus] to inform him [Augustine] that we have been giving careful thought to the affairs of the English, and have come to the conclusion that the temples of the idols among that people should on no account be destroyed. The idols are to be destroyed, but the temples themselves are to be aspersed with holy water, altars set up in them, and relics deposited there. For if these temples are well-built, they must be purified from the worship of demons and dedicated to the service of the true God.5
+</p>
+
+<p>
+Freed of their pagan past, temples had become churches, as one Christian commentator noted with joy: ‘‘The dwelling place of demons has become a house of God. The saving light has come to shine, where shadows covered all. Where sacrifices once took place and idols stood, angelic choirs now dance. Where God was angered once, now God is made content.’’6 Likewise, old pagan feasts were given new names and incorporated into the Christian calendar. The Christian feast of Christmas, for example, was held on December 25, the day of the pagan celebration of the winter solstice.
+</p>
+
+<p>
+As Roman Christianity spread northward in Britain, it encountered Irish Christianity moving southward. Roman Christianity prevailed, although the English church, despite its newfound unity and loyalty to Rome, retained some Irish features. Most important was the concentration on monastic culture with special emphasis on learning and missionary work. By 700, the English church had become the best trained and most learned in western Europe.
+</p>
+
+<p>
+Following the Irish example, English monks spread to the European continent to carry on the work of conversion (see Map 7.3). Most important was Boniface (c. 680&#x2013;755), who undertook the conversion of pagan Germans in Frisia, Bavaria, and Saxony. By 740, Saint Boniface, the ‘‘Apostle of the Germans,’’ had become the most famous churchman in Europe. Fourteen years later, he was killed while trying to convert the pagan Frisians. Boniface was a brilliant example of the numerous Irish and English monks whose tireless efforts made Europe the bastion of the Roman Catholic faith.
+</p>
+
+<p>
+Women and Monasticism
+</p>
+
+<p>
+Women played an important role in the monastic missionary movement and the conversion of the Germanic kingdoms. Double monasteries, where both monks and nuns lived in separate houses but attended church services together, were found in both the English and Frankish kingdoms. The monks and nuns followed a common rule under a common head. Frequently, this leader was an abbess rather than an abbot. Many of these abbesses belonged to royal houses, especially in Anglo-Saxon England. In the kingdom of Northumbria, for example, Saint Hilda founded the monastery of Whitby in 657. As abbess, she was responsible for giving learning an important role in the life of the monastery; five future bishops were educated under her tutelage. For female intellectuals, monasteries offered opportunities for learning not found elsewhere in the society of their day.
+</p>
+
+<p>
+Nuns of the seventh and eighth centuries also played an important role in the spread of Christianity. The great English missionary Boniface relied on nuns in England for books and money. He also asked the abbess of Wimborne to send groups of nuns to establish convents in newly converted German lands. A nun named Leoba established the first convent in Germany at Bischofsheim.
+</p>
+
+<p>
+The Path of Celibacy
+</p>
+
+<p>
+The monastic movement enabled some women to pursue a new path to holiness. Cloisters for both men and women offered the ideal place to practice the new Christian ideal of celibacy. This newfound emphasis on abstaining from sexual relations, especially evident in the emphasis on virginity, created a new image of the human body in late antiquity. To many Greeks and Roman, the human body had been a source of beauty, joy, and pleasure, noticeable in numerous works of art. To many Christians, the body was regarded as a hindrance to a spiritual connection with God. The refusal to have sex was a victory over the desires of the flesh and thus an avenue to holiness.
+</p>
+
+<p>
+In the fourth and fifth centuries, a cult of virginity also moved beyond the walls of monasteries and convents. Throughout the Mediterranean world, groups of women got together to study the importance and benefits of celibacy. In Rome, a woman named Marcella supported a group of aristocratic women in their studies of celibacy.
+</p>
+
+<p>
+Christianity and Intellectual Life
+</p>
+
+<p>
+Many early Christians expressed considerable hostility toward the pagan culture of the Classical world. Tertullian (c. 160&#x2013;c. 225), a Christian writer from Carthage, had proclaimed, ‘‘What has Jerusalem to do with Athens, the Church with the Academy, the Christian with the heretic? . . . After Jesus Christ we have no need of speculation, after the Gospel no need of research.’’7 To many early Christians, the Bible (see Chapter 6) contained all the knowledge anyone needed. Others, however, thought it was not possible to separate Christian thought from Classical traditions and education and encouraged Christianity to absorb the Classical heritage. As it spread in the eastern Roman world, Christianity adopted Greek as its language; the New Testament was written in Greek. Christians also turned to Greek thought for help in expressing complicated theological concepts. In many ways, then, Christianity served to preserve Greco-Roman culture.
+</p>
+
+<p>
+The Work of Augustine
+</p>
+
+<p>
+The work of Augustine (354&#x2013; 430) provides one of the best examples of how Christianity used pagan culture in the service of Christianity. Augustine came to be revered as one of the Latin fathers of the Catholic church, intellectuals who wrote in Latin and profoundly influenced the development of Christian thought in the west.
+</p>
+
+<p>
+Born in North Africa, Augustine was reared by his mother, an ardent Christian. He eventually became a professor of rhetoric at Milan in 384. After experiencing a profound and moving religious experience, he gave up his teaching position and went back to North Africa, where he became bishop of Hippo from 396 until his death in 430.
+</p>
+
+<p>
+Augustine’s most famous work, The City of God, was a profound expression of a Christian philosophy of government and history. In it, he theorized on the ideal relations between two kinds of societies existing throughout time&#x2014;the City of God and the City of the World. Those who loved God would be loyal to the City of God, whose ultimate location was the kingdom of heaven. Earthly society would always be uncertain because of human beings’ inclination to sin. And yet the City of the World was still necessary, for it was the duty of rulers to curb the depraved instincts of sinful humans and maintain the peace necessary for Christians to live in the world. Hence Augustine posited that secular government and authority were necessary for the pursuit of the true Christian life on earth; in doing so, he provided a justification for secular political authority that would play an important role in medieval thought.
+</p>
+
+<p>
+Jerome and the Bible
+</p>
+
+<p>
+Another important intellectual of the early church was Jerome (345&#x2013;420), who pursued literary studies in Rome and became a master of Latin prose. Jerome had mixed feelings about his love for Classical studies, however, and like Augustine, he experienced a spiritual conversion after which he tried to dedicate himself more fully to Jesus. Ultimately, Jerome found a compromise by purifying the literature of the pagan world and then using it to further the Christian faith. Jerome was a great scholar, and his extensive knowledge of both Hebrew and Greek enabled him to translate the Old and New Testaments into Latin. In the process, he created the so-called Latin Vulgate, or common text, of the Scriptures that became the standard edition for the Catholic church in the Middle Ages.
+</p>
+
+<p>
+Cassiodorus
+</p>
+
+<p>
+Although the Christian church came to accept Classical culture, it was not easy to do so in the world of the new German kingdoms. Nevertheless, some Christian scholars managed to keep learning alive. Most prominent was Cassiodorus (c. 490&#x2013;c. 585), who came from an aristocratic Roman family and served as an official of the Ostrogothic king Theodoric. The conflicts that erupted after the death of Theodoric led Cassiodorus to withdraw from public life and retire to his landed estates in southern Italy, where he wrote his final work, Divine and Human Readings. This was a compendium of the literature of both Christian and pagan antiquity. Cassiodorus accepted the advice of earlier Christian intellectuals to make use of Classical works while treasuring the Scriptures above all else.
+</p>
+
+<p>
+Cassiodorus continued the tradition of late antiquity of classifying knowledge according to certain subjects. In assembling his compendium of authors, he followed the works of late ancient authors in placing all secular knowledge into the categories of the seven liberal arts, which were divided into two major groups: the trivium, consisting of grammar, rhetoric, and dialectic or logic, and the quadrivium, consisting of the mathematical subjects of arithmetic, geometry, astronomy, and music. The seven liberal arts would become the cornerstone of Western education until the seventeenth century.
+</p>
+
+<p>
+The Byzantine Empire
+</p>
+
+<p>
+Q Focus Question: How did the Byzantine Empire that had emerged by the eighth century differ from the empire of Justinian and from the Germanic kingdoms in the west?
+</p>
+
+<p>
+As noted earlier, in the fourth century, the western and eastern parts of the Roman Empire began to go their separate ways. As the Germans moved into the western part of the empire and established various kingdoms over the course of the next hundred years, the Roman Empire in the east, centered on Constantinople, solidified and prospered.
+</p>
+
+<p>
+The Reign of Justinian (527&#x2013;565)
+</p>
+
+<p>
+When he became emperor of the eastern Roman Empire, Justinian was determined to reestablish the empire in the entire Mediterranean world. His army, commanded by Belisarius, probably the best general of the late Roman period, sailed to North Africa and quickly destroyed the Vandals in two major battles. From North Africa, Belisarius led his forces onto the Italian peninsula and defeated the Ostrogoths. By 552, Justinian appeared to have achieved his goal. His reconstituted empire included Italy, part of Spain, North Africa, Asia Minor, Palestine, and Syria (see Map 7.4). But his success proved fleeting. Only three years after Justinian’s death, the Lombards conquered much of Italy. Although the eastern empire maintained the fiction of Italy as a province, its forces were limited to southern and central Italy, Sicily, and some coastal areas.
+</p>
+
+<p>
+Justinian’s most important contribution was his codification of Roman law. The eastern empire had inherited a vast quantity of legal materials connected to the development of Roman law, which Justinian wished to simplify. The result was the Corpus Iuris Civilis (Body of Civil Law), a codification of Roman law that remained in force in the eastern Roman Empire until its end in 1453. And because it was written in Latin (it was in fact the last product of eastern Roman culture to be written in Latin, which was soon replaced by Greek), it was also eventually used in the west and ultimately became the basis of the legal system of all of continental Europe.
+</p>
+
+<p>
+Life in Constantinople: The Emperor’s Building Program
+</p>
+
+<p>
+After riots destroyed much of Constantinople in 532, Emperor Justinian rebuilt the city and gave it the appearance it would keep for almost a thousand years. With a population estimated in the hundreds of thousands, Constantinople was the largest city in Europe during the Middle Ages. It viewed itself as the center of an empire and a special Christian city.
+</p>
+
+<p>
+Until the twelfth century, Constantinople was Europe’s greatest commercial center, the chief marketplace where western and eastern products were exchanged. Highly desired in Europe were the products of the East: silk from China, spices from Southeast Asia and India, jewelry and ivory from India (the latter used by artisans for church items), wheat and furs from southern Russia, and flax and honey from the Balkans. Many of these eastern goods were then shipped to the Mediterranean area and northern Europe. Moreover, imported raw materials were used in Constantinople for local industries. During Justinian’s reign, two Christian monks smuggled silkworms from China to begin a Byzantine silk industry. The state controlled the production of silk cloth, and the workshops themselves were housed in Constantinople’s royal palace complex. European demand for silk cloth made it the city’s most lucrative product.
+</p>
+
+<p>
+Much of Constantinople’s appearance in the Middle Ages was due to Justinian’s program of rebuilding in the sixth century. The city was dominated by an immense palace complex, hundreds of churches, and a huge arena known as the Hippodrome. No residential district was particularly fashionable; palaces, tenements, and slums ranged alongside one another. Justinian added many new buildings. His public works projects included roads, bridges, walls, public baths, law courts, and colossal underground reservoirs to hold the city’s water supply. He also built hospitals, schools, monasteries, and churches. Churches were his special passion, and in Constantinople alone he built or rebuilt thirty-four of them. His greatest achievement was the famous Hagia Sophia, the Church of the Holy Wisdom, completed in 537. The center of Hagia Sophia consisted of four large piers crowned by an enormous dome, which seemed to be floating in space. In part this impression was created by ringing the base of the dome with forty-two windows, which allowed an incredible play of light within the cathedral. Light served to remind the worshipers of God. As invisible light illuminates darkness, so too was it believed that invisible spirit illuminates the world.
+</p>
+
+<p>
+The Hippodrome was a huge amphitheater, constructed of brick covered by marble, holding between forty and sixty thousand spectators. Although gladiator fights were held there, the main events were the chariot races; twenty-four would usually be presented in one day. The citizens of Constantinople were passionate fans of chariot racing. Successful charioteers were acclaimed as heroes and honored with public statues.
+</p>
+
+<p>
+From Eastern Roman to Byzantine Empire
+</p>
+
+<p>
+Justinian’s accomplishments had been spectacular, but when he died, he left the eastern Roman Empire with serious problems: too much territory to protect far from Constantinople, an empty treasury, a decline in population after a plague, and renewed threats to its frontiers. In the first half of the seventh century, the empire faced attacks from the Persians to the east and the Slavs to the north.
+</p>
+
+<p>
+The most serious challenge to the eastern Roman Empire came from the rise of Islam, which unified the Arab tribes and created a powerful new force that swept through the east (see the next section, ‘‘The Rise of Islam’’). The defeat of an eastern Roman army at Yarmuk in 636 meant the loss of the provinces of Syria and Palestine. The Arabs also moved into the old Persian Empire and conquered it. Arabs and eastern Roman forces now faced each other along a frontier in southern Asia Minor.
+</p>
+
+<p>
+Problems arose along the northern frontier as well, especially in the Balkans, where an Asiatic people known as the Bulgars had arrived earlier in the sixth century. In 679, the Bulgars defeated the eastern Roman forces and took possession of the lower Danube valley, establishing a strong Bulgarian kingdom.
+</p>
+
+<p>
+By the beginning of the eighth century, the eastern Roman Empire was greatly diminished in size. Consisting only of the eastern Balkans and Asia Minor, it was no longer a major eastern Mediterranean state. The external challenges had important internal repercussions as well. By the eighth century, the eastern Roman Empire had been transformed into what historians call the Byzantine Empire, a civilization with its own unique character that would last until 1453 (Constantinople was built on the site of an older city named Byzantium&#x2014;hence the term Byzantine).
+</p>
+
+<p>
+The Byzantine Empire was both a Greek and a Christian state. Increasingly, Latin fell into disuse as Greek became both the common and the official language of the empire. The Byzantine Empire was also built on a faith in Jesus that was shared by almost all of its citizens. An enormous amount of artistic talent was poured into the construction of churches, church ceremonies, and church decoration. Spiritual principles deeply permeated Byzantine art.
+</p>
+
+<p>
+The emperor occupied a crucial position in the Byzantine state. Portrayed as chosen by God, the emperor was crowned in sacred ceremonies, and his subjects were expected to prostrate themselves in his presence. His power was considered absolute and was limited in practice only by deposition or assassination. Because the emperor appointed the head of the church (known as the patriarch), he also exercised control over both church and state. The Byzantines believed that God had commanded their state to preserve the true Christian faith. Emperor, clergy, and state officials were all bound together in service to this ideal. It can be said that spiritual values truly held the Byzantine state together.
+</p>
+
+<p>
+By 750, it was apparent that two of Rome’s heirs, the Germanic kingdoms and the Byzantine Empire, were moving in different directions. Nevertheless, Byzantine influence on the Western world was significant. The images of a Roman imperial state that continued to haunt the west lived on in Byzantium. The legal system of the west owed much to Justinian’s codification of Roman law. In addition, the Byzantine Empire served as a buffer state, protecting the west for a long time from incursions from the east. Although the Byzantine Empire would continue to influence the west until its demise in 1453, it went its own way. One of its bitterest enemies was the new power of Islam.
+</p>
+
+<p>
+The Rise of Islam
+</p>
+
+<p>
+Q Focus Question: What was the basic message of Islam, and why was it able to expand so successfully? Like the Hebrews and the Assyrians, the Arabs were a Semitic-speaking people of the Near East with a long history. In Roman times, the Arabian peninsula was dominated by Bedouin nomads who moved constantly to find water and food for themselves and their animals.
+</p>
+
+<p>
+Although some Arabs prospered from trading activities, especially in the north, most Arabs were poor Bedouins, whose tribes were known for their independence, their warlike qualities, and their dislike of urban-dwelling Arabs. Although these early Arabs were polytheistic, there was a supreme God named Allah (Arabic for ‘‘God’’) who ruled over the other gods. Allah was symbolized by a sacred stone, and each tribe had its own stone. All tribes, however, worshiped a massive black meteorite, the Black Stone, which had been placed in a central shrine called the Ka’ba in the city of Mecca.
+</p>
+
+<p>
+In the fifth and sixth centuries A.D., the Arabian peninsula took on new importance. As a result of political disorder in Mesopotamia and Egypt, the usual trade routes in the region began to change. A new trade route&#x2014; from the Mediterranean through Mecca to Yemen and then by ship across the Arabian Sea and the Indian Ocean&#x2014;became more popular, and communities in that part of the Arabian peninsula, including Mecca, began to prosper from this caravan trade. As a result, tensions arose between the Bedouins in the desert and the increasingly wealthy merchant classes in the towns. Into this intense world came Muhammad.
+</p>
+
+<p>
+Muhammad
+</p>
+
+<p>
+Born in Mecca to a merchant family, Muhammad (c. 570&#x2013;632) was orphaned at the age of five. He grew up to become a caravan manager and eventually married a rich widow who was also his employer. In his middle years, he began to experience visions that he believed were inspired by Allah. Muhammad believed that although Allah had already revealed himself in part through Moses and Jesus&#x2014;and thus through the Hebrew and Christian traditions&#x2014;the final revelations were now being given to him. Out of these revelations, which were eventually written down, came the Qur’an (or Koran), which contained the guidelines by which followers of Allah were to live. Muhammad’s teachings formed the basis for the religion known as Islam, which means ‘‘submission to the will of Allah.’’ Allah was the all-powerful being who had created the universe and everything in it. Humans must subject themselves to Allah if they wished to achieve everlasting life. Those who became his followers were called Muslims, meaning ‘‘practitioners of Islam.’’
+</p>
+
+<p>
+After receiving the revelations, Muhammad set out to convince the people of Mecca of the truth of his revelations. At first, many thought he was insane, and others feared that his attacks on the corrupt society around him would upset the established social and political order. Discouraged by the failure of the Meccans to accept his message, in 622 Muhammad and some of his closest supporters left the city and moved north to the rival city of Yathrib, later renamed Medina (‘‘city of the Prophet’’). The year of the journey to Medina, known in history as the Hegira (‘‘departure’’), became year 1 in the official calendar of Islam.
+</p>
+
+<p>
+Muhammad, who had been invited to the town by a number of prominent residents, soon began to win support from people in Medina as well as from members of the Bedouin tribes in the surrounding countryside. From these groups, he formed the first Muslim community (the umma). Muslims saw no separation between political and religious authority; submission to the will of Allah meant submission to his Prophet, Muhammad. Muhammad soon became both a religious and political leader. His political and military skills enabled him to put together a reliable military force, with which he returned to Mecca in 630, conquering the city and converting the townspeople to the new faith. From Mecca, Muhammad’s ideas spread quickly across the Arabian peninsula and within a relatively short time had resulted in both the religious and political unification of Arab society.
+</p>
+
+<p>
+The Teachings of Islam
+</p>
+
+<p>
+At the heart of Islam was the Qur’an, with the basic message that there is no God but Allah and Muhammad is his Prophet. Essentially, the Qur’an contains Muhammad’s revelations of a heavenly book written down by secretaries. Consisting of 114 suras (chapters), the Qur’an is the sacred book of Islam, which recorded the beliefs of the Muslims and served as their code of ethics and law.
+</p>
+
+<p>
+Islam was a direct and simple faith, emphasizing the need to obey the will of Allah. This meant following a basic ethical code consisting of the Five Pillars of Islam: belief in Allah and Muhammad as his Prophet; standard prayer five times a day and public prayer on Friday at midday to worship Allah; observance of the holy month of Ramadan (the ninth month on the Muslim calendar) with fasting from dawn to sunset; making a pilgrimage (known as the hajj), if possible, to Mecca at least once in one’s lifetime (see the box above); and giving alms to the poor and unfortunate. The faithful who observed the law were guaranteed a place in an eternal paradise.
+</p>
+
+<p>
+Islam was not just a set of religious beliefs but a way of life as well. After the death of Muhammad, Muslim scholars drew up a law code, called the Shari’a, to provide believers with a set of prescriptions to regulate their daily lives. Much of the Shari’a was drawn from existing legal regulations or from the Hadith, a collection of the sayings of Muhammad that was used to supplement the revelations contained in the Qur’an. Believers were subject to strict guidelines for their behavior. In addition to the Five Pillars, Muslims were forbidden to gamble, to eat pork, to drink alcoholic beverages, and to engage in dishonest behavior. Sexual practices were also strictly regulated. Marriages were to be arranged by parents, and contact between unmarried men and women was discouraged. In accordance with Bedouin custom, males were permitted to have more than one wife, but Muhammad attempted to limit the practice by restricting
+the number of wives to four.
+</p>
+
+<p>
+The Spread of Islam
+</p>
+
+<p>
+The death of Muhammad in 632 presented his followers with a dilemma. Muhammad had never named a successor, and although he had several daughters, he left no sons. In a male-oriented society, who would lead the community of the faithful? Shortly after Muhammad’s death, some of his closest followers selected Abu Bakr, a wealthy merchant who was Muhammad’s father-in-law, as caliph, or temporal leader, of the Islamic community.
+</p>
+
+<p>
+Muhammad and the early caliphs who succeeded him took up the Arabic tribal custom of the razzia or raid in the struggle against their enemies. Some people refer to this activity as jihad, which they misleadingly interpret as ‘‘holy war.’’ Jihad actually means ‘‘striving in the way of the Lord’’ to achieve personal betterment, which can include a fair, defensive fight to preserve one’s life and one’s faith. Arab conquests were not carried out to convert others, since conversion to Islam was purely voluntary. Conquered people who did not convert were required only to submit to Muslim rule and pay taxes.
+</p>
+
+<p>
+The Byzantines and the Persians were the first to feel the strength of the newly united Arabs. At Yarmuk in 636, the Muslims defeated the Byzantine army, and by 640, they had taken possession of the province of Syria (see Map 7.5). To the east, the Arabs went on to conquer the Persian Empire by 650. In the meantime, by 642, Egypt and other areas of northern Africa had been added to the new Muslim empire. Led by a series of brilliant generals, the Arabs had put together a large and highly motivated army whose valor was enhanced by the belief that Muslim warriors were guaranteed a place in paradise if they died in battle.
+</p>
+
+<p>
+Early caliphs, ruling from Medina, organized their newly conquered territories into taxpaying provinces. By the mid-seventh century, problems arose again over the succession to the Prophet until Ali, Muhammad’s son-in-law, was assassinated and the general Muawiya, the governor of Syria and one of Ali’s chief rivals, became caliph in 661. He was known for one outstanding virtue: he used force only when necessary. As he said, ‘‘I never use my sword when my whip will do, nor my whip when my tongue will do.’’8 Muawiya moved quickly to make the caliphate hereditary in his own family, thus establishing the Umayyad dynasty. As one of its first actions, the Umayyad dynasty moved the capital of the Muslim empire from Medina to Damascus in Syria. This internal dissension over the caliphate created a split in Islam between the Shi’ites, who accepted only the descendants of Ali, Muhammad’s sonin-law, as the true rulers, and the Sunnites, who claimed that the descendants of the Umayyads were the true caliphs. This seventh-century split in Islam has lasted to the present day.
+</p>
+
+<p>
+Internal dissension, however, did not stop the expansion of Islam. After sweeping across North Africa, the Muslims crossed the Strait of Gibraltar and moved into Spain around 710. The Visigothic kingdom collapsed, and by 725, most of Spain had become a Muslim state with its center at Co´rdoba. In 732, a Muslim army, making a foray into southern France, was defeated at the Battle of Tours near Poitiers. Muslim expansion in Europe came to a halt.
+</p>
+
+<p>
+Meanwhile, in 717, another Muslim force had launched a naval attack on Constantinople with the hope of destroying the Byzantine Empire. In the spring of 718, the Byzantines destroyed the Muslim fleet and saved the Byzantine Empire and indirectly Christian Europe, because the fall of Constantinople would no doubt have opened the door to Muslim invasion of eastern Europe. The Byzantine Empire and Islam now established an uneasy frontier in southern Asia Minor.
+</p>
+
+<p>
+The Arab advance had finally come to an end, but not before the southern and eastern Mediterranean parts of the old Roman Empire had been conquered. Islam had become heir to much of the old Roman Empire. The Umayyad dynasty at Damascus now ruled an enormous empire. While expansion had conveyed untold wealth and new ethnic groups into the fold of Islam, it also brought contact with Byzantine and Persian civilization. As a result, the new Arab empire would be influenced by Greek culture as well as the older civilizations of the ancient Near East.
+</p>
+
+<p>
+CONCLUSION
+</p>
+
+<p>
+The period from the mid-third century to the mid-eighth century was both chaotic and creative. During late antiquity, the Roman world of the Mediterranean was gradually transformed. Three new entities fell heir to Roman civilization: the Germanic kingdoms of western Europe, the Byzantine Empire, and Islam. In the west, Roman elements combined with German and Celtic influences; in the east, Greek and eastern elements of late antiquity were of more consequence. Although the Germanic kingdoms of the west and the Byzantine civilization of the east came to share a common bond in Christianity, the faith proved incapable of keeping them in harmony politically, and the two civilizations continued to move apart. But Christianity remained a dominant influence in both civilizations and in the west was especially important as a civilizing agent that brought pagan peoples into the new European civilization that was slowly being born. The rise of Islam, Rome’s third heir, resulted in the loss of the southern and eastern Mediterranean portions of the old Roman Empire to a religious power that was neither Roman nor Christian. The new Islamic empire forced Europe back on itself, and slowly there emerged a new culture that became the heart of what we know as Western civilization.
+</p>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: DESKTOP-13B7HQM</p>
+<p class="date">Created: 2024-12-24 Tue 17:04</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

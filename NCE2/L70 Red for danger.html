@@ -1,0 +1,598 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-08-06 Tue 22:24 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+
+<div id="outline-container-org8b3bad2" class="outline-2">
+<h2 id="org8b3bad2">Lesson 70 Red for danger</h2>
+<div class="outline-text-2" id="text-org8b3bad2">
+<p class="verse">
+How was the drunk removed from the ring?<br />
+<br />
+During a bullfight, a drunk suddenly wandered into the middle of the ring.<br />
+The crowd began to shout, but the drunk <b>was unaware of</b> the danger.<br />
+The bull <b>was busy with the matador</b> <b>at the time</b>,<br />
+&#xa0;but it suddenly <b>caught sight of</b> the drunk who was shouting rude remarks and waving a red cap.<br />
+Apparently <b>sensitive to</b> criticism,<br />
+&#xa0;the bull forgot all about the matador and <b>charged at</b> the drunk.<br />
+The crowd suddenly <b>grew quiet</b>.<br />
+The drunk, however, seemed quite sure of himself.<br />
+When the bull <b>got close to him</b>, he clumsily <b>stepped aside</b> to let it pass.<br />
+The crowd <b>broke into cheers</b> and the drunk bowed.<br />
+By this time, however,<br />
+&#xa0;three men had come into the ring and they quickly dragged the drunk to safety.<br />
+Even the bull seemed to <b>feel sorry for him</b>,<br />
+&#xa0;for it <b>looked on</b> sympathetically<br />
+&#xa0;&#xa0;until the drunk was <b>out of the way</b> before <b>once more</b> <b>turning its attention to the matador</b>.<br />
+</p>
+</div>
+<div id="outline-container-org9e52b9d" class="outline-3">
+<h3 id="org9e52b9d">expression</h3>
+<div class="outline-text-3" id="text-org9e52b9d">
+<p>
+bullfight [ˈbʊlˌfaɪt] n.斗牛 ring n.园形竞技场地<br />
+drunk [drʌŋk] n.醉汉<br />
+wander [ˈwɑndər] v.溜达,乱走<br />
+unaware [ˌʌnəˈwer] adj.不知道的,未察觉的<br />
+bull [bʊl] n.公牛 matador [ˈmætədɔr] n.斗牛士<br />
+remark [rɪˈmɑrk] n.v.评论;言语 make that stupid remark<br />
+apparently [əˈperəntli] adv.明显地<br />
+sensitive [ˈsensətɪv] adj.敏感的<br />
+criticism [ˈkrɪtɪˌsɪzəm] n.批评<br />
+charge [tʃɑrdʒ] v.冲上去<br />
+clumsily ['klʌmzɪli] adv.笨拙地<br />
+bow [baʊ] v.鞠躬<br />
+safety [ˈseɪfti] n.安全地带<br />
+sympathetically [ˌsɪmpə'θetɪklɪ] adv.同情地<br />
+</p>
+
+<p>
+be unaware of … 未意识到<br />
+be aware/conscious of … 意识到……<br />
+make that stupid remark 说那种愚蠢的话<br />
+be sensitive about sth. 对某事敏感<br />
+accept criticism 接受批评<br />
+charge at sb. = attack 向某人冲去<br />
+for your safety 为了您的安全<br />
+</p>
+<hr />
+
+<p>
+be busy with sth. 忙于某事<br />
+at the time 在当时<br />
+catch sight of a. 看到…<br />
+grow quiet&#x2026; 变得宁静<br />
+get close to a. 接近A<br />
+step aside 让开;走到一旁<br />
+break into cheers 爆发出欢呼声<br />
+feel sorry for sb. 为某人感到难过;同情某人<br />
+look on &#x2026; 旁观<br />
+out of the way … 不挡道<br />
+turn sb’s attention to a. 把某人的注意力转移到…<br />
+once more 再一次<br />
+</p>
+</div>
+</div>
+
+
+
+<div id="outline-container-orgddcac1d" class="outline-3">
+<h3 id="orgddcac1d"><span class="done DONE">DONE</span> 单词造句</h3>
+<div class="outline-text-3" id="text-orgddcac1d">
+<p>
+bullfight n. ring n.<br />
+</p>
+<ul class="org-ul">
+<li>I never enjoy seen bullfights.<br /></li>
+<li>The boy shouldn't have insisted on seeing bullfights.<br /></li>
+<li>During the bullfight, we must avoid throwing all kinds of things into the ring.<br /></li>
+<li>I have never seen a bullfight, have you?<br /></li>
+<li>Would you mind my seeing the bullfight on TV?<br /></li>
+</ul>
+<p>
+drunk n.<br />
+</p>
+<ul class="org-ul">
+<li>The drunk said: "Fancy meeting your here."<br /></li>
+<li>The drunk waved clumsily to us to take a lift.<br /></li>
+<li>The drunk is proud of the captain.<br /></li>
+<li>He refused to give the drunk a lift.<br /></li>
+<li>The drunk reminded me of my father in my childhood.<br /></li>
+</ul>
+<p>
+wander v.<br />
+</p>
+<ul class="org-ul">
+<li>You shouldn't have wandered alone here at night.<br /></li>
+<li>If you were with me, I wouldn't wander alone.<br /></li>
+<li>After having been hurt her legs, she has trouble wandering alone.<br /></li>
+<li>She wandered alone in the street and excepted herself to be found.<br /></li>
+<li>After have been robbed, I regretted wandering alone yesterday night.<br /></li>
+</ul>
+<p>
+unaware adj. be unaware/aware of …<br />
+</p>
+<ul class="org-ul">
+<li>She was unaware of breaking the world record.<br /></li>
+<li>She is quite aware of setting up a new world record.<br /></li>
+<li>Unaware of the drunk, she continue to drive ahead.<br /></li>
+<li>Aware of his helplessness, he began to acquire a good knowledge of the real world.<br /></li>
+<li>Unless she is aware of the importance of study, she won't work hard.<br /></li>
+</ul>
+<p>
+bull n. matador n.<br />
+</p>
+<ul class="org-ul">
+<li>The bull was staring at the matador all morning.<br /></li>
+<li>The matador should have killed that bull during bullfight.<br /></li>
+<li>During bullfight, the matador ran into serious trouble.<br /></li>
+<li>It takes the matador seventy minutes to deal with the situation.<br /></li>
+<li>The matador was fairly confident that the bull had been killed in the ring.<br /></li>
+</ul>
+<p>
+remark n.v. make that stupid remark<br />
+</p>
+<ul class="org-ul">
+<li>Stop making that kind of stupid remark.<br /></li>
+<li>I could bear that she is always making that stupid remark.<br /></li>
+<li>It is no use pretending that the matador hasn't made that stupid remark.<br /></li>
+<li>If you hadn't made that stupid remark, we would have been friend.<br /></li>
+<li>The boy who made that stupid remark wasn't aware of danger.<br /></li>
+</ul>
+<p>
+apparently adv.<br />
+</p>
+<ul class="org-ul">
+<li>Apparently, I have passed the driving test.<br /></li>
+<li>Apparently, my dreams come true at Christmas.<br /></li>
+<li>Apparently, the knife was used to cut fruits.<br /></li>
+<li>Apparently, the cat has just made that sound.<br /></li>
+<li>Apparently, I haven't made that stupid remark.<br /></li>
+</ul>
+<p>
+sensitive adj. be sensitive about sth.<br />
+</p>
+<ul class="org-ul">
+<li>The student is sensitive about criticism.<br /></li>
+<li>You're the only sensitive student who always accepts teachers' criticism.<br /></li>
+<li>I really admire he for answering sensitive questions.<br /></li>
+<li>The sensitive actor has a sence of humor.<br /></li>
+<li>The matador who always succeed in killing bulls in the ring is sensitive about his failure.<br /></li>
+</ul>
+<p>
+criticism n. accept criticism<br />
+</p>
+<ul class="org-ul">
+<li>You should have accepted criticism.<br /></li>
+<li>After having accepted criticism, we put forward the plan.<br /></li>
+<li>It's possible to improve your knowledge by accepting criticism.<br /></li>
+<li>Aware of criticism, a colony of bees charge at him.<br /></li>
+<li>It's usually worth accepting criticism.<br /></li>
+</ul>
+<p>
+charge v. charge at sb.=attack<br />
+</p>
+<ul class="org-ul">
+<li>She charged at the boy, even though she noticed that he is not guilty.<br /></li>
+<li>A short while ago, the bull has charged at the matador.<br /></li>
+<li>To make matters worse, the enemy is charging at us now.<br /></li>
+<li>After having found out who plays joke on her, she charged at the guy.<br /></li>
+<li>The matador has trained the bull to charge at customer for a long time.<br /></li>
+</ul>
+<p>
+clumsily adv.<br />
+</p>
+<ul class="org-ul">
+<li>In the future, I would grow old and react clumsily.<br /></li>
+<li>After have been arrested for 10 hours, he smoked clumsily.<br /></li>
+<li>The bird fly clumsily, we can get it under control.<br /></li>
+<li>Though he did homework clumsily, he managed to finish it in time.<br /></li>
+</ul>
+<p>
+bow v.<br />
+</p>
+<ul class="org-ul">
+<li>He insisted on Leo's bowing.<br /></li>
+<li>Leo refused to bow.<br /></li>
+<li>"I should have bowed just now", Leo said in a mournful voice.<br /></li>
+<li>Leo agreed to bow.<br /></li>
+<li>She sets off to bow everyone in the ring.<br /></li>
+</ul>
+<p>
+safety n. for your safety<br />
+</p>
+<ul class="org-ul">
+<li>Don't wander alone at midnight for your safety.<br /></li>
+<li>Please avoid talking to anyone about this. It's for your safety.<br /></li>
+<li>The police dragged the druck to the safety in the concert hall.<br /></li>
+<li>Don't throw anything into the ring for your safety.<br /></li>
+<li>Let's us suppose that someone would lead to the safety.<br /></li>
+</ul>
+<p>
+sympathetically adv.<br />
+</p>
+<ul class="org-ul">
+<li>It's no use pretending that you nodded your head sympathetically.<br /></li>
+<li>They not only listen sympathetically, they do her a favor as well.<br /></li>
+<li>They not only listen sympathetically, they give a charity performance as well.<br /></li>
+<li>They not only listen sympathetically, they build a bridge in the village as well.<br /></li>
+<li>I do try to listen to students sympathetically, but I couldn't do that all the time.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org77c0ba8" class="outline-3">
+<h3 id="org77c0ba8"><span class="done DONE">DONE</span> 反复听电影片段</h3>
+<div class="outline-text-3" id="text-org77c0ba8">
+</div>
+</div>
+<div id="outline-container-org98135fc" class="outline-3">
+<h3 id="org98135fc"><span class="done DONE">DONE</span> 习惯用法造句</h3>
+<div class="outline-text-3" id="text-org98135fc">
+<ul class="org-ul">
+<li>be busy with sth.<br />
+<ul class="org-ul">
+<li>I was busy with my own work.<br /></li>
+<li>After having found I was busy with my work, he insisted on my bowing.<br /></li>
+<li>Vivian, my close friend, was just busy with her dinner.<br /></li>
+<li>Why am I always busy with my housework.<br /></li>
+<li>If you were busy with your housework, you wouldn't take it easy.<br /></li>
+</ul></li>
+<li>at the time<br />
+<ul class="org-ul">
+<li>At the time, I admired him for breaking the world record.<br /></li>
+<li>At the time, I was as strong as a horse.<br /></li>
+<li>At the time, I trained my dog to press the brake pedal.<br /></li>
+<li>At the time, I saw him waving to me.<br /></li>
+<li>At the time, I was wondering how to acquire a good knowledge of English.<br /></li>
+</ul></li>
+<li>catch sight of a.<br />
+<ul class="org-ul">
+<li>If a bull caught sight of something red, he would charge at it.<br /></li>
+<li>If the bull hadn't caught sight of your red cap, he wouldn't have charged at you.<br /></li>
+<li>At the time, I caught sight of a beauty who gave a fright.<br /></li>
+<li>After having caught sight of my boss, I began to work hard.<br /></li>
+<li>catching sight of the thief, he rushed out of the shop.<br /></li>
+</ul></li>
+<li>grow quiet&#x2026;<br />
+<ul class="org-ul">
+<li>The crowd gathered round and grew quiet.<br /></li>
+<li>It's difficult to make a large crowd of women grow quiet.<br /></li>
+<li>A large crowd of women grew quiet, after having been instructed to do housework.<br /></li>
+<li>If you haven't complained of, she wouldn't have grew quiet.<br /></li>
+<li>You shouldn't grow quiet on that occasion.<br /></li>
+</ul></li>
+<li>get close to a.<br />
+<ul class="org-ul">
+<li>The bull has got close to the drunk.<br /></li>
+<li>A large crowd of the women get close to the beggar.<br /></li>
+<li>In spite of this, she gets close to the pigeon.<br /></li>
+<li>The bull got close the matador in a few minutes.<br /></li>
+<li>I have trouble in getting close to nature.<br /></li>
+</ul></li>
+<li>step aside<br />
+<ul class="org-ul">
+<li>He just stepped aside to let the bull pass.<br /></li>
+<li>You needn't have stepped aside.<br /></li>
+<li>You need to know why you should step aside.<br /></li>
+<li>I saw the boss step aside.<br /></li>
+<li>I'm fairly certain that he has stepped aside.<br /></li>
+</ul></li>
+<li>break into cheers<br />
+<ul class="org-ul">
+<li>There is nobody hurted in the flood, everyone broke into cheers.<br /></li>
+<li>The drunk succeed in avoiding been charged by the bull, the crowd broke into cheers.<br /></li>
+<li>Having been told the news that China won a prize for the competition, everyone broke into cheers.<br /></li>
+<li>The child had no sooner set up the world record than his mother breaks into cheers.<br /></li>
+<li>You should have broken into cheers when your son managed to escape.<br /></li>
+</ul></li>
+<li>feel sorry for sb.<br />
+<ul class="org-ul">
+<li>She insisted on going abroad alone, and I really felt sorry for her husband.<br /></li>
+<li>The poor girl was arrested yesterday, and I felt sorry for her.<br /></li>
+<li>Ross made a big mistake at work. I felt sorry for him.<br /></li>
+<li>Ross is on break again, but I didn't feel sorry for him once more.<br /></li>
+<li>The king had his head cut, and I feel sorry for him.<br /></li>
+</ul></li>
+<li>look on &#x2026;<br />
+<ul class="org-ul">
+<li>A crowd of girl looked on in the concert hall as the Greenwood Boys was giving a performance.<br /></li>
+<li>You needn't have looked on and let it pass.<br /></li>
+<li>You should have looked on, it's none of your business.<br /></li>
+<li>If we began to look on, we would grow quiet.<br /></li>
+<li>After stepping aside, he looked on and let it pass.<br /></li>
+</ul></li>
+<li>out of the way …<br />
+<ul class="org-ul">
+<li>Get out of the way, now!<br /></li>
+<li>Would you mind my moving the chair out of the way?<br /></li>
+<li>He threatened to move the cat out of the way.<br /></li>
+<li>The bull looked on him until he was out of the way.<br /></li>
+<li>I got very angry, the rude boy asked me to get out of the way.<br /></li>
+</ul></li>
+<li>turn sb’s attention to a.<br />
+<ul class="org-ul">
+<li>I am always instructed to turn my attention to Mr. Leo.<br /></li>
+<li>If you turn your attention to me right now, I'll give me a lift.<br /></li>
+<li>If you turn your attention to me right now, I'll give you a fright.<br /></li>
+<li>If you turn your attention to me right now, I'll give you 10 pence.<br /></li>
+<li>If you turned your attention to Mr. Leo, you would pass the exam.<br /></li>
+</ul></li>
+<li>once more<br />
+<ul class="org-ul">
+<li>I'd like to pay my close friend a visit before I go abroad alone.<br /></li>
+<li>Mr. Leo met me and followed me around once more.<br /></li>
+<li>Repeat it once more.<br /></li>
+<li>She forbad her child to chase once more.<br /></li>
+<li>After having failed to lose weight, she went on a diet once more.<br /></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org8b55d7d" class="outline-3">
+<h3 id="org8b55d7d"><span class="done DONE">DONE</span> 跟读至背诵</h3>
+<div class="outline-text-3" id="text-org8b55d7d">
+</div>
+</div>
+<div id="outline-container-org6a9d6ed" class="outline-3">
+<h3 id="org6a9d6ed"><span class="done DONE">DONE</span> Ask me if 写+读</h3>
+<div class="outline-text-3" id="text-org6a9d6ed">
+<ol class="org-ol">
+<li>A drunk was at a bullfight.(Who)<br />
+Who was at a bullfight?<br /></li>
+<li>He suddenly wandered into the middle of the ring.(Where )Who)<br />
+Where did he suddenly wander?<br />
+Who suddenly wandered into the middle of the ring?<br /></li>
+<li>The crowd began to shout.(Who)<br />
+Who began to shout?<br /></li>
+<li>The drunk was unaware of the danger.(What)(Why)Who)<br />
+What was the drunk unaware of?<br />
+Why was the drunk unaware of the danger?<br />
+Who was unaware of the danger?<br /></li>
+<li>The bull was busy with the matador.(Who)<br />
+Who was the bull busy with?<br /></li>
+<li>The drunk shouted rude remarks.(What)<br />
+What did the drunk shout?<br /></li>
+<li>He waved a red cap.(What)(Who)<br />
+What did he wave?<br />
+Who waved a red cap?<br /></li>
+<li>The bull suddenly caught sight of him.(Who)(When)<br />
+Who did the bull suddenly catch sight of?<br />
+When did the bull catch sight of him?<br /></li>
+<li>It seemed to be sensitive to criticism.(What&#x2026;do)<br />
+What did it seem to do?<br /></li>
+<li>It forgot about the matador.(Who)<br />
+Who forgot about the matador?<br /></li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org5e8a71f" class="outline-3">
+<h3 id="org5e8a71f"><span class="done DONE">DONE</span> 摘要写作</h3>
+<div class="outline-text-3" id="text-org5e8a71f">
+<p>
+A drunk suddenly wandered into the middle of the ring during a bullfight<br />
+	and shouted rude remarks and waved a red cap.<br />
+Ignoring the matador, the bull charged at him, but he stepped aside to let it pass.<br />
+The crowd cheered, and the drunk bowed.<br />
+Just after this, three men dragged the drunk to safety<br />
+	while the bull looked on sympathetically<br />
+		before it once more turned its attention to the matador.<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org841ffe5" class="outline-3">
+<h3 id="org841ffe5"><span class="done DONE">DONE</span> tell the story 口语</h3>
+<div class="outline-text-3" id="text-org841ffe5">
+</div>
+</div>
+<div id="outline-container-org2e9fa3c" class="outline-3">
+<h3 id="org2e9fa3c">Topics for discussion</h3>
+<div class="outline-text-3" id="text-org2e9fa3c">
+<ul class="org-ul">
+<li>Some people think that bullfighting and other blood sports,<br />
+ such as cockfighting, hunting, etc.are cruel.<br />
+How would you(adefend them(b) criticize them?<br /></li>
+<li>What do you consider the mostdangerous sport?<br />
+Why do you think people enjoy (a)taking part in and,(b)watching such a sport?<br /></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

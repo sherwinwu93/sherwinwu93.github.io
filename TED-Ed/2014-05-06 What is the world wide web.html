@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-01-09 Thu 23:07 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-org9f93681" class="outline-2">
+<h2 id="org9f93681">2014-05-06 What is the world wide web</h2>
+<div class="outline-text-2" id="text-org9f93681">
+<p class="verse">
+The World Wide Web, where you're likely watching this video,<br />
+&#xa0;is used by millions of people every day for everything<br />
+&#xa0;&#xa0;from checking the weather, ordering food,<br />
+&#xa0;&#xa0;&#xa0;and chatting with friends to raising funds, sharing news, or starting revolutions.<br />
+We use it from our computers, our phones, even our cars.<br />
+It's just there, all around us, all the time.<br />
+But what is it exactly?<br />
+<br />
+Well first of all, the World Wide Web is not the Internet,<br />
+&#xa0;even though the terms are often used interchangeably.<br />
+The Internet is simply the way computers connect to each other in order to share information.<br />
+When the Internet first emerged, computers actually made direct calls to each other.<br />
+Today, networks are all around us, so computers can communicate seamlessly.<br />
+The communication enabled through the Internet has many uses,<br />
+&#xa0;such as email, file transfer, and conferencing.<br />
+<br />
+But the most common use is accessing the World Wide Web.<br />
+Think of the Web as a bunch of skyscrapers, each representing a web server,<br />
+&#xa0;a computer always connected to the Internet,<br />
+&#xa0;&#xa0;specifically designed to store information and share it.<br />
+When someone starts a website,<br />
+&#xa0;they are renting a room in this skyscraper,<br />
+&#xa0;&#xa0;filling it with information<br />
+&#xa0;&#xa0;and linking that information together in an organized way for others to access.<br />
+The people who own these skyscrapers and rent space in them are called web hosts,<br />
+&#xa0;but anyone can set up a web server with the right equipment, a bit of know-how.<br />
+<br />
+There's another part to having a website,<br />
+&#xa0;without which we would be lost in the city with no way of finding what we need.<br />
+This is the website address, which consists of domain names.<br />
+Just like with a real life address, a website address lets you get where you want to go.<br />
+The information stored in the websites is in web languages, such as HTML and JavaScript.<br />
+When we find the website we're looking for,<br />
+&#xa0;our web browser is able to take all the code on the site<br />
+&#xa0;&#xa0;and turn it into words, graphics, and videos.<br />
+We don't need to know any special computer languages<br />
+&#xa0;because the web browser creates a graphic interface for us.<br />
+So, in a lot of ways,<br />
+&#xa0;the World Wide Web is a big virtual city<br />
+&#xa0;&#xa0;&#xa0;where we communicate with each other in web languages,<br />
+&#xa0;&#xa0;with browsers acting as our translators.<br />
+<br />
+And just like no one owns a city, no one owns the Web; it belongs to all of us.<br />
+Anyone can move in and set up shop.<br />
+We might have to pay an Internet service provider to gain access,<br />
+&#xa0;a hosting company to rent web space,<br />
+&#xa0;or a registrar to reserve our web address.<br />
+Like utility companies in a city, these companies provide crucial services,<br />
+&#xa0;but in the end, not even they own the Web.<br />
+<br />
+But what really makes the Web so special lies in its very name.<br />
+Prior to the Web, we used to consume most information in a linear fashion.<br />
+In a book or newspaper article,<br />
+&#xa0;each sentence was read from beginning to end, page by page, in a straight line<br />
+&#xa0;&#xa0;until you reached the end.<br />
+But that isn't how our brains actually work.<br />
+Each of our thoughts is linked to other thoughts, memories, and emotions<br />
+&#xa0;in a loose interconnected network, like a web.<br />
+Tim Berners-Lee, the father of the World Wide Web,<br />
+&#xa0;understood that we needed a way to organize information that mirrored this natural arrangement.<br />
+And the Web accomplishes this through hyperlinks.<br />
+By linking several pages within a website<br />
+&#xa0;&#xa0;or even redirecting you to other websites to expand on information or ideas immediately<br />
+&#xa0;&#xa0;&#xa0;as you encounter them,<br />
+&#xa0;hyperlinks allow the Web to operate along the same lines as our thought patterns.<br />
+<br />
+The Web is so much a part of our lives<br />
+&#xa0;because in content and structure, it reflects both the wider society and our individual minds.<br />
+And it connects those minds across all boundaries,<br />
+&#xa0;not only ethnicity, gender, and age but even time and space.<br />
+</p>
+</div>
+<div id="outline-container-orgc9f4631" class="outline-3">
+<h3 id="orgc9f4631">expression</h3>
+<div class="outline-text-3" id="text-orgc9f4631">
+<p>
+interchangeable [ˌɪntərˈtʃeɪndʒəb(ə)l]/interchangeably: adj.adv. things that are interchangeable can be used instead of each other可互换的<br />
+conference [ˈkɑnf(ə)rəns]: n. a large formal meeting where a lot of people discuss important matters such as business, politics, or science, especially for several days协商会<br />
+skyscraper [ˈskaɪˌskreɪpər]: n. a very tall modern city building摩天楼<br />
+know-how: n. knowledge, practical ability, or skill to do something实际知识<br />
+virtual [ˈvɜrtʃuəl]: adj. made, done, seen etc on the Internet or on a computer, rather than in the real world虚的<br />
+hosting [hoʊst]: n. to provide the place and everything that is needed for an organized event托管<br />
+registrar [ˌredʒɪˈstrɑr]: n. someone who is in charge of official records of births, marriages, and deaths登记员<br />
+loose [lus]: adj. not firmly fastened in place宽松的<br />
+interconnect [ˌɪntərkəˈnekt]: v. if two systems, places etc are interconnected, or if they interconnect, they are joined together使互相连接<br />
+mirror [ˈmɪrər]: v. if one thing mirrors another, it is very similar to it and may seem to copy or represent it SYN reflect反映<br />
+arrangement [əˈreɪndʒmənt]: n. plans and preparations that you must make so that something can happen排列, 安排<br />
+hyperlink [ˈhaɪpərˌlɪŋk]: n. a word or picture in a ↑website or computer document that will take you to another page or document if you ↑click on it超链接<br />
+encounter [ɪnˈkaʊntər]: v. to experience something, especially problems or opposition遭遇<br />
+reflect [rɪˈflekt]: v. to show or be a sign of a particular situation or feeling反射<br />
+boundary [ˈbaʊnd(ə)ri]: n. the real or imaginary line that marks the edge of a state, country etc, or the edge of an area of land that belongs to someone边界<br />
+ethnicity [eθˈnɪsəti]: n. 种族划分<br />
+</p>
+<hr />
+<p>
+be likely doing: 可能正在做某事<br />
+be used by sb. for sth.: 被某人使用做某事<br />
+chat with sb.: 和某人闲聊<br />
+use it from sth.: 通过某物用它<br />
+first of all: 首先<br />
+made a call to sb.: 打电话给某人<br />
+be all around sb.: 就在某人身边<br />
+There's another part to doing sth., without which + &#x2026;: 做某事还有令一部分, 没有它&#x2026;<br />
+with no way of doing sth.: 没有办法做某事<br />
+a graphic interface: 一个图形界面<br />
+utility company: 共同服务公司<br />
+lie in sth.: 在于某事<br />
+be prior to sth.: 在&#x2026;之前<br />
+in a linear fashion: 线形方式<br />
+in a straight line: 笔直地<br />
+redirect sb. to sp.: 重定向某人到某地<br />
+in content and structure: 在内容和结构上<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org037945a" class="outline-3">
+<h3 id="org037945a">sentences</h3>
+<div class="outline-text-3" id="text-org037945a">
+<p>
+be likely doing: 可能正在做某事<br />
+</p>
+<ul class="org-ul">
+<li>The curtain is likely going up.<br /></li>
+<li>Your sister is likely playing matchmaker for us.<br /></li>
+<li>You are likely taking advantage of me.<br /></li>
+</ul>
+<p>
+be used by sb. for sth.: 被某人使用做某事<br />
+</p>
+<ul class="org-ul">
+<li>Smallpox is used by the Chinese for infecting their invaders.<br /></li>
+<li>The model is being used by professors for teaching their students nowadays.<br /></li>
+<li>The box is used by our child for collecting his pocket money.<br /></li>
+</ul>
+<p>
+chat with sb.: 和某人闲聊<br />
+</p>
+<ul class="org-ul">
+<li>I have chatted with my father about mythical realms.<br /></li>
+<li>After sending these emails off, I chatted with my colleagues.<br /></li>
+<li>Chatting with my brother, I assembled these parts into a bicycle.<br /></li>
+</ul>
+<p>
+use it from sth.: 通过某物用它<br />
+</p>
+<ul class="org-ul">
+<li>I have no idea how to use it from this computer.<br /></li>
+<li>You can use it from the computer.<br /></li>
+<li>You might as well use it from your phone.<br /></li>
+</ul>
+<p>
+first of all: 首先<br />
+</p>
+<ul class="org-ul">
+<li>First of all, no woman could bear scars and scabs for the rest of her life.<br /></li>
+<li>First of all, these Greeks devastated our civilization.<br /></li>
+<li>First of all, the smallpox made its way around the world via these businessmen.<br /></li>
+</ul>
+<p>
+made a call to sb.: 打电话给某人<br />
+</p>
+<ul class="org-ul">
+<li>In a momentary tangent, I make a call to my father.<br /></li>
+<li>Having developed a model for an atom, he made a call to his teacher immediately.<br /></li>
+<li>If you agreed with the model, you would make a call to your father.<br /></li>
+</ul>
+<p>
+be all around sb.: 就在某人身边<br />
+</p>
+<ul class="org-ul">
+<li>He said that the ghost was all around us.<br /></li>
+<li>He behaved as if a ghost was all around him.<br /></li>
+<li>I was performing experiments all around you.<br /></li>
+</ul>
+<p>
+There's another part to doing sth., without which + &#x2026;: 做某事还有令一部分, 没有它&#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>There's another part to connect to the internet,<br />
+without which you can't chat with your friends online.<br /></li>
+<li>There's another part to agree with the model, without which you can't be 100% sure.<br /></li>
+<li>There's another part to perform experiments, without which these students can't stick together.<br /></li>
+</ul>
+<p>
+with no way of doing sth.: 没有办法做某事<br />
+</p>
+<ul class="org-ul">
+<li>I am lost in the city with no way of taking a taxi.<br /></li>
+<li>The chance of finishing this homework approaches zero<br />
+with no way of reading articles about biology.<br /></li>
+<li>We must be lost in outer space with no way of connecting to the earth.<br /></li>
+</ul>
+<p>
+a graphic interface: 一个图形界面<br />
+</p>
+<ul class="org-ul">
+<li>A good graphic interface will be designed to check the weather.<br /></li>
+<li>These staff drew on a graphic interface to input their results.<br /></li>
+<li>The graphic interface shows how life is formed on the earth.<br /></li>
+</ul>
+<p>
+utility company: 共同服务公司<br />
+</p>
+<ul class="org-ul">
+<li>The utility company will undertake telephone service in two months.<br /></li>
+<li>It is only within the last century that some countries began to set up utility companies.<br /></li>
+<li>The utility company was said to be inhabited by a group of monks.<br /></li>
+</ul>
+<p>
+lie in sth.: 在于某事<br />
+</p>
+<ul class="org-ul">
+<li>The key to attraction may lie in your first kiss.<br /></li>
+<li>Your marriage may lie in the same basic goal that you share together.<br /></li>
+<li>Your success might lie in setting up a factory in your youth.<br /></li>
+</ul>
+<p>
+be prior to sth.: 在&#x2026;之前<br />
+</p>
+<ul class="org-ul">
+<li>His death prior to 65 shocked me a great deal.<br /></li>
+<li>Prior to the cat, the dog has been staying here since two months ago.<br /></li>
+<li>Prior to the woman, I have been waiting in line for two hours.<br /></li>
+</ul>
+<p>
+in a linear fashion: 线形方式<br />
+</p>
+<ul class="org-ul">
+<li>My teacher complained that I always read articles in a linear fashion.<br /></li>
+<li>You shouldn't keep your students reading books in a linear fashion.<br /></li>
+<li>You can't assemble these parts into a bicycle in a linear fashion.<br /></li>
+</ul>
+<p>
+in a straight line: 笔直地<br />
+</p>
+<ul class="org-ul">
+<li>I asked him to give me a lift in a straight line.<br /></li>
+<li>He hit the surface of the desktop in a straight line.<br /></li>
+<li>If the police arrived on the scene, they would notice the gangster run away in a straight line.<br /></li>
+</ul>
+<p>
+redirect sb. to sp.: 重定向某人到某地<br />
+</p>
+<ul class="org-ul">
+<li>I am glad that it redirected me to the right website.<br /></li>
+<li>It is used to redirect you to pornographic websites.<br /></li>
+<li>Once the order is confirmed, you will be redirected to the payment page.<br /></li>
+</ul>
+<p>
+in content and structure: 在内容和结构上<br />
+</p>
+<ul class="org-ul">
+<li>In content and structure, it reminds me of the story a journalist in China wrote.<br /></li>
+<li>In content and structure, it expands on our model of an atom.<br /></li>
+<li>In content and structure, I rate it poetic.<br /></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

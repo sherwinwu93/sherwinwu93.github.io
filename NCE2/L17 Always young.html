@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-08-06 Tue 22:27 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-orgefb595b" class="outline-2">
+<h2 id="orgefb595b">Lesson 17 Always young</h2>
+<div class="outline-text-2" id="text-orgefb595b">
+<p class="verse">
+Why doesn't Aunt Jennifer tell anyone how old she is?<br />
+<br />
+My aunt Jennifer is an actress.<br />
+She must be <b>at least</b> thirty-five years old.<br />
+<b>In spite of this</b>, she often appears on the stage as a young girl.<br />
+Jennifer will have to <b>take part in</b> a new play soon.<br />
+This time, she will be a girl of seventeen.<br />
+In the play, she must appear in a bright red dress and long black stockings.<br />
+Last year in another play, she had to wear short socks and a bright, orange-coloured dress.<br />
+If anyone ever asks her how old she is, she always answers,<br />
+&#xa0;'Darling, it must be terrible to be grown up!'<br />
+</p>
+</div>
+<div id="outline-container-org554d548" class="outline-3">
+<h3 id="org554d548">expression</h3>
+<div class="outline-text-3" id="text-org554d548">
+<p>
+appear [əˈpɪə(r)] n.v.登场,扮演<br />
+stage [steɪdʒ] n.舞台<br />
+bright [braɪt] adj. + color [ˈkʌlə(r)] + n.鲜艳的颜色<br />
+stocking [ˈstɒkɪŋ] n.(女用)长筒袜<br />
+sock [sɒk] n.短袜<br />
+grown-up [ˌɡrəʊn ˈʌp] adj. n.成年人<br />
+</p>
+
+<hr />
+<p>
+must: 肯必须(主观);否禁止<br />
+have to: 肯必须(客观):否不必<br />
+'ve/have got to: 表必须<br />
+</p>
+
+<p>
+肯否猜测:<br />
+</p>
+<ul class="org-ul">
+<li>现在猜测<br />
+must: 一定是<br />
+can't: 一定不是<br /></li>
+<li>过去猜测<br />
+must have done: 当时一定是<br />
+can't have done: 当时一定不是<br /></li>
+</ul>
+
+<p>
+at least 至少<br />
+in spite of this 尽管这样<br />
+take part in 参加(比赛)<br />
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org31ea572" class="outline-3">
+<h3 id="org31ea572">单词造句</h3>
+<div class="outline-text-3" id="text-org31ea572">
+<p>
+appear<br />
+</p>
+<ul class="org-ul">
+<li>The actress often appears on the stage as a young girl.<br /></li>
+<li>To my surprise, she appears on the stage.<br /></li>
+<li>She refuses to appear in the night club.<br /></li>
+<li>If you don't pay attention to our signs, a ticket will appear on your car.<br /></li>
+<li>You will be very lucky, if a ticket will not appear on your car.<br /></li>
+</ul>
+<p>
+stage<br />
+</p>
+<ul class="org-ul">
+<li>A group of pop singer are giving performance on the stage.<br /></li>
+<li>The stage is being built now.<br /></li>
+<li>As soon as the stage had been built, the singers would appear on it.<br /></li>
+<li>It must be terrible to sing on the stage now.<br /></li>
+<li>The lights was broken on the stage by three kids.<br /></li>
+</ul>
+<p>
+bright adj. + color + n.<br />
+</p>
+<ul class="org-ul">
+<li>She's wearing bright black stockings, I find it very sexy.<br /></li>
+<li>The bright black skirt is the beautiful one I've ever seen.<br /></li>
+<li>We must pay attention to the bright yellow sign.<br /></li>
+<li>The light is brighter since we have it repaired.<br /></li>
+<li>She will appear in a bright yellow dress at the fancy dress party.<br /></li>
+</ul>
+<p>
+stocking n.<br />
+</p>
+<ul class="org-ul">
+<li>She refused to lend me her dirty stockings.<br /></li>
+<li>I got some black stockings for her.<br /></li>
+<li>She asked me to buy some stockings for her online.<br /></li>
+<li>I told her that she look very sexy in long black stockings.<br /></li>
+<li>She leaves a note to ask me to wash the stockings.<br /></li>
+</ul>
+<p>
+sock n.<br />
+</p>
+<ul class="org-ul">
+<li>You have to wash the socks. It smells terrible.<br /></li>
+<li>Oh my god, the blue cheese remind me of my boyfriend's socks.<br /></li>
+<li>Don't throw these socks in a dress area.<br /></li>
+<li>Why do the socks appear on the stage?<br /></li>
+<li>The socks msut be Lijie's because it looks clean.<br /></li>
+</ul>
+<p>
+grown-up adj. n.<br />
+</p>
+<ul class="org-ul">
+<li>Don't worry about it. Sometimes grown-ups get scared too.<br /></li>
+<li>If I broken the traffic lights, grown-ups will be very angry.<br /></li>
+<li>As soon as I had broken the lights, grown-ups got very angry.<br /></li>
+<li>After I had refused to obey it, grown-ups punished me.<br /></li>
+<li>Grown-ups are always asking us to study hard.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgdaa81df" class="outline-3">
+<h3 id="orgdaa81df">反复听电影片段</h3>
+</div>
+<div id="outline-container-org4f45f9b" class="outline-3">
+<h3 id="org4f45f9b">Pattern Drill 写+读</h3>
+<div class="outline-text-3" id="text-org4f45f9b">
+<ul class="org-ul">
+<li>1<br />
+<ul class="org-ul">
+<li>go - meet my husband<br />
+Have you really got to go now?<br />
+I'm afraid I've got to. I have to meet my husband.<br /></li>
+<li>work - finish my essay<br />
+Have you really got to work now?<br />
+I'm afraid I've got to. I have to finish my essay.<br /></li>
+<li>go to bed - have breakfast<br />
+Have you really got to go to bed now?<br />
+I'm afraid I've got to. I have to have breakfast.<br /></li>
+<li>leave - learn by heart<br />
+Have you really got to leave now?<br />
+I'm afraid I've got to. I have to learn by heart.<br /></li>
+<li>practice - sing in<br />
+Have you really got to practice now?<br />
+I'm afraid I've got to. I have to sign in.<br /></li>
+</ul></li>
+<li>2<br />
+<ul class="org-ul">
+<li>go - meet my husband<br />
+Must you go now?<br />
+I'm afraid so. I have to meet my husband.<br /></li>
+<li>work - finish my essay<br />
+Must you work now?<br />
+I'm afraid so. I have to finish my essay.<br /></li>
+<li>go to bed - get up<br />
+Must you go to bed now?<br />
+I'm afraid so. I have to go to bed.<br /></li>
+<li>leave - learn by heart<br />
+Must you learn now?<br />
+I'm afraid so. I have to learn by heart.<br /></li>
+<li>practice - sing in<br />
+Must you practice now?<br />
+I'm afraid so. I have to sing in.<br /></li>
+</ul></li>
+<li>3<br />
+<ul class="org-ul">
+<li>town<br />
+I've got to go to town today. Do you think Mary will come with me?<br />
+I doubt it. She had to go to town yesterday.<br /></li>
+<li>the bank<br />
+I've got to go to the bank today. Do you think Mary will come with me?<br />
+I doubt it. She had to go to the bank yesterday.<br /></li>
+<li>the library<br />
+I've got to go to library. Do you think Mary will come with me?<br />
+I doubt it. She had to go to the library yesterday.<br /></li>
+<li>the country<br />
+I've got to go to the country. Do you think Mary will come with me?<br />
+I doubt it. She had to go to the country yesterday.<br /></li>
+</ul></li>
+<li>4<br />
+<ul class="org-ul">
+<li>fly - pick up a sick sailor<br />
+He must be mad to fly anywhere today!<br />
+He had no choice. He had to pick up a sick sailor.<br /></li>
+<li>climb - search for a mountaineer<br />
+He must be mad to climb anywhere today!<br />
+He had no choice. He had to search for a mountaineer.<br /></li>
+<li>drive - meet his wife at the airport<br />
+He must be mad to drive anywhere today.<br />
+He had no choice. He had to meet his wife at the airport.<br /></li>
+<li>go - attend a meeting<br />
+He must be mad to go anywhere today.<br />
+He had no choice. He had to attend a meeting.<br /></li>
+<li>walk - get some medicine<br />
+He must be mad to walk anywhere today.<br />
+He had no choice. He had to get some medicine.<br /></li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org447e35c" class="outline-3">
+<h3 id="org447e35c">给自己讲解</h3>
+</div>
+<div id="outline-container-orgedbc475" class="outline-3">
+<h3 id="orgedbc475">红皮书</h3>
+</div>
+<div id="outline-container-org097ae1b" class="outline-3">
+<h3 id="org097ae1b">习惯用法造句</h3>
+<div class="outline-text-3" id="text-org097ae1b">
+<p>
+at least<br />
+</p>
+<ul class="org-ul">
+<li>At least, let me park my car here.<br /></li>
+<li>At least, I believe he will have a difficult time.<br /></li>
+<li>At least, they will give five performances.<br /></li>
+<li>At least, I think he can't have lent any money to you.<br /></li>
+<li>At least, I think you must have washed these socks.<br /></li>
+</ul>
+<p>
+in spite of this<br />
+</p>
+<ul class="org-ul">
+<li>In spite of this, he paid it back immediately.<br /></li>
+<li>In spite of her age, she often appears on the stage as a young girl.<br /></li>
+<li>In spite of this, I have finished my homework.<br /></li>
+<li>In spite of this, she still can't afford to pay that.<br /></li>
+<li>In spite of this, she had made a neat path.<br /></li>
+</ul>
+<p>
+take part in<br />
+</p>
+<ul class="org-ul">
+<li>She will have to take part in a new play soon.<br /></li>
+<li>Will she have to take part in a new play soon?<br /></li>
+<li>When will she have to take part in a new play?<br /></li>
+<li>Who will have to take part in a new play?<br /></li>
+<li>Why will she have to take part in a new play?<br /></li>
+</ul>
+<p>
+It must be terrible to do sth.<br />
+</p>
+<ul class="org-ul">
+<li>It must be terrible to obey these stupid traffic rules.<br /></li>
+<li>It must be terrible to wash dirty socks.<br /></li>
+<li>It must be terrible to climb the mountain.<br /></li>
+<li>It must be terrible to be grown up.<br /></li>
+<li>It must be terrible to go on journey.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org345ab47" class="outline-3">
+<h3 id="org345ab47">跟读至背诵</h3>
+</div>
+<div id="outline-container-orgae96448" class="outline-3">
+<h3 id="orgae96448">Ask me if 写+读</h3>
+<div class="outline-text-3" id="text-orgae96448">
+<ol class="org-ol">
+<li>My aunt Jennifer is an actress.<br />
+What does your aunt Jennifer do?<br /></li>
+<li>She's over 30 years old.<br />
+How old is she?<br /></li>
+<li>She often appears on the stage as a young girl.<br />
+What does she often appear on the stage as?<br />
+Who often appears on the stage as a young girl?<br /></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-orgd2eb17a" class="outline-3">
+<h3 id="orgd2eb17a">摘要写作</h3>
+</div>
+<div id="outline-container-org23f38b1" class="outline-3">
+<h3 id="org23f38b1">tell the story 口语</h3>
+</div>
+<div id="outline-container-org3f3d3b3" class="outline-3">
+<h3 id="org3f3d3b3">Topics for discussion</h3>
+<div class="outline-text-3" id="text-org3f3d3b3">
+<p>
+Who is your favourite actor/actress? Why do you think he/she is good?<br />
+Is it true that most women tell lies about their age? Why do they? What about men?<br />
+Do you think it's terrible to be grown up? Why/why not?<br />
+</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

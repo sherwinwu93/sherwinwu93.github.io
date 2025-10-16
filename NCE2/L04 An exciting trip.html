@@ -1,0 +1,628 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-08-06 Tue 22:27 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-org8b383c9" class="outline-2">
+<h2 id="org8b383c9">Lesson 4 An exciting trip</h2>
+<div class="outline-text-2" id="text-org8b383c9">
+<p class="verse">
+Why is Tim finding this trip exciting?<br />
+<br />
+I have just received a letter from my brother, Tim.<br />
+He is in Australia.<br />
+He has been there for six months.<br />
+Tim is an engineer.<br />
+He is working for a big firm and he has already visited <b>a great number of</b> different places in Australia.<br />
+He has just bought an Australian car and <b>has gone to Alice Springs</b>, a small town in the centre of Australia.<br />
+He will soon visit Darwin.<br />
+From there, he will <b>fly to Perth</b>.<br />
+My brother has never been abroad before, so he is <b>finding this trip very exciting</b>.<br />
+</p>
+</div>
+<div id="outline-container-org881d672" class="outline-3">
+<h3 id="org881d672">expression</h3>
+<div class="outline-text-3" id="text-org881d672">
+<p>
+exciting [ɪkˈsaɪtɪŋ] adj.令人兴奋的<br />
+receive [rɪˈsiːv] v.接受<br />
+firm [fɜːm] n.公司<br />
+different [ˈdɪfrənt] adj.不同的<br />
+centre [ˈsentə(r)] n.中心<br />
+abroad [əˈbrɔːd] adv.国外地<br />
+</p>
+
+<p>
+have a great trip: 旅途愉快<br />
+receive sth. from sb. 从某人收到某物<br />
+work for 为(公司/某人)工作<br />
+A be different from B A不同于B<br />
+in the centre of sp. 在某地的中央<br />
+go abroad 去国外<br />
+live abroad 住国外<br />
+study abroad 留学<br />
+</p>
+
+<hr />
+<p>
+have done:<br />
+</p>
+<ol class="org-ol">
+<li>过去事情对现在有影响;<br /></li>
+<li>从过去持续到现在<br /></li>
+<li>与just~already和yet连用<br />
+just: 刚刚<br />
+already: 早就(预料之前)<br />
+yet: 到目前为止(期待发生,只用疑问和否定句)<br /></li>
+<li>不用过去时间点连用<br /></li>
+<li>have gone to 去了那里 &amp; have been to 在那里<br /></li>
+</ol>
+
+<p>
+receive sth. from sb. 从某人收到某物<br />
+work for sb. 为(公司/某人)工作<br />
+a great number of 大量+(nc.)<br />
+have gone to sp. VS have been to sp. 动身去某地 VS 去过某地<br />
+fly to sp. 飞去某地<br />
+find n. adj. 发现某物/人怎么样<br />
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-orgcc5b6ff" class="outline-3">
+<h3 id="orgcc5b6ff">words</h3>
+<div class="outline-text-3" id="text-orgcc5b6ff">
+<p>
+have a good trip<br />
+</p>
+<ul class="org-ul">
+<li>I have had a great trip in Shanghai last summer.<br /></li>
+<li>I haven't had a great trip in Shanghai last summer.<br /></li>
+<li>Have you had a great trip in Shanghai last summer.<br /></li>
+<li>Why have you had a great trip in Shanghai last summer?<br /></li>
+<li>When you have had a great trip in Shanghai?<br /></li>
+</ul>
+<p>
+receive sth. from sb.<br />
+</p>
+<ul class="org-ul">
+<li>I have received a message from my father.<br /></li>
+<li>Have you received a message from your father?<br /></li>
+<li>What have you received from your father?<br /></li>
+<li>Where have you received a letter from your father?<br /></li>
+<li>Why have you received a letter from your father?<br /></li>
+</ul>
+<p>
+work for<br />
+</p>
+<ul class="org-ul">
+<li>I'm working for Miss Qiu.<br /></li>
+<li>Who are you working for?<br /></li>
+<li>Why are you working for Miss Qiu?<br /></li>
+<li>Are you working for Miss Qiu?<br /></li>
+<li>Where are you working for Miss Qiu?<br /></li>
+</ul>
+<p>
+A be different from B<br />
+</p>
+<ul class="org-ul">
+<li>I was different from my wife.<br /></li>
+<li>Were you different from your wife?<br /></li>
+<li>Where were you different from your wife?<br /></li>
+<li>Why were you different from your wife?<br /></li>
+<li>Who were you different from?<br /></li>
+</ul>
+<p>
+in the centre of sw.<br />
+</p>
+<ul class="org-ul">
+<li>He talking loudly in the centre of the theater.<br /></li>
+<li>Was he talking loudly in the centre of the theater?<br /></li>
+<li>Why was he talking loudly in the centre of the theater?<br /></li>
+<li>Who was talking loudly in the centre of the theater?<br /></li>
+<li>What was he talking about loudly in the centre of the theater?<br /></li>
+</ul>
+<p>
+go/live/study abroad<br />
+</p>
+<ul class="org-ul">
+<li>Miss Feng has already gone abroad.<br /></li>
+<li>Has Miss Feng gone abroad?<br /></li>
+<li>Why has Miss Feng gone abroad?<br /></li>
+<li>Where has Miss Feng gone abroad?<br /></li>
+<li>How long has Miss Feng gone abroad?<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org37f8cb6" class="outline-3">
+<h3 id="org37f8cb6">expressions</h3>
+<div class="outline-text-3" id="text-org37f8cb6">
+<p>
+a great number of<br />
+</p>
+<ul class="org-ul">
+<li>My wife has visited a great number of different places in China.<br /></li>
+<li>Have you visited a great number of different places in China?<br /></li>
+<li>Why have you visited a great number of different places in China?<br /></li>
+<li>Where have you visited a great number of different places?<br /></li>
+</ul>
+<p>
+have gone to sw.<br />
+</p>
+<ul class="org-ul">
+<li>I have gone to HangZhou.<br /></li>
+<li>Have you gone to Hangzhou?<br /></li>
+<li>Why have you gone to Hangzhou?<br /></li>
+<li>Where have you gone?<br /></li>
+</ul>
+<p>
+fly to sw.<br />
+</p>
+<ul class="org-ul">
+<li>I have flew to NanNing.<br /></li>
+<li>Have you flew to Nanning?<br /></li>
+<li>Why did you fly to Nanning?<br /></li>
+<li>When did you fly to Nanning?<br /></li>
+</ul>
+<p>
+find n. adj.<br />
+</p>
+<ul class="org-ul">
+<li>I find it very beautiful.<br /></li>
+<li>Do you find it beautiful?<br /></li>
+<li>What do you find beautiful?<br /></li>
+<li>Why do you find it beautiful?<br /></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgc6bf13f" class="outline-3">
+<h3 id="orgc6bf13f">单词造句</h3>
+<div class="outline-text-3" id="text-orgc6bf13f">
+<p>
+have a great trip<br />
+</p>
+<ul class="org-ul">
+<li>I have had a great trip in Shanghai last Summer.<br /></li>
+<li>I haven't had a great trip in Shanghai last Summer.<br /></li>
+<li>Have you had a great trip in Shanghai last Summer?<br /></li>
+<li>Why have you had a great trip in Shanghai last Summer?<br /></li>
+<li>When ahve you had a great trip in Shanghai?<br /></li>
+</ul>
+<p>
+receive sth. from sb.<br />
+</p>
+<ul class="org-ul">
+<li>I have received a message from my father.<br /></li>
+<li>Have you received a message from my father?<br /></li>
+<li>What have you received from your father?<br /></li>
+<li>Where have you received a letter from your father?<br /></li>
+<li>Why have you received a letter from your father?<br /></li>
+</ul>
+<p>
+work for<br />
+</p>
+<ul class="org-ul">
+<li>I'm working for Miss Qiu.<br /></li>
+<li>Who are you working for?<br /></li>
+<li>Why are you working for Miss Qiu?<br /></li>
+<li>Are you working for Miss Qiu?<br /></li>
+<li>Where are you working for Miss Qiu?<br /></li>
+</ul>
+<p>
+A be different from B<br />
+</p>
+<ul class="org-ul">
+<li>I am different from my wife.<br /></li>
+<li>Where are you different from your wife?<br /></li>
+<li>Why are you different from your wife?<br /></li>
+<li>Where are you different from your wife?<br /></li>
+<li>Who are you different from in your company?<br /></li>
+</ul>
+<p>
+in the centre of sw.<br />
+</p>
+<ul class="org-ul">
+<li>He was talking loudly in the centre of the theater.<br /></li>
+<li>Was he talking loudly in theater of the theater?<br /></li>
+<li>Why was he talking loudly in theater of the theater?<br /></li>
+<li>Who was talking loudly in the centre of the theater?<br /></li>
+<li>What was he talking about loudly in the centre of the theater?<br /></li>
+</ul>
+<p>
+go/live/study abroad<br />
+</p>
+<ul class="org-ul">
+<li>Miss Yan has already gone abroad.<br /></li>
+<li>Has Miss Yan gone abroad?<br /></li>
+<li>Why has Miss Yan gone abroad?<br /></li>
+<li>How long has Miss Yan gone abroad?<br /></li>
+<li>Where has Miss Yan gone abroad?<br /></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org8081fc3" class="outline-3">
+<h3 id="org8081fc3">反复听电影片段</h3>
+</div>
+<div id="outline-container-orgf7453bf" class="outline-3">
+<h3 id="orgf7453bf">Pattern Drill 写+读</h3>
+<div class="outline-text-3" id="text-orgf7453bf">
+<ul class="org-ul">
+<li>1t: received Tim's letter<br />
+s1: Have you received Tim's letter yet?<br />
+s2: Yes, I've just received it.<br />
+<ul class="org-ul">
+<li>washed the dishes<br />
+Have you washed the dishes?<br />
+Yes, I've just washed it.<br /></li>
+<li>seen the new play<br />
+Have you seen the new play?<br />
+Yes, I've just seen it.<br /></li>
+<li>made the cakes<br />
+Have you made the cakes?<br />
+Yes, I've just made it.<br /></li>
+<li>swept the carpet<br />
+Have you swept the carpet?<br />
+Yes, I've just swept it.<br /></li>
+</ul></li>
+<li>2t: read the book<br />
+s1: Why don't you read that book?<br />
+s2: Because I've already read it.<br />
+<ul class="org-ul">
+<li>see the film<br />
+Why don't you see the film?<br />
+Because I've already seen the film.<br /></li>
+<li>cut the grass<br />
+Why don't you cut the grass?<br />
+Because I've already cut the grass.<br /></li>
+<li>write your letter<br />
+Why don't you write your letter?<br />
+Because I've already written it.<br /></li>
+<li>cook the dinner<br />
+Why don't you cook the dinner?<br />
+Because I've already cooked the dinner.<br /></li>
+</ul></li>
+<li>3t: Australia<br />
+s1: He's gone to Australia.<br />
+s2: He's never been there before, has he?<br />
+<ul class="org-ul">
+<li>Austria<br />
+He's gone to Austria.<br />
+He's never been there before, has he?<br /></li>
+<li>Japan<br />
+He's gone to Japan.<br />
+He's never been there before, has he?<br /></li>
+<li>Brazil<br />
+He's gone to Brazil.<br />
+He's never been there before, has he?<br /></li>
+<li>the USA<br />
+He's gone to the USA.<br />
+He's never been there before, has he?<br /></li>
+</ul></li>
+<li>4t: the train arrived<br />
+s1: Has the train arrived?<br />
+s2: No, it hasn't arrived yet.<br />
+<ul class="org-ul">
+<li>the bus left<br />
+Has the bus left?<br />
+No, it hasn't left yet.<br /></li>
+<li>Alice telephoned<br />
+Has Alice telephoned?<br />
+No, he hasn't telephoned yet.<br /></li>
+<li>the boss came<br />
+Has the boss come?<br />
+No, he hasn't come yet.<br /></li>
+<li>the sun set<br />
+Has the sun set?<br />
+No, it hasn't set yet.<br /></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org627798d" class="outline-3">
+<h3 id="org627798d">给自己讲解</h3>
+</div>
+<div id="outline-container-org8f84562" class="outline-3">
+<h3 id="org8f84562">红皮书</h3>
+</div>
+<div id="outline-container-orgeed0a56" class="outline-3">
+<h3 id="orgeed0a56">习惯用法造句</h3>
+<div class="outline-text-3" id="text-orgeed0a56">
+<p>
+a great many of<br />
+</p>
+<ul class="org-ul">
+<li>My wife has visited a great number of different places in China.<br /></li>
+<li>Have you visited a great number of different places in China?<br /></li>
+<li>Why have you visited a great number of different places in China?<br /></li>
+<li>Where have you visited a great number of different places in China?<br /></li>
+<li>There are a great many of cities in China.<br /></li>
+</ul>
+<p>
+have gone to sw.<br />
+</p>
+<ul class="org-ul">
+<li>I have gone to Hangzhou.<br /></li>
+<li>Have you every gone to Hangzhou?<br /></li>
+<li>Why have you gone to Hangzhou?<br /></li>
+<li>Where have you gone?<br /></li>
+<li>He has already gone to Hangzhou.<br /></li>
+</ul>
+<p>
+fly to sw.<br />
+</p>
+<ul class="org-ul">
+<li>I have flown to Nanning?<br /></li>
+<li>Have you flown to Nanning?<br /></li>
+<li>Why did you fly to Nanning?<br /></li>
+<li>What did you fly to?<br /></li>
+<li>When did you fly to Nanning?<br /></li>
+</ul>
+<p>
+find n. adj.<br />
+</p>
+<ul class="org-ul">
+<li>I find it very beautiful.<br /></li>
+<li>Do you find it beautiful?<br /></li>
+<li>What do you find beautiful?<br /></li>
+<li>Why do you find it beautiful?<br /></li>
+<li>I found my cat cute when she was asking for meat.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgc019e2c" class="outline-3">
+<h3 id="orgc019e2c">跟读至背诵</h3>
+</div>
+<div id="outline-container-orge3c4bf0" class="outline-3">
+<h3 id="orge3c4bf0">Ask me if 写+读</h3>
+<div class="outline-text-3" id="text-orge3c4bf0">
+<ol class="org-ol">
+<li>I've just received a letter. What<br />
+What have you just received?<br /></li>
+<li>It was from my brother, Tim. Who<br />
+Who was it from?<br /></li>
+<li>He's in Australia. Where/Who<br />
+Where is he?<br />
+Who is in Australia?<br /></li>
+<li>He's been there for six monthes. How long<br />
+How long has he been there?<br /></li>
+<li>He's an engineer. What<br />
+What does he do?<br /></li>
+<li>He's working for a big firm. Who<br />
+Who's working for a big firm?<br /></li>
+<li>He's just bought an Australian car. What<br />
+What has he just bought?<br /></li>
+<li>He's just gone to Alice Springs. Where<br />
+Where has he just gone?<br /></li>
+<li>It's a small town. How big<br />
+How big is the town?<br /></li>
+<li>He'll soon visit Darwin. When<br />
+When will he visit Darwin?<br /></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org4443f97" class="outline-3">
+<h3 id="org4443f97">摘要写作</h3>
+<div class="outline-text-3" id="text-org4443f97">
+<p>
+I've just received a letter from my Brother, Tim.<br />
+He's an engineer.<br />
+He has been in Australia for six months, he has visited many places.<br />
+He has gone to Darwin.<br />
+He has never been abroad before, he is enjoying his trip very much.<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgc0d0c67" class="outline-3">
+<h3 id="orgc0d0c67">tell the story 口语</h3>
+</div>
+<div id="outline-container-orgb98a5a9" class="outline-3">
+<h3 id="orgb98a5a9">Topics for discussion</h3>
+<div class="outline-text-3" id="text-orgb98a5a9">
+<ol class="org-ol">
+<li>Do you know anyone who lives or works abroad? Tell us about him/her.<br /></li>
+<li>Which country would you like to visit? Why?<br /></li>
+<li>Have you got a pen friend? Do you think pen friends are a good idea? Why?<br /></li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,961 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-01-09 Thu 23:35 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-org9f31927" class="outline-2">
+<h2 id="org9f31927">16 The trial of Galileo</h2>
+<div class="outline-text-2" id="text-org9f31927">
+<p class="verse">
+In addition to political, economic, and social crises,<br />
+&#xa0;the seventeenth century witnessed an intellectual one.<br />
+The Scientific Revolution questioned and ultimately challenged conceptions and beliefs<br />
+&#xa0;&#xa0;about the nature of the external world and reality<br />
+&#xa0;that had crystallized into a rather strict orthodoxy by the Later Middle Ages.<br />
+Derived from the works of ancient Greeks and Romans and grounded in Christian thought,<br />
+&#xa0;the medieval worldview had become almost overpowering.<br />
+But the breakdown of Christian unity during the Reformation and the subsequent religious wars<br />
+&#xa0;had created an environment<br />
+&#xa0;&#xa0;in which Europeans became more comfortable with<br />
+&#xa0;&#xa0;&#xa0;challenging both the ecclesiastical and political powers that be.<br />
+Should it surprise us that a challenge to intellectual authority soon followed?<br />
+<br />
+The Scientific Revolution taught Europeans to view the universe and their place in it in a new way.<br />
+The shift from an earthcentered to a sun-centered cosmos<br />
+&#xa0;had an emotional as well as intellectual effect on those who understood it.<br />
+Thus the Scientific Revolution, popularized in the eighteenth-century Enlightenment,<br />
+&#xa0;stands as the major force in the transition to the largely secular, rational,<br />
+&#xa0;&#xa0;and materialistic perspective that has defined the modern Western mentality in modern times.<br />
+<br />
+The transition to a new worldview was far from easy, however.<br />
+In the seventeenth century,<br />
+&#xa0;the Italian scientist Galileo Galilei, an outspoken advocate of the new worldview,<br />
+&#xa0;&#xa0;found his ideas strongly opposed by the authorities of the Roman Catholic Church.<br />
+Galileo's position was clear:<br />
+&#xa0;'I hold the sun to be situated motionless in the center of the revolution of the celestial bodies,<br />
+&#xa0;while the earth rotates on its axis and revolves about the sun.'<br />
+Moreover, 'nothing physical that sense-experience sets before our eyes<br />
+&#xa0;ought to be called in question (much less condemned) upon the testimony of biblical passages.'<br />
+But the church had a different view,<br />
+&#xa0;and in 1633, Galileo, now sixty-eight and in ill health,<br />
+&#xa0;&#xa0;was called before the dreaded Inquisition in Rome.<br />
+He was kept waiting for two months before he was tried and found guilty of heresy and disobedience.<br />
+Completely shattered by the experience, he denounced his errors:<br />
+&#xa0;'With a sincere heart and unfeigned faith<br />
+&#xa0;&#xa0;I curse and detest the said errors and heresies contrary to the Holy Church.'<br />
+Legend holds that when he left the trial rooms, Galileo muttered to himself:<br />
+&#xa0;'And yet it does move!'<br />
+In any case, Galileo had been silenced,<br />
+&#xa0;but his writings remained, and they began to circulate through Europe.<br />
+The actions of the Inquisition<br />
+&#xa0;had failed to stop the spread of the new ideas of the Scientific Revolution.<br />
+<br />
+In one sense, the Scientific Revolution was not a revolution.<br />
+It was not characterized by the explosive change and rapid overthrow of traditional authority<br />
+&#xa0;that we normally associate with the word revolution.<br />
+The Scientific Revolution did overturn centuries of authority,<br />
+&#xa0;but only in a gradual and piecemeal fashion.<br />
+Nevertheless, its results were truly revolutionary.<br />
+The Scientific Revolution<br />
+&#xa0;was a key factor in setting Western civilization on its modern secular and material path.<br />
+</p>
+</div>
+<div id="outline-container-org96880b6" class="outline-3">
+<h3 id="org96880b6">expression</h3>
+<div class="outline-text-3" id="text-org96880b6">
+<p>
+orthodoxy [ˈɔrθəˌdɑksi]: n. an idea or set of ideas that is accepted by most people to be correct and right正统<br />
+worldview [PDF]: n. someone’s opinions and attitudes relating to the world and things in general世界观<br />
+cosmos ['kɒzmɒs]: n. the cosmos the whole universe, especially when you think of it as a system ⇨ cosmic宇宙<br />
+popularize [ˈpɑpjələˌraɪz]: v. to make something well known and liked普及<br />
+materialistic [məˌtɪriəˈlɪstɪk]: adj. concerned only with money and possessions rather than things of the mind such as art, religion, or moral beliefs – used in order to show disapproval唯物论的<br />
+mentality [menˈtæləti]: n. a particular attitude or way of thinking, especially one that you think is wrong or stupid智力, 精神, 心理, 思想情况<br />
+outspoken [aʊtˈspoʊkən]: adj. expressing your opinions honestly and directly, even when doing this might annoy some people OPP reticent坦率直言的<br />
+advocate [ˈædvəkət]: v. to publicly support a particular way of doing something提倡, 鼓吹<br />
+motionless [ˈmoʊʃ(ə)nləs]: adj. not moving at all SYN still不动的, 静止的<br />
+celestial [səˈlestʃəl]: adj. relating to the sky or heaven天上的<br />
+sense-experience: n. 感官体验<br />
+testimony [ˈtestəˌmoʊni]: n. a formal statement saying that something is true, especially one a ↑witness makes in a court of law证词,宣言, 陈述<br />
+biblical [ˈbɪblɪk(ə)l]: adj. relating to or written in the Bible圣经的<br />
+passage ['pæsɪdʒ]: n. a short part of a book, poem, speech, piece of music etc(一)段, (一)节<br />
+disobedient [ˌdɪsəˈbidiənt] disobedience: adj.n. deliberately not doing what you are told to do by your parents, teacher, etc OPP obedient不服从的<br />
+denounce [dɪˈnaʊns]: v. to express strong disapproval of someone or something, especially in public ⇨ denunciation公开指责, 公然抨击<br />
+sincere [sɪnˈsɪr]: adj. someone who is sincere is honest and says what they really feel or believe OPP insincere诚挚的, 真诚的<br />
+unfeigned [ʌnˈfeɪnd]: adj. 真实的<br />
+curse [kɜrs]: v. a word or sentence used to ask God or a magical power to do something bad to someone or something诅咒, 咒骂<br />
+detest [dɪˈtest]: v. to hate something or someone very much厌恶, 憎恨<br />
+mutter [ˈmʌtər]: v. to speak in a low voice, especially because you are annoyed about something, or you do not want people to hear you嘀咕<br />
+circulate [ˈsɜrkjəˌleɪt]: v. if information, facts, ideas etc circulate, they become known by many people流通,传播<br />
+overturn [ˌoʊvərˈtɜrn]: v. to suddenly remove a government from power, especially by using violence SYN overthrow颠覆<br />
+</p>
+<hr />
+<p>
+crystallize into sth.: 结晶成某物<br />
+be grounded in sth.: 建立在某物上<br />
+become comfortable with doing sth.: 变得适应做某事<br />
+stand as sth.: 作为某物的存在<br />
+be far from easy: 远不容易<br />
+find A opposed by B: 发现A被B反对<br />
+be situated sw.: 位于&#x2026;<br />
+hold sth. to be + &#x2026;: 认为某物是&#x2026;<br />
+rotate on its axis: 绕轴旋转<br />
+revolve about the sun: 绕太阳转<br />
+be called in question (upon sth.): 根据某事&#x2026;被传唤质疑<br />
+in ill health: 身体不好<br />
+in one sense: 从某种意义来说<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org62caaac" class="outline-3">
+<h3 id="org62caaac">sentence</h3>
+<div class="outline-text-3" id="text-org62caaac">
+<p>
+orthodoxy [ˈɔrθəˌdɑksi]: n. an idea or set of ideas that is accepted by most people to be correct and right正统<br />
+</p>
+<ul class="org-ul">
+<li>The course Mr. Leo taught us is challenging the educational orthodoxy in China.<br /></li>
+<li>His teaching method was in the face of the educational orthodoxy of his time.<br /></li>
+<li>The educational orthodoxy proved efficient, for a great number of peasant became well-educated.<br /></li>
+</ul>
+<p>
+worldview [PDF]: n. someone’s opinions and attitudes relating to the world and things in general世界观<br />
+</p>
+<ul class="org-ul">
+<li>By the end of the sixteenth century, the decline of religious passions paralleled the changes of people's worldview.<br /></li>
+<li>At last, he decided to defend his worldview against the religous orthodoxy of his time.<br /></li>
+<li>Finding his worldview heretic, the knight of the Inquisition knocked him to the ground with a sharp blow.<br /></li>
+</ul>
+<p>
+cosmos ['kɒzmɒs]: n. the cosmos the whole universe, especially when you think of it as a system ⇨ cosmic宇宙<br />
+</p>
+<ul class="org-ul">
+<li>It turns out to be an abduction by strange creatures in the cosmos.<br /></li>
+<li>The shuttle in the cosmos runs smoothly.<br /></li>
+<li>The philosopher tends to depict the cosmos as a titanic sphere.<br /></li>
+</ul>
+<p>
+popularize [ˈpɑpjələˌraɪz]: v. to make something well known and liked普及<br />
+</p>
+<ul class="org-ul">
+<li>Popularized in all parts of China, many dialects are gradually disappearing.<br /></li>
+<li>As the sexual knowledge is being popularize, the rate of pregnancy of teenagers in China drops a great deal.<br /></li>
+<li>With the invention of lights popularized, people get used to staying overnight.<br /></li>
+</ul>
+<p>
+materialistic [məˌtɪriəˈlɪstɪk]: adj. concerned only with money and possessions rather than things of the mind such as art, religion, or moral beliefs – used in order to show disapproval唯物论的<br />
+</p>
+<ul class="org-ul">
+<li>I was so materialistic that I didn't believe in a word in the Bible.<br /></li>
+<li>The results of experiments agreed with his materialistic theory.<br /></li>
+<li>Accepting his materialistic theory, my religious passion began to decline.<br /></li>
+</ul>
+<p>
+mentality [menˈtæləti]: n. a particular attitude or way of thinking, especially one that you think is wrong or stupid智力, 精神, 心理, 思想情况<br />
+</p>
+<ul class="org-ul">
+<li>I can't figure out the mentality of passers-by who spotted a girl lying on the ground and did nothing.<br /></li>
+<li>You might as well spy on the mentality of your daughter.<br /></li>
+<li>The mentality of these scientists who are confined in cow sheds full of the smell of urine got worse.<br /></li>
+</ul>
+<p>
+outspoken [aʊtˈspoʊkən]: adj. expressing your opinions honestly and directly, even when doing this might annoy some people OPP reticent坦率直言的<br />
+</p>
+<ul class="org-ul">
+<li>He is outspoken so that he can always make close friends.<br /></li>
+<li>He was so outspoken that in pulic he pointed out the bugs his superior made.<br /></li>
+<li>He is so outsopken that everyone admires for his sense of sincere.<br /></li>
+</ul>
+<p>
+advocate [ˈædvəkət]: v. to publicly support a particular way of doing something提倡, 鼓吹<br />
+</p>
+<ul class="org-ul">
+<li>The guy who advocates violence never though that he would be killed in action.<br /></li>
+<li>He always advocates wars in strictly secular terms.<br /></li>
+<li>He saluted towards the general who advocates violence.<br /></li>
+</ul>
+<p>
+motionless [ˈmoʊʃ(ə)nləs]: adj. not moving at all SYN still不动的, 静止的<br />
+</p>
+<ul class="org-ul">
+<li>The stupid guy stood motionless before I knocked him to the ground.<br /></li>
+<li>If you had stood moitionless at the stage for two minutes, I would pay for your dinner.<br /></li>
+<li>When he saw a man lying motionless on the ground, he stamped out the letter 'SOS'.<br /></li>
+</ul>
+<p>
+celestial [səˈlestʃəl]: adj. relating to the sky or heaven天上的<br />
+</p>
+<ul class="org-ul">
+<li>The strange celestial events led to masses' breakdown of trust in the monarch in China.<br /></li>
+<li>People in the square witnessed the strange celestial event and stood to attention.<br /></li>
+<li>At the entrance of the cave the celestial event could be observed by a pair of binoculars.<br /></li>
+</ul>
+<p>
+sense-experience: n. 感官体验<br />
+</p>
+<ul class="org-ul">
+<li></li>
+
+<li></li>
+
+<li></li>
+</ul>
+<p>
+testimony [ˈtestəˌmoʊni]: n. a formal statement saying that something is true, especially one a ↑witness makes in a court of law证词,宣言, 陈述<br />
+</p>
+<ul class="org-ul">
+<li>It became apparent that the writer refused to give testimony in the court.<br /></li>
+<li>His boss threatens to kill his all family if he gives testimony in the court.<br /></li>
+<li>The testimony he gives in the court is at your stake.<br /></li>
+</ul>
+<p>
+biblical [ˈbɪblɪk(ə)l]: adj. relating to or written in the Bible圣经的<br />
+</p>
+<ul class="org-ul">
+<li></li>
+
+<li></li>
+
+<li></li>
+</ul>
+<p>
+passage ['pæsɪdʒ]: n. a short part of a book, poem, speech, piece of music etc(一)段, (一)节<br />
+</p>
+<ul class="org-ul">
+<li>He discovered that his daughter read out the passage of his book in the class.<br /></li>
+<li>A passage of the Bible was carved in the pedestal of the statue.<br /></li>
+<li>Mr. Leo instructed us to recite the passage of his book.<br /></li>
+</ul>
+<p>
+disobedient [ˌdɪsəˈbidiənt] disobedience: adj.n. deliberately not doing what you are told to do by your parents, teacher, etc OPP obedient不服从的<br />
+</p>
+<ul class="org-ul">
+<li>My grandfather used to condemn me as a disobedient child.<br /></li>
+<li>The disobedient solider was kept in hiding in the prison.<br /></li>
+<li>Because of lack of foods and money, the disobedient people gathered around in the City Hall and asked to talk to the officer.<br /></li>
+</ul>
+<p>
+denounce [dɪˈnaʊns]: v. to express strong disapproval of someone or something, especially in public ⇨ denunciation公开指责, 公然抨击,告发<br />
+</p>
+<ul class="org-ul">
+<li>Yearning to get a large sum of money, he denounced his wife to the authorities.<br /></li>
+<li>The teacher denounced the student as a thief who crept into his house.<br /></li>
+<li>Her sister denounced her as a shoplifer who stole a diamond ring as a present.<br /></li>
+</ul>
+<p>
+sincere [sɪnˈsɪr]: adj. someone who is sincere is honest and says what they really feel or believe OPP insincere诚挚的, 真诚的<br />
+</p>
+<ul class="org-ul">
+<li>His sincere attitude caused him to get a good salary.<br /></li>
+<li>He always admires for his friends' sincere attitude on the surface.<br /></li>
+<li>People tends to admire for your sincere attitude on the surface and then sell you out.<br /></li>
+</ul>
+<p>
+unfeigned [ʌnˈfeɪnd]: adj. 真实的<br />
+</p>
+<ul class="org-ul">
+<li>He broke the world record with unfeigned pleasure.<br /></li>
+<li>He accepted sharp criticisms in public with unfeigned pleasure.<br /></li>
+<li>I like the food you cook with unfeigned pleasure.<br /></li>
+</ul>
+<p>
+curse [kɜrs]: v. a word or sentence used to ask God or a magical power to do something bad to someone or something诅咒, 咒骂<br />
+</p>
+<ul class="org-ul">
+<li>Finding his toy taken to pieces, he was cursing day and night.<br /></li>
+<li>The captain ships cursed him: On his flame of ambition, he would crucify us all.<br /></li>
+<li>I told him a story about the cursed crew on an unsinkable colossal ship.<br /></li>
+</ul>
+<p>
+detest [dɪˈtest]: v. to hate something or someone very much厌恶, 憎恨<br />
+</p>
+<ul class="org-ul">
+<li>Because of his vanity, he detest all independence of character and sentiment in others.<br /></li>
+<li>He knocked the officer to the ground, for he dester him for a long time.<br /></li>
+<li>No one can account for the fact that the officer people detest won the election.<br /></li>
+</ul>
+<p>
+mutter [ˈmʌtər]: v. to speak in a low voice, especially because you are annoyed about something, or you do not want people to hear you嘀咕<br />
+</p>
+<ul class="org-ul">
+<li>Fearing that they would be arrested by the local authorities, people muttered about the domestic inflation.<br /></li>
+<li>I have already completed my work, I muttered to myself.<br /></li>
+<li>He deserved it, the girl muttered to herself.<br /></li>
+</ul>
+<p>
+circulate [ˈsɜrkjəˌleɪt]: v. if information, facts, ideas etc circulate, they become known by many people流通,传播<br />
+</p>
+<ul class="org-ul">
+<li>The contents of the petition have circulated through these merchants.<br /></li>
+<li>As the gunpowder circulated in Europe, the castle was no long regarded as safety.<br /></li>
+<li>As the Black Death circulated in Europe, many people thought the end of the world was at hand.<br /></li>
+</ul>
+<p>
+overturn [ˌoʊvərˈtɜrn]: v. to suddenly remove a government from power, especially by using violence SYN overthrow颠覆<br />
+</p>
+<ul class="org-ul">
+<li>The crusade sacked the city and overturned the Byzantine empire.<br /></li>
+<li>The rebellions and revolts from peasant at last overturned the local authorities.<br /></li>
+<li>The spread of scientific knowledge insidiously overturned the secular power of the Christianity.<br /></li>
+</ul>
+<hr />
+<p>
+crystallize into sth.: 结晶成某物<br />
+</p>
+<ul class="org-ul">
+<li>The substances flowing with the river crystallized into a strange rock.<br /></li>
+<li>The liquid crystallized into a special type of food which is popular with Chinese.<br /></li>
+<li>Crystallizing into a fossil is millions of year in the making.<br /></li>
+</ul>
+<p>
+be grounded in sth.: 建立在某物上<br />
+</p>
+<ul class="org-ul">
+<li>His imposing majesty turned out to be grounded in the power of regulating the armies.<br /></li>
+<li>His confidence is grounded in the statue he sculptured for the U.S.<br /></li>
+<li>The statue is grounded in the mental framework which is built by a famous architect, Effel.<br /></li>
+</ul>
+<p>
+become comfortable with doing sth.: 变得适应做某事<br />
+</p>
+<ul class="org-ul">
+<li>Week after week, he became comfortable with cooking meth.<br /></li>
+<li>After a great number of exercises, he became comfortable with speaking in public.<br /></li>
+<li>The entrepreneur became comfortable with setting up factories in suburbs of the city.<br /></li>
+</ul>
+<p>
+stand as sth.: 作为某物的存在<br />
+</p>
+<ul class="org-ul">
+<li>The girl who used to quarrel bitterly in pubic stands as an successful entrepreneur.<br /></li>
+<li>He stood as an officer at the representative assembly.<br /></li>
+<li>He stands as a hard-working husband in the family.<br /></li>
+</ul>
+<p>
+be far from easy: 远不容易<br />
+</p>
+<ul class="org-ul">
+<li>Feeding a disobedient cat is far from easy.<br /></li>
+<li>Babysitting twins is far from easy, don't be too hard on me.<br /></li>
+<li>As he has just been nominated for the prize, staying out of limelight is far from easy.<br /></li>
+</ul>
+<p>
+find A opposed by B: 发现A被B反对<br />
+</p>
+<ul class="org-ul">
+<li>He found his theory opposed by his beloved family.<br /></li>
+<li>He became comfortable with finding his treatise opposed by his instructor.<br /></li>
+<li>Finding his observation opposed by the pope, he denounced it as bullshit.<br /></li>
+</ul>
+<p>
+be situated sw.: 位于&#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>I yearned to have a house situated on the top of a mountain.<br /></li>
+<li>The hotel situated on the bottom of the mountain is very convenient.<br /></li>
+<li>The statue used to be situated at the entrance of the harbour was transported to the City Hall.<br /></li>
+</ul>
+<p>
+hold sth. to be + &#x2026;: 认为某物是&#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>He held the thief to be a local butcher.<br /></li>
+<li>Your wife tends to hold the prize to her gift.<br /></li>
+<li>I hold the answer to be A, which proved right.<br /></li>
+</ul>
+<p>
+rotate on its axis: 绕轴旋转<br />
+</p>
+<ul class="org-ul">
+<li>The balls rotating on their axis repelled each other.<br /></li>
+<li>The spheres which were rotating on their axis have been magnetized to attract each other.<br /></li>
+<li>It became apparent that the earth is rotating on its axis.<br /></li>
+</ul>
+<p>
+revolve about the sun: 绕太阳转<br />
+</p>
+<ul class="org-ul">
+<li>Desiring to get snacks, my cat is revolving about the chair.<br /></li>
+<li>The earth is revolving about the sun.<br /></li>
+<li>The earth must be revolving about the sun.<br /></li>
+</ul>
+<p>
+be called in question (upon sth.): 根据某事&#x2026;被传唤质疑<br />
+</p>
+<ul class="org-ul">
+<li>The driver was said to be called in question upon the rule of traffic.<br /></li>
+<li>As the frist man arriving on the scene, he was called in question.<br /></li>
+<li>Suspected that he was the shoplifter, he was called in question.<br /></li>
+</ul>
+<p>
+in ill health: 身体不好<br />
+</p>
+<ul class="org-ul">
+<li>My father was in ill health, when he got fired.<br /></li>
+<li>My cat has been in ill health, after he was fed by a stranger.<br /></li>
+<li>I am in ill health, so I'm not at work today.<br /></li>
+</ul>
+<p>
+in one sense: 从某种意义来说<br />
+</p>
+<ul class="org-ul">
+<li>In one sense, the prizefighter was a great boxer.<br /></li>
+<li>In one sense, he was killed in action.<br /></li>
+<li>In one sense, he is the father of immunology.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org7c3b787" class="outline-3">
+<h3 id="org7c3b787">sentence2</h3>
+<div class="outline-text-3" id="text-org7c3b787">
+<p>
+orthodoxy [ˈɔrθəˌdɑksi]: n. an idea or set of ideas that is accepted by most people to be correct and right正统<br />
+</p>
+<ul class="org-ul">
+<li>In one sense, the course Mr. Leo taught us is challenging the educational orthodoxy in China.<br /></li>
+<li>His teaching method was in the face of the educational orthodoxy of his time.<br /></li>
+<li>The educational orthodoxy proved efficient, for a great number of peasants became well-educated.<br /></li>
+</ul>
+<p>
+worldview [PDF]: n. someone’s opinions and attitudes relating to the world and things in general世界观<br />
+</p>
+<ul class="org-ul">
+<li>By the end of the sixteenth century, the decline of religious passions paralleled the changes in people's worldview.<br /></li>
+<li>At last, he decided to defend his worldview against the religious orthodoxy of his time.<br /></li>
+<li>Finding his worldview heretic, the knight of the Inquisition knocked him to the ground with a sharp blow.<br /></li>
+</ul>
+<p>
+cosmos ['kɒzmɒs]: n. the cosmos the whole universe, especially when you think of it as a system ⇨ cosmic宇宙<br />
+</p>
+<ul class="org-ul">
+<li>It turns out to be an abduction by strange creatures in the cosmos.<br /></li>
+<li>The shuttle in the cosmos runs smoothly.<br /></li>
+<li>The philosopher tends to depict the cosmos as a titanic sphere.<br /></li>
+</ul>
+<p>
+popularize [ˈpɑpjələˌraɪz]: v. to make something well known and liked普及<br />
+</p>
+<ul class="org-ul">
+<li>Popularized in all parts of China, many dialects are gradually disappearing.<br /></li>
+<li>As sexual knowledge is being popularized, the rate of pregnancy among teenagers in China drops a great deal.<br /></li>
+<li>With the invention of lights popularized, people got used to staying overnight.<br /></li>
+</ul>
+<p>
+materialistic [məˌtɪriəˈlɪstɪk]: adj. concerned only with money and possessions rather than things of the mind such as art, religion, or moral beliefs – used in order to show disapproval唯物论的<br />
+</p>
+<ul class="org-ul">
+<li>I was so materialistic that I didn't believe in a word in the Bible.<br /></li>
+<li>The results of experiments agreed with his materialistic theory.<br /></li>
+<li>Accepting his materialistic theory, my religious passion began to decline.<br /></li>
+</ul>
+<p>
+mentality [menˈtæləti]: n. a particular attitude or way of thinking, especially one that you think is wrong or stupid智力, 精神, 心理, 思想情况<br />
+</p>
+<ul class="org-ul">
+<li>I can't figure out the mentality of passers-by who spotted a girl lying on the ground and did nothing.<br /></li>
+<li>You might as well spy on the mentality of your daughter.<br /></li>
+<li>The mentality of these scientists who are confined in cow sheds full of the smell of urine got worse.<br /></li>
+</ul>
+<p>
+outspoken [aʊtˈspoʊkən]: adj. expressing your opinions honestly and directly, even when doing this might annoy some people OPP reticent坦率直言的<br />
+</p>
+<ul class="org-ul">
+<li>He is outspoken so he can always make close friends.<br /></li>
+<li>He was so outspoken that in public he pointed out the bugs his superior made.<br /></li>
+<li>He is so outspoken that everyone admires him for his sense of sincerity.<br /></li>
+</ul>
+<p>
+advocate [ˈædvəkət]: v. to publicly support a particular way of doing something提倡, 鼓吹<br />
+</p>
+<ul class="org-ul">
+<li>The guy who advocates violence never thought that he would be killed in action.<br /></li>
+<li>He always advocates wars in strictly secular terms.<br /></li>
+<li>He saluted towards the general who advocates violence.<br /></li>
+</ul>
+<p>
+motionless [ˈmoʊʃ(ə)nləs]: adj. not moving at all SYN still不动的, 静止的<br />
+</p>
+<ul class="org-ul">
+<li>The stupid guy stood motionless before I knocked him to the ground.<br /></li>
+<li>If you had stood motionless at the stage for two minutes, I would pay for your dinner.<br /></li>
+<li>When he saw a man lying motionless on the ground, he stamped out the letter 'SOS'.<br /></li>
+</ul>
+<p>
+celestial [səˈlestʃəl]: adj. relating to the sky or heaven天上的<br />
+</p>
+<ul class="org-ul">
+<li>The strange celestial events led to the masses' breakdown of trust in the monarch in China.<br /></li>
+<li>People in the square witnessed the strange celestial event and stood to attention.<br /></li>
+<li>At the entrance of the cave the celestial event could be observed by a pair of binoculars.<br /></li>
+</ul>
+<p>
+sense-experience: n. 感官体验<br />
+</p>
+<ul class="org-ul">
+<li></li>
+
+<li></li>
+
+<li></li>
+</ul>
+<p>
+testimony [ˈtestəˌmoʊni]: n. a formal statement saying that something is true, especially one a ↑witness makes in a court of law证词,宣言, 陈述<br />
+</p>
+<ul class="org-ul">
+<li>It became apparent that the writer refused to give testimony in court.<br /></li>
+<li>His boss threatens to kill his all family if he gives testimony in court.<br /></li>
+<li>The testimony he gives in court is at your stake.<br /></li>
+</ul>
+<p>
+biblical [ˈbɪblɪk(ə)l]: adj. relating to or written in the Bible圣经的<br />
+</p>
+<ul class="org-ul">
+<li></li>
+
+<li></li>
+
+<li></li>
+</ul>
+<p>
+passage ['pæsɪdʒ]: n. a short part of a book, poem, speech, piece of music etc(一)段, (一)节<br />
+</p>
+<ul class="org-ul">
+<li>He discovered that his daughter read out the passage of his book in the class.<br /></li>
+<li>A passage from the Bible was carved on the pedestal of the statue.<br /></li>
+<li>Mr. Leo instructed us to recite the passage of his book.<br /></li>
+</ul>
+<p>
+disobedient [ˌdɪsəˈbidiənt] disobedience: adj.n. deliberately not doing what you are told to do by your parents, teacher, etc OPP obedient不服从的<br />
+</p>
+<ul class="org-ul">
+<li>My grandfather used to condemn me as a disobedient child.<br /></li>
+<li>The disobedient soldier was kept in hiding in the prison.<br /></li>
+<li>Because of the lack of food and money, the disobedient people gathered around in the City Hall and asked to talk to the officer.<br /></li>
+</ul>
+<p>
+denounce [dɪˈnaʊns]: v. to express strong disapproval of someone or something, especially in public ⇨ denunciation公开指责, 公然抨击,告发<br />
+</p>
+<ul class="org-ul">
+<li>Yearning to get a large sum of money, he denounced his wife to the authorities.<br /></li>
+<li>The teacher denounced the student as a thief who crept into his house.<br /></li>
+<li>Her sister denounced her as a shoplifter who stole a diamond ring as a present.<br /></li>
+</ul>
+<p>
+sincere [sɪnˈsɪr]: adj. someone who is sincere is honest and says what they really feel or believe OPP insincere诚挚的, 真诚的<br />
+</p>
+<ul class="org-ul">
+<li>His sincere attitude caused him to get a good salary.<br /></li>
+<li>He always appreciates his friends' sincerity on the surface.<br /></li>
+<li>People tend to appreciate your sincere attitude on the surface and then sell you out.<br /></li>
+</ul>
+<p>
+unfeigned [ʌnˈfeɪnd]: adj. 真实的<br />
+</p>
+<ul class="org-ul">
+<li>He broke the world record with unfeigned pleasure.<br /></li>
+<li>He accepted sharp criticisms in public with unfeigned pleasure.<br /></li>
+<li>I like the food you cook with unfeigned pleasure.<br /></li>
+</ul>
+<p>
+curse [kɜrs]: v. a word or sentence used to ask God or a magical power to do something bad to someone or something诅咒, 咒骂<br />
+</p>
+<ul class="org-ul">
+<li>Finding his toy taken to pieces, he was cursing day and night.<br /></li>
+<li>The captain ships cursed him: On his flame of ambition, he would crucify us all.<br /></li>
+<li>I told him a story about the cursed crew on an unsinkable colossal ship.<br /></li>
+</ul>
+<p>
+detest [dɪˈtest]: v. to hate something or someone very much厌恶, 憎恨<br />
+</p>
+<ul class="org-ul">
+<li>Because of his vanity, he detests all independence of character and sentiment in others.<br /></li>
+<li>He knocked the officer to the ground, for he detested him for a long time.<br /></li>
+<li>No one can account for the fact that the officer people detest won the election.<br /></li>
+</ul>
+<p>
+mutter [ˈmʌtər]: v. to speak in a low voice, especially because you are annoyed about something, or you do not want people to hear you嘀咕<br />
+</p>
+<ul class="org-ul">
+<li>Fearing that they would be arrested by the local authorities, people muttered about the domestic inflation.<br /></li>
+<li>I have already completed my work, I muttered to myself.<br /></li>
+<li>He deserved it, the girl muttered to herself.<br /></li>
+</ul>
+<p>
+circulate [ˈsɜrkjəˌleɪt]: v. if information, facts, ideas etc circulate, they become known by many people流通,传播<br />
+</p>
+<ul class="org-ul">
+<li>The contents of the petition have circulated through these merchants.<br /></li>
+<li>As the gunpowder circulated in Europe, the castle was no longer regarded as safe.<br /></li>
+<li>As the Black Death circulated in Europe, many people thought the end of the world was at hand.<br /></li>
+</ul>
+<p>
+overturn [ˌoʊvərˈtɜrn]: v. to suddenly remove a government from power, especially by using violence SYN overthrow颠覆<br />
+</p>
+<ul class="org-ul">
+<li>The crusade sacked the city and overturned the Byzantine empire.<br /></li>
+<li>The rebellions and revolts from peasants at last overturned the local authorities.<br /></li>
+<li>The spread of scientific knowledge insidiously overturned the secular power of Christianity.<br /></li>
+</ul>
+<hr />
+<p>
+crystallize into sth.: 结晶成某物<br />
+</p>
+<ul class="org-ul">
+<li>The substances flowing with the river crystallized into a strange rock.<br /></li>
+<li>The liquid crystallized into a special type of food which is popular with the Chinese.<br /></li>
+<li>Crystallizing into a fossil is millions of years in the making.<br /></li>
+</ul>
+<p>
+be grounded in sth.: 建立在某物上<br />
+</p>
+<ul class="org-ul">
+<li>His imposing majesty turned out to be grounded in the power of regulating the armies.<br /></li>
+<li>His confidence is grounded in the statue he sculptured for the U.S.<br /></li>
+<li>The statue is grounded in the mental framework which is built by a famous architect, Effel.<br /></li>
+</ul>
+<p>
+become comfortable with doing sth.: 变得适应做某事<br />
+</p>
+<ul class="org-ul">
+<li>Week after week, he became comfortable with cooking meth.<br /></li>
+<li>After a great number of exercises, he became comfortable with speaking in public.<br /></li>
+<li>The entrepreneur became comfortable with setting up factories in the suburbs of the city.<br /></li>
+</ul>
+<p>
+stand as sth.: 作为某物的存在<br />
+</p>
+<ul class="org-ul">
+<li>The girl who used to quarrel bitterly in public stands as a successful entrepreneur.<br /></li>
+<li>He stood as an officer at the representative assembly.<br /></li>
+<li>He stands as a hard-working husband in the family.<br /></li>
+</ul>
+<p>
+be far from easy: 远不容易<br />
+</p>
+<ul class="org-ul">
+<li>Feeding a disobedient cat is far from easy.<br /></li>
+<li>Babysitting twins is far from easy, don't be too hard on me.<br /></li>
+<li>As he has just been nominated for the prize, staying out of the limelight is far from easy.<br /></li>
+</ul>
+<p>
+find A opposed by B: 发现A被B反对<br />
+</p>
+<ul class="org-ul">
+<li>He found his theory opposed by his beloved family.<br /></li>
+<li>He became comfortable with finding his treatise opposed by his instructor.<br /></li>
+<li>Finding his observation opposed by the pope, he denounced it as bullshit.<br /></li>
+</ul>
+<p>
+be situated sw.: 位于&#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>I yearned to have a house situated on the top of a mountain.<br /></li>
+<li>The hotel situated at the bottom of the mountain is very convenient.<br /></li>
+<li>The statue used to be situated at the entrance of the harbor and was transported to the City Hall.<br /></li>
+</ul>
+<p>
+hold sth. to be + &#x2026;: 认为某物是&#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>He held the thief to be a local butcher.<br /></li>
+<li>Your wife tends to hold the prize to her gift.<br /></li>
+<li>I hold the answer to be A, which proved right.<br /></li>
+</ul>
+<p>
+rotate on its axis: 绕轴旋转<br />
+</p>
+<ul class="org-ul">
+<li>The balls rotating on their axis repelled each other.<br /></li>
+<li>The spheres which were rotating on their axis have been magnetized to attract each other.<br /></li>
+<li>It became apparent that the earth is rotating on its axis.<br /></li>
+</ul>
+<p>
+revolve about the sun: 绕太阳转<br />
+</p>
+<ul class="org-ul">
+<li>Desiring to get snacks, my cat is revolving about the chair.<br /></li>
+<li>The earth revolves about the sun.<br /></li>
+<li>The earth must be revolving about the sun.<br /></li>
+</ul>
+<p>
+be called in question (upon sth.): 根据某事&#x2026;被传唤质疑<br />
+</p>
+<ul class="org-ul">
+<li>The driver was said to be called in question upon the rule of traffic.<br /></li>
+<li>As the first man arriving on the scene, he was called in question.<br /></li>
+<li>Suspected that he was the shoplifter, he was called in question.<br /></li>
+</ul>
+<p>
+in ill health: 身体不好<br />
+</p>
+<ul class="org-ul">
+<li>My father was in ill health when he got fired.<br /></li>
+<li>My cat has been in ill health after he was fed by a stranger.<br /></li>
+<li>I am in ill health, so I'm not at work today.<br /></li>
+</ul>
+<p>
+in one sense: 从某种意义来说<br />
+</p>
+<ul class="org-ul">
+<li>In one sense, the prizefighter was a great boxer.<br /></li>
+<li>In one sense, he was killed in action.<br /></li>
+<li>In one sense, he is the father of immunology.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org389c0d9" class="outline-3">
+<h3 id="org389c0d9">summary</h3>
+<div class="outline-text-3" id="text-org389c0d9">
+<p>
+In the seventeenth century,<br />
+	the Scientific Revolution questioned and challenged the conceptions and beliefs<br />
+		about the external world and realities<br />
+	that had crystallized into a strict arthodoxy by the Later Middle Ages.<br />
+Though derived from ancient Greeks and Romans and grouded in Christian thought<br />
+		the worldview had become almost over-powering,<br />
+	the breakdown of Christian unity created an environment<br />
+		in which people got used to challenging the authorities.<br />
+The shift from earthcentered to sun-centered<br />
+	had an emotional as well as intellectual effect on those who understood it.<br />
+Therefore, the Scientific Revolution stood as a major force<br />
+	in the transition to a largely secular, rational, materialistic perspective<br />
+		that has defined the modern Western mentality.<br />
+In the seventeenth century, Gelileo held the sun to be situated motionless<br />
+	in the center of the revolution of the celestial bodies.<br />
+But the church had a different view<br />
+	and Gelileo was called before the dreaded Inquisition before he was kept waiting for two months.<br />
+Shattered by the experience, Geolileo denounced his errors and kept silenced ever since.<br />
+However, his writings began to circulate through Europe,<br />
+	so the actions of Equisition failed to stop the spread of new ideas.<br />
+In one sense, the Scientific Revolution was not a revolution,<br />
+	for it did overturn centuries of authorities, but in a gradual and piecemeal fashion.<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgd203ada" class="outline-3">
+<h3 id="orgd203ada">summary2</h3>
+<div class="outline-text-3" id="text-orgd203ada">
+<p>
+In the seventeenth century,<br />
+	the Scientific Revolution questioned and challenged the conceptions and beliefs<br />
+		about the external world and realities<br />
+	that had crystallized into a strict orthodoxy by the Later Middle Ages.<br />
+Though derived from ancient Greeks and Romans and grounded in Christian thought<br />
+		the worldview had become almost over-powering,<br />
+	the breakdown of Christian unity created an environment<br />
+		in which people got used to challenging the authorities.<br />
+The shift from earth-centered to sun-centered<br />
+	had an emotional as well as intellectual effect on those who understood it.<br />
+Therefore, the Scientific Revolution stood as a major force<br />
+	in the transition to a largely secular, rational, materialistic perspective<br />
+		that has defined the modern Western mentality.<br />
+In the seventeenth century, Galileo held the sun to be situated motionless<br />
+	in the center of the revolution of the celestial bodies.<br />
+But the church had a different view<br />
+	and Galileo was called before the dreaded Inquisition before he was kept waiting for two months.<br />
+Shattered by the experience, Geolileo denounced his errors and remained silent.<br />
+However, his writings began to circulate through Europe,<br />
+	so the actions of the Inquisition failed to stop the spread of new ideas.<br />
+In one sense, the Scientific Revolution was not a revolution,<br />
+	for it did overturn centuries of authorities, but in a gradual and piecemeal fashion.<br />
+</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

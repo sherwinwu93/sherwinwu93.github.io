@@ -1,0 +1,1817 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-12-24 Tue 21:14 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<p>
+CHAPTER 12
+RECOVERY AND REBIRTH: THE RENAISSANCE
+</p>
+
+<p>
+CHAPTER OUTLINE
+AND FOCUS QUESTIONS
+</p>
+
+<p>
+Characteristics of the Italian Renaissance
+Q What characteristics distinguish the Renaissance from
+the Middle Ages?
+</p>
+
+<p>
+The Making of Renaissance Society
+</p>
+
+<p>
+Q What major social changes occurred in the Renaissance?
+</p>
+
+<p>
+The Italian States in the Renaissance
+</p>
+
+<p>
+Q How did Machiavelli’s works reflect the political realities
+of Renaissance Italy?
+</p>
+
+<p>
+The Intellectual Renaissance in Italy
+</p>
+
+<p>
+Q What was humanism, and what effect did it have on
+philosophy, education, and attitudes toward politics?
+</p>
+
+<p>
+The Artistic Renaissance
+</p>
+
+<p>
+Q What were the chief characteristics of Renaissance art,
+and how did it differ in Italy and northern Europe?
+</p>
+
+<p>
+The European State in the Renaissance
+</p>
+
+<p>
+Q Why do historians sometimes refer to the monarchies of
+the late fifteenth century as ‘‘new monarchies’’ or
+‘‘Renaissance states’’?
+</p>
+
+<p>
+The Church in the Renaissance
+</p>
+
+<p>
+Q What were the policies of the Renaissance popes, and
+what impact did those policies have on the Roman
+Catholic Church?
+</p>
+
+<p>
+CRITICAL THINKING
+</p>
+
+<p>
+Q In what ways did Renaissance art and the humanist
+movement reflect the political, economic, and social
+developments of the period?
+</p>
+
+<p>
+Michelangelo’s Creation of Adam on the Sistine Chapel ceiling
+</p>
+
+<p>
+WERE THE FOURTEENTH and fifteenth centuries a continuation of the Middle Ages or the beginning of a new era? The answer
+is that both positions are true. Although the disintegrative patterns
+of the fourteenth century continued into the fifteenth, at the same
+time there were elements of recovery that made the fifteenth century
+a period of significant political, economic, artistic, and intellectual
+change. The humanists or intellectuals of the age considered their
+period (from the mid-fourteenth to the mid-sixteenth century) an
+age of rebirth, believing that they had restored arts and letters to
+new glory after they had been ‘‘neglected’’ or ‘‘dead’’ for centuries.
+The humanists also saw their age as one of accomplished individuals
+who dominated the landscape of their time. Michelangelo, the great
+Italian artist of the early sixteenth century, and Pope Julius II, the
+‘‘warrior pope,’’ were two such titans. The artist’s temperament and
+the pope’s temper led to many lengthy and often loud quarrels between the two. Among other commissions, the pope had hired
+Michelangelo to paint the ceiling of the Sistine Chapel in Rome, a
+daunting task for a man long accustomed to being a sculptor.
+Michelangelo undertook the project but refused for a long time to
+allow anyone, including the pope, to see his work. Julius grew anxious, pestering Michelangelo on a regular basis about when the
+ceiling would be finished. Exasperated by the pope’s requests,
+Michelangelo once replied, according to Giorgio Vasari, his contemporary biographer, that the ceiling would be completed ‘‘when it satisfies me as an artist.’’ The pope responded, ‘‘And we want you to
+satisfy us and finish it soon,’’ and then threatened that if Michelangelo did not ‘‘finish the ceiling quickly [the pope] would have him
+thrown down from the scaffolding.’’ Fearing the pope’s anger,
+Michelangelo ‘‘lost no time in doing all that was wanted’’ and
+quickly completed the ceiling, one of the great masterpieces of
+Western art.
+</p>
+
+<p>
+The humanists’ view of their age as a rebirth of the Classical
+civilization of the Greeks and Romans ultimately led historians to
+use the French word Renaissance to identify this age. Although recent
+historians have emphasized the many elements of continuity between
+the Middle Ages and the Renaissance, the latter age was also distinguished by its own unique characteristics.
+</p>
+
+<p>
+Characteristics of the Italian
+Renaissance
+</p>
+
+<p>
+Q Focus Question: What characteristics distinguish the
+Renaissance from the Middle Ages?
+</p>
+
+<p>
+Renaissance means ‘‘rebirth.’’ Many people who lived in
+Italy between 1350 and 1550 believed that they were witnessing a rebirth of antiquity or Greco-Roman civilization,
+marking a new age. To them, the thousand or so years
+between the end of the Roman Empire and their own era
+was a middle period (the ‘‘Middle Ages’’), characterized by
+darkness because of its lack of Classical culture. Historians
+of the nineteenth century later used similar terminology to
+describe this period in Italy. The Swiss historian and art
+critic Jacob Burckhardt created the modern concept of the
+Renaissance in his celebrated work Civilization of the Renaissance in Italy, published in 1860. He portrayed Italy in
+the fourteenth and fifteenth centuries as the birthplace of
+the modern world and saw the revival of antiquity, the
+‘‘perfecting of the individual,’’ and secularism (‘‘worldliness
+of the Italians’’) as its distinguishing features. Burckhardt
+established the framework for all modern interpretations
+of the period. Although contemporary scholars do not
+believe that the Renaissance represents a sudden or dramatic cultural break with the Middle Ages (as Burckhardt
+argued)&#x2014;there was, after all, much continuity between the
+two periods in economic, political, and social life&#x2014;the
+Renaissance can still be viewed as a distinct period of
+European history that manifested itself first in Italy and
+then spread to the rest of Europe. What, then, are the
+characteristics of the Italian Renaissance?
+</p>
+
+<p>
+Renaissance Italy was largely an urban society. The
+city-states, especially those of northern Italy, became the
+centers of Italian political, economic, and social life. In
+this new urban society, a secular spirit emerged as increasing wealth created new possibilities for the enjoyment of worldly things (see the box on p. 244).
+</p>
+
+<p>
+Above all, the Renaissance was an age of recovery
+from the ‘‘calamitous fourteenth century.’’ Italy and the
+rest of Europe began a slow process of recuperation from
+the effects of the Black Death, political disorder, and
+economic recession. Recovery was accompanied by a rediscovery of the culture of Classical antiquity. Increasingly
+aware of their own historical past, Italian intellectuals
+became intensely interested in the Greco-Roman culture
+of the ancient Mediterranean world. This revival of
+Classical antiquity (the Middle Ages had in fact preserved
+much of ancient Latin culture) affected politics and art
+and led to new attempts to reconcile the pagan philosophy of antiquity with Christian thought, as well as new
+ways of viewing human beings.
+</p>
+
+<p>
+A revived emphasis on individual ability became
+characteristic of the Italian Renaissance. As the fifteenthcentury Florentine architect Leon Battista Alberti expressed it, ‘‘Men can do all things if they will.’’1 A high
+regard for human dignity and worth and a realization of
+individual potentiality created a new social ideal of the
+well-rounded personality or universal person (l’uomo
+universale) who was capable of achievements in many areas
+of life.
+</p>
+
+<p>
+These general features of the Italian Renaissance were
+not characteristic of all Italians but were primarily the
+preserve of the wealthy upper classes, who constituted a
+small percentage of the total population. The achievements
+of the Italian Renaissance were thus the product of an elite,
+rather than a mass, movement. Nevertheless, indirectly it
+did have some impact on ordinary people, especially in the
+cities, where so many of the intellectual and artistic accomplishments of the period were most apparent.
+</p>
+
+<p>
+The Making of
+Renaissance Society
+</p>
+
+<p>
+Q Focus Question: What major social changes occurred
+in the Renaissance?
+</p>
+
+<p>
+After the severe economic reversals and social upheavals
+of the second half of the fourteenth century, the European
+economy gradually recovered during the fifteenth century
+as manufacturing and trade increased in volume.
+</p>
+
+<p>
+Economic Recovery
+</p>
+
+<p>
+By the fourteenth century, Italian merchants were carrying
+on a flourishing commerce throughout the Mediterranean
+and had also expanded their lines of trade north along the
+Atlantic seaboard. The great galleys of the Venetian Flanders Fleet maintained a direct sea route from Venice to
+England and the Netherlands, where Italian merchants
+came into contact with the increasingly powerful Hanseatic League of merchants. Hard hit by the plague, the
+Italians lost their commercial preeminence while the
+Hanseatic League continued to prosper.
+</p>
+
+<p>
+Expansion of Trade
+</p>
+
+<p>
+As early as the thirteenth century, a
+number of north German coastal towns had formed a
+commercial and military alliance known as the Hansa or
+the Hanseatic League. By 1500, more than eighty cities
+belonged to the League, which established settlements
+and commercial bases in northern Europe and England.
+For almost two hundred years, the Hansa had a monopoly on northern European trade in timber, fish, grain,
+metals, honey, and wines. Its southern outlet in Flanders,
+the city of Bruges, became the economic crossroads of
+Europe in the fourteenth century because it served as the
+meeting place between Hanseatic merchants and the
+Flanders Fleet of Venice. In the fifteenth century, however,
+the Hanseatic League proved increasingly unable to
+compete with the developing larger territorial states.
+</p>
+
+<p>
+Overall, trade recovered dramatically from the economic contraction of the fourteenth century. The Italians and especially the Venetians continued to maintain
+a wealthy commercial empire. Not until the sixteenth
+century, when overseas discoveries gave new importance
+to the states facing the Atlantic, did the petty Italian citystates begin to suffer from the competitive advantages of
+the ever-growing and more powerful national territorial
+states.
+</p>
+
+<p>
+Industries Old and New
+</p>
+
+<p>
+The economic depression of the
+fourteenth century also affected patterns of manufacturing. The woolen industries of Flanders and the northern
+Italian cities had been particularly devastated. By the
+beginning of the fifteenth century, however, the Florentine woolen industry began to recover. At the same time,
+the Italian cities began to develop and expand luxury
+industries, including lace and silk, glassware, and handworked items in metal and precious stones.
+</p>
+
+<p>
+Other new industries, especially printing, mining,
+and metallurgy, began to rival the textile industry in
+importance in the fifteenth century. New machinery and
+techniques for digging deeper mines and for separating
+metals from ore and purifying them were developed, and
+entrepreneurs quickly developed large mining operations to produce copper, iron, and silver. Especially
+valuable were the rich mineral deposits in central Europe. Expanding iron production and new skills in
+metalworking in turn contributed to the development of
+firearms that were more effective than the crude weapons
+of the fourteenth century.
+</p>
+
+<p>
+Banking and the Medici
+</p>
+
+<p>
+The city of Florence regained
+its preeminence in banking in the fifteenth century, due
+primarily to the Medici family. In its best days (in the
+fifteenth century), the house of Medici was the greatest
+banking establishment in Europe, with branches in Venice, Milan, Rome, Avignon, Bruges, London, and Lyons.
+Moreover, the family had controlling interests in industrial enterprises for wool, silk, and the mining of alum,
+which was used to dye textiles. Despite its great success,
+the Medici bank suffered a sudden decline at the end of
+the fifteenth century due to poor leadership and a series
+of bad loans, especially to rulers. In 1494, when the
+French expelled the Medici from Florence and confiscated
+their property, the entire financial edifice collapsed.
+</p>
+
+<p>
+Social Changes in the Renaissance
+</p>
+
+<p>
+The Renaissance inherited its social structure from the
+Middle Ages. Society remained fundamentally divided into
+three estates: the First Estate, the clergy, whose preeminence
+was grounded in the belief that people should be guided to
+spiritual ends; the Second Estate, the nobility, whose privileges were based on the principle that the nobles provided
+security and justice for society; and the Third Estate, the
+peasants and inhabitants of the towns and cities. This social
+order experienced certain adaptations in the Renaissance,
+which we can see by examining the Second and Third
+Estates (the clergy will be examined in Chapter 13).
+</p>
+
+<p>
+The Nobility
+</p>
+
+<p>
+Throughout much of Europe, the landholding nobles faced declining real incomes during the
+greater part of the fourteenth and fifteenth centuries. But
+many members of the old nobility survived, and new
+blood infused its ranks. A reconstruction of the aristocracy
+was well under way by 1500. As a result of this reconstruction, the nobles, old and new, who constituted between 2 and 3 percent of the population in most countries,
+managed to dominate society as they had done in the
+Middle Ages, serving as military officers and holding
+important political posts as well as advising the king.
+</p>
+
+<p>
+By 1500, the noble or aristocrat was expected to
+evince certain ideals. These ideals were best expressed in
+The Book of the Courtier by the Italian Baldassare Castiglione (1478&#x2013;1529). Published in 1528, Castiglione’s
+work soon became popular throughout Europe, and it
+remained a basic handbook for European aristocrats well
+into the twentieth century.
+</p>
+
+<p>
+In his book, Castiglione described the three basic attributes of the perfect courtier. First, nobles should possess
+fundamental native endowments, such as impeccable character, grace, talents, and noble birth. The perfect courtier
+must also cultivate certain achievements. Primarily, he
+should participate in military and bodily exercises because
+the principal profession of a courtier was arms. But unlike
+the medieval knight, the Renaissance courtier was also expected to have a Classical education and adorn his life with
+the arts by playing a musical instrument, drawing, and
+painting. In Castiglione’s hands, the Renaissance ideal of the
+well-developed personality became a social ideal of the aristocracy. Finally, the aristocrat was expected to follow a
+certain standard of conduct. Nobles were to make a good
+impression; while being modest, they should not hide their
+accomplishments but show them with grace.
+</p>
+
+<p>
+What was the purpose of these courtly standards?
+Castiglione said:
+</p>
+
+<p>
+I think that the aim of the perfect Courtier . . . is so to win
+for himself, by means of the accomplishments ascribed to
+him by these gentlemen, the favor and mind of the prince
+whom he serves that he may be able to tell him, and
+always will tell him, the truth about everything he needs to
+know, without fear or risk of displeasing him; and that
+when he sees the mind of his prince inclined to a wrong
+action, he may dare to oppose him . . . so as to dissuade
+him of every evil intent and bring him to the path of
+virtue.
+</p>
+
+<p>
+The aim of the perfect noble, then, was to serve his
+prince in an effective and honest way. Nobles would
+adhere to these principles for hundreds of years while
+they continued to dominate European life socially and
+politically.
+</p>
+
+<p>
+Peasants and Townspeople
+</p>
+
+<p>
+Peasants made up the
+overwhelming mass of the Third Estate, and except in the
+highly urbanized areas of northern Italy and Flanders,
+they continued to constitute as much as 85 to 90 percent
+of the total European population. The most noticeable
+trend produced by the economic crisis of the fourteenth
+century was the decline of the manorial system and the
+continuing elimination of serfdom. The contraction of
+the peasantry after the Black Death simply accelerated the
+process of converting servile labor dues into rents paid in
+money. By the end of the fifteenth century, primarily in
+western Europe, serfdom was declining, and more and
+more peasants were becoming legally free.
+</p>
+
+<p>
+The remainder of the Third Estate centered around
+the inhabitants of towns and cities, originally the merchants and artisans who formed the bourgeoisie. The
+Renaissance town or city of the fifteenth century actually
+possessed a multitude of townspeople widely separated
+socially and economically.
+</p>
+
+<p>
+At the top of urban society were the patricians, whose
+wealth from capitalistic enterprises in trade, industry, and
+banking enabled them to dominate their urban communities economically, socially, and politically. Below them
+were the petty burghers, the shopkeepers, artisans, guildmasters, and guildsmen who were largely concerned with
+providing goods and services for local consumption. Below these two groups were the propertyless workers
+earning pitiful wages and the unemployed, living squalid
+and miserable lives; these people constituted as much as
+30 to 40 percent of the urban population. Everywhere in
+Europe in the late fourteenth and fifteenth centuries, urban poverty had increased dramatically. One rich merchant of Florence wrote:
+</p>
+
+<p>
+Those that are lazy and indolent in a way that does harm to
+the city, and who can offer no just reason for their condition,
+should either be forced to work or expelled from the Commune. The city would thus rid itself of that most harmful
+part of the poorest class. . . . If the lowest order of society
+earn enough food to keep them going from day to day, then
+they have enough.3
+</p>
+
+<p>
+But even this large group was not at the bottom of the
+social scale; beneath it stood a significantly large group of
+slaves, especially in the cities of Italy.
+</p>
+
+<p>
+Family and Marriage in Renaissance Italy
+</p>
+
+<p>
+The family bond was a source of great security in the
+urban world of Renaissance Italy. To maintain the family,
+careful attention was given to marriages that were arranged by parents, often to strengthen business or family
+ties. Details were worked out well in advance, sometimes
+when children were only five or six years old, and reinforced by a legally binding marriage contract (see the
+box on p. 247). The important aspect of the contract was
+the size of the dowry, a sum of money presented by the
+wife’s family upon marriage. The dowry could involve
+large sums of money and was expected of all families.
+</p>
+
+<p>
+The father-husband was the center of the Italian family.
+He gave it his name, was responsible for it in all legal
+matters, managed all finances (his wife had no share in his
+wealth), and made the crucial decisions in his children’s
+lives. A father’s authority over his children was absolute
+until he died or formally freed his children. The age of
+emancipation varied from early teens to late twenties.
+</p>
+
+<p>
+The wife managed the household, a position that
+gave women a certain degree of autonomy in their daily
+lives. Most wives, however, also knew that their primary
+function was to bear children. Upper-class wives were
+frequently pregnant; Alessandra Strozzi of Florence, for
+example, who had been married at the age of sixteen, bore
+eight children in ten years.
+</p>
+
+<p>
+For women in the Renaissance, childbirth was a
+fearful occasion. Not only was it painful, but it could be
+deadly; possibly as many as 10 percent of mothers died in
+childbirth. In his memoirs, the Florentine merchant
+Gregorio Dati recalled that three of his four wives died in
+childbirth. His third wife, after delivering eleven children
+in fifteen years, ‘‘died in childbirth after lengthy suffering,
+which she bore with remarkable strength and patience.’’4
+Nor did the tragedies end with childbirth. Surviving
+mothers often faced the death of their children. In Florence in the fifteenth century, for example, almost half of
+the children born to merchant families died before the age
+of twenty. Given these mortality rates, many upper-class
+families sought to have as many children as possible in
+order to ensure a surviving male heir to the family fortune. This concern is evident in the Florentine humanist
+Leon Battista Alberti’s treatise On the Family, when one of
+the characters remarks, ‘‘How many families do we see
+today in decadence and ruin! . . . Of all these families not
+only the magnificence and greatness but the very men, not
+only the men but the very names are shrunk away and
+gone. Their memory . . . is wiped out and obliterated.’’
+</p>
+
+<p>
+The Italian States
+in the Renaissance
+</p>
+
+<p>
+Q Focus Question: How did Machiavelli’s works reflect
+the political realities of Renaissance Italy?
+</p>
+
+<p>
+By the fifteenth century, five major powers dominated the
+Italian peninsula: the duchy of Milan, Venice, Florence, the
+Papal States, and the kingdom of Naples (see Map 12.1).
+Northern Italy was divided between Milan and Venice.
+After the death of the last Visconti ruler of Milan in 1447,
+Francesco Sforza, one of the leading condottieri (a condottiere was the leader of a mercenary band) of the time,
+turned on his Milanese employers, conquered the city, and
+became its new duke. Both the Visconti and Sforza rulers
+worked to create a highly centralized territorial state. They
+were especially successful in devising systems of taxation
+that generated enormous revenues for the government.
+The maritime republic of Venice remained an extremely
+stable political entity governed by a small oligarchy of
+merchant-aristocrats. Its commercial empire brought in
+enormous revenues and gave it the status of an international power.
+</p>
+
+<p>
+The republic of Florence dominated the region of
+Tuscany. In 1434, Cosimo de’ Medici (1434&#x2013;1464) took
+control of the ruling oligarchy. Although the wealthy
+Medici family maintained republican forms of government for appearance’s sake, it ran the government from
+behind the scenes. Through lavish patronage and careful
+courting of political allies, Cosimo and later his grandson
+Lorenzo the Magnificent (1469&#x2013;1492) were successful in
+dominating the city at a time when Florence was the
+center of the cultural Renaissance.
+</p>
+
+<p>
+The Papal States lay in central Italy. Nominally under
+the control of the popes, papal residence in Avignon and the
+Great Schism had enabled individual cities
+and territories, such as Urbino and Ferrara, to become independent of papal
+authority. The popes of the fifteenth century directed much of their energy toward
+reestablishing their control over the Papal
+States. The kingdom of Naples, which
+encompassed most of southern Italy and
+usually the island of Sicily, remained a
+backward monarchy that shared little in
+the cultural glories of the Renaissance.
+</p>
+
+<p>
+A number of independent city-states
+under the control of powerful ruling
+families also became brilliant centers of
+Renaissance culture in the fifteenth century. Perhaps most famous was Urbino,
+ruled by the Montefeltro dynasty. Federigo da Montefeltro, who ruled Urbino
+from 1444 to 1482, received a Classical
+education. He had also learned the skills of
+fighting, since the Montefeltro family
+compensated for the poverty of Urbino by
+hiring themselves out as condottieri. Federigo was not only a good ruler but also a
+rather unusual condottiere by fifteenthcentury standards. Although not a brilliant general, he was reliable and honest.
+At the same time, Duke Federigo was one
+of the greatest patrons of Renaissance
+culture. Under his direction, Urbino became a well-known cultural and intellectual center.
+</p>
+
+<p>
+A noticeable feature of these smaller
+Italian courts was the important role
+played by women. The most famous of
+the Italian ruling women was Isabella d’Este (1474&#x2013;1539),
+daughter of the duke of Ferrara, who married Francesco
+Gonzaga, marquis of Mantua. Their court was another
+important center of art and learning in the Renaissance.
+Educated at the brilliant court of Ferrara, Isabella was
+known for her intelligence and political wisdom. Called
+the ‘‘first lady of the world,’’ she attracted artists and intellectuals to the Mantuan court and was responsible for
+amassing one of the finest libraries in all of Italy. Her
+numerous letters to friends, family, princes, and artists all
+over Europe disclose her political acumen as well as a
+good sense of humor. Both before and after the death of
+her husband Francesco, she effectively ruled Mantua.
+</p>
+
+<p>
+The growth of powerful monarchical states led to
+trouble for the Italians and brought an end to the independence of the Italian states. Attracted by the riches of
+Italy, the French king Charles VIII (1483&#x2013;1498) led an
+army of thirty thousand men into Italy in 1494 and occupied the kingdom of Naples. Other Italian states turned
+for help to the Spanish, who gladly complied. For the next
+thirty years, the French and Spanish competed to dominate Italy, which was merely a pawn for the two great
+powers, a convenient arena for fighting battles. The terrible sack of Rome in 1527 by the armies of the Spanish
+king Charles I brought a temporary end to the Italian
+wars. From then on, the Spaniards dominated Italy; the
+Renaissance in Italy was over.
+</p>
+
+<p>
+Machiavelli and the New Statecraft
+</p>
+
+<p>
+No one gave better expression to the Renaissance preoccupation with political power than Niccolo` Machiavelli
+(1469&#x2013;1527). Although he ably served as a diplomat for
+Florence, he was eventually forced into exile. Embittered by
+this and compelled by the great love of his life&#x2014;politics&#x2014;he
+wrote The Prince, one of the most influential works on
+political power in the Western world.
+</p>
+
+<p>
+Machiavelli’s major concerns in The Prince were the
+acquisition, maintenance, and expansion of political power
+as the means to restore and maintain order in his time. In
+the Middle Ages, many political theorists stressed the
+ethical side of a prince’s activity&#x2014;how a ruler ought to
+behave based on Christian moral principles. Machiavelli
+bluntly contradicted this approach:
+</p>
+
+<p>
+My hope is to write a book that will be useful, at least to
+those who read it intelligently, and so I thought it sensible to
+go straight to a discussion of how things are in real life and
+not waste time with a discussion of an imaginary world . . . for
+the gap between how people actually behave and how they
+ought to behave is so great that anyone who ignores everyday
+reality in order to live up to an ideal will soon discover he
+had been taught how to destroy himself, not how to preserve
+himself.
+</p>
+
+<p>
+Machiavelli considered his approach far more realistic
+than that of his medieval forebears.
+</p>
+
+<p>
+From Machiavelli’s point of view, a prince’s attitude
+toward power must be based on an understanding of human nature, which he perceived as basically self-centered.
+He said, ‘‘Of men one can, in general, say this: They are
+ungrateful, fickle, deceptive and deceiving, avoiders of
+danger, eager to gain.’’ Political activity, therefore, could
+not be restricted by moral considerations. The prince acts
+on behalf of the state and for the sake of the state must be
+willing to let his conscience sleep. As Machiavelli put it:
+</p>
+
+<p>
+You need to understand this: A ruler, and particularly a ruler
+who is new to power, cannot conform to all those rules that
+men who are thought good are expected to respect, for he is
+often obliged, in order to hold on to power, to break his
+word, to be uncharitable, inhumane, and irreligious. So he
+must be mentally prepared to act as circumstances and
+changes in fortune require. As I have said, he should do
+what is right if he can; but he must be prepared to do wrong
+if necessary.
+</p>
+
+<p>
+Machiavelli found a good example of the new Italian
+ruler in Cesare Borgia, the son of Pope Alexander VI
+(popes were supposed to be celibate), who used ruthless
+measures to achieve his goal of carving out a new state in
+central Italy. As Machiavelli said, ‘‘Anyone who decides
+that the policy to follow when one has newly acquired
+power is to destroy one’s enemies, to secure some allies, to
+win wars, whether by force or by fraud, to make oneself
+both loved and feared by one’s subjects, . . . cannot hope
+to find, in the recent past, a better model to imitate than
+Cesare Borgia.’’8 Machiavelli was among the first to
+abandon morality as the basis for the analysis of political
+activity (see the box on p. 251).
+</p>
+
+<p>
+The Intellectual
+Renaissance in Italy
+</p>
+
+<p>
+Q Focus Question: What was humanism, and what effect
+did it have on philosophy, education, and attitudes
+toward politics?
+</p>
+
+<p>
+Individualism and secularism&#x2014;two characteristics of the
+Italian Renaissance&#x2014;were most noticeable in the intellectual and artistic realms. Italian culture had matured by
+the fourteenth century. For the next two centuries, Italy
+was the cultural leader of Europe. This new Italian culture
+was primarily the product of a relatively wealthy, urban
+lay society. The most important literary movement associated with the Renaissance is humanism.
+</p>
+
+<p>
+Italian Renaissance Humanism
+</p>
+
+<p>
+Renaissance humanism was an intellectual movement
+based on the study of the Classical literary works of Greece
+and Rome. Humanists studied the liberal arts&#x2014;grammar,
+rhetoric, poetry, moral philosophy or ethics, and history&#x2014;
+all based on the writings of ancient Greek and Roman
+authors. These are the subjects we call the humanities.
+Petrarch (1304&#x2013;1374), often called the father of
+Italian Renaissance humanism, did more than any other
+individual in the fourteenth century to foster development of the movement. Petrarch sought to find forgotten
+Latin manuscripts and set in motion a search of monastic
+libraries throughout Europe. In his preoccupation with
+the classics and their secular content, Petrarch doubted at
+times whether he was sufficiently attentive to spiritual
+ideals. His qualms, however, did not prevent him from
+inaugurating the humanist emphasis on the use of pure
+Classical Latin, making it fashionable for humanists to
+use Cicero as a model for prose and Virgil for poetry.
+Petrarch said, ‘‘Christ is my God; Cicero is the prince of
+the language.’’
+</p>
+
+<p>
+In Florence, the humanist movement took a new
+direction at the beginning of the fifteenth century when it
+became closely tied to Florentine civic spirit and pride,
+giving rise to what has been labeled civic humanism.
+Fourteenth-century humanists such as Petrarch had described the intellectual life as one of solitude. They rejected family and a life of action in the community. In the
+busy civic world of Florence, however, intellectuals began
+to take a new view of their role as intellectuals. The
+Classical Roman statesman and intellectual Cicero became their model. Leonardo Bruni (1370&#x2013;1444), a humanist, Florentine patriot, and chancellor of the city,
+wrote a biography of Cicero titled the New Cicero, in
+which he waxed enthusiastic about the fusion of political
+action and literary creation in Cicero’s life. From Bruni’s
+time on, Cicero served as the inspiration for the Renaissance ideal that it was the duty of an intellectual to live an
+active life for one’s state. An individual only ‘‘grows to
+maturity&#x2014;both intellectually and morally&#x2014;through participation’’ in the life of the state. Civic humanism reflected the values of the urban society of the Italian
+Renaissance. Humanists came to believe that their study
+of the humanities should be put to the service of the state.
+It is no accident that humanists served the state as
+chancellors, councillors, and advisers.
+</p>
+
+<p>
+Also evident in the humanism of the first half of the
+fifteenth century was a growing interest in Classical
+Greek civilization. Bruni was one of the first Italian
+humanists to gain a thorough knowledge of Greek. He
+became an enthusiastic pupil of the Byzantine scholar
+Manuel Chrysoloras, who taught in Florence from 1396
+to 1400. Humanists eagerly perused the works of Plato as
+well as Greek poets, dramatists, historians, and orators,
+such as Thucydides, Euripides, and Sophocles, all of
+whom had been neglected by the scholastics of the High
+Middle Ages.
+</p>
+
+<p>
+Humanism and Philosophy
+</p>
+
+<p>
+In the second half of the
+fifteenth century, a dramatic upsurge of interest in the
+works of Plato occurred. Cosimo de’ Medici, the de
+facto ruler of Florence, encouraged this development by
+commissioning a translation of Plato’s dialogues by
+Marsilio Ficino (1433&#x2013;1499), who dedicated his life to
+the translation of Plato and the exposition of the Platonic philosophy known as Neoplatonism.
+</p>
+
+<p>
+In two major works, Ficino undertook the synthesis of Christianity and Platonism into a single system. His Neoplatonism was based on two primary
+ideas, the Neoplatonic hierarchy of substances and a
+theory of spiritual love. The former postulated a hierarchy of substances, or great chain of being, from the
+lowest form of physical matter (plants) to the purest
+spirit (God), in which humans occupied a central or
+middle position. They were the link between the material world (through the body) and the spiritual world
+(through the soul), and their highest duty was to ascend toward that union with God that was the true end
+of human existence. Ficino’s theory of spiritual or
+Platonic love maintained that just as all people are
+bound together in their common humanity by love, so
+are all parts of the universe held together by bonds of
+sympathetic love.
+</p>
+
+<p>
+Renaissance Hermeticism
+</p>
+
+<p>
+Hermeticism was another
+product of the Florentine intellectual environment of the
+late fifteenth century. At the request of Cosimo de’
+Medici, Ficino translated into Latin a Greek work titled
+Corpus Hermeticum. The Hermetic manuscripts offered
+Renaissance intellectuals a new view of humankind. They
+believed that humans had been created as divine beings
+endowed with divine creative power but had freely chosen
+to enter the material world (nature). Humans could recover their divinity, however, through a regenerative experience or purification of the soul. Thus regenerated,
+they became true sages or magi, as the Renaissance called
+them, who had knowledge of God and of truth. In regaining their original divinity, they reacquired an intimate knowledge of nature and the ability to employ the
+powers of nature for beneficial purposes.
+</p>
+
+<p>
+In Italy, the most prominent magi in the late fifteenth
+century were Ficino and his friend and pupil Giovanni
+Pico della Mirandola (1463&#x2013;1494). Pico produced one of
+the most famous treatises of the Renaissance, Oration on
+the Dignity of Man. Pico combed diligently through the
+writings of many philosophers of different backgrounds
+for the common ‘‘nuggets of universal truth’’ that he
+believed were all part of God’s revelation to humanity. In
+the Oration, Pico offered a ringing statement of unlimited
+human potential: ‘‘To him it is granted to have whatever
+he chooses, to be whatever he wills.’’9 Like Ficino, Pico
+took an avid interest in Hermetic philosophy, accepting it
+as the ‘‘science of the Divine,’’ which ‘‘embraces the
+deepest contemplation of the most secret things, and at
+last the knowledge of all nature.’’10
+</p>
+
+<p>
+Education in the Renaissance
+</p>
+
+<p>
+The humanist movement had a profound effect on education. Renaissance humanists believed that human beings could be dramatically changed by education, and as a
+result, they wrote treatises on education and opened
+schools based on their ideas. At the core of humanist
+schools were the ‘‘liberal studies.’’ Humanists believed that
+the ‘‘liberal studies’’ (what we call the liberal arts) were the
+key to true freedom, enabling individuals to reach their
+full potential. The liberal studies included history, moral
+philosophy, eloquence (rhetoric), letters (grammar and
+logic), poetry, mathematics, astronomy, and music. The
+purpose of a liberal education was thus to produce individuals who followed a path of virtue and wisdom and
+possessed the rhetorical skills by which they could persuade others to do the same. Following the Greek precept
+of a sound mind in a sound body, humanist educators
+also stressed physical education. Pupils were taught the
+skills of javelin throwing, archery, and dancing and encouraged to run, wrestle, hunt, and swim.
+</p>
+
+<p>
+The purpose of these humanist schools was to educate an elite, the ruling classes of their communities.
+Largely absent from such schools were females. The few
+female students who did attend humanist schools studied
+the classics and were encouraged to know some history
+and to ride, dance, sing, play the lute, and appreciate
+poetry. But they were told not to learn mathematics and
+rhetoric. Religion and morals were thought to hold first
+place in the education of Christian ladies and help prepare them for their roles as mothers and wives.
+</p>
+
+<p>
+Nevertheless, some women in Italy who were educated in the humanist fashion went on to establish their
+own literary careers. Isotta Nogarola, born to a noble
+family in Verona, mastered Latin and wrote numerous
+letters and treatises that brought her praise from male
+Italian intellectuals. Laura Cereta was educated in Latin
+by her father, a physician from Brescia. Laura defended
+the ability of women to pursue scholarly pursuits (see the
+box on p. 253).
+</p>
+
+<p>
+Humanist education was thought to be a practical
+preparation for life. Its aim was the creation not of a great
+scholar but of a complete citizen. As one humanist said,
+‘‘Not everyone is obliged to excel in philosophy, medicine,
+or the law, nor are all equally favored by nature; but all are
+destined to live in society and to practice virtue.’’11 Humanist schools provided the model for the basic education
+of the European ruling classes until the twentieth century.
+</p>
+
+<p>
+The Impact of Printing
+</p>
+
+<p>
+The Renaissance period witnessed the development of
+printing, one of the most important technological
+innovations of Western civilization. The art of printing
+had an immediate impact on European intellectual life
+and thought. Printing from hand-carved wooden blocks
+had been done in the West since the twelfth century and
+in China even before that. What was new to Europe in the
+fifteenth century was repeatable printing with movable
+metal type. The development of printing from movable
+type was a gradual process that culminated between 1445
+and 1450; Johannes Gutenberg of Mainz played an important role in bringing the process to completion.
+Gutenberg’s Bible, completed in 1455 or 1456, was the
+first true book in the West produced with movable type.
+</p>
+
+<p>
+The new printing capability spread rapidly throughout Europe in the second half of the fifteenth century. By
+1500, there were more than a thousand printers in Europe
+who had published almost forty thousand titles (between
+eight and ten million copies). Probably 50 percent of these
+books were religious&#x2014;Bibles, books of devotion, and sermons. Next in importance were the Latin and Greek
+classics, medieval grammars, legal handbooks, works on
+philosophy, and an ever-growing number of popular
+romances.
+</p>
+
+<p>
+Printing became one of the largest industries in
+Europe, and its effects were soon felt in many areas of
+European life. The printing of books encouraged the
+development of scholarly research and the desire to attain knowledge. Moreover, printing facilitated cooperation among scholars and helped produce standardized
+and definitive texts. Printing also stimulated the development of an ever-expanding lay reading public, a development that had an enormous impact on European
+society. Indeed, the new religious ideas of the Reformation would never have spread as rapidly as they did in the
+sixteenth century without the printing press.
+</p>
+
+<p>
+The Artistic Renaissance
+</p>
+
+<p>
+Q Focus Question: What were the chief characteristics of
+Renaissance art, and how did it differ in Italy and
+northern Europe?
+</p>
+
+<p>
+Leonardo da Vinci, one of the great Italian Renaissance
+artists, once explained, ‘‘The painter will produce pictures
+of small merit if he takes for his standard the pictures of
+others, but if he will study from natural objects he will
+bear good fruit. . . . Those who take for their standard any
+one but nature . . . weary themselves in vain.’’12 Renaissance artists considered the imitation of nature their
+primary goal. Their search for naturalism became an end
+in itself: to persuade onlookers of the reality of the object
+or event they were portraying. At the same time, the new
+artistic standards reflected a new attitude of mind as well,
+one in which human beings became the focus of attention, the ‘‘center and measure of all things, as one artist
+proclaimed.
+</p>
+
+<p>
+Early Renaissance Art
+</p>
+
+<p>
+The frescoes by Masaccio (1401&#x2013;1428) in the Brancacci
+Chapel in Florence have long been regarded as the first
+masterpieces of Early Renaissance art. In his use of
+monumental figures, the demonstration of a more realistic
+relationship between figures and landscape, and the visual
+representation of the laws of perspective, a new realistic
+style of painting was born. Onlookers became aware of a
+world of reality that appeared to be a continuation of their
+own world.
+</p>
+
+<p>
+This new or Renaissance style was absorbed and
+modified by other Florentine painters in the fifteenth
+century. Especially important was the development of an
+experimental trend that took two directions. One emphasized the mathematical side of painting, the working
+out of the laws of perspective and the organization of
+outdoor space and light by geometry and perspective.
+The other aspect of the experimental trend involved the
+investigation of movement and anatomical structure.
+Indeed, the realistic portrayal of the human nude became
+one of the foremost preoccupations of Italian Renaissance
+art. The fifteenth century, then, was a period of experimentation and technical mastery.
+</p>
+
+<p>
+The revolutionary achievements of Florentine painters
+in the fifteenth century were matched by equally stunning
+advances in sculpture and architecture. Donato di Donatello (1386&#x2013;1466) spent time in Rome, studying and
+copying the statues of antiquity. His subsequent work in
+Florence reveals how well he had mastered the essence of
+what he saw. Among his numerous works was a statue of
+David that was the first known life-size freestanding bronze
+nude in European art since antiquity. Like Donatello’s
+other statues, David radiated a simplicity and strength that
+reflected the dignity of humanity.
+</p>
+
+<p>
+Filippo Brunelleschi (1377&#x2013;1446) was a friend of Donatello’s who accompanied him to Rome. Brunelleschi drew
+much inspiration from the architectural monuments of
+Roman antiquity, and when he returned to Florence, the
+Medici commissioned him to design the church of San
+Lorenzo. Inspired by Roman models, Brunelleschi created a
+church interior very different from that of the great medieval cathedrals. San Lorenzo’s Classical columns, rounded
+arches, and coffered ceiling created an environment that
+did not overwhelm the worshiper, materially or psychologically, as Gothic cathedrals did; instead, it comforted
+in that it was a space created to fit human, not divine,
+measurements.
+</p>
+
+<p>
+The Artistic High Renaissance
+</p>
+
+<p>
+By the end of the fifteenth century, Italian painters,
+sculptors, and architects had created a new artistic
+environment. Many artists had mastered the new techniques for a scientific observation of the world around
+them and were now ready to move into individualistic
+forms of creative expression. This final stage of Renaissance art, which flourished between 1480 and 1520, is
+called the High Renaissance. The High Renaissance was
+marked by the increasing importance of Rome as a
+cultural center.
+</p>
+
+<p>
+The High Renaissance was dominated by the work
+of three artistic giants: Leonardo da Vinci (1452&#x2013;1519),
+Raphael (1483&#x2013;1520), and Michelangelo (1475&#x2013;1564).
+Leonardo represents a transitional figure in the shift to
+High Renaissance principles. He stressed the need to
+advance beyond such realism and initiated the High
+Renaissance’s preoccupation with the idealization of
+nature, or the attempt to generalize from realistic portrayal to an ideal form. Leonardo’s Last Supper, painted
+in Milan, is a brilliant summary of fifteenth-century
+trends in its organization of space and use of perspective
+to depict subjects three dimensionally. But it is also
+more. The figure of Philip is idealized, and there are
+profound psychological dimensions to the work. Jesus’
+words&#x2014;‘‘One of you shall betray me’’&#x2014;are experienced
+directly as each of the apostles reveals his personality
+and his relationship to the Savior. Through gestures
+and movement, Leonardo hoped to reveal a person’s
+inner life.
+</p>
+
+<p>
+Raphael blossomed as a painter at an early age; at
+twenty-five, he was already regarded as one of Italy’s best.
+Raphael was acclaimed for his numerous madonnas
+(portraits of the Virgin Mary), in which he attempted to
+achieve an ideal of beauty far surpassing human standards. He is well known for his frescoes in the Vatican
+Palace; his School of Athens reveals a world of balance,
+harmony, and order&#x2014;the underlying principles of the art
+of Classical Greece and Rome.
+</p>
+
+<p>
+Michelangelo, an accomplished painter, sculptor, and
+architect, was another giant of the High Renaissance.
+Fiercely driven by his desire to create, he worked with
+great passion and energy on a remarkable number of
+projects. Michelangelo was influenced by Neoplatonism,
+especially evident in his figures on the ceiling of the Sistine Chapel in Rome. In 1508, Pope Julius II had called
+Michelangelo to Rome and commissioned him to decorate the chapel ceiling. This colossal project was not
+completed until 1512. Michelangelo attempted to tell the
+story of the Fall of Man by depicting nine scenes from the
+biblical book of Genesis. In his Creation of Adam (reproduced at the start of this chapter), the well-proportioned
+figure of Adam awaits the divine spark. Adam, like the
+other muscular figures on the ceiling, reveals an ideal type
+of human being with perfect proportions. In good Neoplatonic fashion, the beauty of these figures is meant to be
+a reflection of divine beauty; the more beautiful the body,
+the more God-like the figure.
+</p>
+
+<p>
+Another manifestation of Michelangelo’s search for
+ideal beauty was his David (on p. 258), a colossal marble
+statue commissioned by the Florentine government in
+1501 and completed in 1504. Michelangelo maintained
+that the form of a statue already resided in the uncarved
+piece of stone: ‘‘I only take away the surplus; the statue
+is already there.’’13 Out of a piece of marble that had
+remained unused for fifty years, Michelangelo created a
+14-foot-high figure, the largest sculpture in Italy since
+Roman times. An awe-inspiring hero, Michelangelo’s
+David proudly proclaims the beauty of the human body
+and the glory of human beings.
+</p>
+
+<p>
+The Northern Artistic Renaissance
+</p>
+
+<p>
+In trying to provide an exact portrayal of their world, the
+artists of the north (especially the Low Countries) and
+Italy took different approaches. In Italy, the human form
+became the primary vehicle of expression as Italian artists
+sought to master the technical skills that allowed them to
+portray humans in realistic settings. The large wall spaces
+of Italian churches had given rise to the art of fresco
+painting, but in the north, the prevalence of Gothic cathedrals with their stained-glass windows resulted in
+more emphasis on illuminated manuscripts and wooden
+panel painting for altarpieces. The space available in these
+works was limited, and great care was required to depict
+each object, leading northern painters to become masters
+at rendering details.
+</p>
+
+<p>
+The most influential northern school of art in the
+fifteenth century was centered in Flanders. Jan van Eyck
+(c. 1380&#x2013;1441) was among the first to use oil paint, a
+medium that enabled the artist to use a varied range of
+colors and make changes to create fine details. In the famous Giovanni Arnolfini and His Bride, van Eyck’s attention to detail is staggering in the precise portraits, a
+glittering chandelier, and a mirror reflecting the objects in
+the room. Although each detail was rendered as observed,
+it is evident that van Eyck’s comprehension of perspective
+was still uncertain. His work is truly indicative of northern
+Renaissance painters, who, in their effort to imitate nature,
+did so not by mastery of the laws of perspective and
+proportion but by empirical observation of visual reality
+and the accurate portrayal of details. Moreover, northern
+painters placed great emphasis on the emotional intensity
+of religious feeling and created great works of devotional
+art, especially in their altarpieces. By the end of the fifteenth century, however, artists from the north began to
+study in Italy and were visually influenced by what artists
+were doing there.
+</p>
+
+<p>
+One northern artist of this later period who was
+greatly influenced by the Italians was Albrecht Du¨rer
+(1471&#x2013;1528) from Nuremberg. Du¨rer made two trips to
+Italy and absorbed most of what the Italians could teach,
+as is evident in his mastery of the laws of perspective and
+Renaissance theories of proportion. He wrote detailed
+treatises on both subjects. At the same time, as in his
+famous Adoration of the Magi, Du¨rer did not reject the
+use of minute details characteristic of northern artists.
+He did try, however, to integrate those details more
+harmoniously into his works and, like the Italian artists
+of the High Renaissance, tried to achieve a standard of
+ideal beauty by a careful examination of the human
+form.
+</p>
+
+<p>
+The European State
+in the Renaissance
+</p>
+
+<p>
+Q Focus Question: Why do historians sometimes refer to
+the monarchies of the late fifteenth century as ‘‘new
+monarchies’’ or ‘‘Renaissance states’’?
+</p>
+
+<p>
+In the first half of the fifteenth century, European states
+continued the disintegrative patterns of the previous
+century. In the second half of the century, however,
+recovery set in, and attempts were made to reestablish the
+centralized power of monarchical governments. To characterize the results, some historians have used the label
+‘‘Renaissance states’’; others have spoken of the ‘‘new
+monarchies,’’ especially those of France, England, and
+Spain at the end of the fifteenth century. Whereas monarchs succeeded to varying degrees at extending their
+political authority in western Europe, rulers in central
+and eastern Europe were often weak and unable to impose their will.
+</p>
+
+<p>
+The Renaissance State in Western Europe
+</p>
+
+<p>
+Although the Hundred Years’ War (1337&#x2013;1453; see
+Chapter 11) had made it difficult for French kings to
+assert their authority, the war had also developed a strong
+degree of French national feeling toward a common enemy that the kings could use to reestablish monarchical
+power. The process of developing a French territorial state
+was greatly advanced by King Louis XI (1461&#x2013;1483),
+known as the Spider because of his devious ways. Louis
+strengthened the use of the taille&#x2014;an annual direct tax,
+usually on land or property&#x2014;as a tax imposed by royal authority, giving him a regular and reliable source of income.
+Louis repressed the French nobility and brought the provinces of Anjou, Maine, Bar, and Provence under royal
+control.
+</p>
+
+<p>
+England
+</p>
+
+<p>
+The Hundred Years’ War also strongly affected
+the other protagonist in that conflict, England. The cost
+of the war in its final years and the losses in manpower
+strained the English economy. Moreover, the end of the
+war brought even greater domestic turmoil to England
+when the War of the Roses broke out in the 1450s. This
+civil war pitted the ducal house of Lancaster, whose
+symbol was a red rose, against the ducal house of York,
+whose symbol was a white rose. Many aristocratic families
+of England were drawn into the conflict. Finally, in 1485,
+Henry Tudor, duke of Richmond, defeated the last Yorkist
+king, Richard III (1483&#x2013;1485), at Bosworth Field and
+established a new dynasty.
+</p>
+
+<p>
+As the first Tudor king, Henry VII (1485&#x2013;1509)
+worked to reduce internal dissension and establish a
+strong monarchical government. The new king was particularly successful in obtaining sufficient income from
+the traditional financial resources of the English monarch,
+such as the crown lands, judicial fees and fines, and
+customs duties. By using diplomacy to avoid wars, which
+are always expensive, the king avoided having to call
+Parliament on any regular basis to grant him funds. By
+not overburdening the landed gentry and middle class
+with taxes, Henry won their favor, and they provided
+much support for his monarchy. Henry’s policies gave
+England a stable and prosperous government and enhanced the status of the monarchy.
+</p>
+
+<p>
+Spain
+</p>
+
+<p>
+Spain, too, experienced the growth of a strong
+national monarchy by the end of the fifteenth century.
+During the Middle Ages, several independent Christian
+kingdoms had emerged in the course of the long reconquest of the Iberian peninsula from the Muslims (see
+Map 12.2). Aragon and Castile were the strongest Spanish
+kingdoms; in the west was the independent monarchy of
+Portugal; in the north, the small kingdom of Navarre; and
+in the south, the Muslim kingdom of Granada.
+</p>
+
+<p>
+A major step toward the unification of Spain was
+taken with the marriage of Isabella of Castile (1474&#x2013;1504)
+and Ferdinand of Aragon (1479&#x2013;1516) in 1469. This was a
+dynastic union of two rulers, not a political union. Both
+kingdoms maintained their own parliaments (each known
+as the Cortes), courts, laws, coinage, speech, customs,
+and political organs. Nevertheless, the two rulers worked
+to strengthen royal control of government, especially in
+Castile. The royal council, which was supposed to supervise local administration and oversee the implementation of government policies, was stripped of aristocrats
+and filled primarily with middle-class lawyers. Trained in
+the principles of Roman law, these officials operated on
+the belief that the monarchy embodied the power of the
+state.
+</p>
+
+<p>
+Ferdinand and Isabella reorganized the military
+forces of Spain, seeking to replace the undisciplined
+feudal levies they had inherited with a more professional
+royal army. The development of a strong infantry force as
+the heart of the new Spanish army made it the best in
+Europe by the sixteenth century, and Spain emerged as an
+important power in European affairs.
+Ferdinand and Isabella also pursued a policy of strict
+religious uniformity. Spain had two large religious minorities, Jews and Muslims, both of whom had been largely
+tolerated in medieval Spain. Increased persecution in the
+fourteenth century, however, led the majority of Spanish
+Jews to convert to Christianity. But complaints about the
+sincerity of these Jewish converts prompted Ferdinand and
+Isabella to ask the pope to introduce the Inquisition into
+Spain in 1478. Under royal control, the Inquisition worked
+with cruel efficiency to guarantee the orthodoxy of the
+converts but had no authority over practicing Jews. Consequently, in 1492, flush with the success of the conquest of
+Muslim Granada, Ferdinand and Isabella took the drastic
+step of expelling all professed Jews from Spain. It is estimated that 150,000 out of possibly 200,000 Jews fled.
+Muslims, too, were then ‘‘encouraged’’ to convert to
+Christianity, and in 1502, Isabella issued a decree expelling
+all professed Muslims from her kingdom. To a very large
+degree, the ‘‘most Catholic’’ monarchs had achieved their
+goal of absolute religious orthodoxy as a basic ingredient
+of the Spanish state. To be Spanish was to be Catholic, a
+policy of uniformity enforced by the Inquisition.
+</p>
+
+<p>
+Central Europe: The Holy Roman Empire
+</p>
+
+<p>
+After 1438, the position of Holy Roman Emperor was in
+the hands of the Habsburg dynasty. Having gradually acquired a number of possessions along the Danube, known
+collectively as Austria, the house of Habsburg had become
+one of the wealthiest landholders in the empire and by the
+mid-fifteenth century began to play an important role in
+European affairs. Much of the Habsburg success in the
+fifteenth century was due not to military victories but to a
+well-executed policy of dynastic marriages.
+</p>
+
+<p>
+Much was expected of the flamboyant Maximilian I
+(1493&#x2013;1519) when he became emperor. Through the
+Reichstag, the imperial diet or parliament, Maximilian
+attempted to centralize the administration by creating
+new institutions common to the entire empire. Opposition from the German princes doomed these efforts,
+however. Maximilian’s only real success lay in his marriage
+alliances, which led to a grandson, Charles V, inheriting
+the traditional lands of the Habsburg, Burgundian, and
+Spanish monarchical lines at the beginning of the sixteenth century, making him the leading monarch of his
+age (see Chapter 13).
+</p>
+
+<p>
+The Struggle for Strong Monarchy
+in Eastern Europe
+</p>
+
+<p>
+In eastern Europe, rulers struggled to achieve the centralization of their territorial states but faced serious obstacles. Although the population was mostly Slavic, there
+were islands of other ethnic groups that caused difficulties.
+Religious differences also troubled the area, as Roman
+Catholics, Greek Orthodox Christians, and pagans came
+into conflict.
+</p>
+
+<p>
+Much of Polish history revolved around a bitter
+struggle between the crown and the landed nobility until
+the end of the fifteenth century, when the preoccupation
+of the Polish monarchy with problems in Bohemia and
+Hungary as well as war with the Russians and Turks
+enabled the aristocrats to reestablish their power.
+Through their control of the Sejm, the national parliament, the magnates reduced the peasantry to serfdom by
+1511 and established the right to elect their kings. The
+Polish kings proved unable to establish a strong royal
+authority.
+</p>
+
+<p>
+Since the conversion of Hungary to Roman Catholicism by German missionaries, its history had been closely
+tied to that of central and western Europe. The church
+became a large and prosperous institution. Wealthy bishops, along with great territorial lords, became powerful,
+independent political figures. For a brief while, Hungary
+developed into an important European state, the dominant power in eastern Europe. King Matthias Corvinus
+(1458&#x2013;1490) broke the power of the wealthy lords and
+created a well-organized central administration. After his
+death, Hungary returned to weak rule, however, and the
+work of Corvinus was largely undone.
+</p>
+
+<p>
+Since the thirteenth century, Russia had been under
+the domination of the Mongols. Gradually, the princes of
+Moscow rose to prominence by using their close relationship to the Mongol khans to increase their wealth and
+expand their possessions. In the reign of the great prince
+Ivan III (1462&#x2013;1505), a new Russian state was born. Ivan
+III annexed other Russian principalities and took advantage of dissension among the Mongols to throw off
+their yoke by 1480.
+</p>
+
+<p>
+The Ottoman Turks and the End
+of the Byzantine Empire
+</p>
+
+<p>
+Eastern Europe was increasingly threatened by the
+steadily advancing Ottoman Turks. The Byzantine Empire
+had served as a buffer between the Muslim Middle East
+and the Latin West for centuries, but it was severely
+weakened by the sack of Constantinople in 1204 and its
+occupation by the West. Although the Paleologus dynasty
+(1260&#x2013;1453) had tried to reestablish Byzantine power in
+the Balkans, the threat from the Turks finally doomed the
+long-lasting empire.
+</p>
+
+<p>
+Beginning in northeastern Asia Minor in the thirteenth century, the Ottoman Turks spread rapidly, seizing
+the lands of the Seljuk Turks and the Byzantine Empire.
+In 1345, they bypassed Constantinople and moved into
+the Balkans. Under Sultan Murad, Ottoman forces moved
+through Bulgaria and into the lands of the Serbians, who
+provided a strong center of opposition under King Lazar.
+But in 1389, at the Battle of Kosovo, Ottoman forces
+defeated the Serbs; both King Lazar and Sultan Murad
+perished in the battle. Kosovo became a battlefield long
+revered and remembered by the Serbs. Not until 1480
+were Bosnia, Albania, and the rest of Serbia added to the
+Ottoman Empire in the Balkans.
+</p>
+
+<p>
+In the meantime, in 1453, the Ottomans also completed the demise of the Byzantine Empire. With eighty
+thousand troops ranged against only seven thousand
+defenders, Sultan Mehmet II laid siege to Constantinople.
+In their attack on the city, the Turks made use of massive
+cannons with 26-foot barrels that could launch stone
+balls weighing up to 1,200 pounds each. Finally, the walls
+were breached; the Byzantine emperor died in the final
+battle. Mehmet II, standing before the palace of the
+emperor, paused to reflect on the passing nature of human glory.
+</p>
+
+<p>
+After consolidating their power, the Turks prepared
+to exert renewed pressure on the West, both in the
+Mediterranean and up the Danube valley toward Vienna.
+By the end of the fifteenth century, they were threatening
+Hungary, Austria, Bohemia, and Poland.
+</p>
+
+<p>
+The Church in the Renaissance
+</p>
+
+<p>
+Q Focus Question: What were the policies of the
+Renaissance popes, and what impact did those policies
+have on the Roman Catholic Church?
+</p>
+
+<p>
+As a result of the efforts of the Council of Constance, the
+Great Schism of the Catholic church had finally been
+brought to an end in 1417. Ending the schism proved to
+be the council’s easiest task; it was much less successful in
+dealing with the problems of heresy and reform.
+</p>
+
+<p>
+The Problems of Heresy and Reform
+</p>
+
+<p>
+Heresy was not a new problem, and in the thirteenth
+century, the church had developed inquisitorial machinery to deal with it. But two widespread movements in the
+fourteenth and early fifteenth centuries&#x2014;Lollardy and
+Hussitism&#x2014;posed new threats to the church.
+</p>
+
+<p>
+Wyclif and Lollardy
+</p>
+
+<p>
+English Lollardy was a product of
+the Oxford theologian John Wyclif (c. 1328&#x2013;1384),
+whose disgust with clerical corruption led him to a farranging attack on papal authority and medieval Christian beliefs and practices. Wyclif alleged that there was
+no basis in Scripture for papal claims of temporal authority and advocated that the popes be stripped of their
+authority and their property. Believing that the Bible
+should be a Christian’s sole authority, Wyclif urged that
+it be made available in the vernacular languages so that
+every Christian could read it. Rejecting all practices not
+mentioned in Scripture, Wyclif condemned pilgrimages
+and the veneration of saints. Wyclif attracted a number
+of followers who came to be known as Lollards (literally,
+‘‘mutterers’’).
+</p>
+
+<p>
+Hus and the Hussites
+</p>
+
+<p>
+A marriage between the royal
+families of England and Bohemia enabled Lollard ideas
+to spread to Bohemia, where they reinforced the ideas of
+a group of Czech reformers led by the chancellor of the
+university at Prague, John Hus (1374&#x2013;1415). In his call
+for reform, Hus urged the elimination of the worldliness and corruption of the clergy and attacked the excessive power of the papacy within the Catholic church.
+Hus’s objections fell on receptive ears, for the Catholic
+church, as one of the largest landowners in Bohemia,
+was already widely criticized. Moreover, many clergymen were German, and the native Czechs’ strong resentment of the Germans who dominated Bohemia also
+contributed to Hus’s movement.
+</p>
+
+<p>
+The Council of Constance attempted to deal with the
+growing problem of heresy by summoning Hus to appear
+before it. Granted safe conduct by Emperor Sigismund,
+Hus went in the hope of a free hearing of his ideas. Instead
+he was arrested, condemned as a heretic, and burned at
+the stake in 1415. This action turned the unrest in Bohemia into revolutionary upheaval, and the resulting
+Hussite wars racked the Holy Roman Empire until a truce
+was arranged in 1436.
+</p>
+
+<p>
+Reform of the Church
+</p>
+
+<p>
+The reform of the church was
+even less successful than the attempt to eradicate heresy.
+The Council of Constance passed two reform decrees.
+One stated that a general council of the church received
+its authority from God; hence every Christian, including
+the pope, was subject to its authority. The other decree
+provided for the regular holding of general councils to
+ensure that church reform would continue. Decrees
+alone, however, proved insufficient to reform the church.
+Councils could issue decrees, but popes had to execute
+them, and popes would not cooperate with councils that
+diminished their absolute authority. Beginning already
+in 1417, successive popes worked steadfastly for the next
+thirty years to defeat the conciliar movement (see
+Chapter 11).
+</p>
+
+<p>
+By the mid-fifteenth century, the popes had reasserted their supremacy over the Roman Catholic
+Church. No longer, however, did they have any possibility
+of asserting supremacy over temporal governments as the
+medieval papacy had. Although the papal monarchy had
+been maintained, it had lost much moral prestige. In the
+fifteenth century, the Renaissance papacy contributed to
+an even further decline in the moral leadership of the
+popes.
+</p>
+
+<p>
+The Renaissance Papacy
+</p>
+
+<p>
+The Renaissance papacy refers to the line of popes from
+the end of the Great Schism in 1417 to the beginning
+of the Reformation in the early sixteenth century. The
+primary concern of the papacy is governing the Roman
+Catholic Church as its spiritual leader. But as heads of the
+church, popes had temporal preoccupations as well, and
+the story of the Renaissance papacy is really an account of
+how the latter came to overshadow the popes’ spiritual
+functions.
+</p>
+
+<p>
+The manner in which Renaissance popes pursued
+their interests in the Papal States and Italian politics,
+especially their use of intrigue and even bloodshed,
+seemed shocking. Of all the Renaissance popes, Julius II
+(1503&#x2013;1513) was most involved in war and politics. The
+fiery ‘‘warrior pope’’ personally led armies against his enemies, much to the disgust of pious Christians, who viewed
+the pope as a spiritual leader. As one intellectual wrote at
+the beginning of the sixteenth century: ‘‘How, O bishop
+standing in the room of the Apostles [the pope], dare you
+teach the people the things that pertain to war?’’
+</p>
+
+<p>
+To further their territorial aims in the Papal States,
+the popes needed loyal servants. Because they were not
+hereditary monarchs, popes could not build dynasties
+over several generations and came to rely on the practice
+of nepotism to promote their families’ interests. Pope
+Sixtus IV (1471&#x2013;1484), for example, made five of his
+nephews cardinals (the word nepotism is in fact derived
+from the Greek nepos, meaning ‘‘nephew’’) and gave them
+an abundance of church offices to build up their finances.
+The infamous Borgia pope, Alexander VI (1492&#x2013;1503),
+known for his debauchery and sensuality, raised one son,
+one nephew, and the brother of one mistress to the cardinalate. Alexander scandalized the church by encouraging his son Cesare to carve a state out of the territories of
+the Papal States in central Italy.
+</p>
+
+<p>
+The Renaissance popes were great patrons of Renaissance culture, and their efforts made Rome a cultural
+leader at the beginning of the sixteenth century. The
+warrior pope Julius II endeavored to add to the splendor
+of his pontificate by tearing down an old church and
+beginning construction of what was to be the greatest
+building in Christendom, Saint Peter’s Basilica. Julius’s
+successor, Leo X (1513&#x2013;1521), was also a patron of Renaissance culture. A member of the Medici family, he was
+made a cardinal at the age of thirteen and acquired a
+refined taste in art, manners, and social life among the
+Florentine elite. He became pope at the age of thirtyseven, supposedly remarking to the Venetian ambassador,
+‘‘Let us enjoy the papacy, since God has given it to us.’’
+Raphael was commissioned to do paintings, and the
+construction of Saint Peter’s was accelerated as Rome
+became the literary and artistic center of the Renaissance.
+</p>
+
+<p>
+CONCLUSION
+</p>
+
+<p>
+The Renaissance was a period of transition that extended most of
+the economic, political, and social trends that had begun in the
+High Middle Ages. It was also a movement in which intellectuals
+and artists proclaimed a new vision of humankind and raised
+fundamental questions about the value and importance of the
+individual. Of course, intellectuals and artists wrote and painted for
+the upper classes, and the brilliant intellectual, cultural, and artistic
+accomplishments of the Renaissance were really products of and for
+the elite. The ideas of the Renaissance did not have a broad base
+among the masses of the people. As Lorenzo the Magnificent, ruler
+of Florence, once commented, ‘‘Only men of noble birth can obtain
+perfection. The poor, who work with their hands and have no time
+to cultivate their minds, are incapable of it.’’
+</p>
+
+<p>
+The Renaissance did, however, raise new questions about
+medieval traditions. In criticizing current religious practices, the
+humanists raised fundamental issues about the Catholic church,
+which was still an influential institution. As we shall see in the next
+chapter, the intellectual revolution of the fifteenth century gave way
+to a religious renaissance that touched the lives of people, including
+the masses, in new and profound ways. After the Reformation,
+Europe would never again be the unified Christian commonwealth
+it once believed it was.
+</p>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: DESKTOP-13B7HQM</p>
+<p class="date">Created: 2024-12-24 Tue 21:14</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

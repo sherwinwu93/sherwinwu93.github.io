@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-10-23 Wed 11:57 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-orgea0e111" class="outline-2">
+<h2 id="orgea0e111">Lesson 13 It's only me</h2>
+<div class="outline-text-2" id="text-orgea0e111">
+<p class="verse">
+What did the man expect to find under the stairs?<br />
+<br />
+After her husband had gone to work,<br />
+&#xa0;Mrs. Richards sent her children to school and went upstairs to her bedroom.<br />
+She was too excited to do any housework that morning,<br />
+&#xa0;for in the evening she would be going to a <b>fancy-dress party</b> with her husband.<br />
+She intended to dress up as a ghost<br />
+&#xa0;and as she had made her costume the night before, she <b>was impatient to</b> try it on.<br />
+Though the costume <b>consisted only of</b> a sheet, it was very effective.<br />
+After putting it on, Mrs Richards went downstairs.<br />
+She wanted to find out whether it would be comfortable to wear.<br />
+<br />
+Just as Mrs. Richards was entering the dining room, there was a knock on the front door.<br />
+She knew that it must be the baker.<br />
+She had told him to come straight in<br />
+&#xa0;if ever she failed to open the door and to leave the bread on the kitchen table.<br />
+Not wanting to frighten the poor man,<br />
+&#xa0;Mrs Richards quickly hid in the small storeroom under the stairs.<br />
+She heard the front door open and heavy footsteps in the hall.<br />
+Suddenly the door of the storeroom was opened and a man entered,<br />
+&#xa0;Mrs Richards realized that it must be the man from the Electricity Board<br />
+&#xa0;&#xa0;who had come to read the metre.<br />
+She tried to explain the situation, saying 'It's only me', but it was too late.<br />
+The man <b>let out a cry</b> and jumped back several paces.<br />
+When Mrs. Richards walked towards him, he fled, slamming the door behind him.<br />
+</p>
+</div>
+<div id="outline-container-orgbbe6001" class="outline-3">
+<h3 id="orgbbe6001">expression</h3>
+<div class="outline-text-3" id="text-orgbbe6001">
+<p>
+costume: [ˈkɑstum] n.化装服<br />
+consist: [kənˈsɪst] v.由&#x2026;组成<br />
+sheet: [ʃit] n.a large piece of thin cloth that you put on a bed to lie on or lie under被单<br />
+effective: [ɪˈfektɪv] adj.有明显效果的,有作用的<br />
+comfortable: [ˈkʌmfərtəb(ə)l] adj.舒适的<br />
+storeroom: [ˈstɔrˌrum] n.储藏室<br />
+electricity: [ˌilekˈtrɪsəti] n. meter=metre n. 电表<br />
+pace: [peɪs] n.一步<br />
+flee: [fli] fled v. to leave somewhere very quickly, in order to escape from danger逃走<br />
+slam: [slæm] v. close砰地关上<br />
+</p>
+
+<p>
+consist of &#x2026;: be made up of; be composed of; comprise 由&#x2026;组成<br />
+make yourself comfortable: to sit, lie, move, or behave in a such a way that you are relaxed and free from pain<br />
+at your own pace: you do it at a speed that is comfortable for yo<br />
+The pace of life:<br />
+</p>
+<hr />
+<p>
+fancy dress party: 化妆舞会<br />
+be impatient to do sth.: 急于做某事<br />
+let out a cry: 大叫一声<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org96c49f7" class="outline-3">
+<h3 id="org96c49f7">words</h3>
+<div class="outline-text-3" id="text-org96c49f7">
+<p>
+costume [ˈkɑstum] n. 化装服<br />
+consist [kənˈsɪst] v. 由……组成<br />
+sheet [ʃit] n. 被单<br />
+effective [ɪˈfektɪv] adj. 有明显效果的，有作用的<br />
+comfortable [ˈkʌmfərtəb(ə)l] adj. 舒适的<br />
+storeroom [ˈstɔrˌrum] n. 储藏室<br />
+electricity [ˌilekˈtrɪsəti] n. 电<br />
+metre [ˈmitər] n. 电表<br />
+pace [peɪs] n. 一步<br />
+flee [fli] (fled [fled], fled) v. 逃走<br />
+slam [slæm] v. 砰地关上<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org518b8b8" class="outline-3">
+<h3 id="org518b8b8"><span class="done DONE">DONE</span> 单词造句</h3>
+<div class="outline-text-3" id="text-org518b8b8">
+<p>
+costume n.<br />
+</p>
+<ul class="org-ul">
+<li>I found you very beautiful in the costume party.<br /></li>
+<li>I saw you go to the costume party.<br /></li>
+<li>Leo stated that he had returned the costume to you last night.<br /></li>
+<li>It is said that we will be going to the costume party tonight.<br /></li>
+<li>I am going to dress up as a ghost in the costume party.<br /></li>
+</ul>
+<p>
+consist v.  consist of &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>You needn't have eaten the foods that consist only of sugar.<br /></li>
+<li>He was genuinely sorry that his paper consists only of two chapters.<br /></li>
+<li>The crowd which was waiting in line consisted of busmen and college students.<br /></li>
+<li>On the other hand it consists mostly of sugar and water.<br /></li>
+<li>I was made to eat foods which consists mostly of salt and sugar.<br /></li>
+</ul>
+<p>
+sheet n.<br />
+</p>
+<ul class="org-ul">
+<li>I wished that you had washed our sheet.<br /></li>
+<li>The sheet was so expensive that we couldn't afford to it.<br /></li>
+<li>I was greeted by an unpleasant smell which comes from the sheet.<br /></li>
+<li>You should have washed your sheet.<br /></li>
+<li>The sheet clinged to a mixture of hair gel and toothpaste.<br /></li>
+</ul>
+<p>
+effective adj.<br />
+</p>
+<ul class="org-ul">
+<li>Leo's English course turns out to be very effective.<br /></li>
+<li>Imagine my dismay when I found out that my child's study plan was not effective.<br /></li>
+<li>I always feel obliged to find more effective method.<br /></li>
+<li>I usually work very effectively, for I take my job seriously.<br /></li>
+<li>In the end Leo's English course proved effective.<br /></li>
+</ul>
+<p>
+comfortable adj.  make yourself comfortable<br />
+</p>
+<ul class="org-ul">
+<li>If you are so hard on us, how could we make ourselves comfortables?<br /></li>
+<li>I tried to make myself comfortabel in the chair.<br /></li>
+<li>Make yourself comfortable, help yourself to these fruits.<br /></li>
+<li>Why don't you grab a beer and make yourself comfortabel?<br /></li>
+<li>I usually take a long time to make myself comfortable on the bed.<br /></li>
+</ul>
+<p>
+storeroom n.<br />
+</p>
+<ul class="org-ul">
+<li>The boy claimed to have seen a puma in the storeroom.<br /></li>
+<li>There was some puma fur clinging to the knife in the storeroom.<br /></li>
+<li>The worker is going to read the electricity meter in the storeroom.<br /></li>
+<li>This is the storeroom which Harry Potter used to live in.<br /></li>
+<li>The gangsters stated that the diamonds were hidden in a storeroom.<br /></li>
+</ul>
+<p>
+electricity n. meter=metre n.<br />
+</p>
+<ul class="org-ul">
+<li>Turn off your computer, it's a waste of electricity.<br /></li>
+<li>When I was very young, my parents always ordered to turn off lights to save electricity.<br /></li>
+<li>The editor decided to publish an article on electricity meters.<br /></li>
+<li>Only workers for the Electricity Board have the privilege of reading the electricity meter.<br /></li>
+<li>You must have had your electricity meter repaired.<br /></li>
+</ul>
+<p>
+pace n.  at your own pace  The pace of life<br />
+</p>
+<ul class="org-ul">
+<li>Let me study at my own pace.<br /></li>
+<li>These days, people who do manual work are often used to the slow pace of life.<br /></li>
+<li>I am willing to sacrifice higher pay for the slow pace of life.<br /></li>
+<li>I'm used to the fast pace of life in the uptown.<br /></li>
+<li>The fast pace of life is his secret of success.<br /></li>
+</ul>
+<p>
+flee fled v.<br />
+</p>
+<ul class="org-ul">
+<li>She complained that if the police had arrived on the scene, the thief wouldn't have fled.<br /></li>
+<li>After she had saw her father get angry, she fled and went to the school.<br /></li>
+<li>He fled for the simple reason that he realized that he hadn't finished his task.<br /></li>
+<li>Despite the fact that you feld in our wedding.<br /></li>
+<li>I happened to see a thief fleeing at the edge of the forest.<br /></li>
+</ul>
+<p>
+slam v. close<br />
+</p>
+<ul class="org-ul">
+<li>Equipped with a torchlight, the vicar slammed the door and went up to see what had happened.<br /></li>
+<li>The men is so rude that he is always slamming the door.<br /></li>
+<li>It is disturbing to think that your roomate is always slamming the door at midnight.<br /></li>
+<li>It is consider unlucky for people in China slamming the door in January.<br /></li>
+<li>The man set the house on fire, slamming the door.<br /></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org024611e" class="outline-3">
+<h3 id="org024611e"><span class="done DONE">DONE</span> 反复听电影片段直到懂关键句</h3>
+<div class="outline-text-3" id="text-org024611e">
+</div>
+</div>
+<div id="outline-container-org0e15f77" class="outline-3">
+<h3 id="org0e15f77">复习二册语法(笔记或视频) &amp; 红皮书</h3>
+</div>
+<div id="outline-container-orgc09ff00" class="outline-3">
+<h3 id="orgc09ff00"><span class="done DONE">DONE</span> 习惯用法造句</h3>
+<div class="outline-text-3" id="text-orgc09ff00">
+<p>
+fancy dress party<br />
+</p>
+<ul class="org-ul">
+<li>Fancy dress parties are popular with young men and women.<br /></li>
+<li>She is reluctant to go to the fancy dress party because of her ex-boyfriend.<br /></li>
+<li>His father went to extremes to prevent him from going to the fancy dress party.<br /></li>
+<li>The fancy dress party will be held in Disney land tonight.<br /></li>
+<li>It comes as a surprise to learn that a fancy dress party will be held tonight.<br /></li>
+</ul>
+<p>
+be impatient to do sth.<br />
+</p>
+<ul class="org-ul">
+<li>It comes as a surprise to learn that she was impatient to do housework.<br /></li>
+<li>It comes as a surprise to learn that the clerk was impatient to send me a book.<br /></li>
+<li>The cat was impatient to drink milk in the morning.<br /></li>
+<li>I was impatient to take a bath.<br /></li>
+<li>She was impatient to wrap the clothes up.<br /></li>
+</ul>
+<p>
+let out a cry<br />
+</p>
+<ul class="org-ul">
+<li>You needn't have let out a cry. It's only me.<br /></li>
+<li>I wish that she hadn't let out a cry.<br /></li>
+<li>Letting out a cry, she lost his patience.<br /></li>
+<li>Letting out a cry, she knocked him to the ground.<br /></li>
+<li>Letting out a cry, she stoond to attention.<br /></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org8828d8b" class="outline-3">
+<h3 id="org8828d8b">跟读 50遍</h3>
+</div>
+<div id="outline-container-orgb835893" class="outline-3">
+<h3 id="orgb835893"><span class="done DONE">DONE</span> Comprehension 反复练习</h3>
+<div class="outline-text-3" id="text-orgb835893">
+</div>
+</div>
+<div id="outline-container-orgdf60266" class="outline-3">
+<h3 id="orgdf60266"><span class="done DONE">DONE</span> Ask me if 写+读</h3>
+<div class="outline-text-3" id="text-orgdf60266">
+<ol class="org-ol">
+<li>Mrs. Richards went upstairs to her bedroom. Where<br />
+Where did Mr. Richards go?<br /></li>
+<li>She would be going to a fancy-dress party that evening. Where<br />
+Where would she be going to that evening?<br /></li>
+<li>She had made her costume the night before. When<br />
+When had she made her costume?<br /></li>
+<li>She was impatient to try it on. Why<br />
+Why was she impatient to try it on?<br /></li>
+<li>The costume consisted of a sheet. What<br />
+What did the costume consist of?<br /></li>
+<li>There was a knock at the door. When<br />
+When was there a knock at the door?<br /></li>
+<li>She hid in the storeroom under the stairs. Where<br />
+Where did she hide?<br /></li>
+<li>She heard the front door open. Who<br />
+Who heard the front door open?<br /></li>
+<li>It was the man from the Electricity Board. Who<br />
+Who was it?<br /></li>
+<li>The man fled. When<br />
+When did the man flee?<br /></li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org94086d8" class="outline-3">
+<h3 id="org94086d8"><span class="done DONE">DONE</span> 摘要写作 写 &amp; 对答案</h3>
+<div class="outline-text-3" id="text-org94086d8">
+<p>
+Mrs. Richards had dressed up as a ghost<br />
+	and was going into the dining room when there was a knock on the door.<br />
+Thinking it was the baker,<br />
+	she hid in the storeroom under the stairs.<br />
+She heard footsteps in the hall<br />
+	and then the man from Electricity Board opened the storeroom door.<br />
+Though Mrs. Richards said 'It's only me',<br />
+	he got a bad fright.<br />
+When she walked towards him,<br />
+	he fled, slaming the front door behind him.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org2bc91af" class="outline-3">
+<h3 id="org2bc91af"><span class="done DONE">DONE</span> tell the story 口语复述</h3>
+<div class="outline-text-3" id="text-org2bc91af">
+</div>
+</div>
+<div id="outline-container-orge0a7095" class="outline-3">
+<h3 id="orge0a7095"><span class="done DONE">DONE</span> composition 阅读 或 写作</h3>
+<div class="outline-text-3" id="text-orge0a7095">
+<p>
+Mrs. Richards immediately went upstairs and took off her costume.<br />
+She felt sorry for the poor man from the Electricity Board,<br />
+	but at the same time she was rather amused.<br />
+Suddenly, there was a knock at the front door and Mrs. Richards opened it at once.<br />
+The electricity man had returned accompanied by a policeman,<br />
+	so she invited both in.<br />
+The man told Mrs.Richards that he had tried to read her metre<br />
+	and that there was a ghost in the storeroom.<br />
+Though Mrs. Richards explained that she had dressed up as a ghost,<br />
+	he refused to believe her.<br />
+She told him to open the storeroom door, but he was too frightened,<br />
+	so she opened it herself.<br />
+While the electricity man and the policeman were looking for the ghost in the storeroom,<br />
+	Mrs. Richards fetched her costume.<br />
+She showed it to both men and only then did they believe her.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org9cee338" class="outline-3">
+<h3 id="org9cee338">Topics for discussion</h3>
+</div>
+</div>
+</div>
+</body>
+</html>

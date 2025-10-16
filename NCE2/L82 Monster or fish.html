@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-08-06 Tue 22:24 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+
+<div id="outline-container-org2b5005e" class="outline-2">
+<h2 id="org2b5005e">Lesson 82 Monster or fish?</h2>
+<div class="outline-text-2" id="text-org2b5005e">
+<p class="verse">
+What was the monster called?<br />
+<br />
+Fishermen and sailors sometimes <b>claim to have seen</b> monsters in the sea.<br />
+Though people have often <b>laughed at</b> stories told by seamen,<br />
+&#xa0;<b>it is now known that</b><br />
+&#xa0;&#xa0;many of these 'monsters' which have <b>at times</b> been sighted are simply strange fish.<br />
+Occasionally, unusual creatures are washed to the shore,<br />
+&#xa0;but they are rarely caught <b>out at sea</b>.<br />
+Some time ago, however, a peculiar fish was caught near Madagascar.<br />
+A small fishing boat was carried miles out to sea by the powerful fish as it pulled on the line.<br />
+Realizing that this was no ordinary fish,<br />
+&#xa0;the fisherman made every effort not to damage it <b>in any way</b>.<br />
+When it was eventually brought to shore,<br />
+&#xa0;<b>it was found to be</b> over thirteen feet long.<br />
+It had a head like a horse,<br />
+&#xa0;big blue eyes, shining silver skin, and a bright red tail.<br />
+The fish, which has since been sent to a museum<br />
+&#xa0;&#xa0;where it is being examined by a scientist,<br />
+&#xa0;is called an oarfish.<br />
+Such creatures have rarely been seen alive by man as they live at <b>a depth of</b> six hundred feet.<br />
+</p>
+</div>
+<div id="outline-container-orgdb3769d" class="outline-3">
+<h3 id="orgdb3769d">expression</h3>
+<div class="outline-text-3" id="text-orgdb3769d">
+<p>
+monster [ˈmɑnstər] n.怪物<br />
+sailor [ˈseɪlər] n.海员<br />
+sight [saɪt] v.见到<br />
+creature [ˈkritʃər] n.动物,生物<br />
+peculiar [pɪˈkjuljər] adj.奇怪的,不寻常的<br />
+shining [ˈʃaɪnɪŋ] adj.闪闪发光的<br />
+oarfish ['ɔːfɪʃ] n.浆鱼<br />
+</p>
+
+<p>
+shining example 光辉榜样<br />
+</p>
+<hr />
+<p>
+claim to have done sth. 声称做过某事<br />
+laugh at &#x2026; 嘲笑某人<br />
+it is (well) known that &#x2026; 众所周知，……<br />
+at times 有时候<br />
+out at sea 在海上<br />
+in any way 以任何方式<br />
+it was found to be &#x2026; 它被发现是……<br />
+a depth of &#x2026;(34 ft) xx的深度<br />
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org212233f" class="outline-3">
+<h3 id="org212233f">words</h3>
+<div class="outline-text-3" id="text-org212233f">
+<p>
+monster [ˈmɑnstər] n.怪物<br />
+sailor [ˈseɪlər] n.海员<br />
+sight [saɪt] v.见到<br />
+creature [ˈkritʃər] n.动物,生物<br />
+peculiar [pɪˈkjuljər] adj.奇怪的,不寻常的<br />
+shining [ˈʃaɪnɪŋ] adj.闪闪发光的<br />
+oarfish ['ɔːfɪʃ] n.浆鱼<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org1d8580c" class="outline-3">
+<h3 id="org1d8580c"><span class="done DONE">DONE</span> 单词造句</h3>
+<div class="outline-text-3" id="text-org1d8580c">
+<p>
+monster n.<br />
+</p>
+<ul class="org-ul">
+<li>The president is such a monster that everything can't return to normal.<br /></li>
+<li>I suffered from a great deal the little monster.<br /></li>
+<li>Calm down, she's not a monster.<br /></li>
+<li>My cousin urged me to touch that monster.<br /></li>
+<li>I don't have the nerve to talk to the monster.<br /></li>
+</ul>
+<p>
+sailor n.<br />
+</p>
+<ul class="org-ul">
+<li>The sailor will be sailing from the Pinhurst Harbor.<br /></li>
+<li>The sailor has been away from home for over six monthes.<br /></li>
+<li>The sailor was pround of his captain.<br /></li>
+<li>We are going to say goodbye to the sailors.<br /></li>
+<li>The sailor has taken part in an important competition.<br /></li>
+</ul>
+<p>
+sight v.<br />
+</p>
+<ul class="org-ul">
+<li>After have been traveling at sea for over a month, they managed to sight the land.<br /></li>
+<li>We will sight the land in twenty minute's time.<br /></li>
+<li>The puma at large has been sighted for several times in the forest.<br /></li>
+<li>It's said that the monster was never been sighted.<br /></li>
+<li>It was no long before she sighted the cat.<br /></li>
+</ul>
+<p>
+creature n.<br />
+</p>
+<ul class="org-ul">
+<li>Oarfish is such an unusual creature that we all have never sighted it before.<br /></li>
+<li>The unusual creature is obviously a private collection.<br /></li>
+<li>The little boy was not allowed to touch the unusual creature.<br /></li>
+<li>This unusual creature is asking him for food out at sea.<br /></li>
+<li>He claimed to have seen an unusual creature out at sea.<br /></li>
+</ul>
+<p>
+peculiar adj.<br />
+</p>
+<ul class="org-ul">
+<li>The detective is such a huge fan of various peculiar monsters.<br /></li>
+<li>He was curious to find out why his mom is a big fan of various peculiar fish.<br /></li>
+<li>In return for this, he sent me a peculiar toy.<br /></li>
+<li>The peculiar is gathering round out at sea.<br /></li>
+<li>Don't ask me to touch the peculiar fish over and over again.<br /></li>
+</ul>
+<p>
+shining adj. shining example<br />
+</p>
+<ul class="org-ul">
+<li>The policeman is a shining example to us and we should help him keep order on that occasion.<br /></li>
+<li>He gets such a good salary that he is a shining example to us.<br /></li>
+<li>You're a shining example to us. I said in a strong voice.<br /></li>
+<li>Sorry to interrupt, but she is indeed a shining example to me.<br /></li>
+<li>Leo managed to speak English fluently and he is a shining example to me.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgf256a00" class="outline-3">
+<h3 id="orgf256a00"><span class="done DONE">DONE</span> 反复听电影片段</h3>
+<div class="outline-text-3" id="text-orgf256a00">
+</div>
+</div>
+<div id="outline-container-orga0e600a" class="outline-3">
+<h3 id="orga0e600a"><span class="done DONE">DONE</span> Pattern Drill 写+读</h3>
+<div class="outline-text-3" id="text-orga0e600a">
+<ul class="org-ul">
+<li>1t: warn John<br />
+s1: Someone must warn John immediately.<br />
+s2: Don't worry. He's already been warned.<br />
+<ul class="org-ul">
+<li>find the girl<br />
+Someone must find the girl immediately.<br />
+Don't worry. She's already been found.<br /></li>
+<li>make the tea<br />
+Some one must make the tea immediately.<br />
+Don't worry. It's already been made.<br /></li>
+<li>examine the body<br />
+Some one must examine the body immediately.<br />
+Don't worry. It's already been examined.<br /></li>
+<li>light the fire<br />
+Some one must light the fire immediately.<br />
+Don't worry. It's already been lit.<br /></li>
+</ul></li>
+<li>2t: men - caught<br />
+s1: Have the men been caught yet?<br />
+s2: One of them was caught yesterday, but the other hasn't been caught yet.<br />
+<ul class="org-ul">
+<li>letters - written<br />
+Have the letters been written yet?<br />
+One of them was written yesterday, but the other hasn't been written yet.<br /></li>
+<li>messages - received<br />
+Have the messaged been received yet?<br />
+One of them was received yesterday, but the other hasn't been received yet.<br /></li>
+<li>books - published<br />
+Have the books been published yet?<br />
+One of them was published yesterday, but the other hasn't been published yet.<br /></li>
+<li>cars - found<br />
+Have the cars been found yet?<br />
+One of them was found yesterday, but the other hasn't been found yet.<br /></li>
+</ul></li>
+<li>Be supposed to do<br />
+3t: that man working<br />
+s1: Why isn't that man working?<br />
+s2: I don't know. He's supposed to be working.<br />
+<ul class="org-ul">
+<li>the children resting<br />
+Why aren't the children resting?<br />
+I don't know. They're supposed to be resting.<br /></li>
+<li>those men digging<br />
+Why aren't those men digging?<br />
+I don't know. They're supposed to be digging.<br /></li>
+<li>that boy washing the car<br />
+Why isn't that boy washing the car?<br />
+I don't know. He's supposed to be washing it.<br /></li>
+<li>the plane flying to Paris<br />
+Why isn't the plane flying to Paris?<br />
+I don't know. It's supposed to be flying to Paris.<br /></li>
+</ul></li>
+<li>4t: finish the job - hours<br />
+s1: When will the job be finished?<br />
+s2: I've no idea. It should have been finished hours ago.<br />
+<ul class="org-ul">
+<li>write the book - months<br />
+When will the book be written?<br />
+I've no idea. It should have been written months ago.<br /></li>
+<li>mend the radio - days<br />
+When will the radio be mended?<br />
+I've no idea. It should have been mended days ago.<br /></li>
+<li>draw up the agreement - weeks<br />
+When will the agreement be drawn up?<br />
+I've no idea. It should have been drawn up weeks ago.<br /></li>
+<li>burn the rubbish - days<br />
+When will the rubbish be burnt?<br />
+I've no idea. It should have been burnt days ago.<br /></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orge0c1989" class="outline-3">
+<h3 id="orge0c1989">给自己讲解</h3>
+</div>
+<div id="outline-container-orgca1e924" class="outline-3">
+<h3 id="orgca1e924">红皮书</h3>
+</div>
+<div id="outline-container-org782bd68" class="outline-3">
+<h3 id="org782bd68"><span class="done DONE">DONE</span> 习惯用法造句</h3>
+<div class="outline-text-3" id="text-org782bd68">
+<p>
+claim to have done sth.<br />
+</p>
+<ul class="org-ul">
+<li>She claimed to have driven on to the hometown.<br /></li>
+<li>She claimed to have taken a lift.<br /></li>
+<li>He claimed to have left a note on the car.<br /></li>
+<li>She claimed to have parked his car in the street.<br /></li>
+<li>She claimed to have hurried to the hospital.<br /></li>
+</ul>
+<p>
+laugh at &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>She might have laughed at you at that moment.<br /></li>
+<li>If they were keen on studying, they wouldn't have laughed at you.<br /></li>
+<li>For some reason, the girl kept laughing at her boyfriend.<br /></li>
+<li>Even her parents laughed at him for several times, his was determined to cross the Channel.<br /></li>
+<li>She began to complain about her father and laugh at him.<br /></li>
+</ul>
+<p>
+it is (well) known that &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>It is known that the guards discovered that a prisoner had escaped.<br /></li>
+<li>It is known that the soldier must stand to the officer in that country.<br /></li>
+<li>It is known that she wander up and down in front of the camp.<br /></li>
+<li>It is known that she lost all her money in the village.<br /></li>
+<li>It is known that the world is changing rapidly no matter what you do.<br /></li>
+</ul>
+<p>
+at times<br />
+</p>
+<ul class="org-ul">
+<li>My wife feels frightened at times.<br /></li>
+<li>I was disappointed to learn that my wife lose her temper at times.<br /></li>
+<li>The worker fired his boss, for his boss lost his temper at times on these occasions.<br /></li>
+<li>I am used to taking charge of my friend's cat at times.<br /></li>
+<li>The terrorist plants a bomb on the plane at times.<br /></li>
+</ul>
+<p>
+out at sea<br />
+</p>
+<ul class="org-ul">
+<li>The ship was now out at sea.<br /></li>
+<li>The seaman discovered that the boat had been out at sea for over six months.<br /></li>
+<li>The boat is out at sea of all time.<br /></li>
+<li>She was sure that the boat was out at sea.<br /></li>
+<li>The boat sent a signal out a sea.<br /></li>
+</ul>
+<p>
+in any way<br />
+</p>
+<ul class="org-ul">
+<li>I'm trying to avoid arguing with my wife in any way.<br /></li>
+<li>The plane is trying to touch down on the ground in any way.<br /></li>
+<li>He insisted on living abroad in any way.<br /></li>
+<li>She is offering her son foods in any way.<br /></li>
+<li>The doctors is trying to prevent the mummy from falling to pieces in any way.<br /></li>
+</ul>
+<p>
+sth./sb. was found to be &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>He was found to be a terrible godfather.<br /></li>
+<li>The moment I am found to be worthless, I will fire my boss.<br /></li>
+<li>As soon as he had been found to be worthless, he was fired by his boss.<br /></li>
+<li>The story was found to be interesting.<br /></li>
+<li>The monster was found to be an ordinary fish.<br /></li>
+</ul>
+<p>
+a depth of &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>The lake is found to be over a depth of six hundred feet.<br /></li>
+<li>The villager was delighted to find water at a depth of twenty meters.<br /></li>
+<li>I don't have the nerve to hide in a cave at a depth of six hundred feet.<br /></li>
+<li>Finding water at a depth of 600 meters gave him satisfaction.<br /></li>
+<li>The mummy was found in a cave at depth of six hundred feet.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org90a5659" class="outline-3">
+<h3 id="org90a5659"><span class="done DONE">DONE</span> 跟读至背诵</h3>
+<div class="outline-text-3" id="text-org90a5659">
+</div>
+</div>
+<div id="outline-container-orgb6abf38" class="outline-3">
+<h3 id="orgb6abf38"><span class="done DONE">DONE</span> Ask me if 写+读</h3>
+<div class="outline-text-3" id="text-orgb6abf38">
+<ol class="org-ol">
+<li>Fishermen tell many stories. What/Who<br />
+What stories do Fishermen tell?<br />
+Who tell many stories?<br /></li>
+<li>They sometimes claim to have seen monsters in the sea. What/ Where<br />
+What do they sometimes claim?<br />
+Where do they sometimes claim to have seen monsters?<br /></li>
+<li>People laugh at stories told by seamen. What/Why<br />
+What do people laugh at?<br />
+Why do people laugh at stories told by seamen?<br /></li>
+<li>Many of these 'monsters' are simply strange fish. What<br />
+What are many of these 'monsters'?<br /></li>
+<li>Unusual creatures are occasionally washed to the shore. How often/What kind<br />
+How often are unusual creatures washed to the shore?<br />
+What kind of creatures are occasionally washed to the shore?<br /></li>
+<li>They are rarely caught out at sea. Where<br />
+Where are they caught?<br /></li>
+<li>A peculiar fish was caught some time ago near Madagascar. Where/When<br />
+Where was a peculiar fish caught some time ago?<br />
+When was a peculiar fish caught near Madagascar?<br /></li>
+<li>It carried a small fishing boat miles out to sea. How far/What<br />
+How far did it carry a small fishing boat out to sea?<br />
+What did it carried miles out to sea?<br /></li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org1b09c56" class="outline-3">
+<h3 id="org1b09c56"><span class="done DONE">DONE</span> 摘要写作</h3>
+<div class="outline-text-3" id="text-org1b09c56">
+<p>
+A strange fish was caught near Madagascar<br />
+	after having pulled a fishing boat miles out to sea.<br />
+Making every effort not to damage it, the fisherman brought it to shore.<br />
+The fish, which was thirteen feet long, with a head like a horse,<br />
+	was sent to a museum.<br />
+It was being examined by a schienti,<br />
+	who said it was an oarfish and that such creatures live at a depth of six hundred feet.<br />
+</p>
+
+<p>
+A strange fish was caught near Madagascar.<br />
+Though it pulled a fishing boat miles out to sea,<br />
+	the fisherman made every effort not to damage it.<br />
+On being brought to shore,<br />
+	the fish was found to be over thriteen feet and to had a head like a horse.<br />
+Now that it has been sent to a museum, it is being examined by a scientist.<br />
+It is called an oarfish and lives at depth of six hundred feet.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org42babd5" class="outline-3">
+<h3 id="org42babd5"><span class="done DONE">DONE</span> tell the story 口语</h3>
+<div class="outline-text-3" id="text-org42babd5">
+</div>
+</div>
+<div id="outline-container-org1ebca30" class="outline-3">
+<h3 id="org1ebca30">Topics for discussion</h3>
+</div>
+</div>
+</div>
+</body>
+</html>

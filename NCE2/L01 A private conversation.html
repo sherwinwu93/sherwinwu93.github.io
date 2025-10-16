@@ -1,0 +1,621 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-08-06 Tue 22:27 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-orge7d8651" class="outline-2">
+<h2 id="orge7d8651">Lesson 1 A private conversation</h2>
+<div class="outline-text-2" id="text-orge7d8651">
+<p class="verse">
+Why did the writer complain to the people behind him?<br />
+<br />
+Last week I <b>went to the theatre</b>.<br />
+I <b>had a very good seat</b>.<br />
+The play was very interesting.<br />
+<br />
+I did not enjoy it.<br />
+A young man and a young woman were sitting behind me.<br />
+They were talking loudly.<br />
+<br />
+I <b>got very angry</b>.<br />
+I could not hear the actors.<br />
+I turned round.<br />
+I looked at the man and the woman angrily.<br />
+They did not pay any attention.<br />
+<br />
+<b>In the end</b>, I could not bear it.<br />
+I turned round again.<br />
+'I can't hear a word!' I said angrily.<br />
+'<b>It's none of your business</b>,' the young man said rudely. 'This is a private conversation.'<br />
+</p>
+</div>
+<div id="outline-container-orgf57feb0" class="outline-3">
+<h3 id="orgf57feb0">expression</h3>
+<div class="outline-text-3" id="text-orgf57feb0">
+<p>
+private [ˈpraɪvət] adj.私人的<br />
+conversation [ˌkɒnvəˈseɪʃ(ə)n] n.谈话<br />
+theatre [ˈθɪətə(r)] n.戏院<br />
+seat [siːt] n.座位<br />
+play [pleɪ] n.戏<br />
+loudly [ˈlaʊdli] n.大声地<br />
+angry [ˈæŋɡri] adj.生气的<br />
+angrily [ˈæŋɡrəli] adv.生气地<br />
+attention [əˈtenʃ(ə)n] n.注意<br />
+bear [beə(r)] v.容忍<br />
+business [ˈbɪznəs] n.事<br />
+rudely [ˈruːdli] adv.粗鲁地<br />
+</p>
+
+<p>
+have a conversation: 谈话<br />
+take a seat: 坐座位<br />
+Is the seat taken?: 这个位置被坐了吗<br />
+How can you bear that?: 你怎么忍受那个的?<br />
+Don't be rude: 别粗鲁<br />
+</p>
+<hr />
+<p>
+6123456:<br />
+	 6: When<br />
+	 1: 主<br />
+	 2: 谓/系<br />
+	 3: 宾/表<br />
+	 4: how<br />
+	 5: where<br />
+	 6: when<br />
+give me that book VS give it to me<br />
+</p>
+<ol class="org-ol">
+<li>如何造一个英语句子: 123<br /></li>
+<li>如何造一个好的英文句子: 123456<br /></li>
+<li>英语语序<br /></li>
+</ol>
+
+<p>
+go to the theatre: 去看戏<br />
+have a good seat: 有好座位<br />
+get angry: 变得生气<br />
+turn round: 转身<br />
+pay attention: 注意<br />
+in the end: 最终<br />
+couldn't bear it: 忍不了了<br />
+It's none of your business: 与你无关<br />
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org95a4798" class="outline-3">
+<h3 id="org95a4798">单词造句</h3>
+<div class="outline-text-3" id="text-org95a4798">
+<p>
+private adj.<br />
+</p>
+<ul class="org-ul">
+<li>She goes to a private hospital.<br /></li>
+<li>Why does she go to a private hospital?<br /></li>
+<li>Don't go to a private hospital. It's dangerous!<br /></li>
+<li>When did she go to a private hospital!<br /></li>
+<li>She goes to a private hospital by bus.<br /></li>
+</ul>
+<p>
+conversation n.<br />
+</p>
+<ul class="org-ul">
+<li>I had a conversation with her yesterday.<br /></li>
+<li>This is a private conversation.<br /></li>
+<li>How did you have a conversation with her?<br /></li>
+<li>Why did you have a conversation with her yesterday?<br /></li>
+<li>Where did you have a conversation with her yesterday?<br /></li>
+</ul>
+<p>
+theatre n.<br />
+</p>
+<ul class="org-ul">
+<li>I've been to that theatre.<br /></li>
+<li>He has never been to that theatre.<br /></li>
+<li>Let's go to the theatre.<br /></li>
+<li>How do we go to the theatre?<br /></li>
+<li>When do we go to the theatre?<br /></li>
+</ul>
+<p>
+seat n.<br />
+</p>
+<ul class="org-ul">
+<li>I have a good seat at home.<br /></li>
+<li>Why did you have a good seat?<br /></li>
+<li>Is the seat taken?<br /></li>
+<li>I taked a seat in bedroom.<br /></li>
+<li>Why do you take a seat now?<br /></li>
+</ul>
+<p>
+play n.<br />
+</p>
+<ul class="org-ul">
+<li>It's interesting to watch a play.<br /></li>
+<li>I'm watching a play with her.<br /></li>
+<li>When did you watch a play?<br /></li>
+<li>How did you watch a play?<br /></li>
+<li>Why do you watch a play?<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgbbcf2e9" class="outline-3">
+<h3 id="orgbbcf2e9">反复听电影片段</h3>
+</div>
+<div id="outline-container-orgff0779e" class="outline-3">
+<h3 id="orgff0779e">Pattern Drill 写+读</h3>
+<div class="outline-text-3" id="text-orgff0779e">
+<ul class="org-ul">
+<li>1T: walk - across the stage - show<br />
+S1: How did she walk across the stage?<br />
+S2: She walked very slowly across the stage.<br />
+<ul class="org-ul">
+<li>Behave - at the theatre - rude/bad<br />
+How did she behave at the theatre?<br />
+She behaved very rudely at the theatre?<br /></li>
+<li>drive - through the park - quick/slow<br />
+How did she drive through the park?<br />
+She drived very slowly through the park.<br /></li>
+<li>sleep - on the train - sound/quite<br />
+How did he sleep on the train?<br />
+He slept very quitely on the train.<br /></li>
+<li>listen - to his story - patient/ careful<br />
+How did she listen to his story?<br />
+She listened carefully to his story.<br /></li>
+</ul></li>
+<li>2T: hear the radio<br />
+S1: I can hear the radio now. Can you?<br />
+S2: Of course I can. I can hear it perfectly well.<br />
+<ul class="org-ul">
+<li>hear the actors<br />
+I can hear the actors now. Can you?<br />
+Of course I can. I can hear them perfectly well.<br /></li>
+<li>see those men<br />
+I can see those men now. Can you?<br />
+Of course I can. I can see them perfectly well.<br /></li>
+<li>see the theatre<br />
+I can see the theatre now. Can you?<br />
+Of course I can. I can see it perfectly well.<br /></li>
+<li>see the police<br />
+I can see the policeman now. Can you?<br />
+Of course I can. I can see him perfectly well.<br /></li>
+</ul></li>
+<li>3T: last night - a good talk on the radio - saw/heard<br />
+S: I heard a good talk on the radio last night.<br />
+<ul class="org-ul">
+<li>just now - a voice/knock - at the door<br />
+I heard a knock at the door just now.<br /></li>
+<li>last night - a cry/shout - outside<br />
+I heard a cry outside last night.<br /></li>
+<li>at lunch - a fly/hair - in my soup<br />
+I saw a hair in my soup at lunch.<br /></li>
+<li>last night - a camel/monkey - at the zoo.<br />
+I saw a camel at the zoo last week.<br /></li>
+</ul></li>
+<li>4T: see the race - large - crowd<br />
+S1: Didn't you see the race?<br />
+S2: I couldn't. The crowd was too large.<br />
+<ul class="org-ul">
+<li>read the letter - small/bad - writing<br />
+Didn't you read the letter?<br />
+I couldn't. The writing was too small.<br /></li>
+<li>see her face - poor/bad - light<br />
+Didn't you see her face?<br />
+I couldn't. The light was too poor.<br /></li>
+<li>swim in the lake - could/deep - water.<br />
+Didn't you swim in the lake?<br />
+I couldn't. The water was too deep.<br /></li>
+<li>finish your lunch - hot/salty - food<br />
+Didn't you finish your lunch?<br />
+I couldn't. The food was too salty.<br /></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org5fa7666" class="outline-3">
+<h3 id="org5fa7666">给自己讲解</h3>
+</div>
+<div id="outline-container-orgf3b9bb3" class="outline-3">
+<h3 id="orgf3b9bb3">红皮书</h3>
+</div>
+<div id="outline-container-org455fcaa" class="outline-3">
+<h3 id="org455fcaa">习惯用法造句</h3>
+<div class="outline-text-3" id="text-org455fcaa">
+<p>
+go to the theatre<br />
+</p>
+<ul class="org-ul">
+<li>I went to the theatre on Saturday.<br /></li>
+<li>Did you go to the theatre on Saturday?<br /></li>
+<li>Who went to the theatre on Saturday?<br /></li>
+<li>When did you go to the theatre?<br /></li>
+<li>How did you go to the theatre on Saturday?<br /></li>
+</ul>
+<p>
+have a good seat<br />
+</p>
+<ul class="org-ul">
+<li>I had a good seat yesterday.<br /></li>
+<li>Did you have a good seat yesterday?<br /></li>
+<li>Who have a good seat yesterday?<br /></li>
+<li>When did you have a good seat?<br /></li>
+<li>How did you have a good seat?<br /></li>
+</ul>
+<p>
+get angry<br />
+</p>
+<ul class="org-ul">
+<li>I got very angry yesterday.<br /></li>
+<li>Why did you get angry yesterday?<br /></li>
+<li>When did you got angry?<br /></li>
+<li>Where did you get very angry?<br /></li>
+<li>Did you get very angry yesterday.<br /></li>
+</ul>
+<p>
+turn round<br />
+</p>
+<ul class="org-ul">
+<li>He always turns round in the class.<br /></li>
+<li>Who always turns round in the class?<br /></li>
+<li>How often does he turn round in the class?<br /></li>
+<li>Why does he always turn round in the class?<br /></li>
+<li>Where does he always turn round?<br /></li>
+</ul>
+<p>
+pay attention<br />
+</p>
+<ul class="org-ul">
+<li>They did not pay any attention.<br /></li>
+<li>Did they pay a attention?<br /></li>
+<li>Why didn't they pay any attention?<br /></li>
+<li>Who did not pay any attention?<br /></li>
+<li>When did not they pay any attention?<br /></li>
+</ul>
+<p>
+in the end<br />
+</p>
+<ul class="org-ul">
+<li>In the end, my mom and me went to the theatre.<br /></li>
+<li>Did your mom and you go to the theatre in the end?<br /></li>
+<li>Why did your mom and you go to the theatre in the end?<br /></li>
+<li>Where did your mom and you go in the end?<br /></li>
+<li>How did your mom and you go to the theatre in the end?<br /></li>
+</ul>
+<p>
+couldn't bear it<br />
+</p>
+<ul class="org-ul">
+<li>I couldn't bear it.<br /></li>
+<li>How could you bear it?<br /></li>
+<li>Why could you bear it?<br /></li>
+<li>Who could bear it?<br /></li>
+<li>When couldn't you bear it?<br /></li>
+</ul>
+<p>
+It's none of your business<br />
+</p>
+<ul class="org-ul">
+<li></li>
+
+<li></li>
+
+<li></li>
+
+<li></li>
+
+<li></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orge4c855b" class="outline-3">
+<h3 id="orge4c855b">跟读至背诵</h3>
+</div>
+<div id="outline-container-org539e0a8" class="outline-3">
+<h3 id="org539e0a8">Ask me if 写+读</h3>
+<div class="outline-text-3" id="text-org539e0a8">
+<ol class="org-ol">
+<li>I went to the theatre last week. When<br />
+When did you go to the theatre?<br /></li>
+<li>I had a good seat. What kind of<br />
+What kind of seat did you have?<br /></li>
+<li>I saw an interesting play. What<br />
+What did you see?<br /></li>
+<li>A young man and a young woman was sitting behind me. Who/When<br />
+Who was sitting behind you?<br />
+When was the young man and the young woman sitting?<br /></li>
+<li>They were talking loudly. How<br />
+How were they talking?<br /></li>
+<li>I couldn't hear the actors. Who<br />
+Who couldn't hear the actors?<br /></li>
+<li>I turned round. What &#x2026; do<br />
+What did you do?<br /></li>
+<li>I looked at the man and the young woman angrily. How<br />
+How did you look at the man and the young woman?<br /></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-orga694a19" class="outline-3">
+<h3 id="orga694a19">摘要写作</h3>
+<div class="outline-text-3" id="text-orga694a19">
+<p>
+The writer went to the theatre last week.<br />
+He did not enjoy the play.<br />
+A young man and a young woman were sitting behind me.<br />
+They were talking loudly, he couldn't hear the actors.<br />
+He turned around, and said "I can't hear a word".<br />
+The young man said "This is a private conversation".<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orga55cd22" class="outline-3">
+<h3 id="orga55cd22">tell the story 口语</h3>
+</div>
+<div id="outline-container-org377c92e" class="outline-3">
+<h3 id="org377c92e">Topics for discussion</h3>
+<div class="outline-text-3" id="text-org377c92e">
+<ul class="org-ul">
+<li><p>
+When did you last go to the theatre/cinema? Tell me about the play/film.<br />
+I last went to the cinema about two months ago when I was wanderring in the mall.<br />
+Suddenly it occurred to me that it's been a long time I haven't watched a movie with my wife.<br />
+It happened that there was a movie directed by Gong Qijun,<br />
+ who made several famous animated movies.<br />
+Of course, this was his another animated movie.<br />
+A boy who has lost his mother when he was very young moved to a new place<br />
+ where he met his mother-in-law.<br />
+It seemed that he didn't like his new mother.<br />
+After he quarrelled with his new classmates and injured himself,<br />
+ he found a secret which was between his mother and his mother-in-law.<br />
+In the end, he got along well with his mother-in-law.<br />
+</p>
+<hr />
+<p>
+I last went to the cinema about two months ago when I was wandering in the mall.<br />
+Suddenly, it occurred to me<br />
+ that <b>it had been a long time since</b> I had watched a movie with my wife.<br />
+<b>As luck would have it</b>, there was a movie directed by Gong Qijun,<br />
+  who has made several famous animated movies.<br />
+Of course, this was another animated movie of his.<br />
+The movie <b>revolved around</b> a boy<br />
+ who had lost his mother at a very young age<br />
+   and moved to a new place where he met his mother-in-law.<br />
+It seemed that he didn't like his new mother.<br />
+After quarreling with his new classmates and injuring himself,<br />
+ he <b>discovered a secret</b> that involved his mother and his mother-in-law.<br />
+In the end, he managed to get along well with his mother-in-law.<br />
+</p></li>
+</ul>
+
+
+<ul class="org-ul">
+<li><p>
+Do you get angry easily? What sort of thing makes you angry?<br />
+Yes, I get angry easily.<br />
+I got angry in the case in which I couldn't get it under control.<br />
+Like my wife complains about some household chores and I sleep in and so on.<br />
+</p>
+<hr />
+<p>
+Yes, I do get angry easily.<br />
+I find it difficult to control my anger in certain situations.<br />
+For example, when my wife complains about household chores or when I oversleep,<br />
+ it tends to provoke my anger.<br />
+</p></li>
+<li><p>
+Would you like to be an actor? Why/Why not?<br />
+I wouldn't like to be an actor.<br />
+Because I'm too shy to disappear in TV.<br />
+And I don't like to get along with so many people.<br />
+Sometimes I'll fear that it will spoil my private life a lot if I rise to fame.<br />
+</p>
+<hr />
+<p>
+I wouldn't like to be an actor.<br />
+I'm too shy to be comfortable appearing on TV,<br />
+ and I prefer not to <b>interact with</b> large groups of people.<br />
+Additionally, I fear that fame would <b>intrude too much on</b> my private life<br />
+ if I were to become well-known.<br />
+</p></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,593 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-01-09 Thu 23:07 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-orgb5ea871" class="outline-2">
+<h2 id="orgb5ea871">2015-06-02 How people rationalize fraud</h2>
+<div class="outline-text-2" id="text-orgb5ea871">
+<p class="verse">
+If you ask people whether they think stealing is wrong, most of them would answer, "Yes."<br />
+And yet, in 2013,<br />
+&#xa0;organizations all over the world lost an estimated total of 3.7 trillion dollars to fraud,<br />
+&#xa0;&#xa0;which includes crimes like embezzlement, pyramid schemes, and false insurance claims.<br />
+This wasn't just the work of a few bad apples.<br />
+The truth is that many people are susceptible<br />
+&#xa0;not only to the temptation to commit fraud<br />
+&#xa0;but to convincing themselves that they've done nothing wrong.<br />
+<br />
+So why does fraud happen?<br />
+While individual motivations may differ from case to case,<br />
+&#xa0;the fraud triangle, a model developed by criminologist Donald Cressey,<br />
+&#xa0;&#xa0;shows three conditions that make fraud likely: pressure, opportunity, and rationalization.<br />
+Pressure is often what motivates someone to engage in fraud to begin with.<br />
+It could be a personal debt, an addiction, an earnings quota, a sudden job loss,<br />
+&#xa0;or an illness in the family.<br />
+As for opportunity, many people in both public and private sectors have access to tools<br />
+&#xa0;that enable them to commit and conceal fraud:<br />
+&#xa0;&#xa0;corporate credit cards, internal company data, or control over the budget.<br />
+The combination of pressure and being exposed to such opportunities on a daily basis<br />
+&#xa0;can create a strong temptation.<br />
+<br />
+But even with these two elements, most fraud still requires rationalization.<br />
+Many fraudsters are first time offenders,<br />
+&#xa0;so in order to commit an act most would regard as wrong, they need to justify it to themselves.<br />
+Some feel entitled to the money<br />
+&#xa0;because they are underpaid and overworked and others believe their fraud is victimless,<br />
+&#xa0;&#xa0;perhaps even planning to return the money once their crisis is resolved.<br />
+Some of the most common types of fraud don't even register as such to the perpetrator.<br />
+Examples include employees fudging time sheets or expense reports,<br />
+&#xa0;taxpayers failing to report cash earnings,<br />
+&#xa0;or service providers overbilling insurance companies.<br />
+Though these may seem small, and can sometimes only involve hundreds of dollars,<br />
+&#xa0;they all contribute to the big picture.<br />
+And then there's fraud on a massive scale.<br />
+<br />
+In 2003, Italian dairy food giant Parmalat went bankrupt<br />
+&#xa0;after it was found to have fabricated a 4 billion dollar bank account<br />
+&#xa0;&#xa0;&#xa0;and falsified financial statements<br />
+&#xa0;&#xa0;to hide the fact that its subsidiaries had been losing money.<br />
+Because it was family controlled, corporate governance and regulator supervision were difficult,<br />
+&#xa0;and the company likely hoped that the losses could be recouped before anyone found out.<br />
+<br />
+And it's not just corporate greed.<br />
+Governments and non-profits are also susceptible to fraud.<br />
+During her time as City Comptroller for Dixon, Illinois,<br />
+&#xa0;Rita Crundwell embezzled over 53 million dollars.<br />
+Rita was one of the country's leading quarter horse breeders and winner of 52 world championships.<br />
+But the cost of maintaining the herd ran to 200,000 dollars per month.<br />
+Because her position gave her complete control over city finances,<br />
+&#xa0;she was easily able to divert money to an account she used for private expenses,<br />
+&#xa0;&#xa0;and the scheme went unnoticed for 20 years.<br />
+It is believed that Crundwell felt entitled to a lavish lifestyle based on her position,<br />
+&#xa0;and the notoriety her winnings brought to the city.<br />
+<br />
+It's tempting to think of fraud as a victimless crime<br />
+&#xa0;because corporations and civic institutions aren't people.<br />
+But fraud harms real people in virtually every case:<br />
+&#xa0;the employees of Parmalat who lost their jobs,<br />
+&#xa0;the citizens of Dixon whose taxes subsidized horse breeding,<br />
+&#xa0;the customers of companies which raise their prices to offset losses.<br />
+Sometimes the effects are obvious and devastating,<br />
+&#xa0;like when Bernie Madoff caused thousands of people to lose their life savings.<br />
+But often they're subtle and not easy to untangle.<br />
+Yet someone, somewhere is left holding the bill.<br />
+</p>
+</div>
+<div id="outline-container-orgcf903b6" class="outline-3">
+<h3 id="orgcf903b6">expression</h3>
+<div class="outline-text-3" id="text-orgcf903b6">
+<p>
+trillion [ˈtrɪljən]: n. the number 1,000,000,000,000万亿,兆<br />
+embezzle [ɪmˈbez(ə)l] embezzlement: v.n. to steal money from the place where you work盗用, 挪用<br />
+insurance [ɪnˈʃʊrəns]: n. an arrangement with a company in which you pay them money, especially regularly, and they pay the costs if something bad happens, for example if you become ill or your car is damaged ⇨ assurance, third party insurance保险<br />
+triangle [ˈtraɪˌæŋɡ(ə)l]: n. a flat shape with three straight sides and three angles三角形<br />
+criminology [ˌkrɪmɪˈnɑlədʒi] criminologist: n.n. the scientific study of crime and criminals犯罪学<br />
+rationalize [ˈræʃ(ə)nəˌlaɪz] rationalization: v.n. if you rationalize behaviour that is wrong, you invent an explanation for it so that it does not seem as bad合理化<br />
+addiction [əˈdɪkʃ(ə)n]: n. the need to take a harmful drug regularly, without being able to stop沉溺, 上瘾<br />
+quota [ˈkwoʊtə]: n. an official limit on the number or amount of something that is allowed in a particular period限额<br />
+budget [ˈbʌdʒət]: n. the money that is available to an organization or person, or a plan of how it will be spent预算<br />
+fraudster [ˈfrɔdstər]: n. someone who has committed a fraud欺诈者<br />
+offender [əˈfendər]: n. someone who is guilty of a crime罪犯<br />
+underpaid [ˌʌndərˈpeɪd]: adj. earning less money than you deserve for your work所得报酬过低的<br />
+overworked [ˌoʊvərˈwɜrkt]: adj. made to work too hard过度工作<br />
+victimless [ˈvɪktɪmləs]: adj. 不侵害他人的<br />
+taxpayer [ˈtæksˌpeɪr]: n. a person that pays tax纳税人<br />
+overbill: v. 超额收费<br />
+fabricate [ˈfæbrɪˌkeɪt]: v. to invent a story, piece of information etc in order to deceive someone捏造<br />
+falsify [ˈfɔlsɪˌfaɪ]: v. to change figures, records etc so that they contain false information伪造<br />
+subsidiary [səbˈsɪdiˌeri]: n. a company that is owned or controlled by another larger company子公司<br />
+corporate [ˈkɔrp(ə)rət]: adj. belonging to or relating to a corporation公司的<br />
+governance [ˈɡʌvərnəns]: n. the act or process of governing管理<br />
+regulator [ˈreɡjəˌleɪtər]: n. someone who makes sure that a system operates properly or fairly监督者<br />
+supervision [ˌsupərˈvɪʒ(ə)n]: n. when you supervise someone or something监督<br />
+greed [ɡrid]: n. a strong desire for more food, money, power, possessions etc than you need SYN avarice贪欲, 贪婪<br />
+quarter horse: 夸特马<br />
+breeder [ˈbridər]: n. someone who breeds animals or plants as a job饲者<br />
+finance [fɪˈnæns]: n. 金融<br />
+subsidize [ˈsʌbsɪˌdaɪz]: v. if a government or organization subsidizes a company, activity etc, it pays part of its costs津贴<br />
+untangle [ʌnˈtæŋɡ(ə)l]: v. to make something less complicated解开<br />
+</p>
+<hr />
+<p>
+lost [money] to sth.: 因某事损失钱<br />
+pyramid schemes: 金字塔骗局<br />
+be susceptible to sth.: 易受某事影响<br />
+commit fraud: 犯欺诈罪<br />
+make sth. likely: 使得某事可能<br />
+motivate sb. to do sth.: 激励某人去做某事<br />
+a sudden job loss: 突然失业<br />
+in the public/private sector: 在公有或私立部门<br />
+credit cards: 信用卡<br />
+on a daily basis: 每天<br />
+justify sth. to sb.: 向某人证明某事有理<br />
+feel entitled to sth.: 觉得有资格得到某物<br />
+resolve crisis: 解决危机<br />
+register as sth. to sb.: 对某人来说是某物<br />
+fudge expense reports: 捏造费用报告<br />
+report cash earnings: 报告先进收入<br />
+recoup losses/ losses be recouped: 弥补损失<br />
+divert money to sp.(an account): 把钱转到<br />
+go unnoticed: 不为人知的<br />
+run to sth.: 到达&#x2026;<br />
+go bankrupt: 破产<br />
+to begin with: 在开始时<br />
+It is believed that + &#x2026;: 人们相信&#x2026;<br />
+raise prices: 提高价格<br />
+be left doing sth.: 被留下做某事<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orge078690" class="outline-3">
+<h3 id="orge078690">sentence</h3>
+<div class="outline-text-3" id="text-orge078690">
+<p>
+lost [money] to sth.: 因某事损失钱<br />
+</p>
+<ul class="org-ul">
+<li>We lost a great deal of money to the experiment you performed last month.<br /></li>
+<li>My wife is unwilling to lose money to my company anymore.<br /></li>
+<li>The chance of losing money to our new store is increasing exponentially.<br /></li>
+</ul>
+<p>
+pyramid schemes: 金字塔骗局<br />
+</p>
+<ul class="org-ul">
+<li>Imagine his dismay when he realized this turned out to be a pyramid scheme.<br /></li>
+<li>The police arrived on the scene and told the old lady this must be a pyramid scheme.<br /></li>
+<li>Let's expand on pyramid schemes to make this event clear.<br /></li>
+</ul>
+<p>
+be susceptible to sth.: 易受某事影响<br />
+</p>
+<ul class="org-ul">
+<li>She failed the exam, not because she was susceptible to video games,<br />
+but because she was not good at swimming.<br /></li>
+<li>I couldn't pay attention to the teacher, not because I was susceptible to birds outside,<br />
+but because I developed a fever.<br /></li>
+<li>This might explain why she was susceptible to the temptation of stealing clothes.<br /></li>
+</ul>
+<p>
+commit fraud: 犯欺诈罪<br />
+</p>
+<ul class="org-ul">
+<li>It is within only last century that fraud is committed frequently.<br /></li>
+<li>Being composed of finance in the public sector, she can't the temptation to commit fraud.<br /></li>
+<li>These criminals had one thing in common: committed fraud in the public sector.<br /></li>
+</ul>
+<p>
+make sth. likely: 使得某事可能<br />
+</p>
+<ul class="org-ul">
+<li>Because of the research into the brain, it makes treatment of OCD likely.<br /></li>
+<li>Making digestion likely, these bacteria are vital for your body.<br /></li>
+<li>'Making a profit is the only approach to make our research likely.' she shouted at me.<br /></li>
+</ul>
+<p>
+motivate sb. to do sth.: 激励某人去做某事<br />
+</p>
+<ul class="org-ul">
+<li>Mr. Leo always motivates us to read the history book at our own pace.<br /></li>
+<li>My dad used to motivate me to resolve the puzzle by myself.<br /></li>
+<li>His encouragement motivated me to break the world record.<br /></li>
+</ul>
+<p>
+a sudden job loss: 突然失业<br />
+</p>
+<ul class="org-ul">
+<li>A sudden job loss attacked my father, which led to a hard life in my youth.<br /></li>
+<li>Before deciding to buy a house, we must deliberate at length over a sudden job loss.<br /></li>
+<li>Despite a sudden job loss, he continued to spend a lot of money studying English.<br /></li>
+</ul>
+<p>
+in the public/private sector: 在公有或私立部门<br />
+</p>
+<ul class="org-ul">
+<li>It is not likely to get a good salary in the public sector.<br /></li>
+<li>It is more stable to work in the public sector than in the private sector.<br /></li>
+<li>It implies that he has been working in the public sector for ten years.<br /></li>
+</ul>
+<p>
+credit cards: 信用卡<br />
+</p>
+<ul class="org-ul">
+<li>Why do you keep interacting with my secretary who has access to corporate credit cards?<br /></li>
+<li>In one study, up to 90% of meals are paid for by credit cards in America.<br /></li>
+<li>They urged Rachel to stop using her father's credit cards.<br /></li>
+</ul>
+<p>
+on a daily basis: 每天<br />
+</p>
+<ul class="org-ul">
+<li>The busmen go on strike on a daily basis this week.<br /></li>
+<li>The vicar expresses his gratitude to the god on a daily basis.<br /></li>
+<li>She is fanatical about the team on a daily basis.<br /></li>
+</ul>
+<p>
+justify sth. to sb.: 向某人证明某事有理<br />
+</p>
+<ul class="org-ul">
+<li>The criminal failed to justify his behavior to the judge.<br /></li>
+<li>My wife has been justifying the decoration of our room to me for a whole morning.<br /></li>
+<li>He is trying to justify the arrangement of objects in this room to everyone in the party.<br /></li>
+</ul>
+<p>
+feel entitled to sth.: 觉得有资格得到某物<br />
+</p>
+<ul class="org-ul">
+<li>It is no use pretending that you feel entitled to the job.<br /></li>
+<li>Feeling entitled to the job, she applied for it just then.<br /></li>
+<li>Feeling entitled to entrepreneur, he managed to set up a factory in the suburbs.<br /></li>
+</ul>
+<p>
+resolve crisis: 解决危机<br />
+</p>
+<ul class="org-ul">
+<li>A series of factories set up in a suburb of the city eventually resolve crises.<br /></li>
+<li>With skills comes a good job, and he gets a good salary to resolve crises.<br /></li>
+<li>Making a profit this month, Mr. Leo managed to resolve crises in his company.<br /></li>
+</ul>
+<p>
+register as sth. to sb.: 对某人来说是某物<br />
+</p>
+<ul class="org-ul">
+<li>The note registers as an important memory to our family.<br /></li>
+<li>The clavichord registering as our friendship to us was broken down last week.<br /></li>
+<li>This action may register as a criminal to people in China.<br /></li>
+</ul>
+<p>
+fudge expense reports: 捏造费用报告<br />
+</p>
+<ul class="org-ul">
+<li>The boss kept his secretary fudging expense reports to avoid tax.<br /></li>
+<li>The worker used to fudge expense reports.<br /></li>
+<li>The worker can't resist the temptation to fudge expense reports.<br /></li>
+</ul>
+<p>
+report cash earnings: 报告现金收入<br />
+</p>
+<ul class="org-ul">
+<li>The grocer failed to refuse to report cash earnings.<br /></li>
+<li>The grocer doesn't report cash earnings so that he doesn't need to pay taxes.<br /></li>
+<li>The grocer was accused of not reporting cash earnings on time.<br /></li>
+</ul>
+<p>
+recoup losses/ losses be recouped: 弥补损失<br />
+</p>
+<ul class="org-ul">
+<li>So long as injury appears, it is impossible to recoup losses.<br /></li>
+<li>With losses being recouped, she has been assigned to be the official again.<br /></li>
+<li>She was assigned to recoup losses in this crisis.<br /></li>
+</ul>
+<p>
+divert money to sp.(an account): 把钱转到<br />
+</p>
+<ul class="org-ul">
+<li>The old lady insisted on diverting her money to an unknown account.<br /></li>
+<li>The boss has diverted his money to the account for public expense.<br /></li>
+<li>Although the alarm was given, the old lady proceeded to divert her money to an unknown account.<br /></li>
+</ul>
+<p>
+go unnoticed: 不为人知的<br />
+</p>
+<ul class="org-ul">
+<li>The fact that she poisoned her three husbands in her youth went unnoticed.<br /></li>
+<li>You don't feel guilty, the fraud will go unnoticed.<br /></li>
+<li>The poet going unnoticed for years published a masterpiece on history in the press.<br /></li>
+</ul>
+<p>
+run to sth.: 到达&#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>On the journey, the plane ran to a height of 10,000 miles.<br /></li>
+<li>It is estimated that the plane will run to a height of 10,000 miles.<br /></li>
+<li>The plane running to a height of 10,000 miles was regarded as a great experiment.<br /></li>
+</ul>
+<p>
+go bankrupt: 破产<br />
+</p>
+<ul class="org-ul">
+<li>The company is not being allowed to go bankrupt by the authorities.<br /></li>
+<li>It is estimated that the company will go bankrupt in this economic crisis.<br /></li>
+<li>After a big forest fire, the local authorities announced that they went bankrupt.<br /></li>
+</ul>
+<p>
+to begin with: 在开始时<br />
+</p>
+<ul class="org-ul">
+<li>To begin with, she was astonished to find that he had poisoned his ex-wife.<br /></li>
+<li>To begin with, a snake was wound around a length of electric wire.<br /></li>
+<li>To begin with, a stream wound its way across the field.<br /></li>
+</ul>
+<p>
+It is believed that + &#x2026;: 人们相信&#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>It is believed that these corpses feast on the life force of people.<br /></li>
+<li>It is believed that these creatures sustain themselves by sucking blood.<br /></li>
+<li>It is believed that the brutal executions were being carried out in the empire.<br /></li>
+</ul>
+<p>
+raise prices: 提高价格<br />
+</p>
+<ul class="org-ul">
+<li>With workers digging up more gold, it is time to raise prices to make a profile.<br /></li>
+<li>Mr. Leo raised the prices of his course randomly, which led to many complaints.<br /></li>
+<li>The authorities had to establish a law prohibiting raising prices during the war.<br /></li>
+</ul>
+<p>
+be left doing sth.: 被留下做某事<br />
+</p>
+<ul class="org-ul">
+<li>Needless to say, I was left taking care of the baby.<br /></li>
+<li>In China, many old men or women in villages are left taking care of children.<br /></li>
+<li>You must elaborate upon why I will be left feeding dogs.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org12df49f" class="outline-3">
+<h3 id="org12df49f">summary</h3>
+<div class="outline-text-3" id="text-org12df49f">
+<p>
+Although organizations all over the world have lost a great deal of money to fraud,<br />
+	many people guilty for this tend to believe that they are innocent.<br />
+The fraud triangle shows three conditions that make fraud likely:<br />
+	pressure, opportunity, and rationalization.<br />
+Pressesure,<br />
+		such as a job loss, an illness in family, and so on,<br />
+	movitates someone to engage in fraud to begin with.<br />
+Having access to tools in both public and privates sectors,<br />
+	many people have opportunities to commit and concel fraud.<br />
+As the act is often regarded as wrong,<br />
+	they also need to justify it to themselvess as first time offenders.<br />
+In business, Italian dairy reported farbricating a bank account and falsifying financial statements.<br />
+In government,<br />
+	Rita Crundwell, former City Comptroller for Dixon, Illinois, embezzled over 53 million dollars<br />
+		so that she could afford to her quarter horse breeding.<br />
+It's tempting to think of fraud as a victimless crime,<br />
+	however, frauds harms real people in virtually every case.<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgc5d2557" class="outline-3">
+<h3 id="orgc5d2557">summary2</h3>
+<div class="outline-text-3" id="text-orgc5d2557">
+<p>
+Although organizations all over the world have lost a great deal of money to fraud,<br />
+	many people who are guilty of this tend to believe that they are innocent.<br />
+The fraud triangle shows three conditions that make fraud likely:<br />
+	pressure, opportunity, and rationalization.<br />
+Pressure,<br />
+		such as a job loss, an illness in the family, and so on,<br />
+	motivates someone to engage in fraud to begin with.<br />
+Having access to tools in both public and private sectors,<br />
+	many people have opportunities to commit and conceal fraud.<br />
+As the act is often regarded as wrong,<br />
+	they also need to justify it to themselves as first-time offenders.<br />
+In business, Italian dairy reported fabricating a bank account and falsifying financial statements.<br />
+In government,<br />
+	Rita Crundwell, former City Comptroller for Dixon, Illinois, embezzled over 53 million dollars<br />
+		so that she could afford her quarter horse breeding.<br />
+It's tempting to think of fraud as a victimless crime,<br />
+	however, fraud harms real people in virtually every case.<br />
+</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

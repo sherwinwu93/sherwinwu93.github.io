@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-07-14 Sun 10:38 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-orge82b110" class="outline-2">
+<h2 id="orge82b110">task7 3-2 阅读subskills</h2>
+<div class="outline-text-2" id="text-orge82b110">
+<p>
+家庭作业:<br />
+材料: 剑雅17真题第一套<br />
+</p>
+<ol class="org-ol">
+<li><p>
+【必修】剑雅17真题，三篇阅读文章，只看题型。请总结考的是什么题型，尝试总结考察的抽象能力sub-skils是什么?<br />
+</p>
+<ol class="org-ol">
+<li>20m 1-13 13=填空 6+判断题(not given) 7<br /></li>
+<li>20m 14-26 13=配对 4+ 填空题 5+ 多选题 2<br /></li>
+<li>20m 27-40 14=填空 5+ 判断题 4+ 选择题 5<br /></li>
+</ol>
+<p>
+subskills:<br />
+  单词+语法+习惯用法<br />
+  拆长难句的能力<br />
+  猜上下文的能力<br />
+  同义词的能力<br />
+  总结大纲的能力<br />
+  检索信息的能力,scanning<br />
+</p></li>
+<li>【必修】精读第一篇文章 why we need to protect polar bears<br />
+<ol class="org-ol">
+<li>千万别做题<br /></li>
+<li>标记全文语法+生词+习惯用法(是否造句自选)<br /></li>
+</ol></li>
+<li>【必修】无需跟读，但反复阅读50遍 + 做题(查看正确率)<br /></li>
+<li>【选修】阅读'Meditation for Dummies'一书中'Following Your Breath'一文。<br />
+可以查阅冥想的好处，bing，咕咕咕。写作&amp;口语内容准备task0.5<br /></li>
+</ol>
+</div>
+<div id="outline-container-orgf42afea" class="outline-3">
+<h3 id="orgf42afea">疑问</h3>
+<div class="outline-text-3" id="text-orgf42afea">
+<ol class="org-ol">
+<li>为什么要阅读50遍? 记住体验<br /></li>
+<li>实际要读到什么程度? 读懂了,能输出<br /></li>
+<li>泛听要注意什么? 听力词汇,<br /></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org967fbb1" class="outline-3">
+<h3 id="org967fbb1">做题 全对了</h3>
+<div class="outline-text-3" id="text-org967fbb1">
+<ol class="org-ol">
+<li>population<br /></li>
+<li>suburbs<br /></li>
+<li>businessmen<br /></li>
+<li>funding<br /></li>
+<li>press<br /></li>
+<li>soil<br />
+---------------&#x2013;&#x2014;T F Not Give<br /></li>
+<li>F<br /></li>
+<li>N<br /></li>
+<li>T<br /></li>
+<li>T<br /></li>
+<li>F<br /></li>
+<li>F<br /></li>
+<li>N<br /></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org0a82d0c" class="outline-3">
+<h3 id="org0a82d0c">The development of the London underground railway 15| 15| 5 5 5 4</h3>
+<div class="outline-text-3" id="text-org0a82d0c">
+<p>
+In the first half of the 1800s, London's population grew at an astonishing rate,<br />
+	and the central area became increasingly congested.<br />
+In addition, the expansion of the overground railway network<br />
+	resulted in more and more passengers arriving in the capital.<br />
+However, in 1846, a Royal Commission decided<br />
+	that the railways should not be allowed to enter the City,<br />
+		the capital's historic and business centre.<br />
+The result was that the overground railway stations formed a ring around the City.<br />
+The area within consisted of poorly built, overcrowded slums<br />
+	and the streets were full of horse-drawn traffic.<br />
+Crossing the City became a nightmare.<br />
+It could take an hour and a half to travel 8 km by horse-drawn carriage or bus.<br />
+Numerous schemes were proposed to resolve these problems, but few succeeded.<br />
+</p>
+
+<p>
+Amongst the most vocal advocates for a solution to London's traffic problems was Charles Pearson,<br />
+	who worked as a solicitor for the City of London.<br />
+He saw both social and economic advantages in building an underground railway<br />
+	that would link the overground railway stations together<br />
+		and clear London slums at the same time.<br />
+His idea was to relocate the poor workers<br />
+			who lived in the inner-city slums<br />
+		to newly constructed suburbs,<br />
+	and to provide cheap rail travel for them to get to work.<br />
+Pearson's ideas gained support amongst some businessmen<br />
+	and in 1851 he submitted a plan to Parliament.<br />
+It was rejected,<br />
+	but coincided with a proposal from another group for an underground connecting line,<br />
+		which Parliament passed.<br />
+</p>
+
+<p>
+The two groups merged and established the Metropolitan Railway Company in August 1854.<br />
+The company's plan was to construct an underground railway line<br />
+	from the Great Western Railway's (GWR) station at Paddington<br />
+		to the edge of the City at Farringdon Street - a distance of almost 5 km.<br />
+The organisation had diffculty in raising the funding for such a radical and expensive scheme,<br />
+	not least because of the critical articles printed by the press.<br />
+Objectors argued that the tunnels would collapse under the weight of traffic overhead,<br />
+	buildings would be shaken<br />
+	and passengers would be poisoned by the emissions from the train engines.<br />
+However, Pearson and his partners persisted.<br />
+</p>
+
+<p>
+The GWR, aware<br />
+		that the new line would finally enable them to run trains into the heart of the City,<br />
+	invested almost $250,000 in the scheme.<br />
+Eventually, over a five-year period, $1m was raised.<br />
+The chosen route ran beneath existing main roads to minimise the expense of demolishing buildings.<br />
+Originally scheduled to be completed in 21 months,<br />
+	the construction of the underground line took three years.<br />
+It was built just below street level using a technique known as 'cut and cover'.<br />
+A trench about ten metres wide and six metres deep was dug,<br />
+	and the sides temporarily held up with timber beams.<br />
+Brick walls were then constructed,<br />
+	and finally a brick arch was added to create a tunnel.<br />
+A two-metre-deep layer of soil was laid on top of the tunnel and the road above rebuilt.<br />
+</p>
+
+<p>
+The Metropolitan line, which opened on 10th January 1863,<br />
+	was the world's first underground railway.<br />
+On its first day, almost 40,000 passengers were carried between Paddington and Farringdon,<br />
+	the journey taking about 18 minutes.<br />
+By the end of the Metropolitan's frst year of operation,<br />
+	9.5 million journeys had been made.<br />
+</p>
+
+<p>
+Even as the Metropolitan began operation,<br />
+	the first extensions to the line were being authorised;<br />
+		these were built over the next five years,<br />
+		reaching Moorgate in the east of London and Hammersmith in the west.<br />
+The original plan was to pull the trains with steam locomotives,<br />
+		using firebricks in the boilers to provide steam,<br />
+	but these engines were never introduced.<br />
+Instead, the line used specially designed locomotives<br />
+	that were fitted with water tanks in which steam could be condensed.<br />
+However, smoke and fumes remained a problem,<br />
+	even though ventilation shafts were added to the tunnels.<br />
+</p>
+
+<p>
+Despite the extension of the underground railway,<br />
+	by the 1880s, congestion on London's streets had become worse.<br />
+The problem was partly<br />
+	that the existing underground lines formed a circuit around the centre of London<br />
+			and extended to the suburbs,<br />
+		but did not cross the capital's centre.<br />
+The 'cut and cover' method of construction was not an option in this part of the capital.<br />
+The only alternative was to tunnel deep underground.<br />
+</p>
+
+<p>
+Although the technology to create these tunnels existed,<br />
+	steam locomotives could not be used in such a confined space.<br />
+It wasn't until the development of a reliable electric motor,<br />
+		and a means of transferring power from the generator to a moving train,<br />
+	that the world's first deep-level electric railway, the City &amp; South London, became possible.<br />
+The line opened in 1890, and ran from the City to Stockwell, south of the River Thames.<br />
+The trains were made up of three carriages and driven by electric engines.<br />
+The carriages were narrow and had tiny windows just below the roof<br />
+	because it was thought that passengers would not want to look out at the tunnel walls.<br />
+The line was not without its problems,<br />
+	mainly caused by an unreliable power supply.<br />
+Although the City &amp; South London Railway was a great technical achievement,<br />
+	it did not make a profit.<br />
+Then, in 1900 the Central London Railway, known as the 'Tuppenny Tube',<br />
+	began operation using new electric locomotives.<br />
+It was very popular<br />
+	and soon afterwards new railways and extensions were added to the growing tube network.<br />
+By 1907, the heart of today's Underground system was in place.<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org0c917ca" class="outline-3">
+<h3 id="org0c917ca">experession</h3>
+<div class="outline-text-3" id="text-org0c917ca">
+<p>
+In the first half of the 1800s<br />
+at an astonishing rate<br />
+congested: full of traffic<br />
+In addition<br />
+the expansion of sth.<br />
+the overground railway network<br />
+resulted in<br />
+more and more<br />
+sb. decide that + &#x2026;<br />
+The result was that + &#x2026;<br />
+formed a ring around sp.<br />
+within: during a certain period of time<br />
+consisted of<br />
+slums:a house or an area of a city that is in very bad condition, where very poor people live<br />
+were full of<br />
+horse-drawn traffc: vehicles are pulled by a horse<br />
+It take st. to do sth.<br />
+carriage:a vehicle with wheels that is pulled by a horse, used in the past<br />
+Numerous:many<br />
+were proposed to do sth.<br />
+resolve these problems<br />
+</p>
+
+<p>
+amongst sb. be sb.<br />
+vocal :expressing strong opinions publicly, especially about things that you disagree with<br />
+advocates for:to publicly support a particular way of doing something<br />
+worked as sjob. for scompany.<br />
+solicitor :a type of lawyer in Britain who gives legal advice, prepares the necessary documents when property is bought or sold, and defends people, especially in the lower courts of law  lawyer, advocate, barrister<br />
+see xx advantages in doing sth.<br />
+an underground railway<br />
+at the same time:<br />
+sb's idea is to do sth<br />
+relocate sb. to sp.<br />
+provide sth. for sb.<br />
+get to work<br />
+gain support<br />
+submit a plan to &#x2026;<br />
+be coincided with sb.: to come together in position or happen at or near the same time<br />
+proposal:a plan or suggestion which is made formally to an official person or group, or the act of making it<br />
+</p>
+
+<p>
+establish scompany.<br />
+sb's plan was to do sth.<br />
+a distance of almost 5 km<br />
+have diffculty in doing sth.<br />
+raising the funding/money for sth.<br />
+radical<br />
+not least<br />
+because of<br />
+A. be printed by B.<br />
+sb. argues that + &#x2026;<br />
+emissions: a gas or other substance that is sent into the air<br />
+</p>
+
+<p>
+be aware that + &#x2026;<br />
+enable sb. to do sth.<br />
+invest money.<br />
+in the scheme<br />
+main road<br />
+minimise the expense of sth.<br />
+be scheduled to do sth.<br />
+A. be known as B.<br />
+trench:a long narrow hole dug into the surface of the ground<br />
+dig a trench/ a trench is dug<br />
+timber:wood used for building or making things<br />
+beams:a long heavy piece of wood or metal used in building houses, bridges etc<br />
+Brick:a hard block of baked clay used for building walls, houses etc<br />
+A two-metre-deep layer of soil<br />
+on top of the tunnel<br />
+</p>
+
+<p>
+on its first day<br />
+sb. be carried between A. and B.<br />
+the journey taking &#x2026;: 独立主格<br />
+by the end of sth.<br />
+</p>
+
+
+<p>
+authorised:to give official permission for something<br />
+the first extensions to the line<br />
+reach placeA and placeB<br />
+use sth. to do sth.<br />
+introduced:to bring a plan, system, or product into use for the first time<br />
+locomotive:a railway engine<br />
+be fitted with<br />
+steam be condensed in: shortened<br />
+remain a problem<br />
+even though<br />
+A. be added to b.<br />
+shaft:a passage which goes down through a building or down into the ground, so that someone or something can get in or out<br />
+</p>
+
+<p>
+the extension of sth.<br />
+the problem was partly that + &#x2026;, but did not do sth.<br />
+the alternative is to do sth.<br />
+in a confined space<br />
+It wasn't until sth. that + &#x2026;<br />
+a means of<br />
+were made up of sth.<br />
+it is thought that + &#x2026;<br />
+want to do sth.<br />
+be without problems.<br />
+power supply<br />
+make a profit<br />
+be in place: working or ready to work; established.<br />
+</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

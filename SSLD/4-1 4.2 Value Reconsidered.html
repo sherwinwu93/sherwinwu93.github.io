@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-12-19 Thu 08:41 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-orgf31a27f" class="outline-2">
+<h2 id="orgf31a27f">4-1 4.2 Value Reconsidered</h2>
+<div class="outline-text-2" id="text-orgf31a27f">
+<p class="verse">
+Okay, so given the obvious limitations that Kahneman's prospect theory really sheds light on,<br />
+&#xa0;what are some of the insights that SSLD can bring to the table?<br />
+I think the key question that we would raise is the whole idea of value.<br />
+In economics, you have like a set of standards to determine what value might be,<br />
+&#xa0;like the market determines the value of a stock.<br />
+But then in interpersonal relationships, that doesn't really work that way.<br />
+One of the things that I always use as an example when I'm teaching my face-to-face class [LAUGH]<br />
+&#xa0;is bringing gifts on Valentine's Day.<br />
+Let's suppose that you have a couple, they started dating and this is the first Valentine's Day.<br />
+The guy spent $100, bring some flowers and chocolate.<br />
+The woman was delighted<br />
+&#xa0;and then she would be talking to her friends and showing it off to people at work or whatever.<br />
+So that gift carries a certain value,<br />
+&#xa0;and the excitement generated is maybe extremely valuable to this person.<br />
+And then the guy would also feel very gratified<br />
+&#xa0;when he gets feedback from the woman with regard to like how much she enjoyed receiving that gift.<br />
+So let us go like two, three, four years down the road, right?<br />
+<br />
+Inflation and everything kicked in, maybe the guy, this time, spent $200 on similar gift.<br />
+And well, even with inflation,<br />
+&#xa0;if you're spending $200, this would be a better looking bunch of flowers and chocolates.<br />
+But we're not sure<br />
+&#xa0;that the value that is experienced by the woman<br />
+&#xa0;&#xa0;would have gone up by almost 100%, right or 50%, or 30%.<br />
+I think there is a very good chance<br />
+&#xa0;that the overall value would be less than the first time when it was experienced, right?<br />
+Even though they were only spending $100 back then.<br />
+<br />
+So what the subjective experience of the value,<br />
+&#xa0;or like some economists would call this utility, right?<br />
+Does not actually bear a simple relationship to the monetary market value of something.<br />
+So that actually would give us a lot of insight<br />
+&#xa0;when we are looking at the arithmetic of love, so to speak, in any relationships.<br />
+<br />
+Another important point that I want to emphasize, coming from a SSLD perspective,<br />
+&#xa0;is that what is being valued varies from person to person.<br />
+Like someone who grows up with like privilege and easy access to material resources<br />
+&#xa0;may not value material stuff that much.<br />
+But this person may, for instance, value autonomy because my parents are rich and powerful.<br />
+They're running my life and I'm well furnished with whatever I need,<br />
+&#xa0;but I really would love to have more space for myself, right?<br />
+So that person would value this more.<br />
+But then, for someone who's like raised in a sort of a relatively deprived environment,<br />
+&#xa0;then some of these material goods would carry more value for him or her.<br />
+You know, this is something that I always wished to have, but didn't, right?<br />
+So when we look at value, we have to pay attention to individuals.<br />
+And then the other thing that we always talk about, obviously,<br />
+&#xa0;in SSLD is like because our needs do change, right?<br />
+So what we value actually would change as our needs change.<br />
+</p>
+</div>
+<div id="outline-container-org42e000e" class="outline-3">
+<h3 id="org42e000e">expression</h3>
+<div class="outline-text-3" id="text-org42e000e">
+<p>
+prospect [prəˈspekt]: n. a particular event which will probably or definitely happen in the future – used especially when you want to talk about how you feel about it前景<br />
+insight [ˈɪnˌsaɪt]: n. the ability to understand and realize what people or situations are really like眼光<br />
+stock [stɒk]: n. a ↑share in a company股票<br />
+generate [ˈdʒenəˌreɪt]: v. to produce or cause something SYN create产生<br />
+gratify [ˈɡrætɪˌfaɪ]: v. to make someone feel pleased and satisfied满足<br />
+inflation [ɪnˈfleɪʃ(ə)n]: n. a continuing increase in prices, or the rate at which prices increase通货膨胀<br />
+overall [ˈoʊvərˌɔl]: adj. considering or including everything全部的, 全面的<br />
+monetary [ˈmʌnəˌteri]: adj. relating to money, especially all the money in a particular country货币的, 金融的<br />
+arithmetic [əˈrɪθmətɪk]: n. the science of numbers involving adding, multiplying etc算术, 算法<br />
+deprived [dɪˈpraɪvd]: adj. not having the things that are necessary for a comfortable or happy life贫穷的<br />
+</p>
+<hr />
+<p>
+Given sth., + &#x2026;: 鉴于某事, + &#x2026;<br />
+shed light on sth.: 揭秘某事物<br />
+down the road: 在未来<br />
+kick in: 发生了<br />
+a bunch of flowers: 一串花<br />
+be furnished with sth.: 被供应某物/被配置某物<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org5bb42dc" class="outline-3">
+<h3 id="org5bb42dc">sentence</h3>
+<div class="outline-text-3" id="text-org5bb42dc">
+<p>
+prospect [prəˈspekt]: n. a particular event which will probably or definitely happen in the future – used especially when you want to talk about how you feel about it前景<br />
+</p>
+<ul class="org-ul">
+<li>Because of the Prospect Theory, the professor was rewarded with the Nobel Prize.<br /></li>
+<li>Many entreprenuers take advantage of the Prospect Theory to make big decisions about business.<br /></li>
+<li>My wife is looking forward to the prospect of her shop in the Internet.<br /></li>
+</ul>
+<p>
+insight [ˈɪnˌsaɪt]: n. the ability to understand and realize what people or situations are really like眼光<br />
+</p>
+<ul class="org-ul">
+<li>His insight of politics trend on the continent made him rise to fame swiftly.<br /></li>
+<li>The king admired him for the general's insight of battlefield.<br /></li>
+<li>His insight of learning English is very different from all who take the course.<br /></li>
+</ul>
+<p>
+stock [stɒk]: n. a ↑share in a company股票<br />
+</p>
+<ul class="org-ul">
+<li>I have been assailed by a man who want to sell stocks to me.<br /></li>
+<li>With two countries starting a war, the stocks of the company became worthless and it went bankrupt.<br /></li>
+<li>My wife can't resist the temptation to buy the stocks from her classmate.<br /></li>
+</ul>
+<p>
+generate [ˈdʒenəˌreɪt]: v. to produce or cause something SYN create产生<br />
+</p>
+<ul class="org-ul">
+<li>The code shall generate a series of random numbers as veritification code.<br /></li>
+<li>The generated poop can be an ingredient in fertilizer and gunpowder.<br /></li>
+<li>He suffered from the generated side effect by these pills.<br /></li>
+</ul>
+<p>
+gratify [ˈɡrætɪˌfaɪ]: v. to make someone feel pleased and satisfied满足<br />
+</p>
+<ul class="org-ul">
+<li>When he took another angle to look at his son's grade, he got gratified.<br /></li>
+<li>Customers usually get gratified because of the comprehensive service of the staff in the restaurant.<br /></li>
+<li>A vacation at a seaside resort may gratify your wife.<br /></li>
+</ul>
+<p>
+inflation [ɪnˈfleɪʃ(ə)n]: n. a continuing increase in prices, or the rate at which prices increase通货膨胀<br />
+</p>
+<ul class="org-ul">
+<li>The workers was underway to parade to protest against inflation.<br /></li>
+<li>The inflation parallelled the war the vicious king started.<br /></li>
+<li>I can't afford to real estate deby anymore because of the inflation.<br /></li>
+</ul>
+<p>
+overall [ˈoʊvərˌɔl]: adj. considering or including everything全部的, 全面的<br />
+</p>
+<ul class="org-ul">
+<li>The overall value of the bridge is hard to be estimated.<br /></li>
+<li>The overall score of the test means that I can't study abroad, which drives me mad.<br /></li>
+<li>My overall score of the test is beyond the average score.<br /></li>
+</ul>
+<p>
+monetary [ˈmʌnəˌteri]: adj. relating to money, especially all the money in a particular country货币的, 金融的<br />
+</p>
+<ul class="org-ul">
+<li>Before we move to London, maybe we can throw some objects of little monetary value away.<br /></li>
+<li>She values some objects which is of little monetary in our eyes.<br /></li>
+<li>I have to pay more to buy the real estate because of the new monetary policy.<br /></li>
+</ul>
+<p>
+arithmetic [əˈrɪθmətɪk]: n. the science of numbers involving adding, multiplying etc算术, 算法<br />
+</p>
+<ul class="org-ul">
+<li>My aunt likes raising some questions about arithmetic.<br /></li>
+<li>The article on arithmetic inspired awe in an eminent scientist.<br /></li>
+<li>I am afraid I am not so good at arithmetic as you think.<br /></li>
+</ul>
+<p>
+deprived [dɪˈpraɪvd]: adj. not having the things that are necessary for a comfortable or happy life贫穷的<br />
+</p>
+<ul class="org-ul">
+<li>In China, children are difficult to go to university in deprived environments.<br /></li>
+<li>Living in a deprived environment in his youth, he is very thrifty even though he is an entrepreneur now.<br /></li>
+<li>Children in deprived environments still can't afford to go to university in this country.<br /></li>
+</ul>
+<hr />
+<p>
+Given sth., + &#x2026;: 鉴于某事, + &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>Given what you played truant from school yesterday, the headmaster will round up you to stand trial in front of all staff.<br /></li>
+<li>Given the limitations of meeting the queen, we shall have a conversation before.<br /></li>
+<li>Given the stage fright, you have two opportunities to speak in public.<br /></li>
+</ul>
+<p>
+shed light on sth.: 揭秘某事物<br />
+</p>
+<ul class="org-ul">
+<li>The detective shed light on the criminal, who turned out to be the local grocer.<br /></li>
+<li>The funeral shed light on the ghost at Endly farm, Frank who was supposed to be killed in action.<br /></li>
+<li>The experts from the zoo shed light on the puma at large, which was in the possession of a private collector.<br /></li>
+</ul>
+<p>
+down the road: 在未来<br />
+</p>
+<ul class="org-ul">
+<li>There is a certain hope that we can afford to a vacation at a seaside resort down the road.<br /></li>
+<li>The inflation will be tackled by the new regime down the road.<br /></li>
+<li>Almost everyone will lead a happy life down the road.<br /></li>
+</ul>
+<p>
+kick in: 发生了<br />
+</p>
+<ul class="org-ul">
+<li>The monetary policy will kick in four years down the road.<br /></li>
+<li>When an affair kicked in, she didn't choose to get divorced.<br /></li>
+<li>A series of catastrophes kicked in in the suburb of the city.<br /></li>
+</ul>
+<p>
+a bunch of flowers: 一串花<br />
+</p>
+<ul class="org-ul">
+<li>My wife was delight that I presented her with a bunch of flowers on Valentina's Day.<br /></li>
+<li>The leader came to hospital to console him with a bunch of flowers.<br /></li>
+<li>I caught sight of a bunch of flowers in your room.<br /></li>
+</ul>
+<p>
+be furnished with sth.: 被供应某物/被配置某物<br />
+</p>
+<ul class="org-ul">
+<li>Furnished with whatever he wants, the prince has no mercy with his people.<br /></li>
+<li>Furnished with a spear gun, two men on the desert island feasted on lobsters everyday.<br /></li>
+<li>The ship that is furnished with 16 water-tight compartments was regarded as unsinkable.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgb55d2e0" class="outline-3">
+<h3 id="orgb55d2e0">sentence2</h3>
+<div class="outline-text-3" id="text-orgb55d2e0">
+<p>
+prospect [prəˈspekt]: n. a particular event which will probably or definitely happen in the future – used especially when you want to talk about how you feel about it前景<br />
+</p>
+<ul class="org-ul">
+<li>Because of the Prospect Theory, the professor was rewarded with the Nobel Prize.<br /></li>
+<li>Many entrepreneurs take advantage of the prospect theory to make big decisions about businesses.<br /></li>
+<li>My wife is looking forward to the prospect of her shop on the Internet.<br /></li>
+</ul>
+<p>
+insight [ˈɪnˌsaɪt]: n. the ability to understand and realize what people or situations are really like眼光<br />
+</p>
+<ul class="org-ul">
+<li>His insight into political trends on the continent made him rise to fame swiftly.<br /></li>
+<li>The king admired him for the general's insight of the battlefield.<br /></li>
+<li>His insight into learning English is very different from that of all who take the course.<br /></li>
+</ul>
+<p>
+stock [stɒk]: n. a ↑share in a company股票<br />
+</p>
+<ul class="org-ul">
+<li>I have been assailed by a man who wants to sell stocks to me.<br /></li>
+<li>With two countries starting a war, the stocks of the company became worthless and it went bankrupt.<br /></li>
+<li>My wife can't resist the temptation to buy the stocks from her classmate.<br /></li>
+</ul>
+<p>
+generate [ˈdʒenəˌreɪt]: v. to produce or cause something SYN create产生<br />
+</p>
+<ul class="org-ul">
+<li>The code shall generate a series of random numbers as verification code.<br /></li>
+<li>The generated poop can be an ingredient in fertilizer and gunpowder.<br /></li>
+<li>He suffered from the generated side effects of these pills.<br /></li>
+</ul>
+<p>
+gratify [ˈɡrætɪˌfaɪ]: v. to make someone feel pleased and satisfied满足<br />
+</p>
+<ul class="org-ul">
+<li>When he took another angle to look at his son's grade, he got gratified.<br /></li>
+<li>Customers usually get gratified because of the comprehensive service of the staff in the restaurant.<br /></li>
+<li>A vacation at a seaside resort may gratify your wife.<br /></li>
+</ul>
+<p>
+inflation [ɪnˈfleɪʃ(ə)n]: n. a continuing increase in prices, or the rate at which prices increase通货膨胀<br />
+</p>
+<ul class="org-ul">
+<li>The workers were underway to parade to protest against inflation.<br /></li>
+<li>The inflation parallelled the war the vicious king started.<br /></li>
+<li>I can't afford real estate debt anymore because of the inflation.<br /></li>
+</ul>
+<p>
+overall [ˈoʊvərˌɔl]: adj. considering or including everything全部的, 全面的<br />
+</p>
+<ul class="org-ul">
+<li>The overall value of the bridge is hard to estimate.<br /></li>
+<li>The overall score on the test means that I can't study abroad, which drives me mad.<br /></li>
+<li>My overall score on the test is beyond the average score.<br /></li>
+</ul>
+<p>
+monetary [ˈmʌnəˌteri]: adj. relating to money, especially all the money in a particular country货币的, 金融的<br />
+</p>
+<ul class="org-ul">
+<li>Before we move to London, maybe we can throw some objects of little monetary value away.<br /></li>
+<li>She values some objects of little monetary in our opinions.<br /></li>
+<li>I have to pay more to buy real estate because of the new monetary policy.<br /></li>
+</ul>
+<p>
+arithmetic [əˈrɪθmətɪk]: n. the science of numbers involving adding, multiplying etc算术, 算法<br />
+</p>
+<ul class="org-ul">
+<li>My aunt likes raising some questions about arithmetic.<br /></li>
+<li>The article on arithmetic inspired awe in an eminent scientist.<br /></li>
+<li>I am afraid I am not as good at arithmetic as you think.<br /></li>
+</ul>
+<p>
+deprived [dɪˈpraɪvd]: adj. not having the things that are necessary for a comfortable or happy life贫穷的<br />
+</p>
+<ul class="org-ul">
+<li>In China, children in deprived environments find it difficult to go to university.<br /></li>
+<li>Living in a deprived environment in his youth, he is very thrifty even though he is an entrepreneur now.<br /></li>
+<li>Children in deprived environments still can't afford to go to university in this country.<br /></li>
+</ul>
+<hr />
+<p>
+Given sth., + &#x2026;: 鉴于某事, + &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>Given that you played truant from school yesterday, the headmaster will round up you to stand trial in front of all staff.<br /></li>
+<li>Given the limitations of meeting the queen, we shall have a conversation before.<br /></li>
+<li>Given your stage fright, you have another chance to speak in public.<br /></li>
+</ul>
+<p>
+shed light on sth.: 揭秘某事物<br />
+</p>
+<ul class="org-ul">
+<li>The detective shed light on the criminal, who turned out to be the local grocer.<br /></li>
+<li>The funeral shed light on the ghost at Endly farm, Frank who was supposed to be killed in action.<br /></li>
+<li>The experts from the zoo shed light on the puma at large, which was in the possession of a private collector.<br /></li>
+</ul>
+<p>
+down the road: 在未来<br />
+</p>
+<ul class="org-ul">
+<li>There is a certain hope that we can afford a vacation at a seaside resort down the road.<br /></li>
+<li>The inflation will be tackled by the new regime down the road.<br /></li>
+<li>Almost everyone will lead a happy life down the road.<br /></li>
+</ul>
+<p>
+kick in: 发生了<br />
+</p>
+<ul class="org-ul">
+<li>The monetary policy will kick in four years down the road.<br /></li>
+<li>When an affair kicked in, she didn't choose to get divorced.<br /></li>
+<li>A series of catastrophes kicked in in the suburbs of the city.<br /></li>
+</ul>
+<p>
+a bunch of flowers: 一串花<br />
+</p>
+<ul class="org-ul">
+<li>My wife was delighted that I presented her with a bunch of flowers on Valentine's Day.<br /></li>
+<li>The leader came to the hospital to console him with a bunch of flowers.<br /></li>
+<li>I caught sight of a bunch of flowers in your room.<br /></li>
+</ul>
+<p>
+be furnished with sth.: 被供应某物/被配置某物<br />
+</p>
+<ul class="org-ul">
+<li>Furnished with whatever he wants, the prince has no mercy on his people.<br /></li>
+<li>Furnished with a spear gun, two men on the desert island feasted on lobsters every day.<br /></li>
+<li>The ship that is furnished with 16 water-tight compartments was regarded as unsinkable.<br /></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

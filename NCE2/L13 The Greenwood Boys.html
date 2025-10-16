@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-08-06 Tue 22:27 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-org6b61348" class="outline-2">
+<h2 id="org6b61348">Lesson 13 The Greenwood Boys</h2>
+<div class="outline-text-2" id="text-org6b61348">
+<p class="verse">
+Why will the police have a difficult time?<br />
+<br />
+The Greenwood Boys are <b>a group of</b> pop singer.<br />
+<b>At present</b>, they are visiting <b>all parts of the country</b>.<br />
+They will be arriving here tomorrow.<br />
+They will be coming by train<br />
+&#xa0;and most of the young people in the town will be meeting them at the station.<br />
+Tomorrow evening they will be singing at the Workers' Club.<br />
+The Greenwood Boys will be staying for five days.<br />
+During this time, they will <b>give five performances</b>.<br />
+<b>As usual</b>, the police will <b>have a difficult time</b>.<br />
+They will be trying to <b>keep order</b>.<br />
+It is always the same <b>on these occasions</b>.<br />
+</p>
+</div>
+<div id="outline-container-org8af281d" class="outline-3">
+<h3 id="org8af281d">expression</h3>
+<div class="outline-text-3" id="text-org8af281d">
+<p>
+group [ɡruːp] n.小组,团体<br />
+pop [pɒp] singer [ˈsɪŋə(r)] n.流行歌手<br />
+club [klʌb] n.俱乐部<br />
+performance [pəˈfɔːməns] n.演出<br />
+occasion [əˈkeɪʒ(ə)n] n.场合<br />
+</p>
+
+<p>
+a group of 一组，一群<br />
+pop music/song/star 流行音乐/歌曲/明星<br />
+give a performance 进行一次演出<br />
+on this occasion 在这个场合<br />
+</p>
+
+<hr />
+<p>
+will be doing: 1.未来动作正在进行;2.计划<br />
+</p>
+
+<p>
+a group of<br />
+at present 目前，现在<br />
+all parts of the country 全国各地<br />
+as usual 按照通常的方式或习惯<br />
+have a difficult time 遇到困难<br />
+give five performance 五项表演<br />
+keep order 维持秩序<br />
+on these occasions 在这种场合<br />
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org5a38a88" class="outline-3">
+<h3 id="org5a38a88">单词造句</h3>
+<div class="outline-text-3" id="text-org5a38a88">
+<p>
+group<br />
+</p>
+<ul class="org-ul">
+<li>A group of detectives is keeping guard at the airport.<br /></li>
+<li>A group of pop singer is visiting all parts of the country.<br /></li>
+<li>A group of waiters fly to Beijing.<br /></li>
+<li>A group of pigeons covered the distance in two minutes time.<br /></li>
+<li>A group of visitors has gathered in front of the museum.<br /></li>
+</ul>
+<p>
+club<br />
+</p>
+<ul class="org-ul">
+<li>She refuses to go to the night club with him.<br /></li>
+<li>He asks her to go to the night club.<br /></li>
+<li>The night club was been damaged by the young people.<br /></li>
+<li>Do you join the tennis club?<br /></li>
+<li>She has joined the tennis club.<br /></li>
+</ul>
+<p>
+pop singer<br />
+</p>
+<ul class="org-ul">
+<li>The pop singer will be arriving here tomorrow.<br /></li>
+<li>The pop singer will be coming by the train.<br /></li>
+<li>They will be meeting the pop singer at the station.<br /></li>
+<li>The pop singer will give a performance tomorrow evening.<br /></li>
+<li>The pop singer is knocking at the door.<br /></li>
+</ul>
+<p>
+performance<br />
+</p>
+<ul class="org-ul">
+<li>The famous star gave a performance yesterday.<br /></li>
+<li>Did the star give a performance yesterday?<br /></li>
+<li>Why did the star give a performance yesterday?<br /></li>
+<li>When did the star give a performance?<br /></li>
+<li>The star was giving a performance when the police arrived on the scene.<br /></li>
+</ul>
+<p>
+occasion<br />
+</p>
+<ul class="org-ul">
+<li>I take out the trash occasionaly.<br /></li>
+<li>On these occasions, I always get very happy.<br /></li>
+<li>On these occasions, I usually have a difficult time.<br /></li>
+<li>On these occasions, he always asks for a meat and a glass of beer.<br /></li>
+<li>On these occasions, the lawyers always keeps guard at the door.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org07470f6" class="outline-3">
+<h3 id="org07470f6">反复听电影片段</h3>
+</div>
+<div id="outline-container-org11fa778" class="outline-3">
+<h3 id="org11fa778">Pattern Drill 写+读</h3>
+<div class="outline-text-3" id="text-org11fa778">
+<ul class="org-ul">
+<li>1t:next year - talking my final exams<br />
+s1:What will you be doing this time next year?<br />
+s2:I'll be taking my final exams.<br />
+<ul class="org-ul">
+<li>next month - studying for my exams<br />
+What will you be doing this time next month?<br />
+I'll be studying for my exams.<br /></li>
+<li>next month - working for my exams<br />
+What will you be doing this time next month?<br />
+I'll be working for my exams.<br /></li>
+<li>next week - lying on the sand<br />
+What will you be doing this time next week?<br />
+I'll be lying on the sand.<br /></li>
+<li>next year - starting a job<br />
+What will you be doing this time next year?<br />
+I'll be starting a job.<br /></li>
+</ul></li>
+<li>2t:it's raining.<br />
+s1:It's raining again.<br />
+s2:I hope it won't still be raining tomorrow.<br />
+<ul class="org-ul">
+<li>she's crying<br />
+She's crying again.<br />
+I hope she won't still be crying tomorrow.<br /></li>
+<li>they're drilling on the read<br />
+They're drilling on the road again.<br />
+I hope they won't still be drilling on the road tomorrow.<br /></li>
+<li>It's snowing<br />
+It's snowing again.<br />
+I hope it won't still be snowing tomorrow.<br /></li>
+<li>he's feeling ill<br />
+He's feeling ill again.<br />
+I hope he won't still be feeling ill tomorrow.<br /></li>
+</ul></li>
+<li>3t:go to the station<br />
+s1:I shall go to the station tomorrow.<br />
+s2:I'll be seeing you then. I'll be going there too.<br />
+<ul class="org-ul">
+<li>go to the bank<br />
+I shall go to the bank tomorrow.<br />
+I'll be seeing you then. I'll be going there too.<br /></li>
+<li>ride in the park<br />
+I shall ride in the park tomorrow.<br />
+I'll be seeing you then. I'll be riding there too.<br /></li>
+<li>read in the library<br />
+I shall read in the library tomorrow.<br />
+I'll be seeing you then. I'll be reading there too.<br /></li>
+<li>shop at Smith's<br />
+I shall shop at Smith's tomorrow.<br />
+I'll be seeing you then. I'll be shopping there too.<br /></li>
+</ul></li>
+<li>4t:invitations to write<br />
+s1:What a lot of invitations to write.<br />
+s2:I'm afraid so. We'll probably be writing them all day.<br />
+<ul class="org-ul">
+<li>food to cook<br />
+What a lot of food to cook.<br />
+I'm afraid so. We'll probably be cooking it all day.<br /></li>
+<li>work to do<br />
+What a lot of work to do.<br />
+I'm afraid so. We'll probably be doing it all day.<br /></li>
+<li>papers to read<br />
+What a lot of papers to read.<br />
+I'm afraid so. We'll probably be reading them all day.<br /></li>
+<li>clothes to wash<br />
+What a lot of clothes to wash.<br />
+I'm afraid so. We'll probably be washing them all day.<br /></li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgdddb764" class="outline-3">
+<h3 id="orgdddb764">给自己讲解</h3>
+</div>
+<div id="outline-container-org1f1f5ca" class="outline-3">
+<h3 id="org1f1f5ca">红皮书</h3>
+</div>
+<div id="outline-container-org9c4f442" class="outline-3">
+<h3 id="org9c4f442">习惯用法造句</h3>
+<div class="outline-text-3" id="text-org9c4f442">
+<p>
+a group of<br />
+</p>
+<ul class="org-ul">
+<li></li>
+
+<li></li>
+
+<li></li>
+
+<li></li>
+
+<li></li>
+</ul>
+<p>
+at present<br />
+</p>
+<ul class="org-ul">
+<li>At present, he is doing his homework.<br /></li>
+<li>At present, he is refusing to join the night club.<br /></li>
+<li>At present, he is talking to his wife rudely.<br /></li>
+<li>At present, the police is keeping order.<br /></li>
+<li>At present, they're meeting a group of pop singer.<br /></li>
+</ul>
+<p>
+all parts of the country<br />
+</p>
+<ul class="org-ul">
+<li>A fewer days earlier, they visited all parts of Beijing.<br /></li>
+<li>The pop singer has visited all parts of our country.<br /></li>
+<li>Did they visit all parts of the country?<br /></li>
+<li>Why did they visit all parts of the country?<br /></li>
+<li>How did they visit all parts of the country?<br /></li>
+</ul>
+<p>
+as usual<br />
+</p>
+<ul class="org-ul">
+<li>As usual, they will take out the trash.<br /></li>
+<li>As usual, she will play the clavichord.<br /></li>
+<li>As usual, it will be damaged.<br /></li>
+<li>As usual, it will be repaired.<br /></li>
+<li>As usual, the school will be built.<br /></li>
+</ul>
+<p>
+have a difficult time<br />
+</p>
+<ul class="org-ul">
+<li>I had a difficult time last year.<br /></li>
+<li>I'm having a difficult time, but it'll pass.<br /></li>
+<li>She was laughing at me when I had a difficult time.<br /></li>
+<li>I hope he won't be having a difficult time.<br /></li>
+<li>They will have a difficult time, they will be trying to keep order.<br /></li>
+</ul>
+<p>
+give five performance<br />
+</p>
+<ul class="org-ul">
+<li></li>
+
+<li></li>
+
+<li></li>
+
+<li></li>
+
+<li></li>
+</ul>
+<p>
+keep order<br />
+</p>
+<ul class="org-ul">
+<li>They'll be trying to keep order.<br /></li>
+<li>Will they be trying to keep order?<br /></li>
+<li>How do a crowd of people keep order?<br /></li>
+<li>Why do a crowd of people keep order?<br /></li>
+<li>At present, he is keeping order.<br /></li>
+</ul>
+<p>
+on these occassions<br />
+</p>
+<ul class="org-ul">
+<li>On these occassions, I always get very angry.<br /></li>
+<li>On these occassions, it's the same.<br /></li>
+<li>On these occassions, he reads his book.<br /></li>
+<li>On these occassions, he always asks for a meat.<br /></li>
+<li>On these occassions, the night club is always open.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgc8e7441" class="outline-3">
+<h3 id="orgc8e7441">跟读至背诵</h3>
+</div>
+<div id="outline-container-org2978636" class="outline-3">
+<h3 id="org2978636">Ask me if 写+读</h3>
+<div class="outline-text-3" id="text-org2978636">
+<ol class="org-ol">
+<li>The Greenwood Boys are a group of pop singers.<br />
+Who are the Greenwood Boys?<br /></li>
+<li>They are visiting all parts of the country at present.<br />
+Which parts of the country are they visiting at present?<br />
+When are they visiting all parts of the country?<br /></li>
+<li>They'll be arriving here tomorrow.<br />
+When will they be arriving here?<br /></li>
+<li>They'll be coming by train.<br />
+How will they be coming?<br /></li>
+<li>Most of the young people in the town will be meeting them.<br />
+Who will most of the young people in the town be meeting?<br />
+How many of the young people in the town will be meeting them?<br /></li>
+<li>They'll be waiting at the station.<br />
+Where will they be waiting?<br /></li>
+<li>The Greenwood Boys will be staying for five days.<br />
+How long will the Greenwood Boys be staying?<br />
+Where will the Greenwood Boys be staying for five days?<br /></li>
+<li>They will give five performances.<br />
+How many performances will they give?<br />
+Where will they give five performances?<br />
+Who will give five performances?<br /></li>
+<li>They'll be singing at the workers' club tomorrow.<br />
+Where will they be singing?<br />
+When will they be singing at the workers' club.<br /></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-orgfbc79de" class="outline-3">
+<h3 id="orgfbc79de">摘要写作</h3>
+<div class="outline-text-3" id="text-orgfbc79de">
+<p>
+The Greenwood Boys are pop singers.<br />
+They will be arriving here tomorrow.<br />
+Most of the young people in the town will be meeting them at the station.<br />
+They will give five performances in five days.<br />
+As usual, police will be trying to keep order.<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org269b43a" class="outline-3">
+<h3 id="org269b43a">tell the story 口语</h3>
+</div>
+<div id="outline-container-orga73e5a1" class="outline-3">
+<h3 id="orga73e5a1">Topics for discussion</h3>
+<div class="outline-text-3" id="text-orga73e5a1">
+<ol class="org-ol">
+<li>Describe a concert you have been to, or heard about.<br /></li>
+<li>What do you think you'll be doing this time next year?<br /></li>
+<li>Do you prefer pop or classical songs/singers? why?<br /></li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,690 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-09-28 Sat 22:17 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-orgb68df48" class="outline-2">
+<h2 id="orgb68df48">Lesson 17 The longest suspension bridge in the world</h2>
+<div class="outline-text-2" id="text-orgb68df48">
+<p class="verse">
+How is the bridge supported?<br />
+<br />
+Verrazano, an Italian <b>about whom little is known</b>,<br />
+&#xa0;sailed into New York Harbour in 1524 and named it Angouleme.<br />
+He <b>described it as</b> 'a very <b>agreeable situation</b> <b>located within</b> two small hills<br />
+&#xa0;<b>in the midst of</b> which flowed a great river.'<br />
+Though Verrazano <b>is by no means considered to be</b> a great explorer,<br />
+&#xa0;his name will probably remain immortal,<br />
+&#xa0;for on November 21st, 1964, the longest suspension bridge in the world <b>was named after</b> him.<br />
+<br />
+The Verrazano Bridge, which was designed by Othmar Ammann, <b>joins Brooklyn to Staten Island</b>.<br />
+It has <b>a span of</b> 4,260 feet.<br />
+The bridge is so long that the shape of the earth had to <b>be taken into account</b> by its designer.<br />
+Two great towers support four huge cables.<br />
+The towers are built on immense underwater platforms made of steel and concrete.<br />
+The platforms extend to a depth of over 100 feet under the sea.<br />
+These alone took sixteen months to build.<br />
+Above the surface of the water, the towers rise to <b>a height of</b> nearly 700 feet.<br />
+They support the cables <b>from which the bridge has been suspended</b>.<br />
+Each of the four cables contains 26,108 <b>lengths of wire</b>.<br />
+<b>It has been estimated that</b> if the bridge <b>were packed with</b> cars,<br />
+&#xa0;&#xa0;it would still only be carrying <b>a third of</b> its total capacity.<br />
+However, size and strength are not the only important things about this bridge.<br />
+Despite its immensity, it is both simple and elegant,<br />
+&#xa0;<b>fulfilling its designer's dream</b> to create 'an enormous object drawn as faintly as possible'.<br />
+</p>
+</div>
+<div id="outline-container-org8eb4b2d" class="outline-3">
+<h3 id="org8eb4b2d">expression</h3>
+<div class="outline-text-3" id="text-org8eb4b2d">
+<p>
+suspension: [səˈspenʃ(ə)n] n. suspend v.悬挂,悬职<br />
+agreeable: [əˈɡriəb(ə)l] adj. situation n.宜人的风景<br />
+locate: [ˈloʊˌkeɪt] v. location n.坐落<br />
+immortal: [ɪˈmɔrt(ə)l] adj. so famous that it will never be forgotten永生的,流芳百世的<br />
+span: [spæn] n.  a period of time between two dates or events跨度<br />
+cable: [ˈkeɪb(ə)l] n. a plastic or rubber tube containing wires that carry telephone messages, electronic signals, television pictures etc缆索<br />
+concrete: [ˈkɑŋˌkrit] n.混凝土<br />
+length: [leŋθ] n.长<br />
+estimate: [ˈestɪmət] v.估计<br />
+capacity: [kəˈpæsəti] n.承受量<br />
+immensity: [ɪˈmensəti] n.巨大<br />
+elegant: [ˈelɪɡənt] adj.优美别致的<br />
+faintly: [ˈfeɪntli] adv.轻微地<br />
+</p>
+
+<p>
+agreeable/pleasant + situation/man/day: 宜人的环境<br />
+be located in/near: 坐落于/靠近&#x2026;<br />
+a span of &#x2026;: &#x2026;的跨度<br />
+life span: 寿命<br />
+a length of/lengths of + rope/pipe/wire: 一段绳/管/线<br />
+It is estimated that + &#x2026;: 据估计+&#x2026;<br />
+sb. estimates that + &#x2026;: 某人估计+&#x2026;<br />
+</p>
+<hr />
+<p>
+little/not much/not everything is known about a.: 对A知之甚少<br />
+describe A as B: 把A描述成B<br />
+in the midst of &#x2026;:在&#x2026;的中间<br />
+by no means: not possible绝无可能<br />
+be considered to be adj./n.: 被认为是&#x2026;<br />
+sth. be named after sb.: 某物以某人命名<br />
+join a. to b. = connect a. to b.: 连接A和B<br />
+be taken into account = take sth. into account 考虑某事<br />
+a height of &#x2026;: &#x2026;的高度<br />
+A be suspended from B: A悬挂于B<br />
+be packed with &#x2026;: to fill something with things or people of a particular type挤满,塞满<br />
+a third of sth: 某物的1/3<br />
+fulfill sb's dream: something or someone made your dream come true实现某人的梦想<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org0bbc9f5" class="outline-3">
+<h3 id="org0bbc9f5">words</h3>
+<div class="outline-text-3" id="text-org0bbc9f5">
+<p>
+suspension [səˈspenʃ(ə)n] n.吊<br />
+agreeable [əˈɡriːəb(ə)l] adj.宜人的<br />
+situation [ˌsɪtʃuˈeɪʃ(ə)n] n.地点<br />
+locate [ˈloʊkeɪt] v.位于<br />
+immortal [ɪˈmɔːrt(ə)l] adj.永生的<br />
+Brooklyn [ˈbrʊklɪn; ˈbrʊklən] n.布鲁克林<br />
+Staten [nil] n.斯塔顿<br />
+span [spæn] n.跨度<br />
+cable [ˈkeɪb(ə)l] n.缆索<br />
+concrete [ˈkɑːnkriːt] n.混凝土<br />
+suspend [səˈspend] v.悬挂<br />
+length [leŋθ] n.根,段<br />
+estimate [ˈestɪmət] v.估计<br />
+capacity [kəˈpæsəti] n.承受量<br />
+immensity [ɪˈmensəti] n.巨大<br />
+elegant [ˈelɪɡənt] adj.优美别致的<br />
+faintly [ˈfeɪntli] adv.微细地<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org4077950" class="outline-3">
+<h3 id="org4077950">vocabulary</h3>
+<div class="outline-text-3" id="text-org4077950">
+<p>
+agreeable situation: nice location<br />
+in the midst: in the middle of<br />
+considered: thought<br />
+remain immortal: never die<br />
+span: extent<br />
+taken into account: taken into consideration<br />
+support: hold<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org97e0099" class="outline-3">
+<h3 id="org97e0099"><span class="done DONE">DONE</span> 单词造句</h3>
+<div class="outline-text-3" id="text-org97e0099">
+<p>
+suspension n. suspend v.<br />
+</p>
+<ul class="org-ul">
+<li>There used to be a suspension bridge over the river.<br /></li>
+<li>This suspension bridge is considered as an agreeable situation.<br /></li>
+<li>He was tied to a chair on the suspension bridge.<br /></li>
+<li>I will tell you about the history of the suspension bridge.<br /></li>
+<li>I was astonished to find that the suspension bridge was damaged by army.<br /></li>
+</ul>
+<p>
+agreeable adj. situation n.  agreeable/pleasant + situation/man/day<br />
+</p>
+<ul class="org-ul">
+<li>There is a long time when West Lake was considered as an agreeable situation.<br /></li>
+<li>I spent an agreeable day at this hotel in the remote village.<br /></li>
+<li>I was not allowed to meet her, for she is agreeable.<br /></li>
+<li>What is more, this agreeable situation was filled up with people.<br /></li>
+<li>The house's situation by the river is agreeable.<br /></li>
+</ul>
+<p>
+locate v. location n.  be located in/near<br />
+</p>
+<ul class="org-ul">
+<li>My house used to be located near a river.<br /></li>
+<li>He found his way at the hotel located near the lake.<br /></li>
+<li>The city mall in a beautiful situation is very popular with these young people.<br /></li>
+<li>Our stadium located in the park will have been built by the last day of this year.<br /></li>
+<li>His house in a beautiful location has been sold last month.<br /></li>
+</ul>
+<p>
+immortal adj.<br />
+</p>
+<ul class="org-ul">
+<li>Plato has claimed that the soul is immortal.<br /></li>
+<li>He soon made a name for himself and would probably be immortal.<br /></li>
+<li>After put out of business, the man remained immortal.<br /></li>
+<li>The soldier which remains immortal made a name for himself during the war.<br /></li>
+<li>There was a time when people there believed in an immortal goddess.<br /></li>
+</ul>
+<p>
+span n.  a span of  life span<br />
+</p>
+<ul class="org-ul">
+<li>Over a span of ten years, Leo began to make a profit.<br /></li>
+<li>It was obvious that the bridge has over a span of 100 meters.<br /></li>
+<li>In a span of ten years, this country has been at war with his neighbor.<br /></li>
+<li>If the bridge had a span of 100 meters, it wouldn't be enough strong.<br /></li>
+<li>My cat's life span is over ten years.<br /></li>
+</ul>
+<p>
+cable n.<br />
+</p>
+<ul class="org-ul">
+<li>If you damaged this cable, you would pay large sums of money to the authorities.<br /></li>
+<li>There was a time when the electric cables were stolen by villagers.<br /></li>
+<li>In times of war, the electric cables were damaged by fire.<br /></li>
+<li>She wanted to devote herself to making discovery of cables.<br /></li>
+<li>For your own protection, don't touch these cables.<br /></li>
+</ul>
+<p>
+concrete n.<br />
+</p>
+<ul class="org-ul">
+<li>In memory of these hero, the authorities have built a concrete monument.<br /></li>
+<li>The baby hit himself on the concrete floor and then let out a cry.<br /></li>
+<li>The tall building is made of steel and concrete.<br /></li>
+<li>He realized to his horror that his child hit himself on the concrete floor.<br /></li>
+<li>This concrete wall was regarded as watertight.<br /></li>
+</ul>
+<p>
+length n.  a length of/lengths of + rope/pipe/wire<br />
+</p>
+<ul class="org-ul">
+<li>The policeman arrived on the scene seeing a cut length of rope.<br /></li>
+<li>I exchanged some money for lengths of wire.<br /></li>
+<li>The worker was accused of stealing lengths of wire in the factory.<br /></li>
+<li>I found the worker stealing lengths of wire.<br /></li>
+<li>However, the worker denied taking all 500 lengths of wire.<br /></li>
+</ul>
+<p>
+estimate v.  It is estimated that + &#x2026;  sb. estimates that + &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>It is estimated that the cat was tied to a chair.<br /></li>
+<li>He estimated that small sums would go a long way.<br /></li>
+<li>He estimated that<br />
+the lady who owned the sweets shop would rewarded him with a bar of chocolate.<br /></li>
+<li>He estimates that they will have a enough supply of foods and water.<br /></li>
+<li>It is estimated that the soldiers will leave if they are offered enough money.<br /></li>
+</ul>
+<p>
+capacity n.<br />
+</p>
+<ul class="org-ul">
+<li>The bottle only has a capacity of a second of 1 liter.<br /></li>
+<li>Do the water tanks provide a capacity of 1 liter?<br /></li>
+<li>For your own protection, you'd better take the bottle which has a capacity of 1 liter.<br /></li>
+<li>He made the remarkable discovery that the river has a capacity of two millions of liter.<br /></li>
+<li>The stadium which will have been built by next year will have a seating capacity of 50,000.<br /></li>
+</ul>
+<p>
+immensity n.<br />
+</p>
+<ul class="org-ul">
+<li>I wouldn't never realize the immensity of the earth, if I didn't go to university.<br /></li>
+<li>I am very nervous about the immensity of the task.<br /></li>
+<li>I realized the immensity of the task when I drived on to my friend's house.<br /></li>
+<li>Despite of the immensity of task, she managed to finish it.<br /></li>
+<li>I will have a difficult time because of the immmensity of my task.<br /></li>
+</ul>
+<p>
+elegant adj.<br />
+</p>
+<ul class="org-ul">
+<li>Not only did he buy his wife an elegant dress, but he bougth his mother another.<br /></li>
+<li>Not only did he buy his wife an elegant dress, but he gave her a splendid performance.<br /></li>
+<li>The chairman was standing in the midst of these elegant women.<br /></li>
+<li>These elegant women are going to give five performance.<br /></li>
+<li>I waved to the elegant woman and asked for a lift.<br /></li>
+</ul>
+<p>
+faintly adv.<br />
+</p>
+<ul class="org-ul">
+<li>He smiled faintly and knocked her to the ground suddenly.<br /></li>
+<li>The sun always shines faintly through these leaves.<br /></li>
+<li>He rolled up his sleeves faintly and began to do his work.<br /></li>
+<li>It bounced faintly and disappeared down a drain.<br /></li>
+<li>Although he glanced at the elegant woman faintly, his wife noticed this and got very angry.<br /></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org95556a9" class="outline-3">
+<h3 id="org95556a9"><span class="done DONE">DONE</span> 反复听电影片段直到懂关键句</h3>
+<div class="outline-text-3" id="text-org95556a9">
+</div>
+</div>
+<div id="outline-container-orgbb331d2" class="outline-3">
+<h3 id="orgbb331d2">复习二册语法(笔记或视频) &amp; 红皮书</h3>
+</div>
+<div id="outline-container-orge3b1487" class="outline-3">
+<h3 id="orge3b1487"><span class="done DONE">DONE</span> 习惯用法造句</h3>
+<div class="outline-text-3" id="text-orge3b1487">
+<p>
+little/not much/not everything is known about a.<br />
+</p>
+<ul class="org-ul">
+<li>Little is known about the capicity of the bridge.<br /></li>
+<li>Little is known about the immensity of the task.<br /></li>
+<li>Little is known about the man who worked for the coporation.<br /></li>
+<li>Not everything is known about the mummy made in 4th century.<br /></li>
+<li>Little is known about the history of my house.<br /></li>
+</ul>
+<p>
+describe a. as b.<br />
+</p>
+<ul class="org-ul">
+<li>We are used to describe a luck man as a lucky dog.<br /></li>
+<li>The captain was described as a immortal hero.<br /></li>
+<li>I described my youth as a time of fear and confusion.<br /></li>
+<li>He stated that his children used to describe him as a good father.<br /></li>
+<li>Why did you describe this rude man as elegant?<br /></li>
+</ul>
+<p>
+in the midst of<br />
+</p>
+<ul class="org-ul">
+<li>There used to be a hut in the midst of the forest.<br /></li>
+<li>A groud of singers will give five performance in the midst of the park.<br /></li>
+<li>The chairman was standing in the midst of people.<br /></li>
+<li>The building is located in the midst of the city.<br /></li>
+<li>He will be working in the midst of the city.<br /></li>
+</ul>
+<p>
+by no means<br />
+</p>
+<ul class="org-ul">
+<li>He is by no means proud of such a rude father.<br /></li>
+<li>She will by no means be away from her children.<br /></li>
+<li>I will be by no means nervous about telling stories in public.<br /></li>
+<li>Sorry to interrupt, I by no means afford to pay the bill.<br /></li>
+<li>She by no means looks up in any dictionary.<br /></li>
+</ul>
+<p>
+be considered to be adj./n.<br />
+</p>
+<ul class="org-ul">
+<li>The tatanic was considered to be unsinkable, for she had 15 watertight compartments.<br /></li>
+<li>She was considered to be right, but she made an tremendous mistake recently.<br /></li>
+<li>I was considered to be best student of my class.<br /></li>
+<li>She was considered to be the prettiest girl I have ever seen.<br /></li>
+<li>My was considered to be ugly before she dyed her hair black.<br /></li>
+</ul>
+<p>
+sth. be named after sb.<br />
+</p>
+<ul class="org-ul">
+<li>My children are not allowed to be named after me.<br /></li>
+<li>My father claimed to have named me after the chair man.<br /></li>
+<li>She made an impact on my monther, and my mother named me after her.<br /></li>
+<li>It seems that I was named after the great leader.<br /></li>
+<li>I am likely to name my son after my cat.<br /></li>
+</ul>
+<p>
+join a. to b. = connect a. to b.<br />
+</p>
+<ul class="org-ul">
+<li>This mountain road joins our village to my wife's village.<br /></li>
+<li>The bridge which is being built will join Shenzhen to Hongkong.<br /></li>
+<li>There is a small bridge joining my house to the other side of the river.<br /></li>
+<li>The tunnel joins the England to the mainland.<br /></li>
+<li>This great suspension bridge joins the Blooklyn block to the Staten island.<br /></li>
+</ul>
+<p>
+be taken into account = take sth. into account<br />
+</p>
+<ul class="org-ul">
+<li>You must take into account the fact<br />
+that if we were fired, we would get enought money to pay the bill.<br /></li>
+<li>She always takes a variety of factors into account.<br /></li>
+<li>He took into account the fact that he was fired and ran out of his money.<br /></li>
+<li>This lady took her husband into account and bought her husband a special type of play station.<br /></li>
+<li>The captain took into account the fact that the ship was sinking.<br /></li>
+</ul>
+<p>
+a height of + (长度 100m)<br />
+</p>
+<ul class="org-ul">
+<li>The aircraft was supposed to be flying at a height of 100 meters.<br /></li>
+<li>The kite is not allowed to be flying at a height of 50 meters in this country.<br /></li>
+<li>Imagine her dismay when she found that she couldn't eat at a height of 100 meters.<br /></li>
+<li>The balloon which reached a height of 100 meters was damaged by a plane.<br /></li>
+<li>They managed to catch a ballon which reached a height of 100 meters.<br /></li>
+</ul>
+<p>
+be suspended from a.<br />
+</p>
+<ul class="org-ul">
+<li>There used to be a beautiful light suspended from the ceiling.<br /></li>
+<li>She was suspended from school for 3 days, for she played truent from school.<br /></li>
+<li>Ross complained that he was suspended from museum for his angry.<br /></li>
+<li>The order to suspended the light from the ceiling was given.<br /></li>
+<li>So long ago as ten days before, the policewoman was suspended from duty.<br /></li>
+</ul>
+<p>
+be packed with &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>The station was packed with young men and women, for a group of pop singer arrived.<br /></li>
+<li>The lot was soon packed with a lot of automobiles.<br /></li>
+<li>He realized to his horror that the mall was packed with workers.<br /></li>
+<li>Being packed with people, the house is not cold any more.<br /></li>
+<li>It will be packed with the fans of Mr. Messi.<br /></li>
+</ul>
+<p>
+a third of sth<br />
+</p>
+<ul class="org-ul">
+<li>Only a third of cat died from falling tall buildings.<br /></li>
+<li>You have just finished a third of your homework.<br /></li>
+<li>If we get married, I will keep only a third of money and the rest is for you.<br /></li>
+<li>There is no shortage of fuel, I have only used a third of it.<br /></li>
+<li>There was a third of workers who were trapped in the mine.<br /></li>
+</ul>
+<p>
+fulfill sb's dream<br />
+</p>
+<ul class="org-ul">
+<li>I fulfilled my dream of getting marry to her.<br /></li>
+<li>If you don't work hard, you will never fulling your dream of going to university.<br /></li>
+<li>Now that you have enough money,<br />
+it's time to fulfill your dream of travelling all over the world.<br /></li>
+<li>Fulfilling his dream, he made an impact on young men all over the world.<br /></li>
+<li>Fulfilling his dream, he made everything official.<br /></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org1e26751" class="outline-3">
+<h3 id="org1e26751">跟读 50遍</h3>
+</div>
+<div id="outline-container-orgdf9d928" class="outline-3">
+<h3 id="orgdf9d928"><span class="done DONE">DONE</span> Comprehension 反复练习</h3>
+<div class="outline-text-3" id="text-orgdf9d928">
+</div>
+</div>
+<div id="outline-container-org36b6396" class="outline-3">
+<h3 id="org36b6396"><span class="done DONE">DONE</span> Ask me if 写+读</h3>
+<div class="outline-text-3" id="text-org36b6396">
+<ol class="org-ol">
+<li>Verrazano sailed into New York Harbour in 152- When<br />
+When did Verrazano sail into New York Harbour?<br /></li>
+<li>Verrazano is considered to be a great explorer. Why isn't<br />
+Why isn't Verrazano considered to be a great explorer?<br /></li>
+<li>The Verrazano bridge was designed by Othmar Ammann. Who<br />
+Who was the Verrazano bridge designed by?<br /></li>
+<li>Two towers support four huge cables. How many towers<br />
+How many towers support four huge cables?<br /></li>
+<li>The platforms extend to a depth of over 100 feet under the sea. How far<br />
+How far do the platforms extend to a depth of under the sea?<br /></li>
+<li>The platforms took sixteen months to build. How long<br />
+How long did the platforms take to build?<br /></li>
+<li>They rise to nearly 700 feet. How far<br />
+How far do they rise to?<br /></li>
+<li>Each cable contains 26,108 lengths of wire. How many lengths<br />
+How many lengths of wire does each cable contain?<br /></li>
+<li>The bridge is packed with cars. How often<br />
+How often is the bridge packed with cars?<br /></li>
+<li>It fulfils its designer's dream. How<br />
+How does it fulfil its designer's dream?<br /></li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org2ca4d66" class="outline-3">
+<h3 id="org2ca4d66"><span class="done DONE">DONE</span> 摘要写作 写 &amp; 对答案</h3>
+<div class="outline-text-3" id="text-org2ca4d66">
+<p>
+The Verrazano bridge, which joins Brooklyn to Staten Island,<br />
+	has a span of 4,260 feet.<br />
+Its two great towers support four huge cables.<br />
+The towers are built on the platfroms made of steel and concrete,<br />
+	extending over 100 feet under the sea<br />
+	and rising nearly 700 feet above the suface of the water.<br />
+The bridge is suspended from four huge cables,<br />
+	each of which contains 26,108 lengths of wire.<br />
+Not only is the birdge very strong, but simple and elegant as well.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org68c90c2" class="outline-3">
+<h3 id="org68c90c2"><span class="done DONE">DONE</span> tell the story 口语复述</h3>
+<div class="outline-text-3" id="text-org68c90c2">
+</div>
+</div>
+<div id="outline-container-org242e471" class="outline-3">
+<h3 id="org242e471"><span class="done DONE">DONE</span> composition 阅读 或 写作</h3>
+<div class="outline-text-3" id="text-org242e471">
+<p>
+The bridge I know best is called the Sydney Harbour Bridge.<br />
+It joins either side of Sydney Harbour.<br />
+From far away it looks like a great arch,<br />
+	but when you get near, you can see a great deck under the arch.<br />
+It is made of steel and supported by two towers.<br />
+If you stand on the bridge early in the morning,<br />
+	you can see the Parramatta River to the west and the open sea to the east.<br />
+At this time everything is quiet.<br />
+</p>
+
+<p>
+During the day, however, the harbour becomes busy with small boats<br />
+	and largeships are moving in all directions.<br />
+I enjoy standing on the bridge at night<br />
+	when you see the magnificent Opera House looking like a great sailing ship.<br />
+In the darkness you can see the city lights.<br />
+In the stillness the traffic and the movement of the sea are the only sounds that can be heard.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org011ec17" class="outline-3">
+<h3 id="org011ec17">Topics for discussion</h3>
+</div>
+</div>
+</div>
+</body>
+</html>

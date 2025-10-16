@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-08-06 Tue 22:24 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+
+<div id="outline-container-org15d6ae9" class="outline-2">
+<h2 id="org15d6ae9">Lesson 83 After the elections</h2>
+<div class="outline-text-2" id="text-org15d6ae9">
+<p class="verse">
+Why did Patrick keep on asking the same question?<br />
+<br />
+The former Prime Minister, Mr. Wentworth Lane, was defeated in the recent elections.<br />
+He is now retiring from political life and has gone abroad.<br />
+My friend, Patrick, has always been a fanatical opponent of Mr. Lane's Radical Progressive Party.<br />
+After the elections, Patrick went to the former Prime Minister's house.<br />
+When he asked if Mr. Lane lived there,<br />
+&#xa0;the policeman <b>on duty</b> told him that since his defeat, the ex-Prime Minister had gone abroad.<br />
+<b>On the following day</b>, Patrick went to the house again.<br />
+The same policeman was just walking slowly past the entrance,<br />
+&#xa0;when Patrick asked the same question.<br />
+Though a little suspicious this time, the policeman gave him the same answer.<br />
+The day after, Patrick went to the house once more and asked exactly the same question.<br />
+This time, the policeman lost his temper.<br />
+'I told you yesterday and the day before yesterday,' he shouted,<br />
+'Mr. Lane was defeated in the elections.<br />
+He has retired from political life and gone to live abroad!'<br />
+'I know,' answered Patrick, 'I <b>love to hear</b> you say it!'<br />
+</p>
+</div>
+<div id="outline-container-orgeb5377b" class="outline-3">
+<h3 id="orgeb5377b">expression</h3>
+<div class="outline-text-3" id="text-orgeb5377b">
+<p>
+election [ɪˈlekʃ(ə)n] n.选举<br />
+former [ˈfɔrmər] adj.从前的<br />
+defeat [dɪˈfit] v.打败<br />
+fanatical [fəˈnætɪk(ə)l] adj.狂热的<br />
+opponent [əˈpoʊnənt] n.反对者,对手<br />
+radical [ˈrædɪk(ə)l] adj.激进的<br />
+progressive [prəˈɡresɪv] adj.进步的<br />
+ex-  [eks] prefix 前&#x2026;<br />
+suspicious [səˈspɪʃəs] adj.怀疑的<br />
+</p>
+
+<p>
+win the election 赢得选举<br />
+be fanatical about sth./doing sth. 对某事/做某事狂热<br />
+</p>
+<hr />
+<p>
+on duty 在工作状态<br />
+on the following day 第二天<br />
+love to do sth. 喜欢做某事<br />
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-orgff815d3" class="outline-3">
+<h3 id="orgff815d3">words</h3>
+<div class="outline-text-3" id="text-orgff815d3">
+<p>
+election [ɪˈlekʃ(ə)n] n.选举<br />
+former [ˈfɔrmər] adj.从前的<br />
+defeat [dɪˈfit] v.打败<br />
+fanatical [fəˈnætɪk(ə)l] adj.狂热的<br />
+opponent [əˈpoʊnənt] n.反对者,对手<br />
+radical [ˈrædɪk(ə)l] adj.激进的<br />
+progressive [prəˈɡresɪv] adj.进步的<br />
+ex- [eks] prefix 前&#x2026;<br />
+suspicious [səˈspɪʃəs] adj.怀疑的<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org19ca66a" class="outline-3">
+<h3 id="org19ca66a"><span class="done DONE">DONE</span> 单词造句</h3>
+<div class="outline-text-3" id="text-org19ca66a">
+<p>
+election n.win the election<br />
+</p>
+<ul class="org-ul">
+<li>If he was defeated in the election, I would offer 3000 dollars.<br /></li>
+<li>He used to win elections every time, but he was defeated this time.<br /></li>
+<li>The former president managed to win the election.<br /></li>
+<li>It is well known that she should have won the election.<br /></li>
+<li>Let's suppose that you won the election.<br /></li>
+</ul>
+<p>
+former adj.<br />
+</p>
+<ul class="org-ul">
+<li>The former president is still a shining example to us.<br /></li>
+<li>The former president has caught a peculiar fish out at sea.<br /></li>
+<li>The former president made every effort to win the election in any way.<br /></li>
+<li>The former president laughed at the workers who were striking.<br /></li>
+<li>The former president is fanatical about learing the culture of China.<br /></li>
+</ul>
+<p>
+defeat v.<br />
+</p>
+<ul class="org-ul">
+<li>If he hadn't been defeated in the finally game, he would have been the first champion of China.<br /></li>
+<li>If you defeat him in this game, we will offer you a large sum of money.<br /></li>
+<li>He claim to have defeated his opponent in the war.<br /></li>
+<li>He discovered that the player hadn't defeated his opponent/rival in the game.<br /></li>
+<li>He has defeated his rival with a sharp blow.<br /></li>
+</ul>
+<p>
+fanatical adj.be fanatical about sth./doing sth.<br />
+</p>
+<ul class="org-ul">
+<li>Joey's girl friend is fanatical about Chinese Kungfu.<br /></li>
+<li>Why are people so fanatical about TF boys?<br /></li>
+<li>The girl who played truent from school is a fanatical fan of TFBoys.<br /></li>
+<li>He is fanatical about playing basketball of all time.<br /></li>
+<li>The businessmen are always fanatical about making a profit in any way.<br /></li>
+</ul>
+<p>
+opponent n.<br />
+</p>
+<ul class="org-ul">
+<li>He discovered that his opponent had been defeated in the finally election.<br /></li>
+<li>He succeeded in knocking his opponent to the ground with a sharp blow.<br /></li>
+<li>His opponent was moving so rapidly that he couldn't turn attention to him.<br /></li>
+<li>He has to stand to attention, when his opponent got off.<br /></li>
+<li>He is not only my opponent, but a shining example to me as well.<br /></li>
+</ul>
+<p>
+radical adj.<br />
+</p>
+<ul class="org-ul">
+<li>He must have been shocked by his son's radical actions.<br /></li>
+<li>The doctors on duty were shocked by his radical views.<br /></li>
+<li>I should have made a radical change in my way of learning English.<br /></li>
+<li>It is known that making a radical change is usually dangerous.<br /></li>
+<li>This radical change was found to be right.<br /></li>
+</ul>
+<p>
+ex- prefix<br />
+</p>
+<ul class="org-ul">
+<li>My ex-girlfriend changed into the suit which I gave her last year.<br /></li>
+<li>My ex-boyfriend is wandering around the street.<br /></li>
+<li>She suddenly knocked her ex-boyfriend to the ground with a sharp blow.<br /></li>
+<li>She discovered that her ex-boyfriend had got married soon.<br /></li>
+<li>She urged her ex-husband to get marry to her once more.<br /></li>
+</ul>
+<p>
+suspicious adj.<br />
+</p>
+<ul class="org-ul">
+<li>He looked suspicious, for he walked up and down in front of the camp.<br /></li>
+<li>The policewoman told me that if I see anything suspicious, just call her.<br /></li>
+<li>The girl claim to have at times seen a suspicious man.<br /></li>
+<li>Seamen and fishermen often claim to have seen suspicious monsters.<br /></li>
+<li>The girl is used to meeting suspicious man.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org70abb5b" class="outline-3">
+<h3 id="org70abb5b"><span class="done DONE">DONE</span> 反复听电影片段</h3>
+<div class="outline-text-3" id="text-org70abb5b">
+</div>
+</div>
+<div id="outline-container-org8b10f23" class="outline-3">
+<h3 id="org8b10f23">Pattern Drill 写+读</h3>
+</div>
+<div id="outline-container-org69a6137" class="outline-3">
+<h3 id="org69a6137">给自己讲解</h3>
+</div>
+<div id="outline-container-org1a7aeb7" class="outline-3">
+<h3 id="org1a7aeb7">红皮书</h3>
+</div>
+<div id="outline-container-org9e910af" class="outline-3">
+<h3 id="org9e910af"><span class="done DONE">DONE</span> 习惯用法造句</h3>
+<div class="outline-text-3" id="text-org9e910af">
+<p>
+on duty<br />
+</p>
+<ul class="org-ul">
+<li>The policewoman on duty is asking me for a lift.<br /></li>
+<li>We don't allow you to drink alcohol on duty.<br /></li>
+<li>The policeman is used to handling accident on duty.<br /></li>
+<li>The flight attendant on duty took charge of this little baby.<br /></li>
+<li>The flight attendant on duty often loses her temper for some reasons.<br /></li>
+</ul>
+<p>
+on the following day<br />
+</p>
+<ul class="org-ul">
+<li>On the following day, she urged her brother to do housework.<br /></li>
+<li>On the following day, she had the nerve to take elevator.<br /></li>
+<li>On the following day, I was entitled to access the database system.<br /></li>
+<li>On the following day, I gave up smoking.<br /></li>
+<li>On the following day, the mummy will be cut open.<br /></li>
+</ul>
+<p>
+love to do sth.<br />
+</p>
+<ul class="org-ul">
+<li>I love to kiss my wife.<br /></li>
+<li>She doesn't love to have an operation.<br /></li>
+<li>The boy loves to stamp out the fire.<br /></li>
+<li>The boy loves to carry books to the courtyard.<br /></li>
+<li>My cat loves to charge at me, when I get home.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org0677b5d" class="outline-3">
+<h3 id="org0677b5d"><span class="done DONE">DONE</span> 跟读至背诵</h3>
+<div class="outline-text-3" id="text-org0677b5d">
+</div>
+</div>
+<div id="outline-container-org3b34eac" class="outline-3">
+<h3 id="org3b34eac"><span class="done DONE">DONE</span> Ask me if 写+读</h3>
+<div class="outline-text-3" id="text-org3b34eac">
+<ol class="org-ol">
+<li>Mr. Lane was Prime Minister. What/Who<br />
+What did Mr. Lane do?<br />
+Who was Prime Minister?<br /></li>
+<li>He was leader of the Radical Progressive Party. Which party/Who<br />
+Which party was he leader of?<br />
+Who was leader of the Radical Progressive Party?<br /></li>
+<li>He was defeated in the recent elections. When/Who<br />
+When was he defeated?<br />
+Who was defeated in the recent elections?<br /></li>
+<li>He's retiring from political life. Who<br />
+Who's retiring from political life?<br /></li>
+<li>He's gone abroad. Where/Why/Who<br />
+Where has he gone?<br />
+Why has he gone abroad?<br />
+Who's gone abroad?<br /></li>
+<li>Patrick's always been an opponent of Mr. Lane's party. How long/Who<br />
+How long has Patrick been an opponent of Mr. Lane's party?<br />
+Who's always been an opponent of Mr. Lane's party?<br /></li>
+<li>He went to Mr. Lane's house after the elections. Where/When/Why<br />
+Where did he go after the elections?<br />
+When did he go to Mr. Lane's house?<br />
+Why did he go to Mr. Lane's house after the elctions?<br /></li>
+<li>A policeman was there on duty. Why<br />
+Why was a policeman there?<br /></li>
+<li>Patrick asked the policeman if Mr. Lane lived there. What/Who<br />
+What did Patrick ask the policeman?<br />
+Who asked the policeman if Mr. Lane lived there?<br /></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org6be4d24" class="outline-3">
+<h3 id="org6be4d24"><span class="done DONE">DONE</span> 摘要写作</h3>
+<div class="outline-text-3" id="text-org6be4d24">
+<p>
+After having been defeated in the recent elections,<br />
+	 the formar Prime Minister, Mr. Lane, retiring abroad.<br />
+My friend Patrick,<br />
+	who has always been a fanatical opponent of Mr. Lane's Radical Progressive Party,<br />
+	went to his house house three times<br />
+	and asked the policeman on duty whether it was Mr. Lane's house.<br />
+When he asked for the third time,<br />
+  the angry policeman told him again of Mr. Lane's defeat and retirement.<br />
+Patrick said that it was something he loved to hear.<br />
+</p>
+
+<p>
+Since being defeated in the recent elections,<br />
+	the formar Prime Minister, Mr. Wentwroth, has retired abroad.<br />
+As my friend Patrick has always been a fanatical opponent of Mr. Lane's Radical Progressive Party,<br />
+	he went to his house three times.<br />
+Each time he asked the policeman on duty if it was Mr. Lane's house.<br />
+The third time he was told again by the angry policeman of Mr. Lane's defeat and retirement,<br />
+	but Patrick said it was something he loved to hear.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orga3dc13f" class="outline-3">
+<h3 id="orga3dc13f"><span class="done DONE">DONE</span> tell the story 口语</h3>
+<div class="outline-text-3" id="text-orga3dc13f">
+</div>
+</div>
+<div id="outline-container-org83592a3" class="outline-3">
+<h3 id="org83592a3">Topics for discussion</h3>
+</div>
+</div>
+</div>
+</body>
+</html>

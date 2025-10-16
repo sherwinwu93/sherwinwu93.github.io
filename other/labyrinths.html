@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-09-17 Tue 21:15 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-org59247a3" class="outline-2">
+<h2 id="org59247a3">labyrinths</h2>
+<div class="outline-text-2" id="text-org59247a3">
+<p class="verse">
+Labyrinths have existed for well over 4,000 years.<br />
+Labyrinths and labyrinthine symbols have been found in regions<br />
+&#xa0;as diverse as modern-day Turkey, Ireland, Greece, and India.<br />
+There are various designs of labyrinth<br />
+&#xa0;but what they all have in common is a winding spiral path<br />
+&#xa0;&#xa0;which leads to a central area.<br />
+There is one starting point at the entrance and the goal is to reach the central area.<br />
+Finding your way through a labyrinth involves many twists and turns,<br />
+&#xa0;but it's not possible to get lost as there is only one single path.<br />
+<br />
+In modern times, the word labyrinth has taken on a different meaning<br />
+&#xa0;and is often used as a synonym for a maze.<br />
+A maze is quite different<br />
+&#xa0;as it is a kind of puzzle with an intricate network of paths.<br />
+Mazes became fashionable in the 15th and 16th centuries in Europe,<br />
+&#xa0;and can still be found in the gardens of great houses and palaces.<br />
+The paths are usually surrounded by thick, high hedges<br />
+&#xa0;so that it's not possible to see over them.<br />
+Entering a maze usually involves getting lost a few times<br />
+&#xa0;before using logic to work out the pattern<br />
+&#xa0;&#xa0;and find your way to the centre and then out again.<br />
+There are lots of dead ends and paths which lead you back to where you started.<br />
+The word 'maze' is believed to come from a Scandinavian word for a state of confusion.<br />
+This is where the word 'amazing' comes from.<br />
+<br />
+Labyrinths, on the other hand, have a very different function.<br />
+Although people now often refer to things they find complicated as labyrinths,<br />
+&#xa0;this is not how they were seen in the past.<br />
+The winding spiral of the labyrinth has been used for centuries as a metaphor for life's journey.<br />
+It served as a spiritual reminder<br />
+&#xa0;that there is purpose and meaning to our lives and helped to give people a sense of direction.<br />
+Labyrinths are thought to encourage a feeling of calm<br />
+&#xa0;and have been used as a meditation and prayer tool in many cultures over many centuries.<br />
+<br />
+The earliest examples of the labyrinth spiral pattern have been found carved into stone,<br />
+&#xa0;from Sardinia to Scandinavia, from Arizona to India to Africa.<br />
+In Europe, these spiral carvings date from the late Bronze Age.<br />
+The Native American Pima tribe wove baskets with a circular labyrinth design<br />
+&#xa0;that depicted their own cosmology.<br />
+In Ancient Greece, the labyrinth spiral was used on coins around four thousand years ago.<br />
+Labyrinths made of mosaics were commonly found<br />
+&#xa0;in bathhouses, villas and tombs throughout the Roman Empire.<br />
+<br />
+In Northern Europe, there were actual physical labyrinths designed for walking on.<br />
+These were cut into the turf or grass, usually in a circular pattern.<br />
+The origin of these walking labyrinths remains unclear,<br />
+&#xa0;but they were probably used for fertility rites which may date back thousands of years.<br />
+Eleven examples of turf labyrinths survive today,<br />
+&#xa0;including the largest one at Saffron Walden, England,<br />
+&#xa0;&#xa0;which used to have a large tree in the middle of it.<br />
+<br />
+More recently labyrinths have experienced something of a revival.<br />
+Some believe that walking a labyrinth promotes healing and mindfulness,<br />
+&#xa0;and there are those who believe in its emotional and physical benefits,<br />
+&#xa0;&#xa0;which include slower breathing and a restored sense of balance and perspective.<br />
+This idea has become so popular<br />
+&#xa0;that labyrinths have been laid into the floors of spas,<br />
+&#xa0;&#xa0;wellness centres and even prisons in recent years.<br />
+<br />
+A pamphlet at Colorado Children's Hospital informs patients<br />
+&#xa0;that 'walking a labyrinth can often calm people in the midst of a crisis'.<br />
+And apparently, it's not only patients who benefit.<br />
+Many visitors find walking a labyrinth less stressful than sitting in a corridor or waiting room.<br />
+Some doctors even walk the labyrinth during their breaks.<br />
+In some hospitals,<br />
+&#xa0;patients who can't walk can have a paper 'finger labyrinth' brought to their bed.<br />
+The science behind the theory is a litle sketchy,<br />
+&#xa0;but there are dozens of small-scale studies<br />
+&#xa0;&#xa0;which support claims about the benefits of labyrinths.<br />
+For example, one study found<br />
+&#xa0;that walking a labyrinth provided 'short-term calming, relaxation, and relief from anxiety'<br />
+&#xa0;&#xa0;for Alzheimer's patients.<br />
+<br />
+So, what is it about labyrinths that makes their appeal so universal? Well &#x2026;<br />
+</p>
+</div>
+<div id="outline-container-orgff03f70" class="outline-3">
+<h3 id="orgff03f70">expression</h3>
+<div class="outline-text-3" id="text-orgff03f70">
+<p>
+winding: adj. 弯曲的<br />
+spiral: n. a line in the form of a curve that winds around a central point, moving further away from the centre all the time<br />
+labyrinth: labyrinthine  adj.<br />
+	a large network of paths or passages which cross each other, making it very difficult to find your way<br />
+Bronze:a hard metal that is a mixture of copper and tin<br />
+cosmology: the science of the origin and structure of the universe, especially as studied in astronomy<br />
+mosaics: a pattern or picture made by fitting together small pieces of coloured stone, glass etc<br />
+villa:a big house in the country with a large garden<br />
+tomb: a stone structure above or below the ground where a dead person is buried<br />
+turf:a surface that consists of soil with grass on top, or an artificial surface that looks like this<br />
+revival: a process in which something becomes active or strong again<br />
+promote:to help something to develop or increase<br />
+restored:feeling better and stronger<br />
+wellness:the state of being healthy<br />
+pamphlet:a very thin book with paper covers, that gives information about something<br />
+crisis:a situation in which there are a lot of problems that must be dealt with quickly so that the situation does not get worse or more dangerous<br />
+corridor:a long narrow passage on a train or between rooms in a building, with doors leading off it<br />
+sketch:not thorough or complete, and not having enough details to be useful<br />
+</p>
+<hr />
+<p>
+for st.: eg. for 1000 years<br />
+as diverse as: including many different types of people or things<br />
+have in common<br />
+lead to sp.<br />
+starting point<br />
+at the entrance<br />
+the goal is to do sth.<br />
+reach sp.<br />
+twists and turns: 玩玩扰扰<br />
+find sb's way (to sp.)<br />
+involve sth./doing sth.<br />
+it's not possible to do sth.<br />
+get adj.: be adj.<br />
+in modern times<br />
+take on: 用作<br />
+be used as: 被用作<br />
+a synonym for A: a word with the smeaning as another word in the slanguage<br />
+intricate: adj. containing many small parts or details that all work or fit together<br />
+a network of paths: 网状道路<br />
+become fashionable<br />
+be surrounded by sth.:<br />
+see over sp.: to walk around and examine (a place) carefully<br />
+hedges: a row of small bushes or trees growing close together, usually dividing one field or garden from another<br />
+use sth. to do sth.<br />
+work out<br />
+dead ends<br />
+be believed to do sth.<br />
+come from sp.<br />
+a state of confusion<br />
+refer to A as B<br />
+a metaphor for sth.<br />
+serve as: 被用于<br />
+a spiritual reminder: relating to your spirit rather than to your body or mind<br />
+purpose and meaning to our lives<br />
+help to do sth.<br />
+give sb. sth.<br />
+a sense of direction<br />
+be thought to do sth.<br />
+a feeling of sth.<br />
+the examples of sth.<br />
+be found done sth.: 被发现被做某事<br />
+be carved into stone: 被雕刻到石头<br />
+date from tp.<br />
+be used on sth.<br />
+around xx years ago<br />
+be made of<br />
+be designed for doing<br />
+be cut into<br />
+in a circular pattern<br />
+remain unclear: is unclear<br />
+fertility rites: 生育仪式<br />
+date back thousands of years<br />
+in the middle of sth.<br />
+experience a revival:<br />
+something of: to some degree<br />
+believe in sth.<br />
+a sense of sth.<br />
+be laid into: 被放置在<br />
+in recent years<br />
+inform sb. that &#x2026;<br />
+in the midst of sth.<br />
+find doing A adj.-er than doing B<br />
+during sb's breaks<br />
+be brought to sp.<br />
+dozens of sth.<br />
+for example<br />
+one study found that &#x2026;<br />
+relief from anxiety<br />
+make sth. adj.<br />
+</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

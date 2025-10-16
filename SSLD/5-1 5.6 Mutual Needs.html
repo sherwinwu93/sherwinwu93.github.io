@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-01-27 Mon 15:37 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-org2875de3" class="outline-2">
+<h2 id="org2875de3">5-1 5.6 Mutual Needs</h2>
+<div class="outline-text-2" id="text-org2875de3">
+<p class="verse">
+Professor Tsang, you bring up a point about<br />
+&#xa0;how some transformations might be negative but others can be positive<br />
+&#xa0;&#xa0;and then maybe others just sort of are neither or fall in between.<br />
+So, whether it's positive or negative, what are some of those key learning points<br />
+&#xa0;that we want to take home to understand transformations and relationships?<br />
+Well, following the SSLD logic that we enter the relationships<br />
+&#xa0;because there are needs that we wish to address through those relationships.<br />
+The key idea still is are our needs being met?<br />
+<br />
+So when a relationship is going through transformation and change right<br />
+&#xa0;in an ideal situation it's that both parties or all parties involved in that relationship<br />
+&#xa0;&#xa0;&#xa0;would be looking after his or her own needs as well as the mutual collective needs.<br />
+But we understand that it is not always possible<br />
+&#xa0;like in a hostile breakup or divorce, separation situation, then it is not possible.<br />
+But in a lot of transformation situations,<br />
+&#xa0;it actually is possible, and it's actually almost like central to the idea.<br />
+Say for example if people're making the transformation<br />
+&#xa0;from you know being acquaintances to being lovers or friends to being business partners.<br />
+That is like a transformation that they have to go through.<br />
+And going through an explict process of like negotiating what is the best arrangement<br />
+&#xa0;so that our respective needs would be met would be the best thing to do.<br />
+</p>
+</div>
+<div id="outline-container-org83775e5" class="outline-3">
+<h3 id="org83775e5">expression</h3>
+<div class="outline-text-3" id="text-org83775e5">
+<p>
+positive [ˈpɑzətɪv]: adj. if you are positive about things, you are hopeful and confident, and think about what is good in a situation rather than what is bad OPP negative积极的<br />
+acquaintance [əˈkweɪntəns]: n.  someone you know, but who is not a close friend熟人<br />
+exquisite [ˈekskwɪzɪt]: adj. extremely beautiful and very delicately made精致的<br />
+respective [rɪˈspektɪv]: adj. used before a plural noun to refer to the different things that belong to each separate person or thing mentioned分别的, 各自的<br />
+</p>
+<hr />
+<p>
+bring up sth.: 提出某事<br />
+look after sb.: 照顾某人<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org8cdef4f" class="outline-3">
+<h3 id="org8cdef4f">ch.</h3>
+<div class="outline-text-3" id="text-org8cdef4f">
+<p>
+5-1 5.6 互相需求<br />
+曾教授，您提到了一点，即某些转变可能是负面的，但也有可能是正面的，还有一些可能既不是正面也不是负面，或者介于两者之间。<br />
+那么，不论是正面还是负面，我们有哪些关键的学习点可以帮助我们更好地理解转变和关系呢？<br />
+根据SSLD的逻辑，我们进入关系是因为我们希望通过这些关系满足某些需求。<br />
+核心思想仍然是：我们的需求是否得到了满足？<br />
+当关系经历转变和变化时，在理想情况下，关系中的双方或所有参与者都能够关注自己的需求以及共同的集体需求。<br />
+但我们也明白，这并不总是可能的，比如在充满敌意的分手或离婚、分居情况下，这是无法实现的。<br />
+然而，在许多转变的情境中，这实际上是可能的，而且几乎是核心理念的一部分。<br />
+例如，人们从认识到成为恋人，或者从朋友到成为商业伙伴。<br />
+这是一种他们必须经历的转变。<br />
+在这种情况下，经历一个精细的过程，比如协商出最佳安排，以确保我们各自的需求得到满足，这是最好的做法。<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org2215546" class="outline-3">
+<h3 id="org2215546">sentence</h3>
+<div class="outline-text-3" id="text-org2215546">
+<p>
+positive [ˈpɑzətɪv]: adj. if you are positive about things, you are hopeful and confident, and think about what is good in a situation rather than what is bad OPP negative积极的<br />
+</p>
+<ul class="org-ul">
+<li>When we were running out of my money to buy the apartment, my wife was positive about the life in the future.<br /></li>
+<li>Positive emotions are spreading through news about the victories on the battlefield.<br /></li>
+<li>The boy who develops fevers is still positive about his illness.<br /></li>
+</ul>
+<p>
+acquaintance [əˈkweɪntəns]: n.  someone you know, but who is not a close friend熟人<br />
+</p>
+<ul class="org-ul">
+<li>One of my acquaintances is bearing scars and scabs throught the rest of his life after he has had smallpox.<br /></li>
+<li>One of my acquaintances spread the news on the battlefield to our village.<br /></li>
+<li>One of my acquaintances told me a story about how these nomads devastated a civilization by gunpowder.<br /></li>
+</ul>
+<p>
+exquisite [ˈekskwɪzɪt]: adj. extremely beautiful and very delicately made精致的<br />
+</p>
+<ul class="org-ul">
+<li>The exquisite kind of watches made its way around the world via these merchants.<br /></li>
+<li>There is an estimated 1000 to 2000 exquisite watches in the truck.<br /></li>
+<li>The fall of the hero started because of an exquisite plot his twin brothers made for him.<br /></li>
+</ul>
+<p>
+respective [rɪˈspektɪv]: adj. used before a plural noun to refer to the different things that belong to each separate person or thing mentioned分别的, 各自的<br />
+</p>
+<ul class="org-ul">
+<li>It begins all the way back when they didn't address respective needs during the divorce.<br /></li>
+<li>The peasants of two villages grinded up respective wheat in secret to revenge each other.<br /></li>
+<li>If we looked after respective children, we would be both happy.<br /></li>
+</ul>
+<hr />
+<p>
+bring up sth.: 提出某事<br />
+</p>
+<ul class="org-ul">
+<li>He brought up a point that his ex-wife had sex with others during their marriage.<br /></li>
+<li>Why don't you bring up the issue that you raised in our conversation?<br /></li>
+<li>My wife brought up an idea that we could keep a cat in our house.<br /></li>
+</ul>
+<p>
+look after sb.: 照顾某人<br />
+</p>
+<ul class="org-ul">
+<li>Failing to look after his sister, he felt very guilt and was worried about his parents' complaints.<br /></li>
+<li>If you look after my baby, I will give you 5 dollars.<br /></li>
+<li>He was very joyful when he ran into the cat that he used to look after.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgad37175" class="outline-3">
+<h3 id="orgad37175">sentence2</h3>
+<div class="outline-text-3" id="text-orgad37175">
+<p>
+positive [ˈpɑzətɪv]: adj. if you are positive about things, you are hopeful and confident, and think about what is good in a situation rather than what is bad OPP negative积极的<br />
+</p>
+<ul class="org-ul">
+<li>When we were running out of money to buy the apartment, my wife was positive about life in the future.<br /></li>
+<li>Positive emotions are spreading through news about the victories on the battlefield.<br /></li>
+<li>The boy who develops fevers is still positive about his illness.<br /></li>
+</ul>
+<p>
+acquaintance [əˈkweɪntəns]: n.  someone you know, but who is not a close friend熟人<br />
+</p>
+<ul class="org-ul">
+<li>One of my acquaintances is bearing scars and scabs through the rest of his life after he had smallpox.<br /></li>
+<li>One of my acquaintances spread the news on the battlefield to our village.<br /></li>
+<li>One of my acquaintances told me a story about how these nomads devastated a civilization by gunpowder.<br /></li>
+</ul>
+<p>
+exquisite [ˈekskwɪzɪt]: adj. extremely beautiful and very delicately made精致的<br />
+</p>
+<ul class="org-ul">
+<li>The exquisite kind of watches made its way around the world via these merchants.<br /></li>
+<li>There are an estimated 1000 to 2000 exquisite watches in the truck.<br /></li>
+<li>The fall of the hero started because of an exquisite plot his twin brothers made for him.<br /></li>
+</ul>
+<p>
+respective [rɪˈspektɪv]: adj. used before a plural noun to refer to the different things that belong to each separate person or thing mentioned分别的, 各自的<br />
+</p>
+<ul class="org-ul">
+<li>It begins all the way back when they didn't address their respective needs during the divorce.<br /></li>
+<li>The peasants of two villages ground up respective wheat in secret to revenge each other.<br /></li>
+<li>If we looked after our respective children, we would be both happy.<br /></li>
+</ul>
+<hr />
+<p>
+bring up sth.: 提出某事<br />
+</p>
+<ul class="org-ul">
+<li>He brought up a point that his ex-wife had sex with others during their marriage.<br /></li>
+<li>Why don't you bring up the issue that you raised in our conversation?<br /></li>
+<li>My wife brought up the idea that we could keep a cat in our house.<br /></li>
+</ul>
+<p>
+look after sb.: 照顾某人<br />
+</p>
+<ul class="org-ul">
+<li>Failing to look after his sister, he felt very guilty and was worried about his parents' attitudes.<br /></li>
+<li>If you look after my baby, I will give you 5 dollars.<br /></li>
+<li>He was very joyful when he ran into the cat that he used to look after.<br /></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

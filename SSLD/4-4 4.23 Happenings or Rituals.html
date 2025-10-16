@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-01-19 Sun 10:10 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-org0517fa2" class="outline-2">
+<h2 id="org0517fa2">4-4 4.23 Happenings or Rituals?</h2>
+<div class="outline-text-2" id="text-org0517fa2">
+<p class="verse">
+And so you just mentioned something called happenings,<br />
+&#xa0;can you just elaborate on what that is?<br />
+A happening is something that is not usual.<br />
+That is not routine, right?<br />
+And something happens, right?<br />
+So say for example, if you celebrate your birthday every year you go to the same bakery.<br />
+You get the same like I don't know like chestnut or blueberry cake.<br />
+And like you brew the same coffee.<br />
+You invite the same people.<br />
+That is a birthday party, but is not a happening, right?<br />
+It is an event, right?<br />
+A happening is like something that is not routine.<br />
+It can be planned, it can be staged, but like it is something that is unusual, right? Yeah.<br />
+<br />
+So you do things slightly differently.<br />
+Like a surprise party may be a happening.<br />
+But if you have a surprise party every year [LAUGH] for your birthday then it.<br />
+It doesn't like, it doesn't come across as a surprise anymore.<br />
+And it's not a happening.<br />
+So, and I know that I'm very biased here.<br />
+Like I think happenings are great, right?<br />
+But then of course there are people who do not want happenings.<br />
+People who want things to be predictable.<br />
+They want things to be routine, right?<br />
+And so yeah, I understand that.<br />
+Like, I'm a happenings person.<br />
+<br />
+But like there are also people who really value, like doing things the same way.<br />
+And I have some respect for that<br />
+&#xa0;because one of the things that people are beginning to understand better is the role of rituals.<br />
+And you know that certain rituals are basically the same sequence of events that had happened<br />
+&#xa0;or they are performed over and over for hundreds of years or maybe over a thousand years, right?<br />
+Right.<br />
+People are practicing these traditional rituals, and it still carries a certain force.<br />
+It also has an impact on people and makes people feel a sense of stability.<br />
+And then the other thing, which we haven't really been talking too much about in this course,<br />
+&#xa0;is the sense of community.<br />
+Although we're talking about relationships.<br />
+So, very often when people are negotiating a relationship,<br />
+&#xa0;some people have deliberately chosen to follow a certain script, a certain pattern.<br />
+Because by doing so, they feel that they are part of a community.<br />
+So, one obvious example is when you talk about religious community.<br />
+So like some people practice the same religious rituals,<br />
+&#xa0;which may also condition and govern their intimacy behaviour.<br />
+When they do that,<br />
+&#xa0;they feel that they're part of the community and they both want that, and that would be fine.<br />
+</p>
+</div>
+<div id="outline-container-org16ce817" class="outline-3">
+<h3 id="org16ce817">expression</h3>
+<div class="outline-text-3" id="text-org16ce817">
+<p>
+bakery [ˈbeɪk(ə)ri]: n. a place where bread and cakes are baked, or a shop where they are sold面包店<br />
+chestnut [ˈtʃesˌnʌt]: n. a smooth red-brown nut that you can eat板栗<br />
+blueberry [ˈbluˌberi]: n. a small blue fruit, or the plant it grows on蓝莓<br />
+brew [bru]: v. if a drink of tea or coffee is brewing, the taste is getting into the hot water沏(茶,咖啡)<br />
+predictable [prɪˈdɪktəb(ə)l]: adj. if something or someone is predictable, you know what will happen or what they will do – sometimes used to show disapproval可预言的<br />
+</p>
+<hr />
+<p>
+come across as n./adj.: come over as adj./n.: 显得是&#x2026;<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org88c9541" class="outline-3">
+<h3 id="org88c9541">ch.</h3>
+<div class="outline-text-3" id="text-org88c9541">
+<p>
+4-4 4.23 事件还是仪式？<br />
+你刚刚提到了一个叫做“事件”的东西，你能解释一下那是什么吗？<br />
+“事件”是指不寻常的事情。<br />
+这不是日常的，对吧？<br />
+并且会发生某些事情，对吧？<br />
+举个例子，如果你每年庆祝生日，都去同一家面包店。<br />
+你买的是同样的，比如栗子蛋糕或者蓝莓蛋糕。<br />
+而且你煮的是同样的咖啡。<br />
+你邀请的是同样的人。<br />
+那是一个生日聚会，但不是一个“事件”，对吧？<br />
+那是一个事件，对吧？<br />
+“事件”是指不寻常的事情。<br />
+它可以是计划好的，也可以是安排好的，但它是非凡的，对吧？<br />
+是的。<br />
+所以你做事情会有些不同。<br />
+比如惊喜派对可能就是一个“事件”。<br />
+但如果你每年生日都举办惊喜派对[笑]，那么……<br />
+它就不再是惊喜了。<br />
+那就不再是“事件”了。<br />
+所以，我知道我在这里非常偏颇。<br />
+我认为“事件”很棒，对吧？<br />
+但当然，也有一些人不喜欢“事件”。<br />
+那些希望事物可以预测的人。<br />
+他们希望事情是有规律的，对吧？<br />
+所以我明白了。<br />
+我自己是喜欢“事件”的人。<br />
+但也有一些人非常重视做事方式的一致性。<br />
+我对这种做法有些尊重，因为人们开始更加理解仪式的作用。<br />
+你知道，某些仪式基本上是相同的事件顺序，它们已经持续了几百年，甚至上千年，对吧？<br />
+对。<br />
+人们正在践行这些传统仪式，它依然具有某种力量。<br />
+它对人们产生影响，并使人们感到一种稳定感。<br />
+还有另一点，我们在这门课上没怎么提到，那就是社区感。<br />
+尽管我们在讨论关系。<br />
+所以，当人们在协商关系时，很多时候有人故意选择遵循某种剧本、某种模式。<br />
+因为通过这样做，他们感到自己是社区的一部分。<br />
+一个明显的例子是当你谈论宗教社区时。<br />
+有些人会实践相同的宗教仪式，这也可能影响并规范他们的亲密行为。<br />
+当他们这样做时，他们感到自己是社区的一部分，他们都希望这样，这样是可以的。<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org29356d5" class="outline-3">
+<h3 id="org29356d5">sentence</h3>
+<div class="outline-text-3" id="text-org29356d5">
+<p>
+bakery [ˈbeɪk(ə)ri]: n. a place where bread and cakes are baked, or a shop where they are sold面包店<br />
+</p>
+<ul class="org-ul">
+<li>He worked through his bake skills in the bakery.<br /></li>
+<li>My keys ring must fall on the bakery.<br /></li>
+<li>The parking spot may fall to the bakery.<br /></li>
+</ul>
+<p>
+chestnut [ˈtʃesˌnʌt]: n. a smooth red-brown nut that you can eat板栗<br />
+</p>
+<ul class="org-ul">
+<li>On one end of spectrum, people feast on chestnut every day.<br /></li>
+<li>When he collected chestnuts outside, he got bogged down with quarrels with natives.<br /></li>
+<li>My wife spoke to me that she was baised towards chestnut cake.<br /></li>
+</ul>
+<p>
+blueberry [ˈbluˌberi]: n. a small blue fruit, or the plant it grows on蓝莓<br />
+</p>
+<ul class="org-ul">
+<li>Indulge me in a momentary tangent, the blueberry is so expensive that we can't afford it.<br /></li>
+<li>The cultivation of blueberry developed a model for a set of business.<br /></li>
+<li>The sales of blueberry in this month agreed with the model that's published in an article.<br /></li>
+</ul>
+<p>
+brew [bru]: v. if a drink of tea or coffee is brewing, the taste is getting into the hot water沏(茶,咖啡)<br />
+</p>
+<ul class="org-ul">
+<li>It might be time for us to brew tea and have a rest after hard works.<br /></li>
+<li>There will be more orders to come, so we need to brew more preparing for that.<br /></li>
+<li>The cup of tea is said to be brewed up by your grandfather.<br /></li>
+</ul>
+<p>
+predictable [prɪˈdɪktəb(ə)l]: adj. if something or someone is predictable, you know what will happen or what they will do – sometimes used to show disapproval可预言的<br />
+</p>
+<ul class="org-ul">
+<li>After we quarrelled bitterly, I realized that our marriage would be predictable and tragic.<br /></li>
+<li>It is predictable that these walkers will stick together in no time.<br /></li>
+<li>The thing that happened yesterday was obviously predictable.<br /></li>
+</ul>
+<hr />
+<p>
+come across as n./adj.: come over as adj./n.: 显得是&#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>The question that comes across as convoluted is easy to tackle with your patience.<br /></li>
+<li>A surprise birthday that has happened over and over again doesn't come across as a surprise anymore.<br /></li>
+<li>What our cat did came across as intelligent.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org8b6c5e3" class="outline-3">
+<h3 id="org8b6c5e3">sentence2</h3>
+<div class="outline-text-3" id="text-org8b6c5e3">
+<p>
+bakery [ˈbeɪk(ə)ri]: n. a place where bread and cakes are baked, or a shop where they are sold面包店<br />
+</p>
+<ul class="org-ul">
+<li>He worked through his baking skills in the bakery.<br /></li>
+<li>My keys ring must fall on the bakery.<br /></li>
+<li>The parking spot may fall to the bakery.<br /></li>
+</ul>
+<p>
+chestnut [ˈtʃesˌnʌt]: n. a smooth red-brown nut that you can eat板栗<br />
+</p>
+<ul class="org-ul">
+<li>On one end of the spectrum, people feast on chestnuts every day.<br /></li>
+<li>When he collected chestnuts outside, he got bogged down with quarrels with natives.<br /></li>
+<li>My wife told me that she was biased toward chestnut cake.<br /></li>
+</ul>
+<p>
+blueberry [ˈbluˌberi]: n. a small blue fruit, or the plant it grows on蓝莓<br />
+</p>
+<ul class="org-ul">
+<li>Indulge me in a momentary tangent, the blueberry is so expensive that we can't afford it.<br /></li>
+<li>The cultivation of blueberries developed a model for a set of businesses.<br /></li>
+<li>The sales of blueberries this month agreed with the model that's published in an article.<br /></li>
+</ul>
+<p>
+brew [bru]: v. if a drink of tea or coffee is brewing, the taste is getting into the hot water沏(茶,咖啡)<br />
+</p>
+<ul class="org-ul">
+<li>It might be time for us to brew tea and rest after hard work.<br /></li>
+<li>There will be more orders to come, so we need to brew more preparing for that.<br /></li>
+<li>The cup of tea is said to be brewed up by your grandfather.<br /></li>
+</ul>
+<p>
+predictable [prɪˈdɪktəb(ə)l]: adj. if something or someone is predictable, you know what will happen or what they will do – sometimes used to show disapproval可预言的<br />
+</p>
+<ul class="org-ul">
+<li>After we quarreled bitterly, I realized that our marriage would be predictable and tragic.<br /></li>
+<li>It is predictable that these walkers will stick together in no time.<br /></li>
+<li>The thing that happened yesterday was obviously predictable.<br /></li>
+</ul>
+<hr />
+<p>
+come across as n./adj.: come over as adj./n.: 显得是&#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>The question that comes across as convoluted is easy to tackle with your patience.<br /></li>
+<li>A surprise birthday that has happened over and over again doesn't come across as a surprise anymore.<br /></li>
+<li>What our cat did came across as intelligent.<br /></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,713 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-08-02 Fri 14:41 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-org7bb96c1" class="outline-2">
+<h2 id="org7bb96c1">task13 7-2 写作3 task2+task1</h2>
+<div class="outline-text-2" id="text-org7bb96c1">
+<p>
+In some countries, more and more people are becoming interested in finding out about the history of the house or building they live in.<br />
+</p>
+
+<p>
+What are the reasons for this?<br />
+</p>
+
+<p>
+How can people research this?<br />
+</p>
+
+<p>
+作业1：<br />
+读：<br />
+</p>
+<ol class="org-ol">
+<li>审题+回顾评分标准<br /></li>
+<li>泛读话题相关⽂章：总结内容+结构+表达<br /></li>
+<li>精读⾼分范⽂（PDF⽂件） ：阅读内容+标记结构（句间+段内+段间+篇章outline）<br /></li>
+</ol>
+<p>
+3.5. 学习使⽤<a href="https://writing9.com">https://writing9.com</a> （查找任意task1+task2真题范⽂）<br />
+练：<br />
+</p>
+<ol class="org-ol">
+<li>罗列⼤纲+继续补⻬上次作业没写完的部分，如果上次作业写的⾜够完整，请略过本步骤。<br /></li>
+</ol>
+<p>
+改：<br />
+</p>
+<ol class="org-ol">
+<li>修改单词（同义词）+习惯⽤法+语法⼤结构（丰富程度）<br /></li>
+<li>对⽐⾃⼰写的和步骤3中的⾼分范⽂：【内容】【结构】，并修改。<br /></li>
+<li>星座⼩组：共同准备，互相讨论，互相提供修改建议。<br /></li>
+</ol>
+
+<p>
+作业2:<br />
+A类 G类 Task1:更简单粗暴的备考⽅案<br />
+</p>
+<ol class="org-ol">
+<li>审题+精读范⽂=内容+结构+表达<br /></li>
+<li>动笔写，即模考（前中后）<br /></li>
+</ol>
+<p>
+托福 Task1:更简单粗暴的备考⽅案<br />
+</p>
+<ol class="org-ol">
+<li>审题=精读阅读材料（练习skimming） +精听听⼒脚本（练习take notes）<br /></li>
+<li>精读范⽂=内容+结构+表达<br /></li>
+<li>动笔写，即模考（前中后）<br /></li>
+</ol>
+<p>
+参考上⾯的⽅案：<br />
+</p>
+<ol class="org-ol">
+<li>按考试类别，阅读3道真题的⾼分范⽂，并分析【结构】与【内容】<br /></li>
+</ol>
+
+<p>
+作业3：<br />
+汉语写作（可全英，或半英半汉）<br />
+</p>
+<ol class="org-ol">
+<li>思考阅读&amp;听⼒&amp;写作对准备⼝语有什么帮助？<br /></li>
+<li>思考NCE23中的练习与作业，哪些对⼝语提分有帮助？<br /></li>
+<li>思考如何提升英语⼝语？ 给出您的建议，请⾄少给3点。<br /></li>
+</ol>
+</div>
+<div id="outline-container-orga665073" class="outline-3">
+<h3 id="orga665073"><span class="done DONE">DONE</span> 课间作业</h3>
+<div class="outline-text-3" id="text-orga665073">
+<p>
+语法大结构:<br />
+</p>
+<ul class="org-ul">
+<li>3大从句 (n.adj.adv.)<br /></li>
+<li>非谓语 (to do &amp; doing &amp; done 定语状语)<br /></li>
+<li>虚拟语气<br /></li>
+<li>特殊句型(强调etc,主语从句)<br /></li>
+<li>特殊结构(needn't have done + should have done etc.)<br /></li>
+<li>谓语结构 (时态主动&amp;时态被动&amp;情态动词主动&amp;情态动词被动&amp;情态动词表推测)<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org723555b" class="outline-3">
+<h3 id="org723555b">作业1: Task2</h3>
+<div class="outline-text-3" id="text-org723555b">
+</div>
+<div id="outline-container-org17559e6" class="outline-4">
+<h4 id="org17559e6"><span class="done DONE">DONE</span> 读：1. 审题+回顾评分标准</h4>
+<div class="outline-text-4" id="text-org17559e6">
+<p>
+In some countries, more and more people are becoming interested in<br />
+	finding out about the history of the house or building they live in.<br />
+What are the reasons for this?<br />
+How can people research this?<br />
+</p>
+<ul class="org-ul">
+<li>词汇丰富程度: 单词+习惯用法<br />
+<ul class="org-ul">
+<li>词汇丰富: 同义词汇/习惯用法总量大, 总词汇量大, 靠泛读解决<br />
+eg. important, important, important VS important, of importance, crucial<br /></li>
+<li>达意准确: 更具体的词汇要优于更抽象的词汇, 仍旧是总词汇要大<br />
+eg. fruit VS apple<br /></li>
+<li>标点符号: 逗号+句号<br /></li>
+<li>拼写错误: morning vs monring,仍然可以得满分, 因为只要是人类就会有错误<br /></li>
+<li>词汇搭配错误: 习惯用法的介词有点错误,也没事<br /></li>
+</ul></li>
+<li>语法多样性及准确性: 语法<br />
+<ul class="org-ul">
+<li>在精读的时候练,而不是写作的时候. NCE23+Pattern Drill+红皮书<br /></li>
+<li>丰富多样的语法结构: 整理出大语法结构,用大语法结构和作文去检查是否出现,没有就想法弄出来<br /></li>
+<li>语法错误: 语法的三单,单复数没问题,大语法结构没错就行<br /></li>
+</ul></li>
+<li>连贯与衔接: 结构(outline)<br />
+<ul class="org-ul">
+<li>连贯<br /></li>
+<li>有条理地排序,推进<br /></li>
+</ul></li>
+<li>写作任务回应情况: 内容<br />
+<ol class="org-ol">
+<li>题目问啥,作文就写啥.每个论点内容长度控制得差不多.<br /></li>
+<li>始终一个论点,不要缺乏论点<br /></li>
+</ol></li>
+<li>总结:<br />
+<ul class="org-ul">
+<li>内容+结构: 可以脱离英语去练习,中文的水平一般是英文水平的上限<br /></li>
+<li>结构易拿高分(8-9). 词汇+语法需有些敬畏,母语者一般8-8.5. 内容只能靠积累.<br /></li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgfd59daf" class="outline-4">
+<h4 id="orgfd59daf"><span class="done DONE">DONE</span> 读：2. 泛读话题相关⽂章：总结内容+结构+表达</h4>
+<div class="outline-text-4" id="text-orgfd59daf">
+</div>
+</div>
+
+<div id="outline-container-org4572481" class="outline-4">
+<h4 id="org4572481">读：3. 精读⾼分范⽂（PDF⽂件）： 阅读内容+标记结构（句间+段内+段间+篇章outline）</h4>
+<div class="outline-text-4" id="text-org4572481">
+</div>
+<ul class="org-ul">
+<li><a id="orgbb1559c"></a><span class="done DONE">DONE</span> 3.5. 学习使⽤<a href="https://writing9.com">https://writing9.com</a> （查找任意task1+task2真题范⽂）<br />
+<div class="outline-text-5" id="text-orgbb1559c">
+</div>
+</li>
+<li><a id="orgdf252f7"></a>8<br />
+<div class="outline-text-5" id="text-orgdf252f7">
+<p>
+Purchasing a property such as a house or a building is categorized as a huge decision.<br />
+<b>So</b>, in some countries, many people try to determine the house's history<br />
+	before they have decided to move in.<br />
+wusd: 未复述题目,只回答了why,没回答how<br />
+</p>
+
+<p>
+There are many reasons why many residence owners find out about the building's background.<br />
+<b>For example</b>,<br />
+	a lot of countries particularly in Asia have similar mysterious myths about life after death.<br />
+They usually believe<br />
+	that buying a house<br />
+			where criminal situations have happened or people have suicide<br />
+		could give their life struck in disastrous luck.<br />
+<b>Moreover</b>, in some regions in Europe,<br />
+	most of the real estate were used as a palace before<br />
+	and the former owners probably were a royal family.<br />
+<b>Therefore</b>, a lot of assets have been used for several decades<br />
+	and deserve to be preserved in the museum.<br />
+wusd: 段首topic sentence<br />
+</p>
+
+<p>
+<b>However</b>, there are various ways to reach the residence's history.<br />
+<b>Firstly</b>, ask the information from local residents,<br />
+	especially those who have been living there for a long time<br />
+		because they could have enough pieces of information or experience about the house.<br />
+<b>As well as</b>, plenty of informative data could be discovered on online platforms.<br />
+<b>For instance</b>,<br />
+	the residence might have been sold by the previous owner or the oldest owners on the internet<br />
+		and they may provide the estate details<br />
+	<b>besides</b> if the building has been rented before,<br />
+		the tenants might write some housing reviews.<br />
+wusd: 段首topic sentence<br />
+</p>
+
+<p>
+<b>To conclude</b>, every home has its own history.<br />
+Inspecting the building's background could offer much beneficial information<br />
+	such as what we should do or what we should prepare before moving in.<br />
+wusd: 总结有瑕疵,只有分1,没有分2<br />
+</p>
+<hr />
+<p>
+wusd: 词汇量大且丰富,达意准确,语法多样准确,内容也不错,结构微微瑕疵<br />
+</p>
+</div>
+</li>
+<li><a id="orgbe85124"></a>7<br />
+<div class="outline-text-5" id="text-orgbe85124">
+<p>
+<b>Nowadays</b>, house owners became more excited about the past of their living places.<br />
+There are some reasons for this tendency and methods of investigation.<br />
+wusd: 复述提干+回答问题<br />
+</p>
+
+<p>
+<b>Firstly</b>, humans have a great sense of curiosity,<br />
+	and it is not a miracle<br />
+		that we would like to find out about the past of the constructions we live in.<br />
+Householders care about respect and knowledge of the history gives more satisfaction.<br />
+<b>Secondly</b>, architecture and design received the most common interests.<br />
+Forms and methods of structure and its construction<br />
+	gives pleasure and a deep understanding of the living place.<br />
+<b>For instance</b>,<br />
+	I figured out that a previous owner of my apartment was one of the richest Chinese,<br />
+		but by that time he was poor yet.<br />
+It gave me sensitivity and satisfaction in spending time there.<br />
+wusd: 没有topic sentence,内容2有点重复<br />
+</p>
+
+<p>
+How can we investigate house history?<br />
+<b>On one hand</b>,<br />
+	the best way is to have a real conversation with previous owners, talking to elders.<br />
+Facing the past itself gives more happiness.<br />
+<b>Moreover</b>, surfing the internet is another convenient method to get familiar with it.<br />
+<b>Although</b>, I think is more preferable to attend the local library,<br />
+	where I used to find real contacts and detailed information.<br />
+Everyone chooses their own way to search for it because the modern world helps enormously.<br />
+wusd: 有topic sentence,句子间的连接不够丝滑<br />
+</p>
+
+<p>
+<b>To conclude</b>, homeowners may easily research history houses,<br />
+	because there are plenty of opportunities.<br />
+A simple sense of curiosity and desire to have a fashionable lifestyle<br />
+	increase the number of people,<br />
+	who is interested in history and architecture.<br />
+It brings a positive impact on building's care<br />
+	and prevents rapid destroying by nature and the environment.<br />
+wusd: 总结分1,未总结分2<br />
+wusd: 词汇量少不丰富,结构词有点乱用,但是遵守了总分总的结构,复述回答提干也做的较好.语法和句式用的不够好,内容不够好<br />
+</p>
+</div>
+</li>
+<li><a id="orge5c6469"></a>7.5<br />
+<div class="outline-text-5" id="text-orge5c6469">
+<p>
+People are indeed getting keen on exploring the hidden history of their houses in certain areas.<br />
+A variety of reasons might be relevant to the phenomenon,<br />
+	and there are several ways for them to perform the investigation.<br />
+wusd: 复述提干+回答问题<br />
+</p>
+
+<p>
+<b>Personally</b>, there are three possible explanations associated with this issue.<br />
+<b>Firstly</b>,<br />
+	people are curious about the past events in their childhood and adolescence in the household.<br />
+Even a naive painting on the wall<br />
+	will stir the golden memory of being loved and cared for<br />
+		as a little kid under their parents' wings.<br />
+<b>Secondly</b>,<br />
+	knowing the building's history can grant us<br />
+		a more realistic and thorough understanding of the apartments' advantages and disadvantages.<br />
+<b>In addition</b>, many buildings used to have signs of many historical figures or celebrities;<br />
+	hence it might be rather romantic to figure out these stories.<br />
+wusd: topic sentence+例子<br />
+</p>
+
+<p>
+To conduct an investigation, a number of sources can be useful.<br />
+Senior family members should be asked initially.<br />
+They have spent so many years in the building,<br />
+		leaving various traces of their own;<br />
+	<b>thus</b>, they are capable of sharing their life stories within the household.<br />
+<b>Moreover</b>, the building manager can provide helpful information on this problem,<br />
+	because their job requires a profound grasp of what once happened in the house.<br />
+<b>Finally</b>, online searching is always a good choice for gathering such knowledge,<br />
+	especially when your home might be a potentially important historical site<br />
+		with celebrities living in it.<br />
+wusd: topic sentence+例子<br />
+</p>
+
+<p>
+<b>In conclusion</b>, an inspection of household history may be resulted from multiple reasons,<br />
+	while certain steps can be taken to fulfil this goal.<br />
+wusd: 总结分1和分2<br />
+wusd: 词汇较丰富,不如8分的有很多好句子,结构优秀.句式语法也较为多变.内容较为出彩.<br />
+</p>
+</div>
+</li>
+</ul>
+</div>
+
+<div id="outline-container-org2777591" class="outline-4">
+<h4 id="org2777591"><span class="done DONE">DONE</span> 练：4. 罗列⼤纲+继续补⻬上次作业没写完的部分，如果上次作业写的⾜够完整，请略过本步骤。</h4>
+<div class="outline-text-4" id="text-org2777591">
+</div>
+</div>
+<div id="outline-container-orgbe3201c" class="outline-4">
+<h4 id="orgbe3201c">改：5. 修改单词（同义词）+习惯⽤法+语法⼤结构（丰富程度）</h4>
+<div class="outline-text-4" id="text-orgbe3201c">
+<p>
+In some states,<br />
+	there are more insteresting about researching the history of the residences.<br />
+There are several common reasons that people may have,<br />
+	and some methods to find out the history of these.<br />
+</p>
+
+<p>
+Some people undertake the task of learning about it merely for fun,<br />
+	during which they not only satisfy their curiosities,<br />
+		but also enjoy a feel of the house in the past.<br />
+This may extract some wonderful stories which have been mysteries,<br />
+	for a house usually holds a wealth of information.<br />
+It may also help to find our ancestors,<br />
+	so that we could fit with genealogical and family story research.<br />
+When you plan to renovate your house,<br />
+	the work of understanding the history of it is beneficial for you to save money.<br />
+Besides, it enlarges our understanding about the history of the area in which the house is located,<br />
+	we might learn more about the farci of a suburb, like how it developed and who lived and worked.<br />
+</p>
+
+<p>
+There are a good number of ways to dig up the history of the house.<br />
+For one thing, what you need to do is to indentify the era in which the structure was built.<br />
+With the help of an architecture book,<br />
+	you could discern a core style of the house<br />
+		by examining the style of the windows, doors and other features.<br />
+Another thing which is suitable for you is to invite experts to assess your home.<br />
+An architect or a historian studies the exterior and interior of the house,<br />
+	so that he could tell when the house was built<br />
+		by the style of it which were prevalent at a particular time.<br />
+Since the frame of a house is unlikely to have been altered<br />
+	since the time the house was built,<br />
+	you can pay attention to the construction by which you can estimate when it was built.<br />
+You can rough-date a house by stuffs in your house which help you confirm the date of your house,<br />
+		like nails, paint colors, hinge design and so on.<br />
+For example, you can date elements of ahouse by examining a cross section of a paint chip.<br />
+</p>
+
+<p>
+Accompanying the increasing number of people who are insterested in the history of their houses,<br />
+	there are more and more ways to shed light on the stories of their houses.<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org5c363f3" class="outline-4">
+<h4 id="org5c363f3"><span class="done DONE">DONE</span> 改：6. 对⽐⾃⼰写的和步骤3中的⾼分范⽂：【内容】【结构】，并修改。</h4>
+<div class="outline-text-4" id="text-org5c363f3">
+<p>
+In some states,<br />
+	there are more insteresting about researching the history of the residences.<br />
+There are several common reasons that people may have,<br />
+	and some methods to find out the history of these.<br />
+</p>
+
+<p>
+There are many reasons why a good number of property owners find about the building's stories.<br />
+Firstly, Some people undertake the task of learning about it merely for fun,<br />
+	during which they not only satisfy their curiosities,<br />
+		but also enjoy a feel of the house in the past.<br />
+This may extract some wonderful stories which have been mysteries,<br />
+	for a house usually holds a wealth of information.<br />
+Secondly, it may also help to find our ancestors,<br />
+	so that we could fit with genealogical and family story research.<br />
+When you plan to renovate your house,<br />
+	the work of understanding the history of it is beneficial for you to save money.<br />
+In addition,<br />
+	it enlarges our understanding about the history of the area in which the house is located,<br />
+	we might learn more about the farci of a suburb, like how it developed and who lived and worked.<br />
+</p>
+
+<p>
+To dig up the history of the houses, a number of sources can be useful.<br />
+For one thing, what you need to do is to indentify the era in which the structure was built.<br />
+With the help of an architecture book,<br />
+	you could discern a core style of the house<br />
+		by examining the style of the windows, doors and other features.<br />
+Moreover, another thing which is suitable for you is to invite experts to assess your home.<br />
+An architect or a historian studies the exterior and interior of the house,<br />
+	so that he could tell when the house was built<br />
+		by the style of it which were prevalent at a particular time.<br />
+Finally, Since the frame of a house is unlikely to have been altered<br />
+	since the time the house was built,<br />
+	you can pay attention to the construction by which you can estimate when it was built.<br />
+You can rough-date a house by stuffs in your house which help you confirm the date of your house,<br />
+		like nails, paint colors, hinge design and so on.<br />
+For instance, you can date elements of ahouse by examining a cross section of a paint chip.<br />
+</p>
+
+<p>
+In conclusion,<br />
+	accompanying the increasing number of people who are insterested in the history of their houses,<br />
+	there are many ways to shed light on the stories of their houses.<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orge95f06f" class="outline-4">
+<h4 id="orge95f06f">改：7. 星座⼩组：共同准备，互相讨论，互相提供修改建议。</h4>
+</div>
+</div>
+
+<div id="outline-container-org921839f" class="outline-3">
+<h3 id="org921839f">作业2: G类 Task1:更简单粗暴的备考⽅案</h3>
+<div class="outline-text-3" id="text-org921839f">
+</div>
+<div id="outline-container-orgf5ca82c" class="outline-4">
+<h4 id="orgf5ca82c">1. 审题+精读范⽂=内容+结构+表达</h4>
+</div>
+<div id="outline-container-orgf464298" class="outline-4">
+<h4 id="orgf464298">2. 动笔写，即模考（前中后）</h4>
+</div>
+</div>
+
+<div id="outline-container-org21a489b" class="outline-3">
+<h3 id="org21a489b">作业3 汉语写作（可全英，或半英半汉）</h3>
+<div class="outline-text-3" id="text-org21a489b">
+</div>
+<div id="outline-container-org9ac6982" class="outline-4">
+<h4 id="org9ac6982">1. 思考阅读&amp;听⼒&amp;写作对准备⼝语有什么帮助？</h4>
+<div class="outline-text-4" id="text-org9ac6982">
+<p>
+阅读&amp;听力&amp;写作,每一步都对准备口语非常有帮助,而且是层层递进增量的帮助.<br />
+阅读为口语提供了内容,表达和结构.阅读分为精读和泛读,精读主要目的是为了获取表达,这些表达是书面形式的,回头可以通过大量的跟读造句,用于到口语当中.而泛读则着重提供了内容,在泛读的过程中,我们学到了知识学到信息,增大了词汇量,这样我们张嘴就言之有物.<br />
+</p>
+
+<p>
+听力不但为口语提供了内容,表达和结构,还有语音.要知道口语毕竟是语言形式的,听力等于是把阅读这些文本形式转化成了语音形式.我们听多了,最后下意识的模仿,就成了自己的口语.<br />
+</p>
+
+<p>
+对比阅读和听力,写作几乎是口语的另一种形式,文本形式.<br />
+写作和口语一样,都是输出内容,表达和结构,但是口语多了一门语音.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgcd0aabb" class="outline-4">
+<h4 id="orgcd0aabb">2. 思考NCE23中的练习与作业，哪些对⼝语提分有帮助？</h4>
+<div class="outline-text-4" id="text-orgcd0aabb">
+<p>
+内容:1,<br />
+结构:2,<br />
+单词:3.1,<br />
+习惯用法:3.2,<br />
+语法:3.3,<br />
+语音:4<br />
+</p>
+<hr />
+<ul class="org-ul">
+<li>单词造句<br />
+3<br /></li>
+<li>Pattern Drill 写+读<br />
+1,3+4<br /></li>
+<li>给自己讲解<br />
+3<br /></li>
+<li>红皮书<br />
+3<br /></li>
+<li>习惯用法造句<br />
+3<br /></li>
+<li>跟读至背诵<br />
+1+2+3+4<br /></li>
+<li>Ask me if 写+读<br />
+1+3+4<br /></li>
+<li>摘要写作<br />
+1+2<br /></li>
+<li>tell the story 口语<br />
+1+2+3+4<br /></li>
+<li>Topics for discussion<br />
+1+2+3<br /></li>
+</ul>
+<p>
+全部都有用,因为口语需要内容,结构,表达,语音,而每个环节都有所提供<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org72a9548" class="outline-4">
+<h4 id="org72a9548">3. 思考如何提升英语⼝语？ 给出您的建议，请⾄少给3点。</h4>
+<div class="outline-text-4" id="text-org72a9548">
+<p>
+首先从口语的what入手,再想想why,最后才是how<br />
+</p>
+
+<p>
+口语是什么? 和写作一样,广义的口语,shit既是;和口语考试,围绕一个topic展开对话.<br />
+为什么要提升口语? 1.表达自我的需求, 2.工作生活要用<br />
+</p>
+
+<p>
+如何提升英语口语?<br />
+主要两方面入手:<br />
+</p>
+<ol class="org-ol">
+<li>精读/泛读/泛听<br /></li>
+<li>写作<br /></li>
+<li>练广义的口语(用嘴造句),summary<br /></li>
+<li>练狭义的口语,先提纲,再扩展<br /></li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

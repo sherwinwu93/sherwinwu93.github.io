@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-11-30 Sat 13:44 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-org7808736" class="outline-2">
+<h2 id="org7808736">3-2 3.12 Attributions 3 - Needs</h2>
+<div class="outline-text-2" id="text-org7808736">
+<p class="verse">
+Is an attribution always a response to an underlying need?<br />
+I would say that in most cases, but in some cases, it can all just be a habit.<br />
+Okay.<br />
+Because making simple attributions, as I said, consumes less energy.<br />
+Mm-hm.<br />
+To a lot of people, I just do not have that much psychological energy<br />
+&#xa0;to put into this and think about this carefully and consider this in multiple dimensions.<br />
+It will be just easier for me to say, okay, this is how it works.<br />
+<br />
+Actually, later on, when we have a chance to look at how research is done,<br />
+&#xa0;we will find that even research scientists were making the same mistake.<br />
+We try to come up with very simple answers and we ask very simple questions.<br />
+One example that I can talk about here, and then later on in this course,<br />
+&#xa0;hopefully, we'll have a chance to look into this in more detail.<br />
+Is very often people are interested in the idea of who are the people who are attractive?<br />
+What makes people attractive?<br />
+<br />
+When you ask a question like this, you're asking, first of all, a very simple question.<br />
+That's an oversimplified question.<br />
+And then people come up with simple answers,<br />
+&#xa0;if you're tall, you're blonde, that you're handsome or you're white or you're young or whatever.<br />
+You're more attractive than people who're not blonde, who are darker skinned,<br />
+&#xa0;or if you're older or whatever.<br />
+So that is a simple attribution,<br />
+&#xa0;you try to explain interpersonal attraction by referring to a very simple factor or variable.<br />
+<br />
+The one question that we do not ask is you are attractive to whom?<br />
+[LAUGH]<br />
+[LAUGH]<br />
+What you find attractive may be very different from that what I find attractive.<br />
+So the reference group is again, overly simplified and homogenized or standardized.<br />
+When we start asking more nuanced, more complex set of questions,<br />
+&#xa0;we obviously will have to spend more time finding the answers.<br />
+This is why a lot of people are just like okay, it's simple.<br />
+If you're taller, you're more attractive.<br />
+If you're blonde, you're more attractive.<br />
+That makes life simpler but this is actually an attribution error.<br />
+Seeking answers in this way, in my opinion, is not even the best way to do research.<br />
+Yeah.<br />
+</p>
+</div>
+<div id="outline-container-org8c116db" class="outline-3">
+<h3 id="org8c116db">expression</h3>
+<div class="outline-text-3" id="text-org8c116db">
+<p>
+psychological [ˌsaɪkəˈlɑdʒɪk(ə)l]: adj. relating to the way that your mind works and the way that this affects your behaviour SYN mental心理(上)的<br />
+hopefully [ˈhoʊpfəli]: adv. a way of saying what you hope will happen, which some people think is incorrect有希望地<br />
+blonde [blɑnd]: adj. blonde hair is pale or yellow in colour金发碧眼的<br />
+skinned [skɪnd]: adj. having a skin of a specified type具有&#x2026; 皮的<br />
+interpersonal [ˌɪntərˈpɜrsən(ə)l]: adj. relating to relationships between people人际的<br />
+variable [ˈveriəb(ə)l]: n. something that may be different in different situations, so that you cannot be sure what will happen OPP constant变量<br />
+homogenize [həˈmɑdʒəˌnaɪz]: v. to change something so that its parts become similar or the same同质化<br />
+nuance [ˈnuˌɑns]: n. a very slight, hardly noticeable difference in manner, colour, meaning etc ⇨ subtlety细微差别<br />
+complex [ˈkɑmˌpleks]: adj. consisting of many different parts and often difficult to understand SYN complicated OPP simple复杂的<br />
+</p>
+<hr />
+<p>
+put into sth.: 投入<br />
+have a chance to do sth.: 有机会做某事<br />
+look into sth.: 调查研究某事<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orge1bc504" class="outline-3">
+<h3 id="orge1bc504">sentence</h3>
+<div class="outline-text-3" id="text-orge1bc504">
+<p>
+psychological [ˌsaɪkəˈlɑdʒɪk(ə)l]: relating to the way that your mind works and the way that this affects your behaviour SYN mental心理(上)的<br />
+</p>
+<ul class="org-ul">
+<li>The teacher didn't pay attention to my psychological state at all.<br /></li>
+<li>His psychological state is so vulnerable that he can't fall into sleep because of an exciting TV series.<br /></li>
+<li>No one could account for the fact that the girl's psychological state is so vulnerable after the raid.<br /></li>
+</ul>
+<p>
+hopefully [ˈhoʊpfəli]: a way of saying what you hope will happen, which some people think is incorrect有希望地<br />
+</p>
+<ul class="org-ul">
+<li>Hopefully, I will move on to next village fair in an hour.<br /></li>
+<li>Hopefully, you will be adored by poor and alike when you become our queen.<br /></li>
+<li>Hopefully, you will be brought up to exercise swords and ride in the plain.<br /></li>
+</ul>
+<p>
+blonde [blɑnd]: blonde hair is pale or yellow in colour金发碧眼的<br />
+</p>
+<ul class="org-ul">
+<li>The butcher's son never dreams of marrying to a blonde girl abroad.<br /></li>
+<li>There is always hope that you will marry to a blonde noble in the south.<br /></li>
+<li>I felt repulsive when the blonde girl took a piss in the mall in public.<br /></li>
+</ul>
+<p>
+skinned [skɪnd]: having a skin of a specified type具有&#x2026; 皮的<br />
+</p>
+<ul class="org-ul">
+<li>She is due to have an operation to erase red-skinned scar from her face.<br /></li>
+<li>After fighting bitterly, a red-skinned scar left in her face for the rest of her life.<br /></li>
+<li>The general is showing us red-skinned scars meaning that he contributed a lot to our country.<br /></li>
+</ul>
+<p>
+interpersonal [ˌɪntərˈpɜrsən(ə)l]: relating to relationships between people人际的<br />
+</p>
+<ul class="org-ul">
+<li>I quake in every limb and in my soul in public because of the lack of interpersonl skills.<br /></li>
+<li>My wife is blaming me for my lack of interpersonal skills and losing her face in public.<br /></li>
+<li>I was eager to learn interpersonal skills to make myself comfortable in crowd.<br /></li>
+</ul>
+<p>
+variable [ˈveriəb(ə)l]: something that may be different in different situations, so that you cannot be sure what will happen OPP constant变量<br />
+</p>
+<ul class="org-ul">
+<li>Whether you can take the Iron Throne depends on multiple variables.<br /></li>
+<li>Depending on multiple variables, the experiment that we are performing is hard to expect.<br /></li>
+<li>Failing to consider multiple variables, our king is winning the war in the battle field but losing it elsewhere.<br /></li>
+</ul>
+<p>
+homogenize [həˈmɑdʒəˌnaɪz]: to change something so that its parts become similar or the same同质化<br />
+</p>
+<ul class="org-ul">
+<li>With the immigrants in the community homogenized, people are not blaming on them when something goes wrong.<br /></li>
+<li>After years of conditioning, we are homogenized into this ethnocity.<br /></li>
+<li>We must take advantage of our products when they are still different from others and haven't been homogenized.<br /></li>
+</ul>
+<p>
+nuance [ˈnuˌɑns]: n. a very slight, hardly noticeable difference in manner, colour, meaning etc ⇨ subtlety细微差别<br />
+</p>
+<ul class="org-ul">
+<li>Aware of every nuance in her grandmother's voice, she recognized that it was the witch who was pretending her.<br /></li>
+<li>Aware of the nuance in her husband gesture, she ran to her father and asked for help.<br /></li>
+<li>Obviously, the snake could not tell the nuance of jazz music and Indian tradition music.<br /></li>
+</ul>
+<p>
+complex [ˈkɑmˌpleks]: consisting of many different parts and often difficult to understand SYN complicated OPP simple复杂的<br />
+</p>
+<ul class="org-ul">
+<li>Full of complex emotions, he didn't refuse to conduct his brother to the labyrinth.<br /></li>
+<li>The complex composition reminded him of a masterpiece by an Italian writer.<br /></li>
+<li>Complex patterns are carved out of the dagger.<br /></li>
+</ul>
+<hr />
+<p>
+put into sth.: 投入<br />
+</p>
+<ul class="org-ul">
+<li>Before you put into reading, you should be with your dictionary which you can consult.<br /></li>
+<li>Before you put into asking me complex question, you'd better try to tackle it on your own.<br /></li>
+<li>Before the airport put into use, every inhabitant in the neighbor should be settled down elsewhere.<br /></li>
+</ul>
+<p>
+have a chance to do sth.: 有机会做某事<br />
+</p>
+<ul class="org-ul">
+<li>Hopefully, you have a chance to overthrow his brutal regin.<br /></li>
+<li>Hopefully, you have a chance to get out of the trap because of your dear father.<br /></li>
+<li>You have a chance to live a happy life if you give up your power.<br /></li>
+</ul>
+<p>
+look into sth.: 调查研究某事<br />
+</p>
+<ul class="org-ul">
+<li>Looking into the statue of a secret god, he was cursed into a yellow-skinned face.<br /></li>
+<li>He feels it's his duty to look into the ghost in the farm.<br /></li>
+<li>The police can't be bothered to look into the lost of lambs.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org1a08b14" class="outline-3">
+<h3 id="org1a08b14">sentence2</h3>
+<div class="outline-text-3" id="text-org1a08b14">
+<p>
+psychological [ˌsaɪkəˈlɑdʒɪk(ə)l]: relating to the way that your mind works and the way that this affects your behaviour SYN mental心理(上)的<br />
+</p>
+<ul class="org-ul">
+<li>The teacher didn't pay attention to my psychological state at all.<br /></li>
+<li>His psychological state is so vulnerable that he can't fall asleep because of an exciting TV series.<br /></li>
+<li>No one could account for the fact that the girl's psychological state is so vulnerable after the raid.<br /></li>
+</ul>
+<p>
+hopefully [ˈhoʊpfəli]: a way of saying what you hope will happen, which some people think is incorrect有希望地<br />
+</p>
+<ul class="org-ul">
+<li>Hopefully, I will move on to the next village fair in an hour.<br /></li>
+<li>Hopefully, you will be adored by the poor and rich alike when you become our queen.<br /></li>
+<li>Hopefully, you will be brought up to exercise swords and ride in the plain.<br /></li>
+</ul>
+<p>
+blonde [blɑnd]: blonde hair is pale or yellow in colour金发碧眼的<br />
+</p>
+<ul class="org-ul">
+<li>The butcher's son never dreams of marrying a blonde girl abroad.<br /></li>
+<li>There is always hope that you will marry a blonde noble in the south.<br /></li>
+<li>I felt repulsive when the blonde girl took a piss in the mall in public.<br /></li>
+</ul>
+<p>
+skinned [skɪnd]: having a skin of a specified type具有&#x2026; 皮的<br />
+</p>
+<ul class="org-ul">
+<li>She is due to have an operation to erase a red-skinned scar from her face.<br /></li>
+<li>After fighting bitterly, a red-skinned scar was left on her face for the rest of her life.<br /></li>
+<li>The general is showing us red-skinned scars meaning that he contributed a lot to our country.<br /></li>
+</ul>
+<p>
+interpersonal [ˌɪntərˈpɜrsən(ə)l]: relating to relationships between people人际的<br />
+</p>
+<ul class="org-ul">
+<li>I quake in every limb and in my soul in public because of the lack of interpersonal skills.<br /></li>
+<li>My wife is blaming me for my lack of interpersonal skills and losing her face in public.<br /></li>
+<li>I was eager to learn interpersonal skills to make myself comfortable in a crowd.<br /></li>
+</ul>
+<p>
+variable [ˈveriəb(ə)l]: something that may be different in different situations, so that you cannot be sure what will happen OPP constant变量<br />
+</p>
+<ul class="org-ul">
+<li>Whether you can take the Iron Throne depends on multiple variables.<br /></li>
+<li>Depending on multiple variables, the experiment that we are performing is hard to expect.<br /></li>
+<li>Failing to consider multiple variables, our king is winning the war on the battlefield but losing it elsewhere.<br /></li>
+</ul>
+<p>
+homogenize [həˈmɑdʒəˌnaɪz]: to change something so that its parts become similar or the same同质化<br />
+</p>
+<ul class="org-ul">
+<li>With the immigrants in the community homogenized, people are not blaming them when something goes wrong.<br /></li>
+<li>After years of conditioning, we are homogenized into this ethnicity.<br /></li>
+<li>We must take advantage of our products when they are different from others and haven't been homogenized.<br /></li>
+</ul>
+<p>
+nuance [ˈnuˌɑns]: n. a very slight, hardly noticeable difference in manner, colour, meaning etc ⇨ subtlety细微差别<br />
+</p>
+<ul class="org-ul">
+<li>Aware of every nuance in her grandmother's voice, she recognized that it was the witch who was pretending to be her.<br /></li>
+<li>Aware of the nuance in her husband's gesture, she ran to her father and asked for help.<br /></li>
+<li>Obviously, the snake could not tell the nuance of jazz music and Indian traditional music.<br /></li>
+</ul>
+<p>
+complex [ˈkɑmˌpleks]: consisting of many different parts and often difficult to understand SYN complicated OPP simple复杂的<br />
+</p>
+<ul class="org-ul">
+<li>Full of complex emotions, he didn't refuse to conduct his brother to the labyrinth.<br /></li>
+<li>The complex composition reminded him of a masterpiece by an Italian writer.<br /></li>
+<li>Complex patterns are carved out of the dagger.<br /></li>
+</ul>
+<hr />
+<p>
+put into sth.: 投入<br />
+</p>
+<ul class="org-ul">
+<li>Before you put into reading, you should be with your dictionary which you can consult.<br /></li>
+<li>Before you put into the complex question, you'd better try to tackle it on your own.<br /></li>
+<li>Before the airport is put into use, every inhabitant in the neighborhood should be settled down elsewhere.<br /></li>
+</ul>
+<p>
+have a chance to do sth.: 有机会做某事<br />
+</p>
+<ul class="org-ul">
+<li>Hopefully, you have a chance to overthrow his brutal reign.<br /></li>
+<li>Hopefully, you have a chance to get out of the trap because of your dear father.<br /></li>
+<li>You have a chance to live a happy life if you give up your power.<br /></li>
+</ul>
+<p>
+look into sth.: 调查研究某事<br />
+</p>
+<ul class="org-ul">
+<li>Looking into the statue of a secret god, he was cursed into a yellow-skinned face.<br /></li>
+<li>He feels it's his duty to look into the ghost on the farm.<br /></li>
+<li>The police can't be bothered to look into the loss of lambs.<br /></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

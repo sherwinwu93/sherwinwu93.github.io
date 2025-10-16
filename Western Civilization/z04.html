@@ -1,0 +1,743 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-08-12 Mon 20:49 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<p>
+CHAPTER 4 THE HELLENISTIC WORLD<br />
+</p>
+
+
+<p>
+CHAPTER OUTLINE AND FOCUS QUESTIONS<br />
+</p>
+
+
+<p>
+Macedonia and the Conquests of Alexander<br />
+</p>
+
+
+<p>
+Q How was Alexander able to amass his empire, and what might his rule have been like if he had lived longer?<br />
+</p>
+
+
+<p>
+The World of the Hellenistic Kingdoms<br />
+</p>
+
+
+<p>
+Q What were the main features of the political and military organization of the Hellenistic kingdoms, and how did the new political systems differ from those of the Greek city-states? What were the main social developments in the Hellenistic world?<br />
+</p>
+
+
+<p>
+Culture in the Hellenistic World<br />
+</p>
+
+
+<p>
+Q What achievements in literature, art, science, and philosophy occurred during the Hellenistic period?<br />
+</p>
+
+
+<p>
+Religion in the Hellenistic World<br />
+</p>
+
+
+<p>
+Q Which religions were prominent during the Hellenistic period, and what does their popularity suggest about Hellenistic society?<br />
+</p>
+
+
+<p>
+CRITICAL THINKING<br />
+</p>
+
+
+<p>
+Q How was the Hellenistic period different from the Greek Classical Age?<br />
+</p>
+
+
+<p>
+IN 334 B.C., ALEXANDER THE GREAT led an army of Greeks and Macedonians into western Asia to launch his attack on the Persian Empire. Years of campaigning resulted in the complete defeat of the Persians, and in 327, Alexander and his troops pushed east into India. But two more years of fighting in an exotic and difficult terrain exhausted his troops, who rebelled and refused to go on. Reluctantly, Alexander turned back, leading his men across the arid lands of southern Persia. Conditions in the desert were appalling; the blazing sun and lack of water led to thousands of deaths. At one point, when a group of his soldiers found a little water, they scooped it up in a helmet and gave it to Alexander. Then, according to Arrian, an ancient Greek historian, Alexander, ‘‘with a word of thanks for the gift, took the helmet and, in full view of his troops, poured the water on the ground. So extraordinary was the effect of this action that the water wasted by Alexander was as good as a drink for every man in the army.’’ Ever the great military leader, Alexander had found yet another way to inspire his troops.<br />
+</p>
+
+
+<p>
+Alexander the Great was the son of King Philip II of Macedonia, who in 338 B.C. had defeated the Greeks and established his control over the Greek peninsula. When Alexander became king after Philip’s death, he led the Macedonians and Greeks on a spectacular conquest of the Persian Empire, opening the door to the spread of Greek culture throughout the ancient Near East. Greek settlers poured into the Near Eastern lands to work as bureaucrats, traders, soldiers, and scholars. Alexander’s triumph gave rise to a new series of kingdoms that blended the achievements of the Eastern world with the cultural outlook and attitudes of the Greeks. We use the term Hellenistic to designate this new order. The Hellenistic world was the world of Greeks and non-Greek easterners, and it resulted, in its own way, in a remarkable series of accomplishments that are sometimes underestimated. They form the story of this chapter.<br />
+</p>
+
+
+<p>
+Macedonia and the Conquests of Alexander<br />
+</p>
+
+
+<p>
+Q Focus Question: How was Alexander able to amass his empire, and what might his rule have been like if he had lived longer?<br />
+</p>
+
+
+<p>
+While the Greek city-states were continuing their fratricidal warfare, to their north a new and ultimately powerful kingdom was emerging. The Macedonians were probably not Greek; scholars are still unsure whether the Macedonian language was an archaic dialect of Greek or an altogether separate language. The Greeks viewed the Macedonians as barbarians, although beginning in the fifth century B.C., the Greeks allowed them to participate as ‘‘Greeks’’ in the Olympic Games.<br />
+</p>
+
+
+<p>
+Unlike the Greeks, the Macedonians were mostly rural folk and were organized in tribes, not city-states. Not until the end of the fifth century B.C., during the reign of King Archelaus (c. 413&#x2013;399 B.C.), did Macedonia emerge as an important kingdom. But his reign was followed by decades of foreign invasions and internal strife until King Philip II (359&#x2013;336 B.C.) took control and turned Macedonia into the chief power of the Greek world.<br />
+</p>
+
+
+<p>
+Philip instituted military reforms that transformed Macedonia into a major military power. He created a new phalanx of infantrymen who were more lightly armed than Greek hoplites; each carried a smaller shield and a shorter sword. But his chief weapon was a long thrusting spear&#x2014;18 feet in length, or double that of the Greek hoplite. The Macedonian phalanx was also supported by strong cavalry contingents that served to break the opposing line of battle and create disorder in the enemy’s ranks. Philip’s new army defeated the Illyrians to the west and the Thracians to the north and east and was then drawn into the Greeks’ interstate conflicts.<br />
+</p>
+
+
+<p>
+Philip and the Conquest of Greece<br />
+</p>
+
+
+<p>
+The Greeks had mixed reactions to Philip’s growing strength. Some viewed Philip as a savior who would rescue the Greeks from themselves by uniting them. Many Athenians, however, especially the orator Demosthenes, portrayed Philip as ruthless, deceitful, treacherous, and barbaric and called on the Athenians to undertake a struggle against him. In a speech to the Athenian assembly, Demosthenes exclaimed: ‘‘[Philip] is not only no Greek, nor related to the Greeks, but not even a barbarian from any place that can be named with honor, but a pestilent knave from Macedonia, from where it was never yet possible to buy a decent slave.’’<br />
+</p>
+
+
+<p>
+Demosthenes’ repeated calls for action, combined with Philip’s rapid expansion, finally spurred Athens into action. Allied with a number of other Greek states, Athens fought the Macedonians at the Battle of Chaeronea, near Thebes, in 338 B.C. The Macedonian army crushed the Greeks, and Philip was now free to consolidate his control over the Greek peninsula. The independent Greek polis, long the basic political unit of the Greek world, came to an end as Philip formed an alliance of the Greek states that we call the Corinthian League because it met at Corinth. All members took an oath of loyalty: ‘‘I swear by Zeus, Earth, Sun, Poseidon, Athena, Ares, and all the gods and goddesses, I will abide by the peace, and I will not break the agreements with Philip the Macedonian, nor will I take up arms with hostile intent against any one of those who abide by the oaths either by land or by sea.’’1<br />
+</p>
+
+
+<p>
+Although Philip allowed the Greek city-states autonomy in domestic affairs, he retained the general direction of their foreign affairs. Philip insisted that the Greek states end their bitter rivalries and cooperate with him in a war against Persia. Before Philip could undertake his invasion of Asia, however, he was assassinated, leaving the task to his son Alexander.<br />
+</p>
+
+
+<p>
+Alexander the Great<br />
+</p>
+
+
+<p>
+Alexander was only twenty when he became king of Macedonia. The illustrious conqueror was in many ways prepared for kingship by his father, who had taken Alexander along on military campaigns and had given him control of the cavalry at the important Battle of Chaeronea. After his father’s assassination, Alexander moved quickly to assert his authority, securing the Macedonian frontiers and smothering a rebellion in Greece. He then turned to his father’s dream, the invasion of the Persian Empire.<br />
+</p>
+
+
+<p>
+The Conquests of Alexander<br />
+</p>
+
+
+<p>
+There is no doubt that Alexander was taking a chance in attacking the Persian Empire. Although weakened in some respects, it was still a strong state. Alexander’s fleet was inferior to the Persian navy, and his finances were shaky at best. In the spring of 334 B.C., Alexander entered Asia Minor with an army of some 37,000 men. About half were Macedonians, the rest Greeks and other allies. The cavalry, which would play an important role as a striking force, numbered about 5,000.<br />
+</p>
+
+
+<p>
+His first confrontation with the Persians, in a battle at the Granicus River in 334 B.C. (see Map 4.1), nearly cost him his life but resulted in a major victory. By spring 333, the entire western half of Asia Minor was in Alexander’s hands, and the Ionian Greek cities of western Asia Minor had been ‘‘liberated’’ from the Persian oppressor. Meanwhile, the Persian king, Darius III, mobilized his forces to stop Alexander’s army. Although the Persian troops outnumbered Alexander’s, the Battle of Issus was fought on a narrow field that canceled the advantage of superior numbers and resulted in another Macedonian success. The Persian cause was certainly not helped when Darius made a spectacular exit from the battlefield before it was even clear who would win. After his victory at Issus in 333 B.C., Alexander turned south, and by the winter of 332, Syria, Palestine, and Egypt were under his domination. He took the traditional title of pharaoh of Egypt and founded the first of a series of cities named after him (Alexandria) as the Greek administrative capital of Egypt. It became (and remains today) one of Egypt’s and the Mediterranean world’s most important cities.<br />
+</p>
+
+
+<p>
+The next year, Alexander renewed his offensive, moving into the territory of the ancient Mesopotamian kingdoms and fighting a decisive battle with the Persians not far from Babylon. At Gaugamela, Alexander’s men were clearly outnumbered by the Persian forces, which had established the battle site on a broad, open plain where their war chariots could maneuver to best advantage. Alexander was able to break through the center of the Persian line with his heavy cavalry, followed by the infantry. The battle turned into a rout, although Darius managed to escape. After his victory, Alexander entered Babylon and then proceeded to the Persian capitals at Susa and Persepolis, where he acquired the Persian treasuries and took possession of vast quantities of gold and silver.<br />
+</p>
+
+
+<p>
+By 330, Alexander was again on the march. After Darius was killed by one of his own men, Alexander took the title and office of the Great King of the Persians. But he was not content to rest with the spoils of the Persian Empire. During the next three years, he moved east and northeast, as far as modern Pakistan. By summer 327 B.C., he had entered India, which at that time was divided into a number of warring states. In 326 B.C., Alexander and his armies arrived in the plains of northwestern India. At the Battle of the Hydaspes River, Alexander won a brutally fought battle (see the box above). When Alexander made clear his determination to march east to conquer more of India, his soldiers, weary of campaigning year after year, mutinied and refused to go further. Alexander acceded to their demands and agreed to return, leading his troops through southern Persia across the Gedrosian Desert, where they suffered heavy losses from appalling desert conditions. Alexander and the remnant of his army went to Susa and then Babylon, where he planned still more campaigns. But in June 323 B.C., weakened from wounds, fever, and probably excessive alcohol, he died at the age of thirty-two.<br />
+</p>
+
+
+<p>
+The Legacy of Alexander<br />
+</p>
+
+
+<p>
+Alexander is one of the most puzzling great figures in history. Historians relying on the same sources give vastly different pictures of him. Some portray him as an idealistic visionary and others as a ruthless Machiavellian. No doubt he was a great military leader&#x2014;a master of strategy and tactics, fighting in every kind of terrain and facing every kind of opponent. Alexander was a brave and even reckless fighter who was quite willing to lead his men into battle and risk his own life. His example inspired his troops to follow him into unknown lands and difficult situations. We know that he sought to imitate Achilles, the warriorhero of Homer’s Iliad, an important ideal in Greek culture. Alexander kept a copy of the Iliad&#x2014;and a dagger&#x2014;under his pillow. He also claimed to be descended from Heracles, the Greek hero who came to be worshiped as a god. Alexander also aspired to divine honors; as pharaoh of Egypt, he became a living god according to Egyptian tradition and at one point even sent instructions to the Greek cities to ‘‘vote him a god.’’<br />
+</p>
+
+
+<p>
+Regardless of his ideals, motives, or views about himself, one fact stands out: Alexander ushered in a new age, the Hellenistic era. The word Hellenistic is derived from a Greek word meaning ‘‘to imitate Greeks.’’ It is an appropriate way, then, to describe an age that saw the extension of the Greek language and ideas to the nonGreek world of the Near East. Alexander’s destruction of the Persian monarchy had extended Greco-Macedonian rule over an enormous area. It created opportunities for Greek engineers, intellectuals, merchants, soldiers, and administrators. While the Greeks on the mainland might remain committed to the ideals of their citystates, those who followed Alexander and his successors participated in a new political unity based on the principle of monarchy. Alexander had transformed his army from a Macedonian force into an international one, owing loyalty only to himself. His successors used force to establish military monarchies that dominated the Hellenistic world after his death. Autocratic power, based on military strength and pretensions of divine rule, became a regular feature of those Hellenistic monarchies and was among Alexander’s political contributions to the Hellenistic world. His vision of empire no doubt inspired the Romans, who were the ultimate heirs of Alexander’s legacy.<br />
+</p>
+
+
+<p>
+But Alexander also left a cultural legacy. As a result of his conquests, Greek language, art, architecture, and literature spread throughout the Near East. The urban centers of the Hellenistic Age, many founded by Alexander and his successors, became springboards for the diffusion of Greek culture. Alexander had established a number of cities and military colonies named Alexandria to guard strategic points and supervise wide areas. Most of the settlers were Greek mercenaries. It has been estimated that in the course of his campaigns, Alexander summoned 60,000 to 65,000 additional mercenaries from Greece, at least 36,000 of whom took up residence in the garrisons and new cities. While the Greeks spread their culture in the East, they were also inevitably influenced by Eastern ways. Thus Alexander’s legacy became one of the hallmarks of the Hellenistic world: the clash and fusion of different cultures.<br />
+</p>
+
+
+<p>
+The World of the Hellenistic Kingdoms<br />
+</p>
+
+
+<p>
+Q Focus Questions: What were the main features of the political and military organization of the Hellenistic kingdoms, and how did the new political systems differ from those of the Greek city-states? What were the main social developments in the Hellenistic world?<br />
+</p>
+
+
+<p>
+The united empire that Alexander created by his conquests disintegrated after his death. All too soon, Macedonian military leaders were engaged in a struggle for power. By 300 B.C., any hope of unity was dead.<br />
+</p>
+
+
+<p>
+Hellenistic Monarchies<br />
+</p>
+
+
+<p>
+Eventually, four Hellenistic kingdoms emerged as the successors to Alexander (see Map 4.2). In Macedonia, the struggles for power led to the extermination of Alexander’s dynasty. Not until 276 B.C. did Antigonus Gonatus, the grandson of one of Alexander’s generals, succeed in establishing the Antigonid dynasty as rulers of Macedonia. The Antigonids viewed control of Greece as essential to their power but did not see outright conquest as necessary.<br />
+</p>
+
+
+<p>
+Another Hellenistic monarchy was founded by the general Seleucus, who established the Seleucid dynasty of Syria. This was the largest of the Hellenistic kingdoms and controlled much of the old Persian Empire from Turkey in the west to India in the east, although the Seleucids found it increasingly difficult to maintain control of the eastern territories. In fact, an Indian ruler named Chandragupta Maurya (324&#x2013;301 B.C.) established a new Indian state, the Mauryan Empire, and drove out the Seleucid forces. However, the Seleucid rulers maintained relations with the Mauryan Empire. Trade was fostered, especially in such luxuries as spices and jewels.<br />
+</p>
+
+
+<p>
+A third Hellenistic kingdom came into being by freeing itself from the Seleucids. This was the kingdom of Pergamum in western Asia Minor under the Attalid dynasty. In 133 B.C., the last member of the Attalid dynasty bequeathed his kingdom to Rome in his will. The fourth Hellenistic monarchy was Egypt, which had come under the control of Ptolemy, another Macedonian general. Named governor of Egypt after Alexander’s death, Ptolemy had established himself as king by 305 B.C., founding the Ptolemaic dynasty of pharaohs. Hellenistic Egypt lasted longer than all the other Hellenistic monarchies; it was not until the reign of Cleopatra VII, who allied herself with the wrong side in the Roman civil wars (see Chapter 5), that Egypt fell to the Romans in 30 B.C.<br />
+</p>
+
+
+<p>
+The Threat from the Celts<br />
+</p>
+
+
+<p>
+The Celts, also known as the Gauls, were a people who had occupied large areas of Europe north of the Alps during the early Iron Age (c. 800&#x2013;500 B.C.), especially the region to the south and west of the Rhine River, west of the Alps, and north of the Pyrenees (a region known as Gaul).<br />
+</p>
+
+
+<p>
+At the end of the fifth century B.C., possibly as the result of overpopulation, Celtic peoples began to migrate south and east. One group sacked the city of Rome in 390 B.C. (see Chapter 5). After the death of Alexander the Great, other groups of Celts began to threaten the Hellenistic world. Celts attacked Macedonia early in the third century B.C., as one ancient writer reported: ‘‘When the defeated Macedonians had fixed themselves within the walls of their cities, the victorious Brennus ravaged the fields of the whole of Macedonia with no one to oppose him.’’2 Brennus also led a group of thirty thousand Celts into Greece itself and caused considerable damage until being defeated in 278 B.C.<br />
+</p>
+
+
+<p>
+Other groups of Celts later attacked Asia Minor, where Attalus I defeated them in 230 B.C. After his victory, Attalus gained control of much of Asia Minor and declared himself king of Pergamum. Their attacks led the Celts to be feared everywhere in the Hellenistic world.<br />
+</p>
+
+
+<p>
+Political Institutions<br />
+</p>
+
+
+<p>
+The Hellenistic monarchies provided a sort of stability for several centuries, even though Hellenistic kings refused to accept the new status quo and periodically engaged in wars to alter it. At the same time, an underlying strain always existed between the new Greco-Macedonian ruling class and the native populations. Together these factors generated a certain degree of tension that was never truly ended until the vibrant Roman state to the west stepped in and imposed a new order.<br />
+</p>
+
+
+<p>
+The Hellenistic kingdoms shared a common political system that represented a break with their Greek past. To the Greeks, monarchy was an institution for barbarians, associated in their minds with people like the Persians. Although they retained democratic forms of government in their cities, the Greeks of the Hellenistic world were forced to accept monarchy as a new fact of political life.<br />
+</p>
+
+
+<p>
+Although Alexander the Great had apparently hoped to fuse Greeks and easterners&#x2014;he used Persians as administrators and encouraged his soldiers to marry easterners, as he himself did&#x2014;Hellenistic monarchs relied primarily on Greeks and Macedonians to form the new ruling class. It has been estimated that in the Seleucid kingdom, for example, only 2.5 percent of the people in authority were non-Greek, and most of them were commanders of local military units. Those who did advance to important administrative posts had learned Greek (all government business was transacted in Greek) and had become Hellenized in a cultural sense. The policy of excluding non-Greeks from leadership positions, it should be added, was not due to the incompetence of the natives but to the determination of the Greek ruling class to maintain its privileged position. It was the GrecoMacedonian ruling class that provided the only unity in the Hellenistic world.<br />
+</p>
+
+
+<p>
+Hellenistic Cities<br />
+</p>
+
+
+<p>
+Cities played an especially important role in the Hellenistic kingdoms. Throughout his conquests, Alexander had founded a series of new cities and military settlements, and Hellenistic kings did likewise. The new population centers varied considerably in size and importance. Military settlements were meant to maintain order and might consist of only a few hundred men who were strongly dependent on the king. But there were also new independent cities with thousands of inhabitants. Alexandria in Egypt was the largest city in the Mediterranean region by the first century B.C.<br />
+</p>
+
+
+<p>
+Hellenistic rulers encouraged this massive spread of Greek colonists to the Near East because of their intrinsic value to the new monarchies. Greeks (and Macedonians) provided not only a recruiting ground for the army but also a pool of civilian administrators and workers who would contribute to economic development. Even architects, engineers, dramatists, and actors were in demand in the new Greek cities. Many Greeks and Macedonians were quick to see the advantages of moving to the new urban centers and gladly sought their fortunes in the Near East. Greeks of all backgrounds joined the exodus, at least until around 250 B.C., when the outpouring began to slow.<br />
+</p>
+
+
+<p>
+In the Hellenistic cities, the culture was primarily Greek. The political institutions of the cities were modeled after those of the Greek polis. Greeks of the Classical period would easily have recognized the councils, assemblies, and codes of law. The physical layout of the new cities was also modeled after those of the Greek homeland. Using the traditional rectilinear grid, cities were laid out with temples, altars, and stone theaters.<br />
+</p>
+
+
+<p>
+Many of the new urban centers were completely dominated by Greeks while the native populations remained cut off from all civic institutions. The Greeks commissioned purely Greek sculpture, read literature of the Classical period, and had separate law courts for themselves. Complaints from resentful natives have been recorded. An Egyptian camel driver, for example, complained bitterly that he was not paid regularly because he did ‘‘not know how to behave like a Greek.’’ Not only was it difficult for easterners to enter the ranks of the ruling class, but those who did so had to become thoroughly Hellenized. This often required alienation from their own culture.<br />
+</p>
+
+
+<p>
+The Greeks’ belief in their own cultural superiority provided an easy rationalization for their political dominance of the eastern cities. But Greek control of the new cities of the Near East was also necessary because the kings frequently used the cities as instruments of government, enabling them to rule considerable territory without an extensive bureaucracy. At the same time, for security reasons, the Greeks needed the support of the kings. After all, the Hellenistic cities were islands of Greek culture in a sea of non-Greeks. The relationship between rulers and cities, therefore, was a symbiotic one that bore serious consequences for the cities.<br />
+</p>
+
+
+<p>
+In the political system, religious practices, and architecture of their new cities, the Greeks tried to re-create the poleis of their homeland. But it was no longer possible to do so. The new cities were not autonomous entities and soon found themselves dependent on the power of the Hellenistic monarchies. Although the kings did not rule the cities directly, they restricted freedom in other ways. Cities knew they could not conduct an independent foreign policy and did not try to do so. The kings also demanded tribute, which could be a heavy burden.<br />
+</p>
+
+
+<p>
+The Greek cities of the Hellenistic era were the chief agents for the spread of Greek culture in the Near East, as far, in fact, as modern Afghanistan and India. These cities were also remarkably vibrant despite their subordination to the Hellenistic monarchies and persisted in being a focal point for the loyalty of their citizens.<br />
+</p>
+
+
+<p>
+Economic Trends in the Hellenistic World<br />
+</p>
+
+
+<p>
+Agriculture was still of primary importance to both the native populations and the new Greek cities of the Hellenistic world. The Greek cities continued their old agrarian patterns. A well-defined citizen body owned land and worked it with the assistance of slaves. But these farms were isolated units in a vast area of land ultimately owned by the king or assigned to large estate owners and worked by native peasants dwelling in villages. Overall, then, neither agricultural patterns nor methods of production underwent significant changes.<br />
+</p>
+
+
+<p>
+Few new products or manufacturing methods were introduced during the Hellenistic era, but the centers of manufacturing shifted significantly. Industry spread from Greece to the east&#x2014;especially to Asia Minor, Rhodes, and Egypt. New textile centers were set up at Pergamum, while glass and silver crafts were developed in Syria. And busiest of all the cities in manufacturing was Alexandria in Egypt, center of the production of parchment, textiles, linens, oil, metalwork, and glass.<br />
+</p>
+
+
+<p>
+Commerce expanded considerably in the Hellenistic era. Indeed, trading contacts linked much of the Hellenistic world. The decline in the number of political barriers encouraged more commercial traffic. Although Hellenistic monarchs still fought wars, the conquests of Alexander and the policies of his successors made possible greater trade between east and west. Two major trade routes connected the east with the Mediterranean. The central route was the major one and led by sea from India to the Persian Gulf, up the Tigris River to Seleucia, which replaced Babylon as the center for waterborne traffic from the Persian Gulf and overland caravan routes as well. Overland routes from Seleucia then led to Antioch and Ephesus. A southern route wound its way from India by sea but went around Arabia and up the Red Sea to Petra or later Berenice. Caravan routes then led overland to Coptos on the Nile and from there to Alexandria and the Mediterranean.<br />
+</p>
+
+
+<p>
+An incredible variety of products was traded: gold and silver from Spain; iron from northern Armenia; salt from Asia Minor; timber from Macedonia; purple dye from Tyre; ebony, gems, ivory, and spices from India; frankincense (used on altars) from Arabia; slaves from Thrace, Syria, and Asia Minor; fine wines from Syria and western Asia Minor; olive oil from Athens; and numerous exquisite foodstuffs, such as the famous prunes of Damascus. The greatest trade, however, was in the basic staple of life&#x2014;grain. The great exporting areas were Egypt, Sicily, and the Black Sea region.<br />
+</p>
+
+
+<p>
+New Opportunities for Women<br />
+</p>
+
+
+<p>
+One of the significant features of social life in the Hellenistic world was the emergence of new opportunities for women&#x2014;at least, for upper-class women&#x2014;especially in the economic area. Documents show increasing numbers of women involved in managing slaves, selling property, and making loans. Even then, legal contracts in which women were involved had to include their official male guardians, although in numerous instances these men no longer played an important function but were listed only to satisfy legal requirements. In Sparta, women were allowed to own land and manage their own economic affairs. Because many of their husbands were absent or had died in war, many Spartan women became wealthy; females owned 40 percent of the land in Sparta.<br />
+</p>
+
+
+<p>
+The women of Sparta, however, were an exception, especially on the Greek mainland. Women in Athens, for example, still remained highly restricted and supervised. Although a few philosophers welcomed female participation in men’s affairs, many philosophers rejected equality between men and women and asserted that the traditional roles of wives and mothers were most satisfying for women. In her treatise ‘‘On Chastity,’’ Phintys wrote that ‘‘serving as generals, public officials, and statesmen is appropriate for men,’’ but ‘‘keeping house, remaining within, and taking care of husbands belongs to women.’’3<br />
+</p>
+
+
+<p>
+But the opinions of philosophers did not prevent upper-class women from making gains in areas other than the economic sphere (see the box above). New possibilities for females arose when women in some areas of the Hellenistic world were allowed to pursue education in the traditional fields of literature, music, and even athletics. Education, then, provided new opportunities for women: female poets appeared again in the third century B.C., and there are instances of women involved in both scholarly and artistic activities.<br />
+</p>
+
+
+<p>
+The creation of the Hellenistic monarchies, which represented a considerable departure from the world of the polis, also gave new scope to the role played by the monarchs’ wives, the Hellenistic queens. In Macedonia, a pattern of alliances between mothers and sons provided openings for women to take an active role in politics, especially in political intrigue. In Egypt, opportunities for royal women were even greater because the Ptolemaic rulers reverted to an Egyptian custom of kings marrying their own sisters. Of the first eight Ptolemaic rulers, four wed their sisters. Ptolemy II and his sister-wife Arsinoe¨ II were both worshiped as gods in their lifetimes. Arsinoe¨ played an energetic role in government and was involved in the expansion of the Egyptian navy. She was also the first Egyptian queen whose portrait appeared on coins with her husband. Hellenistic queens also showed an intense interest in culture. They wrote poems, collected art, and corresponded with intellectuals.<br />
+</p>
+
+
+<p>
+Culture in the Hellenistic World<br />
+</p>
+
+
+<p>
+Q Focus Question: What achievements in literature, art, science, and philosophy occurred during the Hellenistic period?<br />
+</p>
+
+
+<p>
+Although the Hellenistic kingdoms encompassed vast areas and many diverse peoples, the Greeks provided a sense of unity as a result of the diffusion of Greek culture throughout the region. The Hellenistic era was a period of considerable cultural accomplishment in many areas&#x2014; literature, art, science, and philosophy. Although these achievements occurred everywhere in the Hellenistic world, certain centers, especially the great cities of Alexandria and Pergamum, stood out. In both cities, cultural developments were encouraged by the rulers themselves. Rich Hellenistic kings had considerable resources with which to patronize culture.<br />
+</p>
+
+
+<p>
+The Ptolemies in Egypt made Alexandria an especially important cultural center. The library became the largest in ancient times, housing more than half a million scrolls. The museum (literally, ‘‘temple of the Muses’’) created a favorable environment for scholarly research. Alexandria became home to poets, writers, philosophers, and scientists&#x2014;scholars of all kinds.<br />
+</p>
+
+<p>
+New Directions in Literature<br />
+</p>
+
+
+<p>
+The Hellenistic Age produced an enormous quantity of literature, most of which has not survived. Hellenistic monarchs, who held literary talent in high esteem, subsidized writers on a grand scale. The Ptolemaic rulers of Egypt were particularly lavish. The combination of their largess and the famous library drew a host of scholars and authors to Alexandria, including a circle of poets. Theocritus (c. 315&#x2013;250 B.C.), originally a native of the island of Sicily, wrote ‘‘little poems’’ or idylls dealing with erotic subjects, lovers’ complaints, and pastoral themes expressing his love of nature and its beauty.<br />
+</p>
+
+
+<p>
+In the Hellenistic era, Athens remained the theatrical center of the Greek world. As tragedy withered, writers invented New Comedy, which rejected political themes and sought only to entertain and amuse. The Athenian playwright Menander (c. 342&#x2013;291 B.C.) was perhaps the best representative of New Comedy. Plots were simple: typically, a hero falls in love with a not-really-so-bad prostitute who turns out eventually to be the long-lost daughter of a rich neighbor. The hero marries her, and they live happily ever after.<br />
+</p>
+
+
+<p>
+The Hellenistic period saw a great outpouring of historical and biographical literature. The chief historian of the Hellenistic Age was Polybius (c. 203&#x2013;c. 120 B.C.), a Greek who lived for some years in Rome. He is regarded as second only to Thucydides among Greek historians. His major work consisted of forty books narrating the history of the ‘‘inhabited Mediterranean world’’ from 221 to 146 B.C. Only the first five books are extant, although long extracts from the other books survive. His history focuses on the growth of Rome from a city-state to a vast empire. It is apparent that Polybius understood the significance of the Romans’ achievement. He followed Thucydides in seeking rational motives for historical events. He also approached his sources critically and used firsthand accounts.<br />
+</p>
+
+
+<p>
+Hellenistic Art<br />
+</p>
+
+
+<p>
+In addition to being patrons of literary talent, the Hellenistic monarchs were eager to spend their money to beautify and adorn the cities in their states. The founding of new cities and the rebuilding of old ones provided numerous opportunities for Greek architects and sculptors. The structures of the Greek homeland&#x2014;gymnasia, baths, theaters, and, of course, temples&#x2014;lined the streets of these cities. Most noticeable in the temples was the use of the more ornate Corinthian order, which became especially popular during the Hellenistic Age (see the illustration in Chapter 3 on p. 58).<br />
+</p>
+
+
+<p>
+Sculptors were commissioned by Hellenistic kings and rich citizens. Thousands of statues, many paid for by the people honored, were erected in towns and cities all over the Hellenistic world. While maintaining the technical skill of the Classical period, Hellenistic sculptors moved away from the idealism of fifth-century classicism to a more emotional and realistic art, seen in numerous statues of old women, drunks, and little children at play.<br />
+</p>
+
+<p>
+Alexander the Great’s incursion into the western part of India resulted in some Greek cultural influences there, especially during the Hellenistic era. In the first century B.C., Indian sculptors began to create statues of the Buddha. The impact of Greek sculpture was especially evident in the Buddhist statues made in Gandhara, which is today part of Pakistan.<br />
+</p>
+
+<p>
+A Golden Age of Science<br />
+</p>
+
+
+<p>
+The Hellenistic era witnessed a more conscious separation of science from philosophy. In Classical Greece, what we would call the physical and life sciences had been divisions of philosophical inquiry. Nevertheless, the Greeks, by the time of Aristotle, had already established an important principle of scientific investigation, empirical research, or systematic observation as the basis for generalization. In the Hellenistic Age, the sciences tended to be studied in their own right.<br />
+</p>
+
+
+<p>
+One of the traditional areas of Greek science was astronomy, and two Alexandrian scholars continued this exploration. Aristarchus of Samos (c. 310&#x2013;230 B.C.) developed a heliocentric view of the universe, contending that the sun and the fixed stars remained stationary while the earth rotated around the sun in a circular orbit. This view was not widely accepted, and most scholars clung to the earlier geocentric view of the Greeks, which held that the earth was at the center of the universe. Another astronomer, Eratosthenes (c. 275&#x2013;194 B.C.), determined that the earth was round and calculated the earth’s circumference at 24,675 miles, within 200 miles of the actual figure.<br />
+</p>
+
+
+<p>
+A third Alexandrian scholar was Euclid, who lived around 300 B.C. He established a school in Alexandria but is primarily known for his Elements. This was a systematic organization of the fundamental elements of geometry as they had already been worked out; it became the standard textbook of plane geometry and was used up to modern times.<br />
+</p>
+
+
+<p>
+The most famous of the scientists of the Hellenistic period, Archimedes (287&#x2013;212 B.C.), came from the western Mediterranean region. Archimedes was especially important for his work on the geometry of spheres and cylinders, for establishing the value of the mathematical constant pi, and for creating the science of hydrostatics. Archimedes was also a practical inventor. He may have devised the so-called Archimedean screw, used to pump water out of mines and to lift irrigation water, as well as a compound pulley for transporting heavy weights. During the Roman siege of his native city of Syracuse, he constructed a number of devices to thwart the attackers. According to Plutarch’s account, the Romans became so frightened ‘‘that if they did but see a little rope or a piece of wood from the wall, instantly crying out, that there it was again, Archimedes was about to let fly some device at them, they turned their backs and fled.’’4 Archimedes’ accomplishments inspired a wealth of semilegendary stories. Supposedly, he discovered specific gravity by observing the water he displaced in his bath and became so excited by his realization that he jumped out of the water and ran home naked, shouting ‘‘Eureka!’’ (‘‘I have found it!’’). He is said to have emphasized the importance of levers by proclaiming to the king of Syracuse, ‘‘Give me a lever and a place to stand on, and I will move the earth.’’ The king was so impressed that he encouraged Archimedes to lower his sights and build defensive weapons instead.<br />
+</p>
+
+
+<p>
+Philosophy: New Schools of Thought<br />
+</p>
+
+
+<p>
+While Alexandria and Pergamum became the renowned cultural centers of the Hellenistic world, Athens remained the prime center for philosophy and continued to attract the most illustrious philosophers, who chose to establish their schools there. Two entirely new schools of philosophical thought reinforced Athens’ reputation as a philosophical center.<br />
+</p>
+
+
+<p>
+Epicureanism<br />
+</p>
+
+
+<p>
+Epicurus (341&#x2013;270 B.C.), the founder of Epicureanism, established a school in Athens before 300 B.C. Epicurus’ famous belief in a doctrine of pleasure began with his view of the world. Though he did not deny the existence of the gods, he did not believe they played any active role in the world. The universe ran on its own. This left human beings free to follow self-interest as a basic motivating force. Happiness was the goal of life, and the means to achieving it was the pursuit of pleasure, the only true good. But the pursuit of pleasure was not meant in a physical, hedonistic sense: When, therefore, we maintain that pleasure is the end, we do not mean the pleasures of profligates and those that consist in sensuality, as is supposed by some who are either ignorant or disagree with us or do not understand, but freedom from pain in the body and from trouble in the mind. For it is not continuous drinkings and revellings, nor the satisfaction of lusts, nor the enjoyment of fish and other luxuries of the wealthy table, which produce a pleasant life, but sober reasoning, searching out the motives for all choice and avoidance, and banishing mere opinions, to which are due the greatest disturbance of the spirit.5<br />
+</p>
+
+
+<p>
+Pleasure was not satisfying one’s desire in an active, gluttonous fashion but rather freedom from emotional turmoil, freedom from worry, the freedom that came from a mind at rest. To achieve this passive pleasure, one had to free oneself from public activity: ‘‘We must release ourselves from the prison of affairs and politics.’’ They were too strenuous to give peace of mind. But this was not a renunciation of all social life, for to Epicurus, a life could be complete only when it was centered on the basic ideal of friendship: ‘‘Of all the things which wisdom acquires to produce the blessedness of the complete life, far the greatest is the possession of friendship.’’6 Epicurus’ own life in Athens was an embodiment of his teachings. He and his friends created their own private community where they could pursue their ideal of true happiness.<br />
+</p>
+
+
+<p>
+Stoicism<br />
+</p>
+
+
+<p>
+Epicureanism was eventually overshadowed by another school of thought known as Stoicism, which became the most popular philosophy of the Hellenistic world and later flourished in the Roman Empire as well. It was the product of a teacher named Zeno (335&#x2013;263 B.C.), who came to Athens and began to teach in a public colonnade known as the Painted Portico (the Stoa Poikile&#x2014;hence Stoicism). Like Epicureanism, Stoicism was concerned with how individuals find happiness. But Stoics took a radically different approach to the problem. To them, happiness, the supreme good, could be found only in virtue, which meant essentially living in harmony with the divine will. To the Stoics, following the divine will meant abiding by the natural laws that the gods established to run the universe.<br />
+</p>
+
+
+<p>
+Virtuous living, then, was living in accordance with the laws of nature (see the box on p. 80). This led to the acceptance of whatever one received in life, since the divine will was by its very nature good. By accepting divine law, people mastered themselves and gained inner peace. Life’s problems could not disturb such individuals, and they could bear whatever life offered (hence our word stoic).<br />
+</p>
+
+
+<p>
+Unlike Epicureans, Stoics did not believe in the need to separate oneself from the world and politics. Public service was regarded as noble. The real Stoic was a good citizen and could even be a good government official. Because Stoics believed that a divine principle was present throughout the universe, each human being also contained a divine spark. This led to a belief in the oneness of humanity. The world constituted a single society of equal human beings. Although they were not equal in the outer world, all were free to follow the divine will (what was best for each individual). All persons, then, even slaves, though unfree in body, were equal at the level of the soul.<br />
+</p>
+
+
+<p>
+Epicureanism and especially Stoicism appealed to large numbers of people in the Hellenistic world. Both of these philosophies focused primarily on the problem of human happiness. Their popularity would suggest a fundamental change in the character of the Greek lifestyle. In the Classical Greek world, the happiness of individuals and the meaning of life were closely associated with the life of the polis. One found fulfillment within the community. In the Hellenistic kingdoms, although the polis continued to exist, the sense that one could find satisfaction and fulfillment through life in the polis had weakened. Not only did individuals seek new philosophies that offered personal happiness, but in the cosmopolitan world of the Hellenistic states, with their mixtures of peoples, a new openness to thoughts of universality could also emerge. For some people, Stoicism embodied this larger sense of community. The appeal of new philosophies in the Hellenistic era can also be explained by the apparent decline in certain aspects of traditional religion.<br />
+</p>
+
+
+<p>
+Religion in the Hellenistic World<br />
+</p>
+
+
+<p>
+Q Focus Question: Which religions were prominent during the Hellenistic period, and what does their popularity suggest about Hellenistic society?<br />
+</p>
+
+
+<p>
+When the Greeks spread throughout the Hellenistic kingdoms, they took their gods with them. Although the construction of temples may have been less important than in Classical times, there were still many demonstrations of a lively religious faith. But over a period of time, there was a noticeable decline in the vitality of the traditional Greek Olympian religion. The civic cults based on the traditional gods no longer seemed sufficient to satisfy people’s emotional needs.<br />
+</p>
+
+
+<p>
+This left Greeks receptive to the numerous religious cults of the eastern world. The Greeks were always tolerant of other existing religious institutions. Hence in the Hellenistic cities of the Near East, the traditional civic cults of their own gods and foreign cults existed side by side. Alexandria had cults of the traditional Greek gods, Egyptian deities such as Isis and Horus, the Babylonian Astarte, and the Syrian Atargatis. But for many people, the search for personal meaning remained unfulfilled. Among educated Greeks, the philosophies of Epicureanism and especially Stoicism offered help. Another source of solace came in the form of mystery religions.<br />
+</p>
+
+
+<p>
+Mystery Religions<br />
+</p>
+
+
+<p>
+Mystery cults, with their secret initiations and promises of individual salvation, were not new to the Greek world. But the Greeks of the Hellenistic era were strongly influenced by eastern mystery cults, such as those of Egypt, which offered a distinct advantage over the Greek mystery religions. The latter had usually been connected to specific locations (such as Eleusis), which meant that a would-be initiate had to undertake a pilgrimage in order to participate in the rites. In contrast, the eastern mystery religions were readily available since temples to their gods and goddesses were located throughout the Greek cities of the east.<br />
+</p>
+
+
+<p>
+All of the mystery religions were based on the same fundamental premises. Individuals could pursue a path to salvation and achieve eternal life by being initiated into a union with a savior god or goddess who had died and risen again. The ritual of initiation, by which the seeker identified with the god or goddess, was, no doubt, a highly emotional experience.<br />
+</p>
+
+
+<p>
+The Egyptian cult of Isis was one of the most popular of the mystery religions. The cult of Isis was very ancient but became truly universal in Hellenistic times. Isis was the goddess of women, marriage, and children, as one of her hymns states: ‘‘I am she whom women call goddess. I ordained that women should be loved by men: I brought wife and husband together, and invented the marriage contract. I ordained that women should bear children.’’7 Isis was also portrayed as the giver of civilization who had brought laws and letters to all humankind. The cult of Isis offered a precious commodity to its initiates&#x2014;the promise of eternal life. In many ways, the mystery religions of the Hellenistic era helped pave the way for Christianity.<br />
+</p>
+
+
+<p>
+Jews in the Hellenistic World<br />
+</p>
+
+
+<p>
+In observing the similarities among their gods and goddesses, Greeks and easterners tended to assume they were the same beings with different names, giving rise to a process of syncretism. But a special position was occupied in the Hellenistic world by the Jews, whose monotheistic religion was exclusive and did not accommodate this kind of fusion of spiritual beings.<br />
+</p>
+
+
+<p>
+The Jewish province of Judaea (which embraced the lands of the old Hebrew kingdom of Judah) was ruled by the Ptolemies until it fell under the control of the Seleucids by 200 B.C. In the reign of the Seleucid king Antiochus IV (175&#x2013;163 B.C.), conflict erupted in Judaea. Hellenistic monarchs were generally tolerant of all religions, but problems with Rome prompted Antiochus to try to impose more cultural and religious unity throughout his kingdom. When he sent troops to Jerusalem and seized the Temple, he sparked a Jewish uprising led by Judas Maccabaeus (164 B.C.). The rebels succeeded in recapturing the Temple, a joyous event that has been celebrated every year since in the Jewish holiday of Hanukkah (Hebrew for ‘‘rededication’’). Although the conflict in Judaea continued, the Seleucids ultimately made concessions and allowed the Jews considerable freedom.<br />
+</p>
+
+
+<p>
+But large numbers of Jews no longer lived in Judaea. There was a large Jewish population in Egypt, particularly in Alexandria, as well as Jewish settlements throughout the cities of Asia Minor and Syria. In each city, Jews generally set up a synagogue and formed a private association for worship as other foreigners did. But some city authorities also allowed the Jews to form a political corporation that gave them greater rights than other resident aliens. Most important, they gained the privilege to live by their own laws and their own judicial system. The Jews were not really interested in citizenship in the cities in which they resided because full citizenship required worship of the city’s gods, anathema to Jews, who believed only in Yahweh.<br />
+</p>
+
+
+
+<p>
+CONCLUSION<br />
+</p>
+
+
+<p>
+Although historians once viewed the Hellenistic era as a period of stagnation after the brilliant Greek civilization of the fifth century B.C., our survey of the Hellenistic world has shown the inaccuracy of that position. The Hellenistic period was vibrant in its own way. New cities arose and flourished. New philosophical ideas captured the minds of many. Significant achievements occurred in art, literature, and science. Greek culture spread throughout the Near East and made an impact wherever it was carried. In some areas of the Hellenistic world, queens played an active role in political life, and many upper-class women found new avenues for expressing themselves.<br />
+</p>
+
+
+<p>
+But serious problems remained. Hellenistic kings continued to engage in inconclusive wars. Much of the formal culture was the special preserve of the Greek conquerors, whose attitude of superiority kept them largely separated from the native masses of the Hellenistic kingdoms. Although the Hellenistic world achieved a degree of political stability, by the late third century B.C. signs of decline were beginning to multiply. Some of the more farsighted perhaps realized the danger presented to the Hellenistic world by the growing power of Rome. The Romans would ultimately inherit Alexander’s empire, and we must now turn to them and try to understand what made them such successful conquerors.<br />
+</p>
+</div>
+</body>
+</html>

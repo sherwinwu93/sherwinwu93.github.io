@@ -1,0 +1,635 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-08-06 Tue 22:24 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+
+<div id="outline-container-org3726a7f" class="outline-2">
+<h2 id="org3726a7f">Lesson 90 What's for supper?</h2>
+<div class="outline-text-2" id="text-org3726a7f">
+<p class="verse">
+What kind of fish are they?<br />
+<br />
+Fish and chips has always been a favourite dish in Britain,<br />
+&#xa0;but as the oceans have been overfished, fish has become more and more expensive.<br />
+So it comes as a surprise to learn that giant fish are terrifying the divers on North Sea oil rigs.<br />
+Oil rigs have to be repaired frequently<br />
+&#xa0;and divers, who often have to work in darkness a hundred feet under water,<br />
+&#xa0;&#xa0;have <b>been frightened out of their wits</b> by giant fish bumping into them as they work.<br />
+Now they have had special cages made to <b>protect them from</b> these monsters.<br />
+The fish are not sharks or killer whales,<br />
+&#xa0;but favourite eating varieties like cod and skate<br />
+&#xa0;&#xa0;which grow to unnatural sizes, sometimes as much as twelve feet <b>in length</b>.<br />
+Three factors have caused these fish to grow so large:<br />
+&#xa0;the warm water round the hot oil pipes under the sea;<br />
+&#xa0;the plentiful supply of food thrown overboard by the crews on the rigs;<br />
+&#xa0;<b>the total absence of</b> fishing boats around the oil rigs.<br />
+<b>As a result</b>, the fish just eat and eat and grow and grow in the lovely warm water.<br />
+Who eats who?<br />
+</p>
+</div>
+<div id="outline-container-orgad1663b" class="outline-3">
+<h3 id="orgad1663b">expression</h3>
+<div class="outline-text-3" id="text-orgad1663b">
+<p>
+chip [tʃɪp] n.油煎土豆片<br />
+overfish [ˌoʊvə'fɪʃ] v.过度捕捞<br />
+giant [ˈdʒaɪənt] adj.巨大的<br />
+terrify [ˈterəˌfaɪ] v.吓,使恐怖<br />
+diver [ˈdaɪvər] n.潜水员<br />
+oil rig [ɔɪl] [rɪɡ] 石油钻塔<br />
+wit [wɪt] n.(复数)理智,头脑<br />
+cage [keɪdʒ] n.笼<br />
+shark [ʃɑrk] n.鲨鱼<br />
+whale [hweɪl] n.鲸<br />
+variety [vəˈraɪəti] n.品种<br />
+cod [kɒd] n.鳕 skate n.鳐<br />
+factor [ˈfæktər] n.因素<br />
+crew [kru] n.全体工作人员<br />
+</p>
+
+<p>
+be scared/frightened out of sb's wits 把某人吓得魂不附体<br />
+a variety of 各种各样的<br />
+</p>
+<hr />
+<p>
+it comes as a surprise to learn that + &#x2026; 得知&#x2026;令人惊讶<br />
+protect a. from b. 保护A远离B<br />
+in length 在长度上(状语)<br />
+the (total) absence of &#x2026; 没有&#x2026;<br />
+as a result 因此<br />
+</p>
+</div>
+</div>
+
+
+
+<div id="outline-container-org567d5f7" class="outline-3">
+<h3 id="org567d5f7">words</h3>
+<div class="outline-text-3" id="text-org567d5f7">
+<p>
+chip [tʃɪp] n.油煎土豆皮<br />
+overfish [ˌoʊvə'fɪʃ] v.过度捕捞<br />
+giant [ˈdʒaɪənt] adj.巨大的<br />
+terrify [ˈterəˌfaɪ] v.吓,使恐怖<br />
+diver [ˈdaɪvər] n.潜水员<br />
+oil rig [ɔɪl-rɪɡ] 石油钻塔<br />
+wit [wɪt] n.(复数)理智,头脑<br />
+cage [keɪdʒ] n.笼<br />
+shark [ʃɑrk] n.鲨鱼<br />
+whale [weɪl] n.鲸<br />
+variety [vəˈraɪəti] n.品种<br />
+cod [kɒd] n.鳕<br />
+skate [skeɪt] n.鳐<br />
+factor [ˈfæktər] n.因素<br />
+crew [kru] n.全体工作人员<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org80a58eb" class="outline-3">
+<h3 id="org80a58eb"><span class="done DONE">DONE</span> 单词造句</h3>
+<div class="outline-text-3" id="text-org80a58eb">
+<p>
+chip n.<br />
+</p>
+<ul class="org-ul">
+<li>Did I say chip and fishes? It was a slip of the tongue.<br /></li>
+<li>Would you mind my eating chip and fishes there?<br /></li>
+<li>We've already ran out of chip and fishes.<br /></li>
+<li>I felt disappointed, for we had chip and fishes tonight.<br /></li>
+<li>She'll do anything to eat chip and fishes.<br /></li>
+</ul>
+<p>
+overfish v.<br />
+</p>
+<ul class="org-ul">
+<li>The river has been overfished for over 10 years.<br /></li>
+<li>It is the authorities who overfished the river, not the villagers.<br /></li>
+<li>At the beginning of summer, the villagers overfished the river.<br /></li>
+<li>When the news got around, the villagers overfished the river as soon as possible.<br /></li>
+<li>It caused the authorities to overfish the river.<br /></li>
+</ul>
+<p>
+giant adj.<br />
+</p>
+<ul class="org-ul">
+<li>The fisher claimed to have seen a giant fish bumping into him.<br /></li>
+<li>They haven't caught the giant fish and lost heart.<br /></li>
+<li>The giant fish was carried to the village fair.<br /></li>
+<li>There is a giant fish on display.<br /></li>
+<li>The giant fish on show is a killer whale.<br /></li>
+</ul>
+<p>
+terrify v.<br />
+</p>
+<ul class="org-ul">
+<li>The strike gone on terrified me a great deal.<br /></li>
+<li>It is known that he was terrified by the aliens.<br /></li>
+<li>It was said that he was terrified by a giant fish out at sea.<br /></li>
+<li>The boy who played truent from school will do anything to terrify his parents.<br /></li>
+<li>The gangster who knocked her to the ground terrified me a great deal.<br /></li>
+</ul>
+<p>
+diver n.<br />
+</p>
+<ul class="org-ul">
+<li>Even though I am a diver, I am unaware of the giant fish.<br /></li>
+<li>The diver is fanatical about football.<br /></li>
+<li>The diver failed to win the elections.<br /></li>
+<li>The diver maked every effort not to damage it in any way.<br /></li>
+<li>The diver urged him to swim out at sea.<br /></li>
+</ul>
+<p>
+oil rig<br />
+</p>
+<ul class="org-ul">
+<li>You could have accepted the work in the oil rig.<br /></li>
+<li>It is said that he jumped off the oil rig.<br /></li>
+<li>I don't look forward to seeing you jump off the oil rig.<br /></li>
+<li>If I were you, I wouldn't accept a work in the oil rig.<br /></li>
+<li>I don't have the nerve to work in the oil rig.<br /></li>
+</ul>
+<p>
+wit n. be scared/frightened out of sb's wits<br />
+</p>
+<ul class="org-ul">
+<li>It's obvious that the dog was frightened out of his wits.<br /></li>
+<li>The boy was delighted that his daughter was scared out of her wits.<br /></li>
+<li>Having cut the mummy open, the doctor was frightened out of his wits.<br /></li>
+<li>He was frightened out of his wits, for he had a rare disease.<br /></li>
+<li>Don't be too hard on me. I am scared out of my wits.<br /></li>
+</ul>
+<p>
+cage n.<br />
+</p>
+<ul class="org-ul">
+<li>He covered the cage with a blanket.<br /></li>
+<li>He noticed with dismay that the birds were not in the cage.<br /></li>
+<li>The police who arrived on the scene saw a bird in the cage.<br /></li>
+<li>The bird in the cage is trying to stay out of the limelight.<br /></li>
+<li>There must have been a bird in the cage. The detective said in a weak voice.<br /></li>
+</ul>
+<p>
+shark n.<br />
+</p>
+<ul class="org-ul">
+<li>It was found to be a shark.<br /></li>
+<li>When he finally saw the real shark, he burst into tears.<br /></li>
+<li>He decided to devote himself to studying sharks.<br /></li>
+<li>He became an expert at sharks.<br /></li>
+<li>He had a habit of studying sharks.<br /></li>
+</ul>
+<p>
+whale n.<br />
+</p>
+<ul class="org-ul">
+<li>They claimed to have seen a whale jumping out the water yesterday morning.<br /></li>
+<li>He pointed out that the whale had been killed.<br /></li>
+<li>A number of whales are jumping out the water.<br /></li>
+<li>It is said that the authorities had the whale killed.<br /></li>
+<li>The captain pointed out that the whale is source of income.<br /></li>
+</ul>
+<p>
+variety n. a variety of<br />
+</p>
+<ul class="org-ul">
+<li>It is my job to repair a variety of bicycle.<br /></li>
+<li>I can get to office in a variety of way, don't worry me.<br /></li>
+<li>As a captain, he will have to make a variety of decisions out at sea.<br /></li>
+<li>He pretends that he knows a variety of birds in the cages.<br /></li>
+<li>It is fortunate that you know a variety of volcanoes.<br /></li>
+</ul>
+<p>
+factor n.<br />
+</p>
+<ul class="org-ul">
+<li>Leo said that it depended on a variety of factors.<br /></li>
+<li>They was disappointed to learn that there were a variety of factors destorying the building.<br /></li>
+<li>A variety of factors caused the elephant to hold up the traffice.<br /></li>
+<li>A variety of factors caused the policeman to let her off.<br /></li>
+<li>He feared that many factors can destory the attic.<br /></li>
+</ul>
+<p>
+crew n.<br />
+</p>
+<ul class="org-ul">
+<li>The fire and police crews should have arrived on the scene in time.<br /></li>
+<li>The crews have solve the problem of the ventilation of the tunnel.<br /></li>
+<li>The crews have double checked the boat.<br /></li>
+<li>The crews have been carrying the food to the boat.<br /></li>
+<li>Right from the start, the crews got a good salary.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org9cf983e" class="outline-3">
+<h3 id="org9cf983e"><span class="done DONE">DONE</span> 反复听电影片段</h3>
+<div class="outline-text-3" id="text-org9cf983e">
+</div>
+</div>
+<div id="outline-container-org463ca93" class="outline-3">
+<h3 id="org463ca93"><span class="done DONE">DONE</span> Pattern Drill 写+读</h3>
+<div class="outline-text-3" id="text-org463ca93">
+<ul class="org-ul">
+<li>1t: a pen<br />
+s1: I need a pen. Have you got one to spare?<br />
+s2: I'm sorry. I've only got one and I need it myself.<br />
+<ul class="org-ul">
+<li>a stamp<br />
+I need a stamp. Have you got one to spare?<br />
+I'm sorry. I've only got one and I need it myself.<br /></li>
+<li>a clock<br />
+I need a clock. Have you got one to spare?<br />
+I'm sorry. I've only got one and I need it myself.<br /></li>
+<li>a radio<br />
+I need a radio. Have you got one to spare?<br />
+I'm sorry. I've only got one and I need it myself.<br /></li>
+<li>a cup<br />
+I need a cup. Have you got one to spare?<br />
+I'm sorry. I've only got one and I need it myself.<br /></li>
+</ul></li>
+<li>2t: bread or toast - for tea<br />
+s1: Would you like break or toast for tea?<br />
+s2: I'll have toast, if I may.<br />
+<ul class="org-ul">
+<li>eggs or fish - for dinner<br />
+Would you like eggs or fish for dinner?<br />
+I'll have eggs, if I may.<br /></li>
+<li>cake or biscuits - for tea<br />
+Would you like cake or biscuits for tea?<br />
+I'll have biscuits, if I may.<br /></li>
+<li>salad or rice - with your meat<br />
+Would you like salad or ice with your meat?<br />
+I'll have ice, if I may.<br /></li>
+<li>jam or honey - with your toast<br />
+Would you like jam or honey with your toast?<br />
+I'll have jam, if I may.<br /></li>
+</ul></li>
+<li>3t: irritable - a long walk<br />
+s1: I feel very irritable.<br />
+s2: Have a long walk and you'll feel better.<br />
+<ul class="org-ul">
+<li>dirty - a wash<br />
+I feel very dirty.<br />
+Have a wash and you'll feel better.<br /></li>
+<li>cold - a hot bath<br />
+I feel very cold.<br />
+Have a hot bath and you'll feel better.<br /></li>
+<li>tired - a rest<br />
+I feel very tired.<br />
+Have a rest and you'll feel better.<br /></li>
+<li>hot - a swim<br />
+I feel hot.<br />
+Have a swim and you'll feel better.<br /></li>
+</ul></li>
+<li>4t: cracked cup - mend<br />
+s1: That cup is cracked. I'll have to have it mended.<br />
+s2: Don't worry. I'll get it mended for you.<br />
+<ul class="org-ul">
+<li>dirty car - wash<br />
+That car is dirty. I'll have to have it washed.<br />
+Don't worry. I'll get it washed for you.<br /></li>
+<li>broken radio - repair<br />
+That radio is broken. I'll have to have it repaired.<br />
+Don't worry. I'll get it repaired for you.<br /></li>
+<li>long grass - cut<br />
+That grass is long. I'll have to have it cut.<br />
+Don't worry. I'll get it cut for you.<br /></li>
+<li>old tree - cut down<br />
+That tree is old. I'll have to have it cut down.<br />
+Don't worry. I'll get it cut down for you.<br /></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgba2b8f8" class="outline-3">
+<h3 id="orgba2b8f8">给自己讲解</h3>
+</div>
+<div id="outline-container-orgfcd627d" class="outline-3">
+<h3 id="orgfcd627d">红皮书</h3>
+</div>
+<div id="outline-container-org111ce5d" class="outline-3">
+<h3 id="org111ce5d"><span class="done DONE">DONE</span> 习惯用法造句</h3>
+<div class="outline-text-3" id="text-org111ce5d">
+<p>
+it comes as a surprise to learn that + &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>It comes as a surprise to learn that he threatend to kill himself.<br /></li>
+<li>It comes as a surprise to learn that the grass takes root.<br /></li>
+<li>It comes as a surprise to learn that China will open itself.<br /></li>
+<li>It comes as a surprise to learn that he passed the exam.<br /></li>
+<li>It comes as a surprise to learn that the fire crew got the fire under control.<br /></li>
+</ul>
+<p>
+protect a. from b.<br />
+</p>
+<ul class="org-ul">
+<li>I must protect my father from himself.<br /></li>
+<li>I have to protect my cat from eating dirty food.<br /></li>
+<li>I can't protect me from smoking.<br /></li>
+<li>I would like to protect you from anyone who wants to hurt you.<br /></li>
+<li>He compained of being protected from alcohol for so long time.<br /></li>
+</ul>
+<p>
+in length<br />
+</p>
+<ul class="org-ul">
+<li>The whale was found to be 300 meters in length.<br /></li>
+<li>The river is as much as 300 kilometers in length.<br /></li>
+<li>The railway is said to be 500 kilometers in length.<br /></li>
+<li>The film was said to be over 3 hours in length.<br /></li>
+<li>The lake is a total of 300 kilometers in length.<br /></li>
+</ul>
+<p>
+the (total) absence of &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>A major problem is the absence of clean water in floods.<br /></li>
+<li>The company informed us that we would be the absence of water.<br /></li>
+<li>In the total absence of any evidence, the detective had to let him off.<br /></li>
+<li>In the absence of my teacher, I was asked to keep order in the class.<br /></li>
+<li>In the absence of my wife, I failed to do anything.<br /></li>
+</ul>
+<p>
+as a result<br />
+</p>
+<ul class="org-ul">
+<li>As a result, he will devote himself to gardening.<br /></li>
+<li>As a result, everyone will buy a gift to mark the occassion.<br /></li>
+<li>As a result, we will remember him for his patience.<br /></li>
+<li>As a result, he was due to sail out at sea.<br /></li>
+<li>As a result, the workers decided to reach agreement about pay and work conditions.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org97c82ea" class="outline-3">
+<h3 id="org97c82ea"><span class="done DONE">DONE</span> 跟读至背诵</h3>
+<div class="outline-text-3" id="text-org97c82ea">
+</div>
+</div>
+<div id="outline-container-org28f0bd7" class="outline-3">
+<h3 id="org28f0bd7"><span class="done DONE">DONE</span> Ask me if 写+读</h3>
+<div class="outline-text-3" id="text-org28f0bd7">
+<ol class="org-ol">
+<li>Fish and chips has always been a favourite dish in Britain. What/Where<br />
+What has always been a favourite dish in Britain?<br />
+Where has fish and chips always been a favourite dish?<br /></li>
+<li>Fish has become more expensive. Why<br />
+Why has fish become more expensive?<br /></li>
+<li>Divers have to repair oil rigs. Who/What<br />
+Who have to repair oil rigs?<br />
+What do divers have to repair?<br /></li>
+<li>They often have to work in darkness. Where<br />
+Where do they often have to work?<br /></li>
+<li>Giant fish often bump into them. What<br />
+What often bump into them?<br /></li>
+<li>They have special cages to protect them. What<br />
+What do they have to protect them?<br /></li>
+<li>The fish are eating varieties. What kind of fish<br />
+What kind of fish are they?<br /></li>
+<li>They grow to unnatural sizes. How large<br />
+How large do they grow to?<br /></li>
+<li>The water is warm round the oil pipes. Where<br />
+Where is the water warm?<br /></li>
+<li>Food is supplied by the crews. What<br />
+What is supplied by the crews?<br /></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org6a3dd72" class="outline-3">
+<h3 id="org6a3dd72"><span class="done DONE">DONE</span> 摘要写作</h3>
+<div class="outline-text-3" id="text-org6a3dd72">
+<p>
+Divers working on the North Sea oil rigs<br />
+	are often terrified by giant fish<br />
+		that bump into them when they are working in deep water.<br />
+These fish are not sharks or whales.<br />
+On the contrary, they are favourite eating varieties<br />
+	that grow to unnatural sizes.<br />
+Three factors caused them to grow so large:<br />
+	the first is the warmth from oil-pipes;<br />
+	the second is the supply of plentiful food;<br />
+  the third is the absence of fishing boat round the rigs.<br />
+</p>
+
+<p>
+Divers who work on the North Sea oil rigs<br />
+	are often terrified by gaint fish<br />
+	bumping into them while they are working in deep water.<br />
+These fish are not sharks or whales,<br />
+	but favourite eating varieties<br />
+		which grow to unnatural sizes.<br />
+Three factors caused this to happen:<br />
+	the warmth from the hot oil-pipes, the supply of plentiful food and the absence of fishing.<br />
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org16b9475" class="outline-3">
+<h3 id="org16b9475"><span class="done DONE">DONE</span> tell the story 口语</h3>
+<div class="outline-text-3" id="text-org16b9475">
+</div>
+</div>
+<div id="outline-container-org75425c3" class="outline-3">
+<h3 id="org75425c3">Topics for discussion</h3>
+</div>
+</div>
+</div>
+</body>
+</html>

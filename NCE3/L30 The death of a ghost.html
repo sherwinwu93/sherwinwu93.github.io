@@ -1,0 +1,661 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-09-28 Sat 22:17 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-orgadb1203" class="outline-2">
+<h2 id="orgadb1203">Lesson 30 The death of a ghost</h2>
+<div class="outline-text-2" id="text-orgadb1203">
+<p class="verse">
+Why did the two brothers keep the secret?<br />
+<br />
+<b>For years</b>, villagers believed that Endly Farm was haunted.<br />
+The farm was owned by two brothers, Joe and Bob Cox.<br />
+They employed a few farmhands, but no one was willing to work there long.<br />
+<b>Every time</b> a worker gave up his job, he told the same story.<br />
+Farm labourers said that they always <b>woke up to find that</b> work had been done overnight.<br />
+Hay had been cut and cowsheds had been cleaned.<br />
+A farm worker, who <b>stayed up</b> all night,<br />
+&#xa0;claimed to have seen a figure cutting corn <b>in the moonlight</b>.<br />
+In time, <b>it became an accepted fact that</b><br />
+&#xa0;the Cox brothers employed a conscientious ghost that did most of their work for them.<br />
+<br />
+No one <b>suspected that</b> there might be someone else on the farm who had never been seen.<br />
+This was indeed the case.<br />
+A short time ago, villagers were astonished to learn that the ghost of Endley had died.<br />
+Everyone went to the funeral, for the 'ghost' was <b>none other than</b> Eric Cox,<br />
+&#xa0;a third brother who <b>was supposed to</b> have died as a young man.<br />
+After the funeral, Joe and Bob revealed a secret which they had kept for over fifty years.<br />
+<br />
+Eric had been the <b>eldest</b> son of the family, very much older than his two brothers.<br />
+He had been obliged to join the army during the Second World War.<br />
+As he hated army life, he decided to desert his regiment.<br />
+When he learnt that he would be sent abroad,<br />
+&#xa0;he returned to the farm and his father hid him until the end of the war.<br />
+Fearing the authorities, Eric <b>remained in hiding</b> after the war as well.<br />
+His father told everybody that Eric had <b>been killed in action</b>.<br />
+The only other people who knew the secret were Joe and Bob.<br />
+They did not even tell their wives.<br />
+When their father died, they <b>thought it their duty to keep Eric in hiding</b>.<br />
+All these years, Eric had lived as a recluse.<br />
+He used to sleep during the day and work at night,<br />
+&#xa0;quite unaware of the fact that he had become the ghost of Endley.<br />
+When he died, however, his brothers <b>found it impossible to</b> keep the secret any longer.<br />
+</p>
+</div>
+<div id="outline-container-org05c1cbe" class="outline-3">
+<h3 id="org05c1cbe">expression</h3>
+<div class="outline-text-3" id="text-org05c1cbe">
+<p>
+labourer: ['leɪbərər] n. laborer劳动者<br />
+overnight: [ˈoʊvərˌnaɪt] adv.一夜之间<br />
+hay: [heɪ] n.干草<br />
+corn: [kɔrn] n.谷物<br />
+moonlight: [ˈmunˌlaɪt] n.月光<br />
+conscientious: [ˌkɑnʃiˈenʃəs] adj.认真的<br />
+suspect: [ˈsʌˌspekt] v.怀疑<br />
+desert: [ˈdezərt] v.开小差<br />
+regiment: [ˈredʒɪmənt] n.团(军队)<br />
+action: [ˈækʃ(ə)n] n.战斗<br />
+recluse: [ˈrekˌlus] n.隐士<br />
+</p>
+
+<p>
+stay overnight in the hay: to sleep somewhere for one night在干草中过夜<br />
+in the moonlight: 在月光下<br />
+suspect (that) + &#x2026;: 怀疑+&#x2026;<br />
+a regiment of &#x2026;: 一团/群&#x2026;<br />
+be killed in action: 战斗中牺牲<br />
+</p>
+<hr />
+<p>
+every time: 时间状语 = whenever<br />
+wake up to find that + &#x2026;: 醒来发现+&#x2026;<br />
+old elder eldest: 只能sb.,不能接sth.,也不能接than<br />
+	older oldest: 既能sb.,也能sth.<br />
+</p>
+<hr />
+<p>
+for years: 数年<br />
+stay up (overnight): 熬夜<br />
+it became an accepted fact that + &#x2026;: 这已成为公认的事实+&#x2026;<br />
+be supposed to be/do sth.: 应该是/做某事<br />
+remain in doing sth.: proceed to do sth.继续做某事<br />
+none other than: 不是其他人是<br />
+think it one's duty to do sth.: 认为做某事是某人的义务<br />
+keep sb. in hiding: 藏起某人<br />
+find it impossible to do sth.: 发现做某事不可能<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org263a137" class="outline-3">
+<h3 id="org263a137">Words</h3>
+<div class="outline-text-3" id="text-org263a137">
+<p>
+labourer [ˈleɪbərər] n.劳动者<br />
+overngiht adv.一夜期间<br />
+hay [heɪ] n.干草<br />
+corn [kɔːrn] n.谷物<br />
+moonlight [ˈmuːnlaɪt] n.月光<br />
+conscientious [ˌkɑːnʃiˈenʃəs] adj.认真的<br />
+suspect [səˈspekt] v.怀疑<br />
+desert [ˈdezərt] v.(军队)开小差<br />
+regiment [ˈredʒɪmənt] n.(军队)团<br />
+action [ˈækʃ(ə)n] n.战斗<br />
+recluse [ˈrekluːs] n.隐士<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgaafba64" class="outline-3">
+<h3 id="orgaafba64">vocabulary</h3>
+<div class="outline-text-3" id="text-orgaafba64">
+<p>
+was willing: wanted, was prepared<br />
+labourers: farmhand, farm worker<br />
+claimed: said that, maintained that<br />
+an accepted fact: a general truth<br />
+conscientious: extremely careful<br />
+astonished: surprised<br />
+revealed: made known, told<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orga85c8b8" class="outline-3">
+<h3 id="orga85c8b8"><span class="done DONE">DONE</span> 单词造句</h3>
+<div class="outline-text-3" id="text-orga85c8b8">
+<p>
+labourer n. laborer<br />
+</p>
+<ul class="org-ul">
+<li>The farm laborer went to great lengths to make his son laugh to tears.<br /></li>
+<li>The farm laborer found it hard to finish the task by the last day of the year.<br /></li>
+<li>Whether the farm laborer finished the task or not largely depends on whether he worked hard.<br /></li>
+<li>The director based his film on a real story about a farm laborer.<br /></li>
+<li>To compensate for his unpleasant experience, the farm laborer went on a strike.<br /></li>
+</ul>
+<p>
+overnight adv.  stay overnight in the hay<br />
+</p>
+<ul class="org-ul">
+<li>I have stayed overnight in the hay. This really gave me spiritual comfort.<br /></li>
+<li>I was impressed by the farm laborer who stayed overnight in the hay.<br /></li>
+<li>I can't conceal the fact that they stayed overnight in the hay.<br /></li>
+<li>I have no intention of staying overnight in the hay.<br /></li>
+<li>It is outrageous that you decided to stay overnight in the hay.<br /></li>
+</ul>
+<p>
+hay n.<br />
+</p>
+<ul class="org-ul">
+<li>For instance, I found my cat hiding in the hay.<br /></li>
+<li>Oddly enough, there is some puma fur in the hay.<br /></li>
+<li>The baby sped to the hay when he was in farm for the first time.<br /></li>
+<li>I used to hide in the hay in my youth.<br /></li>
+<li>The woman hiding in the hay seems to be the exception  to the rule.<br /></li>
+</ul>
+<p>
+corn n.<br />
+</p>
+<ul class="org-ul">
+<li>I hate to eat corn bread for breakfast.<br /></li>
+<li>The woman was said to live by selling corn bread.<br /></li>
+<li>The corn breads have been sold out, would you like anything else?<br /></li>
+<li>It is difficult to eat corn bread without our parents' permission.<br /></li>
+<li>She has been afflicted by the rotten corn bread.<br /></li>
+</ul>
+<p>
+moonlight n.  in the moonlight<br />
+</p>
+<ul class="org-ul">
+<li>I never grudged asking you for marrying to me in the moonlight.<br /></li>
+<li>He used to buy corn breads from the lady in the moonlight.<br /></li>
+<li>She divised a plan to repair her car in the moonlight.<br /></li>
+<li>There is no doubt that it can't capture my attention in the moonlight.<br /></li>
+<li>She loves to dance in the moonlight.<br /></li>
+</ul>
+<p>
+conscientious adj.<br />
+</p>
+<ul class="org-ul">
+<li>He is so conscientious that he takes his job seriously all the time.<br /></li>
+<li>The conscientious worker has good taste in clothes.<br /></li>
+<li>He is a conscientious headmaster, and every student admired him for his hard working.<br /></li>
+<li>There is no doubt that he is a conscientious worker.<br /></li>
+<li>There is a danger that a conscientious worker makes tremendous mistakes.<br /></li>
+</ul>
+<p>
+suspect v.  suspect (that) + &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>I suspected that you had used out of your pocket money.<br /></li>
+<li>I suspected that our son was influenced by that boy.<br /></li>
+<li>I suspected that the boat was strucked by a heavy shower.<br /></li>
+<li>I suspected that he didn't have a perfect alibi.<br /></li>
+<li>I suspected that the skeleton might leap out at us.<br /></li>
+</ul>
+<p>
+desert v.  a regiment of<br />
+</p>
+<ul class="org-ul">
+<li>It is all very well a soldier never deserts army.<br /></li>
+<li>It makes her hair stand on end, when she heard that she was deserted by her husband.<br /></li>
+<li>As he deserted the army in his youth, he was judged by the military court.<br /></li>
+<li>To varying degrees, he didn't desert the army.<br /></li>
+<li>He has a skeleton in the cupboard, for he deserted the army during the world war.<br /></li>
+</ul>
+<p>
+regiment n.<br />
+</p>
+<ul class="org-ul">
+<li>You should have returned to your regiment.<br /></li>
+<li>It gave me the impression that he had returned to his regiment.<br /></li>
+<li>There is a regiment of rabbits in the hay.<br /></li>
+<li>He couldn't conceal the fact that his son had deserted the regiment.<br /></li>
+<li>He showed me to the regiment at once.<br /></li>
+</ul>
+<p>
+action n.  be killed in action<br />
+</p>
+<ul class="org-ul">
+<li>The medical student has been killed in action.<br /></li>
+<li>It ruined his day when he heard that his son was killed in action.<br /></li>
+<li>The enemy took possession of the city and he was killed in action.<br /></li>
+<li>The sad truth is that your son have been killed in action.<br /></li>
+<li>When he heard that his son was killed in action, his stomach turned.<br /></li>
+</ul>
+<p>
+recluse n.<br />
+</p>
+<ul class="org-ul">
+<li>I never expected the recluse to listen to me.<br /></li>
+<li>The recluse doesn't have cause to ask you for money.<br /></li>
+<li>She insisted that the recluse should read the story to her.<br /></li>
+<li>Much to my surprise, the recluse was none other than the gangster.<br /></li>
+<li>I found it impossible to talk to the recluse.<br /></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orga98bcee" class="outline-3">
+<h3 id="orga98bcee"><span class="done DONE">DONE</span> 反复听电影片段直到懂关键句</h3>
+<div class="outline-text-3" id="text-orga98bcee">
+</div>
+</div>
+<div id="outline-container-org947cec7" class="outline-3">
+<h3 id="org947cec7">复习二册语法(笔记或视频) &amp; 红皮书</h3>
+</div>
+<div id="outline-container-org7b3f98a" class="outline-3">
+<h3 id="org7b3f98a"><span class="done DONE">DONE</span> 习惯用法造句</h3>
+<div class="outline-text-3" id="text-org7b3f98a">
+<p>
+every time: 时间状语 = whenever<br />
+</p>
+<ul class="org-ul">
+<li>Every time I get back home, my cat runs straight at me.<br /></li>
+<li>Every time I pay for, I will receive a message from alipay.<br /></li>
+<li>Every time he hides in the hay, he has the impluse to go home.<br /></li>
+<li>Every time I meet her, I want to tell her I love her.<br /></li>
+<li>Every time I take a shower, I starve to death.<br /></li>
+</ul>
+<p>
+wake up to find that + &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>I woke up to find that the clock was striking.<br /></li>
+<li>She woke up to find that she was deserted by her husband.<br /></li>
+<li>She woke up to find that the boat was loaded with goods.<br /></li>
+<li>She woke up to find that the cat starved to death.<br /></li>
+<li>She woke up to find that the captain had gave an order.<br /></li>
+</ul>
+<p>
+for years<br />
+</p>
+<ul class="org-ul">
+<li>For years, she has been asking for meals.<br /></li>
+<li>For years, she hitchhiked to Paris.<br /></li>
+<li>For years, the perfume is exempted from import duty.<br /></li>
+<li>For years, both brothers have one thing in common: they take insterest in English.<br /></li>
+<li>For years, he made a study of ancient philosophy.<br /></li>
+</ul>
+<p>
+stay up<br />
+</p>
+<ul class="org-ul">
+<li>I don't want to stay up this night.<br /></li>
+<li>I asked my wife to take a shower, for I didn't want to stay up any more.<br /></li>
+<li>She is likely to stay up tonight.<br /></li>
+<li>She is supposed to not stay up any longer.<br /></li>
+<li>She leads a meaning life and stays up for a long time.<br /></li>
+</ul>
+<p>
+it became an accepted fact that + &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>It became an accepted fact that cats have nine lives.<br /></li>
+<li>It became an accepted fact that there is no shortage of tall building in New York.<br /></li>
+<li>It became an accepted fact that the film is based on a real story.<br /></li>
+<li>It became an accepted fact that cats never fail to fascinate human beings.<br /></li>
+<li>It became an accepted fact that the microphone has been conntected to the Big Ben.<br /></li>
+</ul>
+<p>
+be supposed to be/do sth.<br />
+</p>
+<ul class="org-ul">
+<li>I was supposed to work hard.<br /></li>
+<li>We were supposed to receive a warm welcome at the monastery.<br /></li>
+<li>He was supposed to be a editor.<br /></li>
+<li>The country was supposed to gain its independence 7 years ago.<br /></li>
+<li>The microphone was supposed to connected to the big clock in London.<br /></li>
+</ul>
+<p>
+remain in doing<br />
+</p>
+<ul class="org-ul">
+<li>It convinced him that he shouldn't remain in hiding in the hay.<br /></li>
+<li>The boy who played truent from school remained in hiding behind the archway.<br /></li>
+<li>Imagine her dismay when she found her father still remain in hiding.<br /></li>
+<li>He ordered his men to remain in hiding in the hay.<br /></li>
+<li>Because of the enemy, they had to remain in hiding.<br /></li>
+</ul>
+<p>
+none other than<br />
+</p>
+<ul class="org-ul">
+<li>You will found that it was none other than the baker.<br /></li>
+<li>It was none other than the gasman who was read the meter.<br /></li>
+<li>The kidnapper was none other than his cousin.<br /></li>
+<li>The boy who played truent from school was none other than your son.<br /></li>
+<li>It was none other than you who gave birth to me.<br /></li>
+</ul>
+<p>
+think it one's duty to do sth.<br />
+</p>
+<ul class="org-ul">
+<li>I thought it my duty to go on a strike.<br /></li>
+<li>She considered it her duty to give birth to her baby.<br /></li>
+<li>She thought it her duty to join the army.<br /></li>
+<li>I though it my duty to be a good husand and father.<br /></li>
+<li>These days, people don't think it their duty to give birth to their children.<br /></li>
+</ul>
+<p>
+keep sb. in hiding<br />
+</p>
+<ul class="org-ul">
+<li>The actor kept the paper in hiding until the curtain went down.<br /></li>
+<li>My cousin kept the book I borrowed in hiding until I quarreled with him.<br /></li>
+<li>I kept my book in hiding so that it would be taken by my cousin.<br /></li>
+<li>I kept the clothes in hiding to give my wife a surprise on her birthday.<br /></li>
+<li>For instance, he kept my pocket money in hiding.<br /></li>
+</ul>
+<p>
+find it impossible to do sth.<br />
+</p>
+<ul class="org-ul">
+<li>You found it impossible to get out of the room.<br /></li>
+<li>The editor found it possible to publish a book.<br /></li>
+<li>I found it impossible to send her a fax.<br /></li>
+<li>He found it impossible to ice-skate in public.<br /></li>
+<li>She found it impossible to ask her aunt for pocket money.<br /></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org3647211" class="outline-3">
+<h3 id="org3647211">跟读 50遍</h3>
+</div>
+<div id="outline-container-orga128fdd" class="outline-3">
+<h3 id="orga128fdd"><span class="done DONE">DONE</span> Comprehension 反复练习</h3>
+<div class="outline-text-3" id="text-orga128fdd">
+</div>
+</div>
+<div id="outline-container-orgb0a1252" class="outline-3">
+<h3 id="orgb0a1252"><span class="done DONE">DONE</span> Ask me if 写+读</h3>
+<div class="outline-text-3" id="text-orgb0a1252">
+<ol class="org-ol">
+<li>Endley Farm was owned by the Cox brothers. Which farm<br />
+Which farm was owned by the Cox brothers?<br /></li>
+<li>Work was done overnight. What kind<br />
+What kind of work was done overnight?<br /></li>
+<li>A farm worker claimed to have seen a figure cutting corn. Who<br />
+Who claimed to have seen a figure cutting corn?<br /></li>
+<li>The brothers employed a conscientious ghost. Why<br />
+Why did the brothers employ a conscientious ghost?<br /></li>
+<li>The villagers learnt that the ghost of Endley had died. When<br />
+When did the villagers learn that the ghost of Endley had died?<br /></li>
+<li>Everyone went to Eric Cox's funeral. Whose<br />
+Whose funeral did everyone go to?<br /></li>
+<li>Eric had joined the army during the Second World War. When<br />
+When had Eric joined the army?<br /></li>
+<li>Eric deserted his regiment. Why<br />
+Why did Eric desert his regiment?<br /></li>
+<li>His father hid him during and after the war. Who<br />
+Who hid him during and after the war?<br /></li>
+<li>Eric had lived as a recluse all these years. How<br />
+How had Eric lived all these years?<br /></li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orgde53a99" class="outline-3">
+<h3 id="orgde53a99"><span class="done DONE">DONE</span> 摘要写作 写 &amp; 对答案</h3>
+<div class="outline-text-3" id="text-orgde53a99">
+<p>
+Eric joined the army during the Second World War.<br />
+As he hated army life and learnt that he would be send abroad,<br />
+	he got back to the farm and his father hid him during and after the war.<br />
+His father told everyone he was killed in action.<br />
+Joe and Bob, his two brothers, who knew the secret,<br />
+	kept him in hiding for over fifty years.<br />
+They didn't even tell their wives and Eric had lived as a recluse.<br />
+His death made it impossible to keep it any longer.<br />
+</p>
+
+<p>
+Eric joined the army during the Second World War, but hated army life, so he deserted.<br />
+He returned to the farm where his father hid him until the end of the war,<br />
+	and he remained in hiding after the war.<br />
+His father told everyone that he had been killed in action.<br />
+Joe and Bob kept the secret, so Eric lived as a recluse.<br />
+He slept during the day and worked at night, so he became the 'ghost of Endley'.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orga448c46" class="outline-3">
+<h3 id="orga448c46"><span class="done DONE">DONE</span> tell the story 口语复述</h3>
+<div class="outline-text-3" id="text-orga448c46">
+</div>
+</div>
+<div id="outline-container-org04cfc5a" class="outline-3">
+<h3 id="org04cfc5a"><span class="done DONE">DONE</span> composition 阅读 或 写作</h3>
+<div class="outline-text-3" id="text-org04cfc5a">
+<p>
+When I came in to work one morning I noticed that work had been done overnight<br />
+	-some hay had been cut and the cowsheds and other buildings had been cleaned,<br />
+	so l decided to stay up all the next night to try to solve the mystery.<br />
+	(I didn't tell Joe and Bob, of course.)<br />
+I hid in the barn and waited.<br />
+Obviously I fell asleep because I suddenly woke up to find that it was dark.<br />
+I went straight to the cowshed and found that it had already been cleaned.<br />
+Then I went out to the Fields where I could just see a figure working;<br />
+	I couldn't see whether it was a man, or a woman, or perhaps a ghost.<br />
+</p>
+
+<p>
+I was scared, so I rushed back to the farmhouse and woke up the others.<br />
+We all went out to the fields to see who it was, but when we got there, there was no one there.<br />
+When I was in the fields before, I didn't know what or who the figure was.<br />
+But now I was sure it was a ghost<br />
+	so I immediately decided not to work at Endley Farm any longer<br />
+	and handed in my resignation.<br />
+When I told my story to the villagers,<br />
+	many of them still didn't believe me,<br />
+	even though they knew that something strange had been going on at Endley Farm for years.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgdf933f6" class="outline-3">
+<h3 id="orgdf933f6">Topics for discussion</h3>
+</div>
+</div>
+</div>
+</body>
+</html>

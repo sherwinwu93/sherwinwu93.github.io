@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-01-09 Thu 23:34 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-org80ec934" class="outline-2">
+<h2 id="org80ec934">08 The Slavic peoples of Central and Eastern Europe</h2>
+<div class="outline-text-2" id="text-org80ec934">
+<p class="verse">
+North of Byzantium and east of the Carolingian Empire lay a spacious plain<br />
+&#xa0;through which a number of Asiatic nomads,<br />
+&#xa0;&#xa0;including the Huns, Bulgars, Avars, and Magyars, had pushed their way westward,<br />
+&#xa0;&#xa0;&#xa0;terrorizing and plundering the settled peasant communities.<br />
+Eastern Europe was ravaged by these successive waves of invaders,<br />
+&#xa0;who found it relatively easy to create large empires<br />
+&#xa0;&#xa0;that were in turn overthrown by the next invaders.<br />
+Over a period of time,<br />
+&#xa0;the invaders themselves were largely assimilated with the native Slavic peoples of the area.<br />
+<br />
+The Slavs were originally a single people in central Europe who,<br />
+&#xa0;&#xa0;through mass migrations and nomadic invasions,<br />
+&#xa0;gradually divided into three major groups: the western, southern, and eastern Slavs.<br />
+</p>
+</div>
+
+<div id="outline-container-org783ef21" class="outline-3">
+<h3 id="org783ef21">expression</h3>
+<div class="outline-text-3" id="text-org783ef21">
+<p>
+spacious [ˈspeɪʃəs]: adj. a spacious house, room etc is large and has plenty of space to move around in OPP cramped宽广的<br />
+Asiatic [ˌeɪziˈætɪk]: adj. from or connected with Asia亚洲(人)的<br />
+nomad [ˈnoʊˌmæd]: n. a member of a tribe that travels from place to place instead of living in one place all the time, usually in order to find grass for their animals游牧部落的人, 流浪者, 游牧民<br />
+westward [ˈwestwərd]: adv. towards the west向西<br />
+terrorize [ˈterəˌraɪz]: v. to deliberately frighten people by threatening to harm them, especially so they will do what you want使恐怖, 恐吓, 恐怖统治<br />
+plunder [ˈplʌndər]: v. to steal large amounts of money or property from somewhere, especially while fighting in a war抢劫<br />
+peasant [ˈpez(ə)nt]: n. a poor farmer who owns or rents a small amount of land, either in past times or in poor countries农夫, 乡下人<br />
+ravage [ˈrævɪdʒ]: v. to damage something very badly毁坏, 掠夺<br />
+successive [səkˈsesɪv]: adj. coming or following one after the other连续的<br />
+overthrow [ˈoʊvərˌθroʊ]: v. to get rid of the rules, ideas, or systems of a society推翻, 颠覆<br />
+migration [maɪˈɡreɪʃ(ə)n]: n. when large numbers of people go to live in another area or country, especially in order to find work移民<br />
+</p>
+<hr />
+<p>
+push sb's way westward: 向西推进<br />
+these successive waves of sth.: 某事物的连续的几波<br />
+be assimilated with sth./sb.: 被某物/人同化<br />
+divide into sth.(pl.): 分成&#x2026;<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgf074019" class="outline-3">
+<h3 id="orgf074019">sentences</h3>
+<div class="outline-text-3" id="text-orgf074019">
+<p>
+spacious:a spacious house, room etc is large and has plenty of space to move around in OPP cramped宽广的<br />
+</p>
+<ul class="org-ul">
+<li>These nomads used to live on a spacious plain.<br /></li>
+<li>There is an abduction by a group of gangsters who live on a spacious plain.<br /></li>
+<li>She found it relatively difficult to take a bath on a spacious plain.<br /></li>
+</ul>
+<p>
+Asiatic:from or connected with Asia亚洲(人)的<br />
+</p>
+<ul class="org-ul">
+<li>She claimed that these Asiatic warriors were vital for the success of the war.<br /></li>
+<li>There are some Asiatic foods in the back of your fridge.<br /></li>
+<li>A group of Asiatic entrepreneurs will be setting up factories in the suburbs of the city.<br /></li>
+</ul>
+<p>
+nomad:a member of a tribe that travels from place to place instead of living in one place all the time, usually in order to find grass for their animals游牧部落的人, 流浪者, 游牧民<br />
+</p>
+<ul class="org-ul">
+<li>Last week, I moved to the suburb of the city<br />
+where a nomad was said to ask for a meal twice a week.<br /></li>
+<li>I ran into a nomad who told me pirate stories.<br /></li>
+<li>These stray dogs are barking at the nomad who ate their food in the trash can.<br /></li>
+</ul>
+<p>
+westward: towards the west向西<br />
+</p>
+<ul class="org-ul">
+<li>She kept journeying westward to Rome to hear Mass in the Saint Peter's Basilica.<br /></li>
+<li>Insidiously, smallpox made its way westward through these Asiatic merchants.<br /></li>
+<li>It suddenly occurred to me to move westward.<br /></li>
+</ul>
+<p>
+terrorize: to deliberately frighten people by threatening to harm them, especially so they will do what you want使恐怖, 恐吓, 恐怖统治 be terrorized into doing something<br />
+</p>
+<ul class="org-ul">
+<li>Terrorized into paying a ransom of $1000, she went to the police.<br /></li>
+<li>I used to be terrorized into giving my pocket money at the corner of the school in my youth.<br /></li>
+<li>I was terrorized into giving him the cat which is very dear to me.<br /></li>
+</ul>
+<p>
+plunder: to steal large amounts of money or property from somewhere, especially while fighting in a war抢劫<br />
+</p>
+<ul class="org-ul">
+<li>Not receiving protection money, they threatened to plunder me at midnight.<br /></li>
+<li>Following his boss's instructions,<br />
+he plundered a small grocery, which caused him to be in prison for twenty years.<br /></li>
+<li>It astounded the senate that the village had been plundered by an Asiatic army yesterday.<br /></li>
+</ul>
+<p>
+peasant: a poor farmer who owns or rents a small amount of land, either in past times or in poor countries农夫, 乡下人<br />
+</p>
+<ul class="org-ul">
+<li>I don't want to share my food with a peasant.<br /></li>
+<li>It astounded me that a peasant broke a world record in the competition.<br /></li>
+<li>Keeping my word, I shared my food with the peasant who saved my life.<br /></li>
+</ul>
+<p>
+ravage: to damage something very badly毁坏, 掠夺<br />
+</p>
+<ul class="org-ul">
+<li>It looked as if the city had been ravaged twice times.<br /></li>
+<li>Seemingly, the ravaged city would have been reborn after the emergence of the City Comptroller.<br /></li>
+<li>Once the airport parked on the roof of an apartment in a ravaged city.<br /></li>
+</ul>
+<p>
+successive: coming or following one after the other连续的<br />
+</p>
+<ul class="org-ul">
+<li>Keeping in its word, the team performed successive experiments to prove it right.<br /></li>
+<li>On the journey, the group of pop singers will give successive performances in this town.<br /></li>
+<li>Forced to do successive works, she got very angry.<br /></li>
+</ul>
+<p>
+overthrow: to get rid of the rules, ideas, or systems of a society推翻, 颠覆<br />
+</p>
+<ul class="org-ul">
+<li>The local people tended to overthrow the authorities who didn't respect their god.<br /></li>
+<li>Following in his father's footsteps, he overthrew the government by plundering the city.<br /></li>
+<li>Sticking together, they eventually overthrew the authorities who were too hard on their people.<br /></li>
+</ul>
+<p>
+migrate migration: when large numbers of people go to live in another area or country, especially in order to find work移民<br />
+</p>
+<ul class="org-ul">
+<li>A migration involves not only your property and money but also your family.<br /></li>
+<li>After his entire, he decided to migrate to Rome.<br /></li>
+<li>'You want to migrate after you poisoned your husband.' The detective spoke with a sneer.<br /></li>
+</ul>
+<hr />
+<p>
+push sb's way westward: 向西推进<br />
+</p>
+<ul class="org-ul">
+<li>We must push our way westward.<br /></li>
+<li>We can't push our way westward because of these brutal lions who are going to feast on our bodies.<br /></li>
+<li>Why don't we push our way westward?<br /></li>
+</ul>
+<p>
+these successive waves of sth.: 某事物的连续的几波<br />
+</p>
+<ul class="org-ul">
+<li>These successive waves of fires burnt down the museum that I paid a visit to yesterday.<br /></li>
+<li>These successive waves of invaders led to a great number of refugees.<br /></li>
+<li>These successive waves of invaders led to the emergence of Western civilization.<br /></li>
+</ul>
+<p>
+be assimilated with sth./sb.: 被某物/人同化<br />
+</p>
+<ul class="org-ul">
+<li>Needless to say, she was assimilated with the local people.<br /></li>
+<li>Believe it or not, she must be assimilated with our enemies.<br /></li>
+<li>To pursue his goals, he is ready to be assimilated with these warriors.<br /></li>
+</ul>
+<p>
+divide into sth.(pl.): 分成&#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>Our students tend to divide into three groups.<br /></li>
+<li>Dividing into three parts, she shared the cake with her close friends.<br /></li>
+<li>His father divided the properties into two groups for him and his brother.<br /></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

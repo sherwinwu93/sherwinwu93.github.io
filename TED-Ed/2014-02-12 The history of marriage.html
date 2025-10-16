@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-01-09 Thu 23:07 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-orgaf92c5a" class="outline-2">
+<h2 id="orgaf92c5a">2014-02-12 The history of marriage</h2>
+<div class="outline-text-2" id="text-orgaf92c5a">
+<p class="verse">
+There have been many different things written and said about marriage.<br />
+From the sweetly inspirational to the hilariously cynical.<br />
+But what many of them have in common<br />
+&#xa0;is that they sound like they express a universal and timeless truth,<br />
+&#xa0;when in fact nearly everything about marriage,<br />
+&#xa0;&#xa0;from its main purpose<br />
+&#xa0;&#xa0;&#xa0;to the kinds of relationships it covers<br />
+&#xa0;&#xa0;&#xa0;to the rights and responsibilities involved,<br />
+&#xa0;&#xa0;has varied greatly between different eras, cultures and social classes.<br />
+So, let's take a quick look at the evolution of marriage.<br />
+<br />
+Pair bonding and raising children is as old as humanity itself.<br />
+With the rise of sedentary agricultural societies about 10,000 years ago,<br />
+&#xa0;marriage was also a way of securing rights to land and property<br />
+&#xa0;&#xa0;by designating children born under certain circumstances as rightful heirs.<br />
+As these societies became larger and more complex,<br />
+&#xa0;marriage became not just a matter between individuals and families,<br />
+&#xa0;&#xa0;but also an official institution governed by religious and civil authorities.<br />
+And it was already well established by 2100 B.C.<br />
+&#xa0;when the earliest surviving written laws in the Mesopotamian Code of Ur-Nammu<br />
+&#xa0;&#xa0;provided many specifics governing marriage,<br />
+&#xa0;&#xa0;&#xa0;from punishments for adultery to the legal status of children born to slaves.<br />
+<br />
+Many ancient civilizations allowed some form of multiple simultaneous marriage.<br />
+And even today, less than a quarter of the world's hundreds of different cultures prohibit it.<br />
+But just because something was allowed doesn't mean it was always possible.<br />
+Demographic realities, as well as the link between marriage and wealth, meant that<br />
+&#xa0;even though rulers and elites in Ancient Mesopotamia, Egypt and Israel<br />
+&#xa0;&#xa0;had multiple concubines or wives,<br />
+&#xa0;most commoners could only afford one or two tending towards monogamy in practice.<br />
+In other places, the tables were turned,<br />
+&#xa0;and a woman could have multiple husbands as in the Himalayan Mountains<br />
+&#xa0;&#xa0;where all brothers in a family marrying the same woman<br />
+&#xa0;&#xa0;&#xa0;kept the small amount of fertile land from being constantly divided into new households.<br />
+<br />
+Marriages could vary not only in the number of people they involved<br />
+&#xa0;but the types of people as well.<br />
+Although the names and laws for such arrangements may have differed,<br />
+&#xa0;publicly recognized same-sex unions have popped up in various civilizations throughout history.<br />
+Mesopotamian prayers included blessings for such couples,<br />
+&#xa0;while Native American Two-Spirit individuals had relationships with both sexes.<br />
+The first instances of such arrangements actually being called 'Marriage' come from Rome,<br />
+&#xa0;where the Emperors Nero and Elagabalus both married men in public ceremonies<br />
+&#xa0;&#xa0;with the practice being explicitly banned in 342 A.D.<br />
+But similar traditions survived well into the Christian era,<br />
+&#xa0;such as Adelphopoiesis,<br />
+&#xa0;&#xa0;or "brother-making" in Orthodox churches,<br />
+&#xa0;&#xa0;and even an actual marriage between two men recorded in 1061 at a small chapel in Spain.<br />
+Nor was marriage even necessarily between two living people.<br />
+Ghost marriages, where either the bride or groom were deceased,<br />
+&#xa0;were conducted in China to continue family lineages or appease restless spirits.<br />
+And some tribes in Sudan maintain similar practices.<br />
+<br />
+Despite all these differences, a lot of marriages throughout history did have one thing in common.<br />
+With crucial matters like property and reproduction at stake,<br />
+&#xa0;they were way too important to depend on young love.<br />
+Especially among the upperclasses, matches were often made by families or rulers.<br />
+But even for commoners, who had some degree of choice, the main concern was practicality.<br />
+The modern idea of marriage as being mainly about love and companionship<br />
+&#xa0;only emerged in the last couple of centuries.<br />
+With industrialization, urbanization and the growth of the middle class<br />
+&#xa0;more people became independent from large extended families<br />
+&#xa0;&#xa0;and were able to support a new household on their own.<br />
+Encouraged by new ideas from the Enlightenment,<br />
+&#xa0;people began to focus on individual happiness and pursuits,<br />
+&#xa0;&#xa0;rather than familial duty or wealth and status, at least some of the time.<br />
+And this focus on individual happiness soon led to other transformations,<br />
+&#xa0;such as easing restrictions on divorce and more people marrying at a later age.<br />
+So, as we continue to debate the role and definition of marriage in the modern world,<br />
+&#xa0;it might help to keep in mind that marriage has always been shaped by society,<br />
+&#xa0;&#xa0;and as a society's structure, values and goals change over time,<br />
+&#xa0;&#xa0;&#xa0;its ideas of marriage will continue to change along with them.<br />
+</p>
+</div>
+<div id="outline-container-org727d9ce" class="outline-3">
+<h3 id="org727d9ce">expression</h3>
+<div class="outline-text-3" id="text-org727d9ce">
+<p>
+inspirational [ˌɪnspɪˈreɪʃən(ə)l]: adj. providing encouragement or new ideas for what you should do 给予灵感的<br />
+hilarious [hɪˈleriəs] hilariously: adj.adv. extremely funny欢闹的<br />
+cynical [ˈsɪnɪk(ə)l]: adj. unwilling to believe that people have good, honest, or sincere reasons for doing something愤世嫉俗的<br />
+timeless [ˈtaɪmləs]: adj. literary continuing for ever永恒的<br />
+humanity [hjuˈmænəti]: n. people in general人类<br />
+sedentary [ˈsed(ə)ntəri]: adj. technical a sedentary group of people tend always to live in the splace不移栖的<br />
+agricultural [ˌæɡrɪˈkʌltʃ(ə)rəl]: adj. the practice or science of farming农业的<br />
+simultaneous [ˌsaɪm(ə)lˈteɪniəs]: adj. things that are simultaneous happen at exactly the stime同时发生的<br />
+institution [ˌɪnstɪˈtuʃ(ə)n]: n. an important system of organization in society that has existed for a long time制度<br />
+adultery [əˈdʌltəri]: n. sex between someone who is married and someone who is not their wife or husband通奸<br />
+ruler [ˈruːlər]: n. someone such as a king or queen who has official power over a country or area统治者<br />
+concubine [ˈkɑŋkjəˌbaɪn]: n. a woman in the past who lived with and had sex with a man who already had a wife or wives, but who was socially less important than the wives 妾<br />
+commoner [ˈkɑmənər]: n. someone who is not a member of the ↑nobility平民<br />
+monogamy [məˈnɑɡəmi]: n. the custom of being married to only one husband or wife ⇨ bigamy, polygamy一夫一妻制<br />
+arrangement [əˈreɪndʒmənt]: n. plans and preparations that you must make so that something can happen安排<br />
+prayer [prer]: n. words that you say when praying to God or gods祈祷<br />
+adelphopoiesis: n. 兄弟结义<br />
+chapel [ˈtʃæp(ə)l]: n. the religious services held in a chapel小礼拜堂, 礼拜<br />
+deceased [dɪˈsist]: adj. the deceased someone who has died, especially recently已故的<br />
+conduct [ˈkɑnˌdʌkt]: v. to carry out a particular activity or process, especially in order to get information or prove facts 出现<br />
+lineage [ˈlɪniɪdʒ]: n. formal the way in which members of a family are ↑descended from other members ⇨ line, ancestry血统<br />
+appease [əˈpiz]: v. make someone less angry or stop them from attacking you by giving them what they want安抚<br />
+restless [ˈres(t)ləs]: adj. unwilling to keep still or stay where you are, especially because you are nervous or bored SYN fidgety不安宁的<br />
+practicality [ˌpræktɪˈkæləti]: n. how suitable something is, or whether it will work实用性<br />
+upperclass : n. the upper class the group of people who belong to the highest social class上层<br />
+industrialization [ɪnˌdʌstrɪələˈzeɪʃən]: n. when a country or place develops a lot of industry工业化<br />
+urbanized [ˈɜrbəˌnaɪzd] urbanization: adj.n. an urbanized country or area has a lot of houses, factories, shops, offices etc都市化<br />
+pursuit [pərˈsut]: v. when someone tries to get, achieve, or find something in a determined way ⇨ pursue追求<br />
+Pair bonding: 配对<br />
+</p>
+<hr />
+<p>
+what sb.(pl) have in common is that + &#x2026;: 某人有的共同的是&#x2026;<br />
+vary greatly between sth.(pl): 在事物中有很大的不同<br />
+take a quick look at sth.: express that you quickly glanced at something快速浏览某物<br />
+With the rise of sth.: 随着&#x2026;的兴起<br />
+be a way of doing sth.: 某事是做某事的一种方法<br />
+secure rights to sth.: 保护有某物的权力<br />
+under certain circumstances: 在某些特殊环境下<br />
+designate A. as B.: 把A指派为B<br />
+a matter between sth.(pl): 关于某事的事情<br />
+be governed by: 受……支配/统治<br />
+punishments for sth.: 对某事的惩罚<br />
+the legal status of sb.: 某人的法律地位/身份<br />
+be born to sb.: 为某人所生<br />
+a quarter of sth.: 四分之一<br />
+the link between sth.(pl): 某事的联系<br />
+in practice: 实际上<br />
+the tables were turned: 形势逆转了<br />
+have relationships with sb.: 与某人有关系<br />
+in public ceremonies: 在公共仪式上<br />
+at stake: 利害攸关<br />
+became independent from sb./sth.: 独立于<br />
+be encouraged by: 被&#x2026;鼓励<br />
+focus on A rather than B: 聚集于A而不是B<br />
+ease restrictions on sth.: 放松对某事的限制<br />
+be shaped by sth.: 受&#x2026;影响<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org552500c" class="outline-3">
+<h3 id="org552500c">sentences</h3>
+<div class="outline-text-3" id="text-org552500c">
+<p>
+what sb.(pl) have in common is that + &#x2026;:<br />
+</p>
+<ul class="org-ul">
+<li>What atoms have in common is that their qualities are concentrated in their nuclei.<br /></li>
+<li>What those people have in common is that they have arrived at the station to meet the pop singer.<br /></li>
+<li>What we have in common is that Miumiu is bonded to us.<br /></li>
+</ul>
+<p>
+vary greatly between sth.(pl): 在事物中有很大的不同<br />
+</p>
+<ul class="org-ul">
+<li>These days, marriage varies greatly between different areas in China.<br /></li>
+<li>Decades before, languages in China varied greatly between its towns.<br /></li>
+<li>Needless to say, vampires vary greatly between different cultures.<br /></li>
+</ul>
+<p>
+take a quick look at sth.: express that you quickly glanced at something<br />
+</p>
+<ul class="org-ul">
+<li>Let's take a quick look at the corporation for which I used to work.<br /></li>
+<li>These students have taken a quick look at the island surrendered to Russia in 1919.<br /></li>
+<li>He takes a quick look at the story to reconstruct how the heroine led a happy life.<br /></li>
+</ul>
+<p>
+With the rise of sth.: 随着&#x2026;的兴起<br />
+</p>
+<ul class="org-ul">
+<li>With the rise of losing weight, this special kind of food become popular with young people.<br /></li>
+<li>With the rise of global warming, the population of penguins is in rapid free fall.<br /></li>
+<li>With the rise of fancy dress parties, she has been fanatical about marking up.<br /></li>
+</ul>
+<p>
+be a way of doing sth.: 某事是做某事的一种方法<br />
+</p>
+<ul class="org-ul">
+<li>Metro is also a way of going to work in Beijing.<br /></li>
+<li>Before the agreement was reached about the salaries of these busmen,<br />
+bus would not be a way of transport.<br /></li>
+<li>My teacher pointed out that reading books a great deal is also a way of studying English.<br /></li>
+</ul>
+<p>
+secure rights to sth.: 保护有某物的权力<br />
+</p>
+<ul class="org-ul">
+<li>I was always having difficulty in securing rights to my toys in my youth.<br /></li>
+<li>If you followed in your father's footsteps, you would secure rights to the island.<br /></li>
+<li>The ambassador of China declared that China has secured rights to these islands since 1900.<br /></li>
+</ul>
+<p>
+under certain circumstances: 在某些特殊环境下<br />
+</p>
+<ul class="org-ul">
+<li>The population of humanity will be in rapid free fall under certain circumstances.<br /></li>
+<li>You were able to mobilize the immune system under certain circumstances.<br /></li>
+<li>The portals embedded into the wall will open automatically under certain circumstances.<br /></li>
+</ul>
+<p>
+designate A. as B.: 把A指派为B<br />
+</p>
+<ul class="org-ul">
+<li>She must have been designated as the new ambassador in Russia.<br /></li>
+<li>She can't have been designated as the new ambassador in Russia.<br /></li>
+<li>She may have been designated as the new ambassador in Russia.<br /></li>
+</ul>
+<p>
+a matter between sth.(pl): 关于某事的事情<br />
+</p>
+<ul class="org-ul">
+<li>It's just a matter between you and me.<br /></li>
+<li>It is only within the last century<br />
+that marriage is depicted as a matter between individuals.<br /></li>
+<li>She refused to help me and said that it was only a matter between her mother and me.<br /></li>
+</ul>
+<p>
+be governed by: 受……支配/统治<br />
+</p>
+<ul class="org-ul">
+<li>What is most remarkable about ancient Greece is that everyone was governed by laws.<br /></li>
+<li>Governed by the authorities, these poor people couldn't perpetuate their existence.<br /></li>
+<li>People in China used to be governed by these businessmen from America.<br /></li>
+</ul>
+<p>
+punishments for sth.: 对某事的惩罚<br />
+</p>
+<ul class="org-ul">
+<li>The boy flied apart and it's the punishment for his carelessness.<br /></li>
+<li>He doesn't bond with her daughter anymore, which is the punishment for his divorce.<br /></li>
+<li>These workers lost their heart trapped in the coal mine,<br />
+which must have been the punishment for their carelessness.<br /></li>
+</ul>
+<p>
+the legal status of sb.: 某人的法律地位/身份<br />
+</p>
+<ul class="org-ul">
+<li>He managed to write an article about the legal status of commoners in these countries.<br /></li>
+<li>We must verify the legal status of those guys who claimed they were police.<br /></li>
+<li>You needn't have verified the legal status of us.<br /></li>
+</ul>
+<p>
+be born to sb.: 为某人所生<br />
+</p>
+<ul class="org-ul">
+<li>These children born to slaves shouldn't secure the right to the lands.<br /></li>
+<li>The child born to my first wife follows in my footsteps eventually.<br /></li>
+<li>The first child born to me will secure the right to the country.<br /></li>
+</ul>
+<p>
+a quarter of sth.: 四分之一<br />
+</p>
+<ul class="org-ul">
+<li>A quarter of your lymph nodes may have been destroyed.<br /></li>
+<li>A quarter of the course has already been completed.<br /></li>
+<li>A quarter of his scabs have been wiped away by this doctor.<br /></li>
+</ul>
+<p>
+the link between sth.(pl): 某事的联系<br />
+</p>
+<ul class="org-ul">
+<li>The link between health and sleep means that we must sleep at least 7 hours a day.<br /></li>
+<li>The link between health and smoking means that I must give up smoking right now.<br /></li>
+<li>The link between health and sports means that I need to exercise every day.<br /></li>
+</ul>
+<p>
+in practice: 实际上<br />
+</p>
+<ul class="org-ul">
+<li>The chance of hitting the surface of the desk approaches zero in practice.<br /></li>
+<li>I can't speak to a native English speaker in China in practice.<br /></li>
+<li>These parts can't be pieced together in practice.<br /></li>
+</ul>
+<p>
+the tables were turned: 形势逆转了<br />
+</p>
+<ul class="org-ul">
+<li>He used to quarrel bitterly with his wife, and the tables were turned.<br /></li>
+<li>The tables may have already been turned.<br /></li>
+<li>I bet the tables were turned.<br /></li>
+</ul>
+<p>
+have relationships with sb.: 与某人有关系<br />
+</p>
+<ul class="org-ul">
+<li>You shouldn't have relationships with two men at the same time.<br /></li>
+<li>She had a relationship with the man who committed a murder.<br /></li>
+<li>She is eager to have relationships with the guy who works for Apple.<br /></li>
+</ul>
+<p>
+in public ceremonies: 在公共仪式上<br />
+</p>
+<ul class="org-ul">
+<li>Speaking in public ceremonies, I quaked in every limb and my soul<br /></li>
+<li>I focused on dresses in public ceremonies rather than those pretty girls.<br /></li>
+<li>The vicar assembled those parts into a well-organized machine in public ceremonies.<br /></li>
+</ul>
+<p>
+at stake: 利害攸关<br />
+</p>
+<ul class="org-ul">
+<li>We must pay attention to those facts at stake.<br /></li>
+<li>Marriage is bonded to the wealth of their families at stake.<br /></li>
+<li>Those people at stake will be bunched up together at the meeting.<br /></li>
+</ul>
+<p>
+became independent from sb./sth.: 独立于<br />
+</p>
+<ul class="org-ul">
+<li>With the team flying apart, those players became independent from this club.<br /></li>
+<li>It doesn't help anyone, since you became independent from our family.<br /></li>
+<li>As you still receive money from your mother, you don't become independent from your family.<br /></li>
+</ul>
+<p>
+be encouraged by: 被&#x2026;鼓励<br />
+</p>
+<ul class="org-ul">
+<li>The worker was encouraged by his boss to undertake the task in harsher working conditions.<br /></li>
+<li>Encouraged by his wife, the baker managed to set up a factory.<br /></li>
+<li>While he decided to give up, he was encouraged by those assembly instructions.<br /></li>
+</ul>
+<p>
+focus on A rather than B: 聚集于A而不是B<br />
+</p>
+<ul class="org-ul">
+<li>We focused on the lymph nodes rather than these scabs.<br /></li>
+<li>He focused on those pretty girls rather than money.<br /></li>
+<li>I focused on these antique shops rather than those street signs.<br /></li>
+</ul>
+<p>
+ease restrictions on sth.: 放松对某事的限制<br />
+</p>
+<ul class="org-ul">
+<li>It became an accepted fact that the authorities eased restrictions on sex before marriage.<br /></li>
+<li>After easing restrictions on his watching TV, I went to work.<br /></li>
+<li>While easing restrictions on vaccination,<br />
+the authorities established a law prohibiting same-sex marriages.<br /></li>
+</ul>
+<p>
+be shaped by sth.: 受&#x2026;影响<br />
+</p>
+<ul class="org-ul">
+<li>The statue must have been shaped by the wind and rain.<br /></li>
+<li>The statue must be shaped by the wind and rain.<br /></li>
+<li>The statue may be shaped by the wind and rain.<br /></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

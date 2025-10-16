@@ -1,0 +1,598 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-11-27 Wed 16:15 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-orga37cb6d" class="outline-2">
+<h2 id="orga37cb6d">2-3 2.11 Spontaneity</h2>
+<div class="outline-text-2" id="text-orga37cb6d">
+<p class="verse">
+Right, so what I'm hearing is sort of on the individual level<br />
+&#xa0;&#xa0;we have these patterns of attachment from early life that kind of follow us,<br />
+&#xa0;and then on a broader level, there's these social scripts that we also follow.<br />
+But then, everything sounds predetermined,<br />
+&#xa0;so where's that spontaneity or like following your heart?<br />
+Is there still a place for that?<br />
+<br />
+Well, I would say, yes, of course.<br />
+Because life would be like too boring without those.<br />
+What we would use as an analogy is,<br />
+&#xa0;say for example, you're up for some fun moments like playing hockey or skiing.<br />
+What we are saying is<br />
+&#xa0;that you have to learn the basic skills<br />
+&#xa0;&#xa0;and then you also have to equip yourself with the right gear<br />
+&#xa0;&#xa0;&#xa0;that fits your body, your size and your needs,<br />
+&#xa0;&#xa0;and then you can go in and have fun.<br />
+Then you can ski, and have fun, and be spontaneous, and follow your heart.<br />
+But if you do not do that,<br />
+&#xa0;&#xa0;and you just jump in without paying attention to these details,<br />
+&#xa0;there's a huge chance that you would first not have fun and then,<br />
+&#xa0;&#xa0;there is a very real possibility that you can get severely hurt.<br />
+So that I think it's an analogy that you use.<br />
+<br />
+Back to the relationship situation,<br />
+&#xa0;our thinking is if you have spent some time reflecting on yourself,<br />
+&#xa0;&#xa0;&#xa0;understanding your own needs and circumstances, characteristics, and capacity<br />
+&#xa0;&#xa0;and you know what you're looking for in the relationship.<br />
+And you have sort of learned the basic skills<br />
+&#xa0;&#xa0;for like communicating, interacting, building relationships,<br />
+&#xa0;you will actually be more capable to get into situations where you can be spontaneous.<br />
+Because you can then trust yourself,<br />
+&#xa0;like I can just sit down and relax and have a conversation and I know it will turn out well.<br />
+So that is the kind of self-efficacy or sense of ease that we want to establish in people<br />
+&#xa0;so that they can really be going in there slow and enjoy the relationship.<br />
+</p>
+</div>
+<div id="outline-container-org7ae794d" class="outline-3">
+<h3 id="org7ae794d">expression</h3>
+<div class="outline-text-3" id="text-org7ae794d">
+<p>
+attachment [əˈtætʃmənt]: n. a feeling that you like or love someone or something and that you would be unhappy without them依恋<br />
+script [skrɪpt]: n. the written form of a speech, play, film etc ⇨ screenplay手稿, 手迹, 剧本<br />
+predetermined [ˌpridɪˈtɜrmɪnd]: adj. decided or arranged before something happens, so that it does not happen by chance预定的<br />
+analogy [əˈnælədʒi]: n. something that seems similar between two situations, processes etc类比<br />
+hockey [ˈhɒki]: n. a gplayed on grass by two teams of 11 players, with sticks and a ball SYN field hockey American English曲棍球<br />
+gear [ɡɪr]: n. the machinery in a vehicle such as a car, truck, or bicycle that you use to go comfortably at different speeds齿轮, 传动装置<br />
+capacity [kəˈpæsəti]: n. someone’s ability to do something OPP incapacity才能, 能力<br />
+efficacy [ˈefɪkəsi]: n. formal the ability of something to produce the right result SYN effectiveness OPP inefficacy功效, 效验<br />
+</p>
+<hr />
+<p>
+on the individual level: 在个人层面上<br />
+on a broader level: 在更广泛的层面上<br />
+follow sb's heart: 跟随内心<br />
+say for example: 比如说<br />
+be up for sth./doing sth.: 准备好某事/做某事<br />
+go in (sth./doing sth.): 参加某事/做某事<br />
+jump in/into sth./doing sth.: 突然投入某事<br />
+there is a very real possibility that: 很有可能+&#x2026;<br />
+be capable to do sth.: 有能力做某事<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgb532a79" class="outline-3">
+<h3 id="orgb532a79">sentence</h3>
+<div class="outline-text-3" id="text-orgb532a79">
+<p>
+attachment [əˈtætʃmənt]: n. a feeling that you like or love someone or something and that you would be unhappy without them依恋<br />
+</p>
+<ul class="org-ul">
+<li>A child's attachment to his mother is the first step in building a good relationship.<br /></li>
+<li>The breakdown of his attachment to his father causes him to seek truth.<br /></li>
+<li>His attachment to his father led him to find his long-last father.<br /></li>
+</ul>
+<p>
+script [skrɪpt]: n. the written form of a speech, play, film etc ⇨ screenplay手稿, 手迹, 剧本<br />
+</p>
+<ul class="org-ul">
+<li>I still need to download scripts to understand videos in English.<br /></li>
+<li>As the script put it: he is not a bastard, but the true heir to the Iron Throne.<br /></li>
+<li>With script stolen by hackers, scriptwriter has to write a new ending.<br /></li>
+</ul>
+<p>
+predetermined [ˌpridɪˈtɜrmɪnd]: adj. decided or arranged before something happens, so that it does not happen by chance预定的<br />
+</p>
+<ul class="org-ul">
+<li>No one could account for the fact that the fate of roles in the play are all predetermined.<br /></li>
+<li>If all were predetermined, we could do nothing to change our fate.<br /></li>
+<li>It seems to be predeterminded that the traitor would be killed by the girl whose family had been murdered at the wedding.<br /></li>
+</ul>
+<p>
+analogy [əˈnælədʒi]: n. something that seems similar between two situations, processes etc类比<br />
+</p>
+<ul class="org-ul">
+<li>It's not exactly what I said, it's only an analogy.<br /></li>
+<li>It's just an analogy, not because of who has said that, but because of what it is.<br /></li>
+<li>It occurred to a butcher to make an analogy in the speech.<br /></li>
+</ul>
+<p>
+hockey [ˈhɒki]: n. a gplayed on grass by two teams of 11 players, with sticks and a ball SYN field hockey American English曲棍球<br />
+</p>
+<ul class="org-ul">
+<li>He is a friend who used to invite me to play hockey in his house.<br /></li>
+<li>Shame of being beaten in a hockey competition, he refused to play it in public.<br /></li>
+<li>When we played hockey, our cat appeared and chased the ball.<br /></li>
+</ul>
+<p>
+gear [ɡɪr]: n. the machinery in a vehicle such as a car, truck, or bicycle that you use to go comfortably at different speeds齿轮, 传动装置,档<br />
+</p>
+<ul class="org-ul">
+<li>When your car goes uphill, you'd better have it in second gear.<br /></li>
+<li>In second gear, our car never reached a speed of 40 kilometers an hour.<br /></li>
+<li>If your car keep in second gear, we must be late for taking part in the sail competition.<br /></li>
+</ul>
+<p>
+capacity [kəˈpæsəti]: n. someone’s ability to do something OPP incapacity才能, 能力<br />
+</p>
+<ul class="org-ul">
+<li>Fortunately, his uncle admired his capacity for League of Legend and offered him money to pursue his game career.<br /></li>
+<li>In his youth, his capacity for box emerged and was chosen by a prominent boxer.<br /></li>
+<li>His capacity for box lets him enjoy tremendous popularity.<br /></li>
+</ul>
+<p>
+efficacy [ˈefɪkəsi]: n. formal the ability of something to produce the right result SYN effectiveness OPP inefficacy功效, 效验<br />
+</p>
+<ul class="org-ul">
+<li>This kind of treatment has been eliminated, not because it lacks efficacy, but because of heavy side effects.<br /></li>
+<li>Its efficacy has already been proved during the plague.<br /></li>
+<li>His death reminds me of the efficacy of a special kind of herb in the plain.<br /></li>
+</ul>
+<hr />
+<p>
+on the individual level: 在个人层面上<br />
+</p>
+<ul class="org-ul">
+<li>External event I cannot control, but I must plan out our march to the last detail on the individual level.<br /></li>
+<li>On the individual level, he was never meant to be a good father.<br /></li>
+<li>On the individual level, he was blessed with the capacity for war and politics.<br /></li>
+</ul>
+<p>
+on a broader level: 在更广泛的层面上<br />
+</p>
+<ul class="org-ul">
+<li>On a broader level, he devoted himself to the country and his people.<br /></li>
+<li>On a broader level, he never has enough time to spend with his child.<br /></li>
+<li>On a broader level, the rate of abortion in teenagers is declining.<br /></li>
+</ul>
+<p>
+follow sb's heart: 跟随内心<br />
+</p>
+<ul class="org-ul">
+<li>When I hesitated to go to the jewelry shop, there is a voice telling me 'follow your heart'.<br /></li>
+<li>Follow your heart and you will find the best path to the outlet.<br /></li>
+<li>Follow your heart and ask yourself whether you will be put out of business or not.<br /></li>
+</ul>
+<p>
+say for example: 比如说<br />
+</p>
+<ul class="org-ul">
+<li>Say for example, you lose your temper when an official fines you 50 yuan for spitting in public.<br /></li>
+<li>Say for example, you fight yourself against bully taking your heart.<br /></li>
+<li>Say for example, while you were working hard, your wife was cheating with her lover in your bed.<br /></li>
+</ul>
+<p>
+be up for sth./doing sth.: 准备好某事/做某事<br />
+</p>
+<ul class="org-ul">
+<li>Are you up for an adventure in other land?<br /></li>
+<li>The scriptwriter is up for bring a happy end to the series.<br /></li>
+<li>The heroine, a dear noble lady who had always been so kind to everybody, was up for her revenge.<br /></li>
+</ul>
+<p>
+go in (sth./doing sth.): 参加某事/做某事<br />
+</p>
+<ul class="org-ul">
+<li>If you don't prepare chopsticks and bowls, how can we go in our dinner?<br /></li>
+<li>Going in our activity, he forgot all awful memeories about his family.<br /></li>
+<li>I am not up for going in dinner with a hateful queen.<br /></li>
+</ul>
+<p>
+jump in/into sth./doing sth.: 突然投入某事<br />
+</p>
+<ul class="org-ul">
+<li>Not equiped with weapons, he jumped in the fight and was killed by mistake.<br /></li>
+<li>The cat jumped into having breakfast.<br /></li>
+<li>If you jump in the competition, there's a very real possibility that you will be killed in action.<br /></li>
+</ul>
+<p>
+there is a very real possibility that: 很有可能+&#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>There is a very real possibility that the kind gets mad because you keep assailing him.<br /></li>
+<li>There is a very real possibility that our princess, a lovely girl who is admired by her people, is still a virgin.<br /></li>
+<li>There is a very real possibility that the night watch will march the north before winter comes.<br /></li>
+</ul>
+<p>
+be capable to do sth.: 有能力做某事<br />
+</p>
+<ul class="org-ul">
+<li>He is capable to seize power in the captal when we start a war in the north.<br /></li>
+<li>He is capable to convert our king to the Protestant.<br /></li>
+<li>Our king is capable to rule the seven kingdom again with his 70,000 cavalrymen.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgef72b83" class="outline-3">
+<h3 id="orgef72b83">sentence2</h3>
+<div class="outline-text-3" id="text-orgef72b83">
+<p>
+attachment [əˈtætʃmənt]: n. a feeling that you like or love someone or something and that you would be unhappy without them依恋<br />
+</p>
+<ul class="org-ul">
+<li>A child's attachment to his mother is the first step in building a good relationship.<br /></li>
+<li>The breakdown of his attachment to his father causes him to seek truth.<br /></li>
+<li>His attachment to his father led him to find his long-lost father.<br /></li>
+</ul>
+<p>
+script [skrɪpt]: n. the written form of a speech, play, film etc ⇨ screenplay手稿, 手迹, 剧本<br />
+</p>
+<ul class="org-ul">
+<li>I still need to download scripts to understand videos in English.<br /></li>
+<li>As the script put it: he is not a bastard, but the true heir to the Iron Throne.<br /></li>
+<li>With the script stolen by hackers, the scriptwriter has to write a new ending.<br /></li>
+</ul>
+<p>
+predetermined [ˌpridɪˈtɜrmɪnd]: adj. decided or arranged before something happens, so that it does not happen by chance预定的<br />
+</p>
+<ul class="org-ul">
+<li>No one could account for the fact that the fate of roles in the play are all predetermined.<br /></li>
+<li>If all were predetermined, we could do nothing to change our fate.<br /></li>
+<li>It seems to be predetermined that the traitor would be killed by the girl whose family had been murdered at the wedding.<br /></li>
+</ul>
+<p>
+analogy [əˈnælədʒi]: n. something that seems similar between two situations, processes etc类比<br />
+</p>
+<ul class="org-ul">
+<li>It's not exactly what I said, it's only an analogy.<br /></li>
+<li>It's just an analogy, not because of who has said that, but because of what it is.<br /></li>
+<li>It occurred to a butcher to make an analogy in the speech.<br /></li>
+</ul>
+<p>
+hockey [ˈhɒki]: n. a game played on grass by two teams of 11 players, with sticks and a ball SYN field hockey American English曲棍球<br />
+</p>
+<ul class="org-ul">
+<li>He is a friend who used to invite me to play hockey in his house.<br /></li>
+<li>Shame of being beaten in a hockey competition, he refused to play it in public.<br /></li>
+<li>When we played hockey, our cat appeared and chased the ball.<br /></li>
+</ul>
+<p>
+gear [ɡɪr]: n. the machinery in a vehicle such as a car, truck, or bicycle that you use to go comfortably at different speeds齿轮, 传动装置,档<br />
+</p>
+<ul class="org-ul">
+<li>When your car goes uphill, you'd better have it in second gear.<br /></li>
+<li>In second gear, our car never reached a speed of 40 kilometers an hour.<br /></li>
+<li>If your car is in second gear, we must be late to take part in the sail competition.<br /></li>
+</ul>
+<p>
+capacity [kəˈpæsəti]: n. someone’s ability to do something OPP incapacity才能, 能力<br />
+</p>
+<ul class="org-ul">
+<li>Fortunately, his uncle admired his capacity for League of Legends and offered him money to pursue his game career.<br /></li>
+<li>In his youth, his capacity for boxing emerged and was chosen by a prominent boxer.<br /></li>
+<li>His capacity for box lets him enjoy tremendous popularity.<br /></li>
+</ul>
+<p>
+efficacy [ˈefɪkəsi]: n. formal the ability of something to produce the right result SYN effectiveness OPP inefficacy功效, 效验<br />
+</p>
+<ul class="org-ul">
+<li>This kind of treatment has been eliminated, not because it lacks efficacy, but because of heavy side effects.<br /></li>
+<li>Its efficacy has already been proved during the plague.<br /></li>
+<li>His death reminds me of the efficacy of a special kind of herb in the plain.<br /></li>
+</ul>
+<hr />
+<p>
+on the individual level: 在个人层面上<br />
+</p>
+<ul class="org-ul">
+<li>External events I cannot control, but I must plan out our march to the last detail on the individual level.<br /></li>
+<li>On the individual level, he was never meant to be a good father.<br /></li>
+<li>On the individual level, he was blessed with the capacity for war and politics.<br /></li>
+</ul>
+<p>
+on a broader level: 在更广泛的层面上<br />
+</p>
+<ul class="org-ul">
+<li>On a broader level, he devoted himself to the country and his people.<br /></li>
+<li>On a broader level, he never has enough time to spend with his child.<br /></li>
+<li>On a broader level, the rate of abortion in teenagers is declining.<br /></li>
+</ul>
+<p>
+follow sb's heart: 跟随内心<br />
+</p>
+<ul class="org-ul">
+<li>When I hesitated to go to the jewelry shop, there was a voice telling me 'Follow your heart'.<br /></li>
+<li>Follow your heart and you will find the best path to the outlet.<br /></li>
+<li>Follow your heart and ask yourself whether you will be put out of business or not.<br /></li>
+</ul>
+<p>
+say for example: 比如说<br />
+</p>
+<ul class="org-ul">
+<li>Say, for example, you lose your temper when an official fines you 50 yuan for spitting in public.<br /></li>
+<li>Say, for example, you fight yourself against bully taking your heart.<br /></li>
+<li>Say, for example, while you were working hard, your wife was cheating with her lover in your bed.<br /></li>
+</ul>
+<p>
+be up for sth./doing sth.: 准备好某事/做某事<br />
+</p>
+<ul class="org-ul">
+<li>Are you up for an adventure in another land?<br /></li>
+<li>The scriptwriter is up for bringing a happy end to the series.<br /></li>
+<li>The heroine, a dear noble lady who had always been so kind to everybody, was up for her revenge.<br /></li>
+</ul>
+<p>
+go in (sth./doing sth.): 参加某事/做某事<br />
+</p>
+<ul class="org-ul">
+<li>If you don't prepare chopsticks and bowls, how can we go in?<br /></li>
+<li>Going in our activity, he forgot all the awful memeory about his family.<br /></li>
+<li>I am not up for going in dinner with a hateful queen.<br /></li>
+</ul>
+<p>
+jump in/into sth./doing sth.: 突然投入某事<br />
+</p>
+<ul class="org-ul">
+<li>Not equipped with weapons, he jumped in the fight and was killed by mistake.<br /></li>
+<li>The cat jumped into having breakfast.<br /></li>
+<li>If you jump in, there's a very real possibility that you will be killed in action.<br /></li>
+</ul>
+<p>
+there is a very real possibility that: 很有可能+&#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>There is a very real possibility that the kind gets mad because you keep assailing him.<br /></li>
+<li>There is a very real possibility that our princess, a lovely girl who is admired by her people, is still a virgin.<br /></li>
+<li>There is a very real possibility that the night watch will march the north before winter comes.<br /></li>
+</ul>
+<p>
+be capable to do sth.: 有能力做某事<br />
+</p>
+<ul class="org-ul">
+<li>He is capable to seize power in the capital when we start a war in the north.<br /></li>
+<li>He is capable to convert our king to the Protestant.<br /></li>
+<li>Our king is capable to rule the seven kingdoms again with his 70,000 cavalrymen.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org7a5295a" class="outline-3">
+<h3 id="org7a5295a">summary</h3>
+<div class="outline-text-3" id="text-org7a5295a">
+<p>
+On the invidual level, we have patterns of attachment from early life,<br />
+	and on a broader level, there're social scripts that we also follow.<br />
+Is there still a place for spontaneity or following your heart?<br />
+Yes, of course.<br />
+For example, you're up for playing hockey or skiing.<br />
+You have to learn the basic skills and equip yourself with the right gear<br />
+	so that you can go in and be spontaneous, and follow your heart.<br />
+However, if you just jump in without paying attention to these details,<br />
+	there's a very real possibility that you would not have fun and get severely hurt.<br />
+Back to relationship situation,<br />
+	if you have spent some time reflecting on yourself,<br />
+		 figuring out your own needs, characteristics, and capacity,<br />
+		and you know what you are looking for in the relationship,<br />
+		and you learned the basic skills, like communicating, interacting, and building relationship,<br />
+		you will be more capable to enjoy the relationship and be spontaneous.<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgda3d00a" class="outline-3">
+<h3 id="orgda3d00a">summary2</h3>
+<div class="outline-text-3" id="text-orgda3d00a">
+<p>
+On the individual level, we have patterns of attachment from early life,<br />
+	and on a broader level, there are social scripts that we also follow.<br />
+Is there still a place for spontaneity or following your heart?<br />
+Yes, of course.<br />
+For example, you're up for playing hockey or skiing.<br />
+You have to learn the basic skills and equip yourself with the right gear<br />
+	so that you can go in, be spontaneous, and follow your heart.<br />
+However, if you just jump in without paying attention to these details,<br />
+	there's a very real possibility that you would not have fun and get severely hurt.<br />
+Back to the relationship situation,<br />
+	if you have spent some time reflecting on yourself,<br />
+		 figuring out your own needs, characteristics, and capacity,<br />
+		and you know what you are looking for in the relationship,<br />
+		and you learned basic skills, like communicating, interacting, and building relationships,<br />
+		you will be more capable to enjoy the relationship and be spontaneous.<br />
+</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

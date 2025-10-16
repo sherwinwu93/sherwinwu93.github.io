@@ -1,0 +1,813 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-01-09 Thu 23:35 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-org2c865ff" class="outline-2">
+<h2 id="org2c865ff">17 The Parisian salon of Madame Geoffrin</h2>
+<div class="outline-text-2" id="text-org2c865ff">
+<p class="verse">
+The earth-shattering work of the natural philosophers in the Scientific Revolution<br />
+&#xa0;had affected only a relatively small number of Europe's educated elite.<br />
+In the eighteenth century, this changed dramatically<br />
+&#xa0;as a group of intellectuals known as the philosophes<br />
+&#xa0;&#xa0;popularized the ideas of the Scientific Revolution<br />
+&#xa0;&#xa0;and used them to undertake a dramatic examination of all aspects of life.<br />
+In Paris, the cultural capital of Europe,<br />
+&#xa0;women took the lead<br />
+&#xa0;&#xa0;in bringing together groups of men and women to discuss the new ideas of the philosophes.<br />
+At her fashionable home in the Rue SaintHonore,<br />
+&#xa0;Marie-Therese de Geoffrin, the wife of a wealthy merchant,<br />
+&#xa0;&#xa0;held sway over gatherings that became the talk of France and even Europe.<br />
+Distinguished foreigners, including a future king of Sweden and a future king of Poland,<br />
+&#xa0;competed to receive invitations.<br />
+When Madame Geoffrin made a visit to Vienna, she was so well received that she exclaimed,<br />
+&#xa0;'I am better known here than a couple of yards from my own house!'<br />
+Madame Geoffrin was an amiable but firm hostess<br />
+&#xa0;who allowed wide-ranging discussions as long as they remained in good taste.<br />
+When she found that artists and philosophers did not mix particularly well<br />
+&#xa0;(the artists were high-strung and the philosophers talked too much),<br />
+&#xa0;she set up separate meetings: artists were invited on Mondays, philosophers on Wednesdays.<br />
+These gatherings were but one of many avenues for the spread of the ideas of the philosophes.<br />
+And those ideas had such a widespread impact on their society<br />
+&#xa0;that historians ever since have called the eighteenth century the Age of Enlightenment.<br />
+<br />
+For most of the philosophes, enlightenment included the rejection of traditional Christianity.<br />
+The religious wars and intolerance of the sixteenth and seventeenth centuries<br />
+&#xa0;had left intellectuals so disgusted with religious fanaticism<br />
+&#xa0;&#xa0;that they were open to the new ideas of the Scientific Revolution.<br />
+Whereas the great scientists of the seventeenth century believed that their work exalted God,<br />
+&#xa0;the intellectuals of the eighteenth century read the same conclusions a different way<br />
+&#xa0;&#xa0;and increasingly turned their backs on Christian orthodoxy.<br />
+Consequently, European intellectual life in the eighteenth century<br />
+&#xa0;was marked by the emergence of the secularization<br />
+&#xa0;&#xa0;that has characterized the modern Western mentality ever since.<br />
+Ironically,<br />
+&#xa0;at the same time that reason and materialism were beginning to replace faith and worship,<br />
+&#xa0;a great outburst of religious sensibility manifested itself in music and art.<br />
+Clearly, the growing secularization of the eighteenth century<br />
+&#xa0;had not yet captured the hearts and minds of all Europeans.<br />
+</p>
+</div>
+<div id="outline-container-orga3a5abe" class="outline-3">
+<h3 id="orga3a5abe">expression</h3>
+<div class="outline-text-3" id="text-orga3a5abe">
+<p>
+earth-shattering [ˈʃætə(r)]: adj. surprising or shocking and very important惊天动地<br />
+philosophe: n. Generally. A philosopher, a thinker; a man of letters, an intellectual. Now rare.启蒙思想家<br />
+fashionable [ˈfæʃ(ə)nəb(ə)l]: adj. popular, especially for a short period of time OPP unfashionable流行的, 时髦的<br />
+gathering [ˈɡæð(ə)rɪŋ]: n. a meeting of a group of people聚会<br />
+distinguished [dɪˈstɪŋɡwɪʃt]: adj. successful, respected, and admired卓著的, 著名的, 高贵的<br />
+amiable [ˈeɪmiəb(ə)l]: adj. friendly and easy to like亲切的, 和蔼可亲的<br />
+firm [fɜrm]: adj. strongly fixed in position, and not likely to move SYN secure坚定的<br />
+high-strung [strʌŋ]: adj. 高度紧张的,容易兴奋的<br />
+widespread [ˈwaɪdˌspred]: adj. existing or happening in many places or situations, or among many people分布广泛的, 普遍的<br />
+reject [ˈriˌdʒekt] rejection: v.n. to refuse to accept, believe in, or agree with something OPP accept拒绝, 抵制<br />
+intolerant [ɪnˈtɑlərənt] intolerance: adj.n. not willing to accept ways of thinking and behaving that are different from your own OPP tolerant不宽容的<br />
+whereas [hwerˈæz]: conj. formal used to say that although something is true of one thing, it is not true of another尽管<br />
+sensibility [ˌsensəˈbɪləti]: n. the way that someone reacts to particular subjects or types of behaviour感情<br />
+manifest [ˈmænɪˌfest]: v. to show a feeling, attitude etc表现<br />
+</p>
+<hr />
+<p>
+bring sb. to do sth.: 带领某人去做某事<br />
+hold sway (over sth./sb.): 支配某物/某人<br />
+the talk of sp.: 某地的话题<br />
+receive an invitation: 收到邀请<br />
+make a visit to sp.: 拜访某地<br />
+a couple of + &#x2026;: 两个/几个事物<br />
+in good taste: 得体的<br />
+ever since: 从那时起<br />
+be disgusted with sth.: 对某事物反感<br />
+be open to sth.: 对某事物开放<br />
+do sth. a different way: 用不同地方式做某事<br />
+turn sb's back on sth.: 背弃某物<br />
+Consequently, + &#x2026;: 因此, + &#x2026;<br />
+Ironically, + &#x2026;: 讽刺地, + &#x2026;<br />
+capture the heart of sb.: 捕获某人的心<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org6d67743" class="outline-3">
+<h3 id="org6d67743">sentence</h3>
+<div class="outline-text-3" id="text-org6d67743">
+<p>
+earth-shattering [ˈʃætə(r)]: adj. surprising or shocking and very important惊天动地<br />
+</p>
+<ul class="org-ul">
+<li>The breakdown of trust in the authorities led to an earth-shattering event.<br /></li>
+<li>The earth-shattering paint only exists in your fantasy world.<br /></li>
+<li>The coverages of the earth-shattering event tend to be increasingly chaotic.<br /></li>
+</ul>
+<p>
+philosophe: n. Generally. A philosopher, a thinker; a man of letters, an intellectual. Now rare.启蒙思想家<br />
+</p>
+<ul class="org-ul">
+<li>The philosophe born in Paris contributed to the establishment of the US.<br /></li>
+<li>The philosophe is fanatical about smashing history books to pieces.<br /></li>
+<li>The philosophe took these pieces together and restored the statue.<br /></li>
+</ul>
+<p>
+fashionable [ˈfæʃ(ə)nəb(ə)l]: adj. popular, especially for a short period of time OPP unfashionable流行的, 时髦的<br />
+</p>
+<ul class="org-ul">
+<li>A great number of fashionable clothes have been stolen, which must be worth 10000 dollars.<br /></li>
+<li>The clerk wrapped the fashionable dress as soon as she could and handed it to her boyfriend.<br /></li>
+<li>It becomes fashionable to share your apartment with your cat these days.<br /></li>
+</ul>
+<p>
+gathering [ˈɡæð(ə)rɪŋ]: n. a meeting of a group of people聚会<br />
+</p>
+<ul class="org-ul">
+<li>The expert from the gathering raised fundamental questions about our political sensibility.<br /></li>
+<li>The lady is fanatical about setting up gatherings.<br /></li>
+<li>You needn't have attended a gathering in which you didn't receive an invitation.<br /></li>
+</ul>
+<p>
+distinguished [dɪˈstɪŋɡwɪʃt]: adj. successful, respected, and admired卓著的, 著名的, 高贵的<br />
+</p>
+<ul class="org-ul">
+<li>The invention of the machine which is used to search gold is grounded in the work of a distinguished scientist.<br /></li>
+<li>Clearly, she is by no means a distinguished swimmer who can swim across the Channel on her own.<br /></li>
+<li>Our distinguished headmaster will retire from teaching three months later.<br /></li>
+</ul>
+<p>
+amiable [ˈeɪmiəb(ə)l]: adj. friendly and easy to like亲切的, 和蔼可亲的<br />
+</p>
+<ul class="org-ul">
+<li>The Prime Minister regarded as amiable lost his temper this time.<br /></li>
+<li>The woman who looks amiable turned out to poison her five husbands in her youth.<br /></li>
+<li>Imagine his dismay when he found his amiable aunt turned out to be a criminal.<br /></li>
+</ul>
+<p>
+firm [fɜrm]: adj. strongly fixed in position, and not likely to move SYN secure坚定的<br />
+</p>
+<ul class="org-ul">
+<li>He realized to his horror that his fellow was a firm layman.<br /></li>
+<li>He was so firm that even though he had been trapped in mine for two days, he didn't lose his heart.<br /></li>
+<li>My wife's shift from a firm to a suspicious layman gave me satisfaction.<br /></li>
+</ul>
+<p>
+high-strung [strʌŋ]: adj. 高度紧张的,容易兴奋的<br />
+</p>
+<ul class="org-ul">
+<li>I have to cooperate with such a high-strung colleague that I was not able to point out his errors sometimes.<br /></li>
+<li>The high-strung painter exclaimed that the comission would be finished until it satisfied him as an artist.<br /></li>
+<li>He was chanllenged by a high-strung knight who used to be defeated.<br /></li>
+</ul>
+<p>
+widespread [ˈwaɪdˌspred]: adj. existing or happening in many places or situations, or among many people分布广泛的, 普遍的<br />
+</p>
+<ul class="org-ul">
+<li>The actions of the Inquisition failed to stop the widespread ideas of the Scientific Revolution.<br /></li>
+<li>The widespread temples in the country were used as places of worship.<br /></li>
+<li>The widespread chapel in Europe were used as sleeping places of refugees.<br /></li>
+</ul>
+<p>
+reject [ˈriˌdʒekt] rejection: v.n. to refuse to accept, believe in, or agree with something OPP accept拒绝, 抵制<br />
+</p>
+<ul class="org-ul">
+<li>He rejected these invitations and claimed that he would never accept any commission.<br /></li>
+<li>He rejected its offer, for he detests the harsher working condition in this office.<br /></li>
+<li>He lost time in rejecting his brother's request, for he had been in China for three years.<br /></li>
+</ul>
+<p>
+intolerant [ɪnˈtɑlərənt] intolerance: adj.n. not willing to accept ways of thinking and behaving that are different from your own OPP tolerant不宽容的<br />
+</p>
+<ul class="org-ul">
+<li>Intolerant of children who cheat on his test, he gave them bad grades.<br /></li>
+<li>Intolerant of my carelessness, the examiner didn't let me pass the test.<br /></li>
+<li>Intolerant of the independence charater in his wife, he made a spectacle of himself when he instructed his wife to throw away rubbish in public.<br /></li>
+</ul>
+<p>
+whereas [hwerˈæz]: conj. formal used to say that although something is true of one thing, it is not true of another尽管<br />
+</p>
+<ul class="org-ul">
+<li>Whereas his clothes got into such mess, he was enthusiastic about taking part in the concert.<br /></li>
+<li>Whereas the killer set your house on fire, he didn't fire a shot at you.<br /></li>
+<li>Whereas he won the election, he decided to retire from political life.<br /></li>
+</ul>
+<p>
+sensibility [ˌsensəˈbɪləti]: n. the way that someone reacts to particular subjects or types of behaviour感情<br />
+</p>
+<ul class="org-ul">
+<li>The house is equiped with the statue of Virgin Mary which inspired his religious sensibility.<br /></li>
+<li>Not allowed to go to university, he devoted his sensibility to his work.<br /></li>
+<li>My political sensibility could date back to my youth when I first read history of the world.<br /></li>
+</ul>
+<p>
+manifest [ˈmænɪˌfest]: v. to show a feeling, attitude etc表现<br />
+</p>
+<ul class="org-ul">
+<li>I am always too eager to manifest myself in front of my superiors.<br /></li>
+<li>When I want to manifest myself in public, I always make a spectacle of myself.<br /></li>
+<li>His passions manifested as the painting on the ceiling of his apartment.<br /></li>
+</ul>
+<hr />
+<p>
+bring sb. to do sth.: 带领某人去做某事<br />
+</p>
+<ul class="org-ul">
+<li>In my childhood, my amiable uncle always brought us to swim in the river on Summer holidays.<br /></li>
+<li>The amiable Prime Minister brought a gathering to set the Embassy on fire.<br /></li>
+<li>My aimable as well as firm aunt brought me to go to school in town when I played truant from school in rural village.<br /></li>
+</ul>
+<p>
+hold sway (over sth./sb.): 支配某物/某人<br />
+</p>
+<ul class="org-ul">
+<li>The firm philosophes was able to hold sway over the high-strung masses.<br /></li>
+<li>Intolerant of disorder in his house, he began to hold sway over members of his family.<br /></li>
+<li>The exalted claim of the papal authority held sway over the monarchs.<br /></li>
+</ul>
+<p>
+the talk of sp.: 某地的话题<br />
+</p>
+<ul class="org-ul">
+<li>The breakdown of Christian unity through the Reformation and religious wars became the talk of Europe.<br /></li>
+<li>The fantasy world which was depicted in his writings became the talk of Europe.<br /></li>
+<li>The secert far-reached land where gold is everywhere became the talk of Europe.<br /></li>
+</ul>
+<p>
+receive an invitation: 收到邀请<br />
+</p>
+<ul class="org-ul">
+<li>He claimed condescendingly that he had received the invitation of the monarch.<br /></li>
+<li>If he had received an invitation, he would have been condescending.<br /></li>
+<li>You're forbid to attend the party if you don't receive an invitation.<br /></li>
+</ul>
+<p>
+make a visit to sp.: 拜访某地<br />
+</p>
+<ul class="org-ul">
+<li>Sir, you may as well make a visit to China where the masses is suffering from floods.<br /></li>
+<li>The general made a visit to Tokyo which he conquered with his father in his youth.<br /></li>
+<li>Elizabeth made a visit to Beijing where the agreement about the lands was made.<br /></li>
+</ul>
+<p>
+a couple of + &#x2026;: 两个/几个事物<br />
+</p>
+<ul class="org-ul">
+<li>The butcher accussed me of freeing a couple of pigs from the cage.<br /></li>
+<li>I denounced the errors that a couple of scientist made in their article.<br /></li>
+<li>There are a couple of apples on my desktop.<br /></li>
+</ul>
+<p>
+in good taste: 得体的<br />
+</p>
+<ul class="org-ul">
+<li>Staying out of the limelight, they still behaved in good taste.<br /></li>
+<li>My wife condemns me as a rude warrior who doesn't behave in good taste.<br /></li>
+<li>If you were in good taste, you wouldn't change into such a tight dress at the party.<br /></li>
+</ul>
+<p>
+ever since: 从那时起<br />
+</p>
+<ul class="org-ul">
+<li>Galileo was called in question before the Inquisition, and the ideas of Scientific Revolution have been implanted ever since.<br /></li>
+<li>My aunt brought me to go to school in town, I have owned her a lot ever since.<br /></li>
+<li>He has ever since fell into love with the amiable girl.<br /></li>
+</ul>
+<p>
+be disgusted with sth.: 对某事物反感<br />
+</p>
+<ul class="org-ul">
+<li>Disgusted with shopping online, he held sway over members of his family and urged them not to buy anything online.<br /></li>
+<li>Disgusted with the spread of meth, he left the US where he has been for six years.<br /></li>
+<li>Disgusted with the disvison, he didn't keep in touch with his wife any more.<br /></li>
+</ul>
+<p>
+be open to sth.: 对某事物开放<br />
+</p>
+<ul class="org-ul">
+<li>The monk is open to the ideas from the outside world.<br /></li>
+<li>The girl is open to the love of every boy she runs into.<br /></li>
+<li>The president is open to the spread of these ideas divergent from main stream.<br /></li>
+</ul>
+<p>
+do sth. a different way: 用不同地方式做某事<br />
+</p>
+<ul class="org-ul">
+<li>The Scientific Revolution did overturn centuries of authority a different way.<br /></li>
+<li>The flight attendant claimed to have take charge of me a different way.<br /></li>
+<li>The breakdown of trust in the government happened a different way.<br /></li>
+</ul>
+<p>
+turn sb's back on sth.: 背弃某物<br />
+</p>
+<ul class="org-ul">
+<li>His wife turned her back on their marriage when she cheated on him.<br /></li>
+<li>The townman realized to his horror that their country was turning its back on the outside world.<br /></li>
+<li>The actions of the Inquisition turned its back on the new ideas of the Scientific Revolution.<br /></li>
+</ul>
+<p>
+Consequently, + &#x2026;: 因此, + &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>Consequently, he succeeded in breaking world record because of these liquid foods.<br /></li>
+<li>Consequently, I shared my apartment with this stary cat.<br /></li>
+<li>Consequently, she got married to your dentist.<br /></li>
+</ul>
+<p>
+Ironically, + &#x2026;: 讽刺地, + &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>Ironically, the husband risked his life to save her in floods.<br /></li>
+<li>Ironically, a patch of green began to appear on the desert hill.<br /></li>
+<li>Ironically, the people they regarded as barbarian devastated their civilization.<br /></li>
+</ul>
+<p>
+capture the heart of sb.: 捕获某人的心<br />
+</p>
+<ul class="org-ul">
+<li>Cats in the market never fail to capture the heart of my wife.<br /></li>
+<li>Failing to capture the heart of his wife, he decided to get divorce.<br /></li>
+<li>This clumsy kind of animal captures the heart of my wife in the exhibition.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org7b960d8" class="outline-3">
+<h3 id="org7b960d8">sentence2</h3>
+<div class="outline-text-3" id="text-org7b960d8">
+<p>
+earth-shattering [ˈʃætə(r)]: adj. surprising or shocking and very important惊天动地<br />
+</p>
+<ul class="org-ul">
+<li>The breakdown of trust in the authorities led to an earth-shattering event.<br /></li>
+<li>The earth-shattering paint only exists in your fantasy world.<br /></li>
+<li>The coverages of the earth-shattering event tend to be increasingly chaotic.<br /></li>
+</ul>
+<p>
+philosophe: n. Generally. A philosopher, a thinker; a man of letters, an intellectual. Now rare.启蒙思想家<br />
+</p>
+<ul class="org-ul">
+<li>The philosophe born in Paris contributed to the establishment of the US.<br /></li>
+<li>The philosophe is fanatical about smashing history books to pieces.<br /></li>
+<li>The philosophe took these pieces together and restored the statue.<br /></li>
+</ul>
+<p>
+fashionable [ˈfæʃ(ə)nəb(ə)l]: adj. popular, especially for a short period of time OPP unfashionable流行的, 时髦的<br />
+</p>
+<ul class="org-ul">
+<li>A great number of fashionable clothes have been stolen, which must be worth 10000 dollars.<br /></li>
+<li>The clerk wrapped the fashionable dress as soon as she could and handed it to her boyfriend.<br /></li>
+<li>It has become fashionable to share your apartment with your cat these days.<br /></li>
+</ul>
+<p>
+gathering [ˈɡæð(ə)rɪŋ]: n. a meeting of a group of people聚会<br />
+</p>
+<ul class="org-ul">
+<li>The expert from the gathering raised fundamental questions about our political sensibility.<br /></li>
+<li>The lady is fanatical about setting up gatherings.<br /></li>
+<li>You needn't have attended a gathering in which you didn't receive an invitation.<br /></li>
+</ul>
+<p>
+distinguished [dɪˈstɪŋɡwɪʃt]: adj. successful, respected, and admired卓著的, 著名的, 高贵的<br />
+</p>
+<ul class="org-ul">
+<li>The invention of the machine which is used to search gold is grounded in the work of a distinguished scientist.<br /></li>
+<li>Clearly, she is by no means a distinguished swimmer who can swim across the Channel on her own.<br /></li>
+<li>Our distinguished headmaster will retire from teaching three months later.<br /></li>
+</ul>
+<p>
+amiable [ˈeɪmiəb(ə)l]: adj. friendly and easy to like亲切的, 和蔼可亲的<br />
+</p>
+<ul class="org-ul">
+<li>The Prime Minister regarded as amiable lost his temper this time.<br /></li>
+<li>The woman who looks amiable turned out to poison her five husbands in her youth.<br /></li>
+<li>Imagine his dismay when he found his amiable aunt turned out to be a criminal.<br /></li>
+</ul>
+<p>
+firm [fɜrm]: adj. strongly fixed in position, and not likely to move SYN secure坚定的<br />
+</p>
+<ul class="org-ul">
+<li>He realized to his horror that his fellow was a firm layman.<br /></li>
+<li>He was so firm that even though he had been trapped in mine for two days, he didn't lose his heart.<br /></li>
+<li>My wife's shift from a firm to a suspicious layman gave me satisfaction.<br /></li>
+</ul>
+<p>
+high-strung [strʌŋ]: adj. 高度紧张的,容易兴奋的<br />
+</p>
+<ul class="org-ul">
+<li>I have to cooperate with such a high-strung colleague that I am not able to point out his errors sometimes.<br /></li>
+<li>The high-strung painter exclaimed that the commission would be finished until it satisfied him as an artist.<br /></li>
+<li>He was challenged by a high-strung knight who used to be defeated.<br /></li>
+</ul>
+<p>
+widespread [ˈwaɪdˌspred]: adj. existing or happening in many places or situations, or among many people分布广泛的, 普遍的<br />
+</p>
+<ul class="org-ul">
+<li>The actions of the Inquisition failed to stop the widespread ideas of the Scientific Revolution.<br /></li>
+<li>The widespread temples in the country were used as places of worship.<br /></li>
+<li>The widespread chapels in Europe were used as sleeping places for refugees.<br /></li>
+</ul>
+<p>
+reject [ˈriˌdʒekt] rejection: v.n. to refuse to accept, believe in, or agree with something OPP accept拒绝, 抵制<br />
+</p>
+<ul class="org-ul">
+<li>He rejected these invitations and claimed that he would never accept any commission.<br /></li>
+<li>He rejected its offer, for he detests the harsher working conditions in this office.<br /></li>
+<li>He lost time in rejecting his brother's request, for he had been in China for three years.<br /></li>
+</ul>
+<p>
+intolerant [ɪnˈtɑlərənt] intolerance: adj.n. not willing to accept ways of thinking and behaving that are different from your own OPP tolerant不宽容的<br />
+</p>
+<ul class="org-ul">
+<li>Intolerant of children who cheat on his test, he gave them bad grades.<br /></li>
+<li>Intolerant of my carelessness, the examiner didn't let me pass the test.<br /></li>
+<li>Intolerant of the independence of character in his wife, he made a spectacle of himself when he instructed his wife to throw away rubbish in public.<br /></li>
+</ul>
+<p>
+whereas [hwerˈæz]: conj. formal used to say that although something is true of one thing, it is not true of another尽管<br />
+</p>
+<ul class="org-ul">
+<li>Whereas his clothes got into such a mess, he was enthusiastic about taking part in the concert.<br /></li>
+<li>Whereas the killer set your house on fire, he didn't fire a shot at you.<br /></li>
+<li>Whereas he won the election, he decided to retire from political life.<br /></li>
+</ul>
+<p>
+sensibility [ˌsensəˈbɪləti]: n. the way that someone reacts to particular subjects or types of behaviour感情<br />
+</p>
+<ul class="org-ul">
+<li>The house is equipped with the statue of the Virgin Mary which inspired his religious sensibility.<br /></li>
+<li>Not allowed to go to university, he devoted his sensibility to his work.<br /></li>
+<li>My political sensibility dates back to my youth when I first read the history of the world.<br /></li>
+</ul>
+<p>
+manifest [ˈmænɪˌfest]: v. to show a feeling, attitude etc表现<br />
+</p>
+<ul class="org-ul">
+<li>I am always too eager to manifest myself in front of my superiors.<br /></li>
+<li>When I want to manifest myself in public, I always make a spectacle of myself.<br /></li>
+<li>His passions manifested as the painting on the ceiling of his apartment.<br /></li>
+</ul>
+<hr />
+<p>
+bring sb. to do sth.: 带领某人去做某事<br />
+</p>
+<ul class="org-ul">
+<li>In my childhood, my amiable uncle always brought us to swim in the river on Summer holidays.<br /></li>
+<li>The amiable Prime Minister brought a gathering to set the Embassy on fire.<br /></li>
+<li>My amiable as well as firm aunt brought me to go to school in town when I played truant from school in a rural village.<br /></li>
+</ul>
+<p>
+hold sway (over sth./sb.): 支配某物/某人<br />
+</p>
+<ul class="org-ul">
+<li>The firm philosophe was able to hold sway over the high-strung masses.<br /></li>
+<li>Intolerant of disorder in his house, he began to hold sway over members of his family.<br /></li>
+<li>The exalted claim of the papal authority held sway over the monarchs.<br /></li>
+</ul>
+<p>
+the talk of sp.: 某地的话题<br />
+</p>
+<ul class="org-ul">
+<li>The breakdown of Christian unity through the Reformation and religious wars became the talk of Europe.<br /></li>
+<li>The fantasy world that was depicted in his writings became the talk of Europe.<br /></li>
+<li>The secret far-reached land where gold is everywhere became the talk of Europe.<br /></li>
+</ul>
+<p>
+receive an invitation: 收到邀请<br />
+</p>
+<ul class="org-ul">
+<li>He claimed condescendingly that he had received the invitation of the monarch.<br /></li>
+<li>If he had received an invitation, he would have been condescending.<br /></li>
+<li>You're forbidden to attend the party if you don't receive an invitation.<br /></li>
+</ul>
+<p>
+make a visit to sp.: 拜访某地<br />
+</p>
+<ul class="org-ul">
+<li>Sir, you may as well make a visit to China where the masses are suffering from floods.<br /></li>
+<li>The general made a visit to Tokyo which he conquered with his father in his youth.<br /></li>
+<li>Elizabeth made a visit to Beijing where the agreement about the lands was made.<br /></li>
+</ul>
+<p>
+a couple of + &#x2026;: 两个/几个事物<br />
+</p>
+<ul class="org-ul">
+<li>The butcher accused me of freeing a couple of pigs from the cage.<br /></li>
+<li>I denounced the errors that a couple of scientists made in their article.<br /></li>
+<li>There are a couple of apples on my desktop.<br /></li>
+</ul>
+<p>
+in good taste: 得体的<br />
+</p>
+<ul class="org-ul">
+<li>Staying out of the limelight, they still behaved in good taste.<br /></li>
+<li>My wife condemns me as a rude warrior who doesn't behave in good taste.<br /></li>
+<li>If you were in good taste, you wouldn't change into such a tight dress at the party.<br /></li>
+</ul>
+<p>
+ever since: 从那时起<br />
+</p>
+<ul class="org-ul">
+<li>Galileo was called into question before the Inquisition, and the ideas of the Scientific Revolution have been implanted ever since.<br /></li>
+<li>My aunt brought me to go to school in town, I have owned her a lot ever since.<br /></li>
+<li>He has ever since fallen in love with the amiable girl.<br /></li>
+</ul>
+<p>
+be disgusted with sth.: 对某事物反感<br />
+</p>
+<ul class="org-ul">
+<li>Disgusted with shopping online, he held sway over members of his family and urged them not to buy anything online.<br /></li>
+<li>Disgusted with the spread of meth, he left the US where he has been for six years.<br /></li>
+<li>Disgusted with the division, he hasn't kept in touch with his wife.<br /></li>
+</ul>
+<p>
+be open to sth.: 对某事物开放<br />
+</p>
+<ul class="org-ul">
+<li>The monk is open to the ideas from the outside world.<br /></li>
+<li>The girl is open to the love of every boy she runs into.<br /></li>
+<li>The president is open to the spread of these ideas divergent from the mainstream.<br /></li>
+</ul>
+<p>
+do sth. a different way: 用不同地方式做某事<br />
+</p>
+<ul class="org-ul">
+<li>The Scientific Revolution did overturn centuries of authority in a different way.<br /></li>
+<li>The flight attendant claimed to have taken charge of me in a different way.<br /></li>
+<li>The breakdown of trust in the government happened a different way.<br /></li>
+</ul>
+<p>
+turn sb's back on sth.: 背弃某物<br />
+</p>
+<ul class="org-ul">
+<li>His wife turned her back on their marriage when she cheated on him.<br /></li>
+<li>The townman realized to his horror that their country was turning its back on the outside world.<br /></li>
+<li>The actions of the Inquisition turned its back on the new ideas of the Scientific Revolution.<br /></li>
+</ul>
+<p>
+Consequently, + &#x2026;: 因此, + &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>Consequently, he succeeded in breaking a world record because of these liquid foods.<br /></li>
+<li>Consequently, I shared my apartment with this stray cat.<br /></li>
+<li>Consequently, she got married to your dentist.<br /></li>
+</ul>
+<p>
+Ironically, + &#x2026;: 讽刺地, + &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>Ironically, the husband risked his life to save her in floods.<br /></li>
+<li>Ironically, a patch of green began to appear on the desert hill.<br /></li>
+<li>Ironically, the people they regarded as barbarian devastated their civilization.<br /></li>
+</ul>
+<p>
+capture the heart of sb.: 捕获某人的心<br />
+</p>
+<ul class="org-ul">
+<li>Cats in the market never fail to capture the heart of my wife.<br /></li>
+<li>Failing to capture the heart of his wife, he decided to get a divorce.<br /></li>
+<li>This clumsy kind of animal captures the heart of my wife in the exhibition.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org2f09ac9" class="outline-3">
+<h3 id="org2f09ac9">summary</h3>
+<div class="outline-text-3" id="text-org2f09ac9">
+<p>
+The Scientific Revolution had affected only a small number of educated ilites,<br />
+	which changed dramtically<br />
+		as the philosophes popularized the new ideas and used them to examine all aspects of life.<br />
+In Paris, women took the lead in holding salon to discuss the ideas of the philosophes.<br />
+Geoffrian, the wife of a wealthy merchant,<br />
+	held sway gatherings that became the talk of France and even Europe.<br />
+She was so well received that she exclaimed she was better known in Viena than yards from her house.<br />
+Not only did she allow wide-ranging discussions in good taste,<br />
+	but she made separated meeting for high-strung artists and philosophers who talked too much.<br />
+Those ideas had such a widespread impact on their society<br />
+	that historians called the eighteenth century the Age of Enlightenment.<br />
+Whereas the scientists of the seventeenth century believed that their work exalted god,<br />
+	the intellectuals of the eighteenth century read the same conclusions a different way<br />
+		and increasingly turned their backs on Christian orthodoxy.<br />
+At the same time that reason and materialism were beginning to replace faith and worship,<br />
+	religious sensibility greatly manifested itself in music and art.<br />
+It was obvious that the growing secularization had not captured the heart of minds of all Europeans.<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org9609611" class="outline-3">
+<h3 id="org9609611">summary2</h3>
+<div class="outline-text-3" id="text-org9609611">
+<p>
+The Scientific Revolution had affected only a small number of educated elites,<br />
+	which changed dramatically<br />
+		as the philosophes popularized the new ideas and used them to examine all aspects of life.<br />
+In Paris, women took the lead in holding salons to discuss the ideas of the philosophes.<br />
+Geoffrin, the wife of a wealthy merchant,<br />
+	held sway gatherings that became the talk of France and even Europe.<br />
+She was so well received in Viena<br />
+	that she exclaimed she was better known here than yards from her house.<br />
+Not only did she allow wide-ranging discussions in good taste,<br />
+	but she also made separate meetings for high-strung artists and philosophers who talked too much.<br />
+Those ideas had such a widespread impact on their society<br />
+	that historians called the eighteenth century the Age of Enlightenment.<br />
+Whereas the scientists of the seventeenth century believed that their work exalted god,<br />
+	the intellectuals of the eighteenth century read the same conclusions in a different way<br />
+		and increasingly turned their backs on Christian orthodoxy.<br />
+At the same time that reason and materialism were beginning to replace faith and worship,<br />
+	a lot of religious sensibility manifested itself in music and art.<br />
+The growing secularization had not captured the hearts and minds of all Europeans.<br />
+</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

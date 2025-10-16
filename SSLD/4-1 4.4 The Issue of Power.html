@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-12-23 Mon 17:08 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-org7de3c4a" class="outline-2">
+<h2 id="org7de3c4a">4-1 4.4 The Issue of Power</h2>
+<div class="outline-text-2" id="text-org7de3c4a">
+<p class="verse">
+So we have a really good overview of more theoretical points.<br />
+But if we're really applying these to practical example on a relationship,<br />
+&#xa0;important concept that comes up for me is that element of power in relationships,<br />
+&#xa0;&#xa0;and how that really can dominate how people interact within a relationship.<br />
+And I was wondering if you could just tell me more about how this would fit into your framework.<br />
+<br />
+Yeah, like when we are doing this within academia,<br />
+&#xa0;it is obviously not possible to even talk about relationships<br />
+&#xa0;&#xa0;without talking about power.<br />
+You know, feminist scholars have always drawn our attention to<br />
+&#xa0;how important it is in conditioning almost anything.<br />
+And like from the queer community<br />
+&#xa0;like they question the understanding of power within the heteronormal framework.<br />
+<br />
+So, we do not use that much jargon or conceptual, technical ideas,<br />
+&#xa0;and just get really down to earth, right?<br />
+We understand that like power is associated with certain social positions and conditions.<br />
+Like say for example, if you're a man, you may have more power generally than a woman.<br />
+And then, if you're white, you may have generally more power than a person of colour.<br />
+And then, if you are straight, and you may have more privilege than someone who is not, and so on.<br />
+And then, you can talk about like age, right?<br />
+If you are younger, maybe it's a little bit better.<br />
+It depends on how young though, right?<br />
+Like if you're 14, then you may not have a lot of advantage.<br />
+But if you're 34, maybe.<br />
+But if you were 84, you would have lost some of that power.<br />
+And then, we talk about income level and social status and social capital and all that.<br />
+So, but then when you put all these together, right, in a relationship,<br />
+&#xa0;all these are put together, right?<br />
+So, you're there, you're not just representing a skin colour, a gender,<br />
+&#xa0;or a sexual orientation, an income level, or, you know.<br />
+<br />
+So, people will be like performing themselves within this really complex set of forces.<br />
+And it is not unusual for us to see,<br />
+&#xa0;&#xa0;in our work I guess especially couple counselling,<br />
+&#xa0;to see someone who, on paper,<br />
+&#xa0;&#xa0;might be occupying privilege, powerful positions,<br />
+&#xa0;&#xa0;but feeling relatively helpless and frustrated in a relationship.<br />
+And someone who might not have a lot of power on paper<br />
+&#xa0;can actually be playing sort of more dominant role.<br />
+Yeah, you can say that statistically that is not as likely, but it does happen, right?<br />
+<br />
+So, and when we're dealing relationships,<br />
+&#xa0;&#xa0;obviously with all these general observations about power,<br />
+&#xa0;we have to be very conscious of them.<br />
+But then, when we look at two individuals interacting,<br />
+&#xa0;we would be paying more attention to what I generally call<br />
+&#xa0;&#xa0;like personalized, or individual, strategies of being, strategies of identification or identity.<br />
+And when power is involved, there are also strategies of resistance.<br />
+So you may find, say for example,<br />
+&#xa0;a woman who is from a middle class background, well-educated,<br />
+&#xa0;&#xa0;&#xa0;in a relationship with person of colour, man who is low income, not well educated<br />
+&#xa0;&#xa0;but still feel like limited, oppressed, or even abused in that relationship.<br />
+And then to us, we will have to figure out how did that happen, you know.<br />
+And so, this is like a very different take on power.<br />
+We always look at very personalized individual circumstances<br />
+&#xa0;being mindful, of course, of the social, political reality<br />
+&#xa0;&#xa0;associated with some of these markers of power, so to speak.<br />
+</p>
+</div>
+<div id="outline-container-org51a23f2" class="outline-3">
+<h3 id="org51a23f2">expression</h3>
+<div class="outline-text-3" id="text-org51a23f2">
+<p>
+overview [ˈoʊvərˌvju]: n. a short description of a subject or situation that gives the main ideas without explaining all the details概况,总览<br />
+theoretical [ˌθiəˈretɪk(ə)l] theoretically: adj.adv. relating to the study of ideas, especially scientific ideas, rather than with practical uses of the ideas or practical experience ⇨ theory, practical, applied理论的<br />
+feminist [ˈfemɪnɪst]: n. someone who supports the idea that women should have the same rights and opportunities as men女权主义者<br />
+scholar [ˈskɑlər]: n. someone who has been given a scholarship to study at a school or college学者<br />
+condition [kənˈdɪʃ(ə)n]: v. formal to control or decide the way in which something can happen or exist SYN determine决定<br />
+queer [kwɪr]: adj. taboo an offensive word used to describe someone who is ↑homosexual, especially a man. Do not use this word.同性恋的<br />
+heteronormal [ˈhetəroʊ]: adj. 异性恋本位<br />
+jargon [ˈdʒɑrɡən]: n. words and expressions used in a particular profession or by a particular group of people, which are difficult for other people to understand – often used to show disapproval ⇨ argot行话<br />
+conceptual [kənˈseptʃuəl]: adj. dealing with ideas, or based on them概念上的<br />
+orientation [ˌɔriənˈteɪʃ(ə)n]: n. sexual orientation the fact that someone is ↑heterosexual or ↑homosexual(性)取向<br />
+counsel [ˈkaʊns(ə)l]: v. to listen and give support to someone with problems专业咨询<br />
+personalize [ˈpɜrsənəlˌaɪz] / personalized: v.adj. to design or change something so that it is suitable for a particular person个性化的<br />
+oppress [əˈpres]: v. to treat a group of people unfairly or cruelly, and prevent them from having the same rights that other people in society have压迫, 压抑<br />
+identification [aɪˌdentɪfɪˈkeɪʃ(ə)n]: n. how others define people VS identity身份(他人定义)<br />
+</p>
+<hr />
+<p>
+applying A to B: 将A应用于B<br />
+come up for sb.: (想法/主意)找上某人<br />
+get down to earth: 脚踏实地<br />
+be mindful of sth.: 注意到,考虑到某事<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orga7bce19" class="outline-3">
+<h3 id="orga7bce19">sentence</h3>
+<div class="outline-text-3" id="text-orga7bce19">
+<p>
+overview [ˈoʊvərˌvju]: n. a short description of a subject or situation that gives the main ideas without explaining all the details概况,总览<br />
+</p>
+<ul class="org-ul">
+<li>She claimed that she caught sight of an overview of the plan.<br /></li>
+<li>An overview of the seaside scenery didn't satisfy her curiosity.<br /></li>
+<li>You'd better read the overview of the book before you jump into it.<br /></li>
+</ul>
+<p>
+theoretical [ˌθiəˈretɪk(ə)l] theoretically: adj.adv. relating to the study of ideas, especially scientific ideas, rather than with practical uses of the ideas or practical experience ⇨ theory, practical, applied理论的<br />
+</p>
+<ul class="org-ul">
+<li>I am acquainted with the theoretical ideas our manager came up with.<br /></li>
+<li>Getting obsessed with theoretical policy brought about the king's downfall.<br /></li>
+<li>The scholar can't be persumed guilt because of some theoretical concepts.<br /></li>
+</ul>
+<p>
+feminist [ˈfemɪnɪst]: n. someone who supports the idea that women should have the same rights and opportunities as men女权主义者<br />
+</p>
+<ul class="org-ul">
+<li>The woman who has been very kind to every men around her turned out to be a feminist on the Internet.<br /></li>
+<li>A group of feminists were due to parade along the street.<br /></li>
+<li>A group of feminists designed advertisements attacking innocent men who haven't taken advantge of them.<br /></li>
+</ul>
+<p>
+scholar [ˈskɑlər]: n. someone who has been given a scholarship to study at a school or college学者<br />
+</p>
+<ul class="org-ul">
+<li>The knight regarded as a coward on battlefield dreams of being a scholar in the university.<br /></li>
+<li>The scholar was adored by students and professors alike in academia.<br /></li>
+<li>It was incredible that the dapper scholar was accused of sexual harassments.<br /></li>
+</ul>
+<p>
+condition [kənˈdɪʃ(ə)n]: v. formal to control or decide the way in which something can happen or exist SYN determine决定<br />
+</p>
+<ul class="org-ul">
+<li>Who you were born to conditions your property and rights in such a society.<br /></li>
+<li>How much you exercise a week conditions your sperm count.<br /></li>
+<li>The money you spend will condition the emotion of your partner at a seaside resort.<br /></li>
+</ul>
+<p>
+queer [kwɪr]: adj. taboo an offensive word used to describe someone who is ↑homosexual, especially a man. Do not use this word.同性恋的;奇怪的<br />
+</p>
+<ul class="org-ul">
+<li>Saying the word, nigar, is a taboo in a queer community in Canada.<br /></li>
+<li>Adopting children from China became popular with people in the queer community.<br /></li>
+<li>There are many eminent doctors in the queer community.<br /></li>
+</ul>
+<p>
+heteronormal [ˈhetəroʊ]: adj. 异性恋本位<br />
+</p>
+<ul class="org-ul">
+<li></li>
+
+<li></li>
+
+<li></li>
+</ul>
+<p>
+jargon [ˈdʒɑrɡən]: n. words and expressions used in a particular profession or by a particular group of people, which are difficult for other people to understand – often used to show disapproval ⇨ argot行话<br />
+</p>
+<ul class="org-ul">
+<li>An entrepreneur criticized programmers' words full of jargons.<br /></li>
+<li>Nowadays, a company full of jargons is hard to make a profit in the market.<br /></li>
+<li>The jargons are designed for us to better interact with each other.<br /></li>
+</ul>
+<p>
+conceptual [kənˈseptʃuəl]: adj. dealing with ideas, or based on them概念上的<br />
+</p>
+<ul class="org-ul">
+<li>Once you figure out its conceptual model, you will get used to it.<br /></li>
+<li>A range of conceptual models get our minds into mess.<br /></li>
+<li>Whether the conceptual model works or not is still contingent on the experiments our students perform.<br /></li>
+</ul>
+<p>
+orientation [ˌɔriənˈteɪʃ(ə)n]: n. sexual orientation the fact that someone is ↑heterosexual or ↑homosexual(性)取向<br />
+</p>
+<ul class="org-ul">
+<li>His sexual orientation is contingent on his experience in his youth.<br /></li>
+<li>The princess was betrothed to a man whose sexual orientation was not straight.<br /></li>
+<li>The lady of the house is determined to marry the prince whose sexual orientation is not straight.<br /></li>
+</ul>
+<p>
+counsel [ˈkaʊns(ə)l]: v. to listen and give support to someone with problems专业咨询,建议<br />
+</p>
+<ul class="org-ul">
+<li>The hand of the king counseled the king not to marry a man in public ceremony.<br /></li>
+<li>The man from the flea bottom counseled the general to use wildfire to defend against the nomads.<br /></li>
+<li>The lord who used to be a smuggler counseled his king to join the battle beyond the wall.<br /></li>
+</ul>
+<p>
+personalize [ˈpɜrsənəlˌaɪz] / personalized: v.adj. to design or change something so that it is suitable for a particular person个性化的<br />
+</p>
+<ul class="org-ul">
+<li>It is the personalized counsels that helps me understand the book.<br /></li>
+<li>It is not your personalized counsels that helps me defend against these nomads on the battlefield.<br /></li>
+<li>All I need is the personalized plan of losing weight fitting into my habit of life.<br /></li>
+</ul>
+<p>
+oppress [əˈpres]: v. to treat a group of people unfairly or cruelly, and prevent them from having the same rights that other people in society have压迫, 压抑<br />
+</p>
+<ul class="org-ul">
+<li>A man who got married to an adopted daughter from a wealth family often felt oppressed.<br /></li>
+<li>No one in the world dares to oppress our people anymore.<br /></li>
+<li>The people in the north turned their backs on the nomads who oppressed them occasionally.<br /></li>
+</ul>
+<p>
+identification [aɪˌdentɪfɪˈkeɪʃ(ə)n]: n. how others define people VS identity身份(他人定义)<br />
+</p>
+<ul class="org-ul">
+<li>The man kept talking to me asking for my identification number.<br /></li>
+<li>These days, every application is asking for users' identification number in this or that way.<br /></li>
+<li>We can use published identification number to complete the forms.<br /></li>
+</ul>
+<hr />
+<p>
+apply A to B: 将A应用于B<br />
+</p>
+<ul class="org-ul">
+<li>I know that I will have a difficult time applying the knowledge to practical questions.<br /></li>
+<li>These steam engines will be applied to industry after the exhibition.<br /></li>
+<li>The money the vicar raised would be applied to the broken clock in the tower.<br /></li>
+</ul>
+<p>
+come up for sb.: (想法/主意)找上某人<br />
+</p>
+<ul class="org-ul">
+<li>The idea that came up for the worker was why the box was extremely heavy.<br /></li>
+<li>The idea that came up for me while we were walking along the river bank was why we spent so much money on our apartment.<br /></li>
+<li>It comes up for the child that the can must be very delicious.<br /></li>
+</ul>
+<p>
+get down to earth: 脚踏实地<br />
+</p>
+<ul class="org-ul">
+<li>Instead of focusing on the grade, I chose to get down to earth doing every homework carefully.<br /></li>
+<li>The girl wanted to get married with a boy who got down to earth.<br /></li>
+<li>The local grocer who used to get down to earth lost heart and began to take gambles every day.<br /></li>
+</ul>
+<p>
+guess sb. to do sth.: 猜测某人做某事<br />
+</p>
+<ul class="org-ul">
+<li>I guess Miumiu to keep in hiding in the box.<br /></li>
+<li>She guessed her father to have her betrothed to the prince.<br /></li>
+<li>The king guessed the knight to betray on the battlefield because of his father.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgb545759" class="outline-3">
+<h3 id="orgb545759">sentence2</h3>
+<div class="outline-text-3" id="text-orgb545759">
+<p>
+overview [ˈoʊvərˌvju]: n. a short description of a subject or situation that gives the main ideas without explaining all the details概况,总览<br />
+</p>
+<ul class="org-ul">
+<li>She claimed that she caught sight of an overview of the plan.<br /></li>
+<li>An overview of the seaside scenery didn't satisfy her curiosity.<br /></li>
+<li>You'd better read the overview of the book before you jump into it.<br /></li>
+</ul>
+<p>
+theoretical [ˌθiəˈretɪk(ə)l] theoretically: adj.adv. relating to the study of ideas, especially scientific ideas, rather than with practical uses of the ideas or practical experience ⇨ theory, practical, applied理论的<br />
+</p>
+<ul class="org-ul">
+<li>I am acquainted with the theoretical ideas our manager came up with.<br /></li>
+<li>Getting obsessed with theoretical policy brought about the king's downfall.<br /></li>
+<li>The scholar can't be presumed guilty because of some theoretical concepts.<br /></li>
+</ul>
+<p>
+feminist [ˈfemɪnɪst]: n. someone who supports the idea that women should have the same rights and opportunities as men女权主义者<br />
+</p>
+<ul class="org-ul">
+<li>The woman who has been very kind to every men around her turned out to be a feminist on the Internet.<br /></li>
+<li>A group of feminists were due to parade along the street.<br /></li>
+<li>A group of feminists designed advertisements attacking innocent men who haven't taken advantage of them.<br /></li>
+</ul>
+<p>
+scholar [ˈskɑlər]: n. someone who has been given a scholarship to study at a school or college学者<br />
+</p>
+<ul class="org-ul">
+<li>The knight regarded as a coward on the battlefield dreams of being a scholar at the university.<br /></li>
+<li>The scholar was adored by students and professors alike in academia.<br /></li>
+<li>It was incredible that the dapper scholar was accused of sexual harassment.<br /></li>
+</ul>
+<p>
+condition [kənˈdɪʃ(ə)n]: v. formal to control or decide the way in which something can happen or exist SYN determine决定<br />
+</p>
+<ul class="org-ul">
+<li>Who you were born to conditions your property and rights in such a society.<br /></li>
+<li>How much you exercise a week conditions your sperm count.<br /></li>
+<li>The money you spend will condition the emotion of your partner at a seaside resort.<br /></li>
+</ul>
+<p>
+queer [kwɪr]: adj. taboo an offensive word used to describe someone who is ↑homosexual, especially a man. Do not use this word.同性恋的;奇怪的<br />
+</p>
+<ul class="org-ul">
+<li>Saying the word, nigar, is taboo in a queer community in Canada.<br /></li>
+<li>Adopting children from China became popular with people in the queer community.<br /></li>
+<li>There are many eminent doctors in the queer community.<br /></li>
+</ul>
+<p>
+heteronormal [ˈhetəroʊ]: adj. 异性恋本位<br />
+</p>
+<ul class="org-ul">
+<li></li>
+
+<li></li>
+
+<li></li>
+</ul>
+<p>
+jargon [ˈdʒɑrɡən]: n. words and expressions used in a particular profession or by a particular group of people, which are difficult for other people to understand – often used to show disapproval ⇨ argot行话<br />
+</p>
+<ul class="org-ul">
+<li>An entrepreneur criticized programmers' words that were full of jargon.<br /></li>
+<li>Nowadays, a company full of jargon is hard to make a profit in the market.<br /></li>
+<li>The jargon is designed for us to better interact with each other.<br /></li>
+</ul>
+<p>
+conceptual [kənˈseptʃuəl]: adj. dealing with ideas, or based on them概念上的<br />
+</p>
+<ul class="org-ul">
+<li>Once you figure out its conceptual model, you will get used to it.<br /></li>
+<li>A range of conceptual models get our minds into a mess.<br /></li>
+<li>Whether the conceptual model works or not is still contingent on the experiments our students perform.<br /></li>
+</ul>
+<p>
+orientation [ˌɔriənˈteɪʃ(ə)n]: n. sexual orientation the fact that someone is ↑heterosexual or ↑homosexual(性)取向<br />
+</p>
+<ul class="org-ul">
+<li>His sexual orientation is contingent on his experience in his youth.<br /></li>
+<li>The princess was betrothed to a man whose sexual orientation was not straight.<br /></li>
+<li>The lady of the house is determined to marry the prince whose sexual orientation is not straight.<br /></li>
+</ul>
+<p>
+counsel [ˈkaʊns(ə)l]: v. to listen and give support to someone with problems专业咨询,建议<br />
+</p>
+<ul class="org-ul">
+<li>The hand of the king counseled the king not to marry a man in the public ceremony.<br /></li>
+<li>The man from the flea bottom counseled the general to use wildfire to defend against the nomads.<br /></li>
+<li>The lord who used to be a smuggler counseled his king to join the battle beyond the wall.<br /></li>
+</ul>
+<p>
+personalize [ˈpɜrsənəlˌaɪz] / personalized: v.adj. to design or change something so that it is suitable for a particular person个性化的<br />
+</p>
+<ul class="org-ul">
+<li>It is the personalized counsel that helps me understand the book.<br /></li>
+<li>It is not your personalized counsel that helps me defend against these nomads on the battlefield.<br /></li>
+<li>All I need is a personalized plan for losing weight that fits into my life habits.<br /></li>
+</ul>
+<p>
+oppress [əˈpres]: v. to treat a group of people unfairly or cruelly, and prevent them from having the same rights that other people in society have压迫, 压抑<br />
+</p>
+<ul class="org-ul">
+<li>A man who got married to an adopted daughter from a wealthy family often felt oppressed.<br /></li>
+<li>No one in the world dares to oppress our people anymore.<br /></li>
+<li>The people in the north turned their backs on the nomads who oppressed them occasionally.<br /></li>
+</ul>
+<p>
+identification [aɪˌdentɪfɪˈkeɪʃ(ə)n]: n. how others define people VS identity身份(他人定义)<br />
+</p>
+<ul class="org-ul">
+<li>The man kept talking to me asking for my identification number.<br /></li>
+<li>These days, every application is asking for users' identification numbers in this or that way.<br /></li>
+<li>We can use a published identification number to complete the forms.<br /></li>
+</ul>
+<hr />
+<p>
+apply A to B: 将A应用于B<br />
+</p>
+<ul class="org-ul">
+<li>I know that I will have a difficult time applying the knowledge to practical questions.<br /></li>
+<li>These steam engines will be applied to industry after the exhibition.<br /></li>
+<li>The money the vicar raised would be applied to the broken clock in the tower.<br /></li>
+</ul>
+<p>
+come up for sb.: (想法/主意)找上某人<br />
+</p>
+<ul class="org-ul">
+<li>The idea that came up for the worker was why the box was extremely heavy.<br /></li>
+<li>The idea that came up for me while we were walking along the river bank was why we spent so much money on our apartment.<br /></li>
+<li>It comes up for the child that the can must be very delicious.<br /></li>
+</ul>
+<p>
+get down to earth: 脚踏实地<br />
+</p>
+<ul class="org-ul">
+<li>Instead of focusing on the grade, I chose to get down to earth doing every homework carefully.<br /></li>
+<li>The girl wanted to get married to a boy who got down to earth.<br /></li>
+<li>The local grocer who used to get down to earth lost heart and began to take gambles every day.<br /></li>
+</ul>
+<p>
+be mindful of sth.: 注意到,考虑到某事<br />
+</p>
+<ul class="org-ul">
+<li>He is very mindful of what happened to his wife.<br /></li>
+<li>Being mindful of the mistakes he made, he decided to review the code of the project.<br /></li>
+<li>Being mindful of his cat, he always presents some gift to her when he is on a business trip.<br /></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

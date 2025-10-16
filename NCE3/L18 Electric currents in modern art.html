@@ -1,0 +1,702 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-09-28 Sat 22:17 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-org09b2610" class="outline-2">
+<h2 id="org09b2610">Lesson 18 Electric currents in modern art</h2>
+<div class="outline-text-2" id="text-org09b2610">
+<p class="verse">
+How might some of the exhibits have been dangerous?<br />
+<br />
+Modern sculpture <b>rarely</b> surprises us <b>any more</b>.<br />
+<b>The idea that</b> modern art can only be seen in museums <b>is mistaken</b>.<br />
+Even people who <b>take no interest in</b> art<br />
+&#xa0;&#xa0;cannot have failed to notice examples of modern sculpture on display in public places.<br />
+Strange forms stand in gardens, outside buildings and shops.<br />
+We have got quite used to them.<br />
+Some so called 'modern' pieces have been on display for nearly eighty years.<br />
+<br />
+In spite of this,<br />
+&#xa0;some people -including myself- were surprised by a recent exhibition of modern sculpture.<br />
+The first thing I saw when I entered the art gallery was a notice which said:<br />
+&#xa0;&#xa0;'Do not touch the exhibits. Some of them are dangerous!'<br />
+The objects on display were pieces of moving sculpture.<br />
+Oddly shaped forms that are suspended from the ceiling and move <b>in response to</b> a gust of wind<br />
+&#xa0;<b>are quite familiar to</b> everybody.<br />
+These objects, however, were different.<br />
+Lined up against the wall, there were long thin wires <b>attached to</b> metal spheres.<br />
+The spheres had been magnetized and attracted or repelled each other all the time.<br />
+In the centre of the hall, there were a number of tall structures which contained coloured lights.<br />
+These lights flicker continuously like traffic lights which have <b>gone mad</b>.<br />
+Sparks were emitted from small black boxes and red lamps flashed <b>on and off</b> angrily.<br />
+<b>It was rather like</b> an exhibition of prehistoric electronic equipment.<br />
+These peculiar forms not only <b>seemed designed to shock</b> people emotionally,<br />
+&#xa0;but to give them electric shocks as well.<br />
+</p>
+</div>
+<div id="outline-container-org77d9545" class="outline-3">
+<h3 id="org77d9545">expression</h3>
+<div class="outline-text-3" id="text-org77d9545">
+<p>
+current: [ˈkʌrənt] n.  electric current 电流<br />
+sculpture: [ˈskʌlptʃə] n. an object made out of stone, wood, clay etc by an artist雕塑<br />
+mistaken: [miˈsteɪk] adj.错误的<br />
+gallery: [ˈɡæləri] n. a large building where people can see famous pieces of art美术馆<br />
+exhibit: [ɪɡˈzɪbɪt] n.v. exhibition n. to show something in a public place so that people can go to see it展品,陈列品<br />
+oddly: [ˈɑdli] adv. in a strange or unusual way古怪的<br />
+attach: [əˈtætʃ] v. to fasten or connect one object to another连,系<br />
+sphere: [sfɪr] n. a ball shape球体hemisphere<br />
+magnetize: [ˈmæɡnəˌtaɪz] v.使磁化<br />
+repel: [rɪˈpel] v.排斥<br />
+flicker: [ˈflɪkər] v. to burn or shine with an unsteady light that goes on and off quickly闪烁<br />
+emit: [ɪˈmɪt] v. to send out gas, heat, light, sound etc放射<br />
+flash: [flæʃ] v.闪光<br />
+prehistoric: [ˌpriˈhɪstɔrɪk] adj.史前的,老掉牙的<br />
+electronic: [ˌilekˈtrɑnɪk] adj.电子的<br />
+peculiar: [pɪˈkjuljər] adj. strange, unfamiliar, or a little surprising奇异的<br />
+shock: [ʃɑk] v.n.震惊<br />
+emotionally: [ɪˈmoʃənlɪ] adv. relating to your feelings or how you control them感情上<br />
+</p>
+
+<p>
+make a sculpture / create a sculpture: 制作雕塑<br />
+be mistaken about sth./sb.: confused or wrong about对某人/事物有误解<br />
+Oddly enough, + &#x2026;: Strangely, unexpectedly奇怪地, &#x2026;<br />
+be attached to sb./sth. = attach a. to b.: 把A绑到B上<br />
+get an electric shock: 被电击<br />
+receive an electric shock: 被电击<br />
+give you electric shocks: 给你电击<br />
+</p>
+<hr />
+<p>
+not any more = not any longer = no longer: 不再<br />
+The idea that + &#x2026; is mistaken: 想法xx是错的<br />
+take no/ a great/an interest in: 对&#x2026;不感兴趣<br />
+in response to sth.: 回应某事<br />
+be/sound/look/seem familiar to sb.: 对某人看起来很熟悉<br />
+go mad: 发疯<br />
+on and off: 断断续续<br />
+It was rather like &#x2026;: 这很像&#x2026;<br />
+seem adj.(designed) to do sth.: be designed to do sth.似乎被设计去做某事<br />
+be designed to do sth.: seem designed to do sth.被设计成做某事<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org3539e58" class="outline-3">
+<h3 id="org3539e58">vocabulary</h3>
+<div class="outline-text-3" id="text-org3539e58">
+<p>
+on display: exhibited<br />
+oddly: peculiarly strangely<br />
+suspended: hung<br />
+response: answer<br />
+familiar: well-known<br />
+attached: connected<br />
+flickered continuously: shone unsteadily all the time<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org3499ce7" class="outline-3">
+<h3 id="org3499ce7">words</h3>
+<div class="outline-text-3" id="text-org3499ce7">
+<p>
+current [ˈkʌrənt] n. 电流<br />
+sculpture [ˈskʌlptʃə] n. 雕塑<br />
+mistaken [miˈsteɪk] adj. 错误的<br />
+gallery [ˈɡæləri] n. 美术馆<br />
+exhibit [ɪɡˈzɪbɪt] n. 展品，陈列品<br />
+oddly [ˈɑdli] adv. 古怪的<br />
+attach [əˈtætʃ] v. 连，系<br />
+sphere [sfɪr] n. 球体<br />
+magnetize [ˈmæɡnəˌtaɪz] v. 使磁化<br />
+repel [rɪˈpel] v. 排斥<br />
+flicker [ˈflɪkər] v. 闪烁<br />
+emit [ɪˈmɪt] v. 放射<br />
+flash [flæʃ]/ v. 闪光<br />
+prehistoric [ˌpriˈhɪstɔrɪk] adj. 史前的，老掉牙的<br />
+electronic [ˌilekˈtrɑnɪk] adj. 电子的<br />
+peculiar [pɪˈkjuljər] adj. 奇异的<br />
+shock [ʃɑk] v. 令人震惊，刺激人<br />
+emotionally [ɪˈmoʃənlɪ] adv. 感情上<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org9a6ef4f" class="outline-3">
+<h3 id="org9a6ef4f"><span class="done DONE">DONE</span> 单词造句</h3>
+<div class="outline-text-3" id="text-org9a6ef4f">
+<p>
+current n.  electric currents<br />
+sculpture n.  make/create a sculpture<br />
+</p>
+<ul class="org-ul">
+<li>It was not long before, she took an interest in the sculpture.<br /></li>
+<li>The worker soon gets used to making a sculpture.<br /></li>
+<li>It was my job to create a sculpture.<br /></li>
+<li>She pretended that she could make a sculpture.<br /></li>
+<li>I really appreciate that you made a sculpture for me.<br /></li>
+</ul>
+<p>
+mistaken adj.  be mistaken about sth./sb.<br />
+</p>
+<ul class="org-ul">
+<li>Fearing he must be mistaken, he soon put out the fire.<br /></li>
+<li>He woke up with a start, and found that he was mistaken about his children.<br /></li>
+<li>I used to have a mistaken idea that cats have nine lives.<br /></li>
+<li>As long as I put up the tent, I realized that I was mistaken about the order.<br /></li>
+<li>He was mistaken about these cars' owners, for they still parked in front of his gate.<br /></li>
+</ul>
+<p>
+gallery n.<br />
+</p>
+<ul class="org-ul">
+<li>She always has trouble with visiting the gallery for one reason or another.<br /></li>
+<li>If you hadn't gone to the gallery, I would have kicked your ass.<br /></li>
+<li>Once upon a time, there was a gallery.<br /></li>
+<li>It is easy for you to hitchhike to the gallery.<br /></li>
+<li>The gallery was said to be named after the president.<br /></li>
+</ul>
+<p>
+exhibit n.v. exhibition n.<br />
+</p>
+<ul class="org-ul">
+<li>He couldn't resist the temptation of stealing these exhibits.<br /></li>
+<li>He denied taking all these exhibits.<br /></li>
+<li>If you token the exhibit, we would give you a electric shock.<br /></li>
+<li>The exhibit was wrapped up and handed to the detective.<br /></li>
+<li>These painting will be exhibited in the gallery.<br /></li>
+</ul>
+<p>
+oddly adv.  Oddly enough, + &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>Oddly enough, I didn't hand my key to my wife.<br /></li>
+<li>Oddly enough, it is easy for my cat to swim.<br /></li>
+<li>She explain this oddly to her husband.<br /></li>
+<li>The girl who is swimming is struggling up oddly.<br /></li>
+<li>We never except our bikes to be found oddly.<br /></li>
+</ul>
+<p>
+attach v.  be attached to sb./sth. = attach a. to b.<br />
+</p>
+<ul class="org-ul">
+<li>The ticket which police gave me was attached to my car headlight.<br /></li>
+<li>She managed to attach the lamp to the wall.<br /></li>
+<li>A short while ago, your father attached your ball to the gate.<br /></li>
+<li>Don't attach it to the door, you did get me a fright.<br /></li>
+<li>Shortly afterwards, she attached the anchor to the huge cable.<br /></li>
+</ul>
+<p>
+sphere n.<br />
+</p>
+<ul class="org-ul">
+<li>The customer has sent a request for a large number of metal spheres.<br /></li>
+<li>Up to now, we have made two special types of metal spheres.<br /></li>
+<li>In return for my sister's sphere, I sent her a postcard.<br /></li>
+<li>My child is always asking me for mental spheres.<br /></li>
+<li>She won a prize which was exchanged for a mental sphere.<br /></li>
+</ul>
+<p>
+magnetize v.<br />
+</p>
+<ul class="org-ul">
+<li>The spheres can't have been magnetized.<br /></li>
+<li>The spheres must have been magnetized.<br /></li>
+<li>The spheres may be magnetized.<br /></li>
+<li>The spheres must be magnetized.<br /></li>
+<li>The spheres needn't have been magnetized.<br /></li>
+</ul>
+<p>
+repel v.<br />
+</p>
+<ul class="org-ul">
+<li>I refused to pay the bill, for the woman really repelled me.<br /></li>
+<li>At that moment, both spheres which had been magnetized repelled each other.<br /></li>
+<li>My classmate repelled me and I was not allowed to touch him.<br /></li>
+<li>Don't make such stupid remark anymore, for you will probably repel everyone.<br /></li>
+<li>The man who laughed at me in the meeting repelled me a great deal.<br /></li>
+</ul>
+<p>
+flicker v.<br />
+</p>
+<ul class="org-ul">
+<li>These candles flicker once a minutes.<br /></li>
+<li>I realized to my horror that the light was still flickering.<br /></li>
+<li>My wife asked me to recover the light which was flickering.<br /></li>
+<li>I am likely to give her a surprise when she saw these candles flickering in the room.<br /></li>
+<li>The cigarette is flickering at the edge of forest.<br /></li>
+</ul>
+<p>
+emit v.<br />
+</p>
+<ul class="org-ul">
+<li>She was greeted by a peculiar smell which was emited from the special type of fruit.<br /></li>
+<li>After sparks were emited from these boxes, all returned to normal again.<br /></li>
+<li>She made no effort to emit a cry.<br /></li>
+<li>The factory has been emitting smelly smokes for over ten years.<br /></li>
+<li>These sphere kept on emitting sparks for a long time.<br /></li>
+</ul>
+<p>
+flash v.<br />
+</p>
+<ul class="org-ul">
+<li>I have already flashed my headlights towards you.<br /></li>
+<li>Don't flash your headlights at me anymore.<br /></li>
+<li>She made every effort to flash her headlights at the boat.<br /></li>
+<li>For your own protection, the red warning is flashing on and off.<br /></li>
+<li>It is obvious that there is a light flashing on and off.<br /></li>
+</ul>
+<p>
+prehistoric adj.<br />
+</p>
+<ul class="org-ul">
+<li>I found my dress prehistoric.<br /></li>
+<li>My wife is sure that my coloured hair is prehistoric.<br /></li>
+<li>When she was used to playing the game, it was prehistoric.<br /></li>
+<li>All these clothes on show is prehistoric.<br /></li>
+<li>It is well known that New Concept English is prehistoric.<br /></li>
+</ul>
+<p>
+electronic adj.<br />
+</p>
+<ul class="org-ul">
+<li>You got into such a mess. Your bed is covered with electronic equipments.<br /></li>
+<li>The summlgers never feel guilty even if they hide 10 electronic equipment in their suitcase.<br /></li>
+<li>The order to turn off all electronic equipments was give.<br /></li>
+<li>The alarm was given that these electronic equipments were set on fire.<br /></li>
+<li>These electronic equipments are regarded as prehistoric.<br /></li>
+</ul>
+<p>
+peculiar adj.<br />
+</p>
+<ul class="org-ul">
+<li>He was greeted by a peculiar smell from the kitchen when his wife was cooking.<br /></li>
+<li>There is no shortage of peculiar corals.<br /></li>
+<li>Everyone was astonihsed to find that there were so many peculiar sculptures on display.<br /></li>
+<li>This bag is full of peculiar diamonds.<br /></li>
+<li>Fulfilling his dream, he saw so many peculiar sculptures in the gallery.<br /></li>
+</ul>
+<p>
+shock v.n.  get/receive an electric shock  give you electric shocks<br />
+</p>
+<ul class="org-ul">
+<li>My father has received an electric shock.<br /></li>
+<li>If you made such stupid remarks any more, we would give you electric shocks.<br /></li>
+<li>My father was shocked emotionally, so we wasn't allowed to touch his toys.<br /></li>
+<li>The boy has received an electric shock and has suffered from it.<br /></li>
+<li>Many people got an electric shock in the floods.<br /></li>
+</ul>
+<p>
+emotionally adv.<br />
+</p>
+<ul class="org-ul">
+<li>How was it designed to shock people emotionally?<br /></li>
+<li>She explained her experience emotionally to us.<br /></li>
+<li>She is telling us a pirate story emotionally.<br /></li>
+<li>She emotionally advised me to give her a lift.<br /></li>
+<li>He emotionally formed an unrealistic picture of the life in US.<br /></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org9a947e5" class="outline-3">
+<h3 id="org9a947e5"><span class="done DONE">DONE</span> 反复听电影片段直到懂关键句</h3>
+<div class="outline-text-3" id="text-org9a947e5">
+</div>
+</div>
+<div id="outline-container-orga5a67a8" class="outline-3">
+<h3 id="orga5a67a8">复习二册语法(笔记或视频) &amp; 红皮书</h3>
+</div>
+<div id="outline-container-orgc8537d2" class="outline-3">
+<h3 id="orgc8537d2"><span class="done DONE">DONE</span> 习惯用法造句</h3>
+<div class="outline-text-3" id="text-orgc8537d2">
+<p>
+not any more = not any longer = no longer<br />
+</p>
+<ul class="org-ul">
+<li>You don't have an opportunity to meet the actress any more.<br /></li>
+<li>On the other hand, I won't be greeted by the peculiar smell any more.<br /></li>
+<li>Perfume is no longer exempted from import duty.<br /></li>
+<li>I don't feel guilty for that any longer.<br /></li>
+<li>I don't smoke any more.<br /></li>
+</ul>
+<p>
+The idea that + &#x2026; is mistaken<br />
+</p>
+<ul class="org-ul">
+<li>The idea that there is no shortage of foods and water is mistaken.<br /></li>
+<li>The idea that the statue is a goddess is mistaken.<br /></li>
+<li>The idea that cats have nine lives is mistaken.<br /></li>
+<li>The idea that she died from a plane crash is mistaken.<br /></li>
+<li>The idea that she has a perfert alibi is mistaken.<br /></li>
+</ul>
+<p>
+take no/ a great/an interest in<br />
+</p>
+<ul class="org-ul">
+<li>It was not long before, my cat takes a great interest in the ball.<br /></li>
+<li>My cat takes an interest in a toy which I have just bought.<br /></li>
+<li>My wife takes a great interest in taking photographs.<br /></li>
+<li>Imagine my wife's dismay when she found I take no interest in this suit.<br /></li>
+<li>I take no interest in scrambled eggs.<br /></li>
+</ul>
+<p>
+in response to<br />
+</p>
+<ul class="org-ul">
+<li>She cooked a lobster in response to my scrambled eggs.<br /></li>
+<li>The book goes to press in response to her hard work.<br /></li>
+<li>She refused to publish the article in response to our demand.<br /></li>
+<li>The website will write an article in response to our demand.<br /></li>
+<li>The leader keeps the status quo in response to other's demand.<br /></li>
+</ul>
+<p>
+be/sound/look/seem familiar to sb.<br />
+</p>
+<ul class="org-ul">
+<li>Somehow the cat seems familiar to me.<br /></li>
+<li>The woman who does manual work sounds familiar to me.<br /></li>
+<li>The rhythm of the music sounds familiar to me.<br /></li>
+<li>The ticket she gave me seems familiar to me.<br /></li>
+<li>Somehow the wallet seems familiar to me.<br /></li>
+</ul>
+<p>
+go mad<br />
+</p>
+<ul class="org-ul">
+<li>If we still keep the status quo, she will go mad.<br /></li>
+<li>Don't ask me to make a sacrifice, I will go mad.<br /></li>
+<li>Don't make such noises any more, I will go mad.<br /></li>
+<li>Don't call me Mr. Big, I will go mad.<br /></li>
+<li>You'd better return it to me or I will go mad.<br /></li>
+</ul>
+<p>
+on and off<br />
+</p>
+<ul class="org-ul">
+<li>I has made sacrifices on and off for ten years.<br /></li>
+<li>I volunteer to drive bus on and off.<br /></li>
+<li>The perfume is exempted from import duty on and off.<br /></li>
+<li>She told me about her experience on and off.<br /></li>
+<li>This company made a profit on and off.<br /></li>
+</ul>
+<p>
+It was rather like &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>It was rather like being pregant.<br /></li>
+<li>It was rather like dying from cancer.<br /></li>
+<li>It was rather like having a perfer alibi.<br /></li>
+<li>It was rather like a gentle man.<br /></li>
+<li>It was rather like a puma at large.<br /></li>
+</ul>
+<p>
+seemed adj.(designed)  &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>Our father seemed angry about our behaviours.<br /></li>
+<li>She seemed angry about the noise from outside.<br /></li>
+<li>She seemed angry about the remarks he made.<br /></li>
+<li>She seemed angry about being put out of her business.<br /></li>
+<li>She seemed angry about the boys who played truent from school.<br /></li>
+</ul>
+<p>
+be designed to do sth.<br />
+</p>
+<ul class="org-ul">
+<li>It is designed to provide protection.<br /></li>
+<li>It is designed to play background music.<br /></li>
+<li>It is designed to be loaded with diamonds.<br /></li>
+<li>It is designed to take a rest.<br /></li>
+<li>It is designed to give an alarm.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgfea8824" class="outline-3">
+<h3 id="orgfea8824">跟读 50遍</h3>
+</div>
+<div id="outline-container-org5257dcd" class="outline-3">
+<h3 id="org5257dcd">Comprehension 反复练习</h3>
+</div>
+<div id="outline-container-org7550117" class="outline-3">
+<h3 id="org7550117"><span class="done DONE">DONE</span> Ask me if 写+读</h3>
+<div class="outline-text-3" id="text-org7550117">
+<ol class="org-ol">
+<li>Modern sculpture rarely surprises us any more. Why<br />
+Why does modern sculpture rarely surprise us any more?<br /></li>
+<li>Examples of modern sculpture are on display in public places. Where<br />
+Where are examples of modern sculpture on display?<br /></li>
+<li>Some pieces have been on display for nearly eighty years. How long<br />
+How long have some pieces been on display?<br /></li>
+<li>The notice said 'Do not touch'. What<br />
+What did the notice say?<br /></li>
+<li>The objects on display were pieces of moving sculpture. What<br />
+What were the objects on display?<br /></li>
+<li>The spheres had been magnetized. How<br />
+How had the spheres been magnetized?<br /></li>
+<li>They attracted and repelled each other. Why<br />
+Why did they attract and repell each other?<br /></li>
+<li>The tall structures contained coloured lights. What<br />
+What contained coloured lights?<br />
+What did the tall structures contain?<br /></li>
+<li>They were like traffic lights which have gone mad. What&#x2026; like<br />
+What were they like?<br /></li>
+<li>Sparks were emitted from small black boxes. How<br />
+How were sparks emitted from small black boxes?<br /></li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orgfb3f28b" class="outline-3">
+<h3 id="orgfb3f28b"><span class="done DONE">DONE</span> 摘要写作 写 &amp; 对答案</h3>
+<div class="outline-text-3" id="text-orgfb3f28b">
+<p>
+On entering the art gallery, the writer saw a notice<br />
+	which forbade people to touch the exhibits because they were dangerous.<br />
+The exhibition consisted of pieces of moving scuplture.<br />
+Against a wall, the writer saw long thin wires attached to metal spheres,<br />
+	which had been magnetized and attracted or repelled each other.<br />
+In the centre of the hall tall were structures containing coloured lights<br />
+	which went on and off.<br />
+Sparks were emitted from black boxes and red lamps flashed on and off angrily.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgf7b4068" class="outline-3">
+<h3 id="orgf7b4068"><span class="done DONE">DONE</span> tell the story 口语复述</h3>
+<div class="outline-text-3" id="text-orgf7b4068">
+</div>
+</div>
+<div id="outline-container-org9c3d0e2" class="outline-3">
+<h3 id="org9c3d0e2"><span class="done DONE">DONE</span> composition 阅读 或 写作</h3>
+<div class="outline-text-3" id="text-org9c3d0e2">
+<p>
+Recently I went to the Royal Academy in London to see the summer exhibition.<br />
+The work of many artists was on display and the exhibition aroused a lot of public interest.<br />
+Crowds of people filled the galleries.<br />
+The pictures were, with a few exceptions, mainly by relatively unknown artists.<br />
+Many of them were traditional pictures of landscapes and portraits.<br />
+I particularly liked a picture of an old farm house by a stream with a few sheep in a field.<br />
+The strangest picture I saw was an untitled abstract painting by a well-known modern artist.<br />
+</p>
+
+<p>
+It consisted of swirls of different colours<br />
+	which had been rubbed into the canvas with the artist's fingers.<br />
+The picture looked a mess, but was also very effective, attracting a lot of comment.<br />
+I couldn't help overhearing what people said,<br />
+	things like 'I could paint a picture like that with my eyes shut'<br />
+		or 'Look how perfect the sunset is in that painting.<br />
+		I'd love to own a picture like that' and so on.<br />
+There is no doubt it was an excellent exhibition<br />
+	because there were so many different styles on display.<br />
+There was something to suit everyone, but only if you could afford the high prices!<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org3993f33" class="outline-3">
+<h3 id="org3993f33">Topics for discussion</h3>
+</div>
+</div>
+</div>
+</body>
+</html>

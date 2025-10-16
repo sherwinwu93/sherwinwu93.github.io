@@ -1,0 +1,738 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-03-10 Mon 17:05 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-orgb610b74" class="outline-2">
+<h2 id="orgb610b74">2-2 4 Defense mechanisms</h2>
+<div class="outline-text-2" id="text-orgb610b74">
+<p class="verse">
+So, suppose you survive these developmental stages and you're now an adult,<br />
+&#xa0;and you're not out of the woods yet,<br />
+&#xa0;there are all sorts of challenges and problems you're faced with.<br />
+One problem is that your Id is sending up all sorts of desires,<br />
+&#xa0;&#xa0;all sorts of weird sick stuff, sexual and violent,<br />
+&#xa0;and these are forbidden by the super ego.<br />
+It's not merely that you can't act upon them, so you shouldn't be thinking them,<br />
+&#xa0;and so they get pushed down or repressed.<br />
+You could even imagine a sort of a metaphor of you pushing down something,<br />
+&#xa0;&#xa0;like some water spraying out from leaks on a floor<br />
+&#xa0;and you're jamming towels over it or something like that.<br />
+Some of this repressed stuff, as in my fine metaphor, spills out, you can't contain everything.<br />
+For Freud, it spills out in jokes and slips of the tongue and in dreams.<br />
+<br />
+But also for Freud, there are other ways to cope with these desires.<br />
+There's other ways to repress them and these are what Freud described as defense mechanisms.<br />
+They defend the ego from this terrible stuff that's coming out from the Id,<br />
+&#xa0;and some of these you may be familiar with.<br />
+We tend to use them in everyday language, another example of Freud's influence.<br />
+There's displacement, where you redirect shameful thoughts to more appropriate targets.<br />
+You can imagine a boy who hates his father,<br />
+&#xa0;and that's really unacceptable, you shouldn't hate your father.<br />
+So instead, he bullies another kid or kicks the dog.<br />
+He turns his anger and his hatred towards his father<br />
+&#xa0;to a more appropriate and more acceptable target.<br />
+So, there's sublimation.<br />
+Sublimation you take desires that are unacceptable<br />
+&#xa0;and you displace them to more valuable activities.<br />
+So for instance, somebody who has a strong sexual desires of forbiddens<br />
+&#xa0;might devote a lot of energy to his or her work or studies.<br />
+<br />
+There's projection.<br />
+Projection is reducing anxiety<br />
+&#xa0;by taking these impulses you have that you're ashamed of and attributing them to somebody else.<br />
+So, imagine a woman with strong homosexual desires, and because of how she was raised,<br />
+&#xa0;her super ego tells her these are unacceptable, they're inappropriate.<br />
+So she becomes unconscious of them.<br />
+But she comes to believe that there are other women are sexually drawn to her.<br />
+Or you may really dislike somebody you shouldn't dislike,<br />
+&#xa0;and then come to a conclusion, "Oh my gosh, this person must hate me."<br />
+Because your own shameful feelings are unacceptable, you will project them onto somebody else.<br />
+<br />
+There's rationalization, where you have certain anxiety-producing thoughts<br />
+&#xa0;and you reason them away into more acceptable ways.<br />
+So for instance, somebody might get pleasure,<br />
+&#xa0;a father may get pleasure physically punishing his children.<br />
+But nobody wants to think that of themselves.<br />
+So the way he describes it to himself, the way he really believes it at the level of the self,<br />
+&#xa0;the ego is that he's doing it for their own good.<br />
+You know in general, a lot of the bad things we do, we rationalize.<br />
+<br />
+There's regression, and you see this in children<br />
+&#xa0;where the idea is under certain forms of stress<br />
+&#xa0;&#xa0;or stressful desires and stressful impulses from the id,<br />
+&#xa0;you might retreat to a mode of behavior that's characteristic of an earlier stage.<br />
+So you see this in some sense a child might suddenly act like a much younger child.<br />
+<br />
+Finally, there's reaction formation which is cool and of unintuitive,<br />
+&#xa0;where you replace threatening wishes and fantasies with their opposites.<br />
+So you might express and finally say, "Oh, I love this person. This person is my favorite person."<br />
+As a way to mask the fact that you really don't love them at all, in fact, you hate them.<br />
+<br />
+Now, these defense mechanisms proposed by Freud are just everyday life, we have them all the time.<br />
+But sometimes, we fail to properly repress the impulses from the id,<br />
+&#xa0;and then you get into some real problems.<br />
+You get what Freud called hysteria.<br />
+Hysteria according to Freud are these symptoms which showed up quite often in Freud's time<br />
+&#xa0;and maybe show up now only they're manifested in different ways,<br />
+&#xa0;&#xa0;such as blindness and deafness without any physical cause, paralysis, tremblings,<br />
+&#xa0;&#xa0;&#xa0;panic attacks, gaps of memory including amnesia and so on.<br />
+For Freud, these are nothing more than symptoms.<br />
+They're ways in which we keep our impulses, our memories, our desires under lock and key.<br />
+We keep forbidden stuff under lock and key.<br />
+The simplest example, for instance, is you had this horrible event, something you did,<br />
+&#xa0;something you saw and you just can't cope with it, so you forget it.<br />
+You have a form of amnesia, where you black it out.<br />
+Freud believed that when these memories are recovered or when the impulses come to light,<br />
+&#xa0;there's what he called catharsis, an explosive release, an emotional release of insight.<br />
+So, then when you're treating these hysterical symptoms,<br />
+&#xa0;you'd want to get to them through ways that could facilitate this catharsis,<br />
+&#xa0;&#xa0;facilitate this understanding.<br />
+<br />
+Freud originally tried to get at this through hypnosis, but later on moved to free association,<br />
+&#xa0;which is a tool that sometimes used.<br />
+The idea of free association is you give somebody a word and he says something back,<br />
+&#xa0;but because it's so speeded, they don't have time to censor it.<br />
+Ideally, you get the true insight into what's working in their mind<br />
+&#xa0;without the filtering powers that the ego and the super ego have.<br />
+So, for instance, a fanciful example is, we're in a session and I say, "Dog," and you say, "Cat,"<br />
+&#xa0;and I say, "Lunch," and you say, "Sandwich," and I say, "Mother," and you say, "Sex."<br />
+Well, and then you're embarrassed.<br />
+You offer resistance.<br />
+You say, "Oh, I didn't mean to say that."<br />
+You don't go to your next appointment.<br />
+You get angry at the therapist.<br />
+This is part of the dance of psychoanalysis.<br />
+Freud used these methods and many others to explore inner conflicts,<br />
+&#xa0;and what goes on in psychoanalysis and its success at reading people is a topic<br />
+&#xa0;&#xa0;that we're going to get to at the very end of this course.<br />
+</p>
+</div>
+<div id="outline-container-org0c487f6" class="outline-3">
+<h3 id="org0c487f6">expression</h3>
+<div class="outline-text-3" id="text-org0c487f6">
+<p>
+leak [lik]: n. a small hole that lets liquid or gas flow into or out of something漏洞<br />
+jam [dʒæm]: v. BLOCK [intransitive and transitive] (also jam up) if a lot of people or vehicles jam a place, they fill it so that it is difficult to move SYN cram堵塞<br />
+target [ˈtɑrɡət]: n. AIM something that you are trying to achieve, such as a total, an amount, or a time SYN goal目标<br />
+hatred [ˈheɪtrəd]: n. an angry feeling of extreme dislike for someone or something OPP love憎恨<br />
+sublimate [ˈsʌblɪˌmeɪt] sublimation: v.n. technical to use the energy that comes from sexual feelings to do something, such as work or art, that is more acceptable to your society升华<br />
+regression [rɪˈɡreʃ(ə)n]: n. technical the act of thinking or behaving as you did at an earlier time of your life, such as when you were a child退化<br />
+retreat [rɪˈtrit]: v. ARMY to move away from the enemy after being defeated in battle OPP advance撤退<br />
+deaf [def] deafness: adj.n. physically unable to hear anything or unable to hear well ⇨ hearing impaired聋的<br />
+amnesia [æmˈniʒə]: n. the medical condition of not being able to remember anything失忆症<br />
+catharsis [kəˈθɑrsɪs]: n. formal the act or process of removing strong or violent emotions by expressing them through writing, talking, acting etc(精神或心理)疏泄, 宣泄<br />
+facilitate [fəˈsɪləˌteɪt]: v. to make it easier for a process or activity to happen促进<br />
+censor [ˈsensər]: v. to examine books, films, letters etc to remove anything that is considered offensive, morally harmful, or politically dangerous审查<br />
+filter [ˈfɪltər]: v. to remove unwanted substances from water, air etc by passing it through a special substance or piece of equipment过滤<br />
+</p>
+<hr />
+<p>
+be faced with sb./sth.: 面对某人/某事<br />
+send up: 发射<br />
+act upon sth./sb.: 根据某人/某事行动<br />
+spill out: 溢出<br />
+be drawn to sb.: 被某人吸引<br />
+project A onto B: 讲A投影到B上<br />
+for sb's own good: 为某人好<br />
+sb. masks the fact that + &#x2026;: 某人掩盖事实+&#x2026;<br />
+panic attacks: 恐慌症<br />
+(keep sth.) under lock and key: 把某物锁起来<br />
+black sth. out: 忘记某事<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org798dbc9" class="outline-3">
+<h3 id="org798dbc9">sentence</h3>
+<div class="outline-text-3" id="text-org798dbc9">
+<p>
+leak [lik]: n. a small hole that lets liquid or gas flow into or out of something漏洞<br />
+</p>
+<ul class="org-ul">
+<li>I am trying to break down the means of fixing the leak into a few steps.<br /></li>
+<li>The news waft its way towards people in the town that the project has some serious leaks and vulnerable to break into.<br /></li>
+<li>Interpretation of a leak as a feature is a tradition of this software company.<br /></li>
+</ul>
+<p>
+jam [dʒæm]: v. BLOCK [intransitive and transitive] (also jam up) if a lot of people or vehicles jam a place, they fill it so that it is difficult to move SYN cram堵塞<br />
+</p>
+<ul class="org-ul">
+<li>I did warm you of the traffic jam in rush hours.<br /></li>
+<li>Because of traffic jam, I failed to go on a date with Susan.<br /></li>
+<li>It seems that some meat has jammed between my teeth and I need to floss my teeth right now.<br /></li>
+</ul>
+<p>
+target [ˈtɑrɡət]: n. AIM something that you are trying to achieve, such as a total, an amount, or a time SYN goal目标<br />
+</p>
+<ul class="org-ul">
+<li>He tried to figure out his wife's target at bedtime.<br /></li>
+<li>In the first place, the abbot's target wasn't in secular terms.<br /></li>
+<li>If you cupped your hands over your mouth, you'd have realized the target of the operation.<br /></li>
+</ul>
+<p>
+hatred [ˈheɪtrəd]: n. an angry feeling of extreme dislike for someone or something OPP love憎恨<br />
+</p>
+<ul class="org-ul">
+<li>I am too acclimatized to hatred to hit an innocent boy.<br /></li>
+<li>Due to his hatred towards the pope, he will plan out the explosion to the last detail.<br /></li>
+<li>His hatred towards those so-called experts led to him debunking some myths about the epidemic on the Internet.<br /></li>
+</ul>
+<p>
+sublimate [ˈsʌblɪˌmeɪt] sublimation: v.n. technical to use the energy that comes from sexual feelings to do something, such as work or art, that is more acceptable to your society升华<br />
+</p>
+<ul class="org-ul">
+<li>In his eyes, the painting in the ceiling is synonymous with his lover and in one sense it's a sublimation.<br /></li>
+<li>Beyond doubt, what his parents taught him sublimated him from time to time.<br /></li>
+<li>It's not only a painting, but rather a sublimation of the artist's soul.<br /></li>
+</ul>
+<p>
+regression [rɪˈɡreʃ(ə)n]: n. technical the act of thinking or behaving as you did at an earlier time of your life, such as when you were a child退化<br />
+</p>
+<ul class="org-ul">
+<li>While you regard her behaviors as a weakness, I defined it as a regression.<br /></li>
+<li>When you run into regression, it seems that your brain and your mind is empty.<br /></li>
+<li>As long as you become emotional, you have little or no control over your regression when something bad happens.<br /></li>
+</ul>
+<p>
+retreat [rɪˈtrit]: v. ARMY to move away from the enemy after being defeated in battle OPP advance撤退<br />
+</p>
+<ul class="org-ul">
+<li>It was in a moring in the elementary school that I was so shy to meet my dream girl that I retreated in the crowd.<br /></li>
+<li>His mother interfered with his life to the point of his retreating from his partners.<br /></li>
+<li>If the chess player was separated from the group, I would retreat from it too.<br /></li>
+</ul>
+<p>
+deaf [def] deafness: adj.n. physically unable to hear anything or unable to hear well ⇨ hearing impaired聋的<br />
+</p>
+<ul class="org-ul">
+<li>The symptom of the disorder sometimes manifested as short-time deafness.<br /></li>
+<li>I admire the doctor for his preoccupations with a deaf old lady who is broke.<br /></li>
+<li>The deaf old lady is quite well friendly and lovely.<br /></li>
+</ul>
+<p>
+amnesia [æmˈniʒə]: n. the medical condition of not being able to remember anything失忆症<br />
+</p>
+<ul class="org-ul">
+<li>He has been told that his child had been diagnosed with amnesia.<br /></li>
+<li>With amnesia he is hardwired to lead an unusual life.<br /></li>
+<li>The underlying cause of his playing truant from school is his amnesia, so he should be forgiven.<br /></li>
+</ul>
+<p>
+catharsis [kəˈθɑrsɪs]: n. formal the act or process of removing strong or violent emotions by expressing them through writing, talking, acting etc(精神或心理)疏泄, 宣泄<br />
+</p>
+<ul class="org-ul">
+<li>Everything may return to normal after his catharsis in the hospital.<br /></li>
+<li>She has a habbit of lying to her parents, which is a catharsis for her.<br /></li>
+<li>At last, he decided to turn in his brother who worked for pyramid schemes, which is really a catharsis for him.<br /></li>
+</ul>
+<p>
+facilitate [fəˈsɪləˌteɪt]: v. to make it easier for a process or activity to happen促进<br />
+</p>
+<ul class="org-ul">
+<li>The computer which I asked my father to present is used to facilitate my English learning.<br /></li>
+<li>The dramatic demographic changes must have facilitated the reordering of the society.<br /></li>
+<li>The pope's temper and the artist's temperament facilitated the creation of the painting, one of the greatest Western art.<br /></li>
+</ul>
+<p>
+censor [ˈsensər]: v. to examine books, films, letters etc to remove anything that is considered offensive, morally harmful, or politically dangerous审查<br />
+</p>
+<ul class="org-ul">
+<li>The entrepreneur complained that his company had lost a great deal of money to censorship.<br /></li>
+<li>The publish of the book is susceptible to censorship.<br /></li>
+<li>The writer is closely related with the fraud, whose writing must be censored.<br /></li>
+</ul>
+<p>
+filter [ˈfɪltər]: v. to remove unwanted substances from water, air etc by passing it through a special substance or piece of equipment过滤<br />
+</p>
+<ul class="org-ul">
+<li>Filtered information made the fraud likely.<br /></li>
+<li>The presence of the new fraud motivated people to filter information.<br /></li>
+<li>A sudden job loss stopped him from filtering the oil.<br /></li>
+</ul>
+<hr />
+<p>
+be faced with sb./sth.: 面对某人/某事<br />
+</p>
+<ul class="org-ul">
+<li>I am always faced with the economic crises you make.<br /></li>
+<li>I don't dare to be faced with my parents who devote themselves to him after the failure of the examination.<br /></li>
+<li>Obviously, you will be faced with an aging life partner.<br /></li>
+</ul>
+<p>
+send up: 发射<br />
+</p>
+<ul class="org-ul">
+<li>It doesn't make sense that you are so happy and proud because the shuttle was sent up.<br /></li>
+<li>There was a lot of excitement in the station when the rocket was being sent up.<br /></li>
+<li>When news come to London, everyone was proud that their country is the first to send up a rocket in the world.<br /></li>
+</ul>
+<p>
+act upon sth./sb.: 根据某人/某事行动<br />
+</p>
+<ul class="org-ul">
+<li>We must act upon our saving, otherwise we couldn't afford the apartment.<br /></li>
+<li>We acted upon the instructions from our leader, thus it's none of our business.<br /></li>
+<li>You can't completely act upon the instructions from your manage, which led to your colleagues' hatred towards you<br /></li>
+</ul>
+<p>
+spill out: 溢出<br />
+</p>
+<ul class="org-ul">
+<li>You couldn't deny the fact that the oil spilt out last night.<br /></li>
+<li>Because the oil is spilling out, we must ask our superior to send up instructions.<br /></li>
+<li>The memory is spilling out, you must double check the code closely.<br /></li>
+</ul>
+<p>
+be drawn to sb.: 被某人吸引<br />
+</p>
+<ul class="org-ul">
+<li>I have little or no control over the pretty lady who is drawn to me.<br /></li>
+<li>She claimed to have been drawn to me at the first sight of me.<br /></li>
+<li>No one could account for the fact that the pretty is drawn to a worker.<br /></li>
+</ul>
+<p>
+project A onto B: 讲A投影到B上<br />
+</p>
+<ul class="org-ul">
+<li>As long as I project the computer onto the TV, you will enjoy the movie.<br /></li>
+<li>I like to project the website onto the TV whose screen is larger than my computer's.<br /></li>
+<li>Projecting the document onto TV exhausted the boss.<br /></li>
+</ul>
+<p>
+for sb's own good: 为某人好<br />
+</p>
+<ul class="org-ul">
+<li>My parents are always doing something disgusting for my own good.<br /></li>
+<li>Stop doing such stupid thing for my own good.<br /></li>
+<li>What motivated me to stop you from smoking is for your own good.<br /></li>
+</ul>
+<p>
+sb. masks the fact that + &#x2026;: 某人掩盖事实+&#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>I masked the fact that I lost two hundreds dollars in the gamble.<br /></li>
+<li>She tried to mask the fact that her husband is mutilated.<br /></li>
+<li>She failed to mask the fact that she had played truant from school.<br /></li>
+</ul>
+<p>
+panic attacks: 恐慌症<br />
+</p>
+<ul class="org-ul">
+<li>Because of my father's panic attacks, our family used to have a difficult time.<br /></li>
+<li>Sold into the slavery by his friends, he developed panic attacks within the process.<br /></li>
+<li>That's why your child developed panic attacks.<br /></li>
+</ul>
+<p>
+(keep sth.) under lock and key: 把某物锁起来<br />
+</p>
+<ul class="org-ul">
+<li>It is no use keeping the control under lock and key.<br /></li>
+<li>Shocked by his playing, our father kept the piano under lock and key.<br /></li>
+<li>My father has kept the control under lock and key to stop me from playing video games.<br /></li>
+</ul>
+<p>
+black sth. out: 忘记某事<br />
+</p>
+<ul class="org-ul">
+<li>I tried to black out the things I experienced in my childhood.<br /></li>
+<li>You can't black out the tune which is in memory of our headmaster.<br /></li>
+<li>He succeeded in blacking out his trauma which had haunted him for a long time.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org9d0fd14" class="outline-3">
+<h3 id="org9d0fd14">sentence2</h3>
+<div class="outline-text-3" id="text-org9d0fd14">
+<p>
+leak [lik]: n. a small hole that lets liquid or gas flow into or out of something漏洞<br />
+</p>
+<ul class="org-ul">
+<li>I am trying to break down the means of fixing the leak into a few steps.<br /></li>
+<li>The news waft its way towards people in the town that the project has some serious leaks and vulnerable to break into.<br /></li>
+<li>Interpretation of a leak as a feature is a tradition of this software company.<br /></li>
+</ul>
+<p>
+jam [dʒæm]: v. BLOCK [intransitive and transitive] (also jam up) if a lot of people or vehicles jam a place, they fill it so that it is difficult to move SYN cram堵塞<br />
+</p>
+<ul class="org-ul">
+<li>I warned you of the traffic jams in rush hours.<br /></li>
+<li>Because of a traffic jam, I failed to go on a date with Susan.<br /></li>
+<li>It seems that some meat has jammed between my teeth and I need to floss my teeth right now.<br /></li>
+</ul>
+<p>
+target [ˈtɑrɡət]: n. AIM something that you are trying to achieve, such as a total, an amount, or a time SYN goal目标<br />
+</p>
+<ul class="org-ul">
+<li>He tried to figure out his wife's target at bedtime.<br /></li>
+<li>In the first place, the abbot's target wasn't in secular terms.<br /></li>
+<li>If you cupped your hands over your mouth, you'd have realized the target of the operation.<br /></li>
+</ul>
+<p>
+hatred [ˈheɪtrəd]: n. an angry feeling of extreme dislike for someone or something OPP love憎恨<br />
+</p>
+<ul class="org-ul">
+<li>I am too acclimatized to hatred to hit an innocent boy.<br /></li>
+<li>Due to his hatred towards the pope, he will plan out the explosion to the last detail.<br /></li>
+<li>His hatred towards those so-called experts led to him debunking some myths about the epidemic on the Internet.<br /></li>
+</ul>
+<p>
+sublimate [ˈsʌblɪˌmeɪt] sublimation: v.n. technical to use the energy that comes from sexual feelings to do something, such as work or art, that is more acceptable to your society升华<br />
+</p>
+<ul class="org-ul">
+<li>In his eyes, the painting on the ceiling is synonymous with his lover and in one sense it's a sublimation.<br /></li>
+<li>Beyond doubt, what his parents taught him sublimated him from time to time.<br /></li>
+<li>It's not only a painting but rather a sublimation of the artist's soul.<br /></li>
+</ul>
+<p>
+regression [rɪˈɡreʃ(ə)n]: n. technical the act of thinking or behaving as you did at an earlier time of your life, such as when you were a child退化<br />
+</p>
+<ul class="org-ul">
+<li>While you regard her behaviors as a weakness, I defined it as a regression.<br /></li>
+<li>When you run into regression, it seems that your brain and your minds are empty.<br /></li>
+<li>As long as you become emotional, you have little or no control over your regression when something bad happens.<br /></li>
+</ul>
+<p>
+retreat [rɪˈtrit]: v. ARMY to move away from the enemy after being defeated in battle OPP advance撤退<br />
+</p>
+<ul class="org-ul">
+<li>It was in the morning at the elementary school that I was so shy to meet my dream girl that I retreated into the crowd.<br /></li>
+<li>His mother interfered with his life to the point of his retreating from his partners.<br /></li>
+<li>If the chess player was separated from the group, I would retreat from it too.<br /></li>
+</ul>
+<p>
+deaf [def] deafness: adj.n. physically unable to hear anything or unable to hear well ⇨ hearing impaired聋的<br />
+</p>
+<ul class="org-ul">
+<li>The symptom of the disorder sometimes manifested as short-time deafness.<br /></li>
+<li>I admire the doctor for his preoccupations with a deaf old lady who is broke.<br /></li>
+<li>The deaf old lady is quite well friendly and lovely.<br /></li>
+</ul>
+<p>
+amnesia [æmˈniʒə]: n. the medical condition of not being able to remember anything失忆症<br />
+</p>
+<ul class="org-ul">
+<li>He has been told that his child had been diagnosed with amnesia.<br /></li>
+<li>With amnesia, he is hardwired to lead an unusual life.<br /></li>
+<li>The underlying cause of his playing truant from school is his amnesia, so he should be forgiven.<br /></li>
+</ul>
+<p>
+catharsis [kəˈθɑrsɪs]: n. formal the act or process of removing strong or violent emotions by expressing them through writing, talking, acting etc(精神或心理)疏泄, 宣泄<br />
+</p>
+<ul class="org-ul">
+<li>Everything may return to normal after his catharsis in the hospital.<br /></li>
+<li>She has a habit of lying to her parents, which is a catharsis for her.<br /></li>
+<li>At last, he decided to turn in his brother who worked in pyramid schemes, which is really a catharsis for him.<br /></li>
+</ul>
+<p>
+facilitate [fəˈsɪləˌteɪt]: v. to make it easier for a process or activity to happen促进<br />
+</p>
+<ul class="org-ul">
+<li>The computer which I asked my father to present is used to facilitate my English learning.<br /></li>
+<li>The dramatic demographic changes must have facilitated the reordering of the society.<br /></li>
+<li>The pope's temper and the artist's temperament facilitated the creation of the painting, one of the greatest Western art.<br /></li>
+</ul>
+<p>
+censor [ˈsensər]: v. to examine books, films, letters etc to remove anything that is considered offensive, morally harmful, or politically dangerous审查<br />
+</p>
+<ul class="org-ul">
+<li>The entrepreneur complained that his company had lost a great deal of money to censorship.<br /></li>
+<li>The publishing of the book is susceptible to censorship.<br /></li>
+<li>The writer is closely related to the fraud, whose writing must be censored.<br /></li>
+</ul>
+<p>
+filter [ˈfɪltər]: v. to remove unwanted substances from water, air etc by passing it through a special substance or piece of equipment过滤<br />
+</p>
+<ul class="org-ul">
+<li>Filtered information made the fraud likely.<br /></li>
+<li>The presence of the new fraud motivated people to filter information.<br /></li>
+<li>A sudden job loss stopped him from filtering the oil.<br /></li>
+</ul>
+<hr />
+<p>
+be faced with sb./sth.: 面对某人/某事<br />
+</p>
+<ul class="org-ul">
+<li>I am always faced with the economic crises you make.<br /></li>
+<li>I don't dare to be faced with my parents who devote themselves to him after the failure of the examination.<br /></li>
+<li>Obviously, you will be faced with an aging life partner.<br /></li>
+</ul>
+<p>
+send up: 发射<br />
+</p>
+<ul class="org-ul">
+<li>It doesn't make sense that you are so happy and proud because the shuttle was sent up.<br /></li>
+<li>There was a lot of excitement in the station when the rocket was being sent up.<br /></li>
+<li>When news came to London, everyone was proud that their country was the first to send up a rocket in the world.<br /></li>
+</ul>
+<p>
+act upon sth./sb.: 根据某人/某事行动<br />
+</p>
+<ul class="org-ul">
+<li>We must act upon our savings, otherwise, we couldn't afford the apartment.<br /></li>
+<li>We acted upon the instructions from our leader, thus it's none of our business.<br /></li>
+<li>You can't completely act upon the instructions from your manager, which led to your colleagues' hatred towards you<br /></li>
+</ul>
+<p>
+spill out: 溢出<br />
+</p>
+<ul class="org-ul">
+<li>You couldn't deny the fact that the oil spilled out last night.<br /></li>
+<li>Because the oil is spilling out, we must ask our superior to send up instructions.<br /></li>
+<li>The memory is spilling out, you must double-check the code closely.<br /></li>
+</ul>
+<p>
+be drawn to sb.: 被某人吸引<br />
+</p>
+<ul class="org-ul">
+<li>I have little or no control over the pretty lady who is drawn to me.<br /></li>
+<li>She claimed to have been drawn to me at the first sight of me.<br /></li>
+<li>No one could account for the fact that the pretty is drawn to a worker.<br /></li>
+</ul>
+<p>
+project A onto B: 讲A投影到B上<br />
+</p>
+<ul class="org-ul">
+<li>As long as I project the computer onto the TV, you will enjoy the movie.<br /></li>
+<li>I like to project the website onto the TV whose screen is larger than my computer's.<br /></li>
+<li>Projecting the document onto TV exhausted the boss.<br /></li>
+</ul>
+<p>
+for sb's own good: 为某人好<br />
+</p>
+<ul class="org-ul">
+<li>My parents are always doing something disgusting for my own good.<br /></li>
+<li>Stop doing such stupid things for your own good.<br /></li>
+<li>What motivated me to stop you from smoking is for your own good.<br /></li>
+</ul>
+<p>
+sb. masks the fact that + &#x2026;: 某人掩盖事实+&#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>I masked the fact that I lost two hundred dollars in the gamble.<br /></li>
+<li>She tried to mask the fact that her husband is mutilated.<br /></li>
+<li>She failed to mask the fact that she had played truant from school.<br /></li>
+</ul>
+<p>
+panic attacks: 恐慌症<br />
+</p>
+<ul class="org-ul">
+<li>Because of my father's panic attacks, our family used to have a difficult time.<br /></li>
+<li>Sold into slavery by his friends, he developed panic attacks during the process.<br /></li>
+<li>That's why your child developed panic attacks.<br /></li>
+</ul>
+<p>
+(keep sth.) under lock and key: 把某物锁起来<br />
+</p>
+<ul class="org-ul">
+<li>It is no use keeping the control under lock and key.<br /></li>
+<li>Shocked by his playing, our father kept the piano under lock and key.<br /></li>
+<li>My father has kept the control under lock and key to stop me from playing video games.<br /></li>
+</ul>
+<p>
+black sth. out: 忘记某事<br />
+</p>
+<ul class="org-ul">
+<li>I tried to black out the things I experienced in my childhood.<br /></li>
+<li>You can't black out the tune which is in memory of our headmaster.<br /></li>
+<li>He succeeded in blacking out his trauma which had haunted him for a long time.<br /></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

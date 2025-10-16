@@ -1,0 +1,840 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-01-09 Thu 23:35 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-orgdd29bbf" class="outline-2">
+<h2 id="orgdd29bbf">26 Men are served in a soup line in Berlin in 1930</h2>
+<div class="outline-text-2" id="text-orgdd29bbf">
+<p class="verse">
+In the 1920s,<br />
+&#xa0;many people in the West assumed that they were about to enter a new era of world peace,<br />
+&#xa0;&#xa0;economic growth, and political democracy.<br />
+In all of these areas, the optimistic hopes of the 1920s failed to be realized.<br />
+After 1919, most people wanted peace but were unsure about how to maintain it.<br />
+The League of Nations, conceived as a new instrument to provide for collective security,<br />
+&#xa0;failed to work well.<br />
+New treaties that renounced the use of war looked good on paper but had no means of enforcement.<br />
+Virtually everyone favored disarmament, but few could agree on how to achieve it.<br />
+<br />
+Europe faced severe economic and social challenges after World War I.<br />
+The European economy did not begin to recover from the war until 1922,<br />
+&#xa0;and even then it was beset by financial problems left over from the war and,<br />
+&#xa0;&#xa0;most devastating of all, the severe economic crisis that began at the end of 1929.<br />
+The Great Depression brought untold misery to millions of people.<br />
+Begging for food on the streets became widespread,<br />
+&#xa0;especially when soup kitchens were unable to keep up with the demand.<br />
+Larger and larger numbers of people were homeless<br />
+&#xa0;and moved from place to place looking for work and shelter.<br />
+In the United States,<br />
+&#xa0;the homeless set up shantytowns<br />
+&#xa0;&#xa0;they named 'Hoovervilles' after the American president, Herbert Hoover.<br />
+In their misery, some people saw but one solution, as one unemployed person expressed it:<br />
+&#xa0;Today, when I am experiencing this for the first time,<br />
+&#xa0;&#xa0;I think that I should prefer to do away with myself,<br />
+&#xa0;&#xa0;&#xa0;to take gas, to jump into the river, or leap from some high place.<br />
+&#xa0;Would I really come to such a decision? I do not know.<br />
+&#xa0;Animals die, plants wither, but men always go on living.<br />
+Social unrest spread rapidly,<br />
+&#xa0;and some of the vast numbers of unemployed staged hunger marches to get attention.<br />
+In democratic countries,<br />
+&#xa0;more and more people began to listen to and vote for radical voices calling for extreme measures.<br />
+<br />
+According to U.S. President Woodrow Wilson,<br />
+&#xa0;World War I had been fought to make the world safe for democracy,<br />
+&#xa0;&#xa0;and for a while after 1919, political democracy seemed well established.<br />
+But hope soon faded<br />
+&#xa0;as authoritarian regimes spread into Italy and Germany and across eastern Europe.<br />
+</p>
+</div>
+<div id="outline-container-org7f08067" class="outline-3">
+<h3 id="org7f08067">expression</h3>
+<div class="outline-text-3" id="text-org7f08067">
+<p>
+soup [sup]: n. cooked liquid food, often containing small pieces of meat, fish, or vegetables汤<br />
+optimistic [ˌɑptɪˈmɪstɪk]: adj. believing that good things will happen in the future OPP pessimistic乐观的<br />
+collective [kəˈlektɪv]: adj. shared or made by every member of a group or society集体的<br />
+treaty [ˈtriti]: n. a formal written agreement between two or more countries or governments条约, 谈判<br />
+renounce [rɪˈnaʊns]: v. if you renounce an official position, title, right etc, you publicly say that you will not keep it any more SYN give up摒弃,放弃<br />
+enforce [ɪnˈfɔrs] enforcement: v.n. when people are made to obey a rule, law etc执行, 强制<br />
+favor [ˈfeɪvər]: v. PREFER to prefer someone or something to other things or people, especially when there are several to choose from支持, 赞成<br />
+disarm [dɪsˈɑrm] disarmament: v.n. when a country reduces the number of weapons it has, or the size of its army, navy etc裁军<br />
+severe [sɪˈvɪr] severity: adj.v. severe problems, injuries, illnesses etc are very bad or very serious严峻的<br />
+devastate [ˈdevəˌsteɪt]: v. to damage something very badly or completely毁坏<br />
+untold [ˌʌnˈtoʊld]: adj. used to emphasize that an amount or quantity is very large数不清的<br />
+misery [ˈmɪzəri]: n. great suffering that is caused for example by being very poor or very sick痛苦, 苦恼, 悲惨, 穷困<br />
+shelter [ˈʃeltər]: n. a place to live, considered as one of the basic needs of life庇护所<br />
+shantytown [ˈʃæntiˌtaʊn]: n. a very poor area in or near a town where people live in small houses made from thin sheets of wood, ↑tin etc棚户<br />
+wither [ˈwɪðər]: v. if plants wither, they become drier and smaller and start to die枯萎<br />
+unrest [ʌnˈrest]: n. a political situation in which people protest or behave violently不安的状态, 动荡的局面<br />
+march [mɑrtʃ]: n. an organized event in which many people walk together to express their ideas or protest about something游行<br />
+fade [feɪd]: v. (also fade away) to gradually disappear减弱下去<br />
+</p>
+<hr />
+<p>
+be served in sp.: 在&#x2026;提供食物<br />
+be unsure about sth./how to do sth.: 对某事不确认<br />
+be conceived as sth.: 被认为是某物<br />
+on paper: 理论上<br />
+agree on sth.: 在某事上达成一致<br />
+recover from sth.: 从&#x2026;中恢复<br />
+be beset by sth.: be afflicted with/by sth. 被某事困扰<br />
+beg for sth.: 乞讨某物<br />
+keep up with the command/request: 跟上要求<br />
+from place to place: 从一个地方到另一个地方<br />
+but one + n.: 只有&#x2026;<br />
+do away with sth.: 废除,破除某事(oneself自杀)<br />
+come to a decision: 做出决定<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org9a92ba0" class="outline-3">
+<h3 id="org9a92ba0">sentence</h3>
+<div class="outline-text-3" id="text-org9a92ba0">
+<p>
+soup [sup]: n. cooked liquid food, often containing small pieces of meat, fish, or vegetables汤<br />
+</p>
+<ul class="org-ul">
+<li>Why don't you prepare soup for dinner?<br /></li>
+<li>Would you like some soup?<br /></li>
+<li>My wife is fanatical about drinking soup before meal.<br /></li>
+</ul>
+<p>
+optimistic [ˌɑptɪˈmɪstɪk]: adj. believing that good things will happen in the future OPP pessimistic乐观的<br />
+</p>
+<ul class="org-ul">
+<li>The prizefight who lives in poverty is optimistic about life.<br /></li>
+<li>People tend to form an optimistic view of life on a desert island.<br /></li>
+<li>At the that time, I was optimistic about life and though the town is the paradise which provided me with new forms of entertainment.<br /></li>
+</ul>
+<p>
+collective [kəˈlektɪv]: adj. shared or made by every member of a group or society集体的<br />
+</p>
+<ul class="org-ul">
+<li>For collective health, smoking in public places must be forbidden as soon as possible.<br /></li>
+<li>The abbot is such a devout man that what he cares about is collective interest.<br /></li>
+<li>Everyone in our community felt obliged to maintain collective environment.<br /></li>
+</ul>
+<p>
+treaty [ˈtriti]: n. a formal written agreement between two or more countries or governments条约, 谈判<br />
+</p>
+<ul class="org-ul">
+<li>All the presentatives of the nations that had fought France was due to sign a treaty in Paris.<br /></li>
+<li>As long as the treaty was signed, all clauses would be enforced on time.<br /></li>
+<li>As the treaty was signed, Germans had to pay for starting the war and the losses of the Allied nations.<br /></li>
+</ul>
+<p>
+renounce [rɪˈnaʊns]: v. if you renounce an official position, title, right etc, you publicly say that you will not keep it any more SYN give up摒弃,放弃<br />
+</p>
+<ul class="org-ul">
+<li>If you renounced your master degree, you would have a difficult time in finding work.<br /></li>
+<li>It occurs to him to renounce the party because of the emergence of a new ideology.<br /></li>
+<li>He was determined to renounce the school where students were given electrical shocks.<br /></li>
+</ul>
+<p>
+enforce [ɪnˈfɔrs] enforcement: v.n. when people are made to obey a rule, law etc执行, 强制<br />
+</p>
+<ul class="org-ul">
+<li>Our leader will not have the opportunity to enforce his rule.<br /></li>
+<li>The police have the privilege of enforcing a law in the country these days.<br /></li>
+<li>The enforcement of the law proved difficult, for the parliament hasn't supported it.<br /></li>
+</ul>
+<p>
+favor [ˈfeɪvər]: v. PREFER to prefer someone or something to other things or people, especially when there are several to choose from支持, 赞成<br />
+</p>
+<ul class="org-ul">
+<li>Obviously, he will favor your opinion, for he is very proud of you.<br /></li>
+<li>My wife favors a special kind of hair gel which she made herself.<br /></li>
+<li>The clause you favor is benefit for the United States.<br /></li>
+</ul>
+<p>
+disarm [dɪsˈɑrm] disarmament: v.n. when a country reduces the number of weapons it has, or the size of its army, navy etc裁军<br />
+</p>
+<ul class="org-ul">
+<li>The country appeared to have disarmed.<br /></li>
+<li>The chairman claimed that the disarmament would be finished in three years.<br /></li>
+<li>The disarmament in China led to a series of complaints from soliers who used to fight for people.<br /></li>
+</ul>
+<p>
+severe [sɪˈvɪr] severity: adj.v. severe problems, injuries, illnesses etc are very bad or very serious严峻的<br />
+</p>
+<ul class="org-ul">
+<li>Because the emperor is suffering from severe illness, we must lost no time in determining the concession to the throne.<br /></li>
+<li>Suffering from severe illness, the king renounced the Triple Alliance.<br /></li>
+<li>The cat who suffered from severe injured fell off from the windowsill.<br /></li>
+</ul>
+<p>
+devastate [ˈdevəˌsteɪt]: v. to damage something very badly or completely毁坏<br />
+</p>
+<ul class="org-ul">
+<li>Two cities in Japan were devastated by nuclear weapon.<br /></li>
+<li>The king must have been devastated by the death of his long-lost son who used to be regarded as the concession to the throne.<br /></li>
+<li>The prisoner spread small poxes to the Europeans who devastated their civilization.<br /></li>
+</ul>
+<p>
+untold [ˌʌnˈtoʊld]: adj. used to emphasize that an amount or quantity is very large数不清的<br />
+</p>
+<ul class="org-ul">
+<li>There are untold beautiful girls in the fancy party.<br /></li>
+<li>There are untold vivid words about the stories of love.<br /></li>
+<li>He imagines a desert island to be a sort of paradise full of untold lobsters and fishes.<br /></li>
+</ul>
+<p>
+misery [ˈmɪzəri]: n. great suffering that is caused for example by being very poor or very sick痛苦, 苦恼, 悲惨, 穷困<br />
+</p>
+<ul class="org-ul">
+<li>The mistake majesty made then cause the misery between me and Ziwei.<br /></li>
+<li>If you could see the misery of people, you wouldn't publish such a law.<br /></li>
+<li>The carnage of World War I led to the untold misery of people all over the world.<br /></li>
+</ul>
+<p>
+shelter [ˈʃeltər]: n. a place to live, considered as one of the basic needs of life庇护所<br />
+</p>
+<ul class="org-ul">
+<li>The house used to be a shelter for heretics.<br /></li>
+<li>The leader of the party raised a large sum of money to have these shelters repaired.<br /></li>
+<li>The cave I digged up in my courtyard becomes a shelter for a kitty.<br /></li>
+</ul>
+<p>
+shantytown [ˈʃæntiˌtaʊn]: n. a very poor area in or near a town where people live in small houses made from thin sheets of wood, ↑tin etc棚户<br />
+</p>
+<ul class="org-ul">
+<li>Shantytowns transformation became popular with those inhabitants who were in pursuit of a better shelter.<br /></li>
+<li>To achieve his ends, the general ordered his men to devastate the shantytown.<br /></li>
+<li>The shantytown was devastated by a bomb, which cause severe injuries.<br /></li>
+</ul>
+<p>
+wither [ˈwɪðər]: v. if plants wither, they become drier and smaller and start to die枯萎<br />
+</p>
+<ul class="org-ul">
+<li>I can't stand that my beloved girl looks like a withering flower.<br /></li>
+<li>The withering plants aside the road were replaced by new kinds of grass overnight.<br /></li>
+<li>Like a withering flower, she desired to fall in love with her boy.<br /></li>
+</ul>
+<p>
+unrest [ʌnˈrest]: n. a political situation in which people protest or behave violently不安的状态, 动荡的局面<br />
+</p>
+<ul class="org-ul">
+<li>There is a growing unrest in the town 12 miles away outside the city of Paris.<br /></li>
+<li>When the sophisticated king assmued the power, the unrest in the countryside was soon settled.<br /></li>
+<li>When the unrest of peasants erupted in the square, the leader lost no time in dispatching tanks to settle it.<br /></li>
+</ul>
+<p>
+march [mɑrtʃ]: n. an organized event in which many people walk together to express their ideas or protest about something游行<br />
+</p>
+<ul class="org-ul">
+<li>The lad imagined the hunger march to be a sort of daily activity.<br /></li>
+<li>I wished that the hunger march achieved its ends.<br /></li>
+<li>The hunger marches organized by the party intensified the anatagonism between classes.<br /></li>
+</ul>
+<p>
+fade [feɪd]: v. (also fade away) to gradually disappear减弱下去<br />
+</p>
+<ul class="org-ul">
+<li>Hopes of her marring to a upper class is beginning to fade.<br /></li>
+<li>As hopes of a peace settlement began to fade, the nations in Europe ceased to disarm.<br /></li>
+<li>As hopes of getting better working conditions began to fade, the workers were due to go on a general strike.<br /></li>
+</ul>
+<hr />
+<p>
+be served in sp.: 在&#x2026;提供食物<br />
+</p>
+<ul class="org-ul">
+<li>Served in the resturant, you are not supposed to carry outside food.<br /></li>
+<li>Served in the soup kitchen, masses are supposed to wait in line.<br /></li>
+<li>Served in the soup kitchen, you should be grateful to the government.<br /></li>
+</ul>
+<p>
+be unsure about sth./how to do sth.: 对某事不确认<br />
+</p>
+<ul class="org-ul">
+<li>I am unsure about how to communicate with other in public.<br /></li>
+<li>She is unsure about how to cook meal with the oven.<br /></li>
+<li>My cat is still unsure about how to use her paws.<br /></li>
+</ul>
+<p>
+be conceived as sth.: 被认为是某物<br />
+</p>
+<ul class="org-ul">
+<li>Conceived as the pillar of the family, he tries his best to make money.<br /></li>
+<li>Conceived as the best player, he wished that he had won the championship.<br /></li>
+<li>Conceived as the best player of China, he was expected to bring the trophy to China.<br /></li>
+</ul>
+<p>
+on paper: 理论上<br />
+</p>
+<ul class="org-ul">
+<li>The team A is stronger than the team B on paper, so I will chose team A as the winner of the competition.<br /></li>
+<li>There should be no bug on paper, what goes wrong?<br /></li>
+<li>I will pass the exam in three month on paper if I study hard.<br /></li>
+</ul>
+<p>
+agree on sth.: 在某事上达成一致<br />
+</p>
+<ul class="org-ul">
+<li>French and Germany agreed on the peace settlement.<br /></li>
+<li>After several stikes, the workers and the entrepreneurs agreed on better working conditions and higher pay.<br /></li>
+<li>My wife and me agreed on how to go on a vacation in Sanya.<br /></li>
+</ul>
+<p>
+recover from sth.: 从&#x2026;中恢复<br />
+</p>
+<ul class="org-ul">
+<li>Recovering from the injury, the cat likes to wander on the high-rise windowsill.<br /></li>
+<li>Recovering from the operation, the puma was examined by the experts from the zoo.<br /></li>
+<li>Recovering from the disease, Europe proved resilient.<br /></li>
+</ul>
+<p>
+be beset by sth.: be afflicted with/by sth. 被某事困扰<br />
+</p>
+<ul class="org-ul">
+<li>Beset by his daughter's request, he couldn't concentrate on his driving.<br /></li>
+<li>Beset by my wife's flirting, I couldn't help taking a bath.<br /></li>
+<li>Beset by the dog's pee in the elevator, I argued with its master.<br /></li>
+</ul>
+<p>
+beg for sth.: 乞讨某物<br />
+</p>
+<ul class="org-ul">
+<li>You imagined me to be a sort of man who begged for a soup.<br /></li>
+<li>Put out of business, he was begging for food in the street.<br /></li>
+<li>My cat was just begging for the snack in my hand.<br /></li>
+</ul>
+<p>
+keep up with the command/request: 跟上要求<br />
+</p>
+<ul class="org-ul">
+<li>Keeping up with the command of the peace settlement, the nation must disarm.<br /></li>
+<li>Keeping up with my daughter's request, I must improve myself and get a better salary.<br /></li>
+<li>Keeping up with the request, the reformation in our armies must be achieved in three years.<br /></li>
+</ul>
+<p>
+from place to place: 从一个地方到另一个地方<br />
+</p>
+<ul class="org-ul">
+<li>The hunt for puma proved difficult, for it moved from place to place in the plain.<br /></li>
+<li>The beggar moved from place to place, begging for a shelter.<br /></li>
+<li>The merchant moved from place to place, seeking for the profit.<br /></li>
+</ul>
+<p>
+but one + n.: 只有&#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>I can see but one apple on the table.<br /></li>
+<li>I have but one opportunity to achieve my goal for my life.<br /></li>
+<li>She has but one pen which her husband present her.<br /></li>
+</ul>
+<p>
+do away with sth.: 废除,破除某事(oneself自杀)<br />
+</p>
+<ul class="org-ul">
+<li>The king was reluctant to do away with himself and tried to escape in disguise.<br /></li>
+<li>The king prefered to do away with himself rather than be humiliated by the peasants.<br /></li>
+<li>The king succeeded in doing away with himself after the collapse of his kingdom.<br /></li>
+</ul>
+<p>
+come to a decision: 做出决定<br />
+</p>
+<ul class="org-ul">
+<li>He lost no time in coming to a decision.<br /></li>
+<li>Coming to a decision, he was anxious to find the strait of America.<br /></li>
+<li>Coming to a decision, he led the fleet to search for new land.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orge5e6266" class="outline-3">
+<h3 id="orge5e6266">sentence2</h3>
+<div class="outline-text-3" id="text-orge5e6266">
+<p>
+soup [sup]: n. cooked liquid food, often containing small pieces of meat, fish, or vegetables汤<br />
+</p>
+<ul class="org-ul">
+<li>Why don't you prepare soup for dinner?<br /></li>
+<li>Would you like some soup?<br /></li>
+<li>My wife is fanatical about drinking soup before meals.<br /></li>
+</ul>
+<p>
+optimistic [ˌɑptɪˈmɪstɪk]: adj. believing that good things will happen in the future OPP pessimistic乐观的<br />
+</p>
+<ul class="org-ul">
+<li>The prizefight who lives in poverty is optimistic about life.<br /></li>
+<li>People tend to form an optimistic view of life on a desert island.<br /></li>
+<li>At that time, I was optimistic about life and thought the town was a paradise where I could pursue my happiness.<br /></li>
+</ul>
+<p>
+collective [kəˈlektɪv]: adj. shared or made by every member of a group or society集体的<br />
+</p>
+<ul class="org-ul">
+<li>For collective health, smoking in public places must be forbidden as soon as possible.<br /></li>
+<li>The abbot is such a devout man that what he cares about is collective interest.<br /></li>
+<li>Everyone in our community felt obliged to maintain a collective environment.<br /></li>
+</ul>
+<p>
+treaty [ˈtriti]: n. a formal written agreement between two or more countries or governments条约, 谈判<br />
+</p>
+<ul class="org-ul">
+<li>All the representatives of the nations that had fought France were due to sign a treaty in Paris.<br /></li>
+<li>As long as the treaty was signed, all clauses would be enforced on time.<br /></li>
+<li>As the treaty was signed, Germans had to pay for starting the war and the losses of the Allied nations.<br /></li>
+</ul>
+<p>
+renounce [rɪˈnaʊns]: v. if you renounce an official position, title, right etc, you publicly say that you will not keep it any more SYN give up摒弃,放弃<br />
+</p>
+<ul class="org-ul">
+<li>If you renounced your master's degree, you would have a difficult time finding work.<br /></li>
+<li>It occurs to him to renounce the party because of the emergence of a new ideology.<br /></li>
+<li>He was determined to renounce the school where students were given electrical shocks.<br /></li>
+</ul>
+<p>
+enforce [ɪnˈfɔrs] enforcement: v.n. when people are made to obey a rule, law etc执行, 强制<br />
+</p>
+<ul class="org-ul">
+<li>Our leader will not have the opportunity to enforce his rule.<br /></li>
+<li>The police have the privilege of enforcing a law in the country these days.<br /></li>
+<li>The enforcement of the law proved difficult, for the parliament hasn't supported it.<br /></li>
+</ul>
+<p>
+favor [ˈfeɪvər]: v. PREFER to prefer someone or something to other things or people, especially when there are several to choose from支持, 赞成<br />
+</p>
+<ul class="org-ul">
+<li>Obviously, he will favor your opinion, for he is very proud of you.<br /></li>
+<li>My wife favors a special kind of hair gel which she made herself.<br /></li>
+<li>The clause you favor is beneficial for the United States.<br /></li>
+</ul>
+<p>
+disarm [dɪsˈɑrm] disarmament: v.n. when a country reduces the number of weapons it has, or the size of its army, navy etc裁军<br />
+</p>
+<ul class="org-ul">
+<li>The country appeared to have disarmed.<br /></li>
+<li>The chairman claimed that the disarmament would be finished in three years.<br /></li>
+<li>The disarmament in China led to a series of complaints from soldiers who used to fight for people.<br /></li>
+</ul>
+<p>
+severe [sɪˈvɪr] severity: adj.v. severe problems, injuries, illnesses etc are very bad or very serious严峻的<br />
+</p>
+<ul class="org-ul">
+<li>Because the emperor is suffering from severe illness, we must lose no time in determining the concession to the throne.<br /></li>
+<li>Suffering from severe illness, the king renounced the Triple Alliance.<br /></li>
+<li>The cat who suffered from severe injury fell from the high-rise windowsill.<br /></li>
+</ul>
+<p>
+devastate [ˈdevəˌsteɪt]: v. to damage something very badly or completely毁坏<br />
+</p>
+<ul class="org-ul">
+<li>Two cities in Japan were devastated by nuclear weapons.<br /></li>
+<li>The king must have been devastated by the death of his long-lost son who used to be regarded as the concession to the throne.<br /></li>
+<li>The prisoner spread smallpoxes to the Europeans who devastated their civilization.<br /></li>
+</ul>
+<p>
+untold [ˌʌnˈtoʊld]: adj. used to emphasize that an amount or quantity is very large数不清的<br />
+</p>
+<ul class="org-ul">
+<li>There are untold beautiful girls at the fancy party.<br /></li>
+<li>There are untold vivid words about the stories of love.<br /></li>
+<li>He imagines a desert island to be a sort of paradise full of untold lobsters and fishes.<br /></li>
+</ul>
+<p>
+misery [ˈmɪzəri]: n. great suffering that is caused for example by being very poor or very sick痛苦, 苦恼, 悲惨, 穷困<br />
+</p>
+<ul class="org-ul">
+<li>The mistake Majesty made then caused misery between me and Ziwei.<br /></li>
+<li>If you could see the misery of people, you wouldn't publish such a law.<br /></li>
+<li>The carnage of World War I led to the untold misery of people all over the world.<br /></li>
+</ul>
+<p>
+shelter [ˈʃeltər]: n. a place to live, considered as one of the basic needs of life庇护所<br />
+</p>
+<ul class="org-ul">
+<li>The house used to be a shelter for heretics.<br /></li>
+<li>The leader of the party raised a large sum of money to have these shelters repaired.<br /></li>
+<li>The cave I dug up in my courtyard becomes a shelter for a kitty.<br /></li>
+</ul>
+<p>
+shantytown [ˈʃæntiˌtaʊn]: n. a very poor area in or near a town where people live in small houses made from thin sheets of wood, ↑tin etc棚户<br />
+</p>
+<ul class="org-ul">
+<li>Shantytown transformation became popular with those inhabitants who were in pursuit of a better shelter.<br /></li>
+<li>To achieve his ends, the general ordered his men to devastate the shantytown.<br /></li>
+<li>The shantytown was devastated by a bomb, which caused severe injuries.<br /></li>
+</ul>
+<p>
+wither [ˈwɪðər]: v. if plants wither, they become drier and smaller and start to die枯萎<br />
+</p>
+<ul class="org-ul">
+<li>I can't stand that my beloved girl looks like a withering flower.<br /></li>
+<li>The withering plants aside the road were replaced by new kinds of grass overnight.<br /></li>
+<li>Like a withering flower, she desired to fall in love with her boy.<br /></li>
+</ul>
+<p>
+unrest [ʌnˈrest]: n. a political situation in which people protest or behave violently不安的状态, 动荡的局面<br />
+</p>
+<ul class="org-ul">
+<li>There is a growing unrest in the town 12 miles away outside the city of Paris.<br /></li>
+<li>When the sophisticated king assumed power, the unrest in the countryside was soon settled.<br /></li>
+<li>When the unrest of peasants erupted in the square, the leader lost no time in dispatching tanks to settle it.<br /></li>
+</ul>
+<p>
+march [mɑrtʃ]: n. an organized event in which many people walk together to express their ideas or protest about something游行<br />
+</p>
+<ul class="org-ul">
+<li>The lad imagined the hunger march to be a sort of daily activity.<br /></li>
+<li>I wished that the hunger march had achieved its end.<br /></li>
+<li>The hunger marches organized by the party intensified the antagonism between classes.<br /></li>
+</ul>
+<p>
+fade [feɪd]: v. (also fade away) to gradually disappear减弱下去<br />
+</p>
+<ul class="org-ul">
+<li>Hopes of her marrying to an upper class are beginning to fade.<br /></li>
+<li>As hopes of a peace settlement began to fade, the nations in Europe ceased to disarm.<br /></li>
+<li>As hopes of getting better working conditions began to fade, the workers were due to go on a general strike.<br /></li>
+</ul>
+<hr />
+<p>
+be served in sp.: 在&#x2026;提供食物<br />
+</p>
+<ul class="org-ul">
+<li>Served in the restaurant, you are not supposed to carry outside food.<br /></li>
+<li>Served in the soup kitchen, masses are supposed to wait in line.<br /></li>
+<li>Served in the soup kitchen, you should be grateful to the government.<br /></li>
+</ul>
+<p>
+be unsure about sth./how to do sth.: 对某事不确认<br />
+</p>
+<ul class="org-ul">
+<li>I am unsure about how to communicate with others in public.<br /></li>
+<li>She is unsure about how to cook meals with the oven.<br /></li>
+<li>My cat is still unsure about how to use her paws.<br /></li>
+</ul>
+<p>
+be conceived as sth.: 被认为是某物<br />
+</p>
+<ul class="org-ul">
+<li>Conceived as the pillar of the family, he tries his best to make money.<br /></li>
+<li>Conceived as the best player, he wished that he had won the championship.<br /></li>
+<li>Conceived as the best player of China, he was expected to bring the trophy to China.<br /></li>
+</ul>
+<p>
+on paper: 理论上<br />
+</p>
+<ul class="org-ul">
+<li>Team A is stronger than Team B on paper, so I will choose Team A as the winner of the competition.<br /></li>
+<li>There should be no bug on paper, what goes wrong?<br /></li>
+<li>I will pass the exam in three months on paper if I study hard.<br /></li>
+</ul>
+<p>
+agree on sth.: 在某事上达成一致<br />
+</p>
+<ul class="org-ul">
+<li>France and Germany agreed on the peace settlement.<br /></li>
+<li>After several strikes, the workers and the entrepreneurs agreed on better working conditions and higher pay.<br /></li>
+<li>My wife and I agreed on how to go on a vacation in Sanya.<br /></li>
+</ul>
+<p>
+recover from sth.: 从&#x2026;中恢复<br />
+</p>
+<ul class="org-ul">
+<li>Recovering from the injury, the cat likes to wander on the high-rise windowsill.<br /></li>
+<li>Recovering from the operation, the puma was examined by the experts from the zoo.<br /></li>
+<li>Recovering from the disease, Europe proved resilient.<br /></li>
+</ul>
+<p>
+be beset by sth.: be afflicted with/by sth. 被某事困扰<br />
+</p>
+<ul class="org-ul">
+<li>Beset by his daughter's request, he couldn't concentrate on his driving.<br /></li>
+<li>Beset by my wife's flirting, I couldn't help taking a bath.<br /></li>
+<li>Beset by the dog's pee in the elevator, I argued with its master.<br /></li>
+</ul>
+<p>
+beg for sth.: 乞讨某物<br />
+</p>
+<ul class="org-ul">
+<li>You imagined me to be a sort of man who begged for a spoon of soup.<br /></li>
+<li>Put out of business, he was begging for food in the street.<br /></li>
+<li>My cat was just begging for the snack in my hand.<br /></li>
+</ul>
+<p>
+keep up with the command/request: 跟上要求<br />
+</p>
+<ul class="org-ul">
+<li>Keeping up with the command of the peace settlement, the nation must disarm.<br /></li>
+<li>Keeping up with my daughter's request, I must improve myself and get a better salary.<br /></li>
+<li>Keeping up with the request, the reformation of our armies must be achieved in three years.<br /></li>
+</ul>
+<p>
+from place to place: 从一个地方到另一个地方<br />
+</p>
+<ul class="org-ul">
+<li>The hunt for puma proved difficult, for it moved from place to place in the plain.<br /></li>
+<li>The beggar moved from place to place, begging for shelter.<br /></li>
+<li>The merchant moved from place to place, seeking for the profit.<br /></li>
+</ul>
+<p>
+but one + n.: 只有&#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>I can see but one apple on the table.<br /></li>
+<li>I have but one opportunity to achieve my goal for my life.<br /></li>
+<li>She has but one pen which her husband presenst her.<br /></li>
+</ul>
+<p>
+do away with sth.: 废除,破除某事(oneself自杀)<br />
+</p>
+<ul class="org-ul">
+<li>The king was reluctant to do away with himself and tried to escape in disguise.<br /></li>
+<li>The king preferred to do away with himself rather than be humiliated by the peasants.<br /></li>
+<li>The king succeeded in doing away with himself after the collapse of his kingdom.<br /></li>
+</ul>
+<p>
+come to a decision: 做出决定<br />
+</p>
+<ul class="org-ul">
+<li>He lost no time in coming to a decision.<br /></li>
+<li>Coming to a decision, he was anxious to find the strait of America.<br /></li>
+<li>Coming to a decision, he led the fleet to search for new land.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgab3cec1" class="outline-3">
+<h3 id="orgab3cec1">summary</h3>
+<div class="outline-text-3" id="text-orgab3cec1">
+<p>
+The optimistic hopes of 1920s,<br />
+		entering a new era of world peace, economic growth, and political democracy,<br />
+	failed to be realized.<br />
+After 1919, the Legue of Nations proved incapable of working well,<br />
+	and new treaties that renounced the use of war had no means of enforcement.<br />
+Besides,<br />
+	the European economy was best by financial problems caused by the war and the Great Depression.<br />
+Larger and larger numbers of people were homeless, begged for food,<br />
+	and moved from place to place looking for work and shelter.<br />
+In their misery, some people even have an impluse of doing away with themselves<br />
+	after they had been unemployed.<br />
+The vast numbers of unemployed staged hunger marches to get attention.<br />
+In democratic countries, more and more people began to call for extreme measures.<br />
+For a while after 1919, political democracy seemed well established,<br />
+	but then authoritarian regimes spread into Italy and Germany and across eastern Europe.<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgcc5c645" class="outline-3">
+<h3 id="orgcc5c645">summary2</h3>
+<div class="outline-text-3" id="text-orgcc5c645">
+<p>
+The optimistic hopes of the 1920s,<br />
+		entering a new era of world peace, economic growth, and political democracy,<br />
+	failed to be realized.<br />
+After 1919, the League of Nations proved incapable of working well,<br />
+	and new treaties that renounced the use of war had no means of enforcement.<br />
+Besides,<br />
+	the European economy was beset by financial problems caused by the war and the Great Depression.<br />
+Larger and larger numbers of people were homeless, begged for food,<br />
+	and moved from place to place looking for work and shelter.<br />
+In their misery, some people even had an impulse to do away with themselves<br />
+	after they had been unemployed.<br />
+The vast numbers of unemployed staged hunger marches to get attention.<br />
+In democratic countries, more and more people began to call for extreme measures.<br />
+For a while after 1919, political democracy seemed well established,<br />
+	but then authoritarian regimes spread into Italy, Germany, and across Eastern Europe.<br />
+</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

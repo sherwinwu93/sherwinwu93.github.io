@@ -1,0 +1,944 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-02-18 Tue 12:10 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-org6dabf95" class="outline-2">
+<h2 id="org6dabf95">4-2 4 Trauma</h2>
+<div class="outline-text-2" id="text-org6dabf95">
+<p class="verse">
+Ourselves develop in relationship.<br />
+Initially, in attachment relationships in early childhood.<br />
+And then later, in the world of social connection.<br />
+This development is in every aspect of our being:<br />
+&#xa0;physical, psychological, emotional, cultural, spiritual.<br />
+This connectedness for development and well-being is a theme<br />
+&#xa0;you have been hearing about throughout the MOOC.<br />
+When we have flowing and lively sense of self, we tend to feel well and tend to flourish.<br />
+<br />
+This talk however is about trauma,<br />
+&#xa0;and trauma is a difficult subject because it's a difficult experience.<br />
+Trauma breaks down our being, our sense of self.<br />
+&#xa0;And can break down how we feel about ourselves, others, and the world.<br />
+So, it's an important experience that impacts profoundly on our well-being.<br />
+We could think back to Tina's story in the first week of our MOOC,<br />
+&#xa0;and the impact of childhood trauma on her sense of self,<br />
+&#xa0;and her important and long road to recovery.<br />
+For a time, we didn't pay enough attention to just how common and just how damaging trauma could be.<br />
+We didn't realize just how many people seeking or needing help<br />
+&#xa0;for their mental health had been impacted on by trauma.<br />
+Sometimes, sadly, the experience of mental illness and its treatment was traumatic in itself.<br />
+<br />
+The good news is that we're in a time where we are realizing the huge impacts of trauma,<br />
+&#xa0;and are actively developing our approach to it<br />
+&#xa0;&#xa0;to help people, families, and communities recover and return to thriving.<br />
+In a phenomenon called post-traumatic growth,<br />
+&#xa0;we can actually grow through trauma and eventually become stronger, more resilient than before.<br />
+This was Tina's story and it is the story of many.<br />
+We are realizing<br />
+&#xa0;that repair, recovery, resilience, require us to foster personal and interpersonal connections,<br />
+&#xa0;and over time integrate traumatic experiences into a new story of our self and a new way of being.<br />
+We both repay the old aspects of self and the old connections and we nurture the new.<br />
+I often think of this is the way trees heal.<br />
+The rings they lay down at their core will always tell the story of a tough year.<br />
+But if the tree survives, it often becomes stronger than before.<br />
+We are more than the story of our traumatic times.<br />
+We are people that reflect on ourselves and make meaning of our experiences and so,<br />
+&#xa0;our recovery can be rich at multi-layered.<br />
+<br />
+So what is trauma?<br />
+We certainly all have stress.<br />
+And we've heard about how universalities and ways to manage it are discussed in other MOOC talks.<br />
+The trauma is however more than simple stress.<br />
+It is a highly stressful life event or actually cumulative amount of stress<br />
+&#xa0;that exceeds a person's capacity to regulate themselves and manage in the face of it.<br />
+So the event disturbs their equilibrium or what we call 'Homeostasis'.<br />
+<br />
+Traumatic events include single events like a serious accident, assault, or disaster.<br />
+And also include long term situations like domestic violence, entrapment, or child abuse.<br />
+The stress diathesis model is central to understanding the distress<br />
+&#xa0;associated with onset of mental health problems and stress system disorders.<br />
+It says that everyone has a level of risk for disorders to which stress adds.<br />
+And where there's enough of it, symptoms and disorders emerge.<br />
+<br />
+A self-regulation involves every level of being.<br />
+So when trauma breaks it down, it can happen at any or all of these parts of our life.<br />
+Part of being tuned in to trauma is a challenge to health.<br />
+It's to recognize that I might notice the effects on my body,<br />
+&#xa0;my mind, my relationships, my cultural life, or my spiritual life.<br />
+And those who know me or work with me might feel that in those areas<br />
+&#xa0;where we come into contact and connection.<br />
+This recognition of trauma or in its effects is a crucial current issue in health.<br />
+Trauma can break down how we connect to others<br />
+&#xa0;and tell our story and breakdown our trust in the world.<br />
+<br />
+When trauma happens in childhood and adolescence.<br />
+In the very relationships of care in a home or community<br />
+&#xa0;&#xa0;that is meant to keep us safe and help us grow,<br />
+&#xa0;it can impact on how we develop and regulate ourselves in adulthood.<br />
+It can then become a risk factor in mental and physical health.<br />
+The big ace study in the USA investigating these adverse childhood experiences<br />
+&#xa0;showed the knock-on effects on mental and physical health of childhood trauma.<br />
+So, post traumatic stress disorder<br />
+&#xa0;&#xa0;which can follow experiencing or witnessing a single life threatening event<br />
+&#xa0;is an important disorder.<br />
+Features of PTSD include nightmares, flashbacks, anxiety,<br />
+&#xa0;and a tendency to avoid reminders of the trauma.<br />
+People with PTSD often have insomnia and/or depression,<br />
+&#xa0;or use substances to try to deal with the symptoms.<br />
+However, we now understand that the most severe dysregulation occurs in people<br />
+&#xa0;who as children lack a consistent caregiver or adequate experiences of safety and comfort.<br />
+The cumulative effect of this kind of trauma is called 'Complex trauma'<br />
+&#xa0;and is a big contributor to many mental health disorders.<br />
+<br />
+We need positive connection.<br />
+So for example, even daily devaluation in childhood, or neglect, can lead to an ongoing sense<br />
+&#xa0;that I'm not worthwhile and impact my attachment state of mind and how I view myself.<br />
+Trauma causes shock, numbness, and feel<br />
+&#xa0;and can cause dissociation or disconnection in the individual experiencing it,<br />
+&#xa0;&#xa0;and those around them.<br />
+Dissociation describes the disconnection or disorganization of parts of mental and physical life<br />
+&#xa0;that would normally be connected and healthily organized.<br />
+For some people these disconnections, dissociations or disorganizations are very severe.<br />
+For example, those with dissociative identity disorder<br />
+&#xa0;can be disconnected from whole parts of themselves<br />
+&#xa0;&#xa0;that then function at times as another state of self.<br />
+This problem with remembering who they are at different times<br />
+&#xa0;can be very confusing for them and for those around them.<br />
+Strong feelings of confusion, disorientation, rage, disgust, helplessness, hopelessness,<br />
+&#xa0;can emerge too.<br />
+The strong feelings and dissociation around trauma probably partly explain<br />
+&#xa0;why trauma has often been hard to examine or recognize<br />
+&#xa0;&#xa0;and can lie out of direct sight, out of mind.<br />
+When trauma happens in secrecy like abuse often does,<br />
+&#xa0;then the difficulty in recognizing it and in seeing it is compounded.<br />
+<br />
+These days we're trying to develop trauma-informed care,<br />
+&#xa0;ways of caring for others and ourselves<br />
+&#xa0;&#xa0;that understand how trauma breaks down consciousness and self.<br />
+And then, explores the pathways back to feeling whole and to flourishing.<br />
+Now, we often talk about a faith based approach to treatment.<br />
+Fundamentally, we first have to establish safety for those experiencing trauma,<br />
+&#xa0;and the families and systems of care around them.<br />
+You can probably imagine that if I have grown up in an unsafe home or community,<br />
+&#xa0;that safety might take a while to set up.<br />
+This step requires the listening, validation, and tuning in of carers and clinicians.<br />
+We take time to notice if someone is terrified and engage them in ways that help them feel safer.<br />
+After safety comes stabilization where we try to help the person find ways to feel supported.<br />
+Ways that can help them manage safely, to minimize the ongoing breakdown effects of trauma.<br />
+This helps them move away from other unsafe strategies like drugs and alcohol or self-harm.<br />
+Here some of the skills and strategies discussed in the MOOC<br />
+&#xa0;can be crucial in fostering calm and hope, and settling down our body and mind<br />
+&#xa0;&#xa0;which might be feeling terrified, anxious, angry, or frozen.<br />
+Here, relaxation, breathing, exercise, being validated in a caring relationship,<br />
+&#xa0;mindfulness and meditation are some ways that help.<br />
+Each person needs the strategies to fit well with them.<br />
+And practicing them may also take some time.<br />
+<br />
+Then, and only then, when we feel ready and supported,<br />
+&#xa0;can we then think, feel, and work through what happened to us in a number of ways.<br />
+As trauma affects all aspects of being.<br />
+Any of these can be an initial window into recovery.<br />
+Trauma-focused cognitive behavior therapy and Eye Movement Desensitization<br />
+&#xa0;are types of psychotherapy used for PTSD.<br />
+Body therapies, creative therapies, other psychotherapies, and neurofeedback can all have a place.<br />
+For some spiritual frame is important.<br />
+Something like meditation can work in a number of levels<br />
+&#xa0;to bring about reconnection and new connections between mind and body.<br />
+So, integrative approaches help us<br />
+&#xa0;&#xa0;counter the disconnections in mind, body, and soul caused by trauma<br />
+&#xa0;and help us become whole again.<br />
+Those who've been through trauma need support to recover.<br />
+But sometimes they need time and evidence to believe that they can trust others again.<br />
+Trust the care we offer and even trust themselves.<br />
+Yet, we can resolve trauma to recover, grow from it, and flourish.<br />
+And it seems that the best way to do this is to do it together in safe company.<br />
+We don't have to do it alone.<br />
+</p>
+</div>
+<div id="outline-container-orgdfc8130" class="outline-3">
+<h3 id="orgdfc8130">expression</h3>
+<div class="outline-text-3" id="text-orgdfc8130">
+<p>
+initially [ɪˈnɪʃ(ə)li]: adv. at the beginning最初, 开头<br />
+connectedness [kə'nektɪdnəs]: n. the feeling people have that they are members of a group in society and that they share particular qualities with other members of that group归属感<br />
+thrive [θraɪv]: v. to become very successful or very strong and healthy兴旺<br />
+repay [rɪˈpeɪ]: v. to pay back money that you have borrowed偿还, 报答, 报复<br />
+nurture [ˈnɜrtʃər]: v. to help a plan, idea, feeling etc to develop培育<br />
+heal [hil]: v. to make someone who is ill become healthy again, especially by using natural powers or prayer ⇨ cure治愈, 医治<br />
+exceed [ɪkˈsid]: v. to be more than a particular number or amount超越, 胜过<br />
+equilibrium [ˌekwɪˈlɪbriəm]: n. a balance between different people, groups, or forces that compete with each other, so that none is stronger than the others and a situation is not likely to change suddenly平衡,均衡<br />
+assault [əˈsɔlt]: v. the crime of physically attacking someone侵犯<br />
+entrapment [ɪnˈtræpmənt]: n. the practice of trapping someone by tricking them, especially to show that they are guilty of a crime诱捕的行动,圈套<br />
+diathesis [daɪ'æθɪsɪs]: n. (易患某病)素质<br />
+adverse [ædˈvɜrs]: adj. not good or favourable不利的<br />
+flashback [ˈflæʃˌbæk]: n. a sudden very clear memory of something that happened to you in the past闪回<br />
+nightmare [ˈnaɪtˌmer]: n. a very frightening dream恶梦<br />
+consistent [kənˈsɪstənt]: adj. always behaving in the same way or having the same attitudes, standards etc – usually used to show approval OPP inconsistent一致的<br />
+numb [nʌm] numbness: adj.n. a part of your body that is numb is unable to feel anything, for example because you are very cold麻木的<br />
+dissociative [dɪ'soʊʃɪˌeɪtɪv]: adj. 分离的,游离的<br />
+compound [ˈkɑmˌpaʊnd]: v. to make a difficult situation worse by adding more problems恶化,加重<br />
+clinician [klɪˈnɪʃ(ə)n]: n. a doctor who treats and examines people, rather than one who does ↑research临床医生<br />
+</p>
+<hr />
+<p>
+break down sth.: 破坏某事物<br />
+For a time, + &#x2026;: 一度<br />
+integrate A into B: 整合A进B<br />
+make meaning of sth.: 使某事物有意义<br />
+be meant to do sth.: 打算做某事<br />
+the knock on effects: 连锁反应<br />
+in secrecy: in secret秘密地<br />
+tune in of sb.: 聆听某人<br />
+have a place (in &#x2026;): 有一席之地<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org0cacef1" class="outline-3">
+<h3 id="org0cacef1">ch.</h3>
+<div class="outline-text-3" id="text-org0cacef1">
+<p>
+4-2 4 创伤<br />
+我们在关系中发展自己。<br />
+最初是在幼儿期的依附关系中发展，然后在社会连接的世界中发展。<br />
+这种发展贯穿我们每个方面的存在：身体的、心理的、情感的、文化的、精神的。<br />
+为了发展和福祉的这种连接性是你在整个MOOC课程中一直听到的主题。<br />
+当我们拥有流动且充满活力的自我意识时，我们通常会感觉良好，并且往往会蓬勃发展。<br />
+然而，这次讲座是关于创伤的，创伤是一个困难的话题，因为它是一个困难的经历。<br />
+创伤打破我们的存在，打破我们的自我意识，并可能打破我们对自己、他人和世界的感受。<br />
+因此，它是一个对我们福祉产生深远影响的重要经历。<br />
+我们可以回想一下MOOC第一周中Tina的故事，儿童期创伤对她自我意识的影响，以及她重要且漫长的恢复之路。<br />
+曾几何时，我们没有足够重视创伤的普遍性和破坏性。<br />
+我们没有意识到有多少寻求或需要心理健康帮助的人受到了创伤的影响。<br />
+有时，令人遗憾的是，心理疾病的经历和治疗本身就具有创伤性。<br />
+好消息是，我们正处于一个认识到创伤巨大影响的时代，并且正在积极发展我们的应对方法，帮助个人、家庭和社区恢复并重新蓬勃发展。<br />
+在一种叫做创伤后成长的现象中，我们实际上可以通过创伤成长，并最终变得比以前更强大、更有韧性。<br />
+这是Tina的故事，也是许多人的故事。<br />
+我们正在认识到，修复、恢复、韧性需要我们培养个人和人际连接，并随着时间的推移，将创伤经历融入到我们自我和新的存在方式的故事中。<br />
+我们既赎回了自我的旧方面和旧的联系，也滋养了新的方面。<br />
+我常常认为这就像树木的愈合。<br />
+它们在核心部位形成的年轮永远讲述着艰难的年份的故事。<br />
+但如果树木存活下来，它通常会比以前更强壮。<br />
+我们不仅仅是创伤时期故事的延续。<br />
+我们是那些反思自我并赋予经历意义的人，因此，我们的恢复可以是丰富而多层次的。<br />
+那么，什么是创伤呢？<br />
+我们当然都有压力。<br />
+我们已经听到过其他MOOC讲座中关于压力的普遍性和管理方式的讨论。<br />
+然而，创伤却不仅仅是简单的压力。<br />
+它是一个高度紧张的生活事件，或者是积累起来的压力量，超出了一个人自我调节和应对的能力。<br />
+因此，这个事件扰乱了他们的平衡，或者我们称之为“体内平衡”。<br />
+创伤事件包括单一事件，如严重的事故、袭击或灾难，也包括长期的情况，如家庭暴力、困境或儿童虐待。<br />
+压力易感性模型是理解与精神健康问题的发生和压力系统失调相关的痛苦的核心。<br />
+它表明每个人都有一定程度的风险，而压力则增加了这种风险。<br />
+压力足够多时，症状和疾病就会出现。<br />
+自我调节涉及到每个存在层面。<br />
+所以当创伤打破它时，它可能发生在我们生活的任何部分或所有部分。<br />
+觉察到创伤是对健康的挑战。<br />
+这是要意识到，我可能注意到它对我的身体、心灵、关系、文化生活或精神生活的影响。<br />
+那些认识我或与我共事的人也可能感受到这些影响，这些影响发生在我们接触和联系的领域。<br />
+对创伤或其影响的认识是当今健康领域中的一个关键问题。<br />
+创伤可以打破我们与他人的连接，打破我们讲述自己故事的方式，并破坏我们对世界的信任。<br />
+当创伤发生在儿童和青少年时期，在家庭或社区中那些本应保护我们安全、帮助我们成长的关爱关系中时，它会影响我们在成年后如何发展和调节自己。<br />
+它也可能成为精神和身体健康的风险因素。<br />
+美国的大规模ACE研究调查了这些不良儿童经历，并展示了儿童创伤对心理和身体健康的连锁反应。<br />
+因此，创伤后应激障碍（PTSD），它可能在经历或目睹一次威胁生命的事件后发生，是一种重要的障碍。<br />
+创伤后应激障碍的特点包括噩梦、闪回、焦虑，以及避免与创伤相关的事物。<br />
+患有PTSD的人通常会有失眠和/或抑郁，或者使用物质来尝试应对症状。<br />
+然而，我们现在明白，最严重的自我调节失调发生在那些小时候缺乏持续照料者或缺乏足够安全感和舒适感的人身上。<br />
+这种创伤的积累效应被称为“复杂创伤”，它是许多心理健康障碍的重要贡献因素。<br />
+我们需要积极的连接。<br />
+例如，即使是儿童时期的每日贬低或忽视，也会导致一种持续的自我价值感缺失，进而影响我的依附状态和自我认知。<br />
+创伤会引发震惊、麻木感，甚至可能导致个体经历解离或与周围人的断裂。<br />
+解离是指心理和身体生活的各个部分失去联系或组织，它们通常是相互联系并健康组织的。<br />
+有些人这些解离、断裂或失调的现象非常严重。<br />
+例如，患有解离性身份障碍的人可能会与自己的某些部分断裂，甚至在某些时刻以另一种自我状态表现出来。<br />
+这种记不清自己在不同时间的身份的问题，对他们和他们周围的人来说都可能非常困惑。<br />
+强烈的混乱、迷失方向、愤怒、厌恶、无助、绝望的情绪也可能出现。<br />
+创伤相关的强烈情绪和联想可能部分解释了为什么创伤常常很难被检查或识别，并且可能会隐藏在视野之外、记忆之外。<br />
+当创伤发生在隐秘中，如虐待常常发生时，那么识别和看到创伤的难度就更大了。<br />
+现在，我们正在努力发展创伤知情护理，关爱他人和我们自己的方式，理解创伤如何打破意识和自我，然后探索恢复完整并蓬勃发展的路径。<br />
+现在，我们经常谈论基于信仰的治疗方法。<br />
+从根本上讲，我们首先必须为那些经历创伤的人以及他们周围的家庭和照料系统建立安全感。<br />
+你可以想象，如果我在一个不安全的家庭或社区中成长，那么安全感的建立可能需要一段时间。<br />
+这一步骤需要照料者和临床医生的倾听、确认和调适。<br />
+我们需要花时间去注意如果某人感到恐惧，并以帮助他们感到更安全的方式与他们接触。<br />
+在安全感之后是稳定化，我们尝试帮助个体找到能够让他们感到支持的方式，这些方式有助于他们安全地管理，从而减少创伤的持续破坏效应。<br />
+这帮助他们远离像药物和酒精或自残等不安全的应对方式。<br />
+这里，MOOC中讨论的一些技能和策略可能在促进平静与希望方面起到至关重要的作用，帮助我们安抚身体和心灵，这些可能感到恐惧、焦虑、愤怒或麻木。<br />
+这里，放松、呼吸、运动、在关爱的关系中得到肯定、正念和冥想是帮助的方式。<br />
+每个人都需要适合自己的策略。<br />
+并且练习这些策略可能也需要一些时间。<br />
+然后，只有当我们感到准备好和得到支持时，我们才能通过多种方式思考、感受和处理发生在我们身上的事情。<br />
+因为创伤影响了存在的各个方面，任何一个方面都可以成为恢复的初步窗口。<br />
+创伤聚焦的认知行为疗法和眼动脱敏是用于治疗PTSD的心理治疗方法。<br />
+身体疗法、创意疗法、其他心理治疗方法和神经反馈也可以发挥作用。<br />
+对一些人来说，精神框架很重要。<br />
+类似冥想的事情可以在多个层面上起作用，带来心灵与身体之间的重新连接和新的连接。<br />
+因此，综合方法帮助我们应对创伤带来的心灵、身体和灵魂的解离，帮助我们重新恢复完整。<br />
+经历过创伤的人需要支持来恢复。<br />
+但有时他们需要时间和证据来相信他们能够重新信任他人。<br />
+信任我们提供的关爱，甚至重新信任自己。<br />
+然而，我们可以解决创伤，恢复并从中成长，最终蓬勃发展。<br />
+看起来，最好的方法是和他人一起在安全的环境中完成这一切。<br />
+我们不需要孤军奋战。<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org695e0c9" class="outline-3">
+<h3 id="org695e0c9">sentence</h3>
+<div class="outline-text-3" id="text-org695e0c9">
+<p>
+initially [ɪˈnɪʃ(ə)li]: adv. at the beginning最初, 开头<br />
+</p>
+<ul class="org-ul">
+<li>Initially, I tried to establish a causal relationship between my trauma in childhood and my disorder.<br /></li>
+<li>Initially, in addition to Lily our son socialize with no one in his class.<br /></li>
+<li>Initially, sugar is often combined with milk in our family.<br /></li>
+</ul>
+<p>
+connectedness [kə'nektɪdnəs]: n. the feeling people have that they are members of a group in society and that they share particular qualities with other members of that group归属感<br />
+</p>
+<ul class="org-ul">
+<li>In my childhood, I went out of my ways to seek connectedness in my family.<br /></li>
+<li>The clinician took steps to get him a sense of connectedness at his home.<br /></li>
+<li>A high sense of connectedness induced changes in the mind of the spy who was meant to betray us.<br /></li>
+</ul>
+<p>
+thrive [θraɪv]: v. to become very successful or very strong and healthy兴旺<br />
+</p>
+<ul class="org-ul">
+<li>The outcome of our saving this year domenstrated a correlation between our faith and thriving.<br /></li>
+<li>At the end of the day, the company didn't thrive any more and went bankrupt because of sex scandal.<br /></li>
+<li>My brother's thriving alerted me to my own career which deserve my hard work.<br /></li>
+</ul>
+<p>
+repay [rɪˈpeɪ]: v. to pay back money that you have borrowed偿还, 报答, 报复<br />
+</p>
+<ul class="org-ul">
+<li>Her care alerts me to repaying her kindness in a better way.<br /></li>
+<li>He tends to think of the bill he paid as repaying my help last time.<br /></li>
+<li>No one should perceive the little thing as repaying his great help.<br /></li>
+</ul>
+<p>
+nurture [ˈnɜrtʃər]: v. to help a plan, idea, feeling etc to develop培育<br />
+</p>
+<ul class="org-ul">
+<li>The AI model ran complex series of calculations to come up with a plan of nurturing our project.<br /></li>
+<li>You will never succeed in nurturing a good boy within a matter of weeks.<br /></li>
+<li>Just because nurturing a college student under certain circumstance is difficult doesn't mean that's impossible.<br /></li>
+</ul>
+<p>
+heal [hil]: v. to make someone who is ill become healthy again, especially by using natural powers or prayer ⇨ cure治愈, 医治<br />
+</p>
+<ul class="org-ul">
+<li>Healing the world sounds like a dream rather than a reality.<br /></li>
+<li>All 3 of clinician are willing to heal the patients in the earthquake.<br /></li>
+<li>The clinician played a crucial role in healing the patient with headaches.<br /></li>
+</ul>
+<p>
+exceed [ɪkˈsid]: v. to be more than a particular number or amount超越, 胜过<br />
+</p>
+<ul class="org-ul">
+<li>The speed of the car taking head exceeds the fastest car in last competition.<br /></li>
+<li>My score exceeding others in my class is always in demand.<br /></li>
+<li>The worker picked on the fact that the weight of the box exceeded others a great deal.<br /></li>
+</ul>
+<p>
+equilibrium [ˌekwɪˈlɪbriəm]: n. a balance between different people, groups, or forces that compete with each other, so that none is stronger than the others and a situation is not likely to change suddenly平衡,均衡<br />
+</p>
+<ul class="org-ul">
+<li>In order not to upset economic equilibrium, the authorities invested a lot in building public facilities, bridges, roads, railways and so on.<br /></li>
+<li>In one study, we found the equlibrium of a patient break down when he reminded of some traumatic events.<br /></li>
+<li>My wife's emotional equilibrium is vulnerable in her ovulation cycle.<br /></li>
+</ul>
+<p>
+assault [əˈsɔlt]: v. the crime of physically attacking someone侵犯<br />
+</p>
+<ul class="org-ul">
+<li>These youths were randomly assigned to assault family members of the dealer.<br /></li>
+<li>The experience of cooking gave him the nudge to assault his wife who he used to respect.<br /></li>
+<li>The detective is attuned to the dealer who used to assault students in the forest.<br /></li>
+</ul>
+<p>
+entrapment [ɪnˈtræpmənt]: n. the practice of trapping someone by tricking them, especially to show that they are guilty of a crime诱捕的行动,圈套<br />
+</p>
+<ul class="org-ul">
+<li>Differing from my father, my grandfather was always being ripped off in entrapment.<br /></li>
+<li>The entrapment resulted in his numbness and he took no interest in school activities.<br /></li>
+<li>It seemed that my friend I trusted was correlated with the entrapment in which I lost my savings.<br /></li>
+</ul>
+<p>
+diathesis [daɪ'æθɪsɪs]: n. (易患某病)素质<br />
+</p>
+<ul class="org-ul">
+<li>Because of his diathesis, he developed fever for two weeks rather than two days in normal condition.<br /></li>
+<li>Because of his diathesis, his clinician doesn't prescribe him any sedative medication.<br /></li>
+<li>Because of his diathesis, he has to have an operation as soon as possible.<br /></li>
+</ul>
+<p>
+adverse [ædˈvɜrs]: adj. not good or favourable不利的<br />
+</p>
+<ul class="org-ul">
+<li>What happened to him may be adverse throughout most of his life.<br /></li>
+<li>Rating your son's personalitiy in public has an adverse effect on his social relationships.<br /></li>
+<li>Obviously, losing your attraction to your wife is adverse to your marriage.<br /></li>
+</ul>
+<p>
+flashback [ˈflæʃˌbæk]: n. a sudden very clear memory of something that happened to you in the past闪回<br />
+</p>
+<ul class="org-ul">
+<li>Every time I enter the house, I am flooded with traumatic flashbacks.<br /></li>
+<li>Initiately, these flashbacks don't activate my fight system.<br /></li>
+<li>You need to get rid of those flashbacks which activate your fight system.<br /></li>
+</ul>
+<p>
+nightmare [ˈnaɪtˌmer]: n. a very frightening dream恶梦<br />
+</p>
+<ul class="org-ul">
+<li>I had a nightmare, not because you did me a flavor, but because of my traumatic flashbacks.<br /></li>
+<li>He tried to stay awake to block out the nightmare.<br /></li>
+<li>The nightmare enhanced my memory of something disgusting.<br /></li>
+</ul>
+<p>
+consistent [kənˈsɪstənt]: adj. always behaving in the same way or having the same attitudes, standards etc – usually used to show approval OPP inconsistent一致的<br />
+</p>
+<ul class="org-ul">
+<li>Because of the lack of consistent caregiver, he was diagnosed with post-traumatic stress disorder.<br /></li>
+<li>This might explain why the school doesn't have a consistent headmaster.<br /></li>
+<li>The warlike knight who didn't swear to a consistent lord was sentenced to death.<br /></li>
+</ul>
+<p>
+numb [nʌm] numbness: adj.n. a part of your body that is numb is unable to feel anything, for example because you are very cold麻木的<br />
+</p>
+<ul class="org-ul">
+<li>He was so numb when he heard someone playing matchmaker for him that I concerned about his mental health.<br /></li>
+<li>Due to his numbness in the interview, he lost the opportunity to work for Apple.<br /></li>
+<li>Due to his numbness in his family, his sons had no intention of offering money when he was in hospital.<br /></li>
+</ul>
+<p>
+dissociative [dɪ'soʊʃɪˌeɪtɪv]: adj. 分离的,游离的<br />
+</p>
+<ul class="org-ul">
+<li>I always feel dissociative when I take part in a group activities.<br /></li>
+<li>Feeling dissociative, he played truant from school again.<br /></li>
+<li>When I feel dissociative, I always make a call to my best friend.<br /></li>
+</ul>
+<p>
+compound [ˈkɑmˌpaʊnd]: v. to make a difficult situation worse by adding more problems恶化,加重<br />
+</p>
+<ul class="org-ul">
+<li>The patient who had an operation yesterday is developing fever now, which compounds his conditions.<br /></li>
+<li>The job loss of his father compounded the broke family additionally.<br /></li>
+<li>No one could account for the fact that the little cold compounded the conditions of the patient.<br /></li>
+</ul>
+<p>
+clinician [klɪˈnɪʃ(ə)n]: n. a doctor who treats and examines people, rather than one who does ↑research临床医生<br />
+</p>
+<ul class="org-ul">
+<li>My wife has a close friend who was proposed by a clinician in her local hospital.<br /></li>
+<li>The clinician was kept in prison because he revealed some products in the market that are adverse to our health.<br /></li>
+<li>The clinician was diagnosed with post-traumatic stress disorder because of the entrapment.<br /></li>
+</ul>
+<hr />
+<p>
+break down sth.: 破坏某事物<br />
+</p>
+<ul class="org-ul">
+<li>The domestic violence breaks down his trust in relationships.<br /></li>
+<li>The movement of the machine broke down the electrical nets underground.<br /></li>
+<li>The peasants claimed that the electrical nets broke down their fortune.<br /></li>
+</ul>
+<p>
+For a time, + &#x2026;: 一度<br />
+</p>
+<ul class="org-ul">
+<li>For a time, I had several close friends who enjoy me telling stories.<br /></li>
+<li>For a time, my grandfather was obsessed with his exalted position in the family.<br /></li>
+<li>For a time, my son-in-law went bankrupt because of the earthquake.<br /></li>
+</ul>
+<p>
+integrate A into B: 整合A进B<br />
+</p>
+<ul class="org-ul">
+<li>The eminent writer is likely integrating the history in the village into his novel.<br /></li>
+<li>Because of the copyright, I could integrate his story into my novel directly.<br /></li>
+<li>Well, I succeeded in integrating the framework into our project.<br /></li>
+</ul>
+<p>
+make meaning of sth.: 使某事物有意义<br />
+</p>
+<ul class="org-ul">
+<li>The story is dedicated to everyone who is trying to make meaning of every second in his or her life.<br /></li>
+<li>His lifetime dedication makes meaning of every word in the speech.<br /></li>
+<li>Her children's thriving makes meaning of her hard work.<br /></li>
+</ul>
+<p>
+be meant to do sth.: 注定做某事<br />
+</p>
+<ul class="org-ul">
+<li>I am meant to achieve the exalted claim of papal authorities.<br /></li>
+<li>She is meant to inherit the throne no matter what.<br /></li>
+<li>No matter what he is meant to free the Holy Land from Muslims.<br /></li>
+</ul>
+<p>
+the knock on effects: 连锁反应<br />
+</p>
+<ul class="org-ul">
+<li>I am shocked by the knock on effects on the little mistake I made carelessly.<br /></li>
+<li>We must be focusing on the prevention, for we can't afford the knock on effects.<br /></li>
+<li>The knock on effects on the revalution led to the emergence of the new mind.<br /></li>
+</ul>
+<p>
+in secrecy: in secret秘密地<br />
+</p>
+<ul class="org-ul">
+<li>His wife has affairs with a clinician in secrecy, which compounds his mental condition.<br /></li>
+<li>He was disappointed by his son, who engaged in drugs dealing in secrecy.<br /></li>
+<li>What your husband have done in secrecy may bring about a disater to your family.<br /></li>
+</ul>
+<p>
+tune in of sb.: 聆听某人<br />
+</p>
+<ul class="org-ul">
+<li>Tuning in of his father, he restored to the homeostasis.<br /></li>
+<li>Tuning in of his father, he had the nudge to ask for the girl's phone number.<br /></li>
+<li>Tuning in of his mother, he decided to have an operation in time.<br /></li>
+</ul>
+<p>
+have a place (in &#x2026;): 有一席之地<br />
+</p>
+<ul class="org-ul">
+<li>My wife should have a place, who was being busy in the kitchen.<br /></li>
+<li>My cat always has a place in barbecue.<br /></li>
+<li>The entrepneur always has a place in our representative meeting.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org386fbc1" class="outline-3">
+<h3 id="org386fbc1">sentence2</h3>
+<div class="outline-text-3" id="text-org386fbc1">
+<p>
+initially [ɪˈnɪʃ(ə)li]: adv. at the beginning最初, 开头<br />
+</p>
+<ul class="org-ul">
+<li>Initially, I tried to establish a causal relationship between my trauma in childhood and my disorder.<br /></li>
+<li>Initially, in addition to Lily our son socialized with no one in his class.<br /></li>
+<li>Initially, sugar is often combined with milk in our family.<br /></li>
+</ul>
+<p>
+connectedness [kə'nektɪdnəs]: n. the feeling people have that they are members of a group in society and that they share particular qualities with other members of that group归属感<br />
+</p>
+<ul class="org-ul">
+<li>In my childhood, I went out of my way to seek connectedness in my family.<br /></li>
+<li>The clinician took steps to get him a sense of connectedness at his home.<br /></li>
+<li>A high sense of connectedness induced changes in the mind of the spy who was meant to betray us.<br /></li>
+</ul>
+<p>
+thrive [θraɪv]: v. to become very successful or very strong and healthy兴旺<br />
+</p>
+<ul class="org-ul">
+<li>The outcome of our saving this year demonstrated a correlation between our faith and thriving.<br /></li>
+<li>At the end of the day, the company didn't thrive anymore and went bankrupt because of a sex scandal.<br /></li>
+<li>My brother's thriving alerted me to my career which deserves my hard work.<br /></li>
+</ul>
+<p>
+repay [rɪˈpeɪ]: v. to pay back money that you have borrowed偿还, 报答, 报复<br />
+</p>
+<ul class="org-ul">
+<li>Her care alerts me to repay her kindness in a better way.<br /></li>
+<li>He tends to think of the bill he paid as repaying my help last time.<br /></li>
+<li>No one should perceive the little thing as repaying his great help.<br /></li>
+</ul>
+<p>
+nurture [ˈnɜrtʃər]: v. to help a plan, idea, feeling etc to develop培育<br />
+</p>
+<ul class="org-ul">
+<li>The AI model ran a complex series of calculations to come up with a plan for nurturing our project.<br /></li>
+<li>You will never succeed in nurturing a good boy within a matter of weeks.<br /></li>
+<li>Just because nurturing a college student under certain circumstances is difficult doesn't mean it's impossible.<br /></li>
+</ul>
+<p>
+heal [hil]: v. to make someone who is ill become healthy again, especially by using natural powers or prayer ⇨ cure治愈, 医治<br />
+</p>
+<ul class="org-ul">
+<li>Healing the world sounds like a dream rather than a reality.<br /></li>
+<li>All three clinicians are willing to heal the patients in the earthquake.<br /></li>
+<li>The clinician played a crucial role in healing the patient with headaches.<br /></li>
+</ul>
+<p>
+exceed [ɪkˈsid]: v. to be more than a particular number or amount超越, 胜过<br />
+</p>
+<ul class="org-ul">
+<li>The speed of the car taking its head exceeds the fastest car in the last competition.<br /></li>
+<li>My score exceeding others in my class is always in demand.<br /></li>
+<li>The worker picked on the fact that the weight of the box exceeded others a great deal.<br /></li>
+</ul>
+<p>
+equilibrium [ˌekwɪˈlɪbriəm]: n. a balance between different people, groups, or forces that compete with each other, so that none is stronger than the others and a situation is not likely to change suddenly平衡,均衡<br />
+</p>
+<ul class="org-ul">
+<li>In order not to upset the economic equilibrium, the authorities invested a lot in building public facilities, bridges, roads, railways, and so on.<br /></li>
+<li>In one study, we found the equilibrium of the patient broke down when he was reminded of some traumatic events.<br /></li>
+<li>My wife's emotional equilibrium is vulnerable in her ovulation cycle.<br /></li>
+</ul>
+<p>
+assault [əˈsɔlt]: v. the crime of physically attacking someone侵犯<br />
+</p>
+<ul class="org-ul">
+<li>These youths were randomly assigned to assault family members of the dealer.<br /></li>
+<li>The experience of cooking gave him the nudge to assault his wife who he used to respect.<br /></li>
+<li>The detective is attuned to the dealer who used to assault students in the forest.<br /></li>
+</ul>
+<p>
+entrapment [ɪnˈtræpmənt]: n. the practice of trapping someone by tricking them, especially to show that they are guilty of a crime诱捕的行动,圈套<br />
+</p>
+<ul class="org-ul">
+<li>Differing from my father, my grandfather was always being ripped off in entrapment.<br /></li>
+<li>The entrapment resulted in his numbness and he took no interest in school activities.<br /></li>
+<li>It seemed that my friend I trusted was correlated with the entrapment in which I lost my savings.<br /></li>
+</ul>
+<p>
+diathesis [daɪ'æθɪsɪs]: n. (易患某病)素质<br />
+</p>
+<ul class="org-ul">
+<li>Because of his diathesis, he developed a fever for two weeks rather than two days in normal condition.<br /></li>
+<li>Because of his diathesis, his clinician doesn't prescribe him any sedative medication.<br /></li>
+<li>Because of his diathesis, he has to have an operation as soon as possible.<br /></li>
+</ul>
+<p>
+adverse [ædˈvɜrs]: adj. not good or favourable不利的<br />
+</p>
+<ul class="org-ul">
+<li>What happened to him may be adverse throughout most of his life.<br /></li>
+<li>Rating your son's personality in public has an adverse effect on his social relationships.<br /></li>
+<li>Obviously, losing your attraction to your wife is adverse to your marriage.<br /></li>
+</ul>
+<p>
+flashback [ˈflæʃˌbæk]: n. a sudden very clear memory of something that happened to you in the past闪回<br />
+</p>
+<ul class="org-ul">
+<li>Every time I enter the house, I am flooded with traumatic flashbacks.<br /></li>
+<li>Initiately, these flashbacks don't activate my fight system.<br /></li>
+<li>You need to get rid of those flashbacks that activate your fight system.<br /></li>
+</ul>
+<p>
+nightmare [ˈnaɪtˌmer]: n. a very frightening dream恶梦<br />
+</p>
+<ul class="org-ul">
+<li>I had a nightmare, not because you did me a favor, but because of my traumatic flashbacks.<br /></li>
+<li>He tried to stay awake to block out the nightmare.<br /></li>
+<li>The nightmare enhanced my memory of something disgusting.<br /></li>
+</ul>
+<p>
+consistent [kənˈsɪstənt]: adj. always behaving in the same way or having the same attitudes, standards etc – usually used to show approval OPP inconsistent一致的<br />
+</p>
+<ul class="org-ul">
+<li>Because of the lack of a consistent caregiver, he was diagnosed with post-traumatic stress disorder.<br /></li>
+<li>This might explain why the school doesn't have a consistent headmaster.<br /></li>
+<li>The warlike knight who didn't swear to a consistent lord was sentenced to death.<br /></li>
+</ul>
+<p>
+numb [nʌm] numbness: adj.n. a part of your body that is numb is unable to feel anything, for example because you are very cold麻木的<br />
+</p>
+<ul class="org-ul">
+<li>He was so numb when he heard someone playing matchmaker for him that I was concerned about his mental health.<br /></li>
+<li>Due to his numbness in the interview, he lost the opportunity to work for Apple.<br /></li>
+<li>Due to his numbness in his family, his sons had no intention of offering money when he was in hospital.<br /></li>
+</ul>
+<p>
+dissociative [dɪ'soʊʃɪˌeɪtɪv]: adj. 分离的,游离的<br />
+</p>
+<ul class="org-ul">
+<li>I always feel dissociative when I take part in a group activity.<br /></li>
+<li>Feeling dissociative, he played truant from school again.<br /></li>
+<li>When I feel dissociative, I always make a call to my best friend.<br /></li>
+</ul>
+<p>
+compound [ˈkɑmˌpaʊnd]: v. to make a difficult situation worse by adding more problems恶化,加重<br />
+</p>
+<ul class="org-ul">
+<li>The patient who had an operation yesterday is developing a fever now, which compounds his condition.<br /></li>
+<li>The job loss of his father compounded the broke family additionally.<br /></li>
+<li>No one could account for the fact that the little cold compounded the conditions of the patient.<br /></li>
+</ul>
+<p>
+clinician [klɪˈnɪʃ(ə)n]: n. a doctor who treats and examines people, rather than one who does ↑research临床医生<br />
+</p>
+<ul class="org-ul">
+<li>My wife has a close friend who was proposed by a clinician in her local hospital.<br /></li>
+<li>The clinician was kept in prison because he revealed some products in the market that are adverse to our health.<br /></li>
+<li>The clinician was diagnosed with post-traumatic stress disorder because of the entrapment.<br /></li>
+</ul>
+<hr />
+<p>
+break down sth.: 破坏某事物<br />
+</p>
+<ul class="org-ul">
+<li>Domestic violence breaks down his trust in relationships.<br /></li>
+<li>The movement of the machine broke down the electrical nets underground.<br /></li>
+<li>The peasants claimed that the electrical nets broke down their fortune.<br /></li>
+</ul>
+<p>
+For a time, + &#x2026;: 一度<br />
+</p>
+<ul class="org-ul">
+<li>For a time, I had several close friends who enjoyed me telling stories.<br /></li>
+<li>For a time, my grandfather was obsessed with his exalted position in the family.<br /></li>
+<li>For a time, my son-in-law went bankrupt because of the earthquake.<br /></li>
+</ul>
+<p>
+integrate A into B: 整合A进B<br />
+</p>
+<ul class="org-ul">
+<li>The eminent writer is likely integrating the history of the village into his novel.<br /></li>
+<li>Because of the copyright, I could integrate his story into my novel directly.<br /></li>
+<li>Well, I succeeded in integrating the framework into our project.<br /></li>
+</ul>
+<p>
+make meaning of sth.: 使某事物有意义<br />
+</p>
+<ul class="org-ul">
+<li>The story is dedicated to everyone who is trying to make meaning of every second of his or her life.<br /></li>
+<li>His lifetime dedication makes meaning of every word in the speech.<br /></li>
+<li>Her children's thriving makes meaning of her hard work.<br /></li>
+</ul>
+<p>
+be meant to do sth.: 注定做某事<br />
+</p>
+<ul class="org-ul">
+<li>I am meant to achieve the exalted claim of papal authorities.<br /></li>
+<li>She is meant to inherit the throne no matter what.<br /></li>
+<li>No matter what he is meant to free the Holy Land from Muslims.<br /></li>
+</ul>
+<p>
+the knock-on effects: 连锁反应<br />
+</p>
+<ul class="org-ul">
+<li>I am shocked by the knock-on effects of the little mistake I made carelessly.<br /></li>
+<li>We must be focusing on prevention, for we can't afford the knock-on effects.<br /></li>
+<li>The knock-on effects of the revolution led to the emergence of the new mind.<br /></li>
+</ul>
+<p>
+in secrecy: in secret秘密地<br />
+</p>
+<ul class="org-ul">
+<li>His wife has affairs with a clinician in secrecy, which compounds his mental condition.<br /></li>
+<li>He was disappointed by his son, who engaged in drug dealing in secrecy.<br /></li>
+<li>What your husband has done in secrecy may bring about a disaster to your family.<br /></li>
+</ul>
+<p>
+tune in of sb.: 聆听某人<br />
+</p>
+<ul class="org-ul">
+<li>Tuning in of his father, he restored to homeostasis.<br /></li>
+<li>Tuning in of his father, he had the nudge to ask for the girl's phone number.<br /></li>
+<li>Tuning in of his mother, he decided to have an operation in time.<br /></li>
+</ul>
+<p>
+have a place (in &#x2026;): 有一席之地<br />
+</p>
+<ul class="org-ul">
+<li>My wife should have a place, she was busy in the kitchen.<br /></li>
+<li>My cat always has a place in a barbecue.<br /></li>
+<li>The entrepreneur always has a place in our representative meeting.<br /></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

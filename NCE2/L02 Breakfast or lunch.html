@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-08-06 Tue 22:27 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+
+<div id="outline-container-orgf7637a5" class="outline-2">
+<h2 id="orgf7637a5">Lesson 2 Breakfast or lunch?</h2>
+<div class="outline-text-2" id="text-orgf7637a5">
+<p class="verse">
+Why was the writer's aunt surprised?<br />
+<br />
+It was Sunday.<br />
+I never <b>get up early</b> on Sundays.<br />
+I sometimes stay in bed until lunchtime.<br />
+<br />
+Last Sunday I got up very late.<br />
+I looked out of the window.<br />
+It was dark outside.<br />
+'What a day!' I thought. 'It's raining again.'<br />
+<br />
+<b>Just then</b>, the telephone rang.<br />
+It was my aunt Lucy.<br />
+'I've just arrived by train,' she said.<br />
+'I'm coming to see you.'<br />
+'But I'm still <b>having breakfast</b>,' I said.<br />
+'What are you doing?' she asked.<br />
+'I'm having breakfast,' I repeated.<br />
+'Dear me,' she said. 'Do you always get up so late? It's one o'clock!'<br />
+</p>
+</div>
+<div id="outline-container-org9617591" class="outline-3">
+<h3 id="org9617591">expression</h3>
+<div class="outline-text-3" id="text-org9617591">
+<p>
+until [ʌnˈtɪl] prep.直到<br />
+outside [ˌaʊtˈsaɪd] adv.外面<br />
+ring [rɪŋ] v.(铃)响<br />
+aunt [ɑːnt] n.姑,姨<br />
+repeat [rɪˈpiːt] v.重复<br />
+</p>
+
+<p>
+repeat after me: 重复我<br />
+</p>
+
+<hr />
+<p>
+am/is/are + doing:<br />
+</p>
+<ol class="org-ol">
+<li>动作正在发生;<br /></li>
+<li>动作已经开始,但未完成;<br /></li>
+<li>表近期计划(+未来时间)<br /></li>
+<li>一段时间正在发生的事情: today/this week/this year(阶段)连用<br /></li>
+<li>一段时间正在发生的变化: get/change/become/increase/rise/fall/grow/improve/begin/start<br /></li>
+</ol>
+
+<p>
+do/does: 动作发生在说话时发生不重要<br />
+</p>
+<ol class="org-ol">
+<li>习惯动作(一直/重复发生的事情)<br /></li>
+<li>客观事实<br /></li>
+<li>行为靠说话完成. I promise,suggest,apologise,advise,insist,agree,refuse<br /></li>
+</ol>
+
+<p>
+am/is/are + doing VS do/does<br />
+</p>
+<ul class="org-ul">
+<li>正在发生的行为还没有完成 VS 一直/重复发生的事情<br /></li>
+<li>暂时的情况 VS 长久的情况<br /></li>
+<li>I always do(总是做某事) VS I'm always doing(总是做某事到不正常的程度)<br /></li>
+</ul>
+
+<p>
+感叹句: 形容词需要升调<br />
+	What + (形容词) + n. (+ 主语 + 谓语)<br />
+</p>
+
+<p>
+频率adv.位置:<br />
+</p>
+<ol class="org-ol">
+<li>动词前,be/助/情态动词后<br /></li>
+<li>is/will/did省略句前<br /></li>
+<li>probably won't;<br /></li>
+</ol>
+
+<p>
+get up early/late: 起床早/晚<br />
+just then: at a particular time in the past在那时<br />
+have breakfast: 吃早餐<br />
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org27785ba" class="outline-3">
+<h3 id="org27785ba">单词造句</h3>
+</div>
+<div id="outline-container-orge713c2c" class="outline-3">
+<h3 id="orge713c2c">反复听电影片段</h3>
+</div>
+<div id="outline-container-orgf2a9ebe" class="outline-3">
+<h3 id="orgf2a9ebe">Pattern Drill 写+读</h3>
+<div class="outline-text-3" id="text-orgf2a9ebe">
+<ul class="org-ul">
+<li>1T: John's sleeping<br />
+S1: Where's John? He's late.<br />
+S2: I think he's still sleeping.<br />
+<ul class="org-ul">
+<li>Jane's dressing<br />
+Where's Jane? She's late.<br />
+I think she's still dressing.<br /></li>
+<li>Tom's getting ready<br />
+Where's Tom? He's late.<br />
+I think he's still getting ready.<br /></li>
+<li>Lucy telephoning<br />
+Where's Lucy. She's late.<br />
+I think she's still telephoning.<br /></li>
+<li>Jane's shaving<br />
+Where's Jane. She's late.<br />
+I think she's still shaving.<br /></li>
+</ul></li>
+<li>2T: clean the car - Sunday<br />
+S1: Why are you cleaning the car now?<br />
+S2: Because it's Sunday I always clean the car on Sunday.<br />
+<ul class="org-ul">
+<li>ring your aunt - saturday<br />
+Why are you ringing your aunt now?<br />
+Because it's Saturday. I always ring my aunt on Saturday.<br /></li>
+<li>go to bank - Friday<br />
+Why are you going to the Bank?<br />
+Because it's Friday. I always go to the Bank on Friday.<br /></li>
+<li>play football - Wednesday<br />
+Why are you playing football?<br />
+Because it's Wednesday. I always play football on Wednesday.<br /></li>
+<li>Write to John - Thursday<br />
+Why are you writing to John?<br />
+Because it's Thursday. I always write to John on Thursday.<br /></li>
+</ul></li>
+<li>3t: drive very fast<br />
+s1: He's driving very fast these days.<br />
+s2: He doesn't usually drive very fast.<br />
+<ul class="org-ul">
+<li>drinking heavily<br />
+He's drinking heavily these days.<br />
+He doesn't usually drink heavily.<br /></li>
+<li>cook well<br />
+He's cooking well these days.<br />
+He doesn't usually cook weel.<br /></li>
+<li>write carefully<br />
+He's writing carefully these days.<br />
+He doesn't usually write carefully.<br /></li>
+<li>get up early<br />
+He's getting up early these days.<br />
+He doesn't usually get up early.<br /></li>
+</ul></li>
+<li>4t: rude people<br />
+s1: What rude people!<br />
+s2: Yes, they are rude, aren't they?<br />
+<ul class="org-ul">
+<li>a strange story<br />
+What a strange story.<br />
+Yes, it is strange, isn't it?<br /></li>
+<li>a rude girl<br />
+What a rude girl.<br />
+Yes, she is rude, isn't she?<br /></li>
+<li>a good party<br />
+What a good party.<br />
+Yes, it is good, isn't it?<br /></li>
+<li>an interesting play<br />
+What an interesting play.<br />
+Yes, it is interesting, isn't it?<br /></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgeb49164" class="outline-3">
+<h3 id="orgeb49164">给自己讲解</h3>
+</div>
+<div id="outline-container-orgf854a10" class="outline-3">
+<h3 id="orgf854a10">红皮书</h3>
+</div>
+<div id="outline-container-orga7640bd" class="outline-3">
+<h3 id="orga7640bd">习惯用法造句</h3>
+<div class="outline-text-3" id="text-orga7640bd">
+<p>
+get up early/late<br />
+</p>
+<ul class="org-ul">
+<li>I get up late last Saturday.<br /></li>
+<li>Did you get up late last Saturday?<br /></li>
+<li>When did you get up late?<br /></li>
+<li>Why did you get up late last Saturday?<br /></li>
+<li>How often do you get up late?<br /></li>
+</ul>
+<p>
+just then<br />
+</p>
+<ul class="org-ul">
+<li>I give a hug to my just then.<br /></li>
+<li>Did you give a hug to your wife just then?<br /></li>
+<li>Why did you give a hug to your wife just then?<br /></li>
+<li>When did you give a hug to your wife last time?<br /></li>
+<li>How did you give a hug to your wife just then?<br /></li>
+</ul>
+<p>
+have breakfast<br />
+</p>
+<ul class="org-ul">
+<li>I had breakfast today.<br /></li>
+<li>Did you have breakfast today?<br /></li>
+<li>When did you have breakfast?<br /></li>
+<li>Where did you have breakfast today?<br /></li>
+<li>How did you have breakfast?<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org9acfdef" class="outline-3">
+<h3 id="org9acfdef">跟读至背诵</h3>
+</div>
+<div id="outline-container-orgb22770b" class="outline-3">
+<h3 id="orgb22770b">Ask me if 写+读</h3>
+<div class="outline-text-3" id="text-orgb22770b">
+<ol class="org-ol">
+<li>I get up late on Sunday. When<br />
+When do you get up late?<br /></li>
+<li>I sometime stay in bed until lunchtime. What &#x2026; do/Where<br />
+What do you do until lunchtime?<br />
+When do you stay in bed?<br /></li>
+<li>I got up very late last Sunday. When<br />
+When did you get up very late?<br /></li>
+<li>I looked at out of the window. Where<br />
+Where did you look?<br /></li>
+<li>My aunt Lucy telephoned just then. Who<br />
+Who telephoned just then?<br /></li>
+<li>She'd come by train. How<br />
+How did she come?<br /></li>
+<li>She was coming to see me. Who/When<br />
+Who was coming to see you?<br />
+When was she coming to see you?<br /></li>
+<li>I said, "I'm still having breakfast." What<br />
+What did you say?<br /></li>
+<li>It was one o'clock. What time<br />
+What time was it?<br /></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org5da0d70" class="outline-3">
+<h3 id="org5da0d70">摘要写作</h3>
+<div class="outline-text-3" id="text-org5da0d70">
+<p>
+The writer always gets up late on Sunday.<br />
+He got up very late last Sunday.<br />
+His aunt telephoned him.<br />
+She was coming to see him by train.<br />
+He said, "I'm still having breakfast."<br />
+His aunt was very surprise.<br />
+Because it was one o'clock.<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgc83e8d4" class="outline-3">
+<h3 id="orgc83e8d4">tell the story 口语</h3>
+</div>
+<div id="outline-container-org857cc89" class="outline-3">
+<h3 id="org857cc89">Topics for discussion</h3>
+<div class="outline-text-3" id="text-org857cc89">
+<ol class="org-ol">
+<li>Do you get up early or late? Do you find it easy/difficult to get up? Why?<br /></li>
+<li>What do you usually have for breakfast?<br /></li>
+<li>When do people visit friends and relatives in your country?<br /></li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-12-07 Sat 14:00 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-org9e7b930" class="outline-2">
+<h2 id="org9e7b930">3-3 3.19 Expression - Ideas 3 - Staying Attuned</h2>
+<div class="outline-text-2" id="text-org9e7b930">
+<p class="verse">
+It seems like being attuned to your audience or the other parties is so important<br />
+&#xa0;and then I guess how can you tell if the metaphor you're using,<br />
+&#xa0;&#xa0;for instance, they're understanding it and they're accepting your idea.<br />
+Well, you have already given the key word.<br />
+The key word is to stay attuned.<br />
+<br />
+And how do we do that?<br />
+In SSLD, we're looking for specific behavioural markers when people can extend on your metaphor.<br />
+Mm-hm.<br />
+That means they have got the idea, or they can elaborate on it,<br />
+&#xa0;or they can give you similar examples.<br />
+After, say for example, you have worked with 12-year-olds, with an apple,<br />
+&#xa0;and then you bring in something else now and ask them, what is this?<br />
+If they can tell you a different way of classification, then you know that they have got the idea.<br />
+Say for example, after you've taken in the apple,<br />
+&#xa0;and then you say you are bringing a cat and ask people, what is this?<br />
+It's a cat, what is a cat?<br />
+And then people can say well, it's an animal or it's a pet.<br />
+And then you can ask, so can the cat be something else?<br />
+And if they can answer, if someone can tell you,<br />
+&#xa0;the cat can actually be a guide, be a therapist,<br />
+&#xa0;&#xa0;or the cat can be a teacher, or the cat can be part of your decor.<br />
+The cat can be your message to your customer about how this space is an animal friendly space.<br />
+Then you know that these students are getting the idea.<br />
+So you stay attuned,<br />
+&#xa0;you're looking for extension of your idea or specific application of it, elaboration.<br />
+<br />
+And sometimes, especially in the pedagogical or educational setting, you can actually ask people.<br />
+What is the idea that you have got?<br />
+This skill of clarification actually works both ways,<br />
+&#xa0;and this is something that we encourage in communication.<br />
+Sometimes you would just say to the other person that I just do not want to misunderstand you,<br />
+&#xa0;so I'm going to tell you what I've heard from you is that what you are saying to me.<br />
+That it's like seeking clarification and confirmation.<br />
+<br />
+Sometimes you can be doing the same.<br />
+Yeah, I just want to make sure that we're on the same page,<br />
+&#xa0;I have talked about this, can you tell me what does that mean to you?<br />
+Does it make sense or because we don't want to be asking this question<br />
+&#xa0;that can be taken as questioning or sometimes can be,<br />
+&#xa0;&#xa0;some people can take it as humiliating question,<br />
+&#xa0;&#xa0;&#xa0;you're thinking I don't understand you or I'm not following.<br />
+Instead of, do you understand?<br />
+Or repeat to me what I have told you, this is sort of a more didactic top-down approach,<br />
+&#xa0;we would be asking what do you think of it?<br />
+Does it make sense to you?<br />
+How does it make sense to you?<br />
+Or sometimes to make the other party feel better,<br />
+&#xa0;I've told you, do you see something wrong with this or what aspect of it you like better?<br />
+So, you can be asking questions like that to get direct feedback from the other person.<br />
+</p>
+</div>
+<div id="outline-container-orgbe79c55" class="outline-3">
+<h3 id="orgbe79c55">expression</h3>
+<div class="outline-text-3" id="text-orgbe79c55">
+<p>
+specific [spəˈsɪfɪk]: adj. a specific thing, person, or group is one particular thing, person, or group OPP non-specific明确的<br />
+marker [ˈmɑːkə(r)]: n. an object, sign etc that shows the position of something标志<br />
+classification [ˌklæsɪfɪˈkeɪʃ(ə)n]: n. a process in which you put something into the group or class it belongs to ⇨ classify分类, 分级<br />
+therapist [ˈθerəpɪst]: n. someone who has been trained to give a particular form of treatment for physical or mental illness治疗专家<br />
+decor [deɪˈkɔr]: n. the way that the inside of a building is decorated装饰风格,装饰品<br />
+pedagogical [ˌpedəˈɡɑdʒɪk(ə)l]: adj. relating to teaching methods or the practice of teaching ⇨ educational教育学的<br />
+didactic [daɪˈdæktɪk]: adj. someone who is didactic is too eager to teach people things or give instructions说教的<br />
+humiliate [hjuˈmɪliˌeɪt]: v. to make someone feel ashamed or stupid, especially when other people are present SYN embarrass羞辱<br />
+</p>
+<hr />
+<p>
+stay attuned: being in awareness or paying close attention to something保持关注<br />
+bring in sth.: 引入某物<br />
+take in sth.: 吸收某物<br />
+in the educational setting: 在教育的环境下<br />
+on the same page: 意见一致地<br />
+be taken as questioning: 被视为质疑<br />
+top-down approach: 自顶向下的方法<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgfaf811f" class="outline-3">
+<h3 id="orgfaf811f">sentence</h3>
+<div class="outline-text-3" id="text-orgfaf811f">
+<p>
+specific [spəˈsɪfɪk]: adj. a specific thing, person, or group is one particular thing, person, or group OPP non-specific明确的<br />
+</p>
+<ul class="org-ul">
+<li>Before you put into thinking about it, you'd better ask yourself a specific question.<br /></li>
+<li>I need a specific answer whether you will be going to the meeting tomorrow.<br /></li>
+<li>The non-specific loaction of electrons is part of our model for atoms.<br /></li>
+</ul>
+<p>
+marker [ˈmɑːkə(r)]: n. an object, sign etc that shows the position of something标志<br />
+</p>
+<ul class="org-ul">
+<li>The police went out of his way to find any markers which the child left while he was being kidnappered.<br /></li>
+<li>His grandfather conducted him to the marker, which said: 'No parking.'<br /></li>
+<li>The marker reminded the teacher of ancient creatures which have disappeared for two thousand years.<br /></li>
+</ul>
+<p>
+classification [ˌklæsɪfɪˈkeɪʃ(ə)n]: n. a process in which you put something into the group or class it belongs to ⇨ classify分类, 分级<br />
+</p>
+<ul class="org-ul">
+<li>As a merchant, I must figure out the classification of wine according to quality.<br /></li>
+<li>The programmer keeps making the classification of documents according to project.<br /></li>
+<li>Making the classification of product according to date, the worker got exhausted and began to complain his superior.<br /></li>
+</ul>
+<p>
+therapist [ˈθerəpɪst]: n. someone who has been trained to give a particular form of treatment for physical or mental illness治疗专家<br />
+</p>
+<ul class="org-ul">
+<li>It was the therapist who put forward the plan about the eradication campaign of pleague.<br /></li>
+<li>Lying on the legs, my cat functions like a therapist when I am doing homework.<br /></li>
+<li>The eminent therapist in the hospital was accused of sexual harassment by his male paitents.<br /></li>
+</ul>
+<p>
+decor [deɪˈkɔr]: n. the way that the inside of a building is decorated装饰风格,装饰品<br />
+</p>
+<ul class="org-ul">
+<li>Tired of this kind of decor of an apartment, he came up with a very low price which is unacceptable in the market.<br /></li>
+<li>When she opened the door, I noticed to my horror that she had spent all of her pocket money purchasing decors.<br /></li>
+<li>It was disturbing to think that my daughter's room was full of decors and she refused to clean it up.<br /></li>
+</ul>
+<p>
+pedagogical [ˌpedəˈɡɑdʒɪk(ə)l]: adj. relating to teaching methods or the practice of teaching ⇨ educational教育学的<br />
+</p>
+<ul class="org-ul">
+<li>The headmaster in the high school decided to bring in a new pedagogical method next semester.<br /></li>
+<li>The pedagogical purpose is to help students become a soldier on the battlefield.<br /></li>
+<li>In the pursuit of the pedagogical purpose, the teacher devoted himself to his students.<br /></li>
+</ul>
+<p>
+didactic [daɪˈdæktɪk]: adj. someone who is didactic is too eager to teach people things or give instructions说教的<br />
+</p>
+<ul class="org-ul">
+<li>It seems that I am meant to be a didactic father.<br /></li>
+<li>Running into his didactic father in the amusementpark, he kept hidden on the bush.<br /></li>
+<li>Other than that, he is eager to meet his didactic father.<br /></li>
+</ul>
+<p>
+humiliate [hjuˈmɪliˌeɪt]: v. to make someone feel ashamed or stupid, especially when other people are present SYN embarrass羞辱<br />
+</p>
+<ul class="org-ul">
+<li>In revenge for humiliating her while she was in prison, the queen had her knight raped the nun.<br /></li>
+<li>Because of my anxiety, what I asked in class was always being taken as humiliating questions.<br /></li>
+<li>The lady has been humiliating since she got married to the crippled lord.<br /></li>
+</ul>
+<hr />
+<p>
+stay attuned: being in awareness or paying close attention to something保持关注<br />
+</p>
+<ul class="org-ul">
+<li>If you had stayed attuned, you would have passed the driver's exam.<br /></li>
+<li>Staying attuned to the concert of Taylor Swift, he immediately bought two tickets when message came to the internet.<br /></li>
+<li>Staying attuned to his debt, he paid it on time after he got his salary.<br /></li>
+</ul>
+<p>
+bring in sth.: 引入某物<br />
+</p>
+<ul class="org-ul">
+<li>The official insisted on bringing in some grains which are cultivated in the mountainous area.<br /></li>
+<li>The official brought in some grass which would take root in the hill.<br /></li>
+<li>The headmaster brought in some kind of grains to solve the lack of sustenance in this town.<br /></li>
+</ul>
+<p>
+take in sth.: 吸收某物<br />
+</p>
+<ul class="org-ul">
+<li>I should be answering myself whether I take in knowledge my teacher teaches.<br /></li>
+<li>The grasses can take in sustenance even if they are in extreme of salinity.<br /></li>
+<li>This is marker whether our children take in the concept of time.<br /></li>
+</ul>
+<p>
+in the educational setting: 在教育的环境下<br />
+</p>
+<ul class="org-ul">
+<li>The lawyer can take advantage of his knowledge in the educational setting.<br /></li>
+<li>In the educational setting, he is acquainted with the concept of therapy.<br /></li>
+<li>In the educational setting, he stayed attuned to a new generation of audiences.<br /></li>
+</ul>
+<p>
+on the same page: 意见一致地<br />
+</p>
+<ul class="org-ul">
+<li>Trust will be built when we are on the same page.<br /></li>
+<li>They punished the criminal of starting a war on the same page.<br /></li>
+<li>We treated the mad king on the same page.<br /></li>
+</ul>
+<p>
+be taken as questioning: 被视为质疑<br />
+</p>
+<ul class="org-ul">
+<li>Whatever I have done is taken as questioning when you make such stupid remarks.<br /></li>
+<li>When you interrupt people's speech in public, they would take it as questioning.<br /></li>
+<li>In the face of being taken as questioning, he explain his pedagogical purpose to the headmaster.<br /></li>
+</ul>
+<p>
+top-down approach: 自顶向下的方法<br />
+</p>
+<ul class="org-ul">
+<li>A top-down approach means to me that I can be an expert at programming.<br /></li>
+<li>The project fits the top-down approach well.<br /></li>
+<li>The top-down approach was designed to tackle issues about building relationships.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org75ce86c" class="outline-3">
+<h3 id="org75ce86c">sentence2</h3>
+<div class="outline-text-3" id="text-org75ce86c">
+<p>
+specific [spəˈsɪfɪk]: adj. a specific thing, person, or group is one particular thing, person, or group OPP non-specific明确的<br />
+</p>
+<ul class="org-ul">
+<li>Before you deliberate on it, you'd better ask yourself a specific question.<br /></li>
+<li>I need a specific answer about whether you will be going to the meeting tomorrow.<br /></li>
+<li>The non-specific location of electrons is part of our model for atoms.<br /></li>
+</ul>
+<p>
+marker [ˈmɑːkə(r)]: n. an object, sign etc that shows the position of something标志<br />
+</p>
+<ul class="org-ul">
+<li>The policeman went out of his way to find any markers that the child left while he was being kidnapped.<br /></li>
+<li>His grandfather conducted him to the marker, which said: 'No parking.'<br /></li>
+<li>The marker reminded the teacher of ancient creatures which have disappeared for two thousand years.<br /></li>
+</ul>
+<p>
+classification [ˌklæsɪfɪˈkeɪʃ(ə)n]: n. a process in which you put something into the group or class it belongs to ⇨ classify分类, 分级<br />
+</p>
+<ul class="org-ul">
+<li>As a merchant, I must figure out the classification of wine according to quality.<br /></li>
+<li>The programmer made the classification of documents according to projects.<br /></li>
+<li>Making the classification of product according to date, the worker got exhausted and began to complain to his superior.<br /></li>
+</ul>
+<p>
+therapist [ˈθerəpɪst]: n. someone who has been trained to give a particular form of treatment for physical or mental illness治疗专家<br />
+</p>
+<ul class="org-ul">
+<li>It was the therapist who put forward the plan for the eradication campaign of plague.<br /></li>
+<li>Lying on the legs, my cat functions like a therapist when I am doing homework.<br /></li>
+<li>The eminent therapist in the hospital was accused of sexual harassment by his male patients.<br /></li>
+</ul>
+<p>
+decor [deɪˈkɔr]: n. the way that the inside of a building is decorated装饰风格,装饰品<br />
+</p>
+<ul class="org-ul">
+<li>Tired of this kind of decor of an apartment, he came up with a very low price which is unacceptable in the market.<br /></li>
+<li>When she opened the door, I noticed to my horror that she had spent all of her pocket money purchasing decors.<br /></li>
+<li>It was disturbing to think that my daughter's room was full of decor and she refused to clean it up.<br /></li>
+</ul>
+<p>
+pedagogical [ˌpedəˈɡɑdʒɪk(ə)l]: adj. relating to teaching methods or the practice of teaching ⇨ educational教育学的<br />
+</p>
+<ul class="org-ul">
+<li>The headmaster in the high school decided to bring in a new pedagogical method next semester.<br /></li>
+<li>The pedagogical purpose is to help students become soldiers on the battlefield.<br /></li>
+<li>In the pursuit of the pedagogical purpose, the teacher devoted himself to his students.<br /></li>
+</ul>
+<p>
+didactic [daɪˈdæktɪk]: adj. someone who is didactic is too eager to teach people things or give instructions说教的<br />
+</p>
+<ul class="org-ul">
+<li>It seems that I am meant to be a didactic father.<br /></li>
+<li>Running into his didactic father in the amusement park, he kept hidden in the bush.<br /></li>
+<li>Other than that, he is eager to meet his didactic father.<br /></li>
+</ul>
+<p>
+humiliate [hjuˈmɪliˌeɪt]: v. to make someone feel ashamed or stupid, especially when other people are present SYN embarrass羞辱<br />
+</p>
+<ul class="org-ul">
+<li>In revenge for humiliating her while she was in prison, the queen had her knight raped the nun.<br /></li>
+<li>Because of my anxiety, what I asked in class was always being taken as humiliating questions.<br /></li>
+<li>The lady has been humiliated since she got married to the crippled lord.<br /></li>
+</ul>
+<hr />
+<p>
+stay attuned: being in awareness or paying close attention to something保持关注<br />
+</p>
+<ul class="org-ul">
+<li>If you had stayed attuned, you would have passed the driver's exam.<br /></li>
+<li>Staying attuned to the concert of Taylor Swift, he immediately bought two tickets when messages came to the internet.<br /></li>
+<li>Staying attuned to his debt, he paid it on time after he got his salary.<br /></li>
+</ul>
+<p>
+bring in sth.: 引入某物<br />
+</p>
+<ul class="org-ul">
+<li>The official insisted on bringing in some grains which are cultivated in the mountainous area.<br /></li>
+<li>The official brought in some grass which would take root in the hill.<br /></li>
+<li>The headmaster brought in some kind of grains to solve the lack of sustenance in this town.<br /></li>
+</ul>
+<p>
+take in sth.: 吸收某物<br />
+</p>
+<ul class="org-ul">
+<li>I should be answering myself whether I take in knowledge my teacher teaches.<br /></li>
+<li>The grasses can take in sustenance even if they are in an extreme environment of salinity.<br /></li>
+<li>This is a marker of whether our children take in the concept of time.<br /></li>
+</ul>
+<p>
+in the educational setting: 在教育的环境下<br />
+</p>
+<ul class="org-ul">
+<li>The lawyer can take advantage of his knowledge in the educational setting.<br /></li>
+<li>In the educational setting, he is acquainted with the concept of therapy.<br /></li>
+<li>In the educational setting, he stayed attuned to a new generation of audiences.<br /></li>
+</ul>
+<p>
+on the same page: 意见一致地<br />
+</p>
+<ul class="org-ul">
+<li>Trust will be built when we are on the same page.<br /></li>
+<li>They punished the criminal for starting a war on the same page.<br /></li>
+<li>We treated the mad king on the same page.<br /></li>
+</ul>
+<p>
+be taken as questioning: 被视为质疑<br />
+</p>
+<ul class="org-ul">
+<li>Whatever I have done is taken as questioning when you make such stupid remarks.<br /></li>
+<li>When you interrupt people's speech in public, they would take it as questioning.<br /></li>
+<li>In the face of being taken as questioning, he explains his pedagogical purpose to the headmaster.<br /></li>
+</ul>
+<p>
+top-down approach: 自顶向下的方法<br />
+</p>
+<ul class="org-ul">
+<li>A top-down approach means to me that I can be an expert at programming.<br /></li>
+<li>The project fits the top-down approach well.<br /></li>
+<li>The top-down approach was designed to tackle issues about building relationships.<br /></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

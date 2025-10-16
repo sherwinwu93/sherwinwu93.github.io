@@ -1,0 +1,621 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-09-28 Sat 22:17 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-org8df6047" class="outline-2">
+<h2 id="org8df6047">Lesson 25 The Cutty Sark</h2>
+<div class="outline-text-2" id="text-org8df6047">
+<p class="verse">
+What piece of bad luck prevented the Cutty Sark from winning the race?<br />
+<br />
+One of the most famous sailing ships of the 19th century,<br />
+&#xa0;the Cutty Sark, can be seen at Greenwich.<br />
+She stands on dry land and is visited by thousands of people each year.<br />
+She serves as an impressive reminder of the great ships of the past.<br />
+Before they <b>were replaced by</b> steamships,<br />
+&#xa0;sailing vessels like the Cutty Sark were used to carry tea from China and wool from Australia.<br />
+The Cutty Sark was one of the fastest sailing ships that has ever been built.<br />
+The only other ship to match her was the Thermopylae.<br />
+Both these ships set out from Shanghai on June 18th, 1872 on an exciting race to England.<br />
+This race, which went on for exactly four months, was the last of its kind.<br />
+It marked the end of the great tradition of ships with sails and <b>the beginning of a new era</b>.<br />
+<br />
+The first of the two ships to reach Java after the race had begun was the Thermopylae,<br />
+&#xa0;but on the Indian Ocean, the Cutty Sark <b>took the lead</b>.<br />
+It seemed certain that she would be the first ship home,<br />
+&#xa0;but during the race she had a lot of bad luck.<br />
+In August, she <b>was struck by</b> a very heavy storm during which her rudder was torn away.<br />
+The Cutty Sark rolled <b>from side to side</b> and it <b>became impossible to</b> steer her.<br />
+A temporary rudder was made on board from spare planks and it <b>was fitted with great difficulty</b>.<br />
+This greatly reduced the speed of the ship,<br />
+&#xa0;for <b>there was a danger that</b> if she travelled too quickly,<br />
+&#xa0;this rudder would be torn away as well.<br />
+Because of this the Cutty Sark <b>lost her lead</b>.<br />
+After crossing the Equator,<br />
+&#xa0;the captain called in at a port to have a new rudder fitted,<br />
+&#xa0;but by now the Thermopylae was over five hundred miles ahead.<br />
+Though the new rudder was fitted at tremendous speed, it was impossible for the Cutty Sark to win.<br />
+She arrived in England a week after the Thermopylae.<br />
+Even this was remarkable, considering that she had had so many delays.<br />
+<b>There is no doubt that</b> if she had not lost her rudder she would have won the race easily.<br />
+</p>
+</div>
+<div id="outline-container-org00abf15" class="outline-3">
+<h3 id="org00abf15">expression</h3>
+<div class="outline-text-3" id="text-org00abf15">
+<p>
+impressive: [imˈprɛsiv] adj. makes you You careless mistakes may manifest as the loss of money of our company one dayadmire it because it is very good, large, important etc给人深刻印象的<br />
+steamship: [ˈstimˌʃɪp] n.蒸汽轮船<br />
+vessel: [ˈves(ə)l] n. a ship or large boat轮船,大木船<br />
+era: [ˈɪrə] n.时代<br />
+Java: [ˈdʒɑvə] n.<br />
+rudder: [ˈrʌdər] n. a flat part at the back of a ship or aircraft that can be turned in order to control the direction in which it moves舵<br />
+roll: [roʊl] v.滚动<br />
+steer: [stɪr] v. to control the direction a vehicle is going, for example by turning a wheel掌握方向<br />
+temporary: [ˈtempəˌreri] adj.临时的<br />
+plank: [plæŋk] n.木板<br />
+fit: [fɪt] v.安装<br />
+equator: [ɪ'kweɪtə(r)] n.赤道<br />
+delay: [dɪˈleɪ] n.延误<br />
+</p>
+
+<p>
+a new era/ the beginning/end of an era: 新时代<br />
+A be fitted with B: A被装上了B<br />
+delay in doing sth.: 延迟做某事<br />
+</p>
+<hr />
+<p>
+A be replaced by B: A被B替换<br />
+take the lead (in doing sth.) lose one's lead: 领先做某事 失去领先<br />
+be struck by: to be very impressed by被&#x2026;所打动<br />
+from side to side: moving to the left and then to the righ左右摇晃<br />
+it become impossible to do sth.: 做某事变得不可能<br />
+with great difficulty: 非常困难地<br />
+There is a danger that + &#x2026;: 有&#x2026;的危险<br />
+call in on/at: visit拜访<br />
+by now: 目前为止<br />
+There is no doubt that + &#x2026;: 毫无疑问<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org61a2d47" class="outline-3">
+<h3 id="org61a2d47">words</h3>
+<div class="outline-text-3" id="text-org61a2d47">
+<p>
+impressive [ɪmˈpresɪv] adj. 给人印象深刻的<br />
+steamship [ˈstiːmʃɪp] n. 蒸汽轮船<br />
+vessel [ˈves(ə)l] n. 轮船,大木船<br />
+era ˈɪrə n. 时期,时代<br />
+Java [ˈdʒɑːvə] n.爪哇<br />
+rudder [ˈrʌdər] n.舵<br />
+roll [roʊl] v.颠簸,摇摆<br />
+steer [stɪr] v.掌握方向<br />
+temporary [ˈtempəreri] adj.临时的<br />
+plank [plæŋk] n.大块木板<br />
+fit [fɪt] v.安装<br />
+equator [ɪˈkweɪtər] n.赤道<br />
+delay [dɪˈleɪ] n.耽误<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge4c45b0" class="outline-3">
+<h3 id="orge4c45b0">vocabulary</h3>
+<div class="outline-text-3" id="text-orge4c45b0">
+<p>
+reminder: something that makes you remember<br />
+match: be equal to<br />
+era: an age or period<br />
+struck: hit<br />
+steer: guide<br />
+temporary: lasting for a short time<br />
+on board: on the ship<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc174a14" class="outline-3">
+<h3 id="orgc174a14"><span class="done DONE">DONE</span> 单词造句</h3>
+<div class="outline-text-3" id="text-orgc174a14">
+<p>
+impressive adj.<br />
+</p>
+<ul class="org-ul">
+<li>There is a very impressive monument at NewYork Harbour.<br /></li>
+<li>The longest suspension bridge in the world makes his achievement more impressive.<br /></li>
+<li>He is so impressive that he hitchhiked to Paris when he was very young.<br /></li>
+<li>The local grocer who has repaired the clock is very impressive.<br /></li>
+<li>The order to abandon ship in the movie is very impressive.<br /></li>
+</ul>
+<p>
+steamship n.<br />
+</p>
+<ul class="org-ul">
+<li>He realized to his horror that the steamship was stuck by a huge iceberg.<br /></li>
+<li>The authorities have loaded the steamship with tea from China.<br /></li>
+<li>Waking up with a start, he found himself tied to a chair in a steamship.<br /></li>
+<li>On the one hand, he was the captain of the steamship.<br /></li>
+<li>We were greeted by an unpleasant smell while we boarded the steamship at first.<br /></li>
+</ul>
+<p>
+vessel n.<br />
+</p>
+<ul class="org-ul">
+<li>It is said that he set the sailing vessel on fire.<br /></li>
+<li>He ordered his men to break down the sailing vessel.<br /></li>
+<li>I felt guilty when I smoke on the vessel after I had quitted.<br /></li>
+<li>I was made to clean up the vessel.<br /></li>
+<li>As soon as the man boarded on the vessel, he lit up a cigrette.<br /></li>
+</ul>
+<p>
+era n.  a new era/ the beginning/end of an era<br />
+</p>
+<ul class="org-ul">
+<li>The purchase of the cat marked the beginning of a new era.<br /></li>
+<li>The moment when we lived abroad marked the beginning of a new era.<br /></li>
+<li>The death of my grandfather marked the end of an era.<br /></li>
+<li>We often form an unrealistic picture of a great man whose death marked the end of an era.<br /></li>
+<li>The sad truth is that his death marked the end of an era.<br /></li>
+</ul>
+<p>
+Java n.<br />
+rudder n.<br />
+</p>
+<ul class="org-ul">
+<li>It is my job to fix rudders in my youth.<br /></li>
+<li>There is an element of truth in the idea that we should not touch the rudder.<br /></li>
+<li>I am genuinely sorry that I haven't fixed the rudder.<br /></li>
+<li>If we had to wait until you had fixed the rudder, we would have starved to death.<br /></li>
+<li>I wished that the captain had had the rudder fixed.<br /></li>
+</ul>
+<p>
+roll v.<br />
+</p>
+<ul class="org-ul">
+<li>My stomach would turn if the boat were rolling.<br /></li>
+<li>I was sick to my stomach while the boat was rolling.<br /></li>
+<li>The ship rolled so hard that we couldn't steer it.<br /></li>
+<li>The harder the ship rolls, the more abuse the captain receives.<br /></li>
+<li>Boarding a ship which rolls from side to side never appeal to me.<br /></li>
+</ul>
+<p>
+steer v.<br />
+</p>
+<ul class="org-ul">
+<li>I noticed him steering the car with one hand.<br /></li>
+<li>Much to my surprise, he was steering with one hand at tremendous speed.<br /></li>
+<li>Because he is always steering with one hand, he has received many abuse.<br /></li>
+<li>The sad truth is that he is too drunk to steer boat.<br /></li>
+<li>My uncle was anxious to steer his new car after he had passed the test.<br /></li>
+</ul>
+<p>
+temporary adj.<br />
+</p>
+<ul class="org-ul">
+<li>I told my wife it's temporary that we live in the apartment.<br /></li>
+<li>I will read the pirate stories to you, but it's only temporary.<br /></li>
+<li>You should have considered a temporary work until you decided what you want to do.<br /></li>
+<li>Don't expect me to give you the cardboard boxes, it's only temporary.<br /></li>
+<li>Although repairing bicycle is my temporary job, I took it seriously.<br /></li>
+</ul>
+<p>
+plank n.<br />
+</p>
+<ul class="org-ul">
+<li>You are expected to fix the rudder with these planks.<br /></li>
+<li>I am made to build the bridge with these planks.<br /></li>
+<li>She stared at the bridge which is made of planks.<br /></li>
+<li>Much to her surprise, the long bridge is made of planks.<br /></li>
+<li>She insisted that the bridge should be made with planks.<br /></li>
+</ul>
+<p>
+fit v.  a. be fitted with b.<br />
+</p>
+<ul class="org-ul">
+<li>It is said that each room of the hotel was fitted with a secret hole.<br /></li>
+<li>I am about to fit the room with a lamb.<br /></li>
+<li>The room which was not fitted with any lamb ruined my night.<br /></li>
+<li>Imagine his dismay when he found that the room could be fitted with microwave oven.<br /></li>
+<li>It is all very well the building would be fitted with elevator.<br /></li>
+</ul>
+<p>
+equator n.<br />
+delay n.  delay in doing sth.<br />
+</p>
+<ul class="org-ul">
+<li>My wife is always delaying in taking a shower.<br /></li>
+<li>Why do you delay in going to bed over and over again?<br /></li>
+<li>I complained that my wife delayed in going to bed once more.<br /></li>
+<li>In my youth, I never delayed in finishing my homework.<br /></li>
+<li>Oddly enough, the train delayed in arriving.<br /></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org6a9c9de" class="outline-3">
+<h3 id="org6a9c9de"><span class="done DONE">DONE</span> 反复听电影片段直到懂关键句</h3>
+<div class="outline-text-3" id="text-org6a9c9de">
+</div>
+</div>
+<div id="outline-container-org770998e" class="outline-3">
+<h3 id="org770998e">复习二册语法(笔记或视频) &amp; 红皮书</h3>
+</div>
+<div id="outline-container-org9fd0c73" class="outline-3">
+<h3 id="org9fd0c73"><span class="done DONE">DONE</span> 习惯用法造句</h3>
+<div class="outline-text-3" id="text-org9fd0c73">
+<p>
+a. be replaced by b.<br />
+</p>
+<ul class="org-ul">
+<li>These days, watches have basically been replaced by mobile phones.<br /></li>
+<li>The sad truth is that I'll be replace by AI.<br /></li>
+<li>If you don't work hard, you will be replaced by someone who takes job seriously.<br /></li>
+<li>Many workers in China have already been replaced by robots.<br /></li>
+<li>The paper written out in full has been replaced by a blank sheet of paper.<br /></li>
+</ul>
+<p>
+take the lead (in doing sth.) lose one's lead<br />
+</p>
+<ul class="org-ul">
+<li>I always took the lead in studying in my youth.<br /></li>
+<li>We don't expect you to take the lead in your class.<br /></li>
+<li>We don't have cause to take the lead in this.<br /></li>
+<li>If you learn the lines by heart, you may take the lead.<br /></li>
+<li>It is esay for you to lose your lead in class.<br /></li>
+</ul>
+<p>
+be struck by<br />
+</p>
+<ul class="org-ul">
+<li>The man who was struck by lightening yet only suffered from a broken tooth.<br /></li>
+<li>He explained that he was struck by a car.<br /></li>
+<li>He was struck by his father in more ways than one.<br /></li>
+<li>The man was struck by lightening and got very worried.<br /></li>
+<li>He claimed to have been strucked by lightening three times.<br /></li>
+</ul>
+<p>
+from side to side<br />
+</p>
+<ul class="org-ul">
+<li>He is dancing from side to side.<br /></li>
+<li>The woman who danced from side to side won a prize of $1000 at the party.<br /></li>
+<li>I made an attempt to wave my hands from side to side.<br /></li>
+<li>It looked as if he shook his head from side to side.<br /></li>
+<li>The cat on show is taking a stroll from side to side.<br /></li>
+</ul>
+<p>
+it became impossible to do sth.<br />
+</p>
+<ul class="org-ul">
+<li>It became impossible to get out of it.<br /></li>
+<li>It became impossible to have a perfert alibi.<br /></li>
+<li>It became impossible to get a ransom of $1000.<br /></li>
+<li>It became impossible to remain anonymous any more.<br /></li>
+<li>It became impossible to stay married.<br /></li>
+</ul>
+<p>
+with great difficulty<br />
+</p>
+<ul class="org-ul">
+<li>The injured man went to the police with great difficulty.<br /></li>
+<li>The disabled took a long walk with great difficulty.<br /></li>
+<li>It astounded me that she managed to break the world record with great difficulty.<br /></li>
+<li>The cat is dear to me with some difficulty.<br /></li>
+<li>The crowd left the theatre in an orderly fashion with great difficulty.<br /></li>
+</ul>
+<p>
+There is a danger that + &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>There is a danger that she has changed her mind.<br /></li>
+<li>There is a danger that he would follow in his father's footstep.<br /></li>
+<li>There is a danger that she would never see her cat again.<br /></li>
+<li>There is a danger that we might run into serious trouble.<br /></li>
+<li>There is a danger that the family has a skeleton in the cupboard.<br /></li>
+</ul>
+<p>
+call in on/at<br />
+</p>
+<ul class="org-ul">
+<li>I am gonna calling in on Lee on Saturday.<br /></li>
+<li>Following my father's instructions, I called in on aunt, Lily.<br /></li>
+<li>I will keep my word and call in at the museum on Saturday.<br /></li>
+<li>Would you like call in at the shop for a cap of milk tea?<br /></li>
+<li>He never calls in at home on duty.<br /></li>
+</ul>
+<p>
+by now<br />
+</p>
+<ul class="org-ul">
+<li>I have remained anonymous by now.<br /></li>
+<li>She hasn't paid a ransom of $1000 by now.<br /></li>
+<li>She has shared a flat with her cat by now.<br /></li>
+<li>The cat is still in safe hands by now.<br /></li>
+<li>It hasn't made everything clear by now.<br /></li>
+</ul>
+<p>
+There is no doubt that + &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>There is no doubt that she will keep her word.<br /></li>
+<li>There is no doubt that I will not follow your instructions.<br /></li>
+<li>There is no doubt that she made every effort not to hurt the fish.<br /></li>
+<li>There is no doubt that I made a mistake here.<br /></li>
+<li>There is no doubt that I didn't make such stupid remarks.<br /></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org06e09f0" class="outline-3">
+<h3 id="org06e09f0">跟读 50遍</h3>
+</div>
+<div id="outline-container-org5a9e406" class="outline-3">
+<h3 id="org5a9e406"><span class="done DONE">DONE</span> Comprehension 反复练习</h3>
+<div class="outline-text-3" id="text-org5a9e406">
+</div>
+</div>
+<div id="outline-container-org86b925d" class="outline-3">
+<h3 id="org86b925d"><span class="done DONE">DONE</span> Ask me if 写+读</h3>
+<div class="outline-text-3" id="text-org86b925d">
+<ol class="org-ol">
+<li>The Cutty Sark can still be seen at Greenwich. Where<br />
+Where can the Cutty Sark still be seen?<br /></li>
+<li>The Cutty Sark was a sailing ship. What kind&#x2026;<br />
+What kind of ship was the Cutty Sark?<br /></li>
+<li>Ships like the Cutty Sark were used to carry tea and wool. What &#x2026;<br />
+What were ships like the Cutty Sark used to do?<br /></li>
+<li>The race lasted for four months. How long<br />
+How long did the race last?<br /></li>
+<li>The Thermopylae reached Java first. Which ship<br />
+Which ship reached Java first?<br /></li>
+<li>The Cutty Sark had a lot of bad luck during the race. How much<br />
+How much bad luck did the Cutty Sark have during the race?<br /></li>
+<li>Her rudder was torn away during a heavy storm. When<br />
+When was her rudder torn away?<br /></li>
+<li>A temporary rudder was made on board from spare planks. How<br />
+How was a temporary rudder made on board?<br /></li>
+<li>The captain called in at a port. Why<br />
+Why did the captain call in at a port?<br /></li>
+<li>The Cutty Sark arrived in England a week after the Thermopylae. When<br />
+When did the Cutty Sarrk arrive in England?<br /></li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orga24dd80" class="outline-3">
+<h3 id="orga24dd80"><span class="done DONE">DONE</span> 摘要写作 写 &amp; 对答案</h3>
+<div class="outline-text-3" id="text-orga24dd80">
+<p>
+After the race had begun, the Thermopylae reached Java at first,<br />
+	but on the Indian Ocean, the Cutty Sark took the lead.<br />
+In August, the Cutty Sark was struck by a heavy storm<br />
+	during which her rudder was torn away.<br />
+This reduced the speed of the ship, she lost her lead.<br />
+After crossing the Equator, the captain called in at a port to have a new rudder fitted<br />
+	when the Thermopylae was over five hundred miles ahead.<br />
+Because of so many delays, she arrived in England a week after the Thermopylae.<br />
+</p>
+
+<p>
+The Thermopylae reaced Java first, but the Cutty Sark took the lead on the Indian Ocean.<br />
+When the Cutty Sark was struck by a heavy storm, her rudder was torn away.<br />
+A temporary rudder was made and fitted, but the ship lost the lead.<br />
+After crossing the Equator, they called in at a port to have a new rudder fitted.<br />
+Even with a new rudder, the Cutty Sark arrived in England a week after the Thermopylae,<br />
+	which was 500 miles ahead.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org815b174" class="outline-3">
+<h3 id="org815b174"><span class="done DONE">DONE</span> tell the story 口语复述</h3>
+<div class="outline-text-3" id="text-org815b174">
+</div>
+</div>
+<div id="outline-container-orgb74a503" class="outline-3">
+<h3 id="orgb74a503">composition 阅读 或 写作</h3>
+</div>
+<div id="outline-container-org02a78f9" class="outline-3">
+<h3 id="org02a78f9">Topics for discussion</h3>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,656 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-09-28 Sat 22:17 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-org795a89e" class="outline-2">
+<h2 id="org795a89e">Lesson 09 Flying cats</h2>
+<div class="outline-text-2" id="text-org795a89e">
+<p class="verse">
+How do cats try to protect themselves when falling from great heights?<br />
+<br />
+Cats never fail to fascinate human beings.<br />
+They can be friendly and affectionate towards humans,<br />
+&#xa0;but they <b>lead mysterious lives</b> of their own as well.<br />
+They never become submissive like dogs and horses.<br />
+As a result, humans have learned to respect feline independence.<br />
+Most cats remain suspicious of humans all their lives.<br />
+One of the things that fascinates us most about cats is the popular belief<br />
+&#xa0;that they have nine lives.<br />
+Apparently, there is <b>a good deal of</b> truth in this idea.<br />
+A cat's ability to survive falls <b>is based on</b> fact.<br />
+<br />
+Recently<br />
+&#xa0;the New York Animal Medical Centre <b>made a study of</b> 132 cats over <b>a period of</b> five months.<br />
+All these cats <b>had one experience in common</b>:<br />
+&#xa0;they had fallen off high buildings, yet only eight of them <b>died from</b> shock or injuries.<br />
+Of course, New York is the ideal place for such an interesting study,<br />
+&#xa0;because <b>there is no shortage of</b> tall buildings.<br />
+There are plenty of high-rise windowsills to fall from!<br />
+One cat, Sabrina, fell 32 storeys, yet only suffered from a broken tooth.<br />
+'Cats behave like well-trained paratroopers,' a doctor said.<br />
+<b>It seems that</b> the further cats fall, the less they <b>are likely to</b> injure themseleves.<br />
+In a long drop, they reach speeds of 60 miles an hour and more.<br />
+At high speeds, falling cats have time to relax.<br />
+They stretch out their legs like flying squirrels.<br />
+This increases their air-resistance and reduces the shock of impact when they hit the groud.<br />
+</p>
+</div>
+<div id="outline-container-orgb3152fa" class="outline-3">
+<h3 id="orgb3152fa">expression</h3>
+<div class="outline-text-3" id="text-orgb3152fa">
+<p>
+fascinate: [ˈfæsɪˌneɪt] v. you are attracted to them and think they are extremely interesting迷住,吸引住<br />
+affectionate: [əˈfekʃənət] adj. showing in a gentle way that you love someone and care about them充满深情的,柔情的<br />
+mysterious: [mɪˈstɪriəs] adj.神秘的,难以理解的<br />
+submissive: [səbˈmɪsɪv] adj. always willing to obey someone and never disagreeing with them, even if they are unkind to you服从的,顺从的<br />
+feline: [ˈfiˌlaɪn] adj.  relating to cats or other members of the cat family, such as lions猫的<br />
+independence: [ˌɪndɪˈpendəns] n.独立,独立性<br />
+high-rise: adj. tall 高层的<br />
+windowsill: [ˈwɪndoʊˌsɪl] n. a shelf fixed along the bottom of a window窗槛<br />
+paratrooper: [ˈperəˌtrupər] n. a soldier who is trained to jump out of a plane using a parachute伞兵<br />
+squirrel: [ˈskwɪrəl] n.松鼠<br />
+air-resistance: [rɪˈzɪstəns] n.空气阻力<br />
+impact: [ɪmˈpækt] n.冲击力<br />
+</p>
+
+<p>
+gain its independence: it has its own government and is not ruled by any other country获得独立<br />
+have/make an impact on: 对&#x2026;有影响<br />
+</p>
+<hr />
+<p>
+the 比较级(eg. more) &#x2026;, the 比较级(eg.more) &#x2026;: 比较级在句子中做比较成分<br />
+yet&#x2026;: conj.; 表惊讶的转折<br />
+</p>
+<hr />
+<p>
+lead a adj. life: live a adj. life过一种怎样的生活<br />
+learn to do sth.: 学会做某事<br />
+a good deal of/a great deal of un.: VS a lot of; VS a great number of 大量+(un.)<br />
+be based on: to use information to support or prove an opinion or belief基于<br />
+make a study of sth: research研究某事物<br />
+a period of + st.: eg. a period of five months一段时间<br />
+have sth. in common: eg. have one experience in common有共同之处<br />
+died from(事故) / died of(病): 死于<br />
+there is no shortage of sth.: 不缺某物<br />
+It seems that + &#x2026;: 看来好像+&#x2026;<br />
+be likely to do sth.: they will very probably do it可能做某事<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgcd61af5" class="outline-3">
+<h3 id="orgcd61af5">words</h3>
+<div class="outline-text-3" id="text-orgcd61af5">
+<p>
+fascinate [ˈfæsɪneɪt] v. 迷住<br />
+affectionate [əˈfekʃənət] adj. 充满深情的<br />
+mysterious [mɪˈstɪəriəs] adj. 神秘的<br />
+submissive [səbˈmɪsɪv] adj. 服从的<br />
+feline [ˈfiːlaɪn] adj. 猫的<br />
+independence [ˌɪndɪˈpendəns] n. 独立的<br />
+high-rise [ˈhaɪ raɪz] adj. 高层的<br />
+windowsill [ˈwɪndəʊsɪl] n. 窗槛<br />
+paratrooper [ˈpærətruːpə(r)] n. 伞兵<br />
+squirrel [ˈskwɪrəl] n. 松鼠<br />
+air-resistance [rɪˈzɪstəns] n. 空气阻力<br />
+impact [ˈɪmpækt] n. 冲击力<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgcec9220" class="outline-3">
+<h3 id="orgcec9220">vocabulary</h3>
+<div class="outline-text-3" id="text-orgcec9220">
+<p>
+affectionate: loving<br />
+as a result: consequently<br />
+remain: continue to be<br />
+there is no shortage of: there are plenty of<br />
+behave: act<br />
+injure: harm<br />
+increases: raises<br />
+reduces: cuts down<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgf420a09" class="outline-3">
+<h3 id="orgf420a09"><span class="done DONE">DONE</span> 单词造句</h3>
+<div class="outline-text-3" id="text-orgf420a09">
+<p>
+fascinate v.<br />
+</p>
+<ul class="org-ul">
+<li>The story never fails to fascinate me.<br /></li>
+<li>My cat never fails to fascinate me when I get home.<br /></li>
+<li>I've chased after a great many of women, everyone fascinates me like you.<br /></li>
+<li>I have never been fascinated by the drama.<br /></li>
+<li>What a cut cat. It fascinates me a lot.<br /></li>
+</ul>
+<p>
+affectionate adj.<br />
+</p>
+<ul class="org-ul">
+<li>My wife is always affectionate towards me.<br /></li>
+<li>When your wife is in difficulty, you should be affectionate towards her.<br /></li>
+<li>It's said that he gave her an affectionate kiss last night.<br /></li>
+<li>The affectionate kiss he gave me reminded me of my ex-boyfriend.<br /></li>
+<li>I attempted to give her an affectionate kiss.<br /></li>
+</ul>
+<p>
+mysterious adj.<br />
+</p>
+<ul class="org-ul">
+<li>The goddess lives a mysterious life for hundreds of years.<br /></li>
+<li>The police was told by a mysterious call that the plane was planted a bomb.<br /></li>
+<li>This mysterious ring may be connected to the history of Greek.<br /></li>
+<li>Now that we couldn't find the mysterious visitor, let's grab a coffee.<br /></li>
+<li>The mysterious car went to the arcade at a fantastic speed.<br /></li>
+</ul>
+<p>
+submissive adj.<br />
+</p>
+<ul class="org-ul">
+<li>My wife is so submissive that she would obey my every word.<br /></li>
+<li>You will be disappointed to learn that teachers in China want their students to be submissive.<br /></li>
+<li>Every patient in the hospital must be submissive.<br /></li>
+<li>He is always following his boss like a submissive dog.<br /></li>
+<li>The boys who played truent from school are rarely submissive.<br /></li>
+</ul>
+<p>
+feline adj.<br />
+</p>
+<ul class="org-ul">
+<li>She claimed to have seen a lot of feline mummies in Egypt.<br /></li>
+<li>Your feline friend is smash paper to pieces in the kitchen.<br /></li>
+<li>My feline friend is said to have nine lives.<br /></li>
+<li>I spent a lot of time trainning my feline friend to open the door.<br /></li>
+<li>Somehow, my feline friend loves to eat scrambled eggs.<br /></li>
+</ul>
+<p>
+independence n.  gained its independence<br />
+</p>
+<ul class="org-ul">
+<li>I have gained my independence since I was 19 years old.<br /></li>
+<li>It's obvious that parents should allow their children some independence.<br /></li>
+<li>In America, their children often gain their independence when they are 18 years old.<br /></li>
+<li>I find out that I don't gain my independence.<br /></li>
+<li>I should have gained my independence.<br /></li>
+</ul>
+<p>
+high-rise adj.<br />
+</p>
+<ul class="org-ul">
+<li>It is disturbing to think that a plant may fall off high-rise buildings.<br /></li>
+<li>The journalist is gonna write an article on high-rise buildings.<br /></li>
+<li>Not only are there a lot of high-rise building, but they are beautiful as well.<br /></li>
+<li>Unfortunately, the high-rise building got fired last night.<br /></li>
+<li>This building is only half as high as that high-rise building.<br /></li>
+</ul>
+<p>
+windowsill n.<br />
+</p>
+<ul class="org-ul">
+<li>The cat is sleeping on the windowsill.<br /></li>
+<li>There is a pair of binoculars on the windowsill.<br /></li>
+<li>The windowsill which was painted last night is broken.<br /></li>
+<li>I'm making a discovery of the history of windowsills.<br /></li>
+<li>We didn't get enough money to paint the windowsill.<br /></li>
+</ul>
+<p>
+paratrooper n.<br />
+</p>
+<ul class="org-ul">
+<li>The paratrooper woke up with a start at midnight.<br /></li>
+<li>The paratrooper caught sight of his fiancee in ths sky.<br /></li>
+<li>The paratrooper is equal to deal with the task.<br /></li>
+<li>The paratrooper was injured for one cause or another.<br /></li>
+<li>The paratrooper claimed to have seen a monster in the desert.<br /></li>
+</ul>
+<p>
+squirrel n.<br />
+</p>
+<ul class="org-ul">
+<li>This convinced me that it was a squirrel.<br /></li>
+<li>I spotted a squirrel eating nuts which was sent from visitors.<br /></li>
+<li>I felt obliged to save this poor squirrel.<br /></li>
+<li>The squirrel clinging to bush charged at me this morning.<br /></li>
+<li>It is considered unlucky for people seeing a squirrel in Japan in the morning.<br /></li>
+</ul>
+<p>
+air-resistance n.<br />
+</p>
+<ul class="org-ul">
+<li>It's disturbing to think that the car's speed was reduced by air-resistance.<br /></li>
+<li>The pilot is accustomed to speed up without air-resistence.<br /></li>
+<li>Was the car's speed reduced by air-resistance.<br /></li>
+<li>You live in a fantasy world where cars' speed are not reduced by air-resistance.<br /></li>
+<li>Air-resistance prevents flying cat from dieing from falling from high-rise buildings.<br /></li>
+</ul>
+<p>
+impact n.  have/make an impact on<br />
+</p>
+<ul class="org-ul">
+<li>His father has such an impact on him that he follows in his father's footstep.<br /></li>
+<li>Faker, the player, makes an impact on everyone in Korea.<br /></li>
+<li>He has an impact on us, for he succeeded in broking world records over and over again.<br /></li>
+<li>These pirate stories have an impact on people all over the world.<br /></li>
+<li>The big corporation does have an impact on the global market.<br /></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org3f332c4" class="outline-3">
+<h3 id="org3f332c4"><span class="done DONE">DONE</span> 反复听电影片段直到懂关键句</h3>
+<div class="outline-text-3" id="text-org3f332c4">
+</div>
+</div>
+<div id="outline-container-org738f182" class="outline-3">
+<h3 id="org738f182"><span class="done DONE">DONE</span> 自己讲语法</h3>
+<div class="outline-text-3" id="text-org738f182">
+<p>
+the 比较级(eg. more) &#x2026;, the 比较级(eg.more) &#x2026;: 比较级在句子中做比较成分<br />
+yet&#x2026; conj.: 表惊讶的转折<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org4c5fff3" class="outline-3">
+<h3 id="org4c5fff3">反复读例句 !!!</h3>
+</div>
+<div id="outline-container-org87ac6e9" class="outline-3">
+<h3 id="org87ac6e9">复习二册语法(笔记或视频) &amp; 红皮书</h3>
+</div>
+<div id="outline-container-orgf83a2aa" class="outline-3">
+<h3 id="orgf83a2aa"><span class="done DONE">DONE</span> 习惯用法造句</h3>
+<div class="outline-text-3" id="text-orgf83a2aa">
+<p>
+lead a adj. life<br />
+</p>
+<ul class="org-ul">
+<li>If the operation succeeded, Carol would have been able to lead a normal life.<br /></li>
+<li>Joe has been leading a double life, for he never told his wife anything about his job.<br /></li>
+<li>So long as we don't get divorce, we will have a normal life.<br /></li>
+<li>Even though Ross got divorce three times, he attempts to lead a normal life.<br /></li>
+<li>The monster leads a mysterious life for hundreds of years.<br /></li>
+</ul>
+<p>
+learn to do sth.<br />
+</p>
+<ul class="org-ul">
+<li>Now that you learned to do it by yourself, you have the nerve to deal with the task.<br /></li>
+<li>My cousin learned to drive after she aborted.<br /></li>
+<li>If you are in difficulty, you should learn to ask your partner for help.<br /></li>
+<li>I learned to gain my independence when I was very young.<br /></li>
+<li>My father has an impact on me, I learned to do his job too.<br /></li>
+</ul>
+<p>
+a good deal of/a great deal of un.<br />
+</p>
+<ul class="org-ul">
+<li>I spent a good deal of time in my room writting postcards.<br /></li>
+<li>Despite the fact you caused a good deal of trouble, your father didn't get angry.<br /></li>
+<li>He made a good deal of money, yet he never returned money to his friends.<br /></li>
+<li>There is a good deal of truth in this idea.<br /></li>
+<li>Because I received a good deal of pocket money, I gave it to my parents for safekeeping.<br /></li>
+</ul>
+<p>
+be based on<br />
+</p>
+<ul class="org-ul">
+<li>All of these are based on the belief that we can get a good salary in the future.<br /></li>
+<li>This film is said to be base on a true story.<br /></li>
+<li>This is based on the fact that my wife loves me.<br /></li>
+<li>This is based on the belief that Mr. Leo takes his job seriously.<br /></li>
+<li>This is based on the fact that the U.S. gained its independence from England.<br /></li>
+</ul>
+<p>
+make a study of sth<br />
+</p>
+<ul class="org-ul">
+<li>I made a study of Primates, for I need to write an article on them.<br /></li>
+<li>He is too busy making a study of French Culture to notice his wife.<br /></li>
+<li>He has made a closely study of human nature.<br /></li>
+<li>So long as you made a study of this by yourself, you will have the nerve to deal with it.<br /></li>
+<li>I am making a studying of cats these days.<br /></li>
+</ul>
+<p>
+a period of + st.<br />
+</p>
+<ul class="org-ul">
+<li>He claimed to have lived in New Zealand for a period of time.<br /></li>
+<li>My wife spent a period of time keeping touch with her teacher which teaches her design course.<br /></li>
+<li>Mr. Alf led a double life for a period of time.<br /></li>
+<li>My aunt goes on vocation in Hawaii for a period of time every year.<br /></li>
+<li>He made every effort to keep the status quo for a period of time.<br /></li>
+</ul>
+<p>
+have sth. in common<br />
+</p>
+<ul class="org-ul">
+<li>We did have some experiences in common for a period of time.<br /></li>
+<li>It is disturbing to think that they have nothing in common.<br /></li>
+<li>They don't know each other, yet they have a lot of experiences in common.<br /></li>
+<li>They have a habit of swimming in common.<br /></li>
+<li>I don't think we have something in common.<br /></li>
+</ul>
+<p>
+died from(事故) / died of(病)<br />
+</p>
+<ul class="org-ul">
+<li>The authories claimed that only five men died from this air crush.<br /></li>
+<li>It is said that she died of a rare disease.<br /></li>
+<li>If you drove fast yesterday, you might have died from this accident too.<br /></li>
+<li>I regreted to inform you that you father has died of cancer.<br /></li>
+<li>He has died from the accident and there is nothing we can do about it.<br /></li>
+</ul>
+<p>
+there is no shortage of<br />
+</p>
+<ul class="org-ul">
+<li>There is no shortage of people in China who are willing to do this job.<br /></li>
+<li>There is no shortage of workers who take this seriously.<br /></li>
+<li>There is no shortage of movies which refer to the history of Greek.<br /></li>
+<li>There is no shortage of actors who stay out of limelight.<br /></li>
+<li>There is no shortage of concern that your wife gave you.<br /></li>
+</ul>
+<p>
+It seems that + &#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>It seems that she has drunk a good deal of milk.<br /></li>
+<li>It seems that you need to keep the secret.<br /></li>
+<li>It seems that I have the privilege of meeting the queen.<br /></li>
+<li>It seems that everything has returned to normal.<br /></li>
+<li>It seems that she has made a sacrifice again.<br /></li>
+</ul>
+<p>
+be likely to do sth.<br />
+</p>
+<ul class="org-ul">
+<li>I'm likely to study abroad.<br /></li>
+<li>My cousin was likely to died of cancer.<br /></li>
+<li>She is likely to make a discovery of these ancient remains.<br /></li>
+<li>She is likely to raise enough money to have the clock repaired.<br /></li>
+<li>I'm likely to lead a normal life after this.<br /></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org87c5470" class="outline-3">
+<h3 id="org87c5470">跟读 50遍</h3>
+</div>
+<div id="outline-container-org9ef9e11" class="outline-3">
+<h3 id="org9ef9e11"><span class="done DONE">DONE</span> Comprehension 反复练习</h3>
+<div class="outline-text-3" id="text-org9ef9e11">
+</div>
+</div>
+<div id="outline-container-orge7e8a91" class="outline-3">
+<h3 id="orge7e8a91"><span class="done DONE">DONE</span> Ask me if 写+读</h3>
+<div class="outline-text-3" id="text-orge7e8a91">
+<ol class="org-ol">
+<li>Cats fascinate human beings. Why<br />
+Why do cats fascinate human beings?<br /></li>
+<li>Human beings have learned to respect them. Why<br />
+Why have human beings learned to respect them?<br /></li>
+<li>Most cats remain suspicious of humans. Why<br />
+Why do most cats remain suspicious of humans?<br /></li>
+<li>Cats have nine lives. How many<br />
+How many lives do cats have?<br /></li>
+<li>There is a great deal of truth in the idea. Why<br />
+Why is there a great deal of truth in the idea?<br /></li>
+<li>Eight of the cats died from shock. How many of the cats<br />
+How many of the cats died from shock?<br /></li>
+<li>One cat suffered from a broken tooth. What<br />
+What did one cat suffer from?<br /></li>
+<li>Cats behave like well-trained paratroopers. How<br />
+How do cats behave?<br /></li>
+<li>They reach speeds of 60 miles an hour and more. What speeds<br />
+What speeds do they reach?<br /></li>
+<li>This reduces the shock of impact. How<br />
+How does this reduce the shock of impact?<br /></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-orgd460d42" class="outline-3">
+<h3 id="orgd460d42"><span class="done DONE">DONE</span> 摘要写作 写 &amp; 对答案</h3>
+<div class="outline-text-3" id="text-orgd460d42">
+<p>
+The New York Animal Medical Center made a study of 132 cats.<br />
+All these cats had fallen off high buildings,<br />
+	yet only eight of them died from shock or injuries.<br />
+One cat, Sabrina, fell 32 storeys but only suffered from a broken tooth.<br />
+When falling at speeds of 60 miles an hour, cats stretch out their legs,<br />
+	which increases air-resistence and reduces the shock of impact on hitting the ground.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org7b9cfb7" class="outline-3">
+<h3 id="org7b9cfb7"><span class="done DONE">DONE</span> tell the story 口语复述</h3>
+<div class="outline-text-3" id="text-org7b9cfb7">
+</div>
+</div>
+<div id="outline-container-org63cbd92" class="outline-3">
+<h3 id="org63cbd92"><span class="done DONE">DONE</span> composition 阅读 或 写作</h3>
+<div class="outline-text-3" id="text-org63cbd92">
+<p>
+Human beings like to keep dogs and cats.<br />
+Dogs are submissive and faithful to their masters, but cats like to be independent.<br />
+Cats are especially lovable when they are still kittens.<br />
+As kittens they like to play by chasing anything that moves.<br />
+That's how they learn to hunt mice, birds, insects and other small creatures.<br />
+A lot of people keep cats so they can have a pet.<br />
+As kittens grow into cats, they like to stay indoors.<br />
+They like regular meals and enjoy sleeping in front of a nice fire.<br />
+However, they also like going out.<br />
+During the day time and at night they like to go hunting.<br />
+Sometimes during the night they have fights with other cats.<br />
+Cats are very clean animals.<br />
+You often see them washing themselves.<br />
+Human beings are fascinated by their behaviour because cats are domestic animals,<br />
+	while at the same time they enjoy their independence.<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org6957cbf" class="outline-3">
+<h3 id="org6957cbf">Topics for discussion</h3>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,636 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-07-18 Thu 12:23 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="lenovo" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-org9e9a240" class="outline-2">
+<h2 id="org9e9a240">CHAPTER 3 THE CIVILIZATION OF THE GREEKS</h2>
+<div class="outline-text-2" id="text-org9e9a240">
+<p>
+CHAPTER OUTLINE AND FOCUS QUESTIONS<br />
+</p>
+
+<p>
+Early Greece<br />
+</p>
+
+<p>
+Q How did the geography of Greece affect Greek history?<br />
+</p>
+
+<p>
+The Greeks in a Dark Age (c. 1100&#x2013;c. 750 B.C.)<br />
+</p>
+
+<p>
+Q Who was Homer, and why was his work used as the basis for Greek education?<br />
+</p>
+
+<p>
+The World of the Greek City-States (c. 750&#x2013;c. 500 B.C.)<br />
+</p>
+
+<p>
+Q What were the chief features of the polis, or city-state, and how did the major city-states of Athens and Sparta differ?<br />
+</p>
+
+<p>
+The High Point of Greek Civilization: Classical Greece<br />
+</p>
+
+<p>
+Q What did the Greeks mean by democracy, and in what ways was the Athenian political system a democracy? What effect did the two great conflicts of the fifth century B.C.&#x2014;the Persian Wars and the Peloponnesian War&#x2014;have on Greek civilization?<br />
+</p>
+
+<p>
+The Culture and Society of Classical Greece<br />
+</p>
+
+<p>
+Q On what ideals was Classical Greek art based, and how were these ideals expressed? What questions did the Greek philosophers pose, and what answers did they suggest?<br />
+</p>
+
+<p>
+CRITICAL THINKING<br />
+</p>
+
+<p>
+Q Why is the civilization of the Greeks considered the cornerstone of the Western intellectual tradition?<br />
+</p>
+
+<p>
+IN 431 B.C., WAR ERUPTED as two dramatically different Greek city-states&#x2014;Athens and Sparta&#x2014;fought for domination of the Greek world. The people of Athens felt secure behind their walls and in the first winter of the war held a public funeral to honor those who had died in battle. On the day of the ceremony, the citizens of Athens joined in a procession, with the relatives of the dead wailing for their loved ones. As was the custom in Athens, one leading citizen was asked to address the crowd, and on this day it was Pericles who spoke to the people. He talked about the greatness of Athens and reminded the Athenians of the strength of their political system: 'Our constitution,' he said, 'is called a democracy because power is in the hands not of a minority but of the whole people. When it is a question of settling private disputes, everyone is equal before the law. Just as our political life is free and open, so is our day-to-day life in our relations with each other. . . . Here each individual is interested not only in his own affairs but in the affairs of the state as well.'<br />
+</p>
+
+<p>
+In this famous Funeral Oration, Pericles gave voice to the ideal of democracy and the importance of the individual. It was the Greeks who constructed the intellectual foundations of our Western heritage. They asked some basic questions about human life that still dominate our own intellectual pursuits: What is the nature of the universe? What is the purpose of human existence? What is our relationship to divine forces? What constitutes a community? What constitutes a state? What is true education? What are the true sources of law? What is truth itself, and how do we realize it? Not only did the Greeks provide answers to these questions, but they created a system of logical, analytical thought to examine them. This rational outlook has remained an important feature of Western civilization.<br />
+</p>
+
+<p>
+The remarkable story of ancient Greek civilization begins with the arrival of the first Greeks around 1900 B.C. By the eighth century B.C., the characteristic institution of ancient Greek life, the polis or city-state, had emerged. Greek civilization flourished and reached its height in the Classical era of the fifth century B.C., which has come to be closely identified with the achievements of Athenian democracy.<br />
+</p>
+</div>
+
+<div id="outline-container-org5c34253" class="outline-3">
+<h3 id="org5c34253">Early Greece</h3>
+<div class="outline-text-3" id="text-org5c34253">
+<p>
+Q Focus Question: How did the geography of Greece affect Greek history?<br />
+</p>
+
+<p>
+Geography played an important role in Greek history. Compared to the landmasses of Mesopotamia and Egypt, Greece was compact: its mountainous peninsula encompassed only 45,000 square miles of territory, about the same as the state of Louisiana. The mountains and the sea were especially significant. Much of Greece consists of small plains and river valleys surrounded by mountain ranges 8,000 to 10,000 feet high. The mountainous terrain had the effect of isolating Greeks from one another. Consequently, Greek communities tended to follow their own separate paths and develop their own way of life. As time went on, these communities became attached to their independence and were only too willing to fight one another to gain advantage. No doubt the small size of these independent Greek communities fostered participation in political affairs and unique cultural expressions, but the rivalry among these communities also led to the bitter warfare that ultimately devastated Greek society.<br />
+</p>
+
+<p>
+The sea also influenced the evolution of Greek society. Greece had a long seacoast, dotted by bays and inlets that provided numerous harbors. The Greeks also inhabited a number of islands to the west, south, and particularly the east of the Greek mainland. It is no accident that the Greeks became seafarers who sailed out into the Aegean and the Mediterranean first to make contact with the outside world and later to establish colonies that would spread Greek civilization throughout the Mediterranean region.<br />
+</p>
+
+<p>
+Topography helped determine the major territories into which Greece was ultimately divided. South of the Gulf of Corinth was the Peloponnesus, virtually an island (see Map 3.1). Consisting mostly of hills, mountains, and small valleys, the Peloponnesus was the location of Sparta, as well as the site of Olympia, where famous athletic games were held. Northeast of the Peloponnesus was the Attic peninsula (or Attica), the home of Athens, hemmed in by mountains to the north and west and surrounded by the sea to the south and east. Northwest of Attica was Boeotia in central Greece with its chief city of Thebes. To the north of Boeotia was Thessaly, which contained the largest plains and became a great producer of grain and horses. To the north of Thessaly lay Macedonia, which was not of much importance in Greek history until 338 B.C., when a Macedonian king, Philip II, conquered the Greeks.<br />
+</p>
+</div>
+
+<div id="outline-container-org594e989" class="outline-4">
+<h4 id="org594e989">Minoan Crete</h4>
+<div class="outline-text-4" id="text-org594e989">
+<p>
+The earliest civilization in the Aegean region emerged on the large island of Crete, southeast of the Greek mainland. A Bronze Age civilization that used metals, especially bronze, in making weapons had been established there by 2800 B.C. This forgotten civilization was rediscovered at the turn of the twentieth century by the English archaeologist Arthur Evans, who named it 'Minoan' after Minos, a legendary king of Crete. In language and religion, the Minoans were not Greek, although they did have some influence on the peoples of the Greek mainland.<br />
+</p>
+
+<p>
+Evans’s excavations on Crete at the beginning of the twentieth century led to the discovery of an enormous palace complex at Knossus, near modern Heracleion, that was most likely the center of a far-ranging 'sea empire,' probably largely commercial. We know from archaeological remains that the people of Minoan Crete were accustomed to sea travel and had made contact with the more advanced civilization of Egypt.<br />
+</p>
+
+<p>
+The Minoan civilization reached its height between 2000 and 1450 B.C. The palace at Knossus,the royalseat ofthe kings, demonstrates the prosperity and power of this civilization. It was an elaborate structure built around a central courtyard and included numerous private living rooms for the royal family and workshops for making decorated vases, small sculptures, and jewelry. Even bathrooms, with elaborate drains, were part of the complex. The rooms were decorated with frescoes in bright colors showing sporting events and naturalisticscenes that have ledsome observersto conclude that the Cretans had a great love of nature.<br />
+</p>
+
+<p>
+The centers of Minoan civilization on Crete suffered a sudden and catastrophic collapse around 1450 B.C. The cause of this destruction has been vigorously debated. Some historians believe that a tsunami triggered by a powerful volcanic eruption on the island of Thera was responsible for the devastation. Most historians, however, maintain that the destruction was the result of invasion and pillage by mainland Greeks known as the Mycenaeans.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org42b6552" class="outline-4">
+<h4 id="org42b6552">The First Greek State: Mycenae</h4>
+<div class="outline-text-4" id="text-org42b6552">
+<p>
+The term Mycenaean is derived from Mycenae, a remarkable fortified site first excavated by the amateur German archaeologist Heinrich Schliemann. Mycenae was one center in a Greek civilization that flourished between 1600 and 1100 B.C. The Mycenaean Greeks were part of the IndoEuropean family of peoples (see Chapter 2) who spread from their original location into southern and western Europe, India, and Iran. One group entered the territory of Greece from the north around 1900 B.C. and managed to gain control of the Greek mainland and develop a civilization.<br />
+</p>
+
+<p>
+Mycenaean civilization, which reached its high point between 1400 and 1200 B.C., consisted of a number of powerful monarchies based in fortified palace complexes. Like Mycenae itself, the palaces were built on hills and surrounded by gigantic stone walls. These various centers of power probably formed a loose confederacy of independent states, with Mycenae being the strongest. Next in importance to the kings in these states were the army commanders, priests, and the bureaucrats who kept careful records. The free citizenry included peasants, soldiers, and artisans, and the lowest rung of the social ladder consisted of serfs and slaves.<br />
+</p>
+
+<p>
+The Mycenaeans were, above all, a warrior people who prided themselves on their heroic deeds in battle. Some scholars believe that the Mycenaeans, led by Mycenae itself, spread outward militarily, conquering Crete and making it part of the Mycenaean world. The most famous of all their supposed military adventures has come down to us in the epic poetry of Homer (discussed in the next few pages). Did the Mycenaean Greeks, led by Agamemnon, king of Mycenae, indeed sack the city of Troy on the northwestern coast of Asia Minor around 1250 B.C., as Homer described? Since the excavations of Heinrich Schliemann, begun in 1870, scholars have debated this question. Many believe that Homer’s account does have a basis in fact.<br />
+</p>
+
+<p>
+By the late thirteenth century B.C., Mycenaean Greece was showing signs of serious trouble. Mycenae itself was torched around 1190 B.C., and other Mycenaean centers show similar patterns of destruction as new waves of Greekspeaking invaders moved in from the north. By 1100 B.C., the Mycenaean culture was coming to an end, and the Greek world was entering a new period of considerable insecurity.<br />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orge334abd" class="outline-3">
+<h3 id="orge334abd">The Greeks in a Dark Age (c. 1100&#x2013;c. 750 B.C.)</h3>
+<div class="outline-text-3" id="text-orge334abd">
+<p>
+Q Focus Question: Who was Homer, and why was his work used as the basis for Greek education?<br />
+</p>
+
+<p>
+After the collapse of Mycenaean civilization, Greece entered a difficult period in which the population declined and food production dropped. Because of the dire conditions and our meager knowledge about the period, historians call it the Dark Age. Not until 850 B.C. did farming revive.At thesame time,some new developments were forming the basis for a revived Greece.<br />
+</p>
+
+<p>
+During the DarkAge, large numbers of Greeks left the mainland and migrated across the Aegean Sea to various islands and especially to the western shores of Asia Minor, a strip of territory that came to be called Ionia. The Greeks who resided there were called Ionians. Two other major groups of Greeks settled in established parts of Greece. The Aeolian Greeks, located in northern and central Greece, colonized the large island of Lesbos and the adjacent territory of the mainland. The Dorians established themselves in southwestern Greece, especially in the Peloponnesus, as well as on some of the islands in the south Aegean Sea,including Crete.<br />
+</p>
+
+<p>
+Other important activities occurred in the Dark Age as well. Greece saw a revival of some trade and some economic activity besides agriculture. Iron came into use for the construction of weapons. And at some point in the eighth century B.C., the Greeks adopted the Phoenician alphabet to give themselves a new system of writing. Near the very end of this Dark Age appeared the work of Homer, who has come to be viewed as one of the greatest poets of all time.<br />
+</p>
+</div>
+
+<div id="outline-container-orgc05a92c" class="outline-4">
+<h4 id="orgc05a92c">Homer and Homeric Greece</h4>
+<div class="outline-text-4" id="text-orgc05a92c">
+<p>
+The Iliad and the Odyssey, the great epic poems of early Greece, were based on stories that had been passed down from generation to generation. It is generally assumed that early in the eighth century B.C., Homer made use of these oral traditions to compose the Iliad, his epic of the Trojan War. The war was precipitated by Paris, a prince of Troy, whose kidnapping of Helen, wife of the king of the Greek state of Sparta, outraged all the Greeks. Under the leadership of the Spartan king’s brother, Agamemnon of Mycenae, the Greeks attacked Troy. Ten years later, the Greeks finally won and sacked the city.<br />
+</p>
+
+<p>
+But the Iliad is not so much the story of the war itself as it is the tale of the Greek hero Achilles and how the 'wrath of Achilles' led to disaster. As is true of all great literature, the Iliad abounds in universal lessons. Underlying them all is the clear message, as one commentator has observed, that 'men will still come and go like the generations of leaves in the forest; that [man] will still be weak, and the gods strong and incalculable; that the quality of a man matters more than his achievement; that violence and recklessness will still lead to disaster, and that this will fall on the innocent as well as on the guilty.'<br />
+</p>
+
+<p>
+The Odyssey, Homer’s other masterpiece, is an epic romance that recounts the journeys of a Greek hero named Odysseus after the fall of Troy and his ultimate return to his wife. But there is a larger vision here as well: the testing of the heroic stature of Odysseus until, by both cunning and patience, he prevails. In the course of this testing, the underlying moral message is 'that virtue is a better policy than vice.'<br />
+</p>
+
+<p>
+Although the Iliad and the Odyssey supposedly deal with the heroes of the Mycenaean age of the thirteenth century B.C., many scholars believe that they really describe the social conditions of the Dark Age. According to the Homeric view, Greece was a society based on agriculture in which a landed warrior-aristocracy controlled much wealth and exercised considerable power. Homer’s world reflects the values of aristocratic heroes.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org9bd0698" class="outline-4">
+<h4 id="org9bd0698">Homer’s Enduring Importance</h4>
+<div class="outline-text-4" id="text-org9bd0698">
+<p>
+This explains the importance of Homer to later generations of Greeks. Homer did not so much record history as make it. The Greeks regarded the Iliad and the Odyssey as authentic history recorded by one poet, Homer. These masterpieces gave the Greeks an idealized past with a cast of heroes and came to be used as standard texts for the education of generations of Greek males. As one Athenian stated, 'My father was anxious to see me develop into a good man . . . and as a means to this end he compelled me to memorize all of Homer.'3 The values Homer taught were essentially the aristocratic values of courage and honor (see the box above). A hero strives for excellence, which the Greeks called arete. In the warrioraristocratic world of Homer, arete is won in struggle or contest. Through his willingness to fight, the hero protects his family and friends, preserves his own honor and that of his family, and earns his reputation.<br />
+</p>
+
+<p>
+In the Homeric world, aristocratic women, too, were expected to pursue excellence. Penelope, for example, the wife of Odysseus, the hero of the Odyssey, remains faithful to her husband and displays great courage and intelligence in preserving their household during her husband’s long absence. Upon his return, Odysseus praises her: 'Madame, there is not a man in the wide world who could find fault with you. For your fame has reached heaven itself, like that of some perfect king, ruling a populous and mighty state with the fear of god in his heart, and upholding the right.'4 Homer gave the Greeks a model of heroism, honor, and nobility. But in time, as a new world of city-states emerged in Greece, new values of cooperation and community also transformed what the Greeks learned from Homer.<br />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orga91a9a5" class="outline-3">
+<h3 id="orga91a9a5">The World of the Greek City-States (c. 750&#x2013;c. 500 B.C.)</h3>
+<div class="outline-text-3" id="text-orga91a9a5">
+<p>
+Q Focus Question: What were the chief features of the polis, or city-state, and how did the major city-states of Athens and Sparta differ?<br />
+</p>
+
+<p>
+In the eighth century B.C., Greek civilization burst forth with new energies, beginning the period that historians have called the Archaic Age of Greece. Two major developments stand out in this era: the evolution of the polis as the central institution in Greek life and the Greeks’ colonization of the Mediterranean and Black Seas.<br />
+</p>
+</div>
+
+<div id="outline-container-org640c9bf" class="outline-4">
+<h4 id="org640c9bf">The Polis</h4>
+<div class="outline-text-4" id="text-org640c9bf">
+<p>
+The Greek polis (plural, poleis) developed slowly during the Dark Age and by the eighth century B.C. had emerged as a truly unique and fundamental institution in Greek society. In a physical sense, the polis encompassed a town or city or even a village and its surrounding countryside. But each had a central place where the citizens of the polis could assemble for political, social, and religious activities. In some poleis, this central meeting point was a hill, which could serve as a place of refuge during an attack and later in some sites came to be the religious center on which temples and public monuments were erected. Below this acropolis would be an agora, an open space that served both as a place where citizens could assemble and as a market.<br />
+</p>
+
+<p>
+Poleis varied greatly in size, from a few square miles to a few hundred square miles. The larger ones were the product of consolidation. The territory of Attica, for example, had once had twelve poleis but eventually became a single polis (Athens) through a process of amalgamation. The population of Athens grew to about 250,000 by the fifth century B.C. Most poleis were much smaller, consisting of only a few hundred to several thousand people.<br />
+</p>
+
+<p>
+Although our word politics is derived from the Greek term polis, the polis itself was much more than just a political institution. It was, above all, a community of citizens in which all political, economic, social, cultural, and religious activities were focused. As a community, the polis consisted of citizens with political rights (adult males), citizens with no political rights (women and children), and noncitizens (slaves and resident aliens). All citizens of a polis possessed basic rights, but these were coupled with responsibilities. The Greek philosopher Aristotle argued that the citizen did not just belong to himself; 'we must rather regard every citizen as belonging to the state.' The unity of citizens was important and often meant that states would take an active role in directing the patterns of life. However, the loyalty that citizens had to their poleis also had a negative side. Poleis distrusted one another, and the division of Greece into fiercely patriotic sovereign units helped bring about its ruin. Greece was not a united country but a geographical concept. The cultural unity of the Greeks did not mean much politically.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org6dfd336" class="outline-4">
+<h4 id="org6dfd336">A New Military System: The Greek Way of War</h4>
+<div class="outline-text-4" id="text-org6dfd336">
+<p>
+As the polis developed, so did a new military system. In earlier times, wars in Greece had been fought by aristocratic cavalry soldiers&#x2014;nobles on horseback. These aristocrats, who were large landowners, also dominated the political life of their poleis. But by the end of the eighth century and the start of the seventh, a new military order came into being that was based on hoplites, heavily armed infantrymen who wore bronze or leather helmets, breastplates, and greaves (shin guards). Each carried a round shield, a short sword, and a thrusting spear about 9 feet long. Hoplites advanced into battle as a unit, forming a phalanx (a rectangular formation) in tight order, usually eight ranks deep. As long as the hoplites kept their order, were not outflanked, and did not break, they either secured victory or, at the very least, suffered no harm. The phalanx was easily routed, however, if it broke its order. The safety of the phalanx depended on the solidarity and discipline of its members. As one seventh-century B.C. poet noted, a good hoplite was 'a short man firmly placed upon his legs, with a courageous heart, not to be uprooted from the spot where he plants his legs.'5<br />
+</p>
+
+<p>
+The hoplite force had political as well as military repercussions. The aristocratic cavalry was now outdated. Since each hoplite provided his own armor, men of property, both aristocrats and small farmers, made up the new phalanx. Those who could become hoplites and fight for the state could also challenge aristocratic control.  In the new world of the Greek city-states, war became an integral part of the Greek way of life. The Greek philosopher Plato described war as 'always existing by nature between every Greek city-state.'6 The Greeks created a tradition of warfare that became a prominent element of Western civilization. For example, the Greeks devised excellent weapons and body armor, making effective use of technological improvements. Greek armies included a large number of citizen-soldiers, who gladly accepted the need for training and discipline, giving them an edge over their opponents’ often far larger armies of mercenaries. Moreover, the Greeks displayed a willingness to engage the enemy head-on, thus deciding a battle quickly and with as few casualties as possible. Finally, the Greeks demonstrated the effectiveness of heavy infantry in determining the outcome of battle. All of these features of Greek warfare remained characteristic of Western military tactics for centuries.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org085160e" class="outline-4">
+<h4 id="org085160e">Colonization and the Growth of Trade</h4>
+<div class="outline-text-4" id="text-org085160e">
+<p>
+Between 750 and 550 B.C., large numbers of Greeks left to settle in distant lands. Poverty and land hunger created by the growing gulf between rich and poor, overpopulation, and the development of trade were all factors that led to the establishment of colonies. Some Greek colonies were simply trading posts or centers for the transshipment of goods to Greece. Most were larger settlements that included good agricultural land taken from the native populations in those areas. Each colony was founded as a polis and was usually independent of the metropolis ('mother polis') that had established it.<br />
+</p>
+
+<p>
+In the western Mediterranean, new Greek settlements were established along the coastline of southern Italy, southern France, eastern Spain, and northern Africa west of Egypt. To the north, the Greeks set up colonies in Thrace, where they sought good farmland to grow grains. Greeks also settled along the shores of the Black Sea and secured the approaches to it with cities on the Hellespont and Bosporus, most noticeably Byzantium, site of the later Constantinople (Istanbul). By establishing these settlements, the Greeks spread their culture throughout the Mediterranean basin. Colonization also led to increased trade and industry. The Greeks on the mainland sent their pottery, wine, and olive oil to these areas; in return, they received grains and metals from the west and fish, timber, wheat, metals, and slaves from the Black Sea region. In many poleis, the expansion of trade and industry created a new group of rich men who desired political privileges commensurate with their wealth but found them impossible to gain because of the power of the ruling aristocrats.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge71953c" class="outline-4">
+<h4 id="orge71953c">Tyranny in the Greek Polis</h4>
+<div class="outline-text-4" id="text-orge71953c">
+<p>
+The desires of these new groups opened the door to the rise of tyrants in the seventh and sixth centuries B.C. They were not necessarily oppressive or wicked, as our word tyrant connotes. Greek tyrants were rulers who seized power by force and who were not subject to the law. Support for the tyrants came from the new rich, who made their money in trade and industry, as well as from poor peasants, who were in debt to landholding aristocrats. Both groups were opposed to the domination of political power by aristocratic oligarchies.<br />
+</p>
+
+<p>
+Tyrants usually achieved power by a local coup d’e´tat and maintained it by using mercenary soldiers. Once in power, they built marketplaces, temples, and walls that created jobs, glorified the city, and enhanced their own popularity. Tyrants also favored the interests of merchants and traders. Despite these achievements, however, tyranny fell out of favor by the end of the sixth century B.C. Its very nature as a system outside the law seemed contradictory to the ideals of the Greek community. Although tyranny did not last, it played a significant role in the course of Greek history by ending the rule of narrow aristocratic oligarchies. The end of tyranny opened the door to greater numbers of people in government. Although this trend culminated in the development of democracy in some communities, in other states expanded oligarchies of one kind or another managed to remain in power. Greek states exhibited considerable variety in their governmental structures; this can perhaps best be seen by examining the two most famous and most powerful Greek city-states, Sparta and Athens.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgaa502e6" class="outline-4">
+<h4 id="orgaa502e6">Sparta</h4>
+<div class="outline-text-4" id="text-orgaa502e6">
+<p>
+The Spartans originally occupied four small villages in the southwestern Peloponnesus, in an area known as Laconia, that eventually became unified into a single polis. This unification made Sparta a strong community in the region and enabled the Spartans to conquer the neighboring Laconians. Many Laconians became periokoi, free inhabitants but not citizens who were required to pay taxes and perform military service for Sparta. Other Laconians became helots (the name is derived from a Greek word for 'capture'). They were bound to the land and forced to work on farms and as household servants for the Spartans. When the land in Laconia proved unable to support the growing number of Spartan citizens, the Spartans looked for additional territory nearby and, beginning around 730 B.C., undertook the conquest of neighboring Messenia despite its larger size and population. Messenia possessed a large, fertile plain ideal for growing grain. After its conquest, which was not completed until the seventh century B.C., the Messenians were made helots and forced to work for the Spartans.<br />
+</p>
+</div>
+
+<ul class="org-ul">
+<li><a id="org6beffb1"></a>The New Sparta<br />
+<div class="outline-text-5" id="text-org6beffb1">
+<p>
+To ensure control over their conquered Laconian and Messenian helots, the Spartans decided to create a military state. By the early sixth century B.C., they had transformed Sparta into a military camp (see the box on p. 52). The lives of all Spartans were now rigidly organized. At birth, each child was examined by state officials who decided whether it was fit to live. Infants judged unfit were left to die. Boys were taken from their mothers at the age of seven and put under control of the state. They lived in military-style barracks, where they were subjected to harsh discipline to make them tough and given an education that stressed military training and obedience to authority. At twenty, Spartan males were enrolled in the army for regular military service. Although allowed to marry, they continued to live in the barracks and ate all their meals in public dining halls with their fellow soldiers. Meals were simple; the famous Spartan black broth consisted of a piece of pork boiled in blood, salt, and vinegar, causing a visitor who ate in a public mess to remark that he now understood why Spartans were not afraid to die. At thirty, Spartan males were allowed to vote in the assembly and live at home, but they stayed in the army until the age of sixty.<br />
+</p>
+
+<p>
+While their husbands remained in military barracks until age thirty, Spartan women lived at home. Because of this separation, Spartan women had greater freedom of movement and greater power in the household than was common for women elsewhere in Greece. They were encouraged to exercise and remain fit to bear and raise healthy children. Like the men, Spartan women engaged in athletic exercises in the nude. Many Spartan women upheld the strict Spartan values, expecting their husbands and sons to be brave in war. The story is told that as a Spartan mother was burying her son, an old woman came up to her and said, 'You poor woman, what a misfortune.' 'No,' replied the other, 'because I bore him so that he might die for Sparta and that is what has happened, as I wished.'7 Another Spartan woman, as she was handing her son his shield, told him to come back carrying his shield or being carried on it.<br />
+</p>
+</div>
+</li>
+
+<li><a id="org0084f3f"></a>The Spartan State<br />
+<div class="outline-text-5" id="text-org0084f3f">
+<p>
+The Spartan government was headed by two kings, who led the Spartan army on its campaigns. A group of five men, known as the ephors, were elected each year and were responsible for the education of youth and the conduct of all citizens. A council of elders, composed of the two kings and twenty-eight citizens over the age of sixty, decided on the issues that would be presented to an assembly. This assembly of all male citizens did not debate but only voted on the issues put before it by the council of elders.<br />
+</p>
+
+<p>
+To make their new military state secure, the Spartans deliberately turned their backs on the outside world. Foreigners, who might bring in new ideas, were discouraged from visiting Sparta. Nor were Spartans, except for military reasons, encouraged to travel abroad where they might pick up new ideas that might prove dangerous to the stability of the state. Likewise, Spartan citizens were discouraged from studying philosophy, literature, or the arts&#x2014;subjects that might encourage new thoughts. The art of war and of ruling was the Spartan ideal; all other arts were frowned on.<br />
+</p>
+
+<p>
+In the sixth century, Sparta used its military might and the fear it inspired to gain greater control of the Peloponnesus by organizing an alliance of almost all the Peloponnesian states. Sparta’s strength enabled it to dominate this Peloponnesian League and determine its policies. By 500 B.C., the Spartans had organized a powerful military state that maintained order and stability in the Peloponnesus. Raised from early childhood to believe that total loyalty to the Spartan state was the basic reason for existence, the Spartans viewed their strength as justification for their militaristic ideals and regimented society.<br />
+</p>
+</div>
+</li>
+</ul>
+</div>
+
+<div id="outline-container-org90ca04d" class="outline-4">
+<h4 id="org90ca04d">Athens</h4>
+<div class="outline-text-4" id="text-org90ca04d">
+<p>
+By 700 B.C., Athens had established a unified polis on the peninsula of Attica. Although early Athens had been ruled by a monarchy, by the seventh century it had fallen under the control of its aristocrats. They possessed the best land and controlled political and religious life by means of a council of nobles, assisted by a board of nine archons. Although an assembly of full citizens did exist, it possessed few powers.<br />
+</p>
+
+<p>
+Near the end of the seventh century B.C., Athens faced political turmoil because of serious economic problems. Many Athenian farmers found themselves sold into slavery when they were unable to repay the loans they had borrowed from their aristocratic neighbors, pledging themselves as collateral. Over and over, cries arose to cancel the debts and give land to the poor. Athens seemed on the verge of civil war.<br />
+</p>
+</div>
+
+<ul class="org-ul">
+<li><a id="orgf442187"></a>The Reforms of Solon<br />
+<div class="outline-text-5" id="text-orgf442187">
+<p>
+The ruling Athenian aristocrats responded to this crisis by choosing Solon, a reform-minded aristocrat, as sole archon in 594 B.C. and giving him full power to make changes. Solon canceled all current land debts, outlawed new loans based on humans as collateral, and freed people who had fallen into slavery for debts. He refused, however, to carry out the redistribution of the land and hence failed to deal with the basic cause of the economic crisis.<br />
+</p>
+
+<p>
+Like his economic reforms, Solon’s political measures were also a compromise. Though by no means eliminating the power of the aristocracy, they opened the door to the participation of new people, especially the nonaristocratic wealthy, in the government. But Solon’s reforms, though popular, did not solve Athens’ problems. Aristocratic factions continued to vie for power, and the poorer peasants resented Solon’s failure to institute land redistribution. Internal strife finally led to the very institution Solon had hoped to avoid&#x2014;tyranny. Pisistratus, an aristocrat, seized power in 560 B.C. Pursuing a foreign policy that aided Athenian trade, Pisistratus remained popular with the merchants. But the Athenians rebelled against his son and ended the tyranny in 510 B.C. Although the aristocrats attempted to reestablish an oligarchy, Cleisthenes, another aristocratic reformer, opposed this plan and, with the backing of the Athenian people, gained the upper hand in 508 B.C. The reforms of Cleisthenes now established the basis for Athenian democracy.<br />
+</p>
+</div>
+</li>
+
+<li><a id="org2a5be7e"></a>The Reforms of Cleisthenes<br />
+<div class="outline-text-5" id="text-org2a5be7e">
+<p>
+A major aim of Cleisthenes’ reforms was to weaken the power of traditional localities and regions, which had provided the foundation for aristocratic strength. He made the demes, the villages and townships of Attica, the basic units of political life. Cleisthenes enrolled all the citizens of the demes in ten new tribes, each of which contained inhabitants located in the rural districts of Attica, the coastal areas, and Athens. The ten tribes thus contained a cross section of the population and reflected all of Attica, a move that gave local areas a basic role in the political structure. Each of the ten tribes chose fifty members by lot each year for a new Council of Five Hundred, which was responsible for the administration of both foreign and financial affairs and prepared the business that would be handled by the assembly. This assembly of all male citizens had final authority in the passing of laws after free and open debate; thus Cleisthenes’ reforms strengthened the central role of the assembly of citizens in the Athenian political system.<br />
+</p>
+
+<p>
+The reforms of Cleisthenes laid the foundations for Athenian democracy. More changes would come in the fifth century B.C. when the Athenians themselves would begin to use the word democracy to describe their system (from the Greek words demos, 'people,' and kratia, 'power,' thus 'power to the people'). By 500 B.C., Athens was more united than it had ever been and was about to assume a more important role in Greek affairs.<br />
+</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgd9738e6" class="outline-3">
+<h3 id="orgd9738e6">The High Point of Greek Civilization: Classical Greece</h3>
+<div class="outline-text-3" id="text-orgd9738e6">
+<p>
+Q Focus Questions: What did the Greeks mean by democracy, and in what ways was the Athenian political system a democracy? What effect did the two great conflicts of the fifth century B.C.&#x2014;the Persian Wars and the Peloponnesian War&#x2014;have on Greek civilization?<br />
+</p>
+
+<p>
+Classical Greece is the name given to the period from around 500 B.C. to the conquest of Greece by the Macedonian king Philip II in 338 B.C. It was a time of brilliant achievement, much of it associated with the flowering of democracy in Athens under the leadership of Pericles. Many of the lasting contributions of the Greeks occurred during this period. The age began with a mighty confrontation between the Greek states and the mammoth Persian Empire.<br />
+</p>
+</div>
+
+<div id="outline-container-org84e7603" class="outline-4">
+<h4 id="org84e7603">The Challenge of Persia</h4>
+<div class="outline-text-4" id="text-org84e7603">
+<p>
+As Greek civilization expanded throughout the Mediterranean, it was inevitable that it would come into contact with the Persian Empire to the east. The Ionian Greek cities in western Asia Minor had already fallen subject to the Persian Empire by the mid-sixth century B.C. An unsuccessful revolt by the Ionian cities in 499, assisted by the Athenian navy, led the Persian ruler Darius to seek revenge by attacking the mainland Greeks in 490. The Persians landed an army on the plain of Marathon, only 26 miles from Athens. There a mostly Athenian army, though clearly outnumbered, went on the attack and defeated the Persians decisively.<br />
+</p>
+
+<p>
+Xerxes, the new Persian monarch after the death of Darius in 486 B.C., vowed revenge and renewed the invasion of Greece. In preparation for the attack, some of the Greek states formed a defensive league under Spartan leadership, while the Athenians pursued a new military policy by developing a navy. By the time of the Persian invasion in 480 B.C., the Athenians had produced a fleet of about two hundred vessels.<br />
+</p>
+
+<p>
+Xerxes led a massive invasion force into Greece: close to 150,000 troops, almost seven hundred naval ships, and hundreds of supply ships to keep their large army fed. The Greeks hoped to stop the Persians at the pass of Thermopylae along the main road into central Greece. A Greek force numbering close to nine thousand, under the leadership of the Spartan king Leonidas and his contingent of three hundred Spartans, held off the Persian army for several days. The Spartan troops were especially brave. When told that Persian arrows would darken the sky in battle, one Spartan warrior supposedly responded, 'That is good news. We will fight in the shade!' Unfortunately for the Greeks, a traitor told the Persians how to use a mountain path to outflank the Greek force. King Leonidas and the three hundred Spartans fought to the last man.<br />
+</p>
+
+<p>
+The Athenians, now threatened by the onslaught of the Persian forces, abandoned their city. While the Persians sacked and burned Athens, the Greek fleet remained offshore near the island of Salamis and challenged the Persian navy to fight. Although the Greeks were outnumbered, they managed to outmaneuver the Persian fleet and utterly defeated it. A few months later, early in 479 B.C., the Greeks formed the largest Greek army seen up to that time and decisively defeated the Persian army at Plataea, northwest of Attica. The Greeks had won the war and were now free to pursue their own destiny.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org974cec3" class="outline-4">
+<h4 id="org974cec3">The Growth of an Athenian Empire in the Age of Pericles</h4>
+<div class="outline-text-4" id="text-org974cec3">
+<p>
+After the defeat of the Persians, Athens stepped in to provide new leadership against the Persians by forming a confederation called the Delian League. Organized in the winter of 478&#x2013;477 B.C., the Delian League was dominated by the Athenians from the beginning. Its main headquarters was the island of Delos, but its chief officials, including the treasurers and commanders of the fleet, were Athenian. Under the leadership of the Athenians, the Delian League pursued the attack against the Persian Empire. Virtually all of the Greek states in the Aegean were liberated from Persian control. Arguing that the Persian threat was now over, some members of the Delian League wished to withdraw. But the Athenians forced them to remain in the league and to pay tribute. 'No secession' became Athenian policy. The Delian League was rapidly becoming the nucleus of an Athenian empire.<br />
+</p>
+
+<p>
+At home, Athenians favored the new imperial policy, especially in the 450s B.C., when an aristocrat named Pericles began to play an important political role. Under Pericles, Athens embarked on a policy of expanding democracy at home while severing its ties with Sparta and expanding its new empire abroad. This period of Athenian and Greek history, which historians have subsequently labeled the Age of Pericles, witnessed the height of Athenian power and the culmination of its brilliance as a civilization.<br />
+</p>
+
+<p>
+In the Age of Pericles, the Athenians became deeply attached to their democratic system. The sovereignty of the people was embodied in the assembly, which consisted of all male citizens over eighteen years of age. In the 440s, that was probably a group of about 43,000. Not all attended, however, and the number present at the meetings, which were held every ten days on a hillside east of the Acropolis, seldom reached 6,000. The assembly passed all laws and made final decisions on war and foreign policy.<br />
+</p>
+
+<p>
+Routine administration of public affairs was handled by a large body of city magistrates, usually chosen by lot without regard to class and usually serving one-year terms. This meant that many male citizens held public office at some time in their lives. A board of ten officials known as generals (strategoi) were elected by public vote to guide affairs of state, although their power depended on the respect they had attained. Generals were usually wealthy aristocrats, even though the people were free to select others. The generals could be reelected, enabling individual leaders to play an important political role. Pericles’ reelection fifteen times as a general made him one of the leading politicians between 461 and 429 B.C.<br />
+</p>
+
+<p>
+All public officials were subject to scrutiny and could be deposed from office if they lost the people’s confidence. After 488 B.C., the Athenians occasionally made use of a tactic called ostracism. Members of the assembly could write on a broken pottery fragment (ostrakon) the name of the person they most disliked or considered most harmful to the polis. A person who received a majority (if at least six thousand votes were cast) was exiled for ten years.<br />
+</p>
+
+<p>
+Pericles expanded the Athenians’ involvement in democracy, which was what Athenians had come to call their form of government (see the box on p. 55). Power was in the hands of the people: male citizens voted in the assemblies and served as jurors in the courts. Lower-class citizens were now eligible for public offices formerly closed to them. Pericles also introduced state pay for officeholders, including the widely held jury duty. This meant that even poor citizens could hold public office and afford to participate in public affairs. Nevertheless, although the Athenians developed a system of government that was unique in its time in which citizens had equal rights and the people were the government, aristocrats continued to hold the most important offices, and many people, including women, slaves, and foreigners residing in Athens, were not given the same political rights.<br />
+</p>
+
+<p>
+The Athenian pursuit of democracy at home was coupled with increasing imperialism abroad. Citing the threat of the Persian fleet in the Aegean, the Athenians moved the Delian League treasury from the island of Delos to Athens itself in 454 B.C. Members were charged a fee (tribute) for the Athenian claim of protection. Pericles also used the money in the league treasury, without the approval of its members, to build new temples in Athens, an arrogant reminder that the Delian League had become the Athenian Empire. But Athenian imperialism alarmed the other Greek states, and soon all Greece was confronted with a new war.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org5ef916b" class="outline-4">
+<h4 id="org5ef916b">The Great Peloponnesian War</h4>
+<div class="outline-text-4" id="text-org5ef916b">
+<p>
+During the forty years after the defeat of the Persians, the Greek world divided into two major camps: Sparta and its supporters and the Athenian Empire. In his classic History of the Peloponnesian War, the great Greek historian Thucydides pointed out that the basic long-range cause of the Peloponnesian War was the fear that Sparta and its allies had of the growing Athenian Empire. Then, too, Athens and Sparta had built two very different kinds of societies, and neither state was able to tolerate the other’s system. A series of disputes finally led to the outbreak of war in 431 B.C.<br />
+</p>
+
+<p>
+At the beginning of the war, both sides believed they had winning strategies. The Athenians planned to remain behind the protective walls of Athens while the overseas empire and the navy kept them supplied. Pericles knew perfectly well that the Spartans and their allies could beat the Athenians in pitched battles, which was the chief aim of the Spartan strategy. The Spartans and their allies attacked Athens, hoping that the Athenians would send out their army to fight beyond the walls. But Pericles was convinced that Athens was secure behind its walls and retaliated by sending out naval excursions to ravage the seacoast of the Peloponnesus.<br />
+</p>
+
+<p>
+In the second year of the war, however, plague devastated the crowded city of Athens and wiped out possibly one-third of the population. Pericles himself died the following year (429 B.C.), a severe loss to Athens. Despite the ravages of the plague, the Athenians fought on in a struggle that dragged on for another twenty-seven years. A crushing blow came in 405 B.C. when the Athenian fleet was destroyed at Aegospotami on the Hellespont. Athens was besieged and surrendered in 404. Its walls were torn down, the navy was disbanded, and the Athenian Empire was destroyed. The great war was finally over.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgabf4d46" class="outline-4">
+<h4 id="orgabf4d46">The Decline of the Greek States (404&#x2013;338 B.C.)</h4>
+<div class="outline-text-4" id="text-orgabf4d46">
+<p>
+The Great Peloponnesian War weakened the major Greek states and led to new alliances among the poleis. After the defeat of Athens in 404 B.C., the Spartans established control over Greece. Oligarchies of local leaders in cooperation with Spartan garrisons were imposed on states 'liberated' from Athenian imperialism. But the harsh policies of the oligarchs soon led to a reaction. In Athens, rebellion enabled the Athenians to reestablish their democracy in 403 B.C. and even to rebuild their navy and again become an important force in the Greek world.<br />
+</p>
+
+<p>
+To maintain its newly organized leadership in Greek affairs, Sparta encouraged a Greek crusade against the Persians as a common enemy. But the Persians had learned the lessons of Greek politics and offered financial support to Athens and other Greek states to oppose Spartan power within Greece itself, thus beginning a new war that finally ended in 386 B.C.<br />
+</p>
+
+<p>
+The city-state of Thebes, in Boeotia, north of Athens, now began to exert its influence. Under the leader Epaminondas, the Thebans dramatically defeated the Spartan army at the Battle of Leuctra in 371 B.C. Spartan power declined, but Theban ascendancy was short-lived. After the death of Epaminondas in the Battle of Mantinea in 362 B.C., the Thebans could no longer dominate Greek politics. Yet the Greek states continued their petty wars, seemingly oblivious to the growing danger to the north, where King Philip II of Macedonia was developing a unified state that would finally end the destructive fratricide of the Greek states by imposing Macedonian authority.<br />
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

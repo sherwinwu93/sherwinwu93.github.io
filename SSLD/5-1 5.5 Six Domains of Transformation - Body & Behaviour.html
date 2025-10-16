@@ -1,0 +1,559 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-01-27 Mon 10:15 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-orgbc7f10e" class="outline-2">
+<h2 id="orgbc7f10e">5-1 5.5 Six Domains of Transformation - Body &amp; Behaviour</h2>
+<div class="outline-text-2" id="text-orgbc7f10e">
+<p class="verse">
+Okay, and then you're kind of talking about<br />
+&#xa0;how we can potentially harm ourselves or that kind of thing?<br />
+And that relates then to the body and how the body fits into this whole puzzle?<br />
+Yeah.<br />
+Yeah, obviously when relationships change, even bodily response will change.<br />
+Right.<br />
+So we were talking about intimate relationships, for instance,<br />
+&#xa0;like we talked about physical intimacy in previous sessions.<br />
+Say for example, you have two persons who are in a physically intimate relationship<br />
+&#xa0;and then they now decide that that it's not what they want to continue with anymore.<br />
+So obviously when they see each other,<br />
+&#xa0;all right, their bodies will be stay more distant, and they don't touch each other.<br />
+Okay.<br />
+You know, and then certain kind of bodily responses will either be ignored or suppressed, right,<br />
+&#xa0;&#xa0;rather than express and encourage,<br />
+&#xa0;so the body will be going through adjustment as well.<br />
+And of course, when you're going through like a major transition,<br />
+&#xa0;your emotions, your cognition and everything will also impact on your body.<br />
+And it is not uncommon for people going through major transformation in their relationships<br />
+&#xa0;to experience the physical complaints	like you know indigestion or you know headaches.<br />
+And sometimes like sleep-related problems can be like bodily responses as well.<br />
+So you have the body obviously is implicated in all of this.<br />
+<br />
+Right so literally our somatic or kind of involuntary responses<br />
+&#xa0;are affected by these chief transform relationships.<br />
+So ultimately I guess this all boils down to our behaviours and how we end up acting?<br />
+Yeah, very true.<br />
+So I think from our discussion you can probably see<br />
+&#xa0;that when in SSLD we talk about the six domains,<br />
+&#xa0;&#xa0;but they're not discrete, they're actually interacting with each other.<br />
+Yeah.<br />
+Right?<br />
+So the body like one of the things that some people would do<br />
+&#xa0;is they do something drastic to their body when the relationship is transformed.<br />
+Previously, we talked about transformation as it is all about breakups or whatever.<br />
+But transformation can also be transforming from friendship to being lovers, right?<br />
+Because it's also a transformation.<br />
+Transforming from like coworkers to being partners.<br />
+So some people would choose to do something drastic to their body,<br />
+&#xa0;like one example that I can easily think of is like people putting tattoos on their body.<br />
+All right?<br />
+And to mark the change of a relationship, all right.<br />
+So it is not uncommon.<br />
+<br />
+so but you're right, like the behaviour is actually connected to<br />
+&#xa0;&#xa0;like our emotions, our motivation, how do we think about things and changes in the environment.<br />
+So all these six domains that we have talked about,<br />
+&#xa0;&#xa0;they actually would be like interacting with each other<br />
+&#xa0;and it would be not easy for us to sort of like delineate every possible process.<br />
+But I think as a conceptual framework, right,<br />
+&#xa0;people can probably use the six domains as the reference.<br />
+To look at, okay, so what are going to change?<br />
+And like how this change taking place, and what can we do within each domain?<br />
+Right?<br />
+Bearing in mind that the boundaries among them are not really discrete and rigid.<br />
+</p>
+</div>
+<div id="outline-container-orgd037488" class="outline-3">
+<h3 id="orgd037488">expression</h3>
+<div class="outline-text-3" id="text-orgd037488">
+<p>
+potentially [pəˈtenʃəli]: adv. something that is potentially dangerous, useful etc is not dangerous etc now, but may become so in the future潜在地<br />
+bodily [ˈbɑdɪli]: adj. related to the human body身体的<br />
+indigestion [ˌɪndɪˈdʒestʃ(ə)n]: n. pain that you get when your stomach cannot break down food that you have eaten ⇨ heartburn消化不良<br />
+implicate [ˈɪmplɪˌkeɪt]: v. to show or suggest that someone is involved in a crime or dishonest act牵扯<br />
+literally [ˈlɪt(ə)rəli]: adv. according to the most basic or original meaning of a word or expression字面意义地<br />
+somatic [səʊ'mætɪk]: adj. Relating to the body, especially as distinct from the mind肉体的<br />
+involuntary [ɪnˈvɑlənˌteri]: adj. an involuntary movement, sound, reaction etc is one that you make suddenly and without intending to because you cannot control yourself无意的<br />
+discrete [dɪˈskrit]: adj. clearly separate不连续的<br />
+tattoo [tæˈtu]: n. a picture or writing that is permanently marked on your skin using a needle and ink纹身<br />
+delineate [dɪˈlɪniˌeɪt]: v. to describe or draw something carefully so that people can understand it描绘<br />
+rigid [ˈrɪdʒɪd]: adj. rigid methods, systems etc are very strict and difficult to change OPP flexible僵化的<br />
+</p>
+<hr />
+<p>
+boil down to sth.: 归结为某物<br />
+Bearing in mind that + &#x2026;: keeping in mind that +&#x2026;牢记着 +&#x2026;<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgb8ef39c" class="outline-3">
+<h3 id="orgb8ef39c">ch.</h3>
+<div class="outline-text-3" id="text-orgb8ef39c">
+<p>
+5-1 5.5 六个转变领域——身体与行为<br />
+</p>
+
+<p>
+好的，你在谈论我们如何可能伤害自己或类似的事情？<br />
+这与身体以及身体在整个问题中的角色有关吗？<br />
+是的。<br />
+显然，当关系发生变化时，甚至身体的反应也会发生变化。<br />
+对。<br />
+我们之前谈论的是亲密关系，比如我们在之前的课程中讨论过身体上的亲密。<br />
+比如说，两个人处于身体亲密的关系中，但现在他们决定不再继续这样的关系。<br />
+显然，当他们见面时，他们的身体会保持更远的距离，不会触碰对方。<br />
+好的。<br />
+然后某些类型的身体反应要么被忽略，要么被压抑，对吧？<br />
+而不是被表达和鼓励，所以身体也会经历调整。<br />
+当然，当你经历重大转变时，你的情绪、认知以及一切也会影响到你的身体。<br />
+对于那些经历重大关系转变的人来说，出现一些身体上的不适并不罕见，<br />
+比如说消化不良或者头痛，有时与睡眠相关的问题也可以是身体的反应。<br />
+因此，身体显然参与了这一切。<br />
+是的，所以从字面上看，我们的身体反应或者说一些非自主反应都会受到这些重大关系变化的影响。<br />
+</p>
+
+<p>
+所以最终，这一切都会归结到我们的行为以及我们如何行动上，对吗？<br />
+是的，非常正确。<br />
+从我们的讨论中，你可能已经看到，当我们在SSLD中谈论六个领域时，<br />
+它们并不是独立的，而是相互作用的。<br />
+对吧？<br />
+所以，比如身体，有些人在关系发生变化时会对身体做出一些剧烈的改变。<br />
+之前我们谈论过，转变主要是关于分手或类似的事情。<br />
+但转变也可以是从朋友变成恋人，对吧？<br />
+因为这也是一种转变。<br />
+从同事变成合作伙伴也是一种转变。<br />
+所以有些人会选择对身体做一些剧烈的事情，比如一个我很容易想到的例子是，人们在身体上纹身。<br />
+对吧？<br />
+以此来标记关系的变化。<br />
+所以这并不罕见，但你是对的。<br />
+行为实际上与我们的情感、动机、我们如何看待事物以及环境中的变化有关联。<br />
+所以我们谈论的这六个领域，<br />
+它们实际上是相互作用的，很难明确界定每一个可能的过程。<br />
+但我认为，作为一个概念框架，人们可能可以将这六个领域作为参考。<br />
+来看一看，好吧，哪些会发生变化？<br />
+这些变化是如何发生的，我们在每个领域内可以做些什么？<br />
+对吧？<br />
+记住，这些领域之间的界限并不是明确和僵硬的。<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org1aa2105" class="outline-3">
+<h3 id="org1aa2105">sentence</h3>
+<div class="outline-text-3" id="text-org1aa2105">
+<p>
+potentially [pəˈtenʃəli]: adv. something that is potentially dangerous, useful etc is not dangerous etc now, but may become so in the future潜在地<br />
+</p>
+<ul class="org-ul">
+<li>The patient succeeded in moblizing the immune system in a potentially harmful situation.<br /></li>
+<li>When facing extreme challenges, your body will regard them as potentially harmful things.<br /></li>
+<li>These programmers are concentrated in potentially serious bugs before it is deployed.<br /></li>
+</ul>
+<p>
+bodily [ˈbɑdɪli]: adj. related to the human body身体的<br />
+</p>
+<ul class="org-ul">
+<li>Well, your bodily interactions are bonded to how much exercise you have done every day.<br /></li>
+<li>It is just a spontaneously bodily interaction that doesn't mean I dislike you.<br /></li>
+<li>Watch out for the bodily response of the athlete.<br /></li>
+</ul>
+<p>
+indigestion [ˌɪndɪˈdʒestʃ(ə)n]: n. pain that you get when your stomach cannot break down food that you have eaten ⇨ heartburn消化不良<br />
+</p>
+<ul class="org-ul">
+<li>There is at least one way to relieve your indigestion.<br /></li>
+<li>The relief of her indigestion matters to me, my lord.<br /></li>
+<li>You boy who is suffering from indigestion may have to go to hospital.<br /></li>
+</ul>
+<p>
+implicate [ˈɪmplɪˌkeɪt]: v. to show or suggest that someone is involved in a crime or dishonest act牵扯<br />
+</p>
+<ul class="org-ul">
+<li>You're the outermost one from our party, and we don't want you to be implicated in the scandal.<br /></li>
+<li>The president being implicated in the scandal is kind of like a systematic corruption.<br /></li>
+<li>All of us implicated in the crime may be executed in front of people.<br /></li>
+</ul>
+<p>
+literally [ˈlɪt(ə)rəli]: adv. according to the most basic or original meaning of a word or expression字面意义地<br />
+</p>
+<ul class="org-ul">
+<li>The lost turtle is literally in our kitchen.<br /></li>
+<li>The puma at large is literally wandering around the street.<br /></li>
+<li>You should literally maximize the attraction of two building blocks.<br /></li>
+</ul>
+<p>
+somatic [səʊ'mætɪk]: adj. Relating to the body, especially as distinct from the mind肉体的<br />
+</p>
+<ul class="org-ul">
+<li>The perfume maximizes the somatic attraction of you and me.<br /></li>
+<li>The ants bunched up together caused my somatic discomfort.<br /></li>
+<li>I don't like sick humor that caused my somatic discomfort.<br /></li>
+</ul>
+<p>
+involuntary [ɪnˈvɑlənˌteri]: adj. an involuntary movement, sound, reaction etc is one that you make suddenly and without intending to because you cannot control yourself无意的<br />
+</p>
+<ul class="org-ul">
+<li>No one can imagine that an involuntary movement brought about the president's downfall.<br /></li>
+<li>His involuntary reaction led these stones fly apart.<br /></li>
+<li>YOu involuntary reactions doesn't help anyone especially when your wife's suffering from indigestion.<br /></li>
+</ul>
+<p>
+discrete [dɪˈskrit]: adj. clearly separate不连续的<br />
+</p>
+<ul class="org-ul">
+<li>He is sitting in between the discrete railway.<br /></li>
+<li>The particles that scientists picked up from outter space has been discrete decades before.<br /></li>
+<li>The balls are arranged in 3D space, which is discrete.<br /></li>
+</ul>
+<p>
+tattoo [tæˈtu]: n. a picture or writing that is permanently marked on your skin using a needle and ink纹身<br />
+</p>
+<ul class="org-ul">
+<li>He put a tattoo on his body in order to bond with his girlfriend.<br /></li>
+<li>I can't join the army because of the damn tattoo which you urged me to put.<br /></li>
+<li>You'd better break up your girlfriend with a tattoo on her face.<br /></li>
+</ul>
+<p>
+delineate [dɪˈlɪniˌeɪt]: v. to describe or draw something carefully so that people can understand it描绘<br />
+</p>
+<ul class="org-ul">
+<li>It's time to expand our model to delineate the story.<br /></li>
+<li>We have a flat representation of the house delineated by my father.<br /></li>
+<li>Our teacher goes out of his way to delineate the house in three dimensions.<br /></li>
+</ul>
+<p>
+rigid [ˈrɪdʒɪd]: adj. rigid methods, systems etc are very strict and difficult to change OPP flexible僵化的<br />
+</p>
+<ul class="org-ul">
+<li>Spoiler alert, the congressman chose the rigid way to scrutinize the factory.<br /></li>
+<li>Needless to say, the monastery fell into debt under the rigid abbot.<br /></li>
+<li>Our company didn't make a profit last year due to the rigid system.<br /></li>
+</ul>
+<hr />
+<p>
+boil down to sth.: 归结为某物<br />
+</p>
+<ul class="org-ul">
+<li>My failure of marriage and my child's education boil down to my bad choice at college.<br /></li>
+<li>These six domains boil down to what we want is not necessary what we need.<br /></li>
+<li>The forest fire can't just boil down to a cigarette end.<br /></li>
+</ul>
+<p>
+Bearing in mind that + &#x2026;: keeping in mind that +&#x2026;牢记着 +&#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>Bearing in mind that I am your husband who is supposed to protect you from anyone.<br /></li>
+<li>Bearing in mind that you cat is suffering from indigestion.<br /></li>
+<li>Bearing in mind that there is still a puma at large.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org1240d74" class="outline-3">
+<h3 id="org1240d74">sentence2</h3>
+<div class="outline-text-3" id="text-org1240d74">
+<p>
+potentially [pəˈtenʃəli]: adv. something that is potentially dangerous, useful etc is not dangerous etc now, but may become so in the future潜在地<br />
+</p>
+<ul class="org-ul">
+<li>The patient succeeded in mobilizing the immune system in a potentially harmful situation.<br /></li>
+<li>When facing extreme challenges, your body will regard them as potentially harmful things.<br /></li>
+<li>These programmers are concentrated on potentially serious bugs before it is deployed.<br /></li>
+</ul>
+<p>
+bodily [ˈbɑdɪli]: adj. related to the human body身体的<br />
+</p>
+<ul class="org-ul">
+<li>Well, your bodily interactions are bonded to how much exercise you have done every day.<br /></li>
+<li>It is just a spontaneous bodily interaction that doesn't mean I dislike you.<br /></li>
+<li>Watch out for the bodily response of the athlete.<br /></li>
+</ul>
+<p>
+indigestion [ˌɪndɪˈdʒestʃ(ə)n]: n. pain that you get when your stomach cannot break down food that you have eaten ⇨ heartburn消化不良<br />
+</p>
+<ul class="org-ul">
+<li>There is at least one way to relieve your indigestion.<br /></li>
+<li>The relief of her indigestion matters to me, my lord.<br /></li>
+<li>You boy who is suffering from indigestion may have to go to hospital.<br /></li>
+</ul>
+<p>
+implicate [ˈɪmplɪˌkeɪt]: v. to show or suggest that someone is involved in a crime or dishonest act牵扯<br />
+</p>
+<ul class="org-ul">
+<li>You're the outermost one from our party, and we don't want you to be implicated in the scandal.<br /></li>
+<li>The president being implicated in the scandal is kind of like systematic corruption.<br /></li>
+<li>All of us implicated in the crime may be executed in front of people.<br /></li>
+</ul>
+<p>
+literally [ˈlɪt(ə)rəli]: adv. according to the most basic or original meaning of a word or expression字面意义地<br />
+</p>
+<ul class="org-ul">
+<li>The lost turtle is literally in our kitchen.<br /></li>
+<li>The puma at large is literally wandering around the street.<br /></li>
+<li>You should literally maximize the attraction of two building blocks.<br /></li>
+</ul>
+<p>
+somatic [səʊ'mætɪk]: adj. Relating to the body, especially as distinct from the mind肉体的<br />
+</p>
+<ul class="org-ul">
+<li>The perfume maximizes the somatic attraction of you and me.<br /></li>
+<li>The ants bunched up together caused my somatic discomfort.<br /></li>
+<li>I don't like sick humor that caused my somatic discomfort.<br /></li>
+</ul>
+<p>
+involuntary [ɪnˈvɑlənˌteri]: adj. an involuntary movement, sound, reaction etc is one that you make suddenly and without intending to because you cannot control yourself无意的<br />
+</p>
+<ul class="org-ul">
+<li>No one can imagine that an involuntary movement brought about the president's downfall.<br /></li>
+<li>His involuntary reaction led these stones to fly apart.<br /></li>
+<li>Your involuntary reactions don't help anyone especially when your wife's suffering from indigestion.<br /></li>
+</ul>
+<p>
+discrete [dɪˈskrit]: adj. clearly separate不连续的<br />
+</p>
+<ul class="org-ul">
+<li>He is sitting in between the discrete railway.<br /></li>
+<li>The particles picked up from outer space have been discrete decades before.<br /></li>
+<li>The balls are arranged in 3D space, which is discrete.<br /></li>
+</ul>
+<p>
+tattoo [tæˈtu]: n. a picture or writing that is permanently marked on your skin using a needle and ink纹身<br />
+</p>
+<ul class="org-ul">
+<li>He put a tattoo on his body in order to bond with his girlfriend.<br /></li>
+<li>I can't join the army because of the damn tattoo which you urged me to put.<br /></li>
+<li>You'd better break up your girlfriend with a tattoo on her face.<br /></li>
+</ul>
+<p>
+delineate [dɪˈlɪniˌeɪt]: v. to describe or draw something carefully so that people can understand it描绘<br />
+</p>
+<ul class="org-ul">
+<li>It's time to expand our model to delineate the story.<br /></li>
+<li>We have a flat representation of the house delineated by my father.<br /></li>
+<li>Our teacher goes out of his way to delineate the house in three dimensions.<br /></li>
+</ul>
+<p>
+rigid [ˈrɪdʒɪd]: adj. rigid methods, systems etc are very strict and difficult to change OPP flexible僵化的<br />
+</p>
+<ul class="org-ul">
+<li>Spoiler alert, the congressman chose the rigid way to scrutinize the factory.<br /></li>
+<li>Needless to say, the monastery fell into debt under the rigid abbot.<br /></li>
+<li>Our company didn't make a profit last year due to the rigid system.<br /></li>
+</ul>
+<hr />
+<p>
+boil down to sth.: 归结为某物<br />
+</p>
+<ul class="org-ul">
+<li>My failure in marriage and my child's education boil down to my bad choice at college.<br /></li>
+<li>These six domains boil down to what we want is not necessarily what we need.<br /></li>
+<li>The forest fire can't just boil down to a cigarette end.<br /></li>
+</ul>
+<p>
+Bearing in mind that + &#x2026;: keeping in mind that +&#x2026;牢记着 +&#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>Bearing in mind that I am your husband who is supposed to protect you from anyone.<br /></li>
+<li>Bearing in mind that your cat is suffering from indigestion.<br /></li>
+<li>Bearing in mind that there is still a puma at large.<br /></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

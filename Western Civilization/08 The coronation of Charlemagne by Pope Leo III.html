@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-01-09 Thu 23:34 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-orga60bfa7" class="outline-2">
+<h2 id="orga60bfa7">The coronation of Charlemagne by Pope Leo III</h2>
+<div class="outline-text-2" id="text-orga60bfa7">
+<p class="verse">
+In 800, Charlemagne, the king of the Franks, journeyed to Rome to help Pope Leo III,<br />
+&#xa0;who was barely clinging to power in the face of rebellious Romans.<br />
+On Christmas Day, Charlemagne and his family,<br />
+&#xa0;&#xa0;attended by Romans, Franks, and even visitors from the Byzantine Empire,<br />
+&#xa0;crowded into Saint Peter’s Basilica to hear Mass.<br />
+Quite unexpectedly, at least according to a Frankish writer,<br />
+&#xa0;'as the king rose from praying before the tomb of the blessed apostle Peter,<br />
+&#xa0;&#xa0;Pope Leo placed a golden crown on his head.'<br />
+In keeping with ancient tradition, the people in the church shouted,<br />
+&#xa0;'Long life and victory to Charles Augustus,<br />
+&#xa0;&#xa0;crowned by God the great and pacific Emperor of the Romans.'<br />
+Seemingly, the Roman Empire in the West had been reborn,<br />
+&#xa0;and Charles had become the first western emperor since 476.<br />
+But this 'Roman emperor' was actually a German king,<br />
+&#xa0;and he had been crowned by the head of the western Christian church.<br />
+In truth,<br />
+&#xa0;the coronation of Charlemagne was a sign not of the rebirth of the Roman Empire<br />
+&#xa0;&#xa0;but of the emergence of a new European civilization.<br />
+<br />
+By the year of Charlemagne's coronation,<br />
+&#xa0;the contours of this new European civilization were beginning to emerge in western Europe.<br />
+Increasingly, Europe would become the focus and center of Western civilization.<br />
+Building on a fusion of Germanic, GrecoRoman, and Christian elements,<br />
+&#xa0;the medieval European world first became visible in the Carolingian Empire of Charlemagne.<br />
+The agrarian foundations of the eighth and ninth centuries<br />
+&#xa0;&#xa0;proved inadequate to maintain a large monarchical system,<br />
+&#xa0;however, and a new political and military order based on the decentralization of political power<br />
+&#xa0;&#xa0;subsequently evolved to become an integral part of the political world of the Middle Ages.<br />
+<br />
+European civilization began on a shaky and uncertain foundation, however.<br />
+In the ninth century, Vikings, Magyars, and Muslims posed threats<br />
+&#xa0;that could easily have stifled the new society.<br />
+But European civilization absorbed the challenges.<br />
+The Vikings and Magyars were assimilated, and recovery slowly began.<br />
+By 1000, European civilization was ready to embark on a period of dazzling vitality and expansion.<br />
+</p>
+</div>
+<div id="outline-container-orgbff1d54" class="outline-3">
+<h3 id="orgbff1d54">expression</h3>
+<div class="outline-text-3" id="text-orgbff1d54">
+<p>
+rebellious [rɪˈbeljəs]: adj. deliberately not obeying people in authority or rules of behaviour造反的, 反叛的<br />
+basilica [bəˈsɪlɪkə]: n. a church in the shape of a long room with a round end(古罗马)长方形会堂, 长方形基督教堂<br />
+pray [preɪ]: v. to speak to God in order to ask for help or give thanks ⇨ prayer祈祷<br />
+apostle [əˈpɑs(ə)l]: n. one of the 12 people chosen by Jesus Christ to teach and spread the Christian religion使徒(指耶稣十二使徒)<br />
+blessed [ˈblesəd]: adj. holy神圣的<br />
+pacific [pəˈsɪfɪk]: adj. peaceful and loving or wanting peace和平的<br />
+reborn [ˌriˈbɔrn]: v. to become active or popular again 再生<br />
+coronation [ˌkɔrəˈneɪʃ(ə)n]: n. the ceremony at which someone is officially made king or queen ⇨ crown加冕礼<br />
+rebirth [ˌriˈbɜrθ]: n. formal when an important idea, feeling, or organization becomes strong or popular again复兴<br />
+contour [ˈkɑnˌtʊr]: n. the shape of the outer edges of something such as an area of land or someone’s body轮廓<br />
+increasingly [ɪnˈkrisɪŋli]: adv. more and more all the time越来越多的<br />
+fusion [ˈfjuʒ(ə)n]: n. a combination of separate qualities or ideas熔合<br />
+medieval [ˌmediˈiv(ə)l]: adj. connected with the Middle Ages中世纪的<br />
+visible [ˈvɪzəb(ə)l]: adj. something that is visible can be seen OPP invisible看得见的, 明显的<br />
+agrarian [əˈɡreriən]: adj. relating to farming or farmers有关土地的<br />
+monarch [ˈmɒnə(r)k] monarchical [məˈnɑrkɪk(ə)l]: n.adj. a king or queen国王的<br />
+decentralize [diˈsentrəˌlaɪz] decentralization: v.n. to move parts of a government, organization etc from a central place to several different smaller ones OPP centralize分散<br />
+subsequently [ˈsʌbsɪkwəntli]: adv. after an event in the past OPP previously后来<br />
+shaky [ˈʃeɪki]: adj. weak and unsteady because of old age, illness, or shock虚弱的<br />
+stifle [ˈstaɪf(ə)l]: v. to stop something from happening or developing OPP encourage使窒息, 抑制<br />
+assimilate [əˈsɪmɪˌleɪt]: v. if people assimilate, or are assimilated into a country or group, they become part of that group and are accepted by the people in that group吸收<br />
+dazzling [ˈdæzlɪŋ]: adj. a light that is dazzling is very bright and makes you unable to see properly for a short time眼花缭乱的, 耀眼的<br />
+vitality [vaɪˈtæləti]: n. great energy and eagerness to do things活力<br />
+</p>
+<hr />
+<p>
+journey to sp.: 旅行到某地<br />
+be barely clinging to power: 勉强抓住权力<br />
+be attended by sb.: 被某人陪伴<br />
+crowd into sp.: 涌入某地<br />
+rose from sth.: 从&#x2026;起来<br />
+place a golden crown on sb's head: 给某人带上金冠<br />
+be crowned by sb.: 由某人加冕<br />
+prove inadequate to do sth.: 证明不足以做某事<br />
+evolve to become sth.: 演变成某物<br />
+pose threats: 构成威胁<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgb2dc98a" class="outline-3">
+<h3 id="orgb2dc98a">sentences</h3>
+<div class="outline-text-3" id="text-orgb2dc98a">
+<p>
+rebellious: deliberately not obeying people in authority or rules of behaviour造反的, 反叛的<br />
+</p>
+<ul class="org-ul">
+<li>He used to be rebellious in his youth.<br /></li>
+<li>It is not easy to settle his rebellious subjects without enough money.<br /></li>
+<li>To my surprise, he turned out to be rebellious in the story.<br /></li>
+</ul>
+<p>
+pray: to speak to God in order to ask for help or give thanks ⇨ prayer祈祷<br />
+</p>
+<ul class="org-ul">
+<li>There's at least one way to pay for food in a foreign country.<br /></li>
+<li>The woman who is at war is paying for her husband's safety.<br /></li>
+<li>He spent large sums of money paying to the monks in the temple.<br /></li>
+</ul>
+<p>
+pacific: peaceful and loving or wanting peace和平的<br />
+</p>
+<ul class="org-ul">
+<li>She never dreamed of a Pacific realm during the war.<br /></li>
+<li>These monks succeeded in developing a pacific community.<br /></li>
+<li>The spokeswoman stated that the Chinese are always pacific when receiving a warm welcome.<br /></li>
+</ul>
+<p>
+reborn: to become active or popular again 再生<br />
+</p>
+<ul class="org-ul">
+<li>The corpse which was said to be reborn at midnight had been executed beheadings.<br /></li>
+<li>The corpse was said to be reborn at midnight and suck the blood of passengers.<br /></li>
+<li>This convinced the monk that the corpse in the coffin would be reborn at midnight.<br /></li>
+</ul>
+<p>
+coronation: the ceremony at which someone is officially made king or queen ⇨ crown加冕礼<br />
+</p>
+<ul class="org-ul">
+<li>No need to worry, he is going to plan out the coronation to the last detail.<br /></li>
+<li>He kept blaming his second son for the spoilt coronation.<br /></li>
+<li>We consulted the map to find a place where the church would hold the coronation.<br /></li>
+</ul>
+<p>
+rebirth: formal when an important idea, feeling, or organization becomes strong or popular again复兴<br />
+</p>
+<ul class="org-ul">
+<li>The emperor urged us to achieve the rebirth of his Empire.<br /></li>
+<li>It seemed odd that the rebirth of nationalism in this region emerged at that time.<br /></li>
+<li>This event was described as the rebirth of nationalism in this country.<br /></li>
+</ul>
+<p>
+contour: the shape of the outer edges of something such as an area of land or someone’s body轮廓<br />
+</p>
+<ul class="org-ul">
+<li>It is not easy for me to recognize your contour in the dim light.<br /></li>
+<li>Recognizing his contour behind the curtain,<br />
+I was wondering whether he was playing the role of a prince.<br /></li>
+<li>He blamed me for not recognizing his contour in the dim light.<br /></li>
+</ul>
+<p>
+increasingly: more and more all the time日益, 愈加<br />
+</p>
+<ul class="org-ul">
+<li>Increasingly, I developed an unshakable faith in his method of studying English.<br /></li>
+<li>Increasingly, she lost faith in my love so she broke up with me.<br /></li>
+<li>Increasingly, he got familiar with reading long and dense books.<br /></li>
+</ul>
+<p>
+fusion: a combination of separate qualities or ideas熔合<br />
+</p>
+<ul class="org-ul">
+<li>I love his work, which is a fusion of different styles.<br /></li>
+<li>A fusion of experiments and models must enhance my memory.<br /></li>
+<li>This might explain why his work is full of fusions of different styles.<br /></li>
+</ul>
+<p>
+medieval: connected with the Middle Ages<br />
+</p>
+<ul class="org-ul">
+<li>The medieval shield was said to be dug up in the tomb of a king.<br /></li>
+<li>In the end, these medieval fragments were pieced together, and it turned out to be a scroll.<br /></li>
+<li>Encountering storms, a cargo of medieval shields was sunken in the Pacific Ocean.<br /></li>
+</ul>
+<p>
+visible: something that is visible can be seen OPP invisible看得见的, 明显的<br />
+</p>
+<ul class="org-ul">
+<li>It is composed of some visible glasses.<br /></li>
+<li>It is visible that a rock hit the surface of the desktop.<br /></li>
+<li>It is visible that you lost the faith in our love.<br /></li>
+</ul>
+<p>
+decentralize decentralization: to move parts of a government, organization etc from a central place to several different smaller ones OPP centralize分散<br />
+</p>
+<ul class="org-ul">
+<li>After having decentralized its operations, the company claimed to go bankrupt.<br /></li>
+<li>In one study, 50% of people tend to decentralize their investments in business.<br /></li>
+<li>Decentralizing our operations must be fatal for our company.<br /></li>
+</ul>
+<p>
+subsequently: after an event in the past OPP previously后来<br />
+</p>
+<ul class="org-ul">
+<li>Earning enough money in a part-time job, he subsequently went to college by himself.<br /></li>
+<li>These houses were subsequently the basic building blocks of their community.<br /></li>
+<li>Going on a strike, they subsequently got paid in time.<br /></li>
+</ul>
+<p>
+shaky: weak and unsteady because of old age, illness, or shock虚弱的<br />
+</p>
+<ul class="org-ul">
+<li>Because of infecting smallpox, he is mobilizing his immune system and becoming shaky.<br /></li>
+<li>The shaky lady deserves our help.<br /></li>
+<li>These shaky slaves would be transported to the prison in the remote village.<br /></li>
+</ul>
+<p>
+stifle: to stop something from happening or developing OPP encourage使窒息, 抑制<br />
+</p>
+<ul class="org-ul">
+<li>He was accused of stifling his wife in his youth.<br /></li>
+<li>The brutal execution may stifle the prevailing crimes in this state.<br /></li>
+<li>He cherished the hope that this law would stifle digging up coffins.<br /></li>
+</ul>
+<p>
+assimilate: if people assimilate, or are assimilated into a country or group, they become part of that group and are accepted by the people in that group吸收<br />
+</p>
+<ul class="org-ul">
+<li>Because of his hard work, he was assimilated into the United States<br /></li>
+<li>Despite he was very popular with local people,<br />
+he was assimilated into the community.<br /></li>
+<li>Assimilated into the country, she works as an engineer for a big firm.<br /></li>
+</ul>
+<p>
+dazzling: a light that is dazzling is very bright and makes you unable to see properly for a short time眼花缭乱的, 耀眼的<br />
+</p>
+<ul class="org-ul">
+<li>My father told me that dazzling fireworks displays would be exhibited by the river.<br /></li>
+<li>The dazzling paints were burnt down after a big fire.<br /></li>
+<li>There are a lot of dazzling robots in this exhibition.<br /></li>
+</ul>
+<p>
+vitality: great energy and eagerness to do things活力<br />
+</p>
+<ul class="org-ul">
+<li>Lisa, the City Comptroller, stated that the economic vitality of the city would be reborn next year.<br /></li>
+<li>This law seems to stifle the economic vitality of the region.<br /></li>
+<li>For the economic vitality of the country, the president propels these farmers into cities.<br /></li>
+</ul>
+<hr />
+<p>
+journey to sp.: 旅行到某地<br />
+</p>
+<ul class="org-ul">
+<li>My life can't help journeying to the beach on holidays.<br /></li>
+<li>The legion journeyed to China to help the emperor who lost complete control over his provinces.<br /></li>
+<li>The legion journeyed to China to defend people against the Romans.<br /></li>
+</ul>
+<p>
+be barely clinging to power: 勉强抓住权力<br />
+</p>
+<ul class="org-ul">
+<li>The emperor barely clinging to power was nervous throughout his life.<br /></li>
+<li>The emperor who was barely clinging to power was killed when he was crowned.<br /></li>
+<li>Losing complete control over the military, the emperor was barely clinging to power.<br /></li>
+</ul>
+<p>
+be attended by sb.: 被某人陪伴<br />
+</p>
+<ul class="org-ul">
+<li>The old gentleman attended by his family is telling them pirate stories.<br /></li>
+<li>I don't want to be attended by my wife when I'm dying.<br /></li>
+<li>As soon as our cat is attended by us, she is happy.<br /></li>
+</ul>
+<p>
+crowd into sp.: 涌入某地<br />
+</p>
+<ul class="org-ul">
+<li>Knowing the news that a group of pop singers would give performances,<br />
+people in the town crowded into the station.<br /></li>
+<li>Young people crowded into the exhibition to enjoy the fireworks display.<br /></li>
+<li>A great many gangsters crowded into my store to ask for protect money.<br /></li>
+</ul>
+<p>
+rise from sth.: 从&#x2026;起来<br />
+</p>
+<ul class="org-ul">
+<li>The man rosing from the wheelchair turned out to be uninjured.<br /></li>
+<li>You are supposed to rise from the seat while the old man is standing in front of you.<br /></li>
+<li>Rosing from the seat, he said: 'Take my seat, sweet.'<br /></li>
+</ul>
+<p>
+place sth. on sb's head: 给某人带上某物<br />
+</p>
+<ul class="org-ul">
+<li>What he placed on my head in the morning drove me mad.<br /></li>
+<li>He refused to place a golden crown on the emperor's head.<br /></li>
+<li>Placing a hat on his head, he waved to a taxi.<br /></li>
+</ul>
+<p>
+be crowned by sb.: 由某人加冕<br />
+</p>
+<ul class="org-ul">
+<li>Crowned by a bishop, he had the authority to conduct his military.<br /></li>
+<li>Crowned by a bishop, he was assimilated into this country.<br /></li>
+<li>For centuries, kings had been crowned by the bishops of Rome.<br /></li>
+</ul>
+<p>
+prove inadequate to do sth.: 证明不足以做某事<br />
+</p>
+<ul class="org-ul">
+<li>This proved inadequate to take a shower in the stream.<br /></li>
+<li>This proved inadequate to assimilate so many foreign engineers.<br /></li>
+<li>This proved inadequate to get it under control.<br /></li>
+</ul>
+<p>
+evolve to become sth.: 演变成某物<br />
+</p>
+<ul class="org-ul">
+<li>This evolved to become a burial ritual in the local area.<br /></li>
+<li>Giving food to the poor on the last day of the year evolved to become a tradition of our family.<br /></li>
+<li>This evolved to become a habit of losing weight.<br /></li>
+</ul>
+<p>
+pose threats: 构成威胁<br />
+</p>
+<ul class="org-ul">
+<li>It is hard to escape the conclusion that countries nearby are posing threats.<br /></li>
+<li>Countries nearby posing threats don't scare us.<br /></li>
+<li>The increasing crimes in our country are posing threats to our people.<br /></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-12-20 Fri 16:55 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-org232c7e3" class="outline-2">
+<h2 id="org232c7e3">4-1 4.3 The 6 Domains of Our Lifeworld</h2>
+<div class="outline-text-2" id="text-org232c7e3">
+<p class="verse">
+Okay, so now I can definitely see<br />
+&#xa0;why a simple cost benefit analysis really doesn't do the trick<br />
+&#xa0;&#xa0;in explaining all of our behaviours and understanding of a relationship.<br />
+So obviously then we need something a little bit more complex to understand.<br />
+Why do we go into relationships and leave them, right?<br />
+Yeah, well I think one of frameworks that we use in the SSLD system<br />
+&#xa0;is to look at human life in six domains.<br />
+So we look at the Environment, we look at the Body, we look at Motivation, we look at Cognition.<br />
+Emotion and Behaviour.<br />
+So when people are talking about like a relationship,<br />
+&#xa0;people actually get involved by mobilizing,<br />
+&#xa0;&#xa0;sort of like not exactly an even coordinated action or operation involving these six domains.<br />
+<br />
+So say for example, when we are in the same physical environment.<br />
+Like when you talk about office romance for instance, right.<br />
+And two persons in a same office, but they may seem to be like in the same environment.<br />
+But like if one person is sort of in a more senior position and another person in a junior position.<br />
+They are not actually in the same environment, alright?<br />
+<br />
+And when we talk about body or physical characteristics.<br />
+We understand that you know,<br />
+&#xa0;there is actually no objective value or meaning that we can assign to physical features.<br />
+Like say for example, we talk about skin colour.<br />
+Some people are attracted to certain skin colour,<br />
+&#xa0;some people feel good about their skin colour, some people don't.<br />
+So again it is not standard,<br />
+&#xa0;people have very different takes on their body<br />
+&#xa0;&#xa0;and like we can say the same thing about body build, right?<br />
+Like some people prefer people who are taller.<br />
+Some people want themselves to be taller.<br />
+But some people are just happy with whatever they are.<br />
+Some people want to have like more sexy figures, some people don't really pay too much attention.<br />
+So and then there are other physical characteristics that some people may pay a lot of attention to.<br />
+Like some people are obsessed with hair maybe,<br />
+&#xa0;some people are obsessed with ears or eyes, you know.<br />
+So we have an endless list of individual differences when we talk about the body.<br />
+<br />
+And then when we talk about motivation,<br />
+&#xa0;it is also important to recognize<br />
+&#xa0;&#xa0;that not everyone assigns the same significance to relationship.<br />
+Some people can be more focused on their family of origin<br />
+&#xa0;than a new relationship that's developing.<br />
+Some people want to, you know,<br />
+&#xa0;get this courtship like engagement marriage and raising a family done with that<br />
+&#xa0;&#xa0;then focus on his or her career.<br />
+All right, so, but to some people, relationship is central to their lives.<br />
+So again, like in the motivation domain, people can be very different.<br />
+<br />
+And when we come to cognition,<br />
+&#xa0;then obviously like we have different values, different world views, different belief systems,<br />
+&#xa0;and then we also spend a fair bit of time earlier in this course<br />
+&#xa0;&#xa0;talking about the scripts that you have internalized.<br />
+Or you have started authoring for yourself, and it is very much in the cognitive domain.<br />
+<br />
+And then in the emotional domain,<br />
+&#xa0;then obviously people have different emotional needs, and different emotional patterns.<br />
+Some people get very excited by a certain gestures of caring and love, some people don't, right.<br />
+Some people have tremendous problems regulating themselves emotionally and get over-aroused.<br />
+Some people can get easily frustrated and then get angry.<br />
+Some people don't.<br />
+So, again, in the emotional domain you have all sorts of individual and interpersonal differences.<br />
+And then when it comes to the actual behaviour,<br />
+&#xa0;like how people actually behave and what do they actually say, what do they actually do,<br />
+&#xa0;&#xa0;there's a huge diversity there.<br />
+<br />
+So this is why when we look at relationships<br />
+&#xa0;we really have to engage with all these six domains at least,<br />
+&#xa0;&#xa0;[LAUGH] I would say, there actually can be more.<br />
+So a simple cost benefit arithmetic analysis, I don't think would do the trick.<br />
+<br />
+To summarize the six domains of life mentioned in lecture.<br />
+They are Environment where you are in a given time.<br />
+Physical body, characteristics and features of ourselves and others.<br />
+Motivation such as needs, wants, incentives for what we are doing.<br />
+Cognition, your thoughts, ideas, values and belief system.<br />
+Emotion,<br />
+&#xa0;which are your feelings and emotional patterns, needs, reactions, regulation abilities, etc.<br />
+And lastly, behaviour of how we actually say something,<br />
+&#xa0;what we do, or how we react in a given interaction.<br />
+These six domains<br />
+&#xa0;will provide a more comprehensive picture of the human experience within a relationship.<br />
+</p>
+</div>
+<div id="outline-container-org8d2c2c8" class="outline-3">
+<h3 id="org8d2c2c8">expression</h3>
+<div class="outline-text-3" id="text-org8d2c2c8">
+<p>
+domain [doʊˈmeɪn]: n. an area of land owned and controlled by one person or government, especially in the past领域<br />
+motivate [ˈmoʊtɪˌveɪt] motivation: v.n. the reason why you want to do something动机<br />
+cognition [kɑɡˈnɪʃ(ə)n]: n. formal the process of knowing, understanding, and learning something SYN thought认知<br />
+mobilize [ˈmoʊb(ə)lˌaɪz]: v. to encourage people to support something in an active way动员<br />
+coordinate [koʊˈɔrdɪnət]: v. to organize an activity so that the people involved in it work well together and achieve a good result协调<br />
+senior [ˈsinjər]: adj. having a higher position, level, or rank ⇨ junior地位较高的, 高级的<br />
+junior [ˈdʒuniər]: adj. having a low rank in an organization or profession OPP senior下级, (年龄、职位等)较低者<br />
+courtship [ˈkɔrtˌʃɪp]: n. the period of time during which a man and woman have a romantic relationship before marrying求爱,求爱期<br />
+internalize [ɪn'tɜ:nəlaɪz]: v. if you internalize a particular belief, attitude, behaviour etc, it becomes part of your character内化<br />
+incentive [ɪnˈsentɪv]: n. something that encourages you to work harder, start a new activity etc ⇨ motivation激励<br />
+</p>
+<hr />
+<p>
+do the trick: 奏效,起作用<br />
+be attracted to sth.: 被某事物所吸引<br />
+body build: 体型<br />
+have very different takes on sth.: 对某事有不同的看法<br />
+is central to sth./sb.: 对某人/某事是首要的<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org65ca069" class="outline-3">
+<h3 id="org65ca069">sentence</h3>
+<div class="outline-text-3" id="text-org65ca069">
+<p>
+domain [doʊˈmeɪn]: n. an area of land owned and controlled by one person or government, especially in the past领域<br />
+</p>
+<ul class="org-ul">
+<li>Seeking for extraterrestrial life is inside the domain of astrobiology.<br /></li>
+<li>Making a profit is viewed as the domain of the manager in our boss's eyes.<br /></li>
+<li>Hunting for a puma at large is outside the domian of the expert from the zoo.<br /></li>
+</ul>
+<p>
+motivate [ˈmoʊtɪˌveɪt] motivation: v.n. the reason why you want to do something动机<br />
+</p>
+<ul class="org-ul">
+<li>I still can't figure out my motivation of learning English.<br /></li>
+<li>Her motivation of getting married is to raise a family.<br /></li>
+<li>The abbot's motivation of taking advantage of laymen is that the monastery had fallen into debt under his predecessors.<br /></li>
+</ul>
+<p>
+cognition [kɑɡˈnɪʃ(ə)n]: n. formal the process of knowing, understanding, and learning something SYN thought认知<br />
+</p>
+<ul class="org-ul">
+<li>His cognition of the kingdom originates from his predecessors.<br /></li>
+<li>The proverbial, you can't make money beyond your cognition, becomes popular with young people in China.<br /></li>
+<li>What has happened to the doctor who has a skeleton in the cupboard is beyond my cognition.<br /></li>
+</ul>
+<p>
+mobilize [ˈmoʊb(ə)lˌaɪz]: v. to encourage people to support something in an active way动员<br />
+</p>
+<ul class="org-ul">
+<li>There is an increasing number of people on the Internt mobilizing support for stopping examining virus everyday.<br /></li>
+<li>As the monastery had fallen into debt under his predecessors, he failed to mobilze monks to work.<br /></li>
+<li>Having no mercy on his people, the prince went out his way to mobilize his people to fight on the battlefield.<br /></li>
+</ul>
+<p>
+coordinate [koʊˈɔrdɪnət]: v. to organize an activity so that the people involved in it work well together and achieve a good result协调<br />
+</p>
+<ul class="org-ul">
+<li>A coordinated gesture she gave in emergency surprised everyone in the theater.<br /></li>
+<li>The woman he fell in love with and was trying to teach dance turned out to be a cooradinated dancer.<br /></li>
+<li>The coordinated gesture takes him two days to exercise.<br /></li>
+</ul>
+<p>
+senior [ˈsinjər]: adj. having a higher position, level, or rank ⇨ junior地位较高的, 高级的<br />
+</p>
+<ul class="org-ul">
+<li>With the inflation, these jobs that used to require for junior engineer only accepts senior now.<br /></li>
+<li>His motivation of working hard is to become a senior engineer in this company in two years.<br /></li>
+<li>These days, senior programmers don't get a good salary anymore.<br /></li>
+</ul>
+<p>
+junior [ˈdʒuniər]: adj. having a low rank in an organization or profession OPP senior下级, (年龄、职位等)较低者<br />
+</p>
+<ul class="org-ul">
+<li>It was a junior doctor who inoculated me.<br /></li>
+<li>On arriving home, I found a needle that must be what a junior nurse leave.<br /></li>
+<li>In this company, you will be seeing that a senior engineer reprimands a junior in public.<br /></li>
+</ul>
+<p>
+courtship [ˈkɔrtˌʃɪp]: n. the period of time during which a man and woman have a romantic relationship before marrying求爱,求爱期<br />
+</p>
+<ul class="org-ul">
+<li>After three weeks courtship, she was betrothed to the French.<br /></li>
+<li>In the period of courtship, his behaviours make her not want to get married to him.<br /></li>
+<li>In the period of courtship, he fell into debt because of expensive gifts she asked for.<br /></li>
+</ul>
+<p>
+internalize [ɪn'tɜ:nəlaɪz]: v. if you internalize a particular belief, attitude, behaviour etc, it becomes part of your character内化<br />
+</p>
+<ul class="org-ul">
+<li>My method of learning English is to read an article aloud over and over again until I internalized it.<br /></li>
+<li>This belief seemed to be easy, but I found it difficult to internalize it.<br /></li>
+<li>What Mr. Leo taught in the course has not been internalized by you.<br /></li>
+</ul>
+<p>
+incentive [ɪnˈsentɪv]: n. something that encourages you to work harder, start a new activity etc ⇨ motivation激励<br />
+</p>
+<ul class="org-ul">
+<li>So to speak, I have no incentive to study English hard.<br /></li>
+<li>Pocket money provided an incentive for me to study hard in my youth.<br /></li>
+<li>My wife lacks any incentive to get the cat fed on time.<br /></li>
+</ul>
+<hr />
+<p>
+do the trick: 奏效,起作用<br />
+</p>
+<ul class="org-ul">
+<li>The experiment we performed will do the trick.<br /></li>
+<li>My capacity of speaking English fluently will do the trick in the market.<br /></li>
+<li>It is hard to say that the monetary policy will do the trick when our country is at war.<br /></li>
+</ul>
+<p>
+be attracted to sth.: 被某事物所吸引<br />
+</p>
+<ul class="org-ul">
+<li>My wife is attracted to a good-looking bunch of flowers in the grocery.<br /></li>
+<li>The hare was attracted to a piece of grasses and lost the game.<br /></li>
+<li>Mr. Simpson is attracted to the library which is free and open all the day.<br /></li>
+</ul>
+<p>
+body build: 体型<br />
+</p>
+<ul class="org-ul">
+<li>The man who is trying to lose weight gets obsessed with perfect body build.<br /></li>
+<li>Because of nice body build, he was cast in the role of the hero.<br /></li>
+<li>No woman can't resist temptation to admire his perfect body build.<br /></li>
+</ul>
+<p>
+have very different takes on sth.: 对某事有不同的看法<br />
+</p>
+<ul class="org-ul">
+<li>The couple who had very different takes on the event quarrelled bitterly.<br /></li>
+<li>Obviously, my wife and I have very different takes on going on a vacation abroad.<br /></li>
+<li>People who have very different takes on strike come to an conclusion now.<br /></li>
+</ul>
+<p>
+is central to sth./sb.: 对某人/某事是首要的<br />
+</p>
+<ul class="org-ul">
+<li>Raising the family is central to the manager who is often reprimanded by his boss in public.<br /></li>
+<li>Restoring to homeostasis is central to a patient who just had an operation.<br /></li>
+<li>Internalizing the contents of the article is central to me who look forward to using English in practice.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org7d738e8" class="outline-3">
+<h3 id="org7d738e8">sentence2</h3>
+<div class="outline-text-3" id="text-org7d738e8">
+<p>
+domain [doʊˈmeɪn]: n. an area of land owned and controlled by one person or government, especially in the past领域<br />
+</p>
+<ul class="org-ul">
+<li>Seeking for extraterrestrial life is inside the domain of astrobiology.<br /></li>
+<li>Making a profit is viewed as the domain of the manager in our boss's eyes.<br /></li>
+<li>Hunting for a puma at large is outside the domain of the expert from the zoo.<br /></li>
+</ul>
+<p>
+motivate [ˈmoʊtɪˌveɪt] motivation: v.n. the reason why you want to do something动机<br />
+</p>
+<ul class="org-ul">
+<li>I still can't figure out my motivation for learning English.<br /></li>
+<li>Her motivation for getting married is to raise a family.<br /></li>
+<li>The abbot's motivation for taking advantage of laymen is that the monastery had fallen into debt under his predecessors.<br /></li>
+</ul>
+<p>
+cognition [kɑɡˈnɪʃ(ə)n]: n. formal the process of knowing, understanding, and learning something SYN thought认知<br />
+</p>
+<ul class="org-ul">
+<li>His cognition of the kingdom originates from his predecessors.<br /></li>
+<li>The proverbial, you can't make money beyond your cognition, become popular with young people in China.<br /></li>
+<li>What has happened to the doctor who has a skeleton in the cupboard is beyond my cognition.<br /></li>
+</ul>
+<p>
+mobilize [ˈmoʊb(ə)lˌaɪz]: v. to encourage people to support something in an active way动员<br />
+</p>
+<ul class="org-ul">
+<li>There is an increasing number of people on the Internet mobilizing support for stopping examining the virus every day.<br /></li>
+<li>As the monastery had fallen into debt under his predecessors, he failed to mobilize monks to work.<br /></li>
+<li>Having no mercy on his people, the prince went out of his way to mobilize his people to fight on the battlefield.<br /></li>
+</ul>
+<p>
+coordinate [koʊˈɔrdɪnət]: v. to organize an activity so that the people involved in it work well together and achieve a good result协调<br />
+</p>
+<ul class="org-ul">
+<li>A coordinated gesture she gave in an emergency surprised everyone in the theater.<br /></li>
+<li>The woman he fell in love with and was trying to teach dance turned out to be a coordinated dancer.<br /></li>
+<li>The coordinated gesture takes him two days to exercise.<br /></li>
+</ul>
+<p>
+senior [ˈsinjər]: adj. having a higher position, level, or rank ⇨ junior地位较高的, 高级的<br />
+</p>
+<ul class="org-ul">
+<li>With the inflation, these jobs that used to be required for junior engineers only accept seniors now.<br /></li>
+<li>His motivation for working hard is to become a senior engineer in this company in two years.<br /></li>
+<li>These days, senior programmers don't get a good salary anymore.<br /></li>
+</ul>
+<p>
+junior [ˈdʒuniər]: adj. having a low rank in an organization or profession OPP senior下级, (年龄、职位等)较低者<br />
+</p>
+<ul class="org-ul">
+<li>It was a junior doctor who inoculated me.<br /></li>
+<li>On arriving home, I found a needle that must be what a junior nurse left.<br /></li>
+<li>In this company, you will see that a senior engineer reprimands a junior in public.<br /></li>
+</ul>
+<p>
+courtship [ˈkɔrtˌʃɪp]: n. the period of time during which a man and woman have a romantic relationship before marrying求爱,求爱期<br />
+</p>
+<ul class="org-ul">
+<li>After three weeks of courtship, she was betrothed to the French.<br /></li>
+<li>In the period of courtship, his behaviors make her not want to get married to him.<br /></li>
+<li>In the period of courtship, he fell into debt because of expensive gifts she asked for.<br /></li>
+</ul>
+<p>
+internalize [ɪn'tɜ:nəlaɪz]: v. if you internalize a particular belief, attitude, behaviour etc, it becomes part of your character内化<br />
+</p>
+<ul class="org-ul">
+<li>My method of learning English is to read an article aloud over and over again until I internalize it.<br /></li>
+<li>This belief seemed to be easy, but I found it difficult to internalize it.<br /></li>
+<li>What Mr. Leo taught in the course has not been internalized by you.<br /></li>
+</ul>
+<p>
+incentive [ɪnˈsentɪv]: n. something that encourages you to work harder, start a new activity etc ⇨ motivation激励<br />
+</p>
+<ul class="org-ul">
+<li>So to speak, I have no incentive to study English hard.<br /></li>
+<li>Pocket money provided an incentive for me to study hard in my youth.<br /></li>
+<li>My wife lacks any incentive to get the cat fed on time.<br /></li>
+</ul>
+<hr />
+<p>
+do the trick: 奏效,起作用<br />
+</p>
+<ul class="org-ul">
+<li>The experiment we performed will do the trick.<br /></li>
+<li>My capacity to speak English fluently will do the trick in the market.<br /></li>
+<li>It is hard to say that the monetary policy will do the trick when our country is at war.<br /></li>
+</ul>
+<p>
+be attracted to sth.: 被某事物所吸引<br />
+</p>
+<ul class="org-ul">
+<li>My wife is attracted to a good-looking bunch of flowers in the grocery.<br /></li>
+<li>The hare was attracted to a piece of grass and lost the game.<br /></li>
+<li>Mr. Simpson is attracted to the library which is free and open all day.<br /></li>
+</ul>
+<p>
+body build: 体型<br />
+</p>
+<ul class="org-ul">
+<li>The man who is trying to lose weight gets obsessed with perfect body build.<br /></li>
+<li>Because of nice body build, he was cast in the role of the hero.<br /></li>
+<li>No woman can't resist the temptation to admire his perfect body build.<br /></li>
+</ul>
+<p>
+have very different takes on sth.: 对某事有不同的看法<br />
+</p>
+<ul class="org-ul">
+<li>The couple who had very different takes on the event quarrelled bitterly.<br /></li>
+<li>Obviously, my wife and I have very different takes on going on a vacation abroad.<br /></li>
+<li>People who have very different takes on strike come to a conclusion now.<br /></li>
+</ul>
+<p>
+is central to sth./sb.: 对某人/某事是首要的<br />
+</p>
+<ul class="org-ul">
+<li>Raising the family is central to the manager who is often reprimanded by his boss in public.<br /></li>
+<li>Restoring to homeostasis is central to a patient who just had an operation.<br /></li>
+<li>Internalizing the contents of the article is central to the student who looks forward to using English in practice.<br /></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

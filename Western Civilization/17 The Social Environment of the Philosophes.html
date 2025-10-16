@@ -1,0 +1,830 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-01-09 Thu 23:35 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-org336a9ff" class="outline-2">
+<h2 id="org336a9ff">17 The Social Environment of the Philosophes</h2>
+<div class="outline-text-2" id="text-org336a9ff">
+<p class="verse">
+The social backgrounds of the philosophes varied considerably,<br />
+&#xa0;from the aristocratic Montesquieu to the lower-middle-class Diderot and Rousseau.<br />
+The Enlightenment was not the preserve of any one class,<br />
+&#xa0;although obviously its greatest appeal<br />
+&#xa0;&#xa0;was to the aristocracy and upper middle classes of the major cities.<br />
+The common people, especially the peasants, were little affected by the Enlightenment.<br />
+<br />
+Of great importance to the Enlightenment<br />
+&#xa0;was the spread of its ideas to the literate elite of European society.<br />
+Although the publication and sale of books and treatises were crucial to this process,<br />
+&#xa0;the salon was also a factor.<br />
+Salons came into being in the seventeenth century but rose to new heights in the eighteenth.<br />
+These were elegant drawing rooms in the urban houses of the wealthy<br />
+&#xa0;where philosophes and guests gathered to engage in witty,	sparkling conversations<br />
+&#xa0;&#xa0;that often centered on the ideas of the philosophes.<br />
+In France's rigid hierarchical society,<br />
+&#xa0;the salons were important in bringing together writers and artists<br />
+&#xa0;&#xa0;with aristocrats, government officials, and wealthy members of the bourgeoisie.<br />
+<br />
+As hostesses of the salons,<br />
+&#xa0;women found themselves in a position to affect the decisions of kings,<br />
+&#xa0;&#xa0;sway political opinion, and influence literary and artistic taste.<br />
+Salons provided havens for people and views unwelcome in the royal court.<br />
+When Diderot’s Encyclopedia was suppressed by the French authorities,<br />
+&#xa0;Marie-Therese de Geoffrin (1699&#x2013;1777), a wealthy bourgeois widow whose father had been a valet,<br />
+&#xa0;&#xa0;welcomed the encyclopedists to her salon<br />
+&#xa0;&#xa0;&#xa0;and offered financial assistance to complete the work in secret.<br />
+Madame Geoffrin was not without rivals, however.<br />
+The marquise du Deffand (1697&#x2013;1780) had abandoned her husband in the provinces<br />
+&#xa0;&#xa0;and established herself in Paris,<br />
+&#xa0;where her ornate drawing room attracted many of the Enlightenment's great figures,<br />
+&#xa0;&#xa0;including Montesquieu and Voltaire.<br />
+<br />
+Although the salons were run by women,<br />
+&#xa0;the reputation of a salon depended on the stature of the males a hostess was able to attract.<br />
+Despite this male domination, however,<br />
+&#xa0;both French and foreign observers complained<br />
+&#xa0;&#xa0;that females exerted undue influence in French political affairs.<br />
+Though exaggerated, this perception led to the decline of salons<br />
+&#xa0;during the French Revolution toward the end of the century.<br />
+</p>
+</div>
+<div id="outline-container-org9268493" class="outline-3">
+<h3 id="org9268493">expression</h3>
+<div class="outline-text-3" id="text-org9268493">
+<p>
+literate [ˈlɪt(ə)rət]: adj. able to read and write OPP illiterate ⇨ numerate有文化的<br />
+publication [ˌpʌblɪˈkeɪʃ(ə)n]: n. the process of printing a book, magazine etc and offering it for sale ⇨ publish出版物, 出版<br />
+treatise [ˈtritɪs]: n. a serious book or article about a particular subject论文<br />
+guest [ɡest]: n. someone who is invited to an event or special occasion客人<br />
+witty: using words in a clever and amusing way诙谐的<br />
+sparkling: shining brightly with points of flashing light; full of life and intelligence闪烁的;充满生机的<br />
+hierarchy [ˈhaɪəˌrɑrki] hierarchical: n.adj. if a system, organization etc is hierarchical, people or things are divided into levels of importance等级的<br />
+haven [ˈheɪv(ə)n]: n. a place where people or animals can live peacefully or go to in order to be safe ⇨ sanctuary避难所<br />
+suppress [səˈpres]: v. to stop people from opposing the government, especially by using force镇压,查禁<br />
+encyclopedia [ɪnˌsaɪkləˈpidiə] encyclopedist: n. a book or ↑CD, or a set of these, containing facts about many different subjects, or containing detailed facts about one subject百科全书<br />
+bourgeois [ˈbʊrˌʒwɑ] bourgeoisie [ˌbʊrʒwɑˈzi]: adj.n. belonging to the ↑middle class中产阶级,资产阶级<br />
+widow [ˈwɪdoʊ]: n. a woman whose husband has died and who has not married again寡妇<br />
+valet [ˈvæleɪ]: n. a male servant who looks after a man’s clothes, serves his meals etc ⇨ maid(男人的)贴身男仆<br />
+ornate [ɔrˈneɪt]: adj. covered with a lot of decoration装饰的, 华丽的<br />
+stature [ˈstætʃər]: n. the degree to which someone is admired or regarded as important名声,声望<br />
+undue [ʌnˈdu]: adj. formal more than is reasonable, suitable, or necessary过分的<br />
+exaggerated [ɪɡˈzædʒəˌreɪtəd]: adj. if something is exaggerated, it is described as better, larger etc than it really is夸大的, 言过其实的<br />
+perception [pərˈsepʃən]: n. the way you think about something and your idea of what it is like理解,看法<br />
+</p>
+<hr />
+<p>
+social background: 社会背景<br />
+the preserve of sb.: 某人的独有活动<br />
+Of great importance to sb. is sth.: 对某人非常重要的是&#x2026;<br />
+come into being: 出现<br />
+rise to new heights: reach sb's zenith(顶峰), reach sb's apogee(顶点)上升到新的高度<br />
+engage in sth.: 参与某事<br />
+center on sth.: 以某事为中心<br />
+bring together A with B: 把A和B结合起来<br />
+a position to do sth.: 做某事的位置<br />
+financial assistance: 经济资助<br />
+in secret: 秘密地<br />
+in the provinces: 在地方上<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orga6d09a1" class="outline-3">
+<h3 id="orga6d09a1">sentence</h3>
+<div class="outline-text-3" id="text-orga6d09a1">
+<p>
+literate [ˈlɪt(ə)rət]: adj. able to read and write OPP illiterate ⇨ numerate有文化的<br />
+</p>
+<ul class="org-ul">
+<li>These literate elites had a reputation for charity.<br /></li>
+<li>These literate masses in ancient time created their prosperous civilization.<br /></li>
+<li>The elite who was said to be literate turned out to be a thief.<br /></li>
+</ul>
+<p>
+publication [ˌpʌblɪˈkeɪʃ(ə)n]: n. the process of printing a book, magazine etc and offering it for sale ⇨ publish出版物, 出版<br />
+</p>
+<ul class="org-ul">
+<li>My manager urged me to develop a system for the management of these publications.<br /></li>
+<li>The bargain hunter is searching for the publications published ten years ago.<br /></li>
+<li>Believe it or not, I am going to dedicate myself to these publications.<br /></li>
+</ul>
+<p>
+treatise [ˈtritɪs]: n. a serious book or article about a particular subject论文<br />
+</p>
+<ul class="org-ul">
+<li>The professor denounced his rival's errors in his treatise.<br /></li>
+<li>The treatise is full of smell of the urine of rats.<br /></li>
+<li>The warlike pope condemn the scientist's treatises as heresy contrary to the church.<br /></li>
+</ul>
+<p>
+guest [ɡest]: n. someone who is invited to an event or special occasion客人<br />
+</p>
+<ul class="org-ul">
+<li>It is not appropriate for a guest to enter in the bedroom without permission.<br /></li>
+<li>The guest found the salon full of new ideas of the philosophes.<br /></li>
+<li>The guest was accused of stealing a rare book.<br /></li>
+</ul>
+<p>
+witty: using words in a clever and amusing way诙谐的<br />
+</p>
+<ul class="org-ul">
+<li>I used to have witty conversations with him.<br /></li>
+<li>Everyone admires him for his great sense of humor, for he always explains stories to people in a witty fashion.<br /></li>
+<li>Exasperated by these witty words, the pope was determined to suppress these novels.<br /></li>
+</ul>
+<p>
+sparkling: shining brightly with points of flashing light; full of life and intelligence闪烁的;充满生机的<br />
+</p>
+<ul class="org-ul">
+<li>These sparkling ideas from China inspired awe in the philosophes in Paris.<br /></li>
+<li>I used to pester my father about sparkling fair tales in my youth.<br /></li>
+<li>The pope told the Children Crusade a sparkling story about the lost holy land.<br /></li>
+</ul>
+<p>
+hierarchy [ˈhaɪəˌrɑrki] hierarchical: n.adj. if a system, organization etc is hierarchical, people or things are divided into levels of importance等级的<br />
+</p>
+<ul class="org-ul">
+<li>Breaking rules will receive punishment in a hierarchical society.<br /></li>
+<li>My wife is always complaining that she lives in a hierarchical society.<br /></li>
+<li>My wife had a difficult time living in a hierarchical family in her youth.<br /></li>
+</ul>
+<p>
+haven [ˈheɪv(ə)n]: n. a place where people or animals can live peacefully or go to in order to be safe ⇨ sanctuary避难所<br />
+</p>
+<ul class="org-ul">
+<li>The city is fruitful of havens for the refugees in floods.<br /></li>
+<li>The papal authorty promised to offer thousands of havens for those masses whose family members were killed in the crusade.<br /></li>
+<li>The church manifested as haven at the time when I was not able to pay for a hotel room.<br /></li>
+</ul>
+<p>
+suppress [səˈpres]: v. to stop people from opposing the government, especially by using force镇压,查禁<br />
+</p>
+<ul class="org-ul">
+<li>According to your station, you don't have the authority to suppress my books.<br /></li>
+<li>The books suppressed by the local authorities are full of sexual situations which are not appropriate to be published.<br /></li>
+<li>As the peasant revolts and rebellions died down, the papal authorities reached their apogee in a gradual and piecemeal fashion.<br /></li>
+</ul>
+<p>
+encyclopedia [ɪnˌsaɪkləˈpidiə] encyclopedist: n. a book or ↑CD, or a set of these, containing facts about many different subjects, or containing detailed facts about one subject百科全书<br />
+</p>
+<ul class="org-ul">
+<li>I failed to sell any encyclopedia before three months passed.<br /></li>
+<li>The seller desperately found Joey could not afford to buy a set of encyclopedias.<br /></li>
+<li>On my six year old birthday, my sister presented me a set of encyclopedias.<br /></li>
+</ul>
+<p>
+bourgeois [ˈbʊrˌʒwɑ] bourgeoisie [ˌbʊrʒwɑˈzi]: adj.n. belonging to the ↑middle class中产阶级,资产阶级<br />
+</p>
+<ul class="org-ul">
+<li>Her dream of marrying a bourgeoisie almost came true recently.<br /></li>
+<li>Beyond doubt, the salon's greatest appeal is to the bourgeoisies in urban.<br /></li>
+<li>With the emergence of trade in cities, the bourgeoisies in town reached its zenith in a hierarchical society.<br /></li>
+</ul>
+<p>
+widow [ˈwɪdoʊ]: n. a woman whose husband has died and who has not married again寡妇<br />
+</p>
+<ul class="org-ul">
+<li>Missing her husband, the elegant widow cast stones by the lake.<br /></li>
+<li>The widow is known to be fanatical about holding salons in her house.<br /></li>
+<li>The widow was so well received in Beijing that she thought the position to rise to fame was to be at hand.<br /></li>
+</ul>
+<p>
+valet [ˈvæleɪ]: n. a male servant who looks after a man’s clothes, serves his meals etc ⇨ maid(男人的)贴身男仆<br />
+</p>
+<ul class="org-ul">
+<li>Exasperated by the valet, the aristocracy lost control of himself twice yesterday.<br /></li>
+<li>The aristocracy realized to his horror that his father's valet was regarded as the heir of the house.<br /></li>
+<li>Exasperated by his low status in family, the valet tried to poison his master.<br /></li>
+</ul>
+<p>
+ornate [ɔrˈneɪt]: adj. covered with a lot of decoration装饰的, 华丽的<br />
+</p>
+<ul class="org-ul">
+<li>It is not appropriate for the heir of the throne to live in such an ornate palace.<br /></li>
+<li>Coupled with ornate statues, his house attracted many major figures of philosophes.<br /></li>
+<li>Coupled with ornate paintings, the ceiling gave the pope satisfaction.<br /></li>
+</ul>
+<p>
+stature [ˈstætʃər]: n. the degree to which someone is admired or regarded as important名声,声望<br />
+</p>
+<ul class="org-ul">
+<li>His stature persuaded the masses to give up attacking the palace.<br /></li>
+<li>Monastery fell into debt under the abbot, which decreased his stature a great deal.<br /></li>
+<li>In spite of his stature, soldiers were reluctant to cross the big plain.<br /></li>
+</ul>
+<p>
+undue [ʌnˈdu]: adj. formal more than is reasonable, suitable, or necessary过分的<br />
+</p>
+<ul class="org-ul">
+<li>Without undue delay, the plane took off after the examination.<br /></li>
+<li>The house should be cleaned out without undue delay.<br /></li>
+<li>You homework should be completed without undue delay.<br /></li>
+</ul>
+<p>
+exaggerated [ɪɡˈzædʒəˌreɪtəd]: adj. if something is exaggerated, it is described as better, larger etc than it really is夸大的, 言过其实的<br />
+</p>
+<ul class="org-ul">
+<li>This words proved exaggerated, for there is no puma at large.<br /></li>
+<li>People in the High Middle Ages were attracted by exaggerated literary novels.<br /></li>
+<li>My power is in fact exaggerated, for I don't have the authority to regulate the armies.<br /></li>
+</ul>
+<p>
+perception [pərˈsepʃən]: n. the way you think about something and your idea of what it is like理解,看法<br />
+</p>
+<ul class="org-ul">
+<li>The perception of my status in social in error brought me a lot of troubles.<br /></li>
+<li>People's perception of ideas from China led to a revolution.<br /></li>
+<li>The mistaken perception of the Pacific Ocean cause him to meet his death at the hands of the local people.<br /></li>
+</ul>
+<hr />
+<p>
+social background: 社会背景<br />
+</p>
+<ul class="org-ul">
+<li>My superior urged me to figure out the social background of the lady in two days' time.<br /></li>
+<li>The artist turned out to have a social background of lower-class.<br /></li>
+<li>People who have social backgrounds of lower-class were forbid to exist in the urban.<br /></li>
+</ul>
+<p>
+the preserve of sb.: 某人的独有活动<br />
+</p>
+<ul class="org-ul">
+<li>Playing piano is no longer the preserve of wealthy families in China.<br /></li>
+<li>Calling my daughter Miumiu is the preserve of our couples.<br /></li>
+<li>Wearing a white collar is the preserve of the government officer in the past.<br /></li>
+</ul>
+<p>
+Of great importance to sb. is sth.: 对某人非常重要的是&#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>Of great importance to the headmaster is his perception of his teaching.<br /></li>
+<li>Of great importance to your study is what you see of yourself.<br /></li>
+<li>Of great importance to my cat is to feed her up punctually.<br /></li>
+</ul>
+<p>
+come into being: 出现<br />
+</p>
+<ul class="org-ul">
+<li>After meowing in the whole night, three pussies came into being.<br /></li>
+<li>When he arrived on the scene, a vampire came into being.<br /></li>
+<li>He was exasprated by the officer, a plan of abduction came into being.<br /></li>
+</ul>
+<p>
+rise to new heights: reach sb's zenith(顶峰), reach sb's apogee(顶点)上升到新的高度<br />
+</p>
+<ul class="org-ul">
+<li>After we moved to the new house, our relationship rose to new heights.<br /></li>
+<li>Wining the prize in the tournament, the team rose to new heights in the religion.<br /></li>
+<li>Defeated by an unknown team and adjusting itself, the team rose to new heights.<br /></li>
+</ul>
+<p>
+engage in sth.: 参与某事<br />
+</p>
+<ul class="org-ul">
+<li>I am reluctant to engage in the quarrel between you and our superior.<br /></li>
+<li>The layman was astonished to find out that her husband had engaged in the rebellions.<br /></li>
+<li>The journalist found his wife engaged in the scandal in which she had an affair with the officer.<br /></li>
+</ul>
+<p>
+center on sth.: 以某事为中心<br />
+</p>
+<ul class="org-ul">
+<li>Turning their back on Christian orthodoxy, these intellectuals centered on the ideas of the Scientific Revolution.<br /></li>
+<li>Our debate must center on whether we should buy things that we don't need.<br /></li>
+<li>My wife center on whether I told a lie yesterday.<br /></li>
+</ul>
+<p>
+bring together A with B: 把A和B结合起来<br />
+</p>
+<ul class="org-ul">
+<li>It is no use bringing together peasants with knight in a hierarchical society.<br /></li>
+<li>An airplane crush brought tougher me with my future husband.<br /></li>
+<li>The distate for the loneliness brought together me with my future wife at a salon.<br /></li>
+</ul>
+<p>
+a position to do sth.: 做某事的位置<br />
+</p>
+<ul class="org-ul">
+<li>She found her in a position to determine if her mother had paid for it.<br /></li>
+<li>I found myself in a position to quit and study English by myself.<br /></li>
+<li>My cat found a position to enjoy landscape in front of the window.<br /></li>
+</ul>
+<p>
+financial assistance: 经济资助<br />
+</p>
+<ul class="org-ul">
+<li>Without financial assistance, I might not be able to go to university.<br /></li>
+<li>My aunt offered me financial assistance to obtain perfection.<br /></li>
+<li>The widow offered you financial assistance to complete your work.<br /></li>
+</ul>
+<p>
+in secret: 秘密地<br />
+</p>
+<ul class="org-ul">
+<li>The famous star couples stayed out of limelight and got divorced in secret.<br /></li>
+<li>She was determined to buy a real estate in other city in secret.<br /></li>
+<li>I was wondering if you had bought a real estate in secret.<br /></li>
+</ul>
+<p>
+in the provinces: 在地方上<br />
+</p>
+<ul class="org-ul">
+<li>The emperor had a bad reputation in the provinces.<br /></li>
+<li>The emperor doesn't have the privilege to order armies in the provinces.<br /></li>
+<li>The emperor claimed to levy heavy taxes in the provinces.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgec82a89" class="outline-3">
+<h3 id="orgec82a89">sentence2</h3>
+<div class="outline-text-3" id="text-orgec82a89">
+<p>
+literate [ˈlɪt(ə)rət]: adj. able to read and write OPP illiterate ⇨ numerate有文化的<br />
+</p>
+<ul class="org-ul">
+<li>These literate elites had a reputation for charity.<br /></li>
+<li>These literate masses in ancient times created their prosperous civilization.<br /></li>
+<li>The elite who was said to be literate turned out to be a thief.<br /></li>
+</ul>
+<p>
+publication [ˌpʌblɪˈkeɪʃ(ə)n]: n. the process of printing a book, magazine etc and offering it for sale ⇨ publish出版物, 出版<br />
+</p>
+<ul class="org-ul">
+<li>My manager urged me to develop a system for administrating of these publications.<br /></li>
+<li>The bargain hunter is searching for the publications published ten years ago.<br /></li>
+<li>Believe it or not, I am going to dedicate myself to these publications.<br /></li>
+</ul>
+<p>
+treatise [ˈtritɪs]: n. a serious book or article about a particular subject论文<br />
+</p>
+<ul class="org-ul">
+<li>The professor denounced his rival's errors in his treatise.<br /></li>
+<li>The treatise is full of the smell of the urine of rats.<br /></li>
+<li>The warlike pope condemns the scientist's treatises as heresy contrary to the church.<br /></li>
+</ul>
+<p>
+guest [ɡest]: n. someone who is invited to an event or special occasion客人<br />
+</p>
+<ul class="org-ul">
+<li>It is not appropriate for a guest to enter the bedroom without permission.<br /></li>
+<li>The guest found the salon full of new ideas of the philosophes.<br /></li>
+<li>The guest was accused of stealing a rare book.<br /></li>
+</ul>
+<p>
+witty: using words in a clever and amusing way诙谐的<br />
+</p>
+<ul class="org-ul">
+<li>I used to have witty conversations with him.<br /></li>
+<li>Everyone admires him for his great sense of humor, for he always explains stories to people in a witty fashion.<br /></li>
+<li>Exasperated by these witty words, the pope was determined to suppress these novels.<br /></li>
+</ul>
+<p>
+sparkling: shining brightly with points of flashing light; full of life and intelligence闪烁的;充满生机的<br />
+</p>
+<ul class="org-ul">
+<li>These sparkling ideas from China inspired awe in the philosophes in Paris.<br /></li>
+<li>I used to pester my father about sparkling fairy tales in my youth.<br /></li>
+<li>The pope told the Children Crusade a sparkling story about the lost holy land.<br /></li>
+</ul>
+<p>
+hierarchy [ˈhaɪəˌrɑrki] hierarchical: n.adj. if a system, organization etc is hierarchical, people or things are divided into levels of importance等级的<br />
+</p>
+<ul class="org-ul">
+<li>Breaking rules will cause punishment in a hierarchical society.<br /></li>
+<li>My wife is always complaining that she lives in a hierarchical society.<br /></li>
+<li>My wife had a difficult time living in a hierarchical family in her youth.<br /></li>
+</ul>
+<p>
+haven [ˈheɪv(ə)n]: n. a place where people or animals can live peacefully or go to in order to be safe ⇨ sanctuary避难所<br />
+</p>
+<ul class="org-ul">
+<li>The city is full of havens for the refugees in floods.<br /></li>
+<li>The papal authority promised to offer thousands of havens for those masses whose family members were killed in the crusade.<br /></li>
+<li>The church manifested as a haven at the time when I was not able to pay for a hotel room.<br /></li>
+</ul>
+<p>
+suppress [səˈpres]: v. to stop people from opposing the government, especially by using force镇压,查禁<br />
+</p>
+<ul class="org-ul">
+<li>According to your station, you don't have the authority to suppress my books.<br /></li>
+<li>The books suppressed by the local authorities are full of sexual situations that are not appropriate to be published.<br /></li>
+<li>As the peasant revolts and rebellions died down, the papal authorities reached their apogee in a gradual and piecemeal fashion.<br /></li>
+</ul>
+<p>
+encyclopedia [ɪnˌsaɪkləˈpidiə] encyclopedist: n. a book or ↑CD, or a set of these, containing facts about many different subjects, or containing detailed facts about one subject百科全书<br />
+</p>
+<ul class="org-ul">
+<li>I failed to sell any encyclopedia before three months passed.<br /></li>
+<li>The seller desperately found Joey could not afford to buy a set of encyclopedias.<br /></li>
+<li>On my six-year-old birthday, my sister presented me with a set of encyclopedias.<br /></li>
+</ul>
+<p>
+bourgeois [ˈbʊrˌʒwɑ] bourgeoisie [ˌbʊrʒwɑˈzi]: adj.n. belonging to the ↑middle class中产阶级,资产阶级<br />
+</p>
+<ul class="org-ul">
+<li>Her dream of marrying a bourgeoisie almost came true recently.<br /></li>
+<li>Beyond doubt, the salon's greatest appeal is to the bourgeoisie in urban.<br /></li>
+<li>With the emergence of trade in cities, the bourgeoisie in town reached its zenith in a hierarchical society.<br /></li>
+</ul>
+<p>
+widow [ˈwɪdoʊ]: n. a woman whose husband has died and who has not married again寡妇<br />
+</p>
+<ul class="org-ul">
+<li>Missing her husband, the elegant widow cast stones by the lake.<br /></li>
+<li>The widow is known to be fanatical about holding salons in her house.<br /></li>
+<li>The widow was so well received in Beijing that she thought the position to rise to fame was to be at hand.<br /></li>
+</ul>
+<p>
+valet [ˈvæleɪ]: n. a male servant who looks after a man’s clothes, serves his meals etc ⇨ maid(男人的)贴身男仆<br />
+</p>
+<ul class="org-ul">
+<li>Exasperated by the valet, the aristocracy lost control of himself twice yesterday.<br /></li>
+<li>The aristocracy realized to his horror that his father's valet was regarded as the heir of the house.<br /></li>
+<li>Exasperated by his low status in the family, the valet tried to poison his master.<br /></li>
+</ul>
+<p>
+ornate [ɔrˈneɪt]: adj. covered with a lot of decoration装饰的, 华丽的<br />
+</p>
+<ul class="org-ul">
+<li>It is not appropriate for the heir to the throne to live in such an ornate palace.<br /></li>
+<li>Coupled with ornate statues, his house attracted many major figures of philosophes.<br /></li>
+<li>Coupled with ornate paintings, the ceiling gave the pope satisfaction.<br /></li>
+</ul>
+<p>
+stature [ˈstætʃər]: n. the degree to which someone is admired or regarded as important名声,声望<br />
+</p>
+<ul class="org-ul">
+<li>His stature persuaded the masses to give up attacking the palace.<br /></li>
+<li>The monastery fell into debt under the abbot, which decreased his stature a great deal.<br /></li>
+<li>In spite of his stature, soldiers were reluctant to cross the big plain.<br /></li>
+</ul>
+<p>
+undue [ʌnˈdu]: adj. formal more than is reasonable, suitable, or necessary过分的<br />
+</p>
+<ul class="org-ul">
+<li>Without undue delay, the plane took off after the examination.<br /></li>
+<li>The house should be cleaned out without undue delay.<br /></li>
+<li>Your homework should be completed without undue delay.<br /></li>
+</ul>
+<p>
+exaggerated [ɪɡˈzædʒəˌreɪtəd]: adj. if something is exaggerated, it is described as better, larger etc than it really is夸大的, 言过其实的<br />
+</p>
+<ul class="org-ul">
+<li>These words proved exaggerated, for there is no puma at large.<br /></li>
+<li>People in the High Middle Ages were attracted by exaggerated literary novels.<br /></li>
+<li>My power is in fact exaggerated, for I don't have the authority to regulate the armies.<br /></li>
+</ul>
+<p>
+perception [pərˈsepʃən]: n. the way you think about something and your idea of what it is like理解,看法<br />
+</p>
+<ul class="org-ul">
+<li>The perception of my status in society in error brought me a lot of trouble.<br /></li>
+<li>People's perception of ideas from China led to a revolution.<br /></li>
+<li>The mistaken perception of the Pacific Ocean caused him to meet his death at the hands of the local people.<br /></li>
+</ul>
+<hr />
+<p>
+social background: 社会背景<br />
+</p>
+<ul class="org-ul">
+<li>My superior urged me to figure out the social background of the lady in two days' time.<br /></li>
+<li>The artist turned out to have a social background of lower class.<br /></li>
+<li>People who have social backgrounds of lower class were forbidden to exist in the urban.<br /></li>
+</ul>
+<p>
+the preserve of sb.: 某人的独有活动<br />
+</p>
+<ul class="org-ul">
+<li>Playing piano is no longer the preserve of wealthy families in China.<br /></li>
+<li>Calling my daughter Miumiu is the preserve of our couples.<br /></li>
+<li>Wearing a white collar is the preserve of the government officer in the past.<br /></li>
+</ul>
+<p>
+Of great importance to sb. is sth.: 对某人非常重要的是&#x2026;<br />
+</p>
+<ul class="org-ul">
+<li>Of great importance to the headmaster is his perception of his teaching.<br /></li>
+<li>Of great importance to your study is what you see of yourself.<br /></li>
+<li>Of great importance to my cat is to feed her punctually.<br /></li>
+</ul>
+<p>
+come into being: 出现<br />
+</p>
+<ul class="org-ul">
+<li>After meowing in the whole night, three pussies came into being.<br /></li>
+<li>When he arrived on the scene, a vampire came into being.<br /></li>
+<li>He was exasperated by the officer and a plan of abduction came into being.<br /></li>
+</ul>
+<p>
+rise to new heights: reach sb's zenith(顶峰), reach sb's apogee(顶点)上升到新的高度<br />
+</p>
+<ul class="org-ul">
+<li>After we moved to the new house, our relationship rose to new heights.<br /></li>
+<li>Winning the prize in the tournament, the team rose to new heights in the religion.<br /></li>
+<li>Defeated by an unknown team and adjusting itself, the team rose to new heights.<br /></li>
+</ul>
+<p>
+engage in sth.: 参与某事<br />
+</p>
+<ul class="org-ul">
+<li>I am reluctant to engage in the quarrel between you and our superior.<br /></li>
+<li>The layman was astonished to find out that her husband had engaged in the rebellions.<br /></li>
+<li>The journalist found his wife engaged in the scandal in which she had an affair with the officer.<br /></li>
+</ul>
+<p>
+center on sth.: 以某事为中心<br />
+</p>
+<ul class="org-ul">
+<li>Turning their back on Christian orthodoxy, these intellectuals centered on the ideas of the Scientific Revolution.<br /></li>
+<li>Our debate must center on whether we should buy things that we don't need.<br /></li>
+<li>My wife kept on centering on whether I told a lie yesterday.<br /></li>
+</ul>
+<p>
+bring together A with B: 把A和B结合起来<br />
+</p>
+<ul class="org-ul">
+<li>It is no use bringing together peasants with knights in a hierarchical society.<br /></li>
+<li>An airplane crash brought tougher me with my future husband.<br /></li>
+<li>The distaste for the loneliness brought together me with my future wife at a salon.<br /></li>
+</ul>
+<p>
+a position to do sth.: 做某事的位置<br />
+</p>
+<ul class="org-ul">
+<li>She found herself in a position to determine if her mother had paid for it.<br /></li>
+<li>I found myself in a position to quit and study English by myself.<br /></li>
+<li>My cat found a position to enjoy the landscape in front of the window.<br /></li>
+</ul>
+<p>
+financial assistance: 经济资助<br />
+</p>
+<ul class="org-ul">
+<li>Without financial assistance, I might not be able to go to university.<br /></li>
+<li>My aunt offered me financial assistance to obtain perfection.<br /></li>
+<li>The widow offered you financial assistance to complete your work.<br /></li>
+</ul>
+<p>
+in secret: 秘密地<br />
+</p>
+<ul class="org-ul">
+<li>The famous star couples stayed out of the limelight and got divorced in secret.<br /></li>
+<li>She was determined to buy real estate in another city in secret.<br /></li>
+<li>I was wondering if you had bought real estate in secret.<br /></li>
+</ul>
+<p>
+in the provinces: 在地方上<br />
+</p>
+<ul class="org-ul">
+<li>The emperor had a bad reputation in the provinces.<br /></li>
+<li>The emperor doesn't have the privilege to order armies in the provinces.<br /></li>
+<li>The emperor claimed to levy heavy taxes in the provinces.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org8b22fed" class="outline-3">
+<h3 id="org8b22fed">summary</h3>
+<div class="outline-text-3" id="text-org8b22fed">
+<p>
+Although the Enlightment was not the perserve of any one class,<br />
+	obviously it greatly appealed to the aristocracy and the upper-middle-class<br />
+		and little affected the common people, especially peasants.<br />
+Not only the publication and the sales of books and treatises<br />
+		were important to the spread of the ideas of the Enlightment,<br />
+	but salons,<br />
+		which brought together writers and artists<br />
+			with aristocrats, government officials, and wealthy members of the bourgeoisie<br />
+				in France's rigid hierarchical society,<br />
+		was also a factor.<br />
+As hostesses of the salons, women often had chances to affect politics, arts, and literature.<br />
+They also provided havens for those ideas unwelcome by the authorities.<br />
+French and foreign observers complained<br />
+	that women exerted undue influence in French political affairs.<br />
+It was obvioulsy exaggerated,<br />
+	for even though salons were run by women, the reputation of a salon depend on the philosphes.<br />
+However, it led the decline of salons during the French Revolution toward the end of the century.<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgf960172" class="outline-3">
+<h3 id="orgf960172">summary2</h3>
+<div class="outline-text-3" id="text-orgf960172">
+<p>
+Although the Enlightenment was not the perserve of any one class,<br />
+	it greatly appealed to the aristocracy and the upper-middle-class<br />
+		and little affected the common people, especially peasants.<br />
+Not only the publication and the sales of books and treatises<br />
+		were important to the spread of the ideas of the Enlightenment,<br />
+	but the salon,<br />
+		which brought together writers and artists<br />
+			with aristocrats, government officials, and wealthy members of the bourgeoisie<br />
+				in France's rigid hierarchical society,<br />
+		was also a factor.<br />
+As hostesses of the salons, women often had chances to affect politics, arts, and literature.<br />
+They also provided havens for those ideas suppressed by the authorities.<br />
+French and foreign observers complained<br />
+	that women exerted undue influence in French political affairs.<br />
+It was exaggerated because even though salons were run by women,<br />
+	the reputation of a salon depended on the philosophes.<br />
+However, it led to the decline of salons<br />
+	during the French Revolution toward the end of the century.<br />
+</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
