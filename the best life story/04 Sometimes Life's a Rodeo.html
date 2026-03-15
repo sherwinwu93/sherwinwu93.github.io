@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-15 Sun 09:48 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-org838cd2e" class="outline-2">
+<h2 id="org838cd2e">Sometimes Life's a Rodeo</h2>
+<div class="outline-text-2" id="text-org838cd2e">
+<p class="verse">
+It was enough that the cowboy I married was a rodeo clown and bullfighter,<br />
+&#xa0;&#xa0;complete with makeup box and blond wig.<br />
+It was enough that he wore baggy pants and football cleats to work<br />
+&#xa0;&#xa0;darting around cross-bred brahmans and other snot-slinging bovine.<br />
+But when one of those 2,000-pound critters ran the length of him,<br />
+&#xa0;&#xa0;&#xa0;&#xa0;tore off his right ear and broke several ribs,<br />
+&#xa0;&#xa0;someone had to make sure the filler acts went on as promised.<br />
+That's when wearing the pants in the family took on a whole new meaning for me.<br />
+Shoot a balloon out of another clown's hand? Sure.<br />
+Find 'gold' in the arena dirt with a toilet-seat Geiger counter? No problem.<br />
+Match my husband’s timing and mannerisms? Not so easy.<br />
+Comedy is a lot harder than it looks.<br />
+It pays to pay attention,<br />
+&#xa0;&#xa0;because sometimes life's a rodeo, and you just might end up being the clown.<br />
+</p>
+</div>
+<div id="outline-container-org40fe087" class="outline-3">
+<h3 id="org40fe087">expression</h3>
+<div class="outline-text-3" id="text-org40fe087">
+<p>
+rodeo [ˈroʊdioʊ]: n. a type of entertainment in which ↑cowboys ride wild horses, catch cattle with ropes, and ride in races牛仔竞技表演<br />
+makeup box: n.化妆箱<br />
+wig [wɪɡ]: n. artificial hair that you wear on your head ⇨ toupée假发<br />
+baggy [ˈbæɡi]: adj. baggy clothes are big and do not fit tightly on your body OPP tight松垮的<br />
+cleats [klit]: n. cleats [plural] American English a pair of sports shoes with these pieces attached to them, in order to prevent someone from slipping ⇨ spikes防滑鞋<br />
+dart around sb.: to move quickly and erratically around sb. 围着某人转悠<br />
+cross-bred: adj. 杂种的,杂交的<br />
+snot-slinging: adj. 流着鼻涕的<br />
+bovine [ˈboʊˌvaɪn]: adj. technical relating to cows牛的<br />
+critter [ˈkrɪtər]: n. a creature, especially an animal畜生<br />
+run the length of sb.: 踏过某人<br />
+tear off sth.: 扯掉某物<br />
+rib [rɪb]: n. one of the 12 pairs of curved bones that surround your chest肋骨<br />
+filler [ˈfɪlər]: n. a substance used to fill cracks in wood, walls etc, especially before you paint them补白<br />
+wearing the pants in the family: 当家做主<br />
+arena [əˈrinə]: n. a building with a large flat central area surrounded by seats, where sports or entertainments take place竞技场, 舞台<br />
+counter [ˈkaʊntər]: n. a piece of electrical equipment that counts something计时<br />
+mannerism [ˈmænəˌrɪzəm]: n. a way of speaking or moving that is typical of a particular person神态<br />
+It pays to do sth.: 做某事是值得的<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orge5a8513" class="outline-3">
+<h3 id="orge5a8513">sentences</h3>
+<div class="outline-text-3" id="text-orge5a8513">
+<p>
+rodeo [ˈroʊdioʊ]: n. a type of entertainment in which ↑cowboys ride wild horses, catch cattle with ropes, and ride in races牛仔竞技表演<br />
+</p>
+<ul class="org-ul">
+<li>In spite of rodeo showing up this night, she decided not to go with us.<br /></li>
+<li>Thanks to my friend who is a staff of rodeo, we get two tickets.<br /></li>
+<li>In the end, I couldn't bear the lousy customer in the rodeo.<br /></li>
+</ul>
+<p>
+makeup box: n.化妆箱<br />
+</p>
+<ul class="org-ul">
+<li>My wife insisted putting her makeup box in the small suitcase, which distrubs me a great deal.<br /></li>
+<li>It's no use pretending the makeup box hasn't been prised up.<br /></li>
+<li>To her surprise, her husband has painted the makeup box for their anniversary.<br /></li>
+</ul>
+<p>
+wig [wɪɡ]: n. artificial hair that you wear on your head ⇨ toupée假发<br />
+</p>
+<ul class="org-ul">
+<li>Wearing the blond wig in the stage, my aunt looks pretty charming.<br /></li>
+<li>Every one got a shock when they saw Monica wearing blond wig and dancing in the restaurant.<br /></li>
+<li>No matter what wig you're dressed in, I am able to recognize you in the crowd.<br /></li>
+</ul>
+<p>
+baggy [ˈbæɡi]: adj. baggy clothes are big and do not fit tightly on your body OPP tight松垮的<br />
+</p>
+<ul class="org-ul">
+<li>The teacher is always accusing her student dressing in baggy pants without any respect at all.<br /></li>
+<li>I ask for refunding, because of the baggy pants, instead of the price.<br /></li>
+<li>Her mother is holding on her ears, for she wore baggy in the party.<br /></li>
+</ul>
+<p>
+cleats [klit]: n. cleats [plural] American English a pair of sports shoes with these pieces attached to them, in order to prevent someone from slipping ⇨ spikes防滑鞋<br />
+</p>
+<ul class="org-ul">
+<li>The cleats is by no means worth 1000 dollars, that's why I refuse to give it as gift to your nephew.<br /></li>
+<li>Her nephew is so fanatical about collecting basketball cleats that he always spent all his pocket money fetching them.<br /></li>
+<li>There are a pair of football cleats hanging on the peach branch.<br /></li>
+</ul>
+<p>
+dart around sb.: to move quickly and erratically around sb. 围着某人转悠<br />
+</p>
+<ul class="org-ul">
+<li>No matter how long you dart around me, I can't afford to buy such an expensive can of milk powder.<br /></li>
+<li>She never fails to lose attraction to young men darting around her.<br /></li>
+<li>She realized that she is beautiful when there're always young men darting around her in high school.<br /></li>
+</ul>
+<p>
+cross-bred: adj. 杂种的,杂交的<br />
+</p>
+<ul class="org-ul">
+<li>The meat of this kind of cross-bred pig tastes awful.<br /></li>
+<li>Every time I run into the cross-bred cat, she is alway smelly.<br /></li>
+<li>The siblings quarrelled bitterly and her sister told her that she is cross-bred because she got adapted.<br /></li>
+</ul>
+<p>
+snot-slinging: adj. 流着鼻涕的<br />
+</p>
+<ul class="org-ul">
+<li>I never dreamed of the snot-slinging girls in front of me would become my wife in the future.<br /></li>
+<li>Our cat has been snot-slinging for a long time, she may have caught a rare disease.<br /></li>
+<li>In my childhood, I have always been snot-slinging, that's why I was not very popular with my classmates.<br /></li>
+</ul>
+<p>
+bovine [ˈboʊˌvaɪn]: adj. technical relating to cows牛的<br />
+</p>
+<ul class="org-ul">
+<li>I won't let a bovine doctor have an operation on my husband.<br /></li>
+<li>These villagers are in recognition of the bovine doctor, who invented a specific way of tackling the rare virus.<br /></li>
+<li>The dinner is obviously bovine, for it's full of many kinds of beef.<br /></li>
+</ul>
+<p>
+critter [ˈkrɪtər]: n. a creature, especially an animal畜生<br />
+</p>
+<ul class="org-ul">
+<li>There must be only one critter in our house, you or your dog.<br /></li>
+<li>Maybe people of their parental generation couldn't imagine that we treat a critter as a member of our family.<br /></li>
+<li>The criter is not getting mad, she just gets hungry.<br /></li>
+</ul>
+<p>
+run the length of sb.: 踏过某人<br />
+</p>
+<ul class="org-ul">
+<li>As the car ran the length of her husband, she couldn't help but  crying out and covering her eyes with her hands.<br /></li>
+<li>Right here last night, you murdered your brother and ran the length of his body with the car he sent you.<br /></li>
+<li>It's hard to imagine that a snot-slining cat run the length of you asking for your company.<br /></li>
+</ul>
+<p>
+tear off sth.: 扯掉某物<br />
+</p>
+<ul class="org-ul">
+<li>She can't pay for the gamble, which caused the gangster tear off her ears.<br /></li>
+<li>Tearing off her sister's ears, she called out to her mother.<br /></li>
+<li>The gangsters may tear off your ears for the money you own them.<br /></li>
+</ul>
+<p>
+rib [rɪb]: n. one of the 12 pairs of curved bones that surround your chest肋骨<br />
+</p>
+<ul class="org-ul">
+<li>It's said that her ribs have been broken in a car accident.<br /></li>
+<li>You must ask for level so that the pain of your ribs may be released.<br /></li>
+<li>How can you have my feeling, it is not your ribs that got broken in the car accident.<br /></li>
+</ul>
+<p>
+filler [ˈfɪlər]: n. a substance used to fill cracks in wood, walls etc, especially before you paint them补白<br />
+</p>
+<ul class="org-ul">
+<li>It seemed that the filler acts succeeded in salvaging the terrible show previous.<br /></li>
+<li>The programme doesn't end up at the right timing, so we must design some filler acts.<br /></li>
+<li>The filler acts held by the host received a warm welcome.<br /></li>
+</ul>
+<p>
+wearing the pants in the family: 当家做主<br />
+</p>
+<ul class="org-ul">
+<li>Wearing the pants in the family means I have more responsibilities in the future.<br /></li>
+<li>Wearing the pants in the family means I may sacrifice some freedom for money that buys groceries and foods for my family.<br /></li>
+<li>She is always reluctant to wear the pants in the family.<br /></li>
+</ul>
+<p>
+arena [əˈrinə]: n. a building with a large flat central area surrounded by seats, where sports or entertainments take place竞技场, 舞台<br />
+</p>
+<ul class="org-ul">
+<li>It's an elaborate murder in the arena, instead of a regular security accident.<br /></li>
+<li>Two prizefighter quarrelled bitterly, making an appointment that there will be a fight to settle all down in the arena.<br /></li>
+<li>Our queen is now sitting on the dragon in the arena fighting against traitors.<br /></li>
+</ul>
+<p>
+counter [ˈkaʊntər]: n. a piece of electrical equipment that counts something计时器<br />
+</p>
+<ul class="org-ul">
+<li>You're missing the point that this is only a counter, not something you can use as evidence in the court.<br /></li>
+<li>In my youth, I often staring at the counter all afternoon without doing anything.<br /></li>
+<li>Think about that a counter made in mid century is being sold for only 10 dollars.<br /></li>
+</ul>
+<p>
+mannerism [ˈmænəˌrɪzəm]: n. a way of speaking or moving that is typical of a particular person神态<br />
+</p>
+<ul class="org-ul">
+<li>The cute girl is famous for mimicking her headmaster's mannerisms.<br /></li>
+<li>It's no use micmicking your twin brother's mannerisms, I know who you are.<br /></li>
+<li>It's naive to believe that micmicking the mannerisms famous stars would let you become them.<br /></li>
+</ul>
+<p>
+It pays to do sth.: 做某事是值得的<br />
+</p>
+<ul class="org-ul">
+<li>It pays to contribute to our community as long as we all engage in.<br /></li>
+<li>It pays to take a good care of the great generation who fighted for us in the world war II.<br /></li>
+<li>It pays to buy expensive cans of milk powder that contribute to your baby's growth.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgaa67f43" class="outline-3">
+<h3 id="orgaa67f43">sentences2</h3>
+<div class="outline-text-3" id="text-orgaa67f43">
+<p>
+rodeo [ˈroʊdioʊ]: n. a type of entertainment in which ↑cowboys ride wild horses, catch cattle with ropes, and ride in races牛仔竞技表演<br />
+</p>
+<ul class="org-ul">
+<li>In spite of the rodeo showing up this night, she decided not to go with us.<br /></li>
+<li>Thanks to my friend who is a staff member of the rodeo, we got two tickets.<br /></li>
+<li>In the end, I couldn't bear the lousy customers in the rodeo.<br /></li>
+</ul>
+<p>
+makeup box: n.化妆箱<br />
+</p>
+<ul class="org-ul">
+<li>My wife insisted on putting her makeup box in the small suitcase, which disturbs me a great deal.<br /></li>
+<li>It's no use pretending the makeup box hasn't been pried up.<br /></li>
+<li>To her surprise, her husband painted the makeup box for their anniversary.<br /></li>
+</ul>
+<p>
+wig [wɪɡ]: n. artificial hair that you wear on your head ⇨ toupée假发<br />
+</p>
+<ul class="org-ul">
+<li>Wearing a blond wig on the stage, my aunt looks pretty charming.<br /></li>
+<li>Everyone got a shock when they saw Monica wearing a blond wig and dancing in the restaurant.<br /></li>
+<li>No matter what wig you're dressed in, I am able to recognize you in the crowd.<br /></li>
+</ul>
+<p>
+baggy [ˈbæɡi]: adj. baggy clothes are big and do not fit tightly on your body OPP tight松垮的<br />
+</p>
+<ul class="org-ul">
+<li>The teacher is always accusing her student of dressing in baggy pants without any respect at all.<br /></li>
+<li>I asked for a refund because of the baggy pants, instead of the price.<br /></li>
+<li>Her mother held her by the ears, for she wore baggy clothes at the party.<br /></li>
+</ul>
+<p>
+cleats [klit]: n. cleats [plural] American English a pair of sports shoes with these pieces attached to them, in order to prevent someone from slipping ⇨ spikes防滑鞋<br />
+</p>
+<ul class="org-ul">
+<li>The cleats are by no means worth 1000 dollars; that's why I refuse to give them as gift to your nephew.<br /></li>
+<li>Her nephew is so fanatical about collecting basketball cleats that he always spends all his pocket money fetching them.<br /></li>
+<li>There is a pair of football cleats hanging on the peach branch.<br /></li>
+</ul>
+<p>
+dart around sb.: to move quickly and erratically around sb. 围着某人转悠<br />
+</p>
+<ul class="org-ul">
+<li>No matter how long you dart around me, I can't afford to buy such an expensive can of milk powder.<br /></li>
+<li>She never fails to be attracted to young men darting around her.<br /></li>
+<li>She realized that she was beautiful when there were always young men darting around her in high school.<br /></li>
+</ul>
+<p>
+cross-bred: adj. 杂种的,杂交的<br />
+</p>
+<ul class="org-ul">
+<li>The meat of this kind of cross-bred pig tastes awful.<br /></li>
+<li>Every time I run into the cross-bred cat, she is always smelly.<br /></li>
+<li>The siblings quarrelled bitterly and her sister told her that she was cross-bred because she was adopted.<br /></li>
+</ul>
+<p>
+snot-slinging: adj. 流着鼻涕的<br />
+</p>
+<ul class="org-ul">
+<li>I never dreamed that the snot-slinging girl in front of me would become my wife in the future.<br /></li>
+<li>Our cat has been snot-slinging for a long time; she may have caught a rare disease.<br /></li>
+<li>In my childhood, I was always snot-slinging, that's why I was not very popular with my classmates.<br /></li>
+</ul>
+<p>
+bovine [ˈboʊˌvaɪn]: adj. technical relating to cows牛的<br />
+</p>
+<ul class="org-ul">
+<li>I won't let a bovine doctor have an operation on my husband.<br /></li>
+<li>These villagers is in memory of the bovine doctor, who invented a specific way of tackling the rare virus.<br /></li>
+<li>The dinner is obviously bovine, for it's full of many kinds of beef.<br /></li>
+</ul>
+<p>
+critter [ˈkrɪtər]: n. a creature, especially an animal畜生<br />
+</p>
+<ul class="org-ul">
+<li>There must be only one critter in our house, you or your dog.<br /></li>
+<li>Maybe people of their parental generation couldn't imagine that we treat a critter as a member of our family.<br /></li>
+<li>The critter is not getting mad, she just gets hungry.<br /></li>
+</ul>
+<p>
+run the length of sb.: 踏过某人<br />
+</p>
+<ul class="org-ul">
+<li>As the car ran the length of her husband, she couldn't help crying out and covering her eyes with her hands.<br /></li>
+<li>Right here last night, you murdered your brother and ran the length of his body with the car he sent you.<br /></li>
+<li>It's hard to imagine that a snot-slinging cat runs the length of you asking for your company.<br /></li>
+</ul>
+<p>
+tear off sth.: 扯掉某物<br />
+</p>
+<ul class="org-ul">
+<li>She couldn't pay for the gamble, which caused the gangster to tear off her ears.<br /></li>
+<li>After tearing off her sister's ears, she called out to her mother.<br /></li>
+<li>The gangsters may tear off your ears for the money you owe them.<br /></li>
+</ul>
+<p>
+rib [rɪb]: n. one of the 12 pairs of curved bones that surround your chest肋骨<br />
+</p>
+<ul class="org-ul">
+<li>It's said that her ribs have been broken in a car accident.<br /></li>
+<li>You must ask for leave so that the pain of your ribs may be released.<br /></li>
+<li>How can you know my feeling, it is not your ribs that were broken in the car accident.<br /></li>
+</ul>
+<p>
+filler [ˈfɪlər]: n. a substance used to fill cracks in wood, walls etc, especially before you paint them补白<br />
+</p>
+<ul class="org-ul">
+<li>It seemed that the filler acts succeeded in salvaging the terrible show previously.<br /></li>
+<li>The programme doesn't end up at the right time, so we must design some filler acts.<br /></li>
+<li>The filler acts held by the host received a warm welcome.<br /></li>
+</ul>
+<p>
+wearing the pants in the family: 当家做主<br />
+</p>
+<ul class="org-ul">
+<li>Wearing the pants in the family means I will have more responsibilities in the future.<br /></li>
+<li>Wearing the pants in the family means I may sacrifice some freedom for money that buys groceries and foods for my family.<br /></li>
+<li>She is always reluctant to wear the pants in the family.<br /></li>
+</ul>
+<p>
+arena [əˈrinə]: n. a building with a large flat central area surrounded by seats, where sports or entertainments take place竞技场, 舞台<br />
+</p>
+<ul class="org-ul">
+<li>It's an elaborate murder in the arena, instead of a regular security accident.<br /></li>
+<li>Two prizefighters quarrelled bitterly, making an appointment that there will be a fight to settle it in the arena.<br /></li>
+<li>Our queen is now sitting on the dragon in the arena fighting against traitors.<br /></li>
+</ul>
+<p>
+counter [ˈkaʊntər]: n. a piece of electrical equipment that counts something计时器<br />
+</p>
+<ul class="org-ul">
+<li>You're missing the point that this is only a counter, not something you can use as evidence in court.<br /></li>
+<li>In my youth, I often stared at the counter all afternoon without doing anything.<br /></li>
+<li>Think about that a counter made in the mid-century is being sold for only 10 dollars.<br /></li>
+</ul>
+<p>
+mannerism [ˈmænəˌrɪzəm]: n. a way of speaking or moving that is typical of a particular person神态<br />
+</p>
+<ul class="org-ul">
+<li>The cute girl is famous for mimicking her headmaster's mannerisms.<br /></li>
+<li>It's no use mimicking your twin brother's mannerisms, I know who you are.<br /></li>
+<li>It's naive to believe that mimicking the mannerisms famous stars would let you become them.<br /></li>
+</ul>
+<p>
+It pays to do sth.: 做某事是值得的<br />
+</p>
+<ul class="org-ul">
+<li>It pays to contribute to our community as long as we all engage in it.<br /></li>
+<li>It pays to take good care of the great generation who fought for us in world war II.<br /></li>
+<li>It pays to buy expensive cans of milk powder that contribute to your baby's growth.<br /></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
