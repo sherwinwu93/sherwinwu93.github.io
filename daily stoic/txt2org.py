@@ -129,7 +129,7 @@ def main():
         sys.exit(1)
     
     # 将所有弯引号替换为直引号
-    text = text.replace('‘', "'").replace('’', "'").replace('“', '"').replace('”', '"')
+    text = text.replace('‘', "'").replace('’', "'").replace('“', "'").replace('”', "'").replace('"', "'")
     
     result = format_for_org(text, title)
     

@@ -1,0 +1,1286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-08-01 Sat 17:33 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="DESKTOP-13B7HQM" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-c:before { content: 'C'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'JavaScript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-org50736ce" class="outline-2">
+<h2 id="org50736ce">December 31st GET ACTIVE IN YOUR OWN RESCUE</h2>
+<div class="outline-text-2" id="text-org50736ce">
+<p class="verse">
+'Stop wandering about! You aren't likely to read your own notebooks,<br />
+&nbsp;&nbsp;or ancient histories,<br />
+&nbsp;&nbsp;or the anthologies you've collected to enjoy in your old age. Get busy with life's purpose,<br />
+&nbsp;&nbsp;toss aside empty hopes,<br />
+&nbsp;&nbsp;get active in your own rescue—if you care for yourself at all—and do it while you can.' —MARCUS AURELIUS,<br />
+&nbsp;&nbsp;MEDITATIONS,<br />
+&nbsp;&nbsp;3.<br />
+14 he purpose of all our reading and studying is to aid us in the pursuit of the good life (and death).<br />
+At some point,<br />
+&nbsp;&nbsp;we must put our books aside and take action.<br />
+So that,<br />
+&nbsp;&nbsp;as Seneca put it,<br />
+&nbsp;&nbsp;the 'words become works.' There is an old saying that a 'scholar made is a soldier spoiled.' We want to be both scholars and soldiers—soldiers in the good fight.<br />
+That's what's next for you.<br />
+Move forward,<br />
+&nbsp;&nbsp;move onward.<br />
+Another book isn't the answer.<br />
+The right choices and decisions are.<br />
+Who knows how much time you have left,<br />
+&nbsp;&nbsp;or what awaits us tomorrow?<br />
+W STAYING STOIC e hope this book has lasted you a year (though we won't fault you if you read through it without regard to the date.<br />
+In fact,<br />
+&nbsp;&nbsp;we'd be flattered).<br />
+So what's next?<br />
+We hope that you get involved with Stoicism and make it a daily practice in your life.<br />
+To that end,<br />
+&nbsp;&nbsp;we've created DailyStoic.<br />
+com—a site full of interviews with Stoic practitioners,<br />
+&nbsp;&nbsp;articles,<br />
+&nbsp;&nbsp;exercises,<br />
+&nbsp;&nbsp;and a daily email where you can get more Stoic wisdom delivered to your inbox every single day.<br />
+You can go to DailyStoic.<br />
+com right now or email hello@DailyStoic.<br />
+com to get a special package of Stoic bonuses,<br />
+&nbsp;&nbsp;including what books to read next and more material that we couldn't fit in this book.<br />
+Hope to see you there soon!<br />
+L A MODEL OF LATE STOIC PRACTICE AND GLOSSARY OF KEY TERMS AND PASSAGES ate Stoic thought of the second century,<br />
+&nbsp;&nbsp;as articulated in the writings of Epictetus and Marcus Aurelius,<br />
+&nbsp;&nbsp;paints a vivid picture of the work of philosophy in producing both self-coherence and progress on the path to virtue.<br />
+As suggested in the work of Pierre Hadot and A.<br />
+A.<br />
+Long (see Suggestions for Further Reading),<br />
+&nbsp;&nbsp;we have developed and formalized Epictetus's three disciplines into a chart that presents the progressive nature of the late Stoic prescription for handling ourselves and our actions in the world.<br />
+This chart brings together the three topoi (topics,<br />
+&nbsp;&nbsp;or fields of study) and three different levels of training (askêsis) suggested by Epictetus and shows how they correlate (noted in Hadot) to the pursuit of virtue as expressed by Marcus Aurelius.<br />
+The chart itself comes from these key passages in Epictetus:<br />
+&nbsp;&nbsp;'There are three areas in which the person who would be wise and good must be trained. The first has to do with desires and aversions—that a person may never miss the mark in desires nor fall into what repels them. The second has to do with impulses to act and not to act—and more broadly,<br />
+&nbsp;&nbsp;with duty— that a person may act deliberately for good reasons and not carelessly. The third has to do with freedom from deception and composure and the whole area of judgment,<br />
+&nbsp;&nbsp;the assent our mind gives to its perceptions. Of these areas,<br />
+&nbsp;&nbsp;the chief and most urgent is the first which has to do with the passions,<br />
+&nbsp;&nbsp;for strong emotions arise only when we fail in our desires and aversions.' —EPICTETUS,<br />
+&nbsp;&nbsp;DISCOURSES,<br />
+&nbsp;&nbsp;3.<br />
+2.<br />
+1–3a'That's why the philosophers warn us not to be satisfied with mere learning,<br />
+&nbsp;&nbsp;but to add practice and then training.<br />
+For as time passes we forget what we learned and end up doing the opposite,<br />
+&nbsp;&nbsp;and hold opinions the opposite of what we should.<br />
+' —EPICTETUS,<br />
+&nbsp;&nbsp;DISCOURSES,<br />
+&nbsp;&nbsp;2.9.13–14 We have placed key terms in each level of the chart. There is progress (prokopê) upward out of deception,<br />
+&nbsp;&nbsp;false opinion,<br />
+&nbsp;&nbsp;and error—through impulse control—to more clear judgments and knowledge (selfcoherence);<br />
+&nbsp;&nbsp;and there is progress across the levels of training (study/manthanô,<br />
+&nbsp;&nbsp;practice/meletaô,<br />
+&nbsp;&nbsp;hard training/askeô) through the remediation of habit,<br />
+&nbsp;&nbsp;acting more appropriately,<br />
+&nbsp;&nbsp;and improving judgment toward living the virtues. We offer an annotated glossary of key Stoic terms and passages following the chart. Visit bit.ly/2dC85K1 for a larger version of this table. Adiaphora (ἀδιάφορα):<br />
+&nbsp;&nbsp;indifferent things;<br />
+&nbsp;&nbsp;neither good nor bad in an absolute moral sense. In Stoic thought,<br />
+&nbsp;&nbsp;all things outside our sphere of reasoned choice (see prohairesis) are indifferent.In a relative sense,<br />
+&nbsp;&nbsp;some of the things outside our control are preferred or dispreferred goods (proêgmena/aproêgmena). Marcus says (5.20) that people who thwart the progress of our reasoned choice,<br />
+&nbsp;&nbsp;although normally our natural concern,<br />
+&nbsp;&nbsp;also become indifferent to us. The term appears in Epictetus's Discourses seventeen times and once in Enchiridion;<br />
+&nbsp;&nbsp;see Discourses 2.19.12b–13 and 3.3.1. In Marcus it appears six times;<br />
+&nbsp;&nbsp;see also 8.56 (my prohairesis is indifferent to that of others,<br />
+&nbsp;&nbsp;and vice versa). Agathos (ἀγαθός):<br />
+&nbsp;&nbsp;good,<br />
+&nbsp;&nbsp;or a proper object of desire. Epictetus upholds the classic Stoic position when he says that the good (and evil) are only to be found in us,<br />
+&nbsp;&nbsp;in our prohairesis,<br />
+&nbsp;&nbsp;not in external things (Discourses 2.16.1),<br />
+&nbsp;&nbsp;and when he says,<br />
+&nbsp;&nbsp;'God laid down this law,<br />
+&nbsp;&nbsp;saying:<br />
+&nbsp;&nbsp;if you want some good,<br />
+&nbsp;&nbsp;get it from yourself' (1.<br />
+29.<br />
+4).<br />
+'Protect your own good in all that you do' (4.3.11). Anthrôpos (ἄνθρωπος):<br />
+&nbsp;&nbsp;a human being,<br />
+&nbsp;&nbsp;human beings in general. For Epictetus (Discourses 2.10.1),<br />
+&nbsp;&nbsp;above all we are human beings whose power of reasoned choice (prohairesis) supervises all and is completely free. A 'beautiful human being' possesses the virtues (Discourses 3.<br />
+1.<br />
+6b– 9).<br />
+We must be a 'unified human being' (Discourses 3.15.13),<br />
+&nbsp;&nbsp;what Hadot calls self-coherence (The Inner Citadel,<br />
+&nbsp;&nbsp;pp. 130–31). In Marcus (see 5.1,<br />
+&nbsp;&nbsp;5.20,<br />
+&nbsp;&nbsp;8.1,<br />
+&nbsp;&nbsp;8.5,<br />
+&nbsp;&nbsp;8.26),<br />
+&nbsp;&nbsp;the term is used in conjunction with an emphasis on what our proper concern and work should be. Apatheia (ἀπάθεια):<br />
+&nbsp;&nbsp;passionless calm,<br />
+&nbsp;&nbsp;peace of mind. In verb form,<br />
+&nbsp;&nbsp;ἀπαθέω means to free from passion. Epictetus:<br />
+&nbsp;&nbsp;Discourses (seven times noun,<br />
+&nbsp;&nbsp;eleven times verb),<br />
+&nbsp;&nbsp;see 4.3.8;<br />
+&nbsp;&nbsp;twice in Enchiridion. Marcus uses it in verb form four times;<br />
+&nbsp;&nbsp;see 6.16.2b–4a. In its single use as a noun,<br />
+&nbsp;&nbsp;he says that the closer a person is to apatheia,<br />
+&nbsp;&nbsp;the stronger they are (11.18.5b). See pathos. Aphormê (ἀφορμή):<br />
+&nbsp;&nbsp;avoidance,<br />
+&nbsp;&nbsp;disinclination,<br />
+&nbsp;&nbsp;the impulse not to act (as a result of ekklisis). Opposite of hormê. Hormê/Aphormê is the second of the three areas of training for Epictetus (3.2.1–3a),<br />
+&nbsp;&nbsp;and the term appears frequently in the Discourses. Marcus doesn't use the term in this sense,<br />
+&nbsp;&nbsp;only hormê. Apotynchanô (ἀποτυγχάνω):<br />
+&nbsp;&nbsp;to fail in gaining,<br />
+&nbsp;&nbsp;hitting,<br />
+&nbsp;&nbsp;achieving;<br />
+&nbsp;&nbsp;to miss one's purpose or to err. It appears twenty-four times in Epictetus,<br />
+&nbsp;&nbsp;often with orexis/oregô;<br />
+&nbsp;&nbsp;see especially 3.2.1–3a. Diogenes Laertius says Zeno defined 'want' as failing to gain what we yearn for or reach out for (Lives of the Eminent Philosophers 7.<br />
+1.<br />
+113).<br />
+The term doesn't appear in Marcus.<br />
+This experience is a fundamental source of disturbance in life.<br />
+See also hamartanô.<br />
+Aproêgmena (ἀπροηγμένα):<br />
+&nbsp;&nbsp;dispreferred things;<br />
+&nbsp;&nbsp;indifferent in an absolute moral sense,<br />
+&nbsp;&nbsp;but things of relative negative value and naturally undesirable things,<br />
+&nbsp;&nbsp;such as illness.<br />
+Opposite of proêgmena.<br />
+These terms don't appear in either Epictetus or Marcus,<br />
+&nbsp;&nbsp;but we know from Diogenes Laertius that they were common Stoic teaching from Zeno and Chrysippus through Posidonius (Lives of the Eminent Philosophers 7.<br />
+1.<br />
+102ff).<br />
+Cicero rehearses Zeno's use of the terms and offers the Latin equivalents of reiecta/praeposita (On the Ends of Good and Evil and Academica,<br />
+&nbsp;&nbsp;1.<br />
+X.<br />
+36–39).<br />
+Seneca does not follow Cicero in this use,<br />
+&nbsp;&nbsp;but uses commoda/incommoda (advantageous/disadvantageous).<br />
+'There are things in life which are advantageous and disadvantageous—both beyond our control' (Moral Letters 92.16). Cicero makes it a subclass of reiecta/praeposita (On the Ends of Good and Evil 3.21). Aretê (ἀρετή):<br />
+&nbsp;&nbsp;Virtue,<br />
+&nbsp;&nbsp;goodness,<br />
+&nbsp;&nbsp;and human excellence;<br />
+&nbsp;&nbsp;the source of absolute value. Hadot notes that the four cardinal virtues of Plato are not fully present in Arrian's presentation of Epictetus (The Inner Citadel,<br />
+&nbsp;&nbsp;p. 238),<br />
+&nbsp;&nbsp;but that in Marcus,<br />
+&nbsp;&nbsp;who followed Epictetus closely,<br />
+&nbsp;&nbsp;they have a clear articulation and correlation to what Hadot calls 'the three acts of the soul' (see chart).<br />
+Diogenes Laertius says that the four cardinal virtues were primary for the Stoics (Lives of the Eminent Philosophers,<br />
+&nbsp;&nbsp;'Zeno,<br />
+&nbsp;&nbsp;' 7.<br />
+92b):<br />
+&nbsp;&nbsp;σωφροσύνη/sôphrosunê/self-control,<br />
+&nbsp;&nbsp;δικαιοσύνη/dikaiosunê/justice,<br />
+&nbsp;&nbsp;ἀνδρεία/andreia/courage,<br />
+&nbsp;&nbsp;φρόνησις/phronêsis/wisdom.<br />
+Chrysippus said that experiencing wisdom (phronimos) for even a moment is equal to an eternityof exercising aretê (Plutarch,<br />
+&nbsp;&nbsp;Moralia 1062).<br />
+Musonius Rufus said,<br />
+&nbsp;&nbsp;'The human being is born with an inclination toward virtue' (Lectures 1.7.1–2). Marcus mentions all four virtues in 3.6.1 and 5.12,<br />
+&nbsp;&nbsp;and three (without courage) in 7.63,<br />
+&nbsp;&nbsp;8.32,<br />
+&nbsp;&nbsp;and 12.15. We present them here as the aims of moral progress to which all our activity in the world is directed. Marcus says we should let our virtues shine until we are extinguished (12.15). Epictetus does cite justice and self-control together in his discussion of virtue in 3.1.6b–9,<br />
+&nbsp;&nbsp;where his use of σωφροσύνη is milder in the 'even-tempered' sense (contrasted by him with 'undisciplined'),<br />
+&nbsp;&nbsp;and his preferred term for selfcontrol here (and elsewhere,<br />
+&nbsp;&nbsp;appearing with wisdom/φρονίμῳ in 2.21.9) is ἐγκρατεῖς/egkrateis/mastery,<br />
+&nbsp;&nbsp;or exercising control over (contrasted with ἀκρατεῖς/akrateis/uncontrolled). Seneca uses the Latin virtus and says that 'virtue is the only good' and is nothing less than 'true and steadfast judgment' (Moral Letters 7.32). Askêsis (ἄσκησις):<br />
+&nbsp;&nbsp;exercise,<br />
+&nbsp;&nbsp;practice,<br />
+&nbsp;&nbsp;disciplined training designed to achieve virtue. Epictetus sees three areas of training (Discourses 3.2.1–3a,<br />
+&nbsp;&nbsp;3.12.8)—the famous doctrine of three topics (topoi) that scholars think was Epictetus's unique contribution to late Stoicism (see Long's Epictetus:<br />
+&nbsp;&nbsp;A Stoic and Socratic Guide to Life,<br />
+&nbsp;&nbsp;pp. 112–118;<br />
+&nbsp;&nbsp;Hadot's The Inner Citadel,<br />
+&nbsp;&nbsp;pp. 89– 100). Before Epictetus,<br />
+&nbsp;&nbsp;Seneca affirms the long-standing Stoic division of philosophy into three parts,<br />
+&nbsp;&nbsp;which he calls 'the moral,<br />
+&nbsp;&nbsp;the natural,<br />
+&nbsp;&nbsp;and the rational' (Moral Letters 89.<br />
+9).<br />
+Epictetus,<br />
+&nbsp;&nbsp;we argue,<br />
+&nbsp;&nbsp;also sees three levels of discipline,<br />
+&nbsp;&nbsp;moving from learning/study (μανθάνω/manthanô,<br />
+&nbsp;&nbsp;appearing seventy-nine times) to practice (μελετάω/meletaô,<br />
+&nbsp;&nbsp;appearing fifty-four times;<br />
+&nbsp;&nbsp;see Discourses 2.<br />
+19.<br />
+29–34,<br />
+&nbsp;&nbsp;where he says 'learn and diligently practice') to more rigorous training (ἀσκέω/ἄσκησις,<br />
+&nbsp;&nbsp;appearing forty times). For the three levels of discipline,<br />
+&nbsp;&nbsp;see 2.9.13–14. For Epictetus,<br />
+&nbsp;&nbsp;the exercise and training analogies run from wrestling and athletics (see the 'invincible athlete' in 1.<br />
+18.<br />
+21–23;<br />
+&nbsp;&nbsp;'true athlete in rigorous training' in 2.18.27–2),<br />
+&nbsp;&nbsp;to the pankration (3.10.6–7),<br />
+&nbsp;&nbsp;and the ultimate 'hard winter training' (χειμασκησαι/cheimaskêsai) of soldiers (1.<br />
+2.<br />
+32,<br />
+&nbsp;&nbsp;4.<br />
+8.<br />
+35–37).<br />
+While each of these three areas of training and three levels of discipline reach into and inform one another,<br />
+&nbsp;&nbsp;there is a clear sense of hierarchy in the acts of the soul,<br />
+&nbsp;&nbsp;moving up from desire through action to assent,<br />
+&nbsp;&nbsp;and of making forward progress in our actions in the world,<br />
+&nbsp;&nbsp;from study to practice to hard training,<br />
+&nbsp;&nbsp;toward virtue (see chart).<br />
+For Marcus,<br />
+&nbsp;&nbsp;who is often derisive of mere study,<br />
+&nbsp;&nbsp;books,<br />
+&nbsp;&nbsp;and displays of learning (2.<br />
+2,<br />
+&nbsp;&nbsp;3.<br />
+14,<br />
+&nbsp;&nbsp;5.<br />
+5,<br />
+&nbsp;&nbsp;5.<br />
+9),<br />
+&nbsp;&nbsp;these words scarcely appear.<br />
+He seems more interested in simply getting straight to putting things to the test in everyday life by following the dictates of our guiding reason (hêgemonikon).<br />
+In this way he is very much in tune with Epictetus's memorable admonition against spouting what you've learned without having digested it (see Discourses 3.<br />
+21.<br />
+1–3).<br />
+For Marcus,<br />
+&nbsp;&nbsp;the point of it all is to use our reason to produce in action the virtues of self-control,<br />
+&nbsp;&nbsp;courage,<br />
+&nbsp;&nbsp;justice,<br />
+&nbsp;&nbsp;and wisdom,<br />
+&nbsp;&nbsp;which correlate to the topoi of Epictetus (see chart).<br />
+Ataraxia (ἀταραξία):<br />
+&nbsp;&nbsp;tranquility,<br />
+&nbsp;&nbsp;freedom from disturbance by external things.<br />
+It is the fruit of following philosophy,<br />
+&nbsp;&nbsp;according to Epictetus (Discourses 2.<br />
+1.<br />
+21–22).<br />
+It appears fourteen times in the Discourses and twice in the Enchiridion;<br />
+&nbsp;&nbsp;see Discourses 2.<br />
+2 (Arrian's caption of section),<br />
+&nbsp;&nbsp;2.<br />
+18.<br />
+28,<br />
+&nbsp;&nbsp;4.<br />
+3.<br />
+6b–8,<br />
+&nbsp;&nbsp;and 4.<br />
+6.<br />
+34–35.<br />
+It appears once in Marcus (9.<br />
+31;<br />
+&nbsp;&nbsp;not here).<br />
+Axia (ἀξία):<br />
+&nbsp;&nbsp;the true value or worth of things;<br />
+&nbsp;&nbsp;the relative value of things preferential;<br />
+&nbsp;&nbsp;of people,<br />
+&nbsp;&nbsp;meaning reputation or what's deserved.<br />
+It appears eighteen times in Marcus;<br />
+&nbsp;&nbsp;see 4.<br />
+32,<br />
+&nbsp;&nbsp;5.<br />
+1,<br />
+&nbsp;&nbsp;5.<br />
+36,<br />
+&nbsp;&nbsp;9.<br />
+1.<br />
+1,<br />
+&nbsp;&nbsp;and 12.<br />
+1.<br />
+Marcus quotes Epictetus on this concept in discussing how to use the power of assent in the area of our impulses (11.<br />
+37).<br />
+For Epictetus,<br />
+&nbsp;&nbsp;the term appears twenty-nine times in the Discourses and twice in Enchiridion (36;<br />
+&nbsp;&nbsp;not here).<br />
+See Discourses 1.<br />
+2.<br />
+5–7,<br />
+&nbsp;&nbsp;4.<br />
+1.<br />
+170,<br />
+&nbsp;&nbsp;4.<br />
+3.<br />
+6–8,<br />
+&nbsp;&nbsp;and 4.<br />
+5.<br />
+34–37.<br />
+Overall,<br />
+&nbsp;&nbsp;the idea is that we too often trade things of great value for things of very little value,<br />
+&nbsp;&nbsp;an idea that goes back to the teachings of Diogenes of Sinope,<br />
+&nbsp;&nbsp;the founder of the Cynic school,<br />
+&nbsp;&nbsp;as described by Diogenes Laertius (Lives of the Eminent Philosophers 6.<br />
+2.<br />
+35b).<br />
+Daimôn (δαίμων):<br />
+&nbsp;&nbsp;divine spirit within humans;<br />
+&nbsp;&nbsp;our individual genius.<br />
+Chrysippus held that a happy and well-flowing life was the result 'when the affairs of life are in every way tuned to theharmony between the individual divine spirit and the will of the director of the universe' (Lives of the Eminent Philosophers 7.1.88). Epictetus tells us never to worry because we are never alone:<br />
+&nbsp;&nbsp;God is always within,<br />
+&nbsp;&nbsp;as is our own daimôn (Discourses 1.14.14;<br />
+&nbsp;&nbsp;not here). Diairesis (διαίρεσις):<br />
+&nbsp;&nbsp;analysis,<br />
+&nbsp;&nbsp;division into parts. Used when distinguishing what is subject to our power of choice from what is not. Dianoia (διανοία):<br />
+&nbsp;&nbsp;thought,<br />
+&nbsp;&nbsp;intelligence,<br />
+&nbsp;&nbsp;purpose,<br />
+&nbsp;&nbsp;faculty of mind. Haines notes:<br />
+&nbsp;&nbsp;'not affected by the motions of the pneuma.<br />
+' Dikaiosunê (δικαιοσύνη):<br />
+&nbsp;&nbsp;justice,<br />
+&nbsp;&nbsp;righteousness. Diogenes Laertius noted that for the Stoics,<br />
+&nbsp;&nbsp;it meant 'being in harmony with the law and tending to bring people together' (Lives of the Eminent Philosophers 7.<br />
+99;<br />
+&nbsp;&nbsp;not here).<br />
+It is one of the four cardinal virtues (i.<br />
+e.<br />
+,<br />
+&nbsp;&nbsp;self-control,<br />
+&nbsp;&nbsp;justice,<br />
+&nbsp;&nbsp;courage,<br />
+&nbsp;&nbsp;and wisdom).<br />
+The word is used seventeen times in Marcus,<br />
+&nbsp;&nbsp;always in the spirit Diogenes Laertius outlines,<br />
+&nbsp;&nbsp;where it appears with the other virtues (see especially 3.<br />
+6,<br />
+&nbsp;&nbsp;5.<br />
+12,<br />
+&nbsp;&nbsp;7.<br />
+63,<br />
+&nbsp;&nbsp;and 12.<br />
+15).<br />
+Epictetus is notable in 3.<br />
+1.<br />
+6b–9,<br />
+&nbsp;&nbsp;where he speaks of 'the just' as the kind of person we should strive to be. Dogma (δόγμα):<br />
+&nbsp;&nbsp;that which seems to one;<br />
+&nbsp;&nbsp;opinion or belief;<br />
+&nbsp;&nbsp;philosophically,<br />
+&nbsp;&nbsp;dogmata are principles or judgments established by reason and experience. Haines notes that 'what the sensations are to the body and impulses to the soul,<br />
+&nbsp;&nbsp;dogmata are to the intelligence.<br />
+' Epictetus takes aim at the untested form of dogmata by framing them as τὰ πονηρὰ δόγματα,<br />
+&nbsp;&nbsp;or oppressive or worthless opinions that must be rooted out by our reasoned choice (Discourses 3.3.18–19;<br />
+&nbsp;&nbsp;see also 3.19.2–3) before they destroy our inner fortress (4.1.86). The term appears more than one hundred times in Epictetus (see Enchiridion 5,<br />
+&nbsp;&nbsp;where he says that it's not things that disturb us,<br />
+&nbsp;&nbsp;but our judgments/dogmata about them) and twenty-three times in Marcus (see especially 4.49,<br />
+&nbsp;&nbsp;7.2,<br />
+&nbsp;&nbsp;8.1,<br />
+&nbsp;&nbsp;8.22,<br />
+&nbsp;&nbsp;and 8.47,<br />
+&nbsp;&nbsp;where he often talks about straightening out your principles). Marcus and Epictetus also use the word krima (κρῖμα) when talking about decisions and judgment (Marcus,<br />
+&nbsp;&nbsp;Meditations 11.11,<br />
+&nbsp;&nbsp;8.47;<br />
+&nbsp;&nbsp;Epictetus,<br />
+&nbsp;&nbsp;Discourses 4.11.7). Dokimazein (δοκιμάζω):<br />
+&nbsp;&nbsp;to assay;<br />
+&nbsp;&nbsp;to put to the test;<br />
+&nbsp;&nbsp;to thoroughly examine. This is a key verb in understanding Epictetus's Stoicism (found ten times in the Discourses and once in the opening of the Enchiridion),<br />
+&nbsp;&nbsp;but it was not used by Marcus. The word carries the meaning of the assayist,<br />
+&nbsp;&nbsp;one who tests fine metals and coins to verify their authenticity. In one of the most memorable passages in Epictetus,<br />
+&nbsp;&nbsp;he compares our need to test impressions to what is done with coins and how the skilled merchant can hear a counterfeit coin cast upon a table just as a musician would detect a sour note (Discourses 1.2.7–11ff). See also the exercises he gives for handling impressions (Discourses 2.18.24;<br />
+&nbsp;&nbsp;Enchiridion 1.5). As sense impressions need to be put to the test,<br />
+&nbsp;&nbsp;so too our judgments (dogmata/theôrêma) need a tough cross-examination (ἐλέγχω;<br />
+&nbsp;&nbsp;used by both Epictetus and Marcus) to be fully tested. Doxa (δόξα):<br />
+&nbsp;&nbsp;belief,<br />
+&nbsp;&nbsp;opinion. Ekklisis (ἔκκλισις):<br />
+&nbsp;&nbsp;aversion;<br />
+&nbsp;&nbsp;inclination away from a thing. The opposite of,<br />
+&nbsp;&nbsp;but often appearing with,<br />
+&nbsp;&nbsp;orexis. This is the first level of self-coherence (see chart). Epictetus warns repeatedly that with aversions we must be careful to apply them only to our own concerns and not to those controlled by others (see Discourses 4.1.81–82ff;<br />
+&nbsp;&nbsp;not here). The word appears fiftythree times in the Discourses. In a vivid metaphor of a sparring match,<br />
+&nbsp;&nbsp;Marcus tells us we can avoid people who might have ill intent without being suspicious toward them (6.20). In step with Epictetus,<br />
+&nbsp;&nbsp;Marcus urges us to limit our aversion to only those things in our power (8.7). See orexis. Ekpyrôsis (ἐκπύρωσις):<br />
+&nbsp;&nbsp;cyclical conflagration (birth and rebirth) of the universe. This idea,<br />
+&nbsp;&nbsp;central to Stoic physics and cosmology,<br />
+&nbsp;&nbsp;goes back to Heraclitus (Marcus 3.3;<br />
+&nbsp;&nbsp;not here). Stoicsequate this fire with the all-permeating reason (logos spermatikos) of the universe (see Marcus 6.24). Eleutheria (ἐλευθερία):<br />
+&nbsp;&nbsp;freedom,<br />
+&nbsp;&nbsp;liberty. The masses say that only the free can be educated,<br />
+&nbsp;&nbsp;but the Stoic says that only the educated can be free (Discourses 2.1.21–22). Including the adjectival form,<br />
+&nbsp;&nbsp;it appears more than one hundred times in the Discourses. Marcus uses the noun five times (see 5.9). Eph' hêmin (ἐφ' ἡμῖν):<br />
+&nbsp;&nbsp;what is up to us;<br />
+&nbsp;&nbsp;what is in our control;<br />
+&nbsp;&nbsp;our correct use of impressions,<br />
+&nbsp;&nbsp;impulses,<br />
+&nbsp;&nbsp;and judgments.<br />
+The Enchiridion (or Handbook) of Epictetus opens with this most famous of all Stoic phrases.<br />
+Epictetus says when we want something outside our control,<br />
+&nbsp;&nbsp;we are stricken with anxiety (Discourses 2.<br />
+13.<br />
+1).<br />
+Our judgments about what is up to us determine our freedom (3.<br />
+26.<br />
+34–35).<br />
+Epistêmê (ἐπιστήμη):<br />
+&nbsp;&nbsp;certain and true knowledge,<br />
+&nbsp;&nbsp;over and above that of katalêpsis.<br />
+Ethos (ἔθος):<br />
+&nbsp;&nbsp;custom or habit.<br />
+See also hexis.<br />
+In late Stoic practice,<br />
+&nbsp;&nbsp;there is a great focus on habit.<br />
+Musonius Rufus's ideas about education were aimed at addressing the upbringing,<br />
+&nbsp;&nbsp;environment,<br />
+&nbsp;&nbsp;and habits that vary from person to person (Lectures 1.<br />
+1).<br />
+Epictetus carries this focus on habit forward:<br />
+&nbsp;&nbsp;'Since habit is such a powerful influence,<br />
+&nbsp;&nbsp;and we're used to pursuing our impulses to gain and avoid outside our own choice,<br />
+&nbsp;&nbsp;we should set a contrary habit against that,<br />
+&nbsp;&nbsp;and where appearances are really slippery,<br />
+&nbsp;&nbsp;use the counterforce of our training' (Discourses 3.12.6). He also talks about the importance of using a contrary,<br />
+&nbsp;&nbsp;opposing habit in 1.27.4. The term appears seventeen times in Epictetus's Discourses. Marcus uses this term four times. Eudaimonia (εὐδαιμονία):<br />
+&nbsp;&nbsp;happiness,<br />
+&nbsp;&nbsp;flourishing,<br />
+&nbsp;&nbsp;well-being. Epictetus says that God made human beings to be happy and stable/serene (εὐσταθεῖν/eustathein;<br />
+&nbsp;&nbsp;Discourses 3.24.2b–3). Eudaimonia appears thirteen times in the Discourses and once in the Enchiridion. Epictetus holds that it is incompatible with yearning for what we don't have (Discourses 3.24.17). It appears twice in Marcus (7.67) in conjunction with 'life,<br />
+&nbsp;&nbsp;' which,<br />
+&nbsp;&nbsp;he says,<br />
+&nbsp;&nbsp;depends on the fewest possible things (see also 7.17). Marcus has one other equivalent word in his use of εὐζωήσεις/euzôêseis,<br />
+&nbsp;&nbsp;or 'happy in life' (3.<br />
+12;<br />
+&nbsp;&nbsp;none of these three reproduced here).<br />
+Eupatheia (εὐπάθεια):<br />
+&nbsp;&nbsp;good passions or emotions (as contrasted with pathos),<br />
+&nbsp;&nbsp;the result of correct judgments and virtuous actions.<br />
+Diogenes Laertius says,<br />
+&nbsp;&nbsp;'The Stoics assert there are three good emotional states (eupatheia):<br />
+&nbsp;&nbsp;joy,<br />
+&nbsp;&nbsp;caution,<br />
+&nbsp;&nbsp;and wishing . . . joy is rational elation . . . caution is rational avoidance . . .wishing is rational inclination . . .under wishing they place goodwill,<br />
+&nbsp;&nbsp;benevolence,<br />
+&nbsp;&nbsp;friendliness and affection;<br />
+&nbsp;&nbsp;under caution,<br />
+&nbsp;&nbsp;respect and modesty;<br />
+&nbsp;&nbsp;under joy,<br />
+&nbsp;&nbsp;delight,<br />
+&nbsp;&nbsp;good cheer and contentment' (Lives of the Eminent Philosophers 7.116). Hamartanô (ἁμαρτάνω):<br />
+&nbsp;&nbsp;to do wrong,<br />
+&nbsp;&nbsp;err,<br />
+&nbsp;&nbsp;fail one's purpose. The verb appears twenty-eight times in Epictetus and thirty-four times in Marcus. Also,<br />
+&nbsp;&nbsp;hamartia (ἁμαρτία)—a failure,<br />
+&nbsp;&nbsp;fault,<br />
+&nbsp;&nbsp;error,<br />
+&nbsp;&nbsp;to do wrong to another—appears three times in Marcus,<br />
+&nbsp;&nbsp;notably in 10.30,<br />
+&nbsp;&nbsp;when he talks about seeing another's wrongdoing from the standpoint of our own failings. Both Epictetus and Musonius Rufus often use the obverse as the ideal,<br />
+&nbsp;&nbsp;being free from error,<br />
+&nbsp;&nbsp;anamartêtos (ἀναμάρτητος),<br />
+&nbsp;&nbsp;which,<br />
+&nbsp;&nbsp;although not possible,<br />
+&nbsp;&nbsp;is what we should strive for (see especially Discourses 4.12.19;<br />
+&nbsp;&nbsp;Lectures 2.5.1). Since Aristotle's Poetics,<br />
+&nbsp;&nbsp;the concept had been the fatal flaw or decision that leads to a tragic demise. The Stoics part ways with any tragic thinking,<br />
+&nbsp;&nbsp;on the one hand,<br />
+&nbsp;&nbsp;and,<br />
+&nbsp;&nbsp;on the other,<br />
+&nbsp;&nbsp;with any notion of original sin—all sin is the result of bad habit,<br />
+&nbsp;&nbsp;following common opinion,<br />
+&nbsp;&nbsp;and bad judgments. Philosophy is meant to help us scrape the accumulated errors of existence from our souls. Hêgemonikon (ἡγεμονικόν):<br />
+&nbsp;&nbsp;ruling or guiding reason;<br />
+&nbsp;&nbsp;ruling principle. A. A. Long says the term,<br />
+&nbsp;&nbsp;meaning 'suited to command,<br />
+&nbsp;&nbsp;' was borrowed from Isocrates,<br />
+&nbsp;&nbsp;the Athenian rhetorician,<br />
+&nbsp;&nbsp;and was taken up by the early Stoics to represent the intellectual part of the soul as distinct from thesenses (Greek Models of Mind and Self,<br />
+&nbsp;&nbsp;p. 89). Long notes that by the time of the late Stoics,<br />
+&nbsp;&nbsp;Epictetus had applied it even to the souls of animals,<br />
+&nbsp;&nbsp;which lack rationality (Epictetus:<br />
+&nbsp;&nbsp;A Stoic and Socratic Guide to Life,<br />
+&nbsp;&nbsp;p. 211),<br />
+&nbsp;&nbsp;and said it means 'the governing faculty of the mind.<br />
+' Hadot calls it the superior or guiding part of the soul. Marcus uses it as a unique property of human beings (especially in 12.1 and 12.33). Epictetus's Discourses (twenty-six references):<br />
+&nbsp;&nbsp;1.26.15,<br />
+&nbsp;&nbsp;1.20.11,<br />
+&nbsp;&nbsp;4.4.43,<br />
+&nbsp;&nbsp;4.5.5. Marcus Aurelius (forty-six references):<br />
+&nbsp;&nbsp;3.9,<br />
+&nbsp;&nbsp;4.38,<br />
+&nbsp;&nbsp;5.11,<br />
+&nbsp;&nbsp;8.48,<br />
+&nbsp;&nbsp;8.56,<br />
+&nbsp;&nbsp;9.22,<br />
+&nbsp;&nbsp;9.26,<br />
+&nbsp;&nbsp;12.1,<br />
+&nbsp;&nbsp;12.33. Whereas Epictetus leans heavily on prohairesis,<br />
+&nbsp;&nbsp;Marcus prefers hêgemonikon:<br />
+&nbsp;&nbsp;'How does your ruling reason manage itself?<br />
+For in that is the key to everything.<br />
+Whatever else remains,<br />
+&nbsp;&nbsp;be it in the power of your choice or not,<br />
+&nbsp;&nbsp;is but a corpse and smoke' (12.<br />
+33).<br />
+Heimarmenê (εἱμαρμένη):<br />
+&nbsp;&nbsp;fate,<br />
+&nbsp;&nbsp;destiny.<br />
+Stoics were compatibilists about the free will and determinism question—all things are determined,<br />
+&nbsp;&nbsp;but our response is entirely our own.<br />
+See pronoia.<br />
+Hexis (ἕξις):<br />
+&nbsp;&nbsp;abstract noun built on echein,<br />
+&nbsp;&nbsp;to have,<br />
+&nbsp;&nbsp;possess;<br />
+&nbsp;&nbsp;a state of mind or habit,<br />
+&nbsp;&nbsp;disposition toward something;<br />
+&nbsp;&nbsp;of physical things,<br />
+&nbsp;&nbsp;a natural property or tendency.<br />
+Epictetus says that habits must be 'first weakened and then obliterated' (Discourses 2.18.11b–14);<br />
+&nbsp;&nbsp;otherwise,<br />
+&nbsp;&nbsp;they become fuel for personal destruction (2.18.4–5). See ethos. Hormê (ὁρμή):<br />
+&nbsp;&nbsp;positive impulse or appetite toward an object (as a result of orexis and our assent) that leads to action;<br />
+&nbsp;&nbsp;the opposite of aphormê. These can be irrational impulses to act or a reasoned choice to act or exert effort toward an end. Quoting Epictetus,<br />
+&nbsp;&nbsp;Marcus says that we 'must pay special attention to the sphere of our impulses—that they are subject to reservation ,<br />
+&nbsp;&nbsp;to the common good (κοινωνικαί),<br />
+&nbsp;&nbsp;and that they are in proportion to actual worth ' (11.37). This is the second level of self-coherence that gives rise to our actions (see chart). Marcus repeatedly ties the discipline of hormê to acts for the common good (see also 8.7) and the claims of justice (4.22). It appears thirty-four times in Epictetus's Discourses,<br />
+&nbsp;&nbsp;three times in the Enchiridion,<br />
+&nbsp;&nbsp;and thirty-five times in Marcus. Seneca uses the Latin equivalent impetus seventy-nine times in his letters (see Moral Letters 71.32,<br />
+&nbsp;&nbsp;where he says virtue resides in our judgment,<br />
+&nbsp;&nbsp;which gives rise to impulse and clarifies all appearances that give rise to impulse). Hulê (ὕλη):<br />
+&nbsp;&nbsp;matter,<br />
+&nbsp;&nbsp;material. This is a very common reference in Epictetus,<br />
+&nbsp;&nbsp;appearing more than forty times,<br />
+&nbsp;&nbsp;usually with the analogy of the material that craftspeople use as a way of talking about where our own focus should be,<br />
+&nbsp;&nbsp;and where the evidence of our progress will be seen in the art of living (Discourses 1.15.2). He calls external things the raw material of our prohairesis (1.29.1–4a);<br />
+&nbsp;&nbsp;elsewhere he says,<br />
+&nbsp;&nbsp;'The raw material for the work of a good and excellent person is their own guiding reason (hêgemonikon)' (3.3.1). The term appears nineteen times in Marcus;<br />
+&nbsp;&nbsp;see especially 8.35,<br />
+&nbsp;&nbsp;where he talks about how we can 'convert any obstacle into the raw material for our own purpose.<br />
+' Sometimes used interchangeably with ousia. Hypolêpsis (ὑπόληψις):<br />
+&nbsp;&nbsp;literally 'taking up' an opinion,<br />
+&nbsp;&nbsp;assumption,<br />
+&nbsp;&nbsp;conception,<br />
+&nbsp;&nbsp;notion,<br />
+&nbsp;&nbsp;understanding.<br />
+Hadot translates the term as 'value judgment' and sees a movement upward into higher-level value judgments,<br />
+&nbsp;&nbsp;from prolêpsis to hypolêpsis to katalêpsis. See Marcus 4.3.4b and 9.13,<br />
+&nbsp;&nbsp;where he talks about how our own assumptions can crush us,<br />
+&nbsp;&nbsp;so we must throw them out. He also says that 'everything turns on our assumptions' (12.<br />
+22),<br />
+&nbsp;&nbsp;and we should hold our power for understanding,<br />
+&nbsp;&nbsp;or forming opinions,<br />
+&nbsp;&nbsp;sacred (3.<br />
+9).<br />
+The term appears eight times in Epictetus's Discourses (see 2.<br />
+19.<br />
+13–14,<br />
+&nbsp;&nbsp;where he says we hold opinions the opposite of what we should) and three times in the Enchiridion (see 20,<br />
+&nbsp;&nbsp;where he talks about how our own opinions or assumptions are what fuel anger).<br />
+Kalos (καλός):<br />
+&nbsp;&nbsp;beautiful;<br />
+&nbsp;&nbsp;in the moral sense,<br />
+&nbsp;&nbsp;noble,<br />
+&nbsp;&nbsp;virtuous.<br />
+Seneca's equivalent term,<br />
+&nbsp;&nbsp;used quite frequently,<br />
+&nbsp;&nbsp;is honestum.<br />
+Katalêpsis (κατάληψις):<br />
+&nbsp;&nbsp;true comprehension,<br />
+&nbsp;&nbsp;clear perception,<br />
+&nbsp;&nbsp;and firm conviction needed for right conduct.<br />
+Hadot translates the term as 'perception' or 'objective representation.<br />
+' Thisis a prominent term for Epictetus and stands in contrast to the Skeptic's notion that nothing could be known with certainty (ἀκατάληπτος). Epictetus says that true progress (prokopê) is about giving assent (see synkatathesis) only where there is katalêpsis (Discourses 3.8.4). Marcus uses the term in praising the character of Antoninus and his zeal for 'getting a true grasp of affairs' (6.<br />
+30.<br />
+2),<br />
+&nbsp;&nbsp;as well as in 4.<br />
+22,<br />
+&nbsp;&nbsp;where he says every impulse should be subject to the claims of justice and keeping our convictions clear.<br />
+Kathêkon (καθῆκον):<br />
+&nbsp;&nbsp;duty,<br />
+&nbsp;&nbsp;appropriate action on the path to virtue.<br />
+Diogenes Laertius says that Zeno was the first philosopher to use the term as relating to conduct in the sense of being incumbent upon an actor (Lives of the Eminent Philosophers,<br />
+&nbsp;&nbsp;'Zeno,<br />
+&nbsp;&nbsp;' 7.<br />
+108).<br />
+Marcus says that every duty in life is a sum of acts that deserve methodical attention (6.<br />
+26).<br />
+Koinos (κοινός):<br />
+&nbsp;&nbsp;common,<br />
+&nbsp;&nbsp;shared in common.<br />
+As Haines noted,<br />
+&nbsp;&nbsp;this term and its cognates appear more than eighty times in Marcus,<br />
+&nbsp;&nbsp;and it is a very central part of his thinking and ethical orientation.<br />
+Community,<br />
+&nbsp;&nbsp;partnership,<br />
+&nbsp;&nbsp;fellowship,<br />
+&nbsp;&nbsp;neighborliness,<br />
+&nbsp;&nbsp;and cooperation are all heavily emphasized in terms ranging from κοινωνία (5.<br />
+16,<br />
+&nbsp;&nbsp;and 'action for the common good in the present moment' in 9.6) to his own coined word κοινονοημοσύνη,<br />
+&nbsp;&nbsp;regard for the feelings of others (1.16). In 6.30,<br />
+&nbsp;&nbsp;Marcus tells us,<br />
+&nbsp;&nbsp;'Life is short—the fruit of this life is a good character and acts for the common good.<br />
+' See also his morning ritual to remind ourselves that we've 'been made by nature for the purpose of working with others' (8.<br />
+12).<br />
+A related common term appearing in both Marcus and Epictetus is the word ἀλλήλων/allêlôn,<br />
+&nbsp;&nbsp;which stresses how we are made 'for each other' or 'for one another' (twenty-six times in Marcus,<br />
+&nbsp;&nbsp;especially 5.<br />
+16 and 6.<br />
+38;<br />
+&nbsp;&nbsp;and twenty times in Epictetus,<br />
+&nbsp;&nbsp;notably 2.<br />
+20).<br />
+Kosmos (κόσμος):<br />
+&nbsp;&nbsp;all-encompassing order,<br />
+&nbsp;&nbsp;world,<br />
+&nbsp;&nbsp;universe.<br />
+Logos/Logikos (λόγος/λογικός):<br />
+&nbsp;&nbsp;reason or rational;<br />
+&nbsp;&nbsp;the ordering principle of the cosmos.<br />
+Logos spermatikos (λόγος σπερματικός) is the generative principle of the universe,<br />
+&nbsp;&nbsp;which creates and takes back all things (see Marcus 6.<br />
+24).<br />
+Nomos (νόμος):<br />
+&nbsp;&nbsp;law,<br />
+&nbsp;&nbsp;custom.<br />
+Oiêsis (οἴησις):<br />
+&nbsp;&nbsp;conceit,<br />
+&nbsp;&nbsp;self-deception,<br />
+&nbsp;&nbsp;illusion,<br />
+&nbsp;&nbsp;arrogant opinion or notion.<br />
+Epictetus says (3.<br />
+14.<br />
+8) that two things must be rooted out of every human being:<br />
+&nbsp;&nbsp;self-deception and mistrust/timidity (apistia).<br />
+Our conceit,<br />
+&nbsp;&nbsp;arrogance,<br />
+&nbsp;&nbsp;and false opinions are what must be removed (2.<br />
+17.<br />
+1),<br />
+&nbsp;&nbsp;along with passion (pathos).<br />
+Epictetus sees a movement from preconception (prolêpsis) through conception (hypolêpsis) to our more firmly formed convictions (katalêpsis),<br />
+&nbsp;&nbsp;and all can be subject to error (hamartia).<br />
+Heraclitus called self-deception 'an awful disease' (Diogenes Laertius,<br />
+&nbsp;&nbsp;Lives of the Eminent Philosophers,<br />
+&nbsp;&nbsp;9.7),<br />
+&nbsp;&nbsp;and the Stoics offered their practices for overcoming it. Oikeiôsis (οἰκείωσις):<br />
+&nbsp;&nbsp;self-ownership,<br />
+&nbsp;&nbsp;appropriation to the individual's or species' needs. There is only one instance of this noun in Epictetus (Discourses 1.19.15),<br />
+&nbsp;&nbsp;which pertains to selfpreservation,<br />
+&nbsp;&nbsp;although it appears in a discussion of 'the common interest.<br />
+' Marcus also has one use,<br />
+&nbsp;&nbsp;and it moves explicitly to the other pole of appropriation—namely,<br />
+&nbsp;&nbsp;to that which lends to the 'care for others' or human fellowship (3.<br />
+9),<br />
+&nbsp;&nbsp;and our ruling reason is what enables us to keep in accord with nature and effect such appropriation.<br />
+The related verbal and adjectival forms of 'appropriating' and being 'fitting or appropriate' are more common to both.<br />
+Orexis (ὄρεξις):<br />
+&nbsp;&nbsp;desire,<br />
+&nbsp;&nbsp;inclination toward a thing.<br />
+The opposite of ekklisis.<br />
+In Aristotle this was understood as 'appetence' and was something shared with animals and different from purposive choice (prohairesis),<br />
+&nbsp;&nbsp;which involved both reason and deliberation. Epictetus says if we want to be free,<br />
+&nbsp;&nbsp;we shouldn't desire something in someone else's control (Discourses 1.4.18–22). Orexis/ekklisis are the subject of the first of the three topoi,<br />
+&nbsp;&nbsp;or areas of training that produce selfcoherence,<br />
+&nbsp;&nbsp;the other two being hormê/aphormê and synkatathesis (3.2.1–3a). The word appearsfifty-six times in the Discourses and seven times in the Enchiridion. It appears five times in Marcus,<br />
+&nbsp;&nbsp;once in saying principles need to be the source of desire and action (8.1.5) and be limited to only what's in our control (8.7). The verb form,<br />
+&nbsp;&nbsp;ὀρέγω/oregô,<br />
+&nbsp;&nbsp;meaning to reach out for,<br />
+&nbsp;&nbsp;yearn for,<br />
+&nbsp;&nbsp;often appears and in many instances it occurs with 'not missing the mark';<br />
+&nbsp;&nbsp;see hamartanô and apotynchanô.<br />
+Ousia (οὐσία):<br />
+&nbsp;&nbsp;substance or being,<br />
+&nbsp;&nbsp;sometimes used interchangeably with hulê (matter,<br />
+&nbsp;&nbsp;material).<br />
+Marcus speaks vividly of substance being 'like a river's unending flow,<br />
+&nbsp;&nbsp;its activities constantly changing and causes infinitely shifting so that almost nothing at all stands still' (5.23),<br />
+&nbsp;&nbsp;harkening back to Heraclitus (Lives of the Eminent Philosophers,<br />
+&nbsp;&nbsp;9.8). Paideia (παιδεία):<br />
+&nbsp;&nbsp;training,<br />
+&nbsp;&nbsp;teaching,<br />
+&nbsp;&nbsp;and education. Askeô,<br />
+&nbsp;&nbsp;manthanô,<br />
+&nbsp;&nbsp;and meletaô (see chart) are each a part of getting an education as outlined by Epictetus in Discourses 2.9.13–14. The daily disciplines are central to being educated for the Stoic,<br />
+&nbsp;&nbsp;and only the educated are truly free (2.1.21–23 and 1.22.9–10a). Working over our preconceptions (prolêpsin) is the point of education (1.2.5–7). Pathos (πάθος):<br />
+&nbsp;&nbsp;passion or emotion,<br />
+&nbsp;&nbsp;often excessive and based on false judgments. Haines places passion as the 'affect' following from hormê that lead to acts against nature.<br />
+The four passions divide into two types:<br />
+&nbsp;&nbsp;(1) for things not in present possession or anticipated in the future,<br />
+&nbsp;&nbsp;which are desire (ἐπιθυμία) and fear (φόβος);<br />
+&nbsp;&nbsp;and (2) for things presently engaging a person,<br />
+&nbsp;&nbsp;which are pleasure (ἡδονή) and distress (λύπη).<br />
+Epictetus states the Stoic position most clearly in Discourses 4.<br />
+1.<br />
+175:<br />
+&nbsp;&nbsp;'Freedom isn't secured by filling up on your heart's desire but by removing your desire.' Diogenes Laertius says that Zeno defined passion/emotion as an irrational and unnatural movement in the soul,<br />
+&nbsp;&nbsp;or as excessive hormê (Lives of the Eminent Philosophers 7.<br />
+110).<br />
+Despite the popular misconception,<br />
+&nbsp;&nbsp;the Stoics did celebrate certain passions as good (eupatheia),<br />
+&nbsp;&nbsp;if in rational bounds:<br />
+&nbsp;&nbsp;in particular,<br />
+&nbsp;&nbsp;joy,<br />
+&nbsp;&nbsp;caution,<br />
+&nbsp;&nbsp;and wishing (Lives of the Eminent Philosophers 7.<br />
+116).<br />
+Phantasia (φαντασία):<br />
+&nbsp;&nbsp;impression,<br />
+&nbsp;&nbsp;appearance,<br />
+&nbsp;&nbsp;perception.<br />
+Epictetus says (1.<br />
+1.<br />
+7–9) that the gods gave us one power that governs all the rest—'the ability to make the right use of appearances.' He also says that the first and greatest task of the philosopher is to test (δοκιμάζω,<br />
+&nbsp;&nbsp;'to assay') and separate appearances (see also 2.18.24). He uses the metaphors of sweeping currents,<br />
+&nbsp;&nbsp;battle,<br />
+&nbsp;&nbsp;and the rigorous training of an athlete for the work we must do to hold our own against impressions (2.18.27–28). 'The task of the good and excellent person is to handle their impressions in harmony with nature' (3.<br />
+3.<br />
+1).<br />
+There are more than two hundred references to phantasia in the Discourses and nine in the Enchiridion (34).<br />
+The term appears about forty times in Marcus's Meditations (5.<br />
+2,<br />
+&nbsp;&nbsp;5.<br />
+16,<br />
+&nbsp;&nbsp;6.<br />
+13,<br />
+&nbsp;&nbsp;8.<br />
+7,<br />
+&nbsp;&nbsp;8.<br />
+26,<br />
+&nbsp;&nbsp;8.<br />
+28–29).<br />
+Marcus has a great exercise for not telling yourself more than initial impressions ('report' in 8.49). Phronêsis (φρόνησις):<br />
+&nbsp;&nbsp;practical wisdom,<br />
+&nbsp;&nbsp;one of the four cardinal virtues. The term is used repeatedly by Marcus,<br />
+&nbsp;&nbsp;most memorably in 4.37,<br />
+&nbsp;&nbsp;where he says that 'wisdom and acting justly are one and the same,<br />
+&nbsp;&nbsp;' and in 5.9,<br />
+&nbsp;&nbsp;where he says 'there is nothing so pleasing as wisdom itself.<br />
+' See arête. Physis (φύσις):<br />
+&nbsp;&nbsp;nature,<br />
+&nbsp;&nbsp;the natural order;<br />
+&nbsp;&nbsp;of things,<br />
+&nbsp;&nbsp;species,<br />
+&nbsp;&nbsp;or kind:<br />
+&nbsp;&nbsp;characteristic. Both Epictetus and Marcus repeatedly state that we must use our ruling principle to keep ourselves in harmony with nature (Discourses 4.4.43;<br />
+&nbsp;&nbsp;Marcus 3.9). In Stoic thought,<br />
+&nbsp;&nbsp;God and nature are one. Pneuma (πνεῦμα):<br />
+&nbsp;&nbsp;air,<br />
+&nbsp;&nbsp;breath,<br />
+&nbsp;&nbsp;spirit;<br />
+&nbsp;&nbsp;a principle in Stoic physics. The part of the soul set into disturbance by desires and aversions,<br />
+&nbsp;&nbsp;which Haines calls the inferior part of the soul,<br />
+&nbsp;&nbsp;distinct from nous (mind). Epictetus has a memorable image in Discourses 3.3.20–22,<br />
+&nbsp;&nbsp;where he talks about the movement of a disturbed bowl of water being like the spirit in which things exist.Proêgmena (προηγμένα):<br />
+&nbsp;&nbsp;preferred things;<br />
+&nbsp;&nbsp;indifferent in an absolute moral sense,<br />
+&nbsp;&nbsp;but of relative positive value,<br />
+&nbsp;&nbsp;naturally desirable things,<br />
+&nbsp;&nbsp;such as health. Opposite of aproêgmena. Prohairesis (προαίρεσις):<br />
+&nbsp;&nbsp;reasoned or deliberative choice,<br />
+&nbsp;&nbsp;our free will to choose,<br />
+&nbsp;&nbsp;the sphere of choice. The term goes back to Aristotle's Ethics and has been traditionally translated there as 'purposive choice.<br />
+' A. A. Long,<br />
+&nbsp;&nbsp;in an attempt to free it from modern moral concepts,<br />
+&nbsp;&nbsp;translates it as 'volition,<br />
+&nbsp;&nbsp;' a term we find too remote from everyday understanding—for generations prior it was translated as 'moral purpose' (W.<br />
+A.<br />
+Oldfather,<br />
+&nbsp;&nbsp;George Long,<br />
+&nbsp;&nbsp;and others).<br />
+We are avoiding loading the term with either the moral sense of Christian tradition or the modernist sense of will,<br />
+&nbsp;&nbsp;so heavily colored since Schopenhauer and Nietzsche.<br />
+A.<br />
+A.<br />
+Long sees this as Epictetus's preferred term for what distinguishes human beings from animals (which also have hêgemonikon in his reading of Epictetus;<br />
+&nbsp;&nbsp;Epictetus:<br />
+&nbsp;&nbsp;A Stoic and Socratic Guide to Life,<br />
+&nbsp;&nbsp;p.<br />
+211),<br />
+&nbsp;&nbsp;something not even the gods can touch (Discourses 1.<br />
+1.<br />
+23).<br />
+The term is used sixty-nine times in the Discourses (1.<br />
+4.<br />
+18–22,<br />
+&nbsp;&nbsp;1.<br />
+18.<br />
+21–23,<br />
+&nbsp;&nbsp;1.<br />
+22.<br />
+10,<br />
+&nbsp;&nbsp;1.<br />
+29.<br />
+1–4a,<br />
+&nbsp;&nbsp;2.<br />
+1.<br />
+12–13,<br />
+&nbsp;&nbsp;2.<br />
+5.<br />
+4–5,<br />
+&nbsp;&nbsp;2.<br />
+6.<br />
+25,<br />
+&nbsp;&nbsp;2.<br />
+10.<br />
+1,<br />
+&nbsp;&nbsp;2.<br />
+16.<br />
+1–2a,<br />
+&nbsp;&nbsp;2.<br />
+22.<br />
+19–20,<br />
+&nbsp;&nbsp;3.<br />
+1.<br />
+39b–40a,<br />
+&nbsp;&nbsp;3.<br />
+3.<br />
+18–19,<br />
+&nbsp;&nbsp;3.<br />
+7.<br />
+5,<br />
+&nbsp;&nbsp;3.<br />
+10.<br />
+18,<br />
+&nbsp;&nbsp;3.<br />
+19.<br />
+2–3,<br />
+&nbsp;&nbsp;3.<br />
+21.<br />
+1–3,<br />
+&nbsp;&nbsp;3.<br />
+22.<br />
+13,<br />
+&nbsp;&nbsp;4.<br />
+4.<br />
+23,<br />
+&nbsp;&nbsp;4.<br />
+5.<br />
+34– 37) and six times in the Enchiridion (13).<br />
+Marcus uses it five times in the negative (ἀπροαίρετα),<br />
+&nbsp;&nbsp;or outside of our choice,<br />
+&nbsp;&nbsp;and three times in the positive sense of deliberate choice (3.<br />
+6,<br />
+&nbsp;&nbsp;6.<br />
+41,<br />
+&nbsp;&nbsp;8.<br />
+56,<br />
+&nbsp;&nbsp;12.<br />
+3,<br />
+&nbsp;&nbsp;12.<br />
+33).<br />
+Where this is the focal point of Epictetus's system,<br />
+&nbsp;&nbsp;Marcus leans heavily to hêgemonikon.<br />
+Prokopê (προκοπή):<br />
+&nbsp;&nbsp;progress or improvement;<br />
+&nbsp;&nbsp;on the path toward the virtues of selfcontrol,<br />
+&nbsp;&nbsp;courage,<br />
+&nbsp;&nbsp;justice,<br />
+&nbsp;&nbsp;and wisdom.<br />
+See Epictetus,<br />
+&nbsp;&nbsp;Discourses 1.<br />
+4,<br />
+&nbsp;&nbsp;captioned 'on progress,<br />
+&nbsp;&nbsp;' especially 1.<br />
+4.<br />
+18–22;<br />
+&nbsp;&nbsp;also 3.<br />
+19.<br />
+2–3.<br />
+The word appears fourteen times in Epictetus (most often in 1.<br />
+4).<br />
+Hanging out with the wrong people can limit our progress,<br />
+&nbsp;&nbsp;according to Epictetus (4.<br />
+2.<br />
+1–5),<br />
+&nbsp;&nbsp;and Musonius Rufus reminds us of the same (Lectures 11.<br />
+53.<br />
+21–22;<br />
+&nbsp;&nbsp;losing our soul).<br />
+Prolêpsis (πρόληψις):<br />
+&nbsp;&nbsp;a primary conception,<br />
+&nbsp;&nbsp;or preconception,<br />
+&nbsp;&nbsp;possessed by all rational beings.<br />
+Epictetus talks about keeping them ready like polished weapons (Discourses 4–5a,<br />
+&nbsp;&nbsp;6b).<br />
+See also 1.<br />
+22 and 1.<br />
+2.<br />
+5–7,<br />
+&nbsp;&nbsp;where he talks about working over our preconceptions and the true meaning of education.<br />
+Pronoia (πρόνοια):<br />
+&nbsp;&nbsp;foreknowledge,<br />
+&nbsp;&nbsp;foresight,<br />
+&nbsp;&nbsp;divine providence.<br />
+Epictetus says we can praise providence if we have two qualities:<br />
+&nbsp;&nbsp;seeing things clearly and gratitude (1.<br />
+6.<br />
+1–2).<br />
+Marcus talks about entrusting the future to providence in 12.<br />
+1.<br />
+The word appears ten times in Epictetus (see 3.<br />
+17.<br />
+1) and twelve times in Marcus.<br />
+Prosochê (προσοχή):<br />
+&nbsp;&nbsp;attention,<br />
+&nbsp;&nbsp;diligence,<br />
+&nbsp;&nbsp;soberness.<br />
+See especially Discourses 4.<br />
+12.<br />
+1–21.<br />
+In 1.<br />
+20.<br />
+8–11,<br />
+&nbsp;&nbsp;Epictetus says it is particularly needed for things that might steer us wrongly.<br />
+Marcus uses the term once in the body of his Meditations in speaking about what a short time we have in life to keep indifferent things from consuming our attention (11.<br />
+16;<br />
+&nbsp;&nbsp;not here).<br />
+Psychê (ψυχή):<br />
+&nbsp;&nbsp;state of mind,<br />
+&nbsp;&nbsp;soul,<br />
+&nbsp;&nbsp;life,<br />
+&nbsp;&nbsp;living principle.<br />
+It appears forty-three times in the Discourses,<br />
+&nbsp;&nbsp;and the laconic Marcus uses it sixty-nine times in his Meditations.<br />
+Marcus has a beautiful image of the rational soul as a sphere in 11.<br />
+12 (not here);<br />
+&nbsp;&nbsp;Epictetus sees it as a bowl of water in 3.<br />
+3.<br />
+20–22.<br />
+Seneca's term is animus,<br />
+&nbsp;&nbsp;the rational soul.<br />
+The Stoics were materialists,<br />
+&nbsp;&nbsp;so the soul itself has substance.<br />
+Sophos (σοφός):<br />
+&nbsp;&nbsp;wise person,<br />
+&nbsp;&nbsp;virtuous sage,<br />
+&nbsp;&nbsp;and the ethical ideal of a practicing Stoic.<br />
+Sympatheia (συμπάθεια):<br />
+&nbsp;&nbsp;sympathy,<br />
+&nbsp;&nbsp;affinity of parts to the organic whole,<br />
+&nbsp;&nbsp;mutual interdependence.<br />
+Synkatathesis (συγκατάθεσις):<br />
+&nbsp;&nbsp;assent;<br />
+&nbsp;&nbsp;approval to impressions,<br />
+&nbsp;&nbsp;conceptions,<br />
+&nbsp;&nbsp;and judgments,<br />
+&nbsp;&nbsp;enabling action to take place.<br />
+See Marcus quoting Epictetus in 11.<br />
+37 (in verb form) and how it relates to katalêpsis;<br />
+&nbsp;&nbsp;also,<br />
+&nbsp;&nbsp;in 5.<br />
+10 Marcus talks about how every assent to impressions is subject to error.<br />
+This is the third level of self-coherence,<br />
+&nbsp;&nbsp;concerning the will and judgment and what wechoose to reject (see chart).<br />
+It appears eight times in noun form and twenty-one times in verb form in Epictetus:<br />
+&nbsp;&nbsp;3.<br />
+2.<br />
+1–3a,<br />
+&nbsp;&nbsp;3.<br />
+8.<br />
+4,<br />
+&nbsp;&nbsp;and 4.<br />
+11.<br />
+6–7.<br />
+Technê (τέχνη):<br />
+&nbsp;&nbsp;craft,<br />
+&nbsp;&nbsp;art in the sense of profession or vocation.<br />
+Marcus says our technê is to be a good human being (11.<br />
+5).<br />
+Epictetus uses the analogies of crafts and trades quite often,<br />
+&nbsp;&nbsp;particularly in drawing focus to the proper material of our work as human beings.<br />
+Telos (τέλος):<br />
+&nbsp;&nbsp;the end goal or objective of life.<br />
+Theôrêma (θεώρημα):<br />
+&nbsp;&nbsp;general principle or perception,<br />
+&nbsp;&nbsp;a truth of science;<br />
+&nbsp;&nbsp;used interchangeably with dogmata in discussing the mind's store of judgments.<br />
+Theos (θεός):<br />
+&nbsp;&nbsp;god;<br />
+&nbsp;&nbsp;the divine,<br />
+&nbsp;&nbsp;creative power that orders the universe and gives human beings their reason and freedom of choice.<br />
+As far as theology goes,<br />
+&nbsp;&nbsp;despite reflecting the polytheism of their culture and making references to gods of all stripes,<br />
+&nbsp;&nbsp;the late Stoics were monists and pantheists:<br />
+&nbsp;&nbsp;God = nature.<br />
+Further,<br />
+&nbsp;&nbsp;they were materialists,<br />
+&nbsp;&nbsp;so even the divine spark in us—and the soul—are corporeal.<br />
+Epictetus was a Phrygian by birth and had a very vivid,<br />
+&nbsp;&nbsp;personalistic view of God.<br />
+He referred to God as a kindly father (see particularly Discourses 1.<br />
+6,<br />
+&nbsp;&nbsp;3.<br />
+24).<br />
+A.<br />
+A.<br />
+Long,<br />
+&nbsp;&nbsp;the foremost scholar of Epictetus,<br />
+&nbsp;&nbsp;put it this way:<br />
+&nbsp;&nbsp;'Whether [Epictetus] speaks of Zeus or God or Nature or the gods,<br />
+&nbsp;&nbsp;he is completely committed to the belief that the world is providentially organized by a divine power whose creative agency reaches its highest manifestation in human beings' (Epictetus:<br />
+&nbsp;&nbsp;A Stoic and Socratic Guide to Life,<br />
+&nbsp;&nbsp;p. 134). Long thinks Epictetus was reviving Cleanthes's (successor to Zeno) strong religious sense. There is no transcendent god for any of the Stoics—a key difference from Christianity. Epictetus says we must seek to bind up our choice with the will of God (Discourses 4.1.89). Marcus tends to refer to the divine in a looser,<br />
+&nbsp;&nbsp;often more polytheistic way (see 9.1.1),<br />
+&nbsp;&nbsp;but he shares Epictetus's views,<br />
+&nbsp;&nbsp;especially when he says,<br />
+&nbsp;&nbsp;'hold sacred your capacity for understanding,<br />
+&nbsp;&nbsp;' a gift from God requiring obedience to God (3.9). Seneca,<br />
+&nbsp;&nbsp;too,<br />
+&nbsp;&nbsp;speaks often of the divine in plural,<br />
+&nbsp;&nbsp;but all three are agreed that we must accept fate and seek to correct our own faults rather than blame others or the gods (Moral Letters 107.12). Tonos (τόνος):<br />
+&nbsp;&nbsp;tension,<br />
+&nbsp;&nbsp;a principle in Stoic physics accounting for attraction and repulsion;<br />
+&nbsp;&nbsp;a way of seeing what gives rise to virtue and vice in the soul.A A WORD ON THE TRANSLATIONS,<br />
+&nbsp;&nbsp;REFERENCES,<br />
+&nbsp;&nbsp;AND SOURCES ll the translations in this volume were rendered with the aid of two primary and indispensable sources. The first is the incomparable treasure of the Loeb Classical Library (Harvard University Press),<br />
+&nbsp;&nbsp;which has been the standard resource for the original language texts for generations. Today,<br />
+&nbsp;&nbsp;in addition to the handsome green and red printed volumes loved by many,<br />
+&nbsp;&nbsp;the full Greek and Latin texts are now available via online subscription,<br />
+&nbsp;&nbsp;with terrific search capabilities in both languages,<br />
+&nbsp;&nbsp;as well as in English for the general reader,<br />
+&nbsp;&nbsp;at www.loebclassics.com. I have found this service to be a godsend in organizing and managing my work. From a lexical standpoint,<br />
+&nbsp;&nbsp;the resources at www.perseus.tufts.edu have proved to be invaluable,<br />
+&nbsp;&nbsp;offering,<br />
+&nbsp;&nbsp;in addition to search capabilities,<br />
+&nbsp;&nbsp;links to the superlative lexicon of Liddell and Scott (Greek) and the dictionary of Lewis and Short (Latin),<br />
+&nbsp;&nbsp;along with comparative usage statistics and occurrences across authors and time periods. I also used extensively the print editions of both works (Oxford University Press) for particularly challenging passages and for source texts not available online (Musonius Rufus). Of course,<br />
+&nbsp;&nbsp;the translations were informed by the excellent work of Loeb translators W. A. Oldfather,<br />
+&nbsp;&nbsp;C. R. Haines,<br />
+&nbsp;&nbsp;Richard M. Gummere,<br />
+&nbsp;&nbsp;John W. Basore,<br />
+&nbsp;&nbsp;and others. In the case of Epictetus,<br />
+&nbsp;&nbsp;I especially enjoyed consulting the works of Thomas Wentworth Higginson,<br />
+&nbsp;&nbsp;a fellow Harvard divinity graduate,<br />
+&nbsp;&nbsp;and George Long (both available in print and at www.perseus.tufts.edu). There have been quite a few more recent translations of Marcus Aurelius,<br />
+&nbsp;&nbsp;and among them Ryan and I both enjoy the lyrical Gregory Hays (Modern Library);<br />
+&nbsp;&nbsp;for a more literal modernrendering,<br />
+&nbsp;&nbsp;particularly for precision with philosophical terms,<br />
+&nbsp;&nbsp;the Robin Hard translation (Oxford University Press) is hard to beat. With regard to the translations,<br />
+&nbsp;&nbsp;the goal was to make the work of these late Stoic thinkers as accessible,<br />
+&nbsp;&nbsp;digestible,<br />
+&nbsp;&nbsp;and coherent as possible. In the major terms of Stoic thought and its development in Epictetus and Marcus,<br />
+&nbsp;&nbsp;my effort has been placed on consistency and avoiding anachronism while pointing out any places of difference in emphasis or use as necessary. Apart from the core terminology,<br />
+&nbsp;&nbsp;the translations have been made with an aim to remain as literal as possible,<br />
+&nbsp;&nbsp;with only a few liberties taken when needed to make a point stand out or to avoid repeated images or phrases. A special thanks to Amanda C. Gregory for her review of my glossary and translations. All source and line references given,<br />
+&nbsp;&nbsp;unless otherwise noted,<br />
+&nbsp;&nbsp;are to the original texts as found on www.perseus.tufts.edu,<br />
+&nbsp;&nbsp;and most of the remaining ones are to the Loeb texts (online version,<br />
+&nbsp;&nbsp;which occasionally differs from the printed editions in line numbering). The pieces from Musonius Rufus came from an edition of the Greek text in Cora Lutz's 1947 work,<br />
+&nbsp;&nbsp;Musonius Rufus,<br />
+&nbsp;&nbsp;Lectures and Fragments (Yale),<br />
+&nbsp;&nbsp;which I procured from a reprinter in India (but it contains only the Lectures and is missing her introduction,<br />
+&nbsp;&nbsp;the Fragments,<br />
+&nbsp;&nbsp;and much of the textual notes). I have spoken with the director of Yale University Press about possibly bringing that work back into print,<br />
+&nbsp;&nbsp;and it is under review.I SUGGESTIONS FOR FURTHER READING n addition to the Loeb Classics and online resources at www.perseus.tufts.edu and the other printed translations mentioned previously,<br />
+&nbsp;&nbsp;there are a handful of exceptional recent works by accessible scholars that you should read:<br />
+&nbsp;&nbsp;Hadot,<br />
+&nbsp;&nbsp;Pierre. The Inner Citadel:<br />
+&nbsp;&nbsp;The Meditations of Marcus Aurelius,<br />
+&nbsp;&nbsp;translated by Michael Chase (Cambridge,<br />
+&nbsp;&nbsp;MA:<br />
+&nbsp;&nbsp;Harvard University Press,<br />
+&nbsp;&nbsp;2001). ———. What Is Ancient Philosophy? Translated by Michael Chase (Cambridge,<br />
+&nbsp;&nbsp;MA:<br />
+&nbsp;&nbsp;Harvard University Press,<br />
+&nbsp;&nbsp;new edition,<br />
+&nbsp;&nbsp;2004). Long,<br />
+&nbsp;&nbsp;A. A. Epictetus:<br />
+&nbsp;&nbsp;A Stoic and Socratic Guide to Life (New York:<br />
+&nbsp;&nbsp;Oxford University Press,<br />
+&nbsp;&nbsp;2004). ———. Greek Models of Mind and Self (Cambridge,<br />
+&nbsp;&nbsp;MA:<br />
+&nbsp;&nbsp;Harvard University Press,<br />
+&nbsp;&nbsp;2015). Nussbaum,<br />
+&nbsp;&nbsp;Martha. The Therapy of Desire:<br />
+&nbsp;&nbsp;Theory and Practice in Hellenistic Ethics (Princeton,<br />
+&nbsp;&nbsp;NJ:<br />
+&nbsp;&nbsp;Princeton University Press,<br />
+&nbsp;&nbsp;reissued 2009). Robertson,<br />
+&nbsp;&nbsp;Donald. The Philosophy of Cognitive Behavioural Therapy (London:<br />
+&nbsp;&nbsp;Karnac Books,<br />
+&nbsp;&nbsp;2010).What's next on your reading list? Discover your next great read! Get personalized book picks and up-to-date news about this author. Sign up now.<br />
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>
