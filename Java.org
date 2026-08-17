@@ -1,0 +1,264 @@
+* HashMap 1
+* ConcurrentHashMap 1
+** 整体地图
+ConcurrentHashMap
+│
+├── table：Node<K,V>[] 数组
+│       │
+│       ├── 空
+│       │
+│       ├── Node
+│       │     └── Node -> Node -> Node   链表
+│       │
+│       └── TreeBin
+│             └── TreeNode ...           红黑树
+│
+├── put()
+│     │
+│     ├── 空桶
+│     │     └── CAS 插入
+│     │
+│     ├── 普通链表
+│     │     └── synchronized(桶头节点)
+│     │
+│     ├── TreeBin
+│     │     └── synchronized + 红黑树操作
+│     │
+│     └── MOVED: forwardingNode
+│           └── 协助扩容
+│
+├── get()
+│     └── 基本无锁
+│
+├── resize()
+│     └── 多线程协作扩容
+│
+└── size()
+      └── baseCount + CounterCell[]
+** 数据结构
+#+begin_src java
+  transient volatile Node<K, V>[] table;
+  class Node<K, V> {
+  		int hash;
+  		K key;
+  		V val;
+  		Node<K, V> next;
+  		}
+#+end_src
+** 线程安全
+Thread A操作桶3, Thread B操作桶5, 锁粒度到了桶级别(桶的第一个Node作为锁对象).
+** Put源码
+1. put(key, value)
+2. 找bucket
+3. 进行操作
+   1. 空桶,则CAS
+   2. MOVED, 协助扩容
+   3. 有数据, synchronized, 链表或红黑树
+*** 空桶,则CAS,能显著提升性能
+假如线程A,线程B,同时进入写入, 没有用CAS, 就发生A写入后,B写入,把A覆盖了.
+实际处理是A或B先CAS,失败的,重试,会走synchronized.
+*** 有数据,synchronized
+假设链表里是A->B->C, 线程X写入X,线程Y写入Y. 会出现C.next=X,C.next=Y,造成最后结果是A->B->C->Y,X被覆盖掉了.
+因为锁链表,所以可以多个线程同时操作不同的桶,所以性能好.
+** get无锁
+因为val和next都是volatile, 读取的线程可以看到数据没有正在被修改.
+同时可以确保其他线程可以看到val和next的修改.
+** 链表变红黑树
+链表长度>=8, 并且table.length>=64,会树化.
+当链表长度大,table.length小的时候,table会进行扩容,重新分布,链表长度会减少.
+** resize, 多线程协助扩容
+线程A发现需要扩容,开始扩容; 线程B发现正在扩容,加入扩容,搬另外一部分.
+** moved, forwardingNode
+forwardingNode的hash值为MOVD(-1),表示已经被搬走了.
+去nextTable里面找值,这也是get能无锁的另一部分原因.
+** size
+             size
+
+              │
+       ┌──────┴──────┐
+       ↓             ↓
+  baseCount      CounterCell[]
+                     │
+              ┌──────┼──────┐
+              ↓      ↓      ↓
+             C1     C2     C3
+** 完整设计
+                   ConcurrentHashMap
+                          │
+                          ↓
+                    Node[] table
+                          │
+             ┌────────────┼────────────┐
+             ↓            ↓            ↓
+            空桶         链表          TreeBin
+             │            │              │
+             ↓            ↓              ↓
+            CAS       synchronized     红黑树
+             │            │              │
+             └────────────┼──────────────┘
+                          ↓
+                       put完成
+                          │
+                          ↓
+                     addCount()
+                          │
+                          ↓
+                     是否需要扩容
+                          │
+                     ┌────┴────┐
+                     ↓         ↓
+                    否         是
+                              ↓
+                         transfer()
+                              │
+                     ┌────────┴────────┐
+                     ↓                 ↓
+                 当前线程           其他线程
+                     │                 │
+                     └──── helpTransfer┘
+                              │
+                              ↓
+                        ForwardingNode
+                              │
+                              ↓
+                         新 table
+* ArrayList 1
+* CopyOnWriteArrayList 1
+** 数据结构
+#+begin_src java
+transient volatile Object[] array;
+#+end_src
+                    CopyOnWriteArrayList
+
+                         array
+                           │
+             ┌─────────────┴─────────────┐
+             ↓                           ↓
+           read                         write
+             │                           │
+             ↓                           ↓
+          不加锁                     加锁
+             │                           │
+             ↓                           ↓
+        直接读数组                 复制数组
+                                         │
+                                         ↓
+                                      修改副本
+                                         │
+                                         ↓
+                                   替换 array
+*** 为什么array必须volatile
+当有读写线程时,array的改变,对于读线程立即可见
+              Reader
+                 │
+       ┌─────────┼─────────┐
+       ↓         ↓         ↓
+      get       get       get
+       │         │         │
+       └─────────┼─────────┘
+                 ↓
+              oldArray
+
+
+Writer
+   ↓
+lock
+   ↓
+copy
+   ↓
+modify
+   ↓
+publish newArray
+*** 如果读线程正在读,写线程突然修改
+假如oldArray是 ABCD
+线程A在迭代oldArray时, oldArray被更新成新的内容ABCDE. 迭代的索引仍然和之前一致,并且会使用新数组.
+* TreeMap 红黑树 1
+* PriorityQueue 1
+数组实现的二叉堆(逻辑是完全二叉树),默认小顶堆
+** 数据结构
+Object[] queue;
+        1
+      /   \
+     3     8
+    / \
+   5   7
+[1, 3, 8, 5, 7]
+// 父节点永远<=子节点,因此queue[0]永远是最小值
+parent = (i - 1)/2
+left=i*2+1
+right=i*2+2
+** offer()插入
+        1
+       / \
+      3   8
+     /
+    5
+        1
+       / \
+      2   8
+     / \
+    5   3
+** poll()删除堆顶
+        1
+       / \
+      3   8
+     / \
+    5   7
+        7
+       / \
+      3   8
+     /
+    5
+        3
+       / \
+      5   8
+     /
+    7
+PriorityQueue
+│
+├── 数组
+│   ├── parent = (i-1)/2
+│   ├── left = 2i+1
+│   └── right = 2i+2
+│
+├── 小顶堆
+│   └── parent <= child
+│
+├── offer
+│   └── siftUp
+│
+└── poll
+    └── siftDown
+* synchronized
+给一段代码加锁,确保这段代码同时只能一个线程执行,并保证线程之间的内存可见性.
+synchronized
+     │
+     ├── 锁对象
+     │
+     ├── 互斥
+     │
+     ├── 可见性
+     │
+     ├── 可重入
+     │
+     └── JVM → Monitor
+锁住共享资源 → 一个线程进入 → 其他线程等待 → 释放锁 → 下一个线程进入。
+** 核心原理
+锁对象: this, obj, Xxx.class, 同一个Lock,才会互斥
+- synchronized(obj)
+- 锁实例方法=锁this
+- 锁静态方法=锁Xx.class
+Monitor(JVM管理对象锁谁持有,其他线程怎么办) + 锁优化
+** 三个核心特性
+*** 1.互斥
+同一时间,只能一个线程进入
+*** 2.可见性
+获取同一把锁后,线程A的修改(比如改count),会同步给线程B
+*** 3.可重入
+synchronized void a() {
+    b();
+}
+
+synchronized void b() {
+}
+可以重复获取两次,然后会释放两次
