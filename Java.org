@@ -262,3 +262,72 @@ synchronized void a() {
 synchronized void b() {
 }
 可以重复获取两次,然后会释放两次
+* volatile
+volatile告诉JVM:整个变量多线程贡献,每次读都看最新值,每次写让其他线程能看到
+
+** 可见性
+#+begin_src java
+// 这里ThreadA不会正常停止
+  boolean running = true;
+// 这里ThreadA会正常停止
+  volatile boolean running = true;
+
+  Thread A:
+  while (running) {
+  }
+
+  Thread B:
+  running = false;
+#+end_src
+
+** 有序性
+// 1. 分配内存
+// 2. 初始化对象
+// 3. instance指向这块内存
+instance = new Singleton();
+另一个线程看到instance为null,就会重复这个行为,所以不单单可以让别人看到,还会限制相关操作的乱序
+
+** 为什么count++无法保证
+#+begin_src java
+  volatile int count = 0;
+  // A: 读0
+  // B: 读0
+  // A: +1 ->写1
+  // B: +1 ->写1
+  // 只能保证读写可见,但是不保证"读改写"操作不可分隔
+  count++;
+#+end_src
+
+volatile
+   ↓
+可见性 + 有序性
+   ↓
+不能保证复合操作原子性
+
+
+synchronized
+   ↓
+加锁
+   ↓
+互斥 + 可见性
+   ↓
+临界区内操作具有原子性效果
+
+** 总结
+synchronized → 我让你们一个一个来
+volatile      → 我保证你们看到最新状态
+
+volatile
+│
+├── 作用
+│   ├── 可见性
+│   └── 有序性
+│
+├── 不保证
+│   └── 复合操作原子性
+│
+├── 不是锁
+│   └── 不会让其他线程阻塞等待
+│
+└── 底层
+    └── JMM(内存模型) + 内存屏障 -> 可见性和顺序关系
