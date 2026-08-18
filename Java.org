@@ -331,3 +331,79 @@ volatile
 │
 └── 底层
     └── JMM(内存模型) + 内存屏障 -> 可见性和顺序关系
+* CAS
+CAS = Compare And Swap
+我认为变量是A,如果是,改成B;如果不是,什么都不做
+
+** CAS及问题
+CAS自旋:实现乐观并发控制
+- 读取值
+- 计算新值
+- CAS?
+  + 成功,则结束
+  + 不成功则重复
+CAS的问题:
+- 线程一直循环,耗CPU
+- ABA问题: 虽然变量还是原来的值,但实际已经变化过,由A->B->A; 增加版本号解决
+** AtomicInteger等原子类
+AtomicInteger.incrementAndGet(): 也是在CAS自旋
+* AQS: AbstractQueuedSynchronizer
+数据结构:
+- state: 资源状态
+- FIFO等待队列:
+** state
+同步资源的状态,具体含义由子类定义
+** Node
+#+begin_src java
+  class Node {
+  		// 是否等待
+    volatile int waitStatus;
+  		// 上个节点是
+    volatile Node prev;
+  		// 下个节点是
+    volatile Node next;
+  		// 哪个线程
+    Thread waiter;
+  }
+#+end_src
+
+线程
+ ↓
+尝试 CAS 修改 state
+ ↓
+成功？
+ ├── 是 → 获得资源
+ │
+ └── 否
+      ↓
+   加入等待队列
+      ↓
+     park
+      ↓
+   线程睡眠
+      ↓
+   前面的线程释放资源
+      ↓
+    unpark
+      ↓
+   我醒了
+      ↓
+   再次尝试获取
+
+             AQS
+              │
+     ┌────────┼────────┐
+     │        │        │
+    CAS     队列     park/unpark
+     │        │        │
+   抢资源    排队     睡眠/唤醒
+** AQS解决的问题
+CAS自旋占用CPU,大量的线程进入队列休眠
+
+公平锁
+ ↓
+尽量按队列来
+
+非公平锁
+ ↓
+允许新来的见缝插针
