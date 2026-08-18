@@ -407,3 +407,88 @@ CAS自旋占用CPU,大量的线程进入队列休眠
 非公平锁
  ↓
 允许新来的见缝插针
+* ReentrantLock 可重入锁
+                 ReentrantLock
+                       │
+             ┌─────────┴─────────┐
+             │                   │
+          FairSync           NonfairSync
+             │                   │
+             └─────────┬─────────┘
+                       ↓
+                      AQS
+                       │
+              ┌────────┴────────┐
+              │                 │
+            state             等待队列
+              │                 │
+        表示锁的持有状态       Node → Node → Node
+AQS负责抢不到如何排队,Reentrant负责锁怎么定义
+#+begin_src java
+  //最初,state=0
+  // 第一次lock后,state=1
+  lock.lock();
+  a();
+  // 第二次lock后,state=2
+  lock.lock();
+  b();
+  // 第一次unlock后,state=1
+  lock.unlock()
+  // 第三次lock后,state=2
+  lock.lock();
+  c();
+  // 第二次unlock后,state=1
+  lock.unlock();
+  // 第三次unlock后,state=0,彻底释放
+  lock.unlock();
+#+end_src
+
+** nonfairTryAcuqire 非公平锁
+#+begin_src java
+  final boolean nonfairTryAcuqire(int acquires) {
+  		Thread current = Thread.currentThread();
+
+  		int c = getState();
+  		if (c == 0) {
+	    if(compareAndSetState(0, acquires)) {
+		setExclusiveOwnerThread(current);
+	  	return true;
+	    }
+  		} else if (current = getExclusiveOwnThread()) {//这里不需要CAS
+	  int next = c + acquires;
+
+	  setState(nextc);
+	  return true;
+  		}
+
+  		return false;
+  }
+#+end_src
+
+                 ReentrantLock
+                       │
+                       ↓
+                      AQS
+                       │
+              ┌────────┴────────┐
+              │                 │
+            state              队列
+              │                 │
+          锁的状态          等待的线程
+              │                 │
+              ↓                 ↓
+       ┌─────────────┐     Node → Node
+       │             │
+    state == 0    state != 0
+       │             │
+      CAS        是不是自己？
+       │          ↙       ↘
+    成功         是         否
+       │          │          │
+    获得锁      state++     入队
+                             ↓
+                           park
+
+** ReentrantLock总结
+ReentrantLock用AQS管理等待队列,用state记录锁的重入次数,用owner记录持有线程;
+第一次靠CAS,自己重入直接增加state,别人抢不到进入AQS队列等待
