@@ -492,3 +492,101 @@ AQS负责抢不到如何排队,Reentrant负责锁怎么定义
 ** ReentrantLock总结
 ReentrantLock用AQS管理等待队列,用state记录锁的重入次数,用owner记录持有线程;
 第一次靠CAS,自己重入直接增加state,别人抢不到进入AQS队列等待
+
+* ThreadLocl
+Thread
+ ↓
+ThreadLocalMap
+ ↓
+多个 Entry
+ ↓
+每个 Entry：
+ThreadLocal → value
+
+目的:为了线程之间某份完全隔离
+
+场景:traceId,用于authentication, 用完后需要remove, 因为线程会复用
+** ThreadLocal.set()
+#+begin_src java
+  public void set(T value) {
+      Thread t = Thread.currentThread();
+
+  		// 找到整个线程自己的map
+      ThreadLocalMap map = getMap(t);
+
+      if (map != null) {
+          map.set(this, value);
+      } else {
+          createMap(t, value);
+      }
+  }
+#+end_src
+* Atomic
+                  Atomic
+                     │
+          ┌──────────┴──────────┐
+          │                     │
+     原子变量                  CAS
+          │                     │
+   AtomicInteger          compareAndSet
+   AtomicLong                    │
+   AtomicReference                ↓
+                         安全地修改共享状态
+AtomicInteger, AtomicLong, 就是做CAS操作,如果失败了就重试
+因为有ABA的问题, 所以还有AtomicStampedReference,比较时不简单比较值,还比较版本号
+* 线程池
+             线程池
+               │
+        ┌──────┴──────┐
+        │             │
+      工作线程       任务队列
+        │             │
+   ┌────┼────┐        │
+   ↓    ↓    ↓        ↓
+  T1   T2   T3    Task → Task → Task
+   │    │    │
+   └────┴────┘
+       不断取任务
+** 线程池-数据结构
+ThreadPoolExecutor
+│
+├── Worker 集合
+│     │
+│     ├── Worker → Thread
+│     ├── Worker → Thread
+│     └── Worker → Thread
+│
+├── BlockingQueue
+│     │
+│     ├── Task
+│     ├── Task
+│     └── Task
+│
+├── corePoolSize: 最小池大小
+├── maximumPoolSize: 最大池大小
+└── RejectedExecutionHandler: 拒绝异常处理器
+** executor.execute(task) 执行任务
+提交任务
+   ↓
+当前线程数 < corePoolSize？
+   │
+   ├── 是 → 创建核心线程执行
+   │
+   └── 否
+        ↓
+     放入任务队列
+        │
+        ├── 成功 → 等待线程取
+        │
+        └── 队列满了
+              ↓
+       当前线程数 < maximumPoolSize？
+              │
+              ├── 是 → 创建非核心线程
+              │
+              └── 否 → 拒绝任务
+相当于一个工厂,来货了就开那几台常用机器.常用机器满了,就把货放传送带,传送带慢了,就增加机器,增加机器超过厂房空间,就不接货了,货扔外面.
+** Executors.newFixedThreadPool(n) 线程池:固定n个线程
+** newSingleThreadExecutor 单线程串行执行,异步但不并发
+** newCachedThreadPool 无限个线程,来任务则创建线程
+** newScheduledThreadPool 定时执行任务
