@@ -668,3 +668,52 @@ JVM Stack
 3. 设置对象头: !!!
 4. 执行构造器
 5. 返回引用, 存储到栈帧的局部变量里面
+* 类加载
+.class 文件
+   ↓
+加载 Loading
+   ↓
+连接 Linking
+   ├── 验证
+   ├── 准备
+   └── 解析
+   ↓
+初始化 Initialization
+** 1.加载Loading
+把.class文件加载到JVM,创建一个代表这个类的Class对象,建立类相关的运行时数据.
+运行时信息:
+User
+├── 父类 Object
+├── age 字段
+├── eat() 方法
+├── main() 方法
+└── 运行时常量池
+** 2.验证Verification
+字节码格式
+有没有破坏JVM安全规则
+类型是否正确
+** 3.准备Preparation
+#+begin_src java
+  class User {
+  		static int count = 10;
+  		static final int MAX = 100;
+  }
+#+end_src
+给静态变量分配内存,并设置默认值(此时,count=0,而不是count=10)
+** 4.解析Resolution
+User
+eat
+java/lang/Object
+把这些符号引用,变成直接引用.也就是运行时常量池
+** 5.初始化initialization
+#+begin_src java
+class User {
+
+    static int count = 10;
+
+    static {
+        System.out.println("User init");
+    }
+}
+#+end_src
+把static的变量赋值,执行static方法块
