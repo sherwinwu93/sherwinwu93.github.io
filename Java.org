@@ -934,3 +934,83 @@ public void destroy() {
 - 关闭连接
 - 释放线程池
 - 释放资源
+** 循环依赖
+A依赖B,B又依赖A时,Spring创建Bean就会形成环
+*** Spring如何解决? 三级缓存
+三级
+“怎么拿到早期引用？” ObjectFactory,既有原始Bean,也有代理Bean早期引用获取的方法
+        ↓
+二级
+“早期引用已经拿到了，放这里”. 到二级时,才放了原始,或代理Bean的早期引用
+        ↓
+一级
+“Bean彻底初始化完成了，放这里”
+
+一级：完整 Bean
+二级：早期 Bean
+三级：获取早期 Bean 的工厂
+
+假如A和B相互依赖.
+1. 创建A,把A放入三级缓存(ObjectFactory)
+2. A需要B,这时去创建B
+3. 发现B需要A,于是依次从一级~二级~三级缓存,在三级缓存找到A
+4. 把A放入二级缓存,并注入到B,B完成,并放入一级缓存
+5. 回到A,把B注入到A,A完成,放入一级缓存
+
+
+                B需要A
+                   ↓
+              一级缓存？
+              ↙       ↘
+           有           没有
+           ↓             ↓
+        直接拿       二级缓存？
+                     ↙       ↘
+                   有         没有
+                   ↓           ↓
+                 直接拿      三级缓存
+                                ↓
+                         ObjectFactory
+                                ↓
+                          生成早期引用
+                                ↓
+                           放入二级
+                                ↓
+                            给 B 使用
+** AOP
+不修改原有业务代码,在方法执行前后织入额外逻辑
+
+Spring并不是用原始对象执行方法,而是用代理对象执行方法
+
+*** 横切关注点
+比如一系列方法都需要日志,这就是横切关注点
+
+*** Spring AOP的实现
+- JDK动态代理: 基于接口,要求目标对象实现接口
+- CGLIB: 基于继承,生成目标类的子类
+
+*** AOP和BeanPostProcessor
+执行BeanPostProcessor发现需要AOP,创建Proxy,Spring最终管理Proxy
+
+AOP是功能,代理是实现手段,BeanPostProcessor时把代理植入Bean生命周期的扩展机制.
+
+*** this.xxx()不触发AOP
+this.xxx(),是自己调用方法,不是目标对象调用方法
+
+@Transactional、@Cacheable、@Async
+#+begin_src java
+  public void a() {
+  		// 这里不会触发事务,因为this.a()的对象是目标对象自己,不是代理对象
+  		this.b();
+  }
+  @Transactional
+  public void b() {
+  }
+#+end_src
+
+** 事务传播
+1. Required: 有事务则加入,没事务则创建
+2. Requires_new: 不管有没有事务,都创建一个新事务 (记录操作日志)
+3. Supports: 有事务就加入,没事务就没事务
+4. Not_supported: 不使用事务
+5. Mandatory: 必须有事务,否则报错
