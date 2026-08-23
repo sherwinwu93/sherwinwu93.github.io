@@ -1,0 +1,777 @@
+* HashMap 1
+* ConcurrentHashMap 1
+** 整体地图
+ConcurrentHashMap
+│
+├── table：Node<K,V>[] 数组
+│       │
+│       ├── 空
+│       │
+│       ├── Node
+│       │     └── Node -> Node -> Node   链表
+│       │
+│       └── TreeBin
+│             └── TreeNode ...           红黑树
+│
+├── put()
+│     │
+│     ├── 空桶
+│     │     └── CAS 插入
+│     │
+│     ├── 普通链表
+│     │     └── synchronized(桶头节点)
+│     │
+│     ├── TreeBin
+│     │     └── synchronized + 红黑树操作
+│     │
+│     └── MOVED: forwardingNode
+│           └── 协助扩容
+│
+├── get()
+│     └── 基本无锁
+│
+├── resize()
+│     └── 多线程协作扩容
+│
+└── size()
+      └── baseCount + CounterCell[]
+** 数据结构
+#+begin_src java
+  transient volatile Node<K, V>[] table;
+  class Node<K, V> {
+  		int hash;
+  		K key;
+  		V val;
+  		Node<K, V> next;
+  		}
+#+end_src
+** 线程安全
+Thread A操作桶3, Thread B操作桶5, 锁粒度到了桶级别(桶的第一个Node作为锁对象).
+** Put源码
+1. put(key, value)
+2. 找bucket
+3. 进行操作
+   1. 空桶,则CAS
+   2. MOVED, 协助扩容
+   3. 有数据, synchronized, 链表或红黑树
+*** 空桶,则CAS,能显著提升性能
+假如线程A,线程B,同时进入写入, 没有用CAS, 就发生A写入后,B写入,把A覆盖了.
+实际处理是A或B先CAS,失败的,重试,会走synchronized.
+*** 有数据,synchronized
+假设链表里是A->B->C, 线程X写入X,线程Y写入Y. 会出现C.next=X,C.next=Y,造成最后结果是A->B->C->Y,X被覆盖掉了.
+因为锁链表,所以可以多个线程同时操作不同的桶,所以性能好.
+** get无锁
+因为val和next都是volatile, 读取的线程可以看到数据没有正在被修改.
+同时可以确保其他线程可以看到val和next的修改.
+** 链表变红黑树
+链表长度>=8, 并且table.length>=64,会树化.
+当链表长度大,table.length小的时候,table会进行扩容,重新分布,链表长度会减少.
+** resize, 多线程协助扩容
+线程A发现需要扩容,开始扩容; 线程B发现正在扩容,加入扩容,搬另外一部分.
+** moved, forwardingNode
+forwardingNode的hash值为MOVD(-1),表示已经被搬走了.
+去nextTable里面找值,这也是get能无锁的另一部分原因.
+** size
+             size
+
+              │
+       ┌──────┴──────┐
+       ↓             ↓
+  baseCount      CounterCell[]
+                     │
+              ┌──────┼──────┐
+              ↓      ↓      ↓
+             C1     C2     C3
+** 完整设计
+                   ConcurrentHashMap
+                          │
+                          ↓
+                    Node[] table
+                          │
+             ┌────────────┼────────────┐
+             ↓            ↓            ↓
+            空桶         链表          TreeBin
+             │            │              │
+             ↓            ↓              ↓
+            CAS       synchronized     红黑树
+             │            │              │
+             └────────────┼──────────────┘
+                          ↓
+                       put完成
+                          │
+                          ↓
+                     addCount()
+                          │
+                          ↓
+                     是否需要扩容
+                          │
+                     ┌────┴────┐
+                     ↓         ↓
+                    否         是
+                              ↓
+                         transfer()
+                              │
+                     ┌────────┴────────┐
+                     ↓                 ↓
+                 当前线程           其他线程
+                     │                 │
+                     └──── helpTransfer┘
+                              │
+                              ↓
+                        ForwardingNode
+                              │
+                              ↓
+                         新 table
+* ArrayList 1
+* CopyOnWriteArrayList 1
+** 数据结构
+#+begin_src java
+transient volatile Object[] array;
+#+end_src
+                    CopyOnWriteArrayList
+
+                         array
+                           │
+             ┌─────────────┴─────────────┐
+             ↓                           ↓
+           read                         write
+             │                           │
+             ↓                           ↓
+          不加锁                     加锁
+             │                           │
+             ↓                           ↓
+        直接读数组                 复制数组
+                                         │
+                                         ↓
+                                      修改副本
+                                         │
+                                         ↓
+                                   替换 array
+*** 为什么array必须volatile
+当有读写线程时,array的改变,对于读线程立即可见
+              Reader
+                 │
+       ┌─────────┼─────────┐
+       ↓         ↓         ↓
+      get       get       get
+       │         │         │
+       └─────────┼─────────┘
+                 ↓
+              oldArray
+
+
+Writer
+   ↓
+lock
+   ↓
+copy
+   ↓
+modify
+   ↓
+publish newArray
+*** 如果读线程正在读,写线程突然修改
+假如oldArray是 ABCD
+线程A在迭代oldArray时, oldArray被更新成新的内容ABCDE. 迭代的索引仍然和之前一致,并且会使用新数组.
+* TreeMap 红黑树 1
+* PriorityQueue 1
+数组实现的二叉堆(逻辑是完全二叉树),默认小顶堆
+** 数据结构
+Object[] queue;
+        1
+      /   \
+     3     8
+    / \
+   5   7
+[1, 3, 8, 5, 7]
+// 父节点永远<=子节点,因此queue[0]永远是最小值
+parent = (i - 1)/2
+left=i*2+1
+right=i*2+2
+** offer()插入
+        1
+       / \
+      3   8
+     /
+    5
+        1
+       / \
+      2   8
+     / \
+    5   3
+** poll()删除堆顶
+        1
+       / \
+      3   8
+     / \
+    5   7
+        7
+       / \
+      3   8
+     /
+    5
+        3
+       / \
+      5   8
+     /
+    7
+PriorityQueue
+│
+├── 数组
+│   ├── parent = (i-1)/2
+│   ├── left = 2i+1
+│   └── right = 2i+2
+│
+├── 小顶堆
+│   └── parent <= child
+│
+├── offer
+│   └── siftUp
+│
+└── poll
+    └── siftDown
+* synchronized
+给一段代码加锁,确保这段代码同时只能一个线程执行,并保证线程之间的内存可见性.
+synchronized
+     │
+     ├── 锁对象
+     │
+     ├── 互斥
+     │
+     ├── 可见性
+     │
+     ├── 可重入
+     │
+     └── JVM → Monitor
+锁住共享资源 → 一个线程进入 → 其他线程等待 → 释放锁 → 下一个线程进入。
+** 核心原理
+锁对象: this, obj, Xxx.class, 同一个Lock,才会互斥
+- synchronized(obj)
+- 锁实例方法=锁this
+- 锁静态方法=锁Xx.class
+Monitor(JVM管理对象锁谁持有,其他线程怎么办) + 锁优化
+** 三个核心特性
+*** 1.互斥
+同一时间,只能一个线程进入
+*** 2.可见性
+获取同一把锁后,线程A的修改(比如改count),会同步给线程B
+*** 3.可重入
+synchronized void a() {
+    b();
+}
+
+synchronized void b() {
+}
+可以重复获取两次,然后会释放两次
+* volatile
+volatile告诉JVM:整个变量多线程贡献,每次读都看最新值,每次写让其他线程能看到
+
+** 可见性
+#+begin_src java
+// 这里ThreadA不会正常停止
+  boolean running = true;
+// 这里ThreadA会正常停止
+  volatile boolean running = true;
+
+  Thread A:
+  while (running) {
+  }
+
+  Thread B:
+  running = false;
+#+end_src
+
+** 有序性
+// 1. 分配内存
+// 2. 初始化对象
+// 3. instance指向这块内存
+instance = new Singleton();
+另一个线程看到instance为null,就会重复这个行为,所以不单单可以让别人看到,还会限制相关操作的乱序
+
+** 为什么count++无法保证
+#+begin_src java
+  volatile int count = 0;
+  // A: 读0
+  // B: 读0
+  // A: +1 ->写1
+  // B: +1 ->写1
+  // 只能保证读写可见,但是不保证"读改写"操作不可分隔
+  count++;
+#+end_src
+
+volatile
+   ↓
+可见性 + 有序性
+   ↓
+不能保证复合操作原子性
+
+
+synchronized
+   ↓
+加锁
+   ↓
+互斥 + 可见性
+   ↓
+临界区内操作具有原子性效果
+
+** 总结
+synchronized → 我让你们一个一个来
+volatile      → 我保证你们看到最新状态
+
+volatile
+│
+├── 作用
+│   ├── 可见性
+│   └── 有序性
+│
+├── 不保证
+│   └── 复合操作原子性
+│
+├── 不是锁
+│   └── 不会让其他线程阻塞等待
+│
+└── 底层
+    └── JMM(内存模型) + 内存屏障 -> 可见性和顺序关系
+* CAS
+CAS = Compare And Swap
+我认为变量是A,如果是,改成B;如果不是,什么都不做
+
+** CAS及问题
+CAS自旋:实现乐观并发控制
+- 读取值
+- 计算新值
+- CAS?
+  + 成功,则结束
+  + 不成功则重复
+CAS的问题:
+- 线程一直循环,耗CPU
+- ABA问题: 虽然变量还是原来的值,但实际已经变化过,由A->B->A; 增加版本号解决
+** AtomicInteger等原子类
+AtomicInteger.incrementAndGet(): 也是在CAS自旋
+* AQS: AbstractQueuedSynchronizer
+数据结构:
+- state: 资源状态
+- FIFO等待队列:
+** state
+同步资源的状态,具体含义由子类定义
+** Node
+#+begin_src java
+  class Node {
+  		// 是否等待
+    volatile int waitStatus;
+  		// 上个节点是
+    volatile Node prev;
+  		// 下个节点是
+    volatile Node next;
+  		// 哪个线程
+    Thread waiter;
+  }
+#+end_src
+
+线程
+ ↓
+尝试 CAS 修改 state
+ ↓
+成功？
+ ├── 是 → 获得资源
+ │
+ └── 否
+      ↓
+   加入等待队列
+      ↓
+     park
+      ↓
+   线程睡眠
+      ↓
+   前面的线程释放资源
+      ↓
+    unpark
+      ↓
+   我醒了
+      ↓
+   再次尝试获取
+
+             AQS
+              │
+     ┌────────┼────────┐
+     │        │        │
+    CAS     队列     park/unpark
+     │        │        │
+   抢资源    排队     睡眠/唤醒
+** AQS解决的问题
+CAS自旋占用CPU,大量的线程进入队列休眠
+
+公平锁
+ ↓
+尽量按队列来
+
+非公平锁
+ ↓
+允许新来的见缝插针
+* ReentrantLock 可重入锁
+                 ReentrantLock
+                       │
+             ┌─────────┴─────────┐
+             │                   │
+          FairSync           NonfairSync
+             │                   │
+             └─────────┬─────────┘
+                       ↓
+                      AQS
+                       │
+              ┌────────┴────────┐
+              │                 │
+            state             等待队列
+              │                 │
+        表示锁的持有状态       Node → Node → Node
+AQS负责抢不到如何排队,Reentrant负责锁怎么定义
+#+begin_src java
+  //最初,state=0
+  // 第一次lock后,state=1
+  lock.lock();
+  a();
+  // 第二次lock后,state=2
+  lock.lock();
+  b();
+  // 第一次unlock后,state=1
+  lock.unlock()
+  // 第三次lock后,state=2
+  lock.lock();
+  c();
+  // 第二次unlock后,state=1
+  lock.unlock();
+  // 第三次unlock后,state=0,彻底释放
+  lock.unlock();
+#+end_src
+
+** nonfairTryAcuqire 非公平锁
+#+begin_src java
+  final boolean nonfairTryAcuqire(int acquires) {
+  		Thread current = Thread.currentThread();
+
+  		int c = getState();
+  		if (c == 0) {
+	    if(compareAndSetState(0, acquires)) {
+		setExclusiveOwnerThread(current);
+	  	return true;
+	    }
+  		} else if (current = getExclusiveOwnThread()) {//这里不需要CAS
+	  int next = c + acquires;
+
+	  setState(nextc);
+	  return true;
+  		}
+
+  		return false;
+  }
+#+end_src
+
+                 ReentrantLock
+                       │
+                       ↓
+                      AQS
+                       │
+              ┌────────┴────────┐
+              │                 │
+            state              队列
+              │                 │
+          锁的状态          等待的线程
+              │                 │
+              ↓                 ↓
+       ┌─────────────┐     Node → Node
+       │             │
+    state == 0    state != 0
+       │             │
+      CAS        是不是自己？
+       │          ↙       ↘
+    成功         是         否
+       │          │          │
+    获得锁      state++     入队
+                             ↓
+                           park
+
+** ReentrantLock总结
+ReentrantLock用AQS管理等待队列,用state记录锁的重入次数,用owner记录持有线程;
+第一次靠CAS,自己重入直接增加state,别人抢不到进入AQS队列等待
+
+* ThreadLocl
+Thread
+ ↓
+ThreadLocalMap
+ ↓
+多个 Entry
+ ↓
+每个 Entry：
+ThreadLocal → value
+
+目的:为了线程之间某份完全隔离
+
+场景:traceId,用于authentication, 用完后需要remove, 因为线程会复用
+** ThreadLocal.set()
+#+begin_src java
+  public void set(T value) {
+      Thread t = Thread.currentThread();
+
+  		// 找到整个线程自己的map
+      ThreadLocalMap map = getMap(t);
+
+      if (map != null) {
+          map.set(this, value);
+      } else {
+          createMap(t, value);
+      }
+  }
+#+end_src
+* Atomic
+                  Atomic
+                     │
+          ┌──────────┴──────────┐
+          │                     │
+     原子变量                  CAS
+          │                     │
+   AtomicInteger          compareAndSet
+   AtomicLong                    │
+   AtomicReference                ↓
+                         安全地修改共享状态
+AtomicInteger, AtomicLong, 就是做CAS操作,如果失败了就重试
+因为有ABA的问题, 所以还有AtomicStampedReference,比较时不简单比较值,还比较版本号
+* 线程池
+             线程池
+               │
+        ┌──────┴──────┐
+        │             │
+      工作线程       任务队列
+        │             │
+   ┌────┼────┐        │
+   ↓    ↓    ↓        ↓
+  T1   T2   T3    Task → Task → Task
+   │    │    │
+   └────┴────┘
+       不断取任务
+** 线程池-数据结构
+ThreadPoolExecutor
+│
+├── Worker 集合
+│     │
+│     ├── Worker → Thread
+│     ├── Worker → Thread
+│     └── Worker → Thread
+│
+├── BlockingQueue
+│     │
+│     ├── Task
+│     ├── Task
+│     └── Task
+│
+├── corePoolSize: 最小池大小
+├── maximumPoolSize: 最大池大小
+└── RejectedExecutionHandler: 拒绝异常处理器
+** executor.execute(task) 执行任务
+提交任务
+   ↓
+当前线程数 < corePoolSize？
+   │
+   ├── 是 → 创建核心线程执行
+   │
+   └── 否
+        ↓
+     放入任务队列
+        │
+        ├── 成功 → 等待线程取
+        │
+        └── 队列满了
+              ↓
+       当前线程数 < maximumPoolSize？
+              │
+              ├── 是 → 创建非核心线程
+              │
+              └── 否 → 拒绝任务
+相当于一个工厂,来货了就开那几台常用机器.常用机器满了,就把货放传送带,传送带满了,就增加机器,增加机器超过厂房空间,就不接货了,货扔外面.
+** Executors.newFixedThreadPool(n) 线程池:固定n个线程
+** newSingleThreadExecutor 单线程串行执行,异步但不并发
+** newCachedThreadPool 无限个线程,来任务则创建线程
+** newScheduledThreadPool 定时执行任务
+* 死锁
+线程1拿到锁A,等待锁B;
+线程2拿到锁B,等待锁A;
+两者都不会释放,然后就一直等待.
+
+满足条件:
+- 锁只能一次被一个线程持有
+- 拿到其中一个锁,等待另一个锁
+- 线程2不能抢线程1的锁,只能等对方释放
+- 拿锁和等待锁构成了一个循环
+** 解决方法
+- 按顺序拿锁: 比如永远先锁A,再锁B. 这样会造成阻塞,线程1先拿到锁A,锁B,先执行完,线程2才能开始工作
+- 超时自动释放: ReentrantLock 这样不会无限等待
+* happens-before
+A happens-before B: A的执行结果对B可见
+例子:
+- 线程A先获取锁,线程B在等待锁; 后续是A释放锁 happens-before B获取锁
+- volatile 变量在线程A被修改,在线程B可见. 线程A修改变量 happens-before 线程B
+传递性: A happens-before B, B happens-before C -> A happens-before C
+* JVM内存结构
+                 JVM Runtime Data Areas
+                         │
+        ┌────────────────┴────────────────┐
+        │                                 │
+     线程共享                            线程私有
+        │                                 │
+ ┌──────┴───────┐                 ┌───────┴────────┐
+ │              │                 │                │
+堆 Heap     方法区 Method Area   虚拟机栈       程序计数器
+ │              │                 │                │
+实例          类信息             栈帧             当前指令
+数组          常量              局部变量
+            静态变量            操作数栈
+                               方法调用
+                               返回地址
+                         
+                              本地方法栈
+** 1.堆Heap - 对象实例,数组
+- 线程共享
+- 存储对象实例和数组
+- GC管理这里
+** 2.虚拟机栈JVM Stack - 方法如何执行
+#+begin_src java
+  public void foo() {
+  		int a = 10;
+  		User user = new User();
+  }
+#+end_src
+调用foo,创建栈帧. 每个线程有自己的栈
+JVM Stack
+    ↓
+┌──────────────┐
+│ foo() 栈帧    │
+│              │
+│ a = 10       │
+│ user ────────┼──────→ 堆里的 User
+│              │
+└──────────────┘
+栈帧里面有:
+- 局部变量表
+- 操作数栈
+- 动态链接
+- 方法返回地址
+** 3.程序计数器PC - 下一条执行什么
+每个线程一个,程序计数器记录当前执行位置
+** 4.本地方法栈 - 执行native方法
+** 5.Method Area - 类的信息
+类的结构信息
+方法
+字段信息
+运行时常量池: 类名,方法名,字段名,方法描述
+* 对象创建
+对象创建步骤:
+1. 类加载检查: 检查是否加载到方法区,没加载则加载
+2. 在堆中分配对象: 刚分配出来,对实例变量做默认初始化
+3. 设置对象头: !!!
+4. 执行构造器
+5. 返回引用, 存储到栈帧的局部变量里面
+* 类加载
+.class 文件
+   ↓
+加载 Loading
+   ↓
+连接 Linking
+   ├── 验证
+   ├── 准备
+   └── 解析
+   ↓
+初始化 Initialization
+** 1.加载Loading
+把.class文件加载到JVM,创建一个代表这个类的Class对象,建立类相关的运行时数据.
+运行时信息:
+User
+├── 父类 Object
+├── age 字段
+├── eat() 方法
+├── main() 方法
+└── 运行时常量池
+** 2.验证Verification
+字节码格式
+有没有破坏JVM安全规则
+类型是否正确
+** 3.准备Preparation
+#+begin_src java
+  class User {
+  		static int count = 10;
+  		static final int MAX = 100;
+  }
+#+end_src
+给静态变量分配内存,并设置默认值(此时,count=0,而不是count=10)
+** 4.解析Resolution
+User
+eat
+java/lang/Object
+把这些符号引用,变成直接引用.也就是运行时常量池
+** 5.初始化initialization
+#+begin_src java
+class User {
+
+    static int count = 10;
+
+    static {
+        System.out.println("User init");
+    }
+}
+#+end_src
+把static的变量赋值,执行static方法块
+* 双亲委派
+类加载器收到"加载整个类"的请求后,先不自己加载,而是先让父加载器加载;父加载器加载不了,才自己加载.
+
+避免核心类被冒充. 比如你自己的java.lang.String类,无法冒充JDK的String
+* GC
+** GC的整体回收模型
+                    new Object
+                        ↓
+                       Eden
+                        ↓
+                  Eden 快满了
+                        ↓
+                    Young GC
+                        ↓
+              ┌─────────┴─────────┐
+              ↓                   ↓
+           垃圾对象             活对象
+              ↓                   ↓
+           回收掉              Survivor
+                                  ↓
+                            多次 Young GC
+                                  ↓
+                          ┌───────┴───────┐
+                          ↓               ↓
+                       死掉了          一直活着
+                          ↓               ↓
+                       回收掉            Old
+                                          ↓
+                                  老年代压力增加
+                                          ↓
+                              ┌───────────┴───────────┐
+                              ↓                       ↓
+                         老年代 GC                  G1
+                                                      ↓
+                                               并发标记
+                                                      ↓
+                                               Mixed GC
+                                                      ↓
+                                               回收 Old
+** STW
+GC时,会停止所有线程. Stop the world
+** GC Root
+GC Root -> main的局部变量 -> User -> Address
+当对象A持有对象B, 对象B持有对象A. 但是GC Root不可达, 也要在GC时被回收掉
+** 堆
+- 新生代 Young Generation
+  + Eden: 标记复制
+  + Survivor0: S0+Eden,标记复制到S1,然后清空
+  + Survivor1:
+- Old Generation: 传统是标记整理
+** Minor GC/ Major GC/ Full GC
+- Minior GC: Young
+- major GC: old
+- Full GC: 整个堆
+** 清除方法
+- 标记清除: 先标记删除,然后清除
+- 标记整理: 先标记删除,再整理到一起,减少了内存碎片
+- 标记复制: 先标记删除,再把活着的对象复制到Survivor
