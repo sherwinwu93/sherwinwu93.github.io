@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-08-24 Mon 19:25 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="WIN-JF56LDN0M2Q" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-c:before { content: 'C'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'JavaScript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-org7424cc6" class="outline-2">
+<h2 id="org7424cc6">26 Your Officer</h2>
+<div class="outline-text-2" id="text-org7424cc6">
+<p class="verse">
+They shoot at me with weapons and words, and I fire back with courage and compassion.<br />
+It is my duty to turn chaos into composure, pandemonium into peace,<br />
+&nbsp;&nbsp;not only with my muscle but with my mind.<br />
+I experience life and death and cry tears of joy and pain all at the same time.<br />
+The lessons of love and despair I have practiced since birth have prepared me for today.<br />
+I end my shift with more scars than when I began, some on my body, some in my heart.<br />
+There are comrades I have buried and many I have carried, ones who held my hand from the start.<br />
+I am here for your comfort, to serve and protect you,<br />
+&nbsp;&nbsp;to catch the burden of displaced evil and deflect harm.<br />
+I bleed, I feel, I care, and I am real.<br />
+I am your officer.<br />
+Jenny Christoforakis, Chicago police officer.<br />
+</p>
+</div>
+<div id="outline-container-org8f47cdd" class="outline-3">
+<h3 id="org8f47cdd">expression</h3>
+<div class="outline-text-3" id="text-org8f47cdd">
+<p>
+shoot at sb.: 充某人开枪<br />
+fire back with sth.: 用某物还击<br />
+It is my duty to do sth.: 做某事是我的义务<br />
+composure [kəmˈpoʊʒər] n.: the state of feeling or seeming calm镇静<br />
+pandemonium [ˌpændəˈmoʊniəm] n.: a situation in which there is a lot of noise because people are angry, confused or frightened SYN chaos喧嚣；大混乱<br />
+scar [skɑr] n.: a permanent mark that is left on your skin after you have had a cut or wound疤痕<br />
+comrade [ˈkɑmˌræd] n.: formal a friend, especially someone who shares difficult work or danger同志,伙伴<br />
+displaced [dɪsˈpleɪs] adj.: 转移的<br />
+catch the burden of sth.: 承担某事的重担<br />
+deflect [dɪˈflekt] v.: if someone or something deflects something that is moving, or if it deflects, it turns in a different direction抵挡<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgbd8dfd7" class="outline-3">
+<h3 id="orgbd8dfd7">sentence</h3>
+<div class="outline-text-3" id="text-orgbd8dfd7">
+<p>
+shoot at sb.: 充某人开枪<br />
+</p>
+<ul class="org-ul">
+<li>You should've shot at him when you were not sure that he died.<br /></li>
+<li>Don't shoot at my cat, who has accompanied me since my birth.<br /></li>
+<li>Our comrade can't resist the temptation to shoot at people with bare hands.<br /></li>
+</ul>
+<p>
+fire back with sth.: 用某物还击<br />
+</p>
+<ul class="org-ul">
+<li>I should've fired back with the mistakes she made in the university.<br /></li>
+<li>Wrapping up the dog shit, she fired back with the parcel.<br /></li>
+<li>Firing back with anger, he threw a stone at his classmate, who took off his pants in public.<br /></li>
+</ul>
+<p>
+It is my duty to do sth.: 做某事是我的义务<br />
+</p>
+<ul class="org-ul">
+<li>It is my duty to tell you what has happened when you're not here.<br /></li>
+<li>It is our duty to offer the truth to the stupid as a journalist.<br /></li>
+<li>Serving as a staff member, it is my duty to finish my work on time.<br /></li>
+</ul>
+<p>
+composure [kəmˈpoʊʒər] n.: the state of feeling or seeming calm镇静<br />
+</p>
+<ul class="org-ul">
+<li>If I find it hard to keep my composure, I will stop making any decision.<br /></li>
+<li>There was some composure on the board when we found some wreck in the salvage operation.<br /></li>
+<li>I couldn't keep my composure when I learned that some pirates had sacked our village.<br /></li>
+</ul>
+<p>
+pandemonium [ˌpændəˈmoʊniəm] n.: a situation in which there is a lot of noise because people are angry, confused or frightened SYN chaos喧嚣；大混乱<br />
+</p>
+<ul class="org-ul">
+<li>The so-called justice march ended up a massive pandemonium.<br /></li>
+<li>It's your duty to settle down the pandemonium as a policeman.<br /></li>
+<li>In the pandemonium, the lord and several of his knights had their heads cut.<br /></li>
+</ul>
+<p>
+scar [skɑr] n.: a permanent mark that is left on your skin after you have had a cut or wound疤痕<br />
+</p>
+<ul class="org-ul">
+<li>No wonder he has been wearing a hat all day, for he was hiding his scar.<br /></li>
+<li>Because of his scar on his face, he lost a large number of opportunities to get a good job.<br /></li>
+<li>The crime he committed is why there's a scar on his face.<br /></li>
+</ul>
+<p>
+comrade [ˈkɑmˌræd] n.: formal a friend, especially someone who shares difficult work or danger同志,伙伴<br />
+</p>
+<ul class="org-ul">
+<li>It is common sense that civil servants are called comrades in China.<br /></li>
+<li>With a car with the red flag coming into the camp, the comrade stood to attention.<br /></li>
+<li>He should be regarded as our comrade, not a useless tool.<br /></li>
+</ul>
+<p>
+displaced [dɪsˈpleɪs] adj.: 转移的<br />
+</p>
+<ul class="org-ul">
+<li>The displaced treasure must have been found.<br /></li>
+<li>The pirate takes no interest in anything but the displaced treasure.<br /></li>
+<li>No one could account for the fact that the displaced treasure has been found by a sheep stealer.<br /></li>
+</ul>
+<p>
+catch the burden of sth.: 承担某事的重担<br />
+</p>
+<ul class="org-ul">
+<li>In the end, she gave up catching the burden of raising up her sister.<br /></li>
+<li>She was asked to catch the burden of settling down the queen who just lost her son.<br /></li>
+<li>She caught the burden of bringing up all of her siblings.<br /></li>
+</ul>
+<p>
+deflect [dɪˈflekt] v.: if someone or something deflects something that is moving, or if it deflects, it turns in a different direction抵挡<br />
+</p>
+<ul class="org-ul">
+<li>We must have knocked him to the ground to deflect his crime.<br /></li>
+<li>If we failed to deflect our enemies, our wives and children would have been raped.<br /></li>
+<li>She makes an attempt to deflect the wild dragon.<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgaa656da" class="outline-3">
+<h3 id="orgaa656da">CN</h3>
+<div class="outline-text-3" id="text-orgaa656da">
+<p>
+他们用武器和言语向我射击，而我用勇气与慈悲还击。<br />
+</p>
+
+<p>
+我的职责，是将混乱化为镇定，将喧嚣与骚乱化为和平，<br />
+不仅凭借我的肌肉，也凭借我的头脑。<br />
+</p>
+
+<p>
+我经历着生与死，也在同一时刻流下喜悦与痛苦的泪水。<br />
+从出生起，我就在经历和练习着爱与绝望的教训，而这一切都让我为今天做好了准备。<br />
+</p>
+
+<p>
+结束一天的工作时，我身上的伤疤比开始时更多——<br />
+有些留在身体上，有些留在心里。<br />
+</p>
+
+<p>
+我埋葬过一些并肩作战的战友，也背负、搀扶过许多人；<br />
+他们中的一些人，从一开始就握着我的手。<br />
+</p>
+
+<p>
+我在这里，是为了给你安慰，为了服务你、保护你，<br />
+为了接住被转嫁而来的邪恶所带来的重负，并挡开伤害。<br />
+</p>
+
+<p>
+我会流血，我会感受，我会在乎，<br />
+而且我是真实存在的。<br />
+</p>
+
+<p>
+我是你的警官。<br />
+</p>
+
+<p>
+——Jenny Christoforakis，芝加哥警察<br />
+</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
