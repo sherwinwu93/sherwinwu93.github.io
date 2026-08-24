@@ -1124,5 +1124,22 @@ AutoConfiguration根据Jar和配置,自动创建Bean
                   IOC
 
 * Spring MVC
-** DispatcherServlet
-** 请求处理流程
+1. HTTP请求
+2. Tomcat
+3. DispatcherServlet
+4. HandlerMapping,找到Controller方法(HandlerMethod)
+5. HandlerAdapter,参数解析
+6. 调用Controller方法
+7. 由HttpMessageConverter处理返回值
+8. HTTP Response
+** 请求处理流程-例子
+http请求 GET /user/123?name=Tom
+流程:
+1. DispatcherServlet
+2. HandlerMapping找到UserController.getUser()
+3. HandlerAdpter,做参数解析,@PathVariable->123,Long,@RequestParam -> Tom,String
+4. 调用 getUser(123,"Tom")
+5. 返回User对象
+6. 返回值处理器,HttpMessageConverter把User转成JSON(HTTP Body)
+7. 最后转化成HTTP Response
+* MySQL
