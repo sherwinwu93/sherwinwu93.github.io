@@ -1325,4 +1325,32 @@ rows: MySQL估计需要扫描/检查的记录数
 
 *** Explain-Extra
 Extra:
-- Using index
+- Using index: 覆盖索引
+- Using index condition: 索引下推
+- Using where: 需要使用where过滤(可能是使用索引后,再进行where过滤)
+
+*** Explain-recap
+                    SQL
+                     ↓
+                  EXPLAIN
+                     ↓
+             查看执行计划
+                     ↓
+       ┌─────────────┼─────────────┐
+       ↓             ↓             ↓
+      type          key           rows
+       ↓             ↓             ↓
+怎么访问表？     用哪个索引？    扫多少？
+       │             │
+       ↓             ↓
+ const/ref/range   联合索引？
+ ALL               最左匹配？
+                     │
+                     ↓
+                   Extra
+                     ↓
+       ┌─────────────┼─────────────┐
+       ↓             ↓             ↓
+ Using index   Using index condition  Using where
+       ↓             ↓
+   覆盖索引       索引下推
