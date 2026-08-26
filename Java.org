@@ -1291,3 +1291,38 @@ name = Tom
 当联合索引,包括所有需要的字段时,不用回表
 *** 索引下推
 多个判断条件,本来需要回表后再判断的条件,因为在索引里面也可以判断,提前判断,减少回表次数
+** 索引失效
+MySQL的B+ Tree不能快速缩小扫描范围
+1. 索引列做函数或运算
+   where year(creat_time)=2026
+2. 不必要的隐式类型转换 字符串列和数字比较
+3. 不符合联合索引最左匹配
+4. Like左模糊
+5. OR, 一边有索引,一边无索引
+6. 表数据量太小
+** explain
+EXPLAIN用来查看SQL执行计划
+*** Explain-type
+type的值由好到差:
+- const: 主键/唯一索引
+- eq_ref
+- ref: 普通二级索引
+- range: 范围查询,因为B+可以定位一个范围
+- index
+- ALL: 全表扫描,导致无法有效使用索引
+*** Explain-possible_keys
+possible_keys: 可以被使用的索引,但是不一定被使用
+
+*** Explain-key
+key: 实际使用的key,比如possible_keys有两个,实际使用选了一个或没用
+
+*** Explain-key_len
+key_len: 使用的索引字节长度
+比如a_b_c联合索引,根据key_len看索引使用了多少字节,可以判断用了联合索引哪些列
+
+*** Explain-rows
+rows: MySQL估计需要扫描/检查的记录数
+
+*** Explain-Extra
+Extra:
+- Using index
