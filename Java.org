@@ -1354,3 +1354,41 @@ Extra:
  Using index   Using index condition  Using where
        ↓             ↓
    覆盖索引       索引下推
+
+** MVCC
+MVCC: Multi-Version Concurrency Control多版本并发控制,一个数据保存多个版本,让读和写尽量不相互堵塞
+
+*** 为什么有MVCC?
+如果事务A在修改数据,事务B在读数据.
+- 没MVCC, B只能等待A修改完数据
+- 有MVCC, B可以看到数据的旧版本(根据事务规则)
+
+*** InnoDB的MVCC靠什么实现?
+MVCC
+ │
+ ├── 隐藏字段
+ │
+ ├── Undo Log
+ │
+ └── Read View
+1. Undo Log: 保存旧版本
+   修改数据时,Undo Log会把历史版本数据保存,所以可以随便版本找数据
+2. Read View: 决定能看到的版本
+   事务A在修改数据,事务B在读数据.B看到的数据,不取决于数据库现在是什么,而是看B能看到的版本号.
+
+*** MVCC和锁是什么关系?
+普通快照读: A写, B读旧版本,互相不堵塞
+For update: A写,B读, B是当前读,需要等A释放锁
+
+** Redo Log
+Redo Log: 记录"对数据的修改"(不是SQL),用于数据库崩溃后的恢复
+
+*** 为什么需要Redo Log?
+数据库真正的数据页在磁盘上,每次修改都直接去写磁盘会很慢.
+InnoDb,先修改内存中Buffer Pool的数据页,然后写入到Redo Log, 最后由Redo Log慢慢写磁盘的数据页.
+
+*** 数据库突然宕机怎么办
+数据库重启,读取Redo Log, 发现之前需要恢复的修改,重新执行这些修改,恢复数据
+
+** BinLog
+Binlog: 用来记录数据库变更,主从复制
