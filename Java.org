@@ -1381,7 +1381,7 @@ MVCC
 For update: A写,B读, B是当前读,需要等A释放锁
 
 ** Redo Log
-Redo Log: 记录"对数据的修改"(不是SQL),用于数据库崩溃后的恢复
+Redo Log: 记录"对数据的修改"(不是SQL),用于数据库崩溃后的恢复,是存储引擎层面的日志
 
 *** 为什么需要Redo Log?
 数据库真正的数据页在磁盘上,每次修改都直接去写磁盘会很慢.
@@ -1391,4 +1391,11 @@ InnoDb,先修改内存中Buffer Pool的数据页,然后写入到Redo Log, 最后
 数据库重启,读取Redo Log, 发现之前需要恢复的修改,重新执行这些修改,恢复数据
 
 ** BinLog
-Binlog: 用来记录数据库变更,主从复制
+Binlog: 用来记录数据库变更,主从复制,数据恢复的日志,是MySQLServer层面的日志
+
+*** Redo Log和Binlog会不会不一致?
+如果数据修改,只写了Redo Log,没写Binlog,会导致主库修改了值,从库没有
+所以必须保证,两者都成功,否则不算提交
+
+1. 第一阶段: Redo Log -> Prepare
+2. 第二阶段: Binlog -> 成功 -> Redo Log -> COMMIT, 即便宕机,也能根据日志判断该事务是提交还是回滚
