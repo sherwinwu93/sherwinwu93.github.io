@@ -1399,3 +1399,48 @@ Binlog: 用来记录数据库变更,主从复制,数据恢复的日志,是MySQLS
 
 1. 第一阶段: Redo Log -> Prepare
 2. 第二阶段: Binlog -> 成功 -> Redo Log -> COMMIT, 即便宕机,也能根据日志判断该事务是提交还是回滚
+
+** 四种隔离级别
+隔离级别: 某个事务在执行过程中,允许看到其他事务修改的数据到什么程度?
+由低到高
+1. READ UNCOMMITED: 脏读~不可重复读~幻读(什么都能看见)
+2. READ COMMITED: 不可重复读~幻读(只能看到别人已提交的)
+3. REPEATABLE READ(可重复读): 幻读(同一事务多次读)
+4. SERIALIZABLE(串行): 排队执行,隔离最高
+
+脏读: 事务B修改年龄为20,事务A读取年纪为20,但是事务B回退了年纪为10了. 这样事务A就读了错误数据
+不可重复读=读已提交: 事务A第一次查年纪是20, 事务B把年纪改成18, 事务A再查是20,而不是18
+可重复读(幻读): 事务A第一次查年纪是20, 事务B修改年龄为18, 事务A再查是18.
+
+** Next-Key Lock(临键锁) & Gap Lock(间隙锁) & Record Lock
+这些是为了防止幻读,避免多次读取,其他数据插入进来,造成幻读
+*** Next-Key Lock(临键锁)
+对数据和范围加锁
+#+begin_src sql
+  -- 假如数据只有10, 20, 30, 40
+  -- 锁住的是[20,30),而不是只锁20, 只锁20,会导致25能插入进来,造成幻读(二次读取时,变成20,25)
+  select * from user
+  where id >= 20 and id < 30 for update
+#+end_src
+*** Gap Lock
+对空余位置加锁
+*** Record Lock
+对数据加锁
+** 死锁
+两个事务互相等待对方释放锁,形成死循环
+例子:
+#+begin_src sql
+  -- 事务A
+  BEGIN:
+  update user set age = 20 where id = 1;
+  update user set age = 10 where id = 2;
+  end:
+  -- 事务B
+  BEGIN:
+  update user set age = 10 where id = 2;
+  update user set age = 10 where id = 1;
+  end:
+  -- 事务A持有id=1,等待id=2, 事务B持有id=2,等待id=1
+  -- 这种情况,数据发现这种环形等待,会让事务A报错 Deadlock found,让事务B继续下去. 或者会让事务B报错,事务A进行
+  -- 解决方法: id有序,这样不会死锁
+#+end_src
