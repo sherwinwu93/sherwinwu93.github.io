@@ -31,3 +31,8 @@ BigKey例子:
 2. 不直接DEL超大的Key, 改为使用UNLINK
 3. 分批处理,比如Set有几百万成员,不要全部拿出,可以分批取出.
 使用 redis-cli --bigkeys 排查
+** HotKey
+某个Key被访问的特别频繁,导致Redis的某个节点压力过大
+解决方案:
+1. 直接在服务实例缓存
+2. Key分片,比如 product:1000 变成 product:1000:1, product:1000:2...然后做负载均衡
