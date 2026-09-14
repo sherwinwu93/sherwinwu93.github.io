@@ -187,3 +187,30 @@ if (user == null) {
 2. 抢到的线程: 再次检查Redis,没有则查询MySQL且写入Redis
 3. 释放锁
 之所以再次检查Redis,可能上一个抢到的线程,已经成功把数据写入Redis了
+
+
+Redis
+│
+├─ 为什么快
+├─ 数据结构
+├─ 持久化
+│  ├─ RDB
+│  └─ AOF
+│
+├─ 缓存问题
+│  ├─ 穿透
+│  ├─ 击穿
+│  └─ 雪崩
+│
+├─ 分布式锁
+│  ├─ SET NX EX
+│  ├─ Redisson
+│  └─ Watchdog
+│
+├─ 高可用
+│  ├─ 主从
+│  ├─ Sentinel
+│  └─ Cluster
+│
+└─ MySQL 一致性
+   └─ 更新 DB → 删除缓存
