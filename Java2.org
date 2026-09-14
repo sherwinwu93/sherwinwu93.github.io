@@ -34,7 +34,7 @@ BigKey例子:
 ** HotKey
 某个Key被访问的特别频繁,导致Redis的某个节点压力过大
 解决方案:
-1. 直接在服务实例缓存
+1. 直接在服务实例的内存里面缓存
 2. Key分片,比如 product:1000 变成 product:1000:1, product:1000:2...然后做负载均衡
 ** Redis 分布式锁
 核心是Redis的set nx ex.
