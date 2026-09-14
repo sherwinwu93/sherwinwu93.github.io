@@ -36,4 +36,154 @@ BigKey例子:
 解决方案:
 1. 直接在服务实例缓存
 2. Key分片,比如 product:1000 变成 product:1000:1, product:1000:2...然后做负载均衡
-** Redis Cluster Redis集群
+** Redis 分布式锁
+核心是Redis的set nx ex.
+利用nx确保只有一个客户端成功创建锁, EX防止客户端宕机导致死锁.
+同时锁的value使用唯一ID,释放锁的时候不能直接DEL,使用lua脚本先判断value是否属于自己,再删除.
+实际一般使用Redisson,提供Watchdog自动续期机制.
+*** 不能简单SETNX
+不设置过期时间的话,如果程序挂掉了,会导致锁一直存在
+*** 为什么value必须唯一
+线程A先获得锁, 执行任务时超时, 锁自动释放
+线程B获得锁, 占用了锁, A执行完成了, 把B的锁给释放了
+*** 30s执行不完怎么办?
+A获得锁->30s过期->后台线程不断续期->只要A还活着,锁继续有效
+对应redisson的看门狗机制
+
+** Redisson
+Redis 分布式锁
+      ↓
+自己 SET NX EX
+      ↓
+要自己处理：过期、唯一标识、Lua 原子释放、续期……
+      ↓
+Redisson
+      ↓
+帮你把这些事情封装起来
+
+*** Redisson的基本用法
+#+begin_src java
+RLock lock = redissonClient.getLock("order:1001");
+
+try {
+    lock.lock();
+
+    // 业务代码
+    createOrder();
+
+} finally {
+    lock.unlock();
+}
+#+end_src
+服务A和B同时执行, A lock.lock()成功了,先执行; B lock.lock()等待A执行完,获得锁再执行.
+
+*** Watchdog
+1. A获得锁
+2. watchdog不停检查A是否持有锁,自动续期
+3. A unlock释放锁, watchdog停止续期
+
+*** 为什么还需要唯一标识?
+因为可能A执行慢,锁异常过期了(watchdog失效)
+B获得了锁, A恢复了,把锁给删除了
+
+*** lock()和tryLock()
+tryLock: 可以设置等待时间, 最多持有时间
+
+** Redis Cluster
+Redis Cluster: 
+1. 一个Redis数据集分散到多个Redis节点
+2. 支持水平扩展和节点故障转移
+
+Redis Cluster
+│
+├── Slot → 数据分片 / 水平扩展
+│
+└── 主从 → 故障转移 / 高可用
+
+*** 为什么需要Cluster?
+数据多了,QPS高了,一台扛不住
+Redis Cluster解决了key应该放哪台机器
+
+*** Cluster怎么分数据?
+Cluster怎么分数据
+1. 把整个key集合分成了1万6多的slot
+2. 把slot分给不同节点
+3. 操作时,比如SET 先计算key在哪个slot,再由slot找节点
+4. 如果访问错节点,该节点会告诉客户端正确的节点; 或者客户端会维护正确节点
+
+*** 故障转移
+故障转移: Master节点挂掉了,会把其中一个Slave节点提升为Master
+
+*** 坑: 跨Slot
+Redis cluster对多个key操作要求这些key在同一个slot: 否则会把这些key没有hash到同一个slot
+
+解决方案: 使用HashTag
+比如user~order都和用户id相关, 对用户id用HashTag包围, 这样user:{userId},order:{userId}会在一个slot里面.
+
+*** 主从复制(异步的)+锁丢失问题
+如果这个 Master 挂了，Slave 还没来得及同步锁数据，就发生主从切换，会怎么样？
+
+如果Master挂了,异步的主从复制可能尚未完成, Slave里面没有该锁数据.
+Slave被晋升为Master, 其他线程也能获得锁, 导致也能执行被锁的代码块.
+
+** Redis Sentinel(哨兵)
+Sentinel: 监控Redis主从,在master挂掉之后,自动选一个Slave晋升为新的Master
+
+核心流程:
+1. Master挂了, Sentinel发现了
+2. 从多个Slave选一个做master
+3. 通知其他slave,从新的master那里做主从复制
+4. 通知客户端新的master
+
+** Redis和MySQL数据一致性如何保证
+Cache Aside Pattern(旁路缓存):
+- 读: 先Redis, 没命中再查MySQL
+- 写: 先更新MySQL,再删除Redis
+
+*** 为什么要先更新Redis再删除Redis
+因为数据库才是最终数据源,Redis只是缓存,数据库发生修改后,让旧缓存失效
+
+*** 为什么不更新MySQL->更新Redis
+因为可能多个线程同时更新Redis,
+比如线程A更新为100,线程B后更新数据库为200, 但是Redis是先设置为200, 再设置为100.这样缓数据会出错.
+
+*** 为什么不先删Redis,再更新MySQL
+假如线程B更新,线程A查询.线程B先删除了REdis,再把原来的100改为200.在这中间,线程B查数据为100,存储到Redis是100.
+这样Redis是原来的100,而数据库是改变后的200.
+
+*** 先更新MySQL,再删除Redis也不是绝对一致
+数据更新成功,但是程序挂了, Redis缓存没有正常删除.
+
+解决方案: 增加兜底机制, Redis本身也有过期时间,旧缓存不会永久存在
+1. 更新MySQL
+2. 删除Reids
+3. 删除失败
+4. 重试/消息队列/监听Binlog
+5. 最终删除旧缓存
+
+*** Double Check(双重检查)
+#+begin_src java
+User user = redis.get(key);
+
+if (user == null) {
+    RLock lock = redisson.getLock("lock:" + key);
+    lock.lock();
+
+    try {
+        // 第二次检查
+        user = redis.get(key);
+
+        if (user == null) {
+            user = mysql.selectById(id);
+            redis.set(key, user);
+        }
+
+    } finally {
+        lock.unlock();
+    }
+}
+#+end_src
+1. 查redis没查到,抢分布式锁
+2. 抢到的线程: 再次检查Redis,没有则查询MySQL且写入Redis
+3. 释放锁
+之所以再次检查Redis,可能上一个抢到的线程,已经成功把数据写入Redis了
