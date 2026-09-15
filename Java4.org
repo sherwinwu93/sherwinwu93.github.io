@@ -70,3 +70,46 @@ Nacos不单单提供配置的存储,还可以动态刷新应用的部分配置.
 6. 结果返回Feign, 把从收到的结果, 反序列化成对象.
 
 ** Gateway
+假如: 有多个服务注册到Naco, Order Service, User Service, Payment Service, Product Service
+前端怎么访问这么多微服务?
+
+Gateway是微服务系统的外部统一入口,核心负责请求路由和过滤.
+根据Predicate判断请求匹配那条Route, 将请求转发到对应微服务, 并通过Filter实现统一实现认证~日志等切面功能.
+结合Nacos服务发现和LoadBalancer, 根据服务名找到具体实例进行负载均衡.
+
+*** 1. 没有Gateway会怎么样?
+如果没有Gateway?
+1. 前端必须知道有哪些服务,服务的ip+端口是什么
+2. 很多公共问题: 每个微服务都搞一遍,很麻烦
+   - 用户有没有登录?
+   - Token是否合法?
+   - 有没有权限?
+   - 接口要不要限流?
+   - 请求日志怎么记录?
+
+所以在所有微服务前面加一道统一入口,前端只访问Gateway
+
+*** 2. Gateway最核心的功能: 路由
+路由: Gateway根据路径,判断请求哪个服务
+比如:
+- /api/order/** -> order-service
+- /api/user/** -> user-service
+
+*** 3. Gateway怎么知道User Service在哪?
+Gateway询问Nacos获取实例列表, 再结合LoadBalancer选择一个.
+
+*** 4. Gateway第二个重要能力: 过滤器
+请求经过Gateway时,做的统一处理:
+- 检查Token
+- 记录日志
+- 权限校验
+- 添加Header
+- 转发微服务
+
+*** 5. 还有一个Predicate(断言)
+Predicate: 判断是不是 /api/user/**, 还是 /api/order/**
+
+Feign是 微服务之间
+Gateway是 外部请求->微服务
+
+** 限流
