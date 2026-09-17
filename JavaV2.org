@@ -166,6 +166,62 @@ synchronized悲观一点,先控制访问,再修改
 CAS乐观一点,先尝试修改,冲突了再重试
 
 *** AQS AbstractQueuedSynchronizer抽象队列同步器
+AQS:
+- 构建锁和同步器的基础框架
+- 用state表示同步状态
+- CAS修改state,抢不到的线程进入队列等待
+  
+
+**** AQS为什么存在?
+实现锁需求:
+1. 表示锁是否被占有: volatile
+2. 多个线程抢锁,如何保证只有一个成功: CAS
+3. 抢锁失败的线程放哪?
+   一直自旋会非常消耗CPU,把抢锁失败的线程排队等待
+   A释放后,唤醒B,B继续抢锁
+
+**** 抢锁流程
+1. 线程A尝试CAS(0->1)成功,拿到锁
+2. 线程B尝试CAS(0->1)失败,进入AQS等待队列
+3. 线程C尝试CAS(0->1)失败,也进入AQS等待队列
+4. A执行完毕,释放锁,修改同步状态
+5. 唤醒等待队列中的BC
+6. B尝试获取锁...
+
+线程park/unpack:
+- 进入AQS线程后,线程park,挂起来避免一直占CPU
+- 释放锁后,线程unpark,让它尝试获取锁
+
+*** ReentrantLock
+ReentrantLock是可重入的互斥锁,底层基于AQS实现
+
+**** ReentrantLock的数据结构
+#+begin_src java
+  class ReentrantLock {
+  		// 继承自AQS,有两个子类FairSync,UnFairSync
+      Sync sync;
+  }
+  class AbstractQueuedSynchronizer {
+  		// 同步状态
+  		volatile int state;
+  		// AQS等待队列
+  		Node head;
+  		Node tail;
+
+  		// 独占锁的线程
+  		private Thread exclusiveOwnerThread;
+  }
+#+end_src
+**** ReentrantLock实现锁
+利用AQS的state+CAS+等待队列实现锁
+
+state: 在ReentrantLock代表重入次数,为0是表示锁未被持有,其他表示持有次数
+- 每次lock,state+1
+- 每次unlock,state-1
+**** 公平锁和非公平锁
+公平锁: 唤醒的时候,按队列顺序去唤醒
+非公平锁: 唤醒的时候,不按队列顺序去唤醒
+非公平锁比公平锁性能要好,是默认的.因为唤醒时,可能新来的E正好在CPU上执行,这样可以减少上下文切换成本
 
 * Spring全家桶
 * MySQL
