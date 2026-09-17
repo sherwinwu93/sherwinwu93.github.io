@@ -1,0 +1,74 @@
+* Langchain4j
+Langchain4j是一个Java AI框架,把调用大模型~对话记忆~RAG~Tool Calling封装成Java API
+** Langchain4j核心磨快
+- ChatModel: 调用大模型
+- AI Services: 用Java接口操作AI
+  - 构造Message/Prompt
+  - 调用ChatModel
+  - 请求LLM
+  - 得到模型结果
+  - 转换成Java返回值
+- Chat Memory: 保存对话上下文
+- RAG: 查自己的知识库
+- Tool Calling: 调用Java方法
+** ChatModel
+ChatModel是Langchain4j对"对话型大模型"的统一Java抽象,把消息交给模型,然后拿回模型的回答
+	目的是把对AI的交互抽象起来,供上游业务使用,不直接依赖具体的模型提供商
+
+#+begin_src java
+  interface ChatModel {
+	ChatResponse chat(ChatRequest request);
+  }
+#+end_src
+
+*** ChatModel的流程
+ChatRequest -> ChatModel -> LLM ->ChatResponse
+*** ChatModel的数据结构
+ChatRequest:
+- messages: 一组消息
+  + SystemMessage
+  + UserMessage
+  + AiMessage
+- parameters: 模型参数
+  + temperature
+  + maxTokens
+** SystemMessage~UserMessage~AiMessage
+Message带role和content
+*** SystemMessage
+告诉模型: 你是谁~应该遵守什么规则,怎么回答.
+AI的全局指令
+*** UserMessage
+用户给AI输入的内容
+*** AiMessage
+AI在历史说过的话
+** Prompt / Message
+PromptTemplate: 一个Prompt模板,给一些变量预留位置
+** Chat Memory
+ChatMemory保存历史对话. 在每次重新请求时带上.
+
+Chat Memory有限制:
+1. LLM一次能处理的Token数量有限制
+2. 成本和性能, 请求更大更贵,也更慢
+
+两类ChatMemory:
+- 控制Message数量,超过的历史消息则淘汰
+- 控制Token数量,超过的历史消息则淘汰
+
+多用户,有不同的MemoryId
+** Tool Calling
+Java提供工具方法供LLM调用
+*** Tool的数据结构
+1. name: 工具名称
+2. description: 描述工具的作用
+3. parameters: 参数
+*** Tool Result
+tool的执行结果,LLM根据结果生成自然语言,返回给用户
+
+*** Tool Calling执行过程
+1. 用户输入: 查询订单123
+2. 向ChatModel传入Messages,和Tool Name以及Arguments
+3. LLM决定调用: 名为getOrder的tool,传参为123
+4. 解析Tool Call, 调用Java的@Tool方法
+5. Java返回参数,并封装成Tool Result给LLM
+6. LLM组织自然语言,写入到AiMessage中
+7. 最后返回用户
