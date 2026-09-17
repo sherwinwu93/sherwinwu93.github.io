@@ -123,8 +123,8 @@ volatile保证可见性和一定的有序性,但不保证复合操作的原子�
   class ThreadA{
   void run() {
   				// 这里a的指令会先于ready的指令
-  a=10;
-  ready = true;
+	a=10;
+	ready = true;
   }
   }
   class ThreadB{
@@ -136,6 +136,36 @@ volatile保证可见性和一定的有序性,但不保证复合操作的原子�
   }
   }
 #+end_src
+
+*** CAS(compare and swap)
+CAS: 我准备修改一个值,但只有它没有改变,我才做修改
+CAS的原子性: 在硬件和JVM层面实现的不可分割的原子操作
+
+**** CAS的参数
+这是一个原子操作. 如果V=E,则修改为N,否则返回false.
+- V:variable 当前内存值
+- E:Expected 期望是啥值
+- N:New 改成啥值
+
+**** CAS搭配自旋
+CAS失败->重新读取->重新计算->再CAS
+#+begin_src java
+  while(true) {
+  int oldV = count;
+  int newV = oldV + 1;
+  if(cas(count, oldV, newV)) {
+	break;
+  }
+  }
+#+end_src
+
+AtomicInteger就是典型实现
+
+**** CAS和synchronized的区别
+synchronized悲观一点,先控制访问,再修改
+CAS乐观一点,先尝试修改,冲突了再重试
+
+*** AQS AbstractQueuedSynchronizer抽象队列同步器
 
 * Spring全家桶
 * MySQL
