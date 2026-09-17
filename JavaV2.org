@@ -108,7 +108,34 @@ synchronized三个特性:
 *** volatile
 volatile保证可见性和一定的有序性,但不保证复合操作的原子性
 
-**** 为什么需要
+**** 为什么需要volatile
+一个变量,在主线程~线程A和线程B上有内存,在线程A修改了该变量的值,线程B不一定能看到.
+使用volatile后,线程A修改了该值,线程B马上能看到
+
+**** volatile不等于synchronized
+线程A和线程B同时执行count++. count=10,线程A先读取10,计算11,再写入11.线程B先读取10,计算11,也再写入11.
+
+**** volatile禁止特定的指令重排序
+#+begin_src java
+  int a = 0;
+  volatile boolean ready = false;
+
+  class ThreadA{
+  void run() {
+  				// 这里a的指令会先于ready的指令
+  a=10;
+  ready = true;
+  }
+  }
+  class ThreadB{
+  void run() {
+  		if (ready) {
+  				// 这里输出的是10,而不是0
+	  System.out.println(a);
+  		}
+  }
+  }
+#+end_src
 
 * Spring全家桶
 * MySQL
