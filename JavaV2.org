@@ -46,6 +46,28 @@ put操作桶的两种情况处理:
 ****  ConcurrentHashMap.get
 get操作不加锁,通过volatile保持桶的可见性
 
+*** ArrayList 1
+
+
+*** CopyOnWriteArrayList
+底层数组
+读操作: 直接读取,不加锁,读很快
+写操作:
+- 加锁
+- 复制旧数组,在新数组上修改
+- 替换array引用
+- volatile可见性,后续读取看到新数组
+
+
+*** HashSet
+为什么自定义对象经常要重写equals和hashCode?
+如果只重写equals,比如o1.equals(o2)是true,但是两者的hash不一样.会导致两个对象分配到的桶不一样.
+所以,如果equals()返回true,那么两个对象的hashCode()必须相同
+
+** 并发
+
+*** synchronized
+
 * Spring全家桶
 * MySQL
 * Redis
