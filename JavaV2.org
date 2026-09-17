@@ -67,6 +67,48 @@ get操作不加锁,通过volatile保持桶的可见性
 ** 并发
 
 *** synchronized
+synchronized:
+- Java的内置互斥锁
+- 同一把锁,同一时刻只有一个线程能进入synchronized保护的代码
+
+**** synchronized锁的到底是什么?
+#+begin_src java
+  // synchronized锁的是对象
+  // 锁的是lock对象
+  synchronized (lock) {
+  		doSomething();
+  		}
+  // 锁的是this对象
+  synchronized void test() {
+  		}
+  // 锁的是这个Class对象
+  static synchronized void test() {
+  		}
+
+#+end_src
+
+**** synchronized如何保证线程安全?
+synchronized三个特性:
+1. 互斥: 不会被同时修改共享数据
+2. 可见性: 由于对一个锁的unlock happens-before 后续对这个锁的lock.所以A释放锁之前的修改,对于获取锁的B是可见的.
+3. 有序性: 对一个锁的unlock happens-before 后续对这个锁的lock.
+
+**** synchronized可重入
+同一线程可以多次获取同一把锁,每次进入锁,count+1,每次退出锁,count-1.最后count为0时,才真正释放锁.
+
+#+begin_src java
+  synchronized void a() {
+  		b()
+  									}
+  synchronized void b() {}
+  // 这里a和b都锁this,线程进入a获取this的锁,后面调用b(),又获取this.
+  // 可以重复获取同一把锁
+#+end_src
+
+*** volatile
+volatile保证可见性和一定的有序性,但不保证复合操作的原子性
+
+**** 为什么需要
 
 * Spring全家桶
 * MySQL
