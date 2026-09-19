@@ -320,7 +320,55 @@ Full GC: 对堆进行全面垃圾回收
 STW: JVM在GC时,需要暂停Java应用线程
 
 * Spring全家桶
+* Spring Cloud
+Spring Cloud组件及其作用
+1. Nacos Dicovery: 服务注册~服务发现~健康检查
+2. Nacos Config: 配置中心,动态配置
+3. Gateway: 这个微服务系统对外的统一入口
+   - 网关: 从外部到微服务系统的统一入口
+   - 路由: 决定请求转发到哪个服务
+   - 过滤: 对请求和响应统一处理
+   - 鉴权: 通过Filter判断用户身份以及是否有访问权限
+4. OpenFeign: 微服务之间的HTTP调用
+5. Sentinel: 限流~熔断~降级
+
+外部调用: Client->Gateway->Nacos->Service
+内部调用: Service A -> OpenFeign -> Nacos -> Service B
+
 * MySQL
 * Redis
 * MQ
+Rocket基本架构 → 消息发送/消费 → 消息可靠性 → 重复消费与幂等 → 消息丢失 → 顺序消息 → 消息积压
+** RocketMQ基本组件
+RocketMQ基本架构
+1. Producer生产者: 发送消息的人
+2. Consumer消费者: 处理消息的人
+   Consumer Group: 把多个消息者当作一个组,消息可以只被一个消费者消费,而不是整组所有
+3. Broker: RocketMQ核心服务器,真正负责接收~存储和投递消息
+   BrokerA:
+   - Queue0
+   - Queue1
+   BrokerB:
+   - Queue2
+   - Queue3
+4. NameServer: RocketMQ的路由中心
+   - 有哪些Broker
+   - 哪些Topic在哪些Broker上
+   - 相关路由信息
+5. Topic: 消息的逻辑分类
+6. MessageQueue: 消息队列,分布在Broker上
+   一个Topic可能多个MessageQueue,提升并发能力
+** RocketMQ基本架构
+*** RocketMQ基本架构-Broker启动与注册
+NameServer如何知道有哪些Broker?Topic在哪里?
+
+1. Broker启动时,向NameServer注册,上报Broker/Topic等路由信息
+2. Broker定期发送心跳,NameServer知道Broker是否存活
+***  RocketMQ基本架构-消息生产->存储->消费
+1. Producer发送消息时,从NameServer获取Topic路由.
+   比如OrderTopic在BrokerA的Queue1和BrokerB的Queue2上.
+2. Producer选择BrokerB的Queue2发送消息
+3. BrokerB接收并持久化消息
+4. Consumer订阅OrderTopic, 从BrokerB获取消息
+5. 执行业务逻辑,消费成功
 * 微服务
