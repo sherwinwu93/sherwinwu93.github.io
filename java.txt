@@ -1,0 +1,289 @@
+我会把你的准备范围进一步压缩成下面这套。
+
+第一梯队：必须熟练
+Java
+
+集合
+
+HashMap
+ConcurrentHashMap
+ArrayList
+CopyOnWriteArrayList
+HashSet
+TreeMap
+PriorityQueue
+
+重点不是 API，而是：
+
+数据结构 + 源码 + 为什么这么设计 + 并发问题
+
+并发
+
+synchronized
+volatile
+CAS
+AQS
+ReentrantLock
+ThreadLocal
+Atomic
+线程池
+ThreadPoolExecutor
+线程池参数
+线程池执行流程
+死锁
+happens-before
+
+JVM
+
+JVM 内存结构
+对象创建
+类加载
+双亲委派
+垃圾回收
+G1
+Minor GC / Full GC
+OOM
+CPU 飙高排查
+Full GC 排查
+jstack / jmap / jstat
+
+这三块是Java 八股的核心。
+
+第二梯队：Spring 全家桶
+Spring
+IOC
+Bean 生命周期
+BeanFactory
+ApplicationContext
+循环依赖
+AOP
+JDK 动态代理
+CGLIB
+@Transactional
+事务传播
+事务失效
+Spring 事务原理
+Spring Boot
+自动配置
+Starter
+@SpringBootApplication
+条件装配
+启动流程
+Spring MVC
+DispatcherServlet
+请求处理流程
+HandlerMapping
+HandlerAdapter
+参数解析
+返回值处理
+
+这部分非常适合用八股突击。
+
+第三梯队：MySQL
+
+你实际工作中应该已经用得比较多，所以重点补原理型问题：
+
+B+ Tree
+聚簇索引
+二级索引
+联合索引
+最左匹配
+覆盖索引
+回表
+索引下推
+索引失效
+EXPLAIN
+MVCC
+Undo Log
+Redo Log
+Binlog
+四种隔离级别
+脏读
+不可重复读
+幻读
+Next-Key Lock
+间隙锁
+死锁
+
+尤其是：
+
+MVCC 到底怎么实现？
+
+RR 为什么能解决很多幻读问题？
+
+一条 SQL 为什么没有走索引？
+
+这类问题。
+
+第四梯队：Redis
+
+重点八股：
+
+Redis 为什么快
+Redis 单线程
+IO 多路复用
+五大数据结构
+String / Hash / List / Set / ZSet
+跳表
+RDB
+AOF
+RDB + AOF
+缓存穿透
+缓存击穿
+缓存雪崩
+BigKey
+热 Key
+Redis 分布式锁
+Redisson
+Redis Cluster
+主从复制
+Sentinel
+
+以及一个非常重要的问题：
+
+Redis 和 MySQL 数据一致性怎么保证？
+
+第五梯队：MQ
+
+如果你工作中用过 MQ，这一块也很好补。
+
+MQ 为什么存在
+异步
+解耦
+削峰
+消息丢失
+消息重复
+消息积压
+消费失败
+重试
+ACK
+顺序消息
+幂等
+最终一致性
+
+核心就是：
+
+消息可靠性 + 重复消费 + 积压 + 幂等
+
+RocketMQ组件
+
+第六梯队：微服务
+
+你如果已经做过微服务，这里不用学成架构师。
+
+知道：
+
+Nacos
+服务注册发现
+RPC
+Gateway
+负载均衡
+限流
+熔断
+降级
+超时
+重试
+分布式锁
+分布式事务
+Seata
+幂等
+
+即可。
+
+反而可以暂时放掉的
+
+如果你只是为了尽快恢复面试能力，这些先别碰：
+
+❌ K8s 深入
+❌ Netty 源码
+❌ JVM 源码
+❌ Spring 源码逐行阅读
+❌ Kafka 源码
+❌ Redis 源码
+❌ Raft
+❌ Paxos
+❌ 高级算法
+❌ 大规模系统设计
+❌ 各种冷门中间件
+
+这些属于边际收益很低的部分。
+
+我甚至建议你只做一个“八股题库”
+
+最终控制在 300～400 个问题左右。
+
+比如：
+
+Java 80题
+
+JVM 40题
+
+并发 50题
+
+Spring 60题
+
+MySQL 60题
+
+Redis 40题
+
+MQ 30题
+
+微服务/分布式 40题
+
+总共大概 400题。
+
+但真正要做到的不是：
+
+“我看过这道题。”
+
+而是：
+
+面试官问出来，我能脱口而出，并且接受 2～3 层追问。
+
+比如：
+
+面试官：HashMap 底层是什么？
+
+你不能只回答：
+
+数组 + 链表 + 红黑树。
+
+而应该能继续：
+
+为什么需要红黑树？
+
+链表什么时候转红黑树？
+
+为什么不是一开始就红黑树？
+
+扩容怎么做？
+
+为什么 HashMap 线程不安全？
+
+JDK 7 和 JDK 8 有什么区别？
+
+这才叫八股掌握。
+
+对你来说，我认为最划算的路线
+
+第一阶段：Java + JVM + 并发
+
+第二阶段：Spring
+
+第三阶段：MySQL + Redis
+
+第四阶段：MQ + 微服务
+
+然后直接开始模拟面试。
+
+甚至不需要等全部学完。
+
+比如把 HashMap、ConcurrentHashMap、线程池、JVM、Spring IOC、AOP、事务这几个弄熟，就可以开始模拟。
+
+因为你的目标不是“学完八股”。
+
+而是：
+
+让你已经具备的多年后端经验，能够通过国内面试的八股筛选器。
+
+这两件事差别非常大。
