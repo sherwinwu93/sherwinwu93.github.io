@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-09-28 Mon 10:29 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="Lindsay Hunter" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-c:before { content: 'C'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'JavaScript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>body {background: rgb(193, 230, 198) !important;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-org8871161" class="outline-2">
+<h2 id="org8871161">28 The Sweet Life</h2>
+<div class="outline-text-2" id="text-org8871161">
+<p class="verse">
+There are things no one wants: slivers, cancer, road rage, breaking the last of the china.<br />
+The time your grandmother goes in to have her leg amputated<br />
+&nbsp;&nbsp;and an orderly steals her engagement ring.<br />
+It's not that these things are good; they are, truly, awful.<br />
+The moment of moments, however, is when everything you do want—<br />
+&nbsp;&nbsp;&nbsp;&nbsp;waking up warm against your husband's chest,<br />
+&nbsp;&nbsp;&nbsp;&nbsp;the right kind of attention in a crowded room,<br />
+&nbsp;&nbsp;&nbsp;&nbsp;the incredible magic of your child—<br />
+&nbsp;&nbsp;reveals itself as the story of your misfortunes told in mirror type.<br />
+<br />
+I am a bona fide crazy person.<br />
+I have prescriptions, and practices;<br />
+&nbsp;&nbsp;with their help I have, unexpectedly, gotten pretty good at life.<br />
+And what I have now are precisely the blessings<br />
+&nbsp;&nbsp;that a broken life turned out not to preclude, but, to my astonishment, to produce:<br />
+&nbsp;&nbsp;&nbsp;&nbsp;actual love; safety; sweetness that threatens to never end.<br />
+</p>
+</div>
+<div id="outline-container-org80bfa4f" class="outline-3">
+<h3 id="org80bfa4f">expression</h3>
+<div class="outline-text-3" id="text-org80bfa4f">
+<p>
+a sliver of sth.: a small pointed or thin piece that has been cut or broken off something长条<br />
+road rage: 路怒<br />
+amputate [ˈæmpjəˌteɪt] v.: to cut off someone’s arm, leg, finger etc during a medical operation切除(手臂,腿等)<br />
+orderly [ˈɔrdərli]: n. someone who does unskilled jobs in a hospital护工<br />
+The moment of moments, however, is when + &hellip;: 然而，最最重要的那个时刻，是当……<br />
+in mirror type: 以镜像相反的方式<br />
+bona ['bəʊnə] fide ['fide]: 货真价实地<br />
+prescription [prɪˈskrɪpʃ(ə)n]: n. a piece of paper on which a doctor writes what medicine a sick person should have, so that they can get it from a ↑pharmacist ⇨ prescribe处方<br />
+preclude [prɪˈklud]: v.n. formal to prevent something or make something impossible排除<br />
+to my astonishment: adv. 令我吃惊的是&hellip;<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org8981479" class="outline-3">
+<h3 id="org8981479">sentence</h3>
+<div class="outline-text-3" id="text-org8981479">
+<p>
+a sliver of sth.: a small pointed or thin piece that has been cut or broken off something长条<br />
+</p>
+<ul class="org-ul">
+<li>He tossed a sliver of cake into my mouth, that's beyond my imagination.<br /></li>
+<li>The biographical sketch begins with a sliver of cake.<br /></li>
+<li>Because of the sliver of glass, he didn't have his perfect alibi anymore.<br /></li>
+</ul>
+<p>
+road rage: 路怒<br />
+</p>
+<ul class="org-ul">
+<li>There's a road rage that a man beat a woman to death, for she broke the traffic rule.<br /></li>
+<li>Because of road rage, he lost his temper and stabbed the innocent child.<br /></li>
+<li>I will not give you a lift, for you do have road rage which is out of my control.<br /></li>
+</ul>
+<p>
+amputate v.: to cut off someone’s arm, leg, finger etc during a medical operation切除(手臂,腿等)<br />
+</p>
+<ul class="org-ul">
+<li>I must have had my bile cyst amputated, for it's gonna infect other organs.<br /></li>
+<li>My mother blamed me for having my bile cyst amputated.<br /></li>
+<li>Having my bile cyst amputated, my digestive capacity becomes weaker and weaker.<br /></li>
+</ul>
+<p>
+orderly: someone who does unskilled jobs in a hospital护工<br />
+</p>
+<ul class="org-ul">
+<li>I was looked after well by an orderly with whom I made a friend.<br /></li>
+<li>He pointed out that the orderly had stolen her grandfather's engagement ring.<br /></li>
+<li>The orderly lost her faith in her superior who promised her that she would get a good salary.<br /></li>
+</ul>
+<p>
+The moment of moments, however, is when + &hellip;: 然而，最最重要的那个时刻，是当……<br />
+</p>
+<ul class="org-ul">
+<li>The moment of moments, however, was when he asked to marry me in the cinema.<br /></li>
+<li>The moment of moments, however, was when I swore my oath to him in front of the seven gods.<br /></li>
+<li>The moment of moments, however, was when she risked her life to report the news in the Middle East.<br /></li>
+</ul>
+<p>
+in mirror type: 以镜像相反的方式<br />
+</p>
+<ul class="org-ul">
+<li>Instead, I suffered from silvers, cancer, and breaking the last of the last china in mirror type.<br /></li>
+<li>No one could account for the fact that everything appeared on the scene in mirror type.<br /></li>
+<li>To my astonishment, the painter drew the profile in mirror type.<br /></li>
+</ul>
+<p>
+bona fide: 货真价实地<br />
+</p>
+<ul class="org-ul">
+<li>I am a bona fide crazy person, so don't test my limitations in the meeting.<br /></li>
+<li>It must be a bona fide pen made in America.<br /></li>
+<li>She's a bona fide crazy woman who knocked my door in the midnight.<br /></li>
+</ul>
+<p>
+prescription: a piece of paper on which a doctor writes what medicine a sick person should have, so that they can get it from a ↑pharmacist ⇨ prescribe处方<br />
+</p>
+<ul class="org-ul">
+<li>In China, without prescription you're not able to buy any pharmacy everywhere.<br /></li>
+<li>The paper turned out to be a prescription full of urine.<br /></li>
+<li>All I asked for is a prescription so that I can buy some pills in the midnight.<br /></li>
+</ul>
+<p>
+preclude: formal to prevent something or make something impossible排除<br />
+</p>
+<ul class="org-ul">
+<li>The boss tried his best to preclude being late for the meeting.<br /></li>
+<li>First of first, we must preclude the obvious stupid way of ruining our party.<br /></li>
+<li>At a family gather, he precluded his daughter of being the heir of the house.<br /></li>
+</ul>
+<p>
+to my astonishment: 令我吃惊的是&hellip;<br />
+</p>
+<ul class="org-ul">
+<li>To my astonishment, he is on time at work every day.<br /></li>
+<li>To my astonishment, there's no one but the boy who kneeled finshing the work.<br /></li>
+<li>To his astonishment, he had no choice but kill the woman who he truly love and slept with his father.<br /></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
